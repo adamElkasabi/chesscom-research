@@ -1,6 +1,6 @@
 # Extended findings
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 <a id="FND-30360"></a>
 ## FND-30360 — Implementation component cc-user-title

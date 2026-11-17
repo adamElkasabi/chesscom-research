@@ -5,7 +5,7 @@
 
 Important refinement: real Charm-small bytes and native model-dependent bot decisions are demonstrated, while the legacy play-computer callsite explicitly requests Komodo. Human personality7, Torch bot-engine2, engine12 and Human search mode must not be conflated. Native CEE1.211.5 and UCI/package1.130.285 are separate reported versions.
 
-[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 
@@ -47,7 +47,7 @@ Important refinement: real Charm-small bytes and native model-dependent bot deci
 
 ## Completion and packaging
 
-See[actualmetrics](audit-metadata/completeness-metrics.json),[QC](audit-metadata/qa-report.json),[storage/exclusions](PACKAGING_AND_STORAGE.md),and[checkpoint](audit-metadata/audit-progress.md). TheprimaryZIPcontainsallpackageddocumentation,prior recovery evidence,allfiveoriginalWASMfiles,selectedWAT,function inventories,callgraphs,pseudocode,tools and explicit omissions.
+See[actualmetrics](../audit-metadata/completeness-metrics.json),[QC](../audit-metadata/qa-report.json),[storage/exclusions](../PACKAGING_AND_STORAGE.md),and[checkpoint](../audit-metadata/audit-progress.md). TheprimaryZIPcontainsallpackageddocumentation,prior recovery evidence,allfiveoriginalWASMfiles,selectedWAT,function inventories,callgraphs,pseudocode,tools and explicit omissions.
 
 
 

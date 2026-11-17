@@ -6,5 +6,5 @@ No login/logout/registration/reset flow was executed and no production credentia
 
 LocalextensionflagsandWebSocketreplacementmustnotbeconfusedwithaccount/cloudquotachanges. Aclient-sidecanCreatepatchdoesnotproveserverauthorizationbypass. Route names suggesting auth/restricted resources establish routing declarations only.
 
-[Passive request evidence](audit-metadata/public-request-log.json) · [Prior auth limitations](history/prior-audit/09_AUTHENTICATION_AND_SESSIONS.md)
+[Passive request evidence](../audit-metadata/public-request-log.json) · [Prior auth limitations](../history/prior-audit/09_AUTHENTICATION_AND_SESSIONS.md)
 

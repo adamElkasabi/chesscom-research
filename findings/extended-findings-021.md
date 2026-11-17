@@ -1,6 +1,6 @@
 # Extended findings
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 <a id="FND-31200"></a>
 ## FND-31200 — module-005 export B

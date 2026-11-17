@@ -1,6 +1,6 @@
 # Compiler and toolchain fingerprints
 
-[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../00_MASTER_INDEX.md)
+[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../chapters/00_MASTER_INDEX.md)
 
 Emscriptenisstronglyindicatedbyccall,HEAPU8,Moduleexports,embind/C++exceptionABIs,invokeadapters,Asyncifystate/stack scaffolding and runtime imports. C++/protobufsourcepathstringsstrengthennativeC++inference. LLVM/ClangfamilyisprobablethroughEmscriptenlineage,but no version producer section exists.
 

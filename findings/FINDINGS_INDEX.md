@@ -1,6 +1,6 @@
 # Findings index
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 - [extended-findings-001.md](extended-findings-001.md)
 - [extended-findings-002.md](extended-findings-002.md)

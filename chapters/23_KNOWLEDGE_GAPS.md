@@ -5,7 +5,7 @@
 
 The public Topaz/Charm-small model is now actually recovered and executed in a diagnostic native path; full tensor semantics, live bot configs and Human/cloud formulas remain incomplete. See chapter05 of the focused update for the revised gap list.
 
-[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 
@@ -74,4 +74,4 @@ Systemdate2026-11-13versusnewDateheaders2026-11-15andoldsourceartifacttimes.
 **Evidence needed / continuation:** Trustedexportclockprovenance;rawvaluesretained.
 
 
-[Prior16gaps](history/prior-audit/18_KNOWLEDGE_GAPS_AND_UNCERTAINTIES.md) · [Per-WASMURLlimits](wasm-analysis/wasm-url-references.json)
+[Prior16gaps](../history/prior-audit/18_KNOWLEDGE_GAPS_AND_UNCERTAINTIES.md) · [Per-WASMURLlimits](../wasm-analysis/wasm-url-references.json)

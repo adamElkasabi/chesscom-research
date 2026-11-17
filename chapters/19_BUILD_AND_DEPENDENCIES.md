@@ -8,5 +8,5 @@ Reproducibilitytoolsused:newanalysisPythonstdlib,Node20.20.2,WABTnpm1.0.39,andna
 
 WASMtoolchainexactversioncannotbeobtainedfromanabsentproducerssection. Fivebinarieshavezero customsections,noDWARF/name metadata;export/import names and native error strings still provide some anchors.
 
-[Tool commands per module](wasm-analysis/module-manifest.json) · [Reproducibility scripts](tools/INDEX.md)
+[Tool commands per module](../wasm-analysis/module-manifest.json) · [Reproducibility scripts](../tools/INDEX.md)
 

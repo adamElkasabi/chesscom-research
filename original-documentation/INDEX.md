@@ -1,6 +1,6 @@
 # Original documentation copies
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 Copiesareprivacy-redacted;originalsourcehashesandpathsremaininunifiedmanifest. Originalworkspace/archivedsourcebyteswerenotmodifiedbyanalysis.
 

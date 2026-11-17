@@ -51,6 +51,6 @@
 | ORM alternatives | SQLAlchemy / Django ORM | UNKNOWN — No authoritative service-specific server config/source/driver/DB query evidence in available artifacts or the selected primary-source batch. Lexical hits are not installation proof. |
 | ORM alternatives | Active Record / raw SQL / custom DAL | UNKNOWN — No authoritative service-specific server config/source/driver/DB query evidence in available artifacts or the selected primary-source batch. Lexical hits are not installation proof. |
 
-[Complete technology evidence and finding IDs](audit-metadata/technology-evidence.json)
+[Complete technology evidence and finding IDs](../audit-metadata/technology-evidence.json)
 
 Multiple job mirrors are not independent implementation probes. The selected posting is expired and historically scoped. PHPdoesnotimplyMySQL;MySQLhasindependentprimaryevidence. No SQLServer,PostgreSQL,MariaDB,Node,ASP.NET,Laravelorotherbackendabsenceisclaimed.

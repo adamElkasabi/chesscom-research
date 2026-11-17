@@ -18,5 +18,5 @@ NewGameRequest,GameReviewRequest,GameReviewResponse,GameReview,ColorAccuracy,Mov
 
 Thepublishedengineeringarticleconfirmsdatapersistenceindomains,butnoentity-to-tableorbackend-to-cluster join is proven. AnyconventionalUsers/Games/MovesERdiagramwouldbeinventedandisdeliberatelyomitted.
 
-[Schema inventory](history/prior-audit/registries/schemas.json) · [Explicit model-boundary diagram](diagrams/06-data-model-boundary.mmd)
+[Schema inventory](../history/prior-audit/registries/schemas.json) · [Explicit model-boundary diagram](../diagrams/06-data-model-boundary.mmd)
 

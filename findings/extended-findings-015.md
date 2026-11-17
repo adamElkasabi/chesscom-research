@@ -1,6 +1,6 @@
 # Extended findings
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 <a id="FND-30840"></a>
 ## FND-30840 — module-002 import env.invoke_viidi

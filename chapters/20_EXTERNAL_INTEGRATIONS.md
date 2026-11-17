@@ -6,5 +6,5 @@ Preservedliteralreferencesincludechessassethosts,CloudflareTurnstile/edge/teleme
 
 Newexternalsources(GoogleCloud,MySQLandjoblisting)are evidence providers,notnecessarilyrequestsfromtheChess.comfrontend. Keepresearchtrafficdistinctfromapplicationtraffic.
 
-[All URL contexts](audit-metadata/urls.jsonl) · [Prior external dependencies](history/prior-audit/15_EXTERNAL_SERVICES_AND_DEPENDENCIES.md)
+[All URL contexts](../audit-metadata/urls.jsonl) · [Prior external dependencies](../history/prior-audit/15_EXTERNAL_SERVICES_AND_DEPENDENCIES.md)
 

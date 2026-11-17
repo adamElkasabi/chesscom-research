@@ -8,5 +8,5 @@ Newfailuresretained:unshare-nOperationnotpermitted;initialshared-memoryStockfish
 
 Newpositiveevidencerevisesoldunknowns:MySQL/CloudSQLnowpubliclyconfirmed;webFPM/k8slabelsandsecurityheadersnowobserved. Earlierprivatebackend/source/schema unknowns remain.
 
-[Prior historical detail](history/prior-audit/17_HISTORICAL_FINDINGS.md) · [Prior contradictions](history/prior-audit/19_CONTRADICTIONS_AND_DUPLICATES.md)
+[Prior historical detail](../history/prior-audit/17_HISTORICAL_FINDINGS.md) · [Prior contradictions](../history/prior-audit/19_CONTRADICTIONS_AND_DUPLICATES.md)
 

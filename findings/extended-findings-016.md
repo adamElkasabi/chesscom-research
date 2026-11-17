@@ -1,6 +1,6 @@
 # Extended findings
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 <a id="FND-30900"></a>
 ## FND-30900 — module-002 export CEE_InitWithOpts

@@ -1,6 +1,6 @@
 # Extended findings
 
-[Master index](../00_MASTER_INDEX.md)
+[Master index](../chapters/00_MASTER_INDEX.md)
 
 <a id="FND-30780"></a>
 ## FND-30780 — module-002 import env.invoke_iiiij
