@@ -42,7 +42,7 @@ broken references in the original collection; they are simply not mirrored here 
 | history/ | [folder](https://drive.google.com/drive/folders/1kGFoGvysieRF5zUMJGqYOG8ViDLq6kTn) | prior-audit corpus and its own findings/registries/metadata/evidence subfolders | ~MB scale |
 | original-documentation/ | [folder](https://drive.google.com/drive/folders/1tWkbJUrXRUhIDNh4JQnzUHvj0pc1LZga) | labelled SRC-* documentation copies plus `new-public/` | ~110 KB |
 | tools/ | [folder](https://drive.google.com/drive/folders/1hLJXjmPDeG2d09vUz2OthlDxxOyfKjZD) | 11 reproducibility scripts and INDEX.md | ~130 KB |
-| preserved-workspace/ | [folder](https://drive.google.com/drive/folders/1hn1YTjYpPFNeBJlUfeDAayxSttqEqLJPMU6) | `extension/` retained workspace assets | unknown |
+| preserved-workspace/ | [folder](https://drive.google.com/drive/folders/1hnFa9Y8P7phsuaO_f79s2jxPims_bWLH) | `extension/` retained workspace assets | unknown |
 
 ## How to finish the mirror
 
