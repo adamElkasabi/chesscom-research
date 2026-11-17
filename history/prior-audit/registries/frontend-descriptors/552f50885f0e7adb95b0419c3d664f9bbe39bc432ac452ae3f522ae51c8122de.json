@@ -1,0 +1,269 @@
+{
+  "name": "chesscom/interactions/v1/user_activity.proto",
+  "package": "chesscom.interactions.v1",
+  "message_type": [
+    {
+      "name": "Click",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel"
+        },
+        {
+          "name": "interface",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "element",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "tag",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "selection_index",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "selected_item",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "count",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "tags",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_tag"
+        },
+        {
+          "name": "_selection_index"
+        },
+        {
+          "name": "_selected_item"
+        },
+        {
+          "name": "_count"
+        }
+      ]
+    },
+    {
+      "name": "Impression",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel"
+        },
+        {
+          "name": "interface",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "tag",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "selection_index",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "tags",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "elements",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_tag"
+        },
+        {
+          "name": "_selection_index"
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel"
+        },
+        {
+          "name": "interface",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "element",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "input_text",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "tags",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_input_text"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardGifCreated",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel"
+        },
+        {
+          "name": "interface",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "element",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "tags",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "content",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "website",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "size",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "board",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "pieces",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "has_coordinates",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "board_is_flipped",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

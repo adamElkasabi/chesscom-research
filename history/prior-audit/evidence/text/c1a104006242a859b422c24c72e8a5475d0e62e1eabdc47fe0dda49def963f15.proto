@@ -1,0 +1,18 @@
+// source: chesscom/api/v1/asset.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Asset {
+  oneof _content_type {
+  string content_type = 3;
+  }
+  oneof _url {
+  string url = 4;
+  }
+  oneof _alt_text {
+  string alt_text = 5;
+  }
+  optional string name = 1;
+  optional string key = 2;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/courses/v1/product_list_retrieve_mode.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "ProductListRetrieveMode",
+      "value": [
+        {
+          "name": "PRODUCT_LIST_RETRIEVE_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PRODUCT_LIST_RETRIEVE_MODE_ALL",
+          "number": 1
+        },
+        {
+          "name": "PRODUCT_LIST_RETRIEVE_MODE_PRODUCT_COUNT",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

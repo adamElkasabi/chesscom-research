@@ -1,0 +1,113 @@
+{
+  "name": "chesscom/explanation_engine/v1/accuracy.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/piece.proto",
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/game_phase.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PieceTypeAccuracy",
+      "field": [
+        {
+          "name": "piece_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PieceType"
+        },
+        {
+          "name": "accuracy_score",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ]
+    },
+    {
+      "name": "GamePhaseAccuracy",
+      "field": [
+        {
+          "name": "game_phase",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "accuracy_score",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ]
+    },
+    {
+      "name": "ColorAccuracy",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "accuracy_by_piece_type",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceTypeAccuracy"
+        },
+        {
+          "name": "accuracy_by_game_phase",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseAccuracy"
+        },
+        {
+          "name": "accuracy_overall",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "avg_centipawn_loss",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ]
+    },
+    {
+      "name": "VariationAccuracy",
+      "field": [
+        {
+          "name": "accuracy_by_color",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ColorAccuracy"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AccuracyAlgorithm",
+      "value": [
+        {
+          "name": "ACCURACY_ALGORITHM_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ACCURACY_ALGORITHM_CAPS2",
+          "number": 1
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

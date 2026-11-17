@@ -1,0 +1,4255 @@
+[
+  {
+    "url": "https://www.chess.com/bundles/web/wdl/group1-shard1of1.bin",
+    "classification": "frontend WDL neural-network parameters",
+    "references": [
+      {
+        "source_id": "SRC-0065",
+        "offset": 75400,
+        "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+      },
+      {
+        "source_id": "SRC-0777",
+        "offset": 74959,
+        "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+      },
+      {
+        "source_id": "SRC-3006",
+        "offset": 178685,
+        "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+      },
+      {
+        "source_id": "SRC-3008",
+        "offset": 117369,
+        "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue",
+    "classification": "NNUE evaluation parameters",
+    "references": [
+      {
+        "source_id": "SRC-0202",
+        "offset": 2941,
+        "literal": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288919,
+        "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288964,
+        "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293710,
+        "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293755,
+        "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+      },
+      {
+        "source_id": "SRC-1147",
+        "offset": 1645,
+        "literal": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue",
+    "classification": "NNUE evaluation parameters",
+    "references": [
+      {
+        "source_id": "SRC-0202",
+        "offset": 3068,
+        "literal": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288829,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288874,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 1914029,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 1914432,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293620,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293665,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 1329203,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 1329606,
+        "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      },
+      {
+        "source_id": "SRC-1147",
+        "offset": 1580,
+        "literal": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/aggressive.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 277917,
+        "literal": "bundles/app/js/engine/books/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 277962,
+        "literal": "bundles/app/js/engine/books/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282708,
+        "literal": "bundles/app/js/engine/books/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282753,
+        "literal": "bundles/app/js/engine/books/aggressive.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/akiba_rubinstein.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278007,
+        "literal": "bundles/app/js/engine/books/akiba_rubinstein.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278058,
+        "literal": "bundles/app/js/engine/books/akiba_rubinstein.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282798,
+        "literal": "bundles/app/js/engine/books/akiba_rubinstein.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282849,
+        "literal": "bundles/app/js/engine/books/akiba_rubinstein.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/alekhine.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278109,
+        "literal": "bundles/app/js/engine/books/alekhine.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278152,
+        "literal": "bundles/app/js/engine/books/alekhine.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282900,
+        "literal": "bundles/app/js/engine/books/alekhine.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282943,
+        "literal": "bundles/app/js/engine/books/alekhine.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/alexandra_botez.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278195,
+        "literal": "bundles/app/js/engine/books/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278245,
+        "literal": "bundles/app/js/engine/books/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 282986,
+        "literal": "bundles/app/js/engine/books/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283036,
+        "literal": "bundles/app/js/engine/books/alexandra_botez.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/alexandra_kosteniuk.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278295,
+        "literal": "bundles/app/js/engine/books/alexandra_kosteniuk.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278349,
+        "literal": "bundles/app/js/engine/books/alexandra_kosteniuk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283086,
+        "literal": "bundles/app/js/engine/books/alexandra_kosteniuk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283140,
+        "literal": "bundles/app/js/engine/books/alexandra_kosteniuk.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/aman_hambleton.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278403,
+        "literal": "bundles/app/js/engine/books/aman_hambleton.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278452,
+        "literal": "bundles/app/js/engine/books/aman_hambleton.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283194,
+        "literal": "bundles/app/js/engine/books/aman_hambleton.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283243,
+        "literal": "bundles/app/js/engine/books/aman_hambleton.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/andrea_botez.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278501,
+        "literal": "bundles/app/js/engine/books/andrea_botez.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278548,
+        "literal": "bundles/app/js/engine/books/andrea_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283292,
+        "literal": "bundles/app/js/engine/books/andrea_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283339,
+        "literal": "bundles/app/js/engine/books/andrea_botez.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/anish_giri.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278595,
+        "literal": "bundles/app/js/engine/books/anish_giri.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278640,
+        "literal": "bundles/app/js/engine/books/anish_giri.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283386,
+        "literal": "bundles/app/js/engine/books/anish_giri.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283431,
+        "literal": "bundles/app/js/engine/books/anish_giri.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/anna_cramling.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278685,
+        "literal": "bundles/app/js/engine/books/anna_cramling.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278733,
+        "literal": "bundles/app/js/engine/books/anna_cramling.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283476,
+        "literal": "bundles/app/js/engine/books/anna_cramling.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283524,
+        "literal": "bundles/app/js/engine/books/anna_cramling.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/anna_muzychuk.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278781,
+        "literal": "bundles/app/js/engine/books/anna_muzychuk.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278829,
+        "literal": "bundles/app/js/engine/books/anna_muzychuk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283572,
+        "literal": "bundles/app/js/engine/books/anna_muzychuk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283620,
+        "literal": "bundles/app/js/engine/books/anna_muzychuk.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/anna_rudolf.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278877,
+        "literal": "bundles/app/js/engine/books/anna_rudolf.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 278923,
+        "literal": "bundles/app/js/engine/books/anna_rudolf.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283668,
+        "literal": "bundles/app/js/engine/books/anna_rudolf.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283714,
+        "literal": "bundles/app/js/engine/books/anna_rudolf.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/anthony_levin.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 278969,
+        "literal": "bundles/app/js/engine/books/anthony_levin.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279017,
+        "literal": "bundles/app/js/engine/books/anthony_levin.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283760,
+        "literal": "bundles/app/js/engine/books/anthony_levin.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283808,
+        "literal": "bundles/app/js/engine/books/anthony_levin.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/anthony_miles.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279065,
+        "literal": "bundles/app/js/engine/books/anthony_miles.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279113,
+        "literal": "bundles/app/js/engine/books/anthony_miles.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283856,
+        "literal": "bundles/app/js/engine/books/anthony_miles.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283904,
+        "literal": "bundles/app/js/engine/books/anthony_miles.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/aron_nimzowitsch.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279161,
+        "literal": "bundles/app/js/engine/books/aron_nimzowitsch.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279212,
+        "literal": "bundles/app/js/engine/books/aron_nimzowitsch.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 283952,
+        "literal": "bundles/app/js/engine/books/aron_nimzowitsch.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284003,
+        "literal": "bundles/app/js/engine/books/aron_nimzowitsch.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/avigail_rosenthal.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279263,
+        "literal": "bundles/app/js/engine/books/avigail_rosenthal.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279315,
+        "literal": "bundles/app/js/engine/books/avigail_rosenthal.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284054,
+        "literal": "bundles/app/js/engine/books/avigail_rosenthal.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284106,
+        "literal": "bundles/app/js/engine/books/avigail_rosenthal.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/balanced.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279367,
+        "literal": "bundles/app/js/engine/books/balanced.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279410,
+        "literal": "bundles/app/js/engine/books/balanced.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284158,
+        "literal": "bundles/app/js/engine/books/balanced.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284201,
+        "literal": "bundles/app/js/engine/books/balanced.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/beginner.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279453,
+        "literal": "bundles/app/js/engine/books/beginner.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279496,
+        "literal": "bundles/app/js/engine/books/beginner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284244,
+        "literal": "bundles/app/js/engine/books/beginner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284287,
+        "literal": "bundles/app/js/engine/books/beginner.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/benjamin_bok.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279539,
+        "literal": "bundles/app/js/engine/books/benjamin_bok.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279586,
+        "literal": "bundles/app/js/engine/books/benjamin_bok.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284330,
+        "literal": "bundles/app/js/engine/books/benjamin_bok.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284377,
+        "literal": "bundles/app/js/engine/books/benjamin_bok.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/benjamin_finegold.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279633,
+        "literal": "bundles/app/js/engine/books/benjamin_finegold.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279685,
+        "literal": "bundles/app/js/engine/books/benjamin_finegold.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284424,
+        "literal": "bundles/app/js/engine/books/benjamin_finegold.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284476,
+        "literal": "bundles/app/js/engine/books/benjamin_finegold.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/bent_larsen.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279737,
+        "literal": "bundles/app/js/engine/books/bent_larsen.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279783,
+        "literal": "bundles/app/js/engine/books/bent_larsen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284528,
+        "literal": "bundles/app/js/engine/books/bent_larsen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284574,
+        "literal": "bundles/app/js/engine/books/bent_larsen.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/bikfoot_wouter.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279829,
+        "literal": "bundles/app/js/engine/books/bikfoot_wouter.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279878,
+        "literal": "bundles/app/js/engine/books/bikfoot_wouter.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284620,
+        "literal": "bundles/app/js/engine/books/bikfoot_wouter.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284669,
+        "literal": "bundles/app/js/engine/books/bikfoot_wouter.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/book.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 279927,
+        "literal": "bundles/app/js/engine/books/book.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 279966,
+        "literal": "bundles/app/js/engine/books/book.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284718,
+        "literal": "bundles/app/js/engine/books/book.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284757,
+        "literal": "bundles/app/js/engine/books/book.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/botvinnik.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280005,
+        "literal": "bundles/app/js/engine/books/botvinnik.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280049,
+        "literal": "bundles/app/js/engine/books/botvinnik.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284796,
+        "literal": "bundles/app/js/engine/books/botvinnik.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284840,
+        "literal": "bundles/app/js/engine/books/botvinnik.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/capablanca.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280093,
+        "literal": "bundles/app/js/engine/books/capablanca.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280138,
+        "literal": "bundles/app/js/engine/books/capablanca.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284884,
+        "literal": "bundles/app/js/engine/books/capablanca.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284929,
+        "literal": "bundles/app/js/engine/books/capablanca.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/captain_evans.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280183,
+        "literal": "bundles/app/js/engine/books/captain_evans.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280231,
+        "literal": "bundles/app/js/engine/books/captain_evans.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 284974,
+        "literal": "bundles/app/js/engine/books/captain_evans.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285022,
+        "literal": "bundles/app/js/engine/books/captain_evans.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/carlsen.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280279,
+        "literal": "bundles/app/js/engine/books/carlsen.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280321,
+        "literal": "bundles/app/js/engine/books/carlsen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285070,
+        "literal": "bundles/app/js/engine/books/carlsen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285112,
+        "literal": "bundles/app/js/engine/books/carlsen.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/cccopenings.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280363,
+        "literal": "bundles/app/js/engine/books/cccopenings.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280409,
+        "literal": "bundles/app/js/engine/books/cccopenings.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285154,
+        "literal": "bundles/app/js/engine/books/cccopenings.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285200,
+        "literal": "bundles/app/js/engine/books/cccopenings.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/christian_pulisic.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280455,
+        "literal": "bundles/app/js/engine/books/christian_pulisic.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280507,
+        "literal": "bundles/app/js/engine/books/christian_pulisic.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285246,
+        "literal": "bundles/app/js/engine/books/christian_pulisic.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285298,
+        "literal": "bundles/app/js/engine/books/christian_pulisic.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/classical.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280559,
+        "literal": "bundles/app/js/engine/books/classical.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280603,
+        "literal": "bundles/app/js/engine/books/classical.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285350,
+        "literal": "bundles/app/js/engine/books/classical.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285394,
+        "literal": "bundles/app/js/engine/books/classical.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/dan_rozovsky.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280647,
+        "literal": "bundles/app/js/engine/books/dan_rozovsky.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280694,
+        "literal": "bundles/app/js/engine/books/dan_rozovsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285438,
+        "literal": "bundles/app/js/engine/books/dan_rozovsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285485,
+        "literal": "bundles/app/js/engine/books/dan_rozovsky.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/daniel_naroditsky.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280741,
+        "literal": "bundles/app/js/engine/books/daniel_naroditsky.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280793,
+        "literal": "bundles/app/js/engine/books/daniel_naroditsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285532,
+        "literal": "bundles/app/js/engine/books/daniel_naroditsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285584,
+        "literal": "bundles/app/js/engine/books/daniel_naroditsky.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/daryl_morey.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280845,
+        "literal": "bundles/app/js/engine/books/daryl_morey.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280891,
+        "literal": "bundles/app/js/engine/books/daryl_morey.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285636,
+        "literal": "bundles/app/js/engine/books/daryl_morey.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285682,
+        "literal": "bundles/app/js/engine/books/daryl_morey.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/david_howell.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 280937,
+        "literal": "bundles/app/js/engine/books/david_howell.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 280984,
+        "literal": "bundles/app/js/engine/books/david_howell.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285728,
+        "literal": "bundles/app/js/engine/books/david_howell.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285775,
+        "literal": "bundles/app/js/engine/books/david_howell.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/dawid_czerw.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281031,
+        "literal": "bundles/app/js/engine/books/dawid_czerw.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281077,
+        "literal": "bundles/app/js/engine/books/dawid_czerw.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285822,
+        "literal": "bundles/app/js/engine/books/dawid_czerw.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285868,
+        "literal": "bundles/app/js/engine/books/dawid_czerw.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/ding.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281123,
+        "literal": "bundles/app/js/engine/books/ding.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281162,
+        "literal": "bundles/app/js/engine/books/ding.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285914,
+        "literal": "bundles/app/js/engine/books/ding.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285953,
+        "literal": "bundles/app/js/engine/books/ding.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/dodge_coates.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281201,
+        "literal": "bundles/app/js/engine/books/dodge_coates.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281248,
+        "literal": "bundles/app/js/engine/books/dodge_coates.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 285992,
+        "literal": "bundles/app/js/engine/books/dodge_coates.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286039,
+        "literal": "bundles/app/js/engine/books/dodge_coates.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/dylan_rittman.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281295,
+        "literal": "bundles/app/js/engine/books/dylan_rittman.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281343,
+        "literal": "bundles/app/js/engine/books/dylan_rittman.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286086,
+        "literal": "bundles/app/js/engine/books/dylan_rittman.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286134,
+        "literal": "bundles/app/js/engine/books/dylan_rittman.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/eric_hansen.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281469,
+        "literal": "bundles/app/js/engine/books/eric_hansen.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281515,
+        "literal": "bundles/app/js/engine/books/eric_hansen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286260,
+        "literal": "bundles/app/js/engine/books/eric_hansen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286306,
+        "literal": "bundles/app/js/engine/books/eric_hansen.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/erik_allebest.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281561,
+        "literal": "bundles/app/js/engine/books/erik_allebest.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281609,
+        "literal": "bundles/app/js/engine/books/erik_allebest.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286352,
+        "literal": "bundles/app/js/engine/books/erik_allebest.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286400,
+        "literal": "bundles/app/js/engine/books/erik_allebest.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/ethan_metzger.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281657,
+        "literal": "bundles/app/js/engine/books/ethan_metzger.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281705,
+        "literal": "bundles/app/js/engine/books/ethan_metzger.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286448,
+        "literal": "bundles/app/js/engine/books/ethan_metzger.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286496,
+        "literal": "bundles/app/js/engine/books/ethan_metzger.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/euwe.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281753,
+        "literal": "bundles/app/js/engine/books/euwe.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281792,
+        "literal": "bundles/app/js/engine/books/euwe.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286544,
+        "literal": "bundles/app/js/engine/books/euwe.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286583,
+        "literal": "bundles/app/js/engine/books/euwe.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/f-pawner.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281831,
+        "literal": "bundles/app/js/engine/books/f-pawner.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281874,
+        "literal": "bundles/app/js/engine/books/f-pawner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286622,
+        "literal": "bundles/app/js/engine/books/f-pawner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286665,
+        "literal": "bundles/app/js/engine/books/f-pawner.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/fabiano_caruana.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 281917,
+        "literal": "bundles/app/js/engine/books/fabiano_caruana.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 281967,
+        "literal": "bundles/app/js/engine/books/fabiano_caruana.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286708,
+        "literal": "bundles/app/js/engine/books/fabiano_caruana.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286758,
+        "literal": "bundles/app/js/engine/books/fabiano_caruana.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/fischer.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282017,
+        "literal": "bundles/app/js/engine/books/fischer.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282059,
+        "literal": "bundles/app/js/engine/books/fischer.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286808,
+        "literal": "bundles/app/js/engine/books/fischer.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286850,
+        "literal": "bundles/app/js/engine/books/fischer.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/gambit.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282101,
+        "literal": "bundles/app/js/engine/books/gambit.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282142,
+        "literal": "bundles/app/js/engine/books/gambit.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286892,
+        "literal": "bundles/app/js/engine/books/gambit.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286933,
+        "literal": "bundles/app/js/engine/books/gambit.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/hou_yifan.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282183,
+        "literal": "bundles/app/js/engine/books/hou_yifan.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282227,
+        "literal": "bundles/app/js/engine/books/hou_yifan.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 286974,
+        "literal": "bundles/app/js/engine/books/hou_yifan.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287018,
+        "literal": "bundles/app/js/engine/books/hou_yifan.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/hunter_klotz_burwell.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282271,
+        "literal": "bundles/app/js/engine/books/hunter_klotz_burwell.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282326,
+        "literal": "bundles/app/js/engine/books/hunter_klotz_burwell.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287062,
+        "literal": "bundles/app/js/engine/books/hunter_klotz_burwell.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287117,
+        "literal": "bundles/app/js/engine/books/hunter_klotz_burwell.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/ian_nepomniachtchi.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282381,
+        "literal": "bundles/app/js/engine/books/ian_nepomniachtchi.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282434,
+        "literal": "bundles/app/js/engine/books/ian_nepomniachtchi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287172,
+        "literal": "bundles/app/js/engine/books/ian_nepomniachtchi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287225,
+        "literal": "bundles/app/js/engine/books/ian_nepomniachtchi.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/indian.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282487,
+        "literal": "bundles/app/js/engine/books/indian.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282528,
+        "literal": "bundles/app/js/engine/books/indian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287278,
+        "literal": "bundles/app/js/engine/books/indian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287319,
+        "literal": "bundles/app/js/engine/books/indian.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/irina_krush.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282569,
+        "literal": "bundles/app/js/engine/books/irina_krush.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282615,
+        "literal": "bundles/app/js/engine/books/irina_krush.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287360,
+        "literal": "bundles/app/js/engine/books/irina_krush.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287406,
+        "literal": "bundles/app/js/engine/books/irina_krush.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/james_canty.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282661,
+        "literal": "bundles/app/js/engine/books/james_canty.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282707,
+        "literal": "bundles/app/js/engine/books/james_canty.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287452,
+        "literal": "bundles/app/js/engine/books/james_canty.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287498,
+        "literal": "bundles/app/js/engine/books/james_canty.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/jay_severson.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282753,
+        "literal": "bundles/app/js/engine/books/jay_severson.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282800,
+        "literal": "bundles/app/js/engine/books/jay_severson.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287544,
+        "literal": "bundles/app/js/engine/books/jay_severson.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287591,
+        "literal": "bundles/app/js/engine/books/jay_severson.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/jeremy_kane.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282847,
+        "literal": "bundles/app/js/engine/books/jeremy_kane.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282893,
+        "literal": "bundles/app/js/engine/books/jeremy_kane.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287638,
+        "literal": "bundles/app/js/engine/books/jeremy_kane.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287684,
+        "literal": "bundles/app/js/engine/books/jeremy_kane.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/jonathan_cannon.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 282939,
+        "literal": "bundles/app/js/engine/books/jonathan_cannon.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 282989,
+        "literal": "bundles/app/js/engine/books/jonathan_cannon.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287730,
+        "literal": "bundles/app/js/engine/books/jonathan_cannon.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287780,
+        "literal": "bundles/app/js/engine/books/jonathan_cannon.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/joseph_votto.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283039,
+        "literal": "bundles/app/js/engine/books/joseph_votto.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283086,
+        "literal": "bundles/app/js/engine/books/joseph_votto.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287830,
+        "literal": "bundles/app/js/engine/books/joseph_votto.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287877,
+        "literal": "bundles/app/js/engine/books/joseph_votto.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/judit_polgar.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283133,
+        "literal": "bundles/app/js/engine/books/judit_polgar.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283180,
+        "literal": "bundles/app/js/engine/books/judit_polgar.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287924,
+        "literal": "bundles/app/js/engine/books/judit_polgar.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 287971,
+        "literal": "bundles/app/js/engine/books/judit_polgar.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/julien_song.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283227,
+        "literal": "bundles/app/js/engine/books/julien_song.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283273,
+        "literal": "bundles/app/js/engine/books/julien_song.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288018,
+        "literal": "bundles/app/js/engine/books/julien_song.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288064,
+        "literal": "bundles/app/js/engine/books/julien_song.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/karpov.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283319,
+        "literal": "bundles/app/js/engine/books/karpov.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283360,
+        "literal": "bundles/app/js/engine/books/karpov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288110,
+        "literal": "bundles/app/js/engine/books/karpov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288151,
+        "literal": "bundles/app/js/engine/books/karpov.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/kasparov.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283401,
+        "literal": "bundles/app/js/engine/books/kasparov.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283444,
+        "literal": "bundles/app/js/engine/books/kasparov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288192,
+        "literal": "bundles/app/js/engine/books/kasparov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288235,
+        "literal": "bundles/app/js/engine/books/kasparov.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/kassa_korley.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283487,
+        "literal": "bundles/app/js/engine/books/kassa_korley.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283534,
+        "literal": "bundles/app/js/engine/books/kassa_korley.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288278,
+        "literal": "bundles/app/js/engine/books/kassa_korley.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288325,
+        "literal": "bundles/app/js/engine/books/kassa_korley.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/kenneth_wilber.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283581,
+        "literal": "bundles/app/js/engine/books/kenneth_wilber.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283630,
+        "literal": "bundles/app/js/engine/books/kenneth_wilber.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288372,
+        "literal": "bundles/app/js/engine/books/kenneth_wilber.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288421,
+        "literal": "bundles/app/js/engine/books/kenneth_wilber.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/kevin_bordi.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283679,
+        "literal": "bundles/app/js/engine/books/kevin_bordi.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283725,
+        "literal": "bundles/app/js/engine/books/kevin_bordi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288470,
+        "literal": "bundles/app/js/engine/books/kevin_bordi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288516,
+        "literal": "bundles/app/js/engine/books/kevin_bordi.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/komodo.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283771,
+        "literal": "bundles/app/js/engine/books/komodo.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283812,
+        "literal": "bundles/app/js/engine/books/komodo.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288562,
+        "literal": "bundles/app/js/engine/books/komodo.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288603,
+        "literal": "bundles/app/js/engine/books/komodo.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/korchnoi.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283853,
+        "literal": "bundles/app/js/engine/books/korchnoi.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283896,
+        "literal": "bundles/app/js/engine/books/korchnoi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288644,
+        "literal": "bundles/app/js/engine/books/korchnoi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288687,
+        "literal": "bundles/app/js/engine/books/korchnoi.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/krikor_mekhitarian.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 283939,
+        "literal": "bundles/app/js/engine/books/krikor_mekhitarian.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 283992,
+        "literal": "bundles/app/js/engine/books/krikor_mekhitarian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288730,
+        "literal": "bundles/app/js/engine/books/krikor_mekhitarian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288783,
+        "literal": "bundles/app/js/engine/books/krikor_mekhitarian.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/lasker.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284045,
+        "literal": "bundles/app/js/engine/books/lasker.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284086,
+        "literal": "bundles/app/js/engine/books/lasker.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288836,
+        "literal": "bundles/app/js/engine/books/lasker.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288877,
+        "literal": "bundles/app/js/engine/books/lasker.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/leo_stokes.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284127,
+        "literal": "bundles/app/js/engine/books/leo_stokes.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284172,
+        "literal": "bundles/app/js/engine/books/leo_stokes.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288918,
+        "literal": "bundles/app/js/engine/books/leo_stokes.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 288963,
+        "literal": "bundles/app/js/engine/books/leo_stokes.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/levon_aronian.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284217,
+        "literal": "bundles/app/js/engine/books/levon_aronian.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284265,
+        "literal": "bundles/app/js/engine/books/levon_aronian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289008,
+        "literal": "bundles/app/js/engine/books/levon_aronian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289056,
+        "literal": "bundles/app/js/engine/books/levon_aronian.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/levy_rozman.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284313,
+        "literal": "bundles/app/js/engine/books/levy_rozman.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284359,
+        "literal": "bundles/app/js/engine/books/levy_rozman.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289104,
+        "literal": "bundles/app/js/engine/books/levy_rozman.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289150,
+        "literal": "bundles/app/js/engine/books/levy_rozman.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/luis_fernandez_siles.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284405,
+        "literal": "bundles/app/js/engine/books/luis_fernandez_siles.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284460,
+        "literal": "bundles/app/js/engine/books/luis_fernandez_siles.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289196,
+        "literal": "bundles/app/js/engine/books/luis_fernandez_siles.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289251,
+        "literal": "bundles/app/js/engine/books/luis_fernandez_siles.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/martin_enev.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284515,
+        "literal": "bundles/app/js/engine/books/martin_enev.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284561,
+        "literal": "bundles/app/js/engine/books/martin_enev.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289306,
+        "literal": "bundles/app/js/engine/books/martin_enev.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289352,
+        "literal": "bundles/app/js/engine/books/martin_enev.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/matt_turner.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284607,
+        "literal": "bundles/app/js/engine/books/matt_turner.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284653,
+        "literal": "bundles/app/js/engine/books/matt_turner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289398,
+        "literal": "bundles/app/js/engine/books/matt_turner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289444,
+        "literal": "bundles/app/js/engine/books/matt_turner.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/maurice_ashley.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284699,
+        "literal": "bundles/app/js/engine/books/maurice_ashley.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284748,
+        "literal": "bundles/app/js/engine/books/maurice_ashley.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289490,
+        "literal": "bundles/app/js/engine/books/maurice_ashley.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289539,
+        "literal": "bundles/app/js/engine/books/maurice_ashley.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/michael_greene.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284797,
+        "literal": "bundles/app/js/engine/books/michael_greene.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284846,
+        "literal": "bundles/app/js/engine/books/michael_greene.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289588,
+        "literal": "bundles/app/js/engine/books/michael_greene.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289637,
+        "literal": "bundles/app/js/engine/books/michael_greene.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/mike_klein.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284895,
+        "literal": "bundles/app/js/engine/books/mike_klein.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 284940,
+        "literal": "bundles/app/js/engine/books/mike_klein.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289686,
+        "literal": "bundles/app/js/engine/books/mike_klein.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289731,
+        "literal": "bundles/app/js/engine/books/mike_klein.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/nakamura.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 284985,
+        "literal": "bundles/app/js/engine/books/nakamura.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285028,
+        "literal": "bundles/app/js/engine/books/nakamura.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289776,
+        "literal": "bundles/app/js/engine/books/nakamura.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289819,
+        "literal": "bundles/app/js/engine/books/nakamura.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/nakamura_classic.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285071,
+        "literal": "bundles/app/js/engine/books/nakamura_classic.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285122,
+        "literal": "bundles/app/js/engine/books/nakamura_classic.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289862,
+        "literal": "bundles/app/js/engine/books/nakamura_classic.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289913,
+        "literal": "bundles/app/js/engine/books/nakamura_classic.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/naritav.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285173,
+        "literal": "bundles/app/js/engine/books/naritav.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285215,
+        "literal": "bundles/app/js/engine/books/naritav.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 289964,
+        "literal": "bundles/app/js/engine/books/naritav.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290006,
+        "literal": "bundles/app/js/engine/books/naritav.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/naycir_gurpinar.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285257,
+        "literal": "bundles/app/js/engine/books/naycir_gurpinar.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285307,
+        "literal": "bundles/app/js/engine/books/naycir_gurpinar.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290048,
+        "literal": "bundles/app/js/engine/books/naycir_gurpinar.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290098,
+        "literal": "bundles/app/js/engine/books/naycir_gurpinar.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/offbeat.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285357,
+        "literal": "bundles/app/js/engine/books/offbeat.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285399,
+        "literal": "bundles/app/js/engine/books/offbeat.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290148,
+        "literal": "bundles/app/js/engine/books/offbeat.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290190,
+        "literal": "bundles/app/js/engine/books/offbeat.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/oleksandr_bortnyk.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285441,
+        "literal": "bundles/app/js/engine/books/oleksandr_bortnyk.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285493,
+        "literal": "bundles/app/js/engine/books/oleksandr_bortnyk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290232,
+        "literal": "bundles/app/js/engine/books/oleksandr_bortnyk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290284,
+        "literal": "bundles/app/js/engine/books/oleksandr_bortnyk.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/paul_morphy.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285545,
+        "literal": "bundles/app/js/engine/books/paul_morphy.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285591,
+        "literal": "bundles/app/js/engine/books/paul_morphy.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290336,
+        "literal": "bundles/app/js/engine/books/paul_morphy.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290382,
+        "literal": "bundles/app/js/engine/books/paul_morphy.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/pepecuenca.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285637,
+        "literal": "bundles/app/js/engine/books/pepecuenca.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285682,
+        "literal": "bundles/app/js/engine/books/pepecuenca.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290428,
+        "literal": "bundles/app/js/engine/books/pepecuenca.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290473,
+        "literal": "bundles/app/js/engine/books/pepecuenca.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/petrosian.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285727,
+        "literal": "bundles/app/js/engine/books/petrosian.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285771,
+        "literal": "bundles/app/js/engine/books/petrosian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290518,
+        "literal": "bundles/app/js/engine/books/petrosian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290562,
+        "literal": "bundles/app/js/engine/books/petrosian.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/phiona_mutesi.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285815,
+        "literal": "bundles/app/js/engine/books/phiona_mutesi.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285863,
+        "literal": "bundles/app/js/engine/books/phiona_mutesi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290606,
+        "literal": "bundles/app/js/engine/books/phiona_mutesi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290654,
+        "literal": "bundles/app/js/engine/books/phiona_mutesi.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/pia_cramling.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 285911,
+        "literal": "bundles/app/js/engine/books/pia_cramling.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 285958,
+        "literal": "bundles/app/js/engine/books/pia_cramling.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290702,
+        "literal": "bundles/app/js/engine/books/pia_cramling.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290749,
+        "literal": "bundles/app/js/engine/books/pia_cramling.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/positional.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286005,
+        "literal": "bundles/app/js/engine/books/positional.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286050,
+        "literal": "bundles/app/js/engine/books/positional.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290796,
+        "literal": "bundles/app/js/engine/books/positional.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290841,
+        "literal": "bundles/app/js/engine/books/positional.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/qiyu_zhou.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286095,
+        "literal": "bundles/app/js/engine/books/qiyu_zhou.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286139,
+        "literal": "bundles/app/js/engine/books/qiyu_zhou.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290886,
+        "literal": "bundles/app/js/engine/books/qiyu_zhou.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290930,
+        "literal": "bundles/app/js/engine/books/qiyu_zhou.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/quick_queen.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286183,
+        "literal": "bundles/app/js/engine/books/quick_queen.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286229,
+        "literal": "bundles/app/js/engine/books/quick_queen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 290974,
+        "literal": "bundles/app/js/engine/books/quick_queen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291020,
+        "literal": "bundles/app/js/engine/books/quick_queen.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/raffael_chess.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286275,
+        "literal": "bundles/app/js/engine/books/raffael_chess.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286323,
+        "literal": "bundles/app/js/engine/books/raffael_chess.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291066,
+        "literal": "bundles/app/js/engine/books/raffael_chess.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291114,
+        "literal": "bundles/app/js/engine/books/raffael_chess.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/rensch.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286371,
+        "literal": "bundles/app/js/engine/books/rensch.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286412,
+        "literal": "bundles/app/js/engine/books/rensch.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291162,
+        "literal": "bundles/app/js/engine/books/rensch.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291203,
+        "literal": "bundles/app/js/engine/books/rensch.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/reuben_fine.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286453,
+        "literal": "bundles/app/js/engine/books/reuben_fine.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286499,
+        "literal": "bundles/app/js/engine/books/reuben_fine.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291244,
+        "literal": "bundles/app/js/engine/books/reuben_fine.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291290,
+        "literal": "bundles/app/js/engine/books/reuben_fine.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/richard_rapport.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286545,
+        "literal": "bundles/app/js/engine/books/richard_rapport.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286595,
+        "literal": "bundles/app/js/engine/books/richard_rapport.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291336,
+        "literal": "bundles/app/js/engine/books/richard_rapport.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291386,
+        "literal": "bundles/app/js/engine/books/richard_rapport.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/robert_hess.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286645,
+        "literal": "bundles/app/js/engine/books/robert_hess.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286691,
+        "literal": "bundles/app/js/engine/books/robert_hess.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291436,
+        "literal": "bundles/app/js/engine/books/robert_hess.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291482,
+        "literal": "bundles/app/js/engine/books/robert_hess.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/roland_walker.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286737,
+        "literal": "bundles/app/js/engine/books/roland_walker.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286785,
+        "literal": "bundles/app/js/engine/books/roland_walker.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291528,
+        "literal": "bundles/app/js/engine/books/roland_walker.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291576,
+        "literal": "bundles/app/js/engine/books/roland_walker.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/rory_smith.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286833,
+        "literal": "bundles/app/js/engine/books/rory_smith.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286878,
+        "literal": "bundles/app/js/engine/books/rory_smith.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291624,
+        "literal": "bundles/app/js/engine/books/rory_smith.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291669,
+        "literal": "bundles/app/js/engine/books/rory_smith.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/sam_copeland.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 286923,
+        "literal": "bundles/app/js/engine/books/sam_copeland.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 286970,
+        "literal": "bundles/app/js/engine/books/sam_copeland.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291714,
+        "literal": "bundles/app/js/engine/books/sam_copeland.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291761,
+        "literal": "bundles/app/js/engine/books/sam_copeland.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/samay_raina.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287017,
+        "literal": "bundles/app/js/engine/books/samay_raina.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287063,
+        "literal": "bundles/app/js/engine/books/samay_raina.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291808,
+        "literal": "bundles/app/js/engine/books/samay_raina.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291854,
+        "literal": "bundles/app/js/engine/books/samay_raina.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/samuel_reshevsky.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287109,
+        "literal": "bundles/app/js/engine/books/samuel_reshevsky.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287160,
+        "literal": "bundles/app/js/engine/books/samuel_reshevsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291900,
+        "literal": "bundles/app/js/engine/books/samuel_reshevsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 291951,
+        "literal": "bundles/app/js/engine/books/samuel_reshevsky.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/savielly_tartakower.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287211,
+        "literal": "bundles/app/js/engine/books/savielly_tartakower.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287265,
+        "literal": "bundles/app/js/engine/books/savielly_tartakower.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292002,
+        "literal": "bundles/app/js/engine/books/savielly_tartakower.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292056,
+        "literal": "bundles/app/js/engine/books/savielly_tartakower.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/smyslov.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287319,
+        "literal": "bundles/app/js/engine/books/smyslov.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287361,
+        "literal": "bundles/app/js/engine/books/smyslov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292110,
+        "literal": "bundles/app/js/engine/books/smyslov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292152,
+        "literal": "bundles/app/js/engine/books/smyslov.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/spassky.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287403,
+        "literal": "bundles/app/js/engine/books/spassky.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287445,
+        "literal": "bundles/app/js/engine/books/spassky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292194,
+        "literal": "bundles/app/js/engine/books/spassky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292236,
+        "literal": "bundles/app/js/engine/books/spassky.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/steinitz.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287487,
+        "literal": "bundles/app/js/engine/books/steinitz.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287530,
+        "literal": "bundles/app/js/engine/books/steinitz.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292278,
+        "literal": "bundles/app/js/engine/books/steinitz.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292321,
+        "literal": "bundles/app/js/engine/books/steinitz.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/tagir_nafikov.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287573,
+        "literal": "bundles/app/js/engine/books/tagir_nafikov.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287621,
+        "literal": "bundles/app/js/engine/books/tagir_nafikov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292364,
+        "literal": "bundles/app/js/engine/books/tagir_nafikov.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292412,
+        "literal": "bundles/app/js/engine/books/tagir_nafikov.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/tal.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287669,
+        "literal": "bundles/app/js/engine/books/tal.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287707,
+        "literal": "bundles/app/js/engine/books/tal.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292460,
+        "literal": "bundles/app/js/engine/books/tal.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292498,
+        "literal": "bundles/app/js/engine/books/tal.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/tania_sachdev.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287745,
+        "literal": "bundles/app/js/engine/books/tania_sachdev.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287793,
+        "literal": "bundles/app/js/engine/books/tania_sachdev.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292536,
+        "literal": "bundles/app/js/engine/books/tania_sachdev.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292584,
+        "literal": "bundles/app/js/engine/books/tania_sachdev.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/trapper.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287841,
+        "literal": "bundles/app/js/engine/books/trapper.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287883,
+        "literal": "bundles/app/js/engine/books/trapper.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292632,
+        "literal": "bundles/app/js/engine/books/trapper.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292674,
+        "literal": "bundles/app/js/engine/books/trapper.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/ulf_andersson.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 287925,
+        "literal": "bundles/app/js/engine/books/ulf_andersson.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 287973,
+        "literal": "bundles/app/js/engine/books/ulf_andersson.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292716,
+        "literal": "bundles/app/js/engine/books/ulf_andersson.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292764,
+        "literal": "bundles/app/js/engine/books/ulf_andersson.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/vidit_gujrathi.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288021,
+        "literal": "bundles/app/js/engine/books/vidit_gujrathi.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288070,
+        "literal": "bundles/app/js/engine/books/vidit_gujrathi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292812,
+        "literal": "bundles/app/js/engine/books/vidit_gujrathi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292861,
+        "literal": "bundles/app/js/engine/books/vidit_gujrathi.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/vinay_bhat.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288119,
+        "literal": "bundles/app/js/engine/books/vinay_bhat.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288164,
+        "literal": "bundles/app/js/engine/books/vinay_bhat.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292910,
+        "literal": "bundles/app/js/engine/books/vinay_bhat.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 292955,
+        "literal": "bundles/app/js/engine/books/vinay_bhat.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/vince_wilfork.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288209,
+        "literal": "bundles/app/js/engine/books/vince_wilfork.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288257,
+        "literal": "bundles/app/js/engine/books/vince_wilfork.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293000,
+        "literal": "bundles/app/js/engine/books/vince_wilfork.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293048,
+        "literal": "bundles/app/js/engine/books/vince_wilfork.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/vishy_anand.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288305,
+        "literal": "bundles/app/js/engine/books/vishy_anand.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288351,
+        "literal": "bundles/app/js/engine/books/vishy_anand.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293096,
+        "literal": "bundles/app/js/engine/books/vishy_anand.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293142,
+        "literal": "bundles/app/js/engine/books/vishy_anand.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/vladimir_kramnik.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288397,
+        "literal": "bundles/app/js/engine/books/vladimir_kramnik.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288448,
+        "literal": "bundles/app/js/engine/books/vladimir_kramnik.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293188,
+        "literal": "bundles/app/js/engine/books/vladimir_kramnik.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293239,
+        "literal": "bundles/app/js/engine/books/vladimir_kramnik.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/wesley_so.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288499,
+        "literal": "bundles/app/js/engine/books/wesley_so.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288543,
+        "literal": "bundles/app/js/engine/books/wesley_so.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293290,
+        "literal": "bundles/app/js/engine/books/wesley_so.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293334,
+        "literal": "bundles/app/js/engine/books/wesley_so.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/will_stewart.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288587,
+        "literal": "bundles/app/js/engine/books/will_stewart.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288634,
+        "literal": "bundles/app/js/engine/books/will_stewart.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293378,
+        "literal": "bundles/app/js/engine/books/will_stewart.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293425,
+        "literal": "bundles/app/js/engine/books/will_stewart.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/winger.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 288681,
+        "literal": "bundles/app/js/engine/books/winger.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 288722,
+        "literal": "bundles/app/js/engine/books/winger.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293472,
+        "literal": "bundles/app/js/engine/books/winger.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 293513,
+        "literal": "bundles/app/js/engine/books/winger.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 292135,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 292208,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 6761,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 6834,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 7580,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 7653,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 296926,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 296999,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/aggressive.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 292281,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 292359,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 6907,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 7726,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "offset": 7804,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297072,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297150,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_botez.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/alexandra_kosteniuk.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 292437,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_kosteniuk.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 292519,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_kosteniuk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297228,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_kosteniuk.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297310,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/alexandra_kosteniuk.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/andrea_botez.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 292601,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/andrea_botez.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 292676,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/andrea_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297392,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/andrea_botez.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297467,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/andrea_botez.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/anish_giri.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 292751,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anish_giri.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 292824,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anish_giri.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297542,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anish_giri.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297615,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anish_giri.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/anna_rudolf.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 292897,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anna_rudolf.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 292971,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anna_rudolf.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297688,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anna_rudolf.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297762,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/anna_rudolf.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/balanced.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293045,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/balanced.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293116,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/balanced.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297836,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/balanced.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297907,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/balanced.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/beginner.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293187,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/beginner.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293258,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/beginner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 297978,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/beginner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298049,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/beginner.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/classical.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293329,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/classical.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293401,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/classical.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298120,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/classical.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298192,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/classical.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/daniel_naroditsky.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293473,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/daniel_naroditsky.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293553,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/daniel_naroditsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298264,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/daniel_naroditsky.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298344,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/daniel_naroditsky.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/eric_hansen.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293633,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/eric_hansen.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293707,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/eric_hansen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298424,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/eric_hansen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298498,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/eric_hansen.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/f-pawner.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293781,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/f-pawner.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293852,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/f-pawner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298572,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/f-pawner.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298643,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/f-pawner.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/fischer.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 293923,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/fischer.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 293993,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/fischer.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298714,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/fischer.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298784,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/fischer.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/gambit.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294063,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/gambit.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 294132,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/gambit.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298854,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/gambit.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298923,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/gambit.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/indian.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294201,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/indian.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 294270,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/indian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 298992,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/indian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299061,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/indian.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/kevin_bordi.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294339,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/kevin_bordi.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 294413,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/kevin_bordi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299130,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/kevin_bordi.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299204,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/kevin_bordi.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/krikor_mekhitarian.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294487,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/krikor_mekhitarian.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 294568,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/krikor_mekhitarian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299278,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/krikor_mekhitarian.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299359,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/krikor_mekhitarian.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/levy_rozman.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294649,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/levy_rozman.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 294723,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/levy_rozman.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299440,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/levy_rozman.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299514,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/levy_rozman.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/luis_fernandez_siles.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294797,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/luis_fernandez_siles.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 294880,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/luis_fernandez_siles.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299588,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/luis_fernandez_siles.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299671,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/luis_fernandez_siles.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/maurice_ashley.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 294963,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/maurice_ashley.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295040,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/maurice_ashley.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299754,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/maurice_ashley.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299831,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/maurice_ashley.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/nakamura.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295117,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/nakamura.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295188,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/nakamura.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299908,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/nakamura.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 299979,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/nakamura.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/naycir_gurpinar.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295259,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/naycir_gurpinar.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295337,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/naycir_gurpinar.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300050,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/naycir_gurpinar.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300128,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/naycir_gurpinar.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/offbeat.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295415,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/offbeat.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295485,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/offbeat.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300206,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/offbeat.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300276,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/offbeat.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/paul_morphy.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295555,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/paul_morphy.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295629,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/paul_morphy.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300346,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/paul_morphy.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300420,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/paul_morphy.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/positional.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295703,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/positional.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295776,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/positional.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300494,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/positional.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300567,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/positional.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/quick_queen.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295849,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/quick_queen.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 295923,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/quick_queen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300640,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/quick_queen.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300714,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/quick_queen.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/rensch.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 295997,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/rensch.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 296066,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/rensch.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300788,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/rensch.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300857,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/rensch.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/robert_hess.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 296135,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/robert_hess.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 296209,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/robert_hess.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 300926,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/robert_hess.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301000,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/robert_hess.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/samay_raina.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 296283,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/samay_raina.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 296357,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/samay_raina.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301074,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/samay_raina.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301148,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/samay_raina.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/vishy_anand.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 296431,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vishy_anand.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 296505,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vishy_anand.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301222,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vishy_anand.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301296,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vishy_anand.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/vladimir_kramnik.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 296579,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vladimir_kramnik.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 296658,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vladimir_kramnik.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301370,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vladimir_kramnik.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301449,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/vladimir_kramnik.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/winger.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 296737,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/winger.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 296806,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/winger.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301528,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/winger.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301597,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/winger.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/komodo.bin",
+    "classification": "model/data candidate; runtime dependency unproven",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 296979,
+        "literal": "bundles/app/js/vendor/jschessengine/komodo.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 297028,
+        "literal": "bundles/app/js/vendor/jschessengine/komodo.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301770,
+        "literal": "bundles/app/js/vendor/jschessengine/komodo.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 301819,
+        "literal": "bundles/app/js/vendor/jschessengine/komodo.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/stockfish.bin",
+    "classification": "model/data candidate; runtime dependency unproven",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 297283,
+        "literal": "bundles/app/js/vendor/jschessengine/stockfish.bin"
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 297335,
+        "literal": "bundles/app/js/vendor/jschessengine/stockfish.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 302074,
+        "literal": "bundles/app/js/vendor/jschessengine/stockfish.bin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 302126,
+        "literal": "bundles/app/js/vendor/jschessengine/stockfish.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/web/voice/chess.model",
+    "classification": "model/data candidate; runtime dependency unproven",
+    "references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 2627652,
+        "literal": "bundles/web/voice/chess.model"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/books/${e}.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-1137",
+        "offset": 2716665,
+        "literal": "bundles/app/js/engine/books/${e}.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/jschessengine/books/personalities/${e}.bin",
+    "classification": "opening-book payload",
+    "references": [
+      {
+        "source_id": "SRC-1137",
+        "offset": 2716704,
+        "literal": "bundles/app/js/vendor/jschessengine/books/personalities/${e}.bin"
+      }
+    ],
+    "qualification": "Literal reference does not prove this is fetched by every WASM build."
+  },
+  {
+    "url": "https://www.chess.com/bundles/web/wdl/model.json",
+    "classification": "frontend WDL neural-network topology",
+    "references": [
+      {
+        "source_id": "SRC-0065 and SRC-0777",
+        "literal": "wdlJsonModel: /bundles/web/wdl/model.json"
+      }
+    ],
+    "qualification": "Frontend metadata reference; not automatically a CEE/Torch WASM import."
+  }
+]

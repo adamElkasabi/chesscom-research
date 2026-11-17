@@ -1,0 +1,24 @@
+{
+  "url": "https://www.chess.com/r2/assets-chess-engine/models/topaz_jackdaw.bin.q8mix",
+  "method": "GET",
+  "credentials": "none",
+  "discovery": "computer-shared.js:Y6e + X6e + jJ;explicit public path,not previously failed coach/charm route",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 15 Nov 2026 14:12:38 GMT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "11946339",
+    "ETag": "\"221db924cd25bd808c10b2269dfed52e\"",
+    "Last-Modified": "Fri, 16 Oct 2026 17:31:09 GMT",
+    "access-control-allow-origin": "*",
+    "Server": "cloudflare",
+    "Cache-Control": "public, max-age=31536000",
+    "cf-cache-status": "HIT"
+  },
+  "bytes": 11946339,
+  "sha256": "1f78db3d3184550ff56db7a0f14b72910b039a894dcc97ff8ef7bb8915f26423",
+  "complete": true,
+  "evidence_id": "THB-MODEL-001",
+  "binary_packaged": false,
+  "reason": "11,946,339-byte model omitted to keep the incremental patch small; exact URL/hash, header, tensor record manifest, parser and optional verified downloader provided. Native load/execution evidence included."
+}

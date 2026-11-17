@@ -1,0 +1,56 @@
+{
+  "name": "chesscom/payments/v1/gift_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "ListEligibleGiftRecipientsRequest",
+      "field": [
+        {
+          "name": "user_uuids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "product",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Product",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_product"
+        }
+      ]
+    },
+    {
+      "name": "ListEligibleGiftRecipientsResponse",
+      "field": [
+        {
+          "name": "eligible_user_uuids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "GiftService",
+      "method": [
+        {
+          "name": "ListEligibleGiftRecipients",
+          "input_type": ".chesscom.payments.v1.ListEligibleGiftRecipientsRequest",
+          "output_type": ".chesscom.payments.v1.ListEligibleGiftRecipientsResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

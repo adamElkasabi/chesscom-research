@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/location_fan.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/piece_details.proto"
+  ],
+  "message_type": [
+    {
+      "name": "LocationFan",
+      "field": [
+        {
+          "name": "source",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+        },
+        {
+          "name": "targets",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

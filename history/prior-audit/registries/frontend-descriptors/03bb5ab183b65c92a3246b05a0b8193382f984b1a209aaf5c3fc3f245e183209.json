@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/courses/v1/course_canonical_line.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseCanonicalLine",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

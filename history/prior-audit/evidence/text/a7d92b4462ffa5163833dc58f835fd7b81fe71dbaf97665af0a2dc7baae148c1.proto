@@ -1,0 +1,19 @@
+// source: chesscom/courses/v1/user_goal_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message SetUserGoalRequest {
+  optional .chesscom.courses.v1.GoalType goal_type = 1;
+}
+
+message SetUserGoalResponse {
+}
+
+message ClaimRewardRequest {
+  optional .chesscom.courses.v1.GoalType goal_type = 1;
+  repeated .chesscom.courses.v1.Reward reward = 2;
+}
+
+message ClaimRewardResponse {
+}

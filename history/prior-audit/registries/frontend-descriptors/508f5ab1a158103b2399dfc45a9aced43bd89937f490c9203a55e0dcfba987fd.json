@@ -1,0 +1,332 @@
+{
+  "name": "chesscom/explanation_engine/v1/skills.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SkillsPosition",
+      "field": [
+        {
+          "name": "ply",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "skills",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Skill"
+        },
+        {
+          "name": "validation_hash",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "Skill",
+      "value": [
+        {
+          "name": "SKILL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILL_CAPTURE",
+          "number": 1
+        },
+        {
+          "name": "SKILL_CHECK",
+          "number": 2
+        },
+        {
+          "name": "SKILL_CASTLE",
+          "number": 3
+        },
+        {
+          "name": "SKILL_CHECKMATE",
+          "number": 4
+        },
+        {
+          "name": "SKILL_FREE_PIECE",
+          "number": 5
+        },
+        {
+          "name": "SKILL_DEFEND_PIECE",
+          "number": 6
+        },
+        {
+          "name": "SKILL_RETREAT",
+          "number": 7
+        },
+        {
+          "name": "SKILL_DEVELOPS_PIECE",
+          "number": 8
+        },
+        {
+          "name": "SKILL_PAWNS_IN_CENTER",
+          "number": 9
+        },
+        {
+          "name": "SKILL_STRIKES_AT_CENTER",
+          "number": 10
+        },
+        {
+          "name": "SKILL_CONNECT_ROOKS",
+          "number": 11
+        },
+        {
+          "name": "SKILL_COMPLETE_DEVELOPMENT",
+          "number": 12
+        },
+        {
+          "name": "SKILL_ONE_BOOK_MOVE",
+          "number": 13
+        },
+        {
+          "name": "SKILL_TWO_BOOK_MOVES",
+          "number": 14
+        },
+        {
+          "name": "SKILL_THREE_BOOK_MOVES",
+          "number": 15
+        },
+        {
+          "name": "SKILL_FOUR_BOOK_MOVES",
+          "number": 16
+        },
+        {
+          "name": "SKILL_FIANCHETTO",
+          "number": 17
+        },
+        {
+          "name": "SKILL_RECAPTURE",
+          "number": 18
+        },
+        {
+          "name": "SKILL_WINNING_CAPTURE",
+          "number": 19
+        },
+        {
+          "name": "SKILL_BLOCKS_ATTACK",
+          "number": 20
+        },
+        {
+          "name": "SKILL_FORK",
+          "number": 21
+        },
+        {
+          "name": "SKILL_PIN",
+          "number": 22
+        },
+        {
+          "name": "SKILL_DEFEND_CHECKMATE",
+          "number": 23
+        },
+        {
+          "name": "SKILL_ABSOLUTE_PIN",
+          "number": 24
+        },
+        {
+          "name": "SKILL_DISCOVERED_ATTACK",
+          "number": 25
+        },
+        {
+          "name": "SKILL_KNIGHT_FORK",
+          "number": 26
+        },
+        {
+          "name": "SKILL_SKEWER",
+          "number": 27
+        },
+        {
+          "name": "SKILL_ATTACKING_PINNED_PIECE",
+          "number": 28
+        },
+        {
+          "name": "SKILL_TRAPPED_PIECE",
+          "number": 29
+        },
+        {
+          "name": "SKILL_REMOVES_DEFENDER",
+          "number": 30
+        },
+        {
+          "name": "SKILL_ROYAL_FORK",
+          "number": 31
+        },
+        {
+          "name": "SKILL_DISCOVERED_CHECK",
+          "number": 32
+        },
+        {
+          "name": "SKILL_COUNTER_THREAT",
+          "number": 33
+        },
+        {
+          "name": "SKILL_DEFEND_TACTIC",
+          "number": 34
+        },
+        {
+          "name": "SKILL_EXPLOITS_PIN",
+          "number": 35
+        },
+        {
+          "name": "SKILL_DOUBLE_CHECK",
+          "number": 36
+        },
+        {
+          "name": "SKILL_BRILLIANT_SACRIFICE",
+          "number": 37
+        },
+        {
+          "name": "SKILL_QUEEN_SACRIFICE",
+          "number": 38
+        },
+        {
+          "name": "SKILL_EQUAL_TRADE",
+          "number": 39
+        },
+        {
+          "name": "SKILL_POWERFUL_BISHOP",
+          "number": 40
+        },
+        {
+          "name": "SKILL_ROOK_TO_OPEN_FILE",
+          "number": 41
+        },
+        {
+          "name": "SKILL_KICK",
+          "number": 42
+        },
+        {
+          "name": "SKILL_OUTPOST",
+          "number": 43
+        },
+        {
+          "name": "SKILL_TRADING_TO_SIMPLIFY",
+          "number": 44
+        },
+        {
+          "name": "SKILL_DOUBLE_ROOKS",
+          "number": 45
+        },
+        {
+          "name": "SKILL_CREATES_BATTERY",
+          "number": 46
+        },
+        {
+          "name": "SKILL_PREVENT_CASTLING",
+          "number": 47
+        },
+        {
+          "name": "SKILL_WINS_TEMPO",
+          "number": 48
+        },
+        {
+          "name": "SKILL_AVOIDS_TRADE",
+          "number": 49
+        },
+        {
+          "name": "SKILL_DEVELOP_WITH_TEMPO",
+          "number": 50
+        },
+        {
+          "name": "SKILL_DAMAGES_OPPONENT_PAWN_STRUCTURE",
+          "number": 51
+        },
+        {
+          "name": "SKILL_EN_PASSANT",
+          "number": 52
+        },
+        {
+          "name": "SKILL_IMPROVES_PAWN_STRUCTURE",
+          "number": 53
+        },
+        {
+          "name": "SKILL_PAWN_STORM",
+          "number": 54
+        },
+        {
+          "name": "SKILL_PROMOTION",
+          "number": 55
+        },
+        {
+          "name": "SKILL_LADDER_MATE",
+          "number": 56
+        },
+        {
+          "name": "SKILL_BACKRANK_MATE",
+          "number": 57
+        },
+        {
+          "name": "SKILL_PUSHES_PASSED_PAWN",
+          "number": 58
+        },
+        {
+          "name": "SKILL_QUEEN_CHECKMATE",
+          "number": 59
+        },
+        {
+          "name": "SKILL_ROOK_CHECKMATE",
+          "number": 60
+        },
+        {
+          "name": "SKILL_MAKES_PASSED_PAWN",
+          "number": 61
+        },
+        {
+          "name": "SKILL_ACTIVATE_KING",
+          "number": 62
+        },
+        {
+          "name": "SKILL_ROOK_TO_SEVENTH",
+          "number": 63
+        },
+        {
+          "name": "SKILL_ROOK_BEHIND_OWN_PASSED_PAWN",
+          "number": 64
+        },
+        {
+          "name": "SKILL_OPPOSITION",
+          "number": 65
+        },
+        {
+          "name": "SKILL_DOUBLED_ROOKS_ON_THE_SEVENTH",
+          "number": 66
+        },
+        {
+          "name": "SKILL_ROOK_BEHIND_OPPOSING_PASSED_PAWN",
+          "number": 67
+        },
+        {
+          "name": "SKILL_MAKES_PROTECTED_PASSED_PAWN",
+          "number": 68
+        },
+        {
+          "name": "SKILL_KING_AND_PAWN_ENDGAMES",
+          "number": 69
+        },
+        {
+          "name": "SKILL_QUEEN_ENDGAMES",
+          "number": 70
+        },
+        {
+          "name": "SKILL_ROOK_ENDGAMES",
+          "number": 71
+        },
+        {
+          "name": "SKILL_KNIGHT_AND_BISHOP_ENDGAMES",
+          "number": 72
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

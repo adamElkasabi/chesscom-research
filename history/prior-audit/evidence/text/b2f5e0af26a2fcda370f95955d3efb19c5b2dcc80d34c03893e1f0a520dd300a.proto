@@ -1,0 +1,24 @@
+// source: chesscom/explanation_engine/v1/charm_inference_code.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message CharmInferenceCode {
+  optional string model_key = 1;
+  repeated int32 ratings = 2;
+  repeated uint32 engine_line_move_indexes = 3;
+  optional bytes coded_values = 4;
+}
+
+message NodeCharmInferenceCodes {
+  repeated .chesscom.explanation_engine.v1.CharmInferenceCode inferences = 1;
+}
+
+message CharmInferenceCodes {
+  optional int32 codebook_version = 1;
+  repeated .chesscom.explanation_engine.v1.CharmInferenceCodes.NodesEntry nodes = 2;
+  message NodesEntry {
+  optional int32 key = 1;
+  optional .chesscom.explanation_engine.v1.NodeCharmInferenceCodes value = 2;
+  }
+}

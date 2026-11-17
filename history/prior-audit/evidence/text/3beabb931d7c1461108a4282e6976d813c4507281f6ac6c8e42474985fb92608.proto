@@ -1,0 +1,32 @@
+// source: chesscom/inbox/v1/user_message_service.proto
+// syntax: proto3
+
+package chesscom.inbox.v1;
+
+message BatchSendUserMessageRequest {
+  optional string sender_user_uuid = 1;
+  repeated string recipient_user_uuids = 2;
+  optional string message_text = 3;
+  optional .chesscom.inbox.v1.BatchMessageContext context = 4;
+}
+
+message BatchSendUserMessageResponse {
+  repeated .chesscom.inbox.v1.BatchSendUserMessageResponse.Result results = 1;
+  message Result {
+    oneof _error_code {
+  string error_code = 3;
+    }
+  optional string recipient_user_uuid = 1;
+  optional bool success = 2;
+  }
+}
+
+message CheckCanSendUserMessageRequest {
+  optional string sender_user_uuid = 1;
+  optional string recipient_user_uuid = 2;
+}
+
+message CheckCanSendUserMessageResponse {
+  optional bool can_send = 1;
+  optional .chesscom.inbox.v1.MessageSendNotAllowedReason reason = 2;
+}

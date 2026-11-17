@@ -1,0 +1,45 @@
+// source: chesscom/explanation_engine/v1/feature_get_pgn.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum PgnAnnotationSerializationFormat {
+  PGN_ANNOTATION_SERIALIZATION_FORMAT_UNSPECIFIED = 0;
+  PGN_ANNOTATION_SERIALIZATION_FORMAT_CHESS_BASE = 1;
+  PGN_ANNOTATION_SERIALIZATION_FORMAT_CHESS_COM = 2;
+}
+
+message GetPgnRequest {
+  oneof game_to_convert {
+  .chesscom.chess.v1.Game game = 1;
+  .chesscom.explanation_engine.v1.GameState game_state = 2;
+  int32 starting_game_point = 3;
+  }
+  oneof _pgn_fen_header_notation {
+  .chesscom.explanation_engine.v1.FenNotation pgn_fen_header_notation = 4;
+  }
+  oneof _main_line_only {
+  bool main_line_only = 5;
+  }
+  oneof _user_variations_only {
+  bool user_variations_only = 6;
+  }
+  oneof _include_threats {
+  bool include_threats = 8;
+  }
+  oneof _include_all_scored_gamepoints {
+  bool include_all_scored_gamepoints = 9;
+  }
+  oneof _unscored_gamepoint_limit {
+  int32 unscored_gamepoint_limit = 10;
+  }
+  oneof _annotation_serialization_format {
+  .chesscom.explanation_engine.v1.PgnAnnotationSerializationFormat annotation_serialization_format = 12;
+  }
+  repeated int32 included_game_points = 7;
+  repeated int32 explicit_included_game_points = 11;
+}
+
+message GetPgnResponse {
+  optional string pgn = 1;
+}

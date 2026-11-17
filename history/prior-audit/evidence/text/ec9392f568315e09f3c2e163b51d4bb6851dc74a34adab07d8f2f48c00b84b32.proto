@@ -1,0 +1,11 @@
+// source: chesscom/shared_board/v1alpha/shared_board_participant_updated_notification.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+message SharedBoardParticipantUpdatedNotification {
+  optional string session_id = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 2;
+  optional bool removed = 3;
+  optional string author_id = 4;
+}

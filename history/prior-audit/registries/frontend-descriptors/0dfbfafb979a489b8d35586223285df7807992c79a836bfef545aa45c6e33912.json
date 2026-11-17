@@ -1,0 +1,177 @@
+{
+  "name": "chesscom/settings/v1/settings_board.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "BoardSetting",
+      "field": [
+        {
+          "name": "coordinates",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "move_list_style",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "animation_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "win_celebration",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "move_method",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "highlight_moves",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "white_always_on_bottom",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_sounds",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_legal_moves",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_animations",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "board_style",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "pieces_style",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "sound_theme",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "castling_type",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "move_classification_style",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "game_result_animations",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "game_over_screen",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/settings/v1/settings_watch.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "WatchSetting",
+      "field": [
+        {
+          "name": "advanced_engine_settings",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "player_names_above_and_below",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

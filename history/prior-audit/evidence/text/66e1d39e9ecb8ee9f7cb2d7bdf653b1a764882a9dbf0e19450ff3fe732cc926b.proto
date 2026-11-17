@@ -1,0 +1,43 @@
+// source: chesscom/ceac/v2/run_search.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message RunSearchRequest {
+  optional .chesscom.explanation_engine.v1.NewGameRequest new_game_req = 1;
+  optional .chesscom.explanation_engine.v1.RunSearchRequest run_search_req = 2;
+  optional .chesscom.engine.v1.Engine engine = 3;
+  optional .chesscom.ceac.v2.RequestMetadata request_metadata = 4;
+  optional .chesscom.ceac.v2.RequestOptions request_options = 5;
+  optional bool key_position_search = 6;
+}
+
+message RunSearchResponse {
+  oneof result {
+  .chesscom.ceac.v2.RunSearchResponseProgress progress = 1;
+  .chesscom.ceac.v2.RunSearchResponseSuccess success = 2;
+  .chesscom.ceac.v2.RunSearchResponseFailure failure = 3;
+  .chesscom.ceac.v2.Heartbeat heartbeat = 4;
+  .chesscom.ceac.v2.WaitingForCapacity waiting_for_capacity = 5;
+  }
+}
+
+message RunSearchResponseSuccess {
+  oneof _position_search_key {
+  string position_search_key = 2;
+  }
+  optional .chesscom.explanation_engine.v1.RunSearchResponse run_search = 1;
+}
+
+message RunSearchResponseProgress {
+  optional .chesscom.explanation_engine.v1.RunSearchResponse run_search = 1;
+}
+
+message RunSearchResponseFailure {
+  oneof error {
+  .chesscom.ceac.v2.InvalidGameError invalid_game_error = 3;
+  .chesscom.ceac.v2.GeneralError general_error = 4;
+  }
+  optional string reason = 1;
+  optional .chesscom.ceac.v2.FailureError failure_error = 5;
+}

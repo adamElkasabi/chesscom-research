@@ -1,0 +1,10 @@
+flowchart TD
+ UI[Frontend review UI] --> Cloud[Native full review CEAC WebSocket path]
+ Cloud --> Result[GameReview protobuf]
+ UI --> Local[Quick Analysis or extension local path]
+ Local --> Glue[Worker protobuf buffer bridge]
+ Glue --> WASM[CEE WASM]
+ WASM --> Result
+ Result --> Render[Numbers annotations speech and arrows]
+ Local --> Verify[Optional BrilliantVerification RPC]
+ Cloud -. no verified DB mapping .-> DB[Unknown internal persistence dependency]

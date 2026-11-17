@@ -1,0 +1,20 @@
+// source: chesscom/ratings/v2/variant_time_class_rating.proto
+// syntax: proto3
+
+package chesscom.ratings.v2;
+
+message VariantTimeClassRating {
+  optional .chesscom.chess.v1.Variant variant = 1;
+  optional .chesscom.chess.v1.TimeClass time_class = 2;
+  optional .chesscom.ratings.v2.Rating rating = 3;
+}
+
+message VariantTimeClassRatingGroup {
+  optional .chesscom.chess.v1.Variant variant = 1;
+  repeated .chesscom.ratings.v2.TimeClassRating time_class_rating = 2;
+}
+
+message TimeClassRating {
+  optional .chesscom.chess.v1.TimeClass time_class = 1;
+  optional .chesscom.ratings.v2.Rating rating = 2;
+}

@@ -1,0 +1,9 @@
+// source: chesscom/game_storage/v2/special_game_event.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+message SpecialGameEvent {
+  optional bool is_featured = 1;
+  optional bool is_pcl = 2;
+}

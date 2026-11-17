@@ -1,0 +1,9 @@
+
+Gchesscom/explanation_engine/v1alpha/internal_feature_maia_botmove.proto#chesscom.explanation_engine.v1alphachesscom/chess/v1/move.proto"U
+!InternalFeatureMaiaBotMoveRequest
+elo_self (
+elo_oppo (
+json (	"Y
+"InternalFeatureMaiaBotMoveResponse%
+move (2.chesscom.chess.v1.Move
+json (	bproto3

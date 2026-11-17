@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/user_gateway/v1/user_identifier.proto",
+  "package": "chesscom.user_gateway.v1",
+  "message_type": [
+    {
+      "name": "UserIdentifier",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "username",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "id"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

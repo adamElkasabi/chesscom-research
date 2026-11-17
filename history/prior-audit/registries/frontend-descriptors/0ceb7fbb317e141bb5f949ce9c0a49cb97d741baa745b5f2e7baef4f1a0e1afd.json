@@ -1,0 +1,70 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_coach_hint.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetCoachHintRequest",
+      "options": {}
+    },
+    {
+      "name": "GetCoachHintResponse",
+      "field": [
+        {
+          "name": "hint",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachHint",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_hint"
+        }
+      ]
+    },
+    {
+      "name": "CoachHint",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "speech",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "speech_debug_info",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SpeechDebugInfo",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_speech"
+        },
+        {
+          "name": "_speech_debug_info"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,11 @@
+// source: chesscom/payments/v1/incentive_external_association.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message IncentiveExternalAssociation {
+  optional int32 id = 1;
+  optional string incentive_id = 2;
+  optional string identifier = 3;
+  optional .chesscom.api.v1.Platform platform = 4;
+}

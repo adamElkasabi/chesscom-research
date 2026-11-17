@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_game_tree.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_point_info.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameTreeRequest"
+    },
+    {
+      "name": "GameTreeResponse",
+      "field": [
+        {
+          "name": "game_point_info",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

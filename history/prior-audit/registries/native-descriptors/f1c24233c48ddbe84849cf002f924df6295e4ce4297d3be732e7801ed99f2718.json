@@ -1,0 +1,334 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_puzzle_gen.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/cee_internal_engine.proto",
+    "chesscom/explanation_engine/v1/puzzle_gen.proto",
+    "chesscom/chess/v1/move.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PuzzleGenFailureReason",
+      "field": [
+        {
+          "name": "failure_phase",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGenPhase"
+        },
+        {
+          "name": "failure_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGenFailureType"
+        },
+        {
+          "name": "failure_message",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePuzzleGenRequest",
+      "field": [
+        {
+          "name": "stream_progress",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "full_selected_line",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "do_puzzle_tree_generation",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "do_selected_line_verification",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "do_pitch_verification",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "add_variations_to_pgn",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "mode",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGenMode",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "engine",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CeeInternalEngine",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_board_events_in_pgn",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "filter_board_events_in_pgn",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_speech_in_pgn",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "heartbeat_interval_seconds",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_do_puzzle_tree_generation"
+        },
+        {
+          "name": "_do_selected_line_verification"
+        },
+        {
+          "name": "_do_pitch_verification"
+        },
+        {
+          "name": "_add_variations_to_pgn"
+        },
+        {
+          "name": "_mode"
+        },
+        {
+          "name": "_engine"
+        },
+        {
+          "name": "_include_board_events_in_pgn"
+        },
+        {
+          "name": "_filter_board_events_in_pgn"
+        },
+        {
+          "name": "_include_speech_in_pgn"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePuzzleGenResponse",
+      "field": [
+        {
+          "name": "puzzle_gen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGen",
+          "oneof_index": 0
+        },
+        {
+          "name": "progress",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGenPhase",
+          "oneof_index": 0
+        },
+        {
+          "name": "log",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "failure_reason",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGenFailureReason",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_heartbeat",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "puzzle_response"
+        },
+        {
+          "name": "_failure_reason"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PuzzleGenPhase",
+      "value": [
+        {
+          "name": "PUZZLE_GEN_PHASE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_INIT",
+          "number": 1
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_BUILDING_PUZZLE_TREE",
+          "number": 2
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_ADDED_PUZZLE_TREE_NODE",
+          "number": 3
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_SELECTING_PUZZLE_LINE",
+          "number": 4
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_VERIFYING_SELECTED_LINE_EVALS",
+          "number": 5
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_PUZZLE_POSITION_VERIFICATION_IN_PROGRESS",
+          "number": 6
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_COMPUTING_GOALS",
+          "number": 7
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_COMPUTING_THEMES",
+          "number": 8
+        },
+        {
+          "name": "PUZZLE_GEN_PHASE_DONE",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "name": "PuzzleGenFailureType",
+      "value": [
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_ILLEGAL_MOVE",
+          "number": 1
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PUZZLE_TOO_SHORT",
+          "number": 2
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_ENDS_GAME",
+          "number": 3
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_AFTER_PITCH_TOO_LOSING",
+          "number": 4
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_BEFORE_PITCH_TOO_WINNING",
+          "number": 5
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_TOO_STRONG",
+          "number": 6
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_AFTER_PLAYER_BEST_MOVE_TOO_LOSING",
+          "number": 7
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_AFTER_PLAYER_ALT_MOVE_TOO_WINNING_ABSOLUTE",
+          "number": 8
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_AFTER_PLAYER_ALT_MOVE_TOO_WINNING_RELATIVE",
+          "number": 9
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PLAYER_MOVE_NOT_CRITICAL",
+          "number": 10
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_NOT_A_MISTAKE",
+          "number": 11
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_INVALID_GAME_PHASE",
+          "number": 12
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_LOSES_MATERIAL",
+          "number": 13
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_MATERIAL_IMBALANCE",
+          "number": 14
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_INVALID_EXPECTED_OUTCOME",
+          "number": 15
+        },
+        {
+          "name": "PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_INVALID_BOARD_EVENT",
+          "number": 16
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

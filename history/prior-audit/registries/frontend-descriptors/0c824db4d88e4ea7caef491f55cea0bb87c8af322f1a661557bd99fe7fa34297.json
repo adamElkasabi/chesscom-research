@@ -1,0 +1,53 @@
+{
+  "name": "chesscom/api/v1/error.proto",
+  "package": "chesscom.api.v1",
+  "message_type": [
+    {
+      "name": "TwirpError",
+      "field": [
+        {
+          "name": "msg",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "meta",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.TwirpError.MetaEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "MetaEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

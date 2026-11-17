@@ -1,0 +1,42 @@
+// source: chesscom/flair/v1/flair_service.proto
+// syntax: proto3
+
+package chesscom.flair.v1;
+
+message ListFlairSelectionRequest {
+}
+
+message ListFlairSelectionResponse {
+  repeated .chesscom.flair.v1.FlairSelectionItem flair_selection = 1;
+}
+
+message SelectFlairRequest {
+  optional string flair_id = 1;
+}
+
+message SelectFlairResponse {
+}
+
+message RemoveFlairRequest {
+}
+
+message RemoveFlairResponse {
+}
+
+message GetUserFlairRequest {
+  oneof _user_id {
+  string user_id = 16;
+  }
+}
+
+message GetUserFlairResponse {
+  optional .chesscom.flair.v1.UserFlair user_flair = 1;
+}
+
+message ListUserFlairRequest {
+  repeated string user_ids = 1;
+}
+
+message ListUserFlairResponse {
+  repeated .chesscom.flair.v1.UserFlair user_flair = 1;
+}

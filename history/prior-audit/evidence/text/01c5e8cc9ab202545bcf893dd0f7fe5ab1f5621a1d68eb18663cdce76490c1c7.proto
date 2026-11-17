@@ -1,0 +1,46 @@
+// source: chesscom/proto_options/kafka/v1/kafka_options.proto
+// syntax: proto3
+
+package chesscom.proto_options.kafka.v1;
+
+enum Duration {
+  DURATION_UNSPECIFIED = 0;
+  DURATION_ONE_HOUR = 3600000;
+  DURATION_TWO_HOURS = 7200000;
+  DURATION_ONE_DAY = 86400000;
+  DURATION_THREE_DAYS = 259200000;
+  DURATION_ONE_WEEK = 604800000;
+  DURATION_TWO_WEEKS = 1209600000;
+}
+
+message KafkaOptions {
+  optional .chesscom.proto_options.kafka.v1.KafkaConfigs default_config = 1;
+  repeated .chesscom.proto_options.kafka.v1.KafkaOptions.ConfigEntry config = 2;
+  optional bool chesskid = 3;
+  optional .chesscom.proto_options.kafka.v1.KafkaEnvironments environment_config = 4;
+  optional bool skip_schema_registry = 5;
+  message ConfigEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+}
+
+message KafkaEnvironments {
+  optional .chesscom.proto_options.kafka.v1.KafkaConfigs prod = 1;
+  optional .chesscom.proto_options.kafka.v1.KafkaConfigs sandbox = 2;
+  optional .chesscom.proto_options.kafka.v1.KafkaConfigs staging = 3;
+  optional .chesscom.proto_options.kafka.v1.KafkaConfigs chesskid_staging = 5;
+  optional .chesscom.proto_options.kafka.v1.KafkaConfigs chesskid_prod = 6;
+}
+
+message KafkaConfigs {
+  optional int32 retention_ms = 1;
+  optional string cleanup_policy = 2;
+  optional int32 num_partitions = 3;
+  repeated .chesscom.proto_options.kafka.v1.KafkaConfigs.AdditionalConfigEntry additional_config = 4;
+  optional .chesscom.proto_options.kafka.v1.Duration retention_duration = 5;
+  message AdditionalConfigEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+}

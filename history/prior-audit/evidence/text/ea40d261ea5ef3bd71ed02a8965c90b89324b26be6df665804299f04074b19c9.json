@@ -1,0 +1,7 @@
+{
+  "id": "normalized-NodeFudging-100",
+  "uciAfter": {
+    "Normalize": false,
+    "NodeFudging": 100
+  }
+}

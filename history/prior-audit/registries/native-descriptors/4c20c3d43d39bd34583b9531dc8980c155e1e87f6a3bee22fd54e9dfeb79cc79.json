@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_get_piece.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/piece_details.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGetPieceRequest",
+      "field": [
+        {
+          "name": "square",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square",
+          "oneof_index": 0
+        },
+        {
+          "name": "piece_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "piece"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGetPieceResponse",
+      "field": [
+        {
+          "name": "piece_details",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

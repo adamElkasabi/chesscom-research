@@ -1,0 +1,4772 @@
+{
+  "config": {
+    "id": "followup-hash128-softfalse",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 128,
+      "UseSoftNodes": false
+    },
+    "saveReview": true
+  },
+  "started": "2026-11-14T19:16:18.042Z",
+  "actual": {
+    "accuracy": {
+      "white": 65.15036010742188,
+      "black": 99.21577453613281
+    },
+    "ratings": {
+      "white": 100,
+      "black": 1000
+    },
+    "tallies": {
+      "white": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 6,
+        "9": 1,
+        "10": 0,
+        "11": 0,
+        "20": 0
+      },
+      "black": {
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 3,
+        "5": 4,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "20": 0
+      }
+    }
+  },
+  "engines": [
+    11
+  ],
+  "numericHash": "755db5fe49b0247429804f2637422f2fe0a70854d591f59c9dfb4012c01181fb",
+  "actualSettings": {
+    "userColor": 2,
+    "locale": 0,
+    "gameAnalysisSpeechVersion": 3,
+    "moveClassificationVersion": 2,
+    "search": {
+      "case": "searchSettings",
+      "value": {
+        "searchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 150000,
+          "timeLimitMs": 0,
+          "numLines": 2
+        },
+        "nullMoveSearchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 40000,
+          "timeLimitMs": 0,
+          "numLines": 1
+        }
+      }
+    },
+    "enableSkills": true
+  },
+  "speech": {
+    "sentences": 20,
+    "hashes": 20
+  },
+  "elapsedSeconds": 16.847,
+  "gameReview": {
+    "evalGraph": {
+      "evalGraphTicks": [
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": 52
+              }
+            },
+            "depth": 20,
+            "engine": 11
+          },
+          "moveClassification": 1
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": 73
+              }
+            },
+            "depth": 22,
+            "engine": 11
+          },
+          "moveClassification": 1
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -106
+              }
+            },
+            "depth": 23,
+            "engine": 11
+          },
+          "moveClassification": 1
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -106
+              }
+            },
+            "depth": 22,
+            "engine": 11
+          },
+          "moveClassification": 1,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -237
+              }
+            },
+            "depth": 21,
+            "engine": 11
+          },
+          "moveClassification": 8,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -237
+              }
+            },
+            "depth": 20,
+            "engine": 11
+          },
+          "moveClassification": 4
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -960
+              }
+            },
+            "depth": 17,
+            "engine": 11
+          },
+          "moveClassification": 9,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -960
+              }
+            },
+            "depth": 16,
+            "engine": 11
+          },
+          "moveClassification": 3,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1100
+              }
+            },
+            "depth": 17,
+            "engine": 11
+          },
+          "moveClassification": 5
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1100
+              }
+            },
+            "depth": 16,
+            "engine": 11
+          },
+          "moveClassification": 4
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1402
+              }
+            },
+            "depth": 17,
+            "engine": 11
+          },
+          "moveClassification": 8,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1345
+              }
+            },
+            "depth": 20,
+            "engine": 11
+          },
+          "moveClassification": 5
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1461
+              }
+            },
+            "depth": 17,
+            "engine": 11
+          },
+          "moveClassification": 8,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1451
+              }
+            },
+            "depth": 20,
+            "engine": 11
+          },
+          "moveClassification": 5
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1570
+              }
+            },
+            "depth": 19,
+            "engine": 11
+          },
+          "moveClassification": 8,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1469
+              }
+            },
+            "depth": 18,
+            "engine": 11
+          },
+          "moveClassification": 5
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1608
+              }
+            },
+            "depth": 17,
+            "engine": 11
+          },
+          "moveClassification": 8,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "scoreCentipawnsWhite",
+                "value": -1565
+              }
+            },
+            "depth": 18,
+            "engine": 11
+          },
+          "moveClassification": 5
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "mateInBlack",
+                "value": 1
+              }
+            },
+            "depth": 97,
+            "engine": 11
+          },
+          "moveClassification": 8,
+          "isKeyMoment": true
+        },
+        {
+          "moveScore": {
+            "score": {
+              "score": {
+                "case": "mateInBlack",
+                "value": 0
+              }
+            },
+            "engine": 11
+          },
+          "moveClassification": 4
+        }
+      ]
+    },
+    "highlights": {
+      "gameSummary": "Good job grabbing a big advantage in the opening and converting the win.",
+      "accuracy": {
+        "white": 65.15036010742188,
+        "black": 99.21577453613281
+      },
+      "classificationTallies": {
+        "white": [
+          {
+            "moveClassification": 1,
+            "tally": 2
+          },
+          {
+            "moveClassification": 2
+          },
+          {
+            "moveClassification": 3
+          },
+          {
+            "moveClassification": 4
+          },
+          {
+            "moveClassification": 5,
+            "tally": 1
+          },
+          {
+            "moveClassification": 6
+          },
+          {
+            "moveClassification": 7
+          },
+          {
+            "moveClassification": 8,
+            "tally": 6
+          },
+          {
+            "moveClassification": 9,
+            "tally": 1
+          },
+          {
+            "moveClassification": 10
+          },
+          {
+            "moveClassification": 11
+          },
+          {
+            "moveClassification": 20
+          }
+        ],
+        "black": [
+          {
+            "moveClassification": 1,
+            "tally": 2
+          },
+          {
+            "moveClassification": 2
+          },
+          {
+            "moveClassification": 3,
+            "tally": 1
+          },
+          {
+            "moveClassification": 4,
+            "tally": 3
+          },
+          {
+            "moveClassification": 5,
+            "tally": 4
+          },
+          {
+            "moveClassification": 6
+          },
+          {
+            "moveClassification": 7
+          },
+          {
+            "moveClassification": 8
+          },
+          {
+            "moveClassification": 9
+          },
+          {
+            "moveClassification": 10
+          },
+          {
+            "moveClassification": 11
+          },
+          {
+            "moveClassification": 20
+          }
+        ]
+      },
+      "reportCard": {
+        "white": {
+          "reportsByPhase": [
+            {
+              "accuracyGlyph": 7,
+              "phase": 1,
+              "accuracy": 38.936546325683594
+            }
+          ],
+          "effectiveRating": 100
+        },
+        "black": {
+          "reportsByPhase": [
+            {
+              "accuracyGlyph": 3,
+              "phase": 1,
+              "accuracy": 99.21786499023438
+            }
+          ],
+          "effectiveRating": 1000
+        },
+        "speech": "You really outplayed your opponent in that one."
+      },
+      "takeaways": {},
+      "gameSummaryCoachEmotion": 3,
+      "gameSummaryPlay": "That game was yours from the opening! Let's check out the highlights."
+    },
+    "review": {
+      "gameSummary": "Good job grabbing a big advantage in the opening and converting the win.",
+      "startingFen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "playedMoves": [
+        {
+          "playedMove": {
+            "move": {
+              "from": 12,
+              "to": 28
+            },
+            "moveClassification": 1,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": 52
+                }
+              },
+              "depth": 20,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "d4 is slightly less common but just as strong as e4."
+                    }
+                  ],
+                  "audioUrlHash": "741fa74a29e164420402c646f67f5a42f6f285fb40441e3771aeee7cc96dceac"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 12,
+                  "to": 28
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": 52
+                    }
+                  },
+                  "depth": 20,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will make a solid central advance, "
+                        },
+                        {
+                          "fragment": "gaining influence",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 28,
+                                "to": 37
+                              }
+                            ],
+                            "squares": [
+                              37
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " and restricting counterplay."
+                        }
+                      ],
+                      "audioUrlHash": "94b499feaeeac9ad99431f43e54b0dcf036cce4a3cb8d2e90f7fbd15f2bc2998"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 28,
+                        "to": 37
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "squares": [
+                    {
+                      "square": 37,
+                      "color": 1
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 63,
+            "to": 46
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 52,
+              "to": 36
+            },
+            "moveClassification": 1,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": 73
+                }
+              },
+              "depth": 22,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "I like this response. It's proactive, versatile, and battles for the center."
+                    }
+                  ],
+                  "audioUrlHash": "30a22829e1ea598b8eb4101fb166f6feb4596dbd2c337f182e04dbd5fc784dd8"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 52,
+                  "to": 36
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": 73
+                    }
+                  },
+                  "depth": 22,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "With this push, Black will grab "
+                        },
+                        {
+                          "fragment": "central ground",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 36,
+                                "to": 29
+                              }
+                            ],
+                            "squares": [
+                              29
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " and open lines for development."
+                        }
+                      ],
+                      "audioUrlHash": "d1975a35dca46408c868cb9256b3b2483b1fdd29eef1db115f1fe036eab9008b"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 36,
+                        "to": 29
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "squares": [
+                    {
+                      "square": 29,
+                      "color": 1
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 7,
+            "to": 22
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 13,
+              "to": 29
+            },
+            "moveClassification": 1,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -106
+                }
+              },
+              "depth": 23,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "The Blackmar-Diemer Gambit takes full control of the center with e4, immediately attacks the d5 pawn, and allows the queen and light-squared bishop to develop."
+                    }
+                  ],
+                  "audioUrlHash": "e09520a6547ca211e2a317e6f4d57cbb5ddd2f1156431976e3b07004b80e6dc7"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 13,
+                    "to": 29
+                  },
+                  {
+                    "from": 36,
+                    "to": 29
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 13,
+                  "to": 29
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -106
+                    }
+                  },
+                  "depth": 23,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will strike at the center, fighting for space."
+                        }
+                      ],
+                      "audioUrlHash": "2334c5d8159a37807369dcc9d6e1f9e190b44c9385e5fa4345b55c9cc6ce36b4"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 13,
+                        "to": 29
+                      },
+                      {
+                        "from": 36,
+                        "to": 29
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 36,
+                  "to": 29
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -106
+                    }
+                  },
+                  "depth": 22,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That will be a free pawn."
+                        }
+                      ],
+                      "audioUrlHash": "6a3737e6601bdde6fe68756d27e0b8a8ce798e75037263bdd73135101b6233ef"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 36,
+            "to": 29
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 36,
+              "to": 29
+            },
+            "moveClassification": 1,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -106
+                }
+              },
+              "depth": 22,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You captured that free pawn."
+                    }
+                  ],
+                  "audioUrlHash": "f3c7f58f4b8f273f2e7d78eaa2f67f6e6267ed030236508dbbafa2825524434c"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 4,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 36,
+                  "to": 29
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -106
+                    }
+                  },
+                  "depth": 22,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That pawn will be free for the taking."
+                        }
+                      ],
+                      "audioUrlHash": "4cd8f474bd0b955f409d0db85ddbbf2716a5b0bfaf88539593a26cd7176a447d"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 2,
+            "to": 19
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 6,
+              "to": 13
+            },
+            "moveClassification": 8,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -237
+                }
+              },
+              "depth": 21,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Their best option was to threaten to capture a pawn."
+                    }
+                  ],
+                  "audioUrlHash": "bd3a96c5e063f38ca7cc0f81ebe13da0e99a722f5d1a00b7f132b3aafea3517c"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 2,
+                    "to": 19
+                  },
+                  {
+                    "from": 63,
+                    "to": 46
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 2,
+                    "to": 19
+                  },
+                  "color": 3
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 2,
+              "to": 19
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -106
+                }
+              },
+              "depth": 21,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Nc3 develops the knight toward the center, attacks the e4 pawn and controls the b5 square."
+                    }
+                  ],
+                  "audioUrlHash": "64cb374b932595c3d95756f8030723b4c68bda1b4bba36f1f740ad79ffd9a62c"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 2,
+                    "to": 19
+                  },
+                  {
+                    "from": 63,
+                    "to": 46
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 6,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 2,
+                  "to": 19
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -106
+                    }
+                  },
+                  "depth": 21,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will develop the knight and support the "
+                        },
+                        {
+                          "fragment": "center",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 19,
+                                "to": 29
+                              },
+                              {
+                                "from": 19,
+                                "to": 36
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": "."
+                        }
+                      ],
+                      "audioUrlHash": "7197bfa9f7c84f063268948321282665c45fe64bf259374ee7c1034c68706253"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 2,
+                        "to": 19
+                      },
+                      {
+                        "from": 63,
+                        "to": 46
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 19,
+                        "to": 29
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 19,
+                        "to": 36
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 63,
+                  "to": 46
+                },
+                "moveClassification": 1,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -106
+                    }
+                  },
+                  "depth": 20,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will "
+                        },
+                        {
+                          "fragment": "defend",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 46,
+                                "to": 29
+                              },
+                              {
+                                "from": 19,
+                                "to": 29
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " the attacked pawn."
+                        }
+                      ],
+                      "audioUrlHash": "79b8a46393cfb043ce35ca23d139774fbb5908eec9ed5377f175ce58548dc998"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 63,
+                        "to": 46
+                      },
+                      {
+                        "from": 14,
+                        "to": 22
+                      },
+                      {
+                        "from": 29,
+                        "to": 22
+                      },
+                      {
+                        "from": 7,
+                        "to": 22
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 46,
+                        "to": 29
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 19,
+                        "to": 29
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 63,
+            "to": 46
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 63,
+              "to": 46
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -237
+                }
+              },
+              "depth": 20,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "This move activates your knight to strengthen control over the "
+                    },
+                    {
+                      "fragment": "center",
+                      "arrowsAndSquares": {
+                        "arrows": [
+                          {
+                            "from": 46,
+                            "to": 29
+                          },
+                          {
+                            "from": 46,
+                            "to": 36
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "fragment": "."
+                    }
+                  ],
+                  "audioUrlHash": "8572a9290f0a0e47b076d9dec2cd4f7ee45288fe2e340f7d23cd38e2315eb4a9"
+                }
+              ]
+            },
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 46,
+                    "to": 29
+                  },
+                  "color": 4
+                },
+                {
+                  "arrow": {
+                    "from": 46,
+                    "to": 36
+                  },
+                  "color": 4
+                }
+              ]
+            }
+          },
+          "movedColor": 2,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 63,
+                  "to": 46
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -237
+                    }
+                  },
+                  "depth": 20,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Black will "
+                        },
+                        {
+                          "fragment": "develop",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 46,
+                                "to": 29
+                              },
+                              {
+                                "from": 46,
+                                "to": 36
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " the knight, increasing influence in the center."
+                        }
+                      ],
+                      "audioUrlHash": "59906ce50b37f651c96f00596d759bbdb5716cc0227cbbeb90935377dcb54024"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 46,
+                        "to": 29
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 46,
+                        "to": 36
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 2,
+            "to": 19
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 4,
+              "to": 20
+            },
+            "moveClassification": 9,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -960
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "That queen is unprotected and can be captured right away."
+                    }
+                  ],
+                  "audioUrlHash": "7c4e6550d37837649b68526678acfe6b62f1631eca76d560a1880d80726c8428"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 4,
+                    "to": 20
+                  },
+                  {
+                    "from": 29,
+                    "to": 20
+                  },
+                  {
+                    "from": 13,
+                    "to": 20
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 2,
+                    "to": 19
+                  },
+                  "color": 3
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 2,
+              "to": 19
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -237
+                }
+              },
+              "depth": 19,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Their knight comes into play, supporting the center."
+                    }
+                  ],
+                  "audioUrlHash": "482cede704c7932299734c583a24c2083f7583a6a6437e077fa4e4944179855c"
+                }
+              ]
+            },
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 19,
+                    "to": 29
+                  },
+                  "color": 4
+                },
+                {
+                  "arrow": {
+                    "from": 19,
+                    "to": 36
+                  },
+                  "color": 4
+                }
+              ]
+            }
+          },
+          "movedColor": 1,
+          "coachEmotion": 5,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 4,
+                  "to": 20
+                },
+                "moveClassification": 9,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -960
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will leave the queen hanging and available to be taken immediately."
+                        }
+                      ],
+                      "audioUrlHash": "b654f0e78d7fc7f44c52aca4028f4909c4a3f12cc6cd131826da35c1894c9c28"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 4,
+                        "to": 20
+                      },
+                      {
+                        "from": 29,
+                        "to": 20
+                      },
+                      {
+                        "from": 13,
+                        "to": 20
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 2,
+                        "to": 19
+                      },
+                      "color": 3
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 29,
+                  "to": 20
+                },
+                "moveClassification": 3,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -960
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will capture a free queen."
+                        }
+                      ],
+                      "audioUrlHash": "ff0ecddae91942343a732190723fa8045c2f78cc8636ec5534995c3b2c525d4a"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 29,
+                        "to": 20
+                      },
+                      {
+                        "from": 13,
+                        "to": 20
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 13,
+                  "to": 20
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -960
+                    }
+                  },
+                  "depth": 15,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will simply recapture."
+                        }
+                      ],
+                      "audioUrlHash": "d689b1ce83c3ebf35d89c7e61118940904a4978a8ed008bccfe1c71b703c5b69"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 29,
+            "to": 20
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 29,
+              "to": 20
+            },
+            "moveClassification": 3,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -960
+                }
+              },
+              "depth": 16,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Nice vision spotting and capturing that vulnerable queen."
+                    }
+                  ],
+                  "audioUrlHash": "1eb6390c5d22c81649f4c6b27b2294f4619d395211946891cfa4a055a93df204"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 29,
+                    "to": 20
+                  },
+                  {
+                    "from": 13,
+                    "to": 20
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 2,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 29,
+                  "to": 20
+                },
+                "moveClassification": 3,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -960
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Capturing that queen will win material."
+                        }
+                      ],
+                      "audioUrlHash": "d18f7087b665c16841e8ea1deea30f54fde30c89d0422bedbe9660e6a55a80a9"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 29,
+                        "to": 20
+                      },
+                      {
+                        "from": 13,
+                        "to": 20
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 13,
+                  "to": 20
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -960
+                    }
+                  },
+                  "depth": 15,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will simply recapture."
+                        }
+                      ],
+                      "audioUrlHash": "d689b1ce83c3ebf35d89c7e61118940904a4978a8ed008bccfe1c71b703c5b69"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 13,
+            "to": 20
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 11,
+              "to": 20
+            },
+            "moveClassification": 5,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1100
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Recaptures."
+                    }
+                  ],
+                  "audioUrlHash": "5b6fb2d6e06b1533ccb50cac54d3217cb2c8a8c786b140b85f25c92593f53468"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 13,
+              "to": 20
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -960
+                }
+              },
+              "depth": 15,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "A straightforward recapture."
+                    }
+                  ],
+                  "audioUrlHash": "d34064bc9212b57ab3b3b7a517277b4546f19a903d97c439bb9f0ab4740673eb"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 11,
+                  "to": 20
+                },
+                "moveClassification": 5,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1100
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will take back."
+                        }
+                      ],
+                      "audioUrlHash": "728b1b246f9fb0e54b613e54205e8b519447c7e0366ba99a1a19ecde8c8b8a57"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 58,
+            "to": 43
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 58,
+              "to": 43
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1100
+                }
+              },
+              "depth": 16,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Developing the knight and increasing influence in the "
+                    },
+                    {
+                      "fragment": "center",
+                      "arrowsAndSquares": {
+                        "arrows": [
+                          {
+                            "from": 43,
+                            "to": 28
+                          },
+                          {
+                            "from": 43,
+                            "to": 37
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "fragment": "."
+                    }
+                  ],
+                  "audioUrlHash": "1d2decea8d82126236d0be0330d78436af2c322f88652927313b79ccd914987b"
+                }
+              ]
+            },
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 43,
+                    "to": 28
+                  },
+                  "color": 4
+                },
+                {
+                  "arrow": {
+                    "from": 43,
+                    "to": 37
+                  },
+                  "color": 4
+                }
+              ]
+            }
+          },
+          "movedColor": 2,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 58,
+                  "to": 43
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1100
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Black will develop the knight and support the "
+                        },
+                        {
+                          "fragment": "center",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 43,
+                                "to": 28
+                              },
+                              {
+                                "from": 43,
+                                "to": 37
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": "."
+                        }
+                      ],
+                      "audioUrlHash": "0a4311db259d6632c24a0de8ff3ea1c0abc150432204af13f565f9320e675b0c"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 43,
+                        "to": 28
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 43,
+                        "to": 37
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 7,
+            "to": 22
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 13,
+              "to": 40
+            },
+            "moveClassification": 8,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1402
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "That bishop is unprotected and can be captured right away."
+                    }
+                  ],
+                  "audioUrlHash": "bf506586444905da2bf7029b61813ad44990e299e12f5459945c21b5ca4729f9"
+                }
+              ]
+            },
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 7,
+                    "to": 22
+                  },
+                  "color": 3
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 7,
+              "to": 22
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1100
+                }
+              },
+              "depth": 15,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Kingside castling becomes available for your opponent here."
+                    }
+                  ],
+                  "audioUrlHash": "b41e00cd7c10337e6b05309c023b12d9f69742270109ff5fd6db294c6baaf709"
+                }
+              ]
+            },
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 5,
+                    "to": 7
+                  },
+                  "color": 4
+                }
+              ]
+            }
+          },
+          "movedColor": 1,
+          "coachEmotion": 6,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 13,
+                  "to": 40
+                },
+                "moveClassification": 8,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1402
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Uh oh , this move will place the bishop on an unsafe square."
+                        }
+                      ],
+                      "audioUrlHash": "846398c77e8f33fbb1ba864355138f3be7185a9d8768140692d72742a9015d89"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 7,
+                        "to": 22
+                      },
+                      "color": 3
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 46,
+            "to": 40
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 43,
+              "to": 28
+            },
+            "moveClassification": 5,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1345
+                }
+              },
+              "depth": 20,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "That pawn was yours for the taking!"
+                    }
+                  ],
+                  "audioUrlHash": "2be85fe239251098e1f912098724e134e98842bfb8acd72741b6de99cf458db4"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 43,
+                    "to": 28
+                  },
+                  {
+                    "from": 40,
+                    "to": 4
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {}
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 46,
+              "to": 40
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1402
+                }
+              },
+              "depth": 16,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "That bishop was yours for the taking!"
+                    }
+                  ],
+                  "audioUrlHash": "23c499a2ff2ab08cd16599788694db7a5548262bd1abb6aabd0267518dda4936"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 4,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 43,
+                  "to": 28
+                },
+                "moveClassification": 5,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1345
+                    }
+                  },
+                  "depth": 20,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That will be a free pawn."
+                        }
+                      ],
+                      "audioUrlHash": "6a3737e6601bdde6fe68756d27e0b8a8ce798e75037263bdd73135101b6233ef"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 43,
+                        "to": 28
+                      },
+                      {
+                        "from": 40,
+                        "to": 4
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 40,
+                  "to": 4
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1345
+                    }
+                  },
+                  "depth": 19,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will move the bishop to safety."
+                        }
+                      ],
+                      "audioUrlHash": "47024708fecbc7ef75ea9f21facb49ef8de4222676c3c261ab189fd159dc5992"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 40,
+            "to": 4
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 3,
+              "to": 12
+            },
+            "moveClassification": 8,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1461
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You can pick up a "
+                    },
+                    {
+                      "fragment": "free",
+                      "arrowsAndSquares": {
+                        "arrows": [
+                          {
+                            "from": 46,
+                            "to": 40
+                          }
+                        ],
+                        "squares": [
+                          40
+                        ]
+                      }
+                    },
+                    {
+                      "fragment": " bishop."
+                    }
+                  ],
+                  "audioUrlHash": "198a7bb89c5df09804b5e794a609cd938958297e8fc6c5be81d8ad03a37036d2"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 3,
+                    "to": 12
+                  },
+                  {
+                    "from": 46,
+                    "to": 40
+                  }
+                ],
+                "showText": "Show Free Piece",
+                "hideText": "Hide Free Piece"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 46,
+                    "to": 40
+                  },
+                  "color": 2
+                }
+              ],
+              "squares": [
+                {
+                  "square": 40,
+                  "color": 3
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 40,
+              "to": 4
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1345
+                }
+              },
+              "depth": 19,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "They move the bishop to safety."
+                    }
+                  ],
+                  "audioUrlHash": "9c72c165fbd2018b4d7756ed288560df03b0a67fff1d94bd095c0d04745f58d5"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 6,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 3,
+                  "to": 12
+                },
+                "moveClassification": 8,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1461
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will "
+                        },
+                        {
+                          "fragment": "give away",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 46,
+                                "to": 40
+                              }
+                            ],
+                            "squares": [
+                              40
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " a free bishop."
+                        }
+                      ],
+                      "audioUrlHash": "bbc6399caa9ecc606fe9daf0509014c7b79e510fd6427b6e9b25d87cf5a9ebce"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 3,
+                        "to": 12
+                      },
+                      {
+                        "from": 46,
+                        "to": 40
+                      }
+                    ],
+                    "showText": "Show Free Piece",
+                    "hideText": "Hide Free Piece"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 46,
+                        "to": 40
+                      },
+                      "color": 2
+                    }
+                  ],
+                  "squares": [
+                    {
+                      "square": 40,
+                      "color": 3
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 46,
+                  "to": 40
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1461
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That will be a free bishop."
+                        }
+                      ],
+                      "audioUrlHash": "805e09f2431790f5002fbb2cf3c0317fb3c34d6d4e2ca06dd52df5bb9fd64ba6"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 46,
+            "to": 40
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 28,
+              "to": 11
+            },
+            "moveClassification": 5,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1451
+                }
+              },
+              "depth": 20,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You can win a rook with a "
+                    },
+                    {
+                      "fragment": "fork",
+                      "arrowsAndSquares": {
+                        "arrows": [
+                          {
+                            "from": 11,
+                            "to": 1
+                          },
+                          {
+                            "from": 11,
+                            "to": 5
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "fragment": ". Very nice!"
+                    }
+                  ],
+                  "audioUrlHash": "32c771737a7a1415ecc07c7b761b771cb66a22e891342fdfcc911b4ae878047e"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 28,
+                    "to": 11
+                  },
+                  {
+                    "from": 5,
+                    "to": 4
+                  },
+                  {
+                    "from": 11,
+                    "to": 1
+                  },
+                  {
+                    "from": 40,
+                    "to": 13
+                  }
+                ],
+                "showText": "Show Fork",
+                "hideText": "Hide Fork"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 11,
+                    "to": 1
+                  },
+                  "color": 4
+                },
+                {
+                  "arrow": {
+                    "from": 11,
+                    "to": 5
+                  },
+                  "color": 4
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 46,
+              "to": 40
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1461
+                }
+              },
+              "depth": 16,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You captured a free bishop."
+                    }
+                  ],
+                  "audioUrlHash": "38aef1177ba2e0a00ae285bd66cd801fb6fb9e5bf7d77c49b2c09b2988b08572"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 4,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 28,
+                  "to": 11
+                },
+                "moveClassification": 5,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1451
+                    }
+                  },
+                  "depth": 20,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Black will win a rook with that "
+                        },
+                        {
+                          "fragment": "fork",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 11,
+                                "to": 1
+                              },
+                              {
+                                "from": 11,
+                                "to": 5
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": "."
+                        }
+                      ],
+                      "audioUrlHash": "517b03e8d3179837a21bce9d03da328ab69d6fc4f611e3a4cae7f5f8c1acc501"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 28,
+                        "to": 11
+                      },
+                      {
+                        "from": 5,
+                        "to": 4
+                      },
+                      {
+                        "from": 11,
+                        "to": 1
+                      },
+                      {
+                        "from": 40,
+                        "to": 13
+                      }
+                    ],
+                    "showText": "Show Fork",
+                    "hideText": "Hide Fork"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 11,
+                        "to": 1
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 11,
+                        "to": 5
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 5,
+                  "to": 4
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1451
+                    }
+                  },
+                  "depth": 19,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will step the king away from the checking knight."
+                        }
+                      ],
+                      "audioUrlHash": "62f90284c646d3b0946d09d00cd3b99da515a734dc588215d02ac7cd59b5637c"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 11,
+                  "to": 1
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1451
+                    }
+                  },
+                  "depth": 18,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That rook will be free for the taking."
+                        }
+                      ],
+                      "audioUrlHash": "bc9b61026224e2f170654eb34b317a2e48282c1ca7283bfa131895ba35d216a3"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 11,
+                        "to": 1
+                      },
+                      {
+                        "from": 40,
+                        "to": 13
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 40,
+                  "to": 13
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1451
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This move will put the bishop on a safer square."
+                        }
+                      ],
+                      "audioUrlHash": "6490e8be64c0aa95a89a5536ab81694e500b0f22627e6ceb408f43f6577f4958"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 5,
+            "to": 4
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 5,
+              "to": 6
+            },
+            "moveClassification": 8,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1570
+                }
+              },
+              "depth": 19,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "They’ve made a mistake, and their rook is now lost."
+                    }
+                  ],
+                  "audioUrlHash": "c23daed586c105a4ad11a2852f26c54c2b3baa0f6283781fa2b52c9597d69a04"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 5,
+                    "to": 6
+                  },
+                  {
+                    "from": 46,
+                    "to": 40
+                  },
+                  {
+                    "from": 7,
+                    "to": 22
+                  },
+                  {
+                    "from": 60,
+                    "to": 20
+                  },
+                  {
+                    "from": 6,
+                    "to": 7
+                  },
+                  {
+                    "from": 11,
+                    "to": 1
+                  },
+                  {
+                    "from": 2,
+                    "to": 19
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 46,
+                    "to": 40
+                  },
+                  "color": 2
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 5,
+              "to": 4
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1451
+                }
+              },
+              "depth": 19,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Their king steps away from the check by your knight."
+                    }
+                  ],
+                  "audioUrlHash": "1f53ff01efb92ee6eac398c8258a05e16b37c233215d41e5c4d8574d3014afa6"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 6,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 5,
+                  "to": 6
+                },
+                "moveClassification": 8,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 19,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will lead to losing a rook."
+                        }
+                      ],
+                      "audioUrlHash": "2b5390c317b3abedebbe4a797221eba46683dccc64564dfaababcc3449ebb70e"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 5,
+                        "to": 6
+                      },
+                      {
+                        "from": 46,
+                        "to": 40
+                      },
+                      {
+                        "from": 7,
+                        "to": 22
+                      },
+                      {
+                        "from": 60,
+                        "to": 20
+                      },
+                      {
+                        "from": 6,
+                        "to": 7
+                      },
+                      {
+                        "from": 11,
+                        "to": 1
+                      },
+                      {
+                        "from": 2,
+                        "to": 19
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 46,
+                        "to": 40
+                      },
+                      "color": 2
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 46,
+                  "to": 40
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 18,
+                  "engine": 11
+                },
+                "speech": {},
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 7,
+                  "to": 22
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will "
+                        },
+                        {
+                          "fragment": "develop",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 22,
+                                "to": 28
+                              },
+                              {
+                                "from": 22,
+                                "to": 37
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " the knight, increasing influence in the center."
+                        }
+                      ],
+                      "audioUrlHash": "d04d5a6b7bba27134711836200db32b0f5a48f901b90b706ac409ec3eb3b7155"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 22,
+                        "to": 28
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 22,
+                        "to": 37
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 60,
+                  "to": 20
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {},
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 60,
+                        "to": 20
+                      },
+                      {
+                        "from": 6,
+                        "to": 7
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 6,
+                  "to": 7
+                },
+                "moveClassification": 11,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 15,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will have only this move available."
+                        }
+                      ],
+                      "audioUrlHash": "0de6e3de99cf4115774b92836194851e54e6746926696581843927b8a38e776b"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 11,
+                  "to": 1
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 14,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That will be a free rook."
+                        }
+                      ],
+                      "audioUrlHash": "87ca52efe8f46240cfb9c11e241463c1fe51202f0f2154211c4d12fd4ab6088f"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 11,
+                        "to": 1
+                      },
+                      {
+                        "from": 2,
+                        "to": 19
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 2,
+                  "to": 19
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1570
+                    }
+                  },
+                  "depth": 13,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will calmly remove the knight from an immediate threat."
+                        }
+                      ],
+                      "audioUrlHash": "20c251000ee4126f17d0416cfd3ef4eb9a59bdef948dd8d6dd8b9849620f7694"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 46,
+            "to": 40
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 11,
+              "to": 1
+            },
+            "moveClassification": 5,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1469
+                }
+              },
+              "depth": 18,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You captured a free rook."
+                    }
+                  ],
+                  "audioUrlHash": "ba801356a54b9375716d3fafde58d90abe56cffa48bc4da54e654930f0f0b296"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 11,
+                    "to": 1
+                  },
+                  {
+                    "from": 40,
+                    "to": 13
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {}
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 46,
+              "to": 40
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1570
+                }
+              },
+              "depth": 18,
+              "engine": 11
+            },
+            "speech": {},
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 4,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 11,
+                  "to": 1
+                },
+                "moveClassification": 5,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1469
+                    }
+                  },
+                  "depth": 18,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "That rook will be free for the taking."
+                        }
+                      ],
+                      "audioUrlHash": "bc9b61026224e2f170654eb34b317a2e48282c1ca7283bfa131895ba35d216a3"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 11,
+                        "to": 1
+                      },
+                      {
+                        "from": 40,
+                        "to": 13
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 40,
+                  "to": 13
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1469
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will move the bishop to safety."
+                        }
+                      ],
+                      "audioUrlHash": "47024708fecbc7ef75ea9f21facb49ef8de4222676c3c261ab189fd159dc5992"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 40,
+            "to": 13
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 12,
+              "to": 3
+            },
+            "moveClassification": 8,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1608
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "They’ve made a mistake, and their bishop is now lost."
+                    }
+                  ],
+                  "audioUrlHash": "a0dbb6c71cc0c86dbcf73e92b6937c313b167b37eafd7f721c00669cf83ff5ad"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 12,
+                    "to": 3
+                  },
+                  {
+                    "from": 59,
+                    "to": 31
+                  },
+                  {
+                    "from": 2,
+                    "to": 19
+                  },
+                  {
+                    "from": 60,
+                    "to": 20
+                  },
+                  {
+                    "from": 7,
+                    "to": 13
+                  },
+                  {
+                    "from": 31,
+                    "to": 40
+                  },
+                  {
+                    "from": 6,
+                    "to": 7
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 59,
+                    "to": 31
+                  },
+                  "color": 2
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 40,
+              "to": 13
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1469
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "This move puts their bishop on a safer square."
+                    }
+                  ],
+                  "audioUrlHash": "b0a89f220a0dc16c01cadb1b172096df4b0eac66629de4af8348c16561b0a669"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 1,
+          "coachEmotion": 6,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 12,
+                  "to": 3
+                },
+                "moveClassification": 8,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will lead to losing a bishop."
+                        }
+                      ],
+                      "audioUrlHash": "aef0cf0a74addc347ccfea09324e560c05b6452ab77e50a5e43446f550b820fa"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 12,
+                        "to": 3
+                      },
+                      {
+                        "from": 59,
+                        "to": 31
+                      },
+                      {
+                        "from": 2,
+                        "to": 19
+                      },
+                      {
+                        "from": 60,
+                        "to": 20
+                      },
+                      {
+                        "from": 7,
+                        "to": 13
+                      },
+                      {
+                        "from": 31,
+                        "to": 40
+                      },
+                      {
+                        "from": 6,
+                        "to": 7
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 59,
+                        "to": 31
+                      },
+                      "color": 2
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 59,
+                  "to": 31
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Moving from its starting spot, the bishop will join the game."
+                        }
+                      ],
+                      "audioUrlHash": "316c235de357363aa17a6832ff71e9f09604e77b957665070579700ba317aee3"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 2,
+                  "to": 19
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 15,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "White will develop the knight and support the "
+                        },
+                        {
+                          "fragment": "center",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 19,
+                                "to": 29
+                              },
+                              {
+                                "from": 19,
+                                "to": 36
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": "."
+                        }
+                      ],
+                      "audioUrlHash": "7197bfa9f7c84f063268948321282665c45fe64bf259374ee7c1034c68706253"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 19,
+                        "to": 29
+                      },
+                      "color": 4
+                    },
+                    {
+                      "arrow": {
+                        "from": 19,
+                        "to": 36
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 60,
+                  "to": 20
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 14,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "With this move, Black will be ready to castle on the queenside."
+                        }
+                      ],
+                      "audioUrlHash": "0dace5b2402825148151a9a39139522cc2ec906aab18694aa3c477bf462c4aef"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 60,
+                        "to": 20
+                      },
+                      {
+                        "from": 7,
+                        "to": 13
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 61,
+                        "to": 59
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 7,
+                  "to": 13
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 13,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will "
+                        },
+                        {
+                          "fragment": "block",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 20,
+                                "to": 6
+                              }
+                            ],
+                            "squares": [
+                              13
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " the check from an opposing queen."
+                        }
+                      ],
+                      "audioUrlHash": "088e129b72d765c7c091bebc18c8b6eb73e29ec13c0d631b5d0a6cc2ece2e49e"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 20,
+                        "to": 6
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "squares": [
+                    {
+                      "square": 13,
+                      "color": 1
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 31,
+                  "to": 40
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 12,
+                  "engine": 11
+                },
+                "speech": {},
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 6,
+                  "to": 7
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1608
+                    }
+                  },
+                  "depth": 11,
+                  "engine": 11
+                },
+                "speech": {},
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 59,
+            "to": 31
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 60,
+              "to": 20
+            },
+            "moveClassification": 5,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1565
+                }
+              },
+              "depth": 18,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "This move reaches across the board to win the pawn."
+                    }
+                  ],
+                  "audioUrlHash": "133aeee541ed97e2d2d97d79b159f80d9e917e54514bcf735adaae5b5f47ae3c"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 60,
+                    "to": 20
+                  },
+                  {
+                    "from": 40,
+                    "to": 13
+                  },
+                  {
+                    "from": 20,
+                    "to": 11
+                  },
+                  {
+                    "from": 3,
+                    "to": 12
+                  },
+                  {
+                    "from": 11,
+                    "to": 10
+                  },
+                  {
+                    "from": 2,
+                    "to": 19
+                  },
+                  {
+                    "from": 51,
+                    "to": 43
+                  },
+                  {
+                    "from": 16,
+                    "to": 24
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 60,
+                    "to": 20
+                  },
+                  "color": 4
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 59,
+              "to": 31
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1608
+                }
+              },
+              "depth": 16,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You’re preparing for the game ahead, activating the bishop in the opening."
+                    }
+                  ],
+                  "audioUrlHash": "fd5cbdeef98b54f4426d9669b60f5cbbc0312a28a4aca308eecb2d70729548c4"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 1,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 60,
+                  "to": 20
+                },
+                "moveClassification": 5,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 18,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "From across the board, Black will pick off the pawn."
+                        }
+                      ],
+                      "audioUrlHash": "e10d46ae7450074ee5173544fd5c8e39516abf6f182e461a1c763ad0489e37dd"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 60,
+                        "to": 20
+                      },
+                      {
+                        "from": 40,
+                        "to": 13
+                      },
+                      {
+                        "from": 20,
+                        "to": 11
+                      },
+                      {
+                        "from": 3,
+                        "to": 12
+                      },
+                      {
+                        "from": 11,
+                        "to": 10
+                      },
+                      {
+                        "from": 2,
+                        "to": 19
+                      },
+                      {
+                        "from": 51,
+                        "to": 43
+                      },
+                      {
+                        "from": 16,
+                        "to": 24
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 60,
+                        "to": 20
+                      },
+                      "color": 4
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 40,
+                  "to": 13
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 17,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will "
+                        },
+                        {
+                          "fragment": "block",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 20,
+                                "to": 6
+                              }
+                            ],
+                            "squares": [
+                              13
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " the check from an opposing queen."
+                        }
+                      ],
+                      "audioUrlHash": "088e129b72d765c7c091bebc18c8b6eb73e29ec13c0d631b5d0a6cc2ece2e49e"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 40,
+                        "to": 13
+                      },
+                      {
+                        "from": 20,
+                        "to": 11
+                      }
+                    ],
+                    "showText": "Show Follow-Up",
+                    "hideText": "Hide Follow-Up"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 20,
+                        "to": 6
+                      },
+                      "color": 4
+                    }
+                  ],
+                  "squares": [
+                    {
+                      "square": 13,
+                      "color": 1
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 20,
+                  "to": 11
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 16,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will calmly remove the queen from an immediate threat."
+                        }
+                      ],
+                      "audioUrlHash": "81da04c6cb78df21886c74ed0c329f251ada9e05cca2faa7b0d3a49a02f505d0"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 3,
+                  "to": 12
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 15,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This will calmly remove the bishop from an immediate threat."
+                        }
+                      ],
+                      "audioUrlHash": "470b461f3113726b8582ccb80fea34e84267d3fb62cf9aa3e7485939b9a50a25"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 11,
+                  "to": 10
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 14,
+                  "engine": 11
+                },
+                "speech": {},
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 2,
+                  "to": 19
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 13,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "This move will step the knight out of danger and keep material balance."
+                        }
+                      ],
+                      "audioUrlHash": "66dfca12a583e600c2ac880a9daed549466cd261b473a145ad13bd8b4c21ca40"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 51,
+                  "to": 43
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 12,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "Black will gain a strong "
+                        },
+                        {
+                          "fragment": "protected passed pawn",
+                          "arrowsAndSquares": {
+                            "squares": [
+                              43
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": "."
+                        }
+                      ],
+                      "audioUrlHash": "b524876c32e247a798823bceff01ec97e07d235917fc29afd7331d5de56c7fae"
+                    }
+                  ]
+                },
+                "boardMarkings": {
+                  "squares": [
+                    {
+                      "square": 43,
+                      "color": 1
+                    }
+                  ]
+                }
+              },
+              "movedColor": 2
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 16,
+                  "to": 24
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "scoreCentipawnsWhite",
+                      "value": -1565
+                    }
+                  },
+                  "depth": 11,
+                  "engine": 11
+                },
+                "speech": {},
+                "boardMarkings": {}
+              },
+              "movedColor": 1
+            }
+          ],
+          "bestNextMove": {
+            "from": 40,
+            "to": 13
+          }
+        },
+        {
+          "isKeyMoment": true,
+          "playedMove": {
+            "move": {
+              "from": 6,
+              "to": 5
+            },
+            "moveClassification": 8,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "mateInBlack",
+                  "value": 1
+                }
+              },
+              "depth": 97,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "You are now able to "
+                    },
+                    {
+                      "fragment": "checkmate",
+                      "arrowsAndSquares": {
+                        "arrows": [
+                          {
+                            "from": 1,
+                            "to": 11
+                          }
+                        ],
+                        "squares": [
+                          11
+                        ]
+                      }
+                    },
+                    {
+                      "fragment": " the king."
+                    }
+                  ],
+                  "audioUrlHash": "7d815e90e73fbae9304d8d2589ac3f0655f43795988c50b455f662dacd88b841"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 6,
+                    "to": 5
+                  },
+                  {
+                    "from": 1,
+                    "to": 11
+                  }
+                ],
+                "showText": "Show Checkmate",
+                "hideText": "Hide Checkmate"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 1,
+                    "to": 11
+                  },
+                  "color": 2
+                }
+              ],
+              "squares": [
+                {
+                  "square": 11,
+                  "color": 3
+                }
+              ]
+            }
+          },
+          "bestAlternativeMove": {
+            "move": {
+              "from": 40,
+              "to": 13
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": -1565
+                }
+              },
+              "depth": 17,
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "They "
+                    },
+                    {
+                      "fragment": "blocked",
+                      "arrowsAndSquares": {
+                        "arrows": [
+                          {
+                            "from": 20,
+                            "to": 6
+                          }
+                        ],
+                        "squares": [
+                          13
+                        ]
+                      }
+                    },
+                    {
+                      "fragment": " the check from your queen."
+                    }
+                  ],
+                  "audioUrlHash": "0a0fd0ffc62822329f42d78d0287af43259b2f24c83ba5f44cb46aff3c28fa96"
+                }
+              ]
+            },
+            "showMovesButtons": [
+              {
+                "movesToShow": [
+                  {
+                    "from": 40,
+                    "to": 13
+                  },
+                  {
+                    "from": 20,
+                    "to": 11
+                  }
+                ],
+                "showText": "Show Follow-Up",
+                "hideText": "Hide Follow-Up"
+              }
+            ],
+            "boardMarkings": {
+              "arrows": [
+                {
+                  "arrow": {
+                    "from": 20,
+                    "to": 6
+                  },
+                  "color": 4
+                }
+              ],
+              "squares": [
+                {
+                  "square": 13,
+                  "color": 1
+                }
+              ]
+            }
+          },
+          "movedColor": 1,
+          "coachEmotion": 6,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 6,
+                  "to": 5
+                },
+                "moveClassification": 8,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "mateInBlack",
+                      "value": 1
+                    }
+                  },
+                  "depth": 97,
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "You are now able to "
+                        },
+                        {
+                          "fragment": "checkmate",
+                          "arrowsAndSquares": {
+                            "arrows": [
+                              {
+                                "from": 1,
+                                "to": 11
+                              }
+                            ],
+                            "squares": [
+                              11
+                            ]
+                          }
+                        },
+                        {
+                          "fragment": " the king."
+                        }
+                      ],
+                      "audioUrlHash": "7d815e90e73fbae9304d8d2589ac3f0655f43795988c50b455f662dacd88b841"
+                    }
+                  ]
+                },
+                "showMovesButtons": [
+                  {
+                    "movesToShow": [
+                      {
+                        "from": 6,
+                        "to": 5
+                      },
+                      {
+                        "from": 1,
+                        "to": 11
+                      }
+                    ],
+                    "showText": "Show Checkmate",
+                    "hideText": "Hide Checkmate"
+                  }
+                ],
+                "boardMarkings": {
+                  "arrows": [
+                    {
+                      "arrow": {
+                        "from": 1,
+                        "to": 11
+                      },
+                      "color": 2
+                    }
+                  ],
+                  "squares": [
+                    {
+                      "square": 11,
+                      "color": 3
+                    }
+                  ]
+                }
+              },
+              "movedColor": 1
+            },
+            {
+              "playedMove": {
+                "move": {
+                  "from": 1,
+                  "to": 11
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "mateInBlack",
+                      "value": 0
+                    }
+                  },
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "The game will be over."
+                        }
+                      ],
+                      "audioUrlHash": "0242a53e821bbb94b2fa86f61bb1309679b9d01052685004cb5fa7bfa1268847"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            }
+          ],
+          "bestNextMove": {
+            "from": 1,
+            "to": 11
+          }
+        },
+        {
+          "playedMove": {
+            "move": {
+              "from": 1,
+              "to": 11
+            },
+            "moveClassification": 4,
+            "score": {
+              "score": {
+                "score": {
+                  "case": "mateInBlack",
+                  "value": 0
+                }
+              },
+              "engine": 11
+            },
+            "speech": {
+              "sentences": [
+                {
+                  "sentenceFragments": [
+                    {
+                      "fragment": "Always feels nice to win!"
+                    }
+                  ],
+                  "audioUrlHash": "0ce80c724d5290e06639882611f093179df9e4354be09416cb3176c66c4eed86"
+                }
+              ]
+            },
+            "boardMarkings": {}
+          },
+          "movedColor": 2,
+          "coachEmotion": 3,
+          "explainLine": [
+            {
+              "playedMove": {
+                "move": {
+                  "from": 1,
+                  "to": 11
+                },
+                "moveClassification": 4,
+                "score": {
+                  "score": {
+                    "score": {
+                      "case": "mateInBlack",
+                      "value": 0
+                    }
+                  },
+                  "engine": 11
+                },
+                "speech": {
+                  "sentences": [
+                    {
+                      "sentenceFragments": [
+                        {
+                          "fragment": "The game will be over."
+                        }
+                      ],
+                      "audioUrlHash": "0242a53e821bbb94b2fa86f61bb1309679b9d01052685004cb5fa7bfa1268847"
+                    }
+                  ]
+                },
+                "boardMarkings": {}
+              },
+              "movedColor": 2
+            }
+          ]
+        }
+      ],
+      "finalFen": "r1b1kb1r/ppp1pppp/5n2/7B/8/3q4/PPn2PPP/1NB1K1NR w kq - 2 11"
+    },
+    "result": {
+      "result": 2,
+      "resultType": 1
+    },
+    "metadata": {
+      "ceeVersion": {
+        "major": 1,
+        "minor": 211,
+        "patch": 5
+      },
+      "annotatedPgn": "\n1. d4 d5 2. e4 dxe4 3. Be2 Nf6 4. Qd3 exd3 5. cxd3 Nc6 6. Bh5 Nxd4 7. Bd2 Nc2+ 8. Kf1 Nxa1 9. Bc1 Qxd3+ 10. Ke1 Nc2# 0-1"
+    },
+    "opening": {
+      "openingName": "Queen's Pawn Opening: Blackmar Gambit",
+      "tcnMoves": "lBZJmCJC",
+      "ecoCode": "D00",
+      "url": "Queens-Pawn-Opening-Blackmar-Gambit-2...dxe4"
+    }
+  },
+  "warnings": []
+}

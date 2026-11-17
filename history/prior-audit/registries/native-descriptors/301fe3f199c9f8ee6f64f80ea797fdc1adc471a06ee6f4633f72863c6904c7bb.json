@@ -1,0 +1,820 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_features.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/game_phase.proto",
+    "chesscom/chess/v1/piece.proto",
+    "chesscom/chess/v1/score.proto",
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1/game_feature_computation.proto",
+    "chesscom/explanation_engine/v1/game_review.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto",
+    "google/protobuf/duration.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PlayerGameRating",
+      "field": [
+        {
+          "name": "rating",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_certain",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_rating"
+        }
+      ]
+    },
+    {
+      "name": "PositionInfo",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "clock_ms",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "score",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Score"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_clock_ms"
+        }
+      ]
+    },
+    {
+      "name": "MoveStringReprs",
+      "field": [
+        {
+          "name": "san",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "uci",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "PieceOnSquare",
+      "field": [
+        {
+          "name": "piece_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PieceType"
+        },
+        {
+          "name": "square",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "MoveTagProfile",
+      "field": [
+        {
+          "name": "actor",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceOnSquare"
+        },
+        {
+          "name": "targets",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceOnSquare"
+        }
+      ]
+    },
+    {
+      "name": "MoveTag",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveTagType"
+        },
+        {
+          "name": "profile",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveTagProfile"
+        }
+      ]
+    },
+    {
+      "name": "MoveFeatures",
+      "field": [
+        {
+          "name": "ply",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "full_move_number",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "moved_color",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "moved_piece_type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PieceType"
+        },
+        {
+          "name": "played",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveStringReprs"
+        },
+        {
+          "name": "before",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PositionInfo"
+        },
+        {
+          "name": "after",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PositionInfo"
+        },
+        {
+          "name": "move_classification",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "move_precision",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "is_key_moment",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "accuracy",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "engine_best_move",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveStringReprs"
+        },
+        {
+          "name": "engine_best_move_piece_type",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PieceType"
+        },
+        {
+          "name": "engine_second_best_expected_points_loss",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_move_probability_at_mover_rating",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "played_move_probability_at_mover_rating",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_move_skill_gap",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "adjusted_position_difficulty",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "adjusted_position_difficulty_bucket",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PositionDifficultyBucket"
+        },
+        {
+          "name": "move_time",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Duration",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_usage",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.TimeUsage"
+        },
+        {
+          "name": "game_phase",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "position_type",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PositionType"
+        },
+        {
+          "name": "player_activity",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.ActivityLevel"
+        },
+        {
+          "name": "opponent_activity",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.ActivityLevel"
+        },
+        {
+          "name": "tactical_category",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalCategory"
+        },
+        {
+          "name": "tags",
+          "number": 27,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveTag"
+        },
+        {
+          "name": "coach_speech",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "only_move",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_accuracy"
+        },
+        {
+          "name": "_engine_second_best_expected_points_loss"
+        },
+        {
+          "name": "_best_move_probability_at_mover_rating"
+        },
+        {
+          "name": "_played_move_probability_at_mover_rating"
+        },
+        {
+          "name": "_best_move_skill_gap"
+        },
+        {
+          "name": "_adjusted_position_difficulty"
+        },
+        {
+          "name": "_move_time"
+        },
+        {
+          "name": "_only_move"
+        }
+      ]
+    },
+    {
+      "name": "PlayerGameFeatures",
+      "field": [
+        {
+          "name": "accuracy",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PlayerGameRating"
+        },
+        {
+          "name": "classification_tallies",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ClassificationTally"
+        },
+        {
+          "name": "comeback",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "cleanliness",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "worst_ep_loss",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "narrative_moves",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_accuracy"
+        },
+        {
+          "name": "_comeback"
+        },
+        {
+          "name": "_cleanliness"
+        },
+        {
+          "name": "_worst_ep_loss"
+        }
+      ]
+    },
+    {
+      "name": "GameFeatures",
+      "field": [
+        {
+          "name": "computation",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameFeatureComputation"
+        },
+        {
+          "name": "eco_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "eco_family_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "opening_name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "white",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PlayerGameFeatures"
+        },
+        {
+          "name": "black",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PlayerGameFeatures"
+        },
+        {
+          "name": "moves",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveFeatures"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PositionType",
+      "value": [
+        {
+          "name": "POSITION_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "POSITION_TYPE_NONE",
+          "number": 1
+        },
+        {
+          "name": "POSITION_TYPE_OPEN",
+          "number": 2
+        },
+        {
+          "name": "POSITION_TYPE_SEMI_OPEN",
+          "number": 3
+        },
+        {
+          "name": "POSITION_TYPE_CLOSED",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "ActivityLevel",
+      "value": [
+        {
+          "name": "ACTIVITY_LEVEL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ACTIVITY_LEVEL_ACTIVE",
+          "number": 1
+        },
+        {
+          "name": "ACTIVITY_LEVEL_PASSIVE",
+          "number": 2
+        },
+        {
+          "name": "ACTIVITY_LEVEL_NEITHER",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "TacticalCategory",
+      "value": [
+        {
+          "name": "TACTICAL_CATEGORY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TACTICAL_CATEGORY_CALM",
+          "number": 1
+        },
+        {
+          "name": "TACTICAL_CATEGORY_SHARP",
+          "number": 2
+        },
+        {
+          "name": "TACTICAL_CATEGORY_THREATENED",
+          "number": 3
+        },
+        {
+          "name": "TACTICAL_CATEGORY_THREATENING",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "PositionDifficultyBucket",
+      "value": [
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_BOOK",
+          "number": 1
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_EARLY_OPENING",
+          "number": 2
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_EQUAL_EASY",
+          "number": 3
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_EQUAL_MEDIUM",
+          "number": 4
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_EQUAL_HARD",
+          "number": 5
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_WINNING_EASY",
+          "number": 6
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_WINNING_MEDIUM",
+          "number": 7
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_WINNING_HARD",
+          "number": 8
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_LOSING",
+          "number": 9
+        },
+        {
+          "name": "POSITION_DIFFICULTY_BUCKET_FORCED",
+          "number": 10
+        }
+      ]
+    },
+    {
+      "name": "TimeUsage",
+      "value": [
+        {
+          "name": "TIME_USAGE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TIME_USAGE_NONE",
+          "number": 1
+        },
+        {
+          "name": "TIME_USAGE_PRESSURE_FORGIVE",
+          "number": 2
+        },
+        {
+          "name": "TIME_USAGE_RUSHED_HARD",
+          "number": 3
+        },
+        {
+          "name": "TIME_USAGE_QUICK_UNDER_PRESSURE",
+          "number": 4
+        },
+        {
+          "name": "TIME_USAGE_QUICK_INSTINCT",
+          "number": 5
+        },
+        {
+          "name": "TIME_USAGE_INVESTED_ADVANTAGE",
+          "number": 6
+        },
+        {
+          "name": "TIME_USAGE_PATIENCE_REWARDED",
+          "number": 7
+        },
+        {
+          "name": "TIME_USAGE_BURNED_ADVANTAGE",
+          "number": 8
+        },
+        {
+          "name": "TIME_USAGE_TIME_LEAK",
+          "number": 9
+        },
+        {
+          "name": "TIME_USAGE_BURNED_ADVANTAGE_MISS",
+          "number": 10
+        },
+        {
+          "name": "TIME_USAGE_OVERTHINK_MISS",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "name": "MoveTagType",
+      "value": [
+        {
+          "name": "MOVE_TAG_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_TAG_TYPE_CAPTURES",
+          "number": 1
+        },
+        {
+          "name": "MOVE_TAG_TYPE_CHECK",
+          "number": 2
+        },
+        {
+          "name": "MOVE_TAG_TYPE_DOUBLE_CHECK",
+          "number": 3
+        },
+        {
+          "name": "MOVE_TAG_TYPE_CHECKMATE",
+          "number": 4
+        },
+        {
+          "name": "MOVE_TAG_TYPE_FORCES_MATE",
+          "number": 5
+        },
+        {
+          "name": "MOVE_TAG_TYPE_SACRIFICE",
+          "number": 6
+        },
+        {
+          "name": "MOVE_TAG_TYPE_WINS_MATERIAL",
+          "number": 7
+        },
+        {
+          "name": "MOVE_TAG_TYPE_ATTACKS",
+          "number": 8
+        },
+        {
+          "name": "MOVE_TAG_TYPE_FINDS_FORK",
+          "number": 9
+        },
+        {
+          "name": "MOVE_TAG_TYPE_FINDS_PIN",
+          "number": 10
+        },
+        {
+          "name": "MOVE_TAG_TYPE_FINDS_SKEWER",
+          "number": 11
+        },
+        {
+          "name": "MOVE_TAG_TYPE_FINDS_DISCOVERED_ATTACK",
+          "number": 12
+        },
+        {
+          "name": "MOVE_TAG_TYPE_FINDS_REMOVES_DEFENDER",
+          "number": 13
+        },
+        {
+          "name": "MOVE_TAG_TYPE_BEST_MOVE_CAPTURES",
+          "number": 14
+        },
+        {
+          "name": "MOVE_TAG_TYPE_BEST_MOVE_CHECK",
+          "number": 15
+        },
+        {
+          "name": "MOVE_TAG_TYPE_BEST_MOVE_DOUBLE_CHECK",
+          "number": 16
+        },
+        {
+          "name": "MOVE_TAG_TYPE_BEST_MOVE_CHECKMATE",
+          "number": 17
+        },
+        {
+          "name": "MOVE_TAG_TYPE_BEST_MOVE_SACRIFICE",
+          "number": 18
+        },
+        {
+          "name": "MOVE_TAG_TYPE_BEST_MOVE_ATTACKS",
+          "number": 19
+        },
+        {
+          "name": "MOVE_TAG_TYPE_MISSES_FORCES_MATE",
+          "number": 20
+        },
+        {
+          "name": "MOVE_TAG_TYPE_MISSES_WINS_MATERIAL",
+          "number": 21
+        },
+        {
+          "name": "MOVE_TAG_TYPE_MISSES_FORK",
+          "number": 22
+        },
+        {
+          "name": "MOVE_TAG_TYPE_MISSES_PIN",
+          "number": 23
+        },
+        {
+          "name": "MOVE_TAG_TYPE_MISSES_SKEWER",
+          "number": 24
+        },
+        {
+          "name": "MOVE_TAG_TYPE_MISSES_DISCOVERED_ATTACK",
+          "number": 25
+        },
+        {
+          "name": "MOVE_TAG_TYPE_PERMITS_FORCES_MATE",
+          "number": 26
+        },
+        {
+          "name": "MOVE_TAG_TYPE_PERMITS_WINS_MATERIAL",
+          "number": 27
+        },
+        {
+          "name": "MOVE_TAG_TYPE_PERMITS_FORK",
+          "number": 28
+        },
+        {
+          "name": "MOVE_TAG_TYPE_PERMITS_PIN",
+          "number": 29
+        },
+        {
+          "name": "MOVE_TAG_TYPE_PERMITS_SKEWER",
+          "number": 30
+        },
+        {
+          "name": "MOVE_TAG_TYPE_PERMITS_DISCOVERED_ATTACK",
+          "number": 31
+        },
+        {
+          "name": "MOVE_TAG_TYPE_THREATENS_WINS_MATERIAL",
+          "number": 32
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

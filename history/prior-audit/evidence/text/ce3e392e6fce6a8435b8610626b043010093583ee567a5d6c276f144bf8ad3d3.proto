@@ -1,0 +1,39 @@
+// source: chesscom/explanation_engine/v1/new_game.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message NewGame {
+  oneof from {
+  .chesscom.chess.v1.Game game = 1;
+  .chesscom.explanation_engine.v1.GameInitialPosition initial_position = 2;
+  .chesscom.explanation_engine.v1.TcnGame tcn_game = 4;
+  .chesscom.explanation_engine.v1.PositionWithMoves position_with_moves = 5;
+  .chesscom.explanation_engine.v1.PgnGame pgn_game = 6;
+  }
+  optional .chesscom.explanation_engine.v1.GameSettings settings = 3;
+}
+
+message PositionWithMoves {
+  oneof move_list {
+  .chesscom.explanation_engine.v1.UciMoveList uci_moves = 2;
+  .chesscom.explanation_engine.v1.MoveList moves = 3;
+  }
+  optional .chesscom.explanation_engine.v1.GameInitialPosition initial_position = 1;
+}
+
+message GameInitialPosition {
+  oneof initial_position {
+  .chesscom.chess.v1.Position position = 2;
+  bytes compressed_position = 3;
+  string fen = 4;
+  }
+  optional .chesscom.chess.v1.GameMetadata metadata = 1;
+}
+
+message PgnGame {
+  optional string pgn = 1;
+  optional bool take_first_game_only = 2;
+  optional string artifact_id = 3;
+  optional .chesscom.chess.v1.GameMetadata metadata = 4;
+}

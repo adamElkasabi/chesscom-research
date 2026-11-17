@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_analysis_annotations.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "AnalysisAnnotationsRequest",
+      "field": [
+        {
+          "name": "stream_results",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_pv_classifications",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AnalysisAnnotationsResponse",
+      "field": [
+        {
+          "name": "move_classifications",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassificationResponse"
+        },
+        {
+          "name": "threats",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SimpleThreatsResponse"
+        },
+        {
+          "name": "progress",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,117 @@
+{
+  "name": "chesscom/settings/v1/settings_puzzle.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "PuzzleSetting",
+      "field": [
+        {
+          "name": "show_details",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_timer",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_classic_mode",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_chat_hints",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_mistake_feedback",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_puzzle_goals",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "collect_puzzle_points",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "always_show_rating",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "difficulty_mode",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_hints_automatically",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "daily_puzzle_hard_mode",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

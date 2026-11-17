@@ -1,0 +1,12 @@
+{
+  "id": "example-game-refined-hash64",
+  "fixture": "example-game",
+  "settings": {
+    "userColor": 1
+  },
+  "uciAfter": {
+    "Normalize": false,
+    "Hash": 64
+  },
+  "timeoutSeconds": 200
+}

@@ -1,0 +1,57 @@
+// source: chesscom/courses/v1/courses_dashboard_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetCourseListRequest {
+}
+
+message GetCourseListResponse {
+  repeated .chesscom.courses.v1.Course course_list = 1;
+}
+
+message SetCourseInactiveRequest {
+  optional string course_id = 1;
+}
+
+message SetCourseInactiveResponse {
+}
+
+message SetCoursePausedRequest {
+  optional string course_id = 1;
+}
+
+message SetCoursePausedResponse {
+}
+
+message SetCourseUnpausedRequest {
+  optional string course_id = 1;
+}
+
+message SetCourseUnpausedResponse {
+}
+
+message AssignTutorialRequest {
+  oneof _tutorial_category {
+  .chesscom.courses.v1.TutorialCategory tutorial_category = 2;
+  }
+  optional int32 user_rating = 1;
+  optional string course_id = 3;
+}
+
+message AssignTutorialResponse {
+  optional string default_move_trainer_id = 1;
+}
+
+message GetAvailableTutorialsRequest {
+  optional int32 user_rating = 1;
+}
+
+message GetAvailableTutorialsResponse {
+  repeated .chesscom.courses.v1.CourseProduct course_list = 1;
+  repeated .chesscom.courses.v1.GetAvailableTutorialsResponse.CourseListByCategoryEntry course_list_by_category = 2;
+  message CourseListByCategoryEntry {
+  optional string key = 1;
+  optional .chesscom.courses.v1.CourseProductList value = 2;
+  }
+}

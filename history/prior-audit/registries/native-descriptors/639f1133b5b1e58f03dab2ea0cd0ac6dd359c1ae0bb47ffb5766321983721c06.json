@@ -1,0 +1,53 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/board_events.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/analysis_type.proto",
+    "chesscom/explanation_engine/v1alpha/circumstance.proto",
+    "chesscom/chess/v1/arrow.proto",
+    "chesscom/chess/v1/piece.proto"
+  ],
+  "message_type": [
+    {
+      "name": "BoardEvent",
+      "field": [
+        {
+          "name": "circumstance",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.Circumstance"
+        },
+        {
+          "name": "child_circumstance",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.Circumstance"
+        },
+        {
+          "name": "analysis_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AnalysisType"
+        },
+        {
+          "name": "arrows_and_squares",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArrowsAndSquares"
+        },
+        {
+          "name": "piece",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

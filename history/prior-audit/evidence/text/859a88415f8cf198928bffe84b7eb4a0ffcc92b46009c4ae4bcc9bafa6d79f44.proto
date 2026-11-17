@@ -1,0 +1,19 @@
+// source: chesscom/explanation_engine/v1/opening.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message Opening {
+  oneof _opening_name {
+  string opening_name = 1;
+  }
+  oneof _tcn_moves {
+  string tcn_moves = 2;
+  }
+  oneof _eco_code {
+  string eco_code = 3;
+  }
+  oneof _url {
+  string url = 4;
+  }
+}

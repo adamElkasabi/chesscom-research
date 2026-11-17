@@ -1,0 +1,23 @@
+// source: chesscom/explanation_engine/v1/speech.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message SentenceFragment {
+  optional string fragment = 1;
+  optional .chesscom.chess.v1.ArrowsAndSquares arrows_and_squares = 2;
+}
+
+message Sentence {
+  repeated .chesscom.explanation_engine.v1.SentenceFragment sentence_fragments = 1;
+  optional string audio_url_hash = 2;
+}
+
+message Speech {
+  repeated .chesscom.explanation_engine.v1.Sentence sentences = 1;
+}
+
+message SpeechForLocale {
+  optional .chesscom.explanation_engine.v1.Locale locale = 1;
+  optional .chesscom.explanation_engine.v1.Speech speech = 2;
+}

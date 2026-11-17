@@ -1,0 +1,19 @@
+// source: chesscom/explanation_engine/v1/feature_bot_move_from_config.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message BotMoveFromConfigRequest {
+  oneof _proto_config {
+  .chesscom.explanation_engine.v1.BotMoveConfiguration proto_config = 3;
+  }
+  optional string bot_config = 1;
+  optional string artifact_id = 2;
+}
+
+message BotMoveFromConfigResponse {
+  oneof _suggested_delay_seconds {
+  double suggested_delay_seconds = 2;
+  }
+  optional .chesscom.chess.v1.Move move = 1;
+}

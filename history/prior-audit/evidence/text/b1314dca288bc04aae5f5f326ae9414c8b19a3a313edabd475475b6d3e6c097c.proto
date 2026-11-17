@@ -1,0 +1,547 @@
+// source: chesscom/user_properties/v1/properties_user_settings.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum UserSettingsPropertyDefinition {
+  USER_SETTINGS_PROPERTY_UNSPECIFIED = 0;
+  NOTIFICATION_MOBILE_CHESS_TV = 1;
+  NOTIFICATION_WEB_CHESS_TV = 2;
+  GAMEPLAY_CHALLENGE_MIN_RATING = 3;
+  NOTIFICATION_MOBILE_GAME_EVENT = 4;
+  GAMEPLAY_LIVE_ALLOW_OFFLINE_CHALLENGES = 5;
+  NOTIFICATION_MOBILE_NEW_CONTENT = 6;
+  NOTIFICATION_MOBILE_MY_TURN_TO_MOVE = 7;
+  NOTIFICATION_MOBILE_NEWS_AND_ANNOUNCEMENTS = 8;
+  GAMEPLAY_CHALLENGE_MAX_RATING = 9;
+  NOTIFICATION_WEB_LESSON_AND_PRACTICE = 10;
+  BOARD_PLAY_SOUNDS = 11;
+  NOTIFICATION_EMAIL_NEW_CONTENT = 12;
+  NOTIFICATION_EMAIL_NEW_SOCIAL_TROPHY = 13;
+  BOARD_MOVE_METHOD = 14;
+  BOARD_SOUND_THEME = 15;
+  NOTIFICATION_EMAIL_NEWS_AND_ANNOUNCEMENTS = 16;
+  NOTIFICATION_MOBILE_FRIEND_ACTIVITY_UPDATES = 17;
+  BOARD_MOVE_LIST_STYLE = 18;
+  NOTIFICATION_MOBILE_RECOMMENDED_MATCH = 19;
+  NOTIFICATION_EMAIL_NEW_COMMENT = 20;
+  GAMEPLAY_DAILY_CONFIRM_MOVE = 21;
+  GAMEPLAY_SEEK_MIN_RATING = 22;
+  NOTIFICATION_WEB_NEW_USER_COMMENT = 23;
+  BOARD_SHOW_LEGAL_MOVES = 24;
+  GAMEPLAY_SHOW_TIMESTAMPS = 25;
+  NOTIFICATION_WEB_GAME_EVENT = 26;
+  PRIVACY_FRIENDS_LIST_PRIVACY = 27;
+  NOTIFICATION_WEB_VOTE_CHESS = 28;
+  BOARD_COORDINATES = 29;
+  GAMEPLAY_LIVE_PLAY_MULTIPLE_GAMES = 30;
+  NOTIFICATION_EMAIL_CHESS_TV = 31;
+  GAMEPLAY_LIVE_AUTO_PROMOTE_QUEEN = 32;
+  NOTIFICATION_MOBILE_NEW_COMMENT = 33;
+  GAMEPLAY_DAILY_MAX_DAYS_PER_MOVE = 34;
+  GAMEPLAY_CONFIRM_RESIGN = 35;
+  GAMEPLAY_LIVE_SEEK_BASE_TIME_VARIANTS = 36;
+  NOTIFICATION_EMAIL_LESSON_QUOTA = 37;
+  NOTIFICATION_EMAIL_LESSON_AND_PRACTICE = 38;
+  GAMEPLAY_LIVE_CHALLENGE_ALERTS = 39;
+  BOARD_WHITE_ALWAYS_ON_BOTTOM = 40;
+  NOTIFICATION_WEB_NEW_COMMENT = 41;
+  PRIVACY_INSIGHTS_PRIVACY = 42;
+  NOTIFICATION_WEB_NEW_CONTENT = 43;
+  PRIVACY_ALLOW_FRIEND_REQUESTS = 44;
+  NOTIFICATION_MOBILE_LESSON_QUOTA = 45;
+  GAMEPLAY_LIVE_PREMOVES = 46;
+  NOTIFICATION_MOBILE_NEW_MESSAGE = 47;
+  NOTIFICATION_WEB_NEWS_AND_ANNOUNCEMENTS = 48;
+  NOTIFICATION_EMAIL_HERO_PLAYING = 49;
+  GAMEPLAY_LIVE_EVALUATION_BAR = 50;
+  NOTIFICATION_MOBILE_VOTE_CHESS = 51;
+  NOTIFICATION_WEB_NEW_MESSAGE = 52;
+  BOARD_HIGHLIGHT_MOVES = 53;
+  GAMEPLAY_SEEK_MAX_RATING = 54;
+  GAMEPLAY_ANALYSIS_EVALUATION_BAR_MODE_WDL_FOR_OPENINGS = 55;
+  BOARD_BOARD_STYLE = 56;
+  GAMEPLAY_ALLOW_CHALLENGES_FROM = 57;
+  GAMEPLAY_PLAY_STREAKS = 58;
+  PRIVACY_ALLOW_GLOBAL_CHAT_REQUESTS_FROM = 59;
+  PUZZLES_SHOW_DETAILS = 60;
+  NOTIFICATION_WEB_NEW_SOCIAL_TROPHY = 61;
+  PRIVACY_BLOG_PRIVACY = 62;
+  GAMEPLAY_FRIENDS_CAN_CHALLENGE_ME_NO_MATTER_WHAT = 63;
+  GAMEPLAY_LIVE_SEEK_FILTER_PREMIUM_ONLY = 64;
+  NOTIFICATION_EMAIL_GAME_EVENT = 65;
+  GAMEPLAY_SEEK_GAME_TYPE = 66;
+  UI_ENABLE_SPECIAL_THEME_FORCING = 67;
+  GAMEPLAY_LIVE_SEEK_BASE_TIME_CHESS = 68;
+  NOTIFICATION_MOBILE_NEW_USER_COMMENT = 69;
+  NOTIFICATION_EMAIL_FRIEND_ACTIVITY_UPDATES = 70;
+  GAMEPLAY_LIVE_SEEK_INCREMENT_VARIANTS = 71;
+  GAMEPLAY_AUTO_ANALYSIS = 72;
+  PRIVACY_ALLOW_CLUB_INVITATIONS = 73;
+  GAMEPLAY_LIVE_LOW_TIME_WARNING = 74;
+  NOTIFICATION_WEB_LESSON_QUOTA = 75;
+  GAMEPLAY_DAILY_MIN_DAYS_PER_MOVE = 76;
+  GAMEPLAY_FOCUS_MODE = 77;
+  GAMEPLAY_LIVE_SEEK_IS_RATED = 78;
+  GAMEPLAY_LIVE_FRIENDS_ALERTS = 79;
+  PRIVACY_SAFE_MODE = 80;
+  BOARD_SHOW_ANIMATIONS = 81;
+  UI_MODE = 82;
+  GAMEPLAY_ANALYSIS_EVALUATION_BAR_MODE_TABLEBASE_IN_ENDGAME = 83;
+  NOTIFICATION_MOBILE_HERO_PLAYING = 84;
+  NOTIFICATION_MOBILE_PUZZLE_REMINDER = 85;
+  NOTIFICATION_WEB_FRIEND_ACTIVITY_UPDATES = 86;
+  GAMEPLAY_LIVE_ENGINE_EVALUATION = 87;
+  NOTIFICATION_EMAIL_NEW_USER_COMMENT = 88;
+  GAMEPLAY_ALLOW_GAME_CHAT_WITH = 89;
+  NOTIFICATION_EMAIL_NEW_FRIEND_REQUEST = 90;
+  NOTIFICATION_EMAIL_NEW_MESSAGE = 91;
+  GAMEPLAY_LIVE_AUTO_WATCH_TOP_GAME = 92;
+  BOARD_PIECES_STYLE = 93;
+  GAMEPLAY_LIVE_SEEK_INCREMENT_CHESS = 94;
+  NOTIFICATION_MOBILE_NEW_FRIEND_REQUEST = 95;
+  GAMEPLAY_DAILY_AFTER_MOVING = 96;
+  GAMEPLAY_LIVE_ALLOW_CHAT_REQUESTS_FROM = 97;
+  NOTIFICATION_EMAIL_MY_TURN_TO_MOVE = 98;
+  NOTIFICATION_MOBILE_NEW_SOCIAL_TROPHY = 99;
+  GAMEPLAY_DAILY_MAX_GAME_COUNT = 100;
+  PUZZLES_SHOW_TIMER = 101;
+  PRIVACY_NOTES_PRIVACY = 102;
+  LEARN_COACH = 103;
+  GAMEPLAY_LIVE_RIGHT_BUTTON_ARROWS = 104;
+  PRIVACY_ALLOW_TOURNAMENT_INVITATIONS = 105;
+  NOTIFICATION_WEB_NEW_FRIEND_REQUEST = 106;
+  GAMEPLAY_LIVE_EVENT_ANNOUNCEMENTS = 107;
+  NOTIFICATION_EMAIL_PUZZLE_REMINDER = 108;
+  NOTIFICATION_EMAIL_VOTE_CHESS = 109;
+  NOTIFICATION_AUTO_TRACK_CONTENT = 110;
+  GAMEPLAY_LIVE_SEEK_FILTER_HIDE_VARIANTS = 111;
+  PRIVACY_MESSAGES_PRIVACY = 112;
+  GAMEPLAY_LIVE_SEEK_FILTER_RATED_ONLY = 113;
+  NOTIFICATION_WEB_MY_TURN_TO_MOVE = 114;
+  GAMEPLAY_LIVE_AUTO_SWITCH_GAME = 115;
+  NOTIFICATION_WEB_HERO_PLAYING = 116;
+  GAMEPLAY_DAILY_AUTO_WIN_ON_TIME = 117;
+  BOARD_ANIMATION_TYPE = 118;
+  NOTIFICATION_MOBILE_LESSON_AND_PRACTICE = 119;
+  BOARD_WIN_CELEBRATION = 120;
+  NOTIFICATION_WEB_STREAKS_REMINDERS = 121;
+  NOTIFICATION_MOBILE_STREAKS_REMINDERS = 122;
+  NOTIFICATION_EMAIL_STREAKS_REMINDERS = 123;
+  NOTIFICATION_WEB_LEAGUES_REMINDERS = 124;
+  NOTIFICATION_MOBILE_LEAGUES_REMINDERS = 125;
+  NOTIFICATION_EMAIL_LEAGUES_REMINDERS = 126;
+  PUZZLES_SHOW_CLASSIC_MODE = 127;
+  GAMEPLAY_SHOW_MEMBERSHIP_BADGES = 128;
+  LEARN_COACH_ID = 129;
+  LEARN_COACH_NUDGE = 130;
+  TOASTER_CENTER_SHOW_CLUB_REQUEST_TOASTERS = 131;
+  TOASTER_CENTER_SHOW_FRIEND_REQUEST_TOASTERS = 132;
+  TOASTER_CENTER_AUTOMATICALLY_EXPAND_TOASTERS = 133;
+  BOARD_CASTLING_TYPE = 134;
+}
+
+message UserSettingsProperty {
+  oneof _notification_mobile_chess_tv {
+  bool notification_mobile_chess_tv = 1;
+  }
+  oneof _notification_web_chess_tv {
+  bool notification_web_chess_tv = 2;
+  }
+  oneof _gameplay_challenge_min_rating {
+  int32 gameplay_challenge_min_rating = 3;
+  }
+  oneof _notification_mobile_game_event {
+  bool notification_mobile_game_event = 4;
+  }
+  oneof _gameplay_live_allow_offline_challenges {
+  bool gameplay_live_allow_offline_challenges = 5;
+  }
+  oneof _notification_mobile_new_content {
+  bool notification_mobile_new_content = 6;
+  }
+  oneof _notification_mobile_my_turn_to_move {
+  bool notification_mobile_my_turn_to_move = 7;
+  }
+  oneof _notification_mobile_news_and_announcements {
+  bool notification_mobile_news_and_announcements = 8;
+  }
+  oneof _gameplay_challenge_max_rating {
+  int32 gameplay_challenge_max_rating = 9;
+  }
+  oneof _notification_web_lesson_and_practice {
+  bool notification_web_lesson_and_practice = 10;
+  }
+  oneof _board_play_sounds {
+  bool board_play_sounds = 11;
+  }
+  oneof _notification_email_new_content {
+  bool notification_email_new_content = 12;
+  }
+  oneof _notification_email_new_social_trophy {
+  bool notification_email_new_social_trophy = 13;
+  }
+  oneof _board_move_method {
+  string board_move_method = 14;
+  }
+  oneof _board_sound_theme {
+  string board_sound_theme = 15;
+  }
+  oneof _notification_email_news_and_announcements {
+  bool notification_email_news_and_announcements = 16;
+  }
+  oneof _notification_mobile_friend_activity_updates {
+  bool notification_mobile_friend_activity_updates = 17;
+  }
+  oneof _board_move_list_style {
+  string board_move_list_style = 18;
+  }
+  oneof _notification_mobile_recommended_match {
+  bool notification_mobile_recommended_match = 19;
+  }
+  oneof _notification_email_new_comment {
+  bool notification_email_new_comment = 20;
+  }
+  oneof _gameplay_daily_confirm_move {
+  bool gameplay_daily_confirm_move = 21;
+  }
+  oneof _gameplay_seek_min_rating {
+  int32 gameplay_seek_min_rating = 22;
+  }
+  oneof _notification_web_new_user_comment {
+  bool notification_web_new_user_comment = 23;
+  }
+  oneof _board_show_legal_moves {
+  bool board_show_legal_moves = 24;
+  }
+  oneof _gameplay_show_timestamps {
+  bool gameplay_show_timestamps = 25;
+  }
+  oneof _notification_web_game_event {
+  bool notification_web_game_event = 26;
+  }
+  oneof _privacy_friends_list_privacy {
+  string privacy_friends_list_privacy = 27;
+  }
+  oneof _notification_web_vote_chess {
+  bool notification_web_vote_chess = 28;
+  }
+  oneof _board_coordinates {
+  string board_coordinates = 29;
+  }
+  oneof _gameplay_live_play_multiple_games {
+  bool gameplay_live_play_multiple_games = 30;
+  }
+  oneof _notification_email_chess_tv {
+  bool notification_email_chess_tv = 31;
+  }
+  oneof _gameplay_live_auto_promote_queen {
+  bool gameplay_live_auto_promote_queen = 32;
+  }
+  oneof _notification_mobile_new_comment {
+  bool notification_mobile_new_comment = 33;
+  }
+  oneof _gameplay_daily_max_days_per_move {
+  int32 gameplay_daily_max_days_per_move = 34;
+  }
+  oneof _gameplay_confirm_resign {
+  bool gameplay_confirm_resign = 35;
+  }
+  oneof _gameplay_live_seek_base_time_variants {
+  int32 gameplay_live_seek_base_time_variants = 36;
+  }
+  oneof _notification_email_lesson_quota {
+  bool notification_email_lesson_quota = 37;
+  }
+  oneof _notification_email_lesson_and_practice {
+  bool notification_email_lesson_and_practice = 38;
+  }
+  oneof _gameplay_live_challenge_alerts {
+  string gameplay_live_challenge_alerts = 39;
+  }
+  oneof _board_white_always_on_bottom {
+  bool board_white_always_on_bottom = 40;
+  }
+  oneof _notification_web_new_comment {
+  bool notification_web_new_comment = 41;
+  }
+  oneof _privacy_insights_privacy {
+  string privacy_insights_privacy = 42;
+  }
+  oneof _notification_web_new_content {
+  bool notification_web_new_content = 43;
+  }
+  oneof _privacy_allow_friend_requests {
+  bool privacy_allow_friend_requests = 44;
+  }
+  oneof _notification_mobile_lesson_quota {
+  bool notification_mobile_lesson_quota = 45;
+  }
+  oneof _gameplay_live_premoves {
+  bool gameplay_live_premoves = 46;
+  }
+  oneof _notification_mobile_new_message {
+  bool notification_mobile_new_message = 47;
+  }
+  oneof _notification_web_news_and_announcements {
+  bool notification_web_news_and_announcements = 48;
+  }
+  oneof _notification_email_hero_playing {
+  bool notification_email_hero_playing = 49;
+  }
+  oneof _gameplay_live_evaluation_bar {
+  bool gameplay_live_evaluation_bar = 50;
+  }
+  oneof _notification_mobile_vote_chess {
+  bool notification_mobile_vote_chess = 51;
+  }
+  oneof _notification_web_new_message {
+  bool notification_web_new_message = 52;
+  }
+  oneof _board_highlight_moves {
+  bool board_highlight_moves = 53;
+  }
+  oneof _gameplay_seek_max_rating {
+  int32 gameplay_seek_max_rating = 54;
+  }
+  oneof _gameplay_analysis_evaluation_bar_mode_wdl_for_openings {
+  bool gameplay_analysis_evaluation_bar_mode_wdl_for_openings = 55;
+  }
+  oneof _board_board_style {
+  string board_board_style = 56;
+  }
+  oneof _gameplay_allow_challenges_from {
+  string gameplay_allow_challenges_from = 57;
+  }
+  oneof _gameplay_play_streaks {
+  bool gameplay_play_streaks = 58;
+  }
+  oneof _privacy_allow_global_chat_requests_from {
+  string privacy_allow_global_chat_requests_from = 59;
+  }
+  oneof _puzzles_show_details {
+  string puzzles_show_details = 60;
+  }
+  oneof _notification_web_new_social_trophy {
+  bool notification_web_new_social_trophy = 61;
+  }
+  oneof _privacy_blog_privacy {
+  string privacy_blog_privacy = 62;
+  }
+  oneof _gameplay_friends_can_challenge_me_no_matter_what {
+  bool gameplay_friends_can_challenge_me_no_matter_what = 63;
+  }
+  oneof _gameplay_live_seek_filter_premium_only {
+  bool gameplay_live_seek_filter_premium_only = 64;
+  }
+  oneof _notification_email_game_event {
+  bool notification_email_game_event = 65;
+  }
+  oneof _gameplay_seek_game_type {
+  string gameplay_seek_game_type = 66;
+  }
+  oneof _ui_enable_special_theme_forcing {
+  bool ui_enable_special_theme_forcing = 67;
+  }
+  oneof _gameplay_live_seek_base_time_chess {
+  int32 gameplay_live_seek_base_time_chess = 68;
+  }
+  oneof _notification_mobile_new_user_comment {
+  bool notification_mobile_new_user_comment = 69;
+  }
+  oneof _notification_email_friend_activity_updates {
+  bool notification_email_friend_activity_updates = 70;
+  }
+  oneof _gameplay_live_seek_increment_variants {
+  int32 gameplay_live_seek_increment_variants = 71;
+  }
+  oneof _gameplay_auto_analysis {
+  bool gameplay_auto_analysis = 72;
+  }
+  oneof _privacy_allow_club_invitations {
+  bool privacy_allow_club_invitations = 73;
+  }
+  oneof _gameplay_live_low_time_warning {
+  bool gameplay_live_low_time_warning = 74;
+  }
+  oneof _notification_web_lesson_quota {
+  bool notification_web_lesson_quota = 75;
+  }
+  oneof _gameplay_daily_min_days_per_move {
+  int32 gameplay_daily_min_days_per_move = 76;
+  }
+  oneof _gameplay_focus_mode {
+  bool gameplay_focus_mode = 77;
+  }
+  oneof _gameplay_live_seek_is_rated {
+  bool gameplay_live_seek_is_rated = 78;
+  }
+  oneof _gameplay_live_friends_alerts {
+  string gameplay_live_friends_alerts = 79;
+  }
+  oneof _privacy_safe_mode {
+  bool privacy_safe_mode = 80;
+  }
+  oneof _board_show_animations {
+  bool board_show_animations = 81;
+  }
+  oneof _ui_mode {
+  string ui_mode = 82;
+  }
+  oneof _gameplay_analysis_evaluation_bar_mode_tablebase_in_endgame {
+  bool gameplay_analysis_evaluation_bar_mode_tablebase_in_endgame = 83;
+  }
+  oneof _notification_mobile_hero_playing {
+  bool notification_mobile_hero_playing = 84;
+  }
+  oneof _notification_mobile_puzzle_reminder {
+  bool notification_mobile_puzzle_reminder = 85;
+  }
+  oneof _notification_web_friend_activity_updates {
+  bool notification_web_friend_activity_updates = 86;
+  }
+  oneof _gameplay_live_engine_evaluation {
+  bool gameplay_live_engine_evaluation = 87;
+  }
+  oneof _notification_email_new_user_comment {
+  bool notification_email_new_user_comment = 88;
+  }
+  oneof _gameplay_allow_game_chat_with {
+  string gameplay_allow_game_chat_with = 89;
+  }
+  oneof _notification_email_new_friend_request {
+  bool notification_email_new_friend_request = 90;
+  }
+  oneof _notification_email_new_message {
+  bool notification_email_new_message = 91;
+  }
+  oneof _gameplay_live_auto_watch_top_game {
+  bool gameplay_live_auto_watch_top_game = 92;
+  }
+  oneof _board_pieces_style {
+  string board_pieces_style = 93;
+  }
+  oneof _gameplay_live_seek_increment_chess {
+  int32 gameplay_live_seek_increment_chess = 94;
+  }
+  oneof _notification_mobile_new_friend_request {
+  bool notification_mobile_new_friend_request = 95;
+  }
+  oneof _gameplay_daily_after_moving {
+  string gameplay_daily_after_moving = 96;
+  }
+  oneof _gameplay_live_allow_chat_requests_from {
+  string gameplay_live_allow_chat_requests_from = 97;
+  }
+  oneof _notification_email_my_turn_to_move {
+  bool notification_email_my_turn_to_move = 98;
+  }
+  oneof _notification_mobile_new_social_trophy {
+  bool notification_mobile_new_social_trophy = 99;
+  }
+  oneof _gameplay_daily_max_game_count {
+  int32 gameplay_daily_max_game_count = 100;
+  }
+  oneof _puzzles_show_timer {
+  bool puzzles_show_timer = 101;
+  }
+  oneof _privacy_notes_privacy {
+  string privacy_notes_privacy = 102;
+  }
+  oneof _learn_coach {
+  string learn_coach = 103;
+  }
+  oneof _gameplay_live_right_button_arrows {
+  bool gameplay_live_right_button_arrows = 104;
+  }
+  oneof _privacy_allow_tournament_invitations {
+  bool privacy_allow_tournament_invitations = 105;
+  }
+  oneof _notification_web_new_friend_request {
+  bool notification_web_new_friend_request = 106;
+  }
+  oneof _gameplay_live_event_announcements {
+  string gameplay_live_event_announcements = 107;
+  }
+  oneof _notification_email_puzzle_reminder {
+  bool notification_email_puzzle_reminder = 108;
+  }
+  oneof _notification_email_vote_chess {
+  bool notification_email_vote_chess = 109;
+  }
+  oneof _notification_auto_track_content {
+  bool notification_auto_track_content = 110;
+  }
+  oneof _gameplay_live_seek_filter_hide_variants {
+  bool gameplay_live_seek_filter_hide_variants = 111;
+  }
+  oneof _privacy_messages_privacy {
+  string privacy_messages_privacy = 112;
+  }
+  oneof _gameplay_live_seek_filter_rated_only {
+  bool gameplay_live_seek_filter_rated_only = 113;
+  }
+  oneof _notification_web_my_turn_to_move {
+  bool notification_web_my_turn_to_move = 114;
+  }
+  oneof _gameplay_live_auto_switch_game {
+  bool gameplay_live_auto_switch_game = 115;
+  }
+  oneof _notification_web_hero_playing {
+  bool notification_web_hero_playing = 116;
+  }
+  oneof _gameplay_daily_auto_win_on_time {
+  bool gameplay_daily_auto_win_on_time = 117;
+  }
+  oneof _board_animation_type {
+  string board_animation_type = 118;
+  }
+  oneof _notification_mobile_lesson_and_practice {
+  bool notification_mobile_lesson_and_practice = 119;
+  }
+  oneof _board_win_celebration {
+  string board_win_celebration = 120;
+  }
+  oneof _notification_web_streaks_reminders {
+  bool notification_web_streaks_reminders = 121;
+  }
+  oneof _notification_mobile_streaks_reminders {
+  bool notification_mobile_streaks_reminders = 122;
+  }
+  oneof _notification_email_streaks_reminders {
+  bool notification_email_streaks_reminders = 123;
+  }
+  oneof _notification_web_leagues_reminders {
+  bool notification_web_leagues_reminders = 124;
+  }
+  oneof _notification_mobile_leagues_reminders {
+  bool notification_mobile_leagues_reminders = 125;
+  }
+  oneof _notification_email_leagues_reminders {
+  bool notification_email_leagues_reminders = 126;
+  }
+  oneof _puzzles_show_classic_mode {
+  bool puzzles_show_classic_mode = 127;
+  }
+  oneof _gameplay_show_membership_badges {
+  bool gameplay_show_membership_badges = 128;
+  }
+  oneof _learn_coach_id {
+  string learn_coach_id = 129;
+  }
+  oneof _learn_coach_nudge {
+  bool learn_coach_nudge = 130;
+  }
+  oneof _toaster_center_show_club_request_toasters {
+  bool toaster_center_show_club_request_toasters = 131;
+  }
+  oneof _toaster_center_show_friend_request_toasters {
+  bool toaster_center_show_friend_request_toasters = 132;
+  }
+  oneof _toaster_center_automatically_expand_toasters {
+  bool toaster_center_automatically_expand_toasters = 133;
+  }
+  oneof _board_castling_type {
+  string board_castling_type = 134;
+  }
+}

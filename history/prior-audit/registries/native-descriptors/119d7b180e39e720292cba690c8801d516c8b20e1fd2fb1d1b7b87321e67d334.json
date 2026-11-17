@@ -1,0 +1,35 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_load_game_state.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_state.proto",
+    "chesscom/explanation_engine/v1/game_point_info.proto"
+  ],
+  "message_type": [
+    {
+      "name": "LoadGameStateRequest",
+      "field": [
+        {
+          "name": "game_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState"
+        }
+      ]
+    },
+    {
+      "name": "LoadGameStateResponse",
+      "field": [
+        {
+          "name": "played_line",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

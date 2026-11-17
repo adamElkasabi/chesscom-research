@@ -1,0 +1,351 @@
+{
+  "name": "chesscom/coaches/v2/model.proto",
+  "package": "chesscom.coaches.v2",
+  "message_type": [
+    {
+      "name": "Coach",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "titled_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "image_url",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "voice_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "description",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "country",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Country"
+        },
+        {
+          "name": "locale",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "text_id",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "analytics_id",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "icon_url",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "taglines",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Speech"
+        },
+        {
+          "name": "i18n_meta",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.CoachI18nMetadata"
+        },
+        {
+          "name": "is_celebrity",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "rive_animation_url",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "greeting_rive_animation_url",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_visemes",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_voice_id"
+        },
+        {
+          "name": "_rive_animation_url"
+        },
+        {
+          "name": "_greeting_rive_animation_url"
+        },
+        {
+          "name": "_has_visemes"
+        }
+      ]
+    },
+    {
+      "name": "CoachI18nMetadata",
+      "field": [
+        {
+          "name": "language_indicator",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_language_indicator"
+        }
+      ]
+    },
+    {
+      "name": "CoachCategory",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "coaches",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.Coach"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SpeechString",
+      "field": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "audio_hash",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayCoachAssistanceSettingsSnapshot",
+      "field": [
+        {
+          "name": "suggestion_arrows",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "threat_arrows",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "evaluation_bar",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "move_feedback",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "auto_hints",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FinishVsCoachContext",
+      "field": [
+        {
+          "name": "source",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.coaches.v2.FinishVsCoachSource",
+          "options": {}
+        },
+        {
+          "name": "original_game_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "original_game_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CoachVoiceSpeed",
+      "value": [
+        {
+          "name": "COACH_VOICE_SPEED_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_VOICE_SPEED_NORMAL",
+          "number": 1
+        },
+        {
+          "name": "COACH_VOICE_SPEED_1_25_TIMES",
+          "number": 2
+        },
+        {
+          "name": "COACH_VOICE_SPEED_1_50_TIMES",
+          "number": 3
+        },
+        {
+          "name": "COACH_VOICE_SPEED_2_TIMES",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CoachContext",
+      "value": [
+        {
+          "name": "COACH_CONTEXT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_CONTEXT_HOME",
+          "number": 1
+        },
+        {
+          "name": "COACH_CONTEXT_LEARN",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CoachSpeechType",
+      "value": [
+        {
+          "name": "COACH_SPEECH_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_SPEECH_TYPE_WELCOME",
+          "number": 1
+        },
+        {
+          "name": "COACH_SPEECH_TYPE_MOTIVATIONAL",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "FinishVsCoachSource",
+      "value": [
+        {
+          "name": "FINISH_VS_COACH_SOURCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FINISH_VS_COACH_SOURCE_GAME",
+          "number": 1
+        },
+        {
+          "name": "FINISH_VS_COACH_SOURCE_ANALYSIS",
+          "number": 2
+        },
+        {
+          "name": "FINISH_VS_COACH_SOURCE_GAME_REVIEW",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,109 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_move_classification.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "MoveClassificationRequest",
+      "field": [
+        {
+          "name": "stream_results",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_pv_classifications",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "MoveClassificationResponse",
+      "field": [
+        {
+          "name": "active",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EvalClassification"
+        },
+        {
+          "name": "alternative",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AltMoveClassification",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "progress",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "pv_classifications",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PvClassifications",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_alternative"
+        },
+        {
+          "name": "_pv_classifications"
+        }
+      ]
+    },
+    {
+      "name": "PvClassifications",
+      "field": [
+        {
+          "name": "classifications",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EvalClassification"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AltMoveClassification",
+      "field": [
+        {
+          "name": "classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EvalClassification"
+        },
+        {
+          "name": "move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "progress",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

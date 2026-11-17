@@ -1,0 +1,21 @@
+{
+  "url": "https://www.chess.com/play/computer",
+  "status": 200,
+  "raw_body_bytes": 115495,
+  "raw_body_sha256": "e335041203a097e05599fec2d3e8b4b9a9239708c72a5fd4aca56d9371715712",
+  "raw_body_packaged": false,
+  "reason": "Page bootstrap includes request-context IP/session-related data; not delivered.",
+  "session_date": "2026-11-13",
+  "observed_response_clock": "2026-11-15; date discrepancy preserved, not normalized into deployment proof",
+  "package": "play-computer/2026.11.5",
+  "literal_presence": {
+    "web_bot_move_next": true,
+    "web_bot_move_next_experiment_bypass": false,
+    "web_configurator_v4_runtime": true,
+    "bot_books_from_assets_bots": true,
+    "book_binaries_from_npm_data_eco_webapp": true,
+    "web_analysis_torch_human_v2": true,
+    "web_play_computer_node_based_engine_searches": true
+  },
+  "gate_conclusion": "Feature name present is not sufficient: experiment bucket not recovered in this page; R5 activation unproven."
+}

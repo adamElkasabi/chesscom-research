@@ -1,0 +1,47 @@
+// source: chesscom/bots/v1/bot_group_service.proto
+// syntax: proto3
+
+package chesscom.bots.v1;
+
+message ListBotGroupsRequest {
+  oneof _bot_group_uuid {
+  string bot_group_uuid = 1;
+  }
+  oneof _with_bots {
+  bool with_bots = 5;
+  }
+  repeated string supported_languages = 6;
+}
+
+message ListBotGroupsResponse {
+  oneof _recommended_bot_id {
+  string recommended_bot_id = 2;
+  }
+  repeated .chesscom.bots.v1.BotGroup bot_groups = 1;
+}
+
+message ListAllBotsInGroupRequest {
+  optional string bot_group_uuid = 1;
+  repeated string supported_languages = 6;
+}
+
+message ListAllBotsInGroupResponse {
+  optional .chesscom.bots.v1.BotGroup bot_group = 1;
+  repeated .chesscom.bots.v1.BotPersonality bot_personalities = 2;
+}
+
+message ListAllBotsForClubRequest {
+  optional string club_uuid = 1;
+}
+
+message ListAllBotsForClubResponse {
+  optional .chesscom.bots.v1.BotGroup bot_group = 1;
+  repeated .chesscom.bots.v1.BotPersonality bot_personalities = 2;
+}
+
+message ListAllBotNamesRequest {
+}
+
+message ListAllBotNamesResponse {
+  repeated .chesscom.bots.v1.SupportedBot supported_bot = 1;
+}

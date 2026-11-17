@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/coach_choice_type.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "CoachChoiceType",
+      "value": [
+        {
+          "name": "COACH_CHOICE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_RETRY_MISTAKE_RETRY",
+          "number": 1
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_RETRY_MISTAKE_CONTINUE",
+          "number": 2
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_FLIP_BOARD_SWITCH_SIDES",
+          "number": 3
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_FLIP_BOARD_DECLINE",
+          "number": 4
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_FLIP_BOARD_CONTINUE_AFTER_FLIP",
+          "number": 5
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_RETRY_MISS_RETRY",
+          "number": 6
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_RETRY_MISS_CONTINUE",
+          "number": 7
+        },
+        {
+          "name": "COACH_CHOICE_TYPE_RETRY_MISTAKE_CONTINUE_GAME_END",
+          "number": 8
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

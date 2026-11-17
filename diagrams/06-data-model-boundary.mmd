@@ -1,0 +1,5 @@
+flowchart TD
+ Proto[Confirmed protobuf Game Review Move Score models] --> Fields[Wire fields and namespace enums]
+ Publication[Published persistence domains] --> Systems[MySQL ScyllaDB Elasticsearch Redis]
+ Fields -. no proven table column mapping .-> SQL[Unknown relational DDL]
+ Systems -. no schema access .-> SQL

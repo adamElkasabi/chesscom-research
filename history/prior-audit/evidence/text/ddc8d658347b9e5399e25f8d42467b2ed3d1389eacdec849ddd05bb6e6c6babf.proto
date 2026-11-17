@@ -1,0 +1,161 @@
+// source: chesscom/user_gateway/v1/user_gateway_service_envelopes.proto
+// syntax: proto3
+
+package chesscom.user_gateway.v1;
+
+message RelationshipWriteSuccess {
+  optional .google.protobuf.Timestamp completed_at = 1;
+}
+
+message SendFriendRequestFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.AlreadyFriends already_friends = 1;
+  .chesscom.user_gateway.v1.UserBlocked user_blocked = 2;
+  .chesscom.user_gateway.v1.SelfRelationshipNotAllowed self_relationship_not_allowed = 3;
+  .chesscom.user_gateway.v1.FriendshipLimitReached friendship_limit_reached = 4;
+  .chesscom.user_gateway.v1.TargetFriendCapReached target_friend_cap_reached = 5;
+  .chesscom.user_gateway.v1.OutgoingFriendRequestCapReached outgoing_friend_request_cap_reached = 6;
+  .chesscom.user_gateway.v1.TrustLevelDenied trust_level_denied = 7;
+  .chesscom.user_gateway.v1.RateLimitExceeded rate_limit_exceeded = 8;
+  .chesscom.user_gateway.v1.TargetNotAcceptingFriendRequests target_not_accepting_friend_requests = 9;
+  .chesscom.user_gateway.v1.TargetUnavailable target_unavailable = 10;
+  .chesscom.user_gateway.v1.SenderNotAllowed sender_not_allowed = 11;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 12;
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 13;
+  }
+}
+
+message AcceptFriendRequestFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.RelationshipNotFound not_found = 1;
+  .chesscom.user_gateway.v1.FriendRequestNotPending friend_request_not_pending = 2;
+  .chesscom.user_gateway.v1.FriendshipLimitReached friendship_limit_reached = 3;
+  .chesscom.user_gateway.v1.UserBlocked user_blocked = 4;
+  .chesscom.user_gateway.v1.RateLimitExceeded rate_limit_exceeded = 5;
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 6;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 7;
+  }
+}
+
+message DeclineFriendRequestFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.RateLimitExceeded rate_limit_exceeded = 1;
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 2;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 3;
+  }
+}
+
+message CancelFriendRequestFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.RateLimitExceeded rate_limit_exceeded = 1;
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 2;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 3;
+  }
+}
+
+message RemoveFriendFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 1;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 2;
+  }
+}
+
+message BlockUserFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.TargetImmune target_immune = 1;
+  .chesscom.user_gateway.v1.BlockLimitReached block_limit_reached = 2;
+  .chesscom.user_gateway.v1.SelfRelationshipNotAllowed self_relationship_not_allowed = 3;
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 4;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 5;
+  }
+}
+
+message UnblockUserFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.TargetUserNotFound target_user_not_found = 1;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 2;
+  }
+}
+
+message AcceptFriendLinkSuccess {
+  optional string friend_uuid = 1;
+  optional string friend_username = 2;
+}
+
+message AcceptFriendLinkFailure {
+  oneof error {
+  .chesscom.user_gateway.v1.FriendLinkInvalid friend_link_invalid = 1;
+  .chesscom.user_gateway.v1.FriendLinkNotFound friend_link_not_found = 2;
+  .chesscom.user_gateway.v1.SelfRelationshipNotAllowed self_relationship_not_allowed = 3;
+  .chesscom.user_gateway.v1.UserBlocked user_blocked = 4;
+  .chesscom.user_gateway.v1.FriendshipLimitReached friendship_limit_reached = 5;
+  .chesscom.user_gateway.v1.RateLimitExceeded rate_limit_exceeded = 6;
+  .chesscom.user_gateway.v1.InvalidRequest invalid_request = 7;
+  }
+}
+
+message AlreadyFriends {
+}
+
+message TargetFriendCapReached {
+}
+
+message OutgoingFriendRequestCapReached {
+}
+
+message TrustLevelDenied {
+  oneof _reason {
+  string reason = 1;
+  }
+}
+
+message TargetNotAcceptingFriendRequests {
+}
+
+message TargetUnavailable {
+}
+
+message SenderNotAllowed {
+}
+
+message TargetUserNotFound {
+}
+
+message RelationshipNotFound {
+}
+
+message FriendRequestNotPending {
+}
+
+message FriendLinkInvalid {
+}
+
+message FriendLinkNotFound {
+}
+
+message SelfRelationshipNotAllowed {
+}
+
+message UserBlocked {
+}
+
+message TargetImmune {
+}
+
+message BlockLimitReached {
+  optional int32 max_blocked_users = 1;
+}
+
+message FriendshipLimitReached {
+  optional int32 max_friends = 1;
+}
+
+message RateLimitExceeded {
+  optional int32 retry_after_seconds = 1;
+}
+
+message InvalidRequest {
+  oneof _message {
+  string message = 1;
+  }
+}

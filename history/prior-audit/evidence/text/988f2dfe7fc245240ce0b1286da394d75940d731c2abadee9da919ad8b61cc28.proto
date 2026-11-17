@@ -1,0 +1,23 @@
+// source: chesscom/user_properties/v1/properties_puzzle_rush.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum PuzzleRushPropertyDefinition {
+  PUZZLE_RUSH_UNSPECIFIED = 0;
+  PUZZLE_RUSH_NUMBER_OF_PUZZLE_RUSH_GAMES = 1;
+  PUZZLE_RUSH_BEST_PUZZLE_RUSH_SCORE = 2;
+  PUZZLE_RUSH_LAST_PUZZLE_RUSH_EVENT_DATE = 3;
+}
+
+message PuzzleRushProperty {
+  oneof _number_of_puzzle_rush_games {
+  int32 number_of_puzzle_rush_games = 1;
+  }
+  oneof _best_puzzle_rush_score {
+  int32 best_puzzle_rush_score = 2;
+  }
+  oneof _last_puzzle_rush_event_date {
+  .google.protobuf.Timestamp last_puzzle_rush_event_date = 3;
+  }
+}

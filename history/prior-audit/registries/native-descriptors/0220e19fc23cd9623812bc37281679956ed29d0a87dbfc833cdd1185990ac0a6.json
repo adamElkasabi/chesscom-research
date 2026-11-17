@@ -1,0 +1,46 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_compressed_position.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/position.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetCompressedPositionRequest",
+      "field": [
+        {
+          "name": "position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Position",
+          "oneof_index": 0
+        },
+        {
+          "name": "fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "position_to_convert"
+        }
+      ]
+    },
+    {
+      "name": "GetCompressedPositionResponse",
+      "field": [
+        {
+          "name": "compressed_position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "google/protobuf/any.proto",
+  "package": "google.protobuf",
+  "message_type": [
+    {
+      "name": "Any",
+      "field": [
+        {
+          "name": "type_url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ]
+    }
+  ],
+  "options": {
+    "java_package": "com.google.protobuf",
+    "java_outer_classname": "AnyProto",
+    "java_multiple_files": true,
+    "go_package": "google.golang.org/protobuf/types/known/anypb",
+    "objc_class_prefix": "GPB",
+    "csharp_namespace": "Google.Protobuf.WellKnownTypes"
+  },
+  "syntax": "proto3"
+}

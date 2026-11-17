@@ -1,0 +1,89 @@
+{
+  "name": "chesscom/payments/v1/member_promotion.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "MemberPromotion",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.IncentiveType"
+        },
+        {
+          "name": "discount_percent",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "free_time_days",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "ends_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "redeemable_platforms",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        }
+      ]
+    },
+    {
+      "name": "PromotionOnCharge",
+      "field": [
+        {
+          "name": "charge_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "charged_at",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "promotion",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.MemberPromotion"
+        },
+        {
+          "name": "coupon_code_used",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "platform",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

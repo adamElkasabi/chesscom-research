@@ -1,0 +1,111 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_game_features.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_features.proto",
+    "chesscom/explanation_engine/v1alpha/game_feature_computation.proto",
+    "chesscom/explanation_engine/v1alpha/game_features.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGameFeaturesRequest",
+      "field": [
+        {
+          "name": "ignore_missing_move_timestamps",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "skip_charm",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGameFeaturesResponse",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.MoveFeatures"
+        },
+        {
+          "name": "eco_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "eco_family_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "opening_name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "white_accuracy",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "black_accuracy",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "white_game_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PlayerGameRating"
+        },
+        {
+          "name": "black_game_rating",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PlayerGameRating"
+        },
+        {
+          "name": "computation",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.GameFeatureComputation"
+        },
+        {
+          "name": "features",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameFeatures"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_white_accuracy"
+        },
+        {
+          "name": "_black_accuracy"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

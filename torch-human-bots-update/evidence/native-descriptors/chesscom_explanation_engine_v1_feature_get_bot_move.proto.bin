@@ -1,0 +1,7 @@
+
+9chesscom/explanation_engine/v1/feature_get_bot_move.protochesscom.explanation_engine.v1chesscom/chess/v1/move.proto(chesscom/explanation_engine/v1/bot.proto"‹
+GetBotMoveRequest;
+options (2*.chesscom.explanation_engine.v1.BotOptions9
+engine (2).chesscom.explanation_engine.v1.BotEngine";
+GetBotMoveResponse%
+move (2.chesscom.chess.v1.Movebproto3

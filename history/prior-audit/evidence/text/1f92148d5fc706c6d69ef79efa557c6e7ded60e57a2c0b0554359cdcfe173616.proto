@@ -1,0 +1,11 @@
+// source: chesscom/themes/v2/platform.proto
+// syntax: proto3
+
+package chesscom.themes.v2;
+
+enum Platform {
+  PLATFORM_UNSPECIFIED = 0;
+  PLATFORM_WEB = 1;
+  PLATFORM_ANDROID = 2;
+  PLATFORM_IPHONE = 3;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/courses_common/v1/course_variation_type.proto",
+  "package": "chesscom.courses_common.v1",
+  "enum_type": [
+    {
+      "name": "CourseVariationType",
+      "value": [
+        {
+          "name": "COURSE_VARIATION_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_VARIATION_TYPE_INFORMATIONAL",
+          "number": 1
+        },
+        {
+          "name": "COURSE_VARIATION_TYPE_ALTERNATIVE",
+          "number": 2
+        },
+        {
+          "name": "COURSE_VARIATION_TYPE_REFERENCE",
+          "number": 3
+        },
+        {
+          "name": "COURSE_VARIATION_TYPE_PUZZLE",
+          "number": 4
+        },
+        {
+          "name": "COURSE_VARIATION_TYPE_LESSON",
+          "number": 5
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

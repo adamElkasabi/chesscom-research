@@ -1,0 +1,89 @@
+// source: chesscom/skills/v1/skills_service.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+message GainSkillPointsRequest {
+  oneof input {
+  .chesscom.skills.v1.GainSkillPointsRequest.CoachInput coach_input = 3;
+  .chesscom.skills.v1.GainSkillPointsRequest.GameReviewInput game_review_input = 4;
+  }
+  optional string game_id = 1;
+  repeated .chesscom.explanation_engine.v1.SkillsPosition skill_positions = 2;
+  message CoachInput {
+  optional .chesscom.chess.v1.Color player_color = 1;
+  }
+  message GameReviewInput {
+  }
+}
+
+message GainSkillPointsResponse {
+  oneof result {
+  .chesscom.skills.v1.GainSkillPointsResponse.GainSkillPointsSuccess success = 1;
+  .chesscom.skills.v1.GainSkillPointsResponse.GainSkillPointsFailure failure = 2;
+  }
+  message GainSkillPointsSuccess {
+  repeated .chesscom.explanation_engine.v1.Skill skills_unlocked = 1;
+  repeated .chesscom.skills.v1.SkillPointGained skill_points_gained = 2;
+  repeated .chesscom.explanation_engine.v1.Skill skills_mastered = 3;
+  optional bool has_mastered_all = 4;
+  optional bool is_first_ever_skill_point = 5;
+  }
+  message GainSkillPointsFailure {
+  optional .chesscom.skills.v1.EligibilityError error = 1;
+  }
+}
+
+message GetSkillsRequest {
+}
+
+message GetSkillsResponse {
+  repeated .chesscom.skills.v1.SkillView skill_items = 1;
+  optional bool has_mastered_all = 2;
+}
+
+message GetSkillsPositionsRequest {
+  optional string game_id = 1;
+  repeated .chesscom.explanation_engine.v1.SkillsPosition skill_positions = 2;
+}
+
+message GetSkillsPositionsResponse {
+  oneof result {
+  .chesscom.skills.v1.GetSkillsPositionsResponse.GetSkillsPositionsSuccess success = 1;
+  .chesscom.skills.v1.GetSkillsPositionsResponse.GetSkillsPositionsFailure failure = 2;
+  }
+  message GetSkillsPositionsSuccess {
+  repeated .chesscom.explanation_engine.v1.SkillsPosition skill_positions = 1;
+  }
+  message GetSkillsPositionsFailure {
+  optional .chesscom.skills.v1.EligibilityError error = 1;
+  }
+}
+
+message GetConfigRequest {
+  oneof _version {
+  string version = 1;
+  }
+}
+
+message GetConfigResponse {
+  oneof _skill_configuration {
+  .chesscom.skills.v1.SkillConfiguration skill_configuration = 3;
+  }
+  oneof _skill_category_configuration {
+  .chesscom.skills.v1.SkillCategoryConfiguration skill_category_configuration = 4;
+  }
+  optional .chesscom.skills.v1.GetConfigResponse.Status status = 1;
+  optional string version = 2;
+  enum Status {
+    STATUS_UNSPECIFIED = 0;
+    STATUS_NEW_VERSION_AVAILABLE = 1;
+    STATUS_UP_TO_DATE = 2;
+  }
+}
+
+message ResetSkillsRequest {
+}
+
+message ResetSkillsResponse {
+}

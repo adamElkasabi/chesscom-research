@@ -1,0 +1,11 @@
+// source: chesscom/payments/v1/storefront_country.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message StorefrontCountry {
+  optional string country_code = 1;
+  optional string currency_code = 2;
+  optional bool tax_inclusive_prices = 3;
+  optional bool should_display_checkout_disclaimer = 4;
+}

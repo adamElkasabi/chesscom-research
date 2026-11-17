@@ -1,0 +1,49 @@
+// source: chesscom/shared_board/v1alpha/shared_board_session.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+enum SharedBoardSessionStatus {
+  SHARED_BOARD_SESSION_STATUS_UNSPECIFIED = 0;
+  SHARED_BOARD_SESSION_STATUS_ACTIVE = 1;
+  SHARED_BOARD_SESSION_STATUS_ENDED = 2;
+}
+
+enum SharedBoardSessionSource {
+  SHARED_BOARD_SESSION_SOURCE_UNSPECIFIED = 0;
+  SHARED_BOARD_SESSION_SOURCE_ANALYSIS = 1;
+  SHARED_BOARD_SESSION_SOURCE_EVENTS = 2;
+}
+
+message SharedBoardSessionId {
+  oneof id {
+  string session_id = 1;
+  string slug = 2;
+  }
+}
+
+message SharedBoardSession {
+  optional string id = 1;
+  optional string current_board_id = 2;
+  repeated .chesscom.shared_board.v1alpha.SharedBoard boards = 3;
+  optional .google.protobuf.Timestamp created_at = 4;
+  optional string slug = 5;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardParticipant participants = 6;
+  optional bool open_enrollment = 7;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionStatus status = 8;
+  optional .chesscom.shared_board.v1alpha.SharedBoardClock clock = 9;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionSource source = 10;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionResource linked_resource = 11;
+}
+
+message SharedBoardSessionSummary {
+  optional string id = 1;
+  optional string slug = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionSource source = 3;
+  optional bool open_enrollment = 4;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionStatus status = 5;
+  optional .chesscom.shared_board.v1alpha.SharedBoardRole role = 6;
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipantStatus participant_status = 7;
+  optional .google.protobuf.Timestamp created_at = 8;
+  optional .google.protobuf.Timestamp updated_at = 9;
+}

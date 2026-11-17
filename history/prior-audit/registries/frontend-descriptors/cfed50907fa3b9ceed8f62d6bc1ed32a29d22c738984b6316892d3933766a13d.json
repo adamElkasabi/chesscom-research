@@ -1,0 +1,269 @@
+{
+  "name": "chesscom/courses/v1/courses_authentication_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "AuthenticateForCoursesWithCookieRequest",
+      "field": [
+        {
+          "name": "provider_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "cookie_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AuthenticateForCoursesWithCookieResponse",
+      "field": [
+        {
+          "name": "access_token",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "refresh_token",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "expires_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "expires_in_seconds",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        }
+      ]
+    },
+    {
+      "name": "GetOAuthURLForCoursesRequest",
+      "field": [
+        {
+          "name": "provider_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "redirect_uri",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetOAuthURLForCoursesResponse",
+      "field": [
+        {
+          "name": "url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AuthenticateForCoursesRequest",
+      "field": [
+        {
+          "name": "provider_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "redirect_uri",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "state",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AuthenticateForCoursesResponse",
+      "field": [
+        {
+          "name": "access_token",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "refresh_token",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "expires_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "expires_in_seconds",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        }
+      ]
+    },
+    {
+      "name": "RefreshTokenForCoursesRequest",
+      "field": [
+        {
+          "name": "refresh_token",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "RefreshTokenForCoursesResponse",
+      "field": [
+        {
+          "name": "access_token",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "refresh_token",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "expires_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "expires_in_seconds",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_refresh_token"
+        }
+      ]
+    },
+    {
+      "name": "GetUserInfoForCoursesRequest"
+    },
+    {
+      "name": "GetUserInfoForCoursesResponse",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "username",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "picture",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture"
+        },
+        {
+          "name": "provider",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "flags",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.UserFlag"
+        },
+        {
+          "name": "user_goal",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.UserGoal"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CoursesAuthenticationService",
+      "method": [
+        {
+          "name": "AuthenticateForCoursesWithCookie",
+          "input_type": ".chesscom.courses.v1.AuthenticateForCoursesWithCookieRequest",
+          "output_type": ".chesscom.courses.v1.AuthenticateForCoursesWithCookieResponse"
+        },
+        {
+          "name": "GetOAuthURLForCourses",
+          "input_type": ".chesscom.courses.v1.GetOAuthURLForCoursesRequest",
+          "output_type": ".chesscom.courses.v1.GetOAuthURLForCoursesResponse"
+        },
+        {
+          "name": "AuthenticateForCourses",
+          "input_type": ".chesscom.courses.v1.AuthenticateForCoursesRequest",
+          "output_type": ".chesscom.courses.v1.AuthenticateForCoursesResponse"
+        },
+        {
+          "name": "RefreshTokenForCourses",
+          "input_type": ".chesscom.courses.v1.RefreshTokenForCoursesRequest",
+          "output_type": ".chesscom.courses.v1.RefreshTokenForCoursesResponse"
+        },
+        {
+          "name": "GetUserInfoForCourses",
+          "input_type": ".chesscom.courses.v1.GetUserInfoForCoursesRequest",
+          "output_type": ".chesscom.courses.v1.GetUserInfoForCoursesResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

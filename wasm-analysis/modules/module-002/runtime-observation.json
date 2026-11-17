@@ -1,0 +1,45 @@
+{
+  "module": "module-002",
+  "command": [
+    "node",
+    "--experimental-permission",
+    "--allow-fs-read=/home/user/forensic-mission-tools/runtime_probe.cjs",
+    "--allow-fs-read=/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.wasm",
+    "--max-old-space-size=256",
+    "/home/user/forensic-mission-tools/runtime_probe.cjs",
+    "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.wasm"
+  ],
+  "isolation": {
+    "filesystem": "Node permission model: read-only allowlist of probe and binary, no write or child/worker grant",
+    "network": "Linux seccomp denies socket/connect/bind/listen/accept/socketpair; global fetch also throws",
+    "CPU_seconds": 25,
+    "wall_timeout_seconds": 35,
+    "JS_heap_MiB": 256,
+    "core_dumps": false
+  },
+  "scope": "NEW bounded structural instantiation; historical full native searches separately retained",
+  "returncode": 0,
+  "stderr": "(node:2142) ExperimentalWarning: Permission is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "stdout": "{\n  \"status\": \"instantiated with function import stubs\",\n  \"imports\": 155,\n  \"exports\": 153,\n  \"memories\": [\n    {\n      \"name\": \"memory\",\n      \"bytes\": 404750336,\n      \"shared\": false\n    }\n  ],\n  \"import_calls_during_instantiation\": [],\n  \"elapsed_ms\": 103.194706,\n  \"algorithm_calls\": [\n    {\n      \"name\": \"emscripten_stack_get_current\",\n      \"result\": 26691088\n    }\n  ],\n  \"limitation\": \"No wrapper runtime constructors/search/review invoked; stub instantiation is not a functional engine validation. No original application inputs used.\"\n}\n",
+  "observation": {
+    "status": "instantiated with function import stubs",
+    "imports": 155,
+    "exports": 153,
+    "memories": [
+      {
+        "name": "memory",
+        "bytes": 404750336,
+        "shared": false
+      }
+    ],
+    "import_calls_during_instantiation": [],
+    "elapsed_ms": 103.194706,
+    "algorithm_calls": [
+      {
+        "name": "emscripten_stack_get_current",
+        "result": 26691088
+      }
+    ],
+    "limitation": "No wrapper runtime constructors/search/review invoked; stub instantiation is not a functional engine validation. No original application inputs used."
+  }
+}

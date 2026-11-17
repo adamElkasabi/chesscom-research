@@ -1,0 +1,78 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_relaxed_apply_move.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/square.proto"
+  ],
+  "message_type": [
+    {
+      "name": "RelaxedApplyMoveRequest",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "extra_occupancy",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    },
+    {
+      "name": "RelaxedApplyMoveResponse",
+      "field": [
+        {
+          "name": "result_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "result_extra_occupancy",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "captured_opp_piece",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "captured_extra_occ",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "in_check",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "move_san",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

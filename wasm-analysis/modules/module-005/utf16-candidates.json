@@ -1,0 +1,82 @@
+[
+  {
+    "file_offset": 50811,
+    "encoding": "LE",
+    "text": "        "
+  },
+  {
+    "file_offset": 50886,
+    "encoding": "LE",
+    "text": "$$$$$$$$"
+  },
+  {
+    "file_offset": 50961,
+    "encoding": "LE",
+    "text": "(((((((("
+  },
+  {
+    "file_offset": 51036,
+    "encoding": "LE",
+    "text": ",,,,,,,,"
+  },
+  {
+    "file_offset": 51143,
+    "encoding": "LE",
+    "text": "00000000"
+  },
+  {
+    "file_offset": 51218,
+    "encoding": "LE",
+    "text": "44444444"
+  },
+  {
+    "file_offset": 51293,
+    "encoding": "LE",
+    "text": "88888888"
+  },
+  {
+    "file_offset": 51368,
+    "encoding": "LE",
+    "text": "<<<<<<<<"
+  },
+  {
+    "file_offset": 50812,
+    "encoding": "BE",
+    "text": "       "
+  },
+  {
+    "file_offset": 50887,
+    "encoding": "BE",
+    "text": "$$$$$$$"
+  },
+  {
+    "file_offset": 50962,
+    "encoding": "BE",
+    "text": "((((((("
+  },
+  {
+    "file_offset": 51037,
+    "encoding": "BE",
+    "text": ",,,,,,,"
+  },
+  {
+    "file_offset": 51144,
+    "encoding": "BE",
+    "text": "0000000"
+  },
+  {
+    "file_offset": 51219,
+    "encoding": "BE",
+    "text": "4444444"
+  },
+  {
+    "file_offset": 51294,
+    "encoding": "BE",
+    "text": "8888888"
+  },
+  {
+    "file_offset": 51369,
+    "encoding": "BE",
+    "text": "<<<<<<<"
+  }
+]

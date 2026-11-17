@@ -1,0 +1,58 @@
+[
+  {
+    "finding_id": "WDEEP-F-0001",
+    "claim": "29unique core-module identities,including4inlineprobes",
+    "evidence": "binary-inventory.json",
+    "confidence": "HIGH",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0002",
+    "claim": "225335definedfunctionsdecodedwithzeroerrors;V8validation29/29",
+    "evidence": "analysis-summary.json",
+    "confidence": "HIGH",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0003",
+    "claim": "CEE_InitWithOptspointer/lengthguesssupersededbycountclampingcalleevidence",
+    "evidence": "semantic-function-reviews.json",
+    "confidence": "HIGH",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0004",
+    "claim": "CEE_Initdirect33versusinitialdispatchaugmented1229",
+    "evidence": "deep-functions/module-002/export-reachability.json",
+    "confidence": "HIGH:conditional-static-model",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0005",
+    "claim": "Gamehandleshaveexacthigh/low20bitsplit",
+    "evidence": "cee-connected-slice/1741.txt",
+    "confidence": "HIGH:exact-build",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0006",
+    "claim": "2completeNNUEparameterpayloadsdownloaded;notWASMmodules",
+    "evidence": "nnue-companion-signatures.json",
+    "confidence": "HIGH",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0007",
+    "claim": "45publishedsource-map sourcecontentsrecovered",
+    "evidence": "rive-sourcemap-reconstruction.json",
+    "confidence": "HIGH",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  },
+  {
+    "finding_id": "WDEEP-F-0008",
+    "claim": "DynamicRiveWASMrewritingprecludesunqualifiedstaticmodulecompleteness",
+    "evidence": "embedded-wasm-dispositions.json",
+    "confidence": "HIGH:codepresent;runtimecoverageunknown",
+    "status": "Observed/bounded inference;see linked report for limitations"
+  }
+]

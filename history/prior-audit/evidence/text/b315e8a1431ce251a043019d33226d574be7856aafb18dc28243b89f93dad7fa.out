@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "moves": 20,
+    "engine": "Chess.com CEE (local)",
+    "requestedEngine": 12,
+    "actualEngines": [
+      11
+    ],
+    "engineMatchesRequest": false,
+    "accuracy": {
+      "white": 59.95828628540039,
+      "black": 95.46183013916016
+    },
+    "tallies": {
+      "white": [
+        {
+          "moveClassification": 1,
+          "tally": 2
+        },
+        {
+          "moveClassification": 2
+        },
+        {
+          "moveClassification": 3
+        },
+        {
+          "moveClassification": 4
+        },
+        {
+          "moveClassification": 5
+        },
+        {
+          "moveClassification": 6,
+          "tally": 2
+        },
+        {
+          "moveClassification": 7,
+          "tally": 1
+        },
+        {
+          "moveClassification": 8,
+          "tally": 4
+        },
+        {
+          "moveClassification": 9,
+          "tally": 1
+        },
+        {
+          "moveClassification": 10
+        },
+        {
+          "moveClassification": 11
+        },
+        {
+          "moveClassification": 20
+        }
+      ],
+      "black": [
+        {
+          "moveClassification": 1,
+          "tally": 2
+        },
+        {
+          "moveClassification": 2
+        },
+        {
+          "moveClassification": 3,
+          "tally": 1
+        },
+        {
+          "moveClassification": 4,
+          "tally": 4
+        },
+        {
+          "moveClassification": 5,
+          "tally": 2
+        },
+        {
+          "moveClassification": 6,
+          "tally": 1
+        },
+        {
+          "moveClassification": 7
+        },
+        {
+          "moveClassification": 8
+        },
+        {
+          "moveClassification": 9
+        },
+        {
+          "moveClassification": 10
+        },
+        {
+          "moveClassification": 11
+        },
+        {
+          "moveClassification": 20
+        }
+      ]
+    },
+    "ratings": {
+      "white": 300,
+      "black": 1000
+    },
+    "ratingSources": {
+      "white": "effectiveRating",
+      "black": "effectiveRating"
+    },
+    "opening": "Queen's Pawn Opening: Blackmar Gambit",
+    "ceeVersion": {
+      "major": 1,
+      "minor": 211,
+      "patch": 5
+    },
+    "speechSentences": 29,
+    "audioHashes": 29,
+    "explanationArrows": 27
+  },
+  "resultCase": "success",
+  "logs": [
+    "CEE review: requested engine=12, search={\"case\":\"gameReviewSearchSettings\",\"value\":{\"strength\":1}}",
+    "Engine mismatch: requested=12, actual=11; cloud parity is not yet established",
+    "CEE accuracy={\"white\":59.95828628540039,\"black\":95.46183013916016} ratings={\"white\":300,\"black\":1000}"
+  ]
+}
+PASS REAL CHROMIUM: extension origin + native CEE Worker + wasm
+PASS FULL CHROMIUM PIPELINE: exhausted quota + fresh game -> hook -> bridge -> service worker -> offscreen CEE -> success

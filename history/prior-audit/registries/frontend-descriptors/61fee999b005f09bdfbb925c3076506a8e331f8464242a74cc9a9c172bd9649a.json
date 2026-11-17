@@ -1,0 +1,92 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_game_review.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GameReviewRequest",
+      "field": [
+        {
+          "name": "stats",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AdvancedStatsForGame",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "starting_game_point",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "uci_options",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewRequest.UciOptionsEntry"
+        },
+        {
+          "name": "include_train_takeaways",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "can_access_locked_takeaways",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "UciOptionsEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_stats"
+        },
+        {
+          "name": "_starting_game_point"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewResponse",
+      "field": [
+        {
+          "name": "game_review",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReview"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

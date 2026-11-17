@@ -1,0 +1,9 @@
+// source: chesscom/payments/v1/found_charge.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message FoundCharge {
+  optional string user_uuid = 1;
+  optional .chesscom.payments.v1.Charge charge = 2;
+}

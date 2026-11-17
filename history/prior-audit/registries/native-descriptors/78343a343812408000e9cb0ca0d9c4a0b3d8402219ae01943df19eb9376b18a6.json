@@ -1,0 +1,59 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_fen.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/position.proto",
+    "chesscom/explanation_engine/v1/notation.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetFenRequest",
+      "field": [
+        {
+          "name": "position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Position",
+          "oneof_index": 0
+        },
+        {
+          "name": "compressed_position",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES",
+          "oneof_index": 0
+        },
+        {
+          "name": "fen_notation",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.FenNotation",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "position_to_convert"
+        },
+        {
+          "name": "_fen_notation"
+        }
+      ]
+    },
+    {
+      "name": "GetFenResponse",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "chesscom/courses_common/v1/course_product_review.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseProductReview",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "title",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "text",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseReviewAuthor"
+        },
+        {
+          "name": "published_at",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

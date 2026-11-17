@@ -1,0 +1,9 @@
+// source: chesscom/courses/v1/courses_shop_pagination.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CoursesShopPagination {
+  optional int32 limit = 1;
+  optional int32 offset = 2;
+}

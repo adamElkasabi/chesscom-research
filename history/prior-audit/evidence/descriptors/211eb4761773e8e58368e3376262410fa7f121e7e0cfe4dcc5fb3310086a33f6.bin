@@ -1,0 +1,7 @@
+
+@chesscom/explanation_engine/v1/feature_relaxed_legal_moves.protochesscom.explanation_engine.v1chesscom/chess/v1/move.protochesscom/chess/v1/square.proto"[
+RelaxedLegalMovesRequest
+fen (	2
+extra_occupancy (2.chesscom.chess.v1.Square"C
+RelaxedLegalMovesResponse&
+moves (2.chesscom.chess.v1.Movebproto3

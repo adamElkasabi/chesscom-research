@@ -1,0 +1,60 @@
+{
+  "name": "chesscom/stats/v1/advanced_stat_example.proto",
+  "package": "chesscom.stats.v1",
+  "dependency": [
+    "chesscom/stats/v1/advanced_stat_type.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AdvancedStatExample",
+      "field": [
+        {
+          "name": "stat",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "outcome",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatExampleOutcome"
+        },
+        {
+          "name": "ply",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "san",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AdvancedStatExampleOutcome",
+      "value": [
+        {
+          "name": "ADVANCED_STAT_EXAMPLE_OUTCOME_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ADVANCED_STAT_EXAMPLE_OUTCOME_GOOD",
+          "number": 1
+        },
+        {
+          "name": "ADVANCED_STAT_EXAMPLE_OUTCOME_BAD",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,13 @@
+// source: chesscom/explanation_engine/v1/feature_get_game_result.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetGameResultRequest {
+}
+
+message GetGameResultResponse {
+  oneof _game_result {
+  .chesscom.chess.v1.GameResult game_result = 1;
+  }
+}

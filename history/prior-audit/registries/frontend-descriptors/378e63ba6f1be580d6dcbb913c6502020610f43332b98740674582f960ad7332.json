@@ -1,0 +1,170 @@
+{
+  "name": "chesscom/courses/v1/move_trainer.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "MoveTrainer",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "picture",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture"
+        },
+        {
+          "name": "chapters",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseChapter"
+        },
+        {
+          "name": "authors",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseAuthor"
+        },
+        {
+          "name": "slug",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "access_right_mode",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.AccessRightMode"
+        },
+        {
+          "name": "course_type",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseType"
+        },
+        {
+          "name": "course_source",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseSource"
+        },
+        {
+          "name": "course_game_aspect",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseGameAspect",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "coach",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCoach",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "author_player",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLessonPlayer"
+        },
+        {
+          "name": "learner_player",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLessonPlayer",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_course_game_aspect"
+        },
+        {
+          "name": "_coach"
+        },
+        {
+          "name": "_learner_player"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "MoveTrainerTrainingMode",
+      "value": [
+        {
+          "name": "MOVE_TRAINER_TRAINING_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_TRAINER_TRAINING_MODE_LEARN",
+          "number": 1
+        },
+        {
+          "name": "MOVE_TRAINER_TRAINING_MODE_REVIEW",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "MoveTrainerTrainingResult",
+      "value": [
+        {
+          "name": "MOVE_TRAINER_TRAINING_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_TRAINER_TRAINING_RESULT_PASS",
+          "number": 1
+        },
+        {
+          "name": "MOVE_TRAINER_TRAINING_RESULT_FAILED",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "AccessRightMode",
+      "value": [
+        {
+          "name": "ACCESS_RIGHT_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ACCESS_RIGHT_MODE_FULL",
+          "number": 1
+        },
+        {
+          "name": "ACCESS_RIGHT_MODE_PREVIEW",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

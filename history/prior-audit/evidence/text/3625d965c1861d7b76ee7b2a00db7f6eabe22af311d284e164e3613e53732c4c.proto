@@ -1,0 +1,11 @@
+// source: chesscom/user_relationships/v2/list_user_relationships_model.proto
+// syntax: proto3
+
+package chesscom.user_relationships.v2;
+
+message ListableUserRelationship {
+  optional string user_uuid = 1;
+  optional .google.protobuf.Timestamp created_at = 2;
+  optional .chesscom.user_relationships.v2.UserRelationshipType user_relationship = 3;
+  optional .chesscom.user_relationships.v2.UserRelationshipDirection direction = 4;
+}

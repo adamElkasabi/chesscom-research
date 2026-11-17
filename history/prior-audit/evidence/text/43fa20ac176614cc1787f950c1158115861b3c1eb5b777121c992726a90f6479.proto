@@ -1,0 +1,15 @@
+// source: chesscom/explanation_engine/v1/feature_get_compressed_position.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetCompressedPositionRequest {
+  oneof position_to_convert {
+  .chesscom.chess.v1.Position position = 1;
+  string fen = 2;
+  }
+}
+
+message GetCompressedPositionResponse {
+  optional bytes compressed_position = 1;
+}

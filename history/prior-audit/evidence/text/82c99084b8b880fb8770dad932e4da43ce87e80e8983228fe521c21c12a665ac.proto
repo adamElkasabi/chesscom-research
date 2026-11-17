@@ -1,0 +1,11 @@
+// source: chesscom/game_storage/v2/player_type.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum PlayerType {
+  PLAYER_TYPE_UNSPECIFIED = 0;
+  PLAYER_TYPE_HUMAN = 1;
+  PLAYER_TYPE_COMPUTER = 2;
+  PLAYER_TYPE_CYBORG = 3;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/train/v1/train_outcome.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainOutcome",
+      "value": [
+        {
+          "name": "TRAIN_OUTCOME_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_OUTCOME_CORRECT",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_OUTCOME_INCORRECT",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

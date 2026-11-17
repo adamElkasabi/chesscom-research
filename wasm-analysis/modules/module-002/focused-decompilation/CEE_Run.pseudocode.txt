@@ -1,0 +1,393 @@
+// Decompiled analysis derivative: typed stub imports replace ALL other functions.
+export function CEE_Run(a:int, b:int_ptr):int {
+  var c:int;
+  var g:int_ptr;
+  var f:int;
+  var h:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int }
+  var i:int;
+  var j:int;
+  if (g_c == 2) {
+    g_d[0]:int = g_d[0]:int - 32;
+    e = g_d[0]:int;
+    a = e.a;
+    c = e.c;
+    d = e.d;
+    g = e.e;
+    h = e.f;
+    i = e.g;
+    j = e.h;
+    b = e.b;
+  }
+  e = {
+        if (g_c == 2) {
+          g_d[0]:int = g_d[0]:int - 4;
+          f = (g_d[0]:int)[0]:int;
+        }
+        if (eqz(g_c)) {
+          c = g_a;
+          g = c - 32;
+          g_a = g;
+        }
+        if (eqz(g_c) | eqz(f)) {
+          analysis_stub_original_fn_1943();
+          0;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          analysis_stub_original_fn_1695(12158592);
+          c = g_a;
+          h = c - 16;
+          g_a = h;
+          j = g + 12;
+        }
+        if (eqz(g_c) | f == 1) {
+          e = analysis_stub_original_fn_22866(24);
+          1;
+          if (g_c == 1) goto B_b;
+          d = e;
+        }
+        if (eqz(g_c)) { 18297676[0]:int = 0 }
+        if (eqz(g_c) | f == 2) {
+          e = analysis_stub_original_fn_5(2279, d, 0, 0);
+          2;
+          if (g_c == 1) goto B_b;
+          c = e;
+        }
+        if (eqz(g_c)) {
+          i = 18297676[0]:int;
+          18297676[0]:int = 0;
+          i = i == 1;
+          if (i) {
+            h = analysis_stub_original_fn_9();
+            analysis_stub_original_fn_22239(d);
+            analysis_stub_original_fn_12(h);
+            unreachable;
+          }
+          h[3] = c;
+          18297676[0]:int = 0;
+        }
+        if (eqz(g_c) | f == 3) {
+          e = analysis_stub_original_fn_6(29, 20);
+          3;
+          if (g_c == 1) goto B_b;
+          i = e;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          d = d != 1;
+        }
+        if (d | g_c == 2) {
+          if (eqz(g_c)) { 18297676[0]:int = 0 }
+          if (eqz(g_c) | f == 4) {
+            e = analysis_stub_original_fn_5(2291, i, 0, 0);
+            4;
+            if (g_c == 1) goto B_b;
+            d = e;
+          }
+          if (eqz(g_c)) {
+            e = 18297676[0]:int;
+            18297676[0]:int = 0;
+            if (e == 1) {
+              c = analysis_stub_original_fn_9();
+              analysis_stub_original_fn_22239(i);
+              goto B_o;
+            }
+            d.d = b;
+            d.c = a;
+            18297676[0]:int = 0;
+            h[2] = 0;
+          }
+          if (eqz(g_c) | f == 5) {
+            analysis_stub_original_fn_0(2292, c, d);
+            5;
+            if (g_c == 1) goto B_b;
+          }
+          if (eqz(g_c)) {
+            d = 18297676[0]:int;
+            18297676[0]:int = 0;
+            d = d == 1;
+            if (d) goto B_p;
+            d = h + 16;
+            g_a = d;
+            goto B_n;
+          }
+        }
+        if (eqz(g_c)) {
+          c = analysis_stub_original_fn_9();
+          goto B_o;
+        }
+        label B_p:
+        if (eqz(g_c)) {
+          c = analysis_stub_original_fn_9();
+          b = h + 8;
+          a = b[0];
+          b[0] = 0;
+        }
+        if (a | g_c == 2) {
+          if (eqz(g_c) | f == 6) {
+            e = analysis_stub_original_fn_18528(a);
+            6;
+            if (g_c == 1) goto B_b;
+            a = e;
+          }
+          if (eqz(g_c)) { analysis_stub_original_fn_22239(a) }
+        }
+        label B_o:
+        a = select_if(a, h + 12, g_c);
+        if (eqz(g_c) | f == 7) {
+          analysis_stub_original_fn_1885(a);
+          7;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          analysis_stub_original_fn_12(c);
+          unreachable;
+        }
+        label B_n:
+        if (eqz(g_c) | f == 8) {
+          analysis_stub_original_fn_1911(j, c);
+          8;
+          if (g_c == 1) goto B_b;
+        }
+        c = select_if(c, eqz(b), g_c);
+        if (eqz(g_c)) {
+          if (c) goto B_ma;
+          18297676[0]:int = 0;
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          if (d == 1) goto B_ha;
+          18297676[0]:int = 0;
+          c = g + 4;
+        }
+        if (eqz(g_c) | f == 9) {
+          analysis_stub_original_fn_4(2043, c, 12157936, a);
+          9;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          if (d == 1) goto B_ha;
+          h = g[1];
+          c = eqz(h);
+        }
+        if (eqz(g_c)) {
+          if (c) goto B_qa;
+          18297676[0]:int = 0;
+          d = analysis_stub_original_fn_1909(g + 12);
+          c = 18297676[0]:int;
+          18297676[0]:int = 0;
+          c = c != 1;
+        }
+        if (c | g_c == 2) {
+          if (eqz(g_c)) {
+            18297676[0]:int = 0;
+            g[0] = d;
+            i = g[4];
+            c = 18297676[0]:int;
+            18297676[0]:int = 0;
+            c = c == 1;
+            if (c) goto B_la;
+            18297676[0]:int = 0;
+          }
+          if (eqz(g_c) | f == 10) {
+            analysis_stub_original_fn_4(2051, h, d, i);
+            10;
+            if (g_c == 1) goto B_b;
+          }
+          if (eqz(g_c)) {
+            d = 18297676[0]:int;
+            18297676[0]:int = 0;
+            c = d != 1;
+            if (c) goto B_qa;
+          }
+        }
+        if (eqz(g_c)) {
+          b = analysis_stub_original_fn_9();
+          goto B_ka;
+        }
+        label B_qa:
+        if (eqz(g_c)) {
+          d = g[2];
+          c = eqz(d);
+          if (c) goto B_ma;
+          d.b = (c = (h = d.b) - 1);
+          if (h) goto B_ma;
+          c = d.a[2]:int;
+        }
+        if (eqz(g_c) | f == 11) {
+          call_indirect(d, c);
+          11;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c) | f == 12) {
+          analysis_stub_original_fn_22862(d);
+          12;
+          if (g_c == 1) goto B_b;
+        }
+        label B_ma:
+        if (eqz(g_c)) { 18297676[0]:int = 0 }
+        if (eqz(g_c) | f == 13) {
+          e = analysis_stub_original_fn_13(2052, a, b);
+          13;
+          if (g_c == 1) goto B_b;
+          b = e;
+        }
+        if (eqz(g_c)) {
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = a == 1;
+          if (a) goto B_ga;
+          a = b <= 0;
+          if (a) goto B_ja;
+          18297676[0]:int = 0;
+        }
+        if (eqz(g_c) | f == 14) {
+          e = analysis_stub_original_fn_6(2053, 1);
+          14;
+          if (g_c == 1) goto B_b;
+          a = e;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          c = d != 1;
+          if (c) goto B_ia;
+          goto B_ga;
+        }
+        label B_la:
+        if (eqz(g_c)) { b = analysis_stub_original_fn_9() }
+        if (eqz(g_c) | f == 15) {
+          analysis_stub_original_fn_498(g);
+          15;
+          if (g_c == 1) goto B_b;
+        }
+        label B_ka:
+        a = select_if(a, g + 4, g_c);
+        if (eqz(g_c) | f == 16) {
+          analysis_stub_original_fn_205(a);
+          16;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) goto B_fa;
+        label B_ja:
+        if (eqz(g_c)) { 18297676[0]:int = 0 }
+        if (eqz(g_c) | f == 17) {
+          e = analysis_stub_original_fn_6(2053, b);
+          17;
+          if (g_c == 1) goto B_b;
+          a = e;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          c = d == 1;
+          if (c) goto B_ga;
+          g[1] = a;
+          18297676[0]:int = 0;
+        }
+        if (eqz(g_c) | f == 18) {
+          analysis_stub_original_fn_11(2015);
+          18;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          c = d != 1;
+        }
+        if (c | g_c == 2) {
+          if (eqz(g_c)) {
+            c = 12158644[0]:ubyte != 1;
+            if (c) goto B_ia;
+            18297676[0]:int = 0;
+            g[1] = 0;
+          }
+          if (eqz(g_c) | f == 19) {
+            e = analysis_stub_original_fn_13(2040, a, 12158596);
+            19;
+            if (g_c == 1) goto B_b;
+            a = e;
+          }
+          if (eqz(g_c)) {
+            d = 18297676[0]:int;
+            18297676[0]:int = 0;
+            c = d != 1;
+            if (c) goto B_ia;
+          }
+        }
+        if (eqz(g_c)) {
+          b = analysis_stub_original_fn_9();
+          a = g + 4;
+        }
+        if (eqz(g_c) | f == 20) {
+          analysis_stub_original_fn_1696(a);
+          20;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) goto B_fa;
+        label B_ia:
+        if (eqz(g_c)) {
+          18297676[0]:int = 0;
+          c = g + 12;
+        }
+        if (eqz(g_c) | f == 21) {
+          analysis_stub_original_fn_0(2012, c, a);
+          21;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = a == 1;
+          if (a) goto B_ga;
+          a = g + 12;
+        }
+        if (eqz(g_c) | f == 22) {
+          analysis_stub_original_fn_1906(a);
+          22;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          g_a = g + 32;
+          return b;
+        }
+        label B_ha:
+        if (eqz(g_c)) {
+          b = analysis_stub_original_fn_9();
+          goto B_fa;
+        }
+        label B_ga:
+        if (eqz(g_c)) { b = analysis_stub_original_fn_9() }
+        label B_fa:
+        a = select_if(a, g + 12, g_c);
+        if (eqz(g_c) | f == 23) {
+          analysis_stub_original_fn_1906(a);
+          23;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          analysis_stub_original_fn_12(b);
+          unreachable;
+        }
+        unreachable;
+        label B_b:
+      }
+  (g_d[0]:int)[0]:int = e;
+  g_d[0]:int = g_d[0]:int + 4;
+  e = g_d[0]:int;
+  e.a = a;
+  e.b = b;
+  e.c = c;
+  e.d = d;
+  e.e = g;
+  e.f = h;
+  e.g = i;
+  e.h = j;
+  g_d[0]:int = g_d[0]:int + 32;
+  return 0;
+}
+

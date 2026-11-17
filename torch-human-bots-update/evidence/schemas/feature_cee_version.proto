@@ -1,0 +1,14 @@
+// source: chesscom/explanation_engine/v1/feature_cee_version.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message CeeVersionRequest {
+}
+
+message CeeVersionResponse {
+  optional .chesscom.api.v1.SemanticVersion cee_version = 1;
+  optional string cee_git_sha = 2;
+  optional string definitions_git_sha = 3;
+  optional .chesscom.api.v1.SemanticVersion uci_version = 4;
+}

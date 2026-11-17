@@ -1,0 +1,22 @@
+// source: chesscom/courses/v1/course.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message Course {
+  oneof _canonical_line {
+  .chesscom.courses.v1.CourseCanonicalLine canonical_line = 13;
+  }
+  optional string id = 1;
+  optional string title = 2;
+  optional .chesscom.courses_common.v1.Picture picture = 3;
+  optional .chesscom.courses.v1.CourseUserLearningInformation user_learning_information = 4;
+  repeated .chesscom.courses.v1.CourseAuthor authors = 5;
+  optional int32 total_variation_amount = 6;
+  optional bool is_diamond_exclusive = 7;
+  optional .chesscom.courses.v1.OwnershipType ownership_type = 8;
+  optional string slug = 9;
+  optional .chesscom.courses_common.v1.CourseSource course_source = 10;
+  optional bool is_tutorial = 11;
+  optional .chesscom.courses.v1.UserAccessGrant user_access_grant = 12;
+}

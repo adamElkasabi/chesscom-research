@@ -1,0 +1,98 @@
+{
+  "name": "chesscom/settings/v1/settings_model.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "Setting",
+      "field": [
+        {
+          "name": "gameplay",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.GameplaySetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "notification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.NotificationSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "privacy",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.PrivacySetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "board",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.BoardSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "puzzle",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.PuzzleSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "learn",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.LearnSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "ui",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.UiSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "toaster_center",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.ToasterCenterSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "home",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.HomeSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "watch",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.WatchSetting",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

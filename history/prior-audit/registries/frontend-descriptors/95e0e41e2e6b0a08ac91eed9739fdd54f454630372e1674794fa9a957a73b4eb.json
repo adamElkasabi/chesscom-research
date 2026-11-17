@@ -1,0 +1,133 @@
+{
+  "name": "chesscom/courses/v1/course_recommendation.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseRecommendation",
+      "field": [
+        {
+          "name": "coach_text",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "variation_preview_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_url",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "cover_image_url",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "review_count",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "short_description",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "CourseSummary",
+      "field": [
+        {
+          "name": "variation_preview_url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "num_reviews",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "thumbnail_url",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "RecommendationReason",
+      "value": [
+        {
+          "name": "RECOMMENDATION_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RECOMMENDATION_REASON_LAST_BOOK_MOVE",
+          "number": 1
+        },
+        {
+          "name": "RECOMMENDATION_REASON_FIRST_MISTAKE",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

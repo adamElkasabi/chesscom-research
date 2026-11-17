@@ -1,0 +1,92 @@
+{
+  "name": "chesscom/explanation_engine/v1/charm_inference_code.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "CharmInferenceCode",
+      "field": [
+        {
+          "name": "model_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "ratings",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "engine_line_move_indexes",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "coded_values",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "NodeCharmInferenceCodes",
+      "field": [
+        {
+          "name": "inferences",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmInferenceCode"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CharmInferenceCodes",
+      "field": [
+        {
+          "name": "codebook_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "nodes",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmInferenceCodes.NodesEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "NodesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.NodeCharmInferenceCodes"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

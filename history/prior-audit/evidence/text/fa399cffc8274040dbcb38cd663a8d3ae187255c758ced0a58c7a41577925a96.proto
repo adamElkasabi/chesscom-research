@@ -1,0 +1,8 @@
+// source: chesscom/courses/v1/course_custom_tag.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseCustomTag {
+  optional string value = 1;
+}

@@ -1,0 +1,18 @@
+// source: chesscom/payments/v1/goodwill.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+enum GoodwillSiteFault {
+  GOODWILL_SITE_FAULT_UNSPECIFIED = 0;
+  GOODWILL_SITE_FAULT_OUTAGE = 1;
+  GOODWILL_SITE_FAULT_BUG = 2;
+  GOODWILL_SITE_FAULT_FAILED_OPERATION = 3;
+  GOODWILL_SITE_FAULT_WRONG_ACTION = 4;
+}
+
+enum GrantGoodwillDiamondResult {
+  GRANT_GOODWILL_DIAMOND_RESULT_UNSPECIFIED = 0;
+  GRANT_GOODWILL_DIAMOND_RESULT_DIAMOND_STARTED = 1;
+  GRANT_GOODWILL_DIAMOND_RESULT_DAYS_ADDED = 2;
+}

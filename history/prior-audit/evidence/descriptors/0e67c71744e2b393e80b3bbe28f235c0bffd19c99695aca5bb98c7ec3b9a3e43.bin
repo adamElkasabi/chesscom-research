@@ -1,0 +1,7 @@
+
+Kchesscom/text_item/v1alpha/internal_feature_generate_coach_text_items.protochesscom.text_item.v1alpha*chesscom/text_item/v1alpha/text_item.proto-chesscom/text_item/v1alpha/google_sheet.proto"v
+,InternalFeatureGenerateCoachTextItemsRequestF
+google_sheet_list (2+.chesscom.text_item.v1alpha.GoogleSheetList"ƒ
+-InternalFeatureGenerateCoachTextItemsResponse@
+text_item_list (2(.chesscom.text_item.v1alpha.TextItemList
+warnings (	bproto3

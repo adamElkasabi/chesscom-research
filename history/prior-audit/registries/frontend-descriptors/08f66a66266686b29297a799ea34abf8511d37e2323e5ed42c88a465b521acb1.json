@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/payments/v1/found_charge.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "FoundCharge",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "charge",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Charge"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

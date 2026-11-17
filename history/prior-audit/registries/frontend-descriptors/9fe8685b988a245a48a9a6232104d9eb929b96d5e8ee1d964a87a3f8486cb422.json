@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/courses_common/v1/picture.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "Picture",
+      "field": [
+        {
+          "name": "url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "preview_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_preview_url"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,451 @@
+{
+  "name": "chesscom/bots/v1/bot_event.proto",
+  "package": "chesscom.bots.v1",
+  "message_type": [
+    {
+      "name": "BotEvent",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "theme",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotEventTheme"
+        },
+        {
+          "name": "progress",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.progression.v1.EventProgress",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "progress_unit_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "end_time",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "bot_event_key",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "variation_modal_data",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotVariationModalData"
+        },
+        {
+          "name": "unlockables",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.progression.v1.EventUnlockable"
+        },
+        {
+          "name": "resign_min_plies",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "intro_modal_data",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotEventIntroModalData"
+        },
+        {
+          "name": "premium_multiplier",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_data",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.GameReviewEventData",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_premium_multiplier"
+        },
+        {
+          "name": "_game_review_data"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewEventData",
+      "field": [
+        {
+          "name": "points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "points_icon",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotProperties",
+      "field": [
+        {
+          "name": "win_points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "loss_points",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "draw_points",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "assistance_use_penalty",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "fen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_as_white",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "label",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotLabel",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "komodo_skill_override",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen_player_is_white",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen_player_is_black",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_fen"
+        },
+        {
+          "name": "_play_as_white"
+        },
+        {
+          "name": "_label"
+        },
+        {
+          "name": "_komodo_skill_override"
+        },
+        {
+          "name": "_fen_player_is_white"
+        },
+        {
+          "name": "_fen_player_is_black"
+        }
+      ]
+    },
+    {
+      "name": "BotLabel",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.bots.v1.BotLabelType"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotEventTheme",
+      "field": [
+        {
+          "name": "primary_color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "secondary_color",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "points_icon",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "banner_image",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "background_image",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "sounds",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotEventSounds"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotEventSounds",
+      "field": [
+        {
+          "name": "game_start",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_ambient",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_start"
+        },
+        {
+          "name": "_gameplay_ambient"
+        }
+      ]
+    },
+    {
+      "name": "BotVariationModalData",
+      "field": [
+        {
+          "name": "image",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "title",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "bot_advantage_text",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "bot_disadvantage_text",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotEventIntroModalData",
+      "field": [
+        {
+          "name": "image",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "title",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "subtitle",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "info_items",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotEventIntroModalInfoItemData"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotEventIntroModalInfoItemData",
+      "field": [
+        {
+          "name": "icon",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "BotLabelType",
+      "value": [
+        {
+          "name": "BOT_LABEL_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOT_LABEL_TYPE_HARDER",
+          "number": 1
+        },
+        {
+          "name": "BOT_LABEL_TYPE_EASIER",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

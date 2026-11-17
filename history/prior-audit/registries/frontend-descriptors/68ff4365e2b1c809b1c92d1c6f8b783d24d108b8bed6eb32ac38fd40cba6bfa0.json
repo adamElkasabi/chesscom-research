@@ -1,0 +1,31 @@
+{
+  "name": "chesscom/courses/v1/course_chapter_details.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseChapterDetails",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "stats",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseChapterStats"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

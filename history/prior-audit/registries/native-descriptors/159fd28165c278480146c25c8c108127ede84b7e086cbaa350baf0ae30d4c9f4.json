@@ -1,0 +1,86 @@
+{
+  "name": "chesscom/text_item/v1alpha/google_sheet.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "message_type": [
+    {
+      "name": "GoogleSheetList",
+      "field": [
+        {
+          "name": "sheets",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.GoogleSheet"
+        }
+      ]
+    },
+    {
+      "name": "GoogleSheet",
+      "field": [
+        {
+          "name": "collection_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.GoogleSheetCollectionType"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rows",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.GoogleSheetRow"
+        }
+      ]
+    },
+    {
+      "name": "GoogleSheetRow",
+      "field": [
+        {
+          "name": "cells",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "GoogleSheetCollectionType",
+      "value": [
+        {
+          "name": "GOOGLE_SHEET_COLLECTION_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GOOGLE_SHEET_COLLECTION_TYPE_GAME_REVIEW",
+          "number": 1
+        },
+        {
+          "name": "GOOGLE_SHEET_COLLECTION_TYPE_GAME_SUMMARY",
+          "number": 2
+        },
+        {
+          "name": "GOOGLE_SHEET_COLLECTION_TYPE_PLAY_COACH",
+          "number": 3
+        },
+        {
+          "name": "GOOGLE_SHEET_COLLECTION_TYPE_MOTIVATIONAL_MESSAGES",
+          "number": 4
+        },
+        {
+          "name": "GOOGLE_SHEET_COLLECTION_TYPE_COACH_TAGLINES",
+          "number": 5
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

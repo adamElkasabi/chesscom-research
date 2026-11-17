@@ -1,0 +1,10 @@
+// source: chesscom/ceac/v2/game_review_options.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message GameReviewOptions {
+  optional bool report_card_entitled = 1;
+  optional bool include_train_takeaways = 2;
+  optional bool can_access_locked_takeaways = 3;
+}

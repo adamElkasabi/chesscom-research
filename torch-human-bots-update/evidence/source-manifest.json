@@ -1,0 +1,382 @@
+[
+  {
+    "evidence_id": "THB-SRC-001",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/play-computer.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:10:59 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "417849",
+      "ETag": "\"8ebb25167ecd9f58e508ed05fcd7da8c\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:04:01 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 417849,
+    "sha256": "c8ae87b4ff99d0c52d027c6f28d2b8a6042e9dd8551ad2f06eaa230dcac85bc1",
+    "path": "evidence/public-scripts/play-computer.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-002",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/shared.eager.B4_eyo3T4t.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:08 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "2991929",
+      "ETag": "\"6895c385d31f21a542f4442cb7c03f4d\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:04:06 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 2991929,
+    "sha256": "8b8c2aa987b26cb39358a68a8d3395cd37d47439dff15bea3da44720243569f6",
+    "path": "evidence/public-scripts/computer-shared.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-003",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.03a446da.Bw4BRYjdl2.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "2342",
+      "ETag": "\"f62cd7e840a3df34acdf70c6dc122a3d\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:53 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 2342,
+    "sha256": "d3219e420bdfb07e61b6f360add5928676fddcde01fb2d09622eda10da82a889",
+    "path": "evidence/public-scripts/client.03a446da.Bw4BRYjdl2.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-004",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.197936d8.CYY9Ulv5HI.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "1404",
+      "ETag": "\"6e44941b410fd1b2a527b8bc434adae4\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:53 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 1404,
+    "sha256": "4cd1703a45358e775ce4cae9639483a14df478c059b6d3ada94713ea617b59e9",
+    "path": "evidence/public-scripts/client.197936d8.CYY9Ulv5HI.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-005",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.3755d359.C_dFGAfc_J.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "10038",
+      "ETag": "\"db9144e7b39ec16cf63328ccc507bd8c\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:53 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 10038,
+    "sha256": "c22ae37a566aea5f790169bafbed6f8f76c5aabf7e50d68957622f91b1aa683a",
+    "path": "evidence/public-scripts/client.3755d359.C_dFGAfc_J.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-006",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.411a4358.B-kUvQ32jr.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "71162",
+      "ETag": "\"76ed6b784c1bb27533f42c4dc072045b\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 71162,
+    "sha256": "a80203a4fcd9241bb85f2b70b2977a73a06ad94b390f11849e698c56ee91f745",
+    "path": "evidence/public-scripts/client.411a4358.B-kUvQ32jr.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-007",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.51b83ca9.CF4468reW-.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "6463",
+      "ETag": "\"c012abdbcd16684041622a2ab47719da\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 6463,
+    "sha256": "0215221a8f480c3feddcbe52f3d16ce10b713fd5af5f9e62ab29885368bbc8a1",
+    "path": "evidence/public-scripts/client.51b83ca9.CF4468reW-.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-008",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.7b2a3a15.BJcgONyKOv.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "1961",
+      "ETag": "\"d7881794468ffbc327dbfcdb1906b873\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 1961,
+    "sha256": "cd7c362b0f231d4a74654c39984e7efc00d3c12da10147691232291f032fdf3d",
+    "path": "evidence/public-scripts/client.7b2a3a15.BJcgONyKOv.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-009",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.832f50bc.B3blLI0QnI.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "1390",
+      "ETag": "\"0ebf111c2ab057cd0bb689be46de23c6\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 1390,
+    "sha256": "23bc865a14c8f62075acdfd5a2aaede29aca6a30857d96809012ca71c1426850",
+    "path": "evidence/public-scripts/client.832f50bc.B3blLI0QnI.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-010",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.84ddf004.C_agZvH3k8.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "1462",
+      "ETag": "\"7a1d73dfde4eb9abb1684f591466e163\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 1462,
+    "sha256": "8df41d6956cd1aa6a89ae389274e24491d597b1ebae04221710877e7376eb355",
+    "path": "evidence/public-scripts/client.84ddf004.C_agZvH3k8.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-011",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.95f74025.BEB99SqjwX.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "11529",
+      "ETag": "\"8f2a3d37942577752bf7c6f3c2ce0921\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 11529,
+    "sha256": "b453b3acf046973c0e4421d657c60b35ad35eb6bd7dfd3a4eecc454e26a708f7",
+    "path": "evidence/public-scripts/client.95f74025.BEB99SqjwX.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-012",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.97389e02.BM87mECVhI.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "3941",
+      "ETag": "\"44d1f49b02dcbd32b440470cd726527e\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 3941,
+    "sha256": "a1194fd8552ffb60ff00ca781cbe0fe896fe7f0d184e0cbc2b827d089e60d391",
+    "path": "evidence/public-scripts/client.97389e02.BM87mECVhI.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-013",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.c1bea4c9.y6HURMY3cu.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "16836",
+      "ETag": "\"3e5e71ee23d8304d76373f855cb03bf0\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 16836,
+    "sha256": "c65b0722a931b96dd3b24f100d4930c6fdad3bd8a8f0ac520bcc9bc1a9526465",
+    "path": "evidence/public-scripts/client.c1bea4c9.y6HURMY3cu.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-014",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.c7e9d7cf.2X_nVI74xM.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "1395",
+      "ETag": "\"c4a797190d2bc9f27a3223f1b4447256\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 1395,
+    "sha256": "0e68cd2beb70618bf247a859edde1960a1d36b2bd413da02c620065d10e1eaa8",
+    "path": "evidence/public-scripts/client.c7e9d7cf.2X_nVI74xM.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-015",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.ce4ac26f.oAXtK4-p_j.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "35075",
+      "ETag": "\"11aac8741366ba13de9dc3f22b1759b0\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "MISS"
+    },
+    "bytes": 35075,
+    "sha256": "392b96fb6e10a5c104478f0b3e157636172c8f562fd9b5ad43eca3fcf9fc0e04",
+    "path": "evidence/public-scripts/client.ce4ac26f.oAXtK4-p_j.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-016",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.d25957d5.CGTiCJaz3J.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "56116",
+      "ETag": "\"dcc144442454a921709b2ee8ee2de868\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 56116,
+    "sha256": "29283e49477962f420226c50543e47b5aae5875a44be34e5e3b186a081ce49bf",
+    "path": "evidence/public-scripts/client.d25957d5.CGTiCJaz3J.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-017",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.dbeb9287.KRB1FxeFDj.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "1476",
+      "ETag": "\"efe67c0b464bc77bbc1441a21fe5e1e1\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 1476,
+    "sha256": "de26fd077f7facb04be030b419c8df4d703b2ccc4bf801d26c9ab9ef22fb714d",
+    "path": "evidence/public-scripts/client.dbeb9287.KRB1FxeFDj.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-018",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/client.f1259893.BXJ2Fy8QF8.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:11:46 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "3072",
+      "ETag": "\"dccf85224e8f426d1e1d7a8bcd97be7e\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:03:54 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 3072,
+    "sha256": "78066c8ce494287148e04af22d44057c178bc655ecd2b7a688d86b4d1d09eef6",
+    "path": "evidence/public-scripts/client.f1259893.BXJ2Fy8QF8.chunk.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  },
+  {
+    "evidence_id": "THB-SRC-019",
+    "url": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/offline-bot-groups-data.ecf9acfa.BtoZLNpVUD.chunk.js",
+    "status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 14:14:08 GMT",
+      "Content-Type": "application/javascript",
+      "Content-Length": "384127",
+      "ETag": "\"8f1bbacf9a1a264ab1d94295b626f35a\"",
+      "Last-Modified": "Wed, 11 Nov 2026 12:04:00 GMT",
+      "access-control-allow-origin": "*",
+      "Server": "cloudflare",
+      "Cache-Control": "public, max-age=2419200",
+      "cf-cache-status": "HIT"
+    },
+    "bytes": 384127,
+    "sha256": "3654aee90c398c0a5230ac572fe53bfe389cfc92aa013e624865ddf1e3766221",
+    "path": "evidence/public-scripts/offline-bot-groups.js",
+    "request": "Unauthenticated public GET; no account/game mutation"
+  }
+]

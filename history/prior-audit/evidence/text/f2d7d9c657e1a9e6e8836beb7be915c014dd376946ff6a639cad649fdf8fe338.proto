@@ -1,0 +1,89 @@
+// source: chesscom/shared_board/v1alpha/shared_board_participant_service.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+message InviteSharedBoardParticipantRequest {
+  optional string session_id = 1;
+  optional string user_id = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoardRole role = 3;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardCapability capabilities = 4;
+}
+
+message InviteSharedBoardParticipantResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 1;
+}
+
+message RequestToJoinSharedBoardSessionRequest {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionId session_id = 1;
+}
+
+message RequestToJoinSharedBoardSessionResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 1;
+  optional string session_id = 2;
+}
+
+message RespondToSharedBoardInvitationRequest {
+  optional string session_id = 1;
+  optional bool accept = 2;
+}
+
+message RespondToSharedBoardInvitationResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 1;
+}
+
+message RespondToSharedBoardJoinRequestRequest {
+  optional string session_id = 1;
+  optional string user_id = 2;
+  optional bool accept = 3;
+}
+
+message RespondToSharedBoardJoinRequestResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 1;
+}
+
+message UpdateSharedBoardParticipantRoleRequest {
+  optional string session_id = 1;
+  optional string user_id = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoardRole role = 3;
+}
+
+message UpdateSharedBoardParticipantRoleResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 1;
+}
+
+message SetSharedBoardParticipantCapabilitiesRequest {
+  optional string session_id = 1;
+  optional string user_id = 2;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardCapability capabilities = 3;
+}
+
+message SetSharedBoardParticipantCapabilitiesResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipant participant = 1;
+}
+
+message TransferSharedBoardHostRequest {
+  optional string session_id = 1;
+  optional string user_id = 2;
+}
+
+message TransferSharedBoardHostResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message RemoveSharedBoardParticipantRequest {
+  optional string session_id = 1;
+  optional string user_id = 2;
+}
+
+message RemoveSharedBoardParticipantResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message LeaveSharedBoardSessionRequest {
+  optional string session_id = 1;
+}
+
+message LeaveSharedBoardSessionResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/explanation_engine/v1/coach_emotion.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "CoachEmotion",
+      "value": [
+        {
+          "name": "COACH_EMOTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_EMOTION_IDLE",
+          "number": 1
+        },
+        {
+          "name": "COACH_EMOTION_SURPRISED",
+          "number": 2
+        },
+        {
+          "name": "COACH_EMOTION_HAPPY",
+          "number": 3
+        },
+        {
+          "name": "COACH_EMOTION_IMPRESSED",
+          "number": 4
+        },
+        {
+          "name": "COACH_EMOTION_SHOCKED",
+          "number": 5
+        },
+        {
+          "name": "COACH_EMOTION_THINKING",
+          "number": 6
+        },
+        {
+          "name": "COACH_EMOTION_CONCERNED",
+          "number": 7
+        },
+        {
+          "name": "COACH_EMOTION_SAD",
+          "number": 8
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    }
+  ],
+  "syntax": "proto3"
+}

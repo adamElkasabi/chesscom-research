@@ -1,0 +1,1106 @@
+{
+  "name": "chesscom/themes/v2/core.proto",
+  "package": "chesscom.themes.v2",
+  "message_type": [
+    {
+      "name": "Theme",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_default",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "legacy_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "localized_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "onboarding",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "background",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Background"
+        },
+        {
+          "name": "board_style",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyle"
+        },
+        {
+          "name": "piece_set",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSet"
+        },
+        {
+          "name": "sound_set",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSet"
+        },
+        {
+          "name": "is_accessibility_friendly",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    },
+    {
+      "name": "PresetTheme",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "attributes",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Attributes"
+        },
+        {
+          "name": "element_ids",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.ThemeElementIds"
+        },
+        {
+          "name": "onboarding",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_accessibility_friendly",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Background",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_default",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "legacy_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "localized_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "supported_platforms",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        },
+        {
+          "name": "unlockable_preview",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockablePreview"
+        },
+        {
+          "name": "preview_image",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "image",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Background.ImageStyle",
+          "oneof_index": 0
+        },
+        {
+          "name": "color",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Background.PlainColorStyle",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "ImageStyle",
+          "field": [
+            {
+              "name": "url",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "fallback_color",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.themes.v2.Background.PlainColorStyle",
+              "oneof_index": 0,
+              "proto3_optional": true
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "_fallback_color"
+            }
+          ]
+        },
+        {
+          "name": "PlainColorStyle",
+          "field": [
+            {
+              "name": "hex_code",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "style"
+        },
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    },
+    {
+      "name": "BoardStyle",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_default",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "legacy_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "localized_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "supported_platforms",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        },
+        {
+          "name": "unlockable_preview",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockablePreview"
+        },
+        {
+          "name": "preview_image",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyle.PreviewImage"
+        },
+        {
+          "name": "image",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "image_3d",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyle.ThreeDimensionalImage"
+        },
+        {
+          "name": "coordinate_color_dark",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "coordinate_color_light",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "highlight_color",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "category_id",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "PreviewImage",
+          "field": [
+            {
+              "name": "square",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "linear",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "ThreeDimensionalImage",
+          "field": [
+            {
+              "name": "board",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "coordinates",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    },
+    {
+      "name": "PieceSet",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_default",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "legacy_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "localized_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "supported_platforms",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        },
+        {
+          "name": "unlockable_preview",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockablePreview"
+        },
+        {
+          "name": "preview_image",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSet.PreviewImage"
+        },
+        {
+          "name": "images",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSet.Images"
+        },
+        {
+          "name": "perspective",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.PieceSet.PiecePerspective"
+        },
+        {
+          "name": "category_id",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "PreviewImage",
+          "field": [
+            {
+              "name": "square",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "linear",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "Images",
+          "field": [
+            {
+              "name": "white_pawn",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "white_knight",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "white_bishop",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "white_rook",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "white_queen",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "white_king",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "black_pawn",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "black_knight",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "black_bishop",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "black_rook",
+              "number": 10,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "black_queen",
+              "number": 11,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "black_king",
+              "number": 12,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "PiecePerspective",
+          "value": [
+            {
+              "name": "PIECE_PERSPECTIVE_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "PIECE_PERSPECTIVE_TOP_DOWN",
+              "number": 1
+            },
+            {
+              "name": "PIECE_PERSPECTIVE_PSEUDO_3D",
+              "number": 2
+            },
+            {
+              "name": "PIECE_PERSPECTIVE_REAL_3D",
+              "number": 3
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    },
+    {
+      "name": "SoundSet",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_default",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "legacy_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "localized_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "supported_platforms",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        },
+        {
+          "name": "unlockable_preview",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockablePreview"
+        },
+        {
+          "name": "sound_archives",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSet.SoundArchives",
+          "oneof_index": 0
+        },
+        {
+          "name": "sound_files",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSet.SoundFiles",
+          "oneof_index": 0
+        },
+        {
+          "name": "category_id",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "SoundArchives",
+          "field": [
+            {
+              "name": "mp3",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "ogg",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "wav",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "webm",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ]
+        },
+        {
+          "name": "SoundFiles",
+          "field": [
+            {
+              "name": "mp3",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.themes.v2.SoundSet.SoundFiles.Mp3Entry"
+            },
+            {
+              "name": "ogg",
+              "number": 2,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.themes.v2.SoundSet.SoundFiles.OggEntry"
+            },
+            {
+              "name": "wav",
+              "number": 3,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.themes.v2.SoundSet.SoundFiles.WavEntry"
+            },
+            {
+              "name": "webm",
+              "number": 4,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.themes.v2.SoundSet.SoundFiles.WebmEntry"
+            }
+          ],
+          "nested_type": [
+            {
+              "name": "Mp3Entry",
+              "field": [
+                {
+                  "name": "key",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                },
+                {
+                  "name": "value",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                }
+              ],
+              "options": {
+                "map_entry": true
+              }
+            },
+            {
+              "name": "OggEntry",
+              "field": [
+                {
+                  "name": "key",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                },
+                {
+                  "name": "value",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                }
+              ],
+              "options": {
+                "map_entry": true
+              }
+            },
+            {
+              "name": "WavEntry",
+              "field": [
+                {
+                  "name": "key",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                },
+                {
+                  "name": "value",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                }
+              ],
+              "options": {
+                "map_entry": true
+              }
+            },
+            {
+              "name": "WebmEntry",
+              "field": [
+                {
+                  "name": "key",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                },
+                {
+                  "name": "value",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                }
+              ],
+              "options": {
+                "map_entry": true
+              }
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "sounds"
+        },
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    },
+    {
+      "name": "Attributes",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_default",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "legacy_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "localized_name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    },
+    {
+      "name": "ThemeElementCategory",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "localized_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_priority",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ThemeId",
+      "field": [
+        {
+          "name": "preset",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "custom",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.ThemeElementIds",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "id"
+        }
+      ]
+    },
+    {
+      "name": "ThemeElementIds",
+      "field": [
+        {
+          "name": "background_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "board_style_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "piece_set_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sound_set_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ThemeSelectionItem",
+      "field": [
+        {
+          "name": "theme",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PresetTheme"
+        },
+        {
+          "name": "is_unlocked",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BackgroundSelectionItem",
+      "field": [
+        {
+          "name": "background",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Background"
+        },
+        {
+          "name": "is_unlocked",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BoardStyleSelectionItem",
+      "field": [
+        {
+          "name": "board_style",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyle"
+        },
+        {
+          "name": "is_unlocked",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PieceSetSelectionItem",
+      "field": [
+        {
+          "name": "piece_set",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSet"
+        },
+        {
+          "name": "is_unlocked",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SoundSetSelectionItem",
+      "field": [
+        {
+          "name": "sound_set",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSet"
+        },
+        {
+          "name": "is_unlocked",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ThemeSelection",
+      "field": [
+        {
+          "name": "background_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "board_style_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "piece_set_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sound_set_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "theme_id",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_theme_id"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_updated_notification.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoardUpdatedNotification",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "board",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoard"
+        },
+        {
+          "name": "update_type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardUpdateType"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SharedBoardUpdateType",
+      "value": [
+        {
+          "name": "SHARED_BOARD_UPDATE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_UPDATE_TYPE_CREATED",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_UPDATE_TYPE_UPDATED",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_UPDATE_TYPE_DELETED",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

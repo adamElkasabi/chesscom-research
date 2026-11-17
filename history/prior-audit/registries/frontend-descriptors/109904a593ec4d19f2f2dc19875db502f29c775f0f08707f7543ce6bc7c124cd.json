@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/train/v1/train_position_attribute.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainPositionAttribute",
+      "value": [
+        {
+          "name": "TRAIN_POSITION_ATTRIBUTE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_POSITION_ATTRIBUTE_ATTACKING",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_POSITION_ATTRIBUTE_DEFENDING",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_POSITION_ATTRIBUTE_ACTIVE_PIECE_ADVANTAGE",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_POSITION_ATTRIBUTE_SPACE_ADVANTAGE",
+          "number": 4
+        },
+        {
+          "name": "TRAIN_POSITION_ATTRIBUTE_PAWN_STRUCTURE_ADVANTAGE",
+          "number": 5
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

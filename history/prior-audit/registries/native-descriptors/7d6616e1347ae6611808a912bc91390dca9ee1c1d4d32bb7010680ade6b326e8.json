@@ -1,0 +1,57 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_brilliant_moves.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/color.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureBrilliantMovesRequest",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureBrilliantMovesResponse",
+      "field": [
+        {
+          "name": "brilliant_moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BrilliantMove"
+        }
+      ]
+    },
+    {
+      "name": "BrilliantMove",
+      "field": [
+        {
+          "name": "ply",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "fen_before",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_uci",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

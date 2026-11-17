@@ -1,0 +1,313 @@
+// source: chesscom/user_activity/v1/user_activity.proto
+// syntax: proto3
+
+package chesscom.user_activity.v1;
+
+enum DisplayMode {
+  DISPLAY_MODE_UNSPECIFIED = 0;
+  DISPLAY_MODE_BROWSER = 1;
+  DISPLAY_MODE_STANDALONE = 2;
+  DISPLAY_MODE_FULLSCREEN = 3;
+  DISPLAY_MODE_MINIMAL_UI = 4;
+}
+
+enum DeviceType {
+  DEVICE_TYPE_UNSPECIFIED = 0;
+  DESKTOP = 1;
+  MOBILE = 2;
+  TABLET = 3;
+  TV = 4;
+  VR_HEADSET = 5;
+  AR_HEADSET = 6;
+}
+
+enum Destination {
+  DESTINATION_UNSPECIFIED = 0;
+  DESTINATION_ITERABLE = 1;
+  DESTINATION_AMPLITUDE = 2;
+  DESTINATION_BIGQUERY = 3;
+  DESTINATION_WORKFLOWS = 4;
+  DESTINATION_USER_PROPERTIES = 5;
+}
+
+enum Application {
+  APPLICATION_UNSPECIFIED = 0;
+  APPLICATION_CHESSCOM = 1;
+}
+
+enum DestinationUpdateType {
+  DESTINATION_UPDATE_TYPE_UNSPECIFIED = 0;
+  DESTINATION_UPDATE_TYPE_ADDED = 1;
+  DESTINATION_UPDATE_TYPE_REMOVED = 2;
+}
+
+message TrackEvent {
+  oneof source {
+  .chesscom.user_activity.v1.Page page = 6;
+  .chesscom.user_activity.v1.Screen screen = 7;
+  }
+  oneof _user_properties_cohorts {
+  .chesscom.user_activity.v1.UserProperties user_properties_cohorts = 9;
+  }
+  optional string name = 1;
+  optional .chesscom.user_activity.v1.EventHeaders headers = 2;
+  optional .chesscom.user_activity.v1.Context context = 3;
+  repeated .chesscom.user_activity.v1.TrackEvent.EventPropertiesEntry event_properties = 4;
+  repeated .chesscom.user_activity.v1.TrackEvent.UserPropertiesEntry user_properties = 5;
+  repeated .chesscom.user_activity.v1.TrackEvent.IncrementPropertiesEntry increment_properties = 8;
+  repeated .chesscom.user_activity.v1.TrackEvent.EnrichmentUserPropertiesEntry enrichment_user_properties = 10;
+  message EventPropertiesEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+  message UserPropertiesEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+  message IncrementPropertiesEntry {
+  optional string key = 1;
+  optional int64 value = 2;
+  }
+  message EnrichmentUserPropertiesEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+}
+
+message TypedEvent {
+  oneof source {
+  .chesscom.user_activity.v1.Page page = 4;
+  .chesscom.user_activity.v1.Screen screen = 5;
+  }
+  optional .google.protobuf.Any event = 1;
+  optional .chesscom.user_activity.v1.EventHeaders headers = 2;
+  optional .chesscom.user_activity.v1.Context context = 3;
+}
+
+message IdentifyEvent {
+  optional .chesscom.user_activity.v1.EventHeaders headers = 1;
+  optional .chesscom.user_activity.v1.Context context = 2;
+  optional string user_id = 3;
+  repeated .chesscom.user_activity.v1.IdentifyEvent.UserPropertiesEntry user_properties = 4;
+  repeated .chesscom.user_activity.v1.IdentifyEvent.IncrementPropertiesEntry increment_properties = 8;
+  message UserPropertiesEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+  message IncrementPropertiesEntry {
+  optional string key = 1;
+  optional int64 value = 2;
+  }
+}
+
+message NavigationEvent {
+  oneof source {
+  .chesscom.user_activity.v1.Page page = 3;
+  .chesscom.user_activity.v1.Screen screen = 4;
+  }
+  oneof _deeplink {
+  .chesscom.user_activity.v1.Deeplink deeplink = 5;
+  }
+  optional .chesscom.user_activity.v1.EventHeaders headers = 1;
+  optional .chesscom.user_activity.v1.Context context = 2;
+}
+
+message Deeplink {
+  optional string link = 1;
+  repeated .chesscom.user_activity.v1.Deeplink.DataEntry data = 2;
+  message DataEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+}
+
+message EventHeaders {
+  oneof _local_time {
+  string local_time = 3;
+  }
+  oneof _user_id {
+  string user_id = 5;
+  }
+  oneof _legacy_user_id {
+  uint64 legacy_user_id = 6;
+  }
+  oneof _sent_at {
+  .google.protobuf.Timestamp sent_at = 8;
+  }
+  oneof _product_session_id {
+  string product_session_id = 9;
+  }
+  oneof _auth_user_id {
+  string auth_user_id = 10;
+  }
+  oneof _event_trusted {
+  bool event_trusted = 11;
+  }
+  optional string event_id = 1;
+  optional .google.protobuf.Timestamp timestamp = 2;
+  optional uint64 sequence_number = 7;
+}
+
+message Context {
+  oneof _ip {
+  string ip = 4;
+  }
+  oneof _user_agent {
+  string user_agent = 5;
+  }
+  oneof _campaign {
+  .chesscom.user_activity.v1.Campaign campaign = 6;
+  }
+  oneof _location {
+  .chesscom.api.v1.Location location = 7;
+  }
+  oneof _network {
+  .chesscom.user_activity.v1.Network network = 8;
+  }
+  oneof _os {
+  .chesscom.user_activity.v1.OS os = 9;
+  }
+  oneof _screen_resolution {
+  .chesscom.user_activity.v1.ScreenResolution screen_resolution = 10;
+  }
+  oneof _device {
+  .chesscom.user_activity.v1.Device device = 11;
+  }
+  oneof _language {
+  string language = 12;
+  }
+  oneof _bucketing_id {
+  string bucketing_id = 13;
+  }
+  oneof _interaction_event_id {
+  string interaction_event_id = 14;
+  }
+  optional .chesscom.user_activity.v1.Application application = 1;
+  optional .chesscom.user_activity.v1.Client client = 2;
+  optional .chesscom.user_activity.v1.Library library = 3;
+  repeated .google.protobuf.Any extensions = 15;
+  repeated string unified_screen = 16;
+}
+
+message Network {
+  optional string type = 1;
+  optional string effective_type = 2;
+  optional string provider_name = 3;
+}
+
+message Screen {
+  oneof _entity {
+  .chesscom.navigation.v1.ScreenEntity entity = 3;
+  }
+  optional string name = 1;
+  repeated .chesscom.user_activity.v1.Screen.PropertiesEntry properties = 2;
+  message PropertiesEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+}
+
+message ScreenResolution {
+  optional uint32 width = 1;
+  optional uint32 height = 2;
+  optional uint32 dpi = 3;
+}
+
+message Page {
+  oneof _referrer {
+  string referrer = 4;
+  }
+  oneof _search {
+  string search = 5;
+  }
+  oneof _hash {
+  string hash = 6;
+  }
+  oneof _route_name {
+  string route_name = 7;
+  }
+  oneof _display_mode {
+  .chesscom.user_activity.v1.DisplayMode display_mode = 8;
+  }
+  optional string host = 1;
+  optional string path = 2;
+  optional string title = 3;
+}
+
+message OS {
+  optional string name = 1;
+  optional string version = 2;
+}
+
+message Library {
+  optional .chesscom.user_activity.v1.Library.Name name = 1;
+  optional string version = 2;
+  enum Name {
+    LIBRARY_NAME_UNSPECIFIED = 0;
+    CHESSCOM_PHP_SDK = 1;
+    CHESSCOM_IOS_SDK = 2;
+    CHESSCOM_ANDROID_SDK = 3;
+    CHESSCOM_JS_SDK = 4;
+    CHESSCOM_JAVA_SDK = 5;
+    CHESSCOM_COURSES_PHP_SDK = 6;
+  }
+}
+
+message Device {
+  oneof _brand {
+  string brand = 6;
+  }
+  optional string id = 1;
+  optional string manufacturer = 2;
+  optional string model = 3;
+  optional string name = 4;
+  optional .chesscom.user_activity.v1.DeviceType type = 5;
+}
+
+message Campaign {
+  oneof _campaign_id {
+  int32 campaign_id = 6;
+  }
+  oneof _template_id {
+  int32 template_id = 7;
+  }
+  optional string source = 1;
+  optional string medium = 2;
+  optional string name = 3;
+  optional string term = 4;
+  optional string content = 5;
+}
+
+message Client {
+  optional .chesscom.user_activity.v1.Client.Name name = 1;
+  optional string version = 2;
+  optional string build = 3;
+  enum Name {
+    CLIENT_NAME_UNSPECIFIED = 0;
+    WEB = 1;
+    IOS = 2;
+    ANDROID = 3;
+    USER_PROPERTIES = 4;
+    ON_PLATFORM_MESSAGING = 5;
+    WORKFLOWS = 6;
+    COURSES = 7;
+    RCN_SERVICE = 8;
+    PROGRESSION_SERVICE = 9;
+    ITERABLE_CONNECTOR = 10;
+    SENDGRID_WEBHOOKS = 11;
+    EMAIL_SENDER = 12;
+    PUSH_SENDER = 13;
+  }
+}
+
+message UserProperties {
+  oneof _client_name {
+  .chesscom.user_activity.v1.Client.Name client_name = 1;
+  }
+  oneof _country {
+  string country = 2;
+  }
+  oneof _skill_level {
+  .chesscom.user.v1.SkillLevel skill_level = 3;
+  }
+}

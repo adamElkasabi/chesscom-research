@@ -1,0 +1,13 @@
+// source: chesscom/courses_common/v1/course_product_review.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message CourseProductReview {
+  optional string id = 1;
+  optional float rating = 2;
+  optional string title = 3;
+  optional string text = 4;
+  optional .chesscom.courses_common.v1.CourseReviewAuthor user = 5;
+  optional .google.protobuf.Timestamp published_at = 6;
+}

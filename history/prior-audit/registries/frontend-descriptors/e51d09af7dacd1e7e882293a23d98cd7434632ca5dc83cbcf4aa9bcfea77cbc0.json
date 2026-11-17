@@ -1,0 +1,79 @@
+{
+  "name": "chesscom/courses/v1/course_author.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseAuthor",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "chess_title",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "picture",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseAuthorType"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_chess_title"
+        },
+        {
+          "name": "_picture"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CourseAuthorType",
+      "value": [
+        {
+          "name": "COURSE_AUTHOR_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_AUTHOR_TYPE_MAIN",
+          "number": 1
+        },
+        {
+          "name": "COURSE_AUTHOR_TYPE_COAUTHOR",
+          "number": 2
+        },
+        {
+          "name": "COURSE_AUTHOR_TYPE_ENDORSER",
+          "number": 3
+        },
+        {
+          "name": "COURSE_AUTHOR_TYPE_PRESENTER",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,111 @@
+{
+  "name": "chesscom/explanation_engine/v1/move_classification.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/engine/v1/evaluation.proto"
+  ],
+  "message_type": [
+    {
+      "name": "EvalClassification",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "evaluation",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Evaluation"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "MoveClassification",
+      "value": [
+        {
+          "name": "MOVE_CLASSIFICATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BOOK",
+          "number": 1
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BRILLIANT",
+          "number": 2
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_GREAT_FIND",
+          "number": 3
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BEST",
+          "number": 4
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_EXCELLENT",
+          "number": 5
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_GOOD",
+          "number": 6
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_INACCURACY",
+          "number": 7
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISTAKE",
+          "number": 8
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BLUNDER",
+          "number": 9
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED",
+          "number": 10
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_FORCED",
+          "number": 11
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_TRICKY",
+          "number": 20
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 12,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "name": "MoveClassificationVersion",
+      "value": [
+        {
+          "name": "MOVE_CLASSIFICATION_VERSION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_VERSION_V2",
+          "number": 1
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_VERSION_V3",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

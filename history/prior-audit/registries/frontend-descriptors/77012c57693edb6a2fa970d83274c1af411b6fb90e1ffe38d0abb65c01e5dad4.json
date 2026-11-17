@@ -1,0 +1,185 @@
+{
+  "name": "chesscom/chess/v1/time.proto",
+  "package": "chesscom.chess.v1",
+  "message_type": [
+    {
+      "name": "TimeControl",
+      "field": [
+        {
+          "name": "base",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.BaseTimeControl",
+          "oneof_index": 0
+        },
+        {
+          "name": "daily",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.DailyTimeControl",
+          "oneof_index": 0
+        },
+        {
+          "name": "multi_stage",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.MultiStageTimeControl",
+          "oneof_index": 0
+        },
+        {
+          "name": "armageddon",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArmageddonTimeControl",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "control"
+        }
+      ]
+    },
+    {
+      "name": "BaseTimeControl",
+      "field": [
+        {
+          "name": "base_ms",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "increment_ms",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DailyTimeControl",
+      "field": [
+        {
+          "name": "days_per_turn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "MultiStageTimeControl",
+      "field": [
+        {
+          "name": "stages",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.TimeControlStage"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TimeControlStage",
+      "field": [
+        {
+          "name": "time_control",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.BaseTimeControl"
+        },
+        {
+          "name": "move_limit",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_move_limit"
+        }
+      ]
+    },
+    {
+      "name": "ArmageddonTimeControl",
+      "field": [
+        {
+          "name": "white_base_ms",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "black_base_ms",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "increment_ms",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "increment_after_move",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "TimeClass",
+      "value": [
+        {
+          "name": "TIME_CLASS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TIME_CLASS_HYPERBULLET",
+          "number": 1
+        },
+        {
+          "name": "TIME_CLASS_BULLET",
+          "number": 2
+        },
+        {
+          "name": "TIME_CLASS_BLITZ",
+          "number": 3
+        },
+        {
+          "name": "TIME_CLASS_RAPID",
+          "number": 4
+        },
+        {
+          "name": "TIME_CLASS_CLASSICAL",
+          "number": 5
+        },
+        {
+          "name": "TIME_CLASS_DAILY",
+          "number": 6
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

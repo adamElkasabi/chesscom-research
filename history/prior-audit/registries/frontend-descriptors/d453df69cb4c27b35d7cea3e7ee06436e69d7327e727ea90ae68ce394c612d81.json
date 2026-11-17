@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/courses/v1/shop_sort_option.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "ShopSortOption",
+      "value": [
+        {
+          "name": "SHOP_SORT_OPTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHOP_SORT_OPTION_PRICE_ASC",
+          "number": 1
+        },
+        {
+          "name": "SHOP_SORT_OPTION_PRICE_DESC",
+          "number": 2
+        },
+        {
+          "name": "SHOP_SORT_OPTION_VARIATIONS_DESC",
+          "number": 3
+        },
+        {
+          "name": "SHOP_SORT_OPTION_RELEASE_DATE_DESC",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

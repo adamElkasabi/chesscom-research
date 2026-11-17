@@ -1,0 +1,107 @@
+// source: chesscom/user_properties/v1/properties_puzzles_attempted.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum PuzzlesAttemptedPropertyDefinition {
+  PUZZLES_ATTEMPTED_UNSPECIFIED = 0;
+  PUZZLES_ATTEMPTED_LAST_TIMESTAMP = 1;
+  PUZZLES_ATTEMPTED_RATING = 2;
+  PUZZLES_ATTEMPTED_TOTAL_SECONDS = 3;
+  PUZZLES_ATTEMPTED_RATED_ATTEMPT_COUNT = 4;
+  PUZZLES_ATTEMPTED_RATED_PASSED_COUNT = 5;
+  PUZZLES_ATTEMPTED_UNRATED_ATTEMPT_COUNT = 6;
+  PUZZLES_ATTEMPTED_MIN_RATING = 7;
+  PUZZLES_ATTEMPTED_MIN_RATING_TIMESTAMP = 8;
+  PUZZLES_ATTEMPTED_MAX_RATING = 9;
+  PUZZLES_ATTEMPTED_MAX_RATING_TIMESTAMP = 10;
+  PUZZLES_ATTEMPTED_RATED_LONGEST_STREAK = 11;
+  PUZZLES_ATTEMPTED_RATED_LONGEST_STREAK_TIMESTAMP = 12;
+  PUZZLES_ATTEMPTED_RATED_CURRENT_STREAK = 13;
+  PUZZLES_ATTEMPTED_HISTORY_RESET_LAST_TIMESTAMP = 14;
+  PUZZLES_ATTEMPTED_SHADOW_RATING = 15;
+  PUZZLES_ATTEMPTED_MIN_SHADOW_RATING = 16;
+  PUZZLES_ATTEMPTED_MIN_SHADOW_RATING_TIMESTAMP = 17;
+  PUZZLES_ATTEMPTED_MAX_SHADOW_RATING = 18;
+  PUZZLES_ATTEMPTED_MAX_SHADOW_RATING_TIMESTAMP = 19;
+  PUZZLES_ATTEMPTED_BOOSTED_SHADOW_RATING = 20;
+  PUZZLES_ATTEMPTED_MIN_BOOSTED_SHADOW_RATING = 21;
+  PUZZLES_ATTEMPTED_MIN_BOOSTED_SHADOW_RATING_TIMESTAMP = 22;
+  PUZZLES_ATTEMPTED_MAX_BOOSTED_SHADOW_RATING = 23;
+  PUZZLES_ATTEMPTED_MAX_BOOSTED_SHADOW_RATING_TIMESTAMP = 24;
+}
+
+message PuzzlesAttemptedProperty {
+  oneof _last_timestamp {
+  .google.protobuf.Timestamp last_timestamp = 1;
+  }
+  oneof _rating {
+  int32 rating = 2;
+  }
+  oneof _total_seconds {
+  int32 total_seconds = 3;
+  }
+  oneof _rated_attempt_count {
+  int32 rated_attempt_count = 4;
+  }
+  oneof _rated_passed_count {
+  int32 rated_passed_count = 5;
+  }
+  oneof _unrated_attempt_count {
+  int32 unrated_attempt_count = 6;
+  }
+  oneof _min_rating {
+  int32 min_rating = 7;
+  }
+  oneof _min_rating_timestamp {
+  .google.protobuf.Timestamp min_rating_timestamp = 8;
+  }
+  oneof _max_rating {
+  int32 max_rating = 9;
+  }
+  oneof _max_rating_timestamp {
+  .google.protobuf.Timestamp max_rating_timestamp = 10;
+  }
+  oneof _rated_longest_streak {
+  int32 rated_longest_streak = 11;
+  }
+  oneof _rated_longest_streak_timestamp {
+  .google.protobuf.Timestamp rated_longest_streak_timestamp = 12;
+  }
+  oneof _rated_current_streak {
+  int32 rated_current_streak = 13;
+  }
+  oneof _history_reset_last_timestamp {
+  .google.protobuf.Timestamp history_reset_last_timestamp = 14;
+  }
+  oneof _shadow_rating {
+  int32 shadow_rating = 15;
+  }
+  oneof _min_shadow_rating {
+  int32 min_shadow_rating = 16;
+  }
+  oneof _min_shadow_rating_timestamp {
+  .google.protobuf.Timestamp min_shadow_rating_timestamp = 17;
+  }
+  oneof _max_shadow_rating {
+  int32 max_shadow_rating = 18;
+  }
+  oneof _max_shadow_rating_timestamp {
+  .google.protobuf.Timestamp max_shadow_rating_timestamp = 19;
+  }
+  oneof _boosted_shadow_rating {
+  int32 boosted_shadow_rating = 20;
+  }
+  oneof _min_boosted_shadow_rating {
+  int32 min_boosted_shadow_rating = 21;
+  }
+  oneof _min_boosted_shadow_rating_timestamp {
+  .google.protobuf.Timestamp min_boosted_shadow_rating_timestamp = 22;
+  }
+  oneof _max_boosted_shadow_rating {
+  int32 max_boosted_shadow_rating = 23;
+  }
+  oneof _max_boosted_shadow_rating_timestamp {
+  .google.protobuf.Timestamp max_boosted_shadow_rating_timestamp = 24;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/courses/v1/tutorial_category.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "TutorialCategory",
+      "value": [
+        {
+          "name": "TUTORIAL_CATEGORY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TUTORIAL_CATEGORY_OPENING",
+          "number": 1
+        },
+        {
+          "name": "TUTORIAL_CATEGORY_TACTICS",
+          "number": 2
+        },
+        {
+          "name": "TUTORIAL_CATEGORY_STRATEGY",
+          "number": 3
+        },
+        {
+          "name": "TUTORIAL_CATEGORY_ENDGAME",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

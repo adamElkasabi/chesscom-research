@@ -1,0 +1,77 @@
+{
+  "name": "chesscom/game_storage/v2/rating_class.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "RatingClass",
+      "value": [
+        {
+          "name": "RATING_CLASS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RATING_CLASS_UNRATED",
+          "number": 1
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_BULLET",
+          "number": 2
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_BLITZ",
+          "number": 3
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_RAPID",
+          "number": 4
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_DAILY",
+          "number": 5
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS960",
+          "number": 6
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS960_DAILY",
+          "number": 7
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_BUGHOUSE",
+          "number": 8
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_KINGOFTHEHILL",
+          "number": 9
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_THREECHECK",
+          "number": 10
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CRAZYHOUSE",
+          "number": 11
+        },
+        {
+          "name": "RATING_CLASS_FIDE_CHESS_STANDARD",
+          "number": 12
+        },
+        {
+          "name": "RATING_CLASS_FIDE_CHESS_RAPID",
+          "number": 13
+        },
+        {
+          "name": "RATING_CLASS_FIDE_CHESS_BLITZ",
+          "number": 14
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_ODDS_CHESS",
+          "number": 15
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

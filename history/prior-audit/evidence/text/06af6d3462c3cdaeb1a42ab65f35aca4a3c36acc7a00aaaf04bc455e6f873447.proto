@@ -1,0 +1,44 @@
+// source: chesscom/computer/v1/computer_game.proto
+// syntax: proto3
+
+package chesscom.computer.v1;
+
+enum UserColor {
+  USER_COLOR_UNSPECIFIED = 0;
+  USER_COLOR_WHITE = 1;
+  USER_COLOR_BLACK = 2;
+}
+
+enum GameMode {
+  GAME_MODE_UNSPECIFIED = 0;
+  GAME_MODE_CHALLENGE = 1;
+  GAME_MODE_FRIENDLY = 2;
+  GAME_MODE_ASSISTED = 3;
+  GAME_MODE_CUSTOM = 4;
+}
+
+enum AssistedGameFeature {
+  ASSISTED_GAME_FEATURE_UNSPECIFIED = 0;
+  ASSISTED_GAME_FEATURE_CHAT = 1;
+  ASSISTED_GAME_FEATURE_ANALYSIS = 2;
+  ASSISTED_GAME_FEATURE_HINTS = 3;
+  ASSISTED_GAME_FEATURE_THREATS = 4;
+  ASSISTED_GAME_FEATURE_EVALUATION = 5;
+  ASSISTED_GAME_FEATURE_ENGINE = 6;
+  ASSISTED_GAME_FEATURE_SUGGESTIONS = 7;
+  ASSISTED_GAME_FEATURE_TAKEBACKS = 8;
+}
+
+message AssistedGameFeatures {
+  optional bool chat = 1;
+  optional bool analysis = 2;
+  optional bool hints = 3;
+  optional bool threats = 4;
+}
+
+message CustomModeConfiguration {
+  optional .chesscom.game_storage.v1.Variant game_type = 1;
+  optional int32 base_time_ms = 2;
+  optional int32 time_increment_ms = 3;
+  repeated .chesscom.computer.v1.AssistedGameFeature assisted_game_features = 4;
+}

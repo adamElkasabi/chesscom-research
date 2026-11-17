@@ -1,0 +1,163 @@
+// source: chesscom/payments/v1/subscription_admin_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message CancelSubscriptionRequest {
+  optional string user_uuid = 1;
+  optional .chesscom.support.v1.SupportActionContext context = 2;
+  optional string subscription_id = 3;
+}
+
+message CancelSubscriptionResponse {
+  optional .chesscom.payments.v1.CancelSubscriptionResult result = 1;
+  optional .google.protobuf.Timestamp access_ends_at = 2;
+  optional .chesscom.support.v1.SupportActionResult action_result = 3;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 4;
+}
+
+message StopRenewalByCardMatchRequest {
+  optional string user_uuid = 1;
+  optional string card_last_four = 2;
+  optional int32 charge_amount_cents = 3;
+  optional string charge_currency = 4;
+  optional string charge_date = 5;
+  optional .chesscom.support.v1.SupportActionContext context = 6;
+}
+
+message StopRenewalByCardMatchResponse {
+  optional .chesscom.payments.v1.StopRenewalByCardMatchResult result = 1;
+  optional .google.protobuf.Timestamp access_ends_at = 2;
+  optional .chesscom.support.v1.SupportActionResult action_result = 3;
+}
+
+message ExtendSubscriptionRequest {
+  optional string user_uuid = 1;
+  optional int32 days = 2;
+  optional .chesscom.support.v1.SupportActionContext context = 3;
+  optional string subscription_id = 4;
+}
+
+message ExtendSubscriptionResponse {
+  optional int32 days_added = 1;
+  optional .chesscom.support.v1.SupportActionResult action_result = 2;
+  optional .google.protobuf.Timestamp current_period_ends_at = 3;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 4;
+}
+
+message GrantGoodwillDiamondRequest {
+  optional string user_uuid = 1;
+  optional .chesscom.support.v1.SupportActionContext context = 2;
+  optional .chesscom.payments.v1.GoodwillSiteFault fault = 3;
+}
+
+message GrantGoodwillDiamondResponse {
+  optional .chesscom.payments.v1.GrantGoodwillDiamondResult result = 1;
+  optional int32 days_granted = 2;
+  optional string plan = 3;
+  optional .google.protobuf.Timestamp access_ends_at = 4;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 5;
+  optional .google.protobuf.Timestamp next_eligible_at = 6;
+  optional .chesscom.support.v1.SupportActionResult action_result = 7;
+}
+
+message GrantNoAdsOfferRequest {
+  optional string user_uuid = 1;
+  optional .chesscom.support.v1.SupportActionContext context = 2;
+}
+
+message GrantNoAdsOfferResponse {
+  optional int32 days_granted = 1;
+  optional string plan = 2;
+  optional .google.protobuf.Timestamp access_ends_at = 3;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 4;
+  optional .google.protobuf.Timestamp next_eligible_at = 5;
+  optional .chesscom.support.v1.SupportActionResult action_result = 6;
+}
+
+message TransferMembershipRequest {
+  optional string from_user_uuid = 1;
+  optional string to_user_uuid = 2;
+  optional .chesscom.support.v1.SupportActionContext context = 3;
+  optional string from_verification_id = 4;
+  optional string to_verification_id = 5;
+}
+
+message TransferMembershipResponse {
+  optional int32 subscriptions_transferred = 1;
+  optional .chesscom.support.v1.SupportActionResult action_result = 2;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 3;
+}
+
+message GrantMembershipRequest {
+  oneof basis {
+  .chesscom.payments.v1.PaidOrderBasis paid_order = 3;
+  .chesscom.payments.v1.PartnerMembershipBasis partner_membership = 4;
+  }
+  optional string user_uuid = 1;
+  optional .chesscom.support.v1.SupportActionContext context = 2;
+}
+
+message GrantMembershipResponse {
+  optional string plan = 1;
+  optional string subscription_id = 2;
+  optional .google.protobuf.Timestamp access_ends_at = 3;
+  optional .chesscom.support.v1.SupportActionResult action_result = 4;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 5;
+}
+
+message SwitchToMonthlyRequest {
+  optional string user_uuid = 1;
+  optional .chesscom.support.v1.SupportActionContext context = 2;
+  optional string subscription_id = 3;
+}
+
+message SwitchToMonthlyResponse {
+  optional .chesscom.payments.v1.SwitchToMonthlyResult result = 1;
+  optional string current_plan = 2;
+  optional string target_plan = 3;
+  optional int32 refund_cents = 4;
+  optional string currency = 5;
+  optional string refund_id = 6;
+  optional .chesscom.support.v1.SupportActionResult action_result = 7;
+  optional .chesscom.payments.v1.SubscriptionAdminRefusalReason refusal_reason = 8;
+  optional .chesscom.payments.v1.MonthlySwitchIneligibility ineligibility = 9;
+}
+
+message GetFamilyPlanInvitationsRequest {
+  optional string user_uuid = 1;
+  repeated string invitee_user_uuids = 2;
+  optional string verification_id = 3;
+}
+
+message GetFamilyPlanInvitationsResponse {
+  optional .chesscom.payments.v1.SupportFamilyPlanState plan_state = 1;
+  optional int32 secondary_member_count = 2;
+  optional int32 max_secondary_members = 3;
+  repeated .chesscom.payments.v1.SupportFamilyPlanInvitation invitations = 4;
+  repeated .chesscom.payments.v1.SupportFamilyPlanInviteeCheck invitee_checks = 5;
+}
+
+message RevokeFamilyPlanInvitationRequest {
+  optional string user_uuid = 1;
+  optional string invitation_ref = 2;
+  optional string verification_id = 3;
+  optional .chesscom.support.v1.SupportActionContext context = 4;
+}
+
+message RevokeFamilyPlanInvitationResponse {
+  optional .chesscom.payments.v1.SupportFamilyPlanRevokeResult result = 1;
+  optional .chesscom.support.v1.SupportActionResult action_result = 2;
+}
+
+message ClearFamilyPlanTrialCooldownRequest {
+  optional string user_uuid = 1;
+  optional string invitee_user_uuid = 2;
+  optional string verification_id = 3;
+  optional .chesscom.support.v1.SupportActionContext context = 4;
+}
+
+message ClearFamilyPlanTrialCooldownResponse {
+  optional .chesscom.payments.v1.SupportFamilyPlanCooldownResult result = 1;
+  optional .chesscom.support.v1.SupportActionResult action_result = 2;
+}

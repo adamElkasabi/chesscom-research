@@ -1,0 +1,16 @@
+
+explanation-engine.wasm:	file format wasm 0x1
+
+Sections:
+
+     Type start=0x0000000b end=0x00000665 (size=0x0000065a) count: 194
+   Import start=0x00000668 end=0x00001441 (size=0x00000dd9) count: 155
+ Function start=0x00001445 end=0x00006e38 (size=0x000059f3) count: 22953
+    Table start=0x00006e3a end=0x00006e43 (size=0x00000009) count: 1
+   Memory start=0x00006e45 end=0x00006e4c (size=0x00000007) count: 1
+   Global start=0x00006e4e end=0x00006e66 (size=0x00000018) count: 4
+   Export start=0x00006e69 end=0x00007a91 (size=0x00000c28) count: 153
+     Elem start=0x00007a95 end=0x00015bfb (size=0x0000e166) count: 1
+DataCount start=0x00015bfd end=0x00015bff (size=0x00000002) count: 4272
+     Code start=0x00015c04 end=0x013eac88 (size=0x013d5084) count: 22953
+     Data start=0x013eac8d end=0x01f65b6e (size=0x00b7aee1) count: 4272

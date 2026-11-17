@@ -1,0 +1,8 @@
+
+8chesscom/explanation_engine/v1/feature_cee_version.protochesscom.explanation_engine.v1&chesscom/api/v1/semantic_version.proto"
+CeeVersionRequest"´
+CeeVersionResponse5
+cee_version (2 .chesscom.api.v1.SemanticVersion
+cee_git_sha (	
+definitions_git_sha (	5
+uci_version (2 .chesscom.api.v1.SemanticVersionbproto3

@@ -1,0 +1,60 @@
+{
+  "name": "chesscom/user_properties/v1/properties_skills.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "SkillsProperty",
+      "field": [
+        {
+          "name": "unlocked_skills",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "mastered_skills",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1044,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SkillsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SkillsPropertyDefinition",
+      "value": [
+        {
+          "name": "SKILLS_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILLS_PROPERTY_DEFINITION_UNLOCKED_SKILLS",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "SKILLS_PROPERTY_DEFINITION_MASTERED_SKILLS",
+          "number": 2,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

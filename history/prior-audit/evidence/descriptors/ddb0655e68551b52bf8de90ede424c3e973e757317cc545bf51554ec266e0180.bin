@@ -1,0 +1,8 @@
+
+<chesscom/explanation_engine/v1/feature_set_pgn_headers.protochesscom.explanation_engine.v1"š
+SetPgnHeadersRequestR
+headers (2A.chesscom.explanation_engine.v1.SetPgnHeadersRequest.HeadersEntry.
+HeadersEntry
+key (	
+value (	:8"
+SetPgnHeadersResponsebproto3

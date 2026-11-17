@@ -1,0 +1,31 @@
+{
+  "name": "chesscom/api/v1/date.proto",
+  "package": "chesscom.api.v1",
+  "message_type": [
+    {
+      "name": "Date",
+      "field": [
+        {
+          "name": "year",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "month",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "day",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

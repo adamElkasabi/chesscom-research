@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/text_item/v1alpha/puzzle_goal_text_context.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1/puzzle_gen.proto",
+    "chesscom/explanation_engine/v1alpha/board_events.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PuzzleGoalTextContext",
+      "field": [
+        {
+          "name": "puzzle_goal",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGoal"
+        },
+        {
+          "name": "key_board_event",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEvent",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_key_board_event"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

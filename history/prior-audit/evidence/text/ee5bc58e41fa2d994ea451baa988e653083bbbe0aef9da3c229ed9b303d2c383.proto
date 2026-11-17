@@ -1,0 +1,37 @@
+// source: chesscom/user_properties/v1/properties_user_streak_v2.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum UserStreakV2PropertyDefinition {
+  USER_STREAK_V2_UNSPECIFIED = 0;
+  USER_STREAK_V2_UPDATED_AT = 1;
+  USER_STREAK_V2_DURATION_DAYS = 2;
+  USER_STREAK_V2_STATUS_BY_DAYS = 3;
+  USER_STREAK_V2_EXPIRES_AT = 4;
+  USER_STREAK_V2_RESETS_COUNT = 5;
+  USER_STREAK_V2_LONGEST_STREAK = 6;
+  USER_STREAK_V2_LONGEST_STREAK_DATE = 7;
+}
+
+message UserStreakV2Property {
+  oneof _updated_at {
+  .google.protobuf.Timestamp updated_at = 1;
+  }
+  oneof _duration_days {
+  int32 duration_days = 2;
+  }
+  oneof _expires_at {
+  .google.protobuf.Timestamp expires_at = 4;
+  }
+  oneof _resets_count {
+  int32 resets_count = 5;
+  }
+  oneof _longest_streak {
+  int32 longest_streak = 6;
+  }
+  oneof _longest_streak_date {
+  .google.protobuf.Timestamp longest_streak_date = 7;
+  }
+  repeated string status_by_days = 3;
+}

@@ -1,0 +1,130 @@
+// source: chesscom/chess/v1/game.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+message GameResult {
+  optional .chesscom.chess.v1.Result result = 1;
+  optional .chesscom.chess.v1.ResultType result_type = 2;
+}
+
+message Game {
+  optional .chesscom.chess.v1.Position starting_position = 1;
+  repeated .chesscom.chess.v1.GameMove moves = 2;
+  optional .chesscom.chess.v1.GameMetadata metadata = 3;
+}
+
+message GameMove {
+  oneof _metadata {
+  .chesscom.chess.v1.GameMoveMetadata metadata = 2;
+  }
+  optional .chesscom.chess.v1.Move move = 1;
+  repeated .chesscom.chess.v1.MoveVariation variations = 3;
+}
+
+message GameMoveMetadata {
+  oneof _score {
+  .chesscom.chess.v1.Score score = 1;
+  }
+  oneof _time_remaining_ms {
+  uint32 time_remaining_ms = 2;
+  }
+  oneof _comment_before {
+  string comment_before = 3;
+  }
+  repeated string comments_after = 4;
+  repeated uint32 nags = 5;
+}
+
+message MoveVariation {
+  repeated .chesscom.chess.v1.GameMove moves = 1;
+}
+
+message Rules {
+  oneof _is_chess960 {
+  bool is_chess960 = 1;
+  }
+}
+
+message GameMetadata {
+  oneof _time_control {
+  .chesscom.chess.v1.TimeControl time_control = 2;
+  }
+  oneof _timestamps {
+  .chesscom.chess.v1.Timestamps timestamps = 3;
+  }
+  oneof _result {
+  .chesscom.chess.v1.GameResult result = 4;
+  }
+  oneof _rules {
+  .chesscom.chess.v1.Rules rules = 5;
+  }
+  oneof _chesscom_metadata {
+  .chesscom.chess.v1.ChesscomGameMetadata chesscom_metadata = 6;
+  }
+  oneof _link {
+  string link = 8;
+  }
+  oneof _time_class {
+  .chesscom.chess.v1.TimeClass time_class = 9;
+  }
+  oneof _is_rated {
+  bool is_rated = 10;
+  }
+  repeated .chesscom.chess.v1.PlayerMetadata players = 1;
+  repeated .chesscom.chess.v1.GameMetadata.PgnHeadersEntry pgn_headers = 7;
+  message PgnHeadersEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+}
+
+message Timestamps {
+  oneof _started_at {
+  int64 started_at = 1;
+  }
+  oneof _finished_at {
+  int64 finished_at = 2;
+  }
+}
+
+message ChesscomGameMetadata {
+  oneof _game_id {
+  string game_id = 1;
+  }
+  oneof _legacy_game_id {
+  int64 legacy_game_id = 2;
+  }
+  oneof _eco_id {
+  int64 eco_id = 3;
+  }
+  oneof _game_source {
+  .chesscom.chess.v1.ChesscomGameSource game_source = 4;
+  }
+}
+
+message PlayerMetadata {
+  oneof _name {
+  string name = 4;
+  }
+  oneof _chesscom_metadata {
+  .chesscom.chess.v1.ChesscomPlayerMetadata chesscom_metadata = 3;
+  }
+  optional .chesscom.chess.v1.Color color = 1;
+  repeated .chesscom.chess.v1.Rating ratings = 2;
+}
+
+message Rating {
+  oneof _rating {
+  int32 rating = 1;
+  }
+}
+
+message ChesscomPlayerMetadata {
+  oneof _user_id {
+  string user_id = 1;
+  }
+  oneof _legacy_user_id {
+  int64 legacy_user_id = 2;
+  }
+}

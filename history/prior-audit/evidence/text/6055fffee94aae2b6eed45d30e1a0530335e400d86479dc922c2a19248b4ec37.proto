@@ -1,0 +1,15 @@
+// source: chesscom/courses/v1/course_tag.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum CourseTag {
+  COURSE_TAG_UNSPECIFIED = 0;
+  COURSE_TAG_RECOMMENDED = 1;
+  COURSE_TAG_BEST_SELLER = 2;
+  COURSE_TAG_ON_SALE = 3;
+  COURSE_TAG_VIDEO = 4;
+  COURSE_TAG_DIAMOND_EXCLUSIVE = 5;
+  COURSE_TAG_FREE = 6;
+  COURSE_TAG_TOP_PLAYERS = 7;
+}

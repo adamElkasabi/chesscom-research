@@ -1,0 +1,27 @@
+{
+  "name": "chesscom/game_gateway/v1/player_details_metadata.proto",
+  "package": "chesscom.game_gateway.v1",
+  "message_type": [
+    {
+      "name": "PlayerDetailsMetadata",
+      "field": [
+        {
+          "name": "white_player_metadata",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        },
+        {
+          "name": "black_player_metadata",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

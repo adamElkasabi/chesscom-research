@@ -1,0 +1,55 @@
+{
+  "name": "chesscom/user_properties/v1/properties_turnstile.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "TurnstileProperty",
+      "field": [
+        {
+          "name": "registration_status",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "turnstile_definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1035,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TurnstilePropertyDefinition",
+          "json_name": "turnstileDefinition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_registration_status"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "TurnstilePropertyDefinition",
+      "value": [
+        {
+          "name": "TURNSTILE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TURNSTILE_REGISTRATION_STATUS",
+          "number": 1,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

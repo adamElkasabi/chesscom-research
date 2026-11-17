@@ -1,0 +1,19 @@
+// source: chesscom/courses/v1/courses_previews_information_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetPreviewsInformationRequest {
+}
+
+message GetPreviewsInformationResponse {
+  oneof _total_amount {
+  int32 total_amount = 2;
+  }
+  oneof _variation_resets_in_days_amount {
+  int32 variation_resets_in_days_amount = 3;
+  }
+  optional int32 used_amount = 1;
+  optional int32 period = 4;
+  optional int32 max_previews_per_course = 5;
+}

@@ -1,0 +1,51 @@
+// source: chesscom/payments/v1/incentive.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message Incentive {
+  oneof _free_time {
+  int32 free_time = 4;
+  }
+  oneof _discount_percentage {
+  float discount_percentage = 5;
+  }
+  oneof _discount_amount {
+  .chesscom.api.v1.Money discount_amount = 6;
+  }
+  oneof _discount_charge_type {
+  .chesscom.payments.v1.IncentiveChargeType discount_charge_type = 7;
+  }
+  oneof _discount_recurring_limit {
+  int32 discount_recurring_limit = 8;
+  }
+  oneof _is_payment_information_required {
+  bool is_payment_information_required = 10;
+  }
+  oneof _expires_at {
+  .google.protobuf.Timestamp expires_at = 12;
+  }
+  oneof _starts_at {
+  .google.protobuf.Timestamp starts_at = 13;
+  }
+  oneof _product {
+  string product = 14;
+  }
+  oneof _code {
+  string code = 15;
+  }
+  oneof _campaign_id {
+  string campaign_id = 16;
+  }
+  oneof _template {
+  .chesscom.payments.v1.IncentiveTemplate template = 17;
+  }
+  oneof _app_store_subscription_group_id {
+  string app_store_subscription_group_id = 18;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional .chesscom.payments.v1.IncentiveType type = 3;
+  repeated .chesscom.payments.v1.IncentiveOffer incentive_offers = 9;
+  repeated .chesscom.payments.v1.IncentiveExternalAssociation incentive_external_associations = 11;
+}

@@ -1,0 +1,10 @@
+// source: chesscom/skills/v1/skill_point_gained.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+message SkillPointGained {
+  optional .chesscom.explanation_engine.v1.Skill skill = 1;
+  optional uint32 new_value = 2;
+  optional uint32 max_value = 3;
+}

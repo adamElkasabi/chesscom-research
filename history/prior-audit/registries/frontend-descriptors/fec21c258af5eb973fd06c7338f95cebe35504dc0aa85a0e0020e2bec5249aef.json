@@ -1,0 +1,206 @@
+{
+  "name": "chesscom/courses/v1/courses_dashboard_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetCourseListRequest"
+    },
+    {
+      "name": "GetCourseListResponse",
+      "field": [
+        {
+          "name": "course_list",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.Course"
+        }
+      ]
+    },
+    {
+      "name": "SetCourseInactiveRequest",
+      "field": [
+        {
+          "name": "course_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetCourseInactiveResponse"
+    },
+    {
+      "name": "SetCoursePausedRequest",
+      "field": [
+        {
+          "name": "course_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetCoursePausedResponse"
+    },
+    {
+      "name": "SetCourseUnpausedRequest",
+      "field": [
+        {
+          "name": "course_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetCourseUnpausedResponse"
+    },
+    {
+      "name": "AssignTutorialRequest",
+      "field": [
+        {
+          "name": "user_rating",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "tutorial_category",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.TutorialCategory",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "course_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_tutorial_category"
+        }
+      ]
+    },
+    {
+      "name": "AssignTutorialResponse",
+      "field": [
+        {
+          "name": "default_move_trainer_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetAvailableTutorialsRequest",
+      "field": [
+        {
+          "name": "user_rating",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GetAvailableTutorialsResponse",
+      "field": [
+        {
+          "name": "course_list",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseProduct",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "course_list_by_category",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.GetAvailableTutorialsResponse.CourseListByCategoryEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "CourseListByCategoryEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.courses.v1.CourseProductList"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CoursesDashboardService",
+      "method": [
+        {
+          "name": "GetCourseList",
+          "input_type": ".chesscom.courses.v1.GetCourseListRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseListResponse"
+        },
+        {
+          "name": "SetCourseInactive",
+          "input_type": ".chesscom.courses.v1.SetCourseInactiveRequest",
+          "output_type": ".chesscom.courses.v1.SetCourseInactiveResponse"
+        },
+        {
+          "name": "SetCoursePaused",
+          "input_type": ".chesscom.courses.v1.SetCoursePausedRequest",
+          "output_type": ".chesscom.courses.v1.SetCoursePausedResponse"
+        },
+        {
+          "name": "SetCourseUnpaused",
+          "input_type": ".chesscom.courses.v1.SetCourseUnpausedRequest",
+          "output_type": ".chesscom.courses.v1.SetCourseUnpausedResponse"
+        },
+        {
+          "name": "AssignTutorial",
+          "input_type": ".chesscom.courses.v1.AssignTutorialRequest",
+          "output_type": ".chesscom.courses.v1.AssignTutorialResponse"
+        },
+        {
+          "name": "GetAvailableTutorials",
+          "input_type": ".chesscom.courses.v1.GetAvailableTutorialsRequest",
+          "output_type": ".chesscom.courses.v1.GetAvailableTutorialsResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

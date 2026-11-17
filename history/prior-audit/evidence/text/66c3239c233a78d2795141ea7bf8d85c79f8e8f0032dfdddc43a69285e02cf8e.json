@@ -1,0 +1,7 @@
+{
+  "id": "normalized-UseSoftNodes-true",
+  "uciAfter": {
+    "Normalize": false,
+    "UseSoftNodes": true
+  }
+}

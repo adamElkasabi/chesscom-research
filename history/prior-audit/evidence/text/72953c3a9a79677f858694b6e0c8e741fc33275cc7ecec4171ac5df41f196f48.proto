@@ -1,0 +1,25 @@
+// source: chesscom/user_properties/v1/properties_roles.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum RolesPropertyDefinition {
+  ROLES_PROPERTY_UNSPECIFIED = 0;
+  IS_STREAMER = 1;
+  ROLES = 2;
+  ROLES_TRUST_LEVEL = 3;
+  IS_AFFILIATE_ENABLED = 4;
+}
+
+message RolesProperty {
+  oneof _is_streamer {
+  bool is_streamer = 1;
+  }
+  oneof _trust_level {
+  int32 trust_level = 3;
+  }
+  oneof _is_affiliate_enabled {
+  bool is_affiliate_enabled = 4;
+  }
+  repeated string roles = 2;
+}

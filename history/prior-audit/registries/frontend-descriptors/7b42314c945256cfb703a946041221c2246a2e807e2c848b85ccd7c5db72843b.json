@@ -1,0 +1,66 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_update_developer_options.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InternalFeatureUpdateDeveloperOptionsRequest",
+      "field": [
+        {
+          "name": "options",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.DeveloperOptions"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureUpdateDeveloperOptionsResponse",
+      "field": [
+        {
+          "name": "options",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.DeveloperOptions"
+        }
+      ]
+    },
+    {
+      "name": "DeveloperOptions",
+      "field": [
+        {
+          "name": "coach_debug_info",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "assume_speech_always_present",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_coach_debug_info"
+        },
+        {
+          "name": "_assume_speech_always_present"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 1,
+          "end": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

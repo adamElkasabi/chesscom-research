@@ -1,0 +1,107 @@
+{
+  "name": "chesscom/user_properties/v1/properties_monthly_bot_event.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "MonthlyBotEventProperty",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "points",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "milestones_achieved",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_progression_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1043,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.MonthlyBotEventPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_key"
+        },
+        {
+          "name": "_points"
+        },
+        {
+          "name": "_milestones_achieved"
+        },
+        {
+          "name": "_last_progression_at"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "MonthlyBotEventPropertyDefinition",
+      "value": [
+        {
+          "name": "MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_KEY",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_POINTS",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_MILESTONES_ACHIEVED",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_LAST_PROGRESSION_AT",
+          "number": 4,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

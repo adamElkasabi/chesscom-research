@@ -1,0 +1,50 @@
+// source: chesscom/chess/v1/time.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum TimeClass {
+  TIME_CLASS_UNSPECIFIED = 0;
+  TIME_CLASS_HYPERBULLET = 1;
+  TIME_CLASS_BULLET = 2;
+  TIME_CLASS_BLITZ = 3;
+  TIME_CLASS_RAPID = 4;
+  TIME_CLASS_CLASSICAL = 5;
+  TIME_CLASS_DAILY = 6;
+}
+
+message TimeControl {
+  oneof control {
+  .chesscom.chess.v1.BaseTimeControl base = 1;
+  .chesscom.chess.v1.DailyTimeControl daily = 2;
+  .chesscom.chess.v1.MultiStageTimeControl multi_stage = 3;
+  .chesscom.chess.v1.ArmageddonTimeControl armageddon = 4;
+  }
+}
+
+message BaseTimeControl {
+  optional int64 base_ms = 1;
+  optional int64 increment_ms = 2;
+}
+
+message DailyTimeControl {
+  optional int32 days_per_turn = 1;
+}
+
+message MultiStageTimeControl {
+  repeated .chesscom.chess.v1.TimeControlStage stages = 1;
+}
+
+message TimeControlStage {
+  oneof _move_limit {
+  int32 move_limit = 2;
+  }
+  optional .chesscom.chess.v1.BaseTimeControl time_control = 1;
+}
+
+message ArmageddonTimeControl {
+  optional int32 white_base_ms = 1;
+  optional int32 black_base_ms = 2;
+  optional int32 increment_ms = 3;
+  optional int32 increment_after_move = 4;
+}

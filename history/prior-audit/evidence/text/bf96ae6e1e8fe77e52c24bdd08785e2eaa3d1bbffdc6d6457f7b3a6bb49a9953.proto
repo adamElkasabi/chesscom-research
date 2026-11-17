@@ -1,0 +1,183 @@
+// source: chesscom/user_properties/v1/properties_stats_daily.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum StatsDailyPropertyDefinition {
+  STATS_DAILY_PROPERTY_UNSPECIFIED = 0;
+  STATS_DAILY_TOTAL_GAME_COUNT = 1;
+  STATS_DAILY_TOURNAMENT_COUNT = 2;
+  STATS_DAILY_TOURNAMENT_GAME_WIN_COUNT = 3;
+  STATS_DAILY_TOURNAMENT_GAME_LOSS_COUNT = 4;
+  STATS_DAILY_TOURNAMENT_GAME_DRAW_COUNT = 5;
+  STATS_DAILY_TOURNAMENT_1ST_PLACE = 6;
+  STATS_DAILY_TOURNAMENT_2ND_PLACE = 7;
+  STATS_DAILY_TOURNAMENT_3RD_PLACE = 8;
+  STATS_DAILY_TOURNAMENT_HOST_COUNT = 9;
+  STATS_DAILY_TOURNAMENT_HOST_USER_COUNT = 10;
+  STATS_DAILY_TOURNAMENT_WITHDRAW_COUNT = 11;
+  STATS_DAILY_TOURNAMENT_IN_PROGRESS_COUNT = 12;
+  STATS_DAILY_TOURNAMENT_CANCEL_COUNT = 13;
+  STATS_DAILY_TOURNAMENT_POINTS = 14;
+  STATS_DAILY_TOURNAMENT_COUNT_TOTAL = 15;
+  STATS_DAILY_TOURNAMENT_POINTS_TOTAL = 16;
+  STATS_DAILY_TOURNAMENT_COUNT_PREVIOUS = 17;
+  STATS_DAILY_TOURNAMENT_POINTS_PREVIOUS = 18;
+  STATS_DAILY_UNRATED_GAME_COUNT = 19;
+  STATS_DAILY_IN_PROGRESS_COUNT = 20;
+  STATS_DAILY_TIMEOUT_COUNT = 21;
+  STATS_DAILY_MOVES_PER_GAME = 22;
+  STATS_DAILY_TOTAL_MOVE_TIME = 23;
+  STATS_DAILY_TOTAL_MOVE_COUNT = 24;
+  STATS_DAILY_LAST_GAME_DATE = 25;
+  STATS_DAILY_CURRENT_STREAK = 26;
+  STATS_DAILY_MAX_WIN_STREAK = 27;
+  STATS_DAILY_MAX_LOSS_STREAK = 28;
+  STATS_DAILY_RATING = 29;
+  STATS_DAILY_RD = 30;
+  STATS_DAILY_IS_ACTIVE = 31;
+  STATS_DAILY_TIMEOUT_PERCENT = 32;
+  STATS_DAILY_AVG_TIME_PER_MOVE = 33;
+  STATS_DAILY_IS_UNRATED = 34;
+  STATS_DAILY_HIGHEST_RATING = 35;
+  STATS_DAILY_HIGHEST_RATING_DATE = 36;
+  STATS_DAILY_AVG_OPPONENT_RATING = 37;
+  STATS_DAILY_BEST_WIN_GAME_ID = 38;
+  STATS_DAILY_TOTAL_RATED_GAME_COUNT = 39;
+  STATS_DAILY_TOTAL_RATED_WIN_COUNT = 40;
+  STATS_DAILY_TOTAL_RATED_DRAW_COUNT = 41;
+  STATS_DAILY_TOTAL_RATED_LOSS_COUNT = 42;
+  STATS_DAILY_LAST_DATE = 43;
+}
+
+message StatsDailyProperty {
+  oneof _total_game_count {
+  int32 total_game_count = 1;
+  }
+  oneof _tournament_count {
+  int32 tournament_count = 2;
+  }
+  oneof _tournament_game_win_count {
+  int32 tournament_game_win_count = 3;
+  }
+  oneof _tournament_game_loss_count {
+  int32 tournament_game_loss_count = 4;
+  }
+  oneof _tournament_game_draw_count {
+  int32 tournament_game_draw_count = 5;
+  }
+  oneof _tournament_1st_place {
+  int32 tournament_1st_place = 6;
+  }
+  oneof _tournament_2nd_place {
+  int32 tournament_2nd_place = 7;
+  }
+  oneof _tournament_3rd_place {
+  int32 tournament_3rd_place = 8;
+  }
+  oneof _tournament_host_count {
+  int32 tournament_host_count = 9;
+  }
+  oneof _tournament_host_user_count {
+  int32 tournament_host_user_count = 10;
+  }
+  oneof _tournament_withdraw_count {
+  int32 tournament_withdraw_count = 11;
+  }
+  oneof _tournament_in_progress_count {
+  int32 tournament_in_progress_count = 12;
+  }
+  oneof _tournament_cancel_count {
+  int32 tournament_cancel_count = 13;
+  }
+  oneof _tournament_points {
+  int32 tournament_points = 14;
+  }
+  oneof _tournament_count_total {
+  int32 tournament_count_total = 15;
+  }
+  oneof _tournament_points_total {
+  int32 tournament_points_total = 16;
+  }
+  oneof _tournament_count_previous {
+  int32 tournament_count_previous = 17;
+  }
+  oneof _tournament_points_previous {
+  int32 tournament_points_previous = 18;
+  }
+  oneof _unrated_game_count {
+  int32 unrated_game_count = 19;
+  }
+  oneof _in_progress_count {
+  int32 in_progress_count = 20;
+  }
+  oneof _timeout_count {
+  int32 timeout_count = 21;
+  }
+  oneof _moves_per_game {
+  int32 moves_per_game = 22;
+  }
+  oneof _total_move_time {
+  uint64 total_move_time = 23;
+  }
+  oneof _total_move_count {
+  int32 total_move_count = 24;
+  }
+  oneof _last_game_date {
+  .google.protobuf.Timestamp last_game_date = 25;
+  }
+  oneof _current_streak {
+  int32 current_streak = 26;
+  }
+  oneof _max_win_streak {
+  int32 max_win_streak = 27;
+  }
+  oneof _max_loss_streak {
+  int32 max_loss_streak = 28;
+  }
+  oneof _rating {
+  int32 rating = 29;
+  }
+  oneof _rd {
+  float rd = 30;
+  }
+  oneof _is_active {
+  bool is_active = 31;
+  }
+  oneof _timeout_percent {
+  double timeout_percent = 32;
+  }
+  oneof _avg_time_per_move {
+  double avg_time_per_move = 33;
+  }
+  oneof _is_unrated {
+  bool is_unrated = 34;
+  }
+  oneof _highest_rating {
+  int32 highest_rating = 35;
+  }
+  oneof _highest_rating_date {
+  .google.protobuf.Timestamp highest_rating_date = 36;
+  }
+  oneof _avg_opponent_rating {
+  int32 avg_opponent_rating = 37;
+  }
+  oneof _best_win_game_id {
+  int64 best_win_game_id = 38;
+  }
+  oneof _total_rated_game_count {
+  int32 total_rated_game_count = 39;
+  }
+  oneof _total_rated_win_count {
+  int32 total_rated_win_count = 40;
+  }
+  oneof _total_rated_loss_count {
+  int32 total_rated_loss_count = 41;
+  }
+  oneof _total_rated_draw_count {
+  int32 total_rated_draw_count = 42;
+  }
+  oneof _last_date {
+  .google.protobuf.Timestamp last_date = 43;
+  }
+}

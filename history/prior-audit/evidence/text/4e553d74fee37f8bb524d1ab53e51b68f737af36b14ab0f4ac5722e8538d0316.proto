@@ -1,0 +1,197 @@
+// source: chesscom/coaches/v2/service.proto
+// syntax: proto3
+
+package chesscom.coaches.v2;
+
+message ListCoachesRequest {
+  oneof _locale_override {
+  string locale_override = 1;
+  }
+  oneof _with_celebrity_coaches {
+  bool with_celebrity_coaches = 2;
+  }
+}
+
+message ListCoachesResponse {
+  repeated .chesscom.coaches.v2.CoachCategory coach_categories = 1;
+}
+
+message ListOnboardingCoachesRequest {
+  oneof _locale_override {
+  string locale_override = 1;
+  }
+  oneof _with_celebrity_coaches {
+  bool with_celebrity_coaches = 2;
+  }
+}
+
+message ListOnboardingCoachesResponse {
+  repeated .chesscom.coaches.v2.CoachCategory coach_categories = 1;
+}
+
+message GetCoachRequest {
+  optional string coach_id = 1;
+}
+
+message GetCoachResponse {
+  optional .chesscom.coaches.v2.Coach coach = 1;
+}
+
+message GetCoachesRequest {
+  repeated string coach_ids = 1;
+}
+
+message GetCoachesResponse {
+  repeated .chesscom.coaches.v2.Coach coaches = 1;
+}
+
+message SetCurrentCoachRequest {
+  oneof _locale_override {
+  string locale_override = 2;
+  }
+  optional string coach_id = 1;
+}
+
+message SetCurrentCoachResponse {
+  optional .chesscom.coaches.v2.Coach current_coach = 1;
+}
+
+message GetCurrentCoachRequest {
+  oneof _locale_override {
+  string locale_override = 2;
+  }
+  oneof _device_id {
+  string device_id = 1;
+  }
+  oneof _bucketing_id {
+  string bucketing_id = 3;
+  }
+  oneof _with_celebrity_coaches {
+  bool with_celebrity_coaches = 4;
+  }
+}
+
+message GetCurrentCoachResponse {
+  optional .chesscom.coaches.v2.Coach current_coach = 1;
+}
+
+message GetCoachQuotaRequest {
+}
+
+message GetCoachQuotaResponse {
+  optional int32 remaining = 1;
+}
+
+message StartedGameAgainstCoachRequest {
+  optional string game_token = 2;
+}
+
+message StartedGameAgainstCoachResponse {
+}
+
+message SetSettingsResponse {
+}
+
+message SetSettingsRequest {
+  oneof _enable_motivational {
+  bool enable_motivational = 1;
+  }
+  oneof _enable_voice {
+  bool enable_voice = 2;
+  }
+  oneof _enable_reminders {
+  bool enable_reminders = 3;
+  }
+  oneof _puzzle_goals {
+  bool puzzle_goals = 4;
+  }
+  oneof _puzzle_mistake_feedback {
+  bool puzzle_mistake_feedback = 5;
+  }
+  oneof _puzzle_hints {
+  bool puzzle_hints = 6;
+  }
+  oneof _voice_speed {
+  .chesscom.coaches.v2.CoachVoiceSpeed voice_speed = 7;
+  }
+  oneof _show_coach_avatar_game_review {
+  bool show_coach_avatar_game_review = 8;
+  }
+  oneof _enable_auto_save_coach_games {
+  bool enable_auto_save_coach_games = 9;
+  }
+  oneof _enable_evaluation_bar {
+  bool enable_evaluation_bar = 10;
+  }
+  oneof _enable_suggestion_arrows {
+  bool enable_suggestion_arrows = 11;
+  }
+  oneof _enable_threat_arrows {
+  bool enable_threat_arrows = 12;
+  }
+  oneof _enable_skills {
+  bool enable_skills = 13;
+  }
+  oneof _enable_teach_legal_moves {
+  bool enable_teach_legal_moves = 14;
+  }
+}
+
+message GetSettingsRequest {
+}
+
+message GetSettingsResponse {
+  optional bool enable_motivational = 1;
+  optional bool enable_voice = 2;
+  optional bool enable_reminders = 3;
+  optional bool enable_puzzle_goals = 4;
+  optional bool enable_puzzle_mistake_feedback = 5;
+  optional bool enable_puzzle_hints = 6;
+  optional .chesscom.coaches.v2.CoachVoiceSpeed voice_speed = 7;
+  optional bool show_coach_avatar_game_review = 8;
+  optional bool enable_auto_save_coach_games = 9;
+  optional bool enable_evaluation_bar = 10;
+  optional bool enable_suggestion_arrows = 11;
+  optional bool enable_threat_arrows = 12;
+  optional bool enable_skills = 13;
+  optional bool enable_teach_legal_moves = 14;
+}
+
+message SaveCoachGameRequest {
+  oneof _game_uuid {
+  string game_uuid = 12;
+  }
+  optional .chesscom.computer.v1.UserColor user_position = 1;
+  optional string coach_id = 2;
+  optional int32 coach_rating = 3;
+  optional .chesscom.game_storage.v2.PlayerResult coach_result = 4;
+  optional .chesscom.game_storage.v2.PlayerResult user_result = 5;
+  optional string initial_fen = 6;
+  optional string final_fen = 7;
+  optional .google.protobuf.Timestamp game_start_time = 8;
+  optional .google.protobuf.Timestamp game_end_time = 9;
+  optional string move_text = 10;
+  optional .chesscom.game_storage.v2.GameResult game_result = 11;
+  optional bool finish_vs_coach = 13;
+}
+
+message HideCoachGameRequest {
+  optional uint64 game_id = 1;
+}
+
+message HideCoachGameResponse {
+}
+
+message SaveCoachGameResponse {
+  optional uint64 game_id = 1;
+  optional string game_uuid = 2;
+}
+
+message GetCoachSpeechRequest {
+  optional string coach_id = 1;
+  optional .chesscom.coaches.v2.CoachContext context = 2;
+}
+
+message GetCoachSpeechResponse {
+  repeated .chesscom.coaches.v2.SpeechString speech = 1;
+}

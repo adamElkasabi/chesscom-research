@@ -1,0 +1,185 @@
+// source: chesscom/explanation_engine/v1/bot_move_configuration.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum PositionShape {
+  POSITION_SHAPE_UNSPECIFIED = 0;
+  POSITION_SHAPE_PASSIVE = 1;
+  POSITION_SHAPE_ACTIVE = 2;
+  POSITION_SHAPE_CLOSED = 3;
+  POSITION_SHAPE_OPEN = 4;
+  POSITION_SHAPE_SEMI_OPEN = 5;
+  POSITION_SHAPE_THREATENED = 6;
+  POSITION_SHAPE_THREATENING = 7;
+  POSITION_SHAPE_CALM = 8;
+  POSITION_SHAPE_SHARP = 9;
+}
+
+enum ModelArch {
+  MODEL_ARCH_UNSPECIFIED = 0;
+  MODEL_ARCH_CHARM = 1;
+  MODEL_ARCH_CHARM_SMALL = 2;
+  MODEL_ARCH_MAIA = 3;
+  MODEL_ARCH_MAIA3 = 4;
+}
+
+message BotMoveConfiguration {
+  oneof mode {
+  .chesscom.explanation_engine.v1.AdditiveConfig additive = 5;
+  .chesscom.explanation_engine.v1.NnMultConfig nnmult = 6;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional string version = 3;
+  optional .chesscom.explanation_engine.v1.BotMoveSettings settings = 4;
+}
+
+message BotMoveSettings {
+  oneof search_limit {
+  int32 depth = 1;
+  int64 nodes = 2;
+  }
+  oneof _book {
+  .chesscom.explanation_engine.v1.BookMovesSettings book = 3;
+  }
+  oneof _sampling {
+  .chesscom.explanation_engine.v1.SamplingSettings sampling = 4;
+  }
+}
+
+message AdditiveConfig {
+  optional int32 n_top_moves = 1;
+  optional int32 n_bad_moves = 2;
+  optional double time_taken_multiplier = 3;
+  repeated .chesscom.explanation_engine.v1.AdditiveBehavior behaviors = 4;
+}
+
+message NnMultConfig {
+  optional int32 n_top_nn_candidates = 1;
+  optional .chesscom.explanation_engine.v1.NnConfig nn = 2;
+  repeated .chesscom.explanation_engine.v1.NnMultBehavior behaviors = 3;
+}
+
+message BookMovesSettings {
+  optional string name = 1;
+  optional int32 move_count = 2;
+}
+
+message SamplingSettings {
+  optional double probability_threshold = 1;
+}
+
+message AdditiveBehavior {
+  oneof _max_eval_drop {
+  .chesscom.explanation_engine.v1.EvalThreshold max_eval_drop = 6;
+  }
+  oneof _max_advantage {
+  .chesscom.explanation_engine.v1.EvalThreshold max_advantage = 7;
+  }
+  oneof _legacy_bot {
+  .chesscom.explanation_engine.v1.LegacyBot legacy_bot = 9;
+  }
+  oneof _nn {
+  .chesscom.explanation_engine.v1.NnConfig nn = 10;
+  }
+  oneof _coherence {
+  .chesscom.explanation_engine.v1.CoherenceConfig coherence = 11;
+  }
+  optional string name = 1;
+  optional bool enabled = 2;
+  optional double weight = 3;
+  repeated .chesscom.explanation_engine.v1.MatcherRule rules = 4;
+  repeated .chesscom.explanation_engine.v1.PieceBonus piece_bonuses = 5;
+  optional .chesscom.explanation_engine.v1.BotMoveBehaviorContext context = 8;
+}
+
+message NnMultBehavior {
+  oneof _max_eval_drop {
+  int32 max_eval_drop = 5;
+  }
+  oneof _max_advantage {
+  int32 max_advantage = 6;
+  }
+  optional string name = 1;
+  optional bool enabled = 2;
+  optional double weight = 3;
+  repeated .chesscom.explanation_engine.v1.NnMultRule rules = 4;
+  optional .chesscom.explanation_engine.v1.BotMoveBehaviorContext context = 7;
+}
+
+message MatcherRule {
+  oneof _weight {
+  double weight = 4;
+  }
+  repeated .chesscom.explanation_engine.v1.Circumstance circumstances = 1;
+  repeated .chesscom.explanation_engine.v1.AnalysisType tags = 2;
+  repeated .chesscom.explanation_engine.v1.MoveClassification move_classifications = 3;
+}
+
+message NnMultRule {
+  oneof body {
+  .chesscom.explanation_engine.v1.PieceGate pieces = 1;
+  .chesscom.explanation_engine.v1.MatcherGroup board_events = 2;
+  }
+}
+
+message MatcherGroup {
+  repeated .chesscom.explanation_engine.v1.MatcherRule matchers = 1;
+}
+
+message PieceGate {
+  repeated .chesscom.chess.v1.PieceType pieces = 1;
+}
+
+message PieceBonus {
+  optional .chesscom.chess.v1.PieceType piece_type = 1;
+  optional double bonus = 2;
+}
+
+message EvalThreshold {
+  optional int32 cp = 1;
+  optional double penalty = 2;
+}
+
+message EvalRange {
+  optional int32 min_cp = 1;
+  optional int32 max_cp = 2;
+}
+
+message BotMoveBehaviorContext {
+  oneof _game_phase {
+  .chesscom.chess.v1.GamePhase game_phase = 1;
+  }
+  oneof _eval_range {
+  .chesscom.explanation_engine.v1.EvalRange eval_range = 2;
+  }
+  repeated .chesscom.explanation_engine.v1.MatcherRule rules = 3;
+  repeated .chesscom.explanation_engine.v1.PositionShape position_shapes = 4;
+}
+
+message LegacyBot {
+  optional int32 rating = 1;
+  optional .chesscom.explanation_engine.v1.BotPersonality personality = 2;
+  optional double weight = 3;
+}
+
+message NnConfig {
+  optional .chesscom.explanation_engine.v1.ModelArch arch = 1;
+  optional string model = 2;
+  optional int32 rating = 3;
+  optional double weight = 4;
+  optional int32 charm_input_search_depth = 5;
+  optional double temperature = 6;
+  optional string rating_scale = 7;
+  optional double time_taken_multiplier = 8;
+}
+
+message CoherenceConfig {
+  optional int32 n_back = 1;
+  optional .chesscom.explanation_engine.v1.ModelArch arch = 2;
+  optional string model = 3;
+  optional int32 rating = 4;
+  optional int32 charm_input_search_depth = 5;
+  optional double weight = 6;
+}

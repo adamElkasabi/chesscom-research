@@ -1,0 +1,207 @@
+{
+  "name": "chesscom/game_gateway/v2/game.proto",
+  "package": "chesscom.game_gateway.v2",
+  "message_type": [
+    {
+      "name": "Game",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "provider",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameProvider"
+        },
+        {
+          "name": "created_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "started_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "ended_at",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "time_control",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.TimeControl"
+        },
+        {
+          "name": "time_class",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "rating_class",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.RatingClass"
+        },
+        {
+          "name": "variant",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "result",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameResult"
+        },
+        {
+          "name": "privacy",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GamePrivacy"
+        },
+        {
+          "name": "origin",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameOrigin"
+        },
+        {
+          "name": "game_server",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameServer"
+        },
+        {
+          "name": "special_game_event",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v2.SpecialGameEvent",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_data",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v2.TournamentData"
+        },
+        {
+          "name": "chess_game",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.ChessGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "bughouse_game",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.BughouseGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "legacy_id",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "vs_computer_game_data",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v2.VsComputerGameData",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "rematch_of",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_data",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v2.OpeningData"
+        },
+        {
+          "name": "vs_coach_game_data",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v2.VsCoachGameData",
+          "oneof_index": 6,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "game"
+        },
+        {
+          "name": "_name"
+        },
+        {
+          "name": "_special_game_event"
+        },
+        {
+          "name": "_legacy_id"
+        },
+        {
+          "name": "_vs_computer_game_data"
+        },
+        {
+          "name": "_rematch_of"
+        },
+        {
+          "name": "_vs_coach_game_data"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

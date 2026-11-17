@@ -1,0 +1,19 @@
+// source: chesscom/chess/v1/piece.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum PieceType {
+  PIECE_TYPE_UNSPECIFIED = 0;
+  PIECE_TYPE_PAWN = 1;
+  PIECE_TYPE_KNIGHT = 2;
+  PIECE_TYPE_BISHOP = 3;
+  PIECE_TYPE_ROOK = 4;
+  PIECE_TYPE_QUEEN = 5;
+  PIECE_TYPE_KING = 6;
+}
+
+message Piece {
+  optional .chesscom.chess.v1.Color color = 1;
+  optional .chesscom.chess.v1.PieceType type = 2;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/coach_exercise_type.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "CoachExerciseType",
+      "value": [
+        {
+          "name": "COACH_EXERCISE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_FLIP_BOARD_SUCCESS",
+          "number": 1
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_FLIP_BOARD_FIRST_FAILURE",
+          "number": 2
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_FLIP_BOARD_SECOND_FAILURE",
+          "number": 3
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_FLIP_BOARD_THIRD_FAILURE",
+          "number": 4
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_FLIP_BOARD_FAILURE_ALMOST",
+          "number": 5
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_RETRY_MISS_OFFER",
+          "number": 6
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_RETRY_MISS_FIRST_FAILURE",
+          "number": 7
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_RETRY_MISS_SECOND_FAILURE",
+          "number": 8
+        },
+        {
+          "name": "COACH_EXERCISE_TYPE_FLIP_BOARD_OFFER",
+          "number": 9
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

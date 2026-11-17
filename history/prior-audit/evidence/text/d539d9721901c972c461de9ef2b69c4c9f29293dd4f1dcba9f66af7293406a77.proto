@@ -1,0 +1,4 @@
+// source: chesscom/explanation_engine/v1/explanation_engine_service.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;

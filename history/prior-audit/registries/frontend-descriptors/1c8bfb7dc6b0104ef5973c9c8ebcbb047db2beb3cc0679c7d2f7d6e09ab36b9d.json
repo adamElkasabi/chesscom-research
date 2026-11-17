@@ -1,0 +1,128 @@
+{
+  "name": "chesscom/payments/v1/incentive_offer.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "IncentiveOffer",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "incentive_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.IncentiveOfferType"
+        },
+        {
+          "name": "value",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "period_start",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "period_end",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "duration",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "duration_unit",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionDurationUnit",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "prices",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.IncentiveOfferPrice"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_description"
+        },
+        {
+          "name": "_period_end"
+        },
+        {
+          "name": "_duration"
+        },
+        {
+          "name": "_duration_unit"
+        }
+      ]
+    },
+    {
+      "name": "IncentiveOfferPrice",
+      "field": [
+        {
+          "name": "price",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "country",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Country",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_country"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

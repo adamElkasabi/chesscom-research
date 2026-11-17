@@ -1,0 +1,85 @@
+{
+  "name": "chesscom/explanation_engine/v1/analyzability.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "UnanalyzableGameTorchOnly",
+      "options": {}
+    },
+    {
+      "name": "UnanalyzableGameImpracticalTooLong",
+      "options": {}
+    },
+    {
+      "name": "UnanalyzableGameImpracticalNoMoves",
+      "options": {}
+    },
+    {
+      "name": "UnanalyzableGameImpracticalNoLegalMove",
+      "options": {}
+    },
+    {
+      "name": "UnanalyzableGameImpractical",
+      "field": [
+        {
+          "name": "too_long",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UnanalyzableGameImpracticalTooLong",
+          "oneof_index": 0
+        },
+        {
+          "name": "no_moves",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UnanalyzableGameImpracticalNoMoves",
+          "oneof_index": 0
+        },
+        {
+          "name": "no_legal_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UnanalyzableGameImpracticalNoLegalMove",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "impracticality"
+        }
+      ]
+    },
+    {
+      "name": "UnanalyzableGame",
+      "field": [
+        {
+          "name": "torch_only",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UnanalyzableGameTorchOnly",
+          "oneof_index": 0
+        },
+        {
+          "name": "impractical",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UnanalyzableGameImpractical",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "analyzability_constraint"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

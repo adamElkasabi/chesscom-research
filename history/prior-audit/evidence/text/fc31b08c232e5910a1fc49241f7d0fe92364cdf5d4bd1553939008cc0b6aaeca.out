@@ -1,0 +1,29 @@
+root 1048576 NewGame took 1.1s
+GetGameReview took 18.8s
+accuracy: {"white":59.95828628540039,"black":95.46183013916016}
+reportCard: {"white":{"reportsByPhase":[{"accuracyGlyph":6,"phase":1,"accuracy":56.760494232177734}],"effectiveRating":300},"black":{"reportsByPhase":[{"accuracyGlyph":3,"phase":1,"accuracy":95.23474884033203}],"effectiveRating":1000},"speech":"You really outplayed your opponent in that one."}
+tallies.white: [{"moveClassification":1,"tally":2},{"moveClassification":2},{"moveClassification":3},{"moveClassification":4},{"moveClassification":5},{"moveClassification":6,"tally":2},{"moveClassification":7,"tally":1},{"moveClassification":8,"tally":4},{"moveClassification":9,"tally":1},{"moveClassification":10},{"moveClassification":11},{"moveClassification":20}]
+tallies.black: [{"moveClassification":1,"tally":2},{"moveClassification":2},{"moveClassification":3,"tally":1},{"moveClassification":4,"tally":4},{"moveClassification":5,"tally":2},{"moveClassification":6,"tally":1},{"moveClassification":7},{"moveClassification":8},{"moveClassification":9},{"moveClassification":10},{"moveClassification":11},{"moveClassification":20}]
+moves: 20
+opening: {"openingName":"Queen's Pawn Opening: Blackmar Gambit","tcnMoves":"lBZJmCJC","ecoCode":"D00","url":"Queens-Pawn-Opening-Blackmar-Gambit-2...dxe4"}
+metadata: {"ceeVersion":{"major":1,"minor":211,"patch":5},"annotatedPgn":"\n1. d4 d5 2. e4 dxe4 3. Be2 Nf6 4. Qd3 exd3 5. cxd3 Nc6 6. Bh5 Nxd4 7. Bd2 Nc2+ 8. Kf1 Nxa1 9. Bc1 Qxd3+ 10. Ke1 Nc2# 0-1"}
+result: {"result":2,"resultType":1}
+classifications: 1,1,1,1,6,4,9,3,6,4,8,6,7,4,8,5,8,5,8,4
+skillsEarned moves: 0  arrows: 9  sentences: 20  withHash: 20
+ticks: 20 engines: 11 depths: 28,27,22,21,17,16,15,18,20,19,97,
+  cls=6 6-13 bm=0 hash=Y :: Your opponent develops their bishop off its starting square.
+  cls=4 63-46 bm=2 hash=Y :: Develops the knight and supports the center.
+  cls=9 4-20 bm=1 hash=Y :: The queen is left hanging, letting you grab it immediately.
+  cls=3 29-20 bm=0 hash=Y :: Nice vision spotting and capturing that vulnerable queen.
+  cls=6 11-20 bm=0 hash=Y :: Recaptures.
+  cls=4 58-43 bm=2 hash=Y :: Developing the knight and increasing influence in the center.
+  cls=8 13-40 bm=1 hash=Y :: That bishop is unprotected and can be captured right away.
+  cls=6 43-28 bm=0 hash=Y :: That pawn was yours for the taking!
+  cls=7 3-12 bm=1 hash=Y :: You are now able to win material through a discovered attack.
+  cls=4 28-11 bm=2 hash=Y :: A discovered attack is always powerful. This time, you will win material with it.
+  cls=8 5-6 bm=1 hash=Y :: This move gives you the opportunity to win their rook.
+  cls=5 11-1 bm=0 hash=Y :: You captured a free rook.
+  cls=8 12-3 bm=1 hash=Y :: They’ve made a mistake, and their bishop is now lost.
+  cls=5 60-20 bm=0 hash=Y :: Well done. An excellent move!
+  cls=8 6-5 bm=1 hash=Y :: You are now able to checkmate the king.
+  cls=4 1-11 bm=0 hash=Y :: Checkmate is always the best move!

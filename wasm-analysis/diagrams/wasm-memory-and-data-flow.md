@@ -1,0 +1,21 @@
+# WASM memory and data flow
+
+[Master](../00_WASM_MASTER_INDEX.md)
+
+```mermaid
+sequenceDiagram
+ participant J as CeeClient
+ participant G as Emscripten worker glue
+ participant M as WASM linear memory
+ participant N as Native CEE exports
+ J->>G: feature gamePoint id encodedRequest
+ G->>M: malloc plus HEAPU8.set bytes
+ G->>N: CEE_NewFeature(gamePoint,id,ptr,len)
+ N-->>G: feature handle
+ G->>N: async CEE_Run(handle,0)
+ N->>G: imported callback(ptr,len,is_final)
+ G->>M: copy subarray slice
+ G-->>J: postMessage proto bytes plus is_final
+```
+
+Memorylimitsanddataoffsetsareprovidedpermodule;noinventedheapclasslayout.

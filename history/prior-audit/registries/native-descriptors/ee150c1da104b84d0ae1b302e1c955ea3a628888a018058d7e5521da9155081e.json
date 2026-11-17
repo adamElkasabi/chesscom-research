@@ -1,0 +1,100 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_charm_inference.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/engine/v1/evaluation.proto",
+    "chesscom/explanation_engine/v1/charm_inference.proto"
+  ],
+  "message_type": [
+    {
+      "name": "ExternalLines",
+      "field": [
+        {
+          "name": "variations",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Evaluation"
+        }
+      ]
+    },
+    {
+      "name": "CeeLines",
+      "field": [
+        {
+          "name": "depth",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureCharmInferenceRequest",
+      "field": [
+        {
+          "name": "external_lines",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ExternalLines",
+          "oneof_index": 0
+        },
+        {
+          "name": "cee_lines",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CeeLines",
+          "oneof_index": 0
+        },
+        {
+          "name": "fen",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "elos",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "model_key",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "engine_lines_input"
+        },
+        {
+          "name": "_fen"
+        },
+        {
+          "name": "_model_key"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureCharmInferenceResponse",
+      "field": [
+        {
+          "name": "results",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmInferenceResult"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

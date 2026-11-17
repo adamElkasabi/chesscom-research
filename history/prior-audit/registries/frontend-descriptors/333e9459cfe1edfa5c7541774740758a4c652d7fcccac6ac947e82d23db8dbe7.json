@@ -1,0 +1,220 @@
+{
+  "name": "chesscom/audit_logs/v1/audit_options.proto",
+  "package": "chesscom.audit_logs.v1",
+  "message_type": [
+    {
+      "name": "AuditFieldOptions",
+      "field": [
+        {
+          "name": "field_sensitivity",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.audit_logs.v1.FieldSensitivity"
+        },
+        {
+          "name": "description",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "required_permissions",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "indexed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "index_alias",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_indexed"
+        },
+        {
+          "name": "_index_alias"
+        }
+      ]
+    },
+    {
+      "name": "AuditMessageOptions",
+      "field": [
+        {
+          "name": "message_sensitivity",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.audit_logs.v1.MessageSensitivity"
+        },
+        {
+          "name": "description",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "required_permissions",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AuditMethodOptions",
+      "field": [
+        {
+          "name": "action_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sensitivity",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.audit_logs.v1.MessageSensitivity"
+        },
+        {
+          "name": "required_permissions",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "request_reference_id_field",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "response_reference_id_field",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "log_errors",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "log_response",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_log_errors"
+        },
+        {
+          "name": "_log_response"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "FieldSensitivity",
+      "value": [
+        {
+          "name": "FIELD_SENSITIVITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FIELD_SENSITIVITY_DEFAULT",
+          "number": 1
+        },
+        {
+          "name": "FIELD_SENSITIVITY_ADVANCED",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "FIELD_SENSITIVITY_RESTRICTED",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "MessageSensitivity",
+      "value": [
+        {
+          "name": "MESSAGE_SENSITIVITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MESSAGE_SENSITIVITY_DEFAULT",
+          "number": 1
+        },
+        {
+          "name": "MESSAGE_SENSITIVITY_RESTRICTED",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "audit_field",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 50105,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.audit_logs.v1.AuditFieldOptions",
+      "json_name": "auditField"
+    },
+    {
+      "name": "audit_message",
+      "extendee": ".google.protobuf.MessageOptions",
+      "number": 50106,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.audit_logs.v1.AuditMessageOptions",
+      "json_name": "auditMessage"
+    },
+    {
+      "name": "audit_rpc",
+      "extendee": ".google.protobuf.MethodOptions",
+      "number": 50103,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.audit_logs.v1.AuditMethodOptions",
+      "json_name": "auditRpc"
+    },
+    {
+      "name": "audit_rpc_defaults",
+      "extendee": ".google.protobuf.ServiceOptions",
+      "number": 50104,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.audit_logs.v1.AuditMethodOptions",
+      "json_name": "auditRpcDefaults"
+    }
+  ],
+  "syntax": "proto3"
+}

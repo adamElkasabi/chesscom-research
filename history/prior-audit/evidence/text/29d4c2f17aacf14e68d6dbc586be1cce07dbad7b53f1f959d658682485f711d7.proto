@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/command_type.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message CommandType {
+  oneof command_type {
+  .chesscom.explanation_engine.v1.FeatureId feature_id = 1;
+  string cee_command = 2;
+  }
+}

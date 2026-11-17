@@ -1,0 +1,118 @@
+// source: chesscom/shared_board/v1alpha/shared_board_service.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+message CreateSharedBoardSessionRequest {
+  repeated .chesscom.shared_board.v1alpha.SharedBoard boards = 1;
+  optional bool open_enrollment = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionSource source = 3;
+}
+
+message CreateSharedBoardSessionResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message GetSharedBoardSessionRequest {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionId session_id = 1;
+}
+
+message GetSharedBoardSessionResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message FindSharedBoardSessionByResourceRequest {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionResource resource = 1;
+}
+
+message FindSharedBoardSessionByResourceResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message CreateSharedBoardSessionForResourceRequest {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionResource resource = 1;
+  repeated .chesscom.shared_board.v1alpha.SharedBoard boards = 2;
+  optional bool open_enrollment = 3;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionSource source = 4;
+}
+
+message CreateSharedBoardSessionForResourceResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message SyncCollectionRosterRequest {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionResource resource = 1;
+}
+
+message SyncCollectionRosterResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message ListSharedBoardSessionsRequest {
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 2;
+  }
+  optional .chesscom.shared_board.v1alpha.SharedBoardSessionSource source = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoardRole role = 3;
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipantStatus participant_status = 4;
+}
+
+message ListSharedBoardSessionsResponse {
+  oneof _pagination {
+  .chesscom.api.v1.ResponsePagination pagination = 2;
+  }
+  repeated .chesscom.shared_board.v1alpha.SharedBoardSessionSummary sessions = 1;
+}
+
+message UpdateSharedBoardSessionRequest {
+  optional string session_id = 1;
+  optional string current_board_id = 2;
+  optional bool open_enrollment = 3;
+}
+
+message UpdateSharedBoardSessionResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message UpdateSharedBoardClockRequest {
+  optional string session_id = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoardClock clock = 2;
+}
+
+message UpdateSharedBoardClockResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message CreateSharedBoardRequest {
+  optional string session_id = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoard board = 2;
+}
+
+message CreateSharedBoardResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoard board = 1;
+}
+
+message DeleteSharedBoardRequest {
+  optional string session_id = 1;
+  optional string board_id = 2;
+}
+
+message DeleteSharedBoardResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}
+
+message UpdateSharedBoardRequest {
+  optional .chesscom.shared_board.v1alpha.SharedBoard board = 1;
+}
+
+message UpdateSharedBoardResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoard board = 1;
+}
+
+message EndSharedBoardSessionRequest {
+  optional string session_id = 1;
+}
+
+message EndSharedBoardSessionResponse {
+  optional .chesscom.shared_board.v1alpha.SharedBoardSession session = 1;
+}

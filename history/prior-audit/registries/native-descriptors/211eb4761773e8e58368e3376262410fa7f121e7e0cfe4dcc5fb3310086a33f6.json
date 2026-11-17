@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_relaxed_legal_moves.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/square.proto"
+  ],
+  "message_type": [
+    {
+      "name": "RelaxedLegalMovesRequest",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "extra_occupancy",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "RelaxedLegalMovesResponse",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_new_game.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/invalid_game.proto",
+    "chesscom/explanation_engine/v1/new_game.proto",
+    "chesscom/explanation_engine/v1/game_point_info.proto"
+  ],
+  "message_type": [
+    {
+      "name": "NewGameRequest",
+      "field": [
+        {
+          "name": "new_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.NewGame"
+        },
+        {
+          "name": "enable_typed_invalid_game_errors",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "NewGameResponse",
+      "field": [
+        {
+          "name": "played_line",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        },
+        {
+          "name": "invalid_game",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGame",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_invalid_game"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

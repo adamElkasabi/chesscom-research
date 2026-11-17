@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/settings/v1/settings_ui.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "UiSetting",
+      "field": [
+        {
+          "name": "mode",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "enable_special_theme_forcing",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

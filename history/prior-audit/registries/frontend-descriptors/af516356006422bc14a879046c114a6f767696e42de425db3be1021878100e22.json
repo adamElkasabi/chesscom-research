@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/explanation_engine/v1/coach_state.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "CoachState",
+      "field": [
+        {
+          "name": "ply_since_retry_offered",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "ply_since_flip_board_offered",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_ply_since_retry_offered"
+        },
+        {
+          "name": "_ply_since_flip_board_offered"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

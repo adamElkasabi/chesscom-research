@@ -1,0 +1,18 @@
+// source: chesscom/explanation_engine/v1/feature_legal_premoves.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message LegalPremovesRequest {
+  oneof _from {
+  .chesscom.chess.v1.Square from = 2;
+  }
+  oneof _color {
+  .chesscom.chess.v1.Color color = 3;
+  }
+  repeated .chesscom.chess.v1.Move previous_premoves = 1;
+}
+
+message LegalPremovesResponse {
+  repeated .chesscom.chess.v1.Move legal_premoves = 1;
+}

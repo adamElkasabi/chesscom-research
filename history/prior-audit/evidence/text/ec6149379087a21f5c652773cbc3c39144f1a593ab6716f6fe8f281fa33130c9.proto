@@ -1,0 +1,13 @@
+// source: chesscom/skills/v1/skill_view.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+message SkillView {
+  optional .chesscom.explanation_engine.v1.Skill skill = 1;
+  optional .chesscom.skills.v1.SkillCategory category = 2;
+  optional uint32 points_required = 3;
+  optional uint32 points_gained = 4;
+  optional bool is_unlocked = 5;
+  optional bool is_mastered = 6;
+}

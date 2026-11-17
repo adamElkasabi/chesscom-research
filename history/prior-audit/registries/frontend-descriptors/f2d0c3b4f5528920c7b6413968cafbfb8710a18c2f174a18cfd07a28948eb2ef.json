@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/courses_common/v1/course_board_preview.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseBoardPreview",
+      "field": [
+        {
+          "name": "start_square",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "crop_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_crop_size"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

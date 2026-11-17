@@ -1,0 +1,86 @@
+// source: chesscom/friends_search/v1/friends_search_service.proto
+// syntax: proto3
+
+package chesscom.friends_search.v1;
+
+message QueryFriendsRequest {
+  oneof _uuid {
+  string uuid = 1;
+  }
+  oneof _include_presence_status {
+  bool include_presence_status = 2;
+  }
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 3;
+  }
+  optional .chesscom.friends_search.v1.FriendsSearchRootQuery query = 4;
+}
+
+message QueryFriendsResponse {
+  optional .chesscom.api.v1.ResponsePagination pagination = 1;
+  repeated .chesscom.friends_search.v1.FriendsSearchFriend friends = 2;
+}
+
+message AutocompleteRequest {
+  oneof _include_friends {
+  bool include_friends = 2;
+  }
+  oneof _include_suggestions {
+  bool include_suggestions = 3;
+  }
+  oneof _friends_limit {
+  int32 friends_limit = 4;
+  }
+  oneof _suggestions_limit {
+  int32 suggestions_limit = 5;
+  }
+  oneof _exact_username_first {
+  bool exact_username_first = 6;
+  }
+  oneof _boost_username {
+  bool boost_username = 7;
+  }
+  optional string prefix = 1;
+}
+
+message AutocompleteResponse {
+  repeated .chesscom.friends_search.v1.FriendsSearchFriend friends = 1;
+  repeated .chesscom.friends_search.v1.FriendsSearchFriend suggestions = 2;
+}
+
+message GetBlockersOfRequest {
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 2;
+  }
+  optional string uuid = 1;
+  repeated .chesscom.friends_search.v1.FriendsSearchRetrievableField extra_fields = 3;
+}
+
+message GetBlockersOfResponse {
+  optional .chesscom.api.v1.ResponsePagination pagination = 1;
+  repeated .chesscom.friends_search.v1.BlockedUsers blocked_users = 2;
+}
+
+message GetUsersBlockedByRequest {
+  oneof _last_login_date {
+  .google.protobuf.Timestamp last_login_date = 2;
+  }
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 99;
+  }
+  optional string uuid = 1;
+  repeated .chesscom.friends_search.v1.FriendsSearchRetrievableField extra_fields = 3;
+}
+
+message GetUsersBlockedByResponse {
+  optional .chesscom.api.v1.ResponsePagination pagination = 1;
+  repeated .chesscom.friends_search.v1.BlockedUsers blocked_users = 2;
+}
+
+message GetFriendsCountRequest {
+  optional string uuid = 1;
+}
+
+message GetFriendsCountResponse {
+  optional int32 friend_count = 4;
+}

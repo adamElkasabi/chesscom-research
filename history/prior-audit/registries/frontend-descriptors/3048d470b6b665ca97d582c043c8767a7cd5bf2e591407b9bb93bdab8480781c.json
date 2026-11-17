@@ -1,0 +1,354 @@
+{
+  "name": "chesscom/explanation_engine/v1/explanation_engine_service.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "service": [
+    {
+      "name": "ExplanationEngineService",
+      "method": [
+        {
+          "name": "GetCeeVersion",
+          "input_type": ".chesscom.explanation_engine.v1.CeeVersionRequest",
+          "output_type": ".chesscom.explanation_engine.v1.CeeVersionResponse",
+          "options": {}
+        },
+        {
+          "name": "CreateNewGame",
+          "input_type": ".chesscom.explanation_engine.v1.NewGameRequest",
+          "output_type": ".chesscom.explanation_engine.v1.NewGameResponse",
+          "options": {}
+        },
+        {
+          "name": "LoadGameState",
+          "input_type": ".chesscom.explanation_engine.v1.LoadGameStateRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LoadGameStateResponse",
+          "options": {}
+        },
+        {
+          "name": "AddEvaluations",
+          "input_type": ".chesscom.explanation_engine.v1.AddEvaluationsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.AddEvaluationsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetExpectedPoints",
+          "input_type": ".chesscom.explanation_engine.v1.ExpectedPointsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.ExpectedPointsResponse",
+          "options": {}
+        },
+        {
+          "name": "ValidateFen",
+          "input_type": ".chesscom.explanation_engine.v1.ValidateFenRequest",
+          "output_type": ".chesscom.explanation_engine.v1.ValidateFenResponse",
+          "options": {}
+        },
+        {
+          "name": "ValidatePgn",
+          "input_type": ".chesscom.explanation_engine.v1.ValidatePgnRequest",
+          "output_type": ".chesscom.explanation_engine.v1.ValidatePgnResponse",
+          "options": {}
+        },
+        {
+          "name": "GetPgn",
+          "input_type": ".chesscom.explanation_engine.v1.GetPgnRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetPgnResponse",
+          "options": {}
+        },
+        {
+          "name": "GetFen",
+          "input_type": ".chesscom.explanation_engine.v1.GetFenRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetFenResponse",
+          "options": {}
+        },
+        {
+          "name": "GetMoveDetails",
+          "input_type": ".chesscom.explanation_engine.v1.GetMoveDetailsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetMoveDetailsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetMoveClassification",
+          "input_type": ".chesscom.explanation_engine.v1.MoveClassificationRequest",
+          "output_type": ".chesscom.explanation_engine.v1.MoveClassificationResponse",
+          "options": {}
+        },
+        {
+          "name": "GetAnalysisAnnotations",
+          "input_type": ".chesscom.explanation_engine.v1.AnalysisAnnotationsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.AnalysisAnnotationsResponse",
+          "options": {},
+          "server_streaming": true
+        },
+        {
+          "name": "MakeMoves",
+          "input_type": ".chesscom.explanation_engine.v1.MakeMovesRequest",
+          "output_type": ".chesscom.explanation_engine.v1.MakeMovesResponse",
+          "options": {}
+        },
+        {
+          "name": "SetPlayedLine",
+          "input_type": ".chesscom.explanation_engine.v1.SetPlayedLineRequest",
+          "output_type": ".chesscom.explanation_engine.v1.SetPlayedLineResponse",
+          "options": {}
+        },
+        {
+          "name": "GetGameReview",
+          "input_type": ".chesscom.explanation_engine.v1.GameReviewRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GameReviewResponse",
+          "options": {}
+        },
+        {
+          "name": "GetGameState",
+          "input_type": ".chesscom.explanation_engine.v1.GetGameStateRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetGameStateResponse",
+          "options": {}
+        },
+        {
+          "name": "GetGamePointInfo",
+          "input_type": ".chesscom.explanation_engine.v1.GamePointInfoRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GamePointInfoResponse",
+          "options": {}
+        },
+        {
+          "name": "GetGameTree",
+          "input_type": ".chesscom.explanation_engine.v1.GameTreeRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GameTreeResponse",
+          "options": {}
+        },
+        {
+          "name": "GetGameResult",
+          "input_type": ".chesscom.explanation_engine.v1.GetGameResultRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetGameResultResponse",
+          "options": {}
+        },
+        {
+          "name": "SetGameResult",
+          "input_type": ".chesscom.explanation_engine.v1.SetGameResultRequest",
+          "output_type": ".chesscom.explanation_engine.v1.SetGameResultResponse",
+          "options": {}
+        },
+        {
+          "name": "GetLegalMoves",
+          "input_type": ".chesscom.explanation_engine.v1.LegalMovesRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LegalMovesResponse",
+          "options": {}
+        },
+        {
+          "name": "GetLegalPremoves",
+          "input_type": ".chesscom.explanation_engine.v1.LegalPremovesRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LegalPremovesResponse",
+          "options": {}
+        },
+        {
+          "name": "GetSanMoves",
+          "input_type": ".chesscom.explanation_engine.v1.GetSanMovesRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetSanMovesResponse",
+          "options": {}
+        },
+        {
+          "name": "GetThreats",
+          "input_type": ".chesscom.explanation_engine.v1.SimpleThreatsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.SimpleThreatsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetGamePhaseTransitions",
+          "input_type": ".chesscom.explanation_engine.v1.GamePhaseTransitionsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GamePhaseTransitionsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetOpening",
+          "input_type": ".chesscom.explanation_engine.v1.GetOpeningRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetOpeningResponse",
+          "options": {}
+        },
+        {
+          "name": "LoadBot",
+          "input_type": ".chesscom.explanation_engine.v1.LoadBotRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LoadBotResponse",
+          "options": {}
+        },
+        {
+          "name": "GetBotMove",
+          "input_type": ".chesscom.explanation_engine.v1.GetBotMoveRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetBotMoveResponse",
+          "options": {}
+        },
+        {
+          "name": "GetBotMoveFromConfig",
+          "input_type": ".chesscom.explanation_engine.v1.BotMoveFromConfigRequest",
+          "output_type": ".chesscom.explanation_engine.v1.BotMoveFromConfigResponse",
+          "options": {}
+        },
+        {
+          "name": "GetBotConfigResources",
+          "input_type": ".chesscom.explanation_engine.v1.BotConfigResourcesRequest",
+          "output_type": ".chesscom.explanation_engine.v1.BotConfigResourcesResponse",
+          "options": {}
+        },
+        {
+          "name": "GetBotChat",
+          "input_type": ".chesscom.explanation_engine.v1.GetBotChatRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetBotChatResponse",
+          "options": {}
+        },
+        {
+          "name": "GetPunishMove",
+          "input_type": ".chesscom.explanation_engine.v1.GetPunishMoveRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetPunishMoveResponse",
+          "options": {}
+        },
+        {
+          "name": "LoadCoach",
+          "input_type": ".chesscom.explanation_engine.v1.LoadCoachRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LoadCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "SetCoach",
+          "input_type": ".chesscom.explanation_engine.v1.SetCoachRequest",
+          "output_type": ".chesscom.explanation_engine.v1.SetCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "LoadAndSetCoach",
+          "input_type": ".chesscom.explanation_engine.v1.LoadAndSetCoachRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LoadAndSetCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCoachChat",
+          "input_type": ".chesscom.explanation_engine.v1.GetCoachChatRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetCoachChatResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCoachHint",
+          "input_type": ".chesscom.explanation_engine.v1.GetCoachHintRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetCoachHintResponse",
+          "options": {}
+        },
+        {
+          "name": "GetErgonomicPosition",
+          "input_type": ".chesscom.explanation_engine.v1.GetErgonomicPositionRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetErgonomicPositionResponse",
+          "options": {}
+        },
+        {
+          "name": "GetErgonomicGame",
+          "input_type": ".chesscom.explanation_engine.v1.GetErgonomicGameRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetErgonomicGameResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCompressedPosition",
+          "input_type": ".chesscom.explanation_engine.v1.GetCompressedPositionRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetCompressedPositionResponse",
+          "options": {}
+        },
+        {
+          "name": "ConvertToProtoMoves",
+          "input_type": ".chesscom.explanation_engine.v1.ConvertToProtoMovesRequest",
+          "output_type": ".chesscom.explanation_engine.v1.ConvertToProtoMovesResponse",
+          "options": {}
+        },
+        {
+          "name": "GetLuaCompletion",
+          "input_type": ".chesscom.explanation_engine.v1.LuaCompletionRequest",
+          "output_type": ".chesscom.explanation_engine.v1.LuaCompletionResponse",
+          "options": {}
+        },
+        {
+          "name": "RunLua",
+          "input_type": ".chesscom.explanation_engine.v1.RunLuaRequest",
+          "output_type": ".chesscom.explanation_engine.v1.RunLuaResponse",
+          "options": {}
+        },
+        {
+          "name": "UpdateExperimentalOptions",
+          "input_type": ".chesscom.explanation_engine.v1.UpdateExperimentalOptionsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.UpdateExperimentalOptionsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCeeInternalComponents",
+          "input_type": ".chesscom.explanation_engine.v1.CeeInternalComponentsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.CeeInternalComponentsResponse",
+          "options": {}
+        },
+        {
+          "name": "InternalFeaturePuzzleGen",
+          "input_type": ".chesscom.explanation_engine.v1.InternalFeaturePuzzleGenRequest",
+          "output_type": ".chesscom.explanation_engine.v1.InternalFeaturePuzzleGenResponse",
+          "options": {}
+        },
+        {
+          "name": "InternalFeatureUpdateDeveloperOptions",
+          "input_type": ".chesscom.explanation_engine.v1.InternalFeatureUpdateDeveloperOptionsRequest",
+          "output_type": ".chesscom.explanation_engine.v1.InternalFeatureUpdateDeveloperOptionsResponse",
+          "options": {}
+        },
+        {
+          "name": "InternalFeatureMaiaBotMove",
+          "input_type": ".chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveRequest",
+          "output_type": ".chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveResponse",
+          "options": {}
+        },
+        {
+          "name": "RunSearch",
+          "input_type": ".chesscom.explanation_engine.v1.RunSearchRequest",
+          "output_type": ".chesscom.explanation_engine.v1.RunSearchResponse",
+          "options": {},
+          "server_streaming": true
+        },
+        {
+          "name": "DisposeGamePoint",
+          "input_type": ".chesscom.explanation_engine.v1.DisposeGamePointRequest",
+          "output_type": ".chesscom.explanation_engine.v1.DisposeGamePointResponse",
+          "options": {}
+        },
+        {
+          "name": "GetNonChessText",
+          "input_type": ".chesscom.explanation_engine.v1.GetNonChessTextRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetNonChessTextResponse",
+          "options": {}
+        },
+        {
+          "name": "GetIllegalMoveExplanation",
+          "input_type": ".chesscom.explanation_engine.v1.GetIllegalMoveExplanationRequest",
+          "output_type": ".chesscom.explanation_engine.v1.GetIllegalMoveExplanationResponse",
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "command_type",
+      "extendee": ".google.protobuf.MethodOptions",
+      "number": 50001,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.explanation_engine.v1.CommandType",
+      "json_name": "commandType"
+    },
+    {
+      "name": "has_gp",
+      "extendee": ".google.protobuf.MethodOptions",
+      "number": 50002,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_BOOL",
+      "json_name": "hasGp"
+    },
+    {
+      "name": "ceac_field",
+      "extendee": ".google.protobuf.MethodOptions",
+      "number": 50003,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "ceacField"
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

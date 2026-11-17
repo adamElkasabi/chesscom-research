@@ -1,0 +1,90 @@
+// source: chesscom/explanation_engine/v1/feature_get_coach_chat.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetCoachChatRequest {
+}
+
+message GetCoachChatResponse {
+  oneof _debug_info {
+  .chesscom.explanation_engine.v1.CoachChatDebugInfo debug_info = 1;
+  }
+  oneof _speech {
+  .chesscom.explanation_engine.v1.Speech speech = 2;
+  }
+  oneof _retry_mistake {
+  .chesscom.explanation_engine.v1.RetryMistake retry_mistake = 3;
+  }
+  oneof _flip_board_mistake {
+  .chesscom.explanation_engine.v1.FlipBoardMistake flip_board_mistake = 4;
+  }
+  oneof _coach_emotion {
+  .chesscom.explanation_engine.v1.CoachEmotion coach_emotion = 6;
+  }
+  oneof _retry_miss {
+  .chesscom.explanation_engine.v1.RetryMiss retry_miss = 7;
+  }
+  optional .chesscom.explanation_engine.v1.SkillsPosition skills_earned = 5;
+}
+
+message RetryMistake {
+  optional .chesscom.explanation_engine.v1.Speech speech = 1;
+  optional .chesscom.chess.v1.ArrowsAndSquares arrows_and_squares = 2;
+  optional .chesscom.explanation_engine.v1.CoachChoice keep_playing_choice = 3;
+  optional .chesscom.explanation_engine.v1.CoachChoice retry_choice = 4;
+  optional uint32 ply_until_cooldown = 5;
+  optional string board_event = 6;
+}
+
+message FlipBoardMistake {
+  optional .chesscom.chess.v1.Move refutation_move = 1;
+  optional .chesscom.chess.v1.ArrowsAndSquares arrows_and_squares = 2;
+  optional string board_event = 3;
+  optional .chesscom.explanation_engine.v1.Speech offer_speech = 4;
+  optional .chesscom.explanation_engine.v1.CoachChoice switch_sides_choice = 5;
+  optional .chesscom.explanation_engine.v1.CoachChoice decline_choice = 6;
+  optional .chesscom.explanation_engine.v1.Speech success_speech = 7;
+  repeated .chesscom.explanation_engine.v1.Speech failure_speech = 8;
+  optional .chesscom.explanation_engine.v1.Speech failure_almost_speech = 10;
+  optional .chesscom.explanation_engine.v1.CoachChoice continue_after_flip_choice = 9;
+}
+
+message RetryMiss {
+  optional .chesscom.explanation_engine.v1.Speech speech = 1;
+  optional .chesscom.chess.v1.ArrowsAndSquares arrows_and_squares = 2;
+  optional .chesscom.explanation_engine.v1.CoachChoice keep_playing_choice = 3;
+  optional .chesscom.explanation_engine.v1.CoachChoice retry_choice = 4;
+  optional string board_event = 5;
+  repeated .chesscom.explanation_engine.v1.Speech attempt_speech = 6;
+  optional .chesscom.explanation_engine.v1.Speech failure_speech = 7;
+  optional .chesscom.explanation_engine.v1.Speech success_speech = 8;
+  repeated .chesscom.chess.v1.Move success_moves = 9;
+}
+
+message CoachChoice {
+  oneof _response_move {
+  .chesscom.chess.v1.Move response_move = 3;
+  }
+  optional string button_text = 1;
+  optional .chesscom.explanation_engine.v1.Speech response_speech = 2;
+}
+
+message CoachChatDebugInfo {
+  optional .chesscom.explanation_engine.v1.SpeechDebugInfo speech_debug_info = 1;
+  optional .chesscom.explanation_engine.v1.RetryMistakeDebugInfo retry_mistake_debug_info = 2;
+  repeated string used_botchat_triggers = 3;
+  repeated string used_board_events = 4;
+  optional .chesscom.explanation_engine.v1.FlipBoardMistakeDebugInfo flip_board_mistake_debug_info = 5;
+}
+
+message RetryMistakeDebugInfo {
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional bool player_is_winning = 2;
+  optional int32 ply_until_cooldown = 3;
+}
+
+message FlipBoardMistakeDebugInfo {
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 ply_until_flip_board_cooldown = 2;
+}

@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),acorn=require('internal/deps/acorn/acorn/dist/acorn');const D=(process.env.SOURCE_DIR||require('path').resolve(__dirname,'../evidence/public-scripts'))+'/';
+const files=['computer-shared.js','client.d25957d5.CGTiCJaz3J.chunk.js','client.3755d359.C_dFGAfc_J.chunk.js','offline-bot-groups.js','SRC-1137.js'];
+let evidence=[],desc=[];
+for(const file of files){const s=fs.readFileSync(D+file,'utf8');const ast=acorn.parse(s,{ecmaVersion:'latest',sourceType:'module'});let count=0;
+ function walk(n){if(!n||typeof n!=='object')return;if(n.type==='FunctionDeclaration'){const wanted=['hft','vft','I8','L8','h3','A4e','W4e','O4e','x3e','S3e','sc','eit','Fpt','Ipt','Cft','kft','Npt','Mpt','Z5','R5','Kpt','Ypt','jft','ac','mc','lit','nit','o3','u3','sit','Eit','Tit','UG','Xrt','J6e','q6e','Y6e','Z6e','jJ','m0','h0','Ue','Ge','Be'];if(wanted.includes(n.id?.name))evidence.push({file,start:n.start,end:n.end,kind:n.type,name:n.id.name,text:s.slice(n.start,n.end)});}
+ if(n.type==='VariableDeclarator'&&['J4','UG','Eit','Tit','jJ','F4','_c','Us'].includes(n.id?.name))evidence.push({file,start:n.start,end:n.end,kind:n.type,name:n.id.name,text:s.slice(n.start,n.end)});
+ if(file!=='SRC-1137.js'&&n.type==='TemplateLiteral'&&n.expressions.length===0){const value=n.quasis[0].value.cooked;if(value&&value.length>50&&/^[A-Za-z0-9+/]+=*$/.test(value)){try{let b=Buffer.from(value,'base64');if(b[0]===10&&b.includes(Buffer.from('.proto')))desc.push({file,offset:n.start,base64:value});}catch{}}}
+ if(n.type==='Literal'&&typeof n.value==='string'&&n.value.length>50&&/^[A-Za-z0-9+/]+=*$/.test(n.value)){try{let b=Buffer.from(n.value,'base64');if(b[0]===10&&b.includes(Buffer.from('.proto')))desc.push({file,offset:n.start,base64:n.value});}catch{}}
+ if(file==='offline-bot-groups.js'&&n.type==='AssignmentExpression'&&n.left.name==='r'&&n.right.type==='ArrayExpression'){// parse product's literal data without module initialization
+ const source=s.slice(n.right.start,n.right.end);const data=vm.runInNewContext('('+source+')',Object.create(null),{timeout:1000});fs.writeFileSync(D+'offline-catalog.json',JSON.stringify(data,null,2));count=data.length;}
+ for(const [k,v]of Object.entries(n)){if(k==='start'||k==='end')continue;if(Array.isArray(v))v.forEach(walk);else if(v&&typeof v==='object')walk(v);}}
+ walk(ast);console.log(file,'AST parsed',count);}
+fs.writeFileSync(D+'extracted-functions.json',JSON.stringify(evidence,null,2));fs.writeFileSync(D+'current-descriptors.json',JSON.stringify(desc,null,2));console.log('functions',evidence.length,'descriptors',desc.length)

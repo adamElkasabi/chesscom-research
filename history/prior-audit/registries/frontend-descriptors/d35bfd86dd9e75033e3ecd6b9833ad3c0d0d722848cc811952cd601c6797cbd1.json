@@ -1,0 +1,1528 @@
+{
+  "name": "chesscom/game_gateway/v2/game_gateway_service.proto",
+  "package": "chesscom.game_gateway.v2",
+  "message_type": [
+    {
+      "name": "HydrateGamesByCriteriaRequest",
+      "field": [
+        {
+          "name": "criteria",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.Criteria"
+        },
+        {
+          "name": "field_mask",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        },
+        {
+          "name": "pagination",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_pagination"
+        }
+      ]
+    },
+    {
+      "name": "HydrateGamesByCriteriaResponse",
+      "field": [
+        {
+          "name": "hydrated_games",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.HydratedGame"
+        },
+        {
+          "name": "pagination",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AggregateGameResultsByPlayerAndCriteriaRequest",
+      "field": [
+        {
+          "name": "player_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "aggregate_criteria",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.AggregateCriteria",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_aggregate_criteria"
+        }
+      ]
+    },
+    {
+      "name": "AggregateGameResultsByPlayerAndCriteriaResponse",
+      "field": [
+        {
+          "name": "wins",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "draws",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "losses",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayerOverviewStatsRequest",
+      "field": [
+        {
+          "name": "player_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "time_class",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "variant",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "field_mask",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        },
+        {
+          "name": "is_vs_computer",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_vs_coach",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "game_end_time_from",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_end_time_to",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_time_class"
+        },
+        {
+          "name": "_variant"
+        },
+        {
+          "name": "_game_end_time_from"
+        },
+        {
+          "name": "_game_end_time_to"
+        }
+      ]
+    },
+    {
+      "name": "PlayerOverviewStatsResponse",
+      "field": [
+        {
+          "name": "white_counts",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.OverviewGameCount"
+        },
+        {
+          "name": "black_counts",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.OverviewGameCount"
+        },
+        {
+          "name": "highest_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "highest_rating_date",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "best_win",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "best_win_streak",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "average_opponent_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "average_opponent_rating_win",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "average_opponent_rating_lose",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "average_opponent_rating_draw",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "ratings",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.OverviewGameRatings"
+        },
+        {
+          "name": "daily_game_timeout_count",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_win_opponent_username",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_win_game_id",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "most_played_eco_family_id",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "brilliant_moves_count",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_daily_game_timeout_count"
+        },
+        {
+          "name": "_best_win_opponent_username"
+        },
+        {
+          "name": "_best_win_game_id"
+        },
+        {
+          "name": "_most_played_eco_family_id"
+        }
+      ]
+    },
+    {
+      "name": "OverviewGameRatings",
+      "field": [
+        {
+          "name": "timestamp",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "OverviewGameCount",
+      "field": [
+        {
+          "name": "wins",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "draws",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "losses",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AggregateCriteria",
+      "field": [
+        {
+          "name": "time_classes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "variants",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "opening",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.OpeningCriteria",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "color",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_rated",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_end_time_from",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_end_time_to",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_opening"
+        },
+        {
+          "name": "_opponent_id"
+        },
+        {
+          "name": "_color"
+        },
+        {
+          "name": "_is_rated"
+        },
+        {
+          "name": "_game_end_time_from"
+        },
+        {
+          "name": "_game_end_time_to"
+        }
+      ]
+    },
+    {
+      "name": "Criteria",
+      "field": [
+        {
+          "name": "accuracy_from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "accuracy_to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_accuracy_from",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_accuracy_to",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_username",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_ids",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "username",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_titles",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.PlayerTitle"
+        },
+        {
+          "name": "rating_from",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_to",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_rating_from",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_rating_to",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "color",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "are_friends",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "theme",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "opponent_theme",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.OpeningCriteria",
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "ply_from",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "ply_to",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "base_time",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_increment",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_classes",
+          "number": 22,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "game_provider",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameProvider",
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_vs_computer",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_results",
+          "number": 25,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameResult"
+        },
+        {
+          "name": "player_results",
+          "number": 26,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.PlayerResult"
+        },
+        {
+          "name": "opponent_player_results",
+          "number": 27,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.PlayerResult"
+        },
+        {
+          "name": "tournament_id",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "team_match_id",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_tournament",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_team_match",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_rated",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_end_time_from",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_end_time_to",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_start_time_from",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_start_time_to",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "variants",
+          "number": 37,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "page",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "page_size",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "sort_direction",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_gateway.v2.SortDirection",
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "sort_fields",
+          "number": 41,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_gateway.v2.SortField"
+        },
+        {
+          "name": "base_time_from",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "base_time_to",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_increment_from",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_increment_to",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_ids",
+          "number": 46,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "player_id",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_ids",
+          "number": 48,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "brilliant_count_from",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "brilliant_count_to",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "arena_ids",
+          "number": 51,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "is_arena",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_accuracy",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 41,
+          "proto3_optional": true
+        },
+        {
+          "name": "toggle_rate_from",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 42,
+          "proto3_optional": true
+        },
+        {
+          "name": "toggle_rate_to",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 43,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_vs_coach",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 44,
+          "proto3_optional": true
+        },
+        {
+          "name": "random_order_seed",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 45,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_favorite",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 46,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_round",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 47,
+          "proto3_optional": true
+        },
+        {
+          "name": "player_titles",
+          "number": 60,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.PlayerTitle"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_accuracy_from"
+        },
+        {
+          "name": "_accuracy_to"
+        },
+        {
+          "name": "_opponent_accuracy_from"
+        },
+        {
+          "name": "_opponent_accuracy_to"
+        },
+        {
+          "name": "_opponent_username"
+        },
+        {
+          "name": "_username"
+        },
+        {
+          "name": "_rating_from"
+        },
+        {
+          "name": "_rating_to"
+        },
+        {
+          "name": "_opponent_rating_from"
+        },
+        {
+          "name": "_opponent_rating_to"
+        },
+        {
+          "name": "_color"
+        },
+        {
+          "name": "_are_friends"
+        },
+        {
+          "name": "_theme"
+        },
+        {
+          "name": "_opponent_theme"
+        },
+        {
+          "name": "_opening"
+        },
+        {
+          "name": "_ply_from"
+        },
+        {
+          "name": "_ply_to"
+        },
+        {
+          "name": "_base_time"
+        },
+        {
+          "name": "_time_increment"
+        },
+        {
+          "name": "_game_provider"
+        },
+        {
+          "name": "_is_vs_computer"
+        },
+        {
+          "name": "_tournament_id"
+        },
+        {
+          "name": "_team_match_id"
+        },
+        {
+          "name": "_is_tournament"
+        },
+        {
+          "name": "_is_team_match"
+        },
+        {
+          "name": "_is_rated"
+        },
+        {
+          "name": "_game_end_time_from"
+        },
+        {
+          "name": "_game_end_time_to"
+        },
+        {
+          "name": "_game_start_time_from"
+        },
+        {
+          "name": "_game_start_time_to"
+        },
+        {
+          "name": "_page"
+        },
+        {
+          "name": "_page_size"
+        },
+        {
+          "name": "_sort_direction"
+        },
+        {
+          "name": "_base_time_from"
+        },
+        {
+          "name": "_base_time_to"
+        },
+        {
+          "name": "_time_increment_from"
+        },
+        {
+          "name": "_time_increment_to"
+        },
+        {
+          "name": "_player_id"
+        },
+        {
+          "name": "_brilliant_count_from"
+        },
+        {
+          "name": "_brilliant_count_to"
+        },
+        {
+          "name": "_is_arena"
+        },
+        {
+          "name": "_has_accuracy"
+        },
+        {
+          "name": "_toggle_rate_from"
+        },
+        {
+          "name": "_toggle_rate_to"
+        },
+        {
+          "name": "_is_vs_coach"
+        },
+        {
+          "name": "_random_order_seed"
+        },
+        {
+          "name": "_is_favorite"
+        },
+        {
+          "name": "_tournament_round"
+        }
+      ]
+    },
+    {
+      "name": "CountGamesByCriteriaRequest",
+      "field": [
+        {
+          "name": "criteria",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.Criteria"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CountGamesByCriteriaResponse",
+      "field": [
+        {
+          "name": "count",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DeleteGameRequest",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DeleteGameResponse",
+      "options": {}
+    },
+    {
+      "name": "HydrateGameByLegacyIdRequest",
+      "field": [
+        {
+          "name": "legacy_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "variants",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "time_classes",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "game_provider",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameProvider"
+        },
+        {
+          "name": "is_vs_computer",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "field_mask",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        },
+        {
+          "name": "is_vs_coach",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "HydrateGameByLegacyIdResponse",
+      "field": [
+        {
+          "name": "hydrated_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.HydratedGame"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "OpeningCriteria",
+      "field": [
+        {
+          "name": "eco_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "eco_family_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "eco_code",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "criteria"
+        }
+      ]
+    },
+    {
+      "name": "CountTournamentsByPlayerRequest",
+      "field": [
+        {
+          "name": "player_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CountTournamentsByPlayerResponse",
+      "field": [
+        {
+          "name": "total",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayerOverviewAllStatsRequest",
+      "field": [
+        {
+          "name": "player_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "days",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_days"
+        }
+      ]
+    },
+    {
+      "name": "PlayerOverviewAllStatsResponse",
+      "field": [
+        {
+          "name": "entries",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.AllStatsEntry"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AllStatsEntry",
+      "field": [
+        {
+          "name": "variant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "time_class",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "rating_change",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "total_games",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SortDirection",
+      "value": [
+        {
+          "name": "SORT_DIRECTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SORT_DIRECTION_ASC",
+          "number": 1
+        },
+        {
+          "name": "SORT_DIRECTION_DESC",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SortField",
+      "value": [
+        {
+          "name": "SORT_FIELD_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SORT_FIELD_USERNAME",
+          "number": 1
+        },
+        {
+          "name": "SORT_FIELD_GAME_ID",
+          "number": 2
+        },
+        {
+          "name": "SORT_FIELD_GAME_START_TIME",
+          "number": 3
+        },
+        {
+          "name": "SORT_FIELD_GAME_END_TIME",
+          "number": 4
+        },
+        {
+          "name": "SORT_FIELD_RATED",
+          "number": 5
+        },
+        {
+          "name": "SORT_FIELD_IS_PRIVATE",
+          "number": 6
+        },
+        {
+          "name": "SORT_FIELD_BASE_TIME",
+          "number": 7
+        },
+        {
+          "name": "SORT_FIELD_TIME_INCREMENT",
+          "number": 8
+        },
+        {
+          "name": "SORT_FIELD_PLAYER_RESULT",
+          "number": 9
+        },
+        {
+          "name": "SORT_FIELD_PLY_COUNT",
+          "number": 10
+        },
+        {
+          "name": "SORT_FIELD_GAME_TIME_CLASS",
+          "number": 11
+        },
+        {
+          "name": "SORT_FIELD_COLOR",
+          "number": 12
+        },
+        {
+          "name": "SORT_FIELD_ARENA_ID",
+          "number": 13
+        },
+        {
+          "name": "SORT_FIELD_TOURNAMENT_ID",
+          "number": 14
+        },
+        {
+          "name": "SORT_FIELD_TEAM_MATCH_ID",
+          "number": 15
+        },
+        {
+          "name": "SORT_FIELD_RATING",
+          "number": 16
+        },
+        {
+          "name": "SORT_FIELD_OPPONENT_RATING",
+          "number": 17
+        },
+        {
+          "name": "SORT_FIELD_OPPONENT_TITLE",
+          "number": 18
+        },
+        {
+          "name": "SORT_FIELD_OPPONENT_USERNAME",
+          "number": 19
+        },
+        {
+          "name": "SORT_FIELD_ACCURACY",
+          "number": 20
+        },
+        {
+          "name": "SORT_FIELD_OPPONENT_ACCURACY",
+          "number": 21
+        },
+        {
+          "name": "SORT_FIELD_GAME_LOCATION",
+          "number": 22
+        },
+        {
+          "name": "SORT_FIELD_VS_COMPUTER",
+          "number": 23
+        },
+        {
+          "name": "SORT_FIELD_GAME_SOURCE",
+          "number": 24
+        },
+        {
+          "name": "SORT_FIELD_FRIEND",
+          "number": 25
+        },
+        {
+          "name": "SORT_FIELD_RANDOM_ORDER",
+          "number": 26
+        },
+        {
+          "name": "SORT_FIELD_LEGACY_GAME_ID",
+          "number": 27
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "GameGatewayService",
+      "method": [
+        {
+          "name": "HydrateGamesByCriteria",
+          "input_type": ".chesscom.game_gateway.v2.HydrateGamesByCriteriaRequest",
+          "output_type": ".chesscom.game_gateway.v2.HydrateGamesByCriteriaResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "CountGamesByCriteria",
+          "input_type": ".chesscom.game_gateway.v2.CountGamesByCriteriaRequest",
+          "output_type": ".chesscom.game_gateway.v2.CountGamesByCriteriaResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "DeleteGame",
+          "input_type": ".chesscom.game_gateway.v2.DeleteGameRequest",
+          "output_type": ".chesscom.game_gateway.v2.DeleteGameResponse",
+          "options": {}
+        },
+        {
+          "name": "AggregateGameResultsByPlayerAndCriteria",
+          "input_type": ".chesscom.game_gateway.v2.AggregateGameResultsByPlayerAndCriteriaRequest",
+          "output_type": ".chesscom.game_gateway.v2.AggregateGameResultsByPlayerAndCriteriaResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "HydrateGameByLegacyId",
+          "input_type": ".chesscom.game_gateway.v2.HydrateGameByLegacyIdRequest",
+          "output_type": ".chesscom.game_gateway.v2.HydrateGameByLegacyIdResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "PlayerOverviewStats",
+          "input_type": ".chesscom.game_gateway.v2.PlayerOverviewStatsRequest",
+          "output_type": ".chesscom.game_gateway.v2.PlayerOverviewStatsResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "CountTournamentsByPlayer",
+          "input_type": ".chesscom.game_gateway.v2.CountTournamentsByPlayerRequest",
+          "output_type": ".chesscom.game_gateway.v2.CountTournamentsByPlayerResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "PlayerOverviewAllStats",
+          "input_type": ".chesscom.game_gateway.v2.PlayerOverviewAllStatsRequest",
+          "output_type": ".chesscom.game_gateway.v2.PlayerOverviewAllStatsResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

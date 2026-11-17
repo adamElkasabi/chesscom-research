@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/courses/v1/course_custom_tag.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseCustomTag",
+      "field": [
+        {
+          "name": "value",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

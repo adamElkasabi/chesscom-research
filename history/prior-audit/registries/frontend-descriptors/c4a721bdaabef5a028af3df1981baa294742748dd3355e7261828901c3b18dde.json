@@ -1,0 +1,527 @@
+{
+  "name": "chesscom/i18n/v1/translation.proto",
+  "package": "chesscom.i18n.v1",
+  "message_type": [
+    {
+      "name": "TranslationResourceStats",
+      "field": [
+        {
+          "name": "resource_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "key",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "translation_entry_rates",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.TranslationResourceStats.TranslationEntryRatesEntry"
+        },
+        {
+          "name": "overall_completion_rate",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "TranslationEntryRatesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_DOUBLE"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Translation",
+      "field": [
+        {
+          "name": "string_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "key",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "project_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "resource_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "translation_metadata",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.TranslationMetadata",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "translation_entries",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.Translation.TranslationEntriesEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "TranslationEntriesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_project_id"
+        },
+        {
+          "name": "_resource_id"
+        },
+        {
+          "name": "_translation_metadata"
+        }
+      ]
+    },
+    {
+      "name": "FileTranslation",
+      "field": [
+        {
+          "name": "file_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "file_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "file_path",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "file_format",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "project_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "resource_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "translation_metadata",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.TranslationMetadata",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "translation_entries",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.FileTranslation.TranslationEntriesEntry",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "tags",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "TranslationEntriesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_project_id"
+        },
+        {
+          "name": "_resource_id"
+        },
+        {
+          "name": "_translation_metadata"
+        }
+      ]
+    },
+    {
+      "name": "TranslationMetadata",
+      "field": [
+        {
+          "name": "completion_rate",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.TranslationMetadata.CompletionRateEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "CompletionRateEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_DOUBLE"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "LanguageDefinition",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "editor_code",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "two_letters_code",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "three_letters_code",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "locale",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "android_code",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "osx_code",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "osx_locale",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "plural_category_names",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "plural_rules",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "plural_examples",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "text_direction",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "dialect_of",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_dialect_of"
+        }
+      ]
+    },
+    {
+      "name": "UpdateString",
+      "field": [
+        {
+          "name": "string_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "new_value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "UpdateFileData",
+      "field": [
+        {
+          "name": "file_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "new_value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SyncFailure",
+      "field": [
+        {
+          "name": "file_path",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "error_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.i18n.v1.FailedSyncErrorCode"
+        },
+        {
+          "name": "error_message",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "keys",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SyncWarning",
+      "field": [
+        {
+          "name": "file_path",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "kind",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.i18n.v1.SyncWarningKind"
+        },
+        {
+          "name": "message",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "keys",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "FailedSyncErrorCode",
+      "value": [
+        {
+          "name": "FAILED_SYNC_ERROR_CODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FAILED_SYNC_ERROR_CODE_CROWDIN_API_ERROR",
+          "number": 1
+        },
+        {
+          "name": "FAILED_SYNC_ERROR_CODE_NETWORK_TIMEOUT",
+          "number": 2
+        },
+        {
+          "name": "FAILED_SYNC_ERROR_CODE_SYNC_ERROR",
+          "number": 3
+        },
+        {
+          "name": "FAILED_SYNC_ERROR_CODE_SOURCE_DIVERGENCE",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "SyncWarningKind",
+      "value": [
+        {
+          "name": "SYNC_WARNING_KIND_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SYNC_WARNING_KIND_MISSING_IN_DB",
+          "number": 1
+        },
+        {
+          "name": "SYNC_WARNING_KIND_UNAPPROVED_IN_DB",
+          "number": 2
+        },
+        {
+          "name": "SYNC_WARNING_KIND_MISSING_IN_VENDOR",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

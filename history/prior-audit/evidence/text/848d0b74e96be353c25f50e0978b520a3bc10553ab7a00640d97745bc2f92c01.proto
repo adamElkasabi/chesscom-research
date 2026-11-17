@@ -1,0 +1,45 @@
+// source: chesscom/explanation_engine/v1/search.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum SearchPreset {
+  SEARCH_PRESET_UNSPECIFIED = 0;
+  SEARCH_PRESET_PLAY_BOT_STANDARD = 1;
+  SEARCH_PRESET_PLAY_BOT_FAST = 2;
+  SEARCH_PRESET_GAME_REVIEW_FAST = 3;
+  SEARCH_PRESET_GAME_REVIEW_STANDARD = 4;
+  SEARCH_PRESET_GAME_REVIEW_DEEP = 5;
+  SEARCH_PRESET_GAME_REVIEW_MAXIMUM = 6;
+}
+
+enum MultiLineStrategy {
+  MULTI_LINE_STRATEGY_UNSPECIFIED = 0;
+  MULTI_LINE_STRATEGY_UCI = 1;
+  MULTI_LINE_STRATEGY_MULTISEARCH = 2;
+}
+
+message SearchParameters {
+  oneof _depth_limit {
+  int32 depth_limit = 1;
+  }
+  oneof _nodes_limit {
+  int32 nodes_limit = 2;
+  }
+  oneof _time_limit_ms {
+  int32 time_limit_ms = 3;
+  }
+  oneof _num_lines {
+  int32 num_lines = 4;
+  }
+  oneof _multi_line_strategy {
+  .chesscom.explanation_engine.v1.MultiLineStrategy multi_line_strategy = 5;
+  }
+  oneof _num_threads {
+  int32 num_threads = 6;
+  }
+}
+
+message GameReviewSearchSettings {
+  optional .chesscom.engine.v1.Strength strength = 1;
+}

@@ -1,0 +1,26 @@
+https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm 206 1 application/wasm 0.076822
+https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.js 206 1 text/javascript; charset=utf-8 0.112791
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm                       404 27150 text/html 0.150929
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm                              404 27150 text/html 0.151944
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js                         206 1 text/javascript; charset=utf-8 0.186076
+https://www.chess.com/r2/client-packages/analysis/2026.11.7/analysis.js                              206 1 application/javascript 0.044203
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.js                                206 1 text/javascript; charset=utf-8 0.229019
+https://www.chess.com/r2/client-packages/play-computer/2026.11.5/play-computer.js                    206 1 application/javascript 0.046749
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js                    206 1 text/javascript; charset=utf-8 0.176903
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js                           206 1 text/javascript; charset=utf-8 0.305896
+https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.js                                     200 40876 application/javascript 0.138553
+https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.1.js                                   404 548 text/html 0.163742
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm                  206 1 application/wasm 0.264840
+https://www.chess.com/bundles/app/js/engine/stockfish.js                                             200 93567 application/javascript 0.147183
+https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm                         206 1 application/wasm 0.431104
+https://www.chess.com/bundles/app/js/engine/stockfish.wasm                                           200 385560 application/wasm 0.181921
+https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm                                   200 707847 application/wasm 0.205290
+https://www.chess.com/bundles/app/js/engine/torch.js                                                 200 35359 application/javascript 0.139400
+https://www.chess.com/robots.txt                                                                     200 4197 text/plain; charset=UTF-8 0.052364
+https://www.chess.com/bundles/app/js/engine/torch-lite.js                                            200 35368 application/javascript 0.160463
+https://www.chess.com/bundles/app/js/engine/books/eco.json                                           200 30873759 application/json 0.199615
+https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue                                     206 1 text/plain 0.138668
+https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue                                     206 1 text/plain 0.171573
+https://www.chess.com/analysis                                                                       200 113132 text/html; charset=UTF-8 0.252476
+https://www.chess.com/bundles/app/js/engine/torch.wasm                                               200 47327363 application/wasm 0.731200
+https://www.chess.com/bundles/app/js/engine/torch-lite.wasm                                          200 6840976 application/wasm 1.076223

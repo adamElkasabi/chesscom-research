@@ -1,0 +1,237 @@
+{
+  "name": "chesscom/premium_access/v1/enums.proto",
+  "package": "chesscom.premium_access.v1",
+  "enum_type": [
+    {
+      "name": "PremiumFeature",
+      "value": [
+        {
+          "name": "PREMIUM_FEATURE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLES_RATED",
+          "number": 1
+        },
+        {
+          "name": "PREMIUM_FEATURE_NO_ADS",
+          "number": 2
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLE_RUSH",
+          "number": 3
+        },
+        {
+          "name": "PREMIUM_FEATURE_LESSONS",
+          "number": 4
+        },
+        {
+          "name": "PREMIUM_FEATURE_ANALYSIS",
+          "number": 5
+        },
+        {
+          "name": "PREMIUM_FEATURE_VIDEOS",
+          "number": 6
+        },
+        {
+          "name": "PREMIUM_FEATURE_ENDGAMES_TRAINER",
+          "number": 7
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLES_UNRATED",
+          "number": 8
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLE_BATTLE",
+          "number": 9
+        },
+        {
+          "name": "PREMIUM_FEATURE_INSIGHTS",
+          "number": 10
+        },
+        {
+          "name": "PREMIUM_FEATURE_EXPLORER",
+          "number": 11
+        },
+        {
+          "name": "PREMIUM_FEATURE_BOTS",
+          "number": 16
+        },
+        {
+          "name": "PREMIUM_FEATURE_PLAY_VS_COACH",
+          "number": 17
+        },
+        {
+          "name": "PREMIUM_FEATURE_COURSES_SPECIAL_PRICE",
+          "number": 18
+        },
+        {
+          "name": "PREMIUM_FEATURE_EXCLUSIVE_COURSE",
+          "number": 19
+        },
+        {
+          "name": "PREMIUM_FEATURE_COURSES_UNLIMITED_PREVIEWS",
+          "number": 20
+        },
+        {
+          "name": "PREMIUM_FEATURE_MOVE_EXPLANATIONS",
+          "number": 21
+        },
+        {
+          "name": "PREMIUM_FEATURE_ADVANCED_STATS",
+          "number": 22
+        },
+        {
+          "name": "PREMIUM_FEATURE_OFFLINE_PUZZLES",
+          "number": 23
+        },
+        {
+          "name": "PREMIUM_FEATURE_DAILY_PUZZLE_EXPLANATIONS",
+          "number": 24
+        },
+        {
+          "name": "PREMIUM_FEATURE_DRILLS",
+          "number": 25
+        },
+        {
+          "name": "PREMIUM_FEATURE_TIME_OUT_PROTECTION",
+          "number": 26
+        },
+        {
+          "name": "PREMIUM_FEATURE_PREMIUM_TOURNAMENTS",
+          "number": 27
+        },
+        {
+          "name": "PREMIUM_FEATURE_PLAY_MULTIPLE_GAMES",
+          "number": 28
+        },
+        {
+          "name": "PREMIUM_FEATURE_PREMIUM_MATCHMAKING",
+          "number": 29
+        },
+        {
+          "name": "PREMIUM_FEATURE_DAILY_PUZZLES_HISTORY",
+          "number": 30
+        },
+        {
+          "name": "PREMIUM_FEATURE_HIDE_INTERNAL_ADS_SETTING",
+          "number": 33
+        },
+        {
+          "name": "PREMIUM_FEATURE_BRILLIANT_MOVES",
+          "number": 34
+        },
+        {
+          "name": "PREMIUM_FEATURE_BOT_EVENT_MONETIZATION",
+          "number": 35
+        },
+        {
+          "name": "PREMIUM_FEATURE_TRAIN",
+          "number": 36
+        },
+        {
+          "name": "PREMIUM_FEATURE_OPENING_COURSES",
+          "number": 37
+        },
+        {
+          "name": "PREMIUM_FEATURE_CLUB_CREATION",
+          "number": 38
+        },
+        {
+          "name": "PREMIUM_FEATURE_CLASSROOM_UNLIMITED",
+          "number": 39
+        },
+        {
+          "name": "PREMIUM_FEATURE_CHAT",
+          "number": 40
+        },
+        {
+          "name": "PREMIUM_FEATURE_WEEKLY_COACH_REPORT",
+          "number": 41
+        },
+        {
+          "name": "PREMIUM_FEATURE_COURSES_CATALOG",
+          "number": 42
+        }
+      ],
+      "options": {},
+      "reserved_range": [
+        {
+          "start": 12,
+          "end": 15
+        },
+        {
+          "start": 31,
+          "end": 31
+        },
+        {
+          "start": 32,
+          "end": 32
+        }
+      ]
+    },
+    {
+      "name": "Action",
+      "value": [
+        {
+          "name": "ACTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ACTION_CREATE",
+          "number": 1
+        },
+        {
+          "name": "ACTION_VIEW",
+          "number": 2
+        },
+        {
+          "name": "ACTION_RETRY",
+          "number": 3
+        },
+        {
+          "name": "ACTION_COMMENTARY",
+          "number": 4
+        },
+        {
+          "name": "ACTION_BOOKMARK",
+          "number": 5
+        },
+        {
+          "name": "ACTION_PLAY",
+          "number": 6
+        },
+        {
+          "name": "ACTION_ATTEMPT_SUCCESS",
+          "number": 7
+        },
+        {
+          "name": "ACTION_ATTEMPT_FAILURE",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "name": "Period",
+      "value": [
+        {
+          "name": "PERIOD_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PERIOD_DAY",
+          "number": 1
+        },
+        {
+          "name": "PERIOD_WEEK",
+          "number": 2
+        },
+        {
+          "name": "PERIOD_MONTH",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

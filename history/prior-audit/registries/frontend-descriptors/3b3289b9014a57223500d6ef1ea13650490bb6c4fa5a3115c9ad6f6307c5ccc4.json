@@ -1,0 +1,45 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_ergonomic_position.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetErgonomicPositionRequest",
+      "field": [
+        {
+          "name": "compressed_position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES",
+          "oneof_index": 0
+        },
+        {
+          "name": "fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "position_to_convert"
+        }
+      ]
+    },
+    {
+      "name": "GetErgonomicPositionResponse",
+      "field": [
+        {
+          "name": "position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Position"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,13 @@
+// source: chesscom/explanation_engine/v1/feature_add_evaluations.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message AddEvaluationsRequest {
+  repeated .chesscom.engine.v1.Evaluation evaluations = 1;
+  optional bool skip_eval_normalization = 2;
+}
+
+message AddEvaluationsResponse {
+  repeated int32 added_variation_start_game_points = 1;
+}

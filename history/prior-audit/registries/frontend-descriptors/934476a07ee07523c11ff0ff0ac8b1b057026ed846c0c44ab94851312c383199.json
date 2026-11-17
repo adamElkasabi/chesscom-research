@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_set_coach.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SetCoachRequest",
+      "field": [
+        {
+          "name": "text_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "locale",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SetCoachResponse",
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

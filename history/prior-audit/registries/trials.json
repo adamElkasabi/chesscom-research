@@ -1,0 +1,6204 @@
+[
+  {
+    "config": {
+      "id": "example-game-baseline",
+      "fixture": "example-game",
+      "settings": {
+        "userColor": 1
+      },
+      "uciAfter": {
+        "Normalize": true
+      },
+      "timeoutSeconds": 200
+    },
+    "started": "2026-11-14T19:21:10.051Z",
+    "actual": {
+      "accuracy": {
+        "white": 87.72982025146484,
+        "black": 79.54060363769531
+      },
+      "ratings": {
+        "white": 1850,
+        "black": 1700
+      },
+      "tallies": {
+        "white": {
+          "1": 4,
+          "2": 0,
+          "3": 4,
+          "4": 27,
+          "5": 19,
+          "6": 4,
+          "7": 1,
+          "8": 0,
+          "9": 1,
+          "10": 1,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 16,
+          "5": 26,
+          "6": 5,
+          "7": 4,
+          "8": 4,
+          "9": 0,
+          "10": 1,
+          "11": 1,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "f303b61796d06cb4d8c032bc61dc0def4aef8332b499ad3705dccff136a227e9",
+    "actualSettings": {
+      "userColor": 1,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 82.554,
+    "speech": {
+      "sentences": 124,
+      "hashes": 124
+    },
+    "warnings": [],
+    "source_id": "SRC-0734",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18532"
+  },
+  {
+    "config": {
+      "id": "example-game-normalize-off",
+      "fixture": "example-game",
+      "settings": {
+        "userColor": 1
+      },
+      "uciAfter": {
+        "Normalize": false
+      },
+      "timeoutSeconds": 200
+    },
+    "started": "2026-11-14T19:22:32.798Z",
+    "actual": {
+      "accuracy": {
+        "white": 88.43988037109375,
+        "black": 80.23229217529297
+      },
+      "ratings": {
+        "white": 1850,
+        "black": 1450
+      },
+      "tallies": {
+        "white": {
+          "1": 4,
+          "2": 0,
+          "3": 4,
+          "4": 27,
+          "5": 19,
+          "6": 4,
+          "7": 1,
+          "8": 0,
+          "9": 1,
+          "10": 1,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 16,
+          "5": 23,
+          "6": 7,
+          "7": 2,
+          "8": 7,
+          "9": 0,
+          "10": 1,
+          "11": 1,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "a877ccf3d74e3c3674400b77d15b7d98934e6fd828c9bd1abc04ef1813e1575a",
+    "actualSettings": {
+      "userColor": 1,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 77.184,
+    "speech": {
+      "sentences": 125,
+      "hashes": 125
+    },
+    "warnings": [],
+    "source_id": "SRC-0736",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18533"
+  },
+  {
+    "config": {
+      "id": "example-game-refined-hash64",
+      "fixture": "example-game",
+      "settings": {
+        "userColor": 1
+      },
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 64
+      },
+      "timeoutSeconds": 200
+    },
+    "started": "2026-11-14T19:23:50.138Z",
+    "actual": {
+      "accuracy": {
+        "white": 90.14149475097656,
+        "black": 82.31620788574219
+      },
+      "ratings": {
+        "white": 1900,
+        "black": 1450
+      },
+      "tallies": {
+        "white": {
+          "1": 4,
+          "2": 0,
+          "3": 4,
+          "4": 26,
+          "5": 22,
+          "6": 2,
+          "7": 1,
+          "8": 0,
+          "9": 1,
+          "10": 1,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 18,
+          "5": 21,
+          "6": 6,
+          "7": 4,
+          "8": 6,
+          "9": 0,
+          "10": 1,
+          "11": 1,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "86243ff1809ef3e587f33436b803f9fa3fae61cda0209834e591f80a1b6d60e1",
+    "actualSettings": {
+      "userColor": 1,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 78.637,
+    "speech": {
+      "sentences": 126,
+      "hashes": 126
+    },
+    "warnings": [],
+    "source_id": "SRC-0738",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18534"
+  },
+  {
+    "config": {
+      "id": "human-game-baseline",
+      "fixture": "human-game",
+      "settings": {
+        "userColor": 2
+      },
+      "uciAfter": {
+        "Normalize": true
+      },
+      "timeoutSeconds": 200
+    },
+    "started": "2026-11-14T19:18:05.837Z",
+    "actual": {
+      "accuracy": {
+        "white": 74.10804748535156,
+        "black": 62.9063606262207
+      },
+      "ratings": {
+        "white": 1250,
+        "black": 600
+      },
+      "tallies": {
+        "white": {
+          "1": 4,
+          "2": 0,
+          "3": 1,
+          "4": 12,
+          "5": 10,
+          "6": 7,
+          "7": 3,
+          "8": 4,
+          "9": 0,
+          "10": 2,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 12,
+          "5": 8,
+          "6": 3,
+          "7": 7,
+          "8": 4,
+          "9": 0,
+          "10": 3,
+          "11": 2,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "f11625d5ffb12e876251af16c6e059e237c986e90a1423f5f13372facd3d208e",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 60.079,
+    "speech": {
+      "sentences": 89,
+      "hashes": 89
+    },
+    "warnings": [],
+    "source_id": "SRC-0740",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18535"
+  },
+  {
+    "config": {
+      "id": "human-game-normalize-off",
+      "fixture": "human-game",
+      "settings": {
+        "userColor": 2
+      },
+      "uciAfter": {
+        "Normalize": false
+      },
+      "timeoutSeconds": 200
+    },
+    "started": "2026-11-14T19:19:06.103Z",
+    "actual": {
+      "accuracy": {
+        "white": 69.12924194335938,
+        "black": 62.28227615356445
+      },
+      "ratings": {
+        "white": 1000,
+        "black": 350
+      },
+      "tallies": {
+        "white": {
+          "1": 4,
+          "2": 0,
+          "3": 1,
+          "4": 12,
+          "5": 10,
+          "6": 5,
+          "7": 5,
+          "8": 2,
+          "9": 2,
+          "10": 2,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 12,
+          "5": 7,
+          "6": 7,
+          "7": 3,
+          "8": 4,
+          "9": 0,
+          "10": 4,
+          "11": 2,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "8dd30ec0a920ac627d40d062ffba0c1a582a0621169f12804ffd66f46332de80",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 62.758,
+    "speech": {
+      "sentences": 89,
+      "hashes": 89
+    },
+    "warnings": [],
+    "source_id": "SRC-0742",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18536"
+  },
+  {
+    "config": {
+      "id": "human-game-refined-hash64",
+      "fixture": "human-game",
+      "settings": {
+        "userColor": 2
+      },
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 64
+      },
+      "timeoutSeconds": 200
+    },
+    "started": "2026-11-14T19:20:09.014Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.73457336425781,
+        "black": 60.90155792236328
+      },
+      "ratings": {
+        "white": 850,
+        "black": 300
+      },
+      "tallies": {
+        "white": {
+          "1": 4,
+          "2": 0,
+          "3": 2,
+          "4": 11,
+          "5": 9,
+          "6": 6,
+          "7": 4,
+          "8": 4,
+          "9": 2,
+          "10": 1,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 8,
+          "5": 11,
+          "6": 5,
+          "7": 4,
+          "8": 5,
+          "9": 0,
+          "10": 4,
+          "11": 2,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "5439b1cc6f3fba048014c634f8af95d23aeb9efe6502cdff800b62e30ba5a5fc",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 60.889,
+    "speech": {
+      "sentences": 90,
+      "hashes": 90
+    },
+    "warnings": [],
+    "source_id": "SRC-0744",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18537"
+  },
+  {
+    "config": {
+      "id": "baseline",
+      "saveReview": true
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0790",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18538"
+  },
+  {
+    "config": {
+      "id": "strength-1-class-1",
+      "strength": 1,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0791",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18539"
+  },
+  {
+    "config": {
+      "id": "strength-1-class-2",
+      "strength": 1,
+      "settings": {
+        "moveClassificationVersion": 2
+      }
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0792",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18540"
+  },
+  {
+    "config": {
+      "id": "strength-2-class-0",
+      "strength": 2,
+      "settings": {}
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0793",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18541"
+  },
+  {
+    "config": {
+      "id": "strength-2-class-1",
+      "strength": 2,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0794",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18542"
+  },
+  {
+    "config": {
+      "id": "strength-2-class-2",
+      "strength": 2,
+      "settings": {
+        "moveClassificationVersion": 2
+      }
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0795",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18543"
+  },
+  {
+    "config": {
+      "id": "strength-3-class-1",
+      "strength": 3,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    },
+    "error": "exit null ",
+    "source_id": "SRC-0796",
+    "outcome": "invalid resource-pressure attempt; not a numerical result",
+    "finding_id": "FND-18544"
+  },
+  {
+    "config": {
+      "id": "baseline",
+      "saveReview": true
+    },
+    "started": "2026-11-14T18:47:29.319Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.404,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0797",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18545"
+  },
+  {
+    "config": {
+      "id": "comparison-control",
+      "reviewEvaluations": true,
+      "preSearch": {
+        "gameReviewSearchSettings": {
+          "strength": 1
+        }
+      },
+      "addPreSearch": true,
+      "saveReview": true,
+      "timeoutSeconds": 90
+    },
+    "started": "2026-11-14T20:25:35.752Z",
+    "actual": {
+      "accuracy": {
+        "white": 60.15205383300781,
+        "black": 96.07951354980469
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 2,
+          "8": 3,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "c2b28b8addf021e0b46fa0bd913876bd0e46df2b49ee95dd8dcb9e119ed53e6f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.524,
+    "speech": {
+      "sentences": 21,
+      "hashes": 21
+    },
+    "warnings": [],
+    "source_id": "SRC-0798",
+    "outcome": "complete numeric result",
+    "completed_presearch_points": 21,
+    "presearch_progress_values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "searchAudit": {
+      "beforeReview": [
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b2b3 b2b4 c2c3 c2c4 d2d3 e2e3 e2e4 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 c7c5 c7c6 d7d5 d7d6 e7e5 e7e6 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 c7c5 c7c6 d7d5 d7d6 e7e5 e7e6 f7f5 f7f6 g7g5 g7g6 g8h6 h7h5 h7h6",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 d1d2 d1d3 e1d2 e2e3 e2e4 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 d1d2 d1d3 e1d2 e2e3 e2e4 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d5e4 d8d6 d8d7 e7e5 e7e6 e8d7 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d6 d8d7 e7e5 e7e6 e8d7 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 d1d2 d1d3 d1e2 d1f3 d1g4 d1h5 d4d5 e1d2 e1e2 f1a6 f1b5 f1c4 f1d3 f1e2 f2f3 f2f4 g1e2 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 d1d2 d1d3 d1e2 d1f3 d1g4 d1h5 d4d5 e1d2 e1e2 f1a6 f1b5 f1c4 f1d3 f1e2 f2f3 f2f4 g1e2 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e4e3 e7e5 e7e6 e8d7 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e4e3 e7e5 e8d7 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 d1d2 d1d3 d4d5 e1d2 e1f1 e2a6 e2b5 e2c4 e2d3 e2f1 e2f3 e2g4 e2h5 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 d1d2 d1d3 d4d5 e1d2 e1f1 e2a6 e2b5 e2c4 e2d3 e2f1 e2f3 e2g4 e2h5 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e4d3 e4e3 e7e5 e7e6 e8d7 f6d5 f6d7 f6g4 f6g8 f6h5 g7g5 g7g6 h7h5 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e4e3 e7e5 e7e6 e8d7 f6d5 f6d7 f6g4 f6g8 f6h5 g7g5 g7g6 h7h5 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 c2d3 d4d5 e1d1 e1d2 e1f1 e2d1 e2d3 e2f1 e2f3 e2g4 e2h5 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 c2c3 c2c4 c2d3 d4d5 e1d1 e1d2 e1f1 e2d1 e2f1 e2f3 e2g4 e2h5 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h5 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h5 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 d4d5 e1d1 e1d2 e1f1 e2d1 e2f1 e2f3 e2g4 e2h5 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 d4d5 e1d1 e1d2 e1f1 e2d1 e2f1 e2f3 e2g4 e2h5 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 a8b8 b7b5 b7b6 c6a5 c6b4 c6b8 c6d4 c6e5 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 a8b8 b7b5 b7b6 c6a5 c6b4 c6b8 c6d4 c6e5 c8d7 c8e6 c8f5 c8g4 c8h3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 e1d1 e1d2 e1f1 f2f3 f2f4 g1e2 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4 h5d1 h5e2 h5f3 h5f7 h5g4 h5g6",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b1d2 b2b3 b2b4 c1d2 c1e3 c1f4 c1g5 c1h6 e1d1 e1d2 e1f1 f2f3 f2f4 g1e2 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4 h5e2 h5f3 h5f7 h5g4 h5g6",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 a8b8 b7b5 b7b6 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d4b3 d4b5 d4c2 d4c6 d4e2 d4e6 d4f3 d4f5 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 a8b8 b7b5 b7b6 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d4b3 d4b5 d4c2 d4c6 d4e2 d4e6 d4f3 d4f5 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves e1d1 e1e2 e1f1",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves e1e2 e1f1",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 a8b8 b7b5 b7b6 c2a1 c2a3 c2b4 c2d4 c2e1 c2e3 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a7a5 a7a6 a8b8 b7b5 b7b6 c2a1 c2a3 c2b4 c2d4 c2e1 c2e3 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b2b3 b2b4 d2a5 d2b4 d2c1 d2c3 d2e1 d2e3 d2f4 d2g5 d2h6 d3d4 f1e1 f1e2 f2f3 f2f4 g1e2 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4 h5d1 h5e2 h5f3 h5f7 h5g4 h5g6",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a2a3 a2a4 b1a3 b1c3 b2b3 b2b4 d2a5 d2b4 d2c1 d2c3 d2e1 d2e3 d2f4 d2g5 d2h6 d3d4 f1e1 f1e2 f2f3 f2f4 g1e2 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4 h5d1 h5f3 h5f7 h5g4 h5g6",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a1b3 a1c2 a7a5 a7a6 a8b8 b7b5 b7b6 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a1b3 a1c2 a7a5 a7a6 a8b8 b7b5 b7b6 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d8d3 d8d4 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 f6d5 f6d7 f6e4 f6g4 f6g8 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves f1e1 g1e2",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves f1e1 g1e2 h5e2",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a1b3 a1c2 a7a5 a7a6 a8b8 b7b5 b7b6 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d3a3 d3a6 d3b1 d3b3 d3b5 d3c2 d3c3 d3c4 d3d1 d3d2 d3d4 d3d5 d3d6 d3d7 d3d8 d3e2 d3e3 d3e4 d3f1 d3f3 d3f5 d3g3 d3g6 d3h3 e7e5 e7e6 e8d7 e8d8 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h6 h8g8",
+        "request engine TORCH",
+        "request cmd go nodes 150000 searchmoves a1b3 a7a5 a7a6 a8b8 b7b5 b7b6 c7c5 c7c6 c8d7 c8e6 c8f5 c8g4 c8h3 d3a3 d3a6 d3b1 d3b3 d3b5 d3c2 d3c3 d3c4 d3d1 d3d2 d3d4 d3d5 d3d6 d3d7 d3d8 d3e2 d3e3 d3e4 d3f1 d3f3 d3f5 d3g3 d3g6 d3h3 e7e5 e7e6 e8d7 e8d8 f6d5 f6d7 f6e4 f6g4 f6g8 f6h5 g7g5 g7g6 h7h6 h8g8"
+      ],
+      "duringReview": []
+    },
+    "finding_id": "FND-18567"
+  },
+  {
+    "config": {
+      "id": "comparison-human",
+      "reviewEvaluations": true,
+      "preSearch": {
+        "gameReviewSearchSettings": {
+          "strength": 1
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {}
+          }
+        }
+      },
+      "addPreSearch": true,
+      "saveReview": true,
+      "timeoutSeconds": 90
+    },
+    "started": "2026-11-14T20:25:13.271Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.01492691040039,
+        "black": 95.37910461425781
+      },
+      "ratings": {
+        "white": 400,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 1,
+          "8": 6,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "f26ffb5773601a7ce614334121b8a0fa9ea76ee8c8596e82110213964a15d84d",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.59,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0799",
+    "outcome": "complete numeric result",
+    "completed_presearch_points": 21,
+    "presearch_progress_values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "searchAudit": {
+      "beforeReview": [
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02",
+        "request engine TORCH",
+        "request cmd go nodes 40000",
+        "request engine TORCH",
+        "request cmd go nodes 300000 pvtrees use_split_depth_limit true use_split_width_limit true keep_equal_subtrees false show_only_optimal_mates true at_least_n_root_moves 2 split_depth_limit 6 split_width_limit 2 allowed_excess_depth 0 allowed_excess_width 2 rating 2100 max_allowed_cp_margin 100 ep_loss_margin 0.02"
+      ],
+      "duringReview": []
+    },
+    "finding_id": "FND-18589"
+  },
+  {
+    "config": {
+      "id": "depth-12",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 12,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 12,
+              "numLines": 1
+            }
+          }
+        }
+      }
+    },
+    "started": "2026-11-14T19:00:21.624Z",
+    "actual": {
+      "accuracy": {
+        "white": 58.20283126831055,
+        "black": 95.31281280517578
+      },
+      "ratings": {
+        "white": 450,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 5,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "36328e91004ecdb8c16bd47ca011c5b03beb1028ef024786c26487eac2824e4c",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 12,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 12,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 5.556,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0800",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18611"
+  },
+  {
+    "config": {
+      "id": "depth-16",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 16,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 16,
+              "numLines": 1
+            }
+          }
+        }
+      }
+    },
+    "started": "2026-11-14T19:00:31.352Z",
+    "actual": {
+      "accuracy": {
+        "white": 60.66204071044922,
+        "black": 97.47888946533203
+      },
+      "ratings": {
+        "white": 450,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "e843962fed9bf548ad660e9e7ad19f4f0c29f91b9c4d1e0d88a8758b700be109",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 16,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 16,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.833,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0801",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18612"
+  },
+  {
+    "config": {
+      "id": "depth-18",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 18,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 18,
+              "numLines": 1
+            }
+          }
+        }
+      },
+      "timeoutSeconds": 60
+    },
+    "started": "2026-11-14T19:00:48.437Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.763641357421875,
+        "black": 94.91861724853516
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 3,
+          "7": 0,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "513b657aadaf257bd5803eeff518668dcd545abf1df0bda1be699076df546df2",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 18,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 18,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 35.807,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0802",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18613"
+  },
+  {
+    "config": {
+      "id": "depth-22",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 22,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 22,
+              "numLines": 1
+            }
+          }
+        }
+      },
+      "timeoutSeconds": 60
+    },
+    "started": "2026-11-14T19:01:24.419Z",
+    "error": "trial timeout after 60s",
+    "warnings": [],
+    "source_id": "SRC-0803",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18614"
+  },
+  {
+    "config": {
+      "id": "embedded-human-pvtrees",
+      "pvtrees": {
+        "request": {
+          "search": {
+            "case": "searchParameters",
+            "value": {
+              "nodesLimit": 300000,
+              "numLines": 1
+            }
+          },
+          "torchSearchMode": {
+            "mode": {
+              "case": "human",
+              "value": {}
+            }
+          }
+        },
+        "pvtreeOptions": {
+          "rating": 100
+        }
+      }
+    },
+    "started": "2026-11-14T19:05:01.514Z",
+    "error": "trial timeout after 150s",
+    "warnings": [],
+    "source_id": "SRC-0804",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18615"
+  },
+  {
+    "config": {
+      "id": "followup-hash128-softfalse",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 128,
+        "UseSoftNodes": false
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:16:18.042Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.15036010742188,
+        "black": 99.21577453613281
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 6,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "755db5fe49b0247429804f2637422f2fe0a70854d591f59c9dfb4012c01181fb",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.847,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0805",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18616"
+  },
+  {
+    "config": {
+      "id": "followup-hash128-softtrue",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 128,
+        "UseSoftNodes": true
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:16:35.027Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.3160629272461,
+        "black": 99.38276672363281
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "b5afea7213d6c15dba89cc33b181f57746005977cf9e9ae9253d08a71b7f8b76",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 23.455,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0806",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18638"
+  },
+  {
+    "config": {
+      "id": "followup-hash32-softfalse",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 32,
+        "UseSoftNodes": false
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:14:56.222Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.01242065429688,
+        "black": 99.10324096679688
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 1,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "de75fbe5d8c0e6cb353b6d213e2c14df276723ad52234641dbb0546504b4465c",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.754,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0807",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18660"
+  },
+  {
+    "config": {
+      "id": "followup-hash32-softtrue",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 32,
+        "UseSoftNodes": true
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:15:13.105Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.15916442871094,
+        "black": 98.37834930419922
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "e88fb97571fd4560d27c598d84b9b6d6e4b3f3cf472bf92d27e464252e211ded",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 21.917,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0808",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18682"
+  },
+  {
+    "config": {
+      "id": "followup-hash64-repeat",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 64
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:14:38.773Z",
+    "actual": {
+      "accuracy": {
+        "white": 64.79644775390625,
+        "black": 98.8089599609375
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 5,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "09679555a521fb012bcbe462d1aac31797582c1ba0fa730248b8a973a1731477",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.278,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0809",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18704"
+  },
+  {
+    "config": {
+      "id": "followup-hash64-softfalse",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 64,
+        "UseSoftNodes": false
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:15:35.214Z",
+    "actual": {
+      "accuracy": {
+        "white": 64.79644775390625,
+        "black": 98.8089599609375
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 5,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "09679555a521fb012bcbe462d1aac31797582c1ba0fa730248b8a973a1731477",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.985,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0810",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18726"
+  },
+  {
+    "config": {
+      "id": "followup-hash64-softtrue",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 64,
+        "UseSoftNodes": true
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:15:53.368Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.71549987792969,
+        "black": 99.19789123535156
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "e6602352be300a95200364c79b9f6248967da3aecfc53fd5818323e19eef4d91",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 24.505,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0811",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18748"
+  },
+  {
+    "config": {
+      "id": "followup-soft-factor200",
+      "uciAfter": {
+        "Normalize": false,
+        "UseSoftNodes": true,
+        "HardSoftNodeFactor": 200
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:17:22.457Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.39828491210938,
+        "black": 98.71414947509766
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "8b81e3ae0d2d2d84d550a876d34725cb62ab0d2c2e6b19233f8eb7f4877248af",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 22.635,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0812",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18770"
+  },
+  {
+    "config": {
+      "id": "followup-soft-factor50",
+      "uciAfter": {
+        "Normalize": false,
+        "UseSoftNodes": true,
+        "HardSoftNodeFactor": 50
+      },
+      "saveReview": true
+    },
+    "started": "2026-11-14T19:16:58.659Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.39828491210938,
+        "black": 98.71414947509766
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "8b81e3ae0d2d2d84d550a876d34725cb62ab0d2c2e6b19233f8eb7f4877248af",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 23.65,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0813",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18792"
+  },
+  {
+    "config": {
+      "id": "nodes-150000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "nodesLimit": 150000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "nodesLimit": 150000,
+              "numLines": 1
+            }
+          }
+        }
+      }
+    },
+    "started": "2026-11-14T19:02:34.828Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.45392608642578,
+        "black": 94.97537994384766
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "dde3922db91eca1ffb52fa122e58a83caf7dc1a887f05870c4001b035d3e0fa8",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 150000
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 150000
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 21.741,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0814",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18814"
+  },
+  {
+    "config": {
+      "id": "nodes-300000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "nodesLimit": 300000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "nodesLimit": 300000,
+              "numLines": 1
+            }
+          }
+        }
+      }
+    },
+    "started": "2026-11-14T19:02:56.729Z",
+    "actual": {
+      "accuracy": {
+        "white": 58.44866943359375,
+        "black": 93.21588134765625
+      },
+      "ratings": {
+        "white": 350,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 3,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "e41344c7b34c99ffb295e6874acaf37575202a08a3c8d02b07b387a7d94bded8",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 300000
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 300000
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 40.093,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0815",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18815"
+  },
+  {
+    "config": {
+      "id": "nodes-40000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "nodesLimit": 40000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "nodesLimit": 40000,
+              "numLines": 1
+            }
+          }
+        }
+      }
+    },
+    "started": "2026-11-14T19:02:24.687Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.881385803222656,
+        "black": 95.71517181396484
+      },
+      "ratings": {
+        "white": 350,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 1,
+          "8": 6,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "6431d42a5e692031253e8d686c122b1a16f340472692121006e5a9707d337d02",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 40000
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 40000
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 9.994,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0816",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18816"
+  },
+  {
+    "config": {
+      "id": "nodes-600000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "nodesLimit": 600000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "nodesLimit": 600000,
+              "numLines": 1
+            }
+          }
+        }
+      }
+    },
+    "started": "2026-11-14T19:03:36.945Z",
+    "actual": {
+      "accuracy": {
+        "white": 61.58863830566406,
+        "black": 96.10839080810547
+      },
+      "ratings": {
+        "white": 350,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "82d173136693c0f039d2caf122cab40c6a7314016ae6c17cf2944014e7952f78",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 600000
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 600000
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 84.415,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0817",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18817"
+  },
+  {
+    "config": {
+      "id": "normalized-ClearBetweenSearches-true",
+      "uciAfter": {
+        "Normalize": false,
+        "ClearBetweenSearches": true
+      }
+    },
+    "started": "2026-11-14T19:11:38.442Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.74172973632812,
+        "black": 99.03148651123047
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 1,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "fcb7ef0847813bc2e3981d2da3d1376eb134b82db119871fba50a63b8779de10",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.101,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0818",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18818"
+  },
+  {
+    "config": {
+      "id": "normalized-HardSoftNodeFactor-200",
+      "uciAfter": {
+        "Normalize": false,
+        "HardSoftNodeFactor": 200
+      }
+    },
+    "started": "2026-11-14T19:10:23.798Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.7431640625,
+        "black": 99.13605499267578
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.774,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0819",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18819"
+  },
+  {
+    "config": {
+      "id": "normalized-HardSoftNodeFactor-50",
+      "uciAfter": {
+        "Normalize": false,
+        "HardSoftNodeFactor": 50
+      }
+    },
+    "started": "2026-11-14T19:10:06.993Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.7431640625,
+        "black": 99.13605499267578
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.63,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0820",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18820"
+  },
+  {
+    "config": {
+      "id": "normalized-Hash-64",
+      "uciAfter": {
+        "Normalize": false,
+        "Hash": 64
+      }
+    },
+    "started": "2026-11-14T19:11:19.571Z",
+    "actual": {
+      "accuracy": {
+        "white": 64.79644775390625,
+        "black": 98.8089599609375
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 5,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "09679555a521fb012bcbe462d1aac31797582c1ba0fa730248b8a973a1731477",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.741,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0821",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18821"
+  },
+  {
+    "config": {
+      "id": "normalized-Minimal-true",
+      "uciAfter": {
+        "Normalize": false,
+        "Minimal": true
+      }
+    },
+    "started": "2026-11-14T19:11:54.686Z",
+    "error": "Error: RuntimeError: Aborted(Assertion failed: n.has_score(), at: ../../src/features/game_review.cpp,144,build_move_from_node). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+    "warnings": [],
+    "source_id": "SRC-0822",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18822"
+  },
+  {
+    "config": {
+      "id": "normalized-NodeFudging-100",
+      "uciAfter": {
+        "Normalize": false,
+        "NodeFudging": 100
+      }
+    },
+    "started": "2026-11-14T19:10:40.749Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.36044311523438,
+        "black": 98.88133239746094
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "479276bb68a899d114f04771da8f9254c3880144b3d69e2c4e89d50be6c01b22",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.601,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0823",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18823"
+  },
+  {
+    "config": {
+      "id": "normalized-NodeFudging-1000",
+      "uciAfter": {
+        "Normalize": false,
+        "NodeFudging": 1000
+      }
+    },
+    "started": "2026-11-14T19:10:58.478Z",
+    "actual": {
+      "accuracy": {
+        "white": 64.94029235839844,
+        "black": 99.02162170410156
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 6,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "c4051627ba7e3ac79365049dbda83504fb0746193b537004dadc5e1505b23e43",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 20.93,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0824",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18824"
+  },
+  {
+    "config": {
+      "id": "normalized-UseSoftNodes-true",
+      "uciAfter": {
+        "Normalize": false,
+        "UseSoftNodes": true
+      }
+    },
+    "started": "2026-11-14T19:09:41.262Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.39828491210938,
+        "black": 98.71414947509766
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "8b81e3ae0d2d2d84d550a876d34725cb62ab0d2c2e6b19233f8eb7f4877248af",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 25.577,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0825",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18825"
+  },
+  {
+    "config": {
+      "id": "normalized-class-v2",
+      "settings": {
+        "moveClassificationVersion": 1
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:09:22.628Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.7431640625,
+        "black": 99.13605499267578
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 1,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.489,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0826",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18826"
+  },
+  {
+    "config": {
+      "id": "normalized-evaluate-normal",
+      "evaluateGame": {
+        "search": {
+          "case": "gameReviewSearchSettings",
+          "value": {
+            "strength": 1
+          }
+        }
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:08:23.407Z",
+    "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:24:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:34:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+    "warnings": [],
+    "source_id": "SRC-0827",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18827"
+  },
+  {
+    "config": {
+      "id": "normalized-human-no-maia",
+      "timeoutSeconds": 90,
+      "evaluateGame": {
+        "search": {
+          "case": "gameReviewSearchSettings",
+          "value": {
+            "strength": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {
+              "disableMaia": true
+            }
+          }
+        }
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:13:54.503Z",
+    "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+    "warnings": [],
+    "source_id": "SRC-0828",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18828"
+  },
+  {
+    "config": {
+      "id": "normalized-human",
+      "timeoutSeconds": 90,
+      "evaluateGame": {
+        "search": {
+          "case": "gameReviewSearchSettings",
+          "value": {
+            "strength": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {}
+          }
+        }
+      },
+      "saveReview": true,
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:13:48.617Z",
+    "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+    "warnings": [],
+    "source_id": "SRC-0829",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18829"
+  },
+  {
+    "config": {
+      "id": "normalized-nodes-300000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 300000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 40000,
+              "numLines": 1
+            }
+          }
+        }
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:12:27.584Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.40452575683594,
+        "black": 98.5245361328125
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "ba37354c31cd8d12a449a42926ad8fa4d6dcb3749a713ef55ab49423e0fe2abe",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 300000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 29.122,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0830",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18830"
+  },
+  {
+    "config": {
+      "id": "normalized-nodes-40000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 40000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 40000,
+              "numLines": 1
+            }
+          }
+        }
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:12:08.360Z",
+    "actual": {
+      "accuracy": {
+        "white": 64.62260437011719,
+        "black": 99.14017486572266
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 6,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "37d2e79a10b72d1909b6d82fb45860b9d61028603415292441954bc29b7869c3",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 8.119,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0831",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18831"
+  },
+  {
+    "config": {
+      "id": "normalized-nodes-600000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 600000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 40000,
+              "numLines": 1
+            }
+          }
+        }
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:12:56.862Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.5762939453125,
+        "black": 99.24345397949219
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 1,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "3e6be1111801c717666b20e56828f8a3344133409aaa627285428698ecd9a573",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 600000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 51.6,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0832",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18832"
+  },
+  {
+    "config": {
+      "id": "normalized-nodes-75000",
+      "settings": {
+        "search": {
+          "case": "searchSettings",
+          "value": {
+            "searchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 75000,
+              "numLines": 2
+            },
+            "nullMoveSearchParameters": {
+              "depthLimit": 6,
+              "nodesLimit": 40000,
+              "numLines": 1
+            }
+          }
+        }
+      },
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:12:16.610Z",
+    "actual": {
+      "accuracy": {
+        "white": 64.58173370361328,
+        "black": 99.13462829589844
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 6,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "ade09abf3167caeb0866750d350ccc8e3a4d9f30789dd8e6fcd6efb6d94812a7",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 75000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 10.692,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0833",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18833"
+  },
+  {
+    "config": {
+      "id": "normalized-repeat-1",
+      "saveReview": true,
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:07:49.699Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.7431640625,
+        "black": 99.13605499267578
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.915,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0834",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18834"
+  },
+  {
+    "config": {
+      "id": "normalized-repeat-2",
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:08:06.741Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.7431640625,
+        "black": 99.13605499267578
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.476,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0835",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18856"
+  },
+  {
+    "config": {
+      "id": "normalized-standard",
+      "strength": 2,
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T19:08:30.016Z",
+    "actual": {
+      "accuracy": {
+        "white": 66.5762939453125,
+        "black": 99.24345397949219
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 1,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "3e6be1111801c717666b20e56828f8a3344133409aaa627285428698ecd9a573",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 600000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 52.443,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0836",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18857"
+  },
+  {
+    "config": {
+      "id": "probe-human-no-maia",
+      "preSearch": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 1000,
+            "numLines": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {
+              "disableMaia": true
+            }
+          }
+        }
+      },
+      "rootOnly": true,
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:20:24.947Z",
+    "elapsedSeconds": 1.301,
+    "warnings": [],
+    "source_id": "SRC-0837",
+    "outcome": "search-only result",
+    "completed_presearch_points": 1,
+    "presearch_progress_values": [
+      null
+    ],
+    "finding_id": "FND-18858"
+  },
+  {
+    "config": {
+      "id": "probe-human",
+      "preSearch": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 1000,
+            "numLines": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {}
+          }
+        }
+      },
+      "rootOnly": true,
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:21:38.821Z",
+    "elapsedSeconds": 1.541,
+    "warnings": [],
+    "source_id": "SRC-0838",
+    "outcome": "search-only result",
+    "completed_presearch_points": 1,
+    "presearch_progress_values": [
+      1
+    ],
+    "finding_id": "FND-18859"
+  },
+  {
+    "config": {
+      "id": "probe-human",
+      "preSearch": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 1000,
+            "numLines": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {}
+          }
+        }
+      },
+      "rootOnly": true,
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:20:18.007Z",
+    "elapsedSeconds": 1.254,
+    "warnings": [],
+    "source_id": "SRC-0839",
+    "outcome": "search-only result",
+    "completed_presearch_points": 1,
+    "presearch_progress_values": [
+      null
+    ],
+    "finding_id": "FND-18860"
+  },
+  {
+    "config": {
+      "id": "probe-normal",
+      "preSearch": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 1000,
+            "numLines": 1
+          }
+        }
+      },
+      "rootOnly": true,
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:21:52.648Z",
+    "elapsedSeconds": 1.5,
+    "warnings": [],
+    "source_id": "SRC-0840",
+    "outcome": "search-only result",
+    "completed_presearch_points": 1,
+    "presearch_progress_values": [
+      1
+    ],
+    "finding_id": "FND-18861"
+  },
+  {
+    "config": {
+      "id": "probe-normal",
+      "preSearch": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 1000,
+            "numLines": 1
+          }
+        }
+      },
+      "rootOnly": true,
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:20:10.671Z",
+    "elapsedSeconds": 1.468,
+    "warnings": [],
+    "source_id": "SRC-0841",
+    "outcome": "search-only result",
+    "completed_presearch_points": 1,
+    "presearch_progress_values": [
+      null
+    ],
+    "finding_id": "FND-18862"
+  },
+  {
+    "config": {
+      "id": "pvtree-human",
+      "pvtrees": {
+        "request": {
+          "search": {
+            "case": "searchParameters",
+            "value": {
+              "nodesLimit": 1000,
+              "numLines": 1
+            }
+          },
+          "torchSearchMode": {
+            "mode": {
+              "case": "human",
+              "value": {}
+            }
+          }
+        },
+        "pvtreeOptions": {
+          "rating": 100
+        }
+      },
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:20:37.827Z",
+    "error": "trial timeout after 20s",
+    "warnings": [],
+    "source_id": "SRC-0842",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18863"
+  },
+  {
+    "config": {
+      "id": "pvtree-no-maia",
+      "pvtrees": {
+        "request": {
+          "search": {
+            "case": "searchParameters",
+            "value": {
+              "nodesLimit": 1000,
+              "numLines": 1
+            }
+          },
+          "torchSearchMode": {
+            "mode": {
+              "case": "human",
+              "value": {
+                "disableMaia": true
+              }
+            }
+          }
+        },
+        "pvtreeOptions": {
+          "rating": 100
+        }
+      },
+      "searchOnly": true,
+      "timeoutSeconds": 20
+    },
+    "started": "2026-11-14T20:20:58.183Z",
+    "error": "trial timeout after 20s",
+    "warnings": [],
+    "source_id": "SRC-0843",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18864"
+  },
+  {
+    "config": {
+      "id": "strength-1-class-1",
+      "strength": 1,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    },
+    "started": "2026-11-14T18:47:46.890Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 1,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.952,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0844",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18865"
+  },
+  {
+    "config": {
+      "id": "strength-1-class-2",
+      "strength": 1,
+      "settings": {
+        "moveClassificationVersion": 2
+      }
+    },
+    "started": "2026-11-14T18:48:05.983Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 20.203,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0845",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18866"
+  },
+  {
+    "config": {
+      "id": "strength-2-class-0",
+      "strength": 2,
+      "settings": {}
+    },
+    "started": "2026-11-14T18:48:26.359Z",
+    "actual": {
+      "accuracy": {
+        "white": 61.22994613647461,
+        "black": 95.98047637939453
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 2,
+          "7": 0,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "530ea27a732fd0d726dff5ad52368b9e7d8ad53812b7714edadc33c5467b8f4a",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 600000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 61.5,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0846",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18867"
+  },
+  {
+    "config": {
+      "id": "strength-2-class-1",
+      "strength": 2,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    },
+    "started": "2026-11-14T18:49:27.994Z",
+    "actual": {
+      "accuracy": {
+        "white": 61.22994613647461,
+        "black": 95.98047637939453
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 2,
+          "7": 0,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "530ea27a732fd0d726dff5ad52368b9e7d8ad53812b7714edadc33c5467b8f4a",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 1,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 600000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 57.027,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0847",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18868"
+  },
+  {
+    "config": {
+      "id": "strength-2-class-2",
+      "strength": 2,
+      "settings": {
+        "moveClassificationVersion": 2
+      }
+    },
+    "started": "2026-11-14T18:50:25.196Z",
+    "actual": {
+      "accuracy": {
+        "white": 61.22994613647461,
+        "black": 95.98047637939453
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 2,
+          "7": 0,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "530ea27a732fd0d726dff5ad52368b9e7d8ad53812b7714edadc33c5467b8f4a",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 600000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 62.708,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0848",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18869"
+  },
+  {
+    "config": {
+      "id": "strength-3-class-0",
+      "strength": 3,
+      "settings": {}
+    },
+    "started": "2026-11-14T18:51:28.064Z",
+    "error": "trial timeout after 150s",
+    "warnings": [],
+    "source_id": "SRC-0849",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18870"
+  },
+  {
+    "config": {
+      "id": "strength-4-class-0",
+      "strength": 4,
+      "settings": {},
+      "timeoutSeconds": 60
+    },
+    "started": "2026-11-14T18:54:24.336Z",
+    "error": "trial timeout after 60s",
+    "warnings": [],
+    "source_id": "SRC-0850",
+    "outcome": "error/timeout",
+    "finding_id": "FND-18871"
+  },
+  {
+    "config": {
+      "id": "tricky-on",
+      "experimental": {
+        "allowTrickyClassification": true
+      }
+    },
+    "started": "2026-11-14T19:00:02.937Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.531,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0851",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18872"
+  },
+  {
+    "config": {
+      "id": "uci-classification-combo",
+      "uciAfter": {
+        "EloSensitivePD": true,
+        "ClassificationV3": true,
+        "ForgivingClassificationsElo": 1000
+      }
+    },
+    "started": "2026-11-14T18:59:45.115Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.683,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0852",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18873"
+  },
+  {
+    "config": {
+      "id": "uci-classification-v3",
+      "uciAfter": {
+        "ClassificationV3": true
+      }
+    },
+    "started": "2026-11-14T18:55:46.702Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.481,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0853",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18874"
+  },
+  {
+    "config": {
+      "id": "uci-clear-between",
+      "uciAfter": {
+        "ClearBetweenSearches": true
+      }
+    },
+    "started": "2026-11-14T18:59:08.659Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.861366271972656,
+        "black": 94.88895416259766
+      },
+      "ratings": {
+        "white": 550,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "a4de6310be9a05e25119fb55c218face8707af6b0affc4d1ffea63d1cea12257",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.713,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0854",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18875"
+  },
+  {
+    "config": {
+      "id": "uci-elo-sensitive",
+      "uciAfter": {
+        "EloSensitivePD": true
+      }
+    },
+    "started": "2026-11-14T18:55:24.625Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 21.855,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0855",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18876"
+  },
+  {
+    "config": {
+      "id": "uci-forgiving-1000",
+      "uciAfter": {
+        "ForgivingClassificationsElo": 1000
+      }
+    },
+    "started": "2026-11-14T18:56:22.549Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.315,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0856",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18877"
+  },
+  {
+    "config": {
+      "id": "uci-forgiving-2000",
+      "uciAfter": {
+        "ForgivingClassificationsElo": 2000
+      }
+    },
+    "started": "2026-11-14T18:56:38.994Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.142,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0857",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18878"
+  },
+  {
+    "config": {
+      "id": "uci-forgiving-400",
+      "uciAfter": {
+        "ForgivingClassificationsElo": 400
+      }
+    },
+    "started": "2026-11-14T18:56:05.330Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.031,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0858",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18879"
+  },
+  {
+    "config": {
+      "id": "uci-hard-soft-200",
+      "uciAfter": {
+        "HardSoftNodeFactor": 200
+      }
+    },
+    "started": "2026-11-14T18:57:58.728Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.148,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0859",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18880"
+  },
+  {
+    "config": {
+      "id": "uci-hard-soft-50",
+      "uciAfter": {
+        "HardSoftNodeFactor": 50
+      }
+    },
+    "started": "2026-11-14T18:57:40.977Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.616,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0860",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18881"
+  },
+  {
+    "config": {
+      "id": "uci-hash-64",
+      "uciAfter": {
+        "Hash": 64
+      }
+    },
+    "started": "2026-11-14T18:58:49.869Z",
+    "actual": {
+      "accuracy": {
+        "white": 58.9421501159668,
+        "black": 94.20455169677734
+      },
+      "ratings": {
+        "white": 450,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 3,
+          "7": 0,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 3,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "8ae296ec1f15e8b5db6816efc9bafc71babec25b6337d08c01f6ea99bb4d3ae4",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.649,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0861",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18882"
+  },
+  {
+    "config": {
+      "id": "uci-multipv-2",
+      "uciAfter": {
+        "MultiPV": 2
+      }
+    },
+    "started": "2026-11-14T18:59:26.524Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.95828628540039,
+        "black": 95.46183013916016
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0d86bb169c688d4b77bf4dd7feb75c4972e4178a7d2bdcc7bb3337defc3fdf96",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.44,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0862",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18883"
+  },
+  {
+    "config": {
+      "id": "uci-node-fudging-100",
+      "uciAfter": {
+        "NodeFudging": 100
+      }
+    },
+    "started": "2026-11-14T18:58:16.042Z",
+    "actual": {
+      "accuracy": {
+        "white": 59.60816955566406,
+        "black": 94.55702209472656
+      },
+      "ratings": {
+        "white": 400,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 0,
+          "8": 5,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 3,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "f90b603eede0643ad94719e6261eeaffdcf219fb0ab02f90be1a9853d03767d5",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 16.428,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0863",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18884"
+  },
+  {
+    "config": {
+      "id": "uci-node-fudging-1000",
+      "uciAfter": {
+        "NodeFudging": 1000
+      }
+    },
+    "started": "2026-11-14T18:58:32.621Z",
+    "actual": {
+      "accuracy": {
+        "white": 60.43000411987305,
+        "black": 97.84144592285156
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 5,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "0b38979352fe2d403906192a8fdfcf026517c98118e835525f9767de5b284c9a",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 17.086,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0864",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18885"
+  },
+  {
+    "config": {
+      "id": "uci-normalize-off",
+      "uciAfter": {
+        "Normalize": false
+      }
+    },
+    "started": "2026-11-14T18:56:56.262Z",
+    "actual": {
+      "accuracy": {
+        "white": 65.7431640625,
+        "black": 99.13605499267578
+      },
+      "ratings": {
+        "white": 100,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 3,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 18.054,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0865",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18886"
+  },
+  {
+    "config": {
+      "id": "uci-soft-nodes",
+      "uciAfter": {
+        "UseSoftNodes": true
+      }
+    },
+    "started": "2026-11-14T18:57:14.458Z",
+    "actual": {
+      "accuracy": {
+        "white": 60.25788497924805,
+        "black": 95.0540771484375
+      },
+      "ratings": {
+        "white": 300,
+        "black": 1000
+      },
+      "tallies": {
+        "white": {
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 1,
+          "8": 4,
+          "9": 1,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        },
+        "black": {
+          "1": 2,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 3,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "20": 0
+        }
+      }
+    },
+    "engines": [
+      11
+    ],
+    "numericHash": "d23d3b35b048e424d1ed46e82d33f4e3dd58519ae39582614ebfc4181c593544",
+    "actualSettings": {
+      "userColor": 2,
+      "locale": 0,
+      "gameAnalysisSpeechVersion": 3,
+      "moveClassificationVersion": 2,
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 150000,
+            "timeLimitMs": 0,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "timeLimitMs": 0,
+            "numLines": 1
+          }
+        }
+      },
+      "enableSkills": true
+    },
+    "elapsedSeconds": 26.362,
+    "speech": {
+      "sentences": 20,
+      "hashes": 20
+    },
+    "warnings": [],
+    "source_id": "SRC-0866",
+    "outcome": "complete numeric result",
+    "finding_id": "FND-18887"
+  }
+]

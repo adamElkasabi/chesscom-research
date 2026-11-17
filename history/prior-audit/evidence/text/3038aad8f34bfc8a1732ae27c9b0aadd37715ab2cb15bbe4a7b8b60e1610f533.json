@@ -1,0 +1,9 @@
+{
+  "id": "normalized-class-v2",
+  "settings": {
+    "moveClassificationVersion": 1
+  },
+  "uciAfter": {
+    "Normalize": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "chesscom/explanation_engine/v1/speech.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SentenceFragment",
+      "field": [
+        {
+          "name": "fragment",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "arrows_and_squares",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArrowsAndSquares"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Sentence",
+      "field": [
+        {
+          "name": "sentence_fragments",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SentenceFragment"
+        },
+        {
+          "name": "audio_url_hash",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Speech",
+      "field": [
+        {
+          "name": "sentences",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Sentence"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SpeechForLocale",
+      "field": [
+        {
+          "name": "locale",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Locale"
+        },
+        {
+          "name": "speech",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

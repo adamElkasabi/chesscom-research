@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/courses/v1/price_range.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "PriceRange",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "with_video",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

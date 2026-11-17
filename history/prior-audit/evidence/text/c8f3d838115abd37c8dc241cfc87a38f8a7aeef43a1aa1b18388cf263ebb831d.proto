@@ -1,0 +1,44 @@
+// source: chesscom/ceac/v2/game_review.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message GameReviewRequest {
+  optional .chesscom.explanation_engine.v1.NewGameRequest new_game_req = 1;
+  optional .chesscom.explanation_engine.v1.RunSearchRequest run_search_req = 2;
+  optional .chesscom.explanation_engine.v1.CharmInferenceRequest charm_inf_req = 8;
+  optional .chesscom.engine.v1.Engine engine = 3;
+  optional .chesscom.ceac.v2.GameEvaluationOptions game_evaluation_options = 4;
+  optional .chesscom.ceac.v2.RequestMetadata request_metadata = 5;
+  optional .chesscom.ceac.v2.RequestOptions request_options = 6;
+  optional .chesscom.explanation_engine.v1.SetCoachRequest set_coach = 7;
+  optional .chesscom.ceac.v2.GameReviewOptions game_review_options = 9;
+}
+
+message GameReviewResponse {
+  oneof result {
+  .chesscom.ceac.v2.GameReviewResponseProgress progress = 1;
+  .chesscom.ceac.v2.GameReviewResponseSuccess success = 2;
+  .chesscom.ceac.v2.GameReviewResponseFailure failure = 3;
+  .chesscom.ceac.v2.Heartbeat heartbeat = 4;
+  .chesscom.ceac.v2.WaitingForCapacity waiting_for_capacity = 5;
+  }
+}
+
+message GameReviewResponseSuccess {
+  optional .chesscom.explanation_engine.v1.GameReview game_review = 2;
+  repeated string cee_c_api_calls = 100;
+}
+
+message GameReviewResponseProgress {
+  optional float progress = 1;
+}
+
+message GameReviewResponseFailure {
+  oneof error {
+  .chesscom.ceac.v2.InvalidGameError invalid_game_error = 3;
+  .chesscom.ceac.v2.GeneralError general_error = 4;
+  }
+  optional string reason = 1;
+  optional .chesscom.ceac.v2.FailureError failure_error = 5;
+}

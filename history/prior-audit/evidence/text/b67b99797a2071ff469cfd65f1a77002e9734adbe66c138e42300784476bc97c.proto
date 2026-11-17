@@ -1,0 +1,22 @@
+// source: chesscom/navigation/v1/screen_entity.proto
+// syntax: proto3
+
+package chesscom.navigation.v1;
+
+enum ScreenEntityType {
+  SCREEN_ENTITY_TYPE_UNSPECIFIED = 0;
+  SCREEN_ENTITY_TYPE_FORUM_TOPIC = 1;
+  SCREEN_ENTITY_TYPE_ARTICLE = 2;
+  SCREEN_ENTITY_TYPE_NEWS_ARTICLE = 3;
+  SCREEN_ENTITY_TYPE_EVENT = 4;
+  SCREEN_ENTITY_TYPE_PLAYER = 5;
+  SCREEN_ENTITY_TYPE_MEMBER = 6;
+}
+
+message ScreenEntity {
+  oneof _name {
+  string name = 3;
+  }
+  optional string id = 1;
+  optional .chesscom.navigation.v1.ScreenEntityType type = 2;
+}

@@ -1,0 +1,10 @@
+// source: chesscom/gameplay/v1/battle_ref.proto
+// syntax: proto3
+
+package chesscom.gameplay.v1;
+
+message BattleRef {
+  oneof _id {
+  string id = 1;
+  }
+}

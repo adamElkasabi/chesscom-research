@@ -1,0 +1,141 @@
+{
+  "name": "chesscom/courses_common/v1/course_drawings.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseDrawingArrow",
+      "field": [
+        {
+          "name": "square_from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "square_to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.CourseDrawingArrowType"
+        }
+      ]
+    },
+    {
+      "name": "CourseDrawingSquare",
+      "field": [
+        {
+          "name": "square",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.CourseDrawingSquareType"
+        }
+      ]
+    },
+    {
+      "name": "CourseSubvariationDrawing",
+      "field": [
+        {
+          "name": "branch_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "branch_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "position_fen",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "drawing_squares",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseDrawingSquare"
+        },
+        {
+          "name": "drawing_arrows",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseDrawingArrow"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CourseDrawingArrowType",
+      "value": [
+        {
+          "name": "COURSE_DRAWING_ARROW_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_DRAWING_ARROW_TYPE_PRIMARY",
+          "number": 1
+        },
+        {
+          "name": "COURSE_DRAWING_ARROW_TYPE_SECONDARY",
+          "number": 2
+        },
+        {
+          "name": "COURSE_DRAWING_ARROW_TYPE_TERTIARY",
+          "number": 3
+        },
+        {
+          "name": "COURSE_DRAWING_ARROW_TYPE_QUATERNARY",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "CourseDrawingSquareType",
+      "value": [
+        {
+          "name": "COURSE_DRAWING_SQUARE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_DRAWING_SQUARE_TYPE_PRIMARY",
+          "number": 1
+        },
+        {
+          "name": "COURSE_DRAWING_SQUARE_TYPE_SECONDARY",
+          "number": 2
+        },
+        {
+          "name": "COURSE_DRAWING_SQUARE_TYPE_TERTIARY",
+          "number": 3
+        },
+        {
+          "name": "COURSE_DRAWING_SQUARE_TYPE_QUATERNARY",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

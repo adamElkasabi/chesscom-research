@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/game_gateway/v1/favorite_metadata.proto",
+  "package": "chesscom.game_gateway.v1",
+  "message_type": [
+    {
+      "name": "FavoriteMetadata",
+      "field": [
+        {
+          "name": "is_favorite",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

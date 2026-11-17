@@ -1,0 +1,155 @@
+{
+  "name": "chesscom/user_properties/v1/properties_user_streak_v2.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "UserStreakV2Property",
+      "field": [
+        {
+          "name": "updated_at",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "duration_days",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "status_by_days",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "expires_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "resets_count",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "longest_streak",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "longest_streak_date",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1037,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserStreakV2PropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_updated_at"
+        },
+        {
+          "name": "_duration_days"
+        },
+        {
+          "name": "_expires_at"
+        },
+        {
+          "name": "_resets_count"
+        },
+        {
+          "name": "_longest_streak"
+        },
+        {
+          "name": "_longest_streak_date"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserStreakV2PropertyDefinition",
+      "value": [
+        {
+          "name": "USER_STREAK_V2_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_STREAK_V2_UPDATED_AT",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "USER_STREAK_V2_DURATION_DAYS",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "USER_STREAK_V2_STATUS_BY_DAYS",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "USER_STREAK_V2_EXPIRES_AT",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "USER_STREAK_V2_RESETS_COUNT",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "USER_STREAK_V2_LONGEST_STREAK",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "USER_STREAK_V2_LONGEST_STREAK_DATE",
+          "number": 7,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

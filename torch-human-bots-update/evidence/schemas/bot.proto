@@ -1,0 +1,60 @@
+// source: chesscom/explanation_engine/v1/bot.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum BotPersonality {
+  BOT_PERSONALITY_UNSPECIFIED = 0;
+  BOT_PERSONALITY_DEFAULT = 1;
+  BOT_PERSONALITY_ACTIVE = 2;
+  BOT_PERSONALITY_AGRESSIVE = 3;
+  BOT_PERSONALITY_BEGINNER = 4;
+  BOT_PERSONALITY_DEFENSIVE = 5;
+  BOT_PERSONALITY_ENDGAME = 6;
+  BOT_PERSONALITY_HUMAN = 7;
+  BOT_PERSONALITY_POSITIONAL = 8;
+  BOT_PERSONALITY_CARLSEN = 9;
+  BOT_PERSONALITY_FISCHER = 10;
+  BOT_PERSONALITY_HIKARU = 11;
+  BOT_PERSONALITY_KASPAROV = 12;
+  BOT_PERSONALITY_NEW_TO_CHESS = 13;
+  BOT_PERSONALITY_DANNY = 14;
+  BOT_PERSONALITY_UNLEASHED = 15;
+}
+
+enum BotEngine {
+  BOT_ENGINE_UNSPECIFIED = 0;
+  BOT_ENGINE_KOMODO = 1;
+  BOT_ENGINE_TORCH = 2;
+}
+
+message BotTimeLimits {
+  oneof _time_limit_ms {
+  int32 time_limit_ms = 1;
+  }
+  oneof _time_left_ms {
+  int32 time_left_ms = 2;
+  }
+  oneof _time_inc_ms {
+  int32 time_inc_ms = 3;
+  }
+}
+
+message BotOptions {
+  oneof _adaptive {
+  bool adaptive = 2;
+  }
+  oneof _personality {
+  .chesscom.explanation_engine.v1.BotPersonality personality = 3;
+  }
+  oneof _book_path {
+  string book_path = 4;
+  }
+  oneof _time_limits {
+  .chesscom.explanation_engine.v1.BotTimeLimits time_limits = 5;
+  }
+  oneof _artifact_id {
+  string artifact_id = 6;
+  }
+  optional int32 rating = 1;
+}

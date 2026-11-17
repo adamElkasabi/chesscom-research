@@ -1,0 +1,11 @@
+{
+  "id": "human-game-baseline",
+  "fixture": "human-game",
+  "settings": {
+    "userColor": 2
+  },
+  "uciAfter": {
+    "Normalize": true
+  },
+  "timeoutSeconds": 200
+}

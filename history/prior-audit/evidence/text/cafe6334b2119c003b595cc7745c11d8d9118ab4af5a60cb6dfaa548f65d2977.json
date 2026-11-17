@@ -1,0 +1,8 @@
+{
+  "id": "followup-hash64-repeat",
+  "uciAfter": {
+    "Normalize": false,
+    "Hash": 64
+  },
+  "saveReview": true
+}

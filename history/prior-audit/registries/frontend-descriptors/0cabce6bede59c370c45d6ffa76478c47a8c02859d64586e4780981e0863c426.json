@@ -1,0 +1,355 @@
+{
+  "name": "chesscom/oauth/v1/scope.proto",
+  "package": "chesscom.oauth.v1",
+  "enum_type": [
+    {
+      "name": "Scope",
+      "value": [
+        {
+          "name": "SCOPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SCOPE_PUBLIC",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_NONE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_CHESS",
+          "number": 100,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ADDRESS",
+          "number": 200,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_EMAIL",
+          "number": 201,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_OPENID",
+          "number": 202,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PROFILE",
+          "number": 203,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_EBOARD",
+          "number": 204,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_NOADS",
+          "number": 205,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PROLONGED_TOKEN",
+          "number": 206,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ANALYSIS",
+          "number": 300,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ARTICLES_READ",
+          "number": 301,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ATTRIBUTION_WRITE",
+          "number": 302,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_COMMENTS_WRITE",
+          "number": 303,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_COMPUTER_GAMES_MANAGE",
+          "number": 304,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_COMPUTER_GAMES_PLAY",
+          "number": 305,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_CONTACTS_READ",
+          "number": 306,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_CONTACTS_WRITE",
+          "number": 307,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ENDGAMES",
+          "number": 308,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_EXPLORER",
+          "number": 347,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_FAIRPLAY_READ",
+          "number": 349,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SCOPE_FAIRPLAY_WRITE",
+          "number": 350,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SCOPE_FCM",
+          "number": 309,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_FORUMS_WRITE",
+          "number": 310,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_FRIENDS_READ",
+          "number": 311,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_FRIENDS_WRITE",
+          "number": 312,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GAMES",
+          "number": 600,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GAMES_SEEKS_READ",
+          "number": 313,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GAMES_SEEKS_WRITE",
+          "number": 314,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GAMES_MANAGE",
+          "number": 315,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GAMES_PLAY",
+          "number": 316,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GAMES_READ",
+          "number": 317,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_LEAGUES",
+          "number": 318,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_LESSONS",
+          "number": 319,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_MARKETING",
+          "number": 320,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_MEMBERSHIP",
+          "number": 321,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_MESSAGES_READ",
+          "number": 322,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_MESSAGES_WRITE",
+          "number": 323,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_NOTIFICATIONS",
+          "number": 324,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ORDERS_READ",
+          "number": 325,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PAGE_CONTEXT_READ",
+          "number": 351,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PEACEKEEPER",
+          "number": 326,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PRACTICE",
+          "number": 327,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PUZZLES_MANAGE",
+          "number": 328,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_PUZZLES_READ",
+          "number": 329,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_SESSION",
+          "number": 330,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_GATEWAY_THEMES",
+          "number": 900,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_STATS_READ",
+          "number": 331,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_STREAKS_ADMIN_READ",
+          "number": 348,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_SUPPORT",
+          "number": 10000,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_SUPPORT_INTERCOM",
+          "number": 10010,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_THEMES",
+          "number": 332,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_ACKNOWLEDGEMENTS_MANAGE",
+          "number": 333,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_AGE_ASSURANCE_MANAGE",
+          "number": 346,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_CONSENT_MANAGE",
+          "number": 334,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_MEMBERSHIP_READ",
+          "number": 335,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_PROFILE_MANAGE",
+          "number": 336,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_SETTINGS_READ",
+          "number": 337,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_SETTINGS_WRITE",
+          "number": 338,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_TRACKING_READ",
+          "number": 339,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_TRACKING_WRITE",
+          "number": 340,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_READ",
+          "number": 341,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_USERS_SEARCH",
+          "number": 342,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_VIDEOS_WRITE",
+          "number": 343,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_VISION",
+          "number": 344,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_WORKFLOWS_INCENTIVES_READ",
+          "number": 345,
+          "options": {}
+        },
+        {
+          "name": "SCOPE_ADMIN_FAIRPLAY",
+          "number": 20000,
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PASS within declared checks",
+  "checks": {
+    "source_ids_unique": true,
+    "finding_ids_unique": true,
+    "url_ids_unique": true,
+    "source_finding_url_referential_integrity": true,
+    "original_files_checked": 1135,
+    "original_files_missing": [],
+    "original_files_modified": [],
+    "archive_member_checks": [
+      {
+        "archive": "chess-local-review-v0.1.6-quota-fix.zip",
+        "members_verified": 3,
+        "failures": []
+      },
+      {
+        "archive": "chess-local-review-v0.1.7-cee-update.zip",
+        "members_verified": 8,
+        "failures": []
+      },
+      {
+        "archive": "chess-local-review-v0.1.8-hide-debug-update.zip",
+        "members_verified": 3,
+        "failures": []
+      },
+      {
+        "archive": "chess-local-review-v0.1.9-measured-progress-update.zip",
+        "members_verified": 6,
+        "failures": []
+      },
+      {
+        "archive": "research.zip",
+        "members_verified": 477,
+        "failures": []
+      },
+      {
+        "archive": "torch-refinement-research.zip",
+        "members_verified": 416,
+        "failures": []
+      }
+    ],
+    "original_markdown_body_coverage": [
+      {
+        "source_id": "SRC-0016",
+        "body_nonempty_lines_checked": 66,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-0020",
+        "body_nonempty_lines_checked": 77,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-0027",
+        "body_nonempty_lines_checked": 104,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-0028",
+        "body_nonempty_lines_checked": 104,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-0871",
+        "body_nonempty_lines_checked": 11,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-1628",
+        "body_nonempty_lines_checked": 53,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-1629",
+        "body_nonempty_lines_checked": 48,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-1631",
+        "body_nonempty_lines_checked": 48,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-2047",
+        "body_nonempty_lines_checked": 733,
+        "missing_body_lines": 0
+      },
+      {
+        "source_id": "SRC-2048",
+        "body_nonempty_lines_checked": 306,
+        "missing_body_lines": 0
+      }
+    ],
+    "internal_markdown_links_checked": 77768,
+    "internal_link_errors": [],
+    "route_records_checked": 321,
+    "route_variable_errors": [],
+    "redaction_scanned_text_files": 1924,
+    "redaction_pattern_hits": []
+  },
+  "errors": [],
+  "warnings": [
+    "Verified-observation findings usually verify stored declaration/content or recorded output, NOT current authenticated website behavior.",
+    "Findings count includes granular schema fields,documentary blocks,URL literals and per-ply payloads; do not interpret it as independent website features.",
+    "Entire minified bundles and native WASM/model semantics remain partially audited.",
+    "No independent conversation-history/memory export,REA evidence backend,logged-in browser profile or private backend accessed.",
+    "Redaction is heuristic; no guarantee against arbitrary unknown identifiers. Public game reference URLs remain as explicitly supplied technical references.",
+    "Inaccessible-source count counts explicit missing entries,not every possible unmentioned legacy file.",
+    "Source-embedded timestamps conflict with session date; no fabricated normalization or current deploy assertion.",
+    "API endpoint registry includes literal candidates and declared routes; extraction false positives are preserved and not promoted into successful endpoints."
+  ],
+  "scope_statement": "All inventoried original/member bytes processed and originals unchanged. Semantic audit partial. No new website network probes performed."
+}

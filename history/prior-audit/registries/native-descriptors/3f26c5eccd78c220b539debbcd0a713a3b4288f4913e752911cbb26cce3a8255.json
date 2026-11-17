@@ -1,0 +1,21 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/feature_remove_external_engine.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "RemoveExternalEngineRequest",
+      "field": [
+        {
+          "name": "engine_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "RemoveExternalEngineResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

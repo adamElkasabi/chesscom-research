@@ -1,0 +1,15 @@
+// source: chesscom/explanation_engine/v1/internal_feature_maia_botmove.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message InternalFeatureMaiaBotMoveRequest {
+  optional int32 elo_self = 1;
+  optional int32 elo_oppo = 2;
+  optional string json = 3;
+}
+
+message InternalFeatureMaiaBotMoveResponse {
+  optional .chesscom.chess.v1.Move move = 1;
+  optional string json = 2;
+}

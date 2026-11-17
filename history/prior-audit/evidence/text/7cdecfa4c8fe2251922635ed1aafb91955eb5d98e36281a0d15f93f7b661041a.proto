@@ -1,0 +1,19 @@
+// source: chesscom/explanation_engine/v1/game_phase.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum GamePhaseVersion {
+  GAME_PHASE_VERSION_UNSPECIFIED = 0;
+  GAME_PHASE_VERSION_1 = 1;
+  GAME_PHASE_VERSION_2 = 2;
+}
+
+message GamePhaseTransitions {
+  oneof _middlegame_starting_game_point {
+  .chesscom.explanation_engine.v1.GamePointInfo middlegame_starting_game_point = 1;
+  }
+  oneof _endgame_starting_game_point {
+  .chesscom.explanation_engine.v1.GamePointInfo endgame_starting_game_point = 2;
+  }
+}

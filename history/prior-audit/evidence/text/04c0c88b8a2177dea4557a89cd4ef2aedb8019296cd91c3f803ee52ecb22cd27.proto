@@ -1,0 +1,12 @@
+// source: chesscom/computer/v2/game_mode.proto
+// syntax: proto3
+
+package chesscom.computer.v2;
+
+enum GameMode {
+  GAME_MODE_UNSPECIFIED = 0;
+  GAME_MODE_CHALLENGE = 1;
+  GAME_MODE_FRIENDLY = 2;
+  GAME_MODE_ASSISTED = 3;
+  GAME_MODE_CUSTOM = 4;
+}

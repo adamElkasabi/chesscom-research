@@ -1,0 +1,20 @@
+// source: chesscom/explanation_engine/v1/feature_get_non_chess_text.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum NonChessTextType {
+  NON_CHESS_TEXT_TYPE_UNSPECIFIED = 0;
+  NON_CHESS_TEXT_TYPE_UNDO_MOVE_LEGAL = 1;
+  NON_CHESS_TEXT_TYPE_UNDO_MOVE_ILLEGAL = 2;
+  NON_CHESS_TEXT_TYPE_RESUME_GAME = 3;
+  NON_CHESS_TEXT_TYPE_SWITCHED_COACH = 4;
+}
+
+message GetNonChessTextRequest {
+  optional .chesscom.explanation_engine.v1.NonChessTextType type = 1;
+}
+
+message GetNonChessTextResponse {
+  optional .chesscom.explanation_engine.v1.Speech speech = 1;
+}

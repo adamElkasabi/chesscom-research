@@ -1,0 +1,13 @@
+
+0chesscom/stats/v1/advanced_stats_datapoint.protochesscom.stats.v1chesscom/chess/v1/eco.proto*chesscom/stats/v1/advanced_stat_type.proto+chesscom/stats/v1/brilliant_move_type.proto"P
+AdvancedStat1
+type (2#.chesscom.stats.v1.AdvancedStatType
+value ("Ä
+PlayerAdvancedStatsDatapoint7
+advanced_stats (2.chesscom.stats.v1.AdvancedStat9
+brilliant_moves (2 .chesscom.stats.v1.BrilliantMove0
+
+eco_family (2.chesscom.chess.v1.EcoFamily"P
+BrilliantMove
+ply (2
+type (2$.chesscom.stats.v1.BrilliantMoveTypebproto3

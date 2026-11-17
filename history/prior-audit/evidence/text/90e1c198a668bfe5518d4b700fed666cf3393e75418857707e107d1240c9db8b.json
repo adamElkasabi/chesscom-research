@@ -1,0 +1,23 @@
+{
+  "id": "normalized-nodes-300000",
+  "settings": {
+    "search": {
+      "case": "searchSettings",
+      "value": {
+        "searchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 300000,
+          "numLines": 2
+        },
+        "nullMoveSearchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 40000,
+          "numLines": 1
+        }
+      }
+    }
+  },
+  "uciAfter": {
+    "Normalize": false
+  }
+}

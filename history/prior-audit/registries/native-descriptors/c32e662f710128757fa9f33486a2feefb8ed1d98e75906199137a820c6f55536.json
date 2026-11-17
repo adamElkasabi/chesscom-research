@@ -1,0 +1,116 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_get_coherence.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/internal_feature_charm_inference.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGetCoherenceRequest",
+      "field": [
+        {
+          "name": "coherence_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CoherenceType"
+        },
+        {
+          "name": "cee_lines",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CeeLines",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "elo",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "model_key",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "uci_move",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_cee_lines"
+        },
+        {
+          "name": "_fen"
+        },
+        {
+          "name": "_elo"
+        },
+        {
+          "name": "_model_key"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGetCoherenceResponse",
+      "field": [
+        {
+          "name": "coherence",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_coherence"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CoherenceType",
+      "value": [
+        {
+          "name": "COHERENCE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COHERENCE_TYPE_CHARM",
+          "number": 1
+        },
+        {
+          "name": "COHERENCE_TYPE_SQ_DISTANCE",
+          "number": 2
+        },
+        {
+          "name": "COHERENCE_TYPE_STATIC_EVAL",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

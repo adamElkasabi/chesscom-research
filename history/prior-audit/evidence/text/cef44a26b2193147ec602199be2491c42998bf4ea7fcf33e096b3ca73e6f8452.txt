@@ -1,0 +1,394 @@
+CEE init options descriptor:
+
+name: "InitWithOptsCall"
+field {
+  name: "n_async_task_processors"
+  number: 1
+  label: LABEL_OPTIONAL
+  type: TYPE_INT32
+}
+field {
+  name: "engine_pool_size"
+  number: 2
+  label: LABEL_OPTIONAL
+  type: TYPE_INT32
+}
+
+
+name: "InitWithOptsResult"
+
+
+name: "chesscom/explanation_engine/v1alpha/internal_feature_run_search.proto"
+package: "chesscom.explanation_engine.v1alpha"
+dependency: "chesscom/explanation_engine/v1/feature_run_search.proto"
+message_type {
+  name: "InternalFeatureRunSearchRequest"
+  field {
+    name: "request"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.RunSearchRequest"
+  }
+  field {
+    name: "pvtree_options"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1alpha.PVTreeOptions"
+    oneof_index: 0
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "_pvtree_options"
+  }
+}
+message_type {
+  name: "InternalFeatureRunSearchResponse"
+  field {
+    name: "response"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.RunSearchResponse"
+  }
+}
+message_type {
+  name: "PVTreeOptions"
+  field {
+    name: "use_split_depth_limit"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_BOOL
+    oneof_index: 0
+    proto3_optional: true
+  }
+  field {
+    name: "split_depth_limit"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_UINT32
+    oneof_index: 1
+    proto3_optional: true
+  }
+  field {
+    name: "use_split_width_limit"
+    number: 3
+    label: LABEL_OPTIONAL
+    type: TYPE_BOOL
+    oneof_index: 2
+    proto3_optional: true
+  }
+  field {
+    name: "split_width_limit"
+    number: 4
+    label: LABEL_OPTIONAL
+    type: TYPE_UINT32
+    oneof_index: 3
+    proto3_optional: true
+  }
+  field {
+    name: "keep_equal_subtrees"
+    number: 5
+    label: LABEL_OPTIONAL
+    type: TYPE_BOOL
+    oneof_index: 4
+    proto3_optional: true
+  }
+  field {
+    name: "allowed_excess_depth"
+    number: 6
+    label: LABEL_OPTIONAL
+    type: TYPE_UINT32
+    oneof_index: 5
+    proto3_optional: true
+  }
+  field {
+    name: "allowed_excess_width"
+    number: 7
+    label: LABEL_OPTIONAL
+    type: TYPE_UINT32
+    oneof_index: 6
+    proto3_optional: true
+  }
+  field {
+    name: "rating"
+    number: 8
+    label: LABEL_OPTIONAL
+    type: TYPE_UINT32
+    oneof_index: 7
+    proto3_optional: true
+  }
+  field {
+    name: "ep_loss_margin"
+    number: 9
+    label: LABEL_OPTIONAL
+    type: TYPE_FLOAT
+    oneof_index: 8
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "_use_split_depth_limit"
+  }
+  oneof_decl {
+    name: "_split_depth_limit"
+  }
+  oneof_decl {
+    name: "_use_split_width_limit"
+  }
+  oneof_decl {
+    name: "_split_width_limit"
+  }
+  oneof_decl {
+    name: "_keep_equal_subtrees"
+  }
+  oneof_decl {
+    name: "_allowed_excess_depth"
+  }
+  oneof_decl {
+    name: "_allowed_excess_width"
+  }
+  oneof_decl {
+    name: "_rating"
+  }
+  oneof_decl {
+    name: "_ep_loss_margin"
+  }
+}
+syntax: "proto3"
+
+
+FEATURE_ID_INIT_ENGINE_POOL = 35
+
+FEATURE_ID_SET_INTERNAL_ENGINE = 36
+
+FEATURE_ID_INTERNAL_FEATURE_GENERATE_PVTREE = 267
+
+FEATURE_ID_INTERNAL_FEATURE_RUN_PVTREES = 288
+
+name: "chesscom/explanation_engine/v1/torch_search_mode.proto"
+package: "chesscom.explanation_engine.v1"
+message_type {
+  name: "TorchSearchMode"
+  field {
+    name: "human"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.TorchSearchMode.Human"
+    oneof_index: 0
+  }
+  field {
+    name: "multisearch"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.TorchSearchMode.Multisearch"
+    oneof_index: 0
+  }
+  nested_type {
+    name: "Human"
+    field {
+      name: "disable_maia"
+      number: 1
+      label: LABEL_OPTIONAL
+      type: TYPE_BOOL
+      oneof_index: 0
+      proto3_optional: true
+    }
+    oneof_decl {
+      name: "_disable_maia"
+    }
+  }
+  nested_type {
+    name: "Multisearch"
+    field {
+      name: "reduce_nodes_on_successive_searches"
+      number: 1
+      label: LABEL_OPTIONAL
+      type: TYPE_BOOL
+      oneof_index: 0
+      proto3_optional: true
+    }
+    oneof_decl {
+      name: "_reduce_nodes_on_successive_searches"
+    }
+  }
+  oneof_decl {
+    name: "mode"
+  }
+}
+syntax: "proto3"
+
+
+name: "chesscom/explanation_engine/v1alpha/internal_feature_load_charm_model.proto"
+package: "chesscom.explanation_engine.v1alpha"
+message_type {
+  name: "InternalFeatureLoadCharmModelRequest"
+  field {
+    name: "model_path"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+    oneof_index: 0
+    proto3_optional: true
+  }
+  field {
+    name: "model_key"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+    oneof_index: 1
+    proto3_optional: true
+  }
+  field {
+    name: "artifact_id"
+    number: 3
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+    oneof_index: 2
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "_model_path"
+  }
+  oneof_decl {
+    name: "_model_key"
+  }
+  oneof_decl {
+    name: "_artifact_id"
+  }
+}
+message_type {
+  name: "InternalFeatureLoadCharmModelResponse"
+  field {
+    name: "model_key"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+  }
+}
+syntax: "proto3"
+
+
+name: "chesscom/explanation_engine/v1/feature_load_charm_model.proto"
+package: "chesscom.explanation_engine.v1"
+message_type {
+  name: "LoadCharmModelRequest"
+  field {
+    name: "model_path"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+    oneof_index: 0
+  }
+  field {
+    name: "artifact_id"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+    oneof_index: 0
+  }
+  field {
+    name: "model_key"
+    number: 3
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+    oneof_index: 1
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "model_source"
+  }
+  oneof_decl {
+    name: "_model_key"
+  }
+}
+message_type {
+  name: "LoadCharmModelResponse"
+  field {
+    name: "model_key"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+  }
+}
+syntax: "proto3"
+
+
+name: "chesscom/explanation_engine/v1alpha/internal_feature_run_pvtrees.proto"
+package: "chesscom.explanation_engine.v1alpha"
+dependency: "chesscom/explanation_engine/v1/feature_run_search.proto"
+dependency: "chesscom/explanation_engine/v1/game_point_info.proto"
+dependency: "chesscom/explanation_engine/v1alpha/internal_feature_run_search.proto"
+message_type {
+  name: "InternalFeatureRunPvTreesRequest"
+  field {
+    name: "request"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.RunSearchRequest"
+  }
+  field {
+    name: "pvtree_options"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1alpha.PVTreeOptions"
+    oneof_index: 0
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "_pvtree_options"
+  }
+}
+message_type {
+  name: "InternalFeatureRunPvTreesResponse"
+  field {
+    name: "search_response"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.RunSearchResponse"
+  }
+  field {
+    name: "game_tree"
+    number: 2
+    label: LABEL_REPEATED
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.GamePointInfo"
+  }
+  field {
+    name: "best_line"
+    number: 3
+    label: LABEL_REPEATED
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.GamePointInfo"
+  }
+  field {
+    name: "human_line"
+    number: 4
+    label: LABEL_REPEATED
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.GamePointInfo"
+  }
+}
+syntax: "proto3"
+function A4e(e){return window.chesscom.features.includes(`web_analysis_torch_human_v2`)?e===sP.Engine.FullAnalysisOptions.Stockfish16?sA.SF16_1_NNUE:sA.TORCH_HUMAN:sA.SF16_1_NNUE}var j4e=r((()=>{gj(),EM(),cP(),mP(),gP()}));function M4e(){return window.chesscom.features.includes(`game_review_platinum_report_card`)&&af()}var N4e=r((()=>{of()}));function P4e(e){switch(e){case 18:return mN.Strength.Fast;case 22:return mN.Strength.Standard;case 24:return mN.Strength.Deep;case 26:return mN.Strength.Maximum;default:return mN.Strength.Fast}}var F4e=r((()=>{hN()})),I4e,L4e=r((()=>{iD(),V(),gh(),I4e=class extends hd{constructor(...e){super(...e),R(this,`fen`,``),R(this,`hasLegalMoves`,!0),R(this,`headers`,{...G.EmptyPGNHeaders}),R(this,`ids`,{line:0,move:-1}),R(this,`isOver`,!1),R(this,`isPositionValid`,!0),R(this,`pgn`,window.chesscom.analysis.pgn||``),R(this,`piecesLeft`,32),R(this,`mode`,rx.Types.Analysis),R(this,`nodes`,[]),R(this,`selectedNode`,null),R(this,`selectedPly`,1),R(this,`turn`,G.ColorsAsNumbers.White),R(this,`userColor`,void 0),R(this,`canMoveForward`,!1),R(this,`currentFullLine`,[])}}})),OW,kW=r((()=>{L4e(),OW=A(new I4e)}));function AW(){if(OW.userColor)return hx(OW.userColor)}var jW=r((()=>{iD(),kW()}));function R4e(){return bP.fullAnalysisEngine}var z4e=r((()=>{SP()})),MW,B4e=r((()=>{jW(),MW=()=>window.chesscom.analysis.shouldShowGameReviewSkills&&AW()!==void 0})),NW,V4e=r((()=>{ru(),Rg(),B4e(),NW=()=>MW()&&(Lg(nu.key)??!0)}));function H4e(){switch(AW()){case G.ColorsAsWords.White:return wA.WHITE;case G.ColorsAsWords.Black:return wA.BLACK;default:return}}function U4e(e){switch(e){case mN.Strength.Fast:return uA.FAST;case mN.Strength.Standard:return uA.STANDARD;case mN.Strength.Deep:return uA.DEEP;case mN.Strength.Maximum:return uA.MAXIMUM;default:return uA.FAST
+
+function W4e(e){let{chessGameProto:t,depth:n}=e,r=U4e(P4e(n)),i=H4e(),a=NW(),o=window.chesscom.features.includes(`game_review_user_selected_coach`)?HH():null;if(a){let e=t.metadata?.players??[],n=e.find(e=>e.color===wA.WHITE)?.chesscomMetadata?.userId??``,r=e.find(e=>e.color===wA.BLACK)?.chesscomMetadata?.userId??``,i=t.metadata?.chesscomMetadata?.gameId??``,a=!!(n&&r&&i);SW(a?`info`:`warn`,a?`0/3 IDL /v2/game-review — skills on; CEE has the ids to sign validationHash`:`0/3 IDL /v2/game-review — skills on but MISSING ids CEE needs; validationHash will come back empty`,{endpoint:`IDL /v2/game-review`,enableSkills:!0,"white user id":n||`(missing)`,"black user id":r||`(missing)`,"game id":i||`(missing)`,"CEE can sign validationHash":a})}let s=xKe(),c=sf(),l=M4e(),u=Am(),d=HO(ZV,{newGame:HO(JV,{from:{case:`game`,value:t},settings:HO(dz,{...i===void 0?{}:{userColor:i},...a?{enableSkills:!0}:{},...s?{enabledFeatureFlags:[`cee_tricky_classification`]}:{}})})}),f=HO(sz,{strength:r}),p=A4e(R4e());return HO(DH,{newGameReq:d,runSearchReq:HO(xz,{search:{case:`gameReviewSearchSettings`,value:f},searchMoves:[],streamResults:!1,heartbeatIntervalSeconds:0}),engine:p,gameEvaluationOptions:HO(FGe,{useGameStateCache:p!==sA.TORCH_HUMAN,useSerialEvaluations:!1}),requestMetadata:HO(bH,{client:_H.WEB,product:vH.GAME_REVIEW,receivedTime:Uk()}),requestOptions:HO(xH,{heartbeatIntervalSeconds:5,useProgressUpdates:!0}),...l||u?{gameReviewOptions:HO(zGe,{reportCardEntitled:l,includeTrainTakeaways:u,canAccessLockedTakeaways:u&&!Om(1)})}:{},...o?{setCoach:HO(PUe,{textId:o.textId,locale:o.locale})}:{},...s||c?{charmInfReq:HO(eWe,{...s?{tricky:HO(nWe)}:{},...c?{grv2:HO(tWe)}:{}})}:{}})}var G4e=r((()=>{aR(),X(),iD(),jH(),fj(),gj(),pH(),UH(),wW(),iU(),cf(),j4e(),N4e(),hN(),F4e(),jW(),z4e(),V4e(),km(),jm(
+
+
+Embedded wasm strings:
+
+
+embedded_maia_net
+
+' is not a Torch engine, and Torch Human mode requires one
+
+end_of_human_line
+
+m-maia3
+
+torch_search_mode.human is incompatible with reduce_nodes_on_successive_multisearch_searches.

@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/courses/v1/user_access_grant.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "UserAccessGrant",
+      "value": [
+        {
+          "name": "USER_ACCESS_GRANT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_ACCESS_GRANT_FULL",
+          "number": 1
+        },
+        {
+          "name": "USER_ACCESS_GRANT_DIAMOND_EXCLUSIVE",
+          "number": 2
+        },
+        {
+          "name": "USER_ACCESS_GRANT_PREVIEW",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

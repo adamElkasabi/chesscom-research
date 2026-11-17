@@ -1,0 +1,67 @@
+// source: chesscom/user_properties/v1/properties_coaches.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum CoachesPropertyDefinition {
+  COACHES_PROPERTY_UNSPECIFIED = 0;
+  DEFAULT_COACH_NAME = 1;
+  DEFAULT_COACH_ID = 2;
+  LAST_SELECTED_COACH_NAME = 3;
+  LAST_SELECTED_COACH_ID = 4;
+  LAST_SELECTED_COACH_DATE = 5;
+  TOTAL_GAMES_STARTED_AGAINST_COACH = 6;
+  COACH_RATING = 7;
+  CURRENT_COACH_NAME = 8;
+  CURRENT_COACH_ID = 9;
+  TOTAL_COACH_GAMES = 10;
+  HAS_SELECTED_COACH = 11;
+  INITIAL_CHOSEN_COACH = 12;
+  INITIAL_COACH = 13;
+  LAST_GAME_VS_COACH_FINISHED = 14;
+}
+
+message CoachesProperty {
+  oneof _default_coach_name {
+  string default_coach_name = 1;
+  }
+  oneof _default_coach_id {
+  string default_coach_id = 2;
+  }
+  oneof _last_selected_coach_name {
+  string last_selected_coach_name = 3;
+  }
+  oneof _last_selected_coach_id {
+  string last_selected_coach_id = 4;
+  }
+  oneof _last_selected_coach_date {
+  .google.protobuf.Timestamp last_selected_coach_date = 5;
+  }
+  oneof _total_games_started_against_coach {
+  int32 total_games_started_against_coach = 6;
+  }
+  oneof _coach_rating {
+  int32 coach_rating = 7;
+  }
+  oneof _current_coach_name {
+  string current_coach_name = 8;
+  }
+  oneof _curent_coach_id {
+  string curent_coach_id = 9;
+  }
+  oneof _total_coach_games {
+  int32 total_coach_games = 10;
+  }
+  oneof _has_selected_coach {
+  bool has_selected_coach = 11;
+  }
+  oneof _initial_chosen_coach {
+  string initial_chosen_coach = 12;
+  }
+  oneof _initial_coach {
+  string initial_coach = 13;
+  }
+  oneof _last_game_vs_coach_finished {
+  .google.protobuf.Timestamp last_game_vs_coach_finished = 14;
+  }
+}

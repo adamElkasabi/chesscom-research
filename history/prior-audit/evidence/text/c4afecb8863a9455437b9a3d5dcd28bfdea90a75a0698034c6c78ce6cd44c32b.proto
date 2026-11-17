@@ -1,0 +1,9 @@
+// source: chesscom/api/v1/decimal.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Decimal {
+  optional int64 value = 1;
+  optional int32 scale = 2;
+}

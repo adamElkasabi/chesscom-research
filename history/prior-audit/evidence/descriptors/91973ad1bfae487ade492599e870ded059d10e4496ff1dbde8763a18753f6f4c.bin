@@ -1,0 +1,6 @@
+
+7chesscom/explanation_engine/v1alpha/piece_details.proto#chesscom.explanation_engine.v1alphachesscom/chess/v1/square.protochesscom/chess/v1/piece.proto"t
+PieceDetails'
+piece (2.chesscom.chess.v1.Piece)
+square (2.chesscom.chess.v1.Square
+piece_id (bproto3

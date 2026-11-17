@@ -1,0 +1,6 @@
+
+?chesscom/explanation_engine/v1alpha/report_card_highlight.proto#chesscom.explanation_engine.v1alpha"chesscom/chess/v1/game_phase.proto8chesscom/explanation_engine/v1/move_classification.proto"ê
+ReportCardHighlight+
+phase (2.chesscom.chess.v1.GamePhaseQ
+player_classification (22.chesscom.explanation_engine.v1.MoveClassificationS
+opponent_classification (22.chesscom.explanation_engine.v1.MoveClassificationbproto3

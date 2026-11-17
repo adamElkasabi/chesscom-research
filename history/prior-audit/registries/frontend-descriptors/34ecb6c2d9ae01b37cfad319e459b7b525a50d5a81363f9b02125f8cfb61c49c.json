@@ -1,0 +1,160 @@
+{
+  "name": "chesscom/skills/v1/skills_configuration.proto",
+  "package": "chesscom.skills.v1",
+  "message_type": [
+    {
+      "name": "SkillConfiguration",
+      "field": [
+        {
+          "name": "skill_items",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.SkillItemConfiguration"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillItemConfiguration",
+      "field": [
+        {
+          "name": "skill",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Skill"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.Translation"
+        },
+        {
+          "name": "category",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillCategory"
+        },
+        {
+          "name": "points_to_master",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "diagram",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.Translation"
+        },
+        {
+          "name": "unlocked_by_all",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.UnlockedByAll",
+          "oneof_index": 0
+        },
+        {
+          "name": "unlocked_by_any",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.UnlockedByAny",
+          "oneof_index": 0
+        },
+        {
+          "name": "icon_png",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "icon_svg",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "unlocking_condition"
+        }
+      ]
+    },
+    {
+      "name": "UnlockedByAll",
+      "field": [
+        {
+          "name": "unlocked_by_all",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Skill"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UnlockedByAny",
+      "field": [
+        {
+          "name": "unlocked_by_any",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Skill"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillCategoryConfiguration",
+      "field": [
+        {
+          "name": "skills_categories",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.SkillCategoryItemConfiguration"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillCategoryItemConfiguration",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillCategory"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.Translation"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

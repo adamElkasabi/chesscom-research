@@ -1,0 +1,12 @@
+{
+  "id": "comparison-control",
+  "reviewEvaluations": true,
+  "preSearch": {
+    "gameReviewSearchSettings": {
+      "strength": 1
+    }
+  },
+  "addPreSearch": true,
+  "saveReview": true,
+  "timeoutSeconds": 90
+}

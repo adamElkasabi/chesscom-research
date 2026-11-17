@@ -1,0 +1,22 @@
+// source: chesscom/proto_options/annotations/v1/annotations.proto
+// syntax: proto3
+
+package chesscom.proto_options.annotations.v1;
+
+enum Platform {
+  PLATFORM_UNSPECIFIED = 0;
+  PLATFORM_MOBILE = 1;
+  PLATFORM_WEB = 2;
+  PLATFORM_BACKEND = 3;
+}
+
+enum Project {
+  PROJECT_UNSPECIFIED = 0;
+  PROJECT_CHESSCOM = 1;
+  PROJECT_CHESSKID = 2;
+}
+
+message Usage {
+  repeated .chesscom.proto_options.annotations.v1.Platform platform = 1;
+  repeated .chesscom.proto_options.annotations.v1.Project project = 2;
+}

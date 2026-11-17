@@ -1,0 +1,258 @@
+[
+  {
+    "function_id": "module-002.function_001666",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1666,
+    "inferred_name": "initialization_options_forwarder",
+    "inferred_name_is_original": false,
+    "analysis_status": "MOSTLY UNDERSTOOD",
+    "semantic_evidence": "Forwards its two i32 values to function1664 through Asyncify resume guards. They are NOT shown to be pointer/length;1664 clamps counts and builds pools.",
+    "limitations": "No CEE chess algorithm is contained in this wrapper.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001667",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1667,
+    "inferred_name": "default_initializer",
+    "inferred_name_is_original": false,
+    "analysis_status": "MOSTLY UNDERSTOOD",
+    "semantic_evidence": "Calls22950,computes clamp(result,2,9)-1,and invokes1664(1,computed).",
+    "limitations": "With the initial table/static sysconf table,22950returns1 and second argument evaluates1. This is initial-state reconstruction,not a measured initialized session.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001664",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1664,
+    "inferred_name": "initialize_runtime_and_counted_pools",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "Sets up stream/runtime state,queries22950,clamps one supplied count to1..min(available,8),invokes slot2000->1950,and conditionally sets another counted path through slot2002->252;initializes three global collections through1731.",
+    "limitations": "Counted resource pools are evidenced. Do not rename every count as physical cores or infer review classification math.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_022950",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 22950,
+    "inferred_name": "positive_sysconf_84_wrapper",
+    "inferred_name_is_original": false,
+    "analysis_status": "MOSTLY UNDERSTOOD",
+    "semantic_evidence": "Host invoke_ii(slot26277,84) targets22947 in the initial table;returns the positive result,otherwise0;contains exception propagation.",
+    "limitations": "sysconf attribution is convention/shape supported;JS host/table changes could change the target.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_022947",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 22947,
+    "inferred_name": "sysconf_style_constant_query",
+    "inferred_name_is_original": false,
+    "analysis_status": "MOSTLY UNDERSTOOD",
+    "semantic_evidence": "Unsigned key<=250 selects signed16at8679184+2*key;zero/invalid sets word18295192=28 and returns-1;negative sentinels use a switch including1,0,limits,and function154.",
+    "limitations": "Key84 reads-249(lowbyte7)and follows the constant1 case. Error code28 is not reinterpreted as a specific POSIX name without target ABI proof.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001670",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1670,
+    "inferred_name": "locked_integer_key_hash_lookup",
+    "inferred_name_is_original": false,
+    "analysis_status": "MOSTLY UNDERSTOOD",
+    "semantic_evidence": "Locks/context-enters base+4,uses bucket count atbase+32 and bucket pointer atbase+28;uses key&(count-1)for power-of-two counts and key%countotherwise;walks chained nodes while bucket/keymatch;copies object/controlblock pair and increments referencecount,or writes a zero pair;unlocks.",
+    "limitations": "Looks like a C++unordered-map/shared-pointer pattern. Exact source container typedef and all concurrency guarantees not recovered.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001671",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1671,
+    "inferred_name": "locked_integer_key_hash_erase",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "Uses the same bucket/key selection and chained-node walk as1670,then invokes unlink helper1672 and referencecount/destructor cleanup.",
+    "limitations": "Cleanup/destructor helper semantics not fully reconstructed.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001741",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1741,
+    "inferred_name": "decode_composite_game_handle",
+    "inferred_name_is_original": false,
+    "analysis_status": "MOSTLY UNDERSTOOD",
+    "semantic_evidence": "Splits input into signed highpart(handle>>20)and low20bits(handle&1048575);looks up highpart in collection12157984 via1670;on success follows7890and8691 using lowpart;releases temporary shared ownership and returns selected pointer/null.",
+    "limitations": "High/low split is exact. The logical meaning of highpart beyond container identity and lowpart beyond subentry selection remains inferred.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001686",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1686,
+    "inferred_name": "create_feature_body_candidate",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "Reached from CEE_NewFeature via literal slot2038. Resolves game handle via1741,uses feature-ID dispatch/factory1984 and descriptor/name helper1687,contains a message-parse failure path with exact string Unable to parse feature message,allocates184bytes and calls1961,then inserts into global12157936 via1688 and returns a handle.",
+    "limitations": "The entire31,638byte1984factory,feature-specific parser schemas and algorithms are not semantically decoded. Presence of error text does not identify a scoring formula.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001694",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1694,
+    "inferred_name": "CEE_NewFeature_export_shell",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "4xi32->i32 export;Asyncify/exception guards;initial slot2038 resolves1686. JavaScript supplies game handle,featureID,inputpointer,bytecount and frees staging input after return.",
+    "limitations": "Input pointer/length evidenced byJSbridge;caller free does not prove whether native code copies all bytes internally.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001698",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1698,
+    "inferred_name": "run_feature_body_candidate",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "Reached from CEE_Run via slot2052. Looks up handle in global12157936 through slot2043->1670;contains Invalid Feature handle error path;uses object/vtable/host-mediated work dispatch and cleanup.",
+    "limitations": "Feature-internal search/classification and callback scheduling still unresolved. Not an engine-parity proof.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001699",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1699,
+    "inferred_name": "CEE_Run_export_shell",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "2xi32->i32 export with Asyncify/exception shell;initial slot2052 resolves1698. JSccallpasses(handle,0)withasync:true;JSreports failure forretval<=0.",
+    "limitations": "Native return value is not a completed score payload;completion/data are separate bridge channels.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001697",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1697,
+    "inferred_name": "CEE_DisposeFeature_export_shell",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "i32->void export;initial literal slot2041targets1671. Matches feature-handle removal from the same map family used during Run.",
+    "limitations": "Referencecounts/destructors mean removal is not assumed equivalent to a single free.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001731",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1731,
+    "inferred_name": "initialize_global_collections",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "Initializes/locks/unlocks collections at12157936,12157984,13074148 through1674,22864,1732,22279.",
+    "limitations": "Exact collection ownership/payload mapping beyond feature/game usage remains partial.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001950",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1950,
+    "inferred_name": "allocate_counted_runtime_pool",
+    "inferred_name_is_original": false,
+    "analysis_status": "PARTIALLY UNDERSTOOD",
+    "semantic_evidence": "Clamps supplied nonnegative count against22950;loops allocating44byte objects and appending pointers in global vector-like12158908/12158912/12158916;sets up further8byte task/thread-related objects and thread constructor failure path.",
+    "limitations": "These are structural object sizes,not invented source struct definitions or evidence that WASMshared-memorythreads are enabled.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  },
+  {
+    "function_id": "module-002.function_001984",
+    "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "function_index": 1984,
+    "inferred_name": "feature_factory_or_descriptor_dispatch_candidate",
+    "inferred_name_is_original": false,
+    "analysis_status": "STRUCTURALLY ANALYZED",
+    "semantic_evidence": "31,638byte function reached from NewFeature through slot2027. Large static/lazy initialization and indirect object construction are preserved in selected decompilation.",
+    "limitations": "Not promoted to a parsed feature-ID registry. Most feature-specific business logic remains unread.",
+    "raw_evidence": [
+      "deep-functions/module-002/structure.json",
+      "deep-functions/module-002/functions-enriched.jsonl",
+      "cee-connected-slice/selected-implementations.txt",
+      "deep-functions/module-002/indirect-dispatch-sites.jsonl"
+    ]
+  }
+]

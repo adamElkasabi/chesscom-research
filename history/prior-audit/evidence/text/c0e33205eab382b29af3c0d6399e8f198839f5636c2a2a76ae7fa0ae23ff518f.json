@@ -1,0 +1,22 @@
+{
+  "id": "normalized-human",
+  "timeoutSeconds": 90,
+  "evaluateGame": {
+    "search": {
+      "case": "gameReviewSearchSettings",
+      "value": {
+        "strength": 1
+      }
+    },
+    "torchSearchMode": {
+      "mode": {
+        "case": "human",
+        "value": {}
+      }
+    }
+  },
+  "saveReview": true,
+  "uciAfter": {
+    "Normalize": false
+  }
+}

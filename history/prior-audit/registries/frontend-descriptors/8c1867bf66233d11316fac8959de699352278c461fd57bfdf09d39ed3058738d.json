@@ -1,0 +1,351 @@
+{
+  "name": "chesscom/payments/v1/group_membership_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "GenerateInvitationLinkRequest",
+      "options": {}
+    },
+    {
+      "name": "GenerateInvitationLinkResponse",
+      "field": [
+        {
+          "name": "invitation_link",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CheckJoinEligibilityRequest",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "email",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "member_identifier"
+        }
+      ]
+    },
+    {
+      "name": "CheckJoinEligibilityResponse",
+      "field": [
+        {
+          "name": "is_eligible",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "InviteMemberRequest",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "email",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "invitee_identifier"
+        }
+      ]
+    },
+    {
+      "name": "InviteMemberResponse",
+      "options": {}
+    },
+    {
+      "name": "RemoveMemberRequest",
+      "field": [
+        {
+          "name": "member_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RemoveMemberResponse",
+      "options": {}
+    },
+    {
+      "name": "GetMaxSecondaryMembersRequest",
+      "options": {}
+    },
+    {
+      "name": "GetMaxSecondaryMembersResponse",
+      "field": [
+        {
+          "name": "max_secondary_members",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetSecondaryMembersRequest",
+      "options": {}
+    },
+    {
+      "name": "GetSecondaryMembersResponse",
+      "field": [
+        {
+          "name": "secondary_members",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        },
+        {
+          "name": "pending_invitations",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.PendingInvitation"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "LeaveGroupMembershipRequest",
+      "options": {}
+    },
+    {
+      "name": "LeaveGroupMembershipResponse",
+      "options": {}
+    },
+    {
+      "name": "PreviewInvitationRequest",
+      "field": [
+        {
+          "name": "invitation_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_source"
+        }
+      ]
+    },
+    {
+      "name": "PreviewInvitationResponse",
+      "field": [
+        {
+          "name": "primary_account_holder",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "plan_details",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.InvitationPlanDetails",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "eligibility",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.JoinEligibility"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_primary_account_holder"
+        },
+        {
+          "name": "_plan_details"
+        }
+      ]
+    },
+    {
+      "name": "JoinGroupFromInvitationRequest",
+      "field": [
+        {
+          "name": "invitation_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "JoinGroupFromInvitationResponse",
+      "options": {}
+    },
+    {
+      "name": "ListPendingInvitationsRequest",
+      "options": {}
+    },
+    {
+      "name": "ListPendingInvitationsResponse",
+      "field": [
+        {
+          "name": "invitations",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.PendingInvitationForInvitee"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DeclineInvitationRequest",
+      "field": [
+        {
+          "name": "invitation_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DeclineInvitationResponse",
+      "options": {}
+    },
+    {
+      "name": "RevokeInvitationRequest",
+      "field": [
+        {
+          "name": "invitation_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RevokeInvitationResponse",
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "GroupMembershipService",
+      "method": [
+        {
+          "name": "GenerateInvitationLink",
+          "input_type": ".chesscom.payments.v1.GenerateInvitationLinkRequest",
+          "output_type": ".chesscom.payments.v1.GenerateInvitationLinkResponse"
+        },
+        {
+          "name": "CheckJoinEligibility",
+          "input_type": ".chesscom.payments.v1.CheckJoinEligibilityRequest",
+          "output_type": ".chesscom.payments.v1.CheckJoinEligibilityResponse"
+        },
+        {
+          "name": "InviteMember",
+          "input_type": ".chesscom.payments.v1.InviteMemberRequest",
+          "output_type": ".chesscom.payments.v1.InviteMemberResponse"
+        },
+        {
+          "name": "RemoveMember",
+          "input_type": ".chesscom.payments.v1.RemoveMemberRequest",
+          "output_type": ".chesscom.payments.v1.RemoveMemberResponse"
+        },
+        {
+          "name": "GetMaxSecondaryMembers",
+          "input_type": ".chesscom.payments.v1.GetMaxSecondaryMembersRequest",
+          "output_type": ".chesscom.payments.v1.GetMaxSecondaryMembersResponse"
+        },
+        {
+          "name": "GetSecondaryMembers",
+          "input_type": ".chesscom.payments.v1.GetSecondaryMembersRequest",
+          "output_type": ".chesscom.payments.v1.GetSecondaryMembersResponse"
+        },
+        {
+          "name": "LeaveGroupMembership",
+          "input_type": ".chesscom.payments.v1.LeaveGroupMembershipRequest",
+          "output_type": ".chesscom.payments.v1.LeaveGroupMembershipResponse"
+        },
+        {
+          "name": "PreviewInvitation",
+          "input_type": ".chesscom.payments.v1.PreviewInvitationRequest",
+          "output_type": ".chesscom.payments.v1.PreviewInvitationResponse"
+        },
+        {
+          "name": "JoinGroupFromInvitation",
+          "input_type": ".chesscom.payments.v1.JoinGroupFromInvitationRequest",
+          "output_type": ".chesscom.payments.v1.JoinGroupFromInvitationResponse"
+        },
+        {
+          "name": "ListPendingInvitations",
+          "input_type": ".chesscom.payments.v1.ListPendingInvitationsRequest",
+          "output_type": ".chesscom.payments.v1.ListPendingInvitationsResponse"
+        },
+        {
+          "name": "DeclineInvitation",
+          "input_type": ".chesscom.payments.v1.DeclineInvitationRequest",
+          "output_type": ".chesscom.payments.v1.DeclineInvitationResponse"
+        },
+        {
+          "name": "RevokeInvitation",
+          "input_type": ".chesscom.payments.v1.RevokeInvitationRequest",
+          "output_type": ".chesscom.payments.v1.RevokeInvitationResponse"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

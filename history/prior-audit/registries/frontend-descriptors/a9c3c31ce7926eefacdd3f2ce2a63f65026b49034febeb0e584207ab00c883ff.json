@@ -1,0 +1,38 @@
+{
+  "name": "chesscom/courses/v1/course_lesson_player.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseLessonPlayer",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "picture",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_author",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_picture"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

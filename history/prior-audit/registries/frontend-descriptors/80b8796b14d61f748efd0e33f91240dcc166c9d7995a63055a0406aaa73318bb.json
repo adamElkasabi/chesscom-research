@@ -1,0 +1,49 @@
+{
+  "name": "chesscom/courses/v1/course_chapter.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseChapter",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "video",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseVideo",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_video_position",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_video"
+        },
+        {
+          "name": "_user_video_position"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

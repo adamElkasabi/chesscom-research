@@ -1,0 +1,11 @@
+
+@chesscom/explanation_engine/v1/internal_feature_debug_info.protochesscom.explanation_engine.v1"!
+InternalFeatureDebugInfoRequest"¤
+ InternalFeatureDebugInfoResponse
+active_feature_tasks (
+allocated_features (F
+game_debug_info (2-.chesscom.explanation_engine.v1.GameDebugInfo"8
+GameDebugInfo
+game_handle (
+
+tree_nodes (bproto3

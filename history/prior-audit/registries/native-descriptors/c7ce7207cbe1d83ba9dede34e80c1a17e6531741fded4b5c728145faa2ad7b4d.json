@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_load_eco_book.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "LoadEcoBookRequest",
+      "field": [
+        {
+          "name": "artifact_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "LoadEcoBookResponse",
+      "field": [
+        {
+          "name": "position_count",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

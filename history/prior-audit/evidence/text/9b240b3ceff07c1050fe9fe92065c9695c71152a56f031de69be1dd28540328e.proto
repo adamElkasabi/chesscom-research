@@ -1,0 +1,33 @@
+// source: chesscom/bots/v1/bot_group.proto
+// syntax: proto3
+
+package chesscom.bots.v1;
+
+message BotGroup {
+  oneof _club_uuid {
+  string club_uuid = 9;
+  }
+  oneof _avatar {
+  string avatar = 14;
+  }
+  oneof _configuration_key {
+  string configuration_key = 16;
+  }
+  oneof _event {
+  .chesscom.bots.v1.BotEvent event = 17;
+  }
+  oneof _url {
+  string url = 18;
+  }
+  oneof _enabled {
+  bool enabled = 19;
+  }
+  oneof _staff_enabled {
+  bool staff_enabled = 20;
+  }
+  optional string uuid = 1;
+  optional string name = 2;
+  optional string hint_description = 3;
+  repeated .chesscom.bots.v1.BotPersonality bot_personalities = 12;
+  optional bool featured = 15;
+}

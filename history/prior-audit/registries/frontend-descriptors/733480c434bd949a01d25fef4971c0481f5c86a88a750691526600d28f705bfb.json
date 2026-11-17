@@ -1,0 +1,120 @@
+{
+  "name": "chesscom/payments/v1/member_subscription.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "MemberSubscription",
+      "field": [
+        {
+          "name": "subscription_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "membership_level",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MembershipLevel"
+        },
+        {
+          "name": "plan_state",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.PlanState"
+        },
+        {
+          "name": "plan_length",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "plan_unit",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionDurationUnit"
+        },
+        {
+          "name": "price_cents",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "currency",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "platform",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.ChargePlatform"
+        },
+        {
+          "name": "gateway",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.PaymentGateway"
+        },
+        {
+          "name": "started_at",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "current_period_ends_at",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "cancelled_at",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "cancellation_effect",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.CancellationEffect"
+        },
+        {
+          "name": "trial_state",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.TrialState"
+        },
+        {
+          "name": "payment_status",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionPaymentStatus"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_price_cents"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

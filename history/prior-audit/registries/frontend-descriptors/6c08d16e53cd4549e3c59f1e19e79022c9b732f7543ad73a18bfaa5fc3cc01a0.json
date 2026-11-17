@@ -1,0 +1,90 @@
+{
+  "name": "chesscom/user_properties/v1/properties_growth.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "GrowthProperty",
+      "field": [
+        {
+          "name": "momentum_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "momentum_prior_state",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "momentum_computed_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1009,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.GrowthPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_momentum_state"
+        },
+        {
+          "name": "_momentum_prior_state"
+        },
+        {
+          "name": "_momentum_computed_at"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "GrowthPropertyDefinition",
+      "value": [
+        {
+          "name": "GROWTH_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GROWTH_PROPERTY_DEFINITION_MOMENTUM_STATE",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "GROWTH_PROPERTY_DEFINITION_MOMENTUM_PRIOR_STATE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "GROWTH_PROPERTY_DEFINITION_MOMENTUM_COMPUTED_AT",
+          "number": 3,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

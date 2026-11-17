@@ -1,0 +1,12 @@
+// source: chesscom/courses/v1/ownership_type.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum OwnershipType {
+  OWNERSHIP_TYPE_UNSPECIFIED = 0;
+  OWNERSHIP_TYPE_ACQUIRED = 1;
+  OWNERSHIP_TYPE_PREVIEW = 2;
+  OWNERSHIP_TYPE_CLAIMED = 3;
+  OWNERSHIP_TYPE_PURCHASED = 4;
+}

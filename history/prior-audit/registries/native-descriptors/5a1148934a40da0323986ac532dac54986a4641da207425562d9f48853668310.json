@@ -1,0 +1,137 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_bot_chat.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/notation.proto",
+    "chesscom/explanation_engine/v1/move_details.proto",
+    "chesscom/explanation_engine/v1/speech.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetBotChatRequest",
+      "field": [
+        {
+          "name": "bot_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_notation",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.MoveNotation",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "request_hint",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "json",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_move_notation"
+        },
+        {
+          "name": "_request_hint"
+        },
+        {
+          "name": "_json"
+        }
+      ]
+    },
+    {
+      "name": "GetBotChatResponse",
+      "field": [
+        {
+          "name": "speech",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "hinted_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveDetails",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "json",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "trigger_info",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.BotChatTriggerInfo",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_hinted_move"
+        },
+        {
+          "name": "_json"
+        },
+        {
+          "name": "_trigger_info"
+        }
+      ]
+    },
+    {
+      "name": "BotChatTriggerInfo",
+      "field": [
+        {
+          "name": "label",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "alternative",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "personality",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

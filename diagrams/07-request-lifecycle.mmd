@@ -1,0 +1,10 @@
+sequenceDiagram
+ participant C as Unauthenticated client
+ participant E as Cloudflare edge
+ participant W as Web pool label
+ participant D as Unknown downstream
+ C->>E: GET / or /jobs no account cookies
+ E->>W: Origin forwarding inferred
+ W-->>E: HTML matched-route/pool headers observed
+ E-->>C: 200 plus security/cache headers
+ Note over W,D: No controller or database trace obtained

@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/elo_comparison.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "EloComparison",
+      "value": [
+        {
+          "name": "ELO_COMPARISON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ELO_COMPARISON_EQUAL",
+          "number": 1
+        },
+        {
+          "name": "ELO_COMPARISON_WORSE",
+          "number": 2
+        },
+        {
+          "name": "ELO_COMPARISON_BETTER",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,9 @@
+// source: chesscom/game_gateway/v1/player_details_metadata.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v1;
+
+message PlayerDetailsMetadata {
+  optional .chesscom.user.v1.UserView white_player_metadata = 1;
+  optional .chesscom.user.v1.UserView black_player_metadata = 2;
+}

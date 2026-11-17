@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/chess/v1/chesscom_game_source.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "ChesscomGameSource",
+      "value": [
+        {
+          "name": "CHESSCOM_GAME_SOURCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CHESSCOM_GAME_SOURCE_DAILY",
+          "number": 1
+        },
+        {
+          "name": "CHESSCOM_GAME_SOURCE_LIVE",
+          "number": 2
+        },
+        {
+          "name": "CHESSCOM_GAME_SOURCE_MASTER",
+          "number": 3
+        },
+        {
+          "name": "CHESSCOM_GAME_SOURCE_PGN",
+          "number": 4
+        },
+        {
+          "name": "CHESSCOM_GAME_SOURCE_VS_COMPUTER",
+          "number": 5
+        },
+        {
+          "name": "CHESSCOM_GAME_SOURCE_VS_COACH",
+          "number": 6
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

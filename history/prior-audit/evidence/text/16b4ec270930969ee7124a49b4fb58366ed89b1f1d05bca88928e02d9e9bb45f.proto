@@ -1,0 +1,22 @@
+// source: chesscom/courses/v1/course_coach_speech.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseCoachSpeech {
+  oneof _intro {
+  .chesscom.courses.v1.CourseCoachSpeechItem intro = 1;
+  }
+  oneof _main {
+  .chesscom.courses.v1.CourseCoachSpeechItem main = 2;
+  }
+  repeated .chesscom.courses.v1.CourseCoachSpeechItem subvariation_items = 3;
+}
+
+message CourseCoachSpeechItem {
+  oneof _san {
+  string san = 3;
+  }
+  optional string text_item_id = 1;
+  optional string audio_url_hash = 2;
+}

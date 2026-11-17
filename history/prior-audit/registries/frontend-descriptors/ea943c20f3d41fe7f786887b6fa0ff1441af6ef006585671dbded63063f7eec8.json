@@ -1,0 +1,31 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_game_result.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetGameResultRequest",
+      "options": {}
+    },
+    {
+      "name": "GetGameResultResponse",
+      "field": [
+        {
+          "name": "game_result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_result"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,15 @@
+// source: chesscom/skills/v1/eligibility_error.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+message EligibilityError {
+  optional .chesscom.skills.v1.EligibilityError.Reason reason = 1;
+  enum Reason {
+    REASON_UNSPECIFIED = 0;
+    REASON_GAME_SKILL_POINTS_EXPIRED = 1;
+    REASON_NOT_A_GAME_PARTICIPANT = 2;
+    REASON_PLAYER_DISABLED = 3;
+    REASON_GAME_NOT_FOUND = 4;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/chess/v1/file.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "File",
+      "value": [
+        {
+          "name": "FILE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FILE_A",
+          "number": 1
+        },
+        {
+          "name": "FILE_B",
+          "number": 2
+        },
+        {
+          "name": "FILE_C",
+          "number": 3
+        },
+        {
+          "name": "FILE_D",
+          "number": 4
+        },
+        {
+          "name": "FILE_E",
+          "number": 5
+        },
+        {
+          "name": "FILE_F",
+          "number": 6
+        },
+        {
+          "name": "FILE_G",
+          "number": 7
+        },
+        {
+          "name": "FILE_H",
+          "number": 8
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

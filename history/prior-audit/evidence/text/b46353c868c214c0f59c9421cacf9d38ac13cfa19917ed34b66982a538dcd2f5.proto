@@ -1,0 +1,24 @@
+// source: chesscom/payments/v1/member_subscription.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message MemberSubscription {
+  oneof _price_cents {
+  int32 price_cents = 6;
+  }
+  optional string subscription_id = 1;
+  optional .chesscom.payments.v1.MembershipLevel membership_level = 2;
+  optional .chesscom.payments.v1.PlanState plan_state = 3;
+  optional int32 plan_length = 4;
+  optional .chesscom.payments.v1.SubscriptionDurationUnit plan_unit = 5;
+  optional string currency = 7;
+  optional .chesscom.payments.v1.ChargePlatform platform = 8;
+  optional .chesscom.payments.v1.PaymentGateway gateway = 9;
+  optional .google.protobuf.Timestamp started_at = 10;
+  optional .google.protobuf.Timestamp current_period_ends_at = 11;
+  optional .google.protobuf.Timestamp cancelled_at = 12;
+  optional .chesscom.payments.v1.CancellationEffect cancellation_effect = 13;
+  optional .chesscom.payments.v1.TrialState trial_state = 14;
+  optional .chesscom.payments.v1.SubscriptionPaymentStatus payment_status = 15;
+}

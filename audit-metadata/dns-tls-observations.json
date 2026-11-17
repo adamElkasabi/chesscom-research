@@ -1,0 +1,148 @@
+[
+  {
+    "host": "www.chess.com",
+    "port": 443,
+    "scope": "new passive DNS/TLS connection; no application authentication",
+    "addresses": [
+      "104.18.137.67",
+      "104.18.138.67",
+      "104.18.139.67",
+      "104.18.140.67",
+      "104.18.141.67",
+      "2606:4700::6812:8943",
+      "2606:4700::6812:8a43",
+      "2606:4700::6812:8b43",
+      "2606:4700::6812:8c43",
+      "2606:4700::6812:8d43"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "certificate": {
+      "subject": [
+        [
+          [
+            "commonName",
+            "chess.com"
+          ]
+        ]
+      ],
+      "issuer": [
+        [
+          [
+            "countryName",
+            "US"
+          ]
+        ],
+        [
+          [
+            "organizationName",
+            "Google Trust Services"
+          ]
+        ],
+        [
+          [
+            "commonName",
+            "WE1"
+          ]
+        ]
+      ],
+      "version": 3,
+      "serialNumber": "BEF912B1183B22590EEB6F9106B896E0",
+      "notBefore": "Nov 12 09:31:54 2026 GMT",
+      "notAfter": "Feb 10 10:31:45 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "chess.com"
+        ],
+        [
+          "DNS",
+          "*.chess.com"
+        ]
+      ],
+      "caIssuers": [
+        "http://i.pki.goog/we1.crt"
+      ],
+      "crlDistributionPoints": [
+        "http://c.pki.goog/we1/pl4XiTjSDSk.crl"
+      ]
+    }
+  },
+  {
+    "host": "analysis.chess.com",
+    "port": 443,
+    "scope": "new passive DNS/TLS connection; no application authentication",
+    "addresses": [
+      "104.18.137.67",
+      "104.18.138.67",
+      "104.18.139.67",
+      "104.18.140.67",
+      "104.18.141.67",
+      "2606:4700::6812:8943",
+      "2606:4700::6812:8a43",
+      "2606:4700::6812:8b43",
+      "2606:4700::6812:8c43",
+      "2606:4700::6812:8d43"
+    ],
+    "tls_version": "TLSv1.3",
+    "cipher": [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ],
+    "certificate": {
+      "subject": [
+        [
+          [
+            "commonName",
+            "chess.com"
+          ]
+        ]
+      ],
+      "issuer": [
+        [
+          [
+            "countryName",
+            "US"
+          ]
+        ],
+        [
+          [
+            "organizationName",
+            "Google Trust Services"
+          ]
+        ],
+        [
+          [
+            "commonName",
+            "WE1"
+          ]
+        ]
+      ],
+      "version": 3,
+      "serialNumber": "BEF912B1183B22590EEB6F9106B896E0",
+      "notBefore": "Nov 12 09:31:54 2026 GMT",
+      "notAfter": "Feb 10 10:31:45 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "chess.com"
+        ],
+        [
+          "DNS",
+          "*.chess.com"
+        ]
+      ],
+      "caIssuers": [
+        "http://i.pki.goog/we1.crt"
+      ],
+      "crlDistributionPoints": [
+        "http://c.pki.goog/we1/pl4XiTjSDSk.crl"
+      ]
+    }
+  }
+]

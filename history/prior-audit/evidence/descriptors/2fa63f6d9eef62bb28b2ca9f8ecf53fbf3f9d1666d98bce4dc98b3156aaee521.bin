@@ -1,0 +1,6 @@
+
+Echesscom/explanation_engine/v1alpha/feature_add_external_engine.proto#chesscom.explanation_engine.v1alphaAchesscom/explanation_engine/v1alpha/engine_instance_options.proto"f
+AddExternalEngineRequestJ
+engine (2:.chesscom.explanation_engine.v1alpha.EngineInstanceOptions"i
+AddExternalEngineResponseL
+engine_instance (23.chesscom.explanation_engine.v1alpha.EngineInstancebproto3

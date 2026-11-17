@@ -1,0 +1,25 @@
+// source: chesscom/explanation_engine/v1/game_point_info.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GamePointInfo {
+  oneof _move {
+  .chesscom.chess.v1.Move move = 2;
+  }
+  oneof _score {
+  .chesscom.engine.v1.Score score = 3;
+  }
+  oneof _parent_game_point {
+  int32 parent_game_point = 4;
+  }
+  oneof _null_move_child_game_point {
+  int32 null_move_child_game_point = 6;
+  }
+  oneof _played_child_game_point {
+  int32 played_child_game_point = 7;
+  }
+  optional int32 game_point = 1;
+  repeated int32 child_game_points = 5;
+  optional bool is_played = 8;
+}

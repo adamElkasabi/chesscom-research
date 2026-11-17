@@ -1,0 +1,84 @@
+// source: chesscom/presence/v1/presence.proto
+// syntax: proto3
+
+package chesscom.presence.v1;
+
+enum PresenceStatus {
+  PRESENCE_STATUS_UNSPECIFIED = 0;
+  PRESENCE_STATUS_OFFLINE = 1;
+  PRESENCE_STATUS_ONLINE = 2;
+  PRESENCE_STATUS_PLAYING = 3;
+}
+
+enum ConnectionStatus {
+  CONNECTION_STATUS_UNSPECIFIED = 0;
+  CONNECTION_STATUS_OFFLINE = 1;
+  CONNECTION_STATUS_ONLINE = 2;
+}
+
+enum PresenceActivity {
+  PRESENCE_ACTIVITY_UNSPECIFIED = 0;
+  PRESENCE_ACTIVITY_NONE = 1;
+  PRESENCE_ACTIVITY_PLAYING = 2;
+}
+
+enum ConnectionQuality {
+  CONNECTION_QUALITY_UNSPECIFIED = 0;
+  CONNECTION_QUALITY_OFFLINE = 1;
+  CONNECTION_QUALITY_POOR = 2;
+  CONNECTION_QUALITY_OK = 3;
+  CONNECTION_QUALITY_GOOD = 4;
+  CONNECTION_QUALITY_EXCELLENT = 5;
+}
+
+enum ClientType {
+  CLIENT_TYPE_UNSPECIFIED = 0;
+  CLIENT_TYPE_WEB = 1;
+  CLIENT_TYPE_IOS = 2;
+  CLIENT_TYPE_ANDROID = 3;
+  CLIENT_TYPE_UNKNOWN = 4;
+}
+
+message UserPresence {
+  oneof _activity {
+  .chesscom.presence.v1.PresenceActivity activity = 5;
+  }
+  oneof _activity_context {
+  .chesscom.presence.v1.PresenceActivityContext activity_context = 6;
+  }
+  oneof _status_at_uncertain {
+  bool status_at_uncertain = 7;
+  }
+  oneof _streaming {
+  .chesscom.presence.v1.Streaming streaming = 8;
+  }
+  oneof _quality {
+  .chesscom.presence.v1.ConnectionQuality quality = 9;
+  }
+  oneof _location {
+  .chesscom.api.v1.Location location = 10;
+  }
+  optional string id = 1;
+  optional .chesscom.presence.v1.ConnectionStatus status = 2;
+  optional .google.protobuf.Timestamp status_at = 3;
+  optional .google.protobuf.Timestamp updated_at = 4;
+  repeated .chesscom.presence.v1.ClientInfo clients = 11;
+  repeated string attributes = 12;
+  repeated string capabilities = 13;
+}
+
+message Streaming {
+  optional .google.protobuf.Timestamp started_at = 1;
+  optional string url = 2;
+}
+
+message PresenceActivityContext {
+  repeated .chesscom.gameplay.v1.GameRef games = 1;
+  repeated .chesscom.gameplay.v1.BattleRef battles = 2;
+}
+
+message ClientInfo {
+  oneof _type {
+  .chesscom.presence.v1.ClientType type = 1;
+  }
+}

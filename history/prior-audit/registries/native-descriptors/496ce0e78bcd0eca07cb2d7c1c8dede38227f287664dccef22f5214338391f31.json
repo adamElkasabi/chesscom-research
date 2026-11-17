@@ -1,0 +1,38 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/feature_set_internal_engine.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1/cee_internal_engine.proto"
+  ],
+  "message_type": [
+    {
+      "name": "SetInternalEngineRequest",
+      "field": [
+        {
+          "name": "internal",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CeeInternalEngine",
+          "oneof_index": 0
+        },
+        {
+          "name": "external_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "engine"
+        }
+      ]
+    },
+    {
+      "name": "SetInternalEngineResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

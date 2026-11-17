@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/train/v1/train_position_type.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainPositionType",
+      "value": [
+        {
+          "name": "TRAIN_POSITION_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_POSITION_TYPE_OPEN",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_POSITION_TYPE_SEMI_OPEN",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_POSITION_TYPE_CLOSED",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

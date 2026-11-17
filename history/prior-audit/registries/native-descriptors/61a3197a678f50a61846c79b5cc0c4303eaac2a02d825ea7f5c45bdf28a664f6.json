@@ -1,0 +1,61 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_non_chess_text.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/speech.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetNonChessTextRequest",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.NonChessTextType"
+        }
+      ]
+    },
+    {
+      "name": "GetNonChessTextResponse",
+      "field": [
+        {
+          "name": "speech",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "NonChessTextType",
+      "value": [
+        {
+          "name": "NON_CHESS_TEXT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "NON_CHESS_TEXT_TYPE_UNDO_MOVE_LEGAL",
+          "number": 1
+        },
+        {
+          "name": "NON_CHESS_TEXT_TYPE_UNDO_MOVE_ILLEGAL",
+          "number": 2
+        },
+        {
+          "name": "NON_CHESS_TEXT_TYPE_RESUME_GAME",
+          "number": 3
+        },
+        {
+          "name": "NON_CHESS_TEXT_TYPE_SWITCHED_COACH",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

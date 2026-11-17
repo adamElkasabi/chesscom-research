@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/user/v1/user_skill_level.proto",
+  "package": "chesscom.user.v1",
+  "enum_type": [
+    {
+      "name": "SkillLevel",
+      "value": [
+        {
+          "name": "SKILL_LEVEL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILL_LEVEL_NEW",
+          "number": 1
+        },
+        {
+          "name": "SKILL_LEVEL_BEGINNER",
+          "number": 2
+        },
+        {
+          "name": "SKILL_LEVEL_INTERMEDIATE",
+          "number": 3
+        },
+        {
+          "name": "SKILL_LEVEL_ADVANCED",
+          "number": 4
+        },
+        {
+          "name": "SKILL_LEVEL_EXPERT",
+          "number": 5
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

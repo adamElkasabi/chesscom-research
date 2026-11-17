@@ -1,0 +1,13 @@
+// source: chesscom/payments/v1/request_location.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message RequestLocation {
+  oneof _zip_code {
+  string zip_code = 1;
+  }
+  oneof _region {
+  string region = 2;
+  }
+}

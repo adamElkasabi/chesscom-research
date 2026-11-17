@@ -1,0 +1,1213 @@
+{
+  "name": "chesscom/explanation_engine/v1/analysis_type.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "AnalysisType",
+      "value": [
+        {
+          "name": "ANALYSIS_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ANALYSIS_TYPE_STALEMATE",
+          "number": 1
+        },
+        {
+          "name": "ANALYSIS_TYPE_FIFTY_MOVE",
+          "number": 2
+        },
+        {
+          "name": "ANALYSIS_TYPE_REPETITION",
+          "number": 3
+        },
+        {
+          "name": "ANALYSIS_TYPE_INSUFFICIENT",
+          "number": 4
+        },
+        {
+          "name": "ANALYSIS_TYPE_DIRECT_SACRIFICE_CAPTURE",
+          "number": 5
+        },
+        {
+          "name": "ANALYSIS_TYPE_DIRECT_SACRIFICE_ENPRISE",
+          "number": 6
+        },
+        {
+          "name": "ANALYSIS_TYPE_IGNORES_THREAT",
+          "number": 7
+        },
+        {
+          "name": "ANALYSIS_TYPE_INDIRECT_SACRIFICE",
+          "number": 8
+        },
+        {
+          "name": "ANALYSIS_TYPE_CHECKMATE",
+          "number": 9
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_MATE",
+          "number": 11
+        },
+        {
+          "name": "ANALYSIS_TYPE_KEYMOMENT_GOOD_FASTER_MATE",
+          "number": 12
+        },
+        {
+          "name": "ANALYSIS_TYPE_SLOWER_MATE",
+          "number": 14
+        },
+        {
+          "name": "ANALYSIS_TYPE_STILL_MATE",
+          "number": 15
+        },
+        {
+          "name": "ANALYSIS_TYPE_MATE_THREAT",
+          "number": 16
+        },
+        {
+          "name": "ANALYSIS_TYPE_INTERESTING",
+          "number": 17
+        },
+        {
+          "name": "ANALYSIS_TYPE_FREE_PIECE",
+          "number": 18
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUASI_FREE_PIECE",
+          "number": 19
+        },
+        {
+          "name": "ANALYSIS_TYPE_DISCOVERED_ATTACK_CHECK",
+          "number": 20
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORK_WITH_MATE",
+          "number": 21
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORK",
+          "number": 22
+        },
+        {
+          "name": "ANALYSIS_TYPE_MULTI_ATTACK",
+          "number": 23
+        },
+        {
+          "name": "ANALYSIS_TYPE_SKEWER",
+          "number": 24
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLE_CHECK",
+          "number": 25
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURE_DEFENDS_EXPOSED_THREAT",
+          "number": 26
+        },
+        {
+          "name": "ANALYSIS_TYPE_DISCOVERED_ATTACK",
+          "number": 27
+        },
+        {
+          "name": "ANALYSIS_TYPE_PROMOTION",
+          "number": 28
+        },
+        {
+          "name": "ANALYSIS_TYPE_DISCOVERED_CHECK",
+          "number": 29
+        },
+        {
+          "name": "ANALYSIS_TYPE_ATTACKS_TRAPPED_PIECE",
+          "number": 30
+        },
+        {
+          "name": "ANALYSIS_TYPE_THREATENS_PINNED",
+          "number": 31
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_DOUBLED_CASTLE_PAWNS",
+          "number": 32
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_DOUBLED_PAWNS",
+          "number": 33
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_ISOLATED_PAWN",
+          "number": 34
+        },
+        {
+          "name": "ANALYSIS_TYPE_EQUAL_TRADE",
+          "number": 35
+        },
+        {
+          "name": "ANALYSIS_TYPE_IMMEDIATE_RECAPTURE",
+          "number": 36
+        },
+        {
+          "name": "ANALYSIS_TYPE_OBVIOUS_RECAPTURE",
+          "number": 37
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURES_CHECKER",
+          "number": 38
+        },
+        {
+          "name": "ANALYSIS_TYPE_COUNTER_THREAT",
+          "number": 39
+        },
+        {
+          "name": "ANALYSIS_TYPE_REMOVES_ATTACKER",
+          "number": 40
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKS_ATTACKER",
+          "number": 41
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNPINS_DEFENDER",
+          "number": 42
+        },
+        {
+          "name": "ANALYSIS_TYPE_PINS_ATTACKER",
+          "number": 43
+        },
+        {
+          "name": "ANALYSIS_TYPE_PIN",
+          "number": 44
+        },
+        {
+          "name": "ANALYSIS_TYPE_RELATIVE_PIN",
+          "number": 45
+        },
+        {
+          "name": "ANALYSIS_TYPE_PROTECTS_PIECE",
+          "number": 46
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEFENDS_PIECE",
+          "number": 47
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_LUFT",
+          "number": 48
+        },
+        {
+          "name": "ANALYSIS_TYPE_GAMBITS_PAWN",
+          "number": 49
+        },
+        {
+          "name": "ANALYSIS_TYPE_EXPLOITS_OVERLOADED_DEFENDER",
+          "number": 50
+        },
+        {
+          "name": "ANALYSIS_TYPE_STRIKES_AT_CENTER",
+          "number": 51
+        },
+        {
+          "name": "ANALYSIS_TYPE_MAKES_PASSED_PAWN",
+          "number": 52
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREVENTS_CASTLING",
+          "number": 53
+        },
+        {
+          "name": "ANALYSIS_TYPE_TAKES_OUTPOST",
+          "number": 54
+        },
+        {
+          "name": "ANALYSIS_TYPE_CHALLENGES_OPEN_FILE",
+          "number": 55
+        },
+        {
+          "name": "ANALYSIS_TYPE_TAKES_OPEN_FILE",
+          "number": 56
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_BEHIND_OWN_PAWN",
+          "number": 57
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_BEHIND_OPP_PAWN",
+          "number": 58
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKS_CHECKER",
+          "number": 59
+        },
+        {
+          "name": "ANALYSIS_TYPE_KICKS_CHECKER",
+          "number": 60
+        },
+        {
+          "name": "ANALYSIS_TYPE_EVADES_CHECK",
+          "number": 61
+        },
+        {
+          "name": "ANALYSIS_TYPE_KICKS",
+          "number": 62
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_ON_SEVENTH",
+          "number": 63
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_WITH_TEMPO",
+          "number": 64
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINS_TEMPO",
+          "number": 65
+        },
+        {
+          "name": "ANALYSIS_TYPE_OFFERS_TRADE",
+          "number": 66
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURE_THREAT",
+          "number": 67
+        },
+        {
+          "name": "ANALYSIS_TYPE_CONNECTS_ROOKS",
+          "number": 68
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLES_ROOKS",
+          "number": 69
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNDOUBLES_PAWNS",
+          "number": 71
+        },
+        {
+          "name": "ANALYSIS_TYPE_FIANCHETTO",
+          "number": 72
+        },
+        {
+          "name": "ANALYSIS_TYPE_CASTLES_SAME_SIDE",
+          "number": 73
+        },
+        {
+          "name": "ANALYSIS_TYPE_CASTLES_OPPOSITE_SIDE",
+          "number": 74
+        },
+        {
+          "name": "ANALYSIS_TYPE_CASTLES_KING_SIDE",
+          "number": 75
+        },
+        {
+          "name": "ANALYSIS_TYPE_CASTLES_QUEEN_SIDE",
+          "number": 76
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURES",
+          "number": 77
+        },
+        {
+          "name": "ANALYSIS_TYPE_ACTIVATES_KING",
+          "number": 78
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS",
+          "number": 79
+        },
+        {
+          "name": "ANALYSIS_TYPE_CENTRALIZES_KNIGHT",
+          "number": 80
+        },
+        {
+          "name": "ANALYSIS_TYPE_BISHOP_GAINS_SCOPE",
+          "number": 81
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREPARES_BISHOP_DEVELOPMENT",
+          "number": 82
+        },
+        {
+          "name": "ANALYSIS_TYPE_DELAYED_RECAPTURE",
+          "number": 83
+        },
+        {
+          "name": "ANALYSIS_TYPE_RETREAT",
+          "number": 84
+        },
+        {
+          "name": "ANALYSIS_TYPE_OBVIOUS_RETREAT",
+          "number": 85
+        },
+        {
+          "name": "ANALYSIS_TYPE_CRITICAL",
+          "number": 86
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINNING",
+          "number": 87
+        },
+        {
+          "name": "ANALYSIS_TYPE_COMEBACK",
+          "number": 88
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLUNDER_PUNISH",
+          "number": 89
+        },
+        {
+          "name": "ANALYSIS_TYPE_TAKES_OPPORTUNITY",
+          "number": 90
+        },
+        {
+          "name": "ANALYSIS_TYPE_NMP_MATE_IN_X_THREAT",
+          "number": 91
+        },
+        {
+          "name": "ANALYSIS_TYPE_NMP_MUTUAL_ZUGZWANG",
+          "number": 92
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURE_THREAT_FROM",
+          "number": 93
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURE_THREAT_TO",
+          "number": 94
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINS_MATERIAL",
+          "number": 95
+        },
+        {
+          "name": "ANALYSIS_TYPE_KEYMOMENT_BAD_FASTER_MATE",
+          "number": 96
+        },
+        {
+          "name": "ANALYSIS_TYPE_NO_LONGER_MATE",
+          "number": 97
+        },
+        {
+          "name": "ANALYSIS_TYPE_BAD_CAPTURE_CHOICE",
+          "number": 98
+        },
+        {
+          "name": "ANALYSIS_TYPE_LOSES_MATERIAL",
+          "number": 100
+        },
+        {
+          "name": "ANALYSIS_TYPE_LOSES_CASTLING_RIGHTS",
+          "number": 101
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLES_CASTLE_PAWNS",
+          "number": 102
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLES_PAWNS",
+          "number": 103
+        },
+        {
+          "name": "ANALYSIS_TYPE_ISOLATES_PAWN",
+          "number": 104
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_PASSIVE_PROTECTION",
+          "number": 105
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINNING_TO_BETTER",
+          "number": 106
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINNING_TO_EQUAL",
+          "number": 107
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINNING_TO_WORSE",
+          "number": 108
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINNING_TO_LOSING",
+          "number": 109
+        },
+        {
+          "name": "ANALYSIS_TYPE_BETTER_TO_EQUAL",
+          "number": 110
+        },
+        {
+          "name": "ANALYSIS_TYPE_BETTER_TO_WORSE",
+          "number": 111
+        },
+        {
+          "name": "ANALYSIS_TYPE_BETTER_TO_LOSING",
+          "number": 112
+        },
+        {
+          "name": "ANALYSIS_TYPE_EQUAL_TO_WORSE",
+          "number": 113
+        },
+        {
+          "name": "ANALYSIS_TYPE_EQUAL_TO_LOSING",
+          "number": 114
+        },
+        {
+          "name": "ANALYSIS_TYPE_WORSE_TO_LOSING",
+          "number": 115
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNDERPROMOTION",
+          "number": 116
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNDERPROMOTION_MATE",
+          "number": 117
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_REPETITION",
+          "number": 118
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNPINS_WITH_DEFENSE",
+          "number": 119
+        },
+        {
+          "name": "ANALYSIS_TYPE_DISCOVERED_CHECK_ATTACK",
+          "number": 120
+        },
+        {
+          "name": "ANALYSIS_TYPE_EXPLOITS_PINNED_DEFENDER",
+          "number": 121
+        },
+        {
+          "name": "ANALYSIS_TYPE_PINS_DEFENDER",
+          "number": 122
+        },
+        {
+          "name": "ANALYSIS_TYPE_MAINTAINED_MATE",
+          "number": 123
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_LOSES_CASTLING_RIGHTS",
+          "number": 124
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINS_MATERIAL_NOT_FREE",
+          "number": 125
+        },
+        {
+          "name": "ANALYSIS_TYPE_DIRECT_SACRIFICE_CAPTURE_MATE",
+          "number": 126
+        },
+        {
+          "name": "ANALYSIS_TYPE_DIRECT_SACRIFICE_ENPRISE_MATE",
+          "number": 127
+        },
+        {
+          "name": "ANALYSIS_TYPE_IGNORES_THREAT_MATE",
+          "number": 128
+        },
+        {
+          "name": "ANALYSIS_TYPE_INDIRECT_SACRIFICE_MATE",
+          "number": 129
+        },
+        {
+          "name": "ANALYSIS_TYPE_BACK_RANK_MATE",
+          "number": 130
+        },
+        {
+          "name": "ANALYSIS_TYPE_LOSES_MATERIAL_LOSING_POSITION",
+          "number": 131
+        },
+        {
+          "name": "ANALYSIS_TYPE_LOSES_MATERIAL_WINNING_POSITION",
+          "number": 132
+        },
+        {
+          "name": "ANALYSIS_TYPE_MISSES_MATERIAL_LOSING_POSITION",
+          "number": 133
+        },
+        {
+          "name": "ANALYSIS_TYPE_MISSES_MATERIAL_WINNING_POSITION",
+          "number": 134
+        },
+        {
+          "name": "ANALYSIS_TYPE_CHECKS_AWAY_DEFENDER",
+          "number": 135
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUNISH_MOVE_REFUTED_BY",
+          "number": 136
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUNISH_MOVE_FALLBACK",
+          "number": 137
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUNISH_MOVE_NONE",
+          "number": 138
+        },
+        {
+          "name": "ANALYSIS_TYPE_REMOVES_DEFENDER",
+          "number": 140
+        },
+        {
+          "name": "ANALYSIS_TYPE_REMOVES_MATE_DEFENDER",
+          "number": 141
+        },
+        {
+          "name": "ANALYSIS_TYPE_KICKS_DEFENDER",
+          "number": 142
+        },
+        {
+          "name": "ANALYSIS_TYPE_CAPTURES_MATE_DEFENDER",
+          "number": 143
+        },
+        {
+          "name": "ANALYSIS_TYPE_KICKS_MATE_DEFENDER",
+          "number": 144
+        },
+        {
+          "name": "ANALYSIS_TYPE_MIDDLEGAME_START_NO_CASTLE",
+          "number": 145
+        },
+        {
+          "name": "ANALYSIS_TYPE_TRADE_TO_SIMPLIFY",
+          "number": 146
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKADE",
+          "number": 147
+        },
+        {
+          "name": "ANALYSIS_TYPE_ATTACKS_PAWN_CHAIN",
+          "number": 148
+        },
+        {
+          "name": "ANALYSIS_TYPE_SUPPORTS_PAWN_CHAIN",
+          "number": 149
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_PAWN_CHAIN",
+          "number": 150
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNTRIPLES_PAWNS",
+          "number": 151
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_BACKWARD_PAWN",
+          "number": 152
+        },
+        {
+          "name": "ANALYSIS_TYPE_CURES_BACKWARD_PAWN",
+          "number": 153
+        },
+        {
+          "name": "ANALYSIS_TYPE_MOVES_PAWN_IN_FRONT_OF_KING",
+          "number": 154
+        },
+        {
+          "name": "ANALYSIS_TYPE_CURES_ISOLATED_PAWN",
+          "number": 155
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_PROTECTED_PASSED_PAWN",
+          "number": 156
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_TAKES_OUTPOST",
+          "number": 157
+        },
+        {
+          "name": "ANALYSIS_TYPE_ISOLATES_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 158
+        },
+        {
+          "name": "ANALYSIS_TYPE_BACKWARD_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 159
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLED_BACKWARD_PAWN",
+          "number": 160
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLED_BACKWARD_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 161
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLED_ISOLATED_PAWN",
+          "number": 162
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLED_ISOLATED_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 163
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_OPPONENT_PROTECTED_PASSED_PAWN",
+          "number": 164
+        },
+        {
+          "name": "ANALYSIS_TYPE_WEAKENED_CASTLED_KING",
+          "number": 165
+        },
+        {
+          "name": "ANALYSIS_TYPE_MOVES_SAME_PIECE_IN_OPENING",
+          "number": 166
+        },
+        {
+          "name": "ANALYSIS_TYPE_TRADE_TO_WON_PAWN_ENDGAME",
+          "number": 167
+        },
+        {
+          "name": "ANALYSIS_TYPE_TRADE_TO_LOST_PAWN_ENDGAME",
+          "number": 168
+        },
+        {
+          "name": "ANALYSIS_TYPE_GOOD_TRADE_TO_DRAWN_PAWN_ENDGAME",
+          "number": 169
+        },
+        {
+          "name": "ANALYSIS_TYPE_BAD_TRADE_TO_DRAWN_PAWN_ENDGAME",
+          "number": 170
+        },
+        {
+          "name": "ANALYSIS_TYPE_CHECKS_WITH_PIECE",
+          "number": 171
+        },
+        {
+          "name": "ANALYSIS_TYPE_KING_REACHES_SQUARE_OF_PAWN",
+          "number": 172
+        },
+        {
+          "name": "ANALYSIS_TYPE_EXCHANGE_SACRIFICE",
+          "number": 173
+        },
+        {
+          "name": "ANALYSIS_TYPE_DISCOVERED_ATTACK_CAPTURE",
+          "number": 174
+        },
+        {
+          "name": "ANALYSIS_TYPE_DISCOVERED_CHECK_CAPTURE",
+          "number": 175
+        },
+        {
+          "name": "ANALYSIS_TYPE_GAINS_QUEENSIDE_SPACE",
+          "number": 176
+        },
+        {
+          "name": "ANALYSIS_TYPE_GAINS_KINGSIDE_SPACE",
+          "number": 177
+        },
+        {
+          "name": "ANALYSIS_TYPE_GAINS_CENTRAL_SPACE",
+          "number": 178
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUSHES_PASSED_PAWN_MIDDLEGAME",
+          "number": 179
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUSHES_PASSED_PAWN_ENDGAME",
+          "number": 180
+        },
+        {
+          "name": "ANALYSIS_TYPE_LADDER_MATE",
+          "number": 181
+        },
+        {
+          "name": "ANALYSIS_TYPE_AVOIDS_TRADE",
+          "number": 182
+        },
+        {
+          "name": "ANALYSIS_TYPE_GAINS_DIRECT_OPPOSITION_TO_WIN",
+          "number": 183
+        },
+        {
+          "name": "ANALYSIS_TYPE_GAINS_DIRECT_OPPOSITION_TO_DRAW",
+          "number": 184
+        },
+        {
+          "name": "ANALYSIS_TYPE_MOVES_TO_PASSIVE_SQUARE",
+          "number": 185
+        },
+        {
+          "name": "ANALYSIS_TYPE_MANEUVERS_TO_ACTIVE_SQUARE",
+          "number": 186
+        },
+        {
+          "name": "ANALYSIS_TYPE_MOVES_TO_ACTIVE_SQUARE",
+          "number": 187
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUZZLE_HINT_FALLBACK",
+          "number": 188
+        },
+        {
+          "name": "ANALYSIS_TYPE_OPENS_UP_WEAK_KING",
+          "number": 189
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_LAST_PIECE",
+          "number": 190
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_CENTER",
+          "number": 191
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_RECAPTURE",
+          "number": 192
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_OPENING",
+          "number": 193
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_MIDDLEGAME",
+          "number": 194
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_STALEMATE",
+          "number": 195
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCES_DRAW_STALEMATE_IF_CAPTURED",
+          "number": 196
+        },
+        {
+          "name": "ANALYSIS_TYPE_STALEMATE_WHEN_WINNING_BLUNDERED",
+          "number": 197
+        },
+        {
+          "name": "ANALYSIS_TYPE_STALEMATE_WHEN_WINNING_FORCED",
+          "number": 198
+        },
+        {
+          "name": "ANALYSIS_TYPE_STALEMATE_WHEN_DRAWING",
+          "number": 199
+        },
+        {
+          "name": "ANALYSIS_TYPE_ATTACKS_PAWN_CHAIN_COVER",
+          "number": 200
+        },
+        {
+          "name": "ANALYSIS_TYPE_TAKES_OUTPOST_WITH_TEMPO",
+          "number": 201
+        },
+        {
+          "name": "ANALYSIS_TYPE_TRADES_PAWNS_TO_DEFEND",
+          "number": 202
+        },
+        {
+          "name": "ANALYSIS_TYPE_PAWN_STORM",
+          "number": 203
+        },
+        {
+          "name": "ANALYSIS_TYPE_LAUNCHES_PAWN_STORM",
+          "number": 204
+        },
+        {
+          "name": "ANALYSIS_TYPE_FIRST_MOVE_CENTER_PAWN",
+          "number": 205
+        },
+        {
+          "name": "ANALYSIS_TYPE_PILE_TRADE",
+          "number": 206
+        },
+        {
+          "name": "ANALYSIS_TYPE_OPENS_UP_SCOPE",
+          "number": 207
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCED",
+          "number": 208
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINS_TIME_OUT_WINNING_POSITION",
+          "number": 209
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINS_TIME_OUT_LOSING_POSITION",
+          "number": 210
+        },
+        {
+          "name": "ANALYSIS_TYPE_WINS_TIME_OUT_EQUAL_POSITION",
+          "number": 211
+        },
+        {
+          "name": "ANALYSIS_TYPE_ELIMINATES_OPPONENT_PASSED_PAWN",
+          "number": 212
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_KING_FLIGHT_SQUARE",
+          "number": 213
+        },
+        {
+          "name": "ANALYSIS_TYPE_VACATES_PUSHING_SQUARE",
+          "number": 214
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKADE_MOVING_PAWN",
+          "number": 215
+        },
+        {
+          "name": "ANALYSIS_TYPE_PICK_UP_PIECE_IN_TACTIC",
+          "number": 216
+        },
+        {
+          "name": "ANALYSIS_TYPE_CONTROLS_OPPONENT_PROMOTION_SQUARE",
+          "number": 217
+        },
+        {
+          "name": "ANALYSIS_TYPE_PROTECTS_PASSED_PAWN",
+          "number": 218
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKADES_OPPONENT_PROMOTION_SQUARE",
+          "number": 219
+        },
+        {
+          "name": "ANALYSIS_TYPE_CONTROLS_OPP_PUSHING_SQUARE",
+          "number": 220
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKADES_OPPONENT_PUSHING_SQUARE",
+          "number": 221
+        },
+        {
+          "name": "ANALYSIS_TYPE_GOOD_TRADE",
+          "number": 222
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKS_CENTRAL_PAWN",
+          "number": 223
+        },
+        {
+          "name": "ANALYSIS_TYPE_NEVER_PLAY_F3",
+          "number": 224
+        },
+        {
+          "name": "ANALYSIS_TYPE_IGNORES_ATTACKED_PIECE",
+          "number": 225
+        },
+        {
+          "name": "ANALYSIS_TYPE_DID_NOT_RECAPTURE",
+          "number": 226
+        },
+        {
+          "name": "ANALYSIS_TYPE_PUTS_PAWN_IN_CENTER",
+          "number": 227
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREPARES_CENTRAL_PUSH",
+          "number": 228
+        },
+        {
+          "name": "ANALYSIS_TYPE_MOVES_PINNED_PIECE",
+          "number": 229
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREVENTS_CENTRAL_BREAK",
+          "number": 230
+        },
+        {
+          "name": "ANALYSIS_TYPE_REMOVES_OWN_DEFENDER",
+          "number": 231
+        },
+        {
+          "name": "ANALYSIS_TYPE_RECAPTURES_TOWARD_CENTER",
+          "number": 232
+        },
+        {
+          "name": "ANALYSIS_TYPE_TOO_EARLY_QUEEN_DEVELOPMENT",
+          "number": 233
+        },
+        {
+          "name": "ANALYSIS_TYPE_CENTRAL_BREAK",
+          "number": 234
+        },
+        {
+          "name": "ANALYSIS_TYPE_HANGS_PIECE",
+          "number": 235
+        },
+        {
+          "name": "ANALYSIS_TYPE_FREE_PIECE_FROM_DISTANCE",
+          "number": 236
+        },
+        {
+          "name": "ANALYSIS_TYPE_ESCAPES_THREAT",
+          "number": 237
+        },
+        {
+          "name": "ANALYSIS_TYPE_TEMPO_BEFORE_FREE_PIECE",
+          "number": 238
+        },
+        {
+          "name": "ANALYSIS_TYPE_CREATES_BATTERY",
+          "number": 239
+        },
+        {
+          "name": "ANALYSIS_TYPE_TAKES_OPPOSITION",
+          "number": 240
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROYAL_FORK",
+          "number": 241
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREPARES_TO_CASTLE_KINGSIDE",
+          "number": 242
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREPARES_TO_CASTLE_QUEENSIDE",
+          "number": 243
+        },
+        {
+          "name": "ANALYSIS_TYPE_CONNECTS_ROOKS_7TH",
+          "number": 244
+        },
+        {
+          "name": "ANALYSIS_TYPE_IGNORES_ATTACKED_PAWN",
+          "number": 245
+        },
+        {
+          "name": "ANALYSIS_TYPE_DESPERADO",
+          "number": 246
+        },
+        {
+          "name": "ANALYSIS_TYPE_PSEUDO_FORK",
+          "number": 247
+        },
+        {
+          "name": "ANALYSIS_TYPE_PRESSURES_PINNED_PIECE",
+          "number": 248
+        },
+        {
+          "name": "ANALYSIS_TYPE_ENPASSANT",
+          "number": 249
+        },
+        {
+          "name": "ANALYSIS_TYPE_BREAKS_PIN",
+          "number": 250
+        },
+        {
+          "name": "ANALYSIS_TYPE_HANGS_PAWN",
+          "number": 251
+        },
+        {
+          "name": "ANALYSIS_TYPE_DEVELOPS_AND_PREVENTS_BREAK",
+          "number": 252
+        },
+        {
+          "name": "ANALYSIS_TYPE_KING_ROOK_MATE",
+          "number": 253
+        },
+        {
+          "name": "ANALYSIS_TYPE_ADDS_ATTACKER",
+          "number": 254
+        },
+        {
+          "name": "ANALYSIS_TYPE_KING_QUEEN_MATE",
+          "number": 255
+        },
+        {
+          "name": "ANALYSIS_TYPE_PREPARES_TO_DOUBLE_ROOKS",
+          "number": 256
+        },
+        {
+          "name": "ANALYSIS_TYPE_DRAW_BY_TIMEOUT_VS_INSUFFICIENT_MATERIAL",
+          "number": 257
+        },
+        {
+          "name": "ANALYSIS_TYPE_CONCLUDES_MINORS_FOR_ROOK_PAWN",
+          "number": 258
+        },
+        {
+          "name": "ANALYSIS_TYPE_LAUNCHES_MINORITY_ATTACK",
+          "number": 259
+        },
+        {
+          "name": "ANALYSIS_TYPE_FIXES_PAWN_STRUCTURE",
+          "number": 260
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_LIFT",
+          "number": 261
+        },
+        {
+          "name": "ANALYSIS_TYPE_MINORS_FOR_ROOK_PAWN",
+          "number": 262
+        },
+        {
+          "name": "ANALYSIS_TYPE_EDGE_PAWN_CHASES_KNIGHT",
+          "number": 263
+        },
+        {
+          "name": "ANALYSIS_TYPE_MOUSE_SLIP",
+          "number": 264
+        },
+        {
+          "name": "ANALYSIS_TYPE_CARLSBAD_KNIGHT",
+          "number": 265
+        },
+        {
+          "name": "ANALYSIS_TYPE_CONCLUDES_ROOK_PAWN_FOR_MINORS",
+          "number": 266
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_PAWN_FOR_MINORS",
+          "number": 267
+        },
+        {
+          "name": "ANALYSIS_TYPE_CASTLES_INTO_ATTACK",
+          "number": 268
+        },
+        {
+          "name": "ANALYSIS_TYPE_PILLSBURY_KNIGHT",
+          "number": 269
+        },
+        {
+          "name": "ANALYSIS_TYPE_EQUAL_TRADE_SEQUENCE",
+          "number": 270
+        },
+        {
+          "name": "ANALYSIS_TYPE_PASSIVE_RETREAT",
+          "number": 271
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORK_IF_CAPTURED",
+          "number": 272
+        },
+        {
+          "name": "ANALYSIS_TYPE_INFERIOR_TRADE",
+          "number": 273
+        },
+        {
+          "name": "ANALYSIS_TYPE_BAD_TRADE",
+          "number": 274
+        },
+        {
+          "name": "ANALYSIS_TYPE_BAD_TRADE_KNIGHT_FOR_BISHOP",
+          "number": 275
+        },
+        {
+          "name": "ANALYSIS_TYPE_BAD_TRADE_BISHOP_FOR_KNIGHT",
+          "number": 276
+        },
+        {
+          "name": "ANALYSIS_TYPE_FORCED_SACRIFICE_TO_STOP_MATE",
+          "number": 277
+        },
+        {
+          "name": "ANALYSIS_TYPE_DOUBLE_CHECK_MATE",
+          "number": 278
+        },
+        {
+          "name": "ANALYSIS_TYPE_THREEFOLD_REPETITION_WHEN_WINNING",
+          "number": 279
+        },
+        {
+          "name": "ANALYSIS_TYPE_ZWISCHENZUG_BEFORE_RECAPTURE",
+          "number": 280
+        },
+        {
+          "name": "ANALYSIS_TYPE_ZWISCHENZUG_BEFORE_THREAT_RESOLUTION",
+          "number": 281
+        },
+        {
+          "name": "ANALYSIS_TYPE_ATTRACTION",
+          "number": 282
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUEEN_FOR_TWO_ROOKS_GOOD",
+          "number": 283
+        },
+        {
+          "name": "ANALYSIS_TYPE_UNNECESSARY_PAWN_MOVE",
+          "number": 284
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUEEN_FOR_ROOK_MINOR_GOOD",
+          "number": 285
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUEEN_FOR_TWO_ROOKS_BAD",
+          "number": 286
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUEEN_FOR_ROOK_MINOR_BAD",
+          "number": 287
+        },
+        {
+          "name": "ANALYSIS_TYPE_DECOY",
+          "number": 288
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUIET_MOVE",
+          "number": 289
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_MINOR_FOR_QUEEN",
+          "number": 300
+        },
+        {
+          "name": "ANALYSIS_TYPE_TWO_ROOKS_FOR_QUEEN_GOOD",
+          "number": 301
+        },
+        {
+          "name": "ANALYSIS_TYPE_TWO_ROOKS_FOR_QUEEN_BAD",
+          "number": 302
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_FOR_MINORS_GOOD",
+          "number": 303
+        },
+        {
+          "name": "ANALYSIS_TYPE_ROOK_FOR_MINORS_BAD",
+          "number": 304
+        },
+        {
+          "name": "ANALYSIS_TYPE_KINGSIDE_ATTACK",
+          "number": 305
+        },
+        {
+          "name": "ANALYSIS_TYPE_QUEENSIDE_ATTACK",
+          "number": 306
+        },
+        {
+          "name": "ANALYSIS_TYPE_COMPLETES_DEVELOPMENT",
+          "number": 307
+        },
+        {
+          "name": "ANALYSIS_TYPE_ADVANCED_PAWN",
+          "number": 308
+        },
+        {
+          "name": "ANALYSIS_TYPE_TRADES_WHILE_DOWN_MATERIAL",
+          "number": 309
+        },
+        {
+          "name": "ANALYSIS_TYPE_MANEUVERS_KNIGHT",
+          "number": 310
+        },
+        {
+          "name": "ANALYSIS_TYPE_BLOCKS_BISHOP_DEVELOPMENT",
+          "number": 311
+        },
+        {
+          "name": "ANALYSIS_TYPE_RESTRICTS_KNIGHT",
+          "number": 312
+        },
+        {
+          "name": "ANALYSIS_TYPE_TAKES_SEMI_OPEN_FILE",
+          "number": 313
+        },
+        {
+          "name": "ANALYSIS_TYPE_ANTICIPATES_THREAT",
+          "number": 314
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

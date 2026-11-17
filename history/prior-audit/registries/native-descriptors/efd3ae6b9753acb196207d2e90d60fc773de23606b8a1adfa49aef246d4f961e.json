@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_board_events.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/board_events.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureBoardEventsRequest",
+      "field": [
+        {
+          "name": "require_prioritized_by_game_review",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureBoardEventsResponse",
+      "field": [
+        {
+          "name": "board_events",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEvent"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,83 @@
+{
+  "name": "chesscom/explanation_engine/v1/invalid_game.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InvalidGameUnparsable"
+    },
+    {
+      "name": "InvalidGameIllegalMove"
+    },
+    {
+      "name": "InvalidGameIllegalKingCount"
+    },
+    {
+      "name": "InvalidGamePawnOnBackRank"
+    },
+    {
+      "name": "InvalidGameKingsAdjacent"
+    },
+    {
+      "name": "InvalidGameKingCapturable"
+    },
+    {
+      "name": "InvalidGame",
+      "field": [
+        {
+          "name": "unparsable",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGameUnparsable",
+          "oneof_index": 0
+        },
+        {
+          "name": "illegal_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGameIllegalMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "illegal_king_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGameIllegalKingCount",
+          "oneof_index": 0
+        },
+        {
+          "name": "pawn_on_back_rank",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGamePawnOnBackRank",
+          "oneof_index": 0
+        },
+        {
+          "name": "kings_adjacent",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGameKingsAdjacent",
+          "oneof_index": 0
+        },
+        {
+          "name": "king_capturable",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGameKingCapturable",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "invalid_game"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

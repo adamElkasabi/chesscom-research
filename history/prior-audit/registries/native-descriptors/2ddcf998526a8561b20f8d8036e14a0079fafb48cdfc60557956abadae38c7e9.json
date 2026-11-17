@@ -1,0 +1,64 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_get_coach_emotion.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1/coach_emotion.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGetCoachEmotionRequest"
+    },
+    {
+      "name": "InternalFeatureGetCoachEmotionResponse",
+      "field": [
+        {
+          "name": "coach_emotion",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CoachEmotion"
+        },
+        {
+          "name": "debug_info",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CoachEmotionDebugInfo"
+        }
+      ]
+    },
+    {
+      "name": "CoachEmotionDebugInfo",
+      "field": [
+        {
+          "name": "is_key_moment",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "move_classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "move_precision",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "who_moved",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,20 @@
+// source: chesscom/explanation_engine/v1/feature_load_bot.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum BotContentFormat {
+  BOT_CONTENT_FORMAT_UNSPECIFIED = 0;
+  BOT_CONTENT_FORMAT_JSON = 1;
+  BOT_CONTENT_FORMAT_BASE64 = 2;
+}
+
+message LoadBotRequest {
+  optional string bot_name = 1;
+  optional .chesscom.explanation_engine.v1.BotContentFormat content_format = 2;
+  optional string bot_content = 3;
+  optional string artifact_id = 4;
+}
+
+message LoadBotResponse {
+}

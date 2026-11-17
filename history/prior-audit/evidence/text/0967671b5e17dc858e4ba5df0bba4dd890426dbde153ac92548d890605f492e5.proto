@@ -1,0 +1,14 @@
+// source: chesscom/explanation_engine/v1/feature_get_move_details.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetMoveDetailsRequest {
+  oneof _move_notation {
+  .chesscom.chess.v1.MoveNotation move_notation = 1;
+  }
+}
+
+message GetMoveDetailsResponse {
+  optional .chesscom.explanation_engine.v1.MoveDetails move = 1;
+}

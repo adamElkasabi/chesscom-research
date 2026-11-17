@@ -1,0 +1,35 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_generate_train_item_goal_speech.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/train/v1/train_challenge.proto",
+    "chesscom/explanation_engine/v1/speech.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GenerateTrainItemGoalSpeechRequest",
+      "field": [
+        {
+          "name": "challenge",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainChallenge"
+        }
+      ]
+    },
+    {
+      "name": "GenerateTrainItemGoalSpeechResponse",
+      "field": [
+        {
+          "name": "goal_speech",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

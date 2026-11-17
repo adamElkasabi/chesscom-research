@@ -1,0 +1,10 @@
+// source: chesscom/train/v1/train_outcome.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+enum TrainOutcome {
+  TRAIN_OUTCOME_UNSPECIFIED = 0;
+  TRAIN_OUTCOME_CORRECT = 1;
+  TRAIN_OUTCOME_INCORRECT = 2;
+}

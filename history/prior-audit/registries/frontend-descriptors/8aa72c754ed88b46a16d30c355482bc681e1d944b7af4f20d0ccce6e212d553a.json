@@ -1,0 +1,192 @@
+{
+  "name": "chesscom/proto_options/manifest/v1/annotations.proto",
+  "package": "chesscom.proto_options.manifest.v1",
+  "message_type": [
+    {
+      "name": "GnsServiceOptions",
+      "field": [
+        {
+          "name": "providers",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "cli_group",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "scope",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "skip",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "cli_alias",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "default_access",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.manifest.v1.GnsAccess"
+        }
+      ]
+    },
+    {
+      "name": "GnsMethodOptions",
+      "field": [
+        {
+          "name": "cli_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "scope",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "examples",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "skip",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "agent_tool",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.manifest.v1.GnsAgentTool"
+        },
+        {
+          "name": "access",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.manifest.v1.GnsAccess"
+        }
+      ]
+    },
+    {
+      "name": "GnsAgentTool",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GnsAccess",
+      "field": [
+        {
+          "name": "requires",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GnsFieldOptions",
+      "field": [
+        {
+          "name": "client_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.manifest.v1.ClientHash"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ClientHash",
+      "value": [
+        {
+          "name": "CLIENT_HASH_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CLIENT_HASH_EMAIL_SHA256",
+          "number": 1
+        },
+        {
+          "name": "CLIENT_HASH_PHONE_SHA256",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "gns_service",
+      "extendee": ".google.protobuf.ServiceOptions",
+      "number": 50100,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.manifest.v1.GnsServiceOptions",
+      "json_name": "gnsService"
+    },
+    {
+      "name": "gns_method",
+      "extendee": ".google.protobuf.MethodOptions",
+      "number": 50101,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.manifest.v1.GnsMethodOptions",
+      "json_name": "gnsMethod"
+    },
+    {
+      "name": "gns_field",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 50102,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.manifest.v1.GnsFieldOptions",
+      "json_name": "gnsField"
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/courses_common/v1/range.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "Range",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

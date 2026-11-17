@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_debug_info.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InternalFeatureDebugInfoRequest"
+    },
+    {
+      "name": "InternalFeatureDebugInfoResponse",
+      "field": [
+        {
+          "name": "active_feature_tasks",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "allocated_features",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_debug_info",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameDebugInfo"
+        }
+      ]
+    },
+    {
+      "name": "GameDebugInfo",
+      "field": [
+        {
+          "name": "game_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "tree_nodes",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

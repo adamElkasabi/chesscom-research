@@ -1,0 +1,28 @@
+{
+  "config": {
+    "id": "embedded-human-pvtrees",
+    "pvtrees": {
+      "request": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 300000,
+            "numLines": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {}
+          }
+        }
+      },
+      "pvtreeOptions": {
+        "rating": 100
+      }
+    }
+  },
+  "started": "2026-11-14T19:05:01.514Z",
+  "error": "trial timeout after 150s",
+  "warnings": []
+}

@@ -1,0 +1,28 @@
+{
+  "config": {
+    "id": "normalized-human-no-maia",
+    "timeoutSeconds": 90,
+    "evaluateGame": {
+      "search": {
+        "case": "gameReviewSearchSettings",
+        "value": {
+          "strength": 1
+        }
+      },
+      "torchSearchMode": {
+        "mode": {
+          "case": "human",
+          "value": {
+            "disableMaia": true
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  "started": "2026-11-14T19:13:54.503Z",
+  "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+  "warnings": []
+}

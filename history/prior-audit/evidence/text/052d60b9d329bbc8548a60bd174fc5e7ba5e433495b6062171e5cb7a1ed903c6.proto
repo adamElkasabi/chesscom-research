@@ -1,0 +1,11 @@
+// source: chesscom/api/v1/i18n.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Language {
+  oneof _native_name {
+  string native_name = 2;
+  }
+  optional string locale = 1;
+}

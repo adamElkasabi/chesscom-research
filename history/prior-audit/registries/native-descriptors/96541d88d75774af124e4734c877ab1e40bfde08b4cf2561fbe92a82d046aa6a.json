@@ -1,0 +1,523 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_review.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/api/v1/semantic_version.proto",
+    "chesscom/engine/v1/score.proto",
+    "chesscom/chess/v1/board_markings.proto",
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/game.proto",
+    "chesscom/chess/v1/game_phase.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto",
+    "chesscom/explanation_engine/v1/opening.proto",
+    "chesscom/explanation_engine/v1/speech.proto",
+    "chesscom/explanation_engine/v1/coach_emotion.proto",
+    "chesscom/explanation_engine/v1/takeaways.proto",
+    "chesscom/explanation_engine/v1/skills.proto",
+    "chesscom/stats/v1/advanced_stat_type.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameReview",
+      "field": [
+        {
+          "name": "eval_graph",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EvalGraph"
+        },
+        {
+          "name": "highlights",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Highlights"
+        },
+        {
+          "name": "review",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Review"
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameResult"
+        },
+        {
+          "name": "metadata",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Metadata"
+        },
+        {
+          "name": "opening",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Opening"
+        }
+      ]
+    },
+    {
+      "name": "Metadata",
+      "field": [
+        {
+          "name": "cee_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion"
+        },
+        {
+          "name": "annotated_pgn",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "EvalGraph",
+      "field": [
+        {
+          "name": "eval_graph_ticks",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EvalGraphTick"
+        }
+      ]
+    },
+    {
+      "name": "EvalGraphTick",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "move_score",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Score"
+        },
+        {
+          "name": "is_key_moment",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "Highlights",
+      "field": [
+        {
+          "name": "game_summary",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "accuracy",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Accuracy"
+        },
+        {
+          "name": "classification_tallies",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ClassificationTallies"
+        },
+        {
+          "name": "report_card",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewReportCard"
+        },
+        {
+          "name": "takeaways",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Takeaways"
+        },
+        {
+          "name": "game_summary_coach_emotion",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CoachEmotion"
+        },
+        {
+          "name": "game_summary_play",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ClassificationTallies",
+      "field": [
+        {
+          "name": "white",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ClassificationTally"
+        },
+        {
+          "name": "black",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ClassificationTally"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewReportCard",
+      "field": [
+        {
+          "name": "white",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewPlayerReportCard"
+        },
+        {
+          "name": "black",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewPlayerReportCard"
+        },
+        {
+          "name": "speech",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "Accuracy",
+      "field": [
+        {
+          "name": "white",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "black",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "ClassificationTally",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "tally",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewPlayerReportCard",
+      "field": [
+        {
+          "name": "reports_by_phase",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseReportCard"
+        },
+        {
+          "name": "reports_by_category",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AdvancedStatCategoryReportCard"
+        },
+        {
+          "name": "effective_rating",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_rating_v2",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_game_rating_v2"
+        }
+      ]
+    },
+    {
+      "name": "GamePhaseReportCard",
+      "field": [
+        {
+          "name": "accuracy_glyph",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "phase",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "accuracy",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "AdvancedStatCategoryReportCard",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "performance",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "new_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "rating_change",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "Review",
+      "field": [
+        {
+          "name": "game_summary",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "starting_fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "played_moves",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PlayedMove"
+        },
+        {
+          "name": "final_fen",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "PlayedMove",
+      "field": [
+        {
+          "name": "is_key_moment",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "played_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Move"
+        },
+        {
+          "name": "best_alternative_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Move",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "moved_color",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "coach_emotion",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CoachEmotion"
+        },
+        {
+          "name": "skills_earned",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SkillsPosition"
+        },
+        {
+          "name": "explain_line",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PlayedMove"
+        },
+        {
+          "name": "best_next_move",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_best_alternative_move"
+        },
+        {
+          "name": "_best_next_move"
+        }
+      ]
+    },
+    {
+      "name": "Move",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "move_classification",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "score",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Score"
+        },
+        {
+          "name": "speech",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "show_moves_buttons",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ShowMoves"
+        },
+        {
+          "name": "board_markings",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.BoardMarkings"
+        }
+      ]
+    },
+    {
+      "name": "ShowMoves",
+      "field": [
+        {
+          "name": "moves_to_show",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "show_text",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "hide_text",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

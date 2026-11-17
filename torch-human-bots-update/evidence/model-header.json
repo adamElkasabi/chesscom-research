@@ -1,0 +1,61 @@
+{
+  "model_sha256": "1f78db3d3184550ff56db7a0f14b72910b039a894dcc97ff8ef7bb8915f26423",
+  "bytes": 11946339,
+  "first12_hex": "6a736f6eb401000000000000",
+  "metadata_start": 12,
+  "metadata_end": 448,
+  "metadata": {
+    "arch": "charm-small",
+    "elo_range": {
+      "max": 2500,
+      "min": 100,
+      "step": 100
+    },
+    "head_inventory": {
+      "fc_1": {
+        "in": 512,
+        "out": 1880
+      },
+      "fc_2": {
+        "in": 512,
+        "out": 2021
+      },
+      "fc_3": {
+        "in": 128,
+        "out": 3
+      },
+      "fc_3_1": {
+        "in": 512,
+        "out": 128
+      },
+      "fc_rank": {
+        "in": 512,
+        "out": 6
+      },
+      "fc_strength": {
+        "in": 512,
+        "out": 5
+      },
+      "fc_strength_rating_sensitive": {
+        "in": 512,
+        "out": 5
+      },
+      "fc_time_taken": {
+        "in": 512,
+        "out": 4
+      }
+    },
+    "move_strength_ep_splits": [
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "time_taken_seconds_splits": [
+      1.0,
+      2.5,
+      5.0
+    ]
+  },
+  "qualification": "Observed embedded JSON,not inferred architecture from filename. Binary tensor layout still under investigation."
+}

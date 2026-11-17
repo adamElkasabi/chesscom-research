@@ -1,0 +1,9 @@
+// source: chesscom/courses/v1/nag.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message Nag {
+  optional string type = 1;
+  optional int32 nag_id = 2;
+}

@@ -1,0 +1,141 @@
+{
+  "name": "chesscom/analysis/v1/move_classifications.proto",
+  "package": "chesscom.analysis.v1",
+  "enum_type": [
+    {
+      "name": "MoveClassification",
+      "value": [
+        {
+          "name": "MOVE_CLASSIFICATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOOK",
+          "number": 1
+        },
+        {
+          "name": "BRILLIANT",
+          "number": 2
+        },
+        {
+          "name": "GREATFIND",
+          "number": 3
+        },
+        {
+          "name": "BEST",
+          "number": 4
+        },
+        {
+          "name": "EXCELLENT",
+          "number": 5
+        },
+        {
+          "name": "GOOD",
+          "number": 6
+        },
+        {
+          "name": "INACCURACY",
+          "number": 7
+        },
+        {
+          "name": "INACCURACY_OPENING_PHASE",
+          "number": 8
+        },
+        {
+          "name": "INACCURACY_MID_GAME_PHASE",
+          "number": 9
+        },
+        {
+          "name": "INACCURACY_END_GAME_PHASE",
+          "number": 10
+        },
+        {
+          "name": "MISTAKE",
+          "number": 11
+        },
+        {
+          "name": "MISTAKE_OPENING_PHASE",
+          "number": 12
+        },
+        {
+          "name": "MISTAKE_MID_GAME_PHASE",
+          "number": 13
+        },
+        {
+          "name": "MISTAKE_END_GAME_PHASE",
+          "number": 14
+        },
+        {
+          "name": "BLUNDER",
+          "number": 15
+        },
+        {
+          "name": "BLUNDER_OPENING_PHASE",
+          "number": 16
+        },
+        {
+          "name": "BLUNDER_MID_GAME_PHASE",
+          "number": 17
+        },
+        {
+          "name": "BLUNDER_END_GAME_PHASE",
+          "number": 18
+        },
+        {
+          "name": "FORCED",
+          "number": 19
+        },
+        {
+          "name": "MISS",
+          "number": 20
+        },
+        {
+          "name": "MISS_OPENING_PHASE",
+          "number": 21
+        },
+        {
+          "name": "MISS_MID_GAME_PHASE",
+          "number": 22
+        },
+        {
+          "name": "MISS_END_GAME_PHASE",
+          "number": 23
+        },
+        {
+          "name": "MISSED_MATE",
+          "number": 24
+        },
+        {
+          "name": "FASTER_MATE",
+          "number": 25
+        },
+        {
+          "name": "WINNING_TO_LOSING",
+          "number": 26
+        },
+        {
+          "name": "CRITICAL",
+          "number": 27
+        },
+        {
+          "name": "MISSEDWIN",
+          "number": 28
+        },
+        {
+          "name": "MISSED_WIN_OPENING_PHASE",
+          "number": 29
+        },
+        {
+          "name": "MISSED_WIN_MID_GAME_PHASE",
+          "number": 30
+        },
+        {
+          "name": "MISSED_WIN_END_GAME_PHASE",
+          "number": 31
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

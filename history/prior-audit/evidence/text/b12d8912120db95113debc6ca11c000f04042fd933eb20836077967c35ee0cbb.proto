@@ -1,0 +1,12 @@
+// source: chesscom/train/v1/train_endgame_theme.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+enum TrainEndgameTheme {
+  TRAIN_ENDGAME_THEME_UNSPECIFIED = 0;
+  TRAIN_ENDGAME_THEME_QUEEN = 1;
+  TRAIN_ENDGAME_THEME_ROOK_AND_PAWN = 2;
+  TRAIN_ENDGAME_THEME_KING_AND_PAWN = 3;
+  TRAIN_ENDGAME_THEME_OTHER = 4;
+}

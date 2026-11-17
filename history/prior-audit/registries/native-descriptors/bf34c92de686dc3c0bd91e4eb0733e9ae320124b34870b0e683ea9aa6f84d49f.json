@@ -1,0 +1,49 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_opening.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/opening.proto",
+    "chesscom/explanation_engine/v1/language.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetOpeningRequest",
+      "field": [
+        {
+          "name": "locale",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Locale",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_locale"
+        }
+      ]
+    },
+    {
+      "name": "GetOpeningResponse",
+      "field": [
+        {
+          "name": "opening",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Opening",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_opening"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

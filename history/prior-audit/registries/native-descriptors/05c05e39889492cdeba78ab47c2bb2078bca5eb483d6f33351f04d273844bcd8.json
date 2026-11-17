@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_enable_game_mocks.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InternalFeatureEnableGameMocksRequest",
+      "field": [
+        {
+          "name": "mode",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.InternalFeatureEnableGameMocksRequest.Mode"
+        },
+        {
+          "name": "mock_dir",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Mode",
+          "value": [
+            {
+              "name": "MODE_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "MODE_DISABLED",
+              "number": 1
+            },
+            {
+              "name": "MODE_LOOKUP_ONLY",
+              "number": 2
+            },
+            {
+              "name": "MODE_GENERATE",
+              "number": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureEnableGameMocksResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

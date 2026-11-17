@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/explanation_engine/v1/speech_debug_info.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SpeechDebugInfo",
+      "field": [
+        {
+          "name": "source",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "botchat_triggers",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "board_events",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "selected_keys",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

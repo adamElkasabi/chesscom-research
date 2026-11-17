@@ -1,0 +1,10 @@
+// source: chesscom/payments/v1/group_membership_type.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+enum GroupMembershipType {
+  GROUP_MEMBERSHIP_TYPE_UNSPECIFIED = 0;
+  GROUP_MEMBERSHIP_TYPE_PRIMARY = 1;
+  GROUP_MEMBERSHIP_TYPE_SECONDARY = 2;
+}

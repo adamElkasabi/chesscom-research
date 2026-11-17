@@ -1,0 +1,12 @@
+// source: chesscom/train/v1/train_challenge_bucket.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+enum TrainChallengeBucket {
+  TRAIN_CHALLENGE_BUCKET_UNSPECIFIED = 0;
+  TRAIN_CHALLENGE_BUCKET_FREE_PIECES = 1;
+  TRAIN_CHALLENGE_BUCKET_TACTICS = 2;
+  TRAIN_CHALLENGE_BUCKET_LEADS_TO = 3;
+  TRAIN_CHALLENGE_BUCKET_BRILLIANT = 4;
+}

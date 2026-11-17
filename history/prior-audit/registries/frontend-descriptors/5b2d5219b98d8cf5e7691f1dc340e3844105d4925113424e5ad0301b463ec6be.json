@@ -1,0 +1,39 @@
+{
+  "name": "chesscom/courses/v1/course_position.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CoursePosition",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "highlights",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseDrawingSquare"
+        },
+        {
+          "name": "arrows",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseDrawingArrow"
+        },
+        {
+          "name": "nags",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.Nag"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

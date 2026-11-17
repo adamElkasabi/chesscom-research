@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/user_properties/v1/authenticated_properties_service.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "GetPropertiesForAuthenticatedUserRequest",
+      "field": [
+        {
+          "name": "properties",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.Definitions"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetPropertiesForAuthenticatedUserResponse",
+      "field": [
+        {
+          "name": "user_properties",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PropertiesByUser"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "AuthenticatedPropertiesService",
+      "method": [
+        {
+          "name": "GetPropertiesForAuthenticatedUser",
+          "input_type": ".chesscom.user_properties.v1.GetPropertiesForAuthenticatedUserRequest",
+          "output_type": ".chesscom.user_properties.v1.GetPropertiesForAuthenticatedUserResponse",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

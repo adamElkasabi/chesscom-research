@@ -1,0 +1,7 @@
+// source: chesscom/ceac/v2/heartbeat.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message Heartbeat {
+}

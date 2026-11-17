@@ -1,0 +1,12 @@
+// source: chesscom/courses_common/v1/course_coach_avatar.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum CourseCoachAvatar {
+  COURSE_COACH_AVATAR_UNSPECIFIED = 0;
+  COURSE_COACH_AVATAR_DAVID = 1;
+  COURSE_COACH_AVATAR_MAE = 2;
+  COURSE_COACH_AVATAR_DANTE = 3;
+  COURSE_COACH_AVATAR_NADIA = 4;
+}

@@ -1,0 +1,9 @@
+
+6chesscom/explanation_engine/v1alpha/board_events.proto#chesscom.explanation_engine.v1alpha7chesscom/explanation_engine/v1alpha/analysis_type.proto6chesscom/explanation_engine/v1alpha/circumstance.protochesscom/chess/v1/arrow.protochesscom/chess/v1/piece.proto"Ø
+
+BoardEventG
+circumstance (21.chesscom.explanation_engine.v1alpha.CircumstanceM
+child_circumstance (21.chesscom.explanation_engine.v1alpha.CircumstanceH
+analysis_type (21.chesscom.explanation_engine.v1alpha.AnalysisType?
+arrows_and_squares (2#.chesscom.chess.v1.ArrowsAndSquares'
+piece (2.chesscom.chess.v1.Piecebproto3

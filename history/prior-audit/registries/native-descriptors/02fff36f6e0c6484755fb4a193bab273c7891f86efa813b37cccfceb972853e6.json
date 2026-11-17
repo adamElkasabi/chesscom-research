@@ -1,0 +1,57 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_board_event_details.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/board_event_details.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureBoardEventDetailsRequest",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 0
+        },
+        {
+          "name": "square",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square",
+          "oneof_index": 0
+        },
+        {
+          "name": "piece_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "filter"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureBoardEventDetailsResponse",
+      "field": [
+        {
+          "name": "board_event_details",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventDetails"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

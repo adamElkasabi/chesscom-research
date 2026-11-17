@@ -1,0 +1,179 @@
+{
+  "name": "chesscom/ceac/v2/run_search.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "RunSearchRequest",
+      "field": [
+        {
+          "name": "new_game_req",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.NewGameRequest"
+        },
+        {
+          "name": "run_search_req",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RunSearchRequest"
+        },
+        {
+          "name": "engine",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Engine"
+        },
+        {
+          "name": "request_metadata",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RequestMetadata"
+        },
+        {
+          "name": "request_options",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RequestOptions"
+        },
+        {
+          "name": "key_position_search",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "RunSearchResponse",
+      "field": [
+        {
+          "name": "progress",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RunSearchResponseProgress",
+          "oneof_index": 0
+        },
+        {
+          "name": "success",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RunSearchResponseSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RunSearchResponseFailure",
+          "oneof_index": 0
+        },
+        {
+          "name": "heartbeat",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.Heartbeat",
+          "oneof_index": 0
+        },
+        {
+          "name": "waiting_for_capacity",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.WaitingForCapacity",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "RunSearchResponseSuccess",
+      "field": [
+        {
+          "name": "run_search",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RunSearchResponse"
+        },
+        {
+          "name": "position_search_key",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_position_search_key"
+        }
+      ]
+    },
+    {
+      "name": "RunSearchResponseProgress",
+      "field": [
+        {
+          "name": "run_search",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RunSearchResponse"
+        }
+      ]
+    },
+    {
+      "name": "RunSearchResponseFailure",
+      "field": [
+        {
+          "name": "reason",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invalid_game_error",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.InvalidGameError",
+          "oneof_index": 0
+        },
+        {
+          "name": "general_error",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GeneralError",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure_error",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.FailureError"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

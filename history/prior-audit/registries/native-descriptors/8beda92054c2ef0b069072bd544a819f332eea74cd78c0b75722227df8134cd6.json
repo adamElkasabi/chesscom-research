@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/stats/v1/brilliant_move_type.proto",
+  "package": "chesscom.stats.v1",
+  "enum_type": [
+    {
+      "name": "BrilliantMoveType",
+      "value": [
+        {
+          "name": "BRILLIANT_MOVE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BRILLIANT_MOVE_TYPE_QUEEN_SACRIFICE",
+          "number": 1
+        },
+        {
+          "name": "BRILLIANT_MOVE_TYPE_ROOK_SACRIFICE",
+          "number": 2
+        },
+        {
+          "name": "BRILLIANT_MOVE_TYPE_BISHOP_SACRIFICE",
+          "number": 3
+        },
+        {
+          "name": "BRILLIANT_MOVE_TYPE_KNIGHT_SACRIFICE",
+          "number": 4
+        },
+        {
+          "name": "BRILLIANT_MOVE_TYPE_UNDERPROMOTION",
+          "number": 5
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

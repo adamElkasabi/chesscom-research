@@ -1,0 +1,54 @@
+{
+  "name": "chesscom/payments/v1/discount.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "Discount",
+      "field": [
+        {
+          "name": "discount_amount",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "discount_amount_with_taxes",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "incentive_offer_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "offer_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_incentive_offer_id"
+        },
+        {
+          "name": "_offer_id"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

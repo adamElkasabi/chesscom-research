@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/computer/v2/game_mode.proto",
+  "package": "chesscom.computer.v2",
+  "enum_type": [
+    {
+      "name": "GameMode",
+      "value": [
+        {
+          "name": "GAME_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_MODE_CHALLENGE",
+          "number": 1
+        },
+        {
+          "name": "GAME_MODE_FRIENDLY",
+          "number": 2
+        },
+        {
+          "name": "GAME_MODE_ASSISTED",
+          "number": 3
+        },
+        {
+          "name": "GAME_MODE_CUSTOM",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

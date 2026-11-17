@@ -1,0 +1,33 @@
+// source: chesscom/user_profile/v1/social_service.proto
+// syntax: proto3
+
+package chesscom.user_profile.v1;
+
+message ListFollowedUsersRequest {
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 1;
+  }
+  oneof _requester_uuid {
+  string requester_uuid = 2;
+  }
+}
+
+message ListFollowedUsersResponse {
+  repeated .chesscom.user_profile.v1.FollowedUser followed_users = 1;
+  optional .chesscom.api.v1.ResponsePagination pagination = 2;
+}
+
+message DoesUserFollowOtherUsersRequest {
+  oneof _user_uuid {
+  string user_uuid = 1;
+  }
+  repeated string target_user_uuids = 2;
+}
+
+message DoesUserFollowOtherUsersResponse {
+  repeated .chesscom.user_profile.v1.DoesUserFollowOtherUsersResponse.FollowStatusEntry follow_status = 1;
+  message FollowStatusEntry {
+  optional string key = 1;
+  optional bool value = 2;
+  }
+}

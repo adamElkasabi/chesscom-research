@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/train/v1/train_item_type.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainItemType",
+      "value": [
+        {
+          "name": "TRAIN_ITEM_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_ITEM_TYPE_RETRY_MISS",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_ITEM_TYPE_RETRY_BLUNDER",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_ITEM_TYPE_RETRY_OPENING_MISTAKE",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_ITEM_TYPE_RETRY_STRATEGY_MISTAKE",
+          "number": 4
+        },
+        {
+          "name": "TRAIN_ITEM_TYPE_RETRY_ENDGAME_MISTAKE",
+          "number": 5
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

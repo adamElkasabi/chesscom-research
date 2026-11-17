@@ -1,0 +1,1 @@
+{"id": "probe-normal", "preSearch": {"search": {"case": "searchParameters", "value": {"nodesLimit": 1000, "numLines": 1}}}, "rootOnly": true, "searchOnly": true, "timeoutSeconds": 20}

@@ -1,0 +1,38 @@
+{
+  "name": "chesscom/courses/v1/ownership_type.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "OwnershipType",
+      "value": [
+        {
+          "name": "OWNERSHIP_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "OWNERSHIP_TYPE_ACQUIRED",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "OWNERSHIP_TYPE_PREVIEW",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "OWNERSHIP_TYPE_CLAIMED",
+          "number": 3
+        },
+        {
+          "name": "OWNERSHIP_TYPE_PURCHASED",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

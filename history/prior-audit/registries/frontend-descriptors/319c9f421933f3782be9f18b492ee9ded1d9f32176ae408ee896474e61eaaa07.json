@@ -1,0 +1,111 @@
+{
+  "name": "chesscom/stats/v1/advanced_stat_percentile.proto",
+  "package": "chesscom.stats.v1",
+  "message_type": [
+    {
+      "name": "AdvancedStatPercentile",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "games_played",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "ewma_12_percentile",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "ewma_50_percentile",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "requested_game_percentile",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_ewma_12_percentile"
+        },
+        {
+          "name": "_ewma_50_percentile"
+        },
+        {
+          "name": "_requested_game_percentile"
+        }
+      ]
+    },
+    {
+      "name": "AdvancedStatCategoryStats",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "percentile",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "old_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "new_rating",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AdvancedStatCategoryGamePerformance",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "percentile",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

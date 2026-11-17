@@ -1,0 +1,90 @@
+{
+  "name": "chesscom/user_properties/v1/properties_puzzle_rush.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PuzzleRushProperty",
+      "field": [
+        {
+          "name": "number_of_puzzle_rush_games",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_puzzle_rush_score",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_puzzle_rush_event_date",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1042,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PuzzleRushPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_number_of_puzzle_rush_games"
+        },
+        {
+          "name": "_best_puzzle_rush_score"
+        },
+        {
+          "name": "_last_puzzle_rush_event_date"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PuzzleRushPropertyDefinition",
+      "value": [
+        {
+          "name": "PUZZLE_RUSH_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_RUSH_NUMBER_OF_PUZZLE_RUSH_GAMES",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "PUZZLE_RUSH_BEST_PUZZLE_RUSH_SCORE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "PUZZLE_RUSH_LAST_PUZZLE_RUSH_EVENT_DATE",
+          "number": 3,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

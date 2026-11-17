@@ -1,0 +1,403 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_coach_chat.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetCoachChatRequest",
+      "options": {}
+    },
+    {
+      "name": "GetCoachChatResponse",
+      "field": [
+        {
+          "name": "debug_info",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChatDebugInfo",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "speech",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "retry_mistake",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RetryMistake",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "flip_board_mistake",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.FlipBoardMistake",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "skills_earned",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SkillsPosition"
+        },
+        {
+          "name": "coach_emotion",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CoachEmotion",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "retry_miss",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RetryMiss",
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_debug_info"
+        },
+        {
+          "name": "_speech"
+        },
+        {
+          "name": "_retry_mistake"
+        },
+        {
+          "name": "_flip_board_mistake"
+        },
+        {
+          "name": "_coach_emotion"
+        },
+        {
+          "name": "_retry_miss"
+        }
+      ]
+    },
+    {
+      "name": "RetryMistake",
+      "field": [
+        {
+          "name": "speech",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "arrows_and_squares",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArrowsAndSquares"
+        },
+        {
+          "name": "keep_playing_choice",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        },
+        {
+          "name": "retry_choice",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        },
+        {
+          "name": "ply_until_cooldown",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "board_event",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FlipBoardMistake",
+      "field": [
+        {
+          "name": "refutation_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "arrows_and_squares",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArrowsAndSquares"
+        },
+        {
+          "name": "board_event",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "offer_speech",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "switch_sides_choice",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        },
+        {
+          "name": "decline_choice",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        },
+        {
+          "name": "success_speech",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "failure_speech",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "failure_almost_speech",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "continue_after_flip_choice",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RetryMiss",
+      "field": [
+        {
+          "name": "speech",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "arrows_and_squares",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArrowsAndSquares"
+        },
+        {
+          "name": "keep_playing_choice",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        },
+        {
+          "name": "retry_choice",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachChoice"
+        },
+        {
+          "name": "board_event",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "attempt_speech",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "failure_speech",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "success_speech",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "success_moves",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CoachChoice",
+      "field": [
+        {
+          "name": "button_text",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "response_speech",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "response_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_response_move"
+        }
+      ]
+    },
+    {
+      "name": "CoachChatDebugInfo",
+      "field": [
+        {
+          "name": "speech_debug_info",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SpeechDebugInfo"
+        },
+        {
+          "name": "retry_mistake_debug_info",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RetryMistakeDebugInfo"
+        },
+        {
+          "name": "used_botchat_triggers",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "used_board_events",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "flip_board_mistake_debug_info",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.FlipBoardMistakeDebugInfo"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RetryMistakeDebugInfo",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "player_is_winning",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "ply_until_cooldown",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FlipBoardMistakeDebugInfo",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "ply_until_flip_board_cooldown",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

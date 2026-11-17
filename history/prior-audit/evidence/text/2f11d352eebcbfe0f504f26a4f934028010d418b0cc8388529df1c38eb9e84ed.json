@@ -1,0 +1,82 @@
+[
+  {
+    "id": "followup-hash64-repeat",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 64
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-hash32-softfalse",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 32,
+      "UseSoftNodes": false
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-hash32-softtrue",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 32,
+      "UseSoftNodes": true
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-hash64-softfalse",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 64,
+      "UseSoftNodes": false
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-hash64-softtrue",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 64,
+      "UseSoftNodes": true
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-hash128-softfalse",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 128,
+      "UseSoftNodes": false
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-hash128-softtrue",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 128,
+      "UseSoftNodes": true
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-soft-factor50",
+    "uciAfter": {
+      "Normalize": false,
+      "UseSoftNodes": true,
+      "HardSoftNodeFactor": 50
+    },
+    "saveReview": true
+  },
+  {
+    "id": "followup-soft-factor200",
+    "uciAfter": {
+      "Normalize": false,
+      "UseSoftNodes": true,
+      "HardSoftNodeFactor": 200
+    },
+    "saveReview": true
+  }
+]

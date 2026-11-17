@@ -1,0 +1,12 @@
+// source: chesscom/user_properties/v1/authenticated_properties_service.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+message GetPropertiesForAuthenticatedUserRequest {
+  repeated .chesscom.user_properties.v1.Definitions properties = 1;
+}
+
+message GetPropertiesForAuthenticatedUserResponse {
+  optional .chesscom.user_properties.v1.PropertiesByUser user_properties = 1;
+}

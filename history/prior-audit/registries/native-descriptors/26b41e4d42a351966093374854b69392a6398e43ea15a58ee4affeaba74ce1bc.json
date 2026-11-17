@@ -1,0 +1,546 @@
+{
+  "name": "chesscom/explanation_engine/v1/features.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "FeatureId",
+      "value": [
+        {
+          "name": "FEATURE_ID_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FEATURE_ID_ADD_EVALUATIONS",
+          "number": 1
+        },
+        {
+          "name": "FEATURE_ID_CEE_VERSION",
+          "number": 2
+        },
+        {
+          "name": "FEATURE_ID_EXPECTED_POINTS",
+          "number": 3
+        },
+        {
+          "name": "FEATURE_ID_GAME_ANALYSIS",
+          "number": 4
+        },
+        {
+          "name": "FEATURE_ID_GAME_PHASE_TRANSITIONS",
+          "number": 5
+        },
+        {
+          "name": "FEATURE_ID_GAME_POINT_INFO",
+          "number": 6
+        },
+        {
+          "name": "FEATURE_ID_GET_GAME_RESULT",
+          "number": 7
+        },
+        {
+          "name": "FEATURE_ID_GET_BOT_CHAT",
+          "number": 8
+        },
+        {
+          "name": "FEATURE_ID_GET_BOT_MOVE",
+          "number": 9
+        },
+        {
+          "name": "FEATURE_ID_GET_COMPRESSED_POSITION",
+          "number": 10
+        },
+        {
+          "name": "FEATURE_ID_GET_ERGONOMIC_GAME",
+          "number": 11
+        },
+        {
+          "name": "FEATURE_ID_GET_ERGONOMIC_POSITION",
+          "number": 12
+        },
+        {
+          "name": "FEATURE_ID_GET_FEN",
+          "number": 13
+        },
+        {
+          "name": "FEATURE_ID_GET_GAME_STATE",
+          "number": 14
+        },
+        {
+          "name": "FEATURE_ID_GET_MOVE_DETAILS",
+          "number": 15
+        },
+        {
+          "name": "FEATURE_ID_GET_OPENING",
+          "number": 16
+        },
+        {
+          "name": "FEATURE_ID_GET_PGN",
+          "number": 17
+        },
+        {
+          "name": "FEATURE_ID_GET_PUNISH_MOVE",
+          "number": 18
+        },
+        {
+          "name": "FEATURE_ID_LEGAL_MOVES",
+          "number": 19
+        },
+        {
+          "name": "FEATURE_ID_LEGAL_PREMOVES",
+          "number": 20
+        },
+        {
+          "name": "FEATURE_ID_LOAD_BOT",
+          "number": 21
+        },
+        {
+          "name": "FEATURE_ID_LOAD_GAME_STATE",
+          "number": 22
+        },
+        {
+          "name": "FEATURE_ID_LUA_COMPLETION",
+          "number": 23
+        },
+        {
+          "name": "FEATURE_ID_MAKE_MOVES",
+          "number": 24
+        },
+        {
+          "name": "FEATURE_ID_MOVE_CLASSIFICATION",
+          "number": 25
+        },
+        {
+          "name": "FEATURE_ID_NEW_GAME",
+          "number": 26
+        },
+        {
+          "name": "FEATURE_ID_RUN_LUA",
+          "number": 28
+        },
+        {
+          "name": "FEATURE_ID_RUN_SEARCH",
+          "number": 29
+        },
+        {
+          "name": "FEATURE_ID_SET_GAME_RESULT",
+          "number": 30
+        },
+        {
+          "name": "FEATURE_ID_SIMPLE_THREATS",
+          "number": 31
+        },
+        {
+          "name": "FEATURE_ID_VALIDATE_FEN",
+          "number": 32
+        },
+        {
+          "name": "FEATURE_ID_CEE_INTERNAL_COMPONENTS",
+          "number": 33
+        },
+        {
+          "name": "FEATURE_ID_GAME_TREE",
+          "number": 34
+        },
+        {
+          "name": "FEATURE_ID_INIT_ENGINE_POOL",
+          "number": 35
+        },
+        {
+          "name": "FEATURE_ID_SET_INTERNAL_ENGINE",
+          "number": 36
+        },
+        {
+          "name": "FEATURE_ID_ADD_EXTERNAL_ENGINE",
+          "number": 37
+        },
+        {
+          "name": "FEATURE_ID_REMOVE_EXTERNAL_ENGINE",
+          "number": 38
+        },
+        {
+          "name": "FEATURE_ID_GET_SAN_MOVES",
+          "number": 39
+        },
+        {
+          "name": "FEATURE_ID_LOAD_COACH",
+          "number": 40
+        },
+        {
+          "name": "FEATURE_ID_SET_COACH",
+          "number": 41
+        },
+        {
+          "name": "FEATURE_ID_GAME_REVIEW",
+          "number": 42
+        },
+        {
+          "name": "FEATURE_ID_UNMAKE_MOVES",
+          "number": 43
+        },
+        {
+          "name": "FEATURE_ID_GET_CHESS960_INITIAL_POSITION",
+          "number": 44
+        },
+        {
+          "name": "FEATURE_ID_GET_COACH_CHAT",
+          "number": 45
+        },
+        {
+          "name": "FEATURE_ID_UPDATE_EXPERIMENTAL_OPTIONS",
+          "number": 46
+        },
+        {
+          "name": "FEATURE_ID_GET_COACH_HINT",
+          "number": 47
+        },
+        {
+          "name": "FEATURE_ID_LOAD_AND_SET_COACH",
+          "number": 48
+        },
+        {
+          "name": "FEATURE_ID_SWITCH_SIDES",
+          "number": 49
+        },
+        {
+          "name": "FEATURE_ID_CONVERT_TO_PROTO_MOVES",
+          "number": 50
+        },
+        {
+          "name": "FEATURE_ID_RELAXED_LEGAL_MOVES",
+          "number": 51
+        },
+        {
+          "name": "FEATURE_ID_RELAXED_APPLY_MOVE",
+          "number": 52
+        },
+        {
+          "name": "FEATURE_ID_GET_NON_CHESS_TEXT",
+          "number": 53
+        },
+        {
+          "name": "FEATURE_ID_EVALUATE_GAME",
+          "number": 54
+        },
+        {
+          "name": "FEATURE_ID_RELAXED_CONVERT_TO_PROTO_MOVES",
+          "number": 55
+        },
+        {
+          "name": "FEATURE_ID_RESET_ENGINE_STATE",
+          "number": 56
+        },
+        {
+          "name": "FEATURE_ID_CONVERT_FROM_PROTO_MOVES",
+          "number": 57
+        },
+        {
+          "name": "FEATURE_ID_FORCE_CRASH",
+          "number": 58
+        },
+        {
+          "name": "FEATURE_ID_GET_PGN_MOVE_ANNOTATIONS",
+          "number": 59
+        },
+        {
+          "name": "FEATURE_ID_VALIDATE_GAME_FOR_ANALYSIS",
+          "number": 60
+        },
+        {
+          "name": "FEATURE_ID_BOT_MOVE_FROM_CONFIG",
+          "number": 61
+        },
+        {
+          "name": "FEATURE_ID_LOAD_CHARM_MODEL",
+          "number": 62
+        },
+        {
+          "name": "FEATURE_ID_VALIDATE_PGN",
+          "number": 63
+        },
+        {
+          "name": "FEATURE_ID_BOT_MOVE_FROM_CONFIG_V2",
+          "number": 64
+        },
+        {
+          "name": "FEATURE_ID_EDIT_PGN_MOVE_ANNOTATION",
+          "number": 65
+        },
+        {
+          "name": "FEATURE_ID_EDIT_PGN_NAGS",
+          "number": 66
+        },
+        {
+          "name": "FEATURE_ID_SET_PGN_HEADERS",
+          "number": 67
+        },
+        {
+          "name": "FEATURE_ID_CHARM_INFERENCE",
+          "number": 68
+        },
+        {
+          "name": "FEATURE_ID_ADD_CHARM_INFERENCE",
+          "number": 69
+        },
+        {
+          "name": "FEATURE_ID_BOT_CONFIG_RESOURCES",
+          "number": 70
+        },
+        {
+          "name": "FEATURE_ID_SET_PLAYED_LINE",
+          "number": 71
+        },
+        {
+          "name": "FEATURE_ID_GENERATE_UUID_V1",
+          "number": 72
+        },
+        {
+          "name": "FEATURE_ID_GET_ILLEGAL_MOVE_EXPLANATION",
+          "number": 73
+        },
+        {
+          "name": "FEATURE_ID_ANALYSIS_ANNOTATIONS",
+          "number": 74
+        },
+        {
+          "name": "FEATURE_ID_DELETE_PGN_MOVE",
+          "number": 75
+        },
+        {
+          "name": "FEATURE_ID_GENERATE_TRAIN_ITEM_GOAL_SPEECH",
+          "number": 76
+        },
+        {
+          "name": "FEATURE_ID_GRADE_TRAIN_ITEM_MOVE",
+          "number": 77
+        },
+        {
+          "name": "FEATURE_ID_BOT_CONFIG_RESOURCES_V2",
+          "number": 78
+        },
+        {
+          "name": "FEATURE_ID_GET_GAME_REVIEW_EVALUATIONS",
+          "number": 79
+        },
+        {
+          "name": "FEATURE_ID_LOAD_ECO_BOOK",
+          "number": 80
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURES",
+          "number": 255
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_POSITION_DIFFICULTY_FEATURES",
+          "number": 258
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_POSITION_DIFFICULTY_LABELS",
+          "number": 259
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_POSITION_DIFFICULTY_PREDICTIONS",
+          "number": 260
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GAME_ANALYSIS_JSON",
+          "number": 261
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_BOARD_EVENTS",
+          "number": 262
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_UCI_TO_GAME_STATE",
+          "number": 263
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_NEW_GAME",
+          "number": 264
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_DEBUG_INFO",
+          "number": 265
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_PUZZLE_GEN",
+          "number": 266
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GENERATE_PVTREE",
+          "number": 267
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_EXTRACT_PVLINE",
+          "number": 268
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_ADVANCED_STATS_DATAPOINT",
+          "number": 269
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_COMPRESS_DATA",
+          "number": 270
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_RUN_SEARCH",
+          "number": 271
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_ENABLE_TEST_MODE",
+          "number": 272
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GENERATE_COACH_TEXT_ASSET",
+          "number": 273
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_MAIA_BOT_MOVE",
+          "number": 274
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_UNCOMPRESS_DATA",
+          "number": 275
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_UPDATE_DEVELOPER_OPTIONS",
+          "number": 276
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_KEY_GAME_STATE",
+          "number": 277
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_KEY_POSITION_SEARCH",
+          "number": 278
+        },
+        {
+          "name": "FEATURE_ID_ADVANCED_STATS_CATEGORY_SPEECH",
+          "number": 279
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_CAPS2",
+          "number": 280
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GET_COACH_EMOTION",
+          "number": 281
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GENERATE_COACH_TEXT_ITEMS",
+          "number": 282
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_POSITION_PROPERTIES",
+          "number": 283
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_LOAD_CHARM_MODEL",
+          "number": 285
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GET_COHERENCE",
+          "number": 286
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_RUN_PVTREES",
+          "number": 288
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_ENABLE_GAME_MOCKS",
+          "number": 290
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_STATIC_EXCHANGE",
+          "number": 292
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GET_PIECE",
+          "number": 293
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_BOARD_EVENT_DETAILS",
+          "number": 294
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_SET_MOVE_ANNOTATIONS",
+          "number": 295
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GET_MOVE_ANNOTATIONS",
+          "number": 296
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GENERATE_TRAIN_ITEMS",
+          "number": 297
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_CHARM_INFERENCE",
+          "number": 300
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_BUILD_AGENT_STABLE_TREE",
+          "number": 301
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_CHECKMATE_TYPE",
+          "number": 302
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_WEB_DEMO_JSON",
+          "number": 303
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_GAME_FEATURES",
+          "number": 304
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_CHECK_ANATOMY",
+          "number": 305
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_BRANCH_SUMMARY",
+          "number": 306
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_UNIT_TEST_CODE",
+          "number": 307
+        },
+        {
+          "name": "FEATURE_ID_INTERNAL_FEATURE_BRILLIANT_MOVES",
+          "number": 308
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 27,
+          "end": 27
+        },
+        {
+          "start": 284,
+          "end": 284
+        },
+        {
+          "start": 287,
+          "end": 287
+        },
+        {
+          "start": 289,
+          "end": 289
+        },
+        {
+          "start": 291,
+          "end": 291
+        },
+        {
+          "start": 298,
+          "end": 298
+        },
+        {
+          "start": 299,
+          "end": 299
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

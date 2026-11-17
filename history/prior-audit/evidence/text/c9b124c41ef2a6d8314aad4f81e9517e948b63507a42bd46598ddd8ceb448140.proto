@@ -1,0 +1,16 @@
+// source: chesscom/audiences/v1/authenticated_audiences_service.proto
+// syntax: proto3
+
+package chesscom.audiences.v1;
+
+message IsAuthenticatedUserInAudiencesRequest {
+  repeated string audience_keys = 1;
+}
+
+message IsAuthenticatedUserInAudiencesResponse {
+  repeated .chesscom.audiences.v1.IsAuthenticatedUserInAudiencesResponse.InAudienceEntry in_audience = 1;
+  message InAudienceEntry {
+  optional string key = 1;
+  optional bool value = 2;
+  }
+}

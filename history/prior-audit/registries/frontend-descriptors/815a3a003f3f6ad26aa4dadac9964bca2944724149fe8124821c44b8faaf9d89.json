@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_session_resource.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoardSessionResource",
+      "field": [
+        {
+          "name": "resource_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "resource_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

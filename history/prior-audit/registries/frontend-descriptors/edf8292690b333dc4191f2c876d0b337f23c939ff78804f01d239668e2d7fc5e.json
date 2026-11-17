@@ -1,0 +1,22 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_cee_internal_components.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "CeeInternalComponentsRequest"
+    },
+    {
+      "name": "CeeInternalComponentsResponse",
+      "field": [
+        {
+          "name": "components",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CeeInternalComponent"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

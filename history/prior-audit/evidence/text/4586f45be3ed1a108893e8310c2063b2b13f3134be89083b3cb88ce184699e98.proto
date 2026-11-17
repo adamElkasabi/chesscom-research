@@ -1,0 +1,11 @@
+// source: chesscom/settings/v1/settings_ui.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message UiSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.String mode = 1;
+  .chesscom.settings.v1.SettingValue.Boolean enable_special_theme_forcing = 2;
+  }
+}

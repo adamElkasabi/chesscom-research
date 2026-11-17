@@ -1,0 +1,27 @@
+// source: chesscom/user_properties/v1/properties_monthly_bot_event.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum MonthlyBotEventPropertyDefinition {
+  MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_UNSPECIFIED = 0;
+  MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_KEY = 1;
+  MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_POINTS = 2;
+  MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_MILESTONES_ACHIEVED = 3;
+  MONTHLY_BOT_EVENT_PROPERTY_DEFINITION_LAST_PROGRESSION_AT = 4;
+}
+
+message MonthlyBotEventProperty {
+  oneof _key {
+  string key = 1;
+  }
+  oneof _points {
+  int32 points = 2;
+  }
+  oneof _milestones_achieved {
+  int32 milestones_achieved = 3;
+  }
+  oneof _last_progression_at {
+  .google.protobuf.Timestamp last_progression_at = 4;
+  }
+}

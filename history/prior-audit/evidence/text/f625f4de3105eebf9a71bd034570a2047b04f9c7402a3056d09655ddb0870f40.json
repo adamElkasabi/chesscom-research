@@ -1,0 +1,11 @@
+{
+  "id": "example-game-normalize-off",
+  "fixture": "example-game",
+  "settings": {
+    "userColor": 1
+  },
+  "uciAfter": {
+    "Normalize": false
+  },
+  "timeoutSeconds": 200
+}

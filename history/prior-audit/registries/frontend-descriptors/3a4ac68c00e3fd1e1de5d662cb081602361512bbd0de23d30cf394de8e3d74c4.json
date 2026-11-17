@@ -1,0 +1,881 @@
+{
+  "name": "chesscom/user_properties/v1/properties_subscription.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "SubscriptionProperty",
+      "field": [
+        {
+          "name": "last_transition",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership_level",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_trial",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "ltv",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_subscription_deactivation_date",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_subscription_activation_date",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_trial_deactivation_date",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_trial_activation_date",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "plan",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "plan_code",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "plan_billing_amount",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "plan_state",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "payment_method",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "trial_state",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_lifecycle_state",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "renewal_date",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_deactivated",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_membership_name",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_membership_level",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_plan",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_plan_code",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_plan_billing_amount",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_trial_eligible",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "cancellation_date",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "cumulative_spend",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "forced_trial_eligibibility_status",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "forced_trial_eligibility_reason",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_subscription_length",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "incentives_redeemed",
+          "number": 32,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "current_subscription_end_date",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_subscription_payment_method",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_subscription_payment_gateway",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_subscription_cancellation_source",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "first_subscription_start_date",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_subscription_renewal_date",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_subscription_cancellation_date",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_trial_cancellation_date",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_subscription_payment_method",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_trial_payment_method",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_subscription_payment_gateway",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_trial_payment_gateway",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_lifecycle_secondary_state",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 41,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_user_lifecycle_state",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 42,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_user_lifecycle_secondary_state",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 43,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1006,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SubscriptionPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_transition"
+        },
+        {
+          "name": "_membership_name"
+        },
+        {
+          "name": "_membership_level"
+        },
+        {
+          "name": "_is_trial"
+        },
+        {
+          "name": "_ltv"
+        },
+        {
+          "name": "_last_subscription_deactivation_date"
+        },
+        {
+          "name": "_last_subscription_activation_date"
+        },
+        {
+          "name": "_last_trial_deactivation_date"
+        },
+        {
+          "name": "_last_trial_activation_date"
+        },
+        {
+          "name": "_plan"
+        },
+        {
+          "name": "_plan_code"
+        },
+        {
+          "name": "_plan_billing_amount"
+        },
+        {
+          "name": "_plan_state"
+        },
+        {
+          "name": "_payment_method"
+        },
+        {
+          "name": "_trial_state"
+        },
+        {
+          "name": "_user_lifecycle_state"
+        },
+        {
+          "name": "_renewal_date"
+        },
+        {
+          "name": "_is_deactivated"
+        },
+        {
+          "name": "_previous_membership_name"
+        },
+        {
+          "name": "_previous_membership_level"
+        },
+        {
+          "name": "_previous_plan"
+        },
+        {
+          "name": "_previous_plan_code"
+        },
+        {
+          "name": "_previous_plan_billing_amount"
+        },
+        {
+          "name": "_is_trial_eligible"
+        },
+        {
+          "name": "_cancellation_date"
+        },
+        {
+          "name": "_cumulative_spend"
+        },
+        {
+          "name": "_forced_trial_eligibibility_status"
+        },
+        {
+          "name": "_forced_trial_eligibility_reason"
+        },
+        {
+          "name": "_last_subscription_length"
+        },
+        {
+          "name": "_current_subscription_end_date"
+        },
+        {
+          "name": "_current_subscription_payment_method"
+        },
+        {
+          "name": "_current_subscription_payment_gateway"
+        },
+        {
+          "name": "_current_subscription_cancellation_source"
+        },
+        {
+          "name": "_first_subscription_start_date"
+        },
+        {
+          "name": "_current_subscription_renewal_date"
+        },
+        {
+          "name": "_last_subscription_cancellation_date"
+        },
+        {
+          "name": "_last_trial_cancellation_date"
+        },
+        {
+          "name": "_last_subscription_payment_method"
+        },
+        {
+          "name": "_last_trial_payment_method"
+        },
+        {
+          "name": "_last_subscription_payment_gateway"
+        },
+        {
+          "name": "_last_trial_payment_gateway"
+        },
+        {
+          "name": "_user_lifecycle_secondary_state"
+        },
+        {
+          "name": "_previous_user_lifecycle_state"
+        },
+        {
+          "name": "_previous_user_lifecycle_secondary_state"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 27,
+          "end": 28
+        },
+        {
+          "start": 28,
+          "end": 29
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SubscriptionPropertyDefinition",
+      "value": [
+        {
+          "name": "SUBSCRIPTION_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "LAST_TRANSITION",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "MEMBERSHIP_LEVEL",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "IS_TRIAL",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LTV",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_SUBSCRIPTION_DEACTIVATION_DATE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "LAST_SUBSCRIPTION_ACTIVATION_DATE",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "LAST_TRIAL_DEACTIVATION_DATE",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "LAST_TRIAL_ACTIVATION_DATE",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "PLAN",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "PLAN_CODE",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "PLAN_BILLING_AMOUNT",
+          "number": 12,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "PLAN_STATE",
+          "number": 13,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "PAYMENT_METHOD",
+          "number": 14,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "TRIAL_STATE",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "USER_LIFECYCLE_STATE",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "RENEWAL_DATE",
+          "number": 17,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_DEACTIVATED",
+          "number": 18,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "PREVIOUS_MEMBERSHIP_LEVEL",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_PLAN",
+          "number": 21,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_PLAN_CODE",
+          "number": 22,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_PLAN_BILLING_AMOUNT",
+          "number": 23,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_TRIAL_ELIGIBLE",
+          "number": 24,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "CANCELLATION_DATE",
+          "number": 25,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "CUMULATIVE_SPEND",
+          "number": 26,
+          "options": {}
+        },
+        {
+          "name": "MEMBERSHIP_NAME",
+          "number": 27,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_MEMBERSHIP_NAME",
+          "number": 28,
+          "options": {}
+        },
+        {
+          "name": "FORCED_TRIAL_ELIGIBILITY_STATUS",
+          "number": 29,
+          "options": {}
+        },
+        {
+          "name": "FORCED_TRIAL_ELIGIBILITY_REASON",
+          "number": 30,
+          "options": {}
+        },
+        {
+          "name": "LAST_SUBSCRIPTION_LENGTH",
+          "number": 31,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "INCENTIVES_REDEEMED",
+          "number": 32,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_SUBSCRIPTION_END_DATE",
+          "number": 33,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_SUBSCRIPTION_PAYMENT_METHOD",
+          "number": 34,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_SUBSCRIPTION_PAYMENT_GATEWAY",
+          "number": 35,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_SUBSCRIPTION_CANCELLATION_SOURCE",
+          "number": 36,
+          "options": {}
+        },
+        {
+          "name": "FIRST_SUBSCRIPTION_START_DATE",
+          "number": 37,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_SUBSCRIPTION_RENEWAL_DATE",
+          "number": 38,
+          "options": {}
+        },
+        {
+          "name": "LAST_SUBSCRIPTION_CANCELLATION_DATE",
+          "number": 39,
+          "options": {}
+        },
+        {
+          "name": "LAST_TRIAL_CANCELLATION_DATE",
+          "number": 40,
+          "options": {}
+        },
+        {
+          "name": "LAST_SUBSCRIPTION_PAYMENT_METHOD",
+          "number": 41,
+          "options": {}
+        },
+        {
+          "name": "LAST_TRIAL_PAYMENT_METHOD",
+          "number": 42,
+          "options": {}
+        },
+        {
+          "name": "LAST_SUBSCRIPTION_PAYMENT_GATEWAY",
+          "number": 43,
+          "options": {}
+        },
+        {
+          "name": "LAST_TRIAL_PAYMENT_GATEWAY",
+          "number": 44,
+          "options": {}
+        },
+        {
+          "name": "USER_LIFECYCLE_SECONDARY_STATE",
+          "number": 45,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_USER_LIFECYCLE_STATE",
+          "number": 46,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_USER_LIFECYCLE_SECONDARY_STATE",
+          "number": 47,
+          "options": {}
+        }
+      ],
+      "options": {},
+      "reserved_range": [
+        {
+          "start": 3,
+          "end": 3
+        },
+        {
+          "start": 20,
+          "end": 20
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

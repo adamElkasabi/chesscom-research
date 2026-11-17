@@ -1,0 +1,152 @@
+// source: chesscom/themes/v2/themes_service.proto
+// syntax: proto3
+
+package chesscom.themes.v2;
+
+message ListAllThemeElementsRequest {
+  optional int32 board_size = 1;
+  optional int32 pieces_size = 2;
+}
+
+message ListAllThemeElementsResponse {
+  repeated .chesscom.themes.v2.PresetTheme themes = 1;
+  repeated .chesscom.themes.v2.Background backgrounds = 2;
+  repeated .chesscom.themes.v2.BoardStyle board_styles = 3;
+  repeated .chesscom.themes.v2.PieceSet piece_sets = 4;
+  repeated .chesscom.themes.v2.SoundSet sound_sets = 5;
+}
+
+message ListThemesSelectionRequest {
+}
+
+message ListThemesSelectionResponse {
+  repeated .chesscom.themes.v2.ThemeSelectionItem themes = 1;
+  repeated .chesscom.themes.v2.BackgroundSelectionItem backgrounds = 2;
+  repeated .chesscom.themes.v2.BoardStyleSelectionItem board_styles = 3;
+  repeated .chesscom.themes.v2.PieceSetSelectionItem piece_sets = 4;
+  repeated .chesscom.themes.v2.SoundSetSelectionItem sound_sets = 5;
+  repeated .chesscom.themes.v2.ThemeElementCategory board_style_categories = 6;
+  repeated .chesscom.themes.v2.ThemeElementCategory piece_set_categories = 7;
+  repeated .chesscom.themes.v2.ThemeElementCategory sound_set_categories = 8;
+}
+
+message ListThemesRequest {
+  optional .chesscom.themes.v2.Platform platform = 1;
+  optional int32 board_size = 2;
+  optional int32 pieces_size = 3;
+}
+
+message ListThemesResponse {
+  repeated .chesscom.themes.v2.Theme themes = 1;
+}
+
+message ListBackgroundsRequest {
+  optional .chesscom.themes.v2.Platform platform = 1;
+}
+
+message ListBackgroundsResponse {
+  repeated .chesscom.themes.v2.Background backgrounds = 1;
+}
+
+message ListBoardStylesRequest {
+  optional .chesscom.themes.v2.Platform platform = 1;
+  optional int32 board_size = 2;
+}
+
+message ListBoardStylesResponse {
+  repeated .chesscom.themes.v2.BoardStyle board_styles = 1;
+}
+
+message ListPieceSetsRequest {
+  optional .chesscom.themes.v2.Platform platform = 1;
+  optional int32 pieces_size = 2;
+}
+
+message ListPieceSetsResponse {
+  repeated .chesscom.themes.v2.PieceSet piece_sets = 1;
+}
+
+message ListSoundSetsRequest {
+  optional .chesscom.themes.v2.Platform platform = 1;
+}
+
+message ListSoundSetsResponse {
+  repeated .chesscom.themes.v2.SoundSet sound_sets = 1;
+}
+
+message ListOnboardingThemesRequest {
+  optional .chesscom.themes.v2.Platform platform = 1;
+  optional int32 board_size = 2;
+  optional int32 pieces_size = 3;
+}
+
+message ListOnboardingThemesResponse {
+  repeated .chesscom.themes.v2.Theme themes = 1;
+}
+
+message GetThemeRequest {
+  optional string theme_id = 1;
+  optional .chesscom.themes.v2.Platform platform = 11;
+  optional int32 board_size = 12;
+  optional int32 pieces_size = 13;
+}
+
+message GetThemeResponse {
+  optional .chesscom.themes.v2.Theme theme = 1;
+}
+
+message GetCustomThemeRequest {
+  oneof _background_id {
+  string background_id = 1;
+  }
+  optional string board_style_id = 2;
+  optional string piece_set_id = 3;
+  optional string sound_set_id = 4;
+  optional .chesscom.themes.v2.Platform platform = 11;
+  optional int32 board_size = 12;
+  optional int32 pieces_size = 13;
+}
+
+message GetCustomThemeResponse {
+  optional .chesscom.themes.v2.Theme theme = 1;
+}
+
+message SelectThemeRequest {
+  optional string theme_id = 1;
+  optional .chesscom.themes.v2.Platform platform = 11;
+}
+
+message SelectThemeResponse {
+}
+
+message SelectCustomThemeRequest {
+  oneof _background_id {
+  string background_id = 1;
+  }
+  oneof _board_style_id {
+  string board_style_id = 2;
+  }
+  oneof _piece_set_id {
+  string piece_set_id = 3;
+  }
+  oneof _sound_set_id {
+  string sound_set_id = 4;
+  }
+  optional .chesscom.themes.v2.Platform platform = 11;
+}
+
+message SelectCustomThemeResponse {
+}
+
+message GetActiveThemeRequest {
+  oneof _user_id {
+  string user_id = 16;
+  }
+  optional .chesscom.themes.v2.Platform platform = 1;
+  optional int32 board_size = 2;
+  optional int32 pieces_size = 3;
+}
+
+message GetActiveThemeResponse {
+  optional .chesscom.themes.v2.Theme theme = 1;
+}

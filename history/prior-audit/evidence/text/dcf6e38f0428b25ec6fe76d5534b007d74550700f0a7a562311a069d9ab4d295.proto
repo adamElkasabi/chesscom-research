@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/notation.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum FenNotation {
+  FEN_NOTATION_UNSPECIFIED = 0;
+  FEN_NOTATION_INFERRED = 1;
+  FEN_NOTATION_STANDARD = 2;
+  FEN_NOTATION_SHREDDER = 3;
+}

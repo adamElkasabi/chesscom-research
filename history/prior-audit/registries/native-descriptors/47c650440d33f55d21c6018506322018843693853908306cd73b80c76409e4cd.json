@@ -1,0 +1,22 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/piece_set.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/piece_details.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PieceSet",
+      "field": [
+        {
+          "name": "pieces",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_set_game_result.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SetGameResultRequest",
+      "field": [
+        {
+          "name": "claimed_game_result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameResult"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SetGameResultResponse",
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,16 @@
+wasm://wasm/0018a7ce:1
+
+
+RuntimeError: memory access out of bounds
+    at wasm://wasm/0018a7ce:wasm-function[14]:0xdc0
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xcef7
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+    at wasm://wasm/0018a7ce:wasm-function[151]:0xa6a2
+
+Node.js v20.20.2

@@ -1,0 +1,5524 @@
+[
+  {
+    "id": "API-0001",
+    "reference": "/callback",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00902",
+    "related_findings": [
+      "FND-20033"
+    ]
+  },
+  {
+    "id": "API-0002",
+    "reference": "/callback./2fa./account./admin./as./bff-token./blogs./certs./chess-tv./club./clubs./coach/callback./coep-report./computer./embedly./guest./helpscout./leagues./lessons./library./live./metrics./moderation./my-data./news./payment./play./players./register-form./revoke./search./set-return-url./settings./stats./tinymce./variants./video./votechess",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00903",
+    "related_findings": [
+      "FND-20034"
+    ]
+  },
+  {
+    "id": "API-0003",
+    "reference": "/callback/alert/alerts",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00904",
+    "related_findings": [
+      "FND-20035"
+    ]
+  },
+  {
+    "id": "API-0004",
+    "reference": "/callback/analysis/game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00905",
+    "related_findings": [
+      "FND-20036"
+    ]
+  },
+  {
+    "id": "API-0005",
+    "reference": "/callback/analysis/library",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00906",
+    "related_findings": [
+      "FND-20037"
+    ]
+  },
+  {
+    "id": "API-0006",
+    "reference": "/callback/analysis/library/self",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00907",
+    "related_findings": [
+      "FND-20038"
+    ]
+  },
+  {
+    "id": "API-0007",
+    "reference": "/callback/analysis/retry",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00908",
+    "related_findings": [
+      "FND-20039"
+    ]
+  },
+  {
+    "id": "API-0008",
+    "reference": "/callback/analysis/self",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00909",
+    "related_findings": [
+      "FND-20040"
+    ]
+  },
+  {
+    "id": "API-0009",
+    "reference": "/callback/analysis/user/allowed",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0754"
+    ],
+    "url_id": "URL-00910",
+    "related_findings": [
+      "FND-20041"
+    ]
+  },
+  {
+    "id": "API-0010",
+    "reference": "/callback/articles/authors",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00911",
+    "related_findings": [
+      "FND-20042"
+    ]
+  },
+  {
+    "id": "API-0011",
+    "reference": "/callback/articles/lock-comments",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00912",
+    "related_findings": [
+      "FND-20043"
+    ]
+  },
+  {
+    "id": "API-0012",
+    "reference": "/callback/auth",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00913",
+    "related_findings": [
+      "FND-20044"
+    ]
+  },
+  {
+    "id": "API-0013",
+    "reference": "/callback/blog/lock-comments",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00914",
+    "related_findings": [
+      "FND-20045"
+    ]
+  },
+  {
+    "id": "API-0014",
+    "reference": "/callback/bucket",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00915",
+    "related_findings": [
+      "FND-20046"
+    ]
+  },
+  {
+    "id": "API-0015",
+    "reference": "/callback/classroom/get-countries",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00916",
+    "related_findings": [
+      "FND-20047"
+    ]
+  },
+  {
+    "id": "API-0016",
+    "reference": "/callback/club",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0145"
+    ],
+    "url_id": "URL-00917",
+    "related_findings": [
+      "FND-20048"
+    ]
+  },
+  {
+    "id": "API-0017",
+    "reference": "/callback/club/data",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00918",
+    "related_findings": [
+      "FND-20049"
+    ]
+  },
+  {
+    "id": "API-0018",
+    "reference": "/callback/clubs/user/admin",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00919",
+    "related_findings": [
+      "FND-20050"
+    ]
+  },
+  {
+    "id": "API-0019",
+    "reference": "/callback/clubs/user/member",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00920",
+    "related_findings": [
+      "FND-20051"
+    ]
+  },
+  {
+    "id": "API-0020",
+    "reference": "/callback/coach/hide-game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0779"
+    ],
+    "url_id": "URL-00921",
+    "related_findings": [
+      "FND-20052"
+    ]
+  },
+  {
+    "id": "API-0021",
+    "reference": "/callback/computer/hide-game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0779"
+    ],
+    "url_id": "URL-00922",
+    "related_findings": [
+      "FND-20053"
+    ]
+  },
+  {
+    "id": "API-0022",
+    "reference": "/callback/content/feature/article",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00923",
+    "related_findings": [
+      "FND-20054"
+    ]
+  },
+  {
+    "id": "API-0023",
+    "reference": "/callback/content/feature/blog",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00924",
+    "related_findings": [
+      "FND-20055"
+    ]
+  },
+  {
+    "id": "API-0024",
+    "reference": "/callback/content/feature/chess_video",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00925",
+    "related_findings": [
+      "FND-20056"
+    ]
+  },
+  {
+    "id": "API-0025",
+    "reference": "/callback/content/feature/lesson_course",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00926",
+    "related_findings": [
+      "FND-20057"
+    ]
+  },
+  {
+    "id": "API-0026",
+    "reference": "/callback/content/feature/news",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00927",
+    "related_findings": [
+      "FND-20058"
+    ]
+  },
+  {
+    "id": "API-0027",
+    "reference": "/callback/daily/game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00928",
+    "related_findings": [
+      "FND-20059"
+    ]
+  },
+  {
+    "id": "API-0028",
+    "reference": "/callback/eco/search",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00929",
+    "related_findings": [
+      "FND-20060"
+    ]
+  },
+  {
+    "id": "API-0029",
+    "reference": "/callback/eco/search/fen",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00930",
+    "related_findings": [
+      "FND-20061"
+    ]
+  },
+  {
+    "id": "API-0030",
+    "reference": "/callback/explorer/get-suggested-moves",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00931",
+    "related_findings": [
+      "FND-20062"
+    ]
+  },
+  {
+    "id": "API-0031",
+    "reference": "/callback/explorer/move",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00932",
+    "related_findings": [
+      "FND-20063"
+    ]
+  },
+  {
+    "id": "API-0032",
+    "reference": "/callback/friend/accept",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00933",
+    "related_findings": [
+      "FND-20064"
+    ]
+  },
+  {
+    "id": "API-0033",
+    "reference": "/callback/friend/cancel/request",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00934",
+    "related_findings": [
+      "FND-20065"
+    ]
+  },
+  {
+    "id": "API-0034",
+    "reference": "/callback/friend/decline/request",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00935",
+    "related_findings": [
+      "FND-20066"
+    ]
+  },
+  {
+    "id": "API-0035",
+    "reference": "/callback/friend/delete",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00936",
+    "related_findings": [
+      "FND-20067"
+    ]
+  },
+  {
+    "id": "API-0036",
+    "reference": "/callback/friend/registration-invite-link",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00937",
+    "related_findings": [
+      "FND-20068"
+    ]
+  },
+  {
+    "id": "API-0037",
+    "reference": "/callback/friend/request",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00938",
+    "related_findings": [
+      "FND-20069"
+    ]
+  },
+  {
+    "id": "API-0038",
+    "reference": "/callback/game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00939",
+    "related_findings": [
+      "FND-20070"
+    ]
+  },
+  {
+    "id": "API-0039",
+    "reference": "/callback/game/daily/challenge",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00940",
+    "related_findings": [
+      "FND-20071"
+    ]
+  },
+  {
+    "id": "API-0040",
+    "reference": "/callback/game/dyn-gif",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00941",
+    "related_findings": [
+      "FND-20072"
+    ]
+  },
+  {
+    "id": "API-0041",
+    "reference": "/callback/game/fens",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1151"
+    ],
+    "url_id": "URL-00942",
+    "related_findings": [
+      "FND-20073"
+    ]
+  },
+  {
+    "id": "API-0042",
+    "reference": "/callback/game/gif",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00943",
+    "related_findings": [
+      "FND-20074"
+    ]
+  },
+  {
+    "id": "API-0043",
+    "reference": "/callback/game/random/daily/challenge",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00944",
+    "related_findings": [
+      "FND-20075"
+    ]
+  },
+  {
+    "id": "API-0044",
+    "reference": "/callback/game_seek",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0157",
+      "SRC-0781"
+    ],
+    "url_id": "URL-00945",
+    "related_findings": [
+      "FND-20076"
+    ]
+  },
+  {
+    "id": "API-0045",
+    "reference": "/callback/game_seek/user-seeks",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00946",
+    "related_findings": [
+      "FND-20077"
+    ]
+  },
+  {
+    "id": "API-0046",
+    "reference": "/callback/games/archive",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00947",
+    "related_findings": [
+      "FND-20078"
+    ]
+  },
+  {
+    "id": "API-0047",
+    "reference": "/callback/games/player",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1136"
+    ],
+    "url_id": "URL-00948",
+    "related_findings": [
+      "FND-20079"
+    ]
+  },
+  {
+    "id": "API-0048",
+    "reference": "/callback/games/search",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00949",
+    "related_findings": [
+      "FND-20080"
+    ]
+  },
+  {
+    "id": "API-0049",
+    "reference": "/callback/leagues/league-info",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0134"
+    ],
+    "url_id": "URL-00950",
+    "related_findings": [
+      "FND-20081"
+    ]
+  },
+  {
+    "id": "API-0050",
+    "reference": "/callback/lessons/translated",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00951",
+    "related_findings": [
+      "FND-20082"
+    ]
+  },
+  {
+    "id": "API-0051",
+    "reference": "/callback/library/bookmarks",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00952",
+    "related_findings": [
+      "FND-20083"
+    ]
+  },
+  {
+    "id": "API-0052",
+    "reference": "/callback/library/collections",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00953",
+    "related_findings": [
+      "FND-20084"
+    ]
+  },
+  {
+    "id": "API-0053",
+    "reference": "/callback/library/community/collections",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00954",
+    "related_findings": [
+      "FND-20085"
+    ]
+  },
+  {
+    "id": "API-0054",
+    "reference": "/callback/library/lucgs",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00955",
+    "related_findings": [
+      "FND-20086"
+    ]
+  },
+  {
+    "id": "API-0055",
+    "reference": "/callback/library/shared",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00956",
+    "related_findings": [
+      "FND-20087"
+    ]
+  },
+  {
+    "id": "API-0056",
+    "reference": "/callback/live/game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00957",
+    "related_findings": [
+      "FND-20088"
+    ]
+  },
+  {
+    "id": "API-0057",
+    "reference": "/callback/member/block",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00958",
+    "related_findings": [
+      "FND-20089"
+    ]
+  },
+  {
+    "id": "API-0058",
+    "reference": "/callback/member/count",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0159"
+    ],
+    "url_id": "URL-00959",
+    "related_findings": [
+      "FND-20090"
+    ]
+  },
+  {
+    "id": "API-0059",
+    "reference": "/callback/member/track",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00960",
+    "related_findings": [
+      "FND-20091"
+    ]
+  },
+  {
+    "id": "API-0060",
+    "reference": "/callback/member/unblock",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00961",
+    "related_findings": [
+      "FND-20092"
+    ]
+  },
+  {
+    "id": "API-0061",
+    "reference": "/callback/member/untrack",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00962",
+    "related_findings": [
+      "FND-20093"
+    ]
+  },
+  {
+    "id": "API-0062",
+    "reference": "/callback/move-condition/game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0196"
+    ],
+    "url_id": "URL-00963",
+    "related_findings": [
+      "FND-20094"
+    ]
+  },
+  {
+    "id": "API-0063",
+    "reference": "/callback/move-conditions/game",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00964",
+    "related_findings": [
+      "FND-20095"
+    ]
+  },
+  {
+    "id": "API-0064",
+    "reference": "/callback/news/lock-comments",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00965",
+    "related_findings": [
+      "FND-20096"
+    ]
+  },
+  {
+    "id": "API-0065",
+    "reference": "/callback/play/settings/is-on-vacation",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00966",
+    "related_findings": [
+      "FND-20097"
+    ]
+  },
+  {
+    "id": "API-0066",
+    "reference": "/callback/play/settings/vacation-time-remaining",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00967",
+    "related_findings": [
+      "FND-20098"
+    ]
+  },
+  {
+    "id": "API-0067",
+    "reference": "/callback/recent/opponents",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00968",
+    "related_findings": [
+      "FND-20099"
+    ]
+  },
+  {
+    "id": "API-0068",
+    "reference": "/callback/report-forum-topic",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00969",
+    "related_findings": [
+      "FND-20100"
+    ]
+  },
+  {
+    "id": "API-0069",
+    "reference": "/callback/report-user",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00970",
+    "related_findings": [
+      "FND-20101"
+    ]
+  },
+  {
+    "id": "API-0070",
+    "reference": "/callback/security/user/roles",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00971",
+    "related_findings": [
+      "FND-20102"
+    ]
+  },
+  {
+    "id": "API-0071",
+    "reference": "/callback/survey",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00972",
+    "related_findings": [
+      "FND-20103"
+    ]
+  },
+  {
+    "id": "API-0072",
+    "reference": "/callback/user/archive-view",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00973",
+    "related_findings": [
+      "FND-20104"
+    ]
+  },
+  {
+    "id": "API-0073",
+    "reference": "/callback/user/content-language/set",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00974",
+    "related_findings": [
+      "FND-20105"
+    ]
+  },
+  {
+    "id": "API-0074",
+    "reference": "/callback/user/dismiss_follow",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00975",
+    "related_findings": [
+      "FND-20106"
+    ]
+  },
+  {
+    "id": "API-0075",
+    "reference": "/callback/user/follow_suggestions",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00976",
+    "related_findings": [
+      "FND-20107"
+    ]
+  },
+  {
+    "id": "API-0076",
+    "reference": "/callback/user/home-recent-content-type",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00977",
+    "related_findings": [
+      "FND-20108"
+    ]
+  },
+  {
+    "id": "API-0077",
+    "reference": "/callback/user/id-to-data",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00978",
+    "related_findings": [
+      "FND-20109"
+    ]
+  },
+  {
+    "id": "API-0078",
+    "reference": "/callback/user/lifetime-score",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00979",
+    "related_findings": [
+      "FND-20110"
+    ]
+  },
+  {
+    "id": "API-0079",
+    "reference": "/callback/user/notices",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00980",
+    "related_findings": [
+      "FND-20111"
+    ]
+  },
+  {
+    "id": "API-0080",
+    "reference": "/callback/user/popup",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0157",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00981",
+    "related_findings": [
+      "FND-20112"
+    ]
+  },
+  {
+    "id": "API-0081",
+    "reference": "/callback/user/search",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00982",
+    "related_findings": [
+      "FND-20113"
+    ]
+  },
+  {
+    "id": "API-0082",
+    "reference": "/callback/user/set-fair-play-agree",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00983",
+    "related_findings": [
+      "FND-20114"
+    ]
+  },
+  {
+    "id": "API-0083",
+    "reference": "/callback/user/valid",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00984",
+    "related_findings": [
+      "FND-20115"
+    ]
+  },
+  {
+    "id": "API-0084",
+    "reference": "/callback/video/lock-comments",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00985",
+    "related_findings": [
+      "FND-20116"
+    ]
+  },
+  {
+    "id": "API-0085",
+    "reference": "/chess-tv/callback/report",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00988",
+    "related_findings": [
+      "FND-20119"
+    ]
+  },
+  {
+    "id": "API-0086",
+    "reference": "/chess-tv/callback/schedule",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "url_id": "URL-00989",
+    "related_findings": [
+      "FND-20120"
+    ]
+  },
+  {
+    "id": "API-0087",
+    "reference": "/courses/authentication/callback",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-00999",
+    "related_findings": [
+      "FND-20130"
+    ]
+  },
+  {
+    "id": "API-0088",
+    "reference": "/openings/courses/authentication/callback",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-01088",
+    "related_findings": [
+      "FND-20219"
+    ]
+  },
+  {
+    "id": "API-0089",
+    "reference": "/rpc/ceac",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0194",
+      "SRC-0752"
+    ],
+    "url_id": "URL-01152",
+    "related_findings": [
+      "FND-20283"
+    ]
+  },
+  {
+    "id": "API-0090",
+    "reference": "/service/courses/rpc",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-01162",
+    "related_findings": [
+      "FND-20293"
+    ]
+  },
+  {
+    "id": "API-0091",
+    "reference": "/service/opening-courses/rpc",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "url_id": "URL-01169",
+    "related_findings": [
+      "FND-20300"
+    ]
+  },
+  {
+    "id": "API-0092",
+    "reference": "/tinymce/api/get_diagram",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1151"
+    ],
+    "url_id": "URL-01191",
+    "related_findings": [
+      "FND-20322"
+    ]
+  },
+  {
+    "id": "API-0093",
+    "reference": "/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0006",
+      "SRC-0010",
+      "SRC-0019",
+      "SRC-0023",
+      "SRC-0053"
+    ],
+    "url_id": "URL-01202",
+    "related_findings": [
+      "FND-20333"
+    ]
+  },
+  {
+    "id": "API-0094",
+    "reference": "/v2/run-search",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0006",
+      "SRC-0010",
+      "SRC-0019",
+      "SRC-0023",
+      "SRC-0053"
+    ],
+    "url_id": "URL-01203",
+    "related_findings": [
+      "FND-20334"
+    ]
+  },
+  {
+    "id": "API-0095",
+    "reference": "https://api.chess.com",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0065",
+      "SRC-0777",
+      "SRC-1150"
+    ],
+    "url_id": "URL-01514",
+    "related_findings": [
+      "FND-20645"
+    ]
+  },
+  {
+    "id": "API-0096",
+    "reference": "https://api.chess.com/cast/game/${t}.pgn",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0187"
+    ],
+    "url_id": "URL-01515",
+    "related_findings": [
+      "FND-20646"
+    ]
+  },
+  {
+    "id": "API-0097",
+    "reference": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback",
+    "kind": "observed URL literal candidate",
+    "http_method": "not established by URL literal",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0065",
+      "SRC-0777",
+      "SRC-0778",
+      "SRC-1150"
+    ],
+    "url_id": "URL-01606",
+    "related_findings": [
+      "FND-20737"
+    ]
+  },
+  {
+    "id": "API-0098",
+    "reference": "wss://analysis-sandbox.chess.com:443/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047"
+    ],
+    "url_id": "URL-01914",
+    "related_findings": [
+      "FND-21045",
+      "FND-00105",
+      "FND-18895"
+    ]
+  },
+  {
+    "id": "API-0099",
+    "reference": "wss://analysis-staging.chess.com:443/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047"
+    ],
+    "url_id": "URL-01915",
+    "related_findings": [
+      "FND-21046",
+      "FND-00105",
+      "FND-18894"
+    ]
+  },
+  {
+    "id": "API-0100",
+    "reference": "wss://analysis-staging.chess.com:443/v2/run-search",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047"
+    ],
+    "url_id": "URL-01916",
+    "related_findings": [
+      "FND-21047",
+      "FND-00105",
+      "FND-18896"
+    ]
+  },
+  {
+    "id": "API-0101",
+    "reference": "wss://analysis.chess.com/443/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-2047"
+    ],
+    "url_id": "URL-01917",
+    "related_findings": [
+      "FND-21048",
+      "FND-00193"
+    ]
+  },
+  {
+    "id": "API-0102",
+    "reference": "wss://analysis.chess.com/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0055",
+      "SRC-0061",
+      "SRC-0071"
+    ],
+    "url_id": "URL-01918",
+    "related_findings": [
+      "FND-21049"
+    ]
+  },
+  {
+    "id": "API-0103",
+    "reference": "wss://analysis.chess.com:443",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-2047"
+    ],
+    "url_id": "URL-01919",
+    "related_findings": [
+      "FND-21050",
+      "FND-00093"
+    ]
+  },
+  {
+    "id": "API-0104",
+    "reference": "wss://analysis.chess.com:443/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0059",
+      "SRC-0128",
+      "SRC-0871",
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047",
+      "SRC-2049"
+    ],
+    "url_id": "URL-01920",
+    "related_findings": [
+      "FND-21051",
+      "FND-00053",
+      "FND-00105",
+      "FND-18892"
+    ]
+  },
+  {
+    "id": "API-0105",
+    "reference": "wss://analysis.chess.com:443/v2/run-search",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047"
+    ],
+    "url_id": "URL-01921",
+    "related_findings": [
+      "FND-21052",
+      "FND-00105",
+      "FND-18893"
+    ]
+  },
+  {
+    "id": "API-0106",
+    "reference": "wss://max-analysis.prod.chess-platform.com:443",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047"
+    ],
+    "url_id": "URL-01922",
+    "related_findings": [
+      "FND-21053",
+      "FND-00105",
+      "FND-18897"
+    ]
+  },
+  {
+    "id": "API-0107",
+    "reference": "wss://max-analysis.staging.chess-platform.com:443",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165",
+      "SRC-2047"
+    ],
+    "url_id": "URL-01923",
+    "related_findings": [
+      "FND-21054",
+      "FND-00105",
+      "FND-18898"
+    ]
+  },
+  {
+    "id": "API-0108",
+    "reference": "wss://www.chess.com/pubsub?uid=x",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0059",
+      "SRC-0128"
+    ],
+    "url_id": "URL-01924",
+    "related_findings": [
+      "FND-21055"
+    ]
+  },
+  {
+    "id": "API-0109",
+    "reference": "wss://www.chess.com/v2/game-review",
+    "kind": "observed URL literal candidate",
+    "http_method": "WebSocket handshake GET",
+    "authentication": "not established",
+    "request_headers": "not captured",
+    "request_body": "not inferred; see relevant schema/call-site findings",
+    "response": "not inferred; see native CEAC/BrilliantVerification schema findings",
+    "observed_status": "see historical-http-probes.json if exact URL is present",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0059",
+      "SRC-0128"
+    ],
+    "url_id": "URL-01925",
+    "related_findings": [
+      "FND-21056"
+    ]
+  },
+  {
+    "id": "API-0110",
+    "reference": "/callback/game/fens",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1151"
+    ],
+    "route_id": "RTE-0002",
+    "related_findings": [
+      "FND-18107"
+    ]
+  },
+  {
+    "id": "API-0111",
+    "reference": "/callback/eco/search/{cleanUrl}/{username}/{colorAsNumber}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0003",
+    "related_findings": [
+      "FND-18108"
+    ]
+  },
+  {
+    "id": "API-0112",
+    "reference": "/callback/lessons/translated",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0004",
+    "related_findings": [
+      "FND-18109"
+    ]
+  },
+  {
+    "id": "API-0113",
+    "reference": "/callback/explorer/move",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0016",
+    "related_findings": [
+      "FND-18121"
+    ]
+  },
+  {
+    "id": "API-0114",
+    "reference": "/callback/explorer/get-suggested-moves",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0066",
+      "SRC-1137",
+      "SRC-1151",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0017",
+    "related_findings": [
+      "FND-18122"
+    ]
+  },
+  {
+    "id": "API-0115",
+    "reference": "/callback/articles/authors",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0041",
+    "related_findings": [
+      "FND-18146"
+    ]
+  },
+  {
+    "id": "API-0116",
+    "reference": "/callback/articles/lock-comments/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0042",
+    "related_findings": [
+      "FND-18147"
+    ]
+  },
+  {
+    "id": "API-0117",
+    "reference": "/callback/blog/lock-comments/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0043",
+    "related_findings": [
+      "FND-18148"
+    ]
+  },
+  {
+    "id": "API-0118",
+    "reference": "/callback/news/lock-comments/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0044",
+    "related_findings": [
+      "FND-18149"
+    ]
+  },
+  {
+    "id": "API-0119",
+    "reference": "/callback/video/lock-comments/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0045",
+    "related_findings": [
+      "FND-18150"
+    ]
+  },
+  {
+    "id": "API-0120",
+    "reference": "/callback/content/feature/article/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0046",
+    "related_findings": [
+      "FND-18151"
+    ]
+  },
+  {
+    "id": "API-0121",
+    "reference": "/callback/content/feature/blog/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0047",
+    "related_findings": [
+      "FND-18152"
+    ]
+  },
+  {
+    "id": "API-0122",
+    "reference": "/callback/content/feature/lesson_course/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0048",
+    "related_findings": [
+      "FND-18153"
+    ]
+  },
+  {
+    "id": "API-0123",
+    "reference": "/callback/content/feature/news/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0049",
+    "related_findings": [
+      "FND-18154"
+    ]
+  },
+  {
+    "id": "API-0124",
+    "reference": "/callback/content/feature/chess_video/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0050",
+    "related_findings": [
+      "FND-18155"
+    ]
+  },
+  {
+    "id": "API-0125",
+    "reference": "/callback/user/content-language/set",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0051",
+    "related_findings": [
+      "FND-18156"
+    ]
+  },
+  {
+    "id": "API-0126",
+    "reference": "/callback/survey/{id}/vote/{optionId}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0090",
+      "SRC-0751",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0053",
+    "related_findings": [
+      "FND-18158"
+    ]
+  },
+  {
+    "id": "API-0127",
+    "reference": "/callback/leagues/league-info",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0134"
+    ],
+    "route_id": "RTE-0076",
+    "related_findings": [
+      "FND-18181"
+    ]
+  },
+  {
+    "id": "API-0128",
+    "reference": "/{_locale}/callback/leagues/league-info",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0134"
+    ],
+    "route_id": "RTE-0077",
+    "related_findings": [
+      "FND-18182"
+    ]
+  },
+  {
+    "id": "API-0129",
+    "reference": "/callback/club/{id}/daily/match-seek/get",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0145"
+    ],
+    "route_id": "RTE-0081",
+    "related_findings": [
+      "FND-18186"
+    ]
+  },
+  {
+    "id": "API-0130",
+    "reference": "/callback/game_seek/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0157"
+    ],
+    "route_id": "RTE-0089",
+    "related_findings": [
+      "FND-18194"
+    ]
+  },
+  {
+    "id": "API-0131",
+    "reference": "/callback/user/popup/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0157",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0090",
+    "related_findings": [
+      "FND-18195"
+    ]
+  },
+  {
+    "id": "API-0132",
+    "reference": "/pub/player/{username}/stats",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0157"
+    ],
+    "route_id": "RTE-0091",
+    "related_findings": [
+      "FND-18196"
+    ]
+  },
+  {
+    "id": "API-0133",
+    "reference": "/callback/member/count/{location}/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0159"
+    ],
+    "route_id": "RTE-0092",
+    "related_findings": [
+      "FND-18197"
+    ]
+  },
+  {
+    "id": "API-0134",
+    "reference": "/callback/move-condition/game/{id}/save",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0196"
+    ],
+    "route_id": "RTE-0099",
+    "related_findings": [
+      "FND-18204"
+    ]
+  },
+  {
+    "id": "API-0135",
+    "reference": "/callback/analysis/user/allowed",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0754"
+    ],
+    "route_id": "RTE-0104",
+    "related_findings": [
+      "FND-18209"
+    ]
+  },
+  {
+    "id": "API-0136",
+    "reference": "/callback/coach/hide-game/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0779"
+    ],
+    "route_id": "RTE-0113",
+    "related_findings": [
+      "FND-18218"
+    ]
+  },
+  {
+    "id": "API-0137",
+    "reference": "/callback/computer/hide-game/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0779"
+    ],
+    "route_id": "RTE-0114",
+    "related_findings": [
+      "FND-18219"
+    ]
+  },
+  {
+    "id": "API-0138",
+    "reference": "/{gameType}/callback/game/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0176",
+    "related_findings": [
+      "FND-18281"
+    ]
+  },
+  {
+    "id": "API-0139",
+    "reference": "/callback/live/game/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0177",
+    "related_findings": [
+      "FND-18282"
+    ]
+  },
+  {
+    "id": "API-0140",
+    "reference": "/callback/daily/game/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0178",
+    "related_findings": [
+      "FND-18283"
+    ]
+  },
+  {
+    "id": "API-0141",
+    "reference": "/callback/user/id-to-data",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0185",
+    "related_findings": [
+      "FND-18290"
+    ]
+  },
+  {
+    "id": "API-0142",
+    "reference": "/callback/play/settings/is-on-vacation",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0188",
+    "related_findings": [
+      "FND-18293"
+    ]
+  },
+  {
+    "id": "API-0143",
+    "reference": "/callback/play/settings/vacation-time-remaining",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0189",
+    "related_findings": [
+      "FND-18294"
+    ]
+  },
+  {
+    "id": "API-0144",
+    "reference": "/callback/analysis/game/{type}/{gameId}/all",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0190",
+    "related_findings": [
+      "FND-18295"
+    ]
+  },
+  {
+    "id": "API-0145",
+    "reference": "/callback/move-conditions/game/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0191",
+    "related_findings": [
+      "FND-18296"
+    ]
+  },
+  {
+    "id": "API-0146",
+    "reference": "/callback/daily/game/{id}/next",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0192",
+    "related_findings": [
+      "FND-18297"
+    ]
+  },
+  {
+    "id": "API-0147",
+    "reference": "/callback/daily/game/{id}/previous",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0193",
+    "related_findings": [
+      "FND-18298"
+    ]
+  },
+  {
+    "id": "API-0148",
+    "reference": "/callback/game/{id}/submit-move",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0194",
+    "related_findings": [
+      "FND-18299"
+    ]
+  },
+  {
+    "id": "API-0149",
+    "reference": "/callback/game/{id}/offer-draw",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0195",
+    "related_findings": [
+      "FND-18300"
+    ]
+  },
+  {
+    "id": "API-0150",
+    "reference": "/callback/game/{id}/decline-draw",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0196",
+    "related_findings": [
+      "FND-18301"
+    ]
+  },
+  {
+    "id": "API-0151",
+    "reference": "/callback/game/{id}/resign",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0197",
+    "related_findings": [
+      "FND-18302"
+    ]
+  },
+  {
+    "id": "API-0152",
+    "reference": "/callback/game_seek/{id}/accept-seek",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0198",
+    "related_findings": [
+      "FND-18303"
+    ]
+  },
+  {
+    "id": "API-0153",
+    "reference": "/callback/bucket",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0199",
+    "related_findings": [
+      "FND-18304"
+    ]
+  },
+  {
+    "id": "API-0154",
+    "reference": "/{_locale}/callback/bucket",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0200",
+    "related_findings": [
+      "FND-18305"
+    ]
+  },
+  {
+    "id": "API-0155",
+    "reference": "/callback/game/daily/challenge/{opponent}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0201",
+    "related_findings": [
+      "FND-18306"
+    ]
+  },
+  {
+    "id": "API-0156",
+    "reference": "/callback/game/random/daily/challenge",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0202",
+    "related_findings": [
+      "FND-18307"
+    ]
+  },
+  {
+    "id": "API-0157",
+    "reference": "/callback/game_seek/{id}/decline-challenge",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0203",
+    "related_findings": [
+      "FND-18308"
+    ]
+  },
+  {
+    "id": "API-0158",
+    "reference": "/callback/user/notices",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0204",
+    "related_findings": [
+      "FND-18309"
+    ]
+  },
+  {
+    "id": "API-0159",
+    "reference": "/callback/report-user",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0205",
+    "related_findings": [
+      "FND-18310"
+    ]
+  },
+  {
+    "id": "API-0160",
+    "reference": "/callback/report-forum-topic/{uuid}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0206",
+    "related_findings": [
+      "FND-18311"
+    ]
+  },
+  {
+    "id": "API-0161",
+    "reference": "/chess-tv/callback/report/{reason}/{video}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0207",
+    "related_findings": [
+      "FND-18312"
+    ]
+  },
+  {
+    "id": "API-0162",
+    "reference": "/callback/user/lifetime-score/{user}/{opponent}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0208",
+    "related_findings": [
+      "FND-18313"
+    ]
+  },
+  {
+    "id": "API-0163",
+    "reference": "/callback/user/search/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0209",
+    "related_findings": [
+      "FND-18314"
+    ]
+  },
+  {
+    "id": "API-0164",
+    "reference": "/callback/club/data/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0210",
+    "related_findings": [
+      "FND-18315"
+    ]
+  },
+  {
+    "id": "API-0165",
+    "reference": "/callback/clubs/user/admin",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0211",
+    "related_findings": [
+      "FND-18316"
+    ]
+  },
+  {
+    "id": "API-0166",
+    "reference": "/callback/clubs/user/member",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0212",
+    "related_findings": [
+      "FND-18317"
+    ]
+  },
+  {
+    "id": "API-0167",
+    "reference": "/callback/security/user/roles",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0213",
+    "related_findings": [
+      "FND-18318"
+    ]
+  },
+  {
+    "id": "API-0168",
+    "reference": "/callback/alert/alerts",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0214",
+    "related_findings": [
+      "FND-18319"
+    ]
+  },
+  {
+    "id": "API-0169",
+    "reference": "/callback/game_seek/user-seeks",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0215",
+    "related_findings": [
+      "FND-18320"
+    ]
+  },
+  {
+    "id": "API-0170",
+    "reference": "/chess-tv/callback/schedule/{locale}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0216",
+    "related_findings": [
+      "FND-18321"
+    ]
+  },
+  {
+    "id": "API-0171",
+    "reference": "/{_locale}/chess-tv/callback/schedule/{locale}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0217",
+    "related_findings": [
+      "FND-18322"
+    ]
+  },
+  {
+    "id": "API-0172",
+    "reference": "/callback/game_seek/{id}/delete-challenge",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "route_id": "RTE-0220",
+    "related_findings": [
+      "FND-18325"
+    ]
+  },
+  {
+    "id": "API-0173",
+    "reference": "/callback/games/player",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1136"
+    ],
+    "route_id": "RTE-0221",
+    "related_findings": [
+      "FND-18326"
+    ]
+  },
+  {
+    "id": "API-0174",
+    "reference": "/callback/eco/search/fen",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0225",
+    "related_findings": [
+      "FND-18330"
+    ]
+  },
+  {
+    "id": "API-0175",
+    "reference": "/callback/analysis/game/{type}/{gameId}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0226",
+    "related_findings": [
+      "FND-18331"
+    ]
+  },
+  {
+    "id": "API-0176",
+    "reference": "/callback/eco/search/{cleanUrl}/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0228",
+    "related_findings": [
+      "FND-18333"
+    ]
+  },
+  {
+    "id": "API-0177",
+    "reference": "/callback/analysis/retry",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0229",
+    "related_findings": [
+      "FND-18334"
+    ]
+  },
+  {
+    "id": "API-0178",
+    "reference": "/callback/analysis/self",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0230",
+    "related_findings": [
+      "FND-18335"
+    ]
+  },
+  {
+    "id": "API-0179",
+    "reference": "/callback/analysis/library/self",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0231",
+    "related_findings": [
+      "FND-18336"
+    ]
+  },
+  {
+    "id": "API-0180",
+    "reference": "/callback/analysis/library/{lucgId}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0256",
+    "related_findings": [
+      "FND-18361"
+    ]
+  },
+  {
+    "id": "API-0181",
+    "reference": "/callback/library/collections/{uuid}/bookmarks",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0257",
+    "related_findings": [
+      "FND-18362"
+    ]
+  },
+  {
+    "id": "API-0182",
+    "reference": "/callback/library/collections/{uuid}/lookups",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0258",
+    "related_findings": [
+      "FND-18363"
+    ]
+  },
+  {
+    "id": "API-0183",
+    "reference": "/callback/library/collections/{uuid}/participants",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0259",
+    "related_findings": [
+      "FND-18364"
+    ]
+  },
+  {
+    "id": "API-0184",
+    "reference": "/callback/library/collections/{uuid}/actions/add-from-pgn",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0260",
+    "related_findings": [
+      "FND-18365"
+    ]
+  },
+  {
+    "id": "API-0185",
+    "reference": "/callback/library/collections/{uuid}/items-bulk",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0261",
+    "related_findings": [
+      "FND-18366"
+    ]
+  },
+  {
+    "id": "API-0186",
+    "reference": "/callback/library/collections/{uuid}/actions/add-from-url",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0262",
+    "related_findings": [
+      "FND-18367"
+    ]
+  },
+  {
+    "id": "API-0187",
+    "reference": "/callback/library/collections/{uuid}/actions/download-pgn",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0263",
+    "related_findings": [
+      "FND-18368"
+    ]
+  },
+  {
+    "id": "API-0188",
+    "reference": "/callback/library/collections/{uuid}/items",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0264",
+    "related_findings": [
+      "FND-18369"
+    ]
+  },
+  {
+    "id": "API-0189",
+    "reference": "/callback/library/community/collections",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0265",
+    "related_findings": [
+      "FND-18370"
+    ]
+  },
+  {
+    "id": "API-0190",
+    "reference": "/callback/library/collections/{uuid}/actions/copy-into-new",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0266",
+    "related_findings": [
+      "FND-18371"
+    ]
+  },
+  {
+    "id": "API-0191",
+    "reference": "/callback/library/collections/{uuid}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "DELETE"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0267",
+    "related_findings": [
+      "FND-18372"
+    ]
+  },
+  {
+    "id": "API-0192",
+    "reference": "/callback/library/bookmarks",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0268",
+    "related_findings": [
+      "FND-18373"
+    ]
+  },
+  {
+    "id": "API-0193",
+    "reference": "/callback/library/collections",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0269",
+    "related_findings": [
+      "FND-18374"
+    ]
+  },
+  {
+    "id": "API-0194",
+    "reference": "/callback/library/collections/{uuid}/actions/publish",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0270",
+    "related_findings": [
+      "FND-18375"
+    ]
+  },
+  {
+    "id": "API-0195",
+    "reference": "/callback/library/collections/{uuid}/actions/remove-root-bookmark",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0271",
+    "related_findings": [
+      "FND-18376"
+    ]
+  },
+  {
+    "id": "API-0196",
+    "reference": "/callback/library/collections/{uuid}/actions/remove-items",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0272",
+    "related_findings": [
+      "FND-18377"
+    ]
+  },
+  {
+    "id": "API-0197",
+    "reference": "/callback/library/collections/{uuid}/lookups/{lookup}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "DELETE"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0273",
+    "related_findings": [
+      "FND-18378"
+    ]
+  },
+  {
+    "id": "API-0198",
+    "reference": "/callback/library/collections/{uuid}/participants/{userId}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "DELETE"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0274",
+    "related_findings": [
+      "FND-18379"
+    ]
+  },
+  {
+    "id": "API-0199",
+    "reference": "/callback/library/collections/{uuid}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0275",
+    "related_findings": [
+      "FND-18380"
+    ]
+  },
+  {
+    "id": "API-0200",
+    "reference": "/callback/library/shared",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0276",
+    "related_findings": [
+      "FND-18381"
+    ]
+  },
+  {
+    "id": "API-0201",
+    "reference": "/callback/library/collections/{uuid}/actions/unpublish",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0277",
+    "related_findings": [
+      "FND-18382"
+    ]
+  },
+  {
+    "id": "API-0202",
+    "reference": "/callback/library/lucgs/{uuid}/details",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0278",
+    "related_findings": [
+      "FND-18383"
+    ]
+  },
+  {
+    "id": "API-0203",
+    "reference": "/callback/library/collections/{uuid}/privacy-settings",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0279",
+    "related_findings": [
+      "FND-18384"
+    ]
+  },
+  {
+    "id": "API-0204",
+    "reference": "/callback/library/collections/{uuid}/thumbnail",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0280",
+    "related_findings": [
+      "FND-18385"
+    ]
+  },
+  {
+    "id": "API-0205",
+    "reference": "/callback/library/collections/{uuid}/actions/upload-thumbnail",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0281",
+    "related_findings": [
+      "FND-18386"
+    ]
+  },
+  {
+    "id": "API-0206",
+    "reference": "/callback/library/collections/{uuid}/participants/{userId}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "PUT"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0282",
+    "related_findings": [
+      "FND-18387"
+    ]
+  },
+  {
+    "id": "API-0207",
+    "reference": "/callback/library/collections",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0283",
+    "related_findings": [
+      "FND-18388"
+    ]
+  },
+  {
+    "id": "API-0208",
+    "reference": "/callback/library/collections/{uuid}/actions/privacy",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0288",
+    "related_findings": [
+      "FND-18393"
+    ]
+  },
+  {
+    "id": "API-0209",
+    "reference": "/callback/friend/request/{user}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0290",
+    "related_findings": [
+      "FND-18395"
+    ]
+  },
+  {
+    "id": "API-0210",
+    "reference": "/callback/friend/accept/{user}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "PUT"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0291",
+    "related_findings": [
+      "FND-18396"
+    ]
+  },
+  {
+    "id": "API-0211",
+    "reference": "/callback/member/block/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0292",
+    "related_findings": [
+      "FND-18397"
+    ]
+  },
+  {
+    "id": "API-0212",
+    "reference": "/callback/friend/cancel/request/{user}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0293",
+    "related_findings": [
+      "FND-18398"
+    ]
+  },
+  {
+    "id": "API-0213",
+    "reference": "/callback/user/valid",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0294",
+    "related_findings": [
+      "FND-18399"
+    ]
+  },
+  {
+    "id": "API-0214",
+    "reference": "/{_locale}/callback/user/valid",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0295",
+    "related_findings": [
+      "FND-18400"
+    ]
+  },
+  {
+    "id": "API-0215",
+    "reference": "/callback/friend/decline/request/{user}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "DELETE"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0296",
+    "related_findings": [
+      "FND-18401"
+    ]
+  },
+  {
+    "id": "API-0216",
+    "reference": "/callback/friend/delete/{user}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "DELETE"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0297",
+    "related_findings": [
+      "FND-18402"
+    ]
+  },
+  {
+    "id": "API-0217",
+    "reference": "/callback/user/dismiss_follow/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0298",
+    "related_findings": [
+      "FND-18403"
+    ]
+  },
+  {
+    "id": "API-0218",
+    "reference": "/callback/report-user",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0299",
+    "related_findings": [
+      "FND-18404"
+    ]
+  },
+  {
+    "id": "API-0219",
+    "reference": "/pub/player/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0300",
+    "related_findings": [
+      "FND-18405"
+    ]
+  },
+  {
+    "id": "API-0220",
+    "reference": "/callback/user/follow_suggestions",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0301",
+    "related_findings": [
+      "FND-18406"
+    ]
+  },
+  {
+    "id": "API-0221",
+    "reference": "/callback/recent/opponents",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0302",
+    "related_findings": [
+      "FND-18407"
+    ]
+  },
+  {
+    "id": "API-0222",
+    "reference": "/callback/user/archive-view",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0304",
+    "related_findings": [
+      "FND-18409"
+    ]
+  },
+  {
+    "id": "API-0223",
+    "reference": "/callback/user/set-fair-play-agree/{fairPlayAgree}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0305",
+    "related_findings": [
+      "FND-18410"
+    ]
+  },
+  {
+    "id": "API-0224",
+    "reference": "/callback/user/home-recent-content-type",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0306",
+    "related_findings": [
+      "FND-18411"
+    ]
+  },
+  {
+    "id": "API-0225",
+    "reference": "/callback/member/track/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0307",
+    "related_findings": [
+      "FND-18412"
+    ]
+  },
+  {
+    "id": "API-0226",
+    "reference": "/callback/member/unblock/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0308",
+    "related_findings": [
+      "FND-18413"
+    ]
+  },
+  {
+    "id": "API-0227",
+    "reference": "/callback/member/untrack/{username}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0309",
+    "related_findings": [
+      "FND-18414"
+    ]
+  },
+  {
+    "id": "API-0228",
+    "reference": "/callback/auth/{realm}/{codeName}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET",
+      "OPTIONS"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0310",
+    "related_findings": [
+      "FND-18415"
+    ]
+  },
+  {
+    "id": "API-0229",
+    "reference": "/callback/games/search",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0311",
+    "related_findings": [
+      "FND-18416"
+    ]
+  },
+  {
+    "id": "API-0230",
+    "reference": "/callback/classroom/get-countries",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0312",
+    "related_findings": [
+      "FND-18417"
+    ]
+  },
+  {
+    "id": "API-0231",
+    "reference": "/{_locale}/callback/classroom/get-countries",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0313",
+    "related_findings": [
+      "FND-18418"
+    ]
+  },
+  {
+    "id": "API-0232",
+    "reference": "/callback/game/gif/{type}/{id}",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0316",
+    "related_findings": [
+      "FND-18421"
+    ]
+  },
+  {
+    "id": "API-0233",
+    "reference": "/callback/game/dyn-gif",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "POST"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0317",
+    "related_findings": [
+      "FND-18422"
+    ]
+  },
+  {
+    "id": "API-0234",
+    "reference": "/callback/games/archive",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "GET"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0318",
+    "related_findings": [
+      "FND-18423"
+    ]
+  },
+  {
+    "id": "API-0235",
+    "reference": "/callback/friend/registration-invite-link",
+    "kind": "declared route, not observed request",
+    "http_method": [
+      "not established; empty/missing route constraint"
+    ],
+    "request_headers": "not captured",
+    "request_body": "not established",
+    "response": "not established",
+    "observed_status": "not observed",
+    "authentication": "not established",
+    "pagination": "not established",
+    "filtering_sorting": "not established",
+    "redirects": "not established",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "route_id": "RTE-0319",
+    "related_findings": [
+      "FND-18424"
+    ]
+  }
+]

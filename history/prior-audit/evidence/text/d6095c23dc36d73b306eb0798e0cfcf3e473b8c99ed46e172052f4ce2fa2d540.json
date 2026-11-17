@@ -1,0 +1,65 @@
+{
+  "config": {
+    "id": "probe-normal",
+    "preSearch": {
+      "search": {
+        "case": "searchParameters",
+        "value": {
+          "nodesLimit": 1000,
+          "numLines": 1
+        }
+      }
+    },
+    "rootOnly": true,
+    "searchOnly": true,
+    "timeoutSeconds": 20
+  },
+  "started": "2026-11-14T20:20:10.671Z",
+  "preSearch": [
+    {
+      "gamePoint": 1048576,
+      "score": {
+        "score": {
+          "score": {
+            "case": "scoreCentipawnsWhite",
+            "value": 17
+          }
+        },
+        "depth": 6,
+        "engine": 11,
+        "nodes": 717
+      }
+    }
+  ],
+  "elapsedSeconds": 1.468,
+  "searchLogs": [
+    "Explanation Engine 1.130.285 (C) 2025 Chess.com, LLC",
+    "[2026-11-14 20:20:12.100] [cee-ostream-logger] [info] CEE - API_LOG: [REDACTED_ENCODED_PAYLOAD]",
+    "",
+    "[2026-11-14 20:20:12.120] [cee-ostream-logger] [info] CEE - API_LOG: CPu0ARoECAEqAA==",
+    "",
+    "[2026-11-14 20:20:12.121] [cee-ostream-logger] [info] CEE - API_LOG: CLe9ARIECAI6AA==",
+    "",
+    "[2026-11-14 20:20:12.211] [cee-ostream-logger] [info] CEE - API_LOG: CKLvBhoGCAJCAggB",
+    "",
+    "[2026-11-14 20:20:12.216] [cee-ostream-logger] [info] CEE - API_LOG: COmgBxIECAMqAA==",
+    "",
+    "[2026-11-14 20:20:12.220] [cee-ostream-logger] [info] CEE - API_LOG: CKfCBxoECAMyAA==",
+    "",
+    "[2026-11-14 20:20:12.222] [cee-ostream-logger] [info] CEE - API_LOG: CK/GBxITCAQiDwgdEICAQBoHCgUQ6AcgAQ==",
+    "",
+    "[2026-11-14 20:20:12.223] [cee-ostream-logger] [info] CEE - API_LOG: CM7OBxoGCAQqAggB",
+    "",
+    "[2026-11-14 20:20:12.223] [cee-ostream-logger] [info] CEE - API_LOG: CMPQBxIGCAU6AggB",
+    "",
+    "[2026-11-14 20:20:12.289] [cee-ostream-logger] [info] CEE - API_LOG: [REDACTED_ENCODED_PAYLOAD]",
+    "",
+    "[2026-11-14 20:20:12.291] [cee-ostream-logger] [info] CEE - API_LOG: CNrhCxoGCAVCAggB",
+    "",
+    "[2026-11-14 20:20:12.291] [cee-ostream-logger] [info] CEE - API_LOG: CJTlCxIGCAYqAggB",
+    "",
+    "[2026-11-14 20:20:12.291] [cee-ostream-logger] [info] CEE - API_LOG: CPrmCxoECAYyAA==",
+    ""
+  ],
+  "warnings": []
+}

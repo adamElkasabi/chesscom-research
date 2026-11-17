@@ -1,0 +1,114 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_clock.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoardClock",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardClockType"
+        },
+        {
+          "name": "timer",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardClockValue"
+        },
+        {
+          "name": "stopwatch",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardClockValue"
+        },
+        {
+          "name": "created_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardClockValue",
+      "field": [
+        {
+          "name": "duration",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Duration"
+        },
+        {
+          "name": "state",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardClockState"
+        },
+        {
+          "name": "updated_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SharedBoardClockType",
+      "value": [
+        {
+          "name": "SHARED_BOARD_CLOCK_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_TYPE_CURRENT_TIME",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_TYPE_SESSION_TIME",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_TYPE_TIMER",
+          "number": 3
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_TYPE_STOPWATCH",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardClockState",
+      "value": [
+        {
+          "name": "SHARED_BOARD_CLOCK_STATE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_STATE_ENDED",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_STATE_STARTED",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_CLOCK_STATE_STOPPED",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

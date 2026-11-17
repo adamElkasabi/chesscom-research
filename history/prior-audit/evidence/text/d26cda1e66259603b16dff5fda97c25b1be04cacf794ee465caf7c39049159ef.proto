@@ -1,0 +1,59 @@
+// source: chesscom/user_properties/v1/properties_play_stats.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum PlayStatsPropertyDefinition {
+  PLAY_STATS_PROPERTY_DEFINITION_UNSPECIFIED = 0;
+  PLAY_STATS_PROPERTY_DEFINITION_AVG_MOVES_PER_GAME = 1;
+  PLAY_STATS_PROPERTY_DEFINITION_AVG_OPPONENT_RATING = 2;
+  PLAY_STATS_PROPERTY_DEFINITION_HIGHEST_OPPONENT_RATING = 3;
+  PLAY_STATS_PROPERTY_DEFINITION_HIGHEST_RATED_OPPONENT_WIN_GAME = 4;
+  PLAY_STATS_PROPERTY_DEFINITION_HIGHEST_RATED_OPPONENT_WIN_GAME_TIMESTAMP = 5;
+  PLAY_STATS_PROPERTY_DEFINITION_LAST_GAME_DATE = 6;
+  PLAY_STATS_PROPERTY_DEFINITION_TOTAL_GAME_COUNT_ALL = 7;
+  PLAY_STATS_PROPERTY_DEFINITION_TOTAL_GAME_COUNT_RATED = 8;
+  PLAY_STATS_PROPERTY_DEFINITION_TOTAL_GAME_COUNT_UNRATED = 9;
+  PLAY_STATS_PROPERTY_DEFINITION_TOTAL_WIN_COUNT = 10;
+  PLAY_STATS_PROPERTY_DEFINITION_TOTAL_DRAW_COUNT = 11;
+  PLAY_STATS_PROPERTY_DEFINITION_TOTAL_LOSS_COUNT = 12;
+}
+
+message PlayStatsProperty {
+  oneof _avg_moves_per_game {
+  double avg_moves_per_game = 1;
+  }
+  oneof _avg_opponent_rating {
+  double avg_opponent_rating = 2;
+  }
+  oneof _highest_opponent_rating {
+  int32 highest_opponent_rating = 3;
+  }
+  oneof _highest_rated_opponent_win_game {
+  string highest_rated_opponent_win_game = 4;
+  }
+  oneof _highest_rated_opponent_win_game_timestamp {
+  .google.protobuf.Timestamp highest_rated_opponent_win_game_timestamp = 5;
+  }
+  oneof _last_game_date {
+  .google.protobuf.Timestamp last_game_date = 6;
+  }
+  oneof _total_game_count_all {
+  int32 total_game_count_all = 7;
+  }
+  oneof _total_game_count_rated {
+  int32 total_game_count_rated = 8;
+  }
+  oneof _total_game_count_unrated {
+  int32 total_game_count_unrated = 9;
+  }
+  oneof _total_win_count {
+  int32 total_win_count = 10;
+  }
+  oneof _total_draw_count {
+  int32 total_draw_count = 11;
+  }
+  oneof _total_loss_count {
+  int32 total_loss_count = 12;
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "chesscom/game_storage/v2/opening_data.proto",
+  "package": "chesscom.game_storage.v2",
+  "message_type": [
+    {
+      "name": "OpeningData",
+      "field": [
+        {
+          "name": "last_book_eco_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_book_ply",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_notable_eco_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_notable_ply",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "eco_family_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "eco_code",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_book_eco_id"
+        },
+        {
+          "name": "_last_book_ply"
+        },
+        {
+          "name": "_last_notable_eco_id"
+        },
+        {
+          "name": "_last_notable_ply"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

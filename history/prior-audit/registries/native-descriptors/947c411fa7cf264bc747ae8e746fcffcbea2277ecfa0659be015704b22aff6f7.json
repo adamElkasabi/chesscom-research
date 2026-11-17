@@ -1,0 +1,62 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_legal_premoves.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/square.proto",
+    "chesscom/chess/v1/color.proto"
+  ],
+  "message_type": [
+    {
+      "name": "LegalPremovesRequest",
+      "field": [
+        {
+          "name": "previous_premoves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "from",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "color",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_from"
+        },
+        {
+          "name": "_color"
+        }
+      ]
+    },
+    {
+      "name": "LegalPremovesResponse",
+      "field": [
+        {
+          "name": "legal_premoves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

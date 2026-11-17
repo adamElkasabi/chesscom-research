@@ -1,0 +1,36 @@
+{
+  "module": "module-003",
+  "command": [
+    "node",
+    "--experimental-permission",
+    "--allow-fs-read=/var/tmp/chess-forensic/output/website-audit/wasm-analysis/modules/module-003/structure.json",
+    "--allow-fs-read=/home/user/forensic-mission-tools/runtime_probe.cjs",
+    "--allow-fs-read=/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm",
+    "--max-old-space-size=256",
+    "/home/user/forensic-mission-tools/runtime_probe.cjs",
+    "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm",
+    "/var/tmp/chess-forensic/output/website-audit/wasm-analysis/modules/module-003/structure.json"
+  ],
+  "isolation": {
+    "filesystem": "Node permission model: read-only allowlist of probe and binary, no write or child/worker grant",
+    "network": "Linux seccomp denies socket/connect/bind/listen/accept/socketpair; global fetch also throws",
+    "CPU_seconds": 25,
+    "wall_timeout_seconds": 35,
+    "JS_heap_MiB": 256,
+    "core_dumps": false
+  },
+  "scope": "NEW bounded structural instantiation; historical full native searches separately retained",
+  "returncode": 0,
+  "stderr": "(node:2427) ExperimentalWarning: Permission is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "stdout": "{\n  \"status\": \"instantiated with function import stubs\",\n  \"imports\": 42,\n  \"exports\": 32,\n  \"memories\": [],\n  \"import_calls_during_instantiation\": [],\n  \"elapsed_ms\": 18.180257,\n  \"algorithm_calls\": [],\n  \"limitation\": \"No wrapper runtime constructors/search/review invoked; stub instantiation is not a functional engine validation. No original application inputs used.\"\n}\n",
+  "observation": {
+    "status": "instantiated with function import stubs",
+    "imports": 42,
+    "exports": 32,
+    "memories": [],
+    "import_calls_during_instantiation": [],
+    "elapsed_ms": 18.180257,
+    "algorithm_calls": [],
+    "limitation": "No wrapper runtime constructors/search/review invoked; stub instantiation is not a functional engine validation. No original application inputs used."
+  }
+}

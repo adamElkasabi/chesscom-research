@@ -1,0 +1,35 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_uncompress_data.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "InternalFeatureUncompressDataRequest",
+      "field": [
+        {
+          "name": "compressed_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        },
+        {
+          "name": "decrypt",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureUncompressDataResponse",
+      "field": [
+        {
+          "name": "uncompressed_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

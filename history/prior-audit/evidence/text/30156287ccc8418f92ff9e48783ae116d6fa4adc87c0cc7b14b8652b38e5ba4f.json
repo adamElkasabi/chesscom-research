@@ -1,0 +1,23 @@
+{
+  "id": "normalized-human-no-maia",
+  "timeoutSeconds": 90,
+  "evaluateGame": {
+    "search": {
+      "case": "gameReviewSearchSettings",
+      "value": {
+        "strength": 1
+      }
+    },
+    "torchSearchMode": {
+      "mode": {
+        "case": "human",
+        "value": {
+          "disableMaia": true
+        }
+      }
+    }
+  },
+  "uciAfter": {
+    "Normalize": false
+  }
+}

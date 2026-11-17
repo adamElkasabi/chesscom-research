@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/piece_details.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/square.proto",
+    "chesscom/chess/v1/piece.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PieceDetails",
+      "field": [
+        {
+          "name": "piece",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece"
+        },
+        {
+          "name": "square",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "piece_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,1249 @@
+{
+  "name": "chesscom/game_storage/v1/game_stored.proto",
+  "package": "chesscom.game_storage.v1",
+  "message_type": [
+    {
+      "name": "GameStored",
+      "field": [
+        {
+          "name": "internal_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "provider",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.GameProvider"
+        },
+        {
+          "name": "key",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "created_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "started_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "ended_at",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "time_control",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "per_player_time_controls",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.PerPlayerTimeControl"
+        },
+        {
+          "name": "time_class",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.TimeClass"
+        },
+        {
+          "name": "rating_class",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.RatingClass"
+        },
+        {
+          "name": "variant",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.Variant"
+        },
+        {
+          "name": "result",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.GameResult"
+        },
+        {
+          "name": "privacy",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.GamePrivacy"
+        },
+        {
+          "name": "origin",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.GameOrigin"
+        },
+        {
+          "name": "chess_com_tournament_identifier",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.tdtools.v1.ChessComTournamentIdentifier"
+        },
+        {
+          "name": "tags",
+          "number": 16,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "chess_game",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.ChessGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "bughouse_game",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.BughouseGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "variant_game",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.VariantGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "legacy_id",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "vs_computer_game_mode",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.VsComputerGameMode",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "vs_coach_game_data",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.VsCoachGameData",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "game"
+        },
+        {
+          "name": "_legacy_id"
+        },
+        {
+          "name": "_vs_computer_game_mode"
+        },
+        {
+          "name": "_vs_coach_game_data"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 17,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "name": "ChessGame",
+      "field": [
+        {
+          "name": "initial_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "final_fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "ply_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "move_text",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_timestamps",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "white_player",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.Player"
+        },
+        {
+          "name": "black_player",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.Player"
+        },
+        {
+          "name": "master_chess_game_data",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.MasterChessGameData",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_initial_fen"
+        },
+        {
+          "name": "_master_chess_game_data"
+        }
+      ]
+    },
+    {
+      "name": "BughouseGame",
+      "field": [
+        {
+          "name": "first_board",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.ChessGame"
+        },
+        {
+          "name": "second_game_key",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 2,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "name": "VariantGame",
+      "field": [
+        {
+          "name": "initial_fen4",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "end_fen4",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "ply_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "pgn4",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "board_dimension",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.VariantGame.VariantType"
+        },
+        {
+          "name": "rating_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "player_1",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.Player"
+        },
+        {
+          "name": "player_2",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.Player"
+        },
+        {
+          "name": "player_3",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.Player"
+        },
+        {
+          "name": "player_4",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.Player"
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "VariantType",
+          "value": [
+            {
+              "name": "VARIANT_TYPE_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "VARIANT_TYPE_FREE_FOR_ALL",
+              "number": 1
+            },
+            {
+              "name": "VARIANT_TYPE_TEAMS",
+              "number": 2
+            },
+            {
+              "name": "VARIANT_TYPE_SOLO",
+              "number": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PerPlayerTimeControl",
+      "field": [
+        {
+          "name": "player_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "time_control",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "Player",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.PlayerType"
+        },
+        {
+          "name": "provider",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.PlayerProvider"
+        },
+        {
+          "name": "key",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_handle",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "display_name",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "title",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.PlayerTitle"
+        },
+        {
+          "name": "country",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "final_rating",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "result",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.PlayerResult"
+        },
+        {
+          "name": "place",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "client",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "points",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "initial_rating",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_diff",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "fide_id",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_rating",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "dw_incident_logged",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "bad_sport_behavior",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.PlayerBadSportBehavior",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_client"
+        },
+        {
+          "name": "_points"
+        },
+        {
+          "name": "_initial_rating"
+        },
+        {
+          "name": "_rating_diff"
+        },
+        {
+          "name": "_fide_id"
+        },
+        {
+          "name": "_min_rating"
+        },
+        {
+          "name": "_dw_incident_logged"
+        },
+        {
+          "name": "_bad_sport_behavior"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "name": "MasterChessGameData",
+      "field": [
+        {
+          "name": "pgn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "event",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "site",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "date",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "round",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_text",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "final_fen3",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "final_fen6",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_control",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_final_fen3"
+        },
+        {
+          "name": "_final_fen6"
+        }
+      ]
+    },
+    {
+      "name": "PlayModeGrouping",
+      "field": [
+        {
+          "name": "variants",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.Variant"
+        },
+        {
+          "name": "time_classes",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.TimeClass"
+        }
+      ]
+    },
+    {
+      "name": "PlayModeGroupingOptions",
+      "extension": [
+        {
+          "name": "grouping",
+          "extendee": ".google.protobuf.EnumValueOptions",
+          "number": 1001,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_storage.v1.PlayModeGrouping",
+          "json_name": "grouping"
+        }
+      ]
+    },
+    {
+      "name": "VsCoachGameData",
+      "field": [
+        {
+          "name": "coach_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "GameProvider",
+      "value": [
+        {
+          "name": "GAME_PROVIDER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_PROVIDER_CHESS_COM",
+          "number": 1
+        },
+        {
+          "name": "GAME_PROVIDER_CHESS_KID",
+          "number": 2
+        },
+        {
+          "name": "GAME_PROVIDER_FIDE",
+          "number": 3
+        },
+        {
+          "name": "GAME_PROVIDER_LICHESS",
+          "number": 4
+        },
+        {
+          "name": "GAME_PROVIDER_CHESSBASE",
+          "number": 5
+        },
+        {
+          "name": "GAME_PROVIDER_OFFLINE",
+          "number": 6
+        },
+        {
+          "name": "GAME_PROVIDER_CHESS_COM_MASTER_GAMES",
+          "number": 7
+        }
+      ]
+    },
+    {
+      "name": "GameOrigin",
+      "value": [
+        {
+          "name": "GAME_ORIGIN_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_ORIGIN_DIRECT_CHALLENGE",
+          "number": 1
+        },
+        {
+          "name": "GAME_ORIGIN_SEEK",
+          "number": 2
+        },
+        {
+          "name": "GAME_ORIGIN_POOL_SEEK",
+          "number": 3
+        },
+        {
+          "name": "GAME_ORIGIN_START_GAME",
+          "number": 4
+        },
+        {
+          "name": "GAME_ORIGIN_MATCH",
+          "number": 5
+        },
+        {
+          "name": "GAME_ORIGIN_ARENA",
+          "number": 6
+        },
+        {
+          "name": "GAME_ORIGIN_TOURNAMENT",
+          "number": 7
+        },
+        {
+          "name": "GAME_ORIGIN_TEAM_MATCH",
+          "number": 8
+        },
+        {
+          "name": "GAME_ORIGIN_COMPETITION",
+          "number": 9
+        },
+        {
+          "name": "GAME_ORIGIN_RECOMMENDED_MATCH",
+          "number": 10
+        },
+        {
+          "name": "GAME_ORIGIN_LEAGUE",
+          "number": 11
+        },
+        {
+          "name": "GAME_ORIGIN_SIMUL",
+          "number": 12
+        }
+      ]
+    },
+    {
+      "name": "TimeClass",
+      "value": [
+        {
+          "name": "TIME_CLASS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TIME_CLASS_BULLET",
+          "number": 1
+        },
+        {
+          "name": "TIME_CLASS_BLITZ",
+          "number": 2
+        },
+        {
+          "name": "TIME_CLASS_RAPID",
+          "number": 3
+        },
+        {
+          "name": "TIME_CLASS_DAILY",
+          "number": 4
+        },
+        {
+          "name": "TIME_CLASS_HYPER",
+          "number": 5
+        },
+        {
+          "name": "TIME_CLASS_CLASSICAL",
+          "number": 6
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RatingClass",
+      "value": [
+        {
+          "name": "RATING_CLASS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RATING_CLASS_UNRATED",
+          "number": 1
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_BULLET",
+          "number": 2
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_BLITZ",
+          "number": 3
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_RAPID",
+          "number": 4
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_DAILY",
+          "number": 5
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS960",
+          "number": 6
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS960_DAILY",
+          "number": 7
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_BUGHOUSE",
+          "number": 8
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_KINGOFTHEHILL",
+          "number": 9
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_THREECHECK",
+          "number": 10
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CRAZYHOUSE",
+          "number": 11
+        },
+        {
+          "name": "RATING_CLASS_FIDE_CHESS_STANDARD",
+          "number": 12
+        },
+        {
+          "name": "RATING_CLASS_FIDE_CHESS_RAPID",
+          "number": 13
+        },
+        {
+          "name": "RATING_CLASS_FIDE_CHESS_BLITZ",
+          "number": 14
+        },
+        {
+          "name": "RATING_CLASS_CHESS_COM_CHESS_ODDS_CHESS",
+          "number": 15
+        }
+      ]
+    },
+    {
+      "name": "Variant",
+      "value": [
+        {
+          "name": "VARIANT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "VARIANT_CHESS",
+          "number": 1
+        },
+        {
+          "name": "VARIANT_CHESS_960",
+          "number": 2
+        },
+        {
+          "name": "VARIANT_BUGHOUSE",
+          "number": 4
+        },
+        {
+          "name": "VARIANT_THREE_CHECK",
+          "number": 5
+        },
+        {
+          "name": "VARIANT_CRAZYHOUSE",
+          "number": 6
+        },
+        {
+          "name": "VARIANT_KING_OF_THE_HILL",
+          "number": 7
+        },
+        {
+          "name": "VARIANT_ODDS_CHESS",
+          "number": 8
+        },
+        {
+          "name": "VARIANT_HELP_CHESS",
+          "number": 9
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GamePrivacy",
+      "value": [
+        {
+          "name": "GAME_PRIVACY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_PRIVACY_PUBLIC",
+          "number": 1
+        },
+        {
+          "name": "GAME_PRIVACY_PRIVATE",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "PlayerResult",
+      "value": [
+        {
+          "name": "PLAYER_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_RESULT_WIN",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_RESULT_DRAW",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_RESULT_LOSE",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_RESULT_ABORT",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_RESULT_BUGHOUSE_PARTNER_LOSE",
+          "number": 5
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameResult",
+      "value": [
+        {
+          "name": "GAME_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_TIMEOUT",
+          "number": 1
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_CHECKMATE",
+          "number": 2
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_RESIGNATION",
+          "number": 3
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_ABANDONMENT",
+          "number": 4
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_AGREEMENT",
+          "number": 5
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_REPETITION",
+          "number": 6
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_STALEMATE",
+          "number": 7
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_INSUFFICIENT_MATERIAL",
+          "number": 8
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_TIMEOUT_VS_INSUFFICIENT_MATERIAL",
+          "number": 9
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_50_MOVE_RULE",
+          "number": 10
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_BUGHOUSE_PARTNER_LOSE",
+          "number": 11
+        },
+        {
+          "name": "GAME_RESULT_ABORTED",
+          "number": 12
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_THREE_CHECK",
+          "number": 13
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_KING_OF_THE_HILL",
+          "number": 14
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_DOUBLE_FORFEIT",
+          "number": 15
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayerProvider",
+      "value": [
+        {
+          "name": "PLAYER_PROVIDER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_PROVIDER_CHESS_COM",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_PROVIDER_CHESS_KID",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_PROVIDER_FIDE",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_PROVIDER_LICHESS_ORG",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_PROVIDER_CHESSBASE",
+          "number": 5
+        },
+        {
+          "name": "PLAYER_PROVIDER_CHESS_COM_MASTER",
+          "number": 6
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayerTitle",
+      "value": [
+        {
+          "name": "PLAYER_TITLE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_TITLE_WGM",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_TITLE_GM",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_TITLE_WIM",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_TITLE_IM",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_TITLE_WFM",
+          "number": 5
+        },
+        {
+          "name": "PLAYER_TITLE_FM",
+          "number": 6
+        },
+        {
+          "name": "PLAYER_TITLE_WNM",
+          "number": 7
+        },
+        {
+          "name": "PLAYER_TITLE_NM",
+          "number": 8
+        },
+        {
+          "name": "PLAYER_TITLE_M",
+          "number": 9
+        },
+        {
+          "name": "PLAYER_TITLE_CM",
+          "number": 10
+        },
+        {
+          "name": "PLAYER_TITLE_WCM",
+          "number": 11
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayerType",
+      "value": [
+        {
+          "name": "PLAYER_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_TYPE_HUMAN",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_TYPE_COMPUTER",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_TYPE_CYBORG",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PlayerBadSportBehavior",
+      "value": [
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_NONE",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_FIRST_MOVE_NOT_PLAYED",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_ABORT",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_DISCONNECT",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_RAGE_QUIT",
+          "number": 5
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_MOVE_NOT_PLAYED",
+          "number": 6
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_BOTH_PLAYERS_DISCONNECTED",
+          "number": 7
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "VsComputerGameMode",
+      "value": [
+        {
+          "name": "VS_COMPUTER_GAME_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "VS_COMPUTER_GAME_MODE_CHALLENGE",
+          "number": 1
+        },
+        {
+          "name": "VS_COMPUTER_GAME_MODE_FRIENDLY",
+          "number": 2
+        },
+        {
+          "name": "VS_COMPUTER_GAME_MODE_ASSISTED",
+          "number": 3
+        },
+        {
+          "name": "VS_COMPUTER_GAME_MODE_CUSTOM",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "PlayMode",
+      "value": [
+        {
+          "name": "PLAY_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAY_MODE_LIVE",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "PLAY_MODE_DAILY",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "PLAY_MODE_VS_COMPUTER",
+          "number": 3,
+          "options": {}
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    }
+  ],
+  "syntax": "proto3"
+}

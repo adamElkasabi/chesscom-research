@@ -1,0 +1,357 @@
+{
+  "name": "chesscom/friends_search/v1/friends_search_service.proto",
+  "package": "chesscom.friends_search.v1",
+  "message_type": [
+    {
+      "name": "QueryFriendsRequest",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_presence_status",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "pagination",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "query",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRootQuery"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_uuid"
+        },
+        {
+          "name": "_include_presence_status"
+        },
+        {
+          "name": "_pagination"
+        }
+      ]
+    },
+    {
+      "name": "QueryFriendsResponse",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        },
+        {
+          "name": "friends",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchFriend"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AutocompleteRequest",
+      "field": [
+        {
+          "name": "prefix",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "include_friends",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_suggestions",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "friends_limit",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "suggestions_limit",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "exact_username_first",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "boost_username",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_include_friends"
+        },
+        {
+          "name": "_include_suggestions"
+        },
+        {
+          "name": "_friends_limit"
+        },
+        {
+          "name": "_suggestions_limit"
+        },
+        {
+          "name": "_exact_username_first"
+        },
+        {
+          "name": "_boost_username"
+        }
+      ]
+    },
+    {
+      "name": "AutocompleteResponse",
+      "field": [
+        {
+          "name": "friends",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchFriend"
+        },
+        {
+          "name": "suggestions",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchFriend"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetBlockersOfRequest",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "pagination",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "extra_fields",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRetrievableField"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_pagination"
+        }
+      ]
+    },
+    {
+      "name": "GetBlockersOfResponse",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        },
+        {
+          "name": "blocked_users",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.BlockedUsers"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUsersBlockedByRequest",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "last_login_date",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "extra_fields",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRetrievableField"
+        },
+        {
+          "name": "pagination",
+          "number": 99,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_login_date"
+        },
+        {
+          "name": "_pagination"
+        }
+      ]
+    },
+    {
+      "name": "GetUsersBlockedByResponse",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        },
+        {
+          "name": "blocked_users",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.BlockedUsers"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetFriendsCountRequest",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetFriendsCountResponse",
+      "field": [
+        {
+          "name": "friend_count",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "FriendsSearchService",
+      "method": [
+        {
+          "name": "QueryFriends",
+          "input_type": ".chesscom.friends_search.v1.QueryFriendsRequest",
+          "output_type": ".chesscom.friends_search.v1.QueryFriendsResponse",
+          "options": {}
+        },
+        {
+          "name": "Autocomplete",
+          "input_type": ".chesscom.friends_search.v1.AutocompleteRequest",
+          "output_type": ".chesscom.friends_search.v1.AutocompleteResponse",
+          "options": {}
+        },
+        {
+          "name": "GetBlockersOf",
+          "input_type": ".chesscom.friends_search.v1.GetBlockersOfRequest",
+          "output_type": ".chesscom.friends_search.v1.GetBlockersOfResponse",
+          "options": {}
+        },
+        {
+          "name": "GetUsersBlockedBy",
+          "input_type": ".chesscom.friends_search.v1.GetUsersBlockedByRequest",
+          "output_type": ".chesscom.friends_search.v1.GetUsersBlockedByResponse",
+          "options": {}
+        },
+        {
+          "name": "GetFriendsCount",
+          "input_type": ".chesscom.friends_search.v1.GetFriendsCountRequest",
+          "output_type": ".chesscom.friends_search.v1.GetFriendsCountResponse",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

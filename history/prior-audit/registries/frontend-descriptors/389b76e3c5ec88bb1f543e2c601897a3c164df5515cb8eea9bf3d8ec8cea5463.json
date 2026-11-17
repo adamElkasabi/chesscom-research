@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/ceac/v1/game_analysis.proto",
+  "package": "chesscom.ceac.v1",
+  "enum_type": [
+    {
+      "name": "GameAnalysisGameType",
+      "value": [
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_DAILY",
+          "number": 1
+        },
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_LIVE",
+          "number": 2
+        },
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_MASTER",
+          "number": 3
+        },
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_PGN",
+          "number": 4
+        },
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_VS_COMPUTER",
+          "number": 5
+        },
+        {
+          "name": "GAME_ANALYSIS_GAME_TYPE_VS_COACH",
+          "number": 6
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,12 @@
+// source: chesscom/explanation_engine/v1/move_list.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message MoveList {
+  repeated .chesscom.chess.v1.Move moves = 1;
+}
+
+message UciMoveList {
+  repeated string moves = 1;
+}

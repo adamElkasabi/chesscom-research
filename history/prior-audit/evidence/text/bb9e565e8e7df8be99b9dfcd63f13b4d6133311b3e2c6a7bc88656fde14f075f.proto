@@ -1,0 +1,48 @@
+// source: chesscom/payments/v1/group_membership_invitation.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+enum JoinEligibilityStatus {
+  JOIN_ELIGIBILITY_STATUS_UNSPECIFIED = 0;
+  JOIN_ELIGIBILITY_STATUS_ALREADY_PREMIUM = 1;
+  JOIN_ELIGIBILITY_STATUS_CROSS_BORDER_RESTRICTION = 2;
+  JOIN_ELIGIBILITY_STATUS_INVALID_TYPE = 3;
+  JOIN_ELIGIBILITY_STATUS_ALL_SEATS_TAKEN = 4;
+  JOIN_ELIGIBILITY_STATUS_INVITATION_EXPIRED = 5;
+  JOIN_ELIGIBILITY_STATUS_INVALID_INVITATION = 6;
+  JOIN_ELIGIBILITY_STATUS_REMOVED_BY_PRIMARY = 7;
+  JOIN_ELIGIBILITY_STATUS_TRIAL_COOLDOWN = 8;
+}
+
+message InvitationPlanDetails {
+  optional int32 max_secondary_members = 1;
+}
+
+message JoinEligibility {
+  oneof _status {
+  .chesscom.payments.v1.JoinEligibilityStatus status = 2;
+  }
+  optional bool is_eligible = 1;
+}
+
+message PendingInvitationForInvitee {
+  optional string invitation_hash = 1;
+  optional .chesscom.user.v1.UserView primary_account_holder = 2;
+  optional .chesscom.payments.v1.InvitationPlanDetails plan_details = 3;
+  optional .google.protobuf.Timestamp expires_at = 4;
+}
+
+message PendingInviteeIdentity {
+  oneof identity {
+  .chesscom.user.v1.UserView user = 1;
+  string email = 2;
+  }
+}
+
+message PendingInvitation {
+  optional string invitation_hash = 1;
+  optional .chesscom.user.v1.UserView invitee = 2;
+  optional .google.protobuf.Timestamp expires_at = 3;
+  optional .chesscom.payments.v1.PendingInviteeIdentity invitee_identity = 4;
+}

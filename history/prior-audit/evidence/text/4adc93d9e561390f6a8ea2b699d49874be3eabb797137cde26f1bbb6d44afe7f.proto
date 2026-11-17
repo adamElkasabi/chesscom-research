@@ -1,0 +1,32 @@
+// source: chesscom/payments/v1/incentive_offer.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message IncentiveOffer {
+  oneof _description {
+  string description = 3;
+  }
+  oneof _period_end {
+  int32 period_end = 7;
+  }
+  oneof _duration {
+  int32 duration = 8;
+  }
+  oneof _duration_unit {
+  .chesscom.payments.v1.SubscriptionDurationUnit duration_unit = 9;
+  }
+  optional string id = 1;
+  optional string incentive_id = 2;
+  optional .chesscom.payments.v1.IncentiveOfferType type = 4;
+  optional float value = 5;
+  optional int32 period_start = 6;
+  repeated .chesscom.payments.v1.IncentiveOfferPrice prices = 10;
+}
+
+message IncentiveOfferPrice {
+  oneof _country {
+  .chesscom.api.v1.Country country = 2;
+  }
+  optional .chesscom.api.v1.Money price = 1;
+}

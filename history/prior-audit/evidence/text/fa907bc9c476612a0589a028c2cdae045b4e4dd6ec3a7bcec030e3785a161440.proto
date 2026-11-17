@@ -1,0 +1,11 @@
+// source: chesscom/support/v1/support_action_result.proto
+// syntax: proto3
+
+package chesscom.support.v1;
+
+message SupportActionResult {
+  optional bool applied = 1;
+  optional bool dry_run = 2;
+  optional string idempotency_key = 3;
+  optional bool replayed = 4;
+}

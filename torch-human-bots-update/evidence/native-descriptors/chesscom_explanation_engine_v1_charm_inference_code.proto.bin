@@ -1,0 +1,17 @@
+
+9chesscom/explanation_engine/v1/charm_inference_code.protochesscom.explanation_engine.v1"p
+CharmInferenceCode
+	model_key (	
+ratings ( 
+engine_line_move_indexes (
+coded_values ("a
+NodeCharmInferenceCodesF
+
+inferences (22.chesscom.explanation_engine.v1.CharmInferenceCode"å
+CharmInferenceCodes
+codebook_version (M
+nodes (2>.chesscom.explanation_engine.v1.CharmInferenceCodes.NodesEntrye
+
+NodesEntry
+key (F
+value (27.chesscom.explanation_engine.v1.NodeCharmInferenceCodes:8bproto3

@@ -1,0 +1,138 @@
+// source: chesscom/courses/v1/courses_training_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetCourseLearningSessionRequest {
+  oneof _learning_session_id {
+  string learning_session_id = 3;
+  }
+  oneof _course_slug {
+  string course_slug = 4;
+  }
+  optional string context_type = 1;
+  optional string context_id = 2;
+}
+
+message GetCourseLearningSessionResponse {
+  optional .chesscom.courses.v1.CourseLearningSession learning_session = 1;
+  optional string learning_session_id = 2;
+  optional .chesscom.courses.v1.CourseLearningSessionProgress progress = 3;
+}
+
+message GetCourseTrainingForLearningRequest {
+  optional string variation_id = 1;
+  optional string learning_session_id = 2;
+}
+
+message GetCourseTrainingForLearningResponse {
+  optional .chesscom.courses.v1.CourseLesson lesson = 1;
+  optional string training_id = 2;
+}
+
+message GetCourseTrainingForReviewingRequest {
+  optional string variation_id = 1;
+  optional string learning_session_id = 2;
+}
+
+message GetCourseTrainingForReviewingResponse {
+  optional .chesscom.courses.v1.CourseLesson lesson = 1;
+  optional string training_id = 2;
+}
+
+message StoreCourseTrainingProgressRequest {
+  optional string ply_id = 1;
+  optional string san = 2;
+  optional .chesscom.courses.v1.MoveTrainerTrainingMode training_mode = 3;
+  optional string learning_session_id = 4;
+  optional string training_id = 5;
+}
+
+message StoreCourseTrainingProgressResponse {
+}
+
+message StoreCourseVideoProgressRequest {
+  optional string video_id = 1;
+  optional string learning_session_id = 2;
+  optional int32 position_in_seconds = 3;
+  optional int32 watched_seconds = 4;
+}
+
+message StoreCourseVideoProgressResponse {
+}
+
+message GetCourseVideoPlaybackRequest {
+  optional string video_id = 1;
+}
+
+message GetCourseVideoPlaybackResponse {
+  optional .chesscom.courses.v1.CourseVideoPlayback playback = 1;
+}
+
+message FinalizeCourseTrainingRequest {
+  optional string learning_session_id = 1;
+  optional string training_id = 2;
+}
+
+message FinalizeCourseTrainingResponse {
+  optional .chesscom.courses.v1.CourseLearningSessionStats stats = 1;
+}
+
+message GetCourseStatsRequest {
+  optional string context_type = 1;
+  optional string context_id = 2;
+}
+
+message GetCourseStatsResponse {
+  optional .chesscom.courses.v1.CourseLearningSessionStats stats = 1;
+}
+
+message GetCourseConfigurationRequest {
+  oneof _course_slug {
+  string course_slug = 3;
+  }
+  optional string context_type = 1;
+  optional string context_id = 2;
+}
+
+message GetCourseConfigurationResponse {
+  optional .chesscom.courses.v1.CourseConfiguration configuration = 1;
+  repeated .chesscom.api.v1.Language available_languages = 2;
+}
+
+message StoreCourseConfigurationRequest {
+  optional string context_type = 1;
+  optional string context_id = 2;
+  optional .chesscom.courses.v1.CourseConfiguration configuration = 3;
+}
+
+message StoreCourseConfigurationResponse {
+}
+
+message DeleteCourseProgressRequest {
+  optional string course_id = 1;
+}
+
+message DeleteCourseProgressResponse {
+}
+
+message ClaimPreviewRequest {
+  optional string variation_id = 1;
+}
+
+message ClaimPreviewResponse {
+}
+
+message SetVariationPausedRequest {
+  optional string variation_id = 1;
+}
+
+message SetVariationPausedResponse {
+}
+
+message SetVariationUnpausedRequest {
+  optional string variation_id = 1;
+}
+
+message SetVariationUnpausedResponse {
+}

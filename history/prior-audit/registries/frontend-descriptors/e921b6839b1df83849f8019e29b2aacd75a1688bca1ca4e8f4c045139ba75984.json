@@ -1,0 +1,97 @@
+{
+  "name": "chesscom/proto_options/oauth/v1/scope_options.proto",
+  "package": "chesscom.proto_options.oauth.v1",
+  "enum_type": [
+    {
+      "name": "ScopeVisibility",
+      "value": [
+        {
+          "name": "SCOPE_VISIBILITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SCOPE_VISIBILITY_INTERNAL",
+          "number": 1
+        },
+        {
+          "name": "SCOPE_VISIBILITY_PUBLIC",
+          "number": 2
+        },
+        {
+          "name": "SCOPE_VISIBILITY_PRIVILEGED",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "ScopeConsent",
+      "value": [
+        {
+          "name": "SCOPE_CONSENT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SCOPE_CONSENT_OPTIONAL",
+          "number": 1
+        },
+        {
+          "name": "SCOPE_CONSENT_REQUIRED",
+          "number": 2
+        },
+        {
+          "name": "SCOPE_CONSENT_IMPLICIT",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "scope_name",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 91100,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "scopeName",
+      "proto3_optional": true
+    },
+    {
+      "name": "scope_description",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 91101,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "scopeDescription",
+      "proto3_optional": true
+    },
+    {
+      "name": "scope_visibility",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 91102,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_ENUM",
+      "type_name": ".chesscom.proto_options.oauth.v1.ScopeVisibility",
+      "json_name": "scopeVisibility",
+      "proto3_optional": true
+    },
+    {
+      "name": "scope_consent",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 91103,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_ENUM",
+      "type_name": ".chesscom.proto_options.oauth.v1.ScopeConsent",
+      "json_name": "scopeConsent",
+      "proto3_optional": true
+    },
+    {
+      "name": "scope_legacy_names",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 91104,
+      "label": "LABEL_REPEATED",
+      "type": "TYPE_STRING",
+      "json_name": "scopeLegacyNames"
+    }
+  ],
+  "syntax": "proto3"
+}

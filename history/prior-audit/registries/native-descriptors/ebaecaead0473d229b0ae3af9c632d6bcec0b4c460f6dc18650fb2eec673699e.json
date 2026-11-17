@@ -1,0 +1,74 @@
+{
+  "name": "chesscom/stats/v1/advanced_stats_datapoint.proto",
+  "package": "chesscom.stats.v1",
+  "dependency": [
+    "chesscom/chess/v1/eco.proto",
+    "chesscom/stats/v1/advanced_stat_type.proto",
+    "chesscom/stats/v1/brilliant_move_type.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AdvancedStat",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "PlayerAdvancedStatsDatapoint",
+      "field": [
+        {
+          "name": "advanced_stats",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStat"
+        },
+        {
+          "name": "brilliant_moves",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.BrilliantMove"
+        },
+        {
+          "name": "eco_family",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.EcoFamily"
+        }
+      ]
+    },
+    {
+      "name": "BrilliantMove",
+      "field": [
+        {
+          "name": "ply",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.BrilliantMoveType"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

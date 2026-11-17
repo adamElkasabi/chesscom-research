@@ -1,0 +1,20 @@
+// source: chesscom/settings/v1/settings_puzzle.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message PuzzleSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.String show_details = 1;
+  .chesscom.settings.v1.SettingValue.Boolean show_timer = 2;
+  .chesscom.settings.v1.SettingValue.Boolean show_classic_mode = 3;
+  .chesscom.settings.v1.SettingValue.Boolean show_chat_hints = 4;
+  .chesscom.settings.v1.SettingValue.Boolean show_mistake_feedback = 5;
+  .chesscom.settings.v1.SettingValue.Boolean show_puzzle_goals = 6;
+  .chesscom.settings.v1.SettingValue.Boolean collect_puzzle_points = 7;
+  .chesscom.settings.v1.SettingValue.Boolean always_show_rating = 8;
+  .chesscom.settings.v1.SettingValue.String difficulty_mode = 9;
+  .chesscom.settings.v1.SettingValue.Boolean show_hints_automatically = 10;
+  .chesscom.settings.v1.SettingValue.Boolean daily_puzzle_hard_mode = 11;
+  }
+}

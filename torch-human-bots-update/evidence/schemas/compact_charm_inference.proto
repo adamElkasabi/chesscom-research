@@ -1,0 +1,24 @@
+// source: chesscom/explanation_engine/v1/compact_charm_inference.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message CompactCharmInference {
+  optional string model_key = 1;
+  repeated int32 ratings = 2;
+  repeated string uci_moves = 3;
+  repeated uint32 move_probabilities = 4;
+  repeated uint32 expected_points = 5;
+  repeated uint32 rank_probabilities = 6;
+  repeated uint32 strength_probabilities = 7;
+  repeated uint32 time_taken_probabilities = 8;
+  repeated uint32 ldw_probabilities = 9;
+  repeated uint32 strength_rating_sensitive_probabilities = 10;
+  repeated uint32 engine_line_move_indexes = 11;
+  repeated uint32 move_indexes = 12;
+}
+
+message CompactCharmInferences {
+  repeated .chesscom.explanation_engine.v1.CompactCharmInference inferences = 1;
+  optional int32 quantization_bits = 2;
+}

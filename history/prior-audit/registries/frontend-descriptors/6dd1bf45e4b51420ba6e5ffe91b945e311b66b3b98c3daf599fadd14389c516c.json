@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/train/v1/train_blunder_challenge.proto",
+  "package": "chesscom.train.v1",
+  "message_type": [
+    {
+      "name": "TrainBlunderChallenge",
+      "field": [
+        {
+          "name": "bucket",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainChallengeBucket"
+        },
+        {
+          "name": "theme",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainTacticalTheme",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "correct_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_theme"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

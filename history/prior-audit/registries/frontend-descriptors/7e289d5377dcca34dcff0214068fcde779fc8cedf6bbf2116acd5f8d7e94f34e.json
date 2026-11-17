@@ -1,0 +1,455 @@
+{
+  "name": "chesscom/user_properties/v1/properties_puzzles_attempted.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PuzzlesAttemptedProperty",
+      "field": [
+        {
+          "name": "last_timestamp",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_seconds",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "rated_attempt_count",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "rated_passed_count",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "unrated_attempt_count",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_rating_timestamp",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_rating",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_rating_timestamp",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "rated_longest_streak",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "rated_longest_streak_timestamp",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "rated_current_streak",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "history_reset_last_timestamp",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "shadow_rating",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_shadow_rating",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_shadow_rating_timestamp",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_shadow_rating",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_shadow_rating_timestamp",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "boosted_shadow_rating",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_boosted_shadow_rating",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_boosted_shadow_rating_timestamp",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_boosted_shadow_rating",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_boosted_shadow_rating_timestamp",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 23,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1020,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PuzzlesAttemptedPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_timestamp"
+        },
+        {
+          "name": "_rating"
+        },
+        {
+          "name": "_total_seconds"
+        },
+        {
+          "name": "_rated_attempt_count"
+        },
+        {
+          "name": "_rated_passed_count"
+        },
+        {
+          "name": "_unrated_attempt_count"
+        },
+        {
+          "name": "_min_rating"
+        },
+        {
+          "name": "_min_rating_timestamp"
+        },
+        {
+          "name": "_max_rating"
+        },
+        {
+          "name": "_max_rating_timestamp"
+        },
+        {
+          "name": "_rated_longest_streak"
+        },
+        {
+          "name": "_rated_longest_streak_timestamp"
+        },
+        {
+          "name": "_rated_current_streak"
+        },
+        {
+          "name": "_history_reset_last_timestamp"
+        },
+        {
+          "name": "_shadow_rating"
+        },
+        {
+          "name": "_min_shadow_rating"
+        },
+        {
+          "name": "_min_shadow_rating_timestamp"
+        },
+        {
+          "name": "_max_shadow_rating"
+        },
+        {
+          "name": "_max_shadow_rating_timestamp"
+        },
+        {
+          "name": "_boosted_shadow_rating"
+        },
+        {
+          "name": "_min_boosted_shadow_rating"
+        },
+        {
+          "name": "_min_boosted_shadow_rating_timestamp"
+        },
+        {
+          "name": "_max_boosted_shadow_rating"
+        },
+        {
+          "name": "_max_boosted_shadow_rating_timestamp"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PuzzlesAttemptedPropertyDefinition",
+      "value": [
+        {
+          "name": "PUZZLES_ATTEMPTED_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_LAST_TIMESTAMP",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_RATING",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_TOTAL_SECONDS",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_RATED_ATTEMPT_COUNT",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_RATED_PASSED_COUNT",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_UNRATED_ATTEMPT_COUNT",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MIN_RATING",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MIN_RATING_TIMESTAMP",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MAX_RATING",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MAX_RATING_TIMESTAMP",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_RATED_LONGEST_STREAK",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_RATED_LONGEST_STREAK_TIMESTAMP",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_RATED_CURRENT_STREAK",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_HISTORY_RESET_LAST_TIMESTAMP",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_SHADOW_RATING",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MIN_SHADOW_RATING",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MIN_SHADOW_RATING_TIMESTAMP",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MAX_SHADOW_RATING",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MAX_SHADOW_RATING_TIMESTAMP",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_BOOSTED_SHADOW_RATING",
+          "number": 20,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MIN_BOOSTED_SHADOW_RATING",
+          "number": 21,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MIN_BOOSTED_SHADOW_RATING_TIMESTAMP",
+          "number": 22,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MAX_BOOSTED_SHADOW_RATING",
+          "number": 23,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_ATTEMPTED_MAX_BOOSTED_SHADOW_RATING_TIMESTAMP",
+          "number": 24,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

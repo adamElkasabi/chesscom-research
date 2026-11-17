@@ -1,0 +1,52 @@
+# Offset-linked relevant ASCII strings (hex file offset); all candidates and UTF16 candidates are separate.
+0x000a34c3 emscripten_run_in_main_runtime_thread_js
+0x000a3670 Clear Hash
+0x000a36a8 setoption name Use NNUE value true
+0x000a36f2 nn-5af11540bbfe.nnue
+0x000a3732 setoption name Use NNUE value false
+0x000a3867 _emscripten_do_dispatch_to_thread
+0x000a3889 _emscripten_call_on_thread
+0x000a38b2 em_queued_call_malloc
+0x000a38e5 /programs/emsdk_portable/upstream/emscripten/system/lib/pthread/library_pthread.c
+0x000a3951  [with scaled NNUE, hybrid, ...]
+0x000a44cb NNUE evaluation used, but the network file was not loaded successfully.
+0x000a459a info string NNUE evaluation enabled.
+0x000a4656 the Stockfish developers (see AUTHORS file)
+0x000a4690 Clang 13.0.0 (https://github.com/llvm/llvm-project 31e75512174e1bdaa242ee5c7f30fe56e68c3748)
+0x000a46ed aborted with emscripten_fetch_close()
+0x000a4729 0 && "Invalid Emscripten pthread _do_call opcode!"
+0x000a486e  NNUE network contributions 
+0x000a48d5  hashfull 
+0x000a48fd Stockfish 
+0x000a493b setoption name Hash value 
+0x000a4aed clang++ 
+0x000a4b2c NNUE evaluation        
+0x000a4c4c  NNUE derived piece values:
+0x000a4c97 Stockfish is a powerful chess engine for playing and analyzing.
+0x000a4d1d Stockfish is normally used with a graphical user interface (GUI) and implements
+0x000a4dc2 For any further information, visit https://github.com/official-stockfish/Stockfish#readme
+0x000a4fa1 N9Stockfish7EndgameILNS_11EndgameCodeE5ENS_5ValueEEE
+0x000a4ff9 N9Stockfish7EndgameILNS_11EndgameCodeE1ENS_5ValueEEE
+0x000a5051 N9Stockfish7EndgameILNS_11EndgameCodeE4ENS_5ValueEEE
+0x000a50a9 N9Stockfish7EndgameILNS_11EndgameCodeE6ENS_5ValueEEE
+0x000a5101 N9Stockfish7EndgameILNS_11EndgameCodeE7ENS_5ValueEEE
+0x000a5159 N9Stockfish7EndgameILNS_11EndgameCodeE8ENS_5ValueEEE
+0x000a51b1 N9Stockfish7EndgameILNS_11EndgameCodeE9ENS_5ValueEEE
+0x000a5209 N9Stockfish7EndgameILNS_11EndgameCodeE10ENS_5ValueEEE
+0x000a5261 N9Stockfish7EndgameILNS_11EndgameCodeE2ENS_5ValueEEE
+0x000a52b9 N9Stockfish7EndgameILNS_11EndgameCodeE14ENS_11ScaleFactorEEE
+0x000a5319 N9Stockfish7EndgameILNS_11EndgameCodeE15ENS_11ScaleFactorEEE
+0x000a5379 N9Stockfish7EndgameILNS_11EndgameCodeE18ENS_11ScaleFactorEEE
+0x000a53d9 N9Stockfish7EndgameILNS_11EndgameCodeE20ENS_11ScaleFactorEEE
+0x000a5439 N9Stockfish7EndgameILNS_11EndgameCodeE19ENS_11ScaleFactorEEE
+0x000a5499 N9Stockfish7EndgameILNS_11EndgameCodeE16ENS_11ScaleFactorEEE
+0x000a56f7 N9Stockfish7EndgameILNS_11EndgameCodeE3ENS_5ValueEEE
+0x000a572c N9Stockfish11EndgameBaseINS_5ValueEEE
+0x000a577b N9Stockfish7EndgameILNS_11EndgameCodeE12ENS_11ScaleFactorEEE
+0x000a57b8 N9Stockfish11EndgameBaseINS_11ScaleFactorEEE
+0x000a580f N9Stockfish7EndgameILNS_11EndgameCodeE13ENS_11ScaleFactorEEE
+0x000a586f N9Stockfish7EndgameILNS_11EndgameCodeE17ENS_11ScaleFactorEEE
+0x000a58cf N9Stockfish7EndgameILNS_11EndgameCodeE21ENS_11ScaleFactorEEE
+0x000a595b N9Stockfish12_GLOBAL__N_13TieE
+0x000a5e65 N9Stockfish10MainThreadE
+0x000a5f29 N9Stockfish6ThreadE

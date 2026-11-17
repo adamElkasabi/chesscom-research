@@ -1,0 +1,11 @@
+// source: chesscom/courses/v1/course_product_details.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseProductDetails {
+  optional .chesscom.courses.v1.CourseProduct product = 1;
+  repeated .chesscom.courses.v1.CourseChapterDetails chapters = 2;
+  repeated .chesscom.courses_common.v1.CourseProductReview reviews = 3;
+  optional string default_move_trainer_id = 4;
+}

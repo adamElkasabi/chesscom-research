@@ -1,0 +1,15 @@
+
+torch-2-lite-single.wasm:	file format wasm 0x1
+
+Sections:
+
+     Type start=0x0000000b end=0x000001d4 (size=0x000001c9) count: 57
+   Import start=0x000001d6 end=0x00000243 (size=0x0000006d) count: 18
+ Function start=0x00000246 end=0x00000535 (size=0x000002ef) count: 749
+    Table start=0x00000537 end=0x0000053e (size=0x00000007) count: 1
+   Memory start=0x00000540 end=0x00000546 (size=0x00000006) count: 1
+   Global start=0x00000548 end=0x00000565 (size=0x0000001d) count: 5
+   Export start=0x00000567 end=0x000005b9 (size=0x00000052) count: 17
+     Elem start=0x000005bc end=0x00000997 (size=0x000003db) count: 1
+     Code start=0x0000099b end=0x00082941 (size=0x00081fa6) count: 749
+     Data start=0x00082946 end=0x006e647f (size=0x00663b39) count: 1312

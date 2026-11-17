@@ -1,0 +1,58 @@
+{
+  "name": "chesscom/train/v1/train_challenge.proto",
+  "package": "chesscom.train.v1",
+  "message_type": [
+    {
+      "name": "TrainChallenge",
+      "field": [
+        {
+          "name": "miss",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainMissChallenge",
+          "oneof_index": 0
+        },
+        {
+          "name": "blunder",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainBlunderChallenge",
+          "oneof_index": 0
+        },
+        {
+          "name": "opening_mistake",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainOpeningMistakeChallenge",
+          "oneof_index": 0
+        },
+        {
+          "name": "strategy_mistake",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainStrategyMistakeChallenge",
+          "oneof_index": 0
+        },
+        {
+          "name": "endgame_mistake",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainEndgameMistakeChallenge",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "challenge"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

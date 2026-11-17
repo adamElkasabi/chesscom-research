@@ -1,0 +1,31 @@
+{
+  "name": "chesscom/themes/v2/platform.proto",
+  "package": "chesscom.themes.v2",
+  "enum_type": [
+    {
+      "name": "Platform",
+      "value": [
+        {
+          "name": "PLATFORM_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLATFORM_WEB",
+          "number": 1
+        },
+        {
+          "name": "PLATFORM_ANDROID",
+          "number": 2
+        },
+        {
+          "name": "PLATFORM_IPHONE",
+          "number": 3
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    }
+  ],
+  "syntax": "proto3"
+}

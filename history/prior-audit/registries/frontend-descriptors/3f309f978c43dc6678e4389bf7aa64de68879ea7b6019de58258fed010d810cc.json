@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/courses/v1/variation_access_type.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "VariationAccessType",
+      "value": [
+        {
+          "name": "VARIATION_ACCESS_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "VARIATION_ACCESS_TYPE_PREVIEWABLE",
+          "number": 1
+        },
+        {
+          "name": "VARIATION_ACCESS_TYPE_LOCKED",
+          "number": 2
+        },
+        {
+          "name": "VARIATION_ACCESS_TYPE_FULL_ACCESS",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,33 @@
+{
+  "reason": "No numerical effect of explicit V2/V3 at Fast or Standard; prune redundant higher-strength cross-products",
+  "configs": [
+    {
+      "id": "strength-4-class-2",
+      "strength": 4,
+      "settings": {
+        "moveClassificationVersion": 2
+      }
+    },
+    {
+      "id": "strength-4-class-1",
+      "strength": 4,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    },
+    {
+      "id": "strength-3-class-2",
+      "strength": 3,
+      "settings": {
+        "moveClassificationVersion": 2
+      }
+    },
+    {
+      "id": "strength-3-class-1",
+      "strength": 3,
+      "settings": {
+        "moveClassificationVersion": 1
+      }
+    }
+  ]
+}

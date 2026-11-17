@@ -1,0 +1,335 @@
+{
+  "scope": "Execute exact AST-extracted frontend functions in stubbed dependencies, NOT browser/native integration",
+  "tests": [
+    {
+      "name": "personality UNSPECIFIED_DEFAULT",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_BEGINNER",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_AGGRESSIVE",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_POSITIONAL",
+      "actual": 8,
+      "expected": 8,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_DEFENSIVE",
+      "actual": 5,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_ENDGAME",
+      "actual": 6,
+      "expected": 6,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_HUMAN",
+      "actual": 7,
+      "expected": 7,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_HIKARU",
+      "actual": 11,
+      "expected": 11,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_DANNY",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_ACTIVE",
+      "actual": 2,
+      "expected": 2,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_NEW_TO_CHESS",
+      "actual": 13,
+      "expected": 13,
+      "pass": true
+    },
+    {
+      "name": "personality UNSPECIFIED_UNLEASHED",
+      "actual": 15,
+      "expected": 15,
+      "pass": true
+    },
+    {
+      "name": "unknown personality",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "rating skill 1 is25 false",
+      "actual": 100,
+      "expected": 100,
+      "pass": true
+    },
+    {
+      "name": "rating skill 12 is25 false",
+      "actual": 1200,
+      "expected": 1200,
+      "pass": true
+    },
+    {
+      "name": "rating skill 25 is25 true",
+      "actual": 2700,
+      "expected": 2700,
+      "pass": true
+    },
+    {
+      "name": "rating skill 0 is25 false",
+      "pass": true
+    },
+    {
+      "name": "rating skill undefined is25 true",
+      "pass": true
+    },
+    {
+      "name": "game-over",
+      "actual": [
+        null,
+        []
+      ],
+      "expected": [
+        null,
+        []
+      ],
+      "pass": true
+    },
+    {
+      "name": "config-success",
+      "actual": [
+        "native-config",
+        [
+          "charmConfig",
+          "config-call"
+        ]
+      ],
+      "expected": [
+        "native-config",
+        [
+          "charmConfig",
+          "config-call"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "name": "config-empty",
+      "actual": [
+        null,
+        [
+          "charmConfig",
+          "config-call"
+        ]
+      ],
+      "expected": [
+        null,
+        [
+          "charmConfig",
+          "config-call"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "name": "config-error",
+      "actual": [
+        "sentinel",
+        [
+          "charmConfig",
+          "config-call"
+        ]
+      ],
+      "expected": [
+        "sentinel",
+        [
+          "charmConfig",
+          "config-call"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "name": "book",
+      "actual": [
+        "book-move",
+        [
+          "book-call",
+          "book"
+        ]
+      ],
+      "expected": [
+        "book-move",
+        [
+          "book-call",
+          "book"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "name": "legacy legacy request",
+      "actual": {
+        "options": {
+          "adaptive": true,
+          "rating": 1200,
+          "personality": 3
+        },
+        "engine": 1
+      },
+      "expected": {
+        "options": {
+          "adaptive": true,
+          "rating": 1200,
+          "personality": 3
+        },
+        "engine": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "legacy",
+      "actual": [
+        "native-legacy",
+        [
+          "book-call",
+          "engine",
+          "legacy-call"
+        ]
+      ],
+      "expected": [
+        "native-legacy",
+        [
+          "book-call",
+          "engine",
+          "legacy-call"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "name": "gate-off-config-present legacy request",
+      "actual": {
+        "options": {
+          "adaptive": true,
+          "rating": 1200,
+          "personality": 3
+        },
+        "engine": 1
+      },
+      "expected": {
+        "options": {
+          "adaptive": true,
+          "rating": 1200,
+          "personality": 3
+        },
+        "engine": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "gate-off-config-present",
+      "actual": [
+        "native-legacy",
+        [
+          "book-call",
+          "engine",
+          "legacy-call"
+        ]
+      ],
+      "expected": [
+        "native-legacy",
+        [
+          "book-call",
+          "engine",
+          "legacy-call"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "name": "node queue normal",
+      "actual": [
+        123,
+        false
+      ],
+      "expected": [
+        123,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "name": "node queue missing-gamepoint",
+      "actual": [
+        null,
+        true
+      ],
+      "expected": [
+        null,
+        true
+      ],
+      "pass": true
+    },
+    {
+      "name": "node queue stale-before",
+      "actual": [
+        null,
+        false
+      ],
+      "expected": [
+        null,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "name": "node queue stale-after",
+      "actual": [
+        null,
+        false
+      ],
+      "expected": [
+        null,
+        false
+      ],
+      "pass": true
+    },
+    {
+      "name": "node queue engine-error",
+      "actual": [
+        "sentinel",
+        false
+      ],
+      "expected": [
+        "sentinel",
+        false
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "count": 32
+}

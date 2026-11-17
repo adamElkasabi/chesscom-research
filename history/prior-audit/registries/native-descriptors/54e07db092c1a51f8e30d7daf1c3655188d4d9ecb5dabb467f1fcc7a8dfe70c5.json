@@ -1,0 +1,52 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_game_phase_transitions.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_phase.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GamePhaseTransitionsRequest",
+      "field": [
+        {
+          "name": "starting_game_point",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_phase_version",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseVersion",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_starting_game_point"
+        },
+        {
+          "name": "_game_phase_version"
+        }
+      ]
+    },
+    {
+      "name": "GamePhaseTransitionsResponse",
+      "field": [
+        {
+          "name": "game_phase_transition",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseTransitions"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,136 @@
+{
+  "name": "chesscom/explanation_engine/v1/takeaways.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "Takeaway",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.TakeawayClassification"
+        },
+        {
+          "name": "speech",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "example",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatExample",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "performance",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.TakeawayPerformance"
+        },
+        {
+          "name": "train_speech",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "train_item_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainItemType",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_example"
+        },
+        {
+          "name": "_train_speech"
+        },
+        {
+          "name": "_train_item_type"
+        }
+      ]
+    },
+    {
+      "name": "Takeaways",
+      "field": [
+        {
+          "name": "takeaways",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Takeaway"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "TakeawayClassification",
+      "value": [
+        {
+          "name": "TAKEAWAY_CLASSIFICATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TAKEAWAY_CLASSIFICATION_BUILDING_STRENGTH",
+          "number": 1
+        },
+        {
+          "name": "TAKEAWAY_CLASSIFICATION_BE_AWARE",
+          "number": 2
+        },
+        {
+          "name": "TAKEAWAY_CLASSIFICATION_MAKING_PROGRESS",
+          "number": 3
+        },
+        {
+          "name": "TAKEAWAY_CLASSIFICATION_LEARNING_OPPORTUNITY",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TakeawayPerformance",
+      "value": [
+        {
+          "name": "TAKEAWAY_PERFORMANCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TAKEAWAY_PERFORMANCE_GOOD",
+          "number": 1
+        },
+        {
+          "name": "TAKEAWAY_PERFORMANCE_BAD",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

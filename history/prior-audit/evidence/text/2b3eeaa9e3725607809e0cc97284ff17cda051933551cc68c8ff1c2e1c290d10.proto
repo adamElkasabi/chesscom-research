@@ -1,0 +1,11 @@
+// source: chesscom/courses/v1/course_type.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum CourseType {
+  COURSE_TYPE_UNSPECIFIED = 0;
+  COURSE_TYPE_FREE = 1;
+  COURSE_TYPE_DIAMOND_EXCLUSIVE = 2;
+  COURSE_TYPE_PAID = 3;
+}

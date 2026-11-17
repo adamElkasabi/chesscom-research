@@ -1,0 +1,81 @@
+{
+  "name": "chesscom/explanation_engine/v1/stats.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "AdvancedStatsUser",
+      "field": [
+        {
+          "name": "advanced_stats_percentiles",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatPercentile"
+        },
+        {
+          "name": "category_performances",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatCategoryStats"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AdvancedStatsOther",
+      "field": [
+        {
+          "name": "white_player_category_performances",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatCategoryGamePerformance"
+        },
+        {
+          "name": "black_player_category_performances",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatCategoryGamePerformance"
+        },
+        {
+          "name": "user_advanced_stats_percentiles",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatPercentile"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AdvancedStatsForGame",
+      "field": [
+        {
+          "name": "advanced_stats_user",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AdvancedStatsUser",
+          "oneof_index": 0
+        },
+        {
+          "name": "advanced_stats_other",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AdvancedStatsOther",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "advanced_stats"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

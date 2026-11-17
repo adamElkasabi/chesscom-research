@@ -1,0 +1,318 @@
+[
+  {
+    "id": "baseline",
+    "saveReview": true
+  },
+  {
+    "id": "strength-1-class-1",
+    "strength": 1,
+    "settings": {
+      "moveClassificationVersion": 1
+    }
+  },
+  {
+    "id": "strength-1-class-2",
+    "strength": 1,
+    "settings": {
+      "moveClassificationVersion": 2
+    }
+  },
+  {
+    "id": "strength-2-class-0",
+    "strength": 2,
+    "settings": {}
+  },
+  {
+    "id": "strength-2-class-1",
+    "strength": 2,
+    "settings": {
+      "moveClassificationVersion": 1
+    }
+  },
+  {
+    "id": "strength-2-class-2",
+    "strength": 2,
+    "settings": {
+      "moveClassificationVersion": 2
+    }
+  },
+  {
+    "id": "strength-3-class-0",
+    "strength": 3,
+    "settings": {},
+    "timeoutSeconds": 60
+  },
+  {
+    "id": "strength-4-class-0",
+    "strength": 4,
+    "settings": {},
+    "timeoutSeconds": 60
+  },
+  {
+    "id": "uci-elo-sensitive",
+    "uciAfter": {
+      "EloSensitivePD": true
+    }
+  },
+  {
+    "id": "uci-classification-v3",
+    "uciAfter": {
+      "ClassificationV3": true
+    }
+  },
+  {
+    "id": "uci-forgiving-400",
+    "uciAfter": {
+      "ForgivingClassificationsElo": 400
+    }
+  },
+  {
+    "id": "uci-forgiving-1000",
+    "uciAfter": {
+      "ForgivingClassificationsElo": 1000
+    }
+  },
+  {
+    "id": "uci-forgiving-2000",
+    "uciAfter": {
+      "ForgivingClassificationsElo": 2000
+    }
+  },
+  {
+    "id": "uci-normalize-off",
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "uci-soft-nodes",
+    "uciAfter": {
+      "UseSoftNodes": true
+    }
+  },
+  {
+    "id": "uci-hard-soft-50",
+    "uciAfter": {
+      "HardSoftNodeFactor": 50
+    }
+  },
+  {
+    "id": "uci-hard-soft-200",
+    "uciAfter": {
+      "HardSoftNodeFactor": 200
+    }
+  },
+  {
+    "id": "uci-node-fudging-100",
+    "uciAfter": {
+      "NodeFudging": 100
+    }
+  },
+  {
+    "id": "uci-node-fudging-1000",
+    "uciAfter": {
+      "NodeFudging": 1000
+    }
+  },
+  {
+    "id": "uci-hash-64",
+    "uciAfter": {
+      "Hash": 64
+    }
+  },
+  {
+    "id": "uci-clear-between",
+    "uciAfter": {
+      "ClearBetweenSearches": true
+    }
+  },
+  {
+    "id": "uci-multipv-2",
+    "uciAfter": {
+      "MultiPV": 2
+    }
+  },
+  {
+    "id": "uci-classification-combo",
+    "uciAfter": {
+      "EloSensitivePD": true,
+      "ClassificationV3": true,
+      "ForgivingClassificationsElo": 1000
+    }
+  },
+  {
+    "id": "tricky-on",
+    "experimental": {
+      "allowTrickyClassification": true
+    }
+  },
+  {
+    "id": "depth-12",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 12,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 12,
+            "numLines": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "depth-16",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 16,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 16,
+            "numLines": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "depth-18",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 18,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 18,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "timeoutSeconds": 60
+  },
+  {
+    "id": "depth-22",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 22,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 22,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "timeoutSeconds": 60
+  },
+  {
+    "id": "nodes-40000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 40000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 40000,
+            "numLines": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "nodes-150000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 150000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 150000,
+            "numLines": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "nodes-300000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 300000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 300000,
+            "numLines": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "nodes-600000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "nodesLimit": 600000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "nodesLimit": 600000,
+            "numLines": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "embedded-human-pvtrees",
+    "pvtrees": {
+      "request": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 300000,
+            "numLines": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {}
+          }
+        }
+      },
+      "pvtreeOptions": {
+        "rating": 100
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "human-game-refined-hash64",
+  "fixture": "human-game",
+  "settings": {
+    "userColor": 2
+  },
+  "uciAfter": {
+    "Normalize": false,
+    "Hash": 64
+  },
+  "timeoutSeconds": 200
+}

@@ -1,0 +1,137 @@
+{
+  "name": "chesscom/inbox/v1/user_message_service.proto",
+  "package": "chesscom.inbox.v1",
+  "message_type": [
+    {
+      "name": "BatchSendUserMessageRequest",
+      "field": [
+        {
+          "name": "sender_user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "recipient_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "message_text",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.inbox.v1.BatchMessageContext"
+        }
+      ]
+    },
+    {
+      "name": "BatchSendUserMessageResponse",
+      "field": [
+        {
+          "name": "results",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.inbox.v1.BatchSendUserMessageResponse.Result"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "Result",
+          "field": [
+            {
+              "name": "recipient_user_uuid",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "success",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "error_code",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING",
+              "oneof_index": 0,
+              "proto3_optional": true
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "_error_code"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CheckCanSendUserMessageRequest",
+      "field": [
+        {
+          "name": "sender_user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "recipient_user_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "CheckCanSendUserMessageResponse",
+      "field": [
+        {
+          "name": "can_send",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "reason",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.inbox.v1.MessageSendNotAllowedReason"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "UserMessageService",
+      "method": [
+        {
+          "name": "BatchSendUserMessage",
+          "input_type": ".chesscom.inbox.v1.BatchSendUserMessageRequest",
+          "output_type": ".chesscom.inbox.v1.BatchSendUserMessageResponse"
+        },
+        {
+          "name": "CheckCanSendUserMessage",
+          "input_type": ".chesscom.inbox.v1.CheckCanSendUserMessageRequest",
+          "output_type": ".chesscom.inbox.v1.CheckCanSendUserMessageResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

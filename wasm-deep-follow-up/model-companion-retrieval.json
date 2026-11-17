@@ -1,0 +1,211 @@
+[
+  {
+    "url": "https://www.chess.com/bundles/web/wdl/model.json",
+    "method": "GET",
+    "credentials": "none",
+    "source": {
+      "url": "https://www.chess.com/bundles/web/wdl/model.json",
+      "classification": "frontend WDL neural-network topology",
+      "references": [
+        {
+          "source_id": "SRC-0065 and SRC-0777",
+          "literal": "wdlJsonModel: /bundles/web/wdl/model.json"
+        }
+      ],
+      "qualification": "Frontend metadata reference; not automatically a CEE/Torch WASM import."
+    },
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.chess.com/bundles/web/wdl/group1-shard1of1.bin",
+    "method": "GET",
+    "credentials": "none",
+    "source": {
+      "url": "https://www.chess.com/bundles/web/wdl/group1-shard1of1.bin",
+      "classification": "frontend WDL neural-network parameters",
+      "references": [
+        {
+          "source_id": "SRC-0065",
+          "offset": 75400,
+          "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+        },
+        {
+          "source_id": "SRC-0777",
+          "offset": 74959,
+          "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+        },
+        {
+          "source_id": "SRC-3006",
+          "offset": 178685,
+          "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+        },
+        {
+          "source_id": "SRC-3008",
+          "offset": 117369,
+          "literal": "/bundles/web/wdl/group1-shard1of1.bin"
+        }
+      ],
+      "qualification": "Literal reference does not prove this is fetched by every WASM build."
+    },
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue",
+    "method": "GET",
+    "credentials": "none",
+    "source": {
+      "url": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue",
+      "classification": "NNUE evaluation parameters",
+      "references": [
+        {
+          "source_id": "SRC-0202",
+          "offset": 2941,
+          "literal": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue"
+        },
+        {
+          "source_id": "SRC-0781",
+          "offset": 288919,
+          "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+        },
+        {
+          "source_id": "SRC-0781",
+          "offset": 288964,
+          "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+        },
+        {
+          "source_id": "SRC-1137",
+          "offset": 293710,
+          "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+        },
+        {
+          "source_id": "SRC-1137",
+          "offset": 293755,
+          "literal": "bundles/app/js/engine/nn-ad9b42354671.nnue"
+        },
+        {
+          "source_id": "SRC-1147",
+          "offset": 1645,
+          "literal": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue"
+        }
+      ],
+      "qualification": "Literal reference does not prove this is fetched by every WASM build."
+    },
+    "http_status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 13:26:17 GMT",
+      "Content-Type": "text/plain",
+      "Content-Length": "47001499",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "Last-Modified": "Fri, 13 Nov 2026 10:24:30 GMT",
+      "cross-origin-embedder-policy": "require-corp",
+      "ETag": "\"6af6e55e-2cd2f9b\"",
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "public, max-age=2419200",
+      "Accept-Ranges": "bytes",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+      "Age": "182460",
+      "cf-cache-status": "HIT",
+      "Vary": "accept-encoding",
+      "set-cookie": "[OMITTED]",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=pqn6ghtFwH6Qy2VlgoalOrOdPevlXWcZ9QZkHWzqVkkq%2F7YHIL0kgm9raH1juTKZJFtNGhMBxoiwucOUz2iQvir%2BaR1hdZ06MtDRxKzU8wYnAN%2BGVwExmxQ6bifTsI0%3D\"}]}",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":1.0,\"max_age\":604800}",
+      "CF-RAY": "a5ae9639fb8a88d7-SEA",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body_path": "/var/tmp/wasm-deep/downloads/222d22284218eac540fca5ffc34db7f0f4f4c99972935a999b74586fe7c456c6.model-body",
+    "bytes": 47001499,
+    "sha256": "ad9b423546714137916bd38978af6fd68d7b8951bef25ff76bf43da72d6cb786",
+    "complete_payload_proven": true
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue",
+    "method": "GET",
+    "credentials": "none",
+    "source": {
+      "url": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue",
+      "classification": "NNUE evaluation parameters",
+      "references": [
+        {
+          "source_id": "SRC-0202",
+          "offset": 3068,
+          "literal": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-0781",
+          "offset": 288829,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-0781",
+          "offset": 288874,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-0781",
+          "offset": 1914029,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-0781",
+          "offset": 1914432,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-1137",
+          "offset": 293620,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-1137",
+          "offset": 293665,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-1137",
+          "offset": 1329203,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-1137",
+          "offset": 1329606,
+          "literal": "bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        },
+        {
+          "source_id": "SRC-1147",
+          "offset": 1580,
+          "literal": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue"
+        }
+      ],
+      "qualification": "Literal reference does not prove this is fetched by every WASM build."
+    },
+    "http_status": 200,
+    "headers": {
+      "Date": "Sun, 15 Nov 2026 13:26:18 GMT",
+      "Content-Type": "text/plain",
+      "Content-Length": "40119326",
+      "Connection": "close",
+      "Server": "cloudflare",
+      "Last-Modified": "Fri, 13 Nov 2026 10:24:28 GMT",
+      "cross-origin-embedder-policy": "require-corp",
+      "ETag": "\"6af6e55c-2642c1e\"",
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "public, max-age=2419200",
+      "Accept-Ranges": "bytes",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+      "cf-cache-status": "HIT",
+      "Vary": "accept-encoding",
+      "set-cookie": "[OMITTED]",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Jx4QVde8dUzdQk2ERQgBFZBEB3%2BwuQKWtg4KNaJWooY9J%2FkxZoMy9Ff%2BRV974hyYMCERXstLsXli8sARjfKI9eCkXw23XXCwbmbUY3MgkoM3cuuDd1JYt3eBpTRT%2FLo%3D\"}]}",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":1.0,\"max_age\":604800}",
+      "CF-RAY": "a5ae963ba854961b-SEA",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "body_path": "/var/tmp/wasm-deep/downloads/2e4363214e3a20232c2f8e1073ea0ce4d86bc9edc433c1b278b75170dafb5bf8.model-body",
+    "bytes": 40119326,
+    "sha256": "5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b",
+    "complete_payload_proven": true
+  }
+]

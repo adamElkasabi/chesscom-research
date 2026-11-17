@@ -1,0 +1,11 @@
+// source: chesscom/courses_common/v1/course_board_preview.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message CourseBoardPreview {
+  oneof _crop_size {
+  int32 crop_size = 2;
+  }
+  optional .chesscom.chess.v1.Square start_square = 1;
+}

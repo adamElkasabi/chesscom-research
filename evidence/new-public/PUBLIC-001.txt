@@ -1,0 +1,119 @@
+Chess.com upgrades to Cloud SQL Enterprise Plus edition | Google Cloud Blog
+Jump to Content
+Cloud
+Blog
+Contact sales
+Get started for free
+Cloud
+Blog
+Solutions & technology
+AI & Machine Learning
+API Management
+Application Development
+Application Modernization
+Chrome Enterprise
+Compute
+Containers & Kubernetes
+Data Analytics
+Databases
+DevOps & SRE
+Maps & Geospatial
+Security
+Security & Identity
+Threat Intelligence
+Infrastructure
+Infrastructure Modernization
+Networking
+Productivity & Collaboration
+SAP on Google Cloud
+Storage & Data Transfer
+Sustainability
+Ecosystem
+IT Leaders
+Industries
+Financial Services
+Healthcare & Life Sciences
+Manufacturing
+Media & Entertainment
+Public Sector
+Retail
+Supply Chain
+Telecommunications
+Partners
+Startups & SMB
+Training & Certifications
+Inside Google Cloud
+Google Cloud Next & Events
+Google Cloud Consulting
+Google Maps Platform
+Google Workspace
+Developers & Practitioners
+Transform with Google Cloud
+Contact sales
+Get started for free
+Databases
+Chess.com boosts performance, cuts response times by 71% with Cloud SQL Enterprise Plus
+March 11, 2024
+Grzegorz Dlugolecki
+Principal Cloud and Kubernetes Engineer, Chess.com
+Editor’s Note
+: Launched in 2007, Chess.com is a premium platform for online chess and one of the largest of its kind. A Cloud SQL for MySQL shop, it transitioned to Cloud SQL Enterprise Plus edition, improving the user experience, cutting costs, and significantly reducing response times, decreasing p99 latency response from 14ms to 4ms. Read on to learn more.
+Chess.com
+stands at the intersection of history and technology, uniting players from across the globe in a shared love for the ancient and intellectually stimulating game of chess. In recent years, we’ve witnessed a noticeable surge in demand due to a confluence of factors, including the global chess boom in 2020–2021 because of lockdowns, and media exposure from chess-focused events and TV shows. These led to an extraordinary increase in the size of the chess community and the number of active Chess.com memberships, which almost doubled in a matter of weeks. In fact, we recently achieved the remarkable milestone of 150 million members.
+But such rapid growth is not without its challenges — if you don’t scale quickly enough, server capacity issues will result in site unresponsiveness and interruptions.
+Scaling to keep up with demand
+We took these challenges as an opportunity to reevaluate our infrastructure and adopt a more scalable, global architecture. After all, chess is a universal game that brings people together around the world, so we wanted to build a multi-regional, highly scalable platform to reflect that.
+The vast majority of our workloads are built to be stateless or event-driven. However, there are many cases where we need to persist data. Given that our traffic and its sources originate from all over the globe, we have high performance and SLA requirements for our databases. These databases are vital repositories, housing essential data like games, puzzles, analyses, and user settings. We faced capacity and latency challenges with various operational databases including MySQL, ScyllaDB, Elasticsearch, and Redis.
+A streamlined, cost-effective solution
+Upgrading from Cloud SQL for MySQL Enterprise edition to
+Cloud SQL for MySQL Enterprise Plus edition
+was the perfect solution to tackle our complex needs, offering scalability, flexibility, and minimal administrative overhead. The Enterprise Plus edition also introduced enhanced availability and data protection features, while new optimizations and improved configurations significantly boosted performance.
+Our migration journey required meticulous planning, but with the help of the
+Database Migration Service
+(DMS) and its custom destination features, we easily transitioned to
+Cloud SQL for MySQL Enterprise Plus edition
+. The migration was swift, thanks to DMS facilitating data backfill and Change Data Capture (CDC) setup. The new architecture not only resolved the server capacity challenges we were seeing from our growing user base, but also set the stage for a great user experience. By deploying databases in several Google Cloud regions across the globe, we’re able to connect millions worldwide in their shared passion for chess.
+Cloud SQL for MySQL Enterprise Plus edition has been a game-changer for us, reducing operational burdens and boosting our development teams’ satisfaction. New visibility into system and query performance, which comes with the Cloud SQL Insights feature, has transformed the way our teams work and provides critical insights that fuel our innovation. Specifically, the p99 latency response saw a remarkable drop of 71.4 percent — going from 14ms to an impressive 4ms.
+Deploying the Enterprise Plus edition for our core services enabled us to migrate to clusters half the size of our previous environment. This server footprint reduction delivered significant cost savings and even reduced latency. These optimizations have resulted in easier configuration and quicker database responses, ultimately improving maintenance by 90%. Many tasks that used to take five to ten minutes now take just a few seconds.
+Overall, this shift has been monumental, delivering superior system performance and helping to ensure a smooth experience for our users. It’s been especially critical for services like Settings, which includes gameplay settings and is used throughout our entire system.
+Future-ready: Google Cloud drives ongoing innovation
+Looking ahead, we're thrilled about the capabilities that Cloud SQL for MySQL Enterprise Plus edition offers. The ease with which we can manage and create new database instances aligns perfectly with our agile development approach, and the robust SLA of the Enterprise Plus edition instills confidence, allowing us to leverage Cloud SQL for our most critical workloads. Our collaboration with the Cloud SQL product team is ongoing, driving continuous improvements to meet the demanding needs of our enterprise applications. This forward-thinking partnership reflects our commitment to staying at the forefront of technology and delivering unparalleled experiences to our users.
+Get Started:
+Learn more about
+Cloud SQL Enterprise Plus
+and
+Data Migration Service
+(DMS).
+Start a free trial today
+!
+Posted in
+Databases
+Customers
+Cloud SQL
+Related articles
+Data Analytics
+From OLAP to OLTP: How Copel Simplified Reverse ETL Using BigQuery's Native Export to AlloyDB
+By Jelson A. Cordeiro • 6-minute read
+Data Analytics
+What’s new with Google Data Cloud
+By The Google Cloud Data Analytics, BI, and Database teams  • 26-minute read
+Databases
+Introducing new AI functions for AlloyDB: ai.classify and ai.extract
+By Paul Ramsey • 4-minute read
+Data Analytics
+Bringing conversational analytics to Gemini with Agentic Data Cloud connectors
+By Leigha Reid • 5-minute read
+Footer Links
+Follow us
+Google Cloud
+Google Cloud Products
+Privacy
+Terms
+Cookies management controls
+Help
+Language
+‪English‬
+‪Deutsch‬
+‪Français‬
+‪한국어‬
+‪日本語‬

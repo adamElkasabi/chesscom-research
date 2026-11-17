@@ -1,0 +1,116 @@
+{
+  "name": "chesscom/payments/v1/charge.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "Charge",
+      "field": [
+        {
+          "name": "charge_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "amount_cents",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "currency",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "charged_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "gateway",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "payment_method",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "platform",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.ChargePlatform"
+        },
+        {
+          "name": "refunded_cents",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "is_trial",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "plan",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "subscription_id",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "auto_refund_eligible",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "ineligibility_reason",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.support.v1.RefundIneligibilityReason"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ChargePlatform",
+      "value": [
+        {
+          "name": "CHARGE_PLATFORM_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CHARGE_PLATFORM_WEB",
+          "number": 1
+        },
+        {
+          "name": "CHARGE_PLATFORM_APPLE",
+          "number": 2
+        },
+        {
+          "name": "CHARGE_PLATFORM_GOOGLE",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

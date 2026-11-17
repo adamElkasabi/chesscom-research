@@ -1,0 +1,32 @@
+// source: chesscom/api/v1/location.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Location {
+  oneof _city {
+  string city = 2;
+  }
+  oneof _region {
+  string region = 3;
+  }
+  oneof _continent_code {
+  string continent_code = 4;
+  }
+  oneof _postal_code {
+  string postal_code = 5;
+  }
+  oneof _latitude {
+  float latitude = 6;
+  }
+  oneof _longitude {
+  float longitude = 7;
+  }
+  oneof _timezone {
+  string timezone = 8;
+  }
+  oneof _asn {
+  int32 asn = 9;
+  }
+  optional string country_code = 1;
+}

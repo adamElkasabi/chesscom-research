@@ -1,0 +1,9 @@
+{
+  "id": "followup-soft-factor50",
+  "uciAfter": {
+    "Normalize": false,
+    "UseSoftNodes": true,
+    "HardSoftNodeFactor": 50
+  },
+  "saveReview": true
+}

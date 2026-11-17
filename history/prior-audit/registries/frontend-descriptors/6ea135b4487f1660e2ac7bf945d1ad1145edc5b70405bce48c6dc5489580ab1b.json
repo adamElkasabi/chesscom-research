@@ -1,0 +1,271 @@
+{
+  "name": "chesscom/user_properties/v1/properties_user_engagement.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "UserEngagementProperty",
+      "field": [
+        {
+          "name": "last_bounce_date_sendgrid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_open_email_date_sendgrid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_click_email_date_sendgrid",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_bounce_date_iterable",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_open_email_date_iterable",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_click_email_date_iterable",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_dropped_email_date_sendgrid",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_spam_report_date_sendgrid",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_opened_push_notification_date_firebase",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_viewed_payment_page_date",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_push_open_date_iterable",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_email_complaint_date_iterable",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_email_bounces_iterable",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1028,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserEngagementPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_bounce_date_sendgrid"
+        },
+        {
+          "name": "_last_open_email_date_sendgrid"
+        },
+        {
+          "name": "_last_click_email_date_sendgrid"
+        },
+        {
+          "name": "_last_bounce_date_iterable"
+        },
+        {
+          "name": "_last_open_email_date_iterable"
+        },
+        {
+          "name": "_last_click_email_date_iterable"
+        },
+        {
+          "name": "_last_dropped_email_date_sendgrid"
+        },
+        {
+          "name": "_last_spam_report_date_sendgrid"
+        },
+        {
+          "name": "_last_opened_push_notification_date_firebase"
+        },
+        {
+          "name": "_last_viewed_payment_page_date"
+        },
+        {
+          "name": "_last_push_open_date_iterable"
+        },
+        {
+          "name": "_last_email_complaint_date_iterable"
+        },
+        {
+          "name": "_total_email_bounces_iterable"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserEngagementPropertyDefinition",
+      "value": [
+        {
+          "name": "USER_ENGAGEMENT_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "LAST_BOUNCE_DATE_SENDGRID",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "LAST_OPEN_EMAIL_DATE_SENDGRID",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "LAST_CLICK_EMAIL_DATE_SENDGRID",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "LAST_BOUNCE_DATE_ITERABLE",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "LAST_OPEN_EMAIL_DATE_ITERABLE",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "LAST_CLICK_EMAIL_DATE_ITERABLE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "LAST_DROPPED_EMAIL_DATE_SENDGRID",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "LAST_SPAM_REPORT_DATE_SENDGRID",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "LAST_OPENED_PUSH_NOTIFICATION_DATE_FIREBASE",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "LAST_VIEWED_PAYMENT_PAGE_DATE",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "LAST_PUSH_OPEN_DATE_ITERABLE",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "LAST_EMAIL_COMPLAINT_DATE_ITERABLE",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_EMAIL_BOUNCES_ITERABLE",
+          "number": 13,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

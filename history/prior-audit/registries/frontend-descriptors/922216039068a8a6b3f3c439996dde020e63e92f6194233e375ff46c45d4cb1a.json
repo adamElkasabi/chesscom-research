@@ -1,0 +1,31 @@
+{
+  "name": "chesscom/ceac/v2/game_review_options.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "GameReviewOptions",
+      "field": [
+        {
+          "name": "report_card_entitled",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "include_train_takeaways",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "can_access_locked_takeaways",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

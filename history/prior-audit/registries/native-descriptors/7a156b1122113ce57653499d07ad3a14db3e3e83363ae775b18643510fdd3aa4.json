@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/api/v1/semantic_version.proto",
+  "package": "chesscom.api.v1",
+  "message_type": [
+    {
+      "name": "SemanticVersion",
+      "field": [
+        {
+          "name": "major",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "minor",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "patch",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

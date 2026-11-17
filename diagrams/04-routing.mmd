@@ -1,0 +1,5 @@
+flowchart LR
+ URL[GET slash or jobs] --> E[Cloudflare response]
+ E --> Match[web_index or web_jobs matched header]
+ Match -. class method not available .-> C[Unknown controller]
+ RT[Saved generated route declarations] -. URL generation evidence only .-> Match

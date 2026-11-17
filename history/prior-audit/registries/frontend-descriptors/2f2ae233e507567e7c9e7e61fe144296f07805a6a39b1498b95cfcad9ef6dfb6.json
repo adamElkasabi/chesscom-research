@@ -1,0 +1,131 @@
+{
+  "name": "chesscom/ceac/v2/error.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "NoCapacityError"
+    },
+    {
+      "name": "InvalidGameError",
+      "options": {}
+    },
+    {
+      "name": "GeneralError",
+      "options": {}
+    },
+    {
+      "name": "BadRequest",
+      "field": [
+        {
+          "name": "invalid_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InvalidGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "unanalyzable_game",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UnanalyzableGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.InvalidRequestError",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "reason"
+        }
+      ]
+    },
+    {
+      "name": "RateLimitedError",
+      "options": {}
+    },
+    {
+      "name": "InvalidRequestError",
+      "options": {}
+    },
+    {
+      "name": "AuthRequiredError",
+      "options": {}
+    },
+    {
+      "name": "ClientError",
+      "field": [
+        {
+          "name": "bad_request",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.BadRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "rate_limited",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RateLimitedError",
+          "oneof_index": 0
+        },
+        {
+          "name": "auth_required",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.AuthRequiredError",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "reason"
+        }
+      ]
+    },
+    {
+      "name": "ServerError",
+      "options": {}
+    },
+    {
+      "name": "FailureError",
+      "field": [
+        {
+          "name": "client_error",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.ClientError",
+          "oneof_index": 0
+        },
+        {
+          "name": "server_error",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.ServerError",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "kind"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

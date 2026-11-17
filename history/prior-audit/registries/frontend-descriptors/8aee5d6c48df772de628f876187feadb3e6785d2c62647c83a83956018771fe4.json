@@ -1,0 +1,60 @@
+{
+  "name": "chesscom/user_properties/v1/properties_navbar.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "NavbarProperty",
+      "field": [
+        {
+          "name": "pins",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "favorites",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1039,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.NavbarPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "NavbarPropertyDefinition",
+      "value": [
+        {
+          "name": "NAVBAR_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "NAVBAR_PROPERTY_DEFINITION_PINS",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "NAVBAR_PROPERTY_DEFINITION_FAVORITES",
+          "number": 2,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

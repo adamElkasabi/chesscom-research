@@ -1,0 +1,44 @@
+// source: chesscom/explanation_engine/v1/game_settings.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GameSettings {
+  oneof search {
+  .chesscom.explanation_engine.v1.SearchSettings search_settings = 8;
+  .chesscom.explanation_engine.v1.GameReviewSearchSettings game_review_search_settings = 9;
+  .chesscom.explanation_engine.v1.SearchPreset preset = 13;
+  }
+  oneof _user_color {
+  .chesscom.chess.v1.Color user_color = 3;
+  }
+  oneof _locale {
+  .chesscom.explanation_engine.v1.Locale locale = 4;
+  }
+  oneof _game_phase_version {
+  .chesscom.explanation_engine.v1.GamePhaseVersion game_phase_version = 5;
+  }
+  oneof _game_analysis_speech_version {
+  .chesscom.explanation_engine.v1.GameAnalysisSpeechVersion game_analysis_speech_version = 6;
+  }
+  oneof _move_classification_version {
+  .chesscom.explanation_engine.v1.MoveClassificationVersion move_classification_version = 7;
+  }
+  oneof _force_disable_internal_engine_searches {
+  bool force_disable_internal_engine_searches = 10;
+  }
+  oneof _enable_skills {
+  bool enable_skills = 14;
+  }
+  repeated string enabled_feature_flags = 11;
+  repeated .chesscom.explanation_engine.v1.GameSettings.FeatureFlagConfigEntry feature_flag_config = 12;
+  message FeatureFlagConfigEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+}
+
+message SearchSettings {
+  optional .chesscom.explanation_engine.v1.SearchParameters search_parameters = 1;
+  optional .chesscom.explanation_engine.v1.SearchParameters null_move_search_parameters = 2;
+}

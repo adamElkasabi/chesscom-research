@@ -1,0 +1,749 @@
+{
+  "name": "chesscom/settings/v1/settings_notification.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "NotificationSetting",
+      "field": [
+        {
+          "name": "auto_track_content",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "web",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.NotificationSetting.NotificationWebSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "mobile",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.NotificationSetting.NotificationMobileSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "email",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.NotificationSetting.NotificationEmailSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "show_internal_ads",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "NotificationWebSetting",
+          "field": [
+            {
+              "name": "my_turn_to_move",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "game_event",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_message",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_friend_request",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_social_trophy",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_user_comment",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_content",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_comment",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "hero_playing",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "chess_tv",
+              "number": 10,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "lesson_quota",
+              "number": 11,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "vote_chess",
+              "number": 12,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "news_and_announcements",
+              "number": 13,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "lesson_and_practice",
+              "number": 14,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "friend_activity_updates",
+              "number": 15,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "streaks_reminders",
+              "number": 16,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "leagues_reminders",
+              "number": 17,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "contact_match",
+              "number": 18,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "puzzle_reminders",
+              "number": 19,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "game_review_reminders",
+              "number": 20,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "coach_reminders",
+              "number": 21,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "special_offers",
+              "number": 23,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "courses_reminders",
+              "number": 24,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "community_updates",
+              "number": 25,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        },
+        {
+          "name": "NotificationMobileSetting",
+          "field": [
+            {
+              "name": "my_turn_to_move",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "game_event",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_message",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_friend_request",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_social_trophy",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_user_comment",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_content",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_comment",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "hero_playing",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "chess_tv",
+              "number": 10,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "lesson_quota",
+              "number": 11,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "vote_chess",
+              "number": 12,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "news_and_announcements",
+              "number": 13,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "lesson_and_practice",
+              "number": 14,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "friend_activity_updates",
+              "number": 15,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "recommended_match",
+              "number": 16,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "puzzle_reminder",
+              "number": 17,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "streaks_reminders",
+              "number": 18,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "leagues_reminders",
+              "number": 19,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "contact_match",
+              "number": 20,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "game_review_reminders",
+              "number": 21,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "coach_reminders",
+              "number": 22,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "special_offers",
+              "number": 23,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "courses_reminders",
+              "number": 24,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "community_updates",
+              "number": 25,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        },
+        {
+          "name": "NotificationEmailSetting",
+          "field": [
+            {
+              "name": "my_turn_to_move",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "game_event",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_message",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_friend_request",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_social_trophy",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_user_comment",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_content",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "new_comment",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "hero_playing",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "chess_tv",
+              "number": 10,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "lesson_quota",
+              "number": 11,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "vote_chess",
+              "number": 12,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "news_and_announcements",
+              "number": 13,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "lesson_and_practice",
+              "number": 14,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "friend_activity_updates",
+              "number": 15,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "puzzle_reminder",
+              "number": 16,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "streaks_reminders",
+              "number": 17,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "leagues_reminders",
+              "number": 18,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "contact_match",
+              "number": 19,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "game_review_reminders",
+              "number": 21,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "coach_reminders",
+              "number": 22,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "special_offers",
+              "number": 23,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "courses_reminders",
+              "number": 24,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "community_updates",
+              "number": 25,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

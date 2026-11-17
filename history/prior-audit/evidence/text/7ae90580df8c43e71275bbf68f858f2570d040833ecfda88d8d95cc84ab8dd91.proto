@@ -1,0 +1,231 @@
+// source: chesscom/friends_search/v1/friends_search.proto
+// syntax: proto3
+
+package chesscom.friends_search.v1;
+
+enum FriendsSearchPresenceStatus {
+  FRIENDS_SEARCH_PRESENCE_STATUS_UNSPECIFIED = 0;
+  FRIENDS_SEARCH_PRESENCE_STATUS_OFFLINE = 1;
+  FRIENDS_SEARCH_PRESENCE_STATUS_ONLINE = 2;
+  FRIENDS_SEARCH_PRESENCE_STATUS_PLAYING = 3;
+}
+
+enum FriendRequestDirection {
+  FRIEND_REQUEST_DIRECTION_UNSPECIFIED = 0;
+  FRIEND_REQUEST_DIRECTION_OUTGOING = 1;
+  FRIEND_REQUEST_DIRECTION_INCOMING = 2;
+}
+
+enum FriendsSearchOrder {
+  FRIENDS_SEARCH_ORDER_UNSPECIFIED = 0;
+  FRIENDS_SEARCH_ORDER_ASC = 1;
+  FRIENDS_SEARCH_ORDER_DESC = 2;
+}
+
+enum FriendsSearchSearchableField {
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_UNSPECIFIED = 0;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_FIRST_NAME = 1;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_LAST_NAME = 2;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_EMAIL = 3;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_COUNTRY = 4;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_USERNAME = 5;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_LAST_LOGIN_DATE = 6;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_IS_ONLINE = 7;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_ALL = 8;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_ALL_EXCEPT_EMAIL = 9;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_CREATED_DATE = 10;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_USERNAME_PREFIX = 11;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_USERNAME_UNIQUE = 12;
+  FRIENDS_SEARCH_SEARCHABLE_FIELD_LAST_FEED_ACTIVITY = 13;
+}
+
+enum FriendsSearchVariantTimeclass {
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_UNSPECIFIED = 0;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_BLITZ = 1;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_BULLET = 2;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_DAILY = 3;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_RAPID = 4;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_BLITZ = 5;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_BULLET = 6;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_DAILY = 7;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_RAPID = 8;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_BLITZ = 9;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_BLITZ = 10;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_BLITZ = 11;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_BLITZ = 12;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_BLITZ = 13;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_BULLET = 14;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_BULLET = 15;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_BULLET = 16;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_BULLET = 17;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_BULLET = 18;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_DAILY = 19;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_DAILY = 20;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_DAILY = 21;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_DAILY = 22;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_DAILY = 23;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_RAPID = 24;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_RAPID = 25;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_RAPID = 26;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_RAPID = 27;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_RAPID = 28;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960 = 29;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS = 30;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK = 31;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE = 32;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE = 33;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL = 34;
+  FRIENDS_SEARCH_VARIANT_TIMECLASS_UNRATED = 35;
+}
+
+enum FriendsSearchRetrievableField {
+  FRIENDS_SEARCH_RETRIEVABLE_FIELD_UNSPECIFIED = 0;
+  FRIENDS_SEARCH_RETRIEVABLE_FIELD_AVATAR = 1;
+  FRIENDS_SEARCH_RETRIEVABLE_FIELD_COUNTRY_CODE = 2;
+}
+
+message FriendsSearchRootQuery {
+  repeated .chesscom.friends_search.v1.FriendsSearchOrderBy order_by = 1;
+  optional .chesscom.friends_search.v1.FriendsSearchQuery query = 2;
+}
+
+message FriendsSearchQuery {
+  oneof operator {
+  .chesscom.friends_search.v1.FriendsSearchQuery or = 2;
+  .chesscom.friends_search.v1.FriendsSearchQuery and = 3;
+  }
+  optional .chesscom.friends_search.v1.FriendsSearchStatement statement = 1;
+}
+
+message FriendsSearchStatement {
+  oneof criteria {
+  .chesscom.friends_search.v1.FriendsSearchFieldValueCriteria field_value = 1;
+  .chesscom.friends_search.v1.FriendsSearchRatingRangeCriteria rating_range = 2;
+  .chesscom.friends_search.v1.FriendsSearchTextCriteria all_fields_text = 3;
+  .chesscom.friends_search.v1.FriendsSearchLastLoginDateCriteria last_login_date = 4;
+  .chesscom.friends_search.v1.FriendsSearchIsOnlineCriteria is_online = 5;
+  .chesscom.friends_search.v1.FriendsSearchTextCriteria all_fields_text_except_email = 6;
+  }
+}
+
+message FriendsSearchFieldValueCriteria {
+  optional .chesscom.friends_search.v1.FriendsSearchSearchableField searchable_field = 1;
+  optional string field_value = 2;
+}
+
+message FriendsSearchTextCriteria {
+  oneof _exact_username_first {
+  bool exact_username_first = 2;
+  }
+  oneof _boost_username {
+  bool boost_username = 3;
+  }
+  optional string text_to_search = 1;
+}
+
+message FriendsSearchRatingRangeCriteria {
+  optional .chesscom.game_storage.v1.Variant variant = 1;
+  optional .chesscom.game_storage.v1.TimeClass timeclass = 2;
+  optional int32 min_inclusive = 3;
+  optional int32 max_inclusive = 4;
+}
+
+message FriendsSearchLastLoginDateCriteria {
+  optional .google.protobuf.Timestamp last_login_date = 1;
+}
+
+message FriendsSearchIsOnlineCriteria {
+  optional bool is_online = 1;
+}
+
+message FriendsSearchFriend {
+  oneof _friend_since {
+  .google.protobuf.Timestamp friend_since = 3;
+  }
+  oneof _last_login_date {
+  .google.protobuf.Timestamp last_login_date = 4;
+  }
+  oneof _requestor_friend_request_direction {
+  .chesscom.friends_search.v1.FriendRequestDirection requestor_friend_request_direction = 10;
+  }
+  optional string uuid = 1;
+  optional .chesscom.user.v1.UserView user_view = 2;
+  optional bool is_staff = 5;
+  optional .chesscom.friends_search.v1.FriendsSearchPresenceStatus presence = 6;
+  optional int32 best_rating = 7;
+  optional bool is_requestor_friend = 8;
+  optional .chesscom.api.v1.Country country = 9;
+  repeated .chesscom.friends_search.v1.FriendsSearchRatingItem ratings = 90;
+}
+
+message FriendsSearchRecommendation {
+  optional string uuid = 1;
+  optional .chesscom.user.v1.UserView user_view = 2;
+  optional .chesscom.api.v1.Country country = 3;
+  optional int32 best_rating = 4;
+  repeated .chesscom.friends_search.v1.FriendsSearchRatingItem ratings = 5;
+  optional .chesscom.friends_search.v1.FriendsSearchPresenceStatus presence = 6;
+  optional bool is_staff = 7;
+  optional int32 rank = 8;
+  optional double score = 9;
+  optional string reason = 10;
+}
+
+message SocialFriendsSearchFriend {
+  optional .chesscom.friends_search.v1.FriendsSearchFriend friend = 1;
+  optional bool allows_challenges = 2;
+  optional bool allows_messages = 3;
+  optional .chesscom.presence.v1.UserPresence full_presence = 4;
+}
+
+message PendingFriendsSearchFriend {
+  optional .chesscom.friends_search.v1.SocialFriendsSearchFriend friend = 1;
+  optional bool is_incoming_request = 2;
+}
+
+message FriendsSearchFriendship {
+  optional .google.protobuf.Timestamp created_at = 1;
+  optional string friend_uuid = 2;
+}
+
+message FriendsSearchRatingItem {
+  optional .chesscom.friends_search.v1.FriendsSearchVariantTimeclass variant_timeclass = 1;
+  optional int32 rating = 2;
+}
+
+message FriendsSearchOrderBy {
+  oneof _order {
+  .chesscom.friends_search.v1.FriendsSearchOrder order = 2;
+  }
+  optional .chesscom.friends_search.v1.FriendsSearchSearchableField field = 1;
+}
+
+message FriendsSearchCursorToken {
+  oneof _how_many_pages {
+  int32 how_many_pages = 3;
+  }
+  oneof _total_elements {
+  int64 total_elements = 4;
+  }
+  optional int32 page_number = 1;
+  optional int32 page_size = 2;
+}
+
+message BlockedUsers {
+  optional string uuid = 1;
+  optional int64 legacy_id = 2;
+  optional string username = 3;
+  repeated .chesscom.friends_search.v1.FriendsSearchExtraFieldResponse extra_fields = 4;
+}
+
+message FriendsSearchExtraFieldResponse {
+  oneof value {
+  string string_value = 2;
+  int64 long_value = 3;
+  int32 integer_value = 4;
+  float float_value = 5;
+  double double_value = 6;
+  bool bool_value = 7;
+  }
+  optional .chesscom.friends_search.v1.FriendsSearchRetrievableField field = 1;
+}

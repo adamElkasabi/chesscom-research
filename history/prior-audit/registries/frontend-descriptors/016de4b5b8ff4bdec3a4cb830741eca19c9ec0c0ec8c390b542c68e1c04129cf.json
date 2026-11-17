@@ -1,0 +1,336 @@
+{
+  "name": "chesscom/courses/v1/course_product.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseProduct",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "short_description",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "square_picture",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture"
+        },
+        {
+          "name": "rectangular_picture",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture"
+        },
+        {
+          "name": "rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseRating"
+        },
+        {
+          "name": "recommended_level_range",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Range"
+        },
+        {
+          "name": "game_aspect",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseGameAspect"
+        },
+        {
+          "name": "color",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "release_date",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "authors",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseAuthor"
+        },
+        {
+          "name": "video",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseVideo",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "slug",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_trainer_sku",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "video_sku",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_trainer_price",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CoursePrice",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "video_price",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CoursePrice",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_trainer_purchase_date",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "video_purchase_date",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_trainer_ids",
+          "number": 21,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "variation_count",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "video_hours_count",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_diamond_exclusive",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "language",
+          "number": 25,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Language"
+        },
+        {
+          "name": "is_deleted",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "free_video_minutes",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "course_source",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseSource"
+        },
+        {
+          "name": "user_access_grant",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.UserAccessGrant",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_for",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.CourseTargetLevel",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "course_custom_tags",
+          "number": 31,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCustomTag"
+        },
+        {
+          "name": "canonical_line",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCanonicalLine",
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_recommended",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "first_coach_comment",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCoachComment",
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_preview",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.CourseBoardPreview",
+          "oneof_index": 14,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_video"
+        },
+        {
+          "name": "_move_trainer_sku"
+        },
+        {
+          "name": "_video_sku"
+        },
+        {
+          "name": "_move_trainer_price"
+        },
+        {
+          "name": "_video_price"
+        },
+        {
+          "name": "_move_trainer_purchase_date"
+        },
+        {
+          "name": "_video_purchase_date"
+        },
+        {
+          "name": "_video_hours_count"
+        },
+        {
+          "name": "_is_deleted"
+        },
+        {
+          "name": "_free_video_minutes"
+        },
+        {
+          "name": "_user_access_grant"
+        },
+        {
+          "name": "_best_for"
+        },
+        {
+          "name": "_canonical_line"
+        },
+        {
+          "name": "_first_coach_comment"
+        },
+        {
+          "name": "_board_preview"
+        }
+      ]
+    },
+    {
+      "name": "CourseProductList",
+      "field": [
+        {
+          "name": "course_list",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseProduct"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

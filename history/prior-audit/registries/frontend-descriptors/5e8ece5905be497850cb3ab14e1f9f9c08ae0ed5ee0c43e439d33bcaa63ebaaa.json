@@ -1,0 +1,358 @@
+{
+  "name": "chesscom/payments/v1/checkout_total.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "CheckoutTotal",
+      "field": [
+        {
+          "name": "product",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Product"
+        },
+        {
+          "name": "original_amount",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "original_amount_with_taxes",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "discount_amount",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "discount_amount_with_taxes",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "subtotal_amount",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "subtotal_amount_with_taxes",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "credit_amount",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "credit_amount_with_taxes",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "total_amount",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "tax_amount",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "total_amount_with_taxes",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "incentive",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Incentive",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "tax_lines",
+          "number": 14,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.TaxLine"
+        },
+        {
+          "name": "usd_fx_rate",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "course_product_details",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseProduct",
+          "oneof_index": 0
+        },
+        {
+          "name": "membership_product_details",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.MembershipProductDetails",
+          "oneof_index": 0
+        },
+        {
+          "name": "discount_amount_breakdown",
+          "number": 18,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Discount"
+        },
+        {
+          "name": "subtotal_amount_in_months",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "subtotal_amount_with_taxes_in_months",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "product_details"
+        },
+        {
+          "name": "_incentive"
+        },
+        {
+          "name": "_subtotal_amount_in_months"
+        },
+        {
+          "name": "_subtotal_amount_with_taxes_in_months"
+        }
+      ]
+    },
+    {
+      "name": "TaxLine",
+      "field": [
+        {
+          "name": "description",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rate",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "amount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TotalBreakdown",
+      "field": [
+        {
+          "name": "original_amount",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "original_amount_with_taxes",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "discount_amount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "discount_amount_with_taxes",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "subtotal_amount",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "subtotal_amount_with_taxes",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "credit_amount",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "credit_amount_with_taxes",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "total_amount",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "tax_amount",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "total_amount_with_taxes",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CheckoutTotalSummary",
+      "field": [
+        {
+          "name": "product",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.ProductSummary"
+        },
+        {
+          "name": "total_breakdown",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.TotalBreakdown",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "incentive",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Incentive",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "tax_lines",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.TaxLine"
+        },
+        {
+          "name": "usd_fx_rate",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "discount_amount_breakdown",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Discount"
+        },
+        {
+          "name": "country",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Country",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_total_breakdown"
+        },
+        {
+          "name": "_incentive"
+        },
+        {
+          "name": "_usd_fx_rate"
+        },
+        {
+          "name": "_country"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,28 @@
+// source: chesscom/explanation_engine/v1/feature_validate_pgn.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message ValidatePgnRequest {
+  optional string pgn = 1;
+  optional string artifact_id = 2;
+}
+
+message ValidatePgnResponse {
+  repeated .chesscom.explanation_engine.v1.PgnGameValidationResult result = 1;
+}
+
+message PgnGameValidationResult {
+  oneof result {
+  .chesscom.explanation_engine.v1.PgnGameValidationSuccess success = 1;
+  .chesscom.explanation_engine.v1.PgnGameValidationError error = 2;
+  }
+}
+
+message PgnGameValidationSuccess {
+  optional string game_pgn = 1;
+}
+
+message PgnGameValidationError {
+  optional string error = 1;
+}

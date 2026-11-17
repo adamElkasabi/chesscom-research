@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/train/v1/train_backfill_status.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainBackfillStatus",
+      "value": [
+        {
+          "name": "TRAIN_BACKFILL_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_BACKFILL_STATUS_IN_PROGRESS",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_BACKFILL_STATUS_COMPLETED",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

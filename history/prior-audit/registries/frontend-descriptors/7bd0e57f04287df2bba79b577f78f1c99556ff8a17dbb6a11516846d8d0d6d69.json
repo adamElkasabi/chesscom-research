@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/game_storage/v2/game_server.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "GameServer",
+      "value": [
+        {
+          "name": "GAME_SERVER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_SERVER_RCN",
+          "number": 1
+        },
+        {
+          "name": "GAME_SERVER_LIVE_CHESS",
+          "number": 2
+        },
+        {
+          "name": "GAME_SERVER_WEB",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

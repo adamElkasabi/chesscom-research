@@ -1,0 +1,11 @@
+// source: chesscom/payments/v1/country_price.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message CountryPrice {
+  optional string country_code = 1;
+  optional .chesscom.api.v1.Money original_price = 2;
+  optional .chesscom.api.v1.Money current_price = 3;
+  optional .chesscom.api.v1.Money special_price = 4;
+}

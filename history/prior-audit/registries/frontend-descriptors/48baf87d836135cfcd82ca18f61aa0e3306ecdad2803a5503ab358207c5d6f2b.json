@@ -1,0 +1,64 @@
+{
+  "name": "chesscom/game_gateway/v2/chess_game.proto",
+  "package": "chesscom.game_gateway.v2",
+  "message_type": [
+    {
+      "name": "ChessGame",
+      "field": [
+        {
+          "name": "initial_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "final_fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "ply_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "move_text",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_timestamps",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "white_player",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.Player"
+        },
+        {
+          "name": "black_player",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.Player"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_initial_fen"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,31 @@
+// source: chesscom/user_properties/v1/properties_fair_play.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum FairPlayPropertyDefinition {
+  FAIR_PLAY_PROPERTY_UNSPECIFIED = 0;
+  CHEAT_REPORT_COUNT = 1;
+  LAST_CHEAT_REPORT_DATE = 2;
+  PREVIOUS_CHANCE_USER = 3;
+  NEXT_CHANCE_USER = 4;
+  SECOND_CHANCE_TAG = 5;
+}
+
+message FairPlayProperty {
+  oneof _cheat_report_count {
+  int32 cheat_report_count = 1;
+  }
+  oneof _last_cheat_report_date {
+  .google.protobuf.Timestamp last_cheat_report_date = 2;
+  }
+  oneof _previous_chance_user {
+  string previous_chance_user = 3;
+  }
+  oneof _next_chance_user {
+  string next_chance_user = 4;
+  }
+  oneof _second_chance_tag {
+  string second_chance_tag = 5;
+  }
+}

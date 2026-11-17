@@ -1,0 +1,55 @@
+{
+  "name": "chesscom/user_properties/v1/properties_puzzle_battle.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PuzzleBattleProperty",
+      "field": [
+        {
+          "name": "win_streak",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1022,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PuzzleBattlePropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_win_streak"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PuzzleBattlePropertyDefinition",
+      "value": [
+        {
+          "name": "PUZZLES_BATTLE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_BATTLE_WIN_STREAK",
+          "number": 1,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

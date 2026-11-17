@@ -1,0 +1,18 @@
+{
+  "id": "nodes-40000",
+  "settings": {
+    "search": {
+      "case": "searchSettings",
+      "value": {
+        "searchParameters": {
+          "nodesLimit": 40000,
+          "numLines": 2
+        },
+        "nullMoveSearchParameters": {
+          "nodesLimit": 40000,
+          "numLines": 1
+        }
+      }
+    }
+  }
+}

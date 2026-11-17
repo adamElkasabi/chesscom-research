@@ -1,0 +1,11 @@
+// source: chesscom/train/v1/train_strategy_mistake_challenge.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+message TrainStrategyMistakeChallenge {
+  optional .chesscom.train.v1.TrainPositionType position_type = 1;
+  optional .chesscom.train.v1.TrainPositionAttribute position_attribute = 2;
+  optional .chesscom.train.v1.TrainStrategyTheme theme = 3;
+  optional .chesscom.chess.v1.Move correct_move = 4;
+}

@@ -1,0 +1,24 @@
+{
+  "config": {
+    "id": "depth-22",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 22,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 22,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "timeoutSeconds": 60
+  },
+  "started": "2026-11-14T19:01:24.419Z",
+  "error": "trial timeout after 60s",
+  "warnings": []
+}

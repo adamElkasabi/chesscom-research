@@ -1,0 +1,273 @@
+{
+  "name": "chesscom/chess/v1/square.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "Square",
+      "value": [
+        {
+          "name": "SQUARE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SQUARE_A1",
+          "number": 1
+        },
+        {
+          "name": "SQUARE_B1",
+          "number": 2
+        },
+        {
+          "name": "SQUARE_C1",
+          "number": 3
+        },
+        {
+          "name": "SQUARE_D1",
+          "number": 4
+        },
+        {
+          "name": "SQUARE_E1",
+          "number": 5
+        },
+        {
+          "name": "SQUARE_F1",
+          "number": 6
+        },
+        {
+          "name": "SQUARE_G1",
+          "number": 7
+        },
+        {
+          "name": "SQUARE_H1",
+          "number": 8
+        },
+        {
+          "name": "SQUARE_A2",
+          "number": 9
+        },
+        {
+          "name": "SQUARE_B2",
+          "number": 10
+        },
+        {
+          "name": "SQUARE_C2",
+          "number": 11
+        },
+        {
+          "name": "SQUARE_D2",
+          "number": 12
+        },
+        {
+          "name": "SQUARE_E2",
+          "number": 13
+        },
+        {
+          "name": "SQUARE_F2",
+          "number": 14
+        },
+        {
+          "name": "SQUARE_G2",
+          "number": 15
+        },
+        {
+          "name": "SQUARE_H2",
+          "number": 16
+        },
+        {
+          "name": "SQUARE_A3",
+          "number": 17
+        },
+        {
+          "name": "SQUARE_B3",
+          "number": 18
+        },
+        {
+          "name": "SQUARE_C3",
+          "number": 19
+        },
+        {
+          "name": "SQUARE_D3",
+          "number": 20
+        },
+        {
+          "name": "SQUARE_E3",
+          "number": 21
+        },
+        {
+          "name": "SQUARE_F3",
+          "number": 22
+        },
+        {
+          "name": "SQUARE_G3",
+          "number": 23
+        },
+        {
+          "name": "SQUARE_H3",
+          "number": 24
+        },
+        {
+          "name": "SQUARE_A4",
+          "number": 25
+        },
+        {
+          "name": "SQUARE_B4",
+          "number": 26
+        },
+        {
+          "name": "SQUARE_C4",
+          "number": 27
+        },
+        {
+          "name": "SQUARE_D4",
+          "number": 28
+        },
+        {
+          "name": "SQUARE_E4",
+          "number": 29
+        },
+        {
+          "name": "SQUARE_F4",
+          "number": 30
+        },
+        {
+          "name": "SQUARE_G4",
+          "number": 31
+        },
+        {
+          "name": "SQUARE_H4",
+          "number": 32
+        },
+        {
+          "name": "SQUARE_A5",
+          "number": 33
+        },
+        {
+          "name": "SQUARE_B5",
+          "number": 34
+        },
+        {
+          "name": "SQUARE_C5",
+          "number": 35
+        },
+        {
+          "name": "SQUARE_D5",
+          "number": 36
+        },
+        {
+          "name": "SQUARE_E5",
+          "number": 37
+        },
+        {
+          "name": "SQUARE_F5",
+          "number": 38
+        },
+        {
+          "name": "SQUARE_G5",
+          "number": 39
+        },
+        {
+          "name": "SQUARE_H5",
+          "number": 40
+        },
+        {
+          "name": "SQUARE_A6",
+          "number": 41
+        },
+        {
+          "name": "SQUARE_B6",
+          "number": 42
+        },
+        {
+          "name": "SQUARE_C6",
+          "number": 43
+        },
+        {
+          "name": "SQUARE_D6",
+          "number": 44
+        },
+        {
+          "name": "SQUARE_E6",
+          "number": 45
+        },
+        {
+          "name": "SQUARE_F6",
+          "number": 46
+        },
+        {
+          "name": "SQUARE_G6",
+          "number": 47
+        },
+        {
+          "name": "SQUARE_H6",
+          "number": 48
+        },
+        {
+          "name": "SQUARE_A7",
+          "number": 49
+        },
+        {
+          "name": "SQUARE_B7",
+          "number": 50
+        },
+        {
+          "name": "SQUARE_C7",
+          "number": 51
+        },
+        {
+          "name": "SQUARE_D7",
+          "number": 52
+        },
+        {
+          "name": "SQUARE_E7",
+          "number": 53
+        },
+        {
+          "name": "SQUARE_F7",
+          "number": 54
+        },
+        {
+          "name": "SQUARE_G7",
+          "number": 55
+        },
+        {
+          "name": "SQUARE_H7",
+          "number": 56
+        },
+        {
+          "name": "SQUARE_A8",
+          "number": 57
+        },
+        {
+          "name": "SQUARE_B8",
+          "number": 58
+        },
+        {
+          "name": "SQUARE_C8",
+          "number": 59
+        },
+        {
+          "name": "SQUARE_D8",
+          "number": 60
+        },
+        {
+          "name": "SQUARE_E8",
+          "number": 61
+        },
+        {
+          "name": "SQUARE_F8",
+          "number": 62
+        },
+        {
+          "name": "SQUARE_G8",
+          "number": 63
+        },
+        {
+          "name": "SQUARE_H8",
+          "number": 64
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

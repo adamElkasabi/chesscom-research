@@ -1,0 +1,486 @@
+{
+  "name": "chesscom/chess/v1/game.proto",
+  "package": "chesscom.chess.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/position.proto",
+    "chesscom/chess/v1/result.proto",
+    "chesscom/chess/v1/time.proto",
+    "chesscom/chess/v1/chesscom_game_source.proto",
+    "chesscom/chess/v1/score.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameResult",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Result"
+        },
+        {
+          "name": "result_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.ResultType"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "field": [
+        {
+          "name": "starting_position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Position"
+        },
+        {
+          "name": "moves",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMove"
+        },
+        {
+          "name": "metadata",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata"
+        }
+      ]
+    },
+    {
+      "name": "GameMove",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "metadata",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMoveMetadata",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "variations",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.MoveVariation"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_metadata"
+        }
+      ]
+    },
+    {
+      "name": "GameMoveMetadata",
+      "field": [
+        {
+          "name": "score",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Score",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_remaining_ms",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "comment_before",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "comments_after",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "nags",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_score"
+        },
+        {
+          "name": "_time_remaining_ms"
+        },
+        {
+          "name": "_comment_before"
+        }
+      ]
+    },
+    {
+      "name": "MoveVariation",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMove"
+        }
+      ]
+    },
+    {
+      "name": "Rules",
+      "field": [
+        {
+          "name": "is_chess960",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_is_chess960"
+        }
+      ]
+    },
+    {
+      "name": "GameMetadata",
+      "field": [
+        {
+          "name": "players",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.PlayerMetadata"
+        },
+        {
+          "name": "time_control",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.TimeControl",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "timestamps",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Timestamps",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameResult",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "rules",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Rules",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "chesscom_metadata",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ChesscomGameMetadata",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "pgn_headers",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata.PgnHeadersEntry"
+        },
+        {
+          "name": "link",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_class",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_rated",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "PgnHeadersEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_time_control"
+        },
+        {
+          "name": "_timestamps"
+        },
+        {
+          "name": "_result"
+        },
+        {
+          "name": "_rules"
+        },
+        {
+          "name": "_chesscom_metadata"
+        },
+        {
+          "name": "_link"
+        },
+        {
+          "name": "_time_class"
+        },
+        {
+          "name": "_is_rated"
+        }
+      ]
+    },
+    {
+      "name": "Timestamps",
+      "field": [
+        {
+          "name": "started_at",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "finished_at",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_started_at"
+        },
+        {
+          "name": "_finished_at"
+        }
+      ]
+    },
+    {
+      "name": "ChesscomGameMetadata",
+      "field": [
+        {
+          "name": "game_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "legacy_game_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "eco_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_source",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.ChesscomGameSource",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_game_id"
+        },
+        {
+          "name": "_legacy_game_id"
+        },
+        {
+          "name": "_eco_id"
+        },
+        {
+          "name": "_game_source"
+        }
+      ]
+    },
+    {
+      "name": "PlayerMetadata",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "ratings",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Rating"
+        },
+        {
+          "name": "name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "chesscom_metadata",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ChesscomPlayerMetadata",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_name"
+        },
+        {
+          "name": "_chesscom_metadata"
+        }
+      ]
+    },
+    {
+      "name": "Rating",
+      "field": [
+        {
+          "name": "rating",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_rating"
+        }
+      ]
+    },
+    {
+      "name": "ChesscomPlayerMetadata",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "legacy_user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_user_id"
+        },
+        {
+          "name": "_legacy_user_id"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

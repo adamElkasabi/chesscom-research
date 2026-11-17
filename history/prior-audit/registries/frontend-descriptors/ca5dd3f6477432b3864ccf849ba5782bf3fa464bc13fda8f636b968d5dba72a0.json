@@ -1,0 +1,125 @@
+{
+  "name": "chesscom/game_gateway/v1/game_analysis_metadata.proto",
+  "package": "chesscom.game_gateway.v1",
+  "message_type": [
+    {
+      "name": "GameAnalysisMetadata",
+      "field": [
+        {
+          "name": "white_player_metadata",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.AnalysisData"
+        },
+        {
+          "name": "black_player_metadata",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.AnalysisData"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AnalysisData",
+      "field": [
+        {
+          "name": "themes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.AnalysisData.AnalysisTheme"
+        },
+        {
+          "name": "move_classification_counts",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.AnalysisData.MoveClassificationCounts",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "accuracy",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_classification_counts_v2",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.AnalysisData.MoveClassificationCountsV2"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "MoveClassificationCounts",
+          "field": [
+            {
+              "name": "move_classification",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.analysis.v1.MoveClassification"
+            },
+            {
+              "name": "count",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            }
+          ]
+        },
+        {
+          "name": "MoveClassificationCountsV2",
+          "field": [
+            {
+              "name": "move_classification",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.analysis.v2.MoveClassification"
+            },
+            {
+              "name": "count",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_UINT32"
+            }
+          ]
+        },
+        {
+          "name": "AnalysisTheme",
+          "field": [
+            {
+              "name": "theme",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "ply",
+              "number": 2,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_UINT32"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_accuracy"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

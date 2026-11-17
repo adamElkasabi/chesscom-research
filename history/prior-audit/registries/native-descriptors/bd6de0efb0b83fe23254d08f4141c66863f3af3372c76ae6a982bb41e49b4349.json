@@ -1,0 +1,430 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "V1x6Depth20Multipv2LabelsRecord",
+      "field": [
+        {
+          "name": "ep_diff_side_to_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "classification_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "uci",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen_before",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen_after",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "V1x6Depth20Multipv2FeaturesRecord",
+      "field": [
+        {
+          "name": "move_number",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_phase",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "ep_diff_side_that_moved",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv1_ep_diff_side_that_moved",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "ep_side_to_move",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv1_ep_diff_side_to_move",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "potential_legal_move_count_side_to_move",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_legal_move_count_side_that_moved",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "previous_legal_move_count_side_that_moved",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_legal_capture_count_side_to_move",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_legal_capture_count_side_that_moved",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "previous_legal_capture_count_side_that_moved",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_see_positive_capture_count_side_to_move",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_see_positive_capture_count_side_that_moved",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "previous_see_positive_capture_count_side_that_moved",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "in_check_side_to_move",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "was_in_check_side_that_moved",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_distance",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_distance",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_piece_type",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_piece_type",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_capture_piece_type",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_capture_piece_type",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_bestline_capture_count",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_bestline_capture_count",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_good_tag_count",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_good_tag_count",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_bad_tag_count",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_bad_tag_count",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_obvious_or_easy",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_obvious_or_easy",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_backwards",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_backwards",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_check",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_check",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_tactic",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_tactic",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_sacrifice",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_sacrifice",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_deflection",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_deflection",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_underpromotion",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_underpromotion",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "material_count",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "material_difference",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pawn_piece_count_side_to_move",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "knight_piece_count_side_to_move",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "bishop_piece_count_side_to_move",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "rook_piece_count_side_to_move",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "queen_piece_count_side_to_move",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pawn_piece_count_side_that_moved",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "knight_piece_count_side_that_moved",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "bishop_piece_count_side_that_moved",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "rook_piece_count_side_that_moved",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "queen_piece_count_side_that_moved",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "chip_ep_side_to_move",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_vs_engine_diff_ep_side_to_move",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_think_time_s",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_p_best",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_p_alt",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ]
+    },
+    {
+      "name": "V1x6Depth20Multipv2PredictionsRecord",
+      "field": [
+        {
+          "name": "probability_good_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "model_used",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

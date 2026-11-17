@@ -1,0 +1,164 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_pgn.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetPgnRequest",
+      "field": [
+        {
+          "name": "game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Game",
+          "oneof_index": 0
+        },
+        {
+          "name": "game_state",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState",
+          "oneof_index": 0
+        },
+        {
+          "name": "starting_game_point",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "pgn_fen_header_notation",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.FenNotation",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "main_line_only",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_variations_only",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "included_game_points",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "include_threats",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_all_scored_gamepoints",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "unscored_gamepoint_limit",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "explicit_included_game_points",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "annotation_serialization_format",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PgnAnnotationSerializationFormat",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "game_to_convert"
+        },
+        {
+          "name": "_pgn_fen_header_notation"
+        },
+        {
+          "name": "_main_line_only"
+        },
+        {
+          "name": "_user_variations_only"
+        },
+        {
+          "name": "_include_threats"
+        },
+        {
+          "name": "_include_all_scored_gamepoints"
+        },
+        {
+          "name": "_unscored_gamepoint_limit"
+        },
+        {
+          "name": "_annotation_serialization_format"
+        }
+      ]
+    },
+    {
+      "name": "GetPgnResponse",
+      "field": [
+        {
+          "name": "pgn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PgnAnnotationSerializationFormat",
+      "value": [
+        {
+          "name": "PGN_ANNOTATION_SERIALIZATION_FORMAT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PGN_ANNOTATION_SERIALIZATION_FORMAT_CHESS_BASE",
+          "number": 1
+        },
+        {
+          "name": "PGN_ANNOTATION_SERIALIZATION_FORMAT_CHESS_COM",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,10 @@
+// source: chesscom/train/v1/train_backfill_status.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+enum TrainBackfillStatus {
+  TRAIN_BACKFILL_STATUS_UNSPECIFIED = 0;
+  TRAIN_BACKFILL_STATUS_IN_PROGRESS = 1;
+  TRAIN_BACKFILL_STATUS_COMPLETED = 2;
+}

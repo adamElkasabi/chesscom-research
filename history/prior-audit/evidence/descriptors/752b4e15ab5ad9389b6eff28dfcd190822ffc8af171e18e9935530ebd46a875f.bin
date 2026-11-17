@@ -1,0 +1,9 @@
+
+1chesscom/train/v1/train_generated_challenge.protochesscom.train.v1chesscom/chess/v1/move.proto'chesscom/train/v1/train_challenge.proto'chesscom/train/v1/train_item_type.proto"Ž
+TrainGeneratedChallenge
+ply (.
+type (2 .chesscom.train.v1.TrainItemType
+pre_pitch_fen (	4
+opponent_pitch_move (2.chesscom.chess.v1.Move3
+source_played_move (2.chesscom.chess.v1.Move4
+	challenge (2!.chesscom.train.v1.TrainChallengebproto3

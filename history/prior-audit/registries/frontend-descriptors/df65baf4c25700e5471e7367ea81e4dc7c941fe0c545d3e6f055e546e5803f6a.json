@@ -1,0 +1,99 @@
+{
+  "name": "chesscom/chess/v1/result.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "Result",
+      "value": [
+        {
+          "name": "RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RESULT_WHITE_WIN",
+          "number": 1
+        },
+        {
+          "name": "RESULT_BLACK_WIN",
+          "number": 2
+        },
+        {
+          "name": "RESULT_DRAW",
+          "number": 3
+        },
+        {
+          "name": "RESULT_ABORT",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ResultType",
+      "value": [
+        {
+          "name": "RESULT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RESULT_TYPE_CHECKMATE",
+          "number": 1
+        },
+        {
+          "name": "RESULT_TYPE_STALEMATE",
+          "number": 2
+        },
+        {
+          "name": "RESULT_TYPE_INSUFFICIENT_MATERIAL",
+          "number": 3
+        },
+        {
+          "name": "RESULT_TYPE_RESIGNATION",
+          "number": 4
+        },
+        {
+          "name": "RESULT_TYPE_DRAW_OFFER",
+          "number": 5
+        },
+        {
+          "name": "RESULT_TYPE_TIMEOUT",
+          "number": 6
+        },
+        {
+          "name": "RESULT_TYPE_TIMEOUT_VS_INSUFFICIENT_MATERIAL",
+          "number": 7
+        },
+        {
+          "name": "RESULT_TYPE_ABANDONMENT",
+          "number": 8
+        },
+        {
+          "name": "RESULT_TYPE_50_MOVE_RULE",
+          "number": 9
+        },
+        {
+          "name": "RESULT_TYPE_THREEFOLD",
+          "number": 10
+        },
+        {
+          "name": "RESULT_TYPE_BUGHOUSE_PARTNER_LOSE",
+          "number": 11
+        },
+        {
+          "name": "RESULT_TYPE_THREE_CHECK",
+          "number": 12
+        },
+        {
+          "name": "RESULT_TYPE_KING_OF_THE_HILL",
+          "number": 13
+        },
+        {
+          "name": "RESULT_TYPE_DOUBLE_FORFEIT",
+          "number": 14
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

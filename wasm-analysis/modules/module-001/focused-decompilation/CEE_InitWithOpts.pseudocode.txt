@@ -1,0 +1,32 @@
+// Decompiled analysis derivative: typed stub imports replace ALL other functions.
+export function CEE_InitWithOpts(a:int, b:{ a:int, b:int }) {
+  var c:{ a:int, b:int }
+  if (g_c == 2) {
+    g_d[0]:int = g_d[0]:int - 8;
+    b = g_d[0]:int;
+    a = b.a;
+    b = b.b;
+  }
+  c = {
+        if (eqz(g_c) |
+            eqz(if (g_c == 2) {
+                  g_d[0]:int = g_d[0]:int - 4;
+                  (g_d[0]:int)[0]:int;
+                } else {
+                  c
+                })) {
+          analysis_stub_original_fn_1663(a, b);
+          0;
+          if (g_c == 1) goto B_b;
+        }
+        return ;
+        label B_b:
+      }
+  (g_d[0]:int)[0]:int = c;
+  g_d[0]:int = g_d[0]:int + 4;
+  c = g_d[0]:int;
+  c.a = a;
+  c.b = b;
+  g_d[0]:int = g_d[0]:int + 8;
+}
+

@@ -1,0 +1,2090 @@
+{
+  "origin": "Bundled OFFLINE FALLBACK, not an observed live BotGroupService response",
+  "group_count": 13,
+  "bot_count": 212,
+  "config_keys": [
+    "bots-move_configuration-Martin-BOT",
+    "bots-move_configuration-Mateo-BOT",
+    "bots-move_configuration-Isla-BOT"
+  ],
+  "personality_counts": {
+    "PERSONALITY_UNSPECIFIED_NEW_TO_CHESS": 5,
+    "PERSONALITY_UNSPECIFIED_DEFENSIVE": 14,
+    "PERSONALITY_UNSPECIFIED_AGGRESSIVE": 35,
+    "PERSONALITY_UNSPECIFIED_BEGINNER": 11,
+    "PERSONALITY_UNSPECIFIED_ACTIVE": 39,
+    "PERSONALITY_UNSPECIFIED_POSITIONAL": 32,
+    "PERSONALITY_UNSPECIFIED_DEFAULT": 50,
+    "PERSONALITY_UNSPECIFIED_ENDGAME": 7,
+    "PERSONALITY_UNSPECIFIED_HUMAN": 9,
+    "PERSONALITY_UNSPECIFIED_HIKARU": 7,
+    "PERSONALITY_UNSPECIFIED_DANNY": 3
+  },
+  "bots": [
+    {
+      "username": "Zach-BOT",
+      "rating": 1,
+      "personality": "PERSONALITY_UNSPECIFIED_NEW_TO_CHESS",
+      "book": "beginner",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "June-BOT",
+      "rating": 50,
+      "personality": "PERSONALITY_UNSPECIFIED_NEW_TO_CHESS",
+      "book": "offbeat",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Pepe-BOT",
+      "rating": 100,
+      "personality": "PERSONALITY_UNSPECIFIED_NEW_TO_CHESS",
+      "book": "quick_queen",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Robin-BOT",
+      "rating": 100,
+      "personality": "PERSONALITY_UNSPECIFIED_NEW_TO_CHESS",
+      "book": "winger",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Elsa-BOT",
+      "rating": 150,
+      "personality": "PERSONALITY_UNSPECIFIED_NEW_TO_CHESS",
+      "book": "classical",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Martin-BOT",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "beginner",
+      "botMoveConfigurationKey": "bots-move_configuration-Martin-BOT",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Wayne-BOT",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Fabian-BOT",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "winger",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "Juan-BOT",
+      "rating": 400,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "offbeat",
+      "komodoSkill": 2,
+      "komodoSkillLevel": 2,
+      "adapt": false,
+      "legacy_request_rating": 200
+    },
+    {
+      "username": "Filip-BOT",
+      "rating": 400,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "beginner",
+      "komodoSkill": 2,
+      "komodoSkillLevel": 2,
+      "adapt": false,
+      "legacy_request_rating": 200
+    },
+    {
+      "username": "Elani-BOT",
+      "rating": 400,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "avigail_rosenthal",
+      "komodoSkill": 2,
+      "komodoSkillLevel": 2,
+      "adapt": false,
+      "legacy_request_rating": 200
+    },
+    {
+      "username": "Noel-BOT",
+      "rating": 550,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "winger",
+      "komodoSkill": 3,
+      "komodoSkillLevel": 3,
+      "adapt": false,
+      "legacy_request_rating": 300
+    },
+    {
+      "username": "Oliver-BOT",
+      "rating": 550,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "beginner",
+      "komodoSkill": 3,
+      "komodoSkillLevel": 3,
+      "adapt": false,
+      "legacy_request_rating": 300
+    },
+    {
+      "username": "Milica-BOT",
+      "rating": 550,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "classical",
+      "komodoSkill": 3,
+      "komodoSkillLevel": 3,
+      "adapt": false,
+      "legacy_request_rating": 300
+    },
+    {
+      "username": "Aron-BOT",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "beginner",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "Janjay-BOT",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "Mina-BOT",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "quick_queen",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "Zara-BOT",
+      "rating": 850,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "offbeat",
+      "komodoSkill": 5,
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 500
+    },
+    {
+      "username": "Santiago-BOT",
+      "rating": 850,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "classical",
+      "komodoSkill": 5,
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 500
+    },
+    {
+      "username": "Karim-BOT",
+      "rating": 850,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "f-pawner",
+      "komodoSkill": 6,
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 600
+    },
+    {
+      "username": "Maria-BOT",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 6,
+      "komodoSkillLevel": 6,
+      "adapt": false,
+      "legacy_request_rating": 600
+    },
+    {
+      "username": "Maxim-BOT",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "kenneth_wilber",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 6,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Hans-BOT",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "michael_greene",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 6,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Azeez-BOT",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "offbeat",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Laura-BOT",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "aggressive",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Sven-BOT",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "rory_smith",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Emir-BOT",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkill": 8,
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "Elena-BOT",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "classical",
+      "komodoSkill": 8,
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "Wilson-BOT",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "f-pawner",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "Vinh-BOT",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "indian",
+      "komodoSkill": 10,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "Junior-BOT",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "Jade-BOT",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "aggressive",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "David-BOT",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "offbeat",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "Ali-BOT",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "positional",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "Mateo-BOT",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "balanced",
+      "botMoveConfigurationKey": "bots-move_configuration-Mateo-BOT",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "Wendy-BOT",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "lasker",
+      "komodoSkill": 12,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "Antonio-BOT",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "classical",
+      "komodoSkill": 12,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "Pierre-BOT",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "f-pawner",
+      "komodoSkill": 12,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "Pablo-BOT",
+      "rating": 1600,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "trapper",
+      "komodoSkill": 13,
+      "komodoSkillLevel": 12,
+      "adapt": false,
+      "legacy_request_rating": 1300
+    },
+    {
+      "username": "Joel-BOT",
+      "rating": 1600,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "indian",
+      "komodoSkill": 14,
+      "komodoSkillLevel": 12,
+      "adapt": false,
+      "legacy_request_rating": 1400
+    },
+    {
+      "username": "Isabel-BOT",
+      "rating": 1600,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "positional",
+      "komodoSkill": 14,
+      "komodoSkillLevel": 12,
+      "adapt": false,
+      "legacy_request_rating": 1400
+    },
+    {
+      "username": "Arthur-BOT",
+      "rating": 1700,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "ethan_metzger",
+      "komodoSkill": 15,
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "Jonas-BOT",
+      "rating": 1700,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "leo_stokes",
+      "komodoSkill": 15,
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "Isla-BOT",
+      "rating": 1700,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "roland_walker",
+      "botMoveConfigurationKey": "bots-move_configuration-Isla-BOT",
+      "komodoSkill": 15,
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "Lorenzo-BOT",
+      "rating": 1800,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "dylan_rittman",
+      "komodoSkill": 16,
+      "komodoSkillLevel": 14,
+      "adapt": false,
+      "legacy_request_rating": 1600
+    },
+    {
+      "username": "Wally-BOT",
+      "rating": 1800,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "erik_allebest",
+      "komodoSkill": 16,
+      "komodoSkillLevel": 14,
+      "adapt": false,
+      "legacy_request_rating": 1600
+    },
+    {
+      "username": "Julia-BOT",
+      "rating": 1800,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "f-pawner",
+      "komodoSkill": 17,
+      "komodoSkillLevel": 14,
+      "adapt": false,
+      "legacy_request_rating": 1700
+    },
+    {
+      "username": "Miguel-BOT",
+      "rating": 1900,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "martin_enev",
+      "komodoSkill": 17,
+      "komodoSkillLevel": 15,
+      "adapt": false,
+      "legacy_request_rating": 1700
+    },
+    {
+      "username": "Xavier-BOT",
+      "rating": 1900,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "tagir_nafikov",
+      "komodoSkill": 18,
+      "komodoSkillLevel": 15,
+      "adapt": false,
+      "legacy_request_rating": 1800
+    },
+    {
+      "username": "Olga-BOT",
+      "rating": 1900,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "offbeat",
+      "komodoSkill": 18,
+      "komodoSkillLevel": 15,
+      "adapt": false,
+      "legacy_request_rating": 1800
+    },
+    {
+      "username": "Li-BOT",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "Charles-BOT",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "jonathan_cannon",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "Fatima-BOT",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "roland_walker",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "Manuel-BOT",
+      "rating": 2100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "anthony_levin",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Oscar-BOT",
+      "rating": 2100,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "bikfoot_wouter",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Nora-BOT",
+      "rating": 2200,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 21,
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "Noam-BOT",
+      "rating": 2200,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "steinitz",
+      "komodoSkill": 21,
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "Ahmed-BOT",
+      "rating": 2200,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "f-pawner",
+      "komodoSkill": 21,
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "Sakura-BOT",
+      "rating": 2200,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "hunter_klotz_burwell",
+      "komodoSkill": 21,
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "Arjun-BOT",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "offbeat",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Francis-BOT",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "sam_copeland",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Sofia-BOT",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "jeremy_kane",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Alexander-BOT",
+      "rating": 2450,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "dan_rozovsky",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Luke-BOT",
+      "rating": 2450,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "will_stewart",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Wei-BOT",
+      "rating": 2450,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "matt_turner",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Jimmy-Bot",
+      "rating": 600,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "beginner",
+      "komodoSkill": 3,
+      "komodoSkillLevel": 3,
+      "adapt": true,
+      "legacy_request_rating": 300
+    },
+    {
+      "username": "Nisha-Bot",
+      "rating": 900,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "classical",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 5,
+      "adapt": true,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "Tomas-Bot",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "positional",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 8,
+      "adapt": true,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Devon-Bot",
+      "rating": 1600,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "gambit",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 12,
+      "adapt": true,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "Natasha-Bot",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "balanced",
+      "komodoSkill": 15,
+      "komodoSkillLevel": 16,
+      "adapt": true,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "Aerial-Powers-BOT",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "joseph_votto",
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "dejan-joveljic-BOT",
+      "rating": 2217,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura_classic",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Justin-Reid-BOT",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "balanced",
+      "komodoSkill": 13,
+      "komodoSkillLevel": 12,
+      "adapt": false,
+      "legacy_request_rating": 1300
+    },
+    {
+      "username": "JosephVottoBot",
+      "rating": 1575,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "joseph_votto",
+      "komodoSkillLevel": 12,
+      "adapt": false,
+      "legacy_request_rating": 1400
+    },
+    {
+      "username": "LarryFitzgeraldBot",
+      "rating": 1250,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "beginner",
+      "komodoSkill": 10,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "jaylen-brown",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "positional",
+      "komodoSkill": 10,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "Drue-Tranquill-BOT",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "anish_giri",
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "GordonHaywardBot",
+      "rating": 1350,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "rensch",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "chidobe-awuziebot",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "classical",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "christian-pulisic-bot",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "christian_pulisic",
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1300
+    },
+    {
+      "username": "jaime-jaquez-jr-BOT",
+      "rating": 1150,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "classical",
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "DarylMoreyBot",
+      "rating": 1550,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "daryl_morey",
+      "komodoSkill": 12,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "LukAIbot",
+      "rating": 2500,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "balanced",
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Mack-Hollins-BOT",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "bikfoot_wouter",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "Faye-Webster-BOT",
+      "rating": 850,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "classical",
+      "komodoSkill": 10,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "yoko-ono-BOT",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "spassky",
+      "komodoSkill": 10,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "ThomasMarsBot",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "aggressive",
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1300
+    },
+    {
+      "username": "steve-aoki-BOT",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "beginner",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "logic-BOT",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "eric_hansen",
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1300
+    },
+    {
+      "username": "wallows-BOT",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "aggressive",
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "xQc-Bot",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "classical",
+      "komodoSkill": 8,
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "mark-rober-bot",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "tal",
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "MrBeast-Bot",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkill": 7,
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Pokimane-Bot",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkill": 6,
+      "komodoSkillLevel": 6,
+      "adapt": false,
+      "legacy_request_rating": 600
+    },
+    {
+      "username": "Ludwig-Bot",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "classical",
+      "komodoSkill": 8,
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "QTCinderellaBot",
+      "rating": 900,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "f-pawner",
+      "komodoSkill": 5,
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 500
+    },
+    {
+      "username": "boxboxBot",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "classical",
+      "komodoSkill": 11,
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "HarryMackBot",
+      "rating": 600,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "beginner",
+      "komodoSkill": 3,
+      "komodoSkillLevel": 3,
+      "adapt": false,
+      "legacy_request_rating": 300
+    },
+    {
+      "username": "sapnapBOT",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "quick_queen",
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "wirtualBOT",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "aggressive",
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "iamcristininibot",
+      "rating": 800,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "fabiano_caruana",
+      "komodoSkillLevel": 6,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "Neeko-Bot",
+      "rating": 800,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "quick_queen",
+      "komodoSkill": 5,
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 500
+    },
+    {
+      "username": "GothamChess-Bot",
+      "rating": 2500,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "levy_rozman",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Andrea-Bot",
+      "rating": 1801,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "andrea_botez",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Alexandra-BOT",
+      "rating": 2100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "alexandra_botez",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Eric-Bot",
+      "rating": 2600,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "eric_hansen",
+      "komodoSkill": 25,
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "Aman-Bot",
+      "rating": 2550,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "aman_hambleton",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Anna-Bot",
+      "rating": 2400,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "anna_rudolf",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Nemo-Bot",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "qiyu_zhou",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Cramling-Bot",
+      "rating": 2175,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "anna_cramling",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Samay-Bot",
+      "rating": 1800,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "samay_raina",
+      "komodoSkill": 15,
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "Naycir-Bot",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "naycir_gurpinar",
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "Canty-Bot",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "james_canty",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "ElDeplorableBot",
+      "rating": 2200,
+      "personality": "PERSONALITY_UNSPECIFIED_DANNY",
+      "book": "luis_fernandez_siles",
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "BartoszBot",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "CDawgVABot",
+      "rating": 900,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "HafuBot",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "balanced",
+      "komodoSkill": 12,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "SardocheBot",
+      "rating": 1800,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "classical",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "FundyBot",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkill": 12,
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "sabo-BOT",
+      "rating": 1969,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "naritav",
+      "komodoSkill": 21,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "SonicFoxBot",
+      "rating": 1750,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "balanced",
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "julien-song-BOT",
+      "rating": 2422,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "julien_song",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "ReyEnigmaBot",
+      "rating": 2500,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "aggressive",
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "raffa-BOT",
+      "rating": 2100,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "raffael_chess",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Anarchy-BOT",
+      "rating": 1660,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkillLevel": 10,
+      "adapt": true,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "GoogleEnPassant-BOT",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "classical",
+      "komodoSkill": 8,
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "Hikaru-bot",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "AnnaMuzychukBot",
+      "rating": 2606,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "anna_muzychuk",
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Vishy-Bot",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "vishy_anand",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "DingLirenBot",
+      "rating": 2788,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "ding",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "CaruanaBot",
+      "rating": 2840,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "vinay_bhat",
+      "komodoSkillLevel": 24,
+      "adapt": false,
+      "legacy_request_rating": 2600
+    },
+    {
+      "username": "Kosteniuk-Bot",
+      "rating": 2561,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "alexandra_kosteniuk",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Naroditsky-Bot",
+      "rating": 2650,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "daniel_naroditsky",
+      "komodoSkill": 25,
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "NepomniachtchiBot",
+      "rating": 2795,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "ian_nepomniachtchi",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "AronianBot1",
+      "rating": 2830,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "levon_aronian",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "ViditBot",
+      "rating": 2730,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "vidit_gujrathi",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "paulmorphy-BOT",
+      "rating": 2600,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "paul_morphy",
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "IrinaKrushBot",
+      "rating": 2502,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "irina_krush",
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Giri-Bot",
+      "rating": 2800,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "anish_giri",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "Abdusattorov-Bot",
+      "rating": 2660,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "classical",
+      "komodoSkill": 26,
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2600
+    },
+    {
+      "username": "lasker-BOT",
+      "rating": 2640,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFENSIVE",
+      "book": "lasker",
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "tal-BOT",
+      "rating": 2705,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "tal",
+      "komodoSkillLevel": 25,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "BokBot",
+      "rating": 2650,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "benjamin_bok",
+      "komodoSkill": 26,
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2600
+    },
+    {
+      "username": "WesleySo-Bot",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "wesley_so",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "HouYifanBot",
+      "rating": 2686,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "hou_yifan",
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2400
+    },
+    {
+      "username": "capablanca-BOT",
+      "rating": 2725,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "capablanca",
+      "komodoSkillLevel": 24,
+      "adapt": false,
+      "legacy_request_rating": 2600
+    },
+    {
+      "username": "JuditPolgarBot",
+      "rating": 2735,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "judit_polgar",
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "world-champion-carlsen",
+      "rating": 2882,
+      "personality": "PERSONALITY_UNSPECIFIED_HUMAN",
+      "book": "carlsen",
+      "komodoSkillLevel": 25,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "Danny-bot",
+      "rating": 2500,
+      "personality": "PERSONALITY_UNSPECIFIED_DANNY",
+      "book": "ulf_andersson",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Agadmator-Bot",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "classical",
+      "komodoSkill": 20,
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Robert-BOT",
+      "rating": 2600,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "robert_hess",
+      "komodoSkill": 25,
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "Maurice-Bot",
+      "rating": 2550,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "maurice_ashley",
+      "komodoSkill": 25,
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "Kevin-Bot",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "kevin_bordi",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "BenFinegoldBot",
+      "rating": 2563,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "benjamin_finegold",
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2400
+    },
+    {
+      "username": "Luison-BOT",
+      "rating": 2250,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "luis_fernandez_siles",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Krikor-BOT",
+      "rating": 2550,
+      "personality": "PERSONALITY_UNSPECIFIED_ENDGAME",
+      "book": "krikor_mekhitarian",
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2400
+    },
+    {
+      "username": "FunMasterMike-Bot",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "mike_klein",
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "Pandolfini-Bot",
+      "rating": 2250,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "classical",
+      "komodoSkill": 22,
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "pia-cramling-BOT",
+      "rating": 2550,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "pia_cramling",
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "PhionaBot",
+      "rating": 1700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "balanced",
+      "komodoSkill": 15,
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "DawidBot",
+      "rating": 2400,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "dawid_czerw",
+      "komodoSkill": 23,
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "TheMechanicalTurk",
+      "rating": 1,
+      "personality": "PERSONALITY_UNSPECIFIED_POSITIONAL",
+      "book": "fischer",
+      "komodoSkill": 35,
+      "komodoSkillLevel": 25,
+      "adapt": false,
+      "legacy_request_rating": 3500
+    },
+    {
+      "username": "visualization-1",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "aggressive",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "visualization-2",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_DANNY",
+      "book": "beginner",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "visualization-3",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "beginner",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "visualization-4",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "beginner",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "visualization-5",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_BEGINNER",
+      "book": "beginner",
+      "komodoSkill": 1,
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 100
+    },
+    {
+      "username": "visualization-6",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "visualization-7",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "visualization-8",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "visualization-9",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "visualization-10",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "gambit",
+      "komodoSkill": 4,
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "visualization-11",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "visualization-12",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "visualization-13",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "visualization-14",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "visualization-15",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_AGGRESSIVE",
+      "book": "quick_queen",
+      "komodoSkill": 9,
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "visualization-16",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "visualization-17",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "visualization-18",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "visualization-19",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "visualization-20",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_ACTIVE",
+      "book": "aggressive",
+      "komodoSkill": 19,
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "visualization-21",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "visualization-22",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "visualization-23",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "visualization-24",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura",
+      "komodoSkill": 27,
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    },
+    {
+      "username": "visualization-25",
+      "rating": 2820,
+      "personality": "PERSONALITY_UNSPECIFIED_HIKARU",
+      "book": "nakamura",
+      "komodoSkill": 28,
+      "komodoSkillLevel": 24,
+      "adapt": false,
+      "legacy_request_rating": 2800
+    },
+    {
+      "username": "Komodo1",
+      "rating": 250,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 1,
+      "adapt": false,
+      "legacy_request_rating": 300
+    },
+    {
+      "username": "Komodo2",
+      "rating": 400,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 2,
+      "adapt": false,
+      "legacy_request_rating": 400
+    },
+    {
+      "username": "Komodo3",
+      "rating": 550,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 3,
+      "adapt": false,
+      "legacy_request_rating": 500
+    },
+    {
+      "username": "Komodo4",
+      "rating": 700,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 4,
+      "adapt": false,
+      "legacy_request_rating": 600
+    },
+    {
+      "username": "Komodo5",
+      "rating": 850,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 5,
+      "adapt": false,
+      "legacy_request_rating": 700
+    },
+    {
+      "username": "Komodo6",
+      "rating": 1000,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 6,
+      "adapt": false,
+      "legacy_request_rating": 800
+    },
+    {
+      "username": "Komodo7",
+      "rating": 1100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 7,
+      "adapt": false,
+      "legacy_request_rating": 900
+    },
+    {
+      "username": "Komodo8",
+      "rating": 1200,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 8,
+      "adapt": false,
+      "legacy_request_rating": 1000
+    },
+    {
+      "username": "Komodo9",
+      "rating": 1300,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 9,
+      "adapt": false,
+      "legacy_request_rating": 1100
+    },
+    {
+      "username": "Komodo10",
+      "rating": 1400,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 10,
+      "adapt": false,
+      "legacy_request_rating": 1200
+    },
+    {
+      "username": "Komodo11",
+      "rating": 1500,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 11,
+      "adapt": false,
+      "legacy_request_rating": 1300
+    },
+    {
+      "username": "Komodo12",
+      "rating": 1600,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 12,
+      "adapt": false,
+      "legacy_request_rating": 1400
+    },
+    {
+      "username": "Komodo13",
+      "rating": 1700,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 13,
+      "adapt": false,
+      "legacy_request_rating": 1500
+    },
+    {
+      "username": "Komodo14",
+      "rating": 1800,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 14,
+      "adapt": false,
+      "legacy_request_rating": 1600
+    },
+    {
+      "username": "Komodo15",
+      "rating": 1900,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 15,
+      "adapt": false,
+      "legacy_request_rating": 1700
+    },
+    {
+      "username": "Komodo16",
+      "rating": 2000,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 16,
+      "adapt": false,
+      "legacy_request_rating": 1800
+    },
+    {
+      "username": "Komodo17",
+      "rating": 2100,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 17,
+      "adapt": false,
+      "legacy_request_rating": 1900
+    },
+    {
+      "username": "Komodo18",
+      "rating": 2200,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 18,
+      "adapt": false,
+      "legacy_request_rating": 2000
+    },
+    {
+      "username": "Komodo19",
+      "rating": 2300,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 19,
+      "adapt": false,
+      "legacy_request_rating": 2100
+    },
+    {
+      "username": "Komodo20",
+      "rating": 2400,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 20,
+      "adapt": false,
+      "legacy_request_rating": 2200
+    },
+    {
+      "username": "Komodo21",
+      "rating": 2500,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 21,
+      "adapt": false,
+      "legacy_request_rating": 2300
+    },
+    {
+      "username": "Komodo22",
+      "rating": 2600,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 22,
+      "adapt": false,
+      "legacy_request_rating": 2400
+    },
+    {
+      "username": "Komodo23",
+      "rating": 2700,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 23,
+      "adapt": false,
+      "legacy_request_rating": 2500
+    },
+    {
+      "username": "Komodo24",
+      "rating": 2900,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 24,
+      "adapt": false,
+      "legacy_request_rating": 2600
+    },
+    {
+      "username": "Komodo25",
+      "rating": 3200,
+      "personality": "PERSONALITY_UNSPECIFIED_DEFAULT",
+      "book": "balanced",
+      "komodoSkillLevel": 25,
+      "adapt": false,
+      "legacy_request_rating": 2700
+    }
+  ]
+}

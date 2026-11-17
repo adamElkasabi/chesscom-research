@@ -1,0 +1,20 @@
+// source: chesscom/courses/v1/course_user_learning_information.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseUserLearningInformation {
+  oneof _last_studied_at {
+  .google.protobuf.Timestamp last_studied_at = 3;
+  }
+  oneof _next_review_at {
+  .google.protobuf.Timestamp next_review_at = 6;
+  }
+  optional int32 learned_variation_amount = 1;
+  optional int32 review_ready_amount = 2;
+  optional .google.protobuf.Timestamp acquired_at = 4;
+  optional bool is_paused = 5;
+  optional bool is_inactive = 7;
+  optional int32 mastery_level = 8;
+  optional int32 max_mastery_level = 9;
+}

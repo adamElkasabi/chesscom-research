@@ -1,0 +1,9 @@
+// source: chesscom/payments/v1/subscription.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message Subscription {
+  optional int32 length = 1;
+  optional string unit = 2;
+}

@@ -1,0 +1,93 @@
+// source: chesscom/progression/v1/event_configuration.proto
+// syntax: proto3
+
+package chesscom.progression.v1;
+
+enum EventRewardType {
+  EVENT_REWARD_TYPE_UNSPECIFIED = 0;
+  EVENT_REWARD_TYPE_FLAIR = 1;
+  EVENT_REWARD_TYPE_BOARD = 2;
+  EVENT_REWARD_TYPE_PIECES = 3;
+  EVENT_REWARD_TYPE_SOUNDS = 4;
+}
+
+enum EventProgressBonusType {
+  EVENT_PROGRESS_BONUS_TYPE_UNSPECIFIED = 0;
+  EVENT_PROGRESS_BONUS_TYPE_DAILY_BONUS = 1;
+  EVENT_PROGRESS_BONUS_TYPE_BOT_BUFF = 2;
+  EVENT_PROGRESS_BONUS_TYPE_BASE = 3;
+  EVENT_PROGRESS_BONUS_TYPE_VICTORY_MULTIPLIER = 4;
+  EVENT_PROGRESS_BONUS_TYPE_GAME_REVIEW = 5;
+}
+
+message ProgressionRewardConfiguration {
+  oneof _reward_description {
+  .chesscom.i18n.v1.Translation reward_description = 3;
+  }
+  oneof _premium_only {
+  bool premium_only = 5;
+  }
+  optional uint32 required_points = 1;
+  optional .chesscom.api.v1.Asset reward_asset = 2;
+  optional .chesscom.unlockables.v1.UnlockableResourceIdentifier unlockable = 4;
+}
+
+message ProgressionModifierTrigger {
+  oneof start_criteria {
+  .google.protobuf.Timestamp start_time = 1;
+  int32 start_max_games_played = 2;
+  int32 start_max_wins = 3;
+  }
+  oneof end_criteria {
+  .google.protobuf.Timestamp end_time = 4;
+  int32 duration_minutes = 5;
+  }
+}
+
+message EventProgress {
+  oneof event_specifics {
+  .chesscom.progression.v1.BotEventSpecifics bot_event_specifics = 4;
+  }
+  optional uint32 current_points = 1;
+  repeated .chesscom.progression.v1.EventReward rewards = 2;
+  optional string event_config_key = 3;
+}
+
+message EventUnlockable {
+  oneof _premium_only {
+  bool premium_only = 5;
+  }
+  oneof _user_meets_external_requirements {
+  bool user_meets_external_requirements = 6;
+  }
+  oneof _is_premium_reward {
+  bool is_premium_reward = 7;
+  }
+  optional uint32 required_points = 1;
+  optional .chesscom.unlockables.v1.UnlockableResourceIdentifier unlockable = 2;
+  optional string image_url = 3;
+  optional string name = 4;
+}
+
+message EventReward {
+  oneof _unlocked_at {
+  .google.protobuf.Timestamp unlocked_at = 4;
+  }
+  optional .chesscom.api.v1.Asset icon = 1;
+  optional .chesscom.progression.v1.EventRewardType type = 2;
+  optional uint32 required_points = 3;
+}
+
+message EventProgressUpdate {
+  optional uint32 current_points = 1;
+  repeated .chesscom.progression.v1.EventProgressUpdateStep progress_update_steps = 2;
+  optional string event_config_key = 3;
+}
+
+message EventProgressUpdateStep {
+  oneof _multiplier {
+  uint32 multiplier = 3;
+  }
+  optional uint32 points_to_add = 1;
+  optional .chesscom.progression.v1.EventProgressBonusType bonus_type = 2;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "chesscom/explanation_engine/v1/cee_internal_component.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "CeeInternalComponent",
+      "value": [
+        {
+          "name": "CEE_INTERNAL_COMPONENT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CEE_INTERNAL_COMPONENT_LUA",
+          "number": 1
+        },
+        {
+          "name": "CEE_INTERNAL_COMPONENT_POSITION_DIFFICULTY",
+          "number": 2
+        },
+        {
+          "name": "CEE_INTERNAL_COMPONENT_TORCH_SMALL",
+          "number": 3
+        },
+        {
+          "name": "CEE_INTERNAL_COMPONENT_TORCH_LARGE",
+          "number": 4
+        },
+        {
+          "name": "CEE_INTERNAL_COMPONENT_KOMODO",
+          "number": 5
+        },
+        {
+          "name": "CEE_INTERNAL_COMPONENT_INTERNAL_FEATURES",
+          "number": 6
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

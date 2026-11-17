@@ -1,0 +1,27 @@
+// source: chesscom/flair/v1/flair_internal_service.proto
+// syntax: proto3
+
+package chesscom.flair.v1;
+
+message ListFlairInternalRequest {
+}
+
+message ListFlairInternalResponse {
+  repeated .chesscom.flair.v1.Flair flair = 1;
+}
+
+message ListFlairByIdsInternalRequest {
+  repeated string flair_ids = 1;
+}
+
+message ListFlairByIdsInternalResponse {
+  repeated .chesscom.flair.v1.Flair flair = 1;
+}
+
+message SetUserFlairInternalRequest {
+  optional string user_id = 1;
+  optional string flair_id = 2;
+}
+
+message SetUserFlairInternalResponse {
+}

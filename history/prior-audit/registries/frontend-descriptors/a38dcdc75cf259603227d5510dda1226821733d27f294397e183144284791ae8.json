@@ -1,0 +1,762 @@
+{
+  "name": "chesscom/user_gateway/v1/user_gateway_service.proto",
+  "package": "chesscom.user_gateway.v1",
+  "message_type": [
+    {
+      "name": "GetUserDataRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "other_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_relationships",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipRequestCriteria"
+        },
+        {
+          "name": "field_mask",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataResponse",
+      "field": [
+        {
+          "name": "user_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.GatewayUserView"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataByUsernameRequest",
+      "field": [
+        {
+          "name": "username",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "other_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_relationships",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipRequestCriteria"
+        },
+        {
+          "name": "field_mask",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        },
+        {
+          "name": "include_disabled",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataByUsernameResponse",
+      "field": [
+        {
+          "name": "user_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.GatewayUserView"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataManyRequest",
+      "field": [
+        {
+          "name": "user_uuids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "other_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_relationships",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipRequestCriteria"
+        },
+        {
+          "name": "field_mask",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataManyResponse",
+      "field": [
+        {
+          "name": "user_data",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.GatewayUserView"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListRelatedUsersDataRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "other_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_relationships",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipRequestCriteria"
+        },
+        {
+          "name": "field_mask",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListRelatedUsersDataResponse",
+      "field": [
+        {
+          "name": "user_data",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.GatewayUserView"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataWithOtherUsernamesRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "other_usernames",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_relationships",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipRequestCriteria"
+        },
+        {
+          "name": "field_mask",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        },
+        {
+          "name": "include_disabled",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetUserDataWithOtherUsernamesResponse",
+      "field": [
+        {
+          "name": "user_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.GatewayUserView"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListUsersRequest",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "criteria",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.Criterion"
+        },
+        {
+          "name": "field_mask",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.FieldMask"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_pagination"
+        }
+      ]
+    },
+    {
+      "name": "ListUsersResponse",
+      "field": [
+        {
+          "name": "user_data",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.GatewayUserView"
+        },
+        {
+          "name": "pagination",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SendFriendRequestRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        },
+        {
+          "name": "source",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "method",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_source"
+        },
+        {
+          "name": "_method"
+        }
+      ]
+    },
+    {
+      "name": "SendFriendRequestResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.SendFriendRequestFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "AcceptFriendRequestRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AcceptFriendRequestResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.AcceptFriendRequestFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "DeclineFriendRequestRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DeclineFriendRequestResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.DeclineFriendRequestFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "CancelFriendRequestRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "CancelFriendRequestResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.CancelFriendRequestFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "RemoveFriendRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RemoveFriendResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RemoveFriendFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "BlockUserRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BlockUserResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.BlockUserFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "UnblockUserRequest",
+      "field": [
+        {
+          "name": "user_identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserIdentifier"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UnblockUserResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipWriteSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UnblockUserFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "AcceptFriendLinkRequest",
+      "field": [
+        {
+          "name": "friend_link_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AcceptFriendLinkResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.AcceptFriendLinkSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.AcceptFriendLinkFailure",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "UserGatewayService",
+      "method": [
+        {
+          "name": "GetUserData",
+          "input_type": ".chesscom.user_gateway.v1.GetUserDataRequest",
+          "output_type": ".chesscom.user_gateway.v1.GetUserDataResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "GetUserDataByUsername",
+          "input_type": ".chesscom.user_gateway.v1.GetUserDataByUsernameRequest",
+          "output_type": ".chesscom.user_gateway.v1.GetUserDataByUsernameResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "GetUserDataMany",
+          "input_type": ".chesscom.user_gateway.v1.GetUserDataManyRequest",
+          "output_type": ".chesscom.user_gateway.v1.GetUserDataManyResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListRelatedUsersData",
+          "input_type": ".chesscom.user_gateway.v1.ListRelatedUsersDataRequest",
+          "output_type": ".chesscom.user_gateway.v1.ListRelatedUsersDataResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "GetUserDataWithOtherUsernames",
+          "input_type": ".chesscom.user_gateway.v1.GetUserDataWithOtherUsernamesRequest",
+          "output_type": ".chesscom.user_gateway.v1.GetUserDataWithOtherUsernamesResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListUsers",
+          "input_type": ".chesscom.user_gateway.v1.ListUsersRequest",
+          "output_type": ".chesscom.user_gateway.v1.ListUsersResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "SendFriendRequest",
+          "input_type": ".chesscom.user_gateway.v1.SendFriendRequestRequest",
+          "output_type": ".chesscom.user_gateway.v1.SendFriendRequestResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "AcceptFriendRequest",
+          "input_type": ".chesscom.user_gateway.v1.AcceptFriendRequestRequest",
+          "output_type": ".chesscom.user_gateway.v1.AcceptFriendRequestResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "DeclineFriendRequest",
+          "input_type": ".chesscom.user_gateway.v1.DeclineFriendRequestRequest",
+          "output_type": ".chesscom.user_gateway.v1.DeclineFriendRequestResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "CancelFriendRequest",
+          "input_type": ".chesscom.user_gateway.v1.CancelFriendRequestRequest",
+          "output_type": ".chesscom.user_gateway.v1.CancelFriendRequestResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "RemoveFriend",
+          "input_type": ".chesscom.user_gateway.v1.RemoveFriendRequest",
+          "output_type": ".chesscom.user_gateway.v1.RemoveFriendResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "BlockUser",
+          "input_type": ".chesscom.user_gateway.v1.BlockUserRequest",
+          "output_type": ".chesscom.user_gateway.v1.BlockUserResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "UnblockUser",
+          "input_type": ".chesscom.user_gateway.v1.UnblockUserRequest",
+          "output_type": ".chesscom.user_gateway.v1.UnblockUserResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "AcceptFriendLink",
+          "input_type": ".chesscom.user_gateway.v1.AcceptFriendLinkRequest",
+          "output_type": ".chesscom.user_gateway.v1.AcceptFriendLinkResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

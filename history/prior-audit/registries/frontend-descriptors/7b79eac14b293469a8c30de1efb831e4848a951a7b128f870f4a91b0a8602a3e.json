@@ -1,0 +1,40 @@
+{
+  "name": "chesscom/user_relationships/v2/list_user_relationships_model.proto",
+  "package": "chesscom.user_relationships.v2",
+  "message_type": [
+    {
+      "name": "ListableUserRelationship",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "created_at",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "user_relationship",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipType"
+        },
+        {
+          "name": "direction",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipDirection"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "depth-12",
+  "settings": {
+    "search": {
+      "case": "searchSettings",
+      "value": {
+        "searchParameters": {
+          "depthLimit": 12,
+          "numLines": 2
+        },
+        "nullMoveSearchParameters": {
+          "depthLimit": 12,
+          "numLines": 1
+        }
+      }
+    }
+  }
+}

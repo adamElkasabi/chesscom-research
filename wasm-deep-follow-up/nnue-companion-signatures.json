@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue",
+    "http_status": 200,
+    "bytes": 47001499,
+    "sha256": "ad9b423546714137916bd38978af6fd68d7b8951bef25ff76bf43da72d6cb786",
+    "complete_payload_proven": true,
+    "first_32_bytes_hex": "202ff37af22e101c4b0000004e6574776f726b20747261696e65642077697468",
+    "header_version_u32_le": 2062757664,
+    "header_architecture_hash_u32_le": 470822642,
+    "description_length_u32_le": 75,
+    "description_bounded_ascii": "Network trained with the https://github.com/glinscott/nnue-pytorch trainer.",
+    "qualification": "Header fields follow observed Stockfish NNUE layout convention. No claim that every engine build accepts this exact network. No arbitrary weights interpreted as code."
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue",
+    "http_status": 200,
+    "bytes": 40119326,
+    "sha256": "5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b",
+    "complete_payload_proven": true,
+    "first_32_bytes_hex": "202ff37a722b101c4b0000004e6574776f726b20747261696e65642077697468",
+    "header_version_u32_le": 2062757664,
+    "header_architecture_hash_u32_le": 470821746,
+    "description_length_u32_le": 75,
+    "description_bounded_ascii": "Network trained with the https://github.com/glinscott/nnue-pytorch trainer.",
+    "qualification": "Header fields follow observed Stockfish NNUE layout convention. No claim that every engine build accepts this exact network. No arbitrary weights interpreted as code."
+  }
+]

@@ -1,0 +1,13 @@
+// source: chesscom/courses/v1alpha/course_deviations_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1alpha;
+
+message GetCourseDeviationsRequest {
+  optional .chesscom.chess.v1.Color color = 1;
+  repeated string fens = 2;
+}
+
+message GetCourseDeviationsResponse {
+  repeated .chesscom.courses.v1alpha.CourseDeviation deviations = 1;
+}

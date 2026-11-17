@@ -1,0 +1,109 @@
+{
+  "name": "chesscom/api/v1/location.proto",
+  "package": "chesscom.api.v1",
+  "message_type": [
+    {
+      "name": "Location",
+      "field": [
+        {
+          "name": "country_code",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "city",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "region",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "continent_code",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "postal_code",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "latitude",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "longitude",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "timezone",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "asn",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_city"
+        },
+        {
+          "name": "_region"
+        },
+        {
+          "name": "_continent_code"
+        },
+        {
+          "name": "_postal_code"
+        },
+        {
+          "name": "_latitude"
+        },
+        {
+          "name": "_longitude"
+        },
+        {
+          "name": "_timezone"
+        },
+        {
+          "name": "_asn"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

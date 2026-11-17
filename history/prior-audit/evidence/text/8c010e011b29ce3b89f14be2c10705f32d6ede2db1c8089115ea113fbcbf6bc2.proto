@@ -1,0 +1,10 @@
+// source: chesscom/chess/v1/color.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum Color {
+  COLOR_UNSPECIFIED = 0;
+  COLOR_WHITE = 1;
+  COLOR_BLACK = 2;
+}

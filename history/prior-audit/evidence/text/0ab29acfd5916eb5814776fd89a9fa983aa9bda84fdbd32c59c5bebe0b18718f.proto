@@ -1,0 +1,16 @@
+// source: chesscom/chess/v1/variant.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum Variant {
+  VARIANT_UNSPECIFIED = 0;
+  VARIANT_CHESS = 1;
+  VARIANT_CHESS_960 = 2;
+  VARIANT_BUGHOUSE = 4;
+  VARIANT_THREE_CHECK = 5;
+  VARIANT_CRAZYHOUSE = 6;
+  VARIANT_KING_OF_THE_HILL = 7;
+  VARIANT_ODDS_CHESS = 8;
+  VARIANT_HELP_CHESS = 9;
+}

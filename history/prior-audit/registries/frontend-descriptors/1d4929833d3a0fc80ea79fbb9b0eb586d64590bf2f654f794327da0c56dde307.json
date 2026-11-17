@@ -1,0 +1,88 @@
+{
+  "name": "chesscom/courses/v1/course_lesson.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseLesson",
+      "field": [
+        {
+          "name": "variation",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseVariation"
+        },
+        {
+          "name": "white_player",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLessonPlayer"
+        },
+        {
+          "name": "black_player",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLessonPlayer"
+        },
+        {
+          "name": "plies",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseVariationPly"
+        },
+        {
+          "name": "settings",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseConfiguration"
+        },
+        {
+          "name": "video_section",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Range",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_video_position",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "first_learnable_move_color",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "initial_ply_offset",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_video_section"
+        },
+        {
+          "name": "_user_video_position"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

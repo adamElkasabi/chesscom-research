@@ -1,0 +1,13 @@
+// source: chesscom/skills/v1/skill_category.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+enum SkillCategory {
+  SKILL_CATEGORY_UNSPECIFIED = 0;
+  SKILL_CATEGORY_FUNDAMENTALS = 1;
+  SKILL_CATEGORY_OPENINGS = 2;
+  SKILL_CATEGORY_TACTICS = 3;
+  SKILL_CATEGORY_STRATEGY = 4;
+  SKILL_CATEGORY_ENDGAME = 5;
+}

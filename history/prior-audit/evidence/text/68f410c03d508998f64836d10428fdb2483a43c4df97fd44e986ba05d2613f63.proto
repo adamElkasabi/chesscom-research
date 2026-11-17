@@ -1,0 +1,124 @@
+// source: chesscom/bots/v1/phrase_list.proto
+// syntax: proto3
+
+package chesscom.bots.v1;
+
+message PhraseList {
+  oneof _greeting {
+  string greeting = 1;
+  }
+  oneof _won {
+  string won = 2;
+  }
+  oneof _lost {
+  string lost = 3;
+  }
+  oneof _draw {
+  string draw = 4;
+  }
+  oneof _winning {
+  string winning = 5;
+  }
+  oneof _losing {
+  string losing = 6;
+  }
+  oneof _giving_check {
+  string giving_check = 7;
+  }
+  oneof _being_checked {
+  string being_checked = 8;
+  }
+  oneof _capturing_queen {
+  string capturing_queen = 9;
+  }
+  oneof _queen_captured {
+  string queen_captured = 10;
+  }
+  oneof _promoting_pawn {
+  string promoting_pawn = 11;
+  }
+  oneof _player_pawn_promote {
+  string player_pawn_promote = 12;
+  }
+  oneof _first_capture {
+  string first_capture = 13;
+  }
+  oneof _threatening {
+  string threatening = 14;
+  }
+  oneof _threatened {
+  string threatened = 15;
+  }
+  oneof _computer_has_mate_in_x {
+  string computer_has_mate_in_x = 16;
+  }
+  oneof _player_has_mate_in_x {
+  string player_has_mate_in_x = 17;
+  }
+  oneof _random {
+  string random = 18;
+  }
+  oneof _opening_e4 {
+  string opening_e4 = 19;
+  }
+  oneof _opening_d4 {
+  string opening_d4 = 20;
+  }
+  oneof _opening_c4_english {
+  string opening_c4_english = 21;
+  }
+  oneof _opening_nf3 {
+  string opening_nf3 = 22;
+  }
+  oneof _opening_e4_e5_kings_pawn {
+  string opening_e4_e5_kings_pawn = 23;
+  }
+  oneof _opening_e4_c5_sicilian {
+  string opening_e4_c5_sicilian = 24;
+  }
+  oneof _opening_e4_c6_carokann {
+  string opening_e4_c6_carokann = 25;
+  }
+  oneof _opening_e4_e6_french {
+  string opening_e4_e6_french = 26;
+  }
+  oneof _opening_d4_nf6_indian {
+  string opening_d4_nf6_indian = 27;
+  }
+  oneof _opening_d4_d5_queens_gambit {
+  string opening_d4_d5_queens_gambit = 28;
+  }
+  oneof _opening_other {
+  string opening_other = 29;
+  }
+  oneof _user_spends_more_than_15_seconds_on_a_move {
+  string user_spends_more_than_15_seconds_on_a_move = 30;
+  }
+  oneof _user_spends_more_than_1_minute_on_a_move {
+  string user_spends_more_than_1_minute_on_a_move = 31;
+  }
+  oneof _user_spends_more_than_3_minutes_on_move {
+  string user_spends_more_than_3_minutes_on_move = 32;
+  }
+  oneof _r_p_endgame_reached {
+  string r_p_endgame_reached = 33;
+  }
+  oneof _k_p_endgame_reached {
+  string k_p_endgame_reached = 34;
+  }
+  oneof _game_reached_move_40 {
+  string game_reached_move_40 = 35;
+  }
+  oneof _game_reached_move_100 {
+  string game_reached_move_100 = 36;
+  }
+  oneof _rematch_if_user_has_played_before {
+  string rematch_if_user_has_played_before = 37;
+  }
+  oneof _heavy_piece_endgame_reached {
+  string heavy_piece_endgame_reached = 38;
+  }
+  oneof _minor_piece_endgame_reached {
+  string minor_piece_endgame_reached = 39;
+  }
+}

@@ -1,0 +1,14 @@
+// source: chesscom/support/v1/support_action_context.proto
+// syntax: proto3
+
+package chesscom.support.v1;
+
+message SupportActionContext {
+  optional string actor = 1;
+  optional .chesscom.support.v1.SupportActionConfirmation confirmation = 2;
+  optional string confirmed_by = 3;
+  optional string source_ref = 4;
+  optional string reason = 5;
+  optional bool dry_run = 6;
+  optional string idempotency_key = 7;
+}

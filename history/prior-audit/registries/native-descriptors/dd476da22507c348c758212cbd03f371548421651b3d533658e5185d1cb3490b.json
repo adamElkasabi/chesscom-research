@@ -1,0 +1,210 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_feature_computation.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/engine/v1/engine.proto",
+    "chesscom/engine/v1/strength.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameFeatureComputation",
+      "field": [
+        {
+          "name": "cee_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "engine",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EngineEvaluationSettings"
+        },
+        {
+          "name": "charm",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmSettings"
+        },
+        {
+          "name": "position_difficulty",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PositionDifficultySettings"
+        },
+        {
+          "name": "coach_speech",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachSpeechSettings"
+        },
+        {
+          "name": "game_rating",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameRatingSettings"
+        },
+        {
+          "name": "ignore_missing_move_timestamps",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "EngineEvaluationSettings",
+      "field": [
+        {
+          "name": "engine",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Engine"
+        },
+        {
+          "name": "engine_build",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "strength",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Strength"
+        }
+      ]
+    },
+    {
+      "name": "CharmSettings",
+      "field": [
+        {
+          "name": "model_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "search_depth",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "search_lines",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "reference_ratings",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 5,
+          "end": 6
+        },
+        {
+          "start": 6,
+          "end": 7
+        }
+      ],
+      "reserved_name": [
+        "include_empirical_rating",
+        "include_position_difficulty_rating"
+      ]
+    },
+    {
+      "name": "PositionDifficultySettings",
+      "field": [
+        {
+          "name": "model_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "apply_played_bump",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "CoachSpeechSettings",
+      "field": [
+        {
+          "name": "coach_text_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "coach_locale",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "perspective",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.CoachSpeechPerspective"
+        },
+        {
+          "name": "deterministic_phrase_selection",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "GameRatingSettings",
+      "field": [
+        {
+          "name": "model_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "anchor_ratings",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CoachSpeechPerspective",
+      "value": [
+        {
+          "name": "COACH_SPEECH_PERSPECTIVE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COACH_SPEECH_PERSPECTIVE_MOVER",
+          "number": 1
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

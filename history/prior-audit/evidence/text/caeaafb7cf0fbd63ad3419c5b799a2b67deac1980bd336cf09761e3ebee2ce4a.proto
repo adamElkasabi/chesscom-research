@@ -1,0 +1,9 @@
+// source: chesscom/payments/v1/product_prices.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message ProductPrices {
+  optional string sku = 1;
+  repeated .chesscom.payments.v1.CountryPrice country_prices = 2;
+}

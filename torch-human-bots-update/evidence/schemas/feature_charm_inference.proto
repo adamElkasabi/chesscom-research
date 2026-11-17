@@ -1,0 +1,23 @@
+// source: chesscom/explanation_engine/v1/feature_charm_inference.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message CharmInferenceRequest {
+  oneof _grv2 {
+  .chesscom.explanation_engine.v1.CharmGameRatingV2Settings grv2 = 1;
+  }
+  oneof _tricky {
+  .chesscom.explanation_engine.v1.CharmTrickySettings tricky = 2;
+  }
+}
+
+message CharmInferenceResponse {
+  repeated .chesscom.explanation_engine.v1.CharmInferenceResult results = 1;
+}
+
+message CharmGameRatingV2Settings {
+}
+
+message CharmTrickySettings {
+}

@@ -1,0 +1,40 @@
+// source: chesscom/cheat_metadata_storage/v1/cheat_metadata.proto
+// syntax: proto3
+
+package chesscom.cheat_metadata_storage.v1;
+
+message GameCheatMetadata {
+  optional string game_id = 1;
+  optional .google.protobuf.Timestamp created_at = 2;
+  optional .chesscom.cheat_metadata_storage.v1.CheatMetadata white_player_metadata = 3;
+  optional .chesscom.cheat_metadata_storage.v1.CheatMetadata black_player_metadata = 4;
+  optional string white_client = 5;
+  optional string black_client = 6;
+  optional bool white_moves_from_multiple_clients = 7;
+  optional bool black_moves_from_multiple_clients = 8;
+}
+
+message CheatMetadata {
+  repeated uint32 move_hold_times = 1;
+  repeated uint32 toggled_moves = 2;
+  repeated uint32 bot_moves = 3;
+  repeated uint32 change_of_heart_moves = 4;
+  repeated uint32 draw_offer_moves = 5;
+  repeated int32 pointer_offsets = 6;
+  repeated uint32 not_user_generated_moves = 7;
+  repeated uint32 untrusted_event_moves = 8;
+  repeated uint32 blur_on_own_turn_moves = 9;
+  repeated uint32 blur_on_opponent_turn_moves = 10;
+  repeated uint32 focus_on_own_turn_moves = 11;
+  repeated uint32 focus_on_opponent_turn_moves = 12;
+  repeated int32 move_to_first_blur_times = 13;
+  repeated int32 last_focus_to_move_times = 14;
+  repeated int32 total_blur_time = 15;
+  repeated int32 total_focus_time = 16;
+  repeated int32 blur_counts = 17;
+  repeated uint32 external_board_moves = 18;
+  repeated uint32 premoves = 19;
+  repeated uint32 screenshot_detected_moves = 20;
+  optional string browser_extension = 21;
+  repeated int32 square_widths = 22;
+}

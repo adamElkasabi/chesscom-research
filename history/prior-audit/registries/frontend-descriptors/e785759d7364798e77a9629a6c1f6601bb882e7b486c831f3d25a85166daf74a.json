@@ -1,0 +1,94 @@
+{
+  "name": "chesscom/payments/v1/support_promotion_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "CheckMemberPromotionsRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          }
+        },
+        {
+          "name": "context",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "verification_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "platform",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform"
+        }
+      ]
+    },
+    {
+      "name": "CheckMemberPromotionsResponse",
+      "field": [
+        {
+          "name": "offers",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.MemberPromotion"
+        },
+        {
+          "name": "applied",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.PromotionOnCharge"
+        },
+        {
+          "name": "code_applied",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "action_result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "SupportPromotionService",
+      "method": [
+        {
+          "name": "CheckMemberPromotions",
+          "input_type": ".chesscom.payments.v1.CheckMemberPromotionsRequest",
+          "output_type": ".chesscom.payments.v1.CheckMemberPromotionsResponse",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

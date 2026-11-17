@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/text_item/v1alpha/internal_feature_generate_coach_text_items.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "dependency": [
+    "chesscom/text_item/v1alpha/text_item.proto",
+    "chesscom/text_item/v1alpha/google_sheet.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGenerateCoachTextItemsRequest",
+      "field": [
+        {
+          "name": "google_sheet_list",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.GoogleSheetList"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGenerateCoachTextItemsResponse",
+      "field": [
+        {
+          "name": "text_item_list",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.TextItemList"
+        },
+        {
+          "name": "warnings",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

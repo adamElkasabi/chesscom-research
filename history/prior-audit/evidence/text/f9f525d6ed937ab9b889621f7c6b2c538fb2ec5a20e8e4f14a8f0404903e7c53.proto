@@ -1,0 +1,17 @@
+// source: chesscom/game_gateway/v2/hydrated_game.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v2;
+
+message HydratedGame {
+  optional .chesscom.game_gateway.v2.Game game = 1;
+  optional .chesscom.cheat_metadata_storage.v1.GameCheatMetadata cheat_metadata = 2;
+  optional .chesscom.game_gateway.v1.GameRelationshipMetadata relationship_metadata = 3;
+  optional .chesscom.game_gateway.v1.GameAnalysisMetadata analysis_metadata = 4;
+  optional .chesscom.game_gateway.v1.PlayerDetailsMetadata player_metadata = 5;
+  optional .chesscom.game_gateway.v1.FavoriteMetadata favorite_metadata = 6;
+  optional .chesscom.bots.v1.BotMetadata bot_metadata = 7;
+  optional .chesscom.coaches.v2.Coach coach_metadata = 8;
+  optional .chesscom.game_gateway.v1.OpeningMetadata opening_metadata = 9;
+  optional .chesscom.game_gateway.v1.PgnMetadata pgn_metadata = 10;
+}

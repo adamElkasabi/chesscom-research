@@ -1,0 +1,31 @@
+// source: chesscom/explanation_engine/v1/accuracy.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum AccuracyAlgorithm {
+  ACCURACY_ALGORITHM_UNSPECIFIED = 0;
+  ACCURACY_ALGORITHM_CAPS2 = 1;
+}
+
+message PieceTypeAccuracy {
+  optional .chesscom.chess.v1.PieceType piece_type = 1;
+  optional double accuracy_score = 2;
+}
+
+message GamePhaseAccuracy {
+  optional .chesscom.chess.v1.GamePhase game_phase = 1;
+  optional double accuracy_score = 2;
+}
+
+message ColorAccuracy {
+  optional .chesscom.chess.v1.Color color = 1;
+  repeated .chesscom.explanation_engine.v1.PieceTypeAccuracy accuracy_by_piece_type = 2;
+  repeated .chesscom.explanation_engine.v1.GamePhaseAccuracy accuracy_by_game_phase = 3;
+  optional double accuracy_overall = 4;
+  optional double avg_centipawn_loss = 5;
+}
+
+message VariationAccuracy {
+  repeated .chesscom.explanation_engine.v1.ColorAccuracy accuracy_by_color = 1;
+}

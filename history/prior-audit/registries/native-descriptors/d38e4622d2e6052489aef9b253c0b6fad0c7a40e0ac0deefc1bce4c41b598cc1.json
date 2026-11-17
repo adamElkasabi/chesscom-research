@@ -1,0 +1,195 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_settings.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/color.proto",
+    "chesscom/explanation_engine/v1/language.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto",
+    "chesscom/explanation_engine/v1/game_analysis.proto",
+    "chesscom/explanation_engine/v1/game_phase.proto",
+    "chesscom/explanation_engine/v1/search.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameSettings",
+      "field": [
+        {
+          "name": "search_settings",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchSettings",
+          "oneof_index": 0
+        },
+        {
+          "name": "game_review_search_settings",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewSearchSettings",
+          "oneof_index": 0
+        },
+        {
+          "name": "preset",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.SearchPreset",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_color",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "locale",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Locale",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_phase_version",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseVersion",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_analysis_speech_version",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.GameAnalysisSpeechVersion",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_classification_version",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassificationVersion",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "force_disable_internal_engine_searches",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_skills",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "enabled_feature_flags",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "feature_flag_config",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameSettings.FeatureFlagConfigEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "FeatureFlagConfigEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "search"
+        },
+        {
+          "name": "_user_color"
+        },
+        {
+          "name": "_locale"
+        },
+        {
+          "name": "_game_phase_version"
+        },
+        {
+          "name": "_game_analysis_speech_version"
+        },
+        {
+          "name": "_move_classification_version"
+        },
+        {
+          "name": "_force_disable_internal_engine_searches"
+        },
+        {
+          "name": "_enable_skills"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 1,
+          "end": 2
+        },
+        {
+          "start": 2,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "name": "SearchSettings",
+      "field": [
+        {
+          "name": "search_parameters",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchParameters"
+        },
+        {
+          "name": "null_move_search_parameters",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchParameters"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

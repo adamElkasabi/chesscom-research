@@ -1,0 +1,6 @@
+
+Ichesscom/explanation_engine/v1alpha/internal_feature_extract_pvline.proto#chesscom.explanation_engine.v1alpha4chesscom/explanation_engine/v1/game_point_info.proto"3
+#InternalFeatureExtractPVLineRequest
+type ("c
+$InternalFeatureExtractPVLineResponse;
+line (2-.chesscom.explanation_engine.v1.GamePointInfobproto3

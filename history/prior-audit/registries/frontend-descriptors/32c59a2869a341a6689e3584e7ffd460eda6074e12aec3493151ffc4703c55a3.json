@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/payments/v1/prices_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "GetPriceForAllCountriesRequest",
+      "field": [
+        {
+          "name": "sku",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetPriceForAllCountriesResponse",
+      "field": [
+        {
+          "name": "products_prices",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.ProductPrices"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "PricesService",
+      "method": [
+        {
+          "name": "GetPriceForAllCountries",
+          "input_type": ".chesscom.payments.v1.GetPriceForAllCountriesRequest",
+          "output_type": ".chesscom.payments.v1.GetPriceForAllCountriesResponse",
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

@@ -1,0 +1,12 @@
+// source: chesscom/engine/v1/strength.proto
+// syntax: proto3
+
+package chesscom.engine.v1;
+
+enum Strength {
+  STRENGTH_UNSPECIFIED = 0;
+  STRENGTH_FAST = 1;
+  STRENGTH_STANDARD = 2;
+  STRENGTH_DEEP = 3;
+  STRENGTH_MAXIMUM = 4;
+}

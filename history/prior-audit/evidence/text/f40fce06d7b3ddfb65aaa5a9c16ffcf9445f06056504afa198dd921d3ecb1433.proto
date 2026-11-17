@@ -1,0 +1,300 @@
+// source: chesscom/explanation_engine/v1/puzzle_gen.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum PuzzleGenMode {
+  PUZZLE_GEN_MODE_UNSPECIFIED = 0;
+  PUZZLE_GEN_MODE_TACTICAL = 1;
+  PUZZLE_GEN_MODE_STRATEGIC = 2;
+}
+
+enum PuzzleWinningResult {
+  PUZZLE_WINNING_RESULT_UNSPECIFIED = 0;
+  PUZZLE_WINNING_RESULT_CHECKMATE_ON_BOARD = 1;
+}
+
+enum TacticalGoalType {
+  TACTICAL_GOAL_TYPE_UNSPECIFIED = 0;
+  TACTICAL_GOAL_TYPE_CHECKMATE = 1;
+  TACTICAL_GOAL_TYPE_PROMOTION = 2;
+  TACTICAL_GOAL_TYPE_ATTACK_THE_KING = 3;
+  TACTICAL_GOAL_TYPE_WIN_MATERIAL = 4;
+  TACTICAL_GOAL_TYPE_DEFENSE = 5;
+  TACTICAL_GOAL_TYPE_PROMOTION_POSITION = 6;
+  TACTICAL_GOAL_TYPE_DISTANT_CHECKMATE = 7;
+}
+
+enum StrategicGoalType {
+  STRATEGIC_GOAL_TYPE_UNSPECIFIED = 0;
+  STRATEGIC_GOAL_TYPE_IMPROVE_PAWNS = 1;
+  STRATEGIC_GOAL_TYPE_WEAKEN_PAWNS = 2;
+  STRATEGIC_GOAL_TYPE_ACTIVATE_PIECES = 3;
+  STRATEGIC_GOAL_TYPE_RESTRICT_PIECES = 4;
+  STRATEGIC_GOAL_TYPE_TRADE_PIECES = 5;
+  STRATEGIC_GOAL_TYPE_ATTACK_THE_KING = 6;
+}
+
+enum PuzzleThemeType {
+  PUZZLE_THEME_TYPE_UNSPECIFIED = 0;
+  PUZZLE_THEME_TYPE_MATE_IN_1 = 1;
+  PUZZLE_THEME_TYPE_MATE_IN_2 = 2;
+  PUZZLE_THEME_TYPE_SCHOLARS_MATE = 3;
+  PUZZLE_THEME_TYPE_ENDGAME_TACTICS = 4;
+  PUZZLE_THEME_TYPE_TRAPPED_PIECE = 5;
+  PUZZLE_THEME_TYPE_FORK = 6;
+  PUZZLE_THEME_TYPE_SKEWER = 7;
+  PUZZLE_THEME_TYPE_HANGING_PIECE = 8;
+  PUZZLE_THEME_TYPE_DISCOVERY = 9;
+  PUZZLE_THEME_TYPE_QUEEN_SACRIFICE = 10;
+  PUZZLE_THEME_TYPE_OPPOSITION = 11;
+  PUZZLE_THEME_TYPE_MATE_IN_3_PLUS = 12;
+  PUZZLE_THEME_TYPE_MATING_NET = 13;
+  PUZZLE_THEME_TYPE_PAWN_ENDGAME = 14;
+  PUZZLE_THEME_TYPE_PROMOTION = 15;
+  PUZZLE_THEME_TYPE_UNDER_PROMOTION = 16;
+  PUZZLE_THEME_TYPE_SACRIFICE = 17;
+  PUZZLE_THEME_TYPE_BACK_RANK_MATE = 18;
+  PUZZLE_THEME_TYPE_PIN = 19;
+  PUZZLE_THEME_TYPE_KING_SAFETY = 20;
+  PUZZLE_THEME_TYPE_PIECE_PLAY = 21;
+  PUZZLE_THEME_TYPE_PAWN_STRUCTURE = 22;
+  PUZZLE_THEME_TYPE_LADDER_MATE = 23;
+}
+
+message PuzzleGen {
+  oneof _puzzle {
+  .chesscom.explanation_engine.v1.Puzzle puzzle = 1;
+  }
+  optional .chesscom.explanation_engine.v1.GameState puzzle_game_state = 2;
+  optional .chesscom.explanation_engine.v1.PuzzleGenMode mode = 3;
+  optional .chesscom.api.v1.SemanticVersion cee_version = 4;
+  optional float puzzle_quality_score = 5;
+}
+
+message Puzzle {
+  oneof _puzzle_goal {
+  .chesscom.explanation_engine.v1.PuzzleGoal puzzle_goal = 5;
+  }
+  oneof _origin_game_metadata {
+  .chesscom.chess.v1.GameMetadata origin_game_metadata = 7;
+  }
+  oneof _origin_game_ply {
+  int32 origin_game_ply = 11;
+  }
+  optional string annotated_puzzle_pgn = 1;
+  optional string initial_fen = 2;
+  repeated .chesscom.explanation_engine.v1.PuzzleMove puzzle_moves = 3;
+  repeated .chesscom.explanation_engine.v1.PuzzleTheme puzzle_themes = 4;
+  optional .chesscom.chess.v1.GamePhase game_phase = 6;
+  repeated .chesscom.explanation_engine.v1.SpeechForLocale puzzle_goal_speech = 8;
+  optional .chesscom.chess.v1.Position initial_position = 9;
+  optional .chesscom.explanation_engine.v1.PuzzleResult puzzle_result = 10;
+}
+
+message PuzzleMove {
+  optional .chesscom.chess.v1.Move move = 1;
+  optional .chesscom.explanation_engine.v1.MoveClassification classification = 2;
+  repeated .chesscom.explanation_engine.v1.SpeechForLocale puzzle_hint_speech = 3;
+  optional int32 legal_alternate_moves = 4;
+}
+
+message PuzzleResult {
+  oneof result {
+  .chesscom.explanation_engine.v1.PuzzleWinningResult winning_result = 1;
+  }
+}
+
+message PuzzleGoal {
+  oneof goal_type {
+  .chesscom.explanation_engine.v1.TacticalGoal tactical_goal = 1;
+  .chesscom.explanation_engine.v1.StrategicGoal strategic_goal = 2;
+  }
+}
+
+message PuzzleTheme {
+  oneof theme {
+  .chesscom.explanation_engine.v1.PuzzleThemeMateIn1 mate_in_1 = 1;
+  .chesscom.explanation_engine.v1.PuzzleThemeMateIn2 mate_in_2 = 2;
+  .chesscom.explanation_engine.v1.PuzzleThemeScholarsMate scholars_mate = 3;
+  .chesscom.explanation_engine.v1.PuzzleThemeEndgameTactics endgame_tactics = 4;
+  .chesscom.explanation_engine.v1.PuzzleThemeTrappedPiece trapped_piece = 5;
+  .chesscom.explanation_engine.v1.PuzzleThemeFork fork = 6;
+  .chesscom.explanation_engine.v1.PuzzleThemeSkewer skewer = 7;
+  .chesscom.explanation_engine.v1.PuzzleThemeHangingPiece hanging_piece = 8;
+  .chesscom.explanation_engine.v1.PuzzleThemeDiscovery discovery = 9;
+  .chesscom.explanation_engine.v1.PuzzleThemeQueenSacrifice queen_sacrifice = 10;
+  .chesscom.explanation_engine.v1.PuzzleThemeOpposition opposition = 11;
+  .chesscom.explanation_engine.v1.PuzzleThemeMateIn3Plus mate_in_3_plus = 12;
+  .chesscom.explanation_engine.v1.PuzzleThemeMatingNet mating_net = 13;
+  .chesscom.explanation_engine.v1.PuzzleThemePawnEndgame pawn_endgame = 14;
+  .chesscom.explanation_engine.v1.PuzzleThemePromotion promotion = 15;
+  .chesscom.explanation_engine.v1.PuzzleThemeUnderPromotion under_promotion = 16;
+  .chesscom.explanation_engine.v1.PuzzleThemeSacrifice sacrifice = 17;
+  .chesscom.explanation_engine.v1.PuzzleThemeBackRankMate back_rank_mate = 18;
+  .chesscom.explanation_engine.v1.PuzzleThemePin pin = 19;
+  .chesscom.explanation_engine.v1.PuzzleThemeKingSafety king_safety = 20;
+  .chesscom.explanation_engine.v1.PuzzleThemePiecePlay piece_play = 21;
+  .chesscom.explanation_engine.v1.PuzzleThemePawnStructure pawn_structure = 22;
+  .chesscom.explanation_engine.v1.PuzzleThemeLadderMate ladder_mate = 23;
+  }
+  optional .chesscom.explanation_engine.v1.PuzzleThemeType theme_type = 255;
+}
+
+message TacticalGoal {
+  oneof goal {
+  .chesscom.explanation_engine.v1.TacticalGoalCheckmate checkmate = 1;
+  .chesscom.explanation_engine.v1.TacticalGoalPromotion promotion = 2;
+  .chesscom.explanation_engine.v1.TacticalGoalAttackTheKing attack_the_king = 3;
+  .chesscom.explanation_engine.v1.TacticalGoalWinMaterial win_material = 4;
+  .chesscom.explanation_engine.v1.TacticalGoalDefense defense = 5;
+  .chesscom.explanation_engine.v1.TacticalGoalPromotionPosition promotion_position = 6;
+  .chesscom.explanation_engine.v1.TacticalGoalDistantCheckmate distant_checkmate = 7;
+  }
+  optional .chesscom.explanation_engine.v1.TacticalGoalType goal_type = 255;
+}
+
+message StrategicGoal {
+  optional .chesscom.explanation_engine.v1.StrategicGoalType goal_type = 255;
+}
+
+message TacticalGoalCheckmate {
+}
+
+message TacticalGoalPromotion {
+}
+
+message TacticalGoalAttackTheKing {
+}
+
+message TacticalGoalDefense {
+}
+
+message TacticalGoalWinMaterial {
+  oneof _won_piece {
+  .chesscom.chess.v1.Piece won_piece = 1;
+  }
+}
+
+message TacticalGoalPromotionPosition {
+}
+
+message TacticalGoalDistantCheckmate {
+}
+
+message PuzzleThemeMateIn1 {
+}
+
+message PuzzleThemeMateIn2 {
+}
+
+message PuzzleThemeMateIn3Plus {
+}
+
+message PuzzleThemeScholarsMate {
+}
+
+message PuzzleThemeEndgameTactics {
+}
+
+message PuzzleThemeTrappedPiece {
+}
+
+message PuzzleThemeFork {
+}
+
+message PuzzleThemeSkewer {
+}
+
+message PuzzleThemeHangingPiece {
+}
+
+message PuzzleThemeDiscovery {
+}
+
+message PuzzleThemeQueenSacrifice {
+}
+
+message PuzzleThemeOpposition {
+}
+
+message PuzzleThemeMatingNet {
+}
+
+message PuzzleThemePawnEndgame {
+}
+
+message PuzzleThemePromotion {
+}
+
+message PuzzleThemeUnderPromotion {
+}
+
+message PuzzleThemeSacrifice {
+}
+
+message PuzzleThemeBackRankMate {
+}
+
+message PuzzleThemePin {
+}
+
+message PuzzleThemeKingSafety {
+  oneof _subtheme_weaken {
+  .chesscom.explanation_engine.v1.PuzzleSubthemeKingSafetyWeaken subtheme_weaken = 1;
+  }
+  oneof _subtheme_attack {
+  .chesscom.explanation_engine.v1.PuzzleSubthemeKingSafetyAttack subtheme_attack = 2;
+  }
+  oneof _subtheme_defend {
+  .chesscom.explanation_engine.v1.PuzzleSubthemeKingSafetyDefend subtheme_defend = 3;
+  }
+}
+
+message PuzzleSubthemeKingSafetyWeaken {
+}
+
+message PuzzleSubthemeKingSafetyAttack {
+}
+
+message PuzzleSubthemeKingSafetyDefend {
+}
+
+message PuzzleThemePiecePlay {
+  oneof _subtheme_activity {
+  .chesscom.explanation_engine.v1.PuzzleSubthemePiecePlayActivity subtheme_activity = 1;
+  }
+  oneof _subtheme_prevention {
+  .chesscom.explanation_engine.v1.PuzzleSubthemePiecePlayPrevention subtheme_prevention = 2;
+  }
+  oneof _subtheme_trades {
+  .chesscom.explanation_engine.v1.PuzzleSubthemePiecePlayTrades subtheme_trades = 3;
+  }
+}
+
+message PuzzleSubthemePiecePlayActivity {
+}
+
+message PuzzleSubthemePiecePlayPrevention {
+}
+
+message PuzzleSubthemePiecePlayTrades {
+}
+
+message PuzzleThemePawnStructure {
+  oneof _subtheme_healthy {
+  .chesscom.explanation_engine.v1.PuzzleSubthemePawnStructureHealthy subtheme_healthy = 1;
+  }
+  oneof _subtheme_creates_weaknesses {
+  .chesscom.explanation_engine.v1.PuzzleSubthemePawnStructureCreatesWeaknesses subtheme_creates_weaknesses = 2;
+  }
+}
+
+message PuzzleSubthemePawnStructureHealthy {
+}
+
+message PuzzleSubthemePawnStructureCreatesWeaknesses {
+}
+
+message PuzzleThemeLadderMate {
+}

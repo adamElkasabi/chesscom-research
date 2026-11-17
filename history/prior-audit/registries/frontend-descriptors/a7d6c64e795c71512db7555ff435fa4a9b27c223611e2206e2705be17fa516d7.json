@@ -1,0 +1,192 @@
+{
+  "name": "chesscom/user_properties/v1/properties_attribution.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "AttributionProperty",
+      "field": [
+        {
+          "name": "signup_initial_campaign",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_content",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_create_date_time",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_medium",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_referer",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_route",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_source",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_term",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "signup_initial_version",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1007,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_signup_initial_campaign"
+        },
+        {
+          "name": "_signup_initial_content"
+        },
+        {
+          "name": "_signup_initial_create_date_time"
+        },
+        {
+          "name": "_signup_initial_medium"
+        },
+        {
+          "name": "_signup_initial_referer"
+        },
+        {
+          "name": "_signup_initial_route"
+        },
+        {
+          "name": "_signup_initial_source"
+        },
+        {
+          "name": "_signup_initial_term"
+        },
+        {
+          "name": "_signup_initial_version"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AttributionPropertyDefinition",
+      "value": [
+        {
+          "name": "ATTRIBUTION_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ATTRIBUTION_CAMPAIGN",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_CONTENT",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_CREATE_DATE_TIME",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_MEDIUM",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_REFERER",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_ROUTE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_SOURCE",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_TERM",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "ATTRIBUTION_VERSION",
+          "number": 9,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

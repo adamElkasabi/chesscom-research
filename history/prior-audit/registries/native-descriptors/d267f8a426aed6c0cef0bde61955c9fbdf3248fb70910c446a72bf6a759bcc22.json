@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_chess960_initial_position.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetChess960InitialPositionRequest",
+      "field": [
+        {
+          "name": "initial_position_index",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GetChess960InitialPositionResponse",
+      "field": [
+        {
+          "name": "fen_position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

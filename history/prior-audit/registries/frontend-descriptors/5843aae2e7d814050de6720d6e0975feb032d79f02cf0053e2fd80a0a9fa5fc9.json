@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/proto_options/user_activity_connector/v1/options.proto",
+  "package": "chesscom.proto_options.user_activity_connector.v1",
+  "message_type": [
+    {
+      "name": "UserActivityConnectorDefinition"
+    }
+  ],
+  "extension": [
+    {
+      "name": "chart_color",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 52000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "chartColor",
+      "proto3_optional": true
+    },
+    {
+      "name": "repository",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 52001,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "repository",
+      "proto3_optional": true
+    }
+  ],
+  "syntax": "proto3"
+}

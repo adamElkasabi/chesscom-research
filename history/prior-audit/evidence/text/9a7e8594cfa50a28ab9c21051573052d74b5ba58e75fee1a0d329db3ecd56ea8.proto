@@ -1,0 +1,17 @@
+// source: chesscom/user_properties/v1/properties_clubs.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum ClubsPropertyDefinition {
+  CLUBS_PROPERTY_UNSPECIFIED = 0;
+  CLUBS_JOINED = 1;
+  CLUBS_BANNED = 2;
+  CLUBS_JOINED_COUNT = 3;
+}
+
+message ClubsProperty {
+  repeated string clubs_joined = 1;
+  repeated string clubs_banned = 2;
+  optional int32 clubs_joined_count = 3;
+}

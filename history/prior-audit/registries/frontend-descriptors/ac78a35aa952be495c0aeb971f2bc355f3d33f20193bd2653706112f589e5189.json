@@ -1,0 +1,65 @@
+{
+  "name": "chesscom/inbox/v1/user_message_core.proto",
+  "package": "chesscom.inbox.v1",
+  "enum_type": [
+    {
+      "name": "BatchMessageContext",
+      "value": [
+        {
+          "name": "BATCH_MESSAGE_CONTEXT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BATCH_MESSAGE_CONTEXT_SHARE",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "name": "MessageSendNotAllowedReason",
+      "value": [
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_PRIVACY_FRIENDS_ONLY",
+          "number": 1
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_PRIVACY_NOBODY",
+          "number": 2
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_BLOCKED",
+          "number": 3
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_TRUST_LEVEL",
+          "number": 4
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_SAFE_MODE",
+          "number": 5
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_RATE_LIMITED",
+          "number": 6
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_GUEST_ACCOUNT",
+          "number": 7
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_SENDER_PRIVACY",
+          "number": 8
+        },
+        {
+          "name": "MESSAGE_SEND_NOT_ALLOWED_REASON_CONTENT_HIDDEN",
+          "number": 9
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

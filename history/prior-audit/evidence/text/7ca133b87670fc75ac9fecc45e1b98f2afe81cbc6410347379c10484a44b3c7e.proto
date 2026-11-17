@@ -1,0 +1,29 @@
+// source: chesscom/flair/v1/flair.proto
+// syntax: proto3
+
+package chesscom.flair.v1;
+
+message Flair {
+  oneof _legacy_code {
+  string legacy_code = 16;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional string description = 3;
+  repeated .chesscom.flair.v1.Flair.ImagesEntry images = 4;
+  optional .chesscom.flair.v1.Flair.Category category = 5;
+  optional int32 display_priority = 6;
+  optional .chesscom.unlockables.v1.UnlockablePreview unlockable_preview = 7;
+  message ImagesEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+  message Category {
+  optional string name = 1;
+  }
+}
+
+message FlairSelectionItem {
+  optional .chesscom.flair.v1.Flair flair = 1;
+  optional bool available = 2;
+}

@@ -1,0 +1,862 @@
+{
+  "target": {
+    "accuracy": {
+      "white": 71.7,
+      "black": 99
+    },
+    "ratings": {
+      "white": 100,
+      "black": 1000
+    },
+    "tallies": {
+      "white": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 4,
+        "6": 1,
+        "7": 0,
+        "8": 2,
+        "9": 1,
+        "10": 0,
+        "11": 0,
+        "20": 0
+      },
+      "black": {
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 2,
+        "5": 5,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "20": 0
+      }
+    }
+  },
+  "ranking": "accuracy absolute error + 2 * tally L1 + rating absolute error / 100",
+  "completed": 19,
+  "planned": 19,
+  "rows": [
+    {
+      "id": "normalized-Hash-64",
+      "accuracyAbs": 7.094592285156253,
+      "tallyL1": 6,
+      "ratingAbs": 0,
+      "loss": 19.094592285156253,
+      "actual": {
+        "accuracy": {
+          "white": 64.79644775390625,
+          "black": 98.8089599609375
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 0,
+            "8": 5,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 2,
+            "5": 5,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "09679555a521fb012bcbe462d1aac31797582c1ba0fa730248b8a973a1731477",
+      "elapsedSeconds": 18.741,
+      "warnings": []
+    },
+    {
+      "id": "normalized-UseSoftNodes-true",
+      "accuracyAbs": 5.587565612792972,
+      "tallyL1": 8,
+      "ratingAbs": 0,
+      "loss": 21.58756561279297,
+      "actual": {
+        "accuracy": {
+          "white": 66.39828491210938,
+          "black": 98.71414947509766
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 3,
+            "5": 4,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "8b81e3ae0d2d2d84d550a876d34725cb62ab0d2c2e6b19233f8eb7f4877248af",
+      "elapsedSeconds": 25.577,
+      "warnings": []
+    },
+    {
+      "id": "normalized-nodes-300000",
+      "accuracyAbs": 5.770938110351565,
+      "tallyL1": 8,
+      "ratingAbs": 0,
+      "loss": 21.770938110351565,
+      "actual": {
+        "accuracy": {
+          "white": 66.40452575683594,
+          "black": 98.5245361328125
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 3,
+            "5": 4,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "ba37354c31cd8d12a449a42926ad8fa4d6dcb3749a713ef55ab49423e0fe2abe",
+      "elapsedSeconds": 29.122,
+      "warnings": []
+    },
+    {
+      "id": "normalized-ClearBetweenSearches-true",
+      "accuracyAbs": 5.989756774902347,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 25.989756774902347,
+      "actual": {
+        "accuracy": {
+          "white": 65.74172973632812,
+          "black": 99.03148651123047
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1,
+            "8": 5,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 3,
+            "5": 4,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "fcb7ef0847813bc2e3981d2da3d1376eb134b82db119871fba50a63b8779de10",
+      "elapsedSeconds": 16.101,
+      "warnings": []
+    },
+    {
+      "id": "normalized-repeat-1",
+      "accuracyAbs": 6.092890930175784,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 26.092890930175784,
+      "actual": {
+        "accuracy": {
+          "white": 65.7431640625,
+          "black": 99.13605499267578
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+      "elapsedSeconds": 16.915,
+      "warnings": []
+    },
+    {
+      "id": "normalized-repeat-2",
+      "accuracyAbs": 6.092890930175784,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 26.092890930175784,
+      "actual": {
+        "accuracy": {
+          "white": 65.7431640625,
+          "black": 99.13605499267578
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+      "elapsedSeconds": 16.476,
+      "warnings": []
+    },
+    {
+      "id": "normalized-class-v2",
+      "accuracyAbs": 6.092890930175784,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 26.092890930175784,
+      "actual": {
+        "accuracy": {
+          "white": 65.7431640625,
+          "black": 99.13605499267578
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+      "elapsedSeconds": 18.489,
+      "warnings": []
+    },
+    {
+      "id": "normalized-HardSoftNodeFactor-50",
+      "accuracyAbs": 6.092890930175784,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 26.092890930175784,
+      "actual": {
+        "accuracy": {
+          "white": 65.7431640625,
+          "black": 99.13605499267578
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+      "elapsedSeconds": 16.63,
+      "warnings": []
+    },
+    {
+      "id": "normalized-HardSoftNodeFactor-200",
+      "accuracyAbs": 6.092890930175784,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 26.092890930175784,
+      "actual": {
+        "accuracy": {
+          "white": 65.7431640625,
+          "black": 99.13605499267578
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "50cc387d0425af86b93f185d2323ab53659191d7a89d0edfc033e34d4576af8f",
+      "elapsedSeconds": 16.774,
+      "warnings": []
+    },
+    {
+      "id": "normalized-NodeFudging-100",
+      "accuracyAbs": 6.45822448730469,
+      "tallyL1": 10,
+      "ratingAbs": 0,
+      "loss": 26.45822448730469,
+      "actual": {
+        "accuracy": {
+          "white": 65.36044311523438,
+          "black": 98.88133239746094
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 2,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "479276bb68a899d114f04771da8f9254c3880144b3d69e2c4e89d50be6c01b22",
+      "elapsedSeconds": 17.601,
+      "warnings": []
+    },
+    {
+      "id": "normalized-standard",
+      "accuracyAbs": 5.36716003417969,
+      "tallyL1": 12,
+      "ratingAbs": 0,
+      "loss": 29.36716003417969,
+      "actual": {
+        "accuracy": {
+          "white": 66.5762939453125,
+          "black": 99.24345397949219
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "3e6be1111801c717666b20e56828f8a3344133409aaa627285428698ecd9a573",
+      "elapsedSeconds": 52.443,
+      "warnings": []
+    },
+    {
+      "id": "normalized-nodes-600000",
+      "accuracyAbs": 5.36716003417969,
+      "tallyL1": 12,
+      "ratingAbs": 0,
+      "loss": 29.36716003417969,
+      "actual": {
+        "accuracy": {
+          "white": 66.5762939453125,
+          "black": 99.24345397949219
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1,
+            "8": 4,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "3e6be1111801c717666b20e56828f8a3344133409aaa627285428698ecd9a573",
+      "elapsedSeconds": 51.6,
+      "warnings": []
+    },
+    {
+      "id": "normalized-NodeFudging-1000",
+      "accuracyAbs": 6.781329345703128,
+      "tallyL1": 12,
+      "ratingAbs": 0,
+      "loss": 30.781329345703128,
+      "actual": {
+        "accuracy": {
+          "white": 64.94029235839844,
+          "black": 99.02162170410156
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0,
+            "8": 6,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "c4051627ba7e3ac79365049dbda83504fb0746193b537004dadc5e1505b23e43",
+      "elapsedSeconds": 20.93,
+      "warnings": []
+    },
+    {
+      "id": "normalized-nodes-40000",
+      "accuracyAbs": 7.217570495605472,
+      "tallyL1": 12,
+      "ratingAbs": 0,
+      "loss": 31.21757049560547,
+      "actual": {
+        "accuracy": {
+          "white": 64.62260437011719,
+          "black": 99.14017486572266
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0,
+            "8": 6,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "37d2e79a10b72d1909b6d82fb45860b9d61028603415292441954bc29b7869c3",
+      "elapsedSeconds": 8.119,
+      "warnings": []
+    },
+    {
+      "id": "normalized-nodes-75000",
+      "accuracyAbs": 7.252894592285159,
+      "tallyL1": 12,
+      "ratingAbs": 0,
+      "loss": 31.25289459228516,
+      "actual": {
+        "accuracy": {
+          "white": 64.58173370361328,
+          "black": 99.13462829589844
+        },
+        "ratings": {
+          "white": 100,
+          "black": 1000
+        },
+        "tallies": {
+          "white": {
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0,
+            "8": 6,
+            "9": 1,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          },
+          "black": {
+            "1": 2,
+            "2": 0,
+            "3": 1,
+            "4": 4,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "20": 0
+          }
+        }
+      },
+      "engines": [
+        11
+      ],
+      "numericHash": "ade09abf3167caeb0866750d350ccc8e3a4d9f30789dd8e6fcd6efb6d94812a7",
+      "elapsedSeconds": 10.692,
+      "warnings": []
+    },
+    {
+      "id": "normalized-evaluate-normal",
+      "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:24:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:34:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+      "warnings": []
+    },
+    {
+      "id": "normalized-Minimal-true",
+      "error": "Error: RuntimeError: Aborted(Assertion failed: n.has_score(), at: ../../src/features/game_review.cpp,144,build_move_from_node). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+      "warnings": []
+    },
+    {
+      "id": "normalized-human",
+      "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+      "warnings": []
+    },
+    {
+      "id": "normalized-human-no-maia",
+      "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+      "warnings": []
+    }
+  ]
+}

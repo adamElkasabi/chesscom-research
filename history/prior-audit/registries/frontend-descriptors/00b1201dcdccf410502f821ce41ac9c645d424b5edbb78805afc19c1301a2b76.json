@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/courses_common/v1/course_coach_avatar.proto",
+  "package": "chesscom.courses_common.v1",
+  "enum_type": [
+    {
+      "name": "CourseCoachAvatar",
+      "value": [
+        {
+          "name": "COURSE_COACH_AVATAR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_COACH_AVATAR_DAVID",
+          "number": 1
+        },
+        {
+          "name": "COURSE_COACH_AVATAR_MAE",
+          "number": 2
+        },
+        {
+          "name": "COURSE_COACH_AVATAR_DANTE",
+          "number": 3
+        },
+        {
+          "name": "COURSE_COACH_AVATAR_NADIA",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

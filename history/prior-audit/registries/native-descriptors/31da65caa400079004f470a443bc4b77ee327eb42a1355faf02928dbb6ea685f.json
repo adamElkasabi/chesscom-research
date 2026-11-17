@@ -1,0 +1,86 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_game_analysis.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_analysis.proto",
+    "chesscom/explanation_engine/v1/game_phase.proto",
+    "chesscom/explanation_engine/v1/language.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameAnalysisRequest",
+      "field": [
+        {
+          "name": "starting_game_point",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "locale",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Locale"
+        },
+        {
+          "name": "game_phase_version",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseVersion",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "speech_version",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.GameAnalysisSpeechVersion",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_classification_version",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassificationVersion",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_starting_game_point"
+        },
+        {
+          "name": "_game_phase_version"
+        },
+        {
+          "name": "_speech_version"
+        },
+        {
+          "name": "_move_classification_version"
+        }
+      ]
+    },
+    {
+      "name": "GameAnalysisResponse",
+      "field": [
+        {
+          "name": "game_analysis",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameAnalysis"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

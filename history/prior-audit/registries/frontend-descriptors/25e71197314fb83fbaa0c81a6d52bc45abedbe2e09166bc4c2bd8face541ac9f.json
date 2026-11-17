@@ -1,0 +1,616 @@
+{
+  "name": "chesscom/user_properties/v1/properties_product_activity_rankings.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "ProductActivityRankingsProperty",
+      "field": [
+        {
+          "name": "daily_time_on_platform_in_seconds_rank",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "friend_games_rank",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "daily_moves_rank",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "lesson_activity_rank",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_reviews_started_rank",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_activity_rank",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "article_activity_rank",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "events_activity_rank",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "vs_coach_activity_rank",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "vs_coach_games_rank",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "live_bullet_games_rank",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "live_blitz_games_rank",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "live_rapid_games_rank",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "lesson_start_rank",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "social_activity_rank",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "bot_games_rank",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "upgrade_activity_rank",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "active_events_rank",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "live_games_rank",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_games_rank",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "tactics_rank",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_rushes_rank",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_battles_rank",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "daily_puzzles_rank",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "courses_started_rank",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "practice_endgame_started_rank",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "analysis_started_rank",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_page_views_rank",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "chess_tv_event_views_rank",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "article_news_blog_forum_views_rank",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "social_shares_rank",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "chat_messages_rank",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "friends_added_rank",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "friend_invites_sent_rank",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 33,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1036,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ProductActivityRankingsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_daily_time_on_platform_in_seconds_rank"
+        },
+        {
+          "name": "_friend_games_rank"
+        },
+        {
+          "name": "_daily_moves_rank"
+        },
+        {
+          "name": "_lesson_activity_rank"
+        },
+        {
+          "name": "_game_reviews_started_rank"
+        },
+        {
+          "name": "_game_review_activity_rank"
+        },
+        {
+          "name": "_article_activity_rank"
+        },
+        {
+          "name": "_events_activity_rank"
+        },
+        {
+          "name": "_vs_coach_activity_rank"
+        },
+        {
+          "name": "_vs_coach_games_rank"
+        },
+        {
+          "name": "_live_bullet_games_rank"
+        },
+        {
+          "name": "_live_blitz_games_rank"
+        },
+        {
+          "name": "_live_rapid_games_rank"
+        },
+        {
+          "name": "_lesson_start_rank"
+        },
+        {
+          "name": "_social_activity_rank"
+        },
+        {
+          "name": "_bot_games_rank"
+        },
+        {
+          "name": "_upgrade_activity_rank"
+        },
+        {
+          "name": "_active_events_rank"
+        },
+        {
+          "name": "_live_games_rank"
+        },
+        {
+          "name": "_tournament_games_rank"
+        },
+        {
+          "name": "_tactics_rank"
+        },
+        {
+          "name": "_puzzle_rushes_rank"
+        },
+        {
+          "name": "_puzzle_battles_rank"
+        },
+        {
+          "name": "_daily_puzzles_rank"
+        },
+        {
+          "name": "_courses_started_rank"
+        },
+        {
+          "name": "_practice_endgame_started_rank"
+        },
+        {
+          "name": "_analysis_started_rank"
+        },
+        {
+          "name": "_stats_page_views_rank"
+        },
+        {
+          "name": "_chess_tv_event_views_rank"
+        },
+        {
+          "name": "_article_news_blog_forum_views_rank"
+        },
+        {
+          "name": "_social_shares_rank"
+        },
+        {
+          "name": "_chat_messages_rank"
+        },
+        {
+          "name": "_friends_added_rank"
+        },
+        {
+          "name": "_friend_invites_sent_rank"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ProductActivityRankingsPropertyDefinition",
+      "value": [
+        {
+          "name": "PRODUCT_RANKINGS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DAILY_TIME_ON_PLATFORM_IN_SECONDS_RANK",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "FRIEND_GAMES_RANK",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "DAILY_MOVES_RANK",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "LESSON_ACTIVITY_RANK",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEWS_STARTED_RANK",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_ACTIVITY_RANK",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "ARTICLE_ACTIVITY_RANK",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "EVENTS_ACTIVITY_RANK",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "VS_COACH_ACTIVITY_RANK",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "VS_COACH_GAMES_RANK",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "LIVE_BULLET_GAMES_RANK",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "LIVE_BLITZ_GAMES_RANK",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "LIVE_RAPID_GAMES_RANK",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "LESSON_START_RANK",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "SOCIAL_ACTIVITY_RANK",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "BOT_GAMES_RANK",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "UPGRADE_ACTIVITY_RANK",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "ACTIVE_EVENTS_RANK",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "LIVE_GAMES_RANK",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "TOURNAMENT_GAMES_RANK",
+          "number": 20,
+          "options": {}
+        },
+        {
+          "name": "TACTICS_RANK",
+          "number": 21,
+          "options": {}
+        },
+        {
+          "name": "PUZZLE_RUSHES_RANK",
+          "number": 22,
+          "options": {}
+        },
+        {
+          "name": "PUZZLE_BATTLES_RANK",
+          "number": 23,
+          "options": {}
+        },
+        {
+          "name": "DAILY_PUZZLES_RANK",
+          "number": 24,
+          "options": {}
+        },
+        {
+          "name": "COURSES_STARTED_RANK",
+          "number": 25,
+          "options": {}
+        },
+        {
+          "name": "PRACTICE_ENDGAME_STARTED_RANK",
+          "number": 26,
+          "options": {}
+        },
+        {
+          "name": "ANALYSIS_STARTED_RANK",
+          "number": 27,
+          "options": {}
+        },
+        {
+          "name": "STATS_PAGE_VIEWS_RANK",
+          "number": 28,
+          "options": {}
+        },
+        {
+          "name": "CHESS_TV_EVENT_VIEWS_RANK",
+          "number": 29,
+          "options": {}
+        },
+        {
+          "name": "ARTICLE_NEWS_BLOG_FORUM_VIEWS_RANK",
+          "number": 30,
+          "options": {}
+        },
+        {
+          "name": "SOCIAL_SHARES_RANK",
+          "number": 31,
+          "options": {}
+        },
+        {
+          "name": "CHAT_MESSAGES_RANK",
+          "number": 32,
+          "options": {}
+        },
+        {
+          "name": "FRIENDS_ADDED_RANK",
+          "number": 33,
+          "options": {}
+        },
+        {
+          "name": "FRIEND_INVITES_SENT_RANK",
+          "number": 34,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "chesscom/explanation_engine/v1/text_asset.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "TextAsset",
+      "field": [
+        {
+          "name": "encrypted_compressed_in_base64",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES",
+          "oneof_index": 0
+        },
+        {
+          "name": "json",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "artifact_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "text_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "locale",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "content"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

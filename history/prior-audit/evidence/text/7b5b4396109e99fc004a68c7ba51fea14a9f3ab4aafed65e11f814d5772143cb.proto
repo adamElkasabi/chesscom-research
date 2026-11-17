@@ -1,0 +1,12 @@
+// source: chesscom/explanation_engine/v1/feature_load_game_state.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message LoadGameStateRequest {
+  optional .chesscom.explanation_engine.v1.GameState game_state = 1;
+}
+
+message LoadGameStateResponse {
+  repeated .chesscom.explanation_engine.v1.GamePointInfo played_line = 1;
+}

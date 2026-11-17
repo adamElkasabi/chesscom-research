@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/post_hint_type.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "PostHintType",
+      "value": [
+        {
+          "name": "POST_HINT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "POST_HINT_TYPE_GOOD_MATCH",
+          "number": 1
+        },
+        {
+          "name": "POST_HINT_TYPE_GOOD_NOMATCH",
+          "number": 2
+        },
+        {
+          "name": "POST_HINT_TYPE_NOT_GOOD_MATCH",
+          "number": 3
+        },
+        {
+          "name": "POST_HINT_TYPE_NOT_GOOD_BUT",
+          "number": 4
+        },
+        {
+          "name": "POST_HINT_TYPE_NOT_GOOD",
+          "number": 5
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

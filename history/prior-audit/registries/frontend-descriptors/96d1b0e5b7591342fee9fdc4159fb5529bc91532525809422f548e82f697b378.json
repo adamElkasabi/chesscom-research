@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/chess/v1/color.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "Color",
+      "value": [
+        {
+          "name": "COLOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COLOR_WHITE",
+          "number": 1
+        },
+        {
+          "name": "COLOR_BLACK",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

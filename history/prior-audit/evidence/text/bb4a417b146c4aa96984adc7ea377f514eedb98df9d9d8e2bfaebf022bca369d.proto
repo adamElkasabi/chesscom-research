@@ -1,0 +1,22 @@
+// source: chesscom/settings/v1/settings_privacy.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message PrivacySetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.String allow_global_chat_requests_from = 1;
+  .chesscom.settings.v1.SettingValue.String messages_privacy = 2;
+  .chesscom.settings.v1.SettingValue.String notes_privacy = 3;
+  .chesscom.settings.v1.SettingValue.String blog_privacy = 4;
+  .chesscom.settings.v1.SettingValue.String friends_list_privacy = 5;
+  .chesscom.settings.v1.SettingValue.String insights_privacy = 6;
+  .chesscom.settings.v1.SettingValue.Boolean allow_friend_requests = 7;
+  .chesscom.settings.v1.SettingValue.Boolean allow_club_invitations = 8;
+  .chesscom.settings.v1.SettingValue.Boolean allow_tournament_invitations = 9;
+  .chesscom.settings.v1.SettingValue.Boolean safe_mode = 10;
+  .chesscom.settings.v1.SettingValue.Boolean allow_contact_matching = 11;
+  .chesscom.settings.v1.SettingValue.Boolean suspicious_login_protection_otvc = 12;
+  .chesscom.settings.v1.SettingValue.Boolean allow_classroom_invitations = 13;
+  }
+}

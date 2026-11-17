@@ -1,0 +1,10 @@
+// source: chesscom/game_storage/v2/game_privacy.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum GamePrivacy {
+  GAME_PRIVACY_UNSPECIFIED = 0;
+  GAME_PRIVACY_PUBLIC = 1;
+  GAME_PRIVACY_PRIVATE = 2;
+}

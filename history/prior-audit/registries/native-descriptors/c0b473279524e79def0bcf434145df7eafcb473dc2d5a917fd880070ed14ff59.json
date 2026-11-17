@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_caps2.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "InternalFeatureCaps2Request"
+    },
+    {
+      "name": "InternalFeatureCaps2Response",
+      "field": [
+        {
+          "name": "caps2_score",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_caps2_score"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

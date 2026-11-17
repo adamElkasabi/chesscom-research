@@ -1,0 +1,47 @@
+// source: chesscom/user_properties/v1/properties_attribution.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum AttributionPropertyDefinition {
+  ATTRIBUTION_PROPERTY_UNSPECIFIED = 0;
+  ATTRIBUTION_CAMPAIGN = 1;
+  ATTRIBUTION_CONTENT = 2;
+  ATTRIBUTION_CREATE_DATE_TIME = 3;
+  ATTRIBUTION_MEDIUM = 4;
+  ATTRIBUTION_REFERER = 5;
+  ATTRIBUTION_ROUTE = 6;
+  ATTRIBUTION_SOURCE = 7;
+  ATTRIBUTION_TERM = 8;
+  ATTRIBUTION_VERSION = 9;
+}
+
+message AttributionProperty {
+  oneof _signup_initial_campaign {
+  string signup_initial_campaign = 1;
+  }
+  oneof _signup_initial_content {
+  string signup_initial_content = 2;
+  }
+  oneof _signup_initial_create_date_time {
+  .google.protobuf.Timestamp signup_initial_create_date_time = 3;
+  }
+  oneof _signup_initial_medium {
+  string signup_initial_medium = 4;
+  }
+  oneof _signup_initial_referer {
+  string signup_initial_referer = 5;
+  }
+  oneof _signup_initial_route {
+  string signup_initial_route = 6;
+  }
+  oneof _signup_initial_source {
+  string signup_initial_source = 7;
+  }
+  oneof _signup_initial_term {
+  string signup_initial_term = 8;
+  }
+  oneof _signup_initial_version {
+  string signup_initial_version = 9;
+  }
+}

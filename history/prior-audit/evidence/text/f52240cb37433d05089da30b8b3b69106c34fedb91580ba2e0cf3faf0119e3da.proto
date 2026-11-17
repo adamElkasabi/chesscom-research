@@ -1,0 +1,15 @@
+// source: chesscom/user_properties/v1/properties_skills.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum SkillsPropertyDefinition {
+  SKILLS_PROPERTY_DEFINITION_UNSPECIFIED = 0;
+  SKILLS_PROPERTY_DEFINITION_UNLOCKED_SKILLS = 1;
+  SKILLS_PROPERTY_DEFINITION_MASTERED_SKILLS = 2;
+}
+
+message SkillsProperty {
+  repeated string unlocked_skills = 1;
+  repeated string mastered_skills = 2;
+}

@@ -1,0 +1,72 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_static_exchange.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/square_set.proto",
+    "chesscom/explanation_engine/v1alpha/static_exchange.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureStaticExchangeRequest",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 0
+        },
+        {
+          "name": "square",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square",
+          "oneof_index": 0
+        },
+        {
+          "name": "piece_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "aggregate"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureStaticExchangeResponse",
+      "field": [
+        {
+          "name": "square_control",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.SquareSet"
+        },
+        {
+          "name": "threatening",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.StaticExchangeSquareDetails"
+        },
+        {
+          "name": "threatened_by",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.StaticExchangeSquareDetails"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

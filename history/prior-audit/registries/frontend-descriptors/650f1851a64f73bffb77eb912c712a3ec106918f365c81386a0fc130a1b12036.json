@@ -1,0 +1,74 @@
+{
+  "name": "chesscom/explanation_engine/v1/torch_search_mode.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "TorchSearchMode",
+      "field": [
+        {
+          "name": "human",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TorchSearchMode.Human",
+          "oneof_index": 0
+        },
+        {
+          "name": "multisearch",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TorchSearchMode.Multisearch",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "Human",
+          "field": [
+            {
+              "name": "disable_maia",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL",
+              "oneof_index": 0,
+              "proto3_optional": true
+            }
+          ],
+          "options": {},
+          "oneof_decl": [
+            {
+              "name": "_disable_maia"
+            }
+          ]
+        },
+        {
+          "name": "Multisearch",
+          "field": [
+            {
+              "name": "reduce_nodes_on_successive_searches",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL",
+              "oneof_index": 0,
+              "proto3_optional": true
+            }
+          ],
+          "options": {},
+          "oneof_decl": [
+            {
+              "name": "_reduce_nodes_on_successive_searches"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "mode"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

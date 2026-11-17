@@ -1,0 +1,200 @@
+{
+  "mode": "charm-missing",
+  "started": "2026-11-15T14:21:59.675Z",
+  "tests": [
+    {
+      "feature": 70,
+      "request": {
+        "protoConfig": {
+          "id": "audit-diagnostic-only",
+          "settings": {
+            "searchLimit": {
+              "case": "depth",
+              "value": 2
+            }
+          },
+          "mode": {
+            "case": "nnmult",
+            "value": {
+              "nTopNnCandidates": 5,
+              "nn": {
+                "arch": 2,
+                "model": "m-topaz-jackdaw",
+                "rating": 1200,
+                "weight": 1,
+                "charmInputSearchDepth": 2,
+                "temperature": 1
+              }
+            }
+          }
+        }
+      },
+      "response": {
+        "nn": {
+          "key": "m-topaz-jackdaw"
+        }
+      }
+    },
+    {
+      "feature": 70,
+      "request": {
+        "protoConfig": {
+          "id": "audit-diagnostic-only",
+          "settings": {
+            "searchLimit": {
+              "case": "depth",
+              "value": 2
+            },
+            "book": {
+              "name": "beginner",
+              "moveCount": 12
+            }
+          },
+          "mode": {
+            "case": "nnmult",
+            "value": {
+              "nTopNnCandidates": 5,
+              "nn": {
+                "arch": 2,
+                "model": "m-topaz-jackdaw",
+                "rating": 1200,
+                "weight": 1,
+                "charmInputSearchDepth": 2,
+                "temperature": 1
+              }
+            }
+          }
+        }
+      },
+      "response": {
+        "book": {
+          "key": "beginner",
+          "moveCount": 12
+        },
+        "nn": {
+          "key": "m-topaz-jackdaw"
+        }
+      }
+    }
+  ],
+  "networkAttempts": [],
+  "binaries": {
+    "explanation-engine.js": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+    "explanation-engine.wasm": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373"
+  },
+  "nativeVersion": {
+    "ceeVersion": {
+      "major": 1,
+      "minor": 211,
+      "patch": 5
+    },
+    "ceeGitSha": "7a94cbd4",
+    "definitionsGitSha": "8c0f7769c299cbc1ef53ea1eed2c30495a1c3f25",
+    "uciVersion": {
+      "major": 1,
+      "minor": 130,
+      "patch": 285
+    }
+  },
+  "gamePoint": 1048582,
+  "configurationOrigin": "Synthetic diagnostic, not production bot values",
+  "error": "Error: {\"code\":\"API\",\"message\":\"API_ERROR: CEE_Run: bot_move_from_config: Global NN inference failed: failed to load charm-small model: m-topaz-jackdaw\",\"key\":\"feature_bot_move_from_config.cpp | virtual void TEP::api::BotMoveFromConfigFeature::run_impl(MessageStream &) | BotMoveFromConfig decision error\",\"source\":\"7a94cbd4 | src/features/feature_bot_move_from_config.cpp:21\",\"cee_version\":\"1.211.5\"}\n    at globalThis.postMessage (file:///var/tmp/torch-personality/runtime/probe.mjs:7:129)\n    at 12122178 (/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.js:1:73735)\n    at runEmAsmFunction (/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.js:1:64632)\n    at emscripten_asm_const_int (/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.js:1:89015)\n    at wasm://wasm/07d96dba:wasm-function[1967]:0x328857\n    at wasm://wasm/07d96dba:wasm-function[23006]:0x13e52fd\n    at wrapper (/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.js:1:66620)\n    at invoke_viii (/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.js:1:103851)\n    at wasm://wasm/07d96dba:wasm-function[1966]:0x32832a\n    at wasm://wasm/07d96dba:wasm-function[23005]:0x13e5240",
+  "elapsedSeconds": 0.967,
+  "logs": [
+    "Explanation Engine 1.130.285 (C) 2025 Chess.com, LLC",
+    "CEE wasm load: source=emscripten bytes=- attempts=- transfer=- compile=462ms engineInit=396ms total=859ms",
+    "[2026-11-15 14:22:00.584] [cee-ostream-logger] [info] CEE - API_LOG: CFoSEQgBIg0IAhD///////////8B",
+    "",
+    "[2026-11-15 14:22:00.608] [cee-ostream-logger] [info] CEE - API_LOG: CL3BARoECAEqAA==",
+    "",
+    "[2026-11-15 14:22:00.608] [cee-ostream-logger] [info] CEE - API_LOG: CJnHARIECAI6AA==",
+    "",
+    "[2026-11-15 14:22:00.609] [cee-ostream-logger] [info] CEE - API_LOG: CKDUARoGCAJCAggB",
+    "",
+    "[2026-11-15 14:22:00.611] [cee-ostream-logger] [info] CEE - API_LOG: CMzaARIECAMqAA==",
+    "",
+    "[2026-11-15 14:22:00.611] [cee-ostream-logger] [info] CEE - API_LOG: CMPcARoECAMyAA==",
+    "",
+    "[2026-11-15 14:22:00.612] [cee-ostream-logger] [info] CEE - API_LOG: CPbgARJkCAQiYAgaEP///////////wEaUQpPMkMKP1tFdmVudCAiSXNvbGF0ZWQgYXVkaXQgcHJvYmUiXQoKMS4gZTQgZTUgMi4gTmYzIE5jNiAzLiBCYjUgYTYgKhABGghKAggBGAEgAA==",
+    "",
+    "[2026-11-15 14:22:00.612] [cee-ostream-logger] [info] CEE - API_LOG: CP7mARoGCAQqAggB",
+    "",
+    "[2026-11-15 14:22:00.612] [cee-ostream-logger] [info] CEE - API_LOG: CPnnARIGCAU6AggB",
+    "",
+    "[2026-11-15 14:22:00.688] [cee-ostream-logger] [info] CEE - API_LOG: CJK8BhoGCAVCAggB",
+    "",
+    "[2026-11-15 14:22:00.688] [cee-ostream-logger] [info] CEE - API_LOG: CO3ABhIGCAYqAggB",
+    "",
+    "[2026-11-15 14:22:00.689] [cee-ostream-logger] [info] CEE - API_LOG: CPrBBhoECAYyAA==",
+    "",
+    "[2026-11-15 14:22:00.689] [cee-ostream-logger] [info] CEE - API_LOG: CM7EBhJgCAciXAhGEP///////////wEaTRpLMi4IBRIqCAISD20tdG9wYXotamFja2RhdxiwCSEAAAAAAADwPygCMQAAAAAAAPA/ChVhdWRpdC1kaWFnbm9zdGljLW9ubHkiAggC",
+    "",
+    "[2026-11-15 14:22:00.689] [cee-ostream-logger] [info] CEE - API_LOG: CIbJBhoGCAcqAggC",
+    "",
+    "[2026-11-15 14:22:00.691] [cee-ostream-logger] [info] CEE - API_LOG: CNnJBhIGCAg6AggC",
+    "",
+    "[2026-11-15 14:22:00.692] [cee-ostream-logger] [info] CEE - API_LOG: CJHZBhoGCAhCAggB",
+    "",
+    "[2026-11-15 14:22:00.692] [cee-ostream-logger] [info] CEE - API_LOG: CMbaBhIGCAkqAggC",
+    "",
+    "[2026-11-15 14:22:00.692] [cee-ostream-logger] [info] CEE - API_LOG: CM/bBhoECAkyAA==",
+    "",
+    "[2026-11-15 14:22:00.692] [cee-ostream-logger] [info] CEE - API_LOG: CPHcBhJuCAoiaghGEP///////////wEaWxpZMi4IBRIqCAISD20tdG9wYXotamFja2RhdxiwCSEAAAAAAADwPygCMQAAAAAAAPA/ChVhdWRpdC1kaWFnbm9zdGljLW9ubHkiEAgCGgwKCGJlZ2lubmVyEAw=",
+    "",
+    "[2026-11-15 14:22:00.692] [cee-ostream-logger] [info] CEE - API_LOG: CPfdBhoGCAoqAggD",
+    "",
+    "[2026-11-15 14:22:00.692] [cee-ostream-logger] [info] CEE - API_LOG: CKjeBhIGCAs6AggD",
+    "",
+    "[2026-11-15 14:22:00.694] [cee-ostream-logger] [info] CEE - API_LOG: CJfhBhoGCAtCAggB",
+    "",
+    "[2026-11-15 14:22:00.694] [cee-ostream-logger] [info] CEE - API_LOG: COzhBhIGCAwqAggD",
+    "",
+    "[2026-11-15 14:22:00.694] [cee-ostream-logger] [info] CEE - API_LOG: CJriBhoECAwyAA==",
+    "",
+    "[2026-11-15 14:22:00.694] [cee-ostream-logger] [info] CEE - API_LOG: CIPjBhJZCA0iVQg9EIaAQBpNGksyLggFEioIAhIPbS10b3Bhei1qYWNrZGF3GLAJIQAAAAAAAPA/KAIxAAAAAAAA8D8KFWF1ZGl0LWRpYWdub3N0aWMtb25seSICCAI=",
+    "",
+    "[2026-11-15 14:22:00.694] [cee-ostream-logger] [info] CEE - API_LOG: CJbkBhoGCA0qAggE",
+    "",
+    "[2026-11-15 14:22:00.694] [cee-ostream-logger] [info] CEE - API_LOG: CMrkBhIGCA46AggE",
+    "",
+    "[2026-11-15 14:22:00.708] [cee-ostream-logger] [info] CEE - [model] charm-small: key=m-topaz-jackdaw",
+    "[2026-11-15 14:22:00.708] [cee-ostream-logger] [info] CEE - API_LOG: CI/dBxoGCA5CAggB",
+    "",
+    "[2026-11-15 14:22:00.710] [cee-ostream-logger] [info] CEE - API_LOG: CP7dBxIGCA8qAggE",
+    "",
+    "[2026-11-15 14:22:00.710] [cee-ostream-logger] [info] CEE - API_LOG: COHeBxoECA8yAA==",
+    ""
+  ],
+  "decodedApiLogs": [
+    "085a12110801220d080210ffffffffffffffffff01",
+    "08bdc1011a0408012a00",
+    "0899c701120408023a00",
+    "08a0d4011a06080242020801",
+    "08ccda01120408032a00",
+    "08c3dc011a0408033200",
+    "08f6e001126408042260081a10ffffffffffffffffff011a510a4f32430a3f5b4576656e74202249736f6c617465642061756469742070726f6265225d0a0a312e20653420653520322e204e6633204e633620332e20426235206136202a10011a084a02080118012000",
+    "08fee6011a0608042a020801",
+    "08f9e701120608053a020801",
+    "0892bc061a06080542020801",
+    "08edc006120608062a020801",
+    "08fac1061a0408063200",
+    "08cec40612600807225c084610ffffffffffffffffff011a4d1a4b322e0805122a0802120f6d2d746f70617a2d6a61636b64617718b00921000000000000f03f280231000000000000f03f0a1561756469742d646961676e6f737469632d6f6e6c7922020802",
+    "0886c9061a0608072a020802",
+    "08d9c906120608083a020802",
+    "0891d9061a06080842020801",
+    "08c6da06120608092a020802",
+    "08cfdb061a0408093200",
+    "08f1dc06126e080a226a084610ffffffffffffffffff011a5b1a59322e0805122a0802120f6d2d746f70617a2d6a61636b64617718b00921000000000000f03f280231000000000000f03f0a1561756469742d646961676e6f737469632d6f6e6c79221008021a0c0a08626567696e6e6572100c",
+    "08f7dd061a06080a2a020803",
+    "08a8de061206080b3a020803",
+    "0897e1061a06080b42020801",
+    "08ece1061206080c2a020803",
+    "089ae2061a04080c3200",
+    "0883e3061259080d2255083d108680401a4d1a4b322e0805122a0802120f6d2d746f70617a2d6a61636b64617718b00921000000000000f03f280231000000000000f03f0a1561756469742d646961676e6f737469632d6f6e6c7922020802",
+    "0896e4061a06080d2a020804",
+    "08cae4061206080e3a020804",
+    "088fdd071a06080e42020801",
+    "08fedd071206080f2a020804",
+    "08e1de071a04080f3200"
+  ]
+}

@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_game_point_info.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GamePointInfoRequest {
+}
+
+message GamePointInfoResponse {
+  optional .chesscom.explanation_engine.v1.GamePointInfo game_point_info = 1;
+}

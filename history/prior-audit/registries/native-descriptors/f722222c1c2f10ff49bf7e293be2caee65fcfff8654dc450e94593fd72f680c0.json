@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/chess/v1/variant.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "Variant",
+      "value": [
+        {
+          "name": "VARIANT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "VARIANT_CHESS",
+          "number": 1
+        },
+        {
+          "name": "VARIANT_CHESS_960",
+          "number": 2
+        },
+        {
+          "name": "VARIANT_BUGHOUSE",
+          "number": 4
+        },
+        {
+          "name": "VARIANT_THREE_CHECK",
+          "number": 5
+        },
+        {
+          "name": "VARIANT_CRAZYHOUSE",
+          "number": 6
+        },
+        {
+          "name": "VARIANT_KING_OF_THE_HILL",
+          "number": 7
+        },
+        {
+          "name": "VARIANT_ODDS_CHESS",
+          "number": 8
+        },
+        {
+          "name": "VARIANT_HELP_CHESS",
+          "number": 9
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

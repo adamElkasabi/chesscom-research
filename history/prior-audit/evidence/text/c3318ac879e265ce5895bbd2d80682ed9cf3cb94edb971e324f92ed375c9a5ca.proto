@@ -1,0 +1,31 @@
+// source: chesscom/user_properties/v1/properties_league.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum LeaguePropertyDefinition {
+  LEAGUE_UNSPECIFIED = 0;
+  LEAGUE_NAME = 1;
+  LEAGUE_IMAGE_URL = 2;
+  LEAGUE_IS_IN_THE_PROMOTION_ZONE = 3;
+  PROMOTION_LEAGUE_NAME = 4;
+  PROMOTION_LEAGUE_IMAGE_URL = 5;
+}
+
+message LeagueProperty {
+  oneof _league_name {
+  string league_name = 1;
+  }
+  oneof _league_image_url {
+  string league_image_url = 2;
+  }
+  oneof _league_is_in_the_promotion_zone {
+  bool league_is_in_the_promotion_zone = 3;
+  }
+  oneof _promotion_league_name {
+  string promotion_league_name = 4;
+  }
+  oneof _promotion_league_image_url {
+  string promotion_league_image_url = 5;
+  }
+}

@@ -1,0 +1,9 @@
+// source: chesscom/api/v1/speech.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Speech {
+  optional string text = 1;
+  optional string audio_url_hash = 2;
+}

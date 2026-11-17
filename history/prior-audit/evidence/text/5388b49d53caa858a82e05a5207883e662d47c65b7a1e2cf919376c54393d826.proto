@@ -1,0 +1,8 @@
+// source: chesscom/courses/v1/course_canonical_line.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseCanonicalLine {
+  repeated string moves = 1;
+}

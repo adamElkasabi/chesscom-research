@@ -1,0 +1,282 @@
+{
+  "name": "chesscom/payments/v1/refund_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "IssueRefundRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "charge_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "amount_cents",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "context",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "cancellation_effect",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.CancellationEffect"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 3,
+          "end": 4
+        },
+        {
+          "start": 5,
+          "end": 6
+        },
+        {
+          "start": 7,
+          "end": 8
+        }
+      ],
+      "reserved_name": [
+        "actor",
+        "reason",
+        "dry_run"
+      ]
+    },
+    {
+      "name": "IssueRefundResponse",
+      "field": [
+        {
+          "name": "already_refunded",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "refunded_cents",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "action_result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        },
+        {
+          "name": "refund_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ListChargesRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "limit",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "ListChargesResponse",
+      "field": [
+        {
+          "name": "charges",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Charge"
+        }
+      ]
+    },
+    {
+      "name": "FindChargesRequest",
+      "field": [
+        {
+          "name": "adyen_psp_reference",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "google_play_order_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "apple_transaction_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "apple_order_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "chesscom_order_number",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "user_uuid",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "identifier"
+        }
+      ]
+    },
+    {
+      "name": "FindChargesResponse",
+      "field": [
+        {
+          "name": "charges",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.FoundCharge"
+        },
+        {
+          "name": "privacy_withheld",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "action_result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    },
+    {
+      "name": "ListSubscriptionsRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ListSubscriptionsResponse",
+      "field": [
+        {
+          "name": "subscriptions",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.MemberSubscription"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "RefundService",
+      "method": [
+        {
+          "name": "IssueRefund",
+          "input_type": ".chesscom.payments.v1.IssueRefundRequest",
+          "output_type": ".chesscom.payments.v1.IssueRefundResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "ListCharges",
+          "input_type": ".chesscom.payments.v1.ListChargesRequest",
+          "output_type": ".chesscom.payments.v1.ListChargesResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "FindCharges",
+          "input_type": ".chesscom.payments.v1.FindChargesRequest",
+          "output_type": ".chesscom.payments.v1.FindChargesResponse",
+          "options": {}
+        },
+        {
+          "name": "ListSubscriptions",
+          "input_type": ".chesscom.payments.v1.ListSubscriptionsRequest",
+          "output_type": ".chesscom.payments.v1.ListSubscriptionsResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/proto_options/configurator/v1/configurator_options.proto",
+  "package": "chesscom.proto_options.configurator.v1",
+  "message_type": [
+    {
+      "name": "ConfiguratorMessageOptions",
+      "field": [
+        {
+          "name": "configurable",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "configurator",
+      "extendee": ".google.protobuf.MessageOptions",
+      "number": 91000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.configurator.v1.ConfiguratorMessageOptions",
+      "json_name": "configurator",
+      "proto3_optional": true
+    }
+  ],
+  "syntax": "proto3"
+}

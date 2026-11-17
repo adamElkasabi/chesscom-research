@@ -1,0 +1,82 @@
+// source: chesscom/settings/v1/settings_gameplay.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message GameplaySetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean confirm_resign = 1;
+  .chesscom.settings.v1.SettingValue.Boolean focus_mode = 2;
+  .chesscom.settings.v1.SettingValue.Boolean auto_analysis = 3;
+  .chesscom.settings.v1.SettingValue.String allow_challenges_from = 4;
+  .chesscom.settings.v1.SettingValue.String allow_game_chat_with = 5;
+  .chesscom.settings.v1.SettingValue.Integer challenge_min_rating = 6;
+  .chesscom.settings.v1.SettingValue.Integer challenge_max_rating = 7;
+  .chesscom.settings.v1.SettingValue.Integer seek_min_rating = 8;
+  .chesscom.settings.v1.SettingValue.Integer seek_max_rating = 9;
+  .chesscom.settings.v1.SettingValue.String seek_game_type = 10;
+  .chesscom.settings.v1.SettingValue.Boolean show_timestamps = 11;
+  .chesscom.settings.v1.SettingValue.Boolean friends_can_challenge_me_no_matter_what = 12;
+  .chesscom.settings.v1.SettingValue.Boolean play_streaks = 13;
+  .chesscom.settings.v1.SettingValue.Boolean show_membership_badges = 14;
+  .chesscom.settings.v1.GameplaySetting.GameplayLiveSetting live = 15;
+  .chesscom.settings.v1.GameplaySetting.GameplayDailySetting daily = 16;
+  .chesscom.settings.v1.GameplaySetting.GameplayAnalysisSetting analysis = 17;
+  .chesscom.settings.v1.SettingValue.Boolean show_my_membership_badge = 18;
+  .chesscom.settings.v1.SettingValue.Boolean show_player_flair = 19;
+  .chesscom.settings.v1.SettingValue.String seek_time_class = 20;
+  .chesscom.settings.v1.SettingValue.Boolean voice_move = 21;
+  .chesscom.settings.v1.SettingValue.Boolean auto_save_bot_games = 22;
+  }
+  message GameplayLiveSetting {
+    oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean premoves = 1;
+  .chesscom.settings.v1.SettingValue.Boolean auto_promote_queen = 2;
+  .chesscom.settings.v1.SettingValue.Boolean play_multiple_games = 3;
+  .chesscom.settings.v1.SettingValue.Boolean auto_switch_game = 4;
+  .chesscom.settings.v1.SettingValue.Boolean auto_watch_top_game = 5;
+  .chesscom.settings.v1.SettingValue.Boolean low_time_warning = 6;
+  .chesscom.settings.v1.SettingValue.Boolean engine_evaluation = 7;
+  .chesscom.settings.v1.SettingValue.Boolean evaluation_bar = 8;
+  .chesscom.settings.v1.SettingValue.Boolean allow_offline_challenges = 9;
+  .chesscom.settings.v1.SettingValue.String allow_chat_requests_from = 10;
+  .chesscom.settings.v1.SettingValue.String challenge_alerts = 11;
+  .chesscom.settings.v1.SettingValue.String friends_alerts = 12;
+  .chesscom.settings.v1.SettingValue.String event_announcements = 13;
+  .chesscom.settings.v1.SettingValue.Boolean right_button_arrows = 14;
+  .chesscom.settings.v1.SettingValue.Boolean seek_is_rated = 15;
+  .chesscom.settings.v1.SettingValue.Integer seek_base_time_chess = 16;
+  .chesscom.settings.v1.SettingValue.Integer seek_increment_chess = 17;
+  .chesscom.settings.v1.SettingValue.Integer seek_base_time_variants = 18;
+  .chesscom.settings.v1.SettingValue.Integer seek_increment_variants = 19;
+  .chesscom.settings.v1.SettingValue.Boolean seek_filter_hide_variants = 20;
+  .chesscom.settings.v1.SettingValue.Boolean seek_filter_premium_only = 21;
+  .chesscom.settings.v1.SettingValue.Boolean seek_filter_rated_only = 22;
+  .chesscom.settings.v1.SettingValue.Boolean hide_ratings_during_the_game = 23;
+  .chesscom.settings.v1.SettingValue.String seek_time_class = 24;
+  .chesscom.settings.v1.SettingValue.Boolean confirm_move = 25;
+    }
+  }
+  message GameplayDailySetting {
+    oneof value {
+  .chesscom.settings.v1.SettingValue.String after_moving = 1;
+  .chesscom.settings.v1.SettingValue.Boolean confirm_move = 2;
+  .chesscom.settings.v1.SettingValue.Boolean auto_win_on_time = 3;
+  .chesscom.settings.v1.SettingValue.Integer max_game_count = 4;
+  .chesscom.settings.v1.SettingValue.Integer min_days_per_move = 5;
+  .chesscom.settings.v1.SettingValue.Integer max_days_per_move = 6;
+  .chesscom.settings.v1.SettingValue.Integer seek_days_per_move = 7;
+    }
+  }
+  message GameplayAnalysisSetting {
+    oneof value {
+  .chesscom.settings.v1.GameplaySetting.GameplayAnalysisSetting.EvaluationBarMode evaluation_bar_mode = 1;
+    }
+    message EvaluationBarMode {
+      oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean wdl_for_openings = 1;
+  .chesscom.settings.v1.SettingValue.Boolean tablebase_in_endgame = 2;
+      }
+    }
+  }
+}

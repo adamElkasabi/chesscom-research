@@ -1,0 +1,50 @@
+{
+  "name": "chesscom/bots/v1/bot_metadata.proto",
+  "package": "chesscom.bots.v1",
+  "message_type": [
+    {
+      "name": "BotMetadata",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating_text",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "theme_uuid",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "image_url",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_theme_uuid"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

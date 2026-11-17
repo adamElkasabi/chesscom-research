@@ -1,0 +1,923 @@
+{
+  "name": "chesscom/user_properties/v1/properties_stats_live.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "StatsLiveProperty",
+      "field": [
+        {
+          "name": "rating",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_time_class",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_move_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "unrated_game_count",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "disconnect_count",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_win_game_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_opponent_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_date",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_rating",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_rating_date",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_game_date",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_active",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_game_count",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_win_count",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_loss_count",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_draw_count",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_streak",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_win_streak",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_loss_streak",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_unrated",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "avg_opponent_rating",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_win_game",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "moves_per_game",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "adjudicated_count",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "dw_count",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_count",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_game_win_count",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_game_loss_count",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_game_draw_count",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_host_count",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_1st_place",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_2nd_place",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_3rd_place",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_host_user_count",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_withdraw_count",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_in_progress_count",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_cancel_count",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_points",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_count_total",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_points_total",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_count_previous",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_points_previous",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 41,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1018,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_rating"
+        },
+        {
+          "name": "_game_time_class"
+        },
+        {
+          "name": "_total_move_count"
+        },
+        {
+          "name": "_unrated_game_count"
+        },
+        {
+          "name": "_disconnect_count"
+        },
+        {
+          "name": "_best_win_game_id"
+        },
+        {
+          "name": "_highest_opponent_rating"
+        },
+        {
+          "name": "_last_date"
+        },
+        {
+          "name": "_highest_rating"
+        },
+        {
+          "name": "_highest_rating_date"
+        },
+        {
+          "name": "_last_game_date"
+        },
+        {
+          "name": "_is_active"
+        },
+        {
+          "name": "_total_rated_game_count"
+        },
+        {
+          "name": "_total_rated_win_count"
+        },
+        {
+          "name": "_total_rated_loss_count"
+        },
+        {
+          "name": "_total_rated_draw_count"
+        },
+        {
+          "name": "_current_streak"
+        },
+        {
+          "name": "_max_win_streak"
+        },
+        {
+          "name": "_max_loss_streak"
+        },
+        {
+          "name": "_is_unrated"
+        },
+        {
+          "name": "_avg_opponent_rating"
+        },
+        {
+          "name": "_best_win_game"
+        },
+        {
+          "name": "_moves_per_game"
+        },
+        {
+          "name": "_adjudicated_count"
+        },
+        {
+          "name": "_dw_count"
+        },
+        {
+          "name": "_tournament_count"
+        },
+        {
+          "name": "_tournament_game_win_count"
+        },
+        {
+          "name": "_tournament_game_loss_count"
+        },
+        {
+          "name": "_tournament_game_draw_count"
+        },
+        {
+          "name": "_tournament_host_count"
+        },
+        {
+          "name": "_tournament_1st_place"
+        },
+        {
+          "name": "_tournament_2nd_place"
+        },
+        {
+          "name": "_tournament_3rd_place"
+        },
+        {
+          "name": "_tournament_host_user_count"
+        },
+        {
+          "name": "_tournament_withdraw_count"
+        },
+        {
+          "name": "_tournament_in_progress_count"
+        },
+        {
+          "name": "_tournament_cancel_count"
+        },
+        {
+          "name": "_tournament_points"
+        },
+        {
+          "name": "_tournament_count_total"
+        },
+        {
+          "name": "_tournament_points_total"
+        },
+        {
+          "name": "_tournament_count_previous"
+        },
+        {
+          "name": "_tournament_points_previous"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "StatsLivePropertyDefinition",
+      "value": [
+        {
+          "name": "STATS_LIVE_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "STATS_LIVE_RATING",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_GAME_TIME_CLASS",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOTAL_MOVE_COUNT",
+          "number": 3,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_UNRATED_GAME_COUNT",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_DISCONNECT_COUNT",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_BEST_WIN_GAME_ID",
+          "number": 6,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_HIGHEST_OPPONENT_RATING",
+          "number": 7,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_LAST_DATE",
+          "number": 8,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_HIGHEST_RATING",
+          "number": 9,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_HIGHEST_RATING_DATE",
+          "number": 10,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_LAST_GAME_DATE",
+          "number": 11,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_IS_ACTIVE",
+          "number": 12,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOTAL_RATED_GAME_COUNT",
+          "number": 13,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOTAL_RATED_WIN_COUNT",
+          "number": 14,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOTAL_RATED_LOSS_COUNT",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOTAL_RATED_DRAW_COUNT",
+          "number": 16,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_CURRENT_STREAK",
+          "number": 17,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_MAX_WIN_STREAK",
+          "number": 18,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_MAX_LOSS_STREAK",
+          "number": 19,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_IS_UNRATED",
+          "number": 20,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_AVG_OPPONENT_RATING",
+          "number": 21,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_BEST_WIN_GAME",
+          "number": 22,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_MOVES_PER_GAME",
+          "number": 23,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_ADJUDICATED_COUNT",
+          "number": 24,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_DW_COUNT",
+          "number": 25,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_COUNT",
+          "number": 26,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_GAME_WIN_COUNT",
+          "number": 27,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_GAME_LOSS_COUNT",
+          "number": 28,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_GAME_DRAW_COUNT",
+          "number": 29,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_HOST_COUNT",
+          "number": 30,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_1ST_PLACE",
+          "number": 31,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_2ND_PLACE",
+          "number": 32,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_3RD_PLACE",
+          "number": 33,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_HOST_USER_COUNT",
+          "number": 34,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_WITHDRAW_COUNT",
+          "number": 35,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_IN_PROGRESS_COUNT",
+          "number": 36,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_CANCEL_COUNT",
+          "number": 37,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_POINTS",
+          "number": 38,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_COUNT_TOTAL",
+          "number": 49,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_POINTS_TOTAL",
+          "number": 40,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_COUNT_PREVIOUS",
+          "number": 41,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_LIVE_TOURNAMENT_POINTS_PREVIOUS",
+          "number": 42,
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

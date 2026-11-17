@@ -1,0 +1,17 @@
+// source: chesscom/explanation_engine/v1/punish_move.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message PunishMove {
+  oneof _arrow {
+  .chesscom.chess.v1.Arrow arrow = 1;
+  }
+  oneof _move {
+  .chesscom.chess.v1.Move move = 6;
+  }
+  optional .chesscom.engine.v1.Evaluation evaluation = 2;
+  optional .chesscom.explanation_engine.v1.Speech speech = 3;
+  optional string show_moves = 4;
+  optional string hide_moves = 5;
+}

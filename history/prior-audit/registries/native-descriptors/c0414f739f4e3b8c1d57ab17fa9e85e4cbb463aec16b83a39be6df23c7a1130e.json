@@ -1,0 +1,82 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_advanced_stats_datapoint.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/api/v1/semantic_version.proto",
+    "chesscom/stats/v1/advanced_stat_example.proto",
+    "chesscom/stats/v1/advanced_stats_datapoint.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureAdvancedStatsDatapointRequest",
+      "field": [
+        {
+          "name": "heartbeat_interval_seconds",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "ignore_missing_move_timestamps",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureAdvancedStatsDatapointResponse",
+      "field": [
+        {
+          "name": "white_advanced_stats_datapoint",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.PlayerAdvancedStatsDatapoint"
+        },
+        {
+          "name": "black_advanced_stats_datapoint",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.PlayerAdvancedStatsDatapoint"
+        },
+        {
+          "name": "is_heartbeat",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "white_stat_examples",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatExample"
+        },
+        {
+          "name": "black_stat_examples",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatExample"
+        },
+        {
+          "name": "cee_version",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_cee_version"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,234 @@
+{
+  "name": "chesscom/explanation_engine/v1/move_details.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/square.proto",
+    "chesscom/chess/v1/piece.proto",
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/game.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PieceMove",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "piece",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece"
+        }
+      ]
+    },
+    {
+      "name": "NormalMove",
+      "field": [
+        {
+          "name": "moved_piece",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceMove"
+        },
+        {
+          "name": "captured_piece",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_captured_piece"
+        }
+      ]
+    },
+    {
+      "name": "CastlingMove",
+      "field": [
+        {
+          "name": "king_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceMove"
+        },
+        {
+          "name": "rook_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceMove"
+        }
+      ]
+    },
+    {
+      "name": "PromotionMove",
+      "field": [
+        {
+          "name": "moved_piece",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceMove"
+        },
+        {
+          "name": "captured_piece",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "promoted_piece_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PromotionPieceType"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_captured_piece"
+        }
+      ]
+    },
+    {
+      "name": "EnpassantMove",
+      "field": [
+        {
+          "name": "moved_piece",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PieceMove"
+        },
+        {
+          "name": "capture_square",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "NullMove"
+    },
+    {
+      "name": "MoveDetails",
+      "field": [
+        {
+          "name": "move_string",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "time_taken_ms",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "regular_move",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.NormalMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "castling_move",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CastlingMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "promotion_move",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PromotionMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "en_passant_move",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EnpassantMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "null_move",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.NullMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "moved_color",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "full_move_number",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_result",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "kind"
+        },
+        {
+          "name": "_game_result"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

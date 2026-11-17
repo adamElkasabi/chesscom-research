@@ -1,0 +1,8 @@
+// source: chesscom/game_gateway/v1/opening_metadata.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v1;
+
+message OpeningMetadata {
+  optional string eco_family_name = 1;
+}

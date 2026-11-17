@@ -1,0 +1,44 @@
+// source: chesscom/courses/v1/move_trainer.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum MoveTrainerTrainingMode {
+  MOVE_TRAINER_TRAINING_MODE_UNSPECIFIED = 0;
+  MOVE_TRAINER_TRAINING_MODE_LEARN = 1;
+  MOVE_TRAINER_TRAINING_MODE_REVIEW = 2;
+}
+
+enum MoveTrainerTrainingResult {
+  MOVE_TRAINER_TRAINING_RESULT_UNSPECIFIED = 0;
+  MOVE_TRAINER_TRAINING_RESULT_PASS = 1;
+  MOVE_TRAINER_TRAINING_RESULT_FAILED = 2;
+}
+
+enum AccessRightMode {
+  ACCESS_RIGHT_MODE_UNSPECIFIED = 0;
+  ACCESS_RIGHT_MODE_FULL = 1;
+  ACCESS_RIGHT_MODE_PREVIEW = 2;
+}
+
+message MoveTrainer {
+  oneof _course_game_aspect {
+  .chesscom.courses_common.v1.CourseGameAspect course_game_aspect = 10;
+  }
+  oneof _coach {
+  .chesscom.courses.v1.CourseCoach coach = 11;
+  }
+  oneof _learner_player {
+  .chesscom.courses.v1.CourseLessonPlayer learner_player = 13;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional .chesscom.courses_common.v1.Picture picture = 3;
+  repeated .chesscom.courses.v1.CourseChapter chapters = 4;
+  repeated .chesscom.courses.v1.CourseAuthor authors = 5;
+  optional string slug = 6;
+  optional .chesscom.courses.v1.AccessRightMode access_right_mode = 7;
+  optional .chesscom.courses.v1.CourseType course_type = 8;
+  optional .chesscom.courses_common.v1.CourseSource course_source = 9;
+  optional .chesscom.courses.v1.CourseLessonPlayer author_player = 12;
+}

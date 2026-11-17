@@ -1,0 +1,59 @@
+{
+  "name": "chesscom/engine/v1/score.proto",
+  "package": "chesscom.engine.v1",
+  "message_type": [
+    {
+      "name": "Score",
+      "field": [
+        {
+          "name": "score",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Score"
+        },
+        {
+          "name": "depth",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "nodes",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "engine",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Engine"
+        },
+        {
+          "name": "variation",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "strength",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Strength",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_strength"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

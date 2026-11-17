@@ -1,0 +1,182 @@
+{
+  "name": "chesscom/payments/v1/product.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "Product",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sku",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "price_amount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "subscription",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Subscription",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "description",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "image",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "product_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.ProductType"
+        },
+        {
+          "name": "membership_code",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MembershipLevel",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_subscription"
+        },
+        {
+          "name": "_description"
+        },
+        {
+          "name": "_image"
+        },
+        {
+          "name": "_membership_code"
+        }
+      ]
+    },
+    {
+      "name": "ProductSummary",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "sku",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "price_amount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "subscription",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Subscription",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "description",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "image",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "product_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.ProductType",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership_code",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MembershipLevel",
+          "oneof_index": 6,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_name"
+        },
+        {
+          "name": "_price_amount"
+        },
+        {
+          "name": "_subscription"
+        },
+        {
+          "name": "_description"
+        },
+        {
+          "name": "_image"
+        },
+        {
+          "name": "_product_type"
+        },
+        {
+          "name": "_membership_code"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

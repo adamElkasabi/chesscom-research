@@ -1,0 +1,12 @@
+// source: chesscom/ratings/v2/rating.proto
+// syntax: proto3
+
+package chesscom.ratings.v2;
+
+message Rating {
+  oneof _timestamp {
+  .google.protobuf.Timestamp timestamp = 3;
+  }
+  optional uint32 value = 1;
+  optional .chesscom.api.v1.Decimal deviation = 2;
+}

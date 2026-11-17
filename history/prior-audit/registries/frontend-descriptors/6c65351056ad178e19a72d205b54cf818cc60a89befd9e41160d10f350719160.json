@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/courses/v1/reward.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "Reward",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.RewardType"
+        },
+        {
+          "name": "value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_value"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "RewardType",
+      "value": [
+        {
+          "name": "REWARD_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "REWARD_TYPE_ANY_DIAMOND_COURSE",
+          "number": 1
+        },
+        {
+          "name": "REWARD_TYPE_PAID_COURSE",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

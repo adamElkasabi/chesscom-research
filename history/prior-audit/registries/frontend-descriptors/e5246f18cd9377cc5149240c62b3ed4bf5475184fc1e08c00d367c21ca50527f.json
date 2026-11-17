@@ -1,0 +1,363 @@
+{
+  "name": "chesscom/user_properties/v1/properties_pii.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PIIProperty",
+      "field": [
+        {
+          "name": "email",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "first_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "country",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_country",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_ip_address",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_timezone",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_continent",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_city",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_region",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_latitude",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_longitude",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_emails",
+          "number": 13,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "payment_country",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "payment_country_confidence_level",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "paypal_emails",
+          "number": 16,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "phone_number",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_phone_numbers",
+          "number": 18,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "uscf_id",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "fide_id",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1002,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PIIPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_email"
+        },
+        {
+          "name": "_first_name"
+        },
+        {
+          "name": "_last_name"
+        },
+        {
+          "name": "_country"
+        },
+        {
+          "name": "_last_country"
+        },
+        {
+          "name": "_last_ip_address"
+        },
+        {
+          "name": "_last_timezone"
+        },
+        {
+          "name": "_last_continent"
+        },
+        {
+          "name": "_last_city"
+        },
+        {
+          "name": "_last_region"
+        },
+        {
+          "name": "_last_latitude"
+        },
+        {
+          "name": "_last_longitude"
+        },
+        {
+          "name": "_payment_country"
+        },
+        {
+          "name": "_payment_country_confidence_level"
+        },
+        {
+          "name": "_phone_number"
+        },
+        {
+          "name": "_uscf_id"
+        },
+        {
+          "name": "_fide_id"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PIIPropertyDefinition",
+      "value": [
+        {
+          "name": "PII_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "EMAIL",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "FIRST_NAME",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "LAST_NAME",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "COUNTRY",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "LAST_COUNTRY",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "LAST_IP_ADDRESS",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "LAST_TIMEZONE",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "LAST_CONTINENT",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "LAST_CITY",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "LAST_REGION",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "LAST_LATITUDE",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "LAST_LONGITUDE",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_EMAILS",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "PAYMENT_COUNTRY",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "PAYMENT_COUNTRY_CONFIDENCE_LEVEL",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "PAYPAL_EMAILS",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "PHONE_NUMBER",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_PHONE_NUMBERS",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "USCF_ID",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "FIDE_ID",
+          "number": 20,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

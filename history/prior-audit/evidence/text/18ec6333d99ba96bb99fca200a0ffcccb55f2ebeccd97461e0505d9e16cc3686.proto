@@ -1,0 +1,40 @@
+// source: chesscom/courses/v1/course_variation.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseVariation {
+  oneof _video_start {
+  int32 video_start = 9;
+  }
+  oneof _video_end {
+  int32 video_end = 10;
+  }
+  oneof _learning_level {
+  uint32 learning_level = 12;
+  }
+  oneof _first_learned_at {
+  .google.protobuf.Timestamp first_learned_at = 13;
+  }
+  oneof _last_reviewed_at {
+  .google.protobuf.Timestamp last_reviewed_at = 14;
+  }
+  oneof _next_review_at {
+  .google.protobuf.Timestamp next_review_at = 15;
+  }
+  oneof _preview_position {
+  .chesscom.courses.v1.CoursePosition preview_position = 17;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional .chesscom.courses.v1.CoursePosition starting_position = 3;
+  optional string move_trainer_id = 4;
+  optional string chapter_id = 5;
+  optional .chesscom.courses_common.v1.CourseVariationType type = 6;
+  optional bool is_learned = 7;
+  optional bool is_paused = 8;
+  optional .chesscom.courses.v1.VariationAccessType access_type = 11;
+  optional uint32 move_count = 16;
+  optional .chesscom.chess.v1.Color learner_color = 18;
+  optional string slug = 19;
+}

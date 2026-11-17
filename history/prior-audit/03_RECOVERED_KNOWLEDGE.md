@@ -1,0 +1,215 @@
+# Recovered knowledge — granular entry points
+
+[Master index](00_MASTER_INDEX.md)
+
+Do not substitute this map for the detailed records. Each finding includes the requested category,description,classification,evidence,URL/source references,confidence,verification status,relations and caveats. Historical documentation blocks remain complete after privacy redaction.
+
+- [All detailed findings](findings/FINDINGS_INDEX.md)
+- [Machine-readable finding ledger](audit-metadata/findings-ledger.jsonl)
+- [Schemas](registries/schemas.json)
+- [Native descriptor JSON directory](registries/native-descriptors/)
+- [Trial outcomes](registries/trials.json)
+- [Original document blocks](registries/document-blocks.json)
+
+## Curated semantic findings
+
+- [FND-18888](findings/historical-001.md#FND-18888) — Superseded v0.1.6 backup used invented classifications and rating heuristics
+- [FND-18889](findings/local_engine-001.md#FND-18889) — Legacy external UCI wrapper remains but is not the current native review pipeline
+- [FND-18890](findings/data_models-124.md#FND-18890) — Full frontend descriptors retain service metadata omitted by old rendered schemas
+- [FND-18891](findings/architecture-001.md#FND-18891) — Three different analysis pipelines must not be conflated
+- [FND-18892](findings/api_network-001.md#FND-18892) — Production Game Review WebSocket
+- [FND-18893](findings/api_network-001.md#FND-18893) — ProdServerIDLRunSearch endpoint
+- [FND-18894](findings/api_network-001.md#FND-18894) — StagingServerIDLGameReview endpoint
+- [FND-18895](findings/api_network-001.md#FND-18895) — SandboxServerIDLGameReview endpoint
+- [FND-18896](findings/api_network-001.md#FND-18896) — StagingServerIDLRunSearch endpoint
+- [FND-18897](findings/api_network-001.md#FND-18897) — NewMax endpoint
+- [FND-18898](findings/api_network-001.md#FND-18898) — StagingMax endpoint
+- [FND-18899](findings/api_network-001.md#FND-18899) — CEAC frame boundaries are WebSocket message boundaries
+- [FND-18900](findings/api_network-001.md#FND-18900) — Handshake timeout is separate from review duration
+- [FND-18901](findings/api_network-001.md#FND-18901) — Response stream is a tagged oneof
+- [FND-18902](findings/api_network-001.md#FND-18902) — Request heartbeat settings
+- [FND-18903](findings/api_network-001.md#FND-18903) — Remote run-search has a historical JSON path too
+- [FND-18904](findings/api_network-001.md#FND-18904) — Same-origin socket override is not a new public endpoint
+- [FND-18905](findings/business_logic-001.md#FND-18905) — Numeric page depths select named strength
+- [FND-18906](findings/business_logic-001.md#FND-18906) — Torch Human engine selection is feature-gated
+- [FND-18907](findings/business_logic-001.md#FND-18907) — Report-card entitlement modifies request options
+- [FND-18908](findings/business_logic-001.md#FND-18908) — Displayed Game Rating is not the WDL model
+- [FND-18909](findings/business_logic-001.md#FND-18909) — CAPS2 schema does not establish its mathematical dependency
+- [FND-18910](findings/business_logic-001.md#FND-18910) — WDL model constants preserved without conflating their role
+- [FND-18911](findings/business_logic-001.md#FND-18911) — Rating confidence-band inverse-logistic formula
+- [FND-18912](findings/data_models-124.md#FND-18912) — Compact CEE classification enum differs from legacy analysis enum
+- [FND-18913](findings/data_models-124.md#FND-18913) — MoveClassificationVersion numeric names
+- [FND-18914](findings/data_models-124.md#FND-18914) — White-point-of-view scores and board-bar pawn scores
+- [FND-18915](findings/data_models-124.md#FND-18915) — Skills hash prerequisites do not prove cryptographic security
+- [FND-18916](findings/data_models-124.md#FND-18916) — Both native and frontend metadata versions are retained
+- [FND-18917](findings/frontend-001.md#FND-18917) — Quick Analysis has a dedicated lazy client
+- [FND-18918](findings/frontend-001.md#FND-18918) — Quick Analysis binary-interface gate
+- [FND-18919](findings/frontend-001.md#FND-18919) — Quick Analysis binary search settings
+- [FND-18920](findings/frontend-001.md#FND-18920) — Legacy Quick Analysis supplies external evaluations
+- [FND-18921](findings/frontend-001.md#FND-18921) — Quick Analysis worker parallelism derives from device concurrency
+- [FND-18922](findings/api_network-001.md#FND-18922) — Brilliant verification can modify a local tally afterward
+- [FND-18923](findings/frontend-001.md#FND-18923) — Binary debug switch has initialization requirements
+- [FND-18924](findings/historical-001.md#FND-18924) — User debug-console exception did not establish an engine failure
+- [FND-18925](findings/frontend-001.md#FND-18925) — CEE asset version and SIMD selection are flag-dependent
+- [FND-18926](findings/evaluation_bar-001.md#FND-18926) — Native evaluation bar custom element
+- [FND-18927](findings/evaluation_bar-001.md#FND-18927) — Evaluation-bar event bus and manual override
+- [FND-18928](findings/evaluation_bar-001.md#FND-18928) — Evaluation-bar attributes and board readiness
+- [FND-18929](findings/evaluation_bar-001.md#FND-18929) — Evaluation-bar default settings
+- [FND-18930](findings/evaluation_bar-001.md#FND-18930) — Evaluation-bar score mapping
+- [FND-18931](findings/evaluation_bar-001.md#FND-18931) — Bot-mode assistance visibility differs by preset
+- [FND-18932](findings/evaluation_bar-001.md#FND-18932) — Unresolved bot lazy-loader predicates
+- [FND-18933](findings/local_engine-001.md#FND-18933) — CEE JS is a loader/bridge, WASM contains native machinery
+- [FND-18934](findings/local_engine-001.md#FND-18934) — Human mode requires a Torch engine
+- [FND-18935](findings/local_engine-001.md#FND-18935) — Local human request changes actual UCI command shape
+- [FND-18936](findings/local_engine-001.md#FND-18936) — Offline local Human probe completed
+- [FND-18937](findings/local_engine-001.md#FND-18937) — Offline normal control completed
+- [FND-18938](findings/local_engine-001.md#FND-18938) — Human underlying enum11 and CEAC requested enum12 are different layers
+- [FND-18939](findings/local_engine-001.md#FND-18939) — Feature29/79/54/288 do not behave interchangeably
+- [FND-18940](findings/local_engine-001.md#FND-18940) — Native mode incompatibility strings
+- [FND-18941](findings/local_engine-001.md#FND-18941) — Engine-instance options are not engine enum IDs
+- [FND-18942](findings/local_engine-001.md#FND-18942) — CEE export JS arity is uninformative about native signature
+- [FND-18943](findings/extension-001.md#FND-18943) — Main-world hook and isolated bridge have distinct responsibilities
+- [FND-18944](findings/extension-001.md#FND-18944) — Quota launch checks are canCreate and locked, not just unlimited review
+- [FND-18945](findings/extension-001.md#FND-18945) — WebSocket brand-check regression is explicit
+- [FND-18946](findings/extension-001.md#FND-18946) — Only Game Review sockets loop back locally
+- [FND-18947](findings/extension-001.md#FND-18947) — Chrome runtime messaging needs base64 for binary
+- [FND-18948](findings/extension-001.md#FND-18948) — Offscreen host dials out to avoid lost initial ports
+- [FND-18949](findings/extension-001.md#FND-18949) — Service-worker keepalive and computation progress are separate
+- [FND-18950](findings/extension-001.md#FND-18950) — CEE API client serializes no-request-ID calls
+- [FND-18951](findings/extension-001.md#FND-18951) — Native review adapter merges CEAC search settings
+- [FND-18952](findings/extension-001.md#FND-18952) — Legacy effectiveRating alias is transparent, not verified V2 prediction
+- [FND-18953](findings/extension-001.md#FND-18953) — Native speech hashes and arrows survive the adapter
+- [FND-18954](findings/extension-001.md#FND-18954) — Manifest permissions and CSP belong to extension, not website
+- [FND-18955](findings/extension-001.md#FND-18955) — Update ZIPs are overlays, not standalone installers
+- [FND-18956](findings/extension-001.md#FND-18956) — Hook VERSION0.1.6 is retained with manifest0.1.9
+- [FND-18957](findings/progress-001.md#FND-18957) — Original coarse progress was0/2/100, not a hidden-card regression
+- [FND-18958](findings/progress-001.md#FND-18958) — v0.1.9 progress uses real local successful-duration samples
+- [FND-18959](findings/progress-001.md#FND-18959) — First matching review is calibration, not smooth estimated progress
+- [FND-18960](findings/progress-001.md#FND-18960) — Estimated percentage is time-based and caps below completion
+- [FND-18961](findings/progress-001.md#FND-18961) — History persistence excludes personal game contents
+- [FND-18962](findings/progress-001.md#FND-18962) — Progress metadata callback is presentation-only
+- [FND-18963](findings/experiments-001.md#FND-18963) — Reference target is user-supplied, not a newly fetched cloud result
+- [FND-18964](findings/experiments-001.md#FND-18964) — Working baseline is59.95828628540039/95.46183013916016
+- [FND-18965](findings/experiments-001.md#FND-18965) — Normalize=false is real engine tuning, not a formula
+- [FND-18966](findings/experiments-001.md#FND-18966) — Normalize-off plus Hash64 matches Black tallies but not all metrics
+- [FND-18967](findings/experiments-001.md#FND-18967) — Comparison loss ranks real outputs only
+- [FND-18968](findings/experiments-001.md#FND-18968) — Holdout regression prevented one-game overfitting
+- [FND-18969](findings/experiments-001.md#FND-18969) — Full local Human evaluation experiment completed21points
+- [FND-18970](findings/experiments-001.md#FND-18970) — Matched preload control differs from direct production baseline
+- [FND-18971](findings/experiments-001.md#FND-18971) — Only three per-move labels changed in local human comparison
+- [FND-18972](findings/experiments-001.md#FND-18972) — 53/61 complete-result sweep count is a historical phase boundary
+- [FND-18973](findings/experiments-001.md#FND-18973) — Parallel OOM attempts are not valid numerical trials
+- [FND-18974](findings/experiments-001.md#FND-18974) — Timeouts do not establish unsupported modes
+- [FND-18975](findings/infrastructure-001.md#FND-18975) — Asset probe status206was a deliberate byte-range request
+- [FND-18976](findings/infrastructure-001.md#FND-18976) — Torch multipart loader explains some guessed-path404s
+- [FND-18977](findings/infrastructure-001.md#FND-18977) — Dependency delivery is versioned and hashed
+- [FND-18978](findings/infrastructure-001.md#FND-18978) — Frontend libraries do not identify the backend
+- [FND-18979](findings/external_services-001.md#FND-18979) — Third-party integrations are declared in saved public page assets
+- [FND-18980](findings/security-001.md#FND-18980) — Local entitlement changes do not prove a production authorization vulnerability
+- [FND-18981](findings/security-001.md#FND-18981) — Passive source metadata is not a security-header assessment
+- [FND-18982](findings/historical-001.md#FND-18982) — Audio-confirmation evidence supersedes old release-note unknown
+- [FND-18983](findings/historical-001.md#FND-18983) — Original REA analysis cannot be independently re-opened
+- [FND-18984](findings/historical-001.md#FND-18984) — User target corrections are authoritative for comparisons
+- [FND-18985](findings/historical-001.md#FND-18985) — Coach-model and callback failures must not be reinterpreted as exhaustive absence
+- [FND-19030](findings/native_options-001.md#FND-19030) — Advertised UCI LogFD
+- [FND-19031](findings/native_options-001.md#FND-19031) — Advertised UCI IllegalMoveExplanationMode
+- [FND-19032](findings/native_options-001.md#FND-19032) — Advertised UCI ForceDisableInternalEngineSearches
+- [FND-19033](findings/native_options-001.md#FND-19033) — Advertised UCI PlayVsCoachRetryMissesEnabled
+- [FND-19034](findings/native_options-001.md#FND-19034) — Advertised UCI GameFinishedAtMs
+- [FND-19035](findings/native_options-001.md#FND-19035) — Advertised UCI Threads
+- [FND-19036](findings/native_options-001.md#FND-19036) — Advertised UCI UsePersonalizedGameOverModal
+- [FND-19037](findings/native_options-001.md#FND-19037) — Advertised UCI CoachAssetsV2
+- [FND-19038](findings/native_options-001.md#FND-19038) — Advertised UCI BasicVariationThemes
+- [FND-19039](findings/native_options-001.md#FND-19039) — Advertised UCI CoachTextId
+- [FND-19040](findings/native_options-001.md#FND-19040) — Advertised UCI UseOpposingCoachSpeech
+- [FND-19041](findings/native_options-001.md#FND-19041) — Advertised UCI NullMoveRepresentation
+- [FND-19042](findings/native_options-001.md#FND-19042) — Advertised UCI BotName
+- [FND-19043](findings/native_options-001.md#FND-19043) — Advertised UCI IsRated
+- [FND-19044](findings/native_options-001.md#FND-19044) — Advertised UCI Chess960
+- [FND-19045](findings/native_options-001.md#FND-19045) — Advertised UCI ChesscomGameId
+- [FND-19046](findings/native_options-001.md#FND-19046) — Advertised UCI UseRatingRanges
+- [FND-19047](findings/native_options-001.md#FND-19047) — Advertised UCI BlackChesscomUserId
+- [FND-19048](findings/native_options-001.md#FND-19048) — Advertised UCI SerializeSpeechDetails
+- [FND-19049](findings/native_options-001.md#FND-19049) — Advertised UCI WhiteChesscomUserId
+- [FND-19050](findings/native_options-001.md#FND-19050) — Advertised UCI ForgivingClassificationsElo
+- [FND-19051](findings/native_options-001.md#FND-19051) — Advertised UCI TimeControl
+- [FND-19052](findings/native_options-001.md#FND-19052) — Advertised UCI HandleNullMoveContinuations
+- [FND-19053](findings/native_options-001.md#FND-19053) — Advertised UCI Termination
+- [FND-19054](findings/native_options-001.md#FND-19054) — Advertised UCI ChesscomGameMetadataPb
+- [FND-19055](findings/native_options-001.md#FND-19055) — Advertised UCI UserColor
+- [FND-19056](findings/native_options-001.md#FND-19056) — Advertised UCI HumanPlaysBlack
+- [FND-19057](findings/native_options-001.md#FND-19057) — Advertised UCI LogFile
+- [FND-19058](findings/native_options-001.md#FND-19058) — Advertised UCI NewSpeech
+- [FND-19059](findings/native_options-001.md#FND-19059) — Advertised UCI WhiteChesscomUsername
+- [FND-19060](findings/native_options-001.md#FND-19060) — Advertised UCI Strength
+- [FND-19061](findings/native_options-001.md#FND-19061) — Advertised UCI SuppressBrilliantSpeech
+- [FND-19062](findings/native_options-001.md#FND-19062) — Advertised UCI SpeechV2
+- [FND-19063](findings/native_options-001.md#FND-19063) — Advertised UCI BotChatPrioritizePlayerMovePercent
+- [FND-19064](findings/native_options-001.md#FND-19064) — Advertised UCI BotChatPrioritizePlayerMove
+- [FND-19065](findings/native_options-001.md#FND-19065) — Advertised UCI GamePhaseV2
+- [FND-19066](findings/native_options-001.md#FND-19066) — Advertised UCI ScoreWhiteToMove
+- [FND-19067](findings/native_options-001.md#FND-19067) — Advertised UCI DefaultNumNullMoveVariations
+- [FND-19068](findings/native_options-001.md#FND-19068) — Advertised UCI PrintCoachTags
+- [FND-19069](findings/native_options-001.md#FND-19069) — Advertised UCI SerializeLikeCEACV3
+- [FND-19070](findings/native_options-001.md#FND-19070) — Advertised UCI SpeechV3
+- [FND-19071](findings/native_options-001.md#FND-19071) — Advertised UCI WhiteElo
+- [FND-19072](findings/native_options-001.md#FND-19072) — Advertised UCI DoProgressUpdates
+- [FND-19073](findings/native_options-001.md#FND-19073) — Advertised UCI BotChatOnlyAfterBotMove
+- [FND-19074](findings/native_options-001.md#FND-19074) — Advertised UCI AllowTrickyClassification
+- [FND-19075](findings/native_options-001.md#FND-19075) — Advertised UCI ClassificationV3
+- [FND-19076](findings/native_options-001.md#FND-19076) — Advertised UCI SerializeEvals
+- [FND-19077](findings/native_options-001.md#FND-19077) — Advertised UCI SerializeLikeCEAC
+- [FND-19078](findings/native_options-001.md#FND-19078) — Advertised UCI AutoDetectTermination
+- [FND-19079](findings/native_options-001.md#FND-19079) — Advertised UCI SerializeSkills
+- [FND-19080](findings/native_options-001.md#FND-19080) — Advertised UCI ServeCommandV2
+- [FND-19081](findings/native_options-001.md#FND-19081) — Advertised UCI Coach
+- [FND-19082](findings/native_options-001.md#FND-19082) — Advertised UCI BlackElo
+- [FND-19083](findings/native_options-001.md#FND-19083) — Advertised UCI SerializeBoardEvents
+- [FND-19084](findings/native_options-001.md#FND-19084) — Advertised UCI Engine
+- [FND-19085](findings/native_options-001.md#FND-19085) — Advertised UCI PersonalSpeechForOpponentMoves
+- [FND-19086](findings/native_options-001.md#FND-19086) — Advertised UCI HandleNullMoveContinuationsDepth
+- [FND-19087](findings/native_options-001.md#FND-19087) — Advertised UCI EloSensitivePD
+- [FND-19088](findings/native_options-001.md#FND-19088) — Advertised UCI HandleContinuationsDepth
+- [FND-19089](findings/native_options-001.md#FND-19089) — Advertised UCI GetThemes
+- [FND-19090](findings/native_options-001.md#FND-19090) — Advertised UCI TestMode
+- [FND-19091](findings/native_options-001.md#FND-19091) — Advertised UCI EvalSourceEngine
+- [FND-19092](findings/native_options-001.md#FND-19092) — Advertised UCI AllowBoardEventsWithoutSpeech
+- [FND-19093](findings/native_options-001.md#FND-19093) — Advertised UCI HandleNullMoveContinuationsNodes
+- [FND-19094](findings/native_options-001.md#FND-19094) — Advertised UCI UseImmediateStop
+- [FND-19095](findings/native_options-001.md#FND-19095) — Advertised UCI IgnoreStopCommand
+- [FND-19096](findings/native_options-001.md#FND-19096) — Advertised UCI HandleContinuationsNodes
+- [FND-19097](findings/native_options-001.md#FND-19097) — Advertised UCI BlackChesscomUsername
+- [FND-19098](findings/native_options-001.md#FND-19098) — Advertised UCI HandleCharmInferences
+- [FND-19099](findings/native_options-001.md#FND-19099) — Advertised UCI HandleContinuationsTimeMs
+- [FND-19100](findings/native_options-001.md#FND-19100) — Advertised UCI CoachLocale
+- [FND-19101](findings/native_options-001.md#FND-19101) — Advertised UCI DefaultNumVariations
+- [FND-19102](findings/native_options-001.md#FND-19102) — Advertised UCI PlayVsCoachFlipBoardEnabled
+- [FND-19103](findings/native_options-001.md#FND-19103) — Advertised UCI GameStartedAtMs
+- [FND-19104](findings/native_options-001.md#FND-19104) — Advertised UCI UseExplainSpeechType
+- [FND-19105](findings/native_options-001.md#FND-19105) — Advertised UCI HandleContinuations
+- [FND-19106](findings/native_options-001.md#FND-19106) — Advertised UCI Language
+- [FND-19107](findings/native_options-001.md#FND-19107) — Advertised UCI PgnHeadersJson
+- [FND-19108](findings/native_options-001.md#FND-19108) — Advertised UCI HandleNullMoveContinuationsTimeMs
+- [FND-19109](findings/native_options-001.md#FND-19109) — Advertised UCI UseDeclarativePositionCommand
+- [FND-19110](findings/native_options-001.md#FND-19110) — Advertised UCI BadKeyMomentsNeedMaterialOrMate
+- [FND-19111](findings/native_options-001.md#FND-19111) — Advertised UCI Result
+- [FND-19112](findings/native_options-001.md#FND-19112) — Advertised UCI InsightsTags
+- [FND-19113](findings/native_options-001.md#FND-19113) — Advertised UCI ClearBetweenSearches
+- [FND-19114](findings/native_options-001.md#FND-19114) — Advertised UCI ClearHash
+- [FND-19115](findings/native_options-001.md#FND-19115) — Advertised UCI HardSoftNodeFactor
+- [FND-19116](findings/native_options-001.md#FND-19116) — Advertised UCI Hash
+- [FND-19117](findings/native_options-001.md#FND-19117) — Advertised UCI Minimal
+- [FND-19118](findings/native_options-001.md#FND-19118) — Advertised UCI MoveOverhead
+- [FND-19119](findings/native_options-001.md#FND-19119) — Advertised UCI MultiPV
+- [FND-19120](findings/native_options-001.md#FND-19120) — Advertised UCI NodeFudging
+- [FND-19121](findings/native_options-001.md#FND-19121) — Advertised UCI Normalize
+- [FND-19122](findings/native_options-001.md#FND-19122) — Advertised UCI Ponder
+- [FND-19123](findings/native_options-001.md#FND-19123) — Advertised UCI SilenceUCI
+- [FND-19124](findings/native_options-001.md#FND-19124) — Advertised UCI Syzygy50MoveRule
+- [FND-19125](findings/native_options-001.md#FND-19125) — Advertised UCI SyzygyDTZFiltering
+- [FND-19126](findings/native_options-001.md#FND-19126) — Advertised UCI SyzygyPath
+- [FND-19127](findings/native_options-001.md#FND-19127) — Advertised UCI SyzygyProbeDepth
+- [FND-19128](findings/native_options-001.md#FND-19128) — Advertised UCI SyzygyProbeLimit
+- [FND-19129](findings/native_options-001.md#FND-19129) — Advertised UCI Threads
+- [FND-19130](findings/native_options-002.md#FND-19130) — Advertised UCI UCI_Chess960
+- [FND-19131](findings/native_options-002.md#FND-19131) — Advertised UCI UseSoftNodes

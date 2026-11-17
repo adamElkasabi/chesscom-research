@@ -1,0 +1,301 @@
+{
+  "name": "chesscom/payments/v1/subscription_admin.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "PaidOrderBasis",
+      "field": [
+        {
+          "name": "charge_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "PartnerMembershipBasis",
+      "field": [
+        {
+          "name": "partner",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MembershipPartner"
+        },
+        {
+          "name": "charge_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "revolut_code",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "reference"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CancelSubscriptionResult",
+      "value": [
+        {
+          "name": "CANCEL_SUBSCRIPTION_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CANCEL_SUBSCRIPTION_RESULT_CANCELLED",
+          "number": 1
+        },
+        {
+          "name": "CANCEL_SUBSCRIPTION_RESULT_ALREADY_CANCELLED",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "SubscriptionAdminRefusalReason",
+      "value": [
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_NO_ACTIVE_SUBSCRIPTION",
+          "number": 1
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_STORE_BILLED_APPLE",
+          "number": 2
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_SUBSCRIPTION_CANCELLED",
+          "number": 3
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_NOT_EXTENDABLE",
+          "number": 4
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_RECENTLY_EXTENDED",
+          "number": 5
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_SAME_ACCOUNT",
+          "number": 6
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_TARGET_HAS_SUBSCRIPTION",
+          "number": 7
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_HUMAN_CONFIRMATION_REQUIRED",
+          "number": 8
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_SUBSCRIPTION_MISMATCH",
+          "number": 9
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_VERIFICATION_REQUIRED",
+          "number": 10
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_NOT_ELIGIBLE",
+          "number": 11
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_ALREADY_GRANTED",
+          "number": 12
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_ORDER_NOT_PAID",
+          "number": 13
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_PARTNER_NOT_VERIFIED",
+          "number": 14
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_MEMBER_ALREADY_ACTIVE",
+          "number": 15
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_ACCOUNT_CLOSED",
+          "number": 16
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_MEMBER_NOT_ELIGIBLE",
+          "number": 17
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_NO_ADS_OFFER_RECENTLY_GIVEN",
+          "number": 18
+        },
+        {
+          "name": "SUBSCRIPTION_ADMIN_REFUSAL_REASON_NOT_SWITCHABLE",
+          "number": 19
+        }
+      ]
+    },
+    {
+      "name": "StopRenewalByCardMatchResult",
+      "value": [
+        {
+          "name": "STOP_RENEWAL_BY_CARD_MATCH_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "STOP_RENEWAL_BY_CARD_MATCH_RESULT_RENEWAL_STOPPED",
+          "number": 1
+        },
+        {
+          "name": "STOP_RENEWAL_BY_CARD_MATCH_RESULT_NOT_RENEWING",
+          "number": 2
+        },
+        {
+          "name": "STOP_RENEWAL_BY_CARD_MATCH_RESULT_STORE_BILLED",
+          "number": 3
+        },
+        {
+          "name": "STOP_RENEWAL_BY_CARD_MATCH_RESULT_NO_MATCH",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "SwitchToMonthlyResult",
+      "value": [
+        {
+          "name": "SWITCH_TO_MONTHLY_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SWITCH_TO_MONTHLY_RESULT_SWITCHED",
+          "number": 1
+        },
+        {
+          "name": "SWITCH_TO_MONTHLY_RESULT_SWITCH_PENDING_REFUND",
+          "number": 2
+        },
+        {
+          "name": "SWITCH_TO_MONTHLY_RESULT_REFUNDED_NOT_SWITCHED",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "MonthlySwitchIneligibility",
+      "value": [
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_NO_ACTIVE_SUBSCRIPTION",
+          "number": 1
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_NOT_A_PAID_SUBSCRIPTION",
+          "number": 2
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_TRIAL_SUBSCRIPTION",
+          "number": 3
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_OPENING_OFFER_SUBSCRIPTION",
+          "number": 4
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_MISSING_ORDER_ITEM",
+          "number": 5
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_UNSUPPORTED_GATEWAY",
+          "number": 6
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_GROUP_MEMBERSHIP_NOT_SUPPORTED",
+          "number": 7
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_NOT_A_YEARLY_PLAN",
+          "number": 8
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_SUBSCRIPTION_CANNOT_BE_REACTIVATED",
+          "number": 9
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_MISSING_EXPIRY_DATE",
+          "number": 10
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_SUBSCRIPTION_EXPIRED",
+          "number": 11
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_MONTHLY_EQUIVALENT_NOT_FOUND",
+          "number": 12
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_MONTHLY_PRICE_UNAVAILABLE",
+          "number": 13
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_ORDER_ALREADY_REFUNDED",
+          "number": 14
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_PAID_ORDER_NOT_FOUND",
+          "number": 15
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_TERM_LENGTH_UNKNOWN",
+          "number": 16
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_GIFT_NOT_SUPPORTED",
+          "number": 17
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_CURRENCY_MISMATCH",
+          "number": 18
+        },
+        {
+          "name": "MONTHLY_SWITCH_INELIGIBILITY_MANUAL_REFUND_REQUIRED",
+          "number": 19
+        }
+      ]
+    },
+    {
+      "name": "MembershipPartner",
+      "value": [
+        {
+          "name": "MEMBERSHIP_PARTNER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MEMBERSHIP_PARTNER_REVOLUT",
+          "number": 1
+        },
+        {
+          "name": "MEMBERSHIP_PARTNER_UNIDAYS",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

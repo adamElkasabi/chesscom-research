@@ -1,0 +1,31 @@
+// source: chesscom/explanation_engine/v1/move_classification.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum MoveClassification {
+  MOVE_CLASSIFICATION_UNSPECIFIED = 0;
+  MOVE_CLASSIFICATION_BOOK = 1;
+  MOVE_CLASSIFICATION_BRILLIANT = 2;
+  MOVE_CLASSIFICATION_GREAT_FIND = 3;
+  MOVE_CLASSIFICATION_BEST = 4;
+  MOVE_CLASSIFICATION_EXCELLENT = 5;
+  MOVE_CLASSIFICATION_GOOD = 6;
+  MOVE_CLASSIFICATION_INACCURACY = 7;
+  MOVE_CLASSIFICATION_MISTAKE = 8;
+  MOVE_CLASSIFICATION_BLUNDER = 9;
+  MOVE_CLASSIFICATION_MISSED = 10;
+  MOVE_CLASSIFICATION_FORCED = 11;
+  MOVE_CLASSIFICATION_TRICKY = 20;
+}
+
+enum MoveClassificationVersion {
+  MOVE_CLASSIFICATION_VERSION_UNSPECIFIED = 0;
+  MOVE_CLASSIFICATION_VERSION_V2 = 1;
+  MOVE_CLASSIFICATION_VERSION_V3 = 2;
+}
+
+message EvalClassification {
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional .chesscom.engine.v1.Evaluation evaluation = 2;
+}

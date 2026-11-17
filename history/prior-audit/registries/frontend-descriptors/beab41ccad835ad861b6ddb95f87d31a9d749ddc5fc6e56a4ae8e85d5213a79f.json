@@ -1,0 +1,965 @@
+{
+  "name": "chesscom/explanation_engine/v1/puzzle_gen.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "PuzzleGen",
+      "field": [
+        {
+          "name": "puzzle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Puzzle",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_game_state",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState"
+        },
+        {
+          "name": "mode",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGenMode"
+        },
+        {
+          "name": "cee_version",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion"
+        },
+        {
+          "name": "puzzle_quality_score",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_puzzle"
+        }
+      ]
+    },
+    {
+      "name": "Puzzle",
+      "field": [
+        {
+          "name": "annotated_puzzle_pgn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "initial_fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "puzzle_moves",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleMove"
+        },
+        {
+          "name": "puzzle_themes",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleTheme"
+        },
+        {
+          "name": "puzzle_goal",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleGoal",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_phase",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "origin_game_metadata",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_goal_speech",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SpeechForLocale"
+        },
+        {
+          "name": "initial_position",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Position"
+        },
+        {
+          "name": "puzzle_result",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleResult"
+        },
+        {
+          "name": "origin_game_ply",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_puzzle_goal"
+        },
+        {
+          "name": "_origin_game_metadata"
+        },
+        {
+          "name": "_origin_game_ply"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleMove",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "puzzle_hint_speech",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SpeechForLocale"
+        },
+        {
+          "name": "legal_alternate_moves",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleResult",
+      "field": [
+        {
+          "name": "winning_result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleWinningResult",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleGoal",
+      "field": [
+        {
+          "name": "tactical_goal",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoal",
+          "oneof_index": 0
+        },
+        {
+          "name": "strategic_goal",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.StrategicGoal",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "goal_type"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleTheme",
+      "field": [
+        {
+          "name": "mate_in_1",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeMateIn1",
+          "oneof_index": 0
+        },
+        {
+          "name": "mate_in_2",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeMateIn2",
+          "oneof_index": 0
+        },
+        {
+          "name": "scholars_mate",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeScholarsMate",
+          "oneof_index": 0
+        },
+        {
+          "name": "endgame_tactics",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeEndgameTactics",
+          "oneof_index": 0
+        },
+        {
+          "name": "trapped_piece",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeTrappedPiece",
+          "oneof_index": 0
+        },
+        {
+          "name": "fork",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeFork",
+          "oneof_index": 0
+        },
+        {
+          "name": "skewer",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeSkewer",
+          "oneof_index": 0
+        },
+        {
+          "name": "hanging_piece",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeHangingPiece",
+          "oneof_index": 0
+        },
+        {
+          "name": "discovery",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeDiscovery",
+          "oneof_index": 0
+        },
+        {
+          "name": "queen_sacrifice",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeQueenSacrifice",
+          "oneof_index": 0
+        },
+        {
+          "name": "opposition",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeOpposition",
+          "oneof_index": 0
+        },
+        {
+          "name": "mate_in_3_plus",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeMateIn3Plus",
+          "oneof_index": 0
+        },
+        {
+          "name": "mating_net",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeMatingNet",
+          "oneof_index": 0
+        },
+        {
+          "name": "pawn_endgame",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemePawnEndgame",
+          "oneof_index": 0
+        },
+        {
+          "name": "promotion",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemePromotion",
+          "oneof_index": 0
+        },
+        {
+          "name": "under_promotion",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeUnderPromotion",
+          "oneof_index": 0
+        },
+        {
+          "name": "sacrifice",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeSacrifice",
+          "oneof_index": 0
+        },
+        {
+          "name": "back_rank_mate",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeBackRankMate",
+          "oneof_index": 0
+        },
+        {
+          "name": "pin",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemePin",
+          "oneof_index": 0
+        },
+        {
+          "name": "king_safety",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeKingSafety",
+          "oneof_index": 0
+        },
+        {
+          "name": "piece_play",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemePiecePlay",
+          "oneof_index": 0
+        },
+        {
+          "name": "pawn_structure",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemePawnStructure",
+          "oneof_index": 0
+        },
+        {
+          "name": "ladder_mate",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeLadderMate",
+          "oneof_index": 0
+        },
+        {
+          "name": "theme_type",
+          "number": 255,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleThemeType"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "theme"
+        }
+      ]
+    },
+    {
+      "name": "TacticalGoal",
+      "field": [
+        {
+          "name": "checkmate",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalCheckmate",
+          "oneof_index": 0
+        },
+        {
+          "name": "promotion",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalPromotion",
+          "oneof_index": 0
+        },
+        {
+          "name": "attack_the_king",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalAttackTheKing",
+          "oneof_index": 0
+        },
+        {
+          "name": "win_material",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalWinMaterial",
+          "oneof_index": 0
+        },
+        {
+          "name": "defense",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalDefense",
+          "oneof_index": 0
+        },
+        {
+          "name": "promotion_position",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalPromotionPosition",
+          "oneof_index": 0
+        },
+        {
+          "name": "distant_checkmate",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalDistantCheckmate",
+          "oneof_index": 0
+        },
+        {
+          "name": "goal_type",
+          "number": 255,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.TacticalGoalType"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "goal"
+        }
+      ]
+    },
+    {
+      "name": "StrategicGoal",
+      "field": [
+        {
+          "name": "goal_type",
+          "number": 255,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.StrategicGoalType"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TacticalGoalCheckmate",
+      "options": {}
+    },
+    {
+      "name": "TacticalGoalPromotion",
+      "options": {}
+    },
+    {
+      "name": "TacticalGoalAttackTheKing",
+      "options": {}
+    },
+    {
+      "name": "TacticalGoalDefense",
+      "options": {}
+    },
+    {
+      "name": "TacticalGoalWinMaterial",
+      "field": [
+        {
+          "name": "won_piece",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_won_piece"
+        }
+      ]
+    },
+    {
+      "name": "TacticalGoalPromotionPosition",
+      "options": {}
+    },
+    {
+      "name": "TacticalGoalDistantCheckmate",
+      "options": {}
+    },
+    {
+      "name": "PuzzleThemeMateIn1"
+    },
+    {
+      "name": "PuzzleThemeMateIn2"
+    },
+    {
+      "name": "PuzzleThemeMateIn3Plus"
+    },
+    {
+      "name": "PuzzleThemeScholarsMate"
+    },
+    {
+      "name": "PuzzleThemeEndgameTactics"
+    },
+    {
+      "name": "PuzzleThemeTrappedPiece"
+    },
+    {
+      "name": "PuzzleThemeFork"
+    },
+    {
+      "name": "PuzzleThemeSkewer"
+    },
+    {
+      "name": "PuzzleThemeHangingPiece"
+    },
+    {
+      "name": "PuzzleThemeDiscovery"
+    },
+    {
+      "name": "PuzzleThemeQueenSacrifice"
+    },
+    {
+      "name": "PuzzleThemeOpposition"
+    },
+    {
+      "name": "PuzzleThemeMatingNet"
+    },
+    {
+      "name": "PuzzleThemePawnEndgame"
+    },
+    {
+      "name": "PuzzleThemePromotion"
+    },
+    {
+      "name": "PuzzleThemeUnderPromotion"
+    },
+    {
+      "name": "PuzzleThemeSacrifice"
+    },
+    {
+      "name": "PuzzleThemeBackRankMate"
+    },
+    {
+      "name": "PuzzleThemePin"
+    },
+    {
+      "name": "PuzzleThemeKingSafety",
+      "field": [
+        {
+          "name": "subtheme_weaken",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemeKingSafetyWeaken",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "subtheme_attack",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemeKingSafetyAttack",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "subtheme_defend",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemeKingSafetyDefend",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_subtheme_weaken"
+        },
+        {
+          "name": "_subtheme_attack"
+        },
+        {
+          "name": "_subtheme_defend"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleSubthemeKingSafetyWeaken"
+    },
+    {
+      "name": "PuzzleSubthemeKingSafetyAttack"
+    },
+    {
+      "name": "PuzzleSubthemeKingSafetyDefend"
+    },
+    {
+      "name": "PuzzleThemePiecePlay",
+      "field": [
+        {
+          "name": "subtheme_activity",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemePiecePlayActivity",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "subtheme_prevention",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemePiecePlayPrevention",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "subtheme_trades",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemePiecePlayTrades",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_subtheme_activity"
+        },
+        {
+          "name": "_subtheme_prevention"
+        },
+        {
+          "name": "_subtheme_trades"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleSubthemePiecePlayActivity"
+    },
+    {
+      "name": "PuzzleSubthemePiecePlayPrevention"
+    },
+    {
+      "name": "PuzzleSubthemePiecePlayTrades"
+    },
+    {
+      "name": "PuzzleThemePawnStructure",
+      "field": [
+        {
+          "name": "subtheme_healthy",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemePawnStructureHealthy",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "subtheme_creates_weaknesses",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PuzzleSubthemePawnStructureCreatesWeaknesses",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_subtheme_healthy"
+        },
+        {
+          "name": "_subtheme_creates_weaknesses"
+        }
+      ]
+    },
+    {
+      "name": "PuzzleSubthemePawnStructureHealthy"
+    },
+    {
+      "name": "PuzzleSubthemePawnStructureCreatesWeaknesses"
+    },
+    {
+      "name": "PuzzleThemeLadderMate"
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PuzzleGenMode",
+      "value": [
+        {
+          "name": "PUZZLE_GEN_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_GEN_MODE_TACTICAL",
+          "number": 1
+        },
+        {
+          "name": "PUZZLE_GEN_MODE_STRATEGIC",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "PuzzleWinningResult",
+      "value": [
+        {
+          "name": "PUZZLE_WINNING_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_WINNING_RESULT_CHECKMATE_ON_BOARD",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "name": "TacticalGoalType",
+      "value": [
+        {
+          "name": "TACTICAL_GOAL_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_CHECKMATE",
+          "number": 1
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_PROMOTION",
+          "number": 2
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_ATTACK_THE_KING",
+          "number": 3
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_WIN_MATERIAL",
+          "number": 4
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_DEFENSE",
+          "number": 5
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_PROMOTION_POSITION",
+          "number": 6
+        },
+        {
+          "name": "TACTICAL_GOAL_TYPE_DISTANT_CHECKMATE",
+          "number": 7
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "StrategicGoalType",
+      "value": [
+        {
+          "name": "STRATEGIC_GOAL_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "STRATEGIC_GOAL_TYPE_IMPROVE_PAWNS",
+          "number": 1
+        },
+        {
+          "name": "STRATEGIC_GOAL_TYPE_WEAKEN_PAWNS",
+          "number": 2
+        },
+        {
+          "name": "STRATEGIC_GOAL_TYPE_ACTIVATE_PIECES",
+          "number": 3
+        },
+        {
+          "name": "STRATEGIC_GOAL_TYPE_RESTRICT_PIECES",
+          "number": 4
+        },
+        {
+          "name": "STRATEGIC_GOAL_TYPE_TRADE_PIECES",
+          "number": 5
+        },
+        {
+          "name": "STRATEGIC_GOAL_TYPE_ATTACK_THE_KING",
+          "number": 6
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PuzzleThemeType",
+      "value": [
+        {
+          "name": "PUZZLE_THEME_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_MATE_IN_1",
+          "number": 1
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_MATE_IN_2",
+          "number": 2
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_SCHOLARS_MATE",
+          "number": 3
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_ENDGAME_TACTICS",
+          "number": 4
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_TRAPPED_PIECE",
+          "number": 5
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_FORK",
+          "number": 6
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_SKEWER",
+          "number": 7
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_HANGING_PIECE",
+          "number": 8
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_DISCOVERY",
+          "number": 9
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_QUEEN_SACRIFICE",
+          "number": 10
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_OPPOSITION",
+          "number": 11
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_MATE_IN_3_PLUS",
+          "number": 12
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_MATING_NET",
+          "number": 13
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_PAWN_ENDGAME",
+          "number": 14
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_PROMOTION",
+          "number": 15
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_UNDER_PROMOTION",
+          "number": 16
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_SACRIFICE",
+          "number": 17
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_BACK_RANK_MATE",
+          "number": 18
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_PIN",
+          "number": 19
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_KING_SAFETY",
+          "number": 20
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_PIECE_PLAY",
+          "number": 21
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_PAWN_STRUCTURE",
+          "number": 22
+        },
+        {
+          "name": "PUZZLE_THEME_TYPE_LADDER_MATE",
+          "number": 23
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

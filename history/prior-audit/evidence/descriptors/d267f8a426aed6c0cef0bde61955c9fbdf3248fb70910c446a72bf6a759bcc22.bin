@@ -1,0 +1,6 @@
+
+Jchesscom/explanation_engine/v1/feature_get_chess960_initial_position.protochesscom.explanation_engine.v1"C
+!GetChess960InitialPositionRequest
+initial_position_index (":
+"GetChess960InitialPositionResponse
+fen_position (	bproto3

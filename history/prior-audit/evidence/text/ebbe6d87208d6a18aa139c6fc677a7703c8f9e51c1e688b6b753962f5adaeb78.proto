@@ -1,0 +1,15 @@
+// source: chesscom/user_properties/v1/properties_turnstile.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum TurnstilePropertyDefinition {
+  TURNSTILE_UNSPECIFIED = 0;
+  TURNSTILE_REGISTRATION_STATUS = 1;
+}
+
+message TurnstileProperty {
+  oneof _registration_status {
+  string registration_status = 1;
+  }
+}

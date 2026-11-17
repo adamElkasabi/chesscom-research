@@ -1,0 +1,56 @@
+{
+  "name": "chesscom/courses/v1/course_product_by_sku_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetCourseProductBySKURequest",
+      "field": [
+        {
+          "name": "sku",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "locale",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_locale"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseProductBySKUResponse",
+      "field": [
+        {
+          "name": "product",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseProduct"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "GetCourseProductBySKUService",
+      "method": [
+        {
+          "name": "GetCourseProductBySKU",
+          "input_type": ".chesscom.courses.v1.GetCourseProductBySKURequest",
+          "output_type": ".chesscom.courses.v1.GetCourseProductBySKUResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

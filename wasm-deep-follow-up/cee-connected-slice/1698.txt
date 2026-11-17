@@ -1,0 +1,640 @@
+export function original_fn_1698(a:int, b:int):int {
+  var d:int;
+  var c:int;
+  var g:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var f:int;
+  var h:int;
+  var i:int;
+  var j:int;
+  if (g_c == 2) {
+    g_d[0]:int = g_d[0]:int - 32;
+    e = g_d[0]:int;
+    a = e.a;
+    c = e.c;
+    d = e.d;
+    f = e.e;
+    h = e.f;
+    i = e.g;
+    j = e.h;
+    b = e.b;
+  }
+  e = 
+    {
+      if (g_c == 2) {
+        g_d[0]:int = g_d[0]:int - 4;
+        g = (g_d[0]:int)[0]:int;
+      }
+      if (eqz(g_c)) {
+        d = g_a;
+        c = d - 464;
+        g_a = c;
+      }
+      if (eqz(g_c) | eqz(g)) {
+        e = boundary_original_fn_22866(16);
+        0;
+        if (g_c == 1) goto B_b;
+        d = e;
+      }
+      if (eqz(g_c)) {
+        c[87]:long@4 = -9223371968135299057L;
+        c[86]:int = d;
+        d[7]:long@1 = 107669[0]:long@1;
+        d[0]:long@1 = 107662[0]:long@1;
+        d[15]:byte = 0;
+        18297676[0]:int = 0;
+        d = 18297676[0]:int;
+        18297676[0]:int = 0;
+        d = d == 1;
+      }
+      if (eqz(g_c)) {
+        if (d) goto B_o;
+        18297676[0]:int = 0;
+        d = c + 336;
+      }
+      if (eqz(g_c) | g == 1) {
+        boundary_original_fn_4(2043, d, 12157936, a);
+        1;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        d = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = d == 1;
+        if (a) goto B_o;
+        d = c[84]:int;
+        if (d) goto B_m;
+        c[91]:int = 22;
+        c[90]:int = 114487;
+        c[92]:int = 548296;
+        18297676[0]:int = 0;
+        c[24]:int = 548296;
+        c[11]:long = c[45]:long;
+        b = c + 88;
+        a = c + 284;
+      }
+      if (eqz(g_c) | g == 2) {
+        boundary_original_fn_4(634, a, 0, b);
+        2;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        d = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = d == 1;
+        if (a) goto B_j;
+        c[115]:int = 8;
+        c[114]:int = 1908;
+        c[55]:long = 3548L;
+        18297676[0]:int = 0;
+        c[101]:int = 7;
+        c[100]:int = 69571;
+        c[96]:int = 496100;
+        d = c[299]:byte;
+        a = d < 0;
+        c[105]:int = select_if(c[73]:int, d, a);
+        c[104]:int = select_if(c[72]:int, d = c + 288, a);
+        c[10]:long = c[114]:long@4;
+        c[112]:int = c + 384;
+        c[8]:simd@8 = c[55]:simd@8;
+        b = c + 80;
+        f = c - -64;
+        a = c + 372;
+      }
+      if (eqz(g_c) | g == 3) {
+        boundary_original_fn_4(118, a, b, f);
+        3;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        a = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = a == 1;
+        if (a) goto B_k;
+        if (c[299]:byte < 0) {
+          c[74]:int;
+          boundary_original_fn_22239(c[72]:int);
+        }
+        d[2]:int = (a = c[95]:int);
+        d[0]:long@4 = c[93]:long@4;
+        18297676[0]:int = 0;
+      }
+      if (eqz(g_c) | g == 4) {
+        boundary_original_fn_11(2015);
+        4;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        a = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = a == 1;
+        if (a) goto B_n;
+        12158592[0]:int = c[71]:int;
+        if (12158644[0]:ubyte == 1) {
+          if (12158607[0]:byte < 0) {
+            12158604[0]:int;
+            boundary_original_fn_22239(12158596[0]:int);
+            12158604[0]:int = 0;
+            12158596[0]:long@4 = 0L;
+          }
+          12158604[0]:int = d[2]:int;
+          12158596[0]:long@4 = d[0]:long@4;
+          c[288]:byte = 0;
+          c[299]:byte = 0;
+          a = c + 300;
+          if (12158619[0]:byte < 0) {
+            12158616[0]:int;
+            boundary_original_fn_22239(12158608[0]:int);
+            12158616[0]:int = 0;
+            12158608[0]:long@4 = 0L;
+          }
+          12158616[0]:int = a[2]:int;
+          12158608[0]:long@4 = a[0]:long@4;
+          c[300]:byte = 0;
+          c[311]:byte = 0;
+          a = c + 312;
+          if (12158631[0]:byte < 0) {
+            12158628[0]:int;
+            boundary_original_fn_22239(12158620[0]:int);
+            12158628[0]:int = 0;
+            12158620[0]:long@4 = 0L;
+          }
+          12158628[0]:int = (b = a[2]:int);
+          12158620[0]:long@4 = a[0]:long@4;
+          c[312]:byte = 0;
+          c[323]:byte = 0;
+          if (12158643[0]:byte < 0) {
+            12158640[0]:int;
+            boundary_original_fn_22239(12158632[0]:int);
+            12158640[0]:int = 0;
+            12158632[0]:long@4 = 0L;
+          }
+          12158640[0]:int = c[83]:int;
+          12158632[0]:long@4 = c[81]:long@4;
+          c[335]:byte = 0;
+          c[324]:byte = 0;
+          goto B_z;
+        }
+        12158604[0]:int = d[2]:int;
+        12158596[0]:long@4 = d[0]:long@4;
+        d[0]:long@4 = 0L;
+        d[2]:int = 0;
+        12158616[0]:int = c[77]:int;
+        12158608[0]:long@4 = c[75]:long@4;
+        12158620[0]:long@4 = c[78]:long@4;
+        12158628[0]:int = c[80]:int;
+        12158632[0]:long@4 = c[81]:long@4;
+        12158640[0]:int = c[83]:int;
+        c[75]:long@4 = 0L;
+        c[77]:int = 0;
+        c[78]:long@4 = 0L;
+        c[80]:int = 0;
+        c[83]:int = 0;
+        c[81]:long@4 = 0L;
+        12158644[0]:byte = 1;
+        label B_z:
+        if (c[323]:byte < 0) {
+          c[80]:int;
+          boundary_original_fn_22239(c[78]:int);
+        }
+        if (c[311]:byte < 0) {
+          c[77]:int;
+          boundary_original_fn_22239(c[75]:int);
+        }
+        d = 0;
+        a = c[299]:byte >= 0;
+        if (a) goto B_l;
+        c[74]:int;
+        a = c[72]:int;
+        boundary_original_fn_22239(a);
+        goto B_l;
+      }
+      label B_o:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_26(8680632, 0);
+        a = g_b;
+        goto B_h;
+      }
+      label B_n:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_26(8680632, 0);
+        a = g_b;
+        b = c + 284;
+        boundary_original_fn_762(b);
+        goto B_i;
+      }
+      label B_m:
+      if (eqz(g_c)) {
+        18297676[0]:int = 0;
+        d = d[0]:int;
+        f = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = f == 1;
+        if (a) goto B_j;
+        f = d + 8;
+        a = f == c + 344;
+      }
+      if (eqz(g_c)) {
+        if (a) goto B_ka;
+        h = c[355]:byte < 0;
+        a = d[19]:byte;
+      }
+      if (h | g_c == 2) {
+        if (eqz(g_c)) {
+          i = d[2]:int;
+          d = d[3]:int;
+          18297676[0]:int = 0;
+          j = c + 344;
+          h = select_if(i, f, f = a < 0);
+          a = select_if(d, a, f);
+        }
+        if (eqz(g_c) | g == 5) {
+          e = boundary_original_fn_5(159, j, h, a);
+          5;
+          if (g_c == 1) goto B_b;
+          a = e;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = d == 1;
+          if (a) goto B_j;
+          goto B_ka;
+        }
+      }
+      a = select_if(a, a < 0, g_c);
+      if (a | g_c == 2) {
+        if (eqz(g_c)) {
+          f = d[3]:int;
+          d = d[2]:int;
+          18297676[0]:int = 0;
+          a = c + 344;
+        }
+        if (eqz(g_c) | g == 6) {
+          e = boundary_original_fn_5(35, a, d, f);
+          6;
+          if (g_c == 1) goto B_b;
+          a = e;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = d != 1;
+          if (a) goto B_ka;
+          goto B_j;
+        }
+      }
+      if (eqz(g_c)) {
+        c[88]:int = (a = f[2]:int);
+        c[43]:long = f[0]:long@4;
+      }
+      label B_ka:
+      if (eqz(g_c)) { d = c[84]:int }
+      if (b | g_c == 2) {
+        if (eqz(g_c)) {
+          18297676[0]:int = 0;
+          boundary_original_fn_1736();
+          f = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = f == 1;
+          if (a) goto B_j;
+          18297676[0]:int = 0;
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = d == 1;
+          if (a) goto B_j;
+          c[69]:int = c[84]:int;
+          c[70]:int = (d = c[85]:int);
+          if (d) { d[1]:int = d[1]:int + 1 }
+          18297676[0]:int = 0;
+          c[13]:long = c[69]:long@4;
+          a = c + 104;
+        }
+        if (eqz(g_c) | g == 7) {
+          boundary_original_fn_8(2047, a);
+          7;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          d = 1;
+          a = a == 1;
+          if (a) goto B_j;
+          goto B_l;
+        }
+      }
+      if (eqz(g_c)) { 18297676[0]:int = 0 }
+      if (eqz(g_c) | g == 8) {
+        boundary_original_fn_8(2048, d);
+        8;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        a = 18297676[0]:int;
+        18297676[0]:int = 0;
+        d = 1;
+        a = a == 1;
+        if (a) goto B_j;
+      }
+      label B_l:
+      if (eqz(g_c)) {
+        a = c[85]:int;
+        if (eqz(a)) goto B_g;
+        a[1]:int = (f = a[1]:int) - 1;
+        if (f) goto B_g;
+        b = (a[0]:int)[2]:int;
+      }
+      if (eqz(g_c) | g == 9) {
+        call_indirect(a, b);
+        9;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c) | g == 10) {
+        boundary_original_fn_22862(a);
+        10;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) goto B_g;
+      label B_k:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_26(8680632, 0);
+        a = g_b;
+        b = c + 284;
+        boundary_original_fn_762(b);
+        goto B_i;
+      }
+      label B_j:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_26(8680632, 0);
+        a = g_b;
+      }
+      label B_i:
+      b = select_if(b, c + 336, g_c);
+      if (eqz(g_c) | g == 11) {
+        boundary_original_fn_205(b);
+        11;
+        if (g_c == 1) goto B_b;
+      }
+      label B_h:
+      if (eqz(g_c)) {
+        f = boundary_original_fn(8680632);
+        d = boundary_original_fn_3(d);
+        a = a == f;
+      }
+      if (a | g_c == 2) {
+        if (eqz(g_c)) {
+          c[35]:int = 7;
+          c[34]:int = 69571;
+          c[31]:int = 548328;
+          c[30]:int = 37;
+          c[29]:int = 2826;
+          c[33]:int = select_if(c[87]:int, a = c[355]:byte, a = a < 0);
+          c[32]:int = select_if(b = c[86]:int, f = c + 344, a);
+          a = (d[0]:int)[2]:int;
+        }
+        if (eqz(g_c) | g == 12) {
+          e = call_indirect(d, a);
+          12;
+          if (g_c == 1) goto B_b;
+          a = e;
+        }
+        if (eqz(g_c)) {
+          c[84]:int = a;
+          18297676[0]:int = 0;
+          a = c + 372;
+        }
+        if (eqz(g_c) | g == 13) {
+          boundary_original_fn_0(98, a, d);
+          13;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = a == 1;
+          if (a) goto B_tb;
+          18297676[0]:int = 0;
+          c[3]:long = c[34]:long@4;
+          c[2]:long = c[32]:long@4;
+          c[0]:long = c[29]:long@4;
+          c[2]:int = c[31]:int;
+          b = c + 24;
+          f = c + 16;
+          h = c + 336;
+          i = c + 372;
+          a = c + 144;
+        }
+        if (eqz(g_c) | g == 14) {
+          boundary_original_fn_52(2032, a, b, f, d, c, h, i);
+          14;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = d == 1;
+          if (a) goto B_sb;
+          18297676[0]:int = 0;
+          a = c + 144;
+        }
+        if (eqz(g_c) | g == 15) {
+          boundary_original_fn_8(2022, a);
+          15;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = d == 1;
+          if (a) goto B_rb;
+          boundary_original_fn_762(c + 144);
+          d = -1;
+          a = c[383]:byte < 0;
+          if (a) {
+            c[95]:int;
+            a = c[93]:int;
+            boundary_original_fn_22239(a);
+          }
+          18297676[0]:int = 0;
+        }
+        if (eqz(g_c) | g == 16) {
+          boundary_original_fn_11(6);
+          16;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          if (a != 1) goto B_g;
+          d = boundary_original_fn_9();
+          goto B_lb;
+        }
+      }
+      if (eqz(g_c)) {
+        c[55]:int = 7;
+        c[54]:int = 69571;
+        c[50]:int = 26;
+        c[49]:int = 126428;
+        a = c[355]:byte;
+        d = a < 0;
+        c[53]:int = select_if(c[87]:int, a, d);
+        c[52]:int = select_if(c[86]:int, c + 344, d);
+        c[51]:int = 548312;
+        18297676[0]:int = 0;
+        c[10]:int = 548312;
+        c[7]:long = c[54]:long@4;
+        c[4]:long = c[49]:long@4;
+        c[6]:long = c[52]:long@4;
+        b = c + 56;
+        d = c + 48;
+        f = c + 32;
+        a = c + 224;
+      }
+      if (eqz(g_c) | g == 17) {
+        boundary_original_fn_17(2033, a, b, d, f);
+        17;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        d = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = d != 1;
+      }
+      if (a | g_c == 2) {
+        if (eqz(g_c)) {
+          18297676[0]:int = 0;
+          a = c + 224;
+        }
+        if (eqz(g_c) | g == 18) {
+          boundary_original_fn_8(2022, a);
+          18;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          d = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = d == 1;
+          if (a) goto B_ob;
+          a = c + 224;
+          boundary_original_fn_762(a);
+          18297676[0]:int = 0;
+        }
+        if (eqz(g_c) | g == 19) {
+          boundary_original_fn_11(6);
+          19;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          d = -1;
+          if (a != 1) goto B_g;
+          d = boundary_original_fn_9();
+          goto B_lb;
+        }
+      }
+      if (eqz(g_c)) {
+        d = boundary_original_fn_9();
+        goto B_nb;
+      }
+      label B_tb:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_9();
+        goto B_pb;
+      }
+      label B_sb:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_9();
+        goto B_qb;
+      }
+      label B_rb:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_9();
+        a = c + 144;
+        boundary_original_fn_762(a);
+      }
+      label B_qb:
+      if (eqz(g_c)) {
+        a = c[383]:byte >= 0;
+        if (a) goto B_pb;
+        c[95]:int;
+        a = c[93]:int;
+        boundary_original_fn_22239(a);
+      }
+      label B_pb:
+      if (eqz(g_c)) { 18297676[0]:int = 0 }
+      if (eqz(g_c) | g == 20) {
+        boundary_original_fn_11(6);
+        20;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        a = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = a == 1;
+        if (a) goto B_mb;
+        goto B_lb;
+      }
+      label B_ob:
+      if (eqz(g_c)) {
+        d = boundary_original_fn_9();
+        a = c + 224;
+        boundary_original_fn_762(a);
+      }
+      label B_nb:
+      if (eqz(g_c)) { 18297676[0]:int = 0 }
+      if (eqz(g_c) | g == 21) {
+        boundary_original_fn_11(6);
+        21;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) {
+        a = 18297676[0]:int;
+        18297676[0]:int = 0;
+        a = a != 1;
+        if (a) goto B_lb;
+      }
+      label B_mb:
+      if (eqz(g_c)) { a = boundary_original_fn_1(0) }
+      if (eqz(g_c) | g == 22) {
+        boundary_original_fn_164(a);
+        22;
+        if (g_c == 1) goto B_b;
+      }
+      if (eqz(g_c)) { unreachable }
+      label B_lb:
+      if (eqz(g_c)) {
+        if (c[355]:byte < 0) {
+          c[88]:int;
+          boundary_original_fn_22239(c[86]:int);
+        }
+        boundary_original_fn_12(d);
+        unreachable;
+      }
+      label B_g:
+      if (eqz(g_c)) {
+        if (c[355]:byte < 0) {
+          c[88]:int;
+          boundary_original_fn_22239(c[86]:int);
+        }
+        g_a = c + 464;
+        return d;
+      }
+      unreachable;
+      label B_b:
+    }
+  (g_d[0]:int)[0]:int = e;
+  g_d[0]:int = g_d[0]:int + 4;
+  e = g_d[0]:int;
+  e.a = a;
+  e.b = b;
+  e.c = c;
+  e.d = d;
+  e.e = f;
+  e.f = h;
+  e.g = i;
+  e.h = j;
+  g_d[0]:int = g_d[0]:int + 32;
+  return 0;
+}

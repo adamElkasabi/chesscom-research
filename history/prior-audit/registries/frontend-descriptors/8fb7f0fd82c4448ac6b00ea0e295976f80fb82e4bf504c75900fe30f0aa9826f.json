@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/skills/v1/skill_category.proto",
+  "package": "chesscom.skills.v1",
+  "enum_type": [
+    {
+      "name": "SkillCategory",
+      "value": [
+        {
+          "name": "SKILL_CATEGORY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILL_CATEGORY_FUNDAMENTALS",
+          "number": 1
+        },
+        {
+          "name": "SKILL_CATEGORY_OPENINGS",
+          "number": 2
+        },
+        {
+          "name": "SKILL_CATEGORY_TACTICS",
+          "number": 3
+        },
+        {
+          "name": "SKILL_CATEGORY_STRATEGY",
+          "number": 4
+        },
+        {
+          "name": "SKILL_CATEGORY_ENDGAME",
+          "number": 5
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

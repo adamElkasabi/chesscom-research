@@ -1,0 +1,233 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_checkmate_type.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/location_fan.proto",
+    "chesscom/explanation_engine/v1alpha/piece_set.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureCheckmateTypeRequest"
+    },
+    {
+      "name": "InternalFeatureCheckmateTypeResponse",
+      "field": [
+        {
+          "name": "checkmate",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePosition",
+          "oneof_index": 0
+        },
+        {
+          "name": "not_checkmate",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.NotCheckmatePosition",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "position"
+        }
+      ]
+    },
+    {
+      "name": "CheckmatePosition",
+      "field": [
+        {
+          "name": "pattern",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePattern"
+        },
+        {
+          "name": "mated_king_square",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "checkers",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+        },
+        {
+          "name": "guarders",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.LocationFan"
+        },
+        {
+          "name": "blockers",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+        },
+        {
+          "name": "checker_defenders",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.LocationFan"
+        }
+      ]
+    },
+    {
+      "name": "NotCheckmatePosition"
+    },
+    {
+      "name": "CheckmatePattern",
+      "field": [
+        {
+          "name": "arabian",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternArabian",
+          "oneof_index": 0
+        },
+        {
+          "name": "anastasia",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternAnastasia",
+          "oneof_index": 0
+        },
+        {
+          "name": "two_bishops",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternTwoBishops",
+          "oneof_index": 0
+        },
+        {
+          "name": "backrank",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternBackrank",
+          "oneof_index": 0
+        },
+        {
+          "name": "smothered",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternSmothered",
+          "oneof_index": 0
+        },
+        {
+          "name": "scholar",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternScholar",
+          "oneof_index": 0
+        },
+        {
+          "name": "fools",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternFools",
+          "oneof_index": 0
+        },
+        {
+          "name": "bodens",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternBodens",
+          "oneof_index": 0
+        },
+        {
+          "name": "two_rooks",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternTwoRooks",
+          "oneof_index": 0
+        },
+        {
+          "name": "king_queen",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternKingQueen",
+          "oneof_index": 0
+        },
+        {
+          "name": "king_rook",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternKingRook",
+          "oneof_index": 0
+        },
+        {
+          "name": "unrecognized",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CheckmatePatternUnrecognized",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "pattern"
+        }
+      ]
+    },
+    {
+      "name": "CheckmatePatternArabian"
+    },
+    {
+      "name": "CheckmatePatternAnastasia"
+    },
+    {
+      "name": "CheckmatePatternTwoBishops"
+    },
+    {
+      "name": "CheckmatePatternBackrank"
+    },
+    {
+      "name": "CheckmatePatternSmothered"
+    },
+    {
+      "name": "CheckmatePatternScholar"
+    },
+    {
+      "name": "CheckmatePatternFools"
+    },
+    {
+      "name": "CheckmatePatternBodens"
+    },
+    {
+      "name": "CheckmatePatternTwoRooks"
+    },
+    {
+      "name": "CheckmatePatternKingQueen"
+    },
+    {
+      "name": "CheckmatePatternKingRook"
+    },
+    {
+      "name": "CheckmatePatternUnrecognized"
+    }
+  ],
+  "syntax": "proto3"
+}

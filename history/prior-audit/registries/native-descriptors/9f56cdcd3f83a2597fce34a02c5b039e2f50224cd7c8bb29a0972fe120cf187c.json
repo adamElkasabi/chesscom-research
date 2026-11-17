@@ -1,0 +1,21 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_generate_uuid_v1.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GenerateUuidV1Request"
+    },
+    {
+      "name": "GenerateUuidV1Response",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_load_and_set_coach.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/text_asset.proto"
+  ],
+  "message_type": [
+    {
+      "name": "LoadAndSetCoachRequest",
+      "field": [
+        {
+          "name": "text_asset",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TextAsset"
+        }
+      ]
+    },
+    {
+      "name": "LoadAndSetCoachResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

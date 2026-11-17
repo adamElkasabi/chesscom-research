@@ -1,0 +1,20 @@
+// source: chesscom/explanation_engine/v1/report_card.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GamePhaseGlyph {
+  optional .chesscom.chess.v1.GamePhase game_phase = 1;
+  optional .chesscom.explanation_engine.v1.MoveClassification glyph = 2;
+}
+
+message PlayerReportCard {
+  optional .chesscom.chess.v1.Color color = 1;
+  repeated .chesscom.explanation_engine.v1.GamePhaseGlyph glyph_by_phase = 2;
+  optional int32 effective_rating = 3;
+}
+
+message ReportCard {
+  repeated .chesscom.explanation_engine.v1.PlayerReportCard report_card_by_color = 1;
+  optional string speech = 2;
+}

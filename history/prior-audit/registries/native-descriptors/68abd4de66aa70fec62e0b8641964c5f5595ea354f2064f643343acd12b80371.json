@@ -1,0 +1,13 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_unmake_moves.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "UnmakeMovesRequest"
+    },
+    {
+      "name": "UnmakeMovesResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

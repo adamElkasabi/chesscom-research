@@ -1,0 +1,12 @@
+// source: chesscom/explanation_engine/v1/feature_set_coach.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message SetCoachRequest {
+  optional string text_id = 1;
+  optional string locale = 2;
+}
+
+message SetCoachResponse {
+}

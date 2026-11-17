@@ -1,0 +1,236 @@
+{
+  "name": "chesscom/payments/v1/product_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "GetUserActiveMembershipRequest",
+      "options": {}
+    },
+    {
+      "name": "GetUserActiveMembershipResponse",
+      "field": [
+        {
+          "name": "membership_level",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MembershipLevel"
+        },
+        {
+          "name": "product",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.Product",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "will_expire",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_lifetime",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "status_code",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.StatusCode",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "group_membership_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.GroupMembershipType",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "renewal_date",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "renewal_price",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "expiry_date",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership_description",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_gift",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_free",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_active_billing",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "disallow_cancellation_reason",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "primary_account_holder",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView",
+          "oneof_index": 12,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_product"
+        },
+        {
+          "name": "_will_expire"
+        },
+        {
+          "name": "_status_code"
+        },
+        {
+          "name": "_group_membership_type"
+        },
+        {
+          "name": "_renewal_date"
+        },
+        {
+          "name": "_renewal_price"
+        },
+        {
+          "name": "_expiry_date"
+        },
+        {
+          "name": "_membership_description"
+        },
+        {
+          "name": "_is_gift"
+        },
+        {
+          "name": "_is_free"
+        },
+        {
+          "name": "_has_active_billing"
+        },
+        {
+          "name": "_disallow_cancellation_reason"
+        },
+        {
+          "name": "_primary_account_holder"
+        }
+      ]
+    },
+    {
+      "name": "GetUserIsEligibleToRestartMembershipRequest",
+      "options": {}
+    },
+    {
+      "name": "GetUserIsEligibleToRestartMembershipResponse",
+      "field": [
+        {
+          "name": "is_eligible",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RestartMembershipRequest",
+      "options": {}
+    },
+    {
+      "name": "RestartMembershipResponse",
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "ProductService",
+      "method": [
+        {
+          "name": "GetUserActiveMembership",
+          "input_type": ".chesscom.payments.v1.GetUserActiveMembershipRequest",
+          "output_type": ".chesscom.payments.v1.GetUserActiveMembershipResponse"
+        },
+        {
+          "name": "GetUserIsEligibleToRestartMembership",
+          "input_type": ".chesscom.payments.v1.GetUserIsEligibleToRestartMembershipRequest",
+          "output_type": ".chesscom.payments.v1.GetUserIsEligibleToRestartMembershipResponse"
+        },
+        {
+          "name": "RestartMembership",
+          "input_type": ".chesscom.payments.v1.RestartMembershipRequest",
+          "output_type": ".chesscom.payments.v1.RestartMembershipResponse"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

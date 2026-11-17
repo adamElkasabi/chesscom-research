@@ -1,0 +1,105 @@
+// source: chesscom/payments/v1/group_membership_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message GenerateInvitationLinkRequest {
+}
+
+message GenerateInvitationLinkResponse {
+  optional string invitation_link = 1;
+}
+
+message CheckJoinEligibilityRequest {
+  oneof member_identifier {
+  string id = 1;
+  string email = 2;
+  }
+}
+
+message CheckJoinEligibilityResponse {
+  optional bool is_eligible = 1;
+}
+
+message InviteMemberRequest {
+  oneof invitee_identifier {
+  string id = 1;
+  string email = 2;
+  }
+}
+
+message InviteMemberResponse {
+}
+
+message RemoveMemberRequest {
+  optional string member_id = 1;
+}
+
+message RemoveMemberResponse {
+}
+
+message GetMaxSecondaryMembersRequest {
+}
+
+message GetMaxSecondaryMembersResponse {
+  optional int32 max_secondary_members = 1;
+}
+
+message GetSecondaryMembersRequest {
+}
+
+message GetSecondaryMembersResponse {
+  repeated .chesscom.user.v1.UserView secondary_members = 1;
+  repeated .chesscom.payments.v1.PendingInvitation pending_invitations = 2;
+}
+
+message LeaveGroupMembershipRequest {
+}
+
+message LeaveGroupMembershipResponse {
+}
+
+message PreviewInvitationRequest {
+  oneof _source {
+  string source = 2;
+  }
+  optional string invitation_hash = 1;
+}
+
+message PreviewInvitationResponse {
+  oneof _primary_account_holder {
+  .chesscom.user.v1.UserView primary_account_holder = 1;
+  }
+  oneof _plan_details {
+  .chesscom.payments.v1.InvitationPlanDetails plan_details = 2;
+  }
+  optional .chesscom.payments.v1.JoinEligibility eligibility = 3;
+}
+
+message JoinGroupFromInvitationRequest {
+  optional string invitation_hash = 1;
+}
+
+message JoinGroupFromInvitationResponse {
+}
+
+message ListPendingInvitationsRequest {
+}
+
+message ListPendingInvitationsResponse {
+  repeated .chesscom.payments.v1.PendingInvitationForInvitee invitations = 1;
+}
+
+message DeclineInvitationRequest {
+  optional string invitation_hash = 1;
+}
+
+message DeclineInvitationResponse {
+}
+
+message RevokeInvitationRequest {
+  optional string invitation_hash = 1;
+}
+
+message RevokeInvitationResponse {
+}

@@ -1,0 +1,7 @@
+flowchart LR
+ JS[Emscripten glue] --> Ex[CEE exported functions]
+ Ex --> Native[Native function bodies]
+ Native --> Imports[env and wasi imports]
+ Imports --> JS
+ Native --> Mem[Declared linear memory]
+ JS --> Mem

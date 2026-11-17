@@ -1,0 +1,15 @@
+// source: chesscom/payments/v1/discount.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message Discount {
+  oneof _incentive_offer_id {
+  int32 incentive_offer_id = 3;
+  }
+  oneof _offer_id {
+  string offer_id = 4;
+  }
+  optional .chesscom.api.v1.Money discount_amount = 1;
+  optional .chesscom.api.v1.Money discount_amount_with_taxes = 2;
+}

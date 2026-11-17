@@ -1,0 +1,83 @@
+// source: chesscom/user_properties/v1/properties_predictive.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum PredictivePropertyDefinition {
+  PREDICTIVE_PROPERTY_DEFINITION_UNSPECIFIED = 0;
+  PREDICTIVE_PROPERTY_DEFINITION_CHURN_RISK_30D = 1;
+  PREDICTIVE_PROPERTY_DEFINITION_SCORES_UPDATED_AT = 2;
+  PREDICTIVE_PROPERTY_DEFINITION_CHURN_RISK_30D_GENERATED_AT = 3;
+  PREDICTIVE_PROPERTY_DEFINITION_CHURN_RISK_30D_MODEL_VERSION = 4;
+  PREDICTIVE_PROPERTY_DEFINITION_ACTIVATION_7D = 5;
+  PREDICTIVE_PROPERTY_DEFINITION_PUZZLE_SLUMP_7D = 6;
+  PREDICTIVE_PROPERTY_DEFINITION_LESSONS_PROGRESSION_7D = 7;
+  PREDICTIVE_PROPERTY_DEFINITION_REVIEW_UPSELL_30D = 8;
+  PREDICTIVE_PROPERTY_DEFINITION_RETURN_7D = 9;
+  PREDICTIVE_PROPERTY_DEFINITION_TRIAL_START_7D = 10;
+  PREDICTIVE_PROPERTY_DEFINITION_TRIAL_CONVERSION_30D = 11;
+  PREDICTIVE_PROPERTY_DEFINITION_SUBSCRIPTION_CONVERSION_30D = 12;
+  PREDICTIVE_PROPERTY_DEFINITION_ANNUAL_RENEWAL_365D = 13;
+  PREDICTIVE_PROPERTY_DEFINITION_NURR_7D = 14;
+  PREDICTIVE_PROPERTY_DEFINITION_CURR_14D = 15;
+  PREDICTIVE_PROPERTY_DEFINITION_LESSON_ADOPTION_30D = 16;
+  PREDICTIVE_PROPERTY_DEFINITION_REACTIVATION_7D = 17;
+  PREDICTIVE_PROPERTY_DEFINITION_TRIAL_PROPENSITY_SCORE = 18;
+}
+
+message PredictiveProperty {
+  oneof _churn_risk_30d {
+  double churn_risk_30d = 1;
+  }
+  oneof _predictive_scores_updated_at {
+  .google.protobuf.Timestamp predictive_scores_updated_at = 2;
+  }
+  oneof _churn_risk_30d_generated_at {
+  .google.protobuf.Timestamp churn_risk_30d_generated_at = 3;
+  }
+  oneof _churn_risk_30d_model_version {
+  string churn_risk_30d_model_version = 4;
+  }
+  oneof _activation_7d {
+  double activation_7d = 5;
+  }
+  oneof _puzzle_slump_7d {
+  double puzzle_slump_7d = 6;
+  }
+  oneof _lessons_progression_7d {
+  double lessons_progression_7d = 7;
+  }
+  oneof _review_upsell_30d {
+  double review_upsell_30d = 8;
+  }
+  oneof _return_7d {
+  double return_7d = 9;
+  }
+  oneof _trial_start_7d {
+  double trial_start_7d = 10;
+  }
+  oneof _trial_conversion_30d {
+  double trial_conversion_30d = 11;
+  }
+  oneof _subscription_conversion_30d {
+  double subscription_conversion_30d = 12;
+  }
+  oneof _annual_renewal_365d {
+  double annual_renewal_365d = 13;
+  }
+  oneof _nurr_7d {
+  double nurr_7d = 14;
+  }
+  oneof _curr_14d {
+  double curr_14d = 15;
+  }
+  oneof _lesson_adoption_30d {
+  double lesson_adoption_30d = 16;
+  }
+  oneof _reactivation_7d {
+  double reactivation_7d = 17;
+  }
+  oneof _trial_propensity_score {
+  int32 trial_propensity_score = 18;
+  }
+}

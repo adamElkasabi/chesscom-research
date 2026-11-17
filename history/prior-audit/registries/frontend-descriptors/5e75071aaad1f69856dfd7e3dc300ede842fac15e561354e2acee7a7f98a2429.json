@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/support/v1/refund_ineligibility_reason.proto",
+  "package": "chesscom.support.v1",
+  "enum_type": [
+    {
+      "name": "RefundIneligibilityReason",
+      "value": [
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_NO_ACTIVE_SUBSCRIPTION",
+          "number": 1
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_OUTSIDE_REFUND_WINDOW",
+          "number": 2
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_ALREADY_REFUNDED",
+          "number": 3
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_NOT_REFUNDABLE_PAYMENT_METHOD",
+          "number": 4
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_INTERNAL_ERROR",
+          "number": 5
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_ZERO_AMOUNT_CHARGE",
+          "number": 6
+        },
+        {
+          "name": "REFUND_INELIGIBILITY_REASON_NOT_CURRENT_SUBSCRIPTION_CHARGE",
+          "number": 7
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

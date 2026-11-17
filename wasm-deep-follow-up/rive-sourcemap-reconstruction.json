@@ -1,0 +1,1619 @@
+[
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/webpack/universalModuleDefinition",
+    "source_index": 0,
+    "source_content_sha256": "87c3607c5ca4522b55b96becc59df08f71df7b2946103043eed19f8699af1a56",
+    "scrubbed_content_sha256": "87c3607c5ca4522b55b96becc59df08f71df7b2946103043eed19f8699af1a56",
+    "output_path": "rive-recovered-sources/2.38.2/00-universalModuleDefinition.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/animation/index.ts",
+    "source_index": 1,
+    "source_content_sha256": "a448769118c3cc8dd2eef4cc682cd5b3b9ea0440278b6a1c0d7b09433f67e598",
+    "scrubbed_content_sha256": "a448769118c3cc8dd2eef4cc682cd5b3b9ea0440278b6a1c0d7b09433f67e598",
+    "output_path": "rive-recovered-sources/2.38.2/01-index.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/animation/Animation.ts",
+    "source_index": 2,
+    "source_content_sha256": "cc8b36d1eb5236fd0c07f03fa49ed43ab642026bc7fc7268f130982835d57bbf",
+    "scrubbed_content_sha256": "cc8b36d1eb5236fd0c07f03fa49ed43ab642026bc7fc7268f130982835d57bbf",
+    "output_path": "rive-recovered-sources/2.38.2/02-Animation.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/runtimeLoader.ts",
+    "source_index": 3,
+    "source_content_sha256": "496c868342f6e35b291064ddfc5e42553801db549e12bb8666b0f20175ae5078",
+    "scrubbed_content_sha256": "496c868342f6e35b291064ddfc5e42553801db549e12bb8666b0f20175ae5078",
+    "output_path": "rive-recovered-sources/2.38.2/03-runtimeLoader.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "setWasmUrl",
+        "offset": 4615,
+        "excerpt": "same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadRuntime();\n        } else {\n          // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The prima"
+      },
+      {
+        "pattern": "setWasmUrl",
+        "offset": 5731,
+        "excerpt": "        \"1. Check your network connection\",\n            \"2. Set a new WASM source via RuntimeLoader.setWasmUrl()\",\n            \"3. Call RuntimeLoader.awaitInstance() again\",\n          ].join(\"\\n\");\n\n          console.error(errorMessage);\n          RuntimeLoader.notifyError(new Error(errorMessage));\n        }\n      });\n  }\n\n  // Provides a runtime instance via a callback\n  publi"
+      },
+      {
+        "pattern": "setWasmUrl",
+        "offset": 6804,
+        "excerpt": "imeLoader.getInstance(resolve, reject),\n    );\n  }\n\n  // Manually sets the wasm url\n  public static setWasmUrl(url: string): void {\n    RuntimeLoader.wasmURL = url;\n  }\n\n  // Gets the current wasm url\n  public static getWasmUrl(): string {\n    return RuntimeLoader.wasmURL;\n  }\n\n  /**\n   * Sets the URL used as a fallback when the primary WASM URL fails to load.\n   * Pass `null` "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 983,
+        "excerpt": "ve.wasm`;\n\n  // Fallback WASM URL tried when the primary URL fails. Set to null to disable\n  // the fallback entirely. Defaults to pulling from the jsdelivr CDN.\n  private static wasmFallbackURL: string | null = `https://cdn.jsdelivr.net/npm/${packageData.name}@${packageData.version}/rive_fallback.wasm`;\n\n  private static wasmBinary: ArrayBuffer | null = null;\n\n  // Error callb"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 1173,
+        "excerpt": "kURL: string | null = `https://cdn.jsdelivr.net/npm/${packageData.name}@${packageData.version}/rive_fallback.wasm`;\n\n  private static wasmBinary: ArrayBuffer | null = null;\n\n  // Error callbacks enqueued from .getInstance()\n  private static errorCallbackQueue: ((error: Error) => void)[] = [];\n\n  // Class is never instantiated\n  private constructor() {}\n\n  /**\n   * When true, pe"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3701,
+        "excerpt": "ails);\n\n        // In case the primary URL fails, or the wasm was not supported, try the\n        // fallback URL (a rive_fallback.wasm compiled for older architectures).\n        // The fallback can be customised or disabled via setWasmFallbackUrl().\n        // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the pri"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3722,
+        "excerpt": " case the primary URL fails, or the wasm was not supported, try the\n        // fallback URL (a rive_fallback.wasm compiled for older architectures).\n        // The fallback can be customised or disabled via setWasmFallbackUrl().\n        // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the primary fails.\n        c"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3786,
+        "excerpt": "the\n        // fallback URL (a rive_fallback.wasm compiled for older architectures).\n        // The fallback can be customised or disabled via setWasmFallbackUrl().\n        // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the primary fails.\n        const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3957,
+        "excerpt": "  // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the primary fails.\n        const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFa"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4007,
+        "excerpt": "port and load the correct wasm file. Then use the fallback only if the primary fails.\n        const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Fai"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4096,
+        "excerpt": "     const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${f"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4161,
+        "excerpt": "onst alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the r"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4201,
+        "excerpt": "ackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n   "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4359,
+        "excerpt": "nsole.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n          // instead of re-using the same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4375,
+        "excerpt": "        `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n          // instead of re-using the same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          Runti"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4626,
+        "excerpt": "ng) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadRuntime();\n        } else {\n          // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The primary URL was "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 4800,
+        "excerpt": "      // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The primary URL was logged in the earlier warning.\n          const triedUrls = alreadyOnFallback\n            ? `the configured WASM URL or its fallback (${fallbackUrl})`\n            : attemptedU"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 5029,
+        "excerpt": "arning.\n          const triedUrls = alreadyOnFallback\n            ? `the configured WASM URL or its fallback (${fallbackUrl})`\n            : attemptedUrl;\n          const errorMessage = [\n            `Could not load Rive WASM file from ${triedUrls}.`,\n            \"Possible reasons:\",\n            \"- Network connection is down\",\n            \"- WebAssembly is not supported in this"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 5041,
+        "excerpt": "      const triedUrls = alreadyOnFallback\n            ? `the configured WASM URL or its fallback (${fallbackUrl})`\n            : attemptedUrl;\n          const errorMessage = [\n            `Could not load Rive WASM file from ${triedUrls}.`,\n            \"Possible reasons:\",\n            \"- Network connection is down\",\n            \"- WebAssembly is not supported in this environment"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7017,
+        "excerpt": "tic getWasmUrl(): string {\n    return RuntimeLoader.wasmURL;\n  }\n\n  /**\n   * Sets the URL used as a fallback when the primary WASM URL fails to load.\n   * Pass `null` to disable the fallback entirely.\n   *\n   * Defaults to pulling from the jsdelivr CDN.\n   */\n  public static setWasmFallbackUrl(url: string | null): void {\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets t"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7099,
+        "excerpt": "the URL used as a fallback when the primary WASM URL fails to load.\n   * Pass `null` to disable the fallback entirely.\n   *\n   * Defaults to pulling from the jsdelivr CDN.\n   */\n  public static setWasmFallbackUrl(url: string | null): void {\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets the current fallback wasm url (null means fallback is disabled)\n  public static get"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7308,
+        "excerpt": "Url(url: string | null): void {\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets the current fallback wasm url (null means fallback is disabled)\n  public static getWasmFallbackUrl(): string | null {\n    return RuntimeLoader.wasmFallbackURL;\n  }\n\n  // Manually sets the wasm binary or clears it with null\n  public static setWasmBinary(value: ArrayBuffer | null): void {\n    "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7338,
+        "excerpt": "{\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets the current fallback wasm url (null means fallback is disabled)\n  public static getWasmFallbackUrl(): string | null {\n    return RuntimeLoader.wasmFallbackURL;\n  }\n\n  // Manually sets the wasm binary or clears it with null\n  public static setWasmBinary(value: ArrayBuffer | null): void {\n    if ((value instanceof ArrayBuf"
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 2456,
+        "excerpt": "fMarks) performance.mark('rive:wasm-init:start');\n    rc.default({\n      // Loads Wasm bundle\n      locateFile: () => attemptedUrl,\n      ...(wasmBinary ? { wasmBinary } : {})\n    })\n      .then((rive: rc.RiveCanvas) => {\n        if (RuntimeLoader.enablePerfMarks) {\n          performance.mark('rive:wasm-init:end');\n          performance.measure('rive:wasm-init', 'rive:wasm-init"
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 4467,
+        "excerpt": " URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n          // instead of re-using the same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadRuntime();\n        } else {\n          // When alreadyOnFallback is true, wasmUR"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 1388,
+        "excerpt": "stance()\n  private static errorCallbackQueue: ((error: Error) => void)[] = [];\n\n  // Class is never instantiated\n  private constructor() {}\n\n  /**\n   * When true, performance.mark / performance.measure entries are emitted for\n   * WASM initialization.\n   */\n  public static enablePerfMarks: boolean = false;\n\n  // Rejects all pending awaitInstance() promises and resets loading st"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 3288,
+        "excerpt": "n error\",\n          type: error?.name || \"Error\",\n          // Some browsers may provide additional WebAssembly-specific details\n          wasmError:\n            error instanceof WebAssembly.CompileError ||\n            error instanceof WebAssembly.RuntimeError,\n          originalError: error,\n        };\n\n        // Log detailed error for debugging\n        console.debug(\"Rive WA"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 3367,
+        "excerpt": "y provide additional WebAssembly-specific details\n          wasmError:\n            error instanceof WebAssembly.CompileError ||\n            error instanceof WebAssembly.RuntimeError,\n          originalError: error,\n        };\n\n        // Log detailed error for debugging\n        console.debug(\"Rive WASM load error details:\", errorDetails);\n\n        // In case the primary URL fai"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 3424,
+        "excerpt": "   wasmError:\n            error instanceof WebAssembly.CompileError ||\n            error instanceof WebAssembly.RuntimeError,\n          originalError: error,\n        };\n\n        // Log detailed error for debugging\n        console.debug(\"Rive WASM load error details:\", errorDetails);\n\n        // In case the primary URL fails, or the wasm was not supported, try the\n        // fal"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 5273,
+        "excerpt": "rls}.`,\n            \"Possible reasons:\",\n            \"- Network connection is down\",\n            \"- WebAssembly is not supported in this environment\",\n            \"- The WASM file is corrupted or incompatible\",\n            \"\\nError details:\",\n            `- Type: ${errorDetails.type}`,\n            `- Message: ${errorDetails.message}`,\n            `- WebAssembly-specific error: "
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 5525,
+        "excerpt": "   `- Type: ${errorDetails.type}`,\n            `- Message: ${errorDetails.message}`,\n            `- WebAssembly-specific error: ${errorDetails.wasmError}`,\n            \"\\nTo resolve, you may need to:\",\n            \"1. Check your network connection\",\n            \"2. Set a new WASM source via RuntimeLoader.setWasmUrl()\",\n            \"3. Call RuntimeLoader.awaitInstance() again\",\n"
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 2047,
+        "excerpt": "?.(error);\n    }\n    RuntimeLoader.callBackQueue = [];\n  }\n\n  // Loads the runtime\n  private static loadRuntime(): void {\n    // Capture the URL at call time so the catch closure always refers to the\n    // URL this particular attempt used, even if wasmURL is mutated for a retry.\n    const attemptedUrl = RuntimeLoader.wasmURL;\n    const wasmBinary = RuntimeLoader.wasmBinary;\n  "
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 4664,
+        "excerpt": "eLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadRuntime();\n        } else {\n          // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The primary URL was logged in the earlier warning.\n       "
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 6245,
+        "excerpt": "ntime\n    if (!RuntimeLoader.isLoading) {\n      RuntimeLoader.isLoading = true;\n      RuntimeLoader.loadRuntime();\n    }\n    if (!RuntimeLoader.runtime) {\n      RuntimeLoader.callBackQueue.push(callback);\n      if (onError) {\n        RuntimeLoader.errorCallbackQueue.push(onError);\n      }\n    } else {\n      callback(RuntimeLoader.runtime);\n    }\n  }\n\n  // Provides a runtime ins"
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./npm/webgl2_advanced/webgl2_advanced.mjs",
+    "source_index": 4,
+    "source_content_sha256": "debbf1757597040ea3940cd9f95b154f97fa904bfb99633167732c5b90459175",
+    "scrubbed_content_sha256": "debbf1757597040ea3940cd9f95b154f97fa904bfb99633167732c5b90459175",
+    "output_path": "rive-recovered-sources/2.38.2/04-webgl2_advanced.mjs.txt",
+    "loader_evidence": [
+      {
+        "pattern": "locateFile",
+        "offset": 98409,
+        "excerpt": "th error: ${c}`), ba(c);\n    }\n  }\n  Ja ||= Ia(\"webgl2_advanced.wasm\") ? \"webgl2_advanced.wasm\" : l.locateFile ? l.locateFile(\"webgl2_advanced.wasm\", y) : y + \"webgl2_advanced.wasm\";\n  Na(b, function(c) {\n    a(c.instance);\n  }).catch(ba);\n  return {};\n}(), lc = a => (lc = Y.free)(a), Ud = a => (Ud = Y.malloc)(a);\nl._setWebImage = (a, b, c) => (l._setWebImage = Y.setWebImage)(a"
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 98424,
+        "excerpt": "), ba(c);\n    }\n  }\n  Ja ||= Ia(\"webgl2_advanced.wasm\") ? \"webgl2_advanced.wasm\" : l.locateFile ? l.locateFile(\"webgl2_advanced.wasm\", y) : y + \"webgl2_advanced.wasm\";\n  Na(b, function(c) {\n    a(c.instance);\n  }).catch(ba);\n  return {};\n}(), lc = a => (lc = Y.free)(a), Ud = a => (Ud = Y.malloc)(a);\nl._setWebImage = (a, b, c) => (l._setWebImage = Y.setWebImage)(a, b, c);\nvar kc"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 11076,
+        "excerpt": "esponse ? b(d.response) : c();\n      };\n      d.onerror = c;\n      d.send(null);\n    } else {\n      fetch(a, {credentials:\"same-origin\"}).then(e => e.ok ? e.arrayBuffer() : Promise.reject(Error(e.status + \" : \" + e.url))).then(b, c);\n    }\n  };\n}\nvar ra = l.print || console.log.bind(console), sa = l.printErr || console.error.bind(console);\nObject.assign(l, ma);\nma = null;\nl.thi"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 12973,
+        "excerpt": "of WebAssembly.instantiateStreaming || Ia(c) || qa(c) || \"function\" != typeof fetch ? Ma(c, a, b) : fetch(c, {credentials:\"same-origin\"}).then(d => WebAssembly.instantiateStreaming(d, a).then(b, function(e) {\n    sa(`wasm streaming compile failed: ${e}`);\n    sa(\"falling back to ArrayBuffer instantiation\");\n    return Ma(c, a, b);\n  }));\n}\nvar Oa, Pa, Ta = {571519:(a, b, c, d, "
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 12698,
+        "excerpt": "{\n        c(d);\n      }\n    });\n  });\n}\nfunction Ma(a, b, c) {\n  return La(a).then(d => WebAssembly.instantiate(d, b)).then(c, d => {\n    sa(`failed to asynchronously prepare wasm: ${d}`);\n    Ha(d);\n  });\n}\nfunction Na(a, b) {\n  var c = Ja;\n  return ta || \"function\" != typeof WebAssembly.instantiateStreaming || Ia(c) || qa(c) || \"function\" != typeof fetch ? Ma(c, a, b) : fetch"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 12888,
+        "excerpt": "   Ha(d);\n  });\n}\nfunction Na(a, b) {\n  var c = Ja;\n  return ta || \"function\" != typeof WebAssembly.instantiateStreaming || Ia(c) || qa(c) || \"function\" != typeof fetch ? Ma(c, a, b) : fetch(c, {credentials:\"same-origin\"}).then(d => WebAssembly.instantiateStreaming(d, a).then(b, function(e) {\n    sa(`wasm streaming compile failed: ${e}`);\n    sa(\"falling back to ArrayBuffer ins"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 13033,
+        "excerpt": "nction\" != typeof fetch ? Ma(c, a, b) : fetch(c, {credentials:\"same-origin\"}).then(d => WebAssembly.instantiateStreaming(d, a).then(b, function(e) {\n    sa(`wasm streaming compile failed: ${e}`);\n    sa(\"falling back to ArrayBuffer instantiation\");\n    return Ma(c, a, b);\n  }));\n}\nvar Oa, Pa, Ta = {571519:(a, b, c, d, e) => {\n  if (\"undefined\" === typeof window || void 0 === (w"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 98173,
+        "excerpt": "}\n  var b = {env:ee, wasi_snapshot_preview1:ee,};\n  Ea++;\n  l.monitorRunDependencies?.(Ea);\n  if (l.instantiateWasm) {\n    try {\n      return l.instantiateWasm(b, a);\n    } catch (c) {\n      sa(`Module.instantiateWasm callback failed with error: ${c}`), ba(c);\n    }\n  }\n  Ja ||= Ia(\"webgl2_advanced.wasm\") ? \"webgl2_advanced.wasm\" : l.locateFile ? l.locateFile(\"webgl2_advanced.w"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 98217,
+        "excerpt": "ee,};\n  Ea++;\n  l.monitorRunDependencies?.(Ea);\n  if (l.instantiateWasm) {\n    try {\n      return l.instantiateWasm(b, a);\n    } catch (c) {\n      sa(`Module.instantiateWasm callback failed with error: ${c}`), ba(c);\n    }\n  }\n  Ja ||= Ia(\"webgl2_advanced.wasm\") ? \"webgl2_advanced.wasm\" : l.locateFile ? l.locateFile(\"webgl2_advanced.wasm\", y) : y + \"webgl2_advanced.wasm\";\n  Na("
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 98275,
+        "excerpt": "stantiateWasm) {\n    try {\n      return l.instantiateWasm(b, a);\n    } catch (c) {\n      sa(`Module.instantiateWasm callback failed with error: ${c}`), ba(c);\n    }\n  }\n  Ja ||= Ia(\"webgl2_advanced.wasm\") ? \"webgl2_advanced.wasm\" : l.locateFile ? l.locateFile(\"webgl2_advanced.wasm\", y) : y + \"webgl2_advanced.wasm\";\n  Na(b, function(c) {\n    a(c.instance);\n  }).catch(ba);\n  retu"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 12038,
+        "excerpt": " null;\nfunction Ha(a) {\n  l.onAbort?.(a);\n  a = \"Aborted(\" + a + \")\";\n  sa(a);\n  va = !0;\n  a = new WebAssembly.RuntimeError(a + \". Build with -sASSERTIONS for more info.\");\n  ba(a);\n  throw a;\n}\nvar Ia = a => a.startsWith(\"data:application/octet-stream;base64,\"), qa = a => a.startsWith(\"file://\"), Ja;\nfunction Ka(a) {\n  if (a == Ja && ta) {\n    return new Uint8Array(ta);\n  }\n "
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 12686,
+        "excerpt": "} catch (d) {\n        c(d);\n      }\n    });\n  });\n}\nfunction Ma(a, b, c) {\n  return La(a).then(d => WebAssembly.instantiate(d, b)).then(c, d => {\n    sa(`failed to asynchronously prepare wasm: ${d}`);\n    Ha(d);\n  });\n}\nfunction Na(a, b) {\n  var c = Ja;\n  return ta || \"function\" != typeof WebAssembly.instantiateStreaming || Ia(c) || qa(c) || \"function\" != typeof fetch ? Ma(c, a"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 12876,
+        "excerpt": "m: ${d}`);\n    Ha(d);\n  });\n}\nfunction Na(a, b) {\n  var c = Ja;\n  return ta || \"function\" != typeof WebAssembly.instantiateStreaming || Ia(c) || qa(c) || \"function\" != typeof fetch ? Ma(c, a, b) : fetch(c, {credentials:\"same-origin\"}).then(d => WebAssembly.instantiateStreaming(d, a).then(b, function(e) {\n    sa(`wasm streaming compile failed: ${e}`);\n    sa(\"falling back to Arr"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 13021,
+        "excerpt": "qa(c) || \"function\" != typeof fetch ? Ma(c, a, b) : fetch(c, {credentials:\"same-origin\"}).then(d => WebAssembly.instantiateStreaming(d, a).then(b, function(e) {\n    sa(`wasm streaming compile failed: ${e}`);\n    sa(\"falling back to ArrayBuffer instantiation\");\n    return Ma(c, a, b);\n  }));\n}\nvar Oa, Pa, Ta = {571519:(a, b, c, d, e) => {\n  if (\"undefined\" === typeof window || v"
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/utils/index.ts",
+    "source_index": 5,
+    "source_content_sha256": "05e6107472a668d9a06d1155f9db18a78260bd913a501f508d685d5d4e53f9d3",
+    "scrubbed_content_sha256": "05e6107472a668d9a06d1155f9db18a78260bd913a501f508d685d5d4e53f9d3",
+    "output_path": "rive-recovered-sources/2.38.2/05-index.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/utils/registerTouchInteractions.ts",
+    "source_index": 6,
+    "source_content_sha256": "8164e8b2827da4b7d0915b44515ebf7e7f4b12159da199c7f1533922fa59c668",
+    "scrubbed_content_sha256": "8164e8b2827da4b7d0915b44515ebf7e7f4b12159da199c7f1533922fa59c668",
+    "output_path": "rive-recovered-sources/2.38.2/06-registerTouchInteractions.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/utils/registerKeyboardInteractions.ts",
+    "source_index": 7,
+    "source_content_sha256": "53234841792e904da7e3f0bbd56547a29c8bec56dd31630e4e4f62e2f30383cf",
+    "scrubbed_content_sha256": "53234841792e904da7e3f0bbd56547a29c8bec56dd31630e4e4f62e2f30383cf",
+    "output_path": "rive-recovered-sources/2.38.2/07-registerKeyboardInteractions.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/utils/sanitizeUrl.ts",
+    "source_index": 8,
+    "source_content_sha256": "a3d70fe97cf72f7401b6602920acdc6163051fca679669fbabe97b50acbbaf76",
+    "scrubbed_content_sha256": "a3d70fe97cf72f7401b6602920acdc6163051fca679669fbabe97b50acbbaf76",
+    "output_path": "rive-recovered-sources/2.38.2/08-sanitizeUrl.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/utils/finalizationRegistry.ts",
+    "source_index": 9,
+    "source_content_sha256": "4947ad6ef491a3c743e4e06158747dc197250e1585ee18b1e88acc7ced3016e5",
+    "scrubbed_content_sha256": "4947ad6ef491a3c743e4e06158747dc197250e1585ee18b1e88acc7ced3016e5",
+    "output_path": "rive-recovered-sources/2.38.2/09-finalizationRegistry.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/utils/riveFont.ts",
+    "source_index": 10,
+    "source_content_sha256": "3b433be5f799e8277c86e9a418334036168f5a2cbf9dcd0bba0024e2fe865720",
+    "scrubbed_content_sha256": "3b433be5f799e8277c86e9a418334036168f5a2cbf9dcd0bba0024e2fe865720",
+    "output_path": "rive-recovered-sources/2.38.2/10-riveFont.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 179,
+        "excerpt": "untimeLoader\";\nimport type { FontWrapper } from \"./finalizationRegistry\";\n\n// Callback type for the fallback fonts callback\nexport type FallbackFontsCallback = (missingGlyph: number, weight: number) => FontWrapper | FontWrapper[] | null | undefined;\n\ntype CallbackToPointerValue = (missingGlyph: number, fallbackFontIndex: number, weight: number) => number | null;\n\n// Class to ma"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 383,
+        "excerpt": "ntWrapper | FontWrapper[] | null | undefined;\n\ntype CallbackToPointerValue = (missingGlyph: number, fallbackFontIndex: number, weight: number) => number | null;\n\n// Class to manage fallback fonts for Rive.\nexport class RiveFont {\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   *"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 464,
+        "excerpt": "singGlyph: number, fallbackFontIndex: number, weight: number) => number | null;\n\n// Class to manage fallback fonts for Rive.\nexport class RiveFont {\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 531,
+        "excerpt": "mber | null;\n\n// Class to manage fallback fonts for Rive.\nexport class RiveFont {\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing glyph and/or style of the default font.\n   * Set null to clear the "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 708,
+        "excerpt": "er instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing glyph and/or style of the default font.\n   * Set null to clear the callback.\n   * @param fontCallback Callback to set a list of fallback fonts.\n   */\n  public static setFallbackFontCallback(fontCallback: FallbackFontsCallback | null): void {\n  "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 872,
+        "excerpt": "fault font.\n   * Set null to clear the callback.\n   * @param fontCallback Callback to set a list of fallback fonts.\n   */\n  public static setFallbackFontCallback(fontCallback: FallbackFontsCallback | null): void {\n    RiveFont._fallbackFontCallback = fontCallback ?? null;\n    RiveFont._wireFallbackProc();\n  }\n\n  // Get the pointer value to the Embind Font object from FontWrappe"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 1000,
+        "excerpt": "ic static setFallbackFontCallback(fontCallback: FallbackFontsCallback | null): void {\n    RiveFont._fallbackFontCallback = fontCallback ?? null;\n    RiveFont._wireFallbackProc();\n  }\n\n  // Get the pointer value to the Embind Font object from FontWrapper\n  private static _fontToPtr(\n    fontWrapper: FontWrapper | null | undefined\n  ): number | null {\n    if (fontWrapper == null)"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 1694,
+        "excerpt": "   return RiveFont._fontToPtr(fonts![index]);\n  }\n\n  // Create the callback Rive expects to use for fallback fonts (regardless if set via a user-supplied static list, or callback)\n  // 1. Ensure WASM is ready\n  // 2. Bias for checking user callback over static list of fonts and pass it down to Rive to store as reference\n  //    - When calling the user callback, check if we have"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2054,
+        "excerpt": "ck, check if we have any fonts left to check, and if not, return null to indicate there are no more fallbacks to try.\n  //    - If the user callback returns an array of fonts, pass the pointer value to Rive of the font to try\n  // 3. If no callback is provided, or the callback returns null, try the static list of fonts if they set any\n  // 4. If no fallback method is set, retur"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2305,
+        "excerpt": " provided, or the callback returns null, try the static list of fonts if they set any\n  // 4. If no fallback method is set, return null.\n  private static _wireFallbackProc(): void {\n    RuntimeLoader.getInstance((rive: rc.RiveCanvas) => {\n      const { _fallbackFontCallback: cb } = RiveFont;\n      if (cb) {\n        rive.setFallbackFontCallback(\n          ((missingGlyph: number,"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2459,
+        "excerpt": "_wireFallbackProc(): void {\n    RuntimeLoader.getInstance((rive: rc.RiveCanvas) => {\n      const { _fallbackFontCallback: cb } = RiveFont;\n      if (cb) {\n        rive.setFallbackFontCallback(\n          ((missingGlyph: number, fallbackFontIndex: number, weight: number) => {\n            const fontsReturned = cb(missingGlyph, weight);\n            if (fontsReturned) {\n            "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2586,
+        "excerpt": "= RiveFont;\n      if (cb) {\n        rive.setFallbackFontCallback(\n          ((missingGlyph: number, fallbackFontIndex: number, weight: number) => {\n            const fontsReturned = cb(missingGlyph, weight);\n            if (fontsReturned) {\n              if (Array.isArray(fontsReturned)) {\n                return RiveFont._getFallbackPtr(\n                  fontsReturned,\n       "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2877,
+        "excerpt": "                return RiveFont._getFallbackPtr(\n                  fontsReturned,\n                  fallbackFontIndex\n                );\n              }\n              // If the user callback only returns a single font, provide it to Rive the first time, otherwise if Rive\n              // calls back a second time, return null to indicate there are no more fallbacks to try.\n     "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3134,
+        "excerpt": "erwise if Rive\n              // calls back a second time, return null to indicate there are no more fallbacks to try.\n              return fallbackFontIndex === 0 ? RiveFont._fontToPtr(fontsReturned) : null;\n            }\n            return null;\n          }) as CallbackToPointerValue\n        );\n      } else {\n        rive.setFallbackFontCallback(null);\n      }\n    });\n  }\n}\n"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3173,
+        "excerpt": "ack a second time, return null to indicate there are no more fallbacks to try.\n              return fallbackFontIndex === 0 ? RiveFont._fontToPtr(fontsReturned) : null;\n            }\n            return null;\n          }) as CallbackToPointerValue\n        );\n      } else {\n        rive.setFallbackFontCallback(null);\n      }\n    });\n  }\n}\n"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 611,
+        "excerpt": "{\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing glyph and/or style of the default font.\n   * Set null to clear the callback.\n   * @param fontCallback Callback to set a list of fallback fonts.\n   "
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/webpack/bootstrap",
+    "source_index": 11,
+    "source_content_sha256": "4158dea042576a3385c74915858d23ff819d6e19839c43832e741eeee77638d6",
+    "scrubbed_content_sha256": "4158dea042576a3385c74915858d23ff819d6e19839c43832e741eeee77638d6",
+    "output_path": "rive-recovered-sources/2.38.2/11-bootstrap.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/webpack/runtime/define property getters",
+    "source_index": 12,
+    "source_content_sha256": "8887a7a4ae920342bb9109b1d8e4a7deddf67d2bb59309fe935121acf0d65d6d",
+    "scrubbed_content_sha256": "8887a7a4ae920342bb9109b1d8e4a7deddf67d2bb59309fe935121acf0d65d6d",
+    "output_path": "rive-recovered-sources/2.38.2/12-define_property_getters.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/webpack/runtime/hasOwnProperty shorthand",
+    "source_index": 13,
+    "source_content_sha256": "2fc045876ffafa261598b1d1476ffb16010e9fed737aa98bd4545e5fb2867777",
+    "scrubbed_content_sha256": "2fc045876ffafa261598b1d1476ffb16010e9fed737aa98bd4545e5fb2867777",
+    "output_path": "rive-recovered-sources/2.38.2/13-hasOwnProperty_shorthand.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/webpack/runtime/make namespace object",
+    "source_index": 14,
+    "source_content_sha256": "dcb6fa6d79b08ff7453817108c79154a90678e58f0ba43820f694a7311f22fd8",
+    "scrubbed_content_sha256": "dcb6fa6d79b08ff7453817108c79154a90678e58f0ba43820f694a7311f22fd8",
+    "output_path": "rive-recovered-sources/2.38.2/14-make_namespace_object.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "map_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "source_name": "webpack://rive/./src/rive.ts",
+    "source_index": 15,
+    "source_content_sha256": "b2cc3c63479323bafb3339f162dbaa410bf4333a86c1f942a0745d286d9e2d5a",
+    "scrubbed_content_sha256": "b2cc3c63479323bafb3339f162dbaa410bf4333a86c1f942a0745d286d9e2d5a",
+    "output_path": "rive-recovered-sources/2.38.2/15-rive.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 19654,
+        "excerpt": " Falling back to find an animation with the same name.`);\n          \n          // TODO: Remove this fallback in next major release as it complicates initialization.\n          // In order to maintain compatibility with current behavior, if a state machine is not found\n          // we look for an animation with the same name\n          this.initLinearAnimations([animatables[i]], p"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 142098,
+        "excerpt": " async (src: string): Promise<ArrayBuffer> => {\n  const req = new Request(src);\n  const res = await fetch(req);\n  if (!res.ok) {\n    throw new Error(`Failed to fetch the Rive file: HTTP ${res.status}`);\n  }\n  const buffer = await res.arrayBuffer();\n  return buffer;\n};\n\n// #endregion\n\n// #region utility functions\n\n/*\n * Utility function to ensure an object is a string array\n */\n"
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 45201,
+        "excerpt": "ch-riv:start', 'rive:fetch-riv:end');\n      })\n    }\n    return bufferPromise;\n  }\n\n  private async loadRuntime(): Promise<rc.RiveCanvas> {\n    if (this.enablePerfMarks) performance.mark('rive:await-wasm:start');\n    const runtimePromise = RuntimeLoader.awaitInstance();\n    if (this.enablePerfMarks) {\n      runtimePromise.then(() => {\n        performance.mark('rive:await-wasm:e"
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 46084,
+        "excerpt": "e.\n     const [bufferResolved, runtimeResolved] = await Promise.all([this.loadRiveFileBytes(), this.loadRuntime()]);\n\n      if (this.destroyed) {\n        return;\n      }\n      // .riv file buffer and WASM runtime instance\n      this.buffer = bufferResolved;\n      this.runtime = runtimeResolved;\n\n      if (this.enablePerfMarks) performance.mark('rive:init-data:start');\n      awa"
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/webpack/universalModuleDefinition",
+    "source_index": 0,
+    "source_content_sha256": "87c3607c5ca4522b55b96becc59df08f71df7b2946103043eed19f8699af1a56",
+    "scrubbed_content_sha256": "87c3607c5ca4522b55b96becc59df08f71df7b2946103043eed19f8699af1a56",
+    "output_path": "rive-recovered-sources/2.49.3/00-universalModuleDefinition.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/animation/index.ts",
+    "source_index": 1,
+    "source_content_sha256": "a448769118c3cc8dd2eef4cc682cd5b3b9ea0440278b6a1c0d7b09433f67e598",
+    "scrubbed_content_sha256": "a448769118c3cc8dd2eef4cc682cd5b3b9ea0440278b6a1c0d7b09433f67e598",
+    "output_path": "rive-recovered-sources/2.49.3/01-index.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/animation/Animation.ts",
+    "source_index": 2,
+    "source_content_sha256": "cc8b36d1eb5236fd0c07f03fa49ed43ab642026bc7fc7268f130982835d57bbf",
+    "scrubbed_content_sha256": "cc8b36d1eb5236fd0c07f03fa49ed43ab642026bc7fc7268f130982835d57bbf",
+    "output_path": "rive-recovered-sources/2.49.3/02-Animation.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/runtimeLoader.ts",
+    "source_index": 3,
+    "source_content_sha256": "987efc12bef2847775a5e7c63f87395c72f7bc17fe68997a256acef4af4f1e9b",
+    "scrubbed_content_sha256": "987efc12bef2847775a5e7c63f87395c72f7bc17fe68997a256acef4af4f1e9b",
+    "output_path": "rive-recovered-sources/2.49.3/03-runtimeLoader.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "setWasmUrl",
+        "offset": 7991,
+        "excerpt": "same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadUnthreaded();\n        } else {\n          // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The pr"
+      },
+      {
+        "pattern": "setWasmUrl",
+        "offset": 9110,
+        "excerpt": "        \"1. Check your network connection\",\n            \"2. Set a new WASM source via RuntimeLoader.setWasmUrl()\",\n            \"3. Call RuntimeLoader.awaitInstance() again\",\n          ].join(\"\\n\");\n\n          console.error(errorMessage);\n          RuntimeLoader.notifyError(new Error(errorMessage));\n        }\n      });\n  }\n\n  // Provides a runtime instance via a callback\n  publi"
+      },
+      {
+        "pattern": "setWasmUrl",
+        "offset": 11007,
+        "excerpt": "untimeLoader.replayCapsArrived = true;\n    });\n  }\n\n  // Manually sets the wasm url\n  public static setWasmUrl(url: string): void {\n    RuntimeLoader.wasmURL = url;\n  }\n\n  // Gets the current wasm url\n  public static getWasmUrl(): string {\n    return RuntimeLoader.wasmURL;\n  }\n\n  /**\n   * Sets the URL used as a fallback when the primary WASM URL fails to load.\n   * Pass `null` "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2111,
+        "excerpt": "ve.wasm`;\n\n  // Fallback WASM URL tried when the primary URL fails. Set to null to disable\n  // the fallback entirely. Defaults to pulling from the jsdelivr CDN.\n  private static wasmFallbackURL: string | null = `https://cdn.jsdelivr.net/npm/${packageData.name}@${packageData.version}/rive_fallback.wasm`;\n\n  private static wasmBinary: ArrayBuffer | null = null;\n\n  // The threade"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2301,
+        "excerpt": "kURL: string | null = `https://cdn.jsdelivr.net/npm/${packageData.name}@${packageData.version}/rive_fallback.wasm`;\n\n  private static wasmBinary: ArrayBuffer | null = null;\n\n  // The threaded build's wasm, tried first on a page that can run it. Null\n  // in packages without one, or to stay on the build without threads.\n  private static wasmThreadsURL: string | null =\n    typeof"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7077,
+        "excerpt": "ails);\n\n        // In case the primary URL fails, or the wasm was not supported, try the\n        // fallback URL (a rive_fallback.wasm compiled for older architectures).\n        // The fallback can be customised or disabled via setWasmFallbackUrl().\n        // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the pri"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7098,
+        "excerpt": " case the primary URL fails, or the wasm was not supported, try the\n        // fallback URL (a rive_fallback.wasm compiled for older architectures).\n        // The fallback can be customised or disabled via setWasmFallbackUrl().\n        // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the primary fails.\n        c"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7162,
+        "excerpt": "the\n        // fallback URL (a rive_fallback.wasm compiled for older architectures).\n        // The fallback can be customised or disabled via setWasmFallbackUrl().\n        // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the primary fails.\n        const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7333,
+        "excerpt": "  // TODO: (Gordon): preemptively test browser support and load the correct wasm file. Then use the fallback only if the primary fails.\n        const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFa"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7383,
+        "excerpt": "port and load the correct wasm file. Then use the fallback only if the primary fails.\n        const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Fai"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7472,
+        "excerpt": "     const fallbackUrl = RuntimeLoader.wasmFallbackURL;\n        const alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${f"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7537,
+        "excerpt": "onst alreadyOnFallback =\n          fallbackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the r"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7577,
+        "excerpt": "ackUrl !== null &&\n          attemptedUrl.toLowerCase() === fallbackUrl.toLowerCase();\n\n        if (fallbackUrl !== null && !alreadyOnFallback) {\n          console.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n   "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7735,
+        "excerpt": "nsole.warn(\n            `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n          // instead of re-using the same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 7751,
+        "excerpt": "        `Failed to load WASM from ${attemptedUrl} (${errorDetails.message}), trying fallback URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n          // instead of re-using the same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          Runti"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 8002,
+        "excerpt": "ng) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadUnthreaded();\n        } else {\n          // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The primary URL w"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 8179,
+        "excerpt": "      // When alreadyOnFallback is true, wasmURL has already been overwritten\n          // with the fallback URL, so we can no longer recover the original\n          // primary URL here. The primary URL was logged in the earlier warning.\n          const triedUrls = alreadyOnFallback\n            ? `the configured WASM URL or its fallback (${fallbackUrl})`\n            : attemptedU"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 8408,
+        "excerpt": "arning.\n          const triedUrls = alreadyOnFallback\n            ? `the configured WASM URL or its fallback (${fallbackUrl})`\n            : attemptedUrl;\n          const errorMessage = [\n            `Could not load Rive WASM file from ${triedUrls}.`,\n            \"Possible reasons:\",\n            \"- Network connection is down\",\n            \"- WebAssembly is not supported in this"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 8420,
+        "excerpt": "      const triedUrls = alreadyOnFallback\n            ? `the configured WASM URL or its fallback (${fallbackUrl})`\n            : attemptedUrl;\n          const errorMessage = [\n            `Could not load Rive WASM file from ${triedUrls}.`,\n            \"Possible reasons:\",\n            \"- Network connection is down\",\n            \"- WebAssembly is not supported in this environment"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 11220,
+        "excerpt": "tic getWasmUrl(): string {\n    return RuntimeLoader.wasmURL;\n  }\n\n  /**\n   * Sets the URL used as a fallback when the primary WASM URL fails to load.\n   * Pass `null` to disable the fallback entirely.\n   *\n   * Defaults to pulling from the jsdelivr CDN.\n   */\n  public static setWasmFallbackUrl(url: string | null): void {\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets t"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 11302,
+        "excerpt": "the URL used as a fallback when the primary WASM URL fails to load.\n   * Pass `null` to disable the fallback entirely.\n   *\n   * Defaults to pulling from the jsdelivr CDN.\n   */\n  public static setWasmFallbackUrl(url: string | null): void {\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets the current fallback wasm url (null means fallback is disabled)\n  public static get"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 11511,
+        "excerpt": "Url(url: string | null): void {\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets the current fallback wasm url (null means fallback is disabled)\n  public static getWasmFallbackUrl(): string | null {\n    return RuntimeLoader.wasmFallbackURL;\n  }\n\n  /**\n   * Sets the URL of the threaded build's wasm, which\n   * `@rive-app/webgl2-threads` loads on a cross origin isolated pa"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 11541,
+        "excerpt": "{\n    RuntimeLoader.wasmFallbackURL = url;\n  }\n\n  // Gets the current fallback wasm url (null means fallback is disabled)\n  public static getWasmFallbackUrl(): string | null {\n    return RuntimeLoader.wasmFallbackURL;\n  }\n\n  /**\n   * Sets the URL of the threaded build's wasm, which\n   * `@rive-app/webgl2-threads` loads on a cross origin isolated page. Pass\n   * `null` to always"
+      },
+      {
+        "pattern": "rive_threads",
+        "offset": 71,
+        "excerpt": "import * as rc from \"./rive_advanced.mjs\";\nimport * as threads from \"./rive_threads.mjs\";\nimport packageData from \"package.json\";\n\n// Callback type when looking for a runtime instance\nexport type RuntimeCallback = (rive: rc.RiveCanvas) => void;\n\n// A module with a shared memory, an atomic load and a SIMD constant.\nconst threadsProbe = new Uint8Array"
+      },
+      {
+        "pattern": "rive_threads",
+        "offset": 2683,
+        "excerpt": "hreads.default === \"function\"\n      ? `https://unpkg.com/${packageData.name}@${packageData.version}/rive_threads.wasm`\n      : null;\n\n  private static triedThreads = false;\n\n  // The parts a script's parallel call gets on the threaded build, or null\n  // for the runtime's default.\n  private static parallelParts: number | null = null;\n  // Whether a threaded runtime replays defe"
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 5586,
+        "excerpt": "asm-init:start');\n    // Not a catch, which would also take a throw from a callback.\n    threaded({ locateFile: () => threadsUrl }).then(\n      RuntimeLoader.loaded,\n      (error) => {\n        console.warn(\n          `Rive is running without threads: the threaded build failed to load (${error?.message ?? error}).`,\n        );\n        RuntimeLoader.loadUnthreaded();\n      },\n   "
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 6304,
+        "excerpt": "fMarks) performance.mark('rive:wasm-init:start');\n    rc.default({\n      // Loads Wasm bundle\n      locateFile: () => attemptedUrl,\n      ...(wasmBinary ? { wasmBinary } : {})\n    })\n      .then(RuntimeLoader.loaded)\n      .catch((error) => {\n        // Capture specific error details\n        const errorDetails = {\n          message: error?.message || \"Unknown error\",\n          "
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 7843,
+        "excerpt": " URL: ${fallbackUrl}`,\n          );\n          // Clear wasmBinary so the retry actually fetches via locateFile\n          // instead of re-using the same (failing) in-memory binary.\n          RuntimeLoader.wasmBinary = null;\n          RuntimeLoader.setWasmUrl(fallbackUrl);\n          RuntimeLoader.loadUnthreaded();\n        } else {\n          // When alreadyOnFallback is true, was"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 3266,
+        "excerpt": "stance()\n  private static errorCallbackQueue: ((error: Error) => void)[] = [];\n\n  // Class is never instantiated\n  private constructor() {}\n\n  /**\n   * When true, performance.mark / performance.measure entries are emitted for\n   * WASM initialization.\n   */\n  public static enablePerfMarks: boolean = false;\n\n  // Rejects all pending awaitInstance() promises and resets loading st"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 1207,
+        "excerpt": "aredArrayBuffer(1));\n  } catch {\n    return \"the page cannot share memory with workers\";\n  }\n  if (!WebAssembly.validate(threadsProbe)) {\n    return \"the browser cannot run wasm threads with SIMD\";\n  }\n  return null;\n}\n\n// Runtime singleton; use getInstance to provide a callback that returns the\n// Rive runtime\nexport class RuntimeLoader {\n  // Singleton helpers\n  private stati"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 6664,
+        "excerpt": "n error\",\n          type: error?.name || \"Error\",\n          // Some browsers may provide additional WebAssembly-specific details\n          wasmError:\n            error instanceof WebAssembly.CompileError ||\n            error instanceof WebAssembly.RuntimeError,\n          originalError: error,\n        };\n\n        // Log detailed error for debugging\n        console.debug(\"Rive WA"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 6743,
+        "excerpt": "y provide additional WebAssembly-specific details\n          wasmError:\n            error instanceof WebAssembly.CompileError ||\n            error instanceof WebAssembly.RuntimeError,\n          originalError: error,\n        };\n\n        // Log detailed error for debugging\n        console.debug(\"Rive WASM load error details:\", errorDetails);\n\n        // In case the primary URL fai"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 6800,
+        "excerpt": "   wasmError:\n            error instanceof WebAssembly.CompileError ||\n            error instanceof WebAssembly.RuntimeError,\n          originalError: error,\n        };\n\n        // Log detailed error for debugging\n        console.debug(\"Rive WASM load error details:\", errorDetails);\n\n        // In case the primary URL fails, or the wasm was not supported, try the\n        // fal"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 8652,
+        "excerpt": "rls}.`,\n            \"Possible reasons:\",\n            \"- Network connection is down\",\n            \"- WebAssembly is not supported in this environment\",\n            \"- The WASM file is corrupted or incompatible\",\n            \"\\nError details:\",\n            `- Type: ${errorDetails.type}`,\n            `- Message: ${errorDetails.message}`,\n            `- WebAssembly-specific error: "
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 8904,
+        "excerpt": "   `- Type: ${errorDetails.type}`,\n            `- Message: ${errorDetails.message}`,\n            `- WebAssembly-specific error: ${errorDetails.wasmError}`,\n            \"\\nTo resolve, you may need to:\",\n            \"1. Check your network connection\",\n            \"2. Set a new WASM source via RuntimeLoader.setWasmUrl()\",\n            \"3. Call RuntimeLoader.awaitInstance() again\",\n"
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 4675,
+        "excerpt": "ntime, threaded once per page where it can be, and otherwise\n  // without threads.\n  private static loadRuntime(): void {\n    // Other packages bundle an empty module here, which webpack's interop\n    // hands over as an object rather than undefined.\n    const threaded = threads.default;\n    const threadsUrl = RuntimeLoader.wasmThreadsURL;\n    // A host's own binary is a build "
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 9624,
+        "excerpt": "ntime\n    if (!RuntimeLoader.isLoading) {\n      RuntimeLoader.isLoading = true;\n      RuntimeLoader.loadRuntime();\n    }\n    if (!RuntimeLoader.runtime) {\n      RuntimeLoader.callBackQueue.push(callback);\n      if (onError) {\n        RuntimeLoader.errorCallbackQueue.push(onError);\n      }\n    } else {\n      callback(RuntimeLoader.runtime);\n    }\n  }\n\n  // Provides a runtime ins"
+      },
+      {
+        "pattern": "worker",
+        "offset": 1186,
+        "excerpt": "t1.postMessage(new SharedArrayBuffer(1));\n  } catch {\n    return \"the page cannot share memory with workers\";\n  }\n  if (!WebAssembly.validate(threadsProbe)) {\n    return \"the browser cannot run wasm threads with SIMD\";\n  }\n  return null;\n}\n\n// Runtime singleton; use getInstance to provide a callback that returns the\n// Rive runtime\nexport class RuntimeLoader {\n  // Singleton he"
+      },
+      {
+        "pattern": "worker",
+        "offset": 2980,
+        "excerpt": "c parallelParts: number | null = null;\n  // Whether a threaded runtime replays deferred frames on a worker.\n  private static replayWorker = true;\n  private static replayCapsArrived = false;\n  private static readonly replayCapsTimeoutMs = 2000;\n\n  // Error callbacks enqueued from .getInstance()\n  private static errorCallbackQueue: ((error: Error) => void)[] = [];\n\n  // Class is "
+      },
+      {
+        "pattern": "worker",
+        "offset": 4309,
+        "excerpt": "ader.errorCallbackQueue = [];\n    // Before any callback can import a file, so its images reach the worker.\n    if (RuntimeLoader.replayWorker) {\n      rive.enableReplayWorker?.();\n    }\n    // Fire all the callbacks\n    while (RuntimeLoader.callBackQueue.length > 0) {\n      RuntimeLoader.callBackQueue.shift()?.(RuntimeLoader.runtime);\n    }\n  }\n\n  // Loads the runtime, threade"
+      },
+      {
+        "pattern": "worker",
+        "offset": 10181,
+        "excerpt": "ntimeLoader.getInstance(resolve, reject),\n    );\n  }\n\n  /**\n   * @internal Resolves once the replay worker's device caps reach the page,\n   * so scripts init against them. Null when there is nothing left to wait\n   * for, which keeps every later instance's load synchronous.\n   */\n  public static awaitReplayCaps(): Promise<void> | null {\n    if (RuntimeLoader.replayCapsArrived) "
+      },
+      {
+        "pattern": "worker",
+        "offset": 10606,
+        "excerpt": "= RuntimeLoader.runtime?.awaitReplayCaps?.();\n    if (!pending) {\n      return null;\n    }\n    // A worker that never answers must not hold every load back; its caps\n    // then bind when the surface does, as before.\n    const timeout = new Promise<void>((resolve) =>\n      setTimeout(resolve, RuntimeLoader.replayCapsTimeoutMs),\n    );\n    return Promise.race([pending, timeout])"
+      },
+      {
+        "pattern": "worker",
+        "offset": 12375,
+        "excerpt": " script's parallel call gets on a page that runs\n   * the threaded build, the page's thread and one worker thread for each\n   * other part. 1 turns parallel calls off, and null leaves the runtime's\n   * default of one part per core, up to 8. Set it before the first file\n   * loads.\n   */\n  public static setParallelParts(parts: number | null): void {\n    RuntimeLoader.parallelPa"
+      },
+      {
+        "pattern": "worker",
+        "offset": 13311,
+        "excerpt": "ental When the threaded build loads, instances with\n   * `enableGPUCanvas` hand their canvas to one worker that replays every\n   * instance's frames while the page records the next ones. Pass `false`\n   * before the runtime loads to keep replay on the page's thread; a single\n   * instance can opt out with `useReplayWorker: false`. Pages where the\n   * browser cannot draw WebGL2"
+      },
+      {
+        "pattern": "worker",
+        "offset": 13850,
+        "excerpt": "    RuntimeLoader.replayWorker = enabled;\n  }\n\n  // Gets whether a threaded runtime may replay on a worker\n  public static getReplayWorker(): boolean {\n    return RuntimeLoader.replayWorker;\n  }\n\n  // Manually sets the wasm binary or clears it with null\n  public static setWasmBinary(value: ArrayBuffer | null): void {\n    if ((value instanceof ArrayBuffer) || value === null) {\n "
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./npm/webgl2_advanced/webgl2_advanced.mjs",
+    "source_index": 4,
+    "source_content_sha256": "611104907cab29ff2fee6ba6ae32eac9a4c5f10f4d2270df73b99104d304d5f4",
+    "scrubbed_content_sha256": "611104907cab29ff2fee6ba6ae32eac9a4c5f10f4d2270df73b99104d304d5f4",
+    "output_path": "rive-recovered-sources/2.49.3/04-webgl2_advanced.mjs.txt",
+    "loader_evidence": [
+      {
+        "pattern": "locateFile",
+        "offset": 174198,
+        "excerpt": "w1:Te};if(K.instantiateWasm)return new Promise(m=>{K.instantiateWasm(g,(u,y)=>{m(d(u,y))})});tb??=K.locateFile?K.locateFile(\"webgl2_advanced.wasm\",Qa):Qa+\"webgl2_advanced.wasm\";return d((await Ab(g)).instance)}());\n(function(){function d(){K.calledRun=!0;if(!Ya){pb=!0;Ue.__wasm_call_ctors();ab?.(K);K.onRuntimeInitialized?.();if(K.postRun)for(\"function\"==typeof K.postRun&&(K.pos"
+      },
+      {
+        "pattern": "locateFile",
+        "offset": 174211,
+        "excerpt": "nstantiateWasm)return new Promise(m=>{K.instantiateWasm(g,(u,y)=>{m(d(u,y))})});tb??=K.locateFile?K.locateFile(\"webgl2_advanced.wasm\",Qa):Qa+\"webgl2_advanced.wasm\";return d((await Ab(g)).instance)}());\n(function(){function d(){K.calledRun=!0;if(!Ya){pb=!0;Ue.__wasm_call_ctors();ab?.(K);K.onRuntimeInitialized?.();if(K.postRun)for(\"function\"==typeof K.postRun&&(K.postRun=[K.postR"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 111242,
+        "excerpt": "tNode(H,\n\"rive-processors\",C(Y))).connect(H.destination);ka=!0;Da.ready();O.open(Ka=>ea.send(Ka))});fetch(B).then(Ka=>{if(!Ka.ok)throw Error(B+\" answered HTTP \"+Ka.status);return Ka.text()}).then(Ka=>{if(!da){var ob=H.audioWorklet;ob.active=!0;ob.init(ya(()=>{da||(ea=globalThis.nrdp.thread.start({url:B,source:Ka,audio:H}),ea.addEventListener(\"raw-message\",Ob=>\"ready\"===Ob.kind?"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 123732,
+        "excerpt": "y.status||0==y.status&&y.response?m(y.response):u(y.status)};y.onerror=u;y.send(null)});var g=await fetch(d,{credentials:\"same-origin\"});if(g.ok)return g.arrayBuffer();throw Error(g.status+\n\" : \"+g.url);}}var Va=console.log.bind(console),Wa=console.error.bind(console),Xa,Ya=!1,Ua=d=>d.startsWith(\"file://\"),ab,bb,eb,fb,gb,hb,kb,lb,mb,nb,pb=!1;function qb(){var d=rb.buffer;K.HEAP"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 124811,
+        "excerpt": "o asynchronously prepare wasm: ${u}`),sb(u)}}async function Ab(d){var g=tb;if(!Xa&&!Ua(g))try{var m=fetch(g,{credentials:\"same-origin\"});return await WebAssembly.instantiateStreaming(m,d)}catch(u){Wa(`wasm streaming compile failed: ${u}`),Wa(\"falling back to ArrayBuffer instantiation\")}return zb(g,d)}\nvar Bb,Cb,Db=d=>{for(;0<d.length;)d.shift()(K)},Eb=[],Fb=[],Gb=()=>{var d=K.p"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 106197,
+        "excerpt": "embly.compile(S),ea=Ra(B)&&null!==Za?Oc(S):null;if(0!==B.I.g){t(B,Y);var H=G(Y),O=await WebAssembly.instantiate(Y,p(B,Y));await H;0!==B.I.g&&(k(B,O),n(B,ea),null!==B.fa&&await db.ready(B.fa))}}catch(S){B.error=P(S)}}function f(B,H){if(B.length!==H.length)return!1;for(let O=0;O<B.length;O++)if(B[O]!==H[O])return!1;return!0}function h(B,H,O){B={M:B,module:H,error:O,na:new Set,Xa:"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 124673,
+        "excerpt": "of the wasm failed\";return d}\nasync function zb(d,g){try{var m=await yb(d);return await WebAssembly.instantiate(m,g)}catch(u){Wa(`failed to asynchronously prepare wasm: ${u}`),sb(u)}}async function Ab(d){var g=tb;if(!Xa&&!Ua(g))try{var m=fetch(g,{credentials:\"same-origin\"});return await WebAssembly.instantiateStreaming(m,d)}catch(u){Wa(`wasm streaming compile failed: ${u}`),Wa("
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 124873,
+        "excerpt": "(d){var g=tb;if(!Xa&&!Ua(g))try{var m=fetch(g,{credentials:\"same-origin\"});return await WebAssembly.instantiateStreaming(m,d)}catch(u){Wa(`wasm streaming compile failed: ${u}`),Wa(\"falling back to ArrayBuffer instantiation\")}return zb(g,d)}\nvar Bb,Cb,Db=d=>{for(;0<d.length;)d.shift()(K)},Eb=[],Fb=[],Gb=()=>{var d=K.preRun.shift();Fb.push(d)},Ib=d=>Hb(d),Kb=()=>Jb(),Lb=globalThi"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 174110,
+        "excerpt": ".memory;cd=m.__indirect_function_table;qb();return Ue}var g={env:Te,wasi_snapshot_preview1:Te};if(K.instantiateWasm)return new Promise(m=>{K.instantiateWasm(g,(u,y)=>{m(d(u,y))})});tb??=K.locateFile?K.locateFile(\"webgl2_advanced.wasm\",Qa):Qa+\"webgl2_advanced.wasm\";return d((await Ab(g)).instance)}());\n(function(){function d(){K.calledRun=!0;if(!Ya){pb=!0;Ue.__wasm_call_ctors();"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 174151,
+        "excerpt": "();return Ue}var g={env:Te,wasi_snapshot_preview1:Te};if(K.instantiateWasm)return new Promise(m=>{K.instantiateWasm(g,(u,y)=>{m(d(u,y))})});tb??=K.locateFile?K.locateFile(\"webgl2_advanced.wasm\",Qa):Qa+\"webgl2_advanced.wasm\";return d((await Ab(g)).instance)}());\n(function(){function d(){K.calledRun=!0;if(!Ya){pb=!0;Ue.__wasm_call_ctors();ab?.(K);K.onRuntimeInitialized?.();if(K.p"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 89488,
+        "excerpt": ".buffer,p,t);q.Jc?.(e)},fuel_check:q.Va??$d}};void 0!==q.bb&&(n[q.bb]=q.xb(()=>a));try{const p=(new WebAssembly.Instance(q.module,n)).exports;a=p.memory;return{exports:p,memory:a,Ua:c}}catch(p){return{error:e??P(p)}}}\nfunction W(q,a,e=!1){try{const c=q.exports;c[e?\"__riveLaneReset\":\"__riveLiftedStart\"]?.();const n=a.input,p=c.__rive_lane_alloc(n.length)>>>0;(new Uint8Array(q.me"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 91376,
+        "excerpt": "enter:()=>{},debug_line:()=>0,debug_leave:()=>{}},rive_parallel_v1:{waiting:()=>{}}};for(const t of WebAssembly.Module.imports(q)){let k,b;q=(k=n)[b=t.module]??(k[b]={});\"memory\"===t.kind?q[t.name]=a:\"function\"===t.kind&&(q[t.name]=p[t.module]?.[t.name]??(()=>{throw Error(`parallel code called the host through ${t.module}.${t.name}`);}))}return n}function ha(){function q(t,k,b)"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 93506,
+        "excerpt": "lVm;if(void 0!==k){t=new Int32Array(k.ready);const f={aa:null,ya:-1,view:null,stop:0};try{var b=new WebAssembly.Module(k.bytes);const h=k.memory,l=(new WebAssembly.Instance(b,ca(b,h,f,performance.timeOrigin-k.origin))).exports,w=void 0===l.__riveSpillFloor?0:k.spill;0!==w&&(l.__riveSpillFloor.value=w);c.set(k.key,{exports:l,\nmemory:h,state:f,Ib:w,buffer:null,view:null});Atomics"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 93558,
+        "excerpt": "={aa:null,ya:-1,view:null,stop:0};try{var b=new WebAssembly.Module(k.bytes);const h=k.memory,l=(new WebAssembly.Instance(b,ca(b,h,f,performance.timeOrigin-k.origin))).exports,w=void 0===l.__riveSpillFloor?0:k.spill;0!==w&&(l.__riveSpillFloor.value=w);c.set(k.key,{exports:l,\nmemory:h,state:f,Ib:w,buffer:null,view:null});Atomics.store(t,p,1)}catch(h){Atomics.store(t,p,2)}Atomics."
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 100486,
+        "excerpt": "rrayBuffer&&!1!==globalThis.crossOriginIsolated,l=f;t=null;if(h)for(l=Math.min(f,32768);;)try{t=new WebAssembly.Memory({initial:k,maximum:l,shared:h});break}catch(N){if(!(N instanceof RangeError)||l<=k)throw N;l=Math.max(k,l>>>1)}else t=new WebAssembly.Memory({initial:k,maximum:l});f=N=>[...za(N.length),...Array.from(N,A=>A.charCodeAt(0))];l=[...f(Nb[0]),...f(Nb[1]),2,h?3:1,..."
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 100627,
+        "excerpt": "hared:h});break}catch(N){if(!(N instanceof RangeError)||l<=k)throw N;l=Math.max(k,l>>>1)}else t=new WebAssembly.Memory({initial:k,maximum:l});f=N=>[...za(N.length),...Array.from(N,A=>A.charCodeAt(0))];l=[...f(Nb[0]),...f(Nb[1]),2,h?3:1,...za(k),...za(l)];const [w,G]=ja(q,c.body);h=[q.subarray(0,8)];for(const N of a)N!==e&&(a=\nq.subarray(N.body,N.end),N===c&&(a=Uint8Array.from(["
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 104097,
+        "excerpt": "Ca.Eb||B.every(H=>fa(H)))return null;B=Math.max(...B.map(sa));return!Ca.Hb&&0<B?\"this browser lacks WebAssembly SIMD, so this file's scripts are off; bake with wasmSimd: off to support it\":Ca.Eb||2!==B?null:\"this browser lacks WebAssembly relaxed SIMD, so this file's scripts are off; bake with wasmSimd: on to support it\"}function c(B){const {M:H,memory:O}=fc(B.M);B.Ka=O;return "
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 104224,
+        "excerpt": "ile's scripts are off; bake with wasmSimd: off to support it\":Ca.Eb||2!==B?null:\"this browser lacks WebAssembly relaxed SIMD, so this file's scripts are off; bake with wasmSimd: on to support it\"}function c(B){const {M:H,memory:O}=fc(B.M);B.Ka=O;return H}function n(B,H){null!==H&&null!==B.instance&&(B.fa=db.Qj(B,H,B.zb()))}function p(B,H){const O=\nd(a(B.I),()=>{if(null===B.memo"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 105004,
+        "excerpt": "Y.run=ya=>{B.mb=!1;return db.Pj(B,B.fa,ya>>>0,Da)};Y.waiting=db.waiting;\nB.zb=Y.size}for(const S of WebAssembly.Module.imports(H))if(\"function\"===S.kind){let Y,ea,ka,da;(ka=(Y=O)[ea=S.module]??(Y[ea]={}))[da=S.name]??(ka[da]=m(S.module,S.name))}return O}function t(B,H){const O=Q.ra();for(const {name:S}of WebAssembly.Module.exports(H)){if(!S.startsWith(\"__rive\"))continue;H=3*S.l"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 105210,
+        "excerpt": "a=S.name]??(ka[da]=m(S.module,S.name))}return O}function t(B,H){const O=Q.ra();for(const {name:S}of WebAssembly.Module.exports(H)){if(!S.startsWith(\"__rive\"))continue;H=3*S.length+1;const Y=Q.Ma(H);Q.Pb(S,Y,H);Q.exports._rive_web_vm_module_export(B.I.g,Y)}Q.qa(O);B=Q.exports._rive_web_vm_start_refusal(B.I.g);if(0!==B)throw Error(Q.ua(B));}function k(B,H){B.memory=H.exports.memo"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 105625,
+        "excerpt": "orts).filter(la=>la.startsWith(\"__riveCall\")).map(la=>H.exports[la]).filter(la=>{if(!(la instanceof WebAssembly.Global))return!1;try{return la.value=la.value,!0}catch{return!1}});B.cc=[];const O=Q.exports._rive_web_vm_start_fuel(B.I.g),S=H.exports.__riveFuelArm,Y=H.exports.__riveFuelEnd,ea=0<O&&void 0!==S&&void 0!==Y,ka=Q.exports._rive_web_vm_booting;ka(B.I.g);const da=Q.ra();B"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 106091,
+        "excerpt": "tance=\nnull,Q.qa(da),B.I.j=null,la;}finally{ka(0)}}async function b(B){try{const S=jb(c(B)),Y=await WebAssembly.compile(S),ea=Ra(B)&&null!==Za?Oc(S):null;if(0!==B.I.g){t(B,Y);var H=G(Y),O=await WebAssembly.instantiate(Y,p(B,Y));await H;0!==B.I.g&&(k(B,O),n(B,ea),null!==B.fa&&await db.ready(B.fa))}}catch(S){B.error=P(S)}}function f(B,H){if(B.length!==H.length)return!1;for(let O="
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 106185,
+        "excerpt": "await WebAssembly.compile(S),ea=Ra(B)&&null!==Za?Oc(S):null;if(0!==B.I.g){t(B,Y);var H=G(Y),O=await WebAssembly.instantiate(Y,p(B,Y));await H;0!==B.I.g&&(k(B,O),n(B,ea),null!==B.fa&&await db.ready(B.fa))}}catch(S){B.error=P(S)}}function f(B,H){if(B.length!==H.length)return!1;for(let O=0;O<B.length;O++)if(B[O]!==H[O])return!1;return!0}function h(B,H,O){B={M:B,module:H,error:O,na"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 106664,
+        "excerpt": "l);for(const O of wb())O.postMessage({riveLane:{bytes:B,module:H}})}}function w(B,H){for(const Y of WebAssembly.Module.imports(B)){a:{B=H;var O=Y.module,S=Y.name;for(const [ea,ka,da,la]of de)if(O===ea&&(null===ka||S===ka)){B=da.includes(B)?null:la??\"\";break a}B=\"\"}if(null!==B)throw Error(\"lane module imports \"+Y.module+\".\"+Y.name+\", which it cannot reach\");}}function G(B,H=!1){"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 106992,
+        "excerpt": "ame+\", which it cannot reach\");}}function G(B,H=!1){const O=[];for(const [S,Y]of Qc)for(const ea of WebAssembly.Module.customSections(B,\nS)){const ka=jb(new Uint8Array(ea));if(Sc(ka))continue;const da=la=>{w(la,Y);l(ka,la)};if(H)try{da(new WebAssembly.Module(ka))}catch(la){}else O.push(WebAssembly.compile(ka).then(da).catch(()=>{}))}return Promise.all(O)}function N(B,H,O){let S"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 107132,
+        "excerpt": "{const ka=jb(new Uint8Array(ea));if(Sc(ka))continue;const da=la=>{w(la,Y);l(ka,la)};if(H)try{da(new WebAssembly.Module(ka))}catch(la){}else O.push(WebAssembly.compile(ka).then(da).catch(()=>{}))}return Promise.all(O)}function N(B,H,O){let S=Na.find(Y=>Y.na.has(B));if(void 0===S){const Y=H();S=Na.find(ea=>f(ea.M,Y));if(void 0===S){S=h(Y,null,null);try{const ea=new WebAssembly.Mo"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 107179,
+        "excerpt": "inue;const da=la=>{w(la,Y);l(ka,la)};if(H)try{da(new WebAssembly.Module(ka))}catch(la){}else O.push(WebAssembly.compile(ka).then(da).catch(()=>{}))}return Promise.all(O)}function N(B,H,O){let S=Na.find(Y=>Y.na.has(B));if(void 0===S){const Y=H();S=Na.find(ea=>f(ea.M,Y));if(void 0===S){S=h(Y,null,null);try{const ea=new WebAssembly.Module(Y);w(ea,O);S.module=ea}catch(ea){S.error=P"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 107398,
+        "excerpt": "f(void 0===S){const Y=H();S=Na.find(ea=>f(ea.M,Y));if(void 0===S){S=h(Y,null,null);try{const ea=new WebAssembly.Module(Y);w(ea,O);S.module=ea}catch(ea){S.error=P(ea)}}S.na.add(B);8<S.na.size&&S.na.delete(S.na.values().next().value)}return S}\nfunction A(B=!1,H=0){return(O,S)=>B?F(()=>Q.X().buffer,Q.exports._rive_shared_table(),H,O,null,S):d(a({g:1,j:null,h:!1,Da:Z},\"rive_shared_"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 112136,
+        "excerpt": "))}let Q=null,X=$a;const V=new Map,Z={i:!1,l:0,Ba:0,za:0,Aa:0,Ca:0},fa=q.riveScriptingValidate??(B=>WebAssembly.validate(B)),Ja=!0===q.riveScriptingLaneTwin;\nlet Ca=null;const Ra=B=>\"function\"===typeof SharedArrayBuffer&&B.Ka?.buffer instanceof SharedArrayBuffer,Na=[];let wb=()=>[],Za=null;const db=pa({fc:()=>null!==Za,start(){const B=Q.exports._rive_web_parallel_team_thread();"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 113760,
+        "excerpt": "===B.error){if(null!==B.$)return\"script module is still being prepared\";\ntry{const H=jb(c(B)),O=new WebAssembly.Module(H);t(B,O);G(O,!0);k(B,new WebAssembly.Instance(O,p(B,O)));n(B,Ra(B)&&null!==Za?Oc(H):null)}catch(H){B.error=P(H)}}return B.error},$(B){B=V.get(B);return null===B?.instance&&null===B.error&&null!==B.$?1:0},zc(B,H){return\"function\"===typeof V.get(B)?.instance?.ex"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 113805,
+        "excerpt": "e is still being prepared\";\ntry{const H=jb(c(B)),O=new WebAssembly.Module(H);t(B,O);G(O,!0);k(B,new WebAssembly.Instance(O,p(B,O)));n(B,Ra(B)&&null!==Za?Oc(H):null)}catch(H){B.error=P(H)}}return B.error},$(B){B=V.get(B);return null===B?.instance&&null===B.error&&null!==B.$?1:0},zc(B,H){return\"function\"===typeof V.get(B)?.instance?.exports[Q.ua(H)]?1:0},call(B,H,O,S,Y,ea,ka){B=V"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 124303,
+        "excerpt": "Array(d);nb=new Float64Array(d)}\nfunction sb(d){K.onAbort?.(d);d=\"Aborted(\"+d+\")\";Wa(d);Ya=!0;d=new WebAssembly.RuntimeError(d+\". Build with -sASSERTIONS for more info.\");bb?.(d);throw d;}var tb;async function yb(d){if(!Xa)try{var g=await Sa(d);return new Uint8Array(g)}catch{}if(d==tb&&Xa)d=new Uint8Array(Xa);else if(Ta)d=Ta(d);else throw\"both async and sync fetching of the was"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 124661,
+        "excerpt": "nc fetching of the wasm failed\";return d}\nasync function zb(d,g){try{var m=await yb(d);return await WebAssembly.instantiate(m,g)}catch(u){Wa(`failed to asynchronously prepare wasm: ${u}`),sb(u)}}async function Ab(d){var g=tb;if(!Xa&&!Ua(g))try{var m=fetch(g,{credentials:\"same-origin\"});return await WebAssembly.instantiateStreaming(m,d)}catch(u){Wa(`wasm streaming compile failed"
+      },
+      {
+        "pattern": "WebAssembly",
+        "offset": 124861,
+        "excerpt": " function Ab(d){var g=tb;if(!Xa&&!Ua(g))try{var m=fetch(g,{credentials:\"same-origin\"});return await WebAssembly.instantiateStreaming(m,d)}catch(u){Wa(`wasm streaming compile failed: ${u}`),Wa(\"falling back to ArrayBuffer instantiation\")}return zb(g,d)}\nvar Bb,Cb,Db=d=>{for(;0<d.length;)d.shift()(K)},Eb=[],Fb=[],Gb=()=>{var d=K.preRun.shift();Fb.push(d)},Ib=d=>Hb(d),Kb=()=>Jb(),"
+      },
+      {
+        "pattern": "worker",
+        "offset": 102298,
+        "excerpt": "log\",\"console.debug\",\"console.info\",\"console.warn\",\"console.error\"],de=[[\"rive_rt_v1\",\"now\",[\"job\",\"worker\"],null],[\"rive_lanes_v1\",\"wait_within\",[],\"blocks on a signal, which only the main lane may; a worker awaits Signal.next or Port.receive instead\"],\n[\"rive_shared_v1\",\"region_lock\",[\"job\",\"worker\"],\"locks a shared region, which the audio thread may not wait on; share throug"
+      },
+      {
+        "pattern": "worker",
+        "offset": 102400,
+        "excerpt": "rker\"],null],[\"rive_lanes_v1\",\"wait_within\",[],\"blocks on a signal, which only the main lane may; a worker awaits Signal.next or Port.receive instead\"],\n[\"rive_shared_v1\",\"region_lock\",[\"job\",\"worker\"],\"locks a shared region, which the audio thread may not wait on; share through atomics, rings and snapshots instead\"],[\"rive_shared_v1\",\"read_done\",[],null],[\"rive_shared_v1\",null"
+      },
+      {
+        "pattern": "worker",
+        "offset": 102493,
+        "excerpt": "may; a worker awaits Signal.next or Port.receive instead\"],\n[\"rive_shared_v1\",\"region_lock\",[\"job\",\"worker\"],\"locks a shared region, which the audio thread may not wait on; share through atomics, rings and snapshots instead\"],[\"rive_shared_v1\",\"read_done\",[],null],[\"rive_shared_v1\",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_lane_v1\",null,[\"job\",\"worker\",\"processor\"],null],["
+      },
+      {
+        "pattern": "worker",
+        "offset": 102689,
+        "excerpt": "rings and snapshots instead\"],[\"rive_shared_v1\",\"read_done\",[],null],[\"rive_shared_v1\",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_lane_v1\",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_job_v1\",null,[\"job\"],null],[\"rive_worker_v1\",null,[\"worker\"],null],[\"env\",\"console.log\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\""
+      },
+      {
+        "pattern": "worker",
+        "offset": 102745,
+        "excerpt": "ne\",[],null],[\"rive_shared_v1\",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_lane_v1\",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_job_v1\",null,[\"job\"],null],[\"rive_worker_v1\",null,[\"worker\"],null],[\"env\",\"console.log\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\","
+      },
+      {
+        "pattern": "worker",
+        "offset": 102813,
+        "excerpt": "l],[\"rive_lane_v1\",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_job_v1\",null,[\"job\"],null],[\"rive_worker_v1\",null,[\"worker\"],null],[\"env\",\"console.log\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.er"
+      },
+      {
+        "pattern": "worker",
+        "offset": 102831,
+        "excerpt": ",null,[\"job\",\"worker\",\"processor\"],null],[\"rive_job_v1\",null,[\"job\"],null],[\"rive_worker_v1\",null,[\"worker\"],null],[\"env\",\"console.log\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.error\",[\"job\",\"worke"
+      },
+      {
+        "pattern": "worker",
+        "offset": 102875,
+        "excerpt": "ive_job_v1\",null,[\"job\"],null],[\"rive_worker_v1\",null,[\"worker\"],null],[\"env\",\"console.log\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.error\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.time\","
+      },
+      {
+        "pattern": "worker",
+        "offset": 102933,
+        "excerpt": "rker\"],null],[\"env\",\"console.log\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.error\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.time\",[\"job\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"wo"
+      },
+      {
+        "pattern": "worker",
+        "offset": 102991,
+        "excerpt": "or\"],null],[\"env\",\"console.debug\",[\"job\",\"worker\",\"processor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.error\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.time\",[\"job\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],nul"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103048,
+        "excerpt": "sor\"],\nnull],[\"env\",\"console.info\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.error\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.time\",[\"job\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"r"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103106,
+        "excerpt": "sor\"],null],[\"env\",\"console.warn\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.error\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.time\",[\"job\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__r"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103163,
+        "excerpt": "sor\"],null],[\"env\",\"console.error\",[\"job\",\"worker\",\"processor\"],null],[\"env\",\"console.time\",[\"job\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103211,
+        "excerpt": "r\",\"processor\"],null],[\"env\",\"console.time\",[\"job\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:0,running:1,done:2,\nfailed:3,stopped:4},Mc=new M"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103259,
+        "excerpt": "b\",\"worker\"],null],[\"env\",\"console.timeLog\",[\"job\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:0,running:1,done:2,\nfailed:3,stopped:4},Mc=new Map,$a=void 0!==globalThis.performance?()=>global"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103306,
+        "excerpt": "ob\",\"worker\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:0,running:1,done:2,\nfailed:3,stopped:4},Mc=new Map,$a=void 0!==globalThis.performance?()=>globalThis.performance.now():Date.now,$d=()=>{},gc=[2"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103316,
+        "excerpt": "r\"],null],[\"env\",\"console.timeEnd\",[\"job\",\"worker\"],null]],Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:0,running:1,done:2,\nfailed:3,stopped:4},Mc=new Map,$a=void 0!==globalThis.performance?()=>globalThis.performance.now():Date.now,$d=()=>{},gc=[253,12,...A"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103375,
+        "excerpt": "Qc=[[\"rive.jobs\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:0,running:1,done:2,\nfailed:3,stopped:4},Mc=new Map,$a=void 0!==globalThis.performance?()=>globalThis.performance.now():Date.now,$d=()=>{},gc=[253,12,...Array(16).fill(0)],ee=qa([...gc]),fe=qa([...gc,...gc,253,128"
+      },
+      {
+        "pattern": "worker",
+        "offset": 103390,
+        "excerpt": "\",\"job\"],[\"rive.workers\",\"worker\"],[\"rive.audio\",\"processor\"]],ec={job:\"__rive_job_\",worker:\"__rive_worker_\",processor:\"__rive_processor_\"},Rc={starting:0,running:1,done:2,\nfailed:3,stopped:4},Mc=new Map,$a=void 0!==globalThis.performance?()=>globalThis.performance.now():Date.now,$d=()=>{},gc=[253,12,...Array(16).fill(0)],ee=qa([...gc]),fe=qa([...gc,...gc,253,128,2]),Nc=[0,0,0,"
+      },
+      {
+        "pattern": "worker",
+        "offset": 112576,
+        "excerpt": "Vc=B=>{db.message(B)||(B=B?.riveLane,void 0!==B&&l(B.bytes,B.module))},Wc=globalThis.process?.$j?.(\"worker_threads\");!1===Wc?.ak?Wc.ek.i(\"message\",Vc):void 0!==globalThis.WorkerGlobalScope&&globalThis.addEventListener(\"message\",\nB=>Vc(B.data));const Pb=new Map;let he=1;const kc=new Map;let ie=1;const Ea={output:null,Y:new Map,next:1},hc=()=>void 0!==globalThis.nrdp?.audio?.outp"
+      },
+      {
+        "pattern": "worker",
+        "offset": 115886,
+        "excerpt": "536*ka&&!ea()&&(O.reset=!0,H.Xa=O);return{ok:!0,output:Da}}catch(da){return{ok:!1,error:O.Ua(da)}}},workerStart:function(B,H,O,S,Y,ea){H=N(H,O,\"worker\");if(null!==H.error)return{ok:!1,error:H.error};S=na({module:H.module,bb:\"rive_worker_v1\",xb:ka=>({finished:(da,la,Da)=>ea.finished(da,new Uint8Array(ka().buffer,la>>>0,Da>>>0)),wait:ea.wait,stopping:ea.Vj}),Jc:ka=>Q.Fc(B,ka),fb:"
+      },
+      {
+        "pattern": "worker",
+        "offset": 115930,
+        "excerpt": ":!0,output:Da}}catch(da){return{ok:!1,error:O.Ua(da)}}},workerStart:function(B,H,O,S,Y,ea){H=N(H,O,\"worker\");if(null!==H.error)return{ok:!1,error:H.error};S=na({module:H.module,bb:\"rive_worker_v1\",xb:ka=>({finished:(da,la,Da)=>ea.finished(da,new Uint8Array(ka().buffer,la>>>0,Da>>>0)),wait:ea.wait,stopping:ea.Vj}),Jc:ka=>Q.Fc(B,ka),fb:A(),log:ka=>Q.Za(B,ka),now:X,Va:()=>x(B),pre"
+      },
+      {
+        "pattern": "worker",
+        "offset": 116016,
+        "excerpt": ",ea){H=N(H,O,\"worker\");if(null!==H.error)return{ok:!1,error:H.error};S=na({module:H.module,bb:\"rive_worker_v1\",xb:ka=>({finished:(da,la,Da)=>ea.finished(da,new Uint8Array(ka().buffer,la>>>0,Da>>>0)),wait:ea.wait,stopping:ea.Vj}),Jc:ka=>Q.Fc(B,ka),fb:A(),log:ka=>Q.Za(B,ka),now:X,Va:()=>x(B),prefix:ec.worker,Ta:S,input:Y,ea:!0});if(void 0!==S.error)return{ok:!1,\nerror:S.error};Y="
+      },
+      {
+        "pattern": "worker",
+        "offset": 116217,
+        "excerpt": "it:ea.wait,stopping:ea.Vj}),Jc:ka=>Q.Fc(B,ka),fb:A(),log:ka=>Q.Za(B,ka),now:X,Va:()=>x(B),prefix:ec.worker,Ta:S,input:Y,ea:!0});if(void 0!==S.error)return{ok:!1,\nerror:S.error};Y=he++;Pb.set(Y,{wake:S.exports.__rive_worker_wake,hc:S.exports.__riveFrameMinor});return{ok:!0,id:Y}},workerWake:function(B,H,O){try{return Pb.get(B).wake(H,O),null}catch(S){return P(S)}},workerCollect:"
+      },
+      {
+        "pattern": "worker",
+        "offset": 116333,
+        "excerpt": "t:Y,ea:!0});if(void 0!==S.error)return{ok:!1,\nerror:S.error};Y=he++;Pb.set(Y,{wake:S.exports.__rive_worker_wake,hc:S.exports.__riveFrameMinor});return{ok:!0,id:Y}},workerWake:function(B,H,O){try{return Pb.get(B).wake(H,O),null}catch(S){return P(S)}},workerCollect:function(B){try{return Pb.get(B)?.hc?.(),null}catch(H){return P(H)}},workerEnd:function(B){Pb.delete(B)},processorSt"
+      },
+      {
+        "pattern": "worker",
+        "offset": 116397,
+        "excerpt": "e++;Pb.set(Y,{wake:S.exports.__rive_worker_wake,hc:S.exports.__riveFrameMinor});return{ok:!0,id:Y}},workerWake:function(B,H,O){try{return Pb.get(B).wake(H,O),null}catch(S){return P(S)}},workerCollect:function(B){try{return Pb.get(B)?.hc?.(),null}catch(H){return P(H)}},workerEnd:function(B){Pb.delete(B)},processorStart:function(B,H,O,S,Y,ea,ka){H=N(H,O,\"processor\");if(null!==H.e"
+      },
+      {
+        "pattern": "worker",
+        "offset": 116483,
+        "excerpt": "{ok:!0,id:Y}},workerWake:function(B,H,O){try{return Pb.get(B).wake(H,O),null}catch(S){return P(S)}},workerCollect:function(B){try{return Pb.get(B)?.hc?.(),null}catch(H){return P(H)}},workerEnd:function(B){Pb.delete(B)},processorStart:function(B,H,O,S,Y,ea,ka){H=N(H,O,\"processor\");if(null!==H.error)return{ok:!1,error:H.error};S=oa(H.module,S,Y,ea,A(Ja,ka),da=>Q.Za(B,da));if(void"
+      },
+      {
+        "pattern": "worker",
+        "offset": 116566,
+        "excerpt": "S){return P(S)}},workerCollect:function(B){try{return Pb.get(B)?.hc?.(),null}catch(H){return P(H)}},workerEnd:function(B){Pb.delete(B)},processorStart:function(B,H,O,S,Y,ea,ka){H=N(H,O,\"processor\");if(null!==H.error)return{ok:!1,error:H.error};S=oa(H.module,S,Y,ea,A(Ja,ka),da=>Q.Za(B,da));if(void 0!==S.error)return{ok:!1,\nerror:S.error};Y=ie++;kc.set(Y,S.pa);return{ok:!0,id:Y}}"
+      },
+      {
+        "pattern": "worker",
+        "offset": 170950,
+        "excerpt": "rigin:function(){return performance.timeOrigin},\nriveWebWorkerCollect:function(d){d=K.riveScripting.workerCollect(d);return null===d?0:we(d)},riveWebWorkerEnd:function(d){K.riveScripting.workerEnd(d)},riveWebWorkerStart:function(d,g,m,u,y,D,E,F,L,P){let T=!1;g=K.riveScripting.workerStart(g,m,()=>fb.slice(u,u+y),D,fb.slice(E,E+F),{wait:(U,W,na)=>Ne(d,U,W,na),finished:(U,W)=>{if("
+      },
+      {
+        "pattern": "worker",
+        "offset": 171037,
+        "excerpt": "iveScripting.workerCollect(d);return null===d?0:we(d)},riveWebWorkerEnd:function(d){K.riveScripting.workerEnd(d)},riveWebWorkerStart:function(d,g,m,u,y,D,E,F,L,P){let T=!1;g=K.riveScripting.workerStart(g,m,()=>fb.slice(u,u+y),D,fb.slice(E,E+F),{wait:(U,W,na)=>Ne(d,U,W,na),finished:(U,W)=>{if(!T){T=!0;if(U){const na=Ie(L,W.length);fb.set(W,na)}Oe(d,U)}},Vj:()=>Pe(d)});if(!g.ok)r"
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/ignored|/home/runner/work/rive-wasm/rive-wasm/js/src|./rive_threads.mjs",
+    "source_index": 5,
+    "source_content_sha256": "97d4685c7c29b6385d532cd2a90216f9820835860a56f2899bb65df9fe007425",
+    "scrubbed_content_sha256": "97d4685c7c29b6385d532cd2a90216f9820835860a56f2899bb65df9fe007425",
+    "output_path": "rive-recovered-sources/2.49.3/05-rive_threads.mjs.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/semantics/index.ts",
+    "source_index": 6,
+    "source_content_sha256": "2c9ceaad30b52cdb97b5dfb0f22553e87e486c61d7faa261d0e7c8c15f1fddf3",
+    "scrubbed_content_sha256": "2c9ceaad30b52cdb97b5dfb0f22553e87e486c61d7faa261d0e7c8c15f1fddf3",
+    "output_path": "rive-recovered-sources/2.49.3/06-index.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/semantics/semanticTreeModel.ts",
+    "source_index": 7,
+    "source_content_sha256": "cc35fb7cb05de75912e465862604ccb54e26fd186eec5e5c77624c71f8d723ac",
+    "scrubbed_content_sha256": "cc35fb7cb05de75912e465862604ccb54e26fd186eec5e5c77624c71f8d723ac",
+    "output_path": "rive-recovered-sources/2.49.3/07-semanticTreeModel.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/semantics/types.ts",
+    "source_index": 8,
+    "source_content_sha256": "6abfcc99f4878468081410bf22cf49ed890738115465cb48e8276a273ed6071b",
+    "scrubbed_content_sha256": "6abfcc99f4878468081410bf22cf49ed890738115465cb48e8276a273ed6071b",
+    "output_path": "rive-recovered-sources/2.49.3/08-types.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/semantics/accessibilityOverlay.ts",
+    "source_index": 9,
+    "source_content_sha256": "329b2fc4962ee5d7ad2bf6e47c4a9472d3217b1f06fc0b2501a9458045e75ab8",
+    "scrubbed_content_sha256": "329b2fc4962ee5d7ad2bf6e47c4a9472d3217b1f06fc0b2501a9458045e75ab8",
+    "output_path": "rive-recovered-sources/2.49.3/09-accessibilityOverlay.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 52879,
+        "excerpt": "his.lastCanvasPositioning.width;\n    const cssHeight = this.lastCanvasPositioning.height;\n    const fallback = 1 / (dpr || 1);\n    const sx = this.canvas.width > 0 && cssWidth > 0 ? cssWidth / this.canvas.width : fallback;\n    const sy = this.canvas.height > 0 && cssHeight > 0 ? cssHeight / this.canvas.height : fallback;\n    const a  = forwardMat.xx * sx;\n    const b  = forward"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 52992,
+        "excerpt": "/ (dpr || 1);\n    const sx = this.canvas.width > 0 && cssWidth > 0 ? cssWidth / this.canvas.width : fallback;\n    const sy = this.canvas.height > 0 && cssHeight > 0 ? cssHeight / this.canvas.height : fallback;\n    const a  = forwardMat.xx * sx;\n    const b  = forwardMat.xy * sy;\n    const c  = forwardMat.yx * sx;\n    const d  = forwardMat.yy * sy;\n    const tx = forwardMat.tx *"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 53092,
+        "excerpt": "fallback;\n    const sy = this.canvas.height > 0 && cssHeight > 0 ? cssHeight / this.canvas.height : fallback;\n    const a  = forwardMat.xx * sx;\n    const b  = forwardMat.xy * sy;\n    const c  = forwardMat.yx * sx;\n    const d  = forwardMat.yy * sy;\n    const tx = forwardMat.tx * sx;\n    const ty = forwardMat.ty * sy;\n    this.transformContainer.style.transform =\n      `matrix("
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/semantics/claimedKeyEvents.ts",
+    "source_index": 10,
+    "source_content_sha256": "eb549b9dd56fa279b4de7c8e0aec4a501c6153322a7c0a14d89b01348cfb4e59",
+    "scrubbed_content_sha256": "eb549b9dd56fa279b4de7c8e0aec4a501c6153322a7c0a14d89b01348cfb4e59",
+    "output_path": "rive-recovered-sources/2.49.3/10-claimedKeyEvents.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/canvasOffset.ts",
+    "source_index": 11,
+    "source_content_sha256": "535556456bca5c83c9a371c05a13d928aad045320aa55305d2c93d8799e30628",
+    "scrubbed_content_sha256": "535556456bca5c83c9a371c05a13d928aad045320aa55305d2c93d8799e30628",
+    "output_path": "rive-recovered-sources/2.49.3/11-canvasOffset.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/index.ts",
+    "source_index": 12,
+    "source_content_sha256": "467bef911e22363978bb3385ebc9eba6e3488a38986bee06aaaddc70ec896727",
+    "scrubbed_content_sha256": "467bef911e22363978bb3385ebc9eba6e3488a38986bee06aaaddc70ec896727",
+    "output_path": "rive-recovered-sources/2.49.3/12-index.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/registerTouchInteractions.ts",
+    "source_index": 13,
+    "source_content_sha256": "3828683ae77f9f79d2aca2a518c684d499b965e5a927287d02df6702b13d1040",
+    "scrubbed_content_sha256": "3828683ae77f9f79d2aca2a518c684d499b965e5a927287d02df6702b13d1040",
+    "output_path": "rive-recovered-sources/2.49.3/13-registerTouchInteractions.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/registerKeyboardInteractions.ts",
+    "source_index": 14,
+    "source_content_sha256": "e2d25b1bf35890b6ecf23abec3e8547ee97e70242296f6ce4c379f79514e83f3",
+    "scrubbed_content_sha256": "e2d25b1bf35890b6ecf23abec3e8547ee97e70242296f6ce4c379f79514e83f3",
+    "output_path": "rive-recovered-sources/2.49.3/14-registerKeyboardInteractions.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 13468,
+        "excerpt": "nts in the Rive focus domain. We route certain keys to different functions, with the following\n   * fallback behavior:\n   * 1. Tab/Shift+Tab - check if keyInput() takes this key, if not, call focusNext/Previous traversal if there are focus nodes\n   * 2. Check - if a semantic overlay element's key handler claimed the event, don't intercept the key event further\n   * 3. Send key "
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/keyMap.ts",
+    "source_index": 15,
+    "source_content_sha256": "a60a4fabf829cb99e488ff601311b3148750cb415d1448d373f70f0f1ccb71df",
+    "scrubbed_content_sha256": "a60a4fabf829cb99e488ff601311b3148750cb415d1448d373f70f0f1ccb71df",
+    "output_path": "rive-recovered-sources/2.49.3/15-keyMap.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 6057,
+        "excerpt": "ift, so a listener on \"A\" fires on AZERTY's A too. `event.key` is preferred;\n * `event.code` is the fallback when `key` isn't a plain unshifted character\n * (shifted symbols, Option/AltGr output, non-Latin letters, dead keys).\n * Digit-row and numpad keys skip the character lookup so AZERTY's digit row\n * still reports digits and numpad digits stay distinct from the digit row.\n"
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/textInputProxy.ts",
+    "source_index": 16,
+    "source_content_sha256": "22978062213b767c3d57b3a89ccfb655e63d6a499de1a0c9e8e76537fbb9df54",
+    "scrubbed_content_sha256": "22978062213b767c3d57b3a89ccfb655e63d6a499de1a0c9e8e76537fbb9df54",
+    "output_path": "rive-recovered-sources/2.49.3/16-textInputProxy.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/gamepadInteractions.ts",
+    "source_index": 17,
+    "source_content_sha256": "9534a98ba944aba578bef53c44299ee687ea9c7b467a2661d0a5cbf5bf49f523",
+    "scrubbed_content_sha256": "9534a98ba944aba578bef53c44299ee687ea9c7b467a2661d0a5cbf5bf49f523",
+    "output_path": "rive-recovered-sources/2.49.3/17-gamepadInteractions.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/gamepadBatchEncoder.ts",
+    "source_index": 18,
+    "source_content_sha256": "307ebbf908912c170383278334f0b05c844d8cd7cd22c374529a57494c191092",
+    "scrubbed_content_sha256": "307ebbf908912c170383278334f0b05c844d8cd7cd22c374529a57494c191092",
+    "output_path": "rive-recovered-sources/2.49.3/18-gamepadBatchEncoder.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/sanitizeUrl.ts",
+    "source_index": 19,
+    "source_content_sha256": "a3d70fe97cf72f7401b6602920acdc6163051fca679669fbabe97b50acbbaf76",
+    "scrubbed_content_sha256": "a3d70fe97cf72f7401b6602920acdc6163051fca679669fbabe97b50acbbaf76",
+    "output_path": "rive-recovered-sources/2.49.3/19-sanitizeUrl.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/finalizationRegistry.ts",
+    "source_index": 20,
+    "source_content_sha256": "19e24f136b1a3847f60bdbd445548dd56a27fffeb5bf181d9e7bab9cb3679a54",
+    "scrubbed_content_sha256": "19e24f136b1a3847f60bdbd445548dd56a27fffeb5bf181d9e7bab9cb3679a54",
+    "output_path": "rive-recovered-sources/2.49.3/20-finalizationRegistry.ts.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/riveFont.ts",
+    "source_index": 21,
+    "source_content_sha256": "3b433be5f799e8277c86e9a418334036168f5a2cbf9dcd0bba0024e2fe865720",
+    "scrubbed_content_sha256": "3b433be5f799e8277c86e9a418334036168f5a2cbf9dcd0bba0024e2fe865720",
+    "output_path": "rive-recovered-sources/2.49.3/21-riveFont.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 179,
+        "excerpt": "untimeLoader\";\nimport type { FontWrapper } from \"./finalizationRegistry\";\n\n// Callback type for the fallback fonts callback\nexport type FallbackFontsCallback = (missingGlyph: number, weight: number) => FontWrapper | FontWrapper[] | null | undefined;\n\ntype CallbackToPointerValue = (missingGlyph: number, fallbackFontIndex: number, weight: number) => number | null;\n\n// Class to ma"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 383,
+        "excerpt": "ntWrapper | FontWrapper[] | null | undefined;\n\ntype CallbackToPointerValue = (missingGlyph: number, fallbackFontIndex: number, weight: number) => number | null;\n\n// Class to manage fallback fonts for Rive.\nexport class RiveFont {\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   *"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 464,
+        "excerpt": "singGlyph: number, fallbackFontIndex: number, weight: number) => number | null;\n\n// Class to manage fallback fonts for Rive.\nexport class RiveFont {\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 531,
+        "excerpt": "mber | null;\n\n// Class to manage fallback fonts for Rive.\nexport class RiveFont {\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing glyph and/or style of the default font.\n   * Set null to clear the "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 708,
+        "excerpt": "er instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing glyph and/or style of the default font.\n   * Set null to clear the callback.\n   * @param fontCallback Callback to set a list of fallback fonts.\n   */\n  public static setFallbackFontCallback(fontCallback: FallbackFontsCallback | null): void {\n  "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 872,
+        "excerpt": "fault font.\n   * Set null to clear the callback.\n   * @param fontCallback Callback to set a list of fallback fonts.\n   */\n  public static setFallbackFontCallback(fontCallback: FallbackFontsCallback | null): void {\n    RiveFont._fallbackFontCallback = fontCallback ?? null;\n    RiveFont._wireFallbackProc();\n  }\n\n  // Get the pointer value to the Embind Font object from FontWrappe"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 1000,
+        "excerpt": "ic static setFallbackFontCallback(fontCallback: FallbackFontsCallback | null): void {\n    RiveFont._fallbackFontCallback = fontCallback ?? null;\n    RiveFont._wireFallbackProc();\n  }\n\n  // Get the pointer value to the Embind Font object from FontWrapper\n  private static _fontToPtr(\n    fontWrapper: FontWrapper | null | undefined\n  ): number | null {\n    if (fontWrapper == null)"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 1694,
+        "excerpt": "   return RiveFont._fontToPtr(fonts![index]);\n  }\n\n  // Create the callback Rive expects to use for fallback fonts (regardless if set via a user-supplied static list, or callback)\n  // 1. Ensure WASM is ready\n  // 2. Bias for checking user callback over static list of fonts and pass it down to Rive to store as reference\n  //    - When calling the user callback, check if we have"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2054,
+        "excerpt": "ck, check if we have any fonts left to check, and if not, return null to indicate there are no more fallbacks to try.\n  //    - If the user callback returns an array of fonts, pass the pointer value to Rive of the font to try\n  // 3. If no callback is provided, or the callback returns null, try the static list of fonts if they set any\n  // 4. If no fallback method is set, retur"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2305,
+        "excerpt": " provided, or the callback returns null, try the static list of fonts if they set any\n  // 4. If no fallback method is set, return null.\n  private static _wireFallbackProc(): void {\n    RuntimeLoader.getInstance((rive: rc.RiveCanvas) => {\n      const { _fallbackFontCallback: cb } = RiveFont;\n      if (cb) {\n        rive.setFallbackFontCallback(\n          ((missingGlyph: number,"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2459,
+        "excerpt": "_wireFallbackProc(): void {\n    RuntimeLoader.getInstance((rive: rc.RiveCanvas) => {\n      const { _fallbackFontCallback: cb } = RiveFont;\n      if (cb) {\n        rive.setFallbackFontCallback(\n          ((missingGlyph: number, fallbackFontIndex: number, weight: number) => {\n            const fontsReturned = cb(missingGlyph, weight);\n            if (fontsReturned) {\n            "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2586,
+        "excerpt": "= RiveFont;\n      if (cb) {\n        rive.setFallbackFontCallback(\n          ((missingGlyph: number, fallbackFontIndex: number, weight: number) => {\n            const fontsReturned = cb(missingGlyph, weight);\n            if (fontsReturned) {\n              if (Array.isArray(fontsReturned)) {\n                return RiveFont._getFallbackPtr(\n                  fontsReturned,\n       "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 2877,
+        "excerpt": "                return RiveFont._getFallbackPtr(\n                  fontsReturned,\n                  fallbackFontIndex\n                );\n              }\n              // If the user callback only returns a single font, provide it to Rive the first time, otherwise if Rive\n              // calls back a second time, return null to indicate there are no more fallbacks to try.\n     "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3134,
+        "excerpt": "erwise if Rive\n              // calls back a second time, return null to indicate there are no more fallbacks to try.\n              return fallbackFontIndex === 0 ? RiveFont._fontToPtr(fontsReturned) : null;\n            }\n            return null;\n          }) as CallbackToPointerValue\n        );\n      } else {\n        rive.setFallbackFontCallback(null);\n      }\n    });\n  }\n}\n"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 3173,
+        "excerpt": "ack a second time, return null to indicate there are no more fallbacks to try.\n              return fallbackFontIndex === 0 ? RiveFont._fontToPtr(fontsReturned) : null;\n            }\n            return null;\n          }) as CallbackToPointerValue\n        );\n      } else {\n        rive.setFallbackFontCallback(null);\n      }\n    });\n  }\n}\n"
+      },
+      {
+        "pattern": "instantiate",
+        "offset": 611,
+        "excerpt": "{\n  private static _fallbackFontCallback: FallbackFontsCallback | null = null;\n\n  // Class is never instantiated\n  private constructor() {}\n\n\n  /**\n   * Set a callback to dynamically set a list of fallback fonts based on the missing glyph and/or style of the default font.\n   * Set null to clear the callback.\n   * @param fontCallback Callback to set a list of fallback fonts.\n   "
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/utils/replayPacer.ts",
+    "source_index": 22,
+    "source_content_sha256": "c498cb8c233f49c726ebe33aadd90729a8e389de44c1cacf8cb2b0e57ce605de",
+    "scrubbed_content_sha256": "c498cb8c233f49c726ebe33aadd90729a8e389de44c1cacf8cb2b0e57ce605de",
+    "output_path": "rive-recovered-sources/2.49.3/22-replayPacer.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "worker",
+        "offset": 46,
+        "excerpt": "const kRefreshSamples = 15;\n// The frames the worker's replay time averages over, plus the three still in\n// flight when the cadence changes.\nconst kSettleFrames = 12;\nconst kProbeAfterMs = 1000;\nconst kMaxProbeAfterMs = 16000;\n// A worker only slightly slower than its cadence fills its queue now and then,\n// a worker that k"
+      },
+      {
+        "pattern": "worker",
+        "offset": 233,
+        "excerpt": "changes.\nconst kSettleFrames = 12;\nconst kProbeAfterMs = 1000;\nconst kMaxProbeAfterMs = 16000;\n// A worker only slightly slower than its cadence fills its queue now and then,\n// a worker that keeps up almost never.\nconst kBackupWindow = 60;\nconst kSaturatedBackups = 3;\n\nconst median = (values: number[]): number => {\n  const sorted = values.slice().sort((a, b) => a - b);\n  retur"
+      },
+      {
+        "pattern": "worker",
+        "offset": 313,
+        "excerpt": "terMs = 16000;\n// A worker only slightly slower than its cadence fills its queue now and then,\n// a worker that keeps up almost never.\nconst kBackupWindow = 60;\nconst kSaturatedBackups = 3;\n\nconst median = (values: number[]): number => {\n  const sorted = values.slice().sort((a, b) => a - b);\n  return sorted[sorted.length >> 1];\n};\n\n/**\n * Paces recording to a replay worker slow"
+      },
+      {
+        "pattern": "worker",
+        "offset": 582,
+        "excerpt": ".sort((a, b) => a - b);\n  return sorted[sorted.length >> 1];\n};\n\n/**\n * Paces recording to a replay worker slower than the display. Recording as\n * soon as its queue frees sends frames in bursts, so instead they go out every\n * N refreshes, with N following the worker's recent replay time.\n */\nexport class ReplayPacer {\n  private lastTime = 0;\n  private lastRecord = 0;\n  privat"
+      },
+      {
+        "pattern": "worker",
+        "offset": 744,
+        "excerpt": "eue frees sends frames in bursts, so instead they go out every\n * N refreshes, with N following the worker's recent replay time.\n */\nexport class ReplayPacer {\n  private lastTime = 0;\n  private lastRecord = 0;\n  private intervals: number[] = [];\n  private divisor = 1;\n  // Frames recorded since the divisor changed, which the replay time still\n  // averages in.\n  private settle "
+      },
+      {
+        "pattern": "worker",
+        "offset": 1207,
+        "excerpt": "f, since each one costs a few uneven frames.\n  private probeAfter = kProbeAfterMs;\n  // Whether the worker's queue filled since the last decision.\n  private backedUp = false;\n  private recentBackups: boolean[] = [];\n\n  /**\n   * Called on every animation frame. Returns whether this one should record,\n   * given the worker's replay time and whether its queue has room.\n   */\n  sho"
+      },
+      {
+        "pattern": "worker",
+        "offset": 1423,
+        "excerpt": "\n  /**\n   * Called on every animation frame. Returns whether this one should record,\n   * given the worker's replay time and whether its queue has room.\n   */\n  shouldRecord(time: number, replayMs: number, accepts: boolean): boolean {\n    if (this.lastTime && time > this.lastTime) {\n      this.intervals.push(time - this.lastTime);\n      if (this.intervals.length > kRefreshSampl"
+      },
+      {
+        "pattern": "worker",
+        "offset": 1823,
+        "excerpt": "ntervals.shift();\n      }\n    }\n    this.lastTime = time;\n    if (!accepts) {\n      // A canvas the worker has yet to take refuses frames too.\n      if (replayMs > 0) {\n        this.backedUp = true;\n      }\n      return false;\n    }\n    if (replayMs > 0 && this.intervals.length > 0) {\n      const refresh = median(this.intervals);\n      if (this.settle === 0) {\n        this.adap"
+      },
+      {
+        "pattern": "worker",
+        "offset": 2807,
+        "excerpt": "ps.filter(Boolean).length >= kSaturatedBackups;\n    const lagging = ratio > divisor * 1.1;\n    // A worker that keeps up never fills its queue, however long each frame\n    // takes to finish, so only a lag with a full queue slows the cadence. A\n    // probe fails on either, since it settled at the new cadence.\n    if (\n      this.probing\n        ? lagging || backedUp\n        : "
+      },
+      {
+        "pattern": "worker",
+        "offset": 3657,
+        "excerpt": "is.setDivisor(time, Math.max(1, Math.ceil(ratio / 0.9)));\n    } else if (this.probing) {\n      // A worker only slightly too slow takes a while to fill its queue.\n      if (this.recentBackups.length >= kBackupWindow) {\n        this.probing = false;\n        this.probeAfter = kProbeAfterMs;\n      }\n    } else if (divisor > 1 && time >= this.nextProbe) {\n      // Frames that overl"
+      }
+    ]
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/webpack/bootstrap",
+    "source_index": 23,
+    "source_content_sha256": "4158dea042576a3385c74915858d23ff819d6e19839c43832e741eeee77638d6",
+    "scrubbed_content_sha256": "4158dea042576a3385c74915858d23ff819d6e19839c43832e741eeee77638d6",
+    "output_path": "rive-recovered-sources/2.49.3/23-bootstrap.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/webpack/runtime/compat get default export",
+    "source_index": 24,
+    "source_content_sha256": "2d298166484f8c8f6eef9e2c39927d426d9229042e625178dc7fded47d783350",
+    "scrubbed_content_sha256": "2d298166484f8c8f6eef9e2c39927d426d9229042e625178dc7fded47d783350",
+    "output_path": "rive-recovered-sources/2.49.3/24-compat_get_default_export.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/webpack/runtime/define property getters",
+    "source_index": 25,
+    "source_content_sha256": "8887a7a4ae920342bb9109b1d8e4a7deddf67d2bb59309fe935121acf0d65d6d",
+    "scrubbed_content_sha256": "8887a7a4ae920342bb9109b1d8e4a7deddf67d2bb59309fe935121acf0d65d6d",
+    "output_path": "rive-recovered-sources/2.49.3/25-define_property_getters.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/webpack/runtime/hasOwnProperty shorthand",
+    "source_index": 26,
+    "source_content_sha256": "2fc045876ffafa261598b1d1476ffb16010e9fed737aa98bd4545e5fb2867777",
+    "scrubbed_content_sha256": "2fc045876ffafa261598b1d1476ffb16010e9fed737aa98bd4545e5fb2867777",
+    "output_path": "rive-recovered-sources/2.49.3/26-hasOwnProperty_shorthand.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/webpack/runtime/make namespace object",
+    "source_index": 27,
+    "source_content_sha256": "dcb6fa6d79b08ff7453817108c79154a90678e58f0ba43820f694a7311f22fd8",
+    "scrubbed_content_sha256": "dcb6fa6d79b08ff7453817108c79154a90678e58f0ba43820f694a7311f22fd8",
+    "output_path": "rive-recovered-sources/2.49.3/27-make_namespace_object.txt",
+    "loader_evidence": []
+  },
+  {
+    "map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "source_name": "webpack://rive/./src/rive.ts",
+    "source_index": 28,
+    "source_content_sha256": "2cf12464043a6641bc59355f86aaf2f786647741b275e699379098ff60a3fc11",
+    "scrubbed_content_sha256": "2cf12464043a6641bc59355f86aaf2f786647741b275e699379098ff60a3fc11",
+    "output_path": "rive-recovered-sources/2.49.3/28-rive.ts.txt",
+    "loader_evidence": [
+      {
+        "pattern": "fallback",
+        "offset": 22537,
+        "excerpt": " Falling back to find an animation with the same name.`);\n          \n          // TODO: Remove this fallback in next major release as it complicates initialization.\n          // In order to maintain compatibility with current behavior, if a state machine is not found\n          // we look for an animation with the same name\n          this.initLinearAnimations([animatables[i]], p"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 101863,
+        "excerpt": "ied riveFile is theirs to release; one we import here is\n      // ours, which matters if a deferred fallback replaces it below.\n      this.ownsRiveFile = this.riveFile == null;\n      if (this.ownsRiveFile) {\n        const riveFile = new RiveFile({\n          src: this.src,\n          buffer: this.buffer,\n          enableRiveAssetCDN: this.enableRiveAssetCDN,\n          assetLoader"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 105902,
+        "excerpt": "smatch warns and degrades to something that\n   * renders, so users shouldn't have a blank canvas. A fallback self-reimport replaces `this.riveFile`;\n   * only a file this instance imported is released when that happens.\n   */\n  private async resolveDeferredRendering(): Promise<void> {\n    const file = this.riveFile;\n    const ownsFile = this.ownsRiveFile;\n    const renderer = t"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 109289,
+        "excerpt": "orted file's deferred session to this canvas, which draws on the replay worker and has no immediate fallback.\",\n      );\n      return;\n    }\n    // The copy's session could not take this canvas either (this renderer\n    // already holds one). An immediate re-import still renders; a deferred file\n    // on an immediate renderer would drop its resources and draw nothing.\n    cons"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 109919,
+        "excerpt": "mediate file's draws into its recorder, which drops them.\n    renderer.detachSession?.();\n    const fallback = await file.reimport(false);\n    // The deferred copy was only ever ours, so it always goes.\n    copy.destroyIfUnused();\n    if (this.destroyed) {\n      fallback.destroyIfUnused();\n      return;\n    }\n    this.riveFile = fallback;\n    this.ownsRiveFile = true;\n    if (o"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 110082,
+        "excerpt": " was only ever ours, so it always goes.\n    copy.destroyIfUnused();\n    if (this.destroyed) {\n      fallback.destroyIfUnused();\n      return;\n    }\n    this.riveFile = fallback;\n    this.ownsRiveFile = true;\n    if (ownsFile) {\n      file.destroyIfUnused();\n    }\n  }\n\n  // Reloads what this instance was playing. State the reload does not carry,\n  // such as a view model instanc"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 110150,
+        "excerpt": "    if (this.destroyed) {\n      fallback.destroyIfUnused();\n      return;\n    }\n    this.riveFile = fallback;\n    this.ownsRiveFile = true;\n    if (ownsFile) {\n      file.destroyIfUnused();\n    }\n  }\n\n  // Reloads what this instance was playing. State the reload does not carry,\n  // such as a view model instance bound by hand, starts over.\n  private reloadForRestoredContext(): "
+      },
+      {
+        "pattern": "fallback",
+        "offset": 118081,
+        "excerpt": "sTextInputSession) {\n      // Overlay hand-off first, ahead of endTextInputSession's park-on-canvas fallback.\n      overlay?.releaseEditingHost(this._semanticTree, host);\n      ki.endTextInputSession();\n    }\n    this._prevWantsTextInputSession = wantsSession;\n  }\n\n  /** Mirror Rive's hasFocus into the keyboard session state and, on opt-in, canvas focus. */\n  private syncRiveFo"
+      },
+      {
+        "pattern": "fallback",
+        "offset": 137635,
+        "excerpt": "bump\n   *\n   * Whether this instance is rendering through a deferred session. False whenever\n   * a fallback ran, whatever was requested.\n   */\n  public get deferredRendererActive(): boolean {\n    return this.renderer?.deferredActive?.() ?? false;\n  }\n\n  /**\n   * Cleans up any Wasm-generated objects that need to be manually destroyed:\n   * artboard instances, animation instance"
+      },
+      {
+        "pattern": "fetch(",
+        "offset": 209181,
+        "excerpt": " async (src: string): Promise<ArrayBuffer> => {\n  const req = new Request(src);\n  const res = await fetch(req);\n  if (!res.ok) {\n    throw new Error(`Failed to fetch the Rive file: HTTP ${res.status}`);\n  }\n  const buffer = await res.arrayBuffer();\n  return buffer;\n};\n\n// #endregion\n\n// #region utility functions\n\n/*\n * Utility function to ensure an object is a string array\n */\n"
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 66038,
+        "excerpt": "ch-riv:start', 'rive:fetch-riv:end');\n      })\n    }\n    return bufferPromise;\n  }\n\n  private async loadRuntime(): Promise<rc.RiveCanvas> {\n    if (this.enablePerfMarks) performance.mark('rive:await-wasm:start');\n    const runtimePromise = RuntimeLoader.awaitInstance();\n    if (this.enablePerfMarks) {\n      runtimePromise.then(() => {\n        performance.mark('rive:await-wasm:e"
+      },
+      {
+        "pattern": "loadRuntime",
+        "offset": 66921,
+        "excerpt": "e.\n     const [bufferResolved, runtimeResolved] = await Promise.all([this.loadRiveFileBytes(), this.loadRuntime()]);\n\n      if (this.destroyed) {\n        return;\n      }\n      // .riv file buffer and WASM runtime instance\n      this.buffer = bufferResolved;\n      this.runtime = runtimeResolved;\n\n      if (this.enablePerfMarks) performance.mark('rive:init-data:start');\n      awa"
+      },
+      {
+        "pattern": "worker",
+        "offset": 52685,
+        "excerpt": "* With `enableGPUCanvas`, on `@rive-app/webgl2-threads` loaded threaded, the\n   * canvas moves to a worker shared by every instance on the page, which replays\n   * each frame while this instance records the next. Set false to keep this\n   * instance's rendering on the page's thread. Has no effect where the worker is\n   * unavailable. True by default; see also {@link RuntimeLoad"
+      },
+      {
+        "pattern": "worker",
+        "offset": 52893,
+        "excerpt": "ext. Set false to keep this\n   * instance's rendering on the page's thread. Has no effect where the worker is\n   * unavailable. True by default; see also {@link RuntimeLoader.setReplayWorker}.\n   *\n   * A canvas handed to the worker stays there: its `width` and `height` still\n   * work, but it can no longer give out a context of its own.\n   */\n  useReplayWorker?: boolean;\n  /**"
+      },
+      {
+        "pattern": "worker",
+        "offset": 53019,
+        "excerpt": ". True by default; see also {@link RuntimeLoader.setReplayWorker}.\n   *\n   * A canvas handed to the worker stays there: its `width` and `height` still\n   * work, but it can no longer give out a context of its own.\n   */\n  useReplayWorker?: boolean;\n  /**\n   * Emit performance.mark / performance.measure entries for load lifecycle\n   * events and the first 3 render frames. Useful"
+      },
+      {
+        "pattern": "worker",
+        "offset": 75250,
+        "excerpt": "erredRenderer: boolean = false;\n\n  // Whether a deferred instance may hand its canvas to the replay worker.\n  private useReplayWorker: boolean = true;\n\n  // Decides the context attributes on every init(); cleared if the renderer can't inkbleed.\n  private _inkbleedCapable = false;\n  private _inkbleed = false;\n  private static inkbleedUnsupportedWarned = false;\n  private static r"
+      },
+      {
+        "pattern": "worker",
+        "offset": 91920,
+        "excerpt": "   inkbleed: this._inkbleedCapable,\n              // An immediate file would only re-import for the worker.\n              replayWorker:\n                this.deferredRenderer &&\n                this.useReplayWorker &&\n                (this.riveFile?.deferredRequested ?? true),\n              // Draws notice a restored context, so one has to be scheduled.\n              onContextRe"
+      },
+      {
+        "pattern": "worker",
+        "offset": 106268,
+        "excerpt": "t renderer = this.renderer;\n    const session = file.deferredSession;\n    // A canvas on the replay worker can only draw what a session records.\n    const deferredOnly = renderer?.replaysOnWorker?.() === true;\n    if (session === null) {\n      if (deferredOnly) {\n        console.warn(\n          \"Rive: this canvas draws on the replay worker, which only replays GPU Canvas files. "
+      },
+      {
+        "pattern": "worker",
+        "offset": 106503,
+        "excerpt": " {\n      if (deferredOnly) {\n        console.warn(\n          \"Rive: this canvas draws on the replay worker, which only replays GPU Canvas files. Re-importing the file with `enableGPUCanvas: true` for this instance.\",\n        );\n        const { attached } = await this.attachDeferredCopy(file, renderer);\n        if (attached && ownsFile) {\n          file.destroyIfUnused();\n      "
+      },
+      {
+        "pattern": "worker",
+        "offset": 109261,
+        "excerpt": " could not attach the re-imported file's deferred session to this canvas, which draws on the replay worker and has no immediate fallback.\",\n      );\n      return;\n    }\n    // The copy's session could not take this canvas either (this renderer\n    // already holds one). An immediate re-import still renders; a deferred file\n    // on an immediate renderer would drop its resource"
+      },
+      {
+        "pattern": "worker",
+        "offset": 110796,
+        "excerpt": "d) {\n        Rive.replayContextLostWarned = true;\n        console.warn(\n          \"Rive: the replay worker's WebGL context was restored, but this instance has no `src` or `buffer` to reload from, so its canvas stays blank.\",\n        );\n      }\n      return;\n    }\n    this.load({\n      src: this.src,\n      buffer: this.buffer,\n      riveFile,\n      artboard: this.activeArtboard,"
+      },
+      {
+        "pattern": "worker",
+        "offset": 127754,
+        "excerpt": "at lands here with nothing to draw.\n    if (!this.artboard) {\n      return;\n    }\n    // The replay worker's context came back empty, so everything it held has\n    // to be recorded again through a fresh renderer and session.\n    if (this.renderer?.contextRestored?.() === true) {\n      this.reloadForRestoredContext();\n      return;\n    }\n    // The replay worker has yet to take"
+      },
+      {
+        "pattern": "worker",
+        "offset": 128012,
+        "excerpt": "stored?.() === true) {\n      this.reloadForRestoredContext();\n      return;\n    }\n    // The replay worker has yet to take the canvas, is still on earlier\n    // frames, or is slower than the display and this frame falls between its\n    // paced ones. Waiting keeps its queue bounded, and the frame that follows\n    // advances by the whole wait, so playback keeps time.\n    const"
+      }
+    ]
+  }
+]

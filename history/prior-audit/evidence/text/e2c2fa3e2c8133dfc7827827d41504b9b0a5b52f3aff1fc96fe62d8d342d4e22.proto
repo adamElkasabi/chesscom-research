@@ -1,0 +1,23 @@
+// source: chesscom/user_properties/v1/properties_growth.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum GrowthPropertyDefinition {
+  GROWTH_PROPERTY_DEFINITION_UNSPECIFIED = 0;
+  GROWTH_PROPERTY_DEFINITION_MOMENTUM_STATE = 1;
+  GROWTH_PROPERTY_DEFINITION_MOMENTUM_PRIOR_STATE = 2;
+  GROWTH_PROPERTY_DEFINITION_MOMENTUM_COMPUTED_AT = 3;
+}
+
+message GrowthProperty {
+  oneof _momentum_state {
+  string momentum_state = 1;
+  }
+  oneof _momentum_prior_state {
+  string momentum_prior_state = 2;
+  }
+  oneof _momentum_computed_at {
+  .google.protobuf.Timestamp momentum_computed_at = 3;
+  }
+}

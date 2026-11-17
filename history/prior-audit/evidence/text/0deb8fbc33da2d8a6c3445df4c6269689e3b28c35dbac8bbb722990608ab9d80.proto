@@ -1,0 +1,88 @@
+// source: chesscom/explanation_engine/v1/internal_feature_puzzle_gen.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum PuzzleGenPhase {
+  PUZZLE_GEN_PHASE_UNSPECIFIED = 0;
+  PUZZLE_GEN_PHASE_INIT = 1;
+  PUZZLE_GEN_PHASE_BUILDING_PUZZLE_TREE = 2;
+  PUZZLE_GEN_PHASE_ADDED_PUZZLE_TREE_NODE = 3;
+  PUZZLE_GEN_PHASE_SELECTING_PUZZLE_LINE = 4;
+  PUZZLE_GEN_PHASE_VERIFYING_SELECTED_LINE_EVALS = 5;
+  PUZZLE_GEN_PHASE_PUZZLE_POSITION_VERIFICATION_IN_PROGRESS = 6;
+  PUZZLE_GEN_PHASE_COMPUTING_GOALS = 7;
+  PUZZLE_GEN_PHASE_COMPUTING_THEMES = 8;
+  PUZZLE_GEN_PHASE_DONE = 9;
+}
+
+enum PuzzleGenFailureType {
+  PUZZLE_GEN_FAILURE_TYPE_UNSPECIFIED = 0;
+  PUZZLE_GEN_FAILURE_TYPE_ILLEGAL_MOVE = 1;
+  PUZZLE_GEN_FAILURE_TYPE_PUZZLE_TOO_SHORT = 2;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_ENDS_GAME = 3;
+  PUZZLE_GEN_FAILURE_TYPE_AFTER_PITCH_TOO_LOSING = 4;
+  PUZZLE_GEN_FAILURE_TYPE_BEFORE_PITCH_TOO_WINNING = 5;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_TOO_STRONG = 6;
+  PUZZLE_GEN_FAILURE_TYPE_AFTER_PLAYER_BEST_MOVE_TOO_LOSING = 7;
+  PUZZLE_GEN_FAILURE_TYPE_AFTER_PLAYER_ALT_MOVE_TOO_WINNING_ABSOLUTE = 8;
+  PUZZLE_GEN_FAILURE_TYPE_AFTER_PLAYER_ALT_MOVE_TOO_WINNING_RELATIVE = 9;
+  PUZZLE_GEN_FAILURE_TYPE_PLAYER_MOVE_NOT_CRITICAL = 10;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_NOT_A_MISTAKE = 11;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_INVALID_GAME_PHASE = 12;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_LOSES_MATERIAL = 13;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_MATERIAL_IMBALANCE = 14;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_INVALID_EXPECTED_OUTCOME = 15;
+  PUZZLE_GEN_FAILURE_TYPE_PITCH_MOVE_INVALID_BOARD_EVENT = 16;
+}
+
+message PuzzleGenFailureReason {
+  optional .chesscom.explanation_engine.v1.PuzzleGenPhase failure_phase = 1;
+  optional .chesscom.explanation_engine.v1.PuzzleGenFailureType failure_type = 2;
+  optional string failure_message = 3;
+}
+
+message InternalFeaturePuzzleGenRequest {
+  oneof _do_puzzle_tree_generation {
+  bool do_puzzle_tree_generation = 3;
+  }
+  oneof _do_selected_line_verification {
+  bool do_selected_line_verification = 4;
+  }
+  oneof _do_pitch_verification {
+  bool do_pitch_verification = 5;
+  }
+  oneof _add_variations_to_pgn {
+  bool add_variations_to_pgn = 6;
+  }
+  oneof _mode {
+  .chesscom.explanation_engine.v1.PuzzleGenMode mode = 7;
+  }
+  oneof _engine {
+  .chesscom.explanation_engine.v1.CeeInternalEngine engine = 8;
+  }
+  oneof _include_board_events_in_pgn {
+  bool include_board_events_in_pgn = 9;
+  }
+  oneof _filter_board_events_in_pgn {
+  bool filter_board_events_in_pgn = 10;
+  }
+  oneof _include_speech_in_pgn {
+  bool include_speech_in_pgn = 11;
+  }
+  optional bool stream_progress = 1;
+  repeated .chesscom.chess.v1.Move full_selected_line = 2;
+  optional int32 heartbeat_interval_seconds = 12;
+}
+
+message InternalFeaturePuzzleGenResponse {
+  oneof puzzle_response {
+  .chesscom.explanation_engine.v1.PuzzleGen puzzle_gen = 1;
+  .chesscom.explanation_engine.v1.PuzzleGenPhase progress = 2;
+  }
+  oneof _failure_reason {
+  .chesscom.explanation_engine.v1.PuzzleGenFailureReason failure_reason = 4;
+  }
+  optional string log = 3;
+  optional bool is_heartbeat = 5;
+}

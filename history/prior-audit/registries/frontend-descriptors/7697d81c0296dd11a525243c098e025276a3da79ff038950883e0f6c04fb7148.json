@@ -1,0 +1,223 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_participant.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoardParticipant",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "role",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardRole"
+        },
+        {
+          "name": "status",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipantStatus"
+        },
+        {
+          "name": "capabilities",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardCapability"
+        },
+        {
+          "name": "invited_by_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "created_at",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "updated_at",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "username",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "avatar_url",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "chess_title",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "country",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "flair_code",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_streamer",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "flair",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.FlairView",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_username"
+        },
+        {
+          "name": "_avatar_url"
+        },
+        {
+          "name": "_chess_title"
+        },
+        {
+          "name": "_country"
+        },
+        {
+          "name": "_flair_code"
+        },
+        {
+          "name": "_is_streamer"
+        },
+        {
+          "name": "_flair"
+        },
+        {
+          "name": "_membership"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SharedBoardRole",
+      "value": [
+        {
+          "name": "SHARED_BOARD_ROLE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_ROLE_HOST",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_ROLE_CO_HOST",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_ROLE_VIEWER",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardParticipantStatus",
+      "value": [
+        {
+          "name": "SHARED_BOARD_PARTICIPANT_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_PARTICIPANT_STATUS_PENDING",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_PARTICIPANT_STATUS_REQUESTING",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_PARTICIPANT_STATUS_ACCEPTED",
+          "number": 3
+        },
+        {
+          "name": "SHARED_BOARD_PARTICIPANT_STATUS_DECLINED",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardCapability",
+      "value": [
+        {
+          "name": "SHARED_BOARD_CAPABILITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_CAPABILITY_MOVE_WHITE",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_CAPABILITY_MOVE_BLACK",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_CAPABILITY_DRAW_ARROWS",
+          "number": 3
+        },
+        {
+          "name": "SHARED_BOARD_CAPABILITY_EDIT_COLLECTION",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

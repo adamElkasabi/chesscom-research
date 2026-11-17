@@ -1,0 +1,2748 @@
+# Offset-linked relevant ASCII strings (hex file offset); all candidates and UTF16 candidates are separate.
+0x0000069b llvm_eh_typeid_for
+0x000007b2 __assert_fail
+0x00000a92 cee_worker_spawn
+0x00000aa9 cee_worker_terminate
+0x00000ac4 cee_worker_post
+0x00000ada cee_worker_error
+0x00000aed env!__asyncjs__cee_worker_await_lines
+0x00000b19 cee_take_uci_interrupt
+0x00000b8a emscripten_asm_const_int
+0x00000ff3 emscripten_sleep
+0x000010d5 emscripten_date_now
+0x00001200 emscripten_get_now
+0x000012d4 emscripten_resize_heap
+0x0000140e emscripten_get_heap_max
+0x00006e95 CEE_Init
+0x00006ea1 CEE_Dispose
+0x00006eb9 malloc
+0x00006ec4 CEE_InitWithOpts
+0x00006ed8 CEE_DisposeGame
+0x00006eeb CEE_DisposeAllGames
+0x00006f02 CEE_Play
+0x00006f0e CEE_GetLastMove
+0x00006f21 CEE_NewFeature
+0x00006f33 CEE_DisposeFeature
+0x00006f49 CEE_Run
+0x00006f54 CEE_Stop
+0x00006f60 CEE_Join
+0x00006f6c CEE_AddArtifact
+0x00006f7f CEE_AddArtifactFromFile
+0x00006f9a CEE_DisposeArtifact
+0x00006fb1 CEE_EnableNotifications
+0x00006fcc CEE_DisableNotifications
+0x00006fe8 CEE_WaitForNotification
+0x00007003 CEE_StopNotificationWaiting
+0x00007022 CEE_GetLastError
+0x00007036 CEE_ClearLastError
+0x0000704c CEE_EnableLog
+0x0000705d CEE_DisableLog
+0x0000706f CEE_IsValidGamePoint
+0x000070c0 CEE_LoadApplicabilityIndex
+0x000070de CEE_LoadCharmModel
+0x00007191 emscripten_builtin_memalign
+0x000071be _emscripten_tempret_set
+0x000071da _emscripten_stack_restore
+0x000071f8 _emscripten_stack_alloc
+0x00007214 emscripten_stack_get_current
+0x013dcf4c {}CEE_Run: {}: {}
+0x013dcfbf A streamed classification ran on unsuitable continuation options: {}
+0x013dd06e MoveClassification calculation error: {}
+0x013dd097 analysis classification error: {}
+0x013dd33c CEEError: Incorrect move: {}
+0x013dd451 Unable to replay the played line for a streamed classification. Game point id: {}. Root FEN: "{}". Line (UCI): "{}". Target depth: {}. Cause: {}
+0x013dd4fd cannot borrow engine: {}
+0x013dd5ce CEEError: Bad fetch command: {}
+0x013dd5ee classification search preparation interrupted: {}
+0x013dd620 classification search preparation failed: {}
+0x013dd90d {"error": "GameAnalysis feature deprecated"}
+0x013dd9fb json { "error" : "cancelled" }
+0x013dda52 m-maia2-blitz
+0x013ddd9a google.protobuf.Empty
+0x013ddf4f maia_probability
+0x013de326 google.protobuf.Any
+0x013de46c BuildAgentStableTree: charm_strong names a promotion threshold the composition no longer has; the most-human move is selected by rank and admitted unconditionally
+0x013de53c classification_tricky
+0x013de9d8 chesscom.explanation_engine.v1alpha.RatingSpread.model_key
+0x013dee58 classification_inaccuracy
+0x013dee72 Inaccuracy
+0x013dee7d OtherAccuracy
+0x013dee8b RookPawnAccuracy
+0x013dee9c KingPawnAccuracy
+0x013deead SemiOpenAccuracy
+0x013deebe QueenAccuracy
+0x013deecc OpeningAccuracy
+0x013deedc SemiOpenAttackingAccuracy
+0x013deef6 ClosedAttackingAccuracy
+0x013def0e SemiOpenDefendingAccuracy
+0x013def28 ClosedDefendingAccuracy
+0x013def40 TimePressureAccuracy
+0x013def55 EndgameAccuracy
+0x013def65 SemiOpenPieceActivityAdvantageAccuracy
+0x013def8c ClosedPieceActivityAdvantageAccuracy
+0x013defb1 SemiOpenPawnStructureAdvantageAccuracy
+0x013defd8 ClosedPawnStructureAdvantageAccuracy
+0x013deffd SemiOpenSpaceAdvantageAccuracy
+0x013df01c ClosedSpaceAdvantageAccuracy
+0x013df039 ClosedAccuracy
+0x013df048 StrategicAccuracy
+0x013df07a rating_from_points_thrown_away
+0x013df19b CEE_Play
+0x013df705 error_cost: %u
+0x013df738 error-cost: %u
+0x013df81d Mismatched rating_range within same context
+0x013dfbcc MaiaPrediction TEP::charm::MaiaModel::predict(const Position &, int, int) const
+0x013dfe2f std::optional<SearchOpts> TEP::Search::human_mode_opts(const SearchOpts &) const
+0x013dfe80 void TEP::api::(anonymous namespace)::BranchSummarizer::record_capture(const PieceHistory &, proto_cee_v1alpha::CaptureByInfo &) const
+0x013dff07 void TEP::api::(anonymous namespace)::BranchSummarizer::record_promotion(const PieceHistory &, proto_cee_v1alpha::PromotedToInfo &) const
+0x013e0057 Prediction TEP::charm::maia3::Model::predict(const Node &, float, float, const std::string &) const
+0x013e013d cannot create object from initializer list
+0x013e0192 classification_best
+0x013e02d1 Maia inference requires WASM SIMD support
+0x013e02fb Maia3 inference requires WASM SIMD support
+0x013e03d8 assert
+0x013e07f7  there are no moves between them; the feature game point must be a strict descendant of `starting_game_point`. starting game point cannot equal the feature game point
+0x013e10b9 classification_excellent
+0x013e118b assert_invariant
+0x013e11a8 classification_brilliant
+0x013e1908 fc_strength_rating_sensitive.weight
+0x013e1d38 embedded_maia_net
+0x013e1ef5 google.protobuf.Struct
+0x013e2004 CEE_AddArtifact
+0x013e272d error: failed to serialize weights
+0x013e2946 Game Rating V2 metadata does not support the requested time class
+0x013e2988 cannot use key() for non-object iterators
+0x013e2a4b cannot compare iterators of different containers
+0x013e2dc3 google.protobuf.EnumOptions
+0x013e2ddf google.protobuf.OneofOptions
+0x013e2dfc google.protobuf.EnumValueOptions
+0x013e2e1d google.protobuf.FileOptions
+0x013e2e39 google.protobuf.ExtensionRangeOptions
+0x013e2e5f google.protobuf.MessageOptions
+0x013e2e7e google.protobuf.ServiceOptions
+0x013e2e9d google.protobuf.MethodOptions
+0x013e2ebb google.protobuf.FieldOptions
+0x013e3065 Threshold for using forgiving classifications
+0x013e3093 moveClassifications
+0x013e3351 BuildAgentStableTree: threat_promotion_piece_cp names the piece-threat promotion gate, which the composition no longer runs; a site's breadth is its line count and its human picks
+0x013e34d3 Keying PositionSearch requires RunSearchRequest to contain GameReviewSearchSettings
+0x013e3527 Keying GameState requires RunSearchRequest to contain GameReviewSearchSettings
+0x013e3576 No Elo available: either provide an elo or a game context with player ratings
+0x013e35c4 No Elo available: either provide at least one elo or a game context with player ratings
+0x013e361c  has no ratings
+0x013e37d3 error Position must have at least one legal move among the allowed searchmoves
+0x013e3e9c BuildAgentStableTree: shallow_searches parameterizes a candidate net the composition no longer runs; the human selection ranks every legal move by humanness, not a search's candidates
+0x013e3fe5 True if play vs coach speech should take into account the users rating to exclude some atypes
+0x013e40d0 fill_pv_classifications_from_lines
+0x013e40f3 engine_lines_input is required: provide either external_lines or cee_lines
+0x013e42ae supported_rating_scales
+0x013e432b strength_rating_sensitive_probabilities
+0x013e43e3 chesscom.text_item.v1alpha.TextItem.audio_url_hashes
+0x013e449c rating_ranges
+0x013e44aa rating-ranges
+0x013e44b8 Failed to find rating ranges
+0x013e44e1 UseRatingRanges
+0x013e4507  pvtrees
+0x013e48a4 " stored in google.protobuf.Any has missing required fields
+0x013e48ef maia_log_odds
+0x013e49bc existingMaiaProbs
+0x013e4ae1 fc_strength_rating_sensitive.bias
+0x013e4c67 ClassificationIDs
+0x013e4dfc select_smaller_error symbol:%s, over_symbol:%s
+0x013e4fbf filesystem error: %s
+0x013e4fd4 %s:%d: assertion failed: %s
+0x013e55ca detect_error
+0x013e55d7 is_error
+0x013e55e0 parse_error
+0x013e55ec type_error
+0x013e55f7 chesscom.explanation_engine.v1alpha.GetLastErrorResult.error
+0x013e5634 chesscom.explanation_engine.v1.PgnGameValidationError.error
+0x013e5670 chesscom.explanation_engine.v1.ValidateGameForAnalysisResponse.error
+0x013e56b5 chesscom.explanation_engine.v1.ValidateFenResponse.error
+0x013e56ee chesscom.explanation_engine.v1alpha.EngineInstanceResponse.error
+0x013e572f BuildAgentStableTree charm availability error
+0x013e575d unspecified iostream_category error
+0x013e5781 BuildAgentStableTree registered root error
+0x013e57ac BuildAgentStableTree extension point error
+0x013e57d7 LoadBot content error
+0x013e57ed RunPvTrees refinement error
+0x013e5809 money_get error
+0x013e5819 PuzzleGen progress error
+0x013e5832 RunPvTrees options error
+0x013e584b PuzzleGen options error
+0x013e5863 EvaluateGame search options error
+0x013e5885 GeneratePvTree options error
+0x013e58a2 required variations error
+0x013e58bc BuildAgentStableTree settings error
+0x013e58e0 wstring_convert: to_bytes error
+0x013e5900 wstring_convert: from_bytes error
+0x013e5922 parameter error
+0x013e5932 unknown error
+0x013e5940 Unknown error
+0x013e594e BuildAgentStableTree construction error
+0x013e5976 GetBotMove move selection error
+0x013e5996 BotConfigResources extraction error
+0x013e59ba GetGameState serialization error
+0x013e59db UciToGameState serialization error
+0x013e59fe EnableGameMocks configuration error
+0x013e5a22 LoadGameState game registration error
+0x013e5a48 BuildAgentStableTree game registration error
+0x013e5a75 CoachTextAsset generation error
+0x013e5a95 BotChat generation error
+0x013e5aae CoachTextItems generation error
+0x013e5ace TrainItemGoalSpeech generation error
+0x013e5af3 classification search preparation error
+0x013e5b1b advanced stats calculation error
+0x013e5b3c LegalPremoves calculation error
+0x013e5b5c RelaxedLegalMoves calculation error
+0x013e5b80 MaiaBotMove calculation error
+0x013e5b9e CharmInference calculation error
+0x013e5bbf LoadAndSetCoach asset installation error
+0x013e5be8 NewGame creation error
+0x013e5bff ValidatePgn validation error
+0x013e5c1c ErgonomicPosition FEN validation error
+0x013e5c43 RelaxedApplyMove application error
+0x013e5c66 GetFen position conversion error
+0x013e5c87 ErgonomicPosition conversion error
+0x013e5caa RelaxedApplyMove move conversion error
+0x013e5cd1 CharmInference move conversion error
+0x013e5cf6 EvaluateGame response conversion error
+0x013e5d1d Ergonomic game conversion error
+0x013e5d3d RelaxedApplyMove SAN conversion error
+0x013e5d63 GetPgn explicit game point expansion error
+0x013e5d8e GetPgn included game point expansion error
+0x013e5db9 BotMoveFromConfig decision error
+0x013e5dda PuzzleGen error
+0x013e5dea stream error
+0x013e5df7 RunPvTrees search error
+0x013e5e0f GeneratePvTree search error
+0x013e5e2b GradeTrainItemMove speech error
+0x013e5e4b ValidatePgn parsing error
+0x013e5e65 Ergonomic game PGN parsing error
+0x013e5e86 LoadBot loading error
+0x013e5e9c LoadAndSetCoach loading error
+0x013e5eba LoadCoach loading error
+0x013e5ed2 Ergonomic game state loading error
+0x013e5ef5 buf error
+0x013e5eff MaiaBotMove legacy move error
+0x013e5f1d parse error
+0x013e5f29 PuzzleGen progress response error
+0x013e5f4b PuzzleGen response error
+0x013e5f64 GetNonChessText text type error
+0x013e5f84 BuildAgentStableTree temporary game error
+0x013e5fae file error
+0x013e5fb9 ValidateGameForAnalysis line range error
+0x013e5fe2 GetPgn line range error
+0x013e5ffa Ergonomic game line range error
+0x013e601a EvaluateGame line range error
+0x013e6038 EvaluateGame sacrifice acceptance error
+0x013e6060 UciToGameState command error
+0x013e607d GameReview build error
+0x013e6094 data error
+0x013e60b9 human_player_color
+0x013e69b7 Cannot provide multiple evaluations when one indicates the current position is gameover
+0x013e6f88 classification_blunder
+0x013e7bcb ../../src/miniz/miniz.cpp
+0x013e7be5 ../../src/pgn_deleted_moves_property.cpp
+0x013e7c0e ../../src/speech_trigger_registry.cpp
+0x013e7c34 ../../src/piece_history.cpp
+0x013e7c50 ../../src/features/feature_branch_summary.cpp
+0x013e7c7e ../../src/speech_key.cpp
+0x013e7c97 ../../src/features/game_metadata_overlay.cpp
+0x013e7cc4 ../../src/features/game_review.cpp
+0x013e7ce7 ../../src/features/conv/board_event_conv.cpp
+0x013e7d14 ../../src/features/conv/proto_conv.cpp
+0x013e7d3b ../../src/features/conv/puzzlegen_conv.cpp
+0x013e7d66 ../../src/features/feature_get_non_chess_text.cpp
+0x013e7d98 ../../src/bot_move_next/bot_move_next.cpp
+0x013e7dc2 ../../src/features/feature_load_bot.cpp
+0x013e7dea ../../src/features/feature_advanced_stats_datapoint.cpp
+0x013e7e22 ../../src/charm/charm_inference_result.cpp
+0x013e7e4d ../../src/features/feature_generate_coach_text_asset.cpp
+0x013e7e86 ../../src/coach_assets/coach_asset.cpp
+0x013e7ead ../../src/cee_format.cpp
+0x013e7ec6 ../../src/features/feature_get_bot_chat.cpp
+0x013e7ef2 ../../src/takeaways.cpp
+0x013e7f0a ../../src/features/proto_to_search_opts.cpp
+0x013e7f36 ../../src/features/feature_expected_points.cpp
+0x013e7f65 ../../src/base_events.cpp
+0x013e7f7f ../../src/board_events.cpp
+0x013e7f9a ../../src/advanced_stats/advanced_stats.cpp
+0x013e7fc6 ../../src/threats.cpp
+0x013e7fdc ../../src/features/pvtree_helpers.cpp
+0x013e8002 ../../src/node_helpers.cpp
+0x013e801d ../../src/features/helpers.cpp
+0x013e803c ../../src/speech_triggers.cpp
+0x013e805a ../../src/takeaway_positions.cpp
+0x013e807b ../../src/features/feature_game_phase_transitions.cpp
+0x013e80b1 ../../src/fill_continuations.cpp
+0x013e80d2 ../../src/features/feature_add_evaluations.cpp
+0x013e8101 ../../src/features/feature_analysis_annotations.cpp
+0x013e8135 ../../src/features/feature_generate_coach_text_items.cpp
+0x013e816e ../../src/features/feature_generate_train_items.cpp
+0x013e81a2 ../../src/skills.cpp
+0x013e81b7 ../../src/client_utils.cpp
+0x013e81d2 ../../src/math_utils.cpp
+0x013e81eb ../../src/node_utils.cpp
+0x013e8204 ../../src/game_rating_v2/utils.cpp
+0x013e8227 ../../src/features/feature_board_event_details.cpp
+0x013e825a ../../src/features/feature_get_move_details.cpp
+0x013e828a ../../src/features/feature_enable_game_mocks.cpp
+0x013e82bb ../../src/features/feature_validate_game_for_analysis.cpp
+0x013e82f5 ../../src/features/feature_game_analysis.cpp
+0x013e8322 ../../src/static_analysis.cpp
+0x013e8340 ../../src/features/analysis.cpp
+0x013e8360 ../../src/features/feature_legal_premoves.cpp
+0x013e838e ../../src/features/feature_brilliant_moves.cpp
+0x013e83bd ../../src/features/feature_convert_to_proto_moves.cpp
+0x013e83f3 ../../src/features/feature_relaxed_convert_to_proto_moves.cpp
+0x013e8431 ../../src/features/feature_convert_from_proto_moves.cpp
+0x013e8469 ../../src/features/feature_get_san_moves.cpp
+0x013e8496 ../../src/features/feature_relaxed_legal_moves.cpp
+0x013e84c9 ../../src/features/feature_unmake_moves.cpp
+0x013e84f5 ../../src/features/feature_make_moves.cpp
+0x013e851f ../../src/features/feature_game_features.cpp
+0x013e854c ../../src/train/make_train_types.cpp
+0x013e8571 ../../src/themes.cpp
+0x013e8586 ../../src/features/feature_run_pvtrees.cpp
+0x013e85b1 ../../src/game_rating_v2/gradient_boosted_trees.cpp
+0x013e85e5 ../../src/features/feature_bot_config_resources.cpp
+0x013e8619 ../../src/maia/compute/tensor.cpp
+0x013e863b ../../src/deserializer.cpp
+0x013e8656 ../../src/serializer.cpp
+0x013e866f ../../src/maia/layer.cpp
+0x013e8688 ../../src/pgn_parser.cpp
+0x013e86a1 ../../src/api/async_worker.cpp
+0x013e86c0 ../../src/speech_querier.cpp
+0x013e86dd ../../src/maia/weight_provider.cpp
+0x013e8700 ../../src/classification_search_ladder.cpp
+0x013e872b /emsdk/emscripten/system/lib/libcxxabi/src/private_typeinfo.cpp
+0x013e876b ../../src/maia/common.cpp
+0x013e8785 ../../src/chess_position.cpp
+0x013e87a2 ../../src/features/feature_get_chess960_initial_position.cpp
+0x013e87df ../../src/features/feature_get_ergonomic_position.cpp
+0x013e8815 ../../src/position.cpp
+0x013e882c ../../src/bot_definition.cpp
+0x013e8849 ../../src/features/feature_lua_completion.cpp
+0x013e8877 ../../src/features/external_engine_registration.cpp
+0x013e88ab ../../src/features/feature_get_illegal_move_explanation.cpp
+0x013e88e7 ../../src/features/feature_move_classification.cpp
+0x013e891a ../../src/classification.cpp
+0x013e8937 ../../src/uci_session.cpp
+0x013e8951 ../../src/features/feature_validate_pgn.cpp
+0x013e897d ../../src/puzzlegen.cpp
+0x013e8995 ../../src/features/feature_get_fen.cpp
+0x013e89bc ../../src/tcn.cpp
+0x013e89ce ../../src/engine_transform.cpp
+0x013e89ed ../../src/maia/charm.cpp
+0x013e8a06 ../../src/random.cpp
+0x013e8a1b ../../src/emscripten/web_worker_engine_stream.cpp
+0x013e8a4d ../../src/borrowing_engine_pool.cpp
+0x013e8a71 ../../src/maia/charm_net_small.cpp
+0x013e8a94 ../../src/maia/charm_small.cpp
+0x013e8ab3 ../../src/features/feature_load_charm_model.cpp
+0x013e8ae3 ../../src/parallel_eval.cpp
+0x013e8aff ../../src/eval.cpp
+0x013e8b12 ../../src/features/feature_load_eco_book.cpp
+0x013e8b3f ../../src/api/api.cpp
+0x013e8b55 ../../src/engine_uci.cpp
+0x013e8b6e ../../src/uci.cpp
+0x013e8b80 ../../src/features/feature_key_position_search.cpp
+0x013e8bb3 ../../src/search.cpp
+0x013e8bc8 ../../src/game_review_speech.cpp
+0x013e8be9 ../../src/features/feature_generate_train_item_goal_speech.cpp
+0x013e8c28 ../../src/play_vs_coach_speech.cpp
+0x013e8c4b ../../src/features/feature_set_coach.cpp
+0x013e8c74 ../../src/features/feature_load_and_set_coach.cpp
+0x013e8ca6 ../../src/features/feature_load_coach.cpp
+0x013e8cd0 ../../src/api/api_log.cpp
+0x013e8cea ../../src/bot_parsing.cpp
+0x013e8d04 ../../src/charm/charm_value_coding.cpp
+0x013e8d2b ../../src/features/resolve_bot_config.cpp
+0x013e8d55 ../../src/features/feature_bot_move_from_config.cpp
+0x013e8d89 ../../src/cutoff.cpp
+0x013e8d9e ../../src/features/feature_relaxed_apply_move.cpp
+0x013e8dd0 ../../src/features/feature_get_bot_move.cpp
+0x013e8dfc ../../src/features/feature_maia_bot_move.cpp
+0x013e8e29 ../../src/features/feature_delete_pgn_move.cpp
+0x013e8e58 ../../src/features/feature_grade_train_item_move.cpp
+0x013e8e8d ../../src/features/feature_get_punish_move.cpp
+0x013e8ebc ../../src/clue/clue.cpp
+0x013e8ed4 ../../src/features/feature_reset_engine_state.cpp
+0x013e8f06 ../../src/features/feature_key_game_state.cpp
+0x013e8f34 ../../src/features/feature_get_game_state.cpp
+0x013e8f62 ../../src/features/feature_uci_to_game_state.cpp
+0x013e8f93 ../../src/features/feature_load_game_state.cpp
+0x013e8fc2 ../../src/piece_state.cpp
+0x013e8fdc ../../src/state.cpp
+0x013e8ff0 ../../src/checkmate.cpp
+0x013e9008 ../../src/game_phase.cpp
+0x013e9021 ../../src/board_event_core.cpp
+0x013e9040 ../../src/speech_core.cpp
+0x013e905a ../../src/features/feature_checkmate_type.cpp
+0x013e9088 ../../src/features/feature_extract_pvline.cpp
+0x013e90b6 ../../src/history_line.cpp
+0x013e90d1 ../../src/extract_line.cpp
+0x013e90ec ../../src/features/feature_remove_external_engine.cpp
+0x013e9122 ../../src/features/feature_add_external_engine.cpp
+0x013e9155 ../../src/features/feature_set_internal_engine.cpp
+0x013e9188 ../../src/engine.cpp
+0x013e919d ../../src/features/feature_new_game.cpp
+0x013e91c5 ../../src/features/feature_evaluate_game.cpp
+0x013e91f2 ../../src/features/feature_get_ergonomic_game.cpp
+0x013e9224 ../../src/game.cpp
+0x013e9237 ../../src/features/feature_static_exchange.cpp
+0x013e9266 ../../src/time_usage.cpp
+0x013e927f ../../src/features/feature_generate_pvtree.cpp
+0x013e92ae ../../src/features/build_agent_stable_tree/feature_build_agent_stable_tree.cpp
+0x013e92fd ../../src/tree.cpp
+0x013e9310 ../../src/node.cpp
+0x013e9323 ../../src/features/feature_unit_test_code.cpp
+0x013e9351 ../../src/features/feature_get_coherence.cpp
+0x013e937e ../../src/features/internal_feature_charm_inference.cpp
+0x013e93b6 ../../src/features/feature_charm_inference.cpp
+0x013e93e5 ../../src/features/feature_add_charm_inference.cpp
+0x013e9418 ../../src/features/feature_get_piece.cpp
+0x013e9441 ../../src/chess_piece.cpp
+0x013e945b ../../src/botchat_deprecated.cpp
+0x013e947c ../../src/maia/compute/winograd.cpp
+0x013e94a0 /emsdk/emscripten/system/lib/libcxxabi/src/fallback_malloc.cpp
+0x013e94df ../../src/features/run_search_lib.cpp
+0x013e9505 ../../src/hist_line_lib.cpp
+0x013e9521 ../../src/node_lib.cpp
+0x013e9538 ../../src/features/feature_uncompress_data.cpp
+0x013e9567 ../../src/features/feature_compress_data.cpp
+0x013e9594 ../../src/maia/maia.cpp
+0x013e95ac ../../src/maia/maia3.cpp
+0x013e95c5 ../../src/game_rating_v2/game_rating_v2.cpp
+0x013e95f1 ../../src/caps2.cpp
+0x013e9605 ../../src/uuid_v1.cpp
+0x013e961b ../../src/chess960.cpp
+0x013e97d1 google.protobuf.Timestamp
+0x013e99be chesscom/explanation_engine/v1alpha/position_difficulty.proto
+0x013e99fc chesscom/explanation_engine/v1/analyzability.proto
+0x013e9a2f chesscom/explanation_engine/v1alpha/internal_feature_branch_summary.proto
+0x013e9a79 chesscom/explanation_engine/v1alpha/game_summary.proto
+0x013e9ab0 chesscom/explanation_engine/v1alpha/internal_feature_check_anatomy.proto
+0x013e9af9 chesscom/explanation_engine/v1/accuracy.proto
+0x013e9b27 chesscom/chess/v1/arrow.proto
+0x013e9b45 chesscom/explanation_engine/v1/feature_game_review.proto
+0x013e9b7e chesscom/explanation_engine/v1/game_review.proto
+0x013e9baf chesscom/text_item/v1alpha/train_reply_text_context.proto
+0x013e9be9 chesscom/text_item/v1alpha/takeaway_text_context.proto
+0x013e9c20 chesscom/text_item/v1alpha/train_goal_text_context.proto
+0x013e9c59 chesscom/text_item/v1alpha/puzzle_goal_text_context.proto
+0x013e9c93 chesscom/train/v1/train_membership_context.proto
+0x013e9cc4 chesscom/explanation_engine/v1/feature_get_non_chess_text.proto
+0x013e9d04 chesscom/explanation_engine/v1/move_list.proto
+0x013e9d33 chesscom/explanation_engine/v1/feature_load_bot.proto
+0x013e9d69 chesscom/explanation_engine/v1/bot.proto
+0x013e9d92 chesscom/explanation_engine/v1/internal_feature_advanced_stats_datapoint.proto
+0x013e9de1 chesscom/stats/v1/advanced_stats_datapoint.proto
+0x013e9e12 chesscom/explanation_engine/v1/dispose_game_point.proto
+0x013e9e4a chesscom/explanation_engine/v1/feature_get_coach_hint.proto
+0x013e9e86 chesscom/explanation_engine/v1/cee_internal_component.proto
+0x013e9ec2 chesscom/chess/v1/variant.proto
+0x013e9ee2 chesscom/explanation_engine/v1/feature_set_game_result.proto
+0x013e9f1f chesscom/explanation_engine/v1/feature_get_game_result.proto
+0x013e9f5c chesscom/chess/v1/result.proto
+0x013e9f7b chesscom/explanation_engine/v1alpha/report_card_highlight.proto
+0x013e9fbb chesscom/text_item/v1alpha/internal_feature_generate_coach_text_asset.proto
+0x013ea007 chesscom/explanation_engine/v1/text_asset.proto
+0x013ea037 chesscom/explanation_engine/v1alpha/square_set.proto
+0x013ea06c chesscom/explanation_engine/v1alpha/piece_set.proto
+0x013ea0a0 chesscom/train/v1/train_challenge_bucket.proto
+0x013ea0cf chesscom/text_item/v1alpha/google_sheet.proto
+0x013ea0fd chesscom/explanation_engine/v1/feature_get_bot_chat.proto
+0x013ea137 chesscom/explanation_engine/v1/feature_get_coach_chat.proto
+0x013ea173 chesscom/explanation_engine/v1/simple_threat.proto
+0x013ea1a6 chesscom/explanation_engine/v1/takeaways.proto
+0x013ea1d5 chesscom/train/v1/train_backfill_status.proto
+0x013ea203 chesscom/explanation_engine/v1alpha/game_status.proto
+0x013ea239 chesscom/explanation_engine/v1/feature_expected_points.proto
+0x013ea276 chesscom/explanation_engine/v1alpha/internal_feature_board_events.proto
+0x013ea2be chesscom/explanation_engine/v1alpha/board_events.proto
+0x013ea2f5 chesscom/explanation_engine/v1/feature_cee_internal_components.proto
+0x013ea33a chesscom/explanation_engine/v1/stats.proto
+0x013ea365 chesscom/explanation_engine/v1/feature_simple_threats.proto
+0x013ea3a1 chesscom/explanation_engine/v1/feature_set_pgn_headers.proto
+0x013ea3de chesscom/explanation_engine/v1/internal_feature_update_developer_options.proto
+0x013ea42d chesscom/explanation_engine/v1/feature_update_experimental_options.proto
+0x013ea476 chesscom/explanation_engine/v1alpha/engine_instance_options.proto
+0x013ea4b8 chesscom/explanation_engine/v1/feature_game_phase_transitions.proto
+0x013ea4fc chesscom/explanation_engine/v1/feature_get_game_review_evaluations.proto
+0x013ea545 chesscom/explanation_engine/v1/feature_add_evaluations.proto
+0x013ea582 chesscom/explanation_engine/v1/feature_analysis_annotations.proto
+0x013ea5c4 chesscom/explanation_engine/v1/internal_feature_set_move_annotations.proto
+0x013ea60f chesscom/explanation_engine/v1/internal_feature_get_move_annotations.proto
+0x013ea65a chesscom/explanation_engine/v1/feature_get_pgn_move_annotations.proto
+0x013ea6a0 chesscom/text_item/v1alpha/internal_feature_generate_coach_text_items.proto
+0x013ea6ec chesscom/explanation_engine/v1alpha/internal_feature_generate_train_items.proto
+0x013ea73c chesscom/explanation_engine/v1/skills.proto
+0x013ea768 chesscom/explanation_engine/v1alpha/internal_feature_board_event_details.proto
+0x013ea7b7 chesscom/explanation_engine/v1alpha/board_event_details.proto
+0x013ea7f5 chesscom/explanation_engine/v1/feature_get_move_details.proto
+0x013ea833 chesscom/explanation_engine/v1/move_details.proto
+0x013ea865 chesscom/explanation_engine/v1alpha/piece_details.proto
+0x013ea89d chesscom/explanation_engine/v1/internal_feature_enable_game_mocks.proto
+0x013ea8e5 chesscom/explanation_engine/v1/feature_validate_game_for_analysis.proto
+0x013ea92d chesscom/explanation_engine/v1/feature_game_analysis.proto
+0x013ea968 chesscom/explanation_engine/v1/game_analysis.proto
+0x013ea99b chesscom/explanation_engine/v1/game_settings.proto
+0x013ea9ce chesscom/chess/v1/board_markings.proto
+0x013ea9f5 chesscom/explanation_engine/v1/feature_edit_pgn_nags.proto
+0x013eaa30 chesscom/explanation_engine/v1/feature_legal_premoves.proto
+0x013eaa6c chesscom/explanation_engine/v1alpha/internal_feature_brilliant_moves.proto
+0x013eaab7 chesscom/explanation_engine/v1/feature_convert_to_proto_moves.proto
+0x013eaafb chesscom/explanation_engine/v1/feature_relaxed_convert_to_proto_moves.proto
+0x013eab47 chesscom/explanation_engine/v1/feature_convert_from_proto_moves.proto
+0x013eab8d chesscom/explanation_engine/v1/feature_get_san_moves.proto
+0x013eabc8 chesscom/explanation_engine/v1/feature_legal_moves.proto
+0x013eac01 chesscom/explanation_engine/v1/feature_relaxed_legal_moves.proto
+0x013eac42 chesscom/explanation_engine/v1/feature_unmake_moves.proto
+0x013eac7c chesscom/explanation_engine/v1/feature_make_moves.proto
+0x013eacb4 chesscom/explanation_engine/v1alpha/internal_feature_game_features.proto
+0x013eacfd chesscom/explanation_engine/v1alpha/game_features.proto
+0x013ead35 chesscom/explanation_engine/v1/game_features.proto
+0x013ead68 chesscom/explanation_engine/v1/features.proto
+0x013ead96 chesscom/explanation_engine/v1alpha/internal_feature_position_properties.proto
+0x013eade5 chesscom/explanation_engine/v1alpha/internal_feature_run_pvtrees.proto
+0x013eae2c chesscom/explanation_engine/v1/feature_switch_sides.proto
+0x013eae66 chesscom/explanation_engine/v1/feature_bot_config_resources.proto
+0x013eaea8 google/protobuf/descriptor.proto
+0x013eaec9 chesscom/chess/v1/color.proto
+0x013eaee7 .placeholder.proto
+0x013eaefa chesscom/explanation_engine/v1/feature_game_point_info.proto
+0x013eaf37 chesscom/explanation_engine/v1/game_point_info.proto
+0x013eaf6c chesscom/explanation_engine/v1/speech_debug_info.proto
+0x013eafa3 chesscom/explanation_engine/v1/internal_feature_debug_info.proto
+0x013eafe4 chesscom/chess/v1/eco.proto
+0x013eb000 chesscom/explanation_engine/v1/internal_feature_game_analysis_json.proto
+0x013eb049 chesscom/explanation_engine/v1/internal_feature_web_demo_json.proto
+0x013eb08d chesscom/explanation_engine/v1alpha/elo_comparison.proto
+0x013eb0c6 chesscom/explanation_engine/v1alpha/internal_feature_get_coach_emotion.proto
+0x013eb113 chesscom/explanation_engine/v1/coach_emotion.proto
+0x013eb146 chesscom/explanation_engine/v1/feature_get_chess960_initial_position.proto
+0x013eb191 chesscom/explanation_engine/v1/feature_get_compressed_position.proto
+0x013eb1d6 chesscom/explanation_engine/v1/feature_get_ergonomic_position.proto
+0x013eb21a chesscom/chess/v1/position.proto
+0x013eb23b chesscom/explanation_engine/v1/feature_lua_completion.proto
+0x013eb277 chesscom/engine/v1/evaluation.proto
+0x013eb29b chesscom/explanation_engine/v1alpha/game_feature_computation.proto
+0x013eb2de chesscom/explanation_engine/v1/game_feature_computation.proto
+0x013eb31c chesscom/explanation_engine/v1/feature_edit_pgn_move_annotation.proto
+0x013eb362 chesscom/explanation_engine/v1/move_annotation.proto
+0x013eb397 chesscom/chess/v1/notation.proto
+0x013eb3b8 chesscom/explanation_engine/v1/notation.proto
+0x013eb3e6 chesscom/explanation_engine/v1/bot_move_configuration.proto
+0x013eb422 google/protobuf/duration.proto
+0x013eb441 chesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto
+0x013eb48b chesscom/explanation_engine/v1/feature_move_classification.proto
+0x013eb4cc chesscom/explanation_engine/v1/move_classification.proto
+0x013eb505 chesscom/explanation_engine/v1/feature_cee_version.proto
+0x013eb53e chesscom/api/v1/semantic_version.proto
+0x013eb565 chesscom/explanation_engine/v1/feature_get_pgn.proto
+0x013eb59a chesscom/explanation_engine/v1/feature_validate_pgn.proto
+0x013eb5d4 chesscom/explanation_engine/v1/internal_feature_puzzle_gen.proto
+0x013eb615 chesscom/explanation_engine/v1/puzzle_gen.proto
+0x013eb645 chesscom/explanation_engine/v1/feature_get_fen.proto
+0x013eb67a chesscom/explanation_engine/v1/feature_validate_fen.proto
+0x013eb6b4 chesscom/explanation_engine/v1/tcn.proto
+0x013eb6dd chesscom/explanation_engine/v1alpha/location_fan.proto
+0x013eb714 chesscom/text_item/v1alpha/text_item.proto
+0x013eb73f chesscom/explanation_engine/v1alpha/feature_init_engine_pool.proto
+0x013eb782 chesscom/explanation_engine/v1alpha/internal_feature_load_charm_model.proto
+0x013eb7ce chesscom/explanation_engine/v1/feature_load_charm_model.proto
+0x013eb80c chesscom/explanation_engine/v1alpha/speech_trigger_label.proto
+0x013eb84b chesscom/explanation_engine/v1/feature_load_eco_book.proto
+0x013eb886 chesscom/explanation_engine/v1alpha/standard_opening_book.proto
+0x013eb8c6 chesscom/chess/v1/rank.proto
+0x013eb8e3 chesscom/explanation_engine/v1alpha/c_api.proto
+0x013eb913 chesscom/engine/v1/strength.proto
+0x013eb935 chesscom/explanation_engine/v1/feature_force_crash.proto
+0x013eb96e chesscom/explanation_engine/v1alpha/internal_feature_run_search.proto
+0x013eb9b4 chesscom/explanation_engine/v1/feature_run_search.proto
+0x013eb9ec chesscom/explanation_engine/v1/internal_feature_key_position_search.proto
+0x013eba36 chesscom/explanation_engine/v1/search.proto
+0x013eba62 chesscom/explanation_engine/v1alpha/feature_advanced_stats_category_speech.proto
+0x013ebab3 chesscom/explanation_engine/v1/feature_generate_train_item_goal_speech.proto
+0x013ebb00 chesscom/explanation_engine/v1/speech.proto
+0x013ebb2c chesscom/explanation_engine/v1/feature_set_coach.proto
+0x013ebb63 chesscom/explanation_engine/v1/feature_load_and_set_coach.proto
+0x013ebba3 chesscom/explanation_engine/v1/feature_load_coach.proto
+0x013ebbdb chesscom/explanation_engine/v1/feature_get_opening.proto
+0x013ebc14 chesscom/explanation_engine/v1/opening.proto
+0x013ebc41 chesscom/explanation_engine/v1/feature_bot_move_from_config.proto
+0x013ebc83 chesscom/explanation_engine/v1alpha/internal_feature_maia_botmove.proto
+0x013ebccb chesscom/explanation_engine/v1/internal_feature_maia_botmove.proto
+0x013ebd0e chesscom/explanation_engine/v1/feature_relaxed_apply_move.proto
+0x013ebd4e chesscom/explanation_engine/v1/feature_get_bot_move.proto
+0x013ebd88 chesscom/explanation_engine/v1/feature_delete_pgn_move.proto
+0x013ebdc5 chesscom/explanation_engine/v1/feature_grade_train_item_move.proto
+0x013ebe08 chesscom/explanation_engine/v1alpha/book_move.proto
+0x013ebe3c chesscom/explanation_engine/v1/feature_get_punish_move.proto
+0x013ebe79 chesscom/explanation_engine/v1/punish_move.proto
+0x013ebeaa chesscom/chess/v1/move.proto
+0x013ebec7 chesscom/train/v1/train_position_attribute.proto
+0x013ebef8 chesscom/explanation_engine/v1/coach_state.proto
+0x013ebf29 chesscom/explanation_engine/v1/feature_reset_engine_state.proto
+0x013ebf69 chesscom/explanation_engine/v1alpha/internal_feature_key_game_state.proto
+0x013ebfb3 chesscom/explanation_engine/v1/feature_get_game_state.proto
+0x013ebfef chesscom/explanation_engine/v1/internal_feature_uci_to_game_state.proto
+0x013ec037 chesscom/explanation_engine/v1/feature_load_game_state.proto
+0x013ec074 chesscom/explanation_engine/v1/game_state.proto
+0x013ec0a4 chesscom/chess/v1/game_phase.proto
+0x013ec0c7 chesscom/explanation_engine/v1/game_phase.proto
+0x013ec0f7 chesscom/chess/v1/score.proto
+0x013ec115 chesscom/engine/v1/score.proto
+0x013ec134 chesscom/chess/v1/square.proto
+0x013ec153 chesscom/explanation_engine/v1alpha/post_hint_type.proto
+0x013ec18c chesscom/stats/v1/advanced_stat_type.proto
+0x013ec1b7 chesscom/explanation_engine/v1alpha/analysis_type.proto
+0x013ec1ef chesscom/explanation_engine/v1/analysis_type.proto
+0x013ec222 chesscom/train/v1/train_position_type.proto
+0x013ec24e chesscom/train/v1/train_item_type.proto
+0x013ec276 chesscom/stats/v1/brilliant_move_type.proto
+0x013ec2a2 chesscom/explanation_engine/v1alpha/internal_feature_checkmate_type.proto
+0x013ec2ec chesscom/explanation_engine/v1alpha/coach_exercise_type.proto
+0x013ec32a chesscom/explanation_engine/v1alpha/coach_choice_type.proto
+0x013ec366 chesscom/explanation_engine/v1/command_type.proto
+0x013ec398 chesscom/explanation_engine/v1alpha/internal_feature_extract_pvline.proto
+0x013ec3e2 chesscom/explanation_engine/v1/feature_set_played_line.proto
+0x013ec41f chesscom/explanation_engine/v1alpha/feature_remove_external_engine.proto
+0x013ec468 chesscom/explanation_engine/v1alpha/feature_add_external_engine.proto
+0x013ec4ae chesscom/explanation_engine/v1alpha/feature_set_internal_engine.proto
+0x013ec4f4 chesscom/explanation_engine/v1/cee_internal_engine.proto
+0x013ec52d chesscom/engine/v1/engine.proto
+0x013ec54d chesscom/train/v1/train_outcome.proto
+0x013ec573 chesscom/chess/v1/time.proto
+0x013ec590 chesscom/train/v1/train_strategy_theme.proto
+0x013ec5bd chesscom/train/v1/train_tactical_theme.proto
+0x013ec5ea chesscom/train/v1/train_opening_theme.proto
+0x013ec616 chesscom/train/v1/train_endgame_theme.proto
+0x013ec642 chesscom/explanation_engine/v1/feature_new_game.proto
+0x013ec678 chesscom/explanation_engine/v1/new_game.proto
+0x013ec6a6 chesscom/explanation_engine/v1/feature_evaluate_game.proto
+0x013ec6e1 chesscom/explanation_engine/v1/invalid_game.proto
+0x013ec713 chesscom/explanation_engine/v1/feature_get_ergonomic_game.proto
+0x013ec753 chesscom/chess/v1/game.proto
+0x013ec770 chesscom/explanation_engine/v1alpha/play_style.proto
+0x013ec7a5 chesscom/stats/v1/advanced_stat_example.proto
+0x013ec7d3 chesscom/stats/v1/advanced_stat_percentile.proto
+0x013ec804 chesscom/explanation_engine/v1alpha/board_event_profile.proto
+0x013ec842 chesscom/chess/v1/file.proto
+0x013ec85f chesscom/train/v1/train_miss_challenge.proto
+0x013ec88c chesscom/train/v1/train_blunder_challenge.proto
+0x013ec8bc chesscom/train/v1/train_challenge.proto
+0x013ec8e4 chesscom/train/v1/train_strategy_mistake_challenge.proto
+0x013ec91d chesscom/train/v1/train_opening_mistake_challenge.proto
+0x013ec955 chesscom/train/v1/train_endgame_mistake_challenge.proto
+0x013ec98d chesscom/train/v1/train_generated_challenge.proto
+0x013ec9bf chesscom/explanation_engine/v1alpha/internal_feature_static_exchange.proto
+0x013eca0a chesscom/explanation_engine/v1alpha/static_exchange.proto
+0x013eca44 chesscom/explanation_engine/v1/language.proto
+0x013eca72 chesscom/explanation_engine/v1alpha/internal_feature_generate_pvtree.proto
+0x013ecabd chesscom/explanation_engine/v1/feature_game_tree.proto
+0x013ecaf4 chesscom/explanation_engine/v1alpha/internal_feature_build_agent_stable_tree.proto
+0x013ecb47 chesscom/explanation_engine/v1/internal_feature_enable_test_mode.proto
+0x013ecb8e chesscom/explanation_engine/v1/torch_search_mode.proto
+0x013ecbc5 chesscom/explanation_engine/v1alpha/internal_feature_unit_test_code.proto
+0x013ecc0f chesscom/explanation_engine/v1/charm_inference_code.proto
+0x013ecc49 chesscom/train/v1/train_move_grade.proto
+0x013ecc72 chesscom/chess/v1/chesscom_game_source.proto
+0x013ecc9f chesscom/explanation_engine/v1alpha/internal_feature_get_coherence.proto
+0x013ecce8 chesscom/explanation_engine/v1/compact_charm_inference.proto
+0x013ecd25 chesscom/explanation_engine/v1alpha/internal_feature_charm_inference.proto
+0x013ecd70 chesscom/explanation_engine/v1/feature_charm_inference.proto
+0x013ecdad chesscom/explanation_engine/v1/simple_charm_inference.proto
+0x013ecde9 chesscom/explanation_engine/v1/feature_add_charm_inference.proto
+0x013ece2a chesscom/explanation_engine/v1/charm_inference.proto
+0x013ece5f chesscom/explanation_engine/v1alpha/circumstance.proto
+0x013ece96 chesscom/explanation_engine/v1/circumstance.proto
+0x013ecec8 chesscom/explanation_engine/v1alpha/internal_feature_get_piece.proto
+0x013ecf0d chesscom/chess/v1/piece.proto
+0x013ecf2b chesscom/chess/v1/head_to_head_record.proto
+0x013ecf57 chesscom/explanation_engine/v1/report_card.proto
+0x013ecf88 chesscom/explanation_engine/v1/game_arc.proto
+0x013ecfb6 chesscom/explanation_engine/v1/game_state_spec.proto
+0x013ecfeb chesscom/explanation_engine/v1/feature_run_lua.proto
+0x013ed020 chesscom/explanation_engine/v1alpha/internal_feature_uncompress_data.proto
+0x013ed06b chesscom/explanation_engine/v1/internal_feature_compress_data.proto
+0x013ed0af chesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.proto
+0x013ed0f2 chesscom/explanation_engine/v1alpha/internal_feature_caps2.proto
+0x013ed133 chesscom/explanation_engine/v1/feature_generate_uuid_v1.proto
+0x013ed171 chesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.proto
+0x013ed282 normalize_to
+0x013ed3d1 ForgivingClassificationsElo
+0x013ed484 TORCH_MARCH           : unknown
+0x013ed4a4 TORCH_MTUNE           : unknown
+0x013ed8dc CEE_Run
+0x013edf71 chesscom.explanation_engine.v1alpha.InternalFeatureMaiaBotMoveRequest.json
+0x013edfbc chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveRequest.json
+0x013ee067 chesscom.explanation_engine.v1alpha.InternalFeatureMaiaBotMoveResponse.json
+0x013ee0b3 chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveResponse.json
+0x013ee216  returned no result, so the selection has no humanness distribution
+0x013ee267 _full_line_comment_delimiter_bol_assertion
+0x013eeaa9 google.protobuf.Duration
+0x013eec16 move_classification
+0x013eec2a special_mate_classification
+0x013eec46 AllowTrickyClassification
+0x013eec60 Game point is not root and does not have a valid MoveClassification
+0x013eed0f chesscom.explanation_engine.v1alpha.GameRatingSettings.model_version
+0x013eed54 chesscom.explanation_engine.v1.GameRatingSettings.model_version
+0x013eed94 chesscom.explanation_engine.v1alpha.GameFeatureComputation.cee_version
+0x013eeddb chesscom.explanation_engine.v1.GameFeatureComputation.cee_version
+0x013ef6a5 cannot add engine to the pool: allocated engine id {} is already taken
+0x013ef6ec cannot hand engine {} back to the external pool: the id is already taken
+0x013f021e TorchHuman
+0x013f03d1 This cannot be done without introducing issues with the Sync mechanism
+0x013f0492 node_lib::side_to_move_rating: node has no game to read ratings from
+0x013f07da cannot add external engine {} to a new pool
+0x013f0818 cannot borrow engine: no engine with id {} was added to the pool
+0x013f0859 cannot borrow engine: no engines were added to the pool
+0x013f0a66 internal error: position pointer is nil
+0x013f1143 google.protobuf.FieldMask
+0x013f1392 classification_book
+0x013f153f human-pick
+0x013f158e error illegal position: side not to move is in check
+0x013f16f1 HumanPlaysBlack
+0x013f19b9  entered no line there, so no classification can be reported for its search depth
+0x013f1b69 Keying PositionSearch requires RunSearchRequest.game_review_search_settings to define a Strength
+0x013f1bca Keying GameState requires RunSearchRequest.game_review_search_settings to define a Strength
+0x013f1f00 Stockfish
+0x013f1f4a mat_hash
+0x013f1f53 pawn_hash
+0x013f1f5d chesscom.explanation_engine.v1.SkillsPosition.validation_hash
+0x013f1f9b refreshed_cache.validation_hash == validation_hash
+0x013f1fce chesscom.explanation_engine.v1.Sentence.audio_url_hash
+0x013f2005 setoption name ClearHash
+0x013f201e skillsValidationHash
+0x013f2033 audioUrlHash
+0x013f2040 gameSummaryAudioUrlHash
+0x013f2058 gameSummaryPlayAudioUrlHash
+0x013f2074 setoption name Clear Hash
+0x013f2623 ../../../third_party/protobuf/include/google/protobuf/parse_context.h
+0x013f2669 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/parse_context.h
+0x013f2789 ../../../third_party/protobuf/include/google/protobuf/stubs/casts.h
+0x013f28d4 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/descriptor.h
+0x013f2998 ../../src/maia/layer.h
+0x013f2a29 ../../../third_party/protobuf/include/google/protobuf/map.h
+0x013f2ac4 ../../../third_party/protobuf/include/google/protobuf/io/coded_stream.h
+0x013f2b2e /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/extension_set_inl.h
+0x013f2be0 ../../../third_party/protobuf/include/google/protobuf/map_field_inl.h
+0x013f2c94 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/reflection_internal.h
+0x013f2d9e ../../../third_party/protobuf/include/google/protobuf/map_field_lite.h
+0x013f2de5 ../../../third_party/protobuf/include/google/protobuf/metadata_lite.h
+0x013f2eb3 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/dynamic_message.h
+0x013f2f74 ../../../third_party/protobuf/include/google/protobuf/repeated_ptr_field.h
+0x013f2fbf ../../../third_party/protobuf/include/google/protobuf/map_field.h
+0x013f3001 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/map_field.h
+0x013f30ab ../../../third_party/protobuf/include/google/protobuf/repeated_field.h
+0x013f30f2 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/repeated_field.h
+0x013f362c ../chesscom/explanation_engine/v1alpha/internal_feature_run_pvtrees.pb.h
+0x013f3779 ../chesscom/explanation_engine/v1/feature_move_classification.pb.h
+0x013f3c2b chesscom.explanation_engine.v1.RunLuaResponse.lua_error_msg
+0x013f3cef chesscom.explanation_engine.v1.RunSearchResponse.log
+0x013f3d85 ' cannot be converted to unsigned long long
+0x013f3ddd cannot switch from automatic to manual argument indexing
+0x013f3e16 cannot switch from manual to automatic argument indexing
+0x013f3ef1 final_rating
+0x013f3efe Expected points thrown away do not determine a rating
+0x013f3f55 MaxRating
+0x013f3f5f newRating
+0x013f3f69 MinRating
+0x013f3f73 Max Rating
+0x013f3f7e Min Rating
+0x013f47d5 error: json config file not specified, use --json /path/to/json/config
+0x013f48d8 Invalid Color in protobuf
+0x013f48f2 Invalid MoveClassification in protobuf
+0x013f4919 Invalid SpeechTriggerLabel in protobuf
+0x013f4940 Invalid Phase in protobuf
+0x013f495a Invalid AdvancedStatType in protobuf
+0x013f497f Invalid TacticalGoalType in protobuf
+0x013f49a4 Invalid StrategicGoalType in protobuf
+0x013f49ca Unable to parse Quality from protobuf
+0x013f49f0 Unable to parse Personality from protobuf
+0x013f4a1a Unable to parse ResultSummary from protobuf
+0x013f4a46 Unable to parse EffectiveEloDiff from protobuf
+0x013f4a75 Unable to parse DecisiveMistakeGameState from protobuf
+0x013f4aac Unable to parse IllegalMoveCase from protobuf
+0x013f4ada Unable to parse NonChessTextType from protobuf
+0x013f4b09 Unable to parse PostHintType from protobuf
+0x013f4b34 Unable to parse KeyMoveType from protobuf
+0x013f4b5e Unable to parse CoachExerciseType from protobuf
+0x013f4b8e Unable to parse DecisiveMistakeType from protobuf
+0x013f4bc0 Unable to parse ChoiceType from protobuf
+0x013f4be9 Unable to parse ExpectedOutcome from protobuf
+0x013f4c17 Unable to parse Trend from protobuf
+0x013f4c92 accuracy_of
+0x013f4d02 A streamed classification ran on a conf with HandleContinuations off
+0x013f4ef5 normalize
+0x013f4eff Normalize
+0x013f4f1d rating_from_curve
+0x013f524e Cannot apply move
+0x013f5866 CEE_GetLastMove
+0x013f5db6 cannot get value
+0x013f5ef3 google.protobuf.ListValue
+0x013f5f48 google.protobuf.FloatValue
+0x013f5f63 google.protobuf.BytesValue
+0x013f601a google.protobuf.BoolValue
+0x013f6088 google.protobuf.StringValue
+0x013f60e1 google.protobuf.DoubleValue
+0x013f61e5 google.protobuf.UInt64Value
+0x013f6201 google.protobuf.Int64Value
+0x013f62c1 google.protobuf.UInt32Value
+0x013f62dd google.protobuf.Int32Value
+0x013f62f8 google.protobuf.Value
+0x013f63c4 Internal error tracking game position state
+0x013f6d8c CEE_NewFeature
+0x013f7012 Cannot compute accuracy: one or more played moves have no score
+0x013f718d Cannot get here
+0x013f7423 Unknown error type
+0x013f768d ' is not a Torch engine, and Torch Human mode requires one
+0x013f7753 end_of_human_line
+0x013f7a84 PVTree Options provided, but Torch is not the selected engine
+0x013f7ac2 UnleashedPersonality requires Torch or Stockfish 12+ engine
+0x013f7b54 Cannot create game from empty HistLine
+0x013f7c8c chesscom.explanation_engine.v1alpha.V1x6Depth20Multipv2LabelsRecord.classification_name
+0x013f7ce4 chesscom.explanation_engine.v1alpha.V1x7Depth20Multipv10LabelsRecord.classification_name
+0x013f817b Memory error - max tree size exceeded. Make sure to send the ucinewgame command before each new game
+0x013f83be classificationName
+0x013f8675 Report Card Data Error: invalid json in report card data file
+0x013f8760 CEE_AddArtifactFromFile
+0x013f88dd add_miss_classification_specific_event_if_applicable
+0x013f893b native_rating_scale
+0x013f894f chesscom.explanation_engine.v1.NnConfig.rating_scale
+0x013f8a7b classification_mistake
+0x013f8c27 ratingChange
+0x013f8ef3 error_message_for_node
+0x013f9564 unsupported arch 'maia' for global NN inference
+0x013f9ae7 /__w/TorchDev/TorchDev/exp401-smallnet-bcdb872c.nn.zstd
+0x013f9b99 classification_good
+0x013f9e1a classification_great_find
+0x013f9ed5 chesscom.explanation_engine.v1.CommandType.cee_command
+0x013f9f7f Invalid rating range command
+0x013fab0c engine {} serves default searches, so it cannot be removed
+0x013fae01 shifting error detected
+0x013fb0e4 BuildAgentStableTree: no charm model is available, so the build's human selection cannot run and every site it would open would be unselected
+0x013fb31a move_classification field not populated
+0x013fb5e1 classification_missed
+0x013fb805 TORCH_NETS_ARE_ZSTD   : defined
+0x013fb825 TORCH_PARAMS_CEE      : defined
+0x013fb995 maia3 prediction failed
+0x013fb9f8 serializing the feature response protobuf failed
+0x013fbc88 rating scale is not specified
+0x013fbd62 Either Protobuf moves or UCI moves must be specified
+0x013fbda4 , which is not a played move and cannot be pushed
+0x013fc0ed HumanPlaysBlack is deprecated, please use UserColor instead
+0x013fc35a Unknown error %d
+0x013fc3a6 Malloc
+0x013fc488 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/extension_set_heavy.cc
+0x013fc53d /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/extension_set.cc
+0x013fc5ec /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/text_format.cc
+0x013fc699 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/wire_format.cc
+0x013fc746 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/reflection_ops.cc
+0x013fc7f6 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/descriptor.cc
+0x013fc8a2 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/io/tokenizer.cc
+0x013fc950 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/generated_message_reflection.cc
+0x013fca0e /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/io/zero_copy_stream.cc
+0x013fcac3 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/io/coded_stream.cc
+0x013fcb74 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/stubs/strutil.cc
+0x013fcc23 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/stubs/substitute.cc
+0x013fccd5 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/wire_format_lite.cc
+0x013fcd87 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
+0x013fce46 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/message_lite.cc
+0x013fcef4 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/descriptor_database.cc
+0x013fcfa9 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/dynamic_message.cc
+0x013fd05a /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/message.cc
+0x013fd103 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/stubs/stringpiece.cc
+0x013fd1b6 /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/repeated_ptr_field.cc
+0x013fd26a /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/map_field.cc
+0x013fd315 ../chesscom/explanation_engine/v1alpha/position_difficulty.pb.cc
+0x013fd356 ../chesscom/explanation_engine/v1/analyzability.pb.cc
+0x013fd38c ../chesscom/explanation_engine/v1alpha/internal_feature_branch_summary.pb.cc
+0x013fd3d9 ../chesscom/explanation_engine/v1alpha/game_summary.pb.cc
+0x013fd413 ../chesscom/explanation_engine/v1alpha/internal_feature_check_anatomy.pb.cc
+0x013fd45f ../chesscom/explanation_engine/v1/accuracy.pb.cc
+0x013fd490 ../chesscom/chess/v1/arrow.pb.cc
+0x013fd4b1 ../chesscom/explanation_engine/v1/feature_game_review.pb.cc
+0x013fd4ed ../chesscom/explanation_engine/v1/game_review.pb.cc
+0x013fd521 ../chesscom/text_item/v1alpha/train_reply_text_context.pb.cc
+0x013fd55e ../chesscom/text_item/v1alpha/takeaway_text_context.pb.cc
+0x013fd598 ../chesscom/text_item/v1alpha/train_goal_text_context.pb.cc
+0x013fd5d4 ../chesscom/text_item/v1alpha/puzzle_goal_text_context.pb.cc
+0x013fd611 ../chesscom/explanation_engine/v1/feature_get_non_chess_text.pb.cc
+0x013fd654 ../chesscom/explanation_engine/v1/move_list.pb.cc
+0x013fd686 ../chesscom/explanation_engine/v1/feature_load_bot.pb.cc
+0x013fd6bf ../chesscom/explanation_engine/v1/bot.pb.cc
+0x013fd6eb ../chesscom/explanation_engine/v1/internal_feature_advanced_stats_datapoint.pb.cc
+0x013fd73d ../chesscom/stats/v1/advanced_stats_datapoint.pb.cc
+0x013fd771 ../chesscom/explanation_engine/v1/feature_get_coach_hint.pb.cc
+0x013fd7b0 ../chesscom/explanation_engine/v1/feature_set_game_result.pb.cc
+0x013fd7f0 ../chesscom/explanation_engine/v1/feature_get_game_result.pb.cc
+0x013fd830 ../chesscom/explanation_engine/v1alpha/report_card_highlight.pb.cc
+0x013fd873 ../chesscom/text_item/v1alpha/internal_feature_generate_coach_text_asset.pb.cc
+0x013fd8c2 ../chesscom/explanation_engine/v1/text_asset.pb.cc
+0x013fd8f5 ../chesscom/explanation_engine/v1alpha/square_set.pb.cc
+0x013fd92d ../chesscom/explanation_engine/v1alpha/piece_set.pb.cc
+0x013fd964 ../chesscom/text_item/v1alpha/google_sheet.pb.cc
+0x013fd995 ../chesscom/explanation_engine/v1/feature_get_bot_chat.pb.cc
+0x013fd9d2 ../chesscom/explanation_engine/v1/feature_get_coach_chat.pb.cc
+0x013fda11 ../chesscom/explanation_engine/v1/simple_threat.pb.cc
+0x013fda47 ../chesscom/explanation_engine/v1/takeaways.pb.cc
+0x013fda79 ../chesscom/explanation_engine/v1/feature_expected_points.pb.cc
+0x013fdab9 ../chesscom/explanation_engine/v1alpha/internal_feature_board_events.pb.cc
+0x013fdb04 ../chesscom/explanation_engine/v1alpha/board_events.pb.cc
+0x013fdb3e ../chesscom/explanation_engine/v1/feature_cee_internal_components.pb.cc
+0x013fdb86 ../chesscom/explanation_engine/v1/stats.pb.cc
+0x013fdbb4 ../chesscom/explanation_engine/v1/feature_simple_threats.pb.cc
+0x013fdbf3 ../chesscom/explanation_engine/v1/feature_set_pgn_headers.pb.cc
+0x013fdc33 ../chesscom/explanation_engine/v1/internal_feature_update_developer_options.pb.cc
+0x013fdc85 ../chesscom/explanation_engine/v1/feature_update_experimental_options.pb.cc
+0x013fdcd1 ../chesscom/explanation_engine/v1alpha/engine_instance_options.pb.cc
+0x013fdd16 ../chesscom/explanation_engine/v1/feature_game_phase_transitions.pb.cc
+0x013fdd5d ../chesscom/explanation_engine/v1/feature_get_game_review_evaluations.pb.cc
+0x013fdda9 ../chesscom/explanation_engine/v1/feature_add_evaluations.pb.cc
+0x013fdde9 ../chesscom/explanation_engine/v1/feature_analysis_annotations.pb.cc
+0x013fde2e ../chesscom/explanation_engine/v1/internal_feature_set_move_annotations.pb.cc
+0x013fde7c ../chesscom/explanation_engine/v1/internal_feature_get_move_annotations.pb.cc
+0x013fdeca ../chesscom/explanation_engine/v1/feature_get_pgn_move_annotations.pb.cc
+0x013fdf13 ../chesscom/text_item/v1alpha/internal_feature_generate_coach_text_items.pb.cc
+0x013fdf62 ../chesscom/explanation_engine/v1alpha/internal_feature_generate_train_items.pb.cc
+0x013fdfb5 ../chesscom/explanation_engine/v1/skills.pb.cc
+0x013fdfe4 ../chesscom/explanation_engine/v1alpha/internal_feature_board_event_details.pb.cc
+0x013fe036 ../chesscom/explanation_engine/v1alpha/board_event_details.pb.cc
+0x013fe077 ../chesscom/explanation_engine/v1/feature_get_move_details.pb.cc
+0x013fe0b8 ../chesscom/explanation_engine/v1/move_details.pb.cc
+0x013fe0ed ../chesscom/explanation_engine/v1alpha/piece_details.pb.cc
+0x013fe128 ../chesscom/explanation_engine/v1/internal_feature_enable_game_mocks.pb.cc
+0x013fe173 ../chesscom/explanation_engine/v1/feature_validate_game_for_analysis.pb.cc
+0x013fe1be ../chesscom/explanation_engine/v1/feature_game_analysis.pb.cc
+0x013fe1fc ../chesscom/explanation_engine/v1/game_analysis.pb.cc
+0x013fe232 ../chesscom/explanation_engine/v1/game_settings.pb.cc
+0x013fe268 ../chesscom/chess/v1/board_markings.pb.cc
+0x013fe292 ../chesscom/explanation_engine/v1/feature_edit_pgn_nags.pb.cc
+0x013fe2d0 ../chesscom/explanation_engine/v1/feature_legal_premoves.pb.cc
+0x013fe30f ../chesscom/explanation_engine/v1alpha/internal_feature_brilliant_moves.pb.cc
+0x013fe35d ../chesscom/explanation_engine/v1/feature_convert_to_proto_moves.pb.cc
+0x013fe3a4 ../chesscom/explanation_engine/v1/feature_relaxed_convert_to_proto_moves.pb.cc
+0x013fe3f3 ../chesscom/explanation_engine/v1/feature_convert_from_proto_moves.pb.cc
+0x013fe43c ../chesscom/explanation_engine/v1/feature_get_san_moves.pb.cc
+0x013fe47a ../chesscom/explanation_engine/v1/feature_legal_moves.pb.cc
+0x013fe4b6 ../chesscom/explanation_engine/v1/feature_relaxed_legal_moves.pb.cc
+0x013fe4fa ../chesscom/explanation_engine/v1/feature_make_moves.pb.cc
+0x013fe535 ../chesscom/explanation_engine/v1alpha/internal_feature_game_features.pb.cc
+0x013fe581 ../chesscom/explanation_engine/v1alpha/game_features.pb.cc
+0x013fe5bc ../chesscom/explanation_engine/v1/game_features.pb.cc
+0x013fe5f2 ../chesscom/explanation_engine/v1alpha/internal_feature_position_properties.pb.cc
+0x013fe644 ../chesscom/explanation_engine/v1alpha/internal_feature_run_pvtrees.pb.cc
+0x013fe68e ../chesscom/explanation_engine/v1/feature_bot_config_resources.pb.cc
+0x013fe6d3 ../chesscom/explanation_engine/v1/feature_game_point_info.pb.cc
+0x013fe713 ../chesscom/explanation_engine/v1/game_point_info.pb.cc
+0x013fe74b ../chesscom/explanation_engine/v1/speech_debug_info.pb.cc
+0x013fe785 ../chesscom/explanation_engine/v1/internal_feature_debug_info.pb.cc
+0x013fe7c9 ../chesscom/chess/v1/eco.pb.cc
+0x013fe7e8 ../chesscom/explanation_engine/v1/internal_feature_game_analysis_json.pb.cc
+0x013fe834 ../chesscom/explanation_engine/v1/internal_feature_web_demo_json.pb.cc
+0x013fe87b ../chesscom/explanation_engine/v1alpha/internal_feature_get_coach_emotion.pb.cc
+0x013fe8cb ../chesscom/explanation_engine/v1/feature_get_chess960_initial_position.pb.cc
+0x013fe919 ../chesscom/explanation_engine/v1/feature_get_compressed_position.pb.cc
+0x013fe961 ../chesscom/explanation_engine/v1/feature_get_ergonomic_position.pb.cc
+0x013fe9a8 ../chesscom/chess/v1/position.pb.cc
+0x013fe9cc ../chesscom/explanation_engine/v1/feature_lua_completion.pb.cc
+0x013fea0b ../chesscom/engine/v1/evaluation.pb.cc
+0x013fea32 ../chesscom/explanation_engine/v1alpha/game_feature_computation.pb.cc
+0x013fea78 ../chesscom/explanation_engine/v1/game_feature_computation.pb.cc
+0x013feab9 ../chesscom/explanation_engine/v1/feature_edit_pgn_move_annotation.pb.cc
+0x013feb02 ../chesscom/explanation_engine/v1/move_annotation.pb.cc
+0x013feb3a ../chesscom/explanation_engine/v1/bot_move_configuration.pb.cc
+0x013feb79 ../chesscom/explanation_engine/v1/feature_get_illegal_move_explanation.pb.cc
+0x013febc6 ../chesscom/explanation_engine/v1/feature_move_classification.pb.cc
+0x013fec0a ../chesscom/explanation_engine/v1/move_classification.pb.cc
+0x013fec46 ../chesscom/explanation_engine/v1/feature_cee_version.pb.cc
+0x013fec82 ../chesscom/api/v1/semantic_version.pb.cc
+0x013fecac ../chesscom/explanation_engine/v1/feature_get_pgn.pb.cc
+0x013fece4 ../chesscom/explanation_engine/v1/feature_validate_pgn.pb.cc
+0x013fed21 ../chesscom/explanation_engine/v1/internal_feature_puzzle_gen.pb.cc
+0x013fed65 ../chesscom/explanation_engine/v1/puzzle_gen.pb.cc
+0x013fed98 ../chesscom/explanation_engine/v1/feature_get_fen.pb.cc
+0x013fedd0 ../chesscom/explanation_engine/v1/feature_validate_fen.pb.cc
+0x013fee0d ../chesscom/explanation_engine/v1/tcn.pb.cc
+0x013fee39 ../chesscom/explanation_engine/v1alpha/location_fan.pb.cc
+0x013fee73 ../chesscom/text_item/v1alpha/text_item.pb.cc
+0x013feea1 ../chesscom/explanation_engine/v1alpha/feature_init_engine_pool.pb.cc
+0x013feee7 ../chesscom/explanation_engine/v1alpha/internal_feature_load_charm_model.pb.cc
+0x013fef36 ../chesscom/explanation_engine/v1/feature_load_charm_model.pb.cc
+0x013fef77 ../chesscom/explanation_engine/v1/feature_load_eco_book.pb.cc
+0x013fefb5 ../chesscom/explanation_engine/v1alpha/c_api.pb.cc
+0x013fefe8 ../chesscom/explanation_engine/v1alpha/internal_feature_run_search.pb.cc
+0x013ff031 ../chesscom/explanation_engine/v1/feature_run_search.pb.cc
+0x013ff06c ../chesscom/explanation_engine/v1/internal_feature_key_position_search.pb.cc
+0x013ff0b9 ../chesscom/explanation_engine/v1/search.pb.cc
+0x013ff0e8 ../chesscom/explanation_engine/v1alpha/feature_advanced_stats_category_speech.pb.cc
+0x013ff13c ../chesscom/explanation_engine/v1/feature_generate_train_item_goal_speech.pb.cc
+0x013ff18c ../chesscom/explanation_engine/v1/speech.pb.cc
+0x013ff1bb ../chesscom/explanation_engine/v1/feature_set_coach.pb.cc
+0x013ff1f5 ../chesscom/explanation_engine/v1/feature_load_and_set_coach.pb.cc
+0x013ff238 ../chesscom/explanation_engine/v1/feature_load_coach.pb.cc
+0x013ff273 ../chesscom/explanation_engine/v1/feature_get_opening.pb.cc
+0x013ff2af ../chesscom/explanation_engine/v1/opening.pb.cc
+0x013ff2df ../chesscom/explanation_engine/v1/feature_bot_move_from_config.pb.cc
+0x013ff324 ../chesscom/explanation_engine/v1alpha/internal_feature_maia_botmove.pb.cc
+0x013ff36f ../chesscom/explanation_engine/v1/internal_feature_maia_botmove.pb.cc
+0x013ff3b5 ../chesscom/explanation_engine/v1/feature_relaxed_apply_move.pb.cc
+0x013ff3f8 ../chesscom/explanation_engine/v1/feature_get_bot_move.pb.cc
+0x013ff435 ../chesscom/explanation_engine/v1/feature_grade_train_item_move.pb.cc
+0x013ff47b ../chesscom/explanation_engine/v1alpha/book_move.pb.cc
+0x013ff4b2 ../chesscom/explanation_engine/v1/feature_get_punish_move.pb.cc
+0x013ff4f2 ../chesscom/explanation_engine/v1/punish_move.pb.cc
+0x013ff526 ../chesscom/chess/v1/move.pb.cc
+0x013ff546 ../chesscom/explanation_engine/v1/coach_state.pb.cc
+0x013ff57a ../chesscom/explanation_engine/v1/feature_reset_engine_state.pb.cc
+0x013ff5bd ../chesscom/explanation_engine/v1alpha/internal_feature_key_game_state.pb.cc
+0x013ff60a ../chesscom/explanation_engine/v1/feature_get_game_state.pb.cc
+0x013ff649 ../chesscom/explanation_engine/v1/internal_feature_uci_to_game_state.pb.cc
+0x013ff694 ../chesscom/explanation_engine/v1/feature_load_game_state.pb.cc
+0x013ff6d4 ../chesscom/explanation_engine/v1/game_state.pb.cc
+0x013ff707 ../chesscom/explanation_engine/v1/game_phase.pb.cc
+0x013ff73a ../chesscom/chess/v1/score.pb.cc
+0x013ff75b ../chesscom/engine/v1/score.pb.cc
+0x013ff77d ../chesscom/explanation_engine/v1alpha/internal_feature_checkmate_type.pb.cc
+0x013ff7ca ../chesscom/explanation_engine/v1/command_type.pb.cc
+0x013ff7ff ../chesscom/explanation_engine/v1alpha/internal_feature_extract_pvline.pb.cc
+0x013ff84c ../chesscom/explanation_engine/v1alpha/feature_remove_external_engine.pb.cc
+0x013ff898 ../chesscom/explanation_engine/v1alpha/feature_add_external_engine.pb.cc
+0x013ff8e1 ../chesscom/explanation_engine/v1alpha/feature_set_internal_engine.pb.cc
+0x013ff92a ../chesscom/chess/v1/time.pb.cc
+0x013ff94a ../chesscom/explanation_engine/v1/feature_new_game.pb.cc
+0x013ff983 ../chesscom/explanation_engine/v1/new_game.pb.cc
+0x013ff9b4 ../chesscom/explanation_engine/v1/feature_evaluate_game.pb.cc
+0x013ff9f2 ../chesscom/explanation_engine/v1/invalid_game.pb.cc
+0x013ffa27 ../chesscom/explanation_engine/v1/feature_get_ergonomic_game.pb.cc
+0x013ffa6a ../chesscom/chess/v1/game.pb.cc
+0x013ffa8a ../chesscom/stats/v1/advanced_stat_example.pb.cc
+0x013ffabb ../chesscom/stats/v1/advanced_stat_percentile.pb.cc
+0x013ffaef ../chesscom/explanation_engine/v1alpha/board_event_profile.pb.cc
+0x013ffb30 ../chesscom/train/v1/train_miss_challenge.pb.cc
+0x013ffb60 ../chesscom/train/v1/train_blunder_challenge.pb.cc
+0x013ffb93 ../chesscom/train/v1/train_challenge.pb.cc
+0x013ffbbe ../chesscom/train/v1/train_strategy_mistake_challenge.pb.cc
+0x013ffbfa ../chesscom/train/v1/train_opening_mistake_challenge.pb.cc
+0x013ffc35 ../chesscom/train/v1/train_endgame_mistake_challenge.pb.cc
+0x013ffc70 ../chesscom/train/v1/train_generated_challenge.pb.cc
+0x013ffca5 ../chesscom/explanation_engine/v1alpha/internal_feature_static_exchange.pb.cc
+0x013ffcf3 ../chesscom/explanation_engine/v1alpha/static_exchange.pb.cc
+0x013ffd30 ../chesscom/explanation_engine/v1alpha/internal_feature_generate_pvtree.pb.cc
+0x013ffd7e ../chesscom/explanation_engine/v1/feature_game_tree.pb.cc
+0x013ffdb8 ../chesscom/explanation_engine/v1alpha/internal_feature_build_agent_stable_tree.pb.cc
+0x013ffe0e ../chesscom/explanation_engine/v1/torch_search_mode.pb.cc
+0x013ffe48 ../chesscom/explanation_engine/v1alpha/internal_feature_unit_test_code.pb.cc
+0x013ffe95 ../chesscom/explanation_engine/v1/charm_inference_code.pb.cc
+0x013ffed2 ../chesscom/explanation_engine/v1alpha/internal_feature_get_coherence.pb.cc
+0x013fff1e ../chesscom/explanation_engine/v1/compact_charm_inference.pb.cc
+0x013fff5e ../chesscom/explanation_engine/v1alpha/internal_feature_charm_inference.pb.cc
+0x013fffac ../chesscom/explanation_engine/v1/feature_charm_inference.pb.cc
+0x013fffec ../chesscom/explanation_engine/v1/simple_charm_inference.pb.cc
+0x0140002b ../chesscom/explanation_engine/v1/feature_add_charm_inference.pb.cc
+0x0140006f ../chesscom/explanation_engine/v1/charm_inference.pb.cc
+0x014000a7 ../chesscom/explanation_engine/v1alpha/internal_feature_get_piece.pb.cc
+0x014000ef ../chesscom/chess/v1/piece.pb.cc
+0x01400110 ../chesscom/chess/v1/head_to_head_record.pb.cc
+0x0140013f ../chesscom/explanation_engine/v1/report_card.pb.cc
+0x01400173 ../chesscom/explanation_engine/v1/game_state_spec.pb.cc
+0x014001ab ../chesscom/explanation_engine/v1/feature_run_lua.pb.cc
+0x014001e3 ../chesscom/explanation_engine/v1alpha/internal_feature_uncompress_data.pb.cc
+0x01400231 ../chesscom/explanation_engine/v1/internal_feature_compress_data.pb.cc
+0x01400278 ../chesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.pb.cc
+0x014002be ../chesscom/explanation_engine/v1alpha/internal_feature_caps2.pb.cc
+0x01400302 ../chesscom/explanation_engine/v1/feature_generate_uuid_v1.pb.cc
+0x01400343 ../chesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.pb.cc
+0x0140038a /tmp/claude-1000/-home-dmitry-chesscom-explanation-engine-explanation-engine/ca5afb55-dea5-4825-85f7-9da75d8fbc66/scratchpad/protobuf-src/src/google/protobuf/arena.cc
+0x01400ab5 move_to_cee_pb
+0x01401143 embedded_rating_ranges_data
+0x014011f9 Keying PositionSearch requires RunSearchRequest data
+0x0140122e Keying GameState requires RunSearchRequest data
+0x014013e8 chesscom.explanation_engine.v1.CeeVersionResponse.cee_git_sha
+0x014015c2 {"error":"`json`, `base64`, or `bzp` expected as sixth token, but got `
+0x0140160a {"error":"`locale` expected as fourth token, but got `
+0x01401641 {"error":"`text_id` expected as second token, but got `
+0x01403012 void TEP::api::Message::store(const Proto &) [Proto = chesscom::explanation_engine::v1alpha::InternalFeatureRunPvTreesResponse]
+0x014035c2 void TEP::api::Message::store(const Proto &) [Proto = chesscom::explanation_engine::v1::MoveClassificationResponse]
+0x01403a18 void TEP::api::Message::store(const Proto &) [Proto = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse]
+0x01403a97 void TEP::api::SearchFeatureBase<chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchRequest, chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse>::execute_search(RequestedSearch &, engine::Engine &, bool) [ProtoRequest = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchRequest, ProtoResponse = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse]
+0x01403c35 virtual void TEP::api::SearchFeatureBase<chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchRequest, chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse>::run_impl(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchRequest, ProtoResponse = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse]
+0x01403dbb void TEP::api::Message::store(const Proto &) [Proto = chesscom::explanation_engine::v1::RunSearchResponse]
+0x01403e26 void TEP::api::SearchFeatureBase<chesscom::explanation_engine::v1::RunSearchRequest, chesscom::explanation_engine::v1::RunSearchResponse>::execute_search(RequestedSearch &, engine::Engine &, bool) [ProtoRequest = chesscom::explanation_engine::v1::RunSearchRequest, ProtoResponse = chesscom::explanation_engine::v1::RunSearchResponse]
+0x01403f74 virtual void TEP::api::SearchFeatureBase<chesscom::explanation_engine::v1::RunSearchRequest, chesscom::explanation_engine::v1::RunSearchResponse>::run_impl(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1::RunSearchRequest, ProtoResponse = chesscom::explanation_engine::v1::RunSearchResponse]
+0x014044ac void TEP::api::Message::store(const Proto &) [Proto = chesscom::explanation_engine::v1alpha::InternalFeatureMaiaBotMoveResponse]
+0x01404c18 void TEP::api::Message::store(const Proto &) [Proto = chesscom::explanation_engine::v1::EvaluateGameResponse]
+0x0140a553 virtual void TEP::api::ProtoFeature<chesscom::explanation_engine::v1alpha::InternalFeatureRunPvTreesRequest, chesscom::explanation_engine::v1alpha::InternalFeatureRunPvTreesResponse, TEP::api::RequiredSearches::NO_SEARCHES, TEP::api::LockScope::GAME_READ_OR_WRITE>::run(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1alpha::InternalFeatureRunPvTreesRequest, ProtoResponse = chesscom::explanation_engine::v1alpha::InternalFeatureRunPvTreesResponse, searches = TEP::api::RequiredSearches::NO_SEARCHES, scope = TEP::api::LockScope::GAME_READ_OR_WRITE]
+0x0140b31f virtual void TEP::api::ProtoFeature<chesscom::explanation_engine::v1::MoveClassificationRequest, chesscom::explanation_engine::v1::MoveClassificationResponse, TEP::api::RequiredSearches::NO_SEARCHES>::run(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1::MoveClassificationRequest, ProtoResponse = chesscom::explanation_engine::v1::MoveClassificationResponse, searches = TEP::api::RequiredSearches::NO_SEARCHES, scope = TEP::api::LockScope::GAME_READ_OR_WRITE]
+0x0140c73c virtual void TEP::api::ProtoFeature<chesscom::explanation_engine::v1alpha::InternalFeatureMaiaBotMoveRequest, chesscom::explanation_engine::v1alpha::InternalFeatureMaiaBotMoveResponse, TEP::api::RequiredSearches::NO_SEARCHES>::run(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1alpha::InternalFeatureMaiaBotMoveRequest, ProtoResponse = chesscom::explanation_engine::v1alpha::InternalFeatureMaiaBotMoveResponse, searches = TEP::api::RequiredSearches::NO_SEARCHES, scope = TEP::api::LockScope::GAME_READ_OR_WRITE]
+0x0140d4db virtual void TEP::api::ProtoFeature<chesscom::explanation_engine::v1::EvaluateGameRequest, chesscom::explanation_engine::v1::EvaluateGameResponse, TEP::api::RequiredSearches::NO_SEARCHES, TEP::api::LockScope::GAME_READ_OR_WRITE>::run(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1::EvaluateGameRequest, ProtoResponse = chesscom::explanation_engine::v1::EvaluateGameResponse, searches = TEP::api::RequiredSearches::NO_SEARCHES, scope = TEP::api::LockScope::GAME_READ_OR_WRITE]
+0x01412340 virtual void TEP::api::ProtoFeature<chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchRequest, chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse, TEP::api::RequiredSearches::NO_SEARCHES, TEP::api::LockScope::GLOBAL_READ>::run(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchRequest, ProtoResponse = chesscom::explanation_engine::v1alpha::InternalFeatureRunSearchResponse, searches = TEP::api::RequiredSearches::NO_SEARCHES, scope = TEP::api::LockScope::GLOBAL_READ]
+0x01412565 virtual void TEP::api::ProtoFeature<chesscom::explanation_engine::v1::RunSearchRequest, chesscom::explanation_engine::v1::RunSearchResponse, TEP::api::RequiredSearches::NO_SEARCHES, TEP::api::LockScope::GLOBAL_READ>::run(MessageStream &) [ProtoRequest = chesscom::explanation_engine::v1::RunSearchRequest, ProtoResponse = chesscom::explanation_engine::v1::RunSearchResponse, searches = TEP::api::RequiredSearches::NO_SEARCHES, scope = TEP::api::LockScope::GLOBAL_READ]
+0x01413bf7 auto TEP::Search::single_use_search(SearchFn &&) [SearchFn = (lambda at ../../src/search.cpp:135:30)]
+0x01413c5d auto TEP::Search::single_use_search(SearchFn &&) [SearchFn = (lambda at ../../src/search.cpp:212:30)]
+0x01413dcd filesystem error: %s ["%s"]
+0x01413de9 filesystem error: %s ["%s"] ["%s"]
+0x01414267 CEE_MOCK_STRICT
+0x014145c2 _ERROR
+0x01414a5c UNKNOWN_CLASSIFICATION
+0x01414c20 TORCH_HUMAN
+0x01414e75 CEE_MOCK_SINK
+0x01414ffe STOCKFISH
+0x0141503a node_lib::state(*opp_node).in_checkmate() || expected_outcome(opp_node->score(), NORMALIZED_ELO) == DRAWING
+0x014153af STOCKFISH_18_NNUE
+0x014153c1 STOCKFISH_16_NNUE
+0x014153d3 STOCKFISH_15_NNUE
+0x014153e5 STOCKFISH_16_1_NNUE
+0x014153f9 STOCKFISH_15_1_NNUE
+0x0141540d Stockfish18NNUE
+0x0141541d Stockfish16NNUE
+0x0141542d Stockfish15NNUE
+0x0141543d Stockfish16.1NNUE
+0x0141544f Stockfish15.1NNUE
+0x0141564a classification != MOVE_CLASS_NONE
+0x01415a31 CEE_NN_MOCK_SOURCE
+0x01415a44 CEE_MOCK_SOURCE
+0x01415d49 STOCKFISH_RELABELED
+0x01415d5d TORCH_RELABELED
+0x0141622b emscripten::memory_view<short>
+0x0141624a emscripten::memory_view<unsigned short>
+0x01416272 emscripten::memory_view<int>
+0x0141628f emscripten::memory_view<unsigned int>
+0x014162b5 emscripten::memory_view<float>
+0x014162d4 emscripten::memory_view<uint8_t>
+0x014162f5 emscripten::memory_view<int8_t>
+0x01416315 emscripten::memory_view<uint16_t>
+0x01416337 emscripten::memory_view<int16_t>
+0x01416358 emscripten::memory_view<uint64_t>
+0x0141637a emscripten::memory_view<int64_t>
+0x0141639b emscripten::memory_view<uint32_t>
+0x014163bd emscripten::memory_view<int32_t>
+0x014163de <parse error>
+0x014163ec emscripten::memory_view<char>
+0x0141640a emscripten::memory_view<unsigned char>
+0x01416431 emscripten::memory_view<signed char>
+0x01416460 emscripten::memory_view<long>
+0x0141647e emscripten::memory_view<unsigned long>
+0x014164ca emscripten::memory_view<double>
+0x01416684 Protocol Buffer reflection usage error:
+0x014166ac   Method      : google::protobuf::Reflection::
+0x0141b8d5 Stockfish15
+0x0141b8e9 STOCKFISH_15
+0x0141f1d6 m-maia3
+0x0141f3ee ClassificationV3
+0x0141f68e calculate_game_rating_v2
+0x01420752 Stockfish12
+0x01420766 STOCKFISH_12
+0x01420ad5 Stockfish9Fairplay1
+0x01421923 STOCKFISH_9_FAIRPLAY_1
+0x01421956 STOCKFISH_15_1
+0x01421ada Stockfish15.1
+0x01444d5a " stored in google.protobuf.Any.
+0x01445082 Invalid SearchOpts: reduce_nodes_on_successive_multisearch_searches requires multisearch but not pvtrees, and nodes_limit but not any other limit.
+0x014451a8 torch_search_mode sets no mode this build of Explanation Engine knows.
+0x01445214 " was not found or had errors.
+0x0144533f Cannot apply null moves to relaxed positions.
+0x0144536d MessageSets cannot have fields, only extensions.
+0x014453e1  if you ignore case and strip out the enum name prefix (if any). This is error-prone and can lead to undefined behavior. Please avoid doing this. If you are using allow_alias, please assign the same numeric value to both enums.
+0x014455f9 Key in map fields cannot be enum types.
+0x01445621 Key in map fields cannot be float/double, bytes or message types.
+0x01445705 String literals cannot cross line boundaries.
+0x01445733 torch_search_mode.human is incompatible with reduce_nodes_on_successive_multisearch_searches.
+0x014457fb Reduce_nodes_on_successive_multisearch_searches is incompatible with use_pvtrees.
+0x01445d7f Cannot delete the game's starting position.
+0x01445dfc Fields in the same oneof must be defined consecutively. "$0" cannot be defined before the completion of the "$1" oneof definition.
+0x0144638e  bytes).  To increase the limit (or to disable these warnings), see CodedInputStream::SetTotalBytesLimit() in third_party/protobuf/io/coded_stream.h.
+0x01446601 google.protobuf.
+0x01446657 Botchat shouldn't speak for the last two ply after the human move.
+0x01446820 Files with optimize_for = LITE_RUNTIME cannot define services unless you set both options cc_generic_services and java_generic_services to false.
+0x014472bf Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
+0x01447462 "/*" inside block comment.  Block comments cannot be nested.
+0x014474cb CEEError: {}. Process terminated and must be restarted.
+0x014475a0  cannot be required.
+0x01447a21 Extension numbers cannot be greater than $0.
+0x01447a4e Field numbers cannot be greater than $0.
+0x01447f9e -Classification-
+0x0144826e ErrorInfo TEP::api::bot_config_error::multiple_sources(std::string_view)
+0x014482b7 ErrorInfo TEP::api::bot_config_error::missing_source(std::string_view)
+0x01448352 ErrorInfo TEP::api::bot_config_error::missing_artifact(std::string_view, std::string_view)
+0x014484da int CEE_RunImpl(feature_handle_t, int)
+0x01448501 feature_handle_t CEE_NewFeatureImpl(game_point_handle_t, feature_id_t, const void *, int)
+0x0144855b std::optional<ErrorInfo> TEP::api::ClassificationSearchLadder::run_replayed_prelude(const ContinuationOptions &, int)
+0x01448777 const char *CEE_GetLastMove(game_point_handle_t)
+0x01448e4a std::optional<ErrorInfo> TEP::api::ClassificationSearchLadder::run(bool)
+0x01448fe7 std::optional<ErrorInfo> TEP::api::validate_classification_request(const Node &, bool)
+0x01449168 TEP::ErrorInfo (anonymous namespace)::preparation_error(std::string)
+0x014491ad ErrorInfo TEP::api::bot_config_error::invalid_proto_config(std::string)
+0x014491f5 ErrorInfo TEP::api::bot_config_error::invalid_json_config(std::string)
+0x0144966f (cannot determine missing fields for lite message)
+0x01449923 is_miss_classification(classification::classification(node_)) && !includes_board_event(bes, Circumstance::MISSES)
+0x01449b09  (missing or unsupported rating_scale?)
+0x01449e6f void TEP::api::MoveClassificationFeature::push_frame(MessageStream &, const Node &, float, const SearchedVariations *)
+0x01449ee6 const char *CEE_AddArtifact(const void *, int, const char *)
+0x01449f87 game_point_handle_t CEE_Play(game_point_handle_t, const char *)
+0x01449fc7 game_point_handle_t CEE_PlayImpl(game_point_handle_t, const char *)
+0x0144a00b const char *CEE_AddArtifactFromFile(const char *, const char *)
+0x0144a561 !HasParseError()
+0x0144aa21 search_opts.multisearch && !search_opts.pvtrees_options.has_value() && search_opts.limits.nodes.has_value() && !search_opts.limits.depth.has_value() && !search_opts.limits.time_ms.has_value()
+0x0144ac8d virtual borrowed_engine_t TEP::api::InternalRunSearchFeature::acquire_engine()
+0x0144aec6 entity_hash_store.find(ent.id()) != entity_hash_store.end()
+0x0144afaf ErrorInfo TEP::api::(anonymous namespace)::fill_interrupted()
+0x0144afed ErrorInfo TEP::api::(anonymous namespace)::interrupted()
+0x0144b026 !conf_->is_explicitly_set<ID::HumanPlaysBlack>()
+0x0144b144 void TEP::api::(anonymous namespace)::fill_pb_check_piece_set(Bitboard, const Node &, const char *, proto_cee_v1alpha::PieceSet &)
+0x0144b1c7 std::vector<MoveReport> TEP::api::maia_botmove::(anonymous namespace)::make_moves_report(const move_profile_map_t &, const move_eval_map_t &)
+0x0144b255 std::optional<ErrorInfo> TEP::api::ClassificationSearchLadder::run_final_stage(const ContVerifyOpts &)
+0x0144b357 std::shared_ptr<engine::Engine> TEP::api::(anonymous namespace)::make_external_engine(const proto_cee_v1alpha::EngineInstanceOptions &)
+0x0144b3df proto_cee_v1alpha::EngineInstance TEP::api::add_external_engine_to_pool(BorrowingEnginePool &, const proto_cee_v1alpha::EngineInstanceOptions &)
+0x0144b470 void TEP::api::(anonymous namespace)::fill_pb_profile_piece(Square, const Node &, const char *, proto_cee_v1alpha::PieceDetails &)
+0x0144bda0 virtual void TEP::api::RunPvTreesFeature::run_impl(MessageStream &)
+0x0144c25a virtual void TEP::api::MaiaBotMoveFeature::run_impl(MessageStream &)
+0x0144c68a virtual void TEP::api::EvaluateGameFeature::run_impl(MessageStream &)
+0x0144cd7d int TEP::node_lib::side_to_move_rating(const Node &)
+0x0144d1b6 void TEP::api::(anonymous namespace)::fill_pb_check_fans(const std::vector<std::pair<Square, Bitboard>> &, const Node &, const char *, google::protobuf::RepeatedPtrField<proto_cee_v1alpha::LocationFan> &)
+0x0144d563 unsupported arch 'maia'
+0x0144d6e7 {"error":"'locale' must be fourth token to `set-coach-asset` command, got '
+0x0144d733 {"error":"'text_id' must be second token to `set-coach-asset` command, got '
+0x0144d994 Cannot convert TEP::Color enum '
+0x0144da05  error: the following inputs do not end with '
+0x0144db8d rating scale '
+0x0144dfe3 false && "MoveClassification doesn't support piece-specific keys"
+0x0144e39b Error in ctm for fen "%s"
+0x0144e5da labeltooltip="error_cost: %u
+0x0144e693 {"error":"
+0x0144e69e ", "audioUrlHash":"
+0x0144e6d5 {"error":null,"config":{"text_id":"
+0x0144e78b Files that do not use optimize_for = LITE_RUNTIME cannot import files which do use this option.  This file is not lite, but it imports "
+0x0144e844 Error while parsing option value for "
+0x0144ebbd An error occurred while processing "
+0x0144f142 { "error" : "
+0x0144f150 { "label" : null, "error" : "
+0x0144f16e { "labels" : [], "error" : "
+0x0144f427 Min rating higher than max rating for key 
+0x0144f452 Expected type "int" for field MaxRating for key 
+0x0144f483 Expected type "int" for field MinRating for key 
+0x0144f569 cannot borrow 
+0x0144f5b7  error: requires at least 
+0x0144f67b assert 
+0x0144f8d9 Error parsing text-format 
+0x0144f911  has ratings out of ascending order at 
+0x0144fc97 syntax error 
+0x0144fca5 info string CEEError 
+0x0144fcc6 {"error":"Could not find text for 
+0x0144fd1e {"error":"For 
+0x0144fe6e BuildAgentStableTree: the human selection's charm inference at elo 
+0x0144ffde heron2raw: cannot open 
+0x0144fff6 heroninspect: cannot open 
+0x01450115  hashfull 
+0x01450283 cannot use operator[] with a string argument with 
+0x014502b6 cannot use operator[] with a numeric argument with 
+0x01450308 cannot use at() with 
+0x0145031e cannot use push_back() with 
+0x0145033b cannot use value() with 
+0x01450354 cannot use erase() with 
+0x01450390 position hash 
+0x014503ec  has different engine lines at rating 
+0x01450413  than at rating 
+0x01450424  repeats rating 
+0x01450469 Compiler              : Clang 
+0x0145077c Error on line 
+0x014507a0 Error from line 
+0x01450879 Cannot set LogFile 
+0x01450c74  rating-sensitive strength probabilities, expected 
+0x01450dd8 Error parsing TextItem with ID 
+0x01450df8 Cannot set LogFD 
+0x0145114a {"error":"Asset for specified Coach does not exist: 
+0x0145117f Cannot set BotName to a bot that doesn't exist: 
+0x014511b0 Cannot set Coach to a value that doesn't exist: 
+0x01451245 only Torch or Stockfish engines are supported, but got: 
+0x014513d2 nn.rating must be >= 1, got: 
+0x01451582 error: unknown argument: 
+0x01451691 Failed to parse rating ranges asset: 
+0x014517e4 JSON parsing error in piece bonus: 
+0x01451a2a Tried to add duplicate key to rating_ranges: 
+0x01451b5c CHECK failed: output->message_info.prototype != nullptr: 
+0x01452533 CHECK failed: !value || _impl_.pv_classifications_ != nullptr: 
+0x01452573 CHECK failed: _impl_.pv_classifications_ != nullptr: 
+0x014526a3 CHECK failed: !value || _impl_.cee_lines_ != nullptr: 
+0x014526da CHECK failed: _impl_.cee_lines_ != nullptr: 
+0x01452b49 CHECK failed: !value || _impl_.cee_version_ != nullptr: 
+0x01452b82 CHECK failed: _impl_.cee_version_ != nullptr: 
+0x01452fc1 CHECK failed: !value || _impl_.proto_config_ != nullptr: 
+0x01452ffb CHECK failed: _impl_.proto_config_ != nullptr: 
+0x0145371f CHECK failed: !value || _impl_.torch_search_mode_ != nullptr: 
+0x0145375e CHECK failed: _impl_.torch_search_mode_ != nullptr: 
+0x01453cec pgn2heron error: 
+0x01453cfe json parsing error: 
+0x01453d80 Generating puzzle for: 
+0x01453eae error: failed to create weight provider: 
+0x01453ed8 error: failed to create WeightProvider: 
+0x014540a6 error: failed to parse json: 
+0x01454109 Error setting Language option: 
+0x0145423a invalid move classification: 
+0x0145437c Cannot skip field value, unexpected token: 
+0x014543e1 error illegal fen: 
+0x0145444b error: failed to create model: 
+0x0145446b error: failed to load model: 
+0x01454489 failed to load maia3 model: 
+0x01454694 JSON parsing error in nn config: 
+0x014546b6 error: failed to parse config: 
+0x014547f9 info string CEEError Incorrect move: 
+0x014548b7 error illegal move: 
+0x01454ada Could not normalize option value: 
+0x01454ced {"error":"Unknown non_chess text type: 
+0x01454f03 Error creating new game: 
+0x01454f5c JSON parsing error in NNMult rule: 
+0x01454f80 JSON parsing error in rule: 
+0x01454fa6 pgn2heron error: could not open output file: 
+0x01454fd4 heronrescore error: could not open output file: 
+0x01455005 pgn2heron error: could not open input file: 
+0x01455032 heronrescore error: could not open input file: 
+0x0145507e error: failed to read json file: 
+0x014550da Error while reading book file: 
+0x014551c3 Embedded Coach asset is not valid JSON. Error code: 
+0x014552e8 error: model file not found: 
+0x01455342 info string CEEError Bad fetch command: 
+0x01455493 Locale could not be normalized: 
+0x0145558c Selected line moves classification completed: 
+0x01455603 error: an exception occured: 
+0x0145588a error: failed to load metadata: 
+0x01455a1a INTERNAL_ERROR: 
+0x01455a2b API_ERROR: 
+0x01455b8a  exceeded maximum protobuf size of 2GB: 
+0x0145688e Error : 
+0x014569c7 TORCH_LICENSE_OWNER   : 
+0x014569e9 Error    : 
+0x01456a7f TORCH_EVALFILE        : 
+0x01456a98 TORCH_VERSION         : 
+0x01456ab1 TORCH_L1SIZE          : 
+0x01456aca TORCH_ISA             : 
+0x01456dd5 {"error":null}
+0x01456dfc {"error":"Incorrect number of tokens to set-coach-asset. Command should be of the form: `set-coach-asset text_id <<coach_text_id>> locale <<coach_locale>>`"}
+0x01457132 Cannot execute move %s
+0x01457156 [*** LOG ERROR #%04zu ***] [%s] [%s] %s
+0x01457194 [libprotobuf %s %s:%d] %s
+0x01457238 Error with fseek in back up
+0x014572aa Error with fseek in collection
+0x014572ca Warn: only Torch is supported in PuzzleGen
+0x014572f6 error: unable to get model
+0x01457312 error: failed to write model
+0x0145735c error: unable to get maia model
+0x0145737d error: unable to get maia3 model
+0x01457470 Error with initial fseek of opening book
+0x0145749a info Error with fread opening book
+0x014575bc info string Torch
+0x014575cf info Error with fseek in binary search
+0x01457635 info string Hash table size is now %d meg
+0x014577fc error: metadata json file not found
+0x01457821 error: model file not found
+0x014578e1 error: model name is not specified
+0x01457905 error: output path not specified
+0x01457b24 error: usage: charm-ctl load [model_name] <file_path>
+0x01457c70 error_cost: %u
+0x01457d0d Protocol Buffer map usage error:
+0x01457d43 Rating-Sensitive Strength Distribution:
+0x01457e5a Hash table must be bigger than 0
+0x01457f07 pgn2heron error: usage: pgn2heron <input1.pgn> <input2.pgn> ...
+0x014580ac error: maia3 prediction failed (missing or unsupported rating_scale?)
+0x01458123 Error here!
+0x0145832b N8nlohmann6detail10type_errorE
+0x01458c9a N8nlohmann6detail11parse_errorE
+0x01459e36 N3fmt3v1112format_errorE
+0x0145cb44 N3TEP3UCI9AssertCmdE
+0x0145cfd0 N3TEP3UCI15RatingRangesCmdE
+0x0145d3b0 N3TEP3UCI7MaiaCmdE
+0x0146b663 NSt3__210__function6__funcIZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS3_16RunSearchFeatureELb1ELb0ELb0EEENS_8functionIFN2tl8expectedINS_10unique_ptrINS3_7FeatureENS_14default_deleteISC_EEEENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPNS2_4NodeEiEEEvEUlSO_iE_SP_EE
+0x0146b7ef N3TEP3api16RunSearchFeatureE
+0x0146b837 N3TEP3api17SearchFeatureBaseIN8chesscom18explanation_engine2v116RunSearchRequestENS4_17RunSearchResponseEEE
+0x0146b8af N3TEP3api12ProtoFeatureIN8chesscom18explanation_engine2v116RunSearchRequestENS4_17RunSearchResponseELNS0_16RequiredSearchesE0ELNS0_9LockScopeE0EEE
+0x0146ba6f ZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS0_16RunSearchFeatureELb1ELb0ELb0EEENSt3__28functionIFN2tl8expectedINS5_10unique_ptrINS0_7FeatureENS5_14default_deleteISA_EEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEEEPNS_4NodeEiEEEvEUlSM_iE_
+0x0146da7b NSt3__210__function6__funcIZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS3_25MoveClassificationFeatureELb1ELb0ELb0EEENS_8functionIFN2tl8expectedINS_10unique_ptrINS3_7FeatureENS_14default_deleteISC_EEEENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPNS2_4NodeEiEEEvEUlSO_iE_SP_EE
+0x0146dbaf ZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS0_25MoveClassificationFeatureELb1ELb0ELb0EEENSt3__28functionIFN2tl8expectedINS5_10unique_ptrINS0_7FeatureENS5_14default_deleteISA_EEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEEEPNS_4NodeEiEEEvEUlSM_iE_
+0x01471bcb NSt3__210__function6__funcIZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS3_19EvaluateGameFeatureELb1ELb0ELb0EEENS_8functionIFN2tl8expectedINS_10unique_ptrINS3_7FeatureENS_14default_deleteISC_EEEENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPNS2_4NodeEiEEEvEUlSO_iE_SP_EE
+0x01471cfb ZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS0_19EvaluateGameFeatureELb1ELb0ELb0EEENSt3__28functionIFN2tl8expectedINS5_10unique_ptrINS0_7FeatureENS5_14default_deleteISA_EEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEEEPNS_4NodeEiEEEvEUlSM_iE_
+0x0147701b NSt3__210__function6__funcIZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS3_24InternalRunSearchFeatureELb1ELb0ELb0EEENS_8functionIFN2tl8expectedINS_10unique_ptrINS3_7FeatureENS_14default_deleteISC_EEEENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPNS2_4NodeEiEEEvEUlSO_iE_SP_EE
+0x014771af N3TEP3api24InternalRunSearchFeatureE
+0x014771ff N3TEP3api17SearchFeatureBaseIN8chesscom18explanation_engine7v1alpha31InternalFeatureRunSearchRequestENS4_32InternalFeatureRunSearchResponseEEE
+0x0147729b N3TEP3api12ProtoFeatureIN8chesscom18explanation_engine7v1alpha31InternalFeatureRunSearchRequestENS4_32InternalFeatureRunSearchResponseELNS0_16RequiredSearchesE0ELNS0_9LockScopeE0EEE
+0x0147748f ZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS0_24InternalRunSearchFeatureELb1ELb0ELb0EEENSt3__28functionIFN2tl8expectedINS5_10unique_ptrINS0_7FeatureENS5_14default_deleteISA_EEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEEEPNS_4NodeEiEEEvEUlSM_iE_
+0x01477e1b NSt3__210__function6__funcIZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS3_18MaiaBotMoveFeatureELb1ELb0ELb0EEENS_8functionIFN2tl8expectedINS_10unique_ptrINS3_7FeatureENS_14default_deleteISC_EEEENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPNS2_4NodeEiEEEvEUlSO_iE_SP_EE
+0x01477f77 N3TEP3api12ProtoFeatureIN8chesscom18explanation_engine7v1alpha33InternalFeatureMaiaBotMoveRequestENS4_34InternalFeatureMaiaBotMoveResponseELNS0_16RequiredSearchesE0ELNS0_9LockScopeE1EEE
+0x0147809b ZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS0_18MaiaBotMoveFeatureELb1ELb0ELb0EEENSt3__28functionIFN2tl8expectedINS5_10unique_ptrINS0_7FeatureENS5_14default_deleteISA_EEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEEEPNS_4NodeEiEEEvEUlSM_iE_
+0x0147b317 NSt3__210__function6__funcIZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS3_17RunPvTreesFeatureELb1ELb1ELb0EEENS_8functionIFN2tl8expectedINS_10unique_ptrINS3_7FeatureENS_14default_deleteISC_EEEENS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPNS2_4NodeEiEEEvEUlSO_iE_SP_EE
+0x0147b46f N3TEP3api12ProtoFeatureIN8chesscom18explanation_engine7v1alpha32InternalFeatureRunPvTreesRequestENS4_33InternalFeatureRunPvTreesResponseELNS0_16RequiredSearchesE0ELNS0_9LockScopeE1EEE
+0x0147b58f ZN3TEP3api12_GLOBAL__N_117SupportedFeatures7factoryINS0_17RunPvTreesFeatureELb1ELb1ELb0EEENSt3__28functionIFN2tl8expectedINS5_10unique_ptrINS0_7FeatureENS5_14default_deleteISA_EEEENS5_12basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEEEPNS_4NodeEiEEEvEUlSM_iE_
+0x01482134 NSt3__220__shared_ptr_emplaceINS_13unordered_mapINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN3TEP6speech11RatingRangeENS_4hashIS7_EENS_8equal_toIS7_EENS5_INS_4pairIKS7_SA_EEEEEENS5_ISJ_EEEE
+0x01492e5b N3TEP35MovePrecisionClassificationRegistryE
+0x01492e93 N3TEP12BaseRegistryINS_4NodeENS_18MoveClassificationENS_22ScoreBasedInvalidationEEE
+0x01492f07 N3TEP26MoveClassificationRegistryE
+0x01492f37 N3TEP12BaseRegistryINS_4NodeENS_18MoveClassificationENS_31ScoreAndGameOptionsInvalidationEEE
+0x014931f1 NSt3__210__function6__funcIZN3TEP3api26ClassificationSearchLadder20run_replayed_preludeERKNS2_19ContinuationOptionsEiE3$_0FvRKNS2_4NodeERKNS_6vectorINS2_9VariationENS_9allocatorISD_EEEEEEE
+0x01493321 ZN3TEP3api26ClassificationSearchLadder20run_replayed_preludeERKNS_19ContinuationOptionsEiE3$_0
+0x0149703d N10emscripten3valE
+0x01497139 N10emscripten11memory_viewIcEE
+0x01497161 N10emscripten11memory_viewIaEE
+0x01497189 N10emscripten11memory_viewIhEE
+0x014971b1 N10emscripten11memory_viewIsEE
+0x014971d9 N10emscripten11memory_viewItEE
+0x01497201 N10emscripten11memory_viewIiEE
+0x01497229 N10emscripten11memory_viewIjEE
+0x01497251 N10emscripten11memory_viewIlEE
+0x01497279 N10emscripten11memory_viewImEE
+0x014972a1 N10emscripten11memory_viewIxEE
+0x014972c9 N10emscripten11memory_viewIyEE
+0x014972f1 N10emscripten11memory_viewIfEE
+0x01497319 N10emscripten11memory_viewIdEE
+0x0149756b N3TEP6engine17TorchEngineStreamE
+0x014975c7 NSt3__220__shared_ptr_emplaceIN3TEP6engine17TorchEngineStreamENS_9allocatorIS3_EEEE
+0x01497643 NSt3__220__shared_ptr_pointerIPN5torch5TorchENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+0x0149769f NSt3__214default_deleteIN5torch5TorchEEE
+0x0149797b NSt3__210__function6__funcIZN3TEP21normalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_0FdS3_EEE
+0x01497a1f ZN3TEP21normalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_0
+0x01497a97 NSt3__210__function6__funcIZN3TEP21normalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_1FdS3_EEE
+0x01497b03 ZN3TEP21normalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_1
+0x01497b7b NSt3__210__function6__funcIZN3TEP21normalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_2FdS3_EEE
+0x01497be7 ZN3TEP21normalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_2
+0x01497c5f NSt3__210__function6__funcIZN3TEP21normalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_3FdS3_EEE
+0x01497ccb ZN3TEP21normalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_3
+0x01497d43 NSt3__210__function6__funcIZN3TEP23denormalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_0FdS3_EEE
+0x01497db3 ZN3TEP23denormalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_0
+0x01497e2b NSt3__210__function6__funcIZN3TEP23denormalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_1FdS3_EEE
+0x01497e9b ZN3TEP23denormalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_1
+0x01497f13 NSt3__210__function6__funcIZN3TEP23denormalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_2FdS3_EEE
+0x01497f83 ZN3TEP23denormalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_2
+0x01497ffb NSt3__210__function6__funcIZN3TEP23denormalize_engine_evalENS2_5ValueENS2_10EngineTypeEE3$_3FdS3_EEE
+0x0149806b ZN3TEP23denormalize_engine_evalENS_5ValueENS_10EngineTypeEE3$_3
+0x01499681 NSt3__23mapINS_17reference_wrapperIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEPvN6google8protobuf8internal18TransparentSupportIS7_E4lessENSD_12MapAllocatorINS_4pairIKS9_SA_EEEEEE
+0x0149bad8 N3TEP3api19EvaluateGameFeatureE
+0x0149bb04 N3TEP3api12ProtoFeatureIN8chesscom18explanation_engine2v119EvaluateGameRequestENS4_20EvaluateGameResponseELNS0_16RequiredSearchesE0ELNS0_9LockScopeE1EEE
+0x0149de4e NSt3__23mapIiPvNS_4lessIiEEN6google8protobuf8internal12MapAllocatorINS_4pairIKiS1_EEEEEE
+0x0149f539 N3TEP3api18MaiaBotMoveFeatureE
+0x0149f6eb N3TEP3api25MoveClassificationFeatureE
+0x0149f71f N3TEP3api12ProtoFeatureIN8chesscom18explanation_engine2v125MoveClassificationRequestENS4_26MoveClassificationResponseELNS0_16RequiredSearchesE0ELNS0_9LockScopeE1EEE
+0x0149f847 NSt3__210__function6__funcIZN3TEP3api25MoveClassificationFeature8run_implERNS3_13MessageStreamEE3$_0FbNS_10unique_ptrINS2_9FillContsENS_14default_deleteIS9_EEEEEEE
+0x0149f8f3 ZN3TEP3api25MoveClassificationFeature8run_implERNS0_13MessageStreamEE3$_0
+0x0149f977 NSt3__210__function6__funcIZN3TEP3api25MoveClassificationFeature8run_implERNS3_13MessageStreamEE3$_1FvRKNS2_4NodeEfPKNS_3mapIPS9_NS_6vectorINS2_9VariationENS_9allocatorISE_EEEENS_4lessISC_EENSF_INS_4pairIKSC_SH_EEEEEEEEE
+0x0149fa5f ZN3TEP3api25MoveClassificationFeature8run_implERNS0_13MessageStreamEE3$_1
+0x014a0c6d N3TEP3api17RunPvTreesFeatureE
+0x014a3434 N3TEP12BaseRegistryINS_8HistLineENSt3__213unordered_mapINS_8PieceKeyENS_12PieceHistoryENS_12PieceKeyHashENS2_8equal_toIS4_EENS2_9allocatorINS2_4pairIKS4_S5_EEEEEENS_14NoInvalidationIS1_EEEE
+0x014a6570 error 
+0x014a7b3b NSt3__220__shared_ptr_pointerIPN3TEP5charm9MaiaModelENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+0x014a7b9f NSt3__214default_deleteIN3TEP5charm9MaiaModelEEE
+0x014a7bfa NSt3__220__shared_ptr_pointerIPN3TEP5charm5maia35ModelENS_14default_deleteIS4_EENS_9allocatorIS4_EEEE
+0x014a7c60 NSt3__214default_deleteIN3TEP5charm5maia35ModelEEE
+0x014a9afc NSt3__210__function6__funcIZN3TEP22error_message_for_nodeERK6TSNodeNS_17basic_string_viewIcNS_11char_traitsIcEEEEE3$_0FvPcEEE
+0x014a9bb0 ZN3TEP22error_message_for_nodeERK6TSNodeNSt3__217basic_string_viewIcNS3_11char_traitsIcEEEEE3$_0
+0x014abddc NSt3__220__shared_ptr_pointerIPNS_13unordered_mapIyNS_6vectorIN3TEP8polyglot9PolyEntryENS_9allocatorIS5_EEEENS_4hashIyEENS_8equal_toIyEENS6_INS_4pairIKyS8_EEEEEENS_14default_deleteISH_EENS6_ISH_EEEE
+0x014abea3 NSt3__214default_deleteINS_13unordered_mapIyNS_6vectorIN3TEP8polyglot9PolyEntryENS_9allocatorIS5_EEEENS_4hashIyEENS_8equal_toIyEENS6_INS_4pairIKyS8_EEEEEEEE
+0x014b4e70 NSt3__210__function6__funcIZN3TEP6Puzzle12_GLOBAL__N_132get_highest_priority_board_eventILNS2_12CircumstanceE1EEENS_10shared_ptrIKNS2_10BoardEventEEERKNS2_8HistLineENS_13unordered_setINS2_3TagENS_4hashISF_EENS_8equal_toISF_EENS_9allocatorISF_EEEEEUlRKSA_E_FbSO_EEE
+0x014b4f84 ZN3TEP6Puzzle12_GLOBAL__N_132get_highest_priority_board_eventILNS_12CircumstanceE1EEENSt3__210shared_ptrIKNS_10BoardEventEEERKNS_8HistLineENS4_13unordered_setINS_3TagENS4_4hashISD_EENS4_8equal_toISD_EENS4_9allocatorISD_EEEEEUlRKS8_E_
+0x014b50a8 NSt3__210__function6__funcIZN3TEP6Puzzle12_GLOBAL__N_132get_highest_priority_board_eventILNS2_12CircumstanceE19EEENS_10shared_ptrIKNS2_10BoardEventEEERKNS2_8HistLineENS_13unordered_setINS2_3TagENS_4hashISF_EENS_8equal_toISF_EENS_9allocatorISF_EEEEEUlRKSA_E_FbSO_EEE
+0x014b51bc ZN3TEP6Puzzle12_GLOBAL__N_132get_highest_priority_board_eventILNS_12CircumstanceE19EEENSt3__210shared_ptrIKNS_10BoardEventEEERKNS_8HistLineENS4_13unordered_setINS_3TagENS4_4hashISD_EENS4_8equal_toISD_EENS4_9allocatorISD_EEEEEUlRKS8_E_
+0x014b52e0 NSt3__210__function6__funcIZN3TEP6Puzzle12_GLOBAL__N_132get_highest_priority_board_eventILNS2_12CircumstanceE3EEENS_10shared_ptrIKNS2_10BoardEventEEERKNS2_8HistLineENS_13unordered_setINS2_3TagENS_4hashISF_EENS_8equal_toISF_EENS_9allocatorISF_EEEEEUlRKSA_E_FbSO_EEE
+0x014b53f4 ZN3TEP6Puzzle12_GLOBAL__N_132get_highest_priority_board_eventILNS_12CircumstanceE3EEENSt3__210shared_ptrIKNS_10BoardEventEEERKNS_8HistLineENS4_13unordered_setINS_3TagENS4_4hashISD_EENS4_8equal_toISD_EENS4_9allocatorISD_EEEEEUlRKS8_E_
+0x014b6f40 NSt3__220__shared_ptr_emplaceIN3TEP6speech7QuerierINS1_18MoveClassificationEEENS_9allocatorIS5_EEEE
+0x014b6fe0 N3TEP6speech7QuerierINS_18MoveClassificationEEE
+0x014da0d4 &chesscom/api/v1/semantic_version.proto
+0x014da1e6 chesscom/chess/v1/arrow.proto
+0x014da218 chesscom/chess/v1/square.proto"W
+0x014da3ec &chesscom/chess/v1/board_markings.proto
+0x014da428 chesscom/chess/v1/arrow.proto
+0x014da447 chesscom/chess/v1/square.proto"g
+0x014da6ec ,chesscom/chess/v1/chesscom_game_source.proto
+0x014da843 chesscom/chess/v1/color.proto
+0x014da8f0 chesscom/chess/v1/eco.proto
+0x014da995 chesscom/chess/v1/file.proto
+0x014dad23 chesscom/chess/v1/game.proto
+0x014dad54 chesscom/chess/v1/move.proto
+0x014dad72 chesscom/chess/v1/color.proto
+0x014dad90  chesscom/chess/v1/position.proto
+0x014dadb3 chesscom/chess/v1/result.proto
+0x014dadd3 chesscom/chess/v1/time.proto
+0x014dadf0 ,chesscom/chess/v1/chesscom_game_source.proto
+0x014dae1f chesscom/chess/v1/score.proto"k
+0x014db56e ratings
+0x014db57d .chesscom.chess.v1.Rating
+0x014db617 Rating
+0x014db621 rating
+0x014db636 _rating"j
+0x014db8d9 N8chesscom5chess2v16RatingE
+0x014db95e N6google8protobuf8internal8MapEntryIN8chesscom5chess2v137GameMetadata_PgnHeadersEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014dba2b N6google8protobuf8internal12MapEntryImplIN8chesscom5chess2v137GameMetadata_PgnHeadersEntry_DoNotUseENS0_7MessageENSt3__212basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEESE_LNS1_14WireFormatLite9FieldTypeE9ELSG_9EEE
+0x014dbb0a N6google8protobuf8internal8MapFieldIN8chesscom5chess2v137GameMetadata_PgnHeadersEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014dbbd7 N6google8protobuf8internal23TypeDefinedMapFieldBaseINSt3__212basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEES9_EE
+0x014dbc51 N6google8protobuf16RepeatedPtrFieldINS0_7MessageEEE
+0x014dbc85 N6google8protobuf8internal20RepeatedPtrFieldBaseE
+0x014dbcc0 "chesscom/chess/v1/game_phase.proto
+0x014dbdac +chesscom/chess/v1/head_to_head_record.proto
+0x014dbf09 chesscom/chess/v1/move.proto
+0x014dbf3a chesscom/chess/v1/piece.proto
+0x014dbf59 chesscom/chess/v1/square.proto
+0x014dbf79 google/protobuf/duration.proto"
+0x014dc1e1 .google.protobuf.DurationH
+0x014dc3b5  chesscom/chess/v1/notation.proto
+0x014dc4a1 chesscom/chess/v1/piece.proto
+0x014dc4d3 chesscom/chess/v1/color.proto"\
+0x014dc6e7  chesscom/chess/v1/position.proto
+0x014dc71d chesscom/chess/v1/square.proto
+0x014dc73d chesscom/chess/v1/color.proto
+0x014dc75c chesscom/chess/v1/piece.proto
+0x014dc77b chesscom/chess/v1/file.proto"
+0x014dca51 chesscom/chess/v1/rank.proto
+0x014dcb11 chesscom/chess/v1/result.proto
+0x014dce0b chesscom/chess/v1/score.proto
+0x014dcf51 chesscom/chess/v1/square.proto
+0x014dd47b chesscom/chess/v1/time.proto
+0x014dd971 chesscom/chess/v1/variant.proto
+0x014dda9a chesscom/engine/v1/engine.proto
+0x014ddb16 ENGINE_SF15_NNUE
+0x014ddb3f ENGINE_SF15_1_NNUE
+0x014ddb57 ENGINE_SF16_NNUE
+0x014ddbb7 ENGINE_SF16_1_NNUE
+0x014ddbcf ENGINE_TORCH_3
+0x014ddbe3 ENGINE_TORCH_HUMAN
+0x014ddbfb ENGINE_SF18_NNUE
+0x014ddc11 ENGINE_SF19_NNUE
+0x014ddc62 #chesscom/engine/v1/evaluation.proto
+0x014ddc9c chesscom/chess/v1/move.proto
+0x014ddcba chesscom/engine/v1/score.proto"b
+0x014dddd4 chesscom/engine/v1/score.proto
+0x014dde08 chesscom/chess/v1/score.proto
+0x014dde27 chesscom/engine/v1/engine.proto
+0x014dde47 !chesscom/engine/v1/strength.proto"
+0x014ddf79 !chesscom/engine/v1/strength.proto
+0x014de0e7 -chesscom/explanation_engine/v1/accuracy.proto
+0x014de137 chesscom/chess/v1/piece.proto
+0x014de156 chesscom/chess/v1/color.proto
+0x014de174 "chesscom/chess/v1/game_phase.proto"]
+0x014de19b PieceTypeAccuracy
+0x014de1e2 accuracy_score
+0x014de1fa GamePhaseAccuracy
+0x014de241 accuracy_score
+0x014de25a ColorAccuracy
+0x014de294 accuracy_by_piece_type
+0x014de2b0 21.chesscom.explanation_engine.v1.PieceTypeAccuracy
+0x014de2e7 accuracy_by_game_phase
+0x014de303 21.chesscom.explanation_engine.v1.GamePhaseAccuracy
+0x014de33a accuracy_overall
+0x014de370 VariationAccuracy
+0x014de385 accuracy_by_color
+0x014de39c 2-.chesscom.explanation_engine.v1.ColorAccuracy*U
+0x014de3cf AccuracyAlgorithm
+0x014de3e4 ACCURACY_ALGORITHM_UNSPECIFIED
+0x014de408 ACCURACY_ALGORITHM_CAPS2
+0x014de46f N8chesscom18explanation_engine2v117PieceTypeAccuracyE
+0x014de4a5 N8chesscom18explanation_engine2v117GamePhaseAccuracyE
+0x014de4db N8chesscom18explanation_engine2v113ColorAccuracyE
+0x014de50d N8chesscom18explanation_engine2v117VariationAccuracyE
+0x014de54c 2chesscom/explanation_engine/v1/analysis_type.proto
+0x014e14ec 2chesscom/explanation_engine/v1/analyzability.proto
+0x014e1543 UnanalyzableGameTorchOnly"$
+0x014e172e torch_only
+0x014e173e 29.chesscom.explanation_engine.v1.UnanalyzableGameTorchOnlyH
+0x014e1858 N8chesscom18explanation_engine2v125UnanalyzableGameTorchOnlyE
+0x014e1a77 (chesscom/explanation_engine/v1/bot.proto
+0x014e1b69 rating
+0x014e1d86 BOT_PERSONALITY_HUMAN
+0x014e1ed1 BOT_ENGINE_TORCH
+0x014e2387 ;chesscom/explanation_engine/v1/bot_move_configuration.proto
+0x014e23e4 "chesscom/chess/v1/game_phase.proto
+0x014e2409 chesscom/chess/v1/piece.proto
+0x014e2427 2chesscom/explanation_engine/v1/analysis_type.proto
+0x014e245b (chesscom/explanation_engine/v1/bot.proto
+0x014e2485 1chesscom/explanation_engine/v1/circumstance.proto
+0x014e24b8 8chesscom/explanation_engine/v1/move_classification.proto"
+0x014e2d0a move_classifications
+0x014e2d24 22.chesscom.explanation_engine.v1.MoveClassification
+0x014e308f rating
+0x014e3149 rating
+0x014e31a0 rating_scale
+0x014e3241 rating
+0x014e340c MODEL_ARCH_MAIA
+0x014e3421 MODEL_ARCH_MAIA3
+0x014e3930 ;chesscom/explanation_engine/v1/cee_internal_component.proto
+0x014e39a8 "CEE_INTERNAL_COMPONENT_UNSPECIFIED
+0x014e39d1 CEE_INTERNAL_COMPONENT_LUA
+0x014e39f0 *CEE_INTERNAL_COMPONENT_POSITION_DIFFICULTY
+0x014e3a20 "CEE_INTERNAL_COMPONENT_TORCH_SMALL
+0x014e3a48 "CEE_INTERNAL_COMPONENT_TORCH_LARGE
+0x014e3a71 CEE_INTERNAL_COMPONENT_KOMODO
+0x014e3a93 (CEE_INTERNAL_COMPONENT_INTERNAL_FEATURES
+0x014e3ad0 8chesscom/explanation_engine/v1/cee_internal_engine.proto
+0x014e3b42 CEE_INTERNAL_ENGINE_UNSPECIFIED
+0x014e3b67 CEE_INTERNAL_ENGINE_KOMODO
+0x014e3b87 CEE_INTERNAL_ENGINE_TORCH
+0x014e3c59 4chesscom/explanation_engine/v1/charm_inference.proto
+0x014e3cb0 chesscom/chess/v1/move.proto
+0x014e3cce chesscom/engine/v1/engine.proto"^
+0x014e3e5a 'strength_rating_sensitive_probabilities
+0x014e4031 9chesscom/explanation_engine/v1/charm_inference_code.proto
+0x014e40b8 ratings
+0x014e438c N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v139CharmInferenceCodes_NodesEntry_DoNotUseEiNS5_23NodeCharmInferenceCodesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014e4446 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v139CharmInferenceCodes_NodesEntry_DoNotUseENS0_7MessageEiNS5_23NodeCharmInferenceCodesELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014e4512 N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v139CharmInferenceCodes_NodesEntry_DoNotUseEiNS5_23NodeCharmInferenceCodesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014e45cc N6google8protobuf8internal23TypeDefinedMapFieldBaseIiN8chesscom18explanation_engine2v123NodeCharmInferenceCodesEEE
+0x014e4646 1chesscom/explanation_engine/v1/circumstance.proto
+0x014e48c6 2chesscom/explanation_engine/v1/coach_emotion.proto
+0x014e4a65 0chesscom/explanation_engine/v1/coach_state.proto
+0x014e4bd1 1chesscom/explanation_engine/v1/command_type.proto
+0x014e4c24 -chesscom/explanation_engine/v1/features.proto"u
+0x014e4ca6 cee_command
+0x014e4d95 <chesscom/explanation_engine/v1/compact_charm_inference.proto
+0x014e4e23 ratings
+0x014e4ef8 'strength_rating_sensitive_probabilities
+0x014e50c9 7chesscom/explanation_engine/v1/dispose_game_point.proto
+0x014e5253 @chesscom/explanation_engine/v1/feature_add_charm_inference.proto
+0x014e52b5 4chesscom/explanation_engine/v1/charm_inference.proto"a
+0x014e5468 <chesscom/explanation_engine/v1/feature_add_evaluations.proto
+0x014e54c6 #chesscom/engine/v1/evaluation.proto"m
+0x014e569e Achesscom/explanation_engine/v1/feature_analysis_annotations.proto
+0x014e5701 @chesscom/explanation_engine/v1/feature_move_classification.proto
+0x014e5743 ;chesscom/explanation_engine/v1/feature_simple_threats.proto"W
+0x014e57b9 enable_pv_classifications
+0x014e57fc move_classifications
+0x014e5816 2:.chesscom.explanation_engine.v1.MoveClassificationResponse
+0x014e5a14 Achesscom/explanation_engine/v1/feature_bot_config_resources.proto
+0x014e5a77 ;chesscom/explanation_engine/v1/bot_move_configuration.proto"
+0x014e5df1 Achesscom/explanation_engine/v1/feature_bot_move_from_config.proto
+0x014e5e55 chesscom/chess/v1/move.proto
+0x014e5e72 ;chesscom/explanation_engine/v1/bot_move_configuration.proto"
+0x014e60d9 Dchesscom/explanation_engine/v1/feature_cee_internal_components.proto
+0x014e613f ;chesscom/explanation_engine/v1/cee_internal_component.proto"
+0x014e630f 8chesscom/explanation_engine/v1/feature_cee_version.proto
+0x014e6369 &chesscom/api/v1/semantic_version.proto"
+0x014e63c0 cee_version
+0x014e63f7 cee_git_sha
+0x014e6597 <chesscom/explanation_engine/v1/feature_charm_inference.proto
+0x014e65f5 4chesscom/explanation_engine/v1/charm_inference.proto"
+0x014e6652 29.chesscom.explanation_engine.v1.CharmGameRatingV2SettingsH
+0x014e6755 CharmGameRatingV2Settings"
+0x014e6847 N8chesscom18explanation_engine2v125CharmGameRatingV2SettingsE
+0x014e6913 Echesscom/explanation_engine/v1/feature_convert_from_proto_moves.proto
+0x014e697b chesscom/chess/v1/move.proto
+0x014e6998  chesscom/chess/v1/notation.proto"
+0x014e6b88 Cchesscom/explanation_engine/v1/feature_convert_to_proto_moves.proto
+0x014e6bee chesscom/chess/v1/move.proto
+0x014e6c0b  chesscom/chess/v1/notation.proto"
+0x014e6de7 <chesscom/explanation_engine/v1/feature_delete_pgn_move.proto
+0x014e6f6e Echesscom/explanation_engine/v1/feature_edit_pgn_move_annotation.proto
+0x014e716c :chesscom/explanation_engine/v1/feature_edit_pgn_nags.proto
+0x014e7389 :chesscom/explanation_engine/v1/feature_evaluate_game.proto
+0x014e73e5 /chesscom/explanation_engine/v1/game_state.proto
+0x014e7416 +chesscom/explanation_engine/v1/search.proto
+0x014e7443 6chesscom/explanation_engine/v1/torch_search_mode.proto"
+0x014e7565 EvaluateGameRequest
+0x014e7747 torch_search_mode
+0x014e775e 2/.chesscom.explanation_engine.v1.TorchSearchModeH
+0x014e77c8 _torch_search_mode"
+0x014e77df EvaluateGameResponse
+0x014e790b N8chesscom18explanation_engine2v119EvaluateGameRequestE
+0x014e7943 N8chesscom18explanation_engine2v120EvaluateGameResponseE
+0x014e79c9 <chesscom/explanation_engine/v1/feature_expected_points.proto
+0x014e7b5d 8chesscom/explanation_engine/v1/feature_force_crash.proto
+0x014e7ced :chesscom/explanation_engine/v1/feature_game_analysis.proto
+0x014e7d49 2chesscom/explanation_engine/v1/game_analysis.proto
+0x014e7d7d /chesscom/explanation_engine/v1/game_phase.proto
+0x014e7dae -chesscom/explanation_engine/v1/language.proto
+0x014e7ddd 8chesscom/explanation_engine/v1/move_classification.proto"
+0x014e7f37 move_classification_version
+0x014e7f58 29.chesscom.explanation_engine.v1.MoveClassificationVersionH
+0x014e7fde _move_classification_version"[
+0x014e8157 Cchesscom/explanation_engine/v1/feature_game_phase_transitions.proto
+0x014e81bc /chesscom/explanation_engine/v1/game_phase.proto"
+0x014e8425 <chesscom/explanation_engine/v1/feature_game_point_info.proto
+0x014e8483 4chesscom/explanation_engine/v1/game_point_info.proto"
+0x014e867a 8chesscom/explanation_engine/v1/feature_game_review.proto
+0x014e86d4 0chesscom/explanation_engine/v1/game_review.proto
+0x014e8706 *chesscom/explanation_engine/v1/stats.proto"
+0x014e89f5 N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v142GameReviewRequest_UciOptionsEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014e8ad5 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v142GameReviewRequest_UciOptionsEntry_DoNotUseENS0_7MessageENSt3__212basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEESE_LNS1_14WireFormatLite9FieldTypeE9ELSG_9EEE
+0x014e8bc7 N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v142GameReviewRequest_UciOptionsEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014e8cf4 6chesscom/explanation_engine/v1/feature_game_tree.proto
+0x014e8d4c 4chesscom/explanation_engine/v1/game_point_info.proto"
+0x014e8edc Lchesscom/explanation_engine/v1/feature_generate_train_item_goal_speech.proto
+0x014e8f4a 'chesscom/train/v1/train_challenge.proto
+0x014e8f73 +chesscom/explanation_engine/v1/speech.proto"Z
+0x014e9166 =chesscom/explanation_engine/v1/feature_generate_uuid_v1.proto
+0x014e9360 9chesscom/explanation_engine/v1/feature_get_bot_chat.proto
+0x014e93bb  chesscom/chess/v1/notation.proto
+0x014e93dd 1chesscom/explanation_engine/v1/move_details.proto
+0x014e9410 +chesscom/explanation_engine/v1/speech.proto"
+0x014e97ac 9chesscom/explanation_engine/v1/feature_get_bot_move.proto
+0x014e9808 chesscom/chess/v1/move.proto
+0x014e9825 (chesscom/explanation_engine/v1/bot.proto"
+0x014e9a05 Jchesscom/explanation_engine/v1/feature_get_chess960_initial_position.proto
+0x014e9daf ;chesscom/explanation_engine/v1/feature_get_coach_chat.proto
+0x014e9e0c 8chesscom/explanation_engine/v1/move_classification.proto
+0x014e9e46 +chesscom/explanation_engine/v1/speech.proto
+0x014e9e74 chesscom/chess/v1/arrow.proto
+0x014e9e93 chesscom/chess/v1/move.proto
+0x014e9eb0 6chesscom/explanation_engine/v1/speech_debug_info.proto
+0x014e9ee8 2chesscom/explanation_engine/v1/coach_emotion.proto
+0x014e9f1c +chesscom/explanation_engine/v1/skills.proto"
+0x014ea9de move_classification
+0x014ea9f7 22.chesscom.explanation_engine.v1.MoveClassification
+0x014eaa84 move_classification
+0x014eaa9d 22.chesscom.explanation_engine.v1.MoveClassification
+0x014eae01 ;chesscom/explanation_engine/v1/feature_get_coach_hint.proto
+0x014eae5e +chesscom/explanation_engine/v1/speech.proto
+0x014eae8c chesscom/chess/v1/move.proto
+0x014eaea9 6chesscom/explanation_engine/v1/speech_debug_info.proto"
+0x014eb168 Dchesscom/explanation_engine/v1/feature_get_compressed_position.proto
+0x014eb1ce  chesscom/chess/v1/position.proto"u
+0x014eb3b6 ?chesscom/explanation_engine/v1/feature_get_ergonomic_game.proto
+0x014eb418 chesscom/chess/v1/game.proto
+0x014eb435 /chesscom/explanation_engine/v1/game_state.proto"
+0x014eb644 Cchesscom/explanation_engine/v1/feature_get_ergonomic_position.proto
+0x014eb6a9  chesscom/chess/v1/position.proto"b
+0x014eb894 4chesscom/explanation_engine/v1/feature_get_fen.proto
+0x014eb8ea  chesscom/chess/v1/position.proto
+0x014eb90c -chesscom/explanation_engine/v1/notation.proto"
+0x014ebb0f <chesscom/explanation_engine/v1/feature_get_game_result.proto
+0x014ebb6e chesscom/chess/v1/game.proto"
+0x014ebd3a Hchesscom/explanation_engine/v1/feature_get_game_review_evaluations.proto
+0x014ebda5 chesscom/chess/v1/move.proto
+0x014ebdc2 #chesscom/engine/v1/evaluation.proto
+0x014ebde7 +chesscom/explanation_engine/v1/search.proto
+0x014ebe14 6chesscom/explanation_engine/v1/torch_search_mode.proto"
+0x014ebf5f disable_maia
+0x014ebfa6 torch_search_mode
+0x014ebfbd 2/.chesscom.explanation_engine.v1.TorchSearchModeH
+0x014ec037 _disable_maiaB 
+0x014ec06a _torch_search_mode"
+0x014ec20e ;chesscom/explanation_engine/v1/feature_get_game_state.proto
+0x014ec26b /chesscom/explanation_engine/v1/game_state.proto"
+0x014ec410 Ichesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto
+0x014ec47b &chesscom/chess/v1/board_markings.proto
+0x014ec4a4 chesscom/chess/v1/move.proto
+0x014ec4c1 +chesscom/explanation_engine/v1/speech.proto"S
+0x014ec9ca =chesscom/explanation_engine/v1/feature_get_move_details.proto
+0x014eca29  chesscom/chess/v1/notation.proto
+0x014eca4b 1chesscom/explanation_engine/v1/move_details.proto"f
+0x014ecc32 ?chesscom/explanation_engine/v1/feature_get_non_chess_text.proto
+0x014ecc93 +chesscom/explanation_engine/v1/speech.proto"X
+0x014ecf41 8chesscom/explanation_engine/v1/feature_get_opening.proto
+0x014ecf9b ,chesscom/explanation_engine/v1/opening.proto
+0x014ecfc9 -chesscom/explanation_engine/v1/language.proto"[
+0x014ed1ff 4chesscom/explanation_engine/v1/feature_get_pgn.proto
+0x014ed256 chesscom/chess/v1/game.proto
+0x014ed273 -chesscom/explanation_engine/v1/notation.proto
+0x014ed2a2 /chesscom/explanation_engine/v1/game_state.proto"
+0x014ed823 Echesscom/explanation_engine/v1/feature_get_pgn_move_annotations.proto
+0x014edb5e N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v155GetPgnMoveAnnotationsResponse_AnnotationsEntry_DoNotUseEiNS5_17PgnMoveAnnotationELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014edc22 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v155GetPgnMoveAnnotationsResponse_AnnotationsEntry_DoNotUseENS0_7MessageEiNS5_17PgnMoveAnnotationELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014edcf8 N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v155GetPgnMoveAnnotationsResponse_AnnotationsEntry_DoNotUseEiNS5_17PgnMoveAnnotationELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014eddbc N6google8protobuf8internal23TypeDefinedMapFieldBaseIiN8chesscom18explanation_engine2v117PgnMoveAnnotationEEE
+0x014ede74 <chesscom/explanation_engine/v1/feature_get_punish_move.proto
+0x014eded2 0chesscom/explanation_engine/v1/punish_move.proto"
+0x014ee07e :chesscom/explanation_engine/v1/feature_get_san_moves.proto
+0x014ee0da .chesscom/explanation_engine/v1/move_list.proto"
+0x014ee2de Bchesscom/explanation_engine/v1/feature_grade_train_item_move.proto
+0x014ee343 chesscom/chess/v1/move.proto
+0x014ee360 +chesscom/explanation_engine/v1/speech.proto
+0x014ee38d 'chesscom/train/v1/train_challenge.proto
+0x014ee3b6 (chesscom/train/v1/train_move_grade.proto"
+0x014ee5e8 8chesscom/explanation_engine/v1/feature_legal_moves.proto
+0x014ee643 chesscom/chess/v1/move.proto"
+0x014ee7b6 ;chesscom/explanation_engine/v1/feature_legal_premoves.proto
+0x014ee814 chesscom/chess/v1/move.proto
+0x014ee832 chesscom/chess/v1/square.proto
+0x014ee852 chesscom/chess/v1/color.proto"
+0x014eea6a ?chesscom/explanation_engine/v1/feature_load_and_set_coach.proto
+0x014eeacb /chesscom/explanation_engine/v1/text_asset.proto"W
+0x014eec69 5chesscom/explanation_engine/v1/feature_load_bot.proto
+0x014eeed8 =chesscom/explanation_engine/v1/feature_load_charm_model.proto
+0x014ef0d6 7chesscom/explanation_engine/v1/feature_load_coach.proto
+0x014ef12f /chesscom/explanation_engine/v1/text_asset.proto"Q
+0x014ef2b3 :chesscom/explanation_engine/v1/feature_load_eco_book.proto
+0x014ef451 <chesscom/explanation_engine/v1/feature_load_game_state.proto
+0x014ef4af /chesscom/explanation_engine/v1/game_state.proto
+0x014ef4e0 4chesscom/explanation_engine/v1/game_point_info.proto"U
+0x014ef6bb ;chesscom/explanation_engine/v1/feature_lua_completion.proto
+0x014ef850 7chesscom/explanation_engine/v1/feature_make_moves.proto
+0x014ef8aa chesscom/chess/v1/move.proto
+0x014ef8c7 4chesscom/explanation_engine/v1/game_point_info.proto"R
+0x014efafe @chesscom/explanation_engine/v1/feature_move_classification.proto
+0x014efb60 8chesscom/explanation_engine/v1/move_classification.proto
+0x014efb9b chesscom/chess/v1/move.proto"V
+0x014efbbb MoveClassificationRequest
+0x014efbf0 enable_pv_classifications
+0x014efc14 MoveClassificationResponse
+0x014efc3e 22.chesscom.explanation_engine.v1.EvalClassification
+0x014efc87 25.chesscom.explanation_engine.v1.AltMoveClassificationH
+0x014efcd9 pv_classifications
+0x014efcf1 21.chesscom.explanation_engine.v1.PvClassificationsH
+0x014efd3d _pv_classifications"`
+0x014efd54 PvClassifications
+0x014efd69 classifications
+0x014efd7e 22.chesscom.explanation_engine.v1.EvalClassification"
+0x014efdb7 AltMoveClassification
+0x014efdd0 classification
+0x014efde4 22.chesscom.explanation_engine.v1.EvalClassification
+0x014efe9d N8chesscom18explanation_engine2v125MoveClassificationRequestE
+0x014efedb N8chesscom18explanation_engine2v126MoveClassificationResponseE
+0x014eff1a N8chesscom18explanation_engine2v117PvClassificationsE
+0x014eff50 N8chesscom18explanation_engine2v121AltMoveClassificationE
+0x014effeb 5chesscom/explanation_engine/v1/feature_new_game.proto
+0x014f0042 1chesscom/explanation_engine/v1/invalid_game.proto
+0x014f0075 -chesscom/explanation_engine/v1/new_game.proto
+0x014f00a4 4chesscom/explanation_engine/v1/game_point_info.proto"u
+0x014f0129  enable_typed_invalid_game_errors
+0x014f0303 ?chesscom/explanation_engine/v1/feature_relaxed_apply_move.proto
+0x014f0365 chesscom/chess/v1/move.proto
+0x014f0383 chesscom/chess/v1/square.proto"
+0x014f05f5 Kchesscom/explanation_engine/v1/feature_relaxed_convert_to_proto_moves.proto
+0x014f0663 chesscom/chess/v1/move.proto
+0x014f0680  chesscom/chess/v1/notation.proto
+0x014f06a3 chesscom/chess/v1/square.proto"
+0x014f08de @chesscom/explanation_engine/v1/feature_relaxed_legal_moves.proto
+0x014f0941 chesscom/chess/v1/move.proto
+0x014f095f chesscom/chess/v1/square.proto"[
+0x014f0b1d ?chesscom/explanation_engine/v1/feature_reset_engine_state.proto
+0x014f0d15 4chesscom/explanation_engine/v1/feature_run_lua.proto
+0x014f0e04 is_lua_error
+0x014f0e1a lua_error_msg
+0x014f1010 7chesscom/explanation_engine/v1/feature_run_search.proto
+0x014f106a chesscom/chess/v1/move.proto
+0x014f1087 #chesscom/engine/v1/evaluation.proto
+0x014f10ac +chesscom/explanation_engine/v1/search.proto
+0x014f10d9 6chesscom/explanation_engine/v1/torch_search_mode.proto"
+0x014f1115 RunSearchRequest
+0x014f12fb disable_maia
+0x014f1316 torch_search_mode
+0x014f132d 2/.chesscom.explanation_engine.v1.TorchSearchModeH
+0x014f13b1 _disable_maiaB
+0x014f13c2 _torch_search_mode"
+0x014f13d9 RunSearchResponse
+0x014f150f N8chesscom18explanation_engine2v116RunSearchRequestE
+0x014f1544 N8chesscom18explanation_engine2v117RunSearchResponseE
+0x014f1600 6chesscom/explanation_engine/v1/feature_set_coach.proto
+0x014f178a <chesscom/explanation_engine/v1/feature_set_game_result.proto
+0x014f17e9 chesscom/chess/v1/game.proto"R
+0x014f1997 <chesscom/explanation_engine/v1/feature_set_pgn_headers.proto
+0x014f1ba8 N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v142SetPgnHeadersRequest_HeadersEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014f1c88 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v142SetPgnHeadersRequest_HeadersEntry_DoNotUseENS0_7MessageENSt3__212basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEESE_LNS1_14WireFormatLite9FieldTypeE9ELSG_9EEE
+0x014f1d7a N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v142SetPgnHeadersRequest_HeadersEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014f1ea3 <chesscom/explanation_engine/v1/feature_set_played_line.proto
+0x014f2027 ;chesscom/explanation_engine/v1/feature_simple_threats.proto
+0x014f2084 2chesscom/explanation_engine/v1/simple_threat.proto"-
+0x014f2227 9chesscom/explanation_engine/v1/feature_switch_sides.proto
+0x014f238c 9chesscom/explanation_engine/v1/feature_unmake_moves.proto
+0x014f253f Hchesscom/explanation_engine/v1/feature_update_experimental_options.proto
+0x014f25a9 Ichesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto"h
+0x014f27a6 allow_tricky_classification
+0x014f2838 _allow_tricky_classificationJ
+0x014f29c0 9chesscom/explanation_engine/v1/feature_validate_fen.proto
+0x014f2a1c chesscom/chess/v1/result.proto"<
+0x014f2ae0 _errorB
+0x014f2bf0 Gchesscom/explanation_engine/v1/feature_validate_game_for_analysis.proto
+0x014f2c59 2chesscom/explanation_engine/v1/analyzability.proto
+0x014f2c8d 1chesscom/explanation_engine/v1/invalid_game.proto"Z
+0x014f2df8 _errorB
+0x014f2fa9 9chesscom/explanation_engine/v1/feature_validate_pgn.proto
+0x014f3113 26.chesscom.explanation_engine.v1.PgnGameValidationErrorH
+0x014f3189 PgnGameValidationError
+0x014f32f0 N8chesscom18explanation_engine2v122PgnGameValidationErrorE
+0x014f3334 -chesscom/explanation_engine/v1/features.proto
+0x014f33d0 FEATURE_ID_CEE_VERSION
+0x014f3697 FEATURE_ID_MOVE_CLASSIFICATION
+0x014f3762 "FEATURE_ID_CEE_INTERNAL_COMPONENTS
+0x014f4170 )FEATURE_ID_INTERNAL_FEATURE_MAIA_BOT_MOVE
+0x014f43d5 'FEATURE_ID_INTERNAL_FEATURE_RUN_PVTREES
+0x014f48ae 2chesscom/explanation_engine/v1/game_analysis.proto
+0x014f4902 &chesscom/api/v1/semantic_version.proto
+0x014f492b chesscom/chess/v1/game.proto
+0x014f4949 chesscom/engine/v1/score.proto
+0x014f4968 8chesscom/explanation_engine/v1/move_classification.proto
+0x014f49a2 /chesscom/explanation_engine/v1/game_phase.proto
+0x014f49d3 -chesscom/explanation_engine/v1/game_arc.proto
+0x014f4a02 -chesscom/explanation_engine/v1/accuracy.proto
+0x014f4a31 0chesscom/explanation_engine/v1/report_card.proto
+0x014f4a63 +chesscom/explanation_engine/v1/speech.proto
+0x014f4a90 4chesscom/explanation_engine/v1/game_point_info.proto"
+0x014f4cdd move_classification
+0x014f4cf6 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f4e35 cee_version
+0x014f4f40 accuracy_by_color
+0x014f4f57 21.chesscom.explanation_engine.v1.VariationAccuracy
+0x014f53ba N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v157GameAnalysis_GamePositionAnalysisCollectionEntry_DoNotUseEiNS5_16PositionAnalysisELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014f547f N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v157GameAnalysis_GamePositionAnalysisCollectionEntry_DoNotUseENS0_7MessageEiNS5_16PositionAnalysisELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014f5556 N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v157GameAnalysis_GamePositionAnalysisCollectionEntry_DoNotUseEiNS5_16PositionAnalysisELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014f561b N6google8protobuf8internal23TypeDefinedMapFieldBaseIiN8chesscom18explanation_engine2v116PositionAnalysisEEE
+0x014f568c -chesscom/explanation_engine/v1/game_arc.proto
+0x014f58c4 =chesscom/explanation_engine/v1/game_feature_computation.proto
+0x014f5924 chesscom/engine/v1/engine.proto
+0x014f5944 !chesscom/engine/v1/strength.proto"
+0x014f5985 cee_version
+0x014f5ac6 game_rating
+0x014f5ad7 22.chesscom.explanation_engine.v1.GameRatingSettings
+0x014f5c17 reference_ratings
+0x014f5c3c include_empirical_ratingR"include_position_difficulty_rating"J
+0x014f5d82 GameRatingSettings
+0x014f5daf anchor_ratings
+0x014f5fb9 N8chesscom18explanation_engine2v118GameRatingSettingsE
+0x014f62a3 2chesscom/explanation_engine/v1/game_features.proto
+0x014f62f8 chesscom/chess/v1/color.proto
+0x014f6316 "chesscom/chess/v1/game_phase.proto
+0x014f633b chesscom/chess/v1/piece.proto
+0x014f635a chesscom/chess/v1/score.proto
+0x014f6379 chesscom/chess/v1/square.proto
+0x014f6398 =chesscom/explanation_engine/v1/game_feature_computation.proto
+0x014f63d7 0chesscom/explanation_engine/v1/game_review.proto
+0x014f6409 8chesscom/explanation_engine/v1/move_classification.proto
+0x014f6444 google/protobuf/duration.proto"F
+0x014f6466 PlayerGameRating
+0x014f647a rating
+0x014f64a3 _rating"h
+0x014f6827 move_classification
+0x014f6840 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f688c 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f68db accuracy
+0x014f69b5 %best_move_probability_at_mover_rating
+0x014f69e9 'played_move_probability_at_mover_rating
+0x014f6ae5 .google.protobuf.DurationH
+0x014f6d01 _accuracyB*
+0x014f6d39 &_best_move_probability_at_mover_ratingB*
+0x014f6d63 (_played_move_probability_at_mover_ratingB
+0x014f6dfc accuracy
+0x014f6e13 game_rating
+0x014f6e24 20.chesscom.explanation_engine.v1.PlayerGameRating
+0x014f6e5a classification_tallies
+0x014f6e76 23.chesscom.explanation_engine.v1.ClassificationTally
+0x014f6f15 _accuracyB
+0x014f7b27 N8chesscom18explanation_engine2v116PlayerGameRatingE
+0x014f7d23 /chesscom/explanation_engine/v1/game_phase.proto
+0x014f7d74 4chesscom/explanation_engine/v1/game_point_info.proto"
+0x014f7fe3 4chesscom/explanation_engine/v1/game_point_info.proto
+0x014f803a chesscom/engine/v1/score.proto
+0x014f805a chesscom/chess/v1/move.proto"
+0x014f856d 0chesscom/explanation_engine/v1/game_review.proto
+0x014f85bf &chesscom/api/v1/semantic_version.proto
+0x014f85e8 chesscom/engine/v1/score.proto
+0x014f8607 &chesscom/chess/v1/board_markings.proto
+0x014f8630 chesscom/chess/v1/color.proto
+0x014f864f chesscom/chess/v1/move.proto
+0x014f866d chesscom/chess/v1/game.proto
+0x014f868a "chesscom/chess/v1/game_phase.proto
+0x014f86ae 8chesscom/explanation_engine/v1/move_classification.proto
+0x014f86e8 ,chesscom/explanation_engine/v1/opening.proto
+0x014f8716 +chesscom/explanation_engine/v1/speech.proto
+0x014f8743 2chesscom/explanation_engine/v1/coach_emotion.proto
+0x014f8777 .chesscom/explanation_engine/v1/takeaways.proto
+0x014f87a7 +chesscom/explanation_engine/v1/skills.proto
+0x014f87d4 *chesscom/stats/v1/advanced_stat_type.proto"
+0x014f897a cee_version
+0x014f8a30 move_classification
+0x014f8a49 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f8aec accuracy
+0x014f8afa 2(.chesscom.explanation_engine.v1.Accuracy
+0x014f8b28 classification_tallies
+0x014f8b44 25.chesscom.explanation_engine.v1.ClassificationTallies
+0x014f8c76 ClassificationTallies
+0x014f8c9a 23.chesscom.explanation_engine.v1.ClassificationTally
+0x014f8cde 23.chesscom.explanation_engine.v1.ClassificationTally"
+0x014f8dd6 Accuracy
+0x014f8e00 ClassificationTally
+0x014f8e17 move_classification
+0x014f8e30 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f8f42 effective_rating
+0x014f8f5c game_rating_v2
+0x014f8f79 _game_rating_v2"
+0x014f8fa4 accuracy_glyph
+0x014f8fb8 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f901d accuracy
+0x014f909a 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f90d2 new_rating
+0x014f90e6 rating_change
+0x014f93c4 move_classification
+0x014f93dd 22.chesscom.explanation_engine.v1.MoveClassification
+0x014f974d N8chesscom18explanation_engine2v121ClassificationTalliesE
+0x014f97c0 N8chesscom18explanation_engine2v18AccuracyE
+0x014f97ec N8chesscom18explanation_engine2v119ClassificationTallyE
+0x014f9a75 2chesscom/explanation_engine/v1/game_settings.proto
+0x014f9aca chesscom/chess/v1/color.proto
+0x014f9ae8 -chesscom/explanation_engine/v1/language.proto
+0x014f9b17 8chesscom/explanation_engine/v1/move_classification.proto
+0x014f9b51 2chesscom/explanation_engine/v1/game_analysis.proto
+0x014f9b85 /chesscom/explanation_engine/v1/game_phase.proto
+0x014f9bb6 +chesscom/explanation_engine/v1/search.proto"
+0x014f9e0c move_classification_version
+0x014f9e2d 29.chesscom.explanation_engine.v1.MoveClassificationVersionH
+0x014f9fd9 _move_classification_versionB)
+0x014fa1e7 N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v144GameSettings_FeatureFlagConfigEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014fa2c9 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v144GameSettings_FeatureFlagConfigEntry_DoNotUseENS0_7MessageENSt3__212basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEESE_LNS1_14WireFormatLite9FieldTypeE9ELSG_9EEE
+0x014fa3bd N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v144GameSettings_FeatureFlagConfigEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014fa68d /chesscom/explanation_engine/v1/game_state.proto
+0x014fa6de 9chesscom/explanation_engine/v1/charm_inference_code.proto
+0x014fa719 0chesscom/explanation_engine/v1/coach_state.proto
+0x014fa74b <chesscom/explanation_engine/v1/compact_charm_inference.proto
+0x014fa789 2chesscom/explanation_engine/v1/game_settings.proto
+0x014fa7bd 4chesscom/explanation_engine/v1/move_annotation.proto
+0x014fa7f3 ;chesscom/explanation_engine/v1/simple_charm_inference.proto
+0x014fa831 chesscom/chess/v1/game.proto
+0x014fa84e &chesscom/api/v1/semantic_version.proto
+0x014fa877 chesscom/engine/v1/engine.proto"
+0x014fb306 N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v139GameState_CharmInferencesEntry_DoNotUseEiNS5_21SimpleCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fb3be N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v139GameState_CharmInferencesEntry_DoNotUseENS0_7MessageEiNS5_21SimpleCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014fb4d0 N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v135GameState_AnnotationsEntry_DoNotUseEiNS5_14MoveAnnotationELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fb57d N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v135GameState_AnnotationsEntry_DoNotUseENS0_7MessageEiNS5_14MoveAnnotationELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014fb68f N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v146GameState_CompactCharmInferencesEntry_DoNotUseEiNS5_22CompactCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fb74f N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v146GameState_CompactCharmInferencesEntry_DoNotUseENS0_7MessageEiNS5_22CompactCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014fb876 N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v148GameState_QuantizedCharmInferencesEntry_DoNotUseEiNS5_22CompactCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fb938 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v148GameState_QuantizedCharmInferencesEntry_DoNotUseENS0_7MessageEiNS5_22CompactCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELSA_11EEE
+0x014fba0c N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v139GameState_CharmInferencesEntry_DoNotUseEiNS5_21SimpleCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fbac4 N6google8protobuf8internal23TypeDefinedMapFieldBaseIiN8chesscom18explanation_engine2v121SimpleCharmInferencesEEE
+0x014fbb35 N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v135GameState_AnnotationsEntry_DoNotUseEiNS5_14MoveAnnotationELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fbbe2 N6google8protobuf8internal23TypeDefinedMapFieldBaseIiN8chesscom18explanation_engine2v114MoveAnnotationEEE
+0x014fbc4c N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v146GameState_CompactCharmInferencesEntry_DoNotUseEiNS5_22CompactCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fbd0c N6google8protobuf8internal23TypeDefinedMapFieldBaseIiN8chesscom18explanation_engine2v122CompactCharmInferencesEEE
+0x014fbd7e N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v148GameState_QuantizedCharmInferencesEntry_DoNotUseEiNS5_22CompactCharmInferencesELNS1_14WireFormatLite9FieldTypeE5ELS9_11EEE
+0x014fbe79 4chesscom/explanation_engine/v1/game_state_spec.proto
+0x014fbed0 chesscom/engine/v1/engine.proto
+0x014fbef0 5chesscom/explanation_engine/v1/feature_new_game.proto
+0x014fbf27 7chesscom/explanation_engine/v1/feature_run_search.proto"
+0x014fbfd7 20.chesscom.explanation_engine.v1.RunSearchRequest
+0x014fc10d Nchesscom/explanation_engine/v1/internal_feature_advanced_stats_datapoint.proto
+0x014fc17d &chesscom/api/v1/semantic_version.proto
+0x014fc1a5 -chesscom/stats/v1/advanced_stat_example.proto
+0x014fc1d4 0chesscom/stats/v1/advanced_stats_datapoint.proto"z
+0x014fc409 cee_version
+0x014fc445 _cee_versionb
+0x014fc578 Cchesscom/explanation_engine/v1/internal_feature_compress_data.proto
+0x014fc7a2 @chesscom/explanation_engine/v1/internal_feature_debug_info.proto
+0x014fca52 Gchesscom/explanation_engine/v1/internal_feature_enable_game_mocks.proto
+0x014fccdf Fchesscom/explanation_engine/v1/internal_feature_enable_test_mode.proto
+0x014fceea Hchesscom/explanation_engine/v1/internal_feature_game_analysis_json.proto
+0x014fcf54 *chesscom/explanation_engine/v1/stats.proto"
+0x014fd21d N6google8protobuf8internal8MapEntryIN8chesscom18explanation_engine2v163InternalFeatureGameAnalysisJsonRequest_UciOptionsEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014fd312 N6google8protobuf8internal12MapEntryImplIN8chesscom18explanation_engine2v163InternalFeatureGameAnalysisJsonRequest_UciOptionsEntry_DoNotUseENS0_7MessageENSt3__212basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEESE_LNS1_14WireFormatLite9FieldTypeE9ELSG_9EEE
+0x014fd419 N6google8protobuf8internal8MapFieldIN8chesscom18explanation_engine2v163InternalFeatureGameAnalysisJsonRequest_UciOptionsEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x014fd55d Jchesscom/explanation_engine/v1/internal_feature_get_move_annotations.proto
+0x014fd5c9 4chesscom/explanation_engine/v1/move_annotation.proto"*
+0x014fd7b9 Ichesscom/explanation_engine/v1/internal_feature_key_position_search.proto
+0x014fd825 chesscom/engine/v1/engine.proto
+0x014fd845 7chesscom/explanation_engine/v1/feature_run_search.proto"
+0x014fd8ed 20.chesscom.explanation_engine.v1.RunSearchRequest">
+0x014fda83 Bchesscom/explanation_engine/v1/internal_feature_maia_botmove.proto
+0x014fdae8 chesscom/chess/v1/move.proto"U
+0x014fdb07 !InternalFeatureMaiaBotMoveRequest
+0x014fdb5e "InternalFeatureMaiaBotMoveResponse
+0x014fdbe2 N8chesscom18explanation_engine2v133InternalFeatureMaiaBotMoveRequestE
+0x014fdc28 N8chesscom18explanation_engine2v134InternalFeatureMaiaBotMoveResponseE
+0x014fdd73 @chesscom/explanation_engine/v1/internal_feature_puzzle_gen.proto
+0x014fddd5 8chesscom/explanation_engine/v1/cee_internal_engine.proto
+0x014fde0f /chesscom/explanation_engine/v1/puzzle_gen.proto
+0x014fde41 chesscom/chess/v1/move.proto"
+0x014fea53 Jchesscom/explanation_engine/v1/internal_feature_set_move_annotations.proto
+0x014feabf 4chesscom/explanation_engine/v1/move_annotation.proto"n
+0x014fecad Gchesscom/explanation_engine/v1/internal_feature_uci_to_game_state.proto
+0x014fed16 /chesscom/explanation_engine/v1/game_state.proto"<
+0x014fef32 Nchesscom/explanation_engine/v1/internal_feature_update_developer_options.proto
+0x014ff28a Cchesscom/explanation_engine/v1/internal_feature_web_demo_json.proto
+0x014ff50a 1chesscom/explanation_engine/v1/invalid_game.proto
+0x014ffa40 -chesscom/explanation_engine/v1/language.proto
+0x014ffc3b 4chesscom/explanation_engine/v1/move_annotation.proto
+0x014ffc92 chesscom/chess/v1/square.proto"
+0x01500076 8chesscom/explanation_engine/v1/move_classification.proto
+0x015000d0 #chesscom/engine/v1/evaluation.proto"
+0x015000f9 EvalClassification
+0x0150010f move_classification
+0x01500128 22.chesscom.explanation_engine.v1.MoveClassification
+0x01500195 MoveClassification
+0x015001ab MOVE_CLASSIFICATION_UNSPECIFIED
+0x015001d0 MOVE_CLASSIFICATION_BOOK
+0x015001ee MOVE_CLASSIFICATION_BRILLIANT
+0x01500211 MOVE_CLASSIFICATION_GREAT_FIND
+0x01500235 MOVE_CLASSIFICATION_BEST
+0x01500253 MOVE_CLASSIFICATION_EXCELLENT
+0x01500276 MOVE_CLASSIFICATION_GOOD
+0x01500294 MOVE_CLASSIFICATION_INACCURACY
+0x015002b8 MOVE_CLASSIFICATION_MISTAKE
+0x015002d9 MOVE_CLASSIFICATION_BLUNDER
+0x015002fa MOVE_CLASSIFICATION_MISSED
+0x0150031a MOVE_CLASSIFICATION_FORCED
+0x0150033a MOVE_CLASSIFICATION_TRICKY
+0x01500361 MoveClassificationVersion
+0x0150037d 'MOVE_CLASSIFICATION_VERSION_UNSPECIFIED
+0x015003ab MOVE_CLASSIFICATION_VERSION_V2
+0x015003cf MOVE_CLASSIFICATION_VERSION_V3
+0x0150040b N8chesscom18explanation_engine2v118EvalClassificationE
+0x015005cb 1chesscom/explanation_engine/v1/move_details.proto
+0x0150061f chesscom/chess/v1/square.proto
+0x0150063f chesscom/chess/v1/piece.proto
+0x0150065e chesscom/chess/v1/move.proto
+0x0150067c chesscom/chess/v1/color.proto
+0x0150069b chesscom/chess/v1/game.proto"
+0x01500e49 .chesscom/explanation_engine/v1/move_list.proto
+0x01500e9a chesscom/chess/v1/move.proto"2
+0x01501066 -chesscom/explanation_engine/v1/new_game.proto
+0x015010b6 chesscom/chess/v1/game.proto
+0x015010d3  chesscom/chess/v1/position.proto
+0x015010f5 2chesscom/explanation_engine/v1/game_settings.proto
+0x01501129 (chesscom/explanation_engine/v1/tcn.proto
+0x01501153 .chesscom/explanation_engine/v1/move_list.proto"
+0x01501661 -chesscom/explanation_engine/v1/notation.proto
+0x0150177f ,chesscom/explanation_engine/v1/opening.proto
+0x01501906 0chesscom/explanation_engine/v1/punish_move.proto
+0x01501959 chesscom/chess/v1/arrow.proto
+0x01501978 chesscom/chess/v1/move.proto
+0x01501995 #chesscom/engine/v1/evaluation.proto
+0x015019ba +chesscom/explanation_engine/v1/speech.proto"
+0x01502284 /chesscom/explanation_engine/v1/puzzle_gen.proto
+0x015022d5 &chesscom/api/v1/semantic_version.proto
+0x015022fe chesscom/chess/v1/move.proto
+0x0150231c chesscom/chess/v1/piece.proto
+0x0150233a /chesscom/explanation_engine/v1/game_state.proto
+0x0150236b 8chesscom/explanation_engine/v1/move_classification.proto
+0x015023a5 "chesscom/chess/v1/game_phase.proto
+0x015023ca chesscom/chess/v1/game.proto
+0x015023e7 +chesscom/explanation_engine/v1/speech.proto
+0x01502414  chesscom/chess/v1/position.proto"
+0x01502507 cee_version
+0x01502841 classification
+0x01502855 22.chesscom.explanation_engine.v1.MoveClassification
+0x0150511c 0chesscom/explanation_engine/v1/report_card.proto
+0x0150516f chesscom/chess/v1/color.proto
+0x0150518d "chesscom/chess/v1/game_phase.proto
+0x015051b1 8chesscom/explanation_engine/v1/move_classification.proto"
+0x0150523e 22.chesscom.explanation_engine.v1.MoveClassification"
+0x015052fc effective_rating
+0x015054d4 +chesscom/explanation_engine/v1/search.proto
+0x01505521 !chesscom/engine/v1/strength.proto"
+0x015059ce ;chesscom/explanation_engine/v1/simple_charm_inference.proto
+0x01505a9e rating
+0x01505b93 'strength_rating_sensitive_probabilities
+0x01505bc5 _ratingB
+0x01505d67 2chesscom/explanation_engine/v1/simple_threat.proto
+0x01505dbc chesscom/chess/v1/move.proto
+0x01505dda chesscom/chess/v1/score.proto
+0x01505df9 chesscom/engine/v1/score.proto"
+0x01505fe9 +chesscom/explanation_engine/v1/skills.proto
+0x0150608f validation_hash
+0x0150691e +chesscom/explanation_engine/v1/speech.proto
+0x0150696c chesscom/chess/v1/arrow.proto
+0x0150698a -chesscom/explanation_engine/v1/language.proto"e
+0x01506a7d audio_url_hash
+0x01506c9a 6chesscom/explanation_engine/v1/speech_debug_info.proto
+0x01506e34 *chesscom/explanation_engine/v1/stats.proto
+0x01506e80 0chesscom/stats/v1/advanced_stat_percentile.proto"
+0x015072cb .chesscom/explanation_engine/v1/takeaways.proto
+0x0150731b -chesscom/stats/v1/advanced_stat_example.proto
+0x0150734a *chesscom/stats/v1/advanced_stat_type.proto"
+0x015073bd classification
+0x015073d1 26.chesscom.explanation_engine.v1.TakeawayClassification
+0x01507528 TakeawayClassification
+0x01507541 #TAKEAWAY_CLASSIFICATION_UNSPECIFIED
+0x0150756a )TAKEAWAY_CLASSIFICATION_BUILDING_STRENGTH
+0x01507599  TAKEAWAY_CLASSIFICATION_BE_AWARE
+0x015075bf 'TAKEAWAY_CLASSIFICATION_MAKING_PROGRESS
+0x015075ec ,TAKEAWAY_CLASSIFICATION_LEARNING_OPPORTUNITY
+0x01507763 (chesscom/explanation_engine/v1/tcn.proto
+0x015077ae chesscom/chess/v1/game.proto"
+0x015078e1 /chesscom/explanation_engine/v1/text_asset.proto
+0x01507a8a 6chesscom/explanation_engine/v1/torch_search_mode.proto
+0x01507ae6 TorchSearchMode
+0x01507b04 25.chesscom.explanation_engine.v1.TorchSearchMode.HumanH
+0x01507b52 2;.chesscom.explanation_engine.v1.TorchSearchMode.MultisearchH
+0x01507b9e disable_maia
+0x01507bb9 _disable_maia
+0x01507c74 N8chesscom18explanation_engine2v121TorchSearchMode_HumanE
+0x01507cae N8chesscom18explanation_engine2v127TorchSearchMode_MultisearchE
+0x01507cee N8chesscom18explanation_engine2v115TorchSearchModeE
+0x01507d2b 7chesscom/explanation_engine/v1alpha/analysis_type.proto
+0x0150ada4 =chesscom/explanation_engine/v1alpha/board_event_details.proto
+0x0150ae08 7chesscom/explanation_engine/v1alpha/analysis_type.proto
+0x0150ae41 =chesscom/explanation_engine/v1alpha/board_event_profile.proto
+0x0150ae80 6chesscom/explanation_engine/v1alpha/circumstance.proto"
+0x0150b4e2 =chesscom/explanation_engine/v1alpha/board_event_profile.proto
+0x0150b547 chesscom/chess/v1/color.proto
+0x0150b566 chesscom/chess/v1/move.proto
+0x0150b584 chesscom/chess/v1/square.proto
+0x0150b5a3 7chesscom/explanation_engine/v1alpha/piece_details.proto
+0x0150b5dc 6chesscom/explanation_engine/v1alpha/location_fan.proto
+0x0150b614 3chesscom/explanation_engine/v1alpha/piece_set.proto"
+0x0150b6b2 classification
+0x0150b6c6 2E.chesscom.explanation_engine.v1alpha.BoardEventProfile.ClassificationH
+0x0150be42 Classification
+0x0150d158 N8chesscom18explanation_engine7v1alpha32BoardEventProfile_ClassificationE
+0x0150d7dc 6chesscom/explanation_engine/v1alpha/board_events.proto
+0x0150d839 7chesscom/explanation_engine/v1alpha/analysis_type.proto
+0x0150d872 6chesscom/explanation_engine/v1alpha/circumstance.proto
+0x0150d8ab chesscom/chess/v1/arrow.proto
+0x0150d8ca chesscom/chess/v1/piece.proto"
+0x0150dac5 3chesscom/explanation_engine/v1alpha/book_move.proto
+0x0150db20 chesscom/chess/v1/move.proto"E
+0x0150e376 /chesscom/explanation_engine/v1alpha/c_api.proto
+0x0150e5db get_last_error
+0x0150e5ef 25.chesscom.explanation_engine.v1alpha.GetLastErrorCallH
+0x0150ec65 get_last_error
+0x0150ec79 27.chesscom.explanation_engine.v1alpha.GetLastErrorResultH
+0x0150f11d time_since_cee_init_us
+0x0150f4a1 GetLastErrorCall"
+0x0150f5dc error_code
+0x0150f6c0 GetLastErrorResult
+0x0150f6f2 error_code
+0x0150ff03 N8chesscom18explanation_engine7v1alpha16GetLastErrorCallE
+0x0151026e N8chesscom18explanation_engine7v1alpha18GetLastErrorResultE
+0x0151052e 6chesscom/explanation_engine/v1alpha/circumstance.proto
+0x015107d5 ;chesscom/explanation_engine/v1alpha/coach_choice_type.proto
+0x015109f1 =chesscom/explanation_engine/v1alpha/coach_exercise_type.proto
+0x01510c50 8chesscom/explanation_engine/v1alpha/elo_comparison.proto
+0x01510dbd Achesscom/explanation_engine/v1alpha/engine_instance_options.proto
+0x01510e26 chesscom/engine/v1/engine.proto"
+0x01511092 Echesscom/explanation_engine/v1alpha/feature_add_external_engine.proto
+0x015110fe Achesscom/explanation_engine/v1alpha/engine_instance_options.proto"f
+0x01511347 Pchesscom/explanation_engine/v1alpha/feature_advanced_stats_category_speech.proto
+0x015113be 0chesscom/stats/v1/advanced_stat_percentile.proto"g
+0x0151168d Bchesscom/explanation_engine/v1alpha/feature_init_engine_pool.proto
+0x015116f6 Achesscom/explanation_engine/v1alpha/engine_instance_options.proto"d
+0x015119d7 Hchesscom/explanation_engine/v1alpha/feature_remove_external_engine.proto
+0x01511ba5 Echesscom/explanation_engine/v1alpha/feature_set_internal_engine.proto
+0x01511c11 8chesscom/explanation_engine/v1/cee_internal_engine.proto"
+0x01511ec7 Bchesscom/explanation_engine/v1alpha/game_feature_computation.proto
+0x01511f31 chesscom/engine/v1/engine.proto
+0x01511f51 !chesscom/engine/v1/strength.proto"
+0x01511f92 cee_version
+0x015120e7 game_rating
+0x015120f8 27.chesscom.explanation_engine.v1alpha.GameRatingSettings
+0x0151223d reference_ratings
+0x01512258 include_empirical_rating
+0x01512279 "include_position_difficulty_rating
+0x015123b1 GameRatingSettings
+0x015123de anchor_ratings
+0x01512600 N8chesscom18explanation_engine7v1alpha18GameRatingSettingsE
+0x01512885 7chesscom/explanation_engine/v1alpha/game_features.proto
+0x015128e4 chesscom/chess/v1/color.proto
+0x01512902 "chesscom/chess/v1/game_phase.proto
+0x01512927 chesscom/chess/v1/piece.proto
+0x01512945 8chesscom/explanation_engine/v1/move_classification.proto
+0x0151297f /chesscom/explanation_engine/v1/puzzle_gen.proto
+0x015129b0 6chesscom/explanation_engine/v1alpha/board_events.proto
+0x015129e9 google/protobuf/duration.proto"
+0x01512a0c RatingSpread
+0x01512a2f rating_input_kind
+0x01512a46 24.chesscom.explanation_engine.v1alpha.RatingInputKind
+0x01512a80 rating
+0x01512b04 _ratingB
+0x01512b60 PlayerGameRating
+0x01512b74 rating
+0x01512b9d _rating"
+0x01512e09 move_classification
+0x01512e22 22.chesscom.explanation_engine.v1.MoveClassification
+0x01512ea2 accuracy
+0x01512f5f &engine_second_best_move_classification
+0x01512f8c 22.chesscom.explanation_engine.v1.MoveClassification
+0x01512ff5 rating_spread
+0x01513008 21.chesscom.explanation_engine.v1alpha.RatingSpread
+0x015130e7 .google.protobuf.DurationH
+0x015135ad _accuracyB%
+0x01513a1b RatingInputKind
+0x01513a2e RATING_INPUT_KIND_UNSPECIFIED
+0x01513a51 RATING_INPUT_KIND_EMPIRICAL
+0x01513a72 RATING_INPUT_KIND_REFERENCE
+0x01513a92 %RATING_INPUT_KIND_POSITION_DIFFICULTY
+0x01513b14 N8chesscom18explanation_engine7v1alpha12RatingSpreadE
+0x01513b4a N8chesscom18explanation_engine7v1alpha16PlayerGameRatingE
+0x01513c32 5chesscom/explanation_engine/v1alpha/game_status.proto
+0x01513dff 6chesscom/explanation_engine/v1alpha/game_summary.proto
+0x01513e5c "chesscom/chess/v1/game_phase.proto"
+0x01514629 Nchesscom/explanation_engine/v1alpha/internal_feature_board_event_details.proto
+0x0151469f chesscom/chess/v1/color.proto
+0x015146be chesscom/chess/v1/square.proto
+0x015146dd =chesscom/explanation_engine/v1alpha/board_event_details.proto"
+0x01514961 Gchesscom/explanation_engine/v1alpha/internal_feature_board_events.proto
+0x015149cf 6chesscom/explanation_engine/v1alpha/board_events.proto"O
+0x01514cfe Ichesscom/explanation_engine/v1alpha/internal_feature_branch_summary.proto
+0x01514d6f chesscom/chess/v1/move.proto
+0x01514d8d chesscom/chess/v1/square.proto
+0x01514dac 7chesscom/explanation_engine/v1alpha/piece_details.proto"%
+0x01515680 Jchesscom/explanation_engine/v1alpha/internal_feature_brilliant_moves.proto
+0x015156f2 chesscom/chess/v1/color.proto"O
+0x01515a1e Rchesscom/explanation_engine/v1alpha/internal_feature_build_agent_stable_tree.proto
+0x01515a97 4chesscom/explanation_engine/v1/game_point_info.proto
+0x01515acd /chesscom/explanation_engine/v1/game_state.proto
+0x01515afe Gchesscom/explanation_engine/v1/internal_feature_enable_game_mocks.proto
+0x01515b47 -chesscom/explanation_engine/v1/new_game.proto
+0x01515b76 +chesscom/explanation_engine/v1/search.proto"
+0x01516188 @chesscom/explanation_engine/v1alpha/internal_feature_caps2.proto
+0x015163d3 Jchesscom/explanation_engine/v1alpha/internal_feature_charm_inference.proto
+0x01516444 #chesscom/engine/v1/evaluation.proto
+0x01516469 4chesscom/explanation_engine/v1/charm_inference.proto"C
+0x01516579 cee_lines
+0x01516868 Hchesscom/explanation_engine/v1alpha/internal_feature_check_anatomy.proto
+0x015168d8 chesscom/chess/v1/square.proto
+0x015168f7 6chesscom/explanation_engine/v1alpha/location_fan.proto
+0x0151692f 3chesscom/explanation_engine/v1alpha/piece_set.proto"$
+0x01516efb Ichesscom/explanation_engine/v1alpha/internal_feature_checkmate_type.proto
+0x01516f6c chesscom/chess/v1/square.proto
+0x01516f8b 6chesscom/explanation_engine/v1alpha/location_fan.proto
+0x01516fc3 3chesscom/explanation_engine/v1alpha/piece_set.proto"%
+0x01517de8 Ichesscom/explanation_engine/v1alpha/internal_feature_extract_pvline.proto
+0x01517e58 4chesscom/explanation_engine/v1/game_point_info.proto"3
+0x01518095 Hchesscom/explanation_engine/v1alpha/internal_feature_game_features.proto
+0x01518104 2chesscom/explanation_engine/v1/game_features.proto
+0x01518138 Bchesscom/explanation_engine/v1alpha/game_feature_computation.proto
+0x0151817c 7chesscom/explanation_engine/v1alpha/game_features.proto"`
+0x015182c3 white_accuracy
+0x015182e0 black_accuracy
+0x015182fd white_game_rating
+0x01518314 25.chesscom.explanation_engine.v1alpha.PlayerGameRating
+0x0151834f black_game_rating
+0x01518366 25.chesscom.explanation_engine.v1alpha.PlayerGameRating
+0x01518433 _white_accuracyB
+0x01518446 _black_accuracyb
+0x015185e3 Jchesscom/explanation_engine/v1alpha/internal_feature_generate_pvtree.proto
+0x01518654 #chesscom/engine/v1/evaluation.proto"
+0x015187f7 rating
+0x01518955 _ratingB
+0x01518b8e Ochesscom/explanation_engine/v1alpha/internal_feature_generate_train_items.proto
+0x01518c05 chesscom/chess/v1/move.proto
+0x01518c23 chesscom/chess/v1/color.proto
+0x01518c41 'chesscom/train/v1/train_challenge.proto"*
+0x01518fbe Lchesscom/explanation_engine/v1alpha/internal_feature_get_coach_emotion.proto
+0x01519031 2chesscom/explanation_engine/v1/coach_emotion.proto
+0x01519065 8chesscom/explanation_engine/v1/move_classification.proto"'
+0x015191bc move_classification
+0x015191d5 22.chesscom.explanation_engine.v1.MoveClassification
+0x01519221 22.chesscom.explanation_engine.v1.MoveClassification
+0x01519400 Hchesscom/explanation_engine/v1alpha/internal_feature_get_coherence.proto
+0x0151946f Jchesscom/explanation_engine/v1alpha/internal_feature_charm_inference.proto"
+0x01519531 cee_lines
+0x015195c6 _cee_linesB
+0x015197e5 Dchesscom/explanation_engine/v1alpha/internal_feature_get_piece.proto
+0x01519851 chesscom/chess/v1/square.proto
+0x01519870 7chesscom/explanation_engine/v1alpha/piece_details.proto"j
+0x01519a95 Ichesscom/explanation_engine/v1alpha/internal_feature_key_game_state.proto
+0x01519b05 4chesscom/explanation_engine/v1/game_state_spec.proto"l
+0x01519d15 Kchesscom/explanation_engine/v1alpha/internal_feature_load_charm_model.proto
+0x01519f8b Gchesscom/explanation_engine/v1alpha/internal_feature_maia_botmove.proto
+0x01519ffa chesscom/chess/v1/move.proto"U
+0x0151a019 !InternalFeatureMaiaBotMoveRequest
+0x0151a070 "InternalFeatureMaiaBotMoveResponse
+0x0151a0f5 N8chesscom18explanation_engine7v1alpha33InternalFeatureMaiaBotMoveRequestE
+0x0151a140 N8chesscom18explanation_engine7v1alpha34InternalFeatureMaiaBotMoveResponseE
+0x0151a1f5 Nchesscom/explanation_engine/v1alpha/internal_feature_position_properties.proto
+0x0151a49e Fchesscom/explanation_engine/v1alpha/internal_feature_run_pvtrees.proto
+0x0151a50b 7chesscom/explanation_engine/v1/feature_run_search.proto
+0x0151a544 4chesscom/explanation_engine/v1/game_point_info.proto
+0x0151a57a Echesscom/explanation_engine/v1alpha/internal_feature_run_search.proto"
+0x0151a5c4  InternalFeatureRunPvTreesRequest
+0x0151a5f6 20.chesscom.explanation_engine.v1.RunSearchRequest
+0x0151a690 !InternalFeatureRunPvTreesResponse
+0x0151a6cb 21.chesscom.explanation_engine.v1.RunSearchResponse
+0x0151a786 human_line
+0x0151a7f2 N8chesscom18explanation_engine7v1alpha32InternalFeatureRunPvTreesRequestE
+0x0151a83c N8chesscom18explanation_engine7v1alpha33InternalFeatureRunPvTreesResponseE
+0x0151a950 Echesscom/explanation_engine/v1alpha/internal_feature_run_search.proto
+0x0151a9bc 7chesscom/explanation_engine/v1/feature_run_search.proto"
+0x0151a9f9 InternalFeatureRunSearchRequest
+0x0151aa29 20.chesscom.explanation_engine.v1.RunSearchRequest
+0x0151aac2  InternalFeatureRunSearchResponse
+0x0151aaf5 21.chesscom.explanation_engine.v1.RunSearchResponse"
+0x0151ac2e rating
+0x0151ad0a _ratingB
+0x0151ad5f N8chesscom18explanation_engine7v1alpha31InternalFeatureRunSearchRequestE
+0x0151ada8 N8chesscom18explanation_engine7v1alpha32InternalFeatureRunSearchResponseE
+0x0151ae90 Jchesscom/explanation_engine/v1alpha/internal_feature_static_exchange.proto
+0x0151af02 chesscom/chess/v1/color.proto
+0x0151af21 chesscom/chess/v1/square.proto
+0x0151af40 4chesscom/explanation_engine/v1alpha/square_set.proto
+0x0151af76 9chesscom/explanation_engine/v1alpha/static_exchange.proto"
+0x0151b290 Jchesscom/explanation_engine/v1alpha/internal_feature_uncompress_data.proto
+0x0151b4ae Ichesscom/explanation_engine/v1alpha/internal_feature_unit_test_code.proto
+0x0151b698 6chesscom/explanation_engine/v1alpha/location_fan.proto
+0x0151b6f6 chesscom/chess/v1/square.proto
+0x0151b715 7chesscom/explanation_engine/v1alpha/piece_details.proto"|
+0x0151b995 Bchesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.proto
+0x0151ba43 classification_name
+0x0151c787 Cchesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.proto
+0x0151c837 classification_name
+0x0151defd 7chesscom/explanation_engine/v1alpha/piece_details.proto
+0x0151df5c chesscom/chess/v1/square.proto
+0x0151df7c chesscom/chess/v1/piece.proto"t
+0x0151e093 3chesscom/explanation_engine/v1alpha/piece_set.proto
+0x0151e0ed 7chesscom/explanation_engine/v1alpha/piece_details.proto"M
+0x0151e1ca 4chesscom/explanation_engine/v1alpha/play_style.proto
+0x0151e302 PLAY_STYLE_HUMAN
+0x0151e453 =chesscom/explanation_engine/v1alpha/position_difficulty.proto
+0x0151e4b7 Bchesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.proto
+0x0151e4fb Cchesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.proto"z
+0x0151edf4 8chesscom/explanation_engine/v1alpha/post_hint_type.proto
+0x0151ef64 ?chesscom/explanation_engine/v1alpha/report_card_highlight.proto
+0x0151efca "chesscom/chess/v1/game_phase.proto
+0x0151efee 8chesscom/explanation_engine/v1/move_classification.proto"
+0x0151f070 player_classification
+0x0151f08b 22.chesscom.explanation_engine.v1.MoveClassification
+0x0151f0c3 opponent_classification
+0x0151f0e0 22.chesscom.explanation_engine.v1.MoveClassificationb
+0x0151f176 >chesscom/explanation_engine/v1alpha/speech_trigger_label.proto
+0x0151fac7 9SPEECH_TRIGGER_LABEL_EQUAL_MATERIAL_HUMAN_SLIGHTLY_BETTER
+0x01520314 (SPEECH_TRIGGER_LABEL_CLASSIFICATION_BOOK
+0x01520342 -SPEECH_TRIGGER_LABEL_CLASSIFICATION_BRILLIANT
+0x01520375 .SPEECH_TRIGGER_LABEL_CLASSIFICATION_GREAT_FIND
+0x015203a9 (SPEECH_TRIGGER_LABEL_CLASSIFICATION_BEST
+0x015203d7 -SPEECH_TRIGGER_LABEL_CLASSIFICATION_EXCELLENT
+0x0152040a (SPEECH_TRIGGER_LABEL_CLASSIFICATION_GOOD
+0x01520438 .SPEECH_TRIGGER_LABEL_CLASSIFICATION_INACCURACY
+0x0152046c +SPEECH_TRIGGER_LABEL_CLASSIFICATION_MISTAKE
+0x0152049d +SPEECH_TRIGGER_LABEL_CLASSIFICATION_BLUNDER
+0x015204ce *SPEECH_TRIGGER_LABEL_CLASSIFICATION_MISSED
+0x01522a00 4chesscom/explanation_engine/v1alpha/square_set.proto
+0x01522a5c chesscom/chess/v1/square.proto"9
+0x01522b0a ?chesscom/explanation_engine/v1alpha/standard_opening_book.proto
+0x01522de6 9chesscom/explanation_engine/v1alpha/static_exchange.proto
+0x01522e47 chesscom/chess/v1/score.proto
+0x01522e65 7chesscom/explanation_engine/v1alpha/piece_details.proto"
+0x01523030 -chesscom/stats/v1/advanced_stat_example.proto
+0x01523072 *chesscom/stats/v1/advanced_stat_type.proto"
+0x015232cd 0chesscom/stats/v1/advanced_stat_percentile.proto
+0x01523312 *chesscom/stats/v1/advanced_stat_type.proto"
+0x015234c4 old_rating
+0x015234d8 new_rating
+0x01523637 *chesscom/stats/v1/advanced_stat_type.proto
+0x015236b1 #ADVANCED_STAT_TYPE_OPENING_ACCURACY
+0x01523a7e %ADVANCED_STAT_TYPE_STRATEGIC_ACCURACY
+0x01523aa9 %ADVANCED_STAT_TYPE_ATTACKING_ACCURACY
+0x01523ad4 %ADVANCED_STAT_TYPE_DEFENDING_ACCURACY
+0x01523aff +ADVANCED_STAT_TYPE_SPACE_ADVANTAGE_ACCURACY
+0x01523b30 4ADVANCED_STAT_TYPE_PIECE_ACTIVITY_ADVANTAGE_ACCURACY
+0x01523b6a 4ADVANCED_STAT_TYPE_PAWN_STRUCTURE_ADVANTAGE_ACCURACY
+0x01523ba4  ADVANCED_STAT_TYPE_OPEN_ACCURACY
+0x01523bca *ADVANCED_STAT_TYPE_OPEN_ATTACKING_ACCURACY
+0x01523bfa *ADVANCED_STAT_TYPE_OPEN_DEFENDING_ACCURACY
+0x01523c2a 0ADVANCED_STAT_TYPE_OPEN_SPACE_ADVANTAGE_ACCURACY
+0x01523c60 9ADVANCED_STAT_TYPE_OPEN_PIECE_ACTIVITY_ADVANTAGE_ACCURACY
+0x01523c9f 9ADVANCED_STAT_TYPE_OPEN_PAWN_STRUCTURE_ADVANTAGE_ACCURACY
+0x01523cde %ADVANCED_STAT_TYPE_SEMI_OPEN_ACCURACY
+0x01523d09 /ADVANCED_STAT_TYPE_SEMI_OPEN_ATTACKING_ACCURACY
+0x01523d3e /ADVANCED_STAT_TYPE_SEMI_OPEN_DEFENDING_ACCURACY
+0x01523d73 5ADVANCED_STAT_TYPE_SEMI_OPEN_SPACE_ADVANTAGE_ACCURACY
+0x01523dae >ADVANCED_STAT_TYPE_SEMI_OPEN_PIECE_ACTIVITY_ADVANTAGE_ACCURACY
+0x01523df2 >ADVANCED_STAT_TYPE_SEMI_OPEN_PAWN_STRUCTURE_ADVANTAGE_ACCURACY
+0x01523e36 "ADVANCED_STAT_TYPE_CLOSED_ACCURACY
+0x01523e5e ,ADVANCED_STAT_TYPE_CLOSED_ATTACKING_ACCURACY
+0x01523e90 ,ADVANCED_STAT_TYPE_CLOSED_DEFENDING_ACCURACY
+0x01523ec2 2ADVANCED_STAT_TYPE_CLOSED_SPACE_ADVANTAGE_ACCURACY
+0x01523efa ;ADVANCED_STAT_TYPE_CLOSED_PIECE_ACTIVITY_ADVANTAGE_ACCURACY
+0x01523f3b ;ADVANCED_STAT_TYPE_CLOSED_PAWN_STRUCTURE_ADVANTAGE_ACCURACY
+0x01523f7c #ADVANCED_STAT_TYPE_ENDGAME_ACCURACY
+0x01524045 %ADVANCED_STAT_TYPE_KING_PAWN_ACCURACY
+0x01524070 %ADVANCED_STAT_TYPE_ROOK_PAWN_ACCURACY
+0x0152409b !ADVANCED_STAT_TYPE_QUEEN_ACCURACY
+0x015240c2 !ADVANCED_STAT_TYPE_OTHER_ACCURACY
+0x015246bf )ADVANCED_STAT_TYPE_TIME_PRESSURE_ACCURACY
+0x015248e1 0chesscom/stats/v1/advanced_stats_datapoint.proto
+0x01524927 chesscom/chess/v1/eco.proto
+0x01524943 *chesscom/stats/v1/advanced_stat_type.proto
+0x0152496f +chesscom/stats/v1/brilliant_move_type.proto"P
+0x01524bc1 +chesscom/stats/v1/brilliant_move_type.proto
+0x01524d93 -chesscom/text_item/v1alpha/google_sheet.proto
+0x0152517f Kchesscom/text_item/v1alpha/internal_feature_generate_coach_text_asset.proto
+0x015251e8 -chesscom/text_item/v1alpha/google_sheet.proto
+0x01525217 *chesscom/text_item/v1alpha/text_item.proto"
+0x01525728 Kchesscom/text_item/v1alpha/internal_feature_generate_coach_text_items.proto
+0x01525791 *chesscom/text_item/v1alpha/text_item.proto
+0x015257bd -chesscom/text_item/v1alpha/google_sheet.proto"v
+0x015259e7 9chesscom/text_item/v1alpha/puzzle_goal_text_context.proto
+0x01525a3e /chesscom/explanation_engine/v1/puzzle_gen.proto
+0x01525a6f 6chesscom/explanation_engine/v1alpha/board_events.proto"
+0x01525c1e 6chesscom/text_item/v1alpha/takeaway_text_context.proto
+0x01525c72 *chesscom/stats/v1/advanced_stat_type.proto"
+0x01526267 *chesscom/text_item/v1alpha/text_item.proto
+0x015262b0 chesscom/chess/v1/piece.proto
+0x015262ce 6chesscom/explanation_engine/v1alpha/board_events.proto
+0x01526306 8chesscom/explanation_engine/v1/move_classification.proto
+0x01526340 ?chesscom/explanation_engine/v1/feature_get_non_chess_text.proto
+0x01526381 Ichesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto
+0x015263cd chesscom/chess/v1/color.proto
+0x015263eb 3chesscom/explanation_engine/v1alpha/book_move.proto
+0x01526420 8chesscom/explanation_engine/v1alpha/post_hint_type.proto
+0x0152645a ;chesscom/explanation_engine/v1alpha/coach_choice_type.proto
+0x01526497 =chesscom/explanation_engine/v1alpha/coach_exercise_type.proto
+0x015264d6 ?chesscom/explanation_engine/v1alpha/report_card_highlight.proto
+0x01526517 8chesscom/explanation_engine/v1alpha/elo_comparison.proto
+0x01526551 5chesscom/explanation_engine/v1alpha/game_status.proto
+0x01526588 6chesscom/explanation_engine/v1alpha/game_summary.proto
+0x015265c0 >chesscom/explanation_engine/v1alpha/speech_trigger_label.proto
+0x01526600 6chesscom/text_item/v1alpha/takeaway_text_context.proto
+0x01526638 9chesscom/text_item/v1alpha/puzzle_goal_text_context.proto
+0x01526673 8chesscom/text_item/v1alpha/train_goal_text_context.proto
+0x015266ad 9chesscom/text_item/v1alpha/train_reply_text_context.proto"
+0x01526743 move_classification
+0x0152675c 22.chesscom.explanation_engine.v1.MoveClassificationH
+0x01526ceb TextRatingRange
+0x01526eea rating_range
+0x01526efc 2+.chesscom.text_item.v1alpha.TextRatingRange
+0x01526fd9 audio_url_hashes
+0x0152795c N8chesscom9text_item7v1alpha15TextRatingRangeE
+0x01527a1d N6google8protobuf8internal8MapEntryIN8chesscom9text_item7v1alpha31TextItem_MetadataEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x01527aed N6google8protobuf8internal12MapEntryImplIN8chesscom9text_item7v1alpha31TextItem_MetadataEntry_DoNotUseENS0_7MessageENSt3__212basic_stringIcNS8_11char_traitsIcEENS8_9allocatorIcEEEESE_LNS1_14WireFormatLite9FieldTypeE9ELSG_9EEE
+0x01527bcf N6google8protobuf8internal8MapFieldIN8chesscom9text_item7v1alpha31TextItem_MetadataEntry_DoNotUseENSt3__212basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEESD_LNS1_14WireFormatLite9FieldTypeE9ELSF_9EEE
+0x01527ccc 8chesscom/text_item/v1alpha/train_goal_text_context.proto
+0x01527d22 'chesscom/train/v1/train_challenge.proto"L
+0x01527e1e 9chesscom/text_item/v1alpha/train_reply_text_context.proto
+0x01527e75 'chesscom/train/v1/train_challenge.proto
+0x01527e9e (chesscom/train/v1/train_move_grade.proto"
+0x01527fa2 -chesscom/train/v1/train_backfill_status.proto
+0x015280c0 /chesscom/train/v1/train_blunder_challenge.proto
+0x01528104 .chesscom/train/v1/train_challenge_bucket.proto
+0x01528134 ,chesscom/train/v1/train_tactical_theme.proto
+0x01528163 chesscom/chess/v1/move.proto"
+0x015282ce 'chesscom/train/v1/train_challenge.proto
+0x0152830a ,chesscom/train/v1/train_miss_challenge.proto
+0x01528338 /chesscom/train/v1/train_blunder_challenge.proto
+0x01528369 7chesscom/train/v1/train_opening_mistake_challenge.proto
+0x015283a2 8chesscom/train/v1/train_strategy_mistake_challenge.proto
+0x015283dc 7chesscom/train/v1/train_endgame_mistake_challenge.proto"
+0x015285d8 .chesscom/train/v1/train_challenge_bucket.proto
+0x01528731 7chesscom/train/v1/train_endgame_mistake_challenge.proto
+0x0152877d +chesscom/train/v1/train_endgame_theme.proto
+0x015287ab chesscom/chess/v1/move.proto"
+0x015288a4 +chesscom/train/v1/train_endgame_theme.proto
+0x015289f2 1chesscom/train/v1/train_generated_challenge.proto
+0x01528a39 chesscom/chess/v1/move.proto
+0x01528a56 'chesscom/train/v1/train_challenge.proto
+0x01528a7f 'chesscom/train/v1/train_item_type.proto"
+0x01528c08 'chesscom/train/v1/train_item_type.proto
+0x01528d4d 0chesscom/train/v1/train_membership_context.proto
+0x01528e6d ,chesscom/train/v1/train_miss_challenge.proto
+0x01528eaf chesscom/chess/v1/move.proto
+0x01528ecc .chesscom/train/v1/train_challenge_bucket.proto
+0x01528efc ,chesscom/train/v1/train_tactical_theme.proto"
+0x0152904d (chesscom/train/v1/train_move_grade.proto
+0x0152917d 7chesscom/train/v1/train_opening_mistake_challenge.proto
+0x015291c9 +chesscom/train/v1/train_opening_theme.proto
+0x015291f7 chesscom/chess/v1/move.proto"
+0x01529307 +chesscom/train/v1/train_opening_theme.proto
+0x01529977 %chesscom/train/v1/train_outcome.proto
+0x01529a27 0chesscom/train/v1/train_position_attribute.proto
+0x01529bac +chesscom/train/v1/train_position_type.proto
+0x01529cc9 8chesscom/train/v1/train_strategy_mistake_challenge.proto
+0x01529d16 +chesscom/train/v1/train_position_type.proto
+0x01529d43 0chesscom/train/v1/train_position_attribute.proto
+0x01529d75 ,chesscom/train/v1/train_strategy_theme.proto
+0x01529da4 chesscom/chess/v1/move.proto"
+0x01529f24 ,chesscom/train/v1/train_strategy_theme.proto
+0x0152af84 ,chesscom/train/v1/train_tactical_theme.proto
+0x0152b0e3 google.protobuf.Any
+0x0152b180 N6google8protobuf12_GLOBAL__N_123AggregateErrorCollectorE
+0x0152b1ba N6google8protobuf17DescriptorBuilder17OptionInterpreter21AggregateOptionFinderE
+0x0152b963  google/protobuf/descriptor.proto
+0x0152b986 google.protobuf"G
+0x0152b9b8 2$.google.protobuf.FileDescriptorProto"
+0x0152ba73 2 .google.protobuf.DescriptorProto
+0x0152baa8 2$.google.protobuf.EnumDescriptorProto
+0x0152badf 2'.google.protobuf.ServiceDescriptorProto
+0x0152bb1b 2%.google.protobuf.FieldDescriptorProto
+0x0152bb55 .google.protobuf.FileOptions
+0x0152bb8d .google.protobuf.SourceCodeInfo
+0x0152bbfe 2%.google.protobuf.FieldDescriptorProto
+0x0152bc38 2%.google.protobuf.FieldDescriptorProto
+0x0152bc74 2 .google.protobuf.DescriptorProto
+0x0152bca9 2$.google.protobuf.EnumDescriptorProto
+0x0152bce8 2/.google.protobuf.DescriptorProto.ExtensionRange
+0x0152bd2d 2%.google.protobuf.OneofDescriptorProto
+0x0152bd67 .google.protobuf.MessageOptions
+0x0152bd9e 2..google.protobuf.DescriptorProto.ReservedRange
+0x0152be24 2&.google.protobuf.ExtensionRangeOptions
+0x0152beb1 2$.google.protobuf.UninterpretedOption*
+0x0152bf28 2+.google.protobuf.FieldDescriptorProto.Label
+0x0152bf63 2*.google.protobuf.FieldDescriptorProto.Type
+0x0152c006 .google.protobuf.FieldOptions
+0x0152c1f3 .google.protobuf.OneofOptions"
+0x0152c245 2).google.protobuf.EnumValueDescriptorProto
+0x0152c283 .google.protobuf.EnumOptions
+0x0152c2b7 26.google.protobuf.EnumDescriptorProto.EnumReservedRange
+0x0152c382 2!.google.protobuf.EnumValueOptions"
+0x0152c3de 2&.google.protobuf.MethodDescriptorProto
+0x0152c419 .google.protobuf.ServiceOptions"
+0x0152c49c .google.protobuf.MethodOptions
+0x0152c568 java_generate_equals_and_hash
+0x0152c5cc 2).google.protobuf.FileOptions.OptimizeMode:
+0x0152c7b1 2$.google.protobuf.UninterpretedOption":
+0x0152c8dc 2$.google.protobuf.UninterpretedOption*
+0x0152c94b 2#.google.protobuf.FieldOptions.CType:
+0x0152c998 2$.google.protobuf.FieldOptions.JSType:
+0x0152ca4d 2$.google.protobuf.UninterpretedOption"/
+0x0152cb1b 2$.google.protobuf.UninterpretedOption*
+0x0152cbab 2$.google.protobuf.UninterpretedOption*
+0x0152cc30 2$.google.protobuf.UninterpretedOption*
+0x0152ccad 2$.google.protobuf.UninterpretedOption*
+0x0152cd26 2/.google.protobuf.MethodOptions.IdempotencyLevel:
+0x0152cd8b 2$.google.protobuf.UninterpretedOption"P
+0x0152ce34 2-.google.protobuf.UninterpretedOption.NamePart
+0x0152cf54 2(.google.protobuf.SourceCodeInfo.Location
+0x0152d031 2-.google.protobuf.GeneratedCodeInfo.Annotation
+0x0152d0c4 26.google.protobuf.GeneratedCodeInfo.Annotation.Semantic"(
+0x0152d12a com.google.protobufB
+0x0152d151 Z-google.golang.org/protobuf/types/descriptorpb
+0x0152d18c Google.Protobuf.Reflection
+0x0152d35b N6google8protobuf17FileDescriptorSetE
+0x0152d381 N6google8protobuf19FileDescriptorProtoE
+0x0152d3a9 N6google8protobuf30DescriptorProto_ExtensionRangeE
+0x0152d3dc N6google8protobuf29DescriptorProto_ReservedRangeE
+0x0152d40e N6google8protobuf15DescriptorProtoE
+0x0152d432 N6google8protobuf21ExtensionRangeOptionsE
+0x0152d45c N6google8protobuf20FieldDescriptorProtoE
+0x0152d485 N6google8protobuf20OneofDescriptorProtoE
+0x0152d4ae N6google8protobuf37EnumDescriptorProto_EnumReservedRangeE
+0x0152d4e8 N6google8protobuf19EnumDescriptorProtoE
+0x0152d510 N6google8protobuf24EnumValueDescriptorProtoE
+0x0152d53d N6google8protobuf22ServiceDescriptorProtoE
+0x0152d568 N6google8protobuf21MethodDescriptorProtoE
+0x0152d592 N6google8protobuf11FileOptionsE
+0x0152d5b2 N6google8protobuf14MessageOptionsE
+0x0152d5d5 N6google8protobuf12FieldOptionsE
+0x0152d5f6 N6google8protobuf12OneofOptionsE
+0x0152d617 N6google8protobuf11EnumOptionsE
+0x0152d637 N6google8protobuf16EnumValueOptionsE
+0x0152d65c N6google8protobuf14ServiceOptionsE
+0x0152d67f N6google8protobuf13MethodOptionsE
+0x0152d6a1 N6google8protobuf28UninterpretedOption_NamePartE
+0x0152d6d2 N6google8protobuf19UninterpretedOptionE
+0x0152d6fa N6google8protobuf23SourceCodeInfo_LocationE
+0x0152d726 N6google8protobuf14SourceCodeInfoE
+0x0152d749 N6google8protobuf28GeneratedCodeInfo_AnnotationE
+0x0152d77a N6google8protobuf17GeneratedCodeInfoE
+0x0152d7a0 N6google8protobuf18DescriptorDatabaseE
+0x0152d7c7 N6google8protobuf25EncodedDescriptorDatabaseE
+0x0152d82b google/protobuf/duration.proto
+0x0152d84b google.protobuf"*
+0x0152d88b com.google.protobufB
+0x0152d8af Z1google.golang.org/protobuf/types/known/durationpb
+0x0152d8ee Google.Protobuf.WellKnownTypesb
+0x0152d929 N6google8protobuf8DurationE
+0x0152d945 N6google8protobuf14DynamicMessageE
+0x0152d968 N6google8protobuf21DynamicMessageFactoryE
+0x0152d993 N6google8protobuf8internal16InternalMetadata13ContainerBaseE
+0x0152d9d0 N6google8protobuf8internal12ExtensionSet8KeyValueE
+0x0152da03 N6google8protobuf13RepeatedFieldIiEE
+0x0152da28 N6google8protobuf13RepeatedFieldIxEE
+0x0152da4d N6google8protobuf13RepeatedFieldIjEE
+0x0152da72 N6google8protobuf13RepeatedFieldIyEE
+0x0152da97 N6google8protobuf13RepeatedFieldIfEE
+0x0152dabc N6google8protobuf13RepeatedFieldIdEE
+0x0152dae1 N6google8protobuf13RepeatedFieldIbEE
+0x0152db06 N6google8protobuf16RepeatedPtrFieldINSt3__212basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEEE
+0x0152db6d N6google8protobuf16RepeatedPtrFieldINS0_11MessageLiteEEE
+0x0152dba6 NSt3__23mapIiN6google8protobuf8internal12ExtensionSet9ExtensionENS_4lessIiEENS_9allocatorINS_4pairIKiS5_EEEEEE
+0x0152dc15 N6google8protobuf8internal14ZeroFieldsBaseE
+0x0152dc51 N6google8protobuf2io14ErrorCollectorE
+0x0152dd95  N6google8protobuf2io20ZeroCopyOutputStreamE
+0x0152ddc2 N6google8protobuf2io16ArrayInputStreamE
+0x0152ddea N6google8protobuf2io19ZeroCopyInputStreamE
+0x0152de15 N6google8protobuf2io18StringOutputStreamE
+0x0152de46 N6google8protobuf8internal12MapFieldBaseE
+0x0152de70 N6google8protobuf8internal15DynamicMapFieldE
+0x0152de9d N6google8protobuf8internal23TypeDefinedMapFieldBaseINS0_6MapKeyENS0_11MapValueRefEEE
+0x0152def2 NSt3__23mapINS_17reference_wrapperIKN6google8protobuf6MapKeyEEEPvNS_4lessIS4_EENS3_8internal12MapAllocatorINS_4pairIKS6_S7_EEEEEE
+0x0152df74 N6google8protobuf7MessageE
+0x0152df8f N6google8protobuf14MessageFactoryE
+0x0152dfb2 N6google8protobuf12_GLOBAL__N_123GeneratedMessageFactoryE
+0x0152dfec N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIiEE
+0x0152e02b N6google8protobuf8internal20RepeatedFieldWrapperIiEE
+0x0152e060 N6google8protobuf8internal33RandomAccessRepeatedFieldAccessorE
+0x0152e09f N6google8protobuf8internal21RepeatedFieldAccessorE
+0x0152e0d2 N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIjEE
+0x0152e111 N6google8protobuf8internal20RepeatedFieldWrapperIjEE
+0x0152e146 N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIxEE
+0x0152e185 N6google8protobuf8internal20RepeatedFieldWrapperIxEE
+0x0152e1ba N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIyEE
+0x0152e1f9 N6google8protobuf8internal20RepeatedFieldWrapperIyEE
+0x0152e22e N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIfEE
+0x0152e26d N6google8protobuf8internal20RepeatedFieldWrapperIfEE
+0x0152e2a2 N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIdEE
+0x0152e2e1 N6google8protobuf8internal20RepeatedFieldWrapperIdEE
+0x0152e316 N6google8protobuf8internal30RepeatedFieldPrimitiveAccessorIbEE
+0x0152e355 N6google8protobuf8internal20RepeatedFieldWrapperIbEE
+0x0152e38a N6google8protobuf8internal30RepeatedPtrFieldStringAccessorE
+0x0152e3c6 N6google8protobuf8internal23RepeatedPtrFieldWrapperINSt3__212basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEEE
+0x0152e43d N6google8protobuf8internal16MapFieldAccessorE
+0x0152e46b N6google8protobuf8internal31RepeatedPtrFieldMessageAccessorE
+0x0152e4a8 N6google8protobuf8internal23RepeatedPtrFieldWrapperINS0_7MessageEEE
+0x0152e4ec N6google8protobuf8internal16InternalMetadata9ContainerINS0_15UnknownFieldSetEEE
+0x0152e53c N6google8protobuf11MessageLiteE
+0x0152e55c N6google8protobuf24ZeroCopyCodedInputStreamE
+0x0152e589 N6google8protobuf14FatalExceptionE
+0x0152f07a N6google8protobuf10TextFormat17BaseTextGeneratorE
+0x0152f0ac N6google8protobuf10TextFormat6FinderE
+0x0152f0d2 N6google8protobuf10TextFormat21FastFieldValuePrinterE
+0x0152f108 N6google8protobuf10TextFormat6Parser10ParserImpl20ParserErrorCollectorE
+0x0152f150 N6google8protobuf10TextFormat7Printer28DebugStringFieldValuePrinterE
+0x0152f195 N6google8protobuf10TextFormat7Printer13TextGeneratorE
+0x01c117ea N5torch13UCIOptionBaseE
+0x01c11802 N5torch9UCIOptionIbEE
+0x01c11818 N5torch9UCIOptionImEE
+0x01c1182e N5torch22BlockingQueueStreamBufE
+0x01c1184f N5torch20TeeCallbackStreamBufE
+0x01c11929 NSt3__210__function6__funcIPFvRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_RNS_13basic_ostreamIcS4_EERN5torch5tools12FileProgressEESH_EE
+0x01c119c4 NSt3__210__function6__baseIFvRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_RNS_13basic_ostreamIcS4_EERN5torch5tools12FileProgressEEEE
+0x01c11a5b PFvRKNSt3__212basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_RNS_13basic_ostreamIcS2_EERN5torch5tools12FileProgressEE
+0x01c11ada FvRKNSt3__212basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_RNS_13basic_ostreamIcS2_EERN5torch5tools12FileProgressEE
+0x01c11b58 NSt3__210__function6__funcIZN5torch5tools12heronrescoreERKNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS8_ISA_EEEEPKNS2_2nn14NetworkWeightsEE3$_0FvRKSA_SL_RNS_13basic_ostreamIcS7_EERNS3_12FileProgressEEEE
+0x01c11c3e ZN5torch5tools12heronrescoreERKNSt3__26vectorINS1_12basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS6_IS8_EEEEPKNS_2nn14NetworkWeightsEE3$_0
+0x01c11ceb NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_0FvvEEE
+0x01c11d28 ZN5torch3UCI7startupEvE3$_0
+0x01c11d44 NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_1FvvEEE
+0x01c11d81 ZN5torch3UCI7startupEvE3$_1
+0x01c11d9d N5torch9UCIOptionIyEE
+0x01c11db3 NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_2FvvEEE
+0x01c11df0 ZN5torch3UCI7startupEvE3$_2
+0x01c11e0c NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_3FvvEEE
+0x01c11e49 ZN5torch3UCI7startupEvE3$_3
+0x01c11e65 NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_4FvvEEE
+0x01c11ea2 ZN5torch3UCI7startupEvE3$_4
+0x01c11ebe NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_5FvvEEE
+0x01c11efb ZN5torch3UCI7startupEvE3$_5
+0x01c11f17 NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_6FvvEEE
+0x01c11f54 ZN5torch3UCI7startupEvE3$_6
+0x01c11f70 NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_7FvvEEE
+0x01c11fad ZN5torch3UCI7startupEvE3$_7
+0x01c11fc9 N5torch9UCIOptionINSt3__212basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEEE
+0x01c1201e NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_8FvvEEE
+0x01c1205b ZN5torch3UCI7startupEvE3$_8
+0x01c12077 N5torch9UCIOptionIsEE
+0x01c1208d NSt3__210__function6__funcIZN5torch3UCI7startupEvE3$_9FvvEEE
+0x01c120ca ZN5torch3UCI7startupEvE3$_9
+0x01c120e6 NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_10FvvEEE
+0x01c12124 ZN5torch3UCI7startupEvE4$_10
+0x01c12141 NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_11FvvEEE
+0x01c1217f ZN5torch3UCI7startupEvE4$_11
+0x01c1219c NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_12FvvEEE
+0x01c121da ZN5torch3UCI7startupEvE4$_12
+0x01c121f7 NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_13FvvEEE
+0x01c12235 ZN5torch3UCI7startupEvE4$_13
+0x01c12252 NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_14FvvEEE
+0x01c12290 ZN5torch3UCI7startupEvE4$_14
+0x01c122ad NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_15FvvEEE
+0x01c122eb ZN5torch3UCI7startupEvE4$_15
+0x01c12308 NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_16FvvEEE
+0x01c12346 ZN5torch3UCI7startupEvE4$_16
+0x01c12363 NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_17FvvEEE
+0x01c123a1 ZN5torch3UCI7startupEvE4$_17
+0x01c123be NSt3__210__function6__funcIZN5torch3UCI7startupEvE4$_18FvvEEE
+0x01c123fc ZN5torch3UCI7startupEvE4$_18
+0x01c164c1 Domain error
+0x01c166a9 I/O error
+0x01c16720 Exec format error
+0x01c1691a Protocol error
+0x01c16af6 Cannot send after socket shutdown
+0x01c16b5e Data consistency error
+0x01c16b8c Remote I/O error
+0x01c17194 NSt3__220__shared_ptr_emplaceINS_10filesystem16filesystem_error8_StorageENS_9allocatorIS3_EEEE
+0x01c1729c NSt3__210filesystem16filesystem_errorE
+0x01c17308 NSt3__214error_categoryE
+0x01c17368 NSt3__212future_errorE
+0x01c173cc NSt3__223__future_error_categoryE
+0x01c1a2db NSt3__211regex_errorE
+0x01c1a39f NSt3__212system_errorE
+0x01c1a3e7 NSt3__224__generic_error_categoryE
+0x01c1a417 NSt3__223__system_error_categoryE
+0x01c1a9e9 St11logic_error
+0x01c1aa51 St12length_error
+0x01c1aab9 St11range_error
+0x01c1aad5 St13runtime_error
+0x01c1ab09 St14overflow_error

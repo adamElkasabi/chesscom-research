@@ -1,0 +1,19 @@
+// source: chesscom/payments/v1/support_promotion_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message CheckMemberPromotionsRequest {
+  optional string user_uuid = 1;
+  optional string code = 2;
+  optional .chesscom.support.v1.SupportActionContext context = 3;
+  optional string verification_id = 4;
+  optional .chesscom.api.v1.Platform platform = 5;
+}
+
+message CheckMemberPromotionsResponse {
+  repeated .chesscom.payments.v1.MemberPromotion offers = 1;
+  repeated .chesscom.payments.v1.PromotionOnCharge applied = 2;
+  optional bool code_applied = 3;
+  optional .chesscom.support.v1.SupportActionResult action_result = 4;
+}

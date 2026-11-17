@@ -1,0 +1,60 @@
+{
+  "name": "chesscom/user_properties/v1/properties_widgets.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "WidgetsProperty",
+      "field": [
+        {
+          "name": "current_widgets",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "used_widgets",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1040,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.WidgetsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "WidgetsPropertyDefinition",
+      "value": [
+        {
+          "name": "WIDGETS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CURRENT_WIDGETS",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "USED_WIDGETS",
+          "number": 2,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

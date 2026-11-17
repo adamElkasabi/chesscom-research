@@ -1,0 +1,170 @@
+{
+  "name": "chesscom/explanation_engine/v1/new_game.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "NewGame",
+      "field": [
+        {
+          "name": "game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Game",
+          "oneof_index": 0
+        },
+        {
+          "name": "initial_position",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameInitialPosition",
+          "oneof_index": 0
+        },
+        {
+          "name": "tcn_game",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TcnGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "position_with_moves",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PositionWithMoves",
+          "oneof_index": 0
+        },
+        {
+          "name": "pgn_game",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PgnGame",
+          "oneof_index": 0
+        },
+        {
+          "name": "settings",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameSettings"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "from"
+        }
+      ]
+    },
+    {
+      "name": "PositionWithMoves",
+      "field": [
+        {
+          "name": "initial_position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameInitialPosition"
+        },
+        {
+          "name": "uci_moves",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UciMoveList",
+          "oneof_index": 0
+        },
+        {
+          "name": "moves",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveList",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "move_list"
+        }
+      ]
+    },
+    {
+      "name": "GameInitialPosition",
+      "field": [
+        {
+          "name": "metadata",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata"
+        },
+        {
+          "name": "position",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Position",
+          "oneof_index": 0
+        },
+        {
+          "name": "compressed_position",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES",
+          "oneof_index": 0
+        },
+        {
+          "name": "fen",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "initial_position"
+        }
+      ]
+    },
+    {
+      "name": "PgnGame",
+      "field": [
+        {
+          "name": "pgn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "take_first_game_only",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "artifact_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "metadata",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

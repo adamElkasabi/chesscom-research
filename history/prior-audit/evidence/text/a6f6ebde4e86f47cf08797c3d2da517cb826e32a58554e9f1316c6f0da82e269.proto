@@ -1,0 +1,23 @@
+// source: chesscom/explanation_engine/v1/feature_get_coach_hint.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetCoachHintRequest {
+}
+
+message GetCoachHintResponse {
+  oneof _hint {
+  .chesscom.explanation_engine.v1.CoachHint hint = 1;
+  }
+}
+
+message CoachHint {
+  oneof _speech {
+  .chesscom.explanation_engine.v1.Speech speech = 2;
+  }
+  oneof _speech_debug_info {
+  .chesscom.explanation_engine.v1.SpeechDebugInfo speech_debug_info = 3;
+  }
+  optional .chesscom.chess.v1.Move move = 1;
+}

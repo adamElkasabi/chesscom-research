@@ -1,0 +1,40 @@
+// source: chesscom/skills/v1/skills_configuration.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+message SkillConfiguration {
+  repeated .chesscom.skills.v1.SkillItemConfiguration skill_items = 1;
+}
+
+message SkillItemConfiguration {
+  oneof unlocking_condition {
+  .chesscom.skills.v1.UnlockedByAll unlocked_by_all = 7;
+  .chesscom.skills.v1.UnlockedByAny unlocked_by_any = 8;
+  }
+  optional .chesscom.explanation_engine.v1.Skill skill = 1;
+  optional .chesscom.i18n.v1.Translation name = 2;
+  optional .chesscom.skills.v1.SkillCategory category = 3;
+  optional uint32 points_to_master = 4;
+  optional string diagram = 5;
+  optional .chesscom.i18n.v1.Translation description = 6;
+  optional .chesscom.api.v1.Asset icon_png = 9;
+  optional .chesscom.api.v1.Asset icon_svg = 10;
+}
+
+message UnlockedByAll {
+  repeated .chesscom.explanation_engine.v1.Skill unlocked_by_all = 1;
+}
+
+message UnlockedByAny {
+  repeated .chesscom.explanation_engine.v1.Skill unlocked_by_any = 1;
+}
+
+message SkillCategoryConfiguration {
+  repeated .chesscom.skills.v1.SkillCategoryItemConfiguration skills_categories = 1;
+}
+
+message SkillCategoryItemConfiguration {
+  optional .chesscom.skills.v1.SkillCategory category = 1;
+  optional .chesscom.i18n.v1.Translation name = 2;
+}

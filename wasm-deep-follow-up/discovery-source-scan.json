@@ -1,0 +1,2963 @@
+[
+  {
+    "source_id": "SRC-0001",
+    "location": "history/prior-audit/evidence/text/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.txt",
+    "bytes_read": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0003",
+    "location": "history/prior-audit/evidence/text/f4743bdea513c51e8409333bf289915a738ede9623295bc57bf8a6c50aa02999.txt",
+    "bytes_read": 1582,
+    "sha256": "f4743bdea513c51e8409333bf289915a738ede9623295bc57bf8a6c50aa02999",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0005",
+    "location": "history/prior-audit/evidence/text/ce0c37dc972e1378b9f9a23efac8d0139906db99a83efa11936d24496ad2ee3e.json",
+    "bytes_read": 1126,
+    "sha256": "ce0c37dc972e1378b9f9a23efac8d0139906db99a83efa11936d24496ad2ee3e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0006",
+    "location": "history/prior-audit/evidence/text/a8c3dca7549b332cc78867ba216378165b16b6c3255ac2b2c5822fda511e35b5.js",
+    "bytes_read": 19558,
+    "sha256": "a8c3dca7549b332cc78867ba216378165b16b6c3255ac2b2c5822fda511e35b5",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0009",
+    "location": "history/prior-audit/evidence/text/a1719a80102a08c8e6dcb65127cc9d1cbf676da03fe99416caef011849794088.json",
+    "bytes_read": 1126,
+    "sha256": "a1719a80102a08c8e6dcb65127cc9d1cbf676da03fe99416caef011849794088",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0011",
+    "location": "history/prior-audit/evidence/text/fdd4dc3a8cf78d029619db86ee72233c302e05eed704972cc6f095f554377a72.js",
+    "bytes_read": 6064,
+    "sha256": "fdd4dc3a8cf78d029619db86ee72233c302e05eed704972cc6f095f554377a72",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0012",
+    "location": "history/prior-audit/evidence/text/87d25ee0a473c62fe9401badba01cd78d5d9df65aa5637fb7a7c7a2c1785971d.js",
+    "bytes_read": 7093,
+    "sha256": "87d25ee0a473c62fe9401badba01cd78d5d9df65aa5637fb7a7c7a2c1785971d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0013",
+    "location": "history/prior-audit/evidence/text/90a0e507f5653d17af06df0f7b355441c3db75d8e958c3c3c17c57776e606af9.js",
+    "bytes_read": 3331,
+    "sha256": "90a0e507f5653d17af06df0f7b355441c3db75d8e958c3c3c17c57776e606af9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0014",
+    "location": "history/prior-audit/evidence/text/46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70.js",
+    "bytes_read": 131754,
+    "sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0015",
+    "location": "history/prior-audit/evidence/binary-strings/b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373.txt",
+    "bytes_read": 106066,
+    "sha256": "a7afe786e11f960bf0d903a72850327dc28c4d8b8be9b1df0636f4341c21a94c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0016",
+    "location": "history/prior-audit/evidence/text/b083363e77f52270e4e61973949eeea53c339fed097dce44501b8536cc19b27c.md",
+    "bytes_read": 4032,
+    "sha256": "288a85361a10d78f3871d0cc6d60af055aa6acd92a48c32a033f545c7fcb1d91",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0018",
+    "location": "history/prior-audit/evidence/text/e7e210faed1cda736135f87d36064c9a2303078ce438bcbfe25f6151ec5a0be7.json",
+    "bytes_read": 1126,
+    "sha256": "e7e210faed1cda736135f87d36064c9a2303078ce438bcbfe25f6151ec5a0be7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0019",
+    "location": "history/prior-audit/evidence/text/34e140d2e6dfe4e4bd5060054e97b302ea63adc06259706b495a836a9a1300f7.js",
+    "bytes_read": 19655,
+    "sha256": "34e140d2e6dfe4e4bd5060054e97b302ea63adc06259706b495a836a9a1300f7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0020",
+    "location": "history/prior-audit/evidence/text/875c24fb52697f44865b9a42705da20558e1eb69912a27f7d8fd7794840477fb.md",
+    "bytes_read": 4865,
+    "sha256": "d42829c92afb763f3e6e14ff71ac338098cbb18fe7b1dac74a8d899bddf8194c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0022",
+    "location": "history/prior-audit/evidence/text/ba33bb40ad68e7f612945a04967c1cb1f02306d7d8d765e27e093de09741a3f6.json",
+    "bytes_read": 1126,
+    "sha256": "ba33bb40ad68e7f612945a04967c1cb1f02306d7d8d765e27e093de09741a3f6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0024",
+    "location": "history/prior-audit/evidence/text/759114d70c5393f11a5d5b45883722267b7ed99f16753bccef415b1765c2a61d.js",
+    "bytes_read": 8350,
+    "sha256": "759114d70c5393f11a5d5b45883722267b7ed99f16753bccef415b1765c2a61d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0025",
+    "location": "history/prior-audit/evidence/text/5f056d321e317d758a6d9882be84d2b32b60555244d92454645b7c2f3229f21d.js",
+    "bytes_read": 7311,
+    "sha256": "5f056d321e317d758a6d9882be84d2b32b60555244d92454645b7c2f3229f21d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0026",
+    "location": "history/prior-audit/evidence/text/e2c47053d48c5a2dfa7e0dbd67b5109050c44a2bc63809345b1a7560d6f142e9.js",
+    "bytes_read": 2073,
+    "sha256": "e2c47053d48c5a2dfa7e0dbd67b5109050c44a2bc63809345b1a7560d6f142e9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0027",
+    "location": "history/prior-audit/evidence/text/cbc034528976a1318d02ecaeb8c7f5bcc901c1aacf89a205d39c0e3cd9413f64.md",
+    "bytes_read": 6917,
+    "sha256": "24f7166ffd9c5474910dcbe89b3a7b4323a9cbea86ff45e2293f25120ef109b2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0029",
+    "location": "history/prior-audit/evidence/text/1b4678db6b14a69259f8a5a53b4dc9f3d54889c1c915c3bfa6b12f6ed4adc208.js",
+    "bytes_read": 3716,
+    "sha256": "1b4678db6b14a69259f8a5a53b4dc9f3d54889c1c915c3bfa6b12f6ed4adc208",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0030",
+    "location": "history/prior-audit/evidence/text/e2a91c1d8bf8a5bdd7a7987cedc54998252a7c4d449b93cec39ad8e1c0e8795e.json",
+    "bytes_read": 2140353,
+    "sha256": "e2a91c1d8bf8a5bdd7a7987cedc54998252a7c4d449b93cec39ad8e1c0e8795e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0032",
+    "location": "history/prior-audit/evidence/text/ccd9626036c3d7295de6f3039daf0d3cf244924f7b2d4031b4be33ac7e2b0fb8.js",
+    "bytes_read": 131517,
+    "sha256": "ccd9626036c3d7295de6f3039daf0d3cf244924f7b2d4031b4be33ac7e2b0fb8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0033",
+    "location": "history/prior-audit/evidence/binary-strings/b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28.txt",
+    "bytes_read": 106213,
+    "sha256": "f96c9b4f6a2324a7c5dcd47f216ae80bd8feef3b8bc5a9b44a04e3e50e23e412",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0035",
+    "location": "history/prior-audit/evidence/binary-strings/5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b.txt",
+    "bytes_read": 150,
+    "sha256": "06c952f6d06a538ab54599207082dd1d58e49dac7cb173d9fbba23aadb6e6462",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0036",
+    "location": "history/prior-audit/evidence/text/b2cacb67453e6be099d6e76e717b40e8d8e8b93716ec8320011c14fda62fd317.js",
+    "bytes_read": 42961,
+    "sha256": "3dfbed0ae42f0e272b2f382386b7ae4a1e53211fa51398ca48823e630630bd99",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0037",
+    "location": "history/prior-audit/evidence/binary-strings/064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35.txt",
+    "bytes_read": 405,
+    "sha256": "61d6da41c8383e0e209a33eabf64d84afc7ee680cfb55f3aa2f384126a03ad09",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0038",
+    "location": "history/prior-audit/evidence/text/b49d13f972f148f6797d968fcfc31462cb775deb2580be74f285b8fc9a8b27ef.js",
+    "bytes_read": 25983,
+    "sha256": "26a7cb5c8ef8154a465fad4c8b9dbe59a4118bc0df56fde32687e7e42411c389",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0039",
+    "location": "history/prior-audit/evidence/binary-strings/198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04.txt",
+    "bytes_read": 230,
+    "sha256": "5531e17814bf8931f68a5aa957ddd0c03f61104154c2fae4fdb644db538d52e1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0040",
+    "location": "history/prior-audit/evidence/text/ac824a28f05d12c5098d92048f024f786302e45ac9e0aaa9daf975ad4a8889bf.js",
+    "bytes_read": 28254,
+    "sha256": "ac824a28f05d12c5098d92048f024f786302e45ac9e0aaa9daf975ad4a8889bf",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0041",
+    "location": "history/prior-audit/evidence/binary-strings/59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559.txt",
+    "bytes_read": 2588,
+    "sha256": "8e4d4b8682399c683c5fd96f1e2eb3ab9915f1cb9458fe07136674f058cc96f7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0043",
+    "location": "history/prior-audit/evidence/text/baeb25aa3fee1219da00681db7eda02e906a2a6f27ebec2674b1ec4752bbea89.js",
+    "bytes_read": 12990,
+    "sha256": "baeb25aa3fee1219da00681db7eda02e906a2a6f27ebec2674b1ec4752bbea89",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0044",
+    "location": "history/prior-audit/evidence/text/e45a0e0e5467deec1b3f896f0f5c7d8af5a9bef7862b10ad910917e13a92af40.js",
+    "bytes_read": 3736,
+    "sha256": "e45a0e0e5467deec1b3f896f0f5c7d8af5a9bef7862b10ad910917e13a92af40",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0045",
+    "location": "history/prior-audit/evidence/text/28b92c2eb005f7d6c2823c0012ebf9832b97a79615b3e5b10be0bbd67e6beada.js",
+    "bytes_read": 910354,
+    "sha256": "28b92c2eb005f7d6c2823c0012ebf9832b97a79615b3e5b10be0bbd67e6beada",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0046",
+    "location": "history/prior-audit/evidence/text/2467338dbc85faaa4d9bbcecfe3149a33de8a0a241be526e3ca2ee245db52450.js",
+    "bytes_read": 6162,
+    "sha256": "2467338dbc85faaa4d9bbcecfe3149a33de8a0a241be526e3ca2ee245db52450",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0048",
+    "location": "history/prior-audit/evidence/text/9bfe315bd2c6c56a3c843cfd78efac6ff20485db2d0ca073cc752b1266e44e5a.js",
+    "bytes_read": 17092,
+    "sha256": "9bfe315bd2c6c56a3c843cfd78efac6ff20485db2d0ca073cc752b1266e44e5a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0051",
+    "location": "history/prior-audit/evidence/text/36ac6234d1368387d98cf96c6214e73c0b6ed888056e468ce2277dddd00bc8f3.html",
+    "bytes_read": 187,
+    "sha256": "36ac6234d1368387d98cf96c6214e73c0b6ed888056e468ce2277dddd00bc8f3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0054",
+    "location": "history/prior-audit/evidence/text/8ee40f0e7d9bd5b241f2257f803fae4aaa77a41583f22e1e6f2863b1523338ef.js",
+    "bytes_read": 4582,
+    "sha256": "8ee40f0e7d9bd5b241f2257f803fae4aaa77a41583f22e1e6f2863b1523338ef",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0055",
+    "location": "history/prior-audit/evidence/text/2adbf9d468b472e760f439ff8ee05ccc58423d88253d757a79218c5524970bd3.mjs",
+    "bytes_read": 6068,
+    "sha256": "dfb943ee97c94862111b3576da84bbb9d9394caff62f2860c2dbfab7a1863a12",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0056",
+    "location": "history/prior-audit/evidence/text/d9a795ffac8ea15c580f1a0f7cf0d17e73031c0439df466a59e8d8d93f4cbf90.mjs",
+    "bytes_read": 4790,
+    "sha256": "a9f07719f3c14565c38b911bea368a0073aef9c308216f46d6d9e5901f0ed6cf",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0057",
+    "location": "history/prior-audit/evidence/text/9eb21af53b0744e9aeba1ec92ac8a679bd0e35e2f244d335ef0bd0c7e2350554.mjs",
+    "bytes_read": 673,
+    "sha256": "9eb21af53b0744e9aeba1ec92ac8a679bd0e35e2f244d335ef0bd0c7e2350554",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0058",
+    "location": "history/prior-audit/evidence/text/84eae86539bdf13bd19663b8a159ef87e5b61176d3c4bfb571f6249de122b6d0.cjs",
+    "bytes_read": 789,
+    "sha256": "84eae86539bdf13bd19663b8a159ef87e5b61176d3c4bfb571f6249de122b6d0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0059",
+    "location": "history/prior-audit/evidence/text/098b1d1bcbda96d6a647a97d2cf62263510f843c76604ff0b5b87dd30912cb66.mjs",
+    "bytes_read": 10781,
+    "sha256": "098b1d1bcbda96d6a647a97d2cf62263510f843c76604ff0b5b87dd30912cb66",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0060",
+    "location": "history/prior-audit/evidence/text/ed2ebd175d07d00a6e8e2acd5669b407f4519f487f352651247196a639084fd0.mjs",
+    "bytes_read": 4425,
+    "sha256": "ed2ebd175d07d00a6e8e2acd5669b407f4519f487f352651247196a639084fd0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0061",
+    "location": "history/prior-audit/evidence/text/884a4d3d79bedad907bb7c7c9dd44f17dfe7f5af254c96ec26b36a316b53d1ce.mjs",
+    "bytes_read": 4462,
+    "sha256": "884a4d3d79bedad907bb7c7c9dd44f17dfe7f5af254c96ec26b36a316b53d1ce",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0062",
+    "location": "history/prior-audit/evidence/text/4a65b54119453e1b225522d8a7868af61bb6f8afa892f727c91d20fd79d79da1.mjs",
+    "bytes_read": 568,
+    "sha256": "4a65b54119453e1b225522d8a7868af61bb6f8afa892f727c91d20fd79d79da1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0063",
+    "location": "history/prior-audit/evidence/text/177eeda2a7d164731df8b3363d9c8ac82d53976eb31691068714ec17c262ef8d.mjs",
+    "bytes_read": 3659,
+    "sha256": "177eeda2a7d164731df8b3363d9c8ac82d53976eb31691068714ec17c262ef8d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0065",
+    "location": "history/prior-audit/evidence/text/dd701ae48361bdb568b755b2a84bd76fe5a8fe1297957a55bf98d2388fce84c7.html",
+    "bytes_read": 113115,
+    "sha256": "69e5147de5ca71e4ceffbe4e4de745c57886c265f8c976b3d7eb9fc21e0a5f59",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0066",
+    "location": "history/prior-audit/evidence/text/7ae71f1372a1a59a2be693c4042cad85a67fb872cd9d59b6029d3a6e4adeb58c.js",
+    "bytes_read": 297238,
+    "sha256": "665816142e52b0bcfa46c6d2d7d906e8381c82132e3f53e6a261fe6fd8330e71",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0067",
+    "location": "history/prior-audit/evidence/text/db95e817f9f5c6df4271dbb73cab441c2310cfa0a26ca8fa2f1ed1794217fc3b.js",
+    "bytes_read": 25988,
+    "sha256": "db95e817f9f5c6df4271dbb73cab441c2310cfa0a26ca8fa2f1ed1794217fc3b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0068",
+    "location": "history/prior-audit/evidence/text/e6e921674eae96164721f56dd9ea7df03a3ddcde742a74e0003394b51f731697.mjs",
+    "bytes_read": 8250,
+    "sha256": "e6e921674eae96164721f56dd9ea7df03a3ddcde742a74e0003394b51f731697",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0069",
+    "location": "history/prior-audit/evidence/text/c6c37e4eb874e42331d6aaf0fce294d4f22afd71a42b8d421ba813b820bb0245.json",
+    "bytes_read": 2640,
+    "sha256": "c6c37e4eb874e42331d6aaf0fce294d4f22afd71a42b8d421ba813b820bb0245",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0071",
+    "location": "history/prior-audit/evidence/text/9627afb5f7faeb8881390091e767ac756ead54e844b2f1cf51e34e79b1f1e77b.json",
+    "bytes_read": 794,
+    "sha256": "9627afb5f7faeb8881390091e767ac756ead54e844b2f1cf51e34e79b1f1e77b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0074",
+    "location": "history/prior-audit/evidence/text/894cade0354c23226513a3d3705a0746f1b09ae29514391c6117b2a6466b3f84.mjs",
+    "bytes_read": 5389,
+    "sha256": "894cade0354c23226513a3d3705a0746f1b09ae29514391c6117b2a6466b3f84",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0075",
+    "location": "history/prior-audit/evidence/text/c60ffd86c1ac12dc6e638afcf377e2549b9ecde6a63581b5687cce580109e5fb.mjs",
+    "bytes_read": 3802,
+    "sha256": "c60ffd86c1ac12dc6e638afcf377e2549b9ecde6a63581b5687cce580109e5fb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0076",
+    "location": "history/prior-audit/evidence/text/a2b26ff1f4e97f9006c573061dbf66aa05f12e2b6e44d2c1dcd62fbfc91e2116.mjs",
+    "bytes_read": 3229,
+    "sha256": "a2b26ff1f4e97f9006c573061dbf66aa05f12e2b6e44d2c1dcd62fbfc91e2116",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0077",
+    "location": "history/prior-audit/evidence/text/9d93269bbf5e9598c4a5a963b1ccf56318204a6568d2781b7d2d3b656b4a60fb.mjs",
+    "bytes_read": 3650,
+    "sha256": "9d93269bbf5e9598c4a5a963b1ccf56318204a6568d2781b7d2d3b656b4a60fb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0078",
+    "location": "history/prior-audit/evidence/text/522e3a8bdb994bdb16cca37535b16d674e0c9ba3e1d54f847769e14c7932fa83.mjs",
+    "bytes_read": 5306,
+    "sha256": "522e3a8bdb994bdb16cca37535b16d674e0c9ba3e1d54f847769e14c7932fa83",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0079",
+    "location": "history/prior-audit/evidence/text/7f77587e2516db0f714224efb68f9dc708daa80688c8a35d950d4aa699fa9c0b.mjs",
+    "bytes_read": 5455,
+    "sha256": "7f77587e2516db0f714224efb68f9dc708daa80688c8a35d950d4aa699fa9c0b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0080",
+    "location": "history/prior-audit/evidence/text/afbbccacdc85409ac1cb7037691a04e70dcb0e086226be966dab37e6286bafa6.mjs",
+    "bytes_read": 5275,
+    "sha256": "afbbccacdc85409ac1cb7037691a04e70dcb0e086226be966dab37e6286bafa6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0081",
+    "location": "history/prior-audit/evidence/text/14efc61acc0b08dbef2c6f3a45fc3ffb2f43c812d35e470746c4cb95945d52d9.mjs",
+    "bytes_read": 5489,
+    "sha256": "14efc61acc0b08dbef2c6f3a45fc3ffb2f43c812d35e470746c4cb95945d52d9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0082",
+    "location": "history/prior-audit/evidence/text/55a96b403f2c5c80fd4ce47f8c8b26e80b72e62f55db7702ef55bfb8ff472077.mjs",
+    "bytes_read": 5396,
+    "sha256": "55a96b403f2c5c80fd4ce47f8c8b26e80b72e62f55db7702ef55bfb8ff472077",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0083",
+    "location": "history/prior-audit/evidence/text/895d2ca664de095241f44f1b4ca17505a72b49cde3c73b6345066a92514d3ea9.mjs",
+    "bytes_read": 5424,
+    "sha256": "895d2ca664de095241f44f1b4ca17505a72b49cde3c73b6345066a92514d3ea9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0084",
+    "location": "history/prior-audit/evidence/text/f6cba2f5ca1f583f4d460a17c30de9e35a56ae5781cb1ec6829b3d8030b05b6b.mjs",
+    "bytes_read": 5472,
+    "sha256": "f6cba2f5ca1f583f4d460a17c30de9e35a56ae5781cb1ec6829b3d8030b05b6b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0085",
+    "location": "history/prior-audit/evidence/text/67903d9b37b3c88d1c813c7676fbc982592ba7a71e96b13c449608f035cc54f8.mjs",
+    "bytes_read": 5485,
+    "sha256": "67903d9b37b3c88d1c813c7676fbc982592ba7a71e96b13c449608f035cc54f8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0086",
+    "location": "history/prior-audit/evidence/text/4b82a777e2b2b1e394fd6762161672474cd7466855dbd925f2ef5ab4af98b8cd.mjs",
+    "bytes_read": 7001,
+    "sha256": "766a083294918a29c31245d01a2ff463a38f9881037154f55d84f533e816982c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0087",
+    "location": "history/prior-audit/evidence/text/57efca214b0499604e8c654b02b1f940cbc41b291f79bf91aaeecd1c2d163c1a.mjs",
+    "bytes_read": 7263,
+    "sha256": "bdb5b084510f0baf7a8aca27397819e93aed522e75a7154e33678483624da23c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0088",
+    "location": "history/prior-audit/evidence/text/5ffe3f155a69066811e93d44ec98779136932731d26333eccda5af0b5393944f.mjs",
+    "bytes_read": 7517,
+    "sha256": "68a56c7b004594259d3968c47badf720b111bbd57a716b8ebb934cc0fa1cdc1a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0089",
+    "location": "history/prior-audit/evidence/text/ccdba868f81654773b3ba23ea18c71f977abceed2752cf00c87f0ce2855bec73.js",
+    "bytes_read": 24967,
+    "sha256": "ccdba868f81654773b3ba23ea18c71f977abceed2752cf00c87f0ce2855bec73",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0090",
+    "location": "history/prior-audit/evidence/text/caa3496678e183116e22739f14faf528b0418713a9b1843df07f0ae9b3af256b.js",
+    "bytes_read": 162546,
+    "sha256": "caa3496678e183116e22739f14faf528b0418713a9b1843df07f0ae9b3af256b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0091",
+    "location": "history/prior-audit/evidence/text/ba6934e5a75fcade0551c862efc2a04f0601d82ac4140d56af825a174411ead7.js",
+    "bytes_read": 2218,
+    "sha256": "ba6934e5a75fcade0551c862efc2a04f0601d82ac4140d56af825a174411ead7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0092",
+    "location": "history/prior-audit/evidence/text/8258762afcd86e8359a2ab5be236dee4c633c53ab70c94cdc885fa95e3bd0057.js",
+    "bytes_read": 1395,
+    "sha256": "8258762afcd86e8359a2ab5be236dee4c633c53ab70c94cdc885fa95e3bd0057",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0093",
+    "location": "history/prior-audit/evidence/text/f7f0d2644341b89d284ce9afbf86c23b9e70075d979a444f090d362d90383c4b.js",
+    "bytes_read": 3525,
+    "sha256": "f7f0d2644341b89d284ce9afbf86c23b9e70075d979a444f090d362d90383c4b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0094",
+    "location": "history/prior-audit/evidence/text/017fc1eb8148a9d74bef6c4a2b593c02b65ab144a53e2def57d92e11723afb0a.js",
+    "bytes_read": 31741,
+    "sha256": "017fc1eb8148a9d74bef6c4a2b593c02b65ab144a53e2def57d92e11723afb0a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0095",
+    "location": "history/prior-audit/evidence/text/6d5ba26c0a50c1e969c0bae543217ff75c56ff46dac0e2a0e0f76b6442a245d4.js",
+    "bytes_read": 2007,
+    "sha256": "6d5ba26c0a50c1e969c0bae543217ff75c56ff46dac0e2a0e0f76b6442a245d4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0096",
+    "location": "history/prior-audit/evidence/text/452ffd2a415c03bd24d12f11299a0704af3e07ff0ee93ddb815b54880406cda6.js",
+    "bytes_read": 2173,
+    "sha256": "452ffd2a415c03bd24d12f11299a0704af3e07ff0ee93ddb815b54880406cda6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0097",
+    "location": "history/prior-audit/evidence/text/b45de936d2137b1bfcf0a3499f38ef2a66b9488cbbc5edd1be6f85bb0e407a4b.js",
+    "bytes_read": 2831,
+    "sha256": "b45de936d2137b1bfcf0a3499f38ef2a66b9488cbbc5edd1be6f85bb0e407a4b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0098",
+    "location": "history/prior-audit/evidence/text/3373d56e2c3f7df9bd1e25143e2905f3d52d7123ad5142e69e853783eeabd268.js",
+    "bytes_read": 1471,
+    "sha256": "3373d56e2c3f7df9bd1e25143e2905f3d52d7123ad5142e69e853783eeabd268",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0107",
+    "location": "history/prior-audit/evidence/text/2b8d2465be84a7f0c7a7a505fc0d9b447fc32f192004780fc390ffdba0d9a886.mjs",
+    "bytes_read": 7354,
+    "sha256": "d5f8b7f3ac958f4fa52c5979e6d0047f21e53d63bf52b49f6cb5bf66e9fd447e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0109",
+    "location": "history/prior-audit/evidence/text/f20a1fa1142b6cf57a0920249bd12b40a94624dcc57ac221168e9a8d120fd205.json",
+    "bytes_read": 63030,
+    "sha256": "f20a1fa1142b6cf57a0920249bd12b40a94624dcc57ac221168e9a8d120fd205",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0110",
+    "location": "history/prior-audit/evidence/text/98c92d4d47cc949131e02108c90e35c4478402be3ab50ae222e57a9a8170a293.json",
+    "bytes_read": 200306,
+    "sha256": "98c92d4d47cc949131e02108c90e35c4478402be3ab50ae222e57a9a8170a293",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0111",
+    "location": "history/prior-audit/evidence/text/02b5c907d266314c412d31c861328f5839464c5b7589d109a55a5e79e0377691.txt",
+    "bytes_read": 107,
+    "sha256": "02b5c907d266314c412d31c861328f5839464c5b7589d109a55a5e79e0377691",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0112",
+    "location": "history/prior-audit/evidence/text/72fc86ef8bf714d2ae2b2202b71512886cff008a111eb05f9f479da4d1ae279a.json",
+    "bytes_read": 48186,
+    "sha256": "72fc86ef8bf714d2ae2b2202b71512886cff008a111eb05f9f479da4d1ae279a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0113",
+    "location": "history/prior-audit/evidence/text/4c4b3bbf33bbb77fc82c4fd15bfbb3322f6e98a808cdc81220f0874b40f03392.mjs",
+    "bytes_read": 7830,
+    "sha256": "3a1be02b00574fbef3f3ef4d0a7265c4eac1c6522313b9cf5995a5661ebb11ad",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0115",
+    "location": "history/prior-audit/evidence/text/dba07813455605a4817b7ae8ae2a24ec9ceeff68b4fcb19e64189ecc9c50397e.txt",
+    "bytes_read": 107,
+    "sha256": "dba07813455605a4817b7ae8ae2a24ec9ceeff68b4fcb19e64189ecc9c50397e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0116",
+    "location": "history/prior-audit/evidence/text/38829c3ad3d10dcef5a7f97f81b557f764321cc7fdb763baf5ef3281f806af55.json",
+    "bytes_read": 63056,
+    "sha256": "38829c3ad3d10dcef5a7f97f81b557f764321cc7fdb763baf5ef3281f806af55",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0117",
+    "location": "history/prior-audit/evidence/text/38314495d440c2422e957bf090977acd721fd6b7a84b5732b6ff7e6264bf206e.mjs",
+    "bytes_read": 8654,
+    "sha256": "518139822d774a298d67e8712243665aafed88f7e9929e9da7cb40259246b4eb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0119",
+    "location": "history/prior-audit/evidence/text/29c500e719db6fa25be3373ed58c6561aa710be377aeb5882c802c44959cf30f.txt",
+    "bytes_read": 107,
+    "sha256": "29c500e719db6fa25be3373ed58c6561aa710be377aeb5882c802c44959cf30f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0120",
+    "location": "history/prior-audit/evidence/text/82dc06310df44cd8bafd4796ddc61f5410b555ce039f9759e57ee22301c68cd9.json",
+    "bytes_read": 63206,
+    "sha256": "82dc06310df44cd8bafd4796ddc61f5410b555ce039f9759e57ee22301c68cd9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0121",
+    "location": "history/prior-audit/evidence/text/f40a662420666cbcde75d1e6e6b3ab997f625f2cb754cefa7884acd708390726.mjs",
+    "bytes_read": 7398,
+    "sha256": "78445cad57b85f6f5d6536cde040ab7bcc1fe259c3a4fc005d55f0e5bdfd2b35",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0123",
+    "location": "history/prior-audit/evidence/text/5bdc8a36772944d4af938ae744d9e4c493780b49a3e13bd5b6180930b7840cc2.js",
+    "bytes_read": 131418,
+    "sha256": "5bdc8a36772944d4af938ae744d9e4c493780b49a3e13bd5b6180930b7840cc2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0129",
+    "location": "history/prior-audit/evidence/text/80b5b5e83802640f108731a6d63aabfd7f391f79cb03688f6af0122c60e51db1.js",
+    "bytes_read": 2392,
+    "sha256": "80b5b5e83802640f108731a6d63aabfd7f391f79cb03688f6af0122c60e51db1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0130",
+    "location": "history/prior-audit/evidence/text/9be041af8e66a9c4a3974af2790fc80d5fd1f68f55677435f68d0367806baa1d.js",
+    "bytes_read": 1849,
+    "sha256": "9be041af8e66a9c4a3974af2790fc80d5fd1f68f55677435f68d0367806baa1d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0131",
+    "location": "history/prior-audit/evidence/text/d0196aad230e74b2f1f8a0e28efc06e62a176306e26db4b0d189e3f58959502e.js",
+    "bytes_read": 5753,
+    "sha256": "d0196aad230e74b2f1f8a0e28efc06e62a176306e26db4b0d189e3f58959502e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0132",
+    "location": "history/prior-audit/evidence/text/5657a5b313d5a33d7a13e56aebe3796e79c69da1a30fd6181ba02a4851fb18a2.js",
+    "bytes_read": 7781,
+    "sha256": "5657a5b313d5a33d7a13e56aebe3796e79c69da1a30fd6181ba02a4851fb18a2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0133",
+    "location": "history/prior-audit/evidence/text/db42ce348f4138f8f23947fa16d20615e6ae096e318b312551fe6d18add3adb1.js",
+    "bytes_read": 22549,
+    "sha256": "db42ce348f4138f8f23947fa16d20615e6ae096e318b312551fe6d18add3adb1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0134",
+    "location": "history/prior-audit/evidence/text/d2a7cd07972bdf80e9898478f7baf4267b4c7375f89205e19ca6daa9207c25c6.js",
+    "bytes_read": 34927,
+    "sha256": "d2a7cd07972bdf80e9898478f7baf4267b4c7375f89205e19ca6daa9207c25c6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0135",
+    "location": "history/prior-audit/evidence/text/bda7b55e49c68db91dd6d3ebe8767b2ca63c49c58bf859bb560115a314b44e52.js",
+    "bytes_read": 6470,
+    "sha256": "bda7b55e49c68db91dd6d3ebe8767b2ca63c49c58bf859bb560115a314b44e52",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0136",
+    "location": "history/prior-audit/evidence/text/15443a966a65b77a795130c8ddf49f4e50d6c148222e22fe9a7b822847e02f9e.js",
+    "bytes_read": 12756,
+    "sha256": "15443a966a65b77a795130c8ddf49f4e50d6c148222e22fe9a7b822847e02f9e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0137",
+    "location": "history/prior-audit/evidence/text/2bb24a5cd5739f22254389be1849dfa93fd2e710376e736ca51adc884cf840d2.js",
+    "bytes_read": 1589,
+    "sha256": "2bb24a5cd5739f22254389be1849dfa93fd2e710376e736ca51adc884cf840d2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0138",
+    "location": "history/prior-audit/evidence/text/64eeab15a79f51e8e83e03d9463f3a7a6ae5399bf8f37036368467b54b48dad1.js",
+    "bytes_read": 1219,
+    "sha256": "64eeab15a79f51e8e83e03d9463f3a7a6ae5399bf8f37036368467b54b48dad1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0139",
+    "location": "history/prior-audit/evidence/text/23104b1667fc7d3dfa12316930b2ca4fee11e9435754a2d04a16f1253978946a.js",
+    "bytes_read": 5972,
+    "sha256": "23104b1667fc7d3dfa12316930b2ca4fee11e9435754a2d04a16f1253978946a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0140",
+    "location": "history/prior-audit/evidence/text/5d26764f7e7d49a47e9628f47dca3bb2859ea54374f47eccb9ed71f6e56a3b40.js",
+    "bytes_read": 2431,
+    "sha256": "5d26764f7e7d49a47e9628f47dca3bb2859ea54374f47eccb9ed71f6e56a3b40",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0141",
+    "location": "history/prior-audit/evidence/text/893674ce7b93f14f5f55ba654a2a6ed7e5333678598089715caf263a0e77f800.js",
+    "bytes_read": 40757,
+    "sha256": "893674ce7b93f14f5f55ba654a2a6ed7e5333678598089715caf263a0e77f800",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0142",
+    "location": "history/prior-audit/evidence/text/876d2ee3a307fd058e1b391f71fcb30fd6117fb21d9e66be69e89d9a40211023.js",
+    "bytes_read": 5443,
+    "sha256": "876d2ee3a307fd058e1b391f71fcb30fd6117fb21d9e66be69e89d9a40211023",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0143",
+    "location": "history/prior-audit/evidence/text/c7099d0beb4740b73374dd3a9161abf808e9629cd45a85d5ccef3324e615e9fa.js",
+    "bytes_read": 1972,
+    "sha256": "c7099d0beb4740b73374dd3a9161abf808e9629cd45a85d5ccef3324e615e9fa",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0144",
+    "location": "history/prior-audit/evidence/text/ee5ae9f7e71fa636976470dc3fafbfbef36527135350e21228d0894bce68aa32.js",
+    "bytes_read": 32157,
+    "sha256": "ee5ae9f7e71fa636976470dc3fafbfbef36527135350e21228d0894bce68aa32",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0145",
+    "location": "history/prior-audit/evidence/text/a0907399add239c3c896b4ce70ae4dde35c8d3e83e50ad055a5eb74fb2bb989d.js",
+    "bytes_read": 24375,
+    "sha256": "a0907399add239c3c896b4ce70ae4dde35c8d3e83e50ad055a5eb74fb2bb989d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0146",
+    "location": "history/prior-audit/evidence/text/91bb388e5a35c735e8c40d774316eb09f860a1467032f305625fd81728ef63ac.js",
+    "bytes_read": 16155,
+    "sha256": "91bb388e5a35c735e8c40d774316eb09f860a1467032f305625fd81728ef63ac",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0147",
+    "location": "history/prior-audit/evidence/text/30d66ded5276d5ec0e6aed47b0ece3c0f041227ab44ef352eee279cd1f6e1040.js",
+    "bytes_read": 14931,
+    "sha256": "30d66ded5276d5ec0e6aed47b0ece3c0f041227ab44ef352eee279cd1f6e1040",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0148",
+    "location": "history/prior-audit/evidence/text/9a91fd9d7ad5e19ad257a88eba5649f99b61c94f788d885319dd313792aaa7e2.js",
+    "bytes_read": 1312,
+    "sha256": "9a91fd9d7ad5e19ad257a88eba5649f99b61c94f788d885319dd313792aaa7e2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0149",
+    "location": "history/prior-audit/evidence/text/9194123b57148f381e93ef67c8cc4a7a7bf598399380e3a21d895c7caaa9964e.js",
+    "bytes_read": 5617,
+    "sha256": "9194123b57148f381e93ef67c8cc4a7a7bf598399380e3a21d895c7caaa9964e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0150",
+    "location": "history/prior-audit/evidence/text/00a4c584389af5c7d8eae0232150f9a0a7b1c9d834e5295463bbbb229ab9825b.js",
+    "bytes_read": 2382,
+    "sha256": "00a4c584389af5c7d8eae0232150f9a0a7b1c9d834e5295463bbbb229ab9825b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0151",
+    "location": "history/prior-audit/evidence/text/3a4eb08ecbde02f6eb9f34aaf34ba8a8e8cbfcb665af87e68989151e4bd78138.js",
+    "bytes_read": 3714,
+    "sha256": "3a4eb08ecbde02f6eb9f34aaf34ba8a8e8cbfcb665af87e68989151e4bd78138",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0152",
+    "location": "history/prior-audit/evidence/text/e1d78ef8159f526d33f70ffc2c06943303e1f2f8d623859b6456bb8074266899.js",
+    "bytes_read": 2481,
+    "sha256": "e1d78ef8159f526d33f70ffc2c06943303e1f2f8d623859b6456bb8074266899",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0153",
+    "location": "history/prior-audit/evidence/text/e5559f246444b0455ecdbae380ac8312067a4845bac1fb4f9a59d205c306ae12.js",
+    "bytes_read": 4116,
+    "sha256": "e5559f246444b0455ecdbae380ac8312067a4845bac1fb4f9a59d205c306ae12",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0154",
+    "location": "history/prior-audit/evidence/text/f7c03f4729af147aaa79e75a7dd28cde21994941926fd75191e800e5f461fefb.js",
+    "bytes_read": 1167,
+    "sha256": "f7c03f4729af147aaa79e75a7dd28cde21994941926fd75191e800e5f461fefb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0155",
+    "location": "history/prior-audit/evidence/text/fc3e8633bc31988d7d7af4857c53f6a4cc785c8e7009b02ea91eaedd92acb245.js",
+    "bytes_read": 2201,
+    "sha256": "fc3e8633bc31988d7d7af4857c53f6a4cc785c8e7009b02ea91eaedd92acb245",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0156",
+    "location": "history/prior-audit/evidence/text/5085935d7494c97ebdeba8f714cbef3e906a0a01d8e09a078632f8f655f47bd9.js",
+    "bytes_read": 1960,
+    "sha256": "5085935d7494c97ebdeba8f714cbef3e906a0a01d8e09a078632f8f655f47bd9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0157",
+    "location": "history/prior-audit/evidence/text/ff1b9e85da2ef2bbd05c4a93024ab05c428f3535f57496a161ad579696344c4b.js",
+    "bytes_read": 9327,
+    "sha256": "ff1b9e85da2ef2bbd05c4a93024ab05c428f3535f57496a161ad579696344c4b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0158",
+    "location": "history/prior-audit/evidence/text/ff1d0bae1cfb7954b4b6024c78c7e883543e11fa91431295ea2102e896564820.js",
+    "bytes_read": 3221,
+    "sha256": "ff1d0bae1cfb7954b4b6024c78c7e883543e11fa91431295ea2102e896564820",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0159",
+    "location": "history/prior-audit/evidence/text/0fff931cb946efaf8538b8006fb0a84f10f54722e6a8f638eb4cf738fe806f5c.js",
+    "bytes_read": 4821,
+    "sha256": "0fff931cb946efaf8538b8006fb0a84f10f54722e6a8f638eb4cf738fe806f5c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0160",
+    "location": "history/prior-audit/evidence/text/b029d59a2fefb619d9b540928ab2ccffff3ceb56a59389b2a76700f14ae0fbae.js",
+    "bytes_read": 6858,
+    "sha256": "b029d59a2fefb619d9b540928ab2ccffff3ceb56a59389b2a76700f14ae0fbae",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0161",
+    "location": "history/prior-audit/evidence/text/e0d48d1eb79f4de7c24049463bc5f408da6035f44753c93ad6af99893a954c59.js",
+    "bytes_read": 1392,
+    "sha256": "e0d48d1eb79f4de7c24049463bc5f408da6035f44753c93ad6af99893a954c59",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0162",
+    "location": "history/prior-audit/evidence/text/596f24d813609de600dab5c5330c53b853362e6bd114fb989b0802860442a7f5.js",
+    "bytes_read": 3173,
+    "sha256": "596f24d813609de600dab5c5330c53b853362e6bd114fb989b0802860442a7f5",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0163",
+    "location": "history/prior-audit/evidence/text/685f81519b86972486f4b8f3d0873f386d10db5aef6aa8d044dad3138a7e87f4.js",
+    "bytes_read": 11817,
+    "sha256": "685f81519b86972486f4b8f3d0873f386d10db5aef6aa8d044dad3138a7e87f4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0164",
+    "location": "history/prior-audit/evidence/text/d791b96d7f7477ec00d822b77442c703d1a741441973b080d83ad7a27ac1167e.js",
+    "bytes_read": 1553,
+    "sha256": "d791b96d7f7477ec00d822b77442c703d1a741441973b080d83ad7a27ac1167e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0165",
+    "location": "history/prior-audit/evidence/text/fc4861719299025ff6415767e173f77716ce7db579ab36d68c4e9118da1efc7a.js",
+    "bytes_read": 3536,
+    "sha256": "fc4861719299025ff6415767e173f77716ce7db579ab36d68c4e9118da1efc7a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0166",
+    "location": "history/prior-audit/evidence/text/c9d46afa8f341d217d7373f62bbe3e1d502e58279f15c5fe93babbb390a1d23e.js",
+    "bytes_read": 2255,
+    "sha256": "c9d46afa8f341d217d7373f62bbe3e1d502e58279f15c5fe93babbb390a1d23e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0167",
+    "location": "history/prior-audit/evidence/text/1c8ca4607ad857d4b34a8bcf5aef2dd6b485c2f77532daebb36e9ebab01d0d39.js",
+    "bytes_read": 2224,
+    "sha256": "1c8ca4607ad857d4b34a8bcf5aef2dd6b485c2f77532daebb36e9ebab01d0d39",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0168",
+    "location": "history/prior-audit/evidence/text/9dfcdf1fd9783f66eb63007ab6d37102078358b362cdb6b9b041507c0b62fb06.js",
+    "bytes_read": 4212,
+    "sha256": "9dfcdf1fd9783f66eb63007ab6d37102078358b362cdb6b9b041507c0b62fb06",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0169",
+    "location": "history/prior-audit/evidence/text/d2e4f7e832d5e07d0df6ba057336c3ec11288d2361c99ebc90aa90c57a8069fe.js",
+    "bytes_read": 2803,
+    "sha256": "d2e4f7e832d5e07d0df6ba057336c3ec11288d2361c99ebc90aa90c57a8069fe",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0170",
+    "location": "history/prior-audit/evidence/text/2cba4f0d4ce625c8cf10aa9301850ada74827e1b60da69719bb7670bfe52259d.js",
+    "bytes_read": 3194,
+    "sha256": "2cba4f0d4ce625c8cf10aa9301850ada74827e1b60da69719bb7670bfe52259d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0171",
+    "location": "history/prior-audit/evidence/text/4e98bedeb8658d0881e50144ad191091b5c756b869eee0c18ed966fb9ee01e41.js",
+    "bytes_read": 24747,
+    "sha256": "4e98bedeb8658d0881e50144ad191091b5c756b869eee0c18ed966fb9ee01e41",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0172",
+    "location": "history/prior-audit/evidence/text/3d80a1dda3135e61cc765efe288d9ca24a02b973c6ac0a9822c3c32ff887f804.js",
+    "bytes_read": 6583,
+    "sha256": "3d80a1dda3135e61cc765efe288d9ca24a02b973c6ac0a9822c3c32ff887f804",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0173",
+    "location": "history/prior-audit/evidence/text/00c17e96bb3c6be0311c97a02d61b6122f645fbf8d636acbe6a5e7f4236d4340.js",
+    "bytes_read": 3785,
+    "sha256": "00c17e96bb3c6be0311c97a02d61b6122f645fbf8d636acbe6a5e7f4236d4340",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0174",
+    "location": "history/prior-audit/evidence/text/9f4f84545a438a049db325a87e9f0927cf330e11ca4124a4305e836d12fd84be.js",
+    "bytes_read": 8471,
+    "sha256": "9f4f84545a438a049db325a87e9f0927cf330e11ca4124a4305e836d12fd84be",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0175",
+    "location": "history/prior-audit/evidence/text/4be0ac1c4252308e1be3493430420dfd11fc1f009ff2b2e249ed6a97434c4e7b.js",
+    "bytes_read": 8375,
+    "sha256": "4be0ac1c4252308e1be3493430420dfd11fc1f009ff2b2e249ed6a97434c4e7b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0176",
+    "location": "history/prior-audit/evidence/text/2cd03008b05c98afca24afe589248110e8bc4ba867f40ee4adba4ae361b27ec0.js",
+    "bytes_read": 1350,
+    "sha256": "2cd03008b05c98afca24afe589248110e8bc4ba867f40ee4adba4ae361b27ec0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0177",
+    "location": "history/prior-audit/evidence/text/0028d9058d0a86d257d71c627e62d7f6714be854b986a82e9a1bf1c4a6cabb74.js",
+    "bytes_read": 13240,
+    "sha256": "0028d9058d0a86d257d71c627e62d7f6714be854b986a82e9a1bf1c4a6cabb74",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0178",
+    "location": "history/prior-audit/evidence/text/058cb22094e269d06d05dba21718fcedcfb7af95d49e1777e4e763e7ae7bb9ab.js",
+    "bytes_read": 5385,
+    "sha256": "058cb22094e269d06d05dba21718fcedcfb7af95d49e1777e4e763e7ae7bb9ab",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0179",
+    "location": "history/prior-audit/evidence/text/05f2ba7ea7e678abd94864230e25d6bbe34873396d323b5186ce32d028f4ffb0.js",
+    "bytes_read": 7356,
+    "sha256": "05f2ba7ea7e678abd94864230e25d6bbe34873396d323b5186ce32d028f4ffb0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0180",
+    "location": "history/prior-audit/evidence/text/64dd57b549af25c8f92a1bce522a895f38f5e7e29349c4d74189e05507a3641e.js",
+    "bytes_read": 6840,
+    "sha256": "64dd57b549af25c8f92a1bce522a895f38f5e7e29349c4d74189e05507a3641e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0181",
+    "location": "history/prior-audit/evidence/text/6195f2f8cfd9f44e43102289b695f62ab4f59c59f9ac9c9cc7dd29396d42a5a4.js",
+    "bytes_read": 3423,
+    "sha256": "6195f2f8cfd9f44e43102289b695f62ab4f59c59f9ac9c9cc7dd29396d42a5a4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0182",
+    "location": "history/prior-audit/evidence/text/4758f9dd282bf7c6f17a05f2d2b5af538ba132d588b6dd62adf4dd257ef62ef8.js",
+    "bytes_read": 3315,
+    "sha256": "4758f9dd282bf7c6f17a05f2d2b5af538ba132d588b6dd62adf4dd257ef62ef8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0183",
+    "location": "history/prior-audit/evidence/text/9e0b2cc2b609701c265b68cd697a0f0fcb0dcfed1fc0ea8daddf1e4e26eaaec5.js",
+    "bytes_read": 11624,
+    "sha256": "9e0b2cc2b609701c265b68cd697a0f0fcb0dcfed1fc0ea8daddf1e4e26eaaec5",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0184",
+    "location": "history/prior-audit/evidence/text/881cba127f116ff0c9a31351b007ae90b893aa09fc3cdddb72082904d0f96c10.js",
+    "bytes_read": 2080,
+    "sha256": "881cba127f116ff0c9a31351b007ae90b893aa09fc3cdddb72082904d0f96c10",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0185",
+    "location": "history/prior-audit/evidence/text/2ea3d95c3779cb2a143435df4b4a5edd0b51fb00a67d1cf3d966eaea70d1f09a.js",
+    "bytes_read": 5011,
+    "sha256": "2ea3d95c3779cb2a143435df4b4a5edd0b51fb00a67d1cf3d966eaea70d1f09a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0186",
+    "location": "history/prior-audit/evidence/text/9a84d7171f815ac9a29a110ab0b0193712ce1c08258ae1eae045fab0c7260fb3.js",
+    "bytes_read": 5990,
+    "sha256": "9a84d7171f815ac9a29a110ab0b0193712ce1c08258ae1eae045fab0c7260fb3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0187",
+    "location": "history/prior-audit/evidence/text/b56fb7107bc84ab8fd248841e29159a59243f0a1a67d82391e250268a8050376.js",
+    "bytes_read": 15034,
+    "sha256": "b56fb7107bc84ab8fd248841e29159a59243f0a1a67d82391e250268a8050376",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0188",
+    "location": "history/prior-audit/evidence/text/47abeadc348e87324816de5312861b5474d9f21de731615f56779d0535153da5.js",
+    "bytes_read": 1579,
+    "sha256": "47abeadc348e87324816de5312861b5474d9f21de731615f56779d0535153da5",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0189",
+    "location": "history/prior-audit/evidence/text/fdccb4155b6ca2bc43faa440d0c7cc2893969a8d3926b068c547c7d2e0a442c4.js",
+    "bytes_read": 2148,
+    "sha256": "fdccb4155b6ca2bc43faa440d0c7cc2893969a8d3926b068c547c7d2e0a442c4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0190",
+    "location": "history/prior-audit/evidence/text/e8cb8f3fd6860a27ac4e5c7b69ae82e3ea93640862d321da3d0c2aedcd9e8ae9.js",
+    "bytes_read": 2775,
+    "sha256": "e8cb8f3fd6860a27ac4e5c7b69ae82e3ea93640862d321da3d0c2aedcd9e8ae9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0191",
+    "location": "history/prior-audit/evidence/text/960d6d244581e2c6cf8a346836cfdcfc3dd1eee17f5687caba27eea271e04f5d.js",
+    "bytes_read": 15364,
+    "sha256": "960d6d244581e2c6cf8a346836cfdcfc3dd1eee17f5687caba27eea271e04f5d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0192",
+    "location": "history/prior-audit/evidence/text/ddf32fa4e9cfc1c9cdca0b30ed2e49781b407a3683c5792e9f17a58d3ed1eefe.js",
+    "bytes_read": 11100,
+    "sha256": "ddf32fa4e9cfc1c9cdca0b30ed2e49781b407a3683c5792e9f17a58d3ed1eefe",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0193",
+    "location": "history/prior-audit/evidence/text/628eb33ad74289237b6fa213ed7b4e17c08e1a3910c310bfb1c1b68ecdfd6203.js",
+    "bytes_read": 2657,
+    "sha256": "628eb33ad74289237b6fa213ed7b4e17c08e1a3910c310bfb1c1b68ecdfd6203",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0194",
+    "location": "history/prior-audit/evidence/text/76157e7eff886e260e865d9fe2888fe74ca2ac38fd0b2b245a70f0cfc83ffd20.js",
+    "bytes_read": 32154,
+    "sha256": "76157e7eff886e260e865d9fe2888fe74ca2ac38fd0b2b245a70f0cfc83ffd20",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0195",
+    "location": "history/prior-audit/evidence/text/2cf85bdc8d311a0dadac352da0102f30857c537530ff9be7770388aeab35138d.js",
+    "bytes_read": 2314,
+    "sha256": "2cf85bdc8d311a0dadac352da0102f30857c537530ff9be7770388aeab35138d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0196",
+    "location": "history/prior-audit/evidence/text/02189c9a5a423c14fc9f58a1a95059099ef5f122b3d2db97c4c16e6281437c69.js",
+    "bytes_read": 7827,
+    "sha256": "02189c9a5a423c14fc9f58a1a95059099ef5f122b3d2db97c4c16e6281437c69",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0197",
+    "location": "history/prior-audit/evidence/text/1dc83d0aa106b97f341cbbd37e16bc00dda4b9e6f091cdf7ca4e30bded8e482c.js",
+    "bytes_read": 1803,
+    "sha256": "1dc83d0aa106b97f341cbbd37e16bc00dda4b9e6f091cdf7ca4e30bded8e482c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0198",
+    "location": "history/prior-audit/evidence/text/1e744494704a7fc49ff530e00b7ba73a0249890fe08ace6a27c6d5dacaf484f1.js",
+    "bytes_read": 4158,
+    "sha256": "1e744494704a7fc49ff530e00b7ba73a0249890fe08ace6a27c6d5dacaf484f1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0199",
+    "location": "history/prior-audit/evidence/text/872f071267e030b74869d41b3daf411ac67e8e3b9fc936f2041d6c95cf7f3218.js",
+    "bytes_read": 4261,
+    "sha256": "872f071267e030b74869d41b3daf411ac67e8e3b9fc936f2041d6c95cf7f3218",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0200",
+    "location": "history/prior-audit/evidence/text/18de0db2e171ef6a5dd964c310fafe4df24921b633aaff6b311a375a4ec90621.js",
+    "bytes_read": 5165,
+    "sha256": "18de0db2e171ef6a5dd964c310fafe4df24921b633aaff6b311a375a4ec90621",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0201",
+    "location": "history/prior-audit/evidence/text/7b48978996e293cd2e02e9853ab5ba84a3684afe8a7e4c5bd40f8e89a1a85571.js",
+    "bytes_read": 168655,
+    "sha256": "7b48978996e293cd2e02e9853ab5ba84a3684afe8a7e4c5bd40f8e89a1a85571",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0202",
+    "location": "history/prior-audit/evidence/text/c2d9ded354ef28c52fe4f639281eb57b246dda0121097b9e8b0224a4739bb8d7.txt",
+    "bytes_read": 3620,
+    "sha256": "c2d9ded354ef28c52fe4f639281eb57b246dda0121097b9e8b0224a4739bb8d7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0204",
+    "location": "history/prior-audit/evidence/text/4ac664979de9b0f7962f0ad3f6ac5119bedac8f5cff0470939c11781d021c790.txt",
+    "bytes_read": 2283,
+    "sha256": "4ac664979de9b0f7962f0ad3f6ac5119bedac8f5cff0470939c11781d021c790",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0656",
+    "location": "history/prior-audit/evidence/text/218d9faaad81f610109eb65bbc05b35de552e879c2e350be736d85b8d68b768d.json",
+    "bytes_read": 23453,
+    "sha256": "218d9faaad81f610109eb65bbc05b35de552e879c2e350be736d85b8d68b768d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0660",
+    "location": "history/prior-audit/evidence/text/e3872aef2c888219d18f135652c89bc8920d4e8def2b5b1409d7fd8ad8ea3b09.mjs",
+    "bytes_read": 6259,
+    "sha256": "f720af6c712fd28f63ed20f69a9213f952d4059bd6d956b8c585cb97063f357d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0661",
+    "location": "history/prior-audit/evidence/text/bdb6bf4b1463f5150da2084c0c861ed31474afe70bcea58bbb0bc33564073a70.mjs",
+    "bytes_read": 6899,
+    "sha256": "bdb6bf4b1463f5150da2084c0c861ed31474afe70bcea58bbb0bc33564073a70",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0662",
+    "location": "history/prior-audit/evidence/text/634efbaebe97cb8fe83bec0c35b54167a97e9ab52dcbbbed7434303f30f2cf33.json",
+    "bytes_read": 44,
+    "sha256": "634efbaebe97cb8fe83bec0c35b54167a97e9ab52dcbbbed7434303f30f2cf33",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0663",
+    "location": "history/prior-audit/evidence/text/64b02c478c792b3a6ab72001b3daa539cf578e33adfd256b911c0d5049f06e6f.json",
+    "bytes_read": 213,
+    "sha256": "64b02c478c792b3a6ab72001b3daa539cf578e33adfd256b911c0d5049f06e6f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0664",
+    "location": "history/prior-audit/evidence/text/23c59932ae05b77fd34ef4f8e3bf2a6899c6c6ad8fec1bc20f5cfd55c85e061d.json",
+    "bytes_read": 312,
+    "sha256": "23c59932ae05b77fd34ef4f8e3bf2a6899c6c6ad8fec1bc20f5cfd55c85e061d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0665",
+    "location": "history/prior-audit/evidence/text/8f22bd694857e5644a97a12822a5a796d3021afe629e62d6837211d7b84a3f49.json",
+    "bytes_read": 315,
+    "sha256": "8f22bd694857e5644a97a12822a5a796d3021afe629e62d6837211d7b84a3f49",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0666",
+    "location": "history/prior-audit/evidence/text/53f372ada98bb09c633ab219371fb96ead61acaf9d8fdce5accbaacece9b5624.json",
+    "bytes_read": 315,
+    "sha256": "53f372ada98bb09c633ab219371fb96ead61acaf9d8fdce5accbaacece9b5624",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0667",
+    "location": "history/prior-audit/evidence/text/45669e9b560c1baea0cdafcb159e3a96a523a84464be2e1cbec40c9535d89601.json",
+    "bytes_read": 339,
+    "sha256": "45669e9b560c1baea0cdafcb159e3a96a523a84464be2e1cbec40c9535d89601",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0668",
+    "location": "history/prior-audit/evidence/text/ca28baa1df111d30a7adaa84181004146659bba9ff45edb0397b02b9f430477c.json",
+    "bytes_read": 339,
+    "sha256": "ca28baa1df111d30a7adaa84181004146659bba9ff45edb0397b02b9f430477c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0669",
+    "location": "history/prior-audit/evidence/text/59c5daea5e0b73c8849c3851a9852e15890db2677adbe6bc04986e53ebe65740.json",
+    "bytes_read": 389,
+    "sha256": "59c5daea5e0b73c8849c3851a9852e15890db2677adbe6bc04986e53ebe65740",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0670",
+    "location": "history/prior-audit/evidence/text/fe1d885bacc290248153731ba1da5dc75ba506d6fc22598047f313f6b245f5d5.json",
+    "bytes_read": 150,
+    "sha256": "fe1d885bacc290248153731ba1da5dc75ba506d6fc22598047f313f6b245f5d5",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0671",
+    "location": "history/prior-audit/evidence/text/153c4d7e52cd36e141d65d6cd5a8ea2fb6314127e17fd8645d0942fe091409a7.json",
+    "bytes_read": 148,
+    "sha256": "153c4d7e52cd36e141d65d6cd5a8ea2fb6314127e17fd8645d0942fe091409a7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0672",
+    "location": "history/prior-audit/evidence/text/502ee1cd639f79799f1e82c1609271236e6bf4f2f29fdc39762ba4f29a2c342d.json",
+    "bytes_read": 148,
+    "sha256": "502ee1cd639f79799f1e82c1609271236e6bf4f2f29fdc39762ba4f29a2c342d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0673",
+    "location": "history/prior-audit/evidence/text/273a93c4aaf96bdbd56d1203f256159056bc3011e3cffdf2b9e663155a174e9a.json",
+    "bytes_read": 146,
+    "sha256": "273a93c4aaf96bdbd56d1203f256159056bc3011e3cffdf2b9e663155a174e9a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0674",
+    "location": "history/prior-audit/evidence/text/cafe6334b2119c003b595cc7745c11d8d9118ab4af5a60cb6dfaa548f65d2977.json",
+    "bytes_read": 118,
+    "sha256": "cafe6334b2119c003b595cc7745c11d8d9118ab4af5a60cb6dfaa548f65d2977",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0675",
+    "location": "history/prior-audit/evidence/text/0b7623d739451d5051acc9ac61031b4641595aec386d51ab30b4a738999d08f7.json",
+    "bytes_read": 148,
+    "sha256": "0b7623d739451d5051acc9ac61031b4641595aec386d51ab30b4a738999d08f7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0676",
+    "location": "history/prior-audit/evidence/text/728ef760c30900a710c8e3984c943ef0ef40831bf0de8e6fe235c5aa0fab00fb.json",
+    "bytes_read": 146,
+    "sha256": "728ef760c30900a710c8e3984c943ef0ef40831bf0de8e6fe235c5aa0fab00fb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0677",
+    "location": "history/prior-audit/evidence/text/ffbc6ee74324f5f01835c4637b07ee337a9db742c9e7b6b30bf48a8bd7ba6e79.json",
+    "bytes_read": 160,
+    "sha256": "ffbc6ee74324f5f01835c4637b07ee337a9db742c9e7b6b30bf48a8bd7ba6e79",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0678",
+    "location": "history/prior-audit/evidence/text/29492cfdb25929f164f006ba9f7bd7a0c0eaa53bc0ce02e3b568c15620e3f60a.json",
+    "bytes_read": 158,
+    "sha256": "29492cfdb25929f164f006ba9f7bd7a0c0eaa53bc0ce02e3b568c15620e3f60a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0679",
+    "location": "history/prior-audit/evidence/text/31622dc830d6b7e0b8881154e38fa26e62ff0e1f4e05914b8e7562eda95da78c.json",
+    "bytes_read": 327,
+    "sha256": "31622dc830d6b7e0b8881154e38fa26e62ff0e1f4e05914b8e7562eda95da78c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0680",
+    "location": "history/prior-audit/evidence/text/92667900f9c7f40cd34cc506a620aae6faf7a39ae0f38c24a00376e1a0852a81.json",
+    "bytes_read": 327,
+    "sha256": "92667900f9c7f40cd34cc506a620aae6faf7a39ae0f38c24a00376e1a0852a81",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0681",
+    "location": "history/prior-audit/evidence/text/a8fd788fb8ac2a720a9dc13eb4f8b1780d6a298ec5b22ab06a31f59450c9c0c7.json",
+    "bytes_read": 324,
+    "sha256": "a8fd788fb8ac2a720a9dc13eb4f8b1780d6a298ec5b22ab06a31f59450c9c0c7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0682",
+    "location": "history/prior-audit/evidence/text/ad455442a1f966b488bbf24adf3e4ebacb4e5cd16e45365aa11371cccb3af4e0.json",
+    "bytes_read": 327,
+    "sha256": "ad455442a1f966b488bbf24adf3e4ebacb4e5cd16e45365aa11371cccb3af4e0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0683",
+    "location": "history/prior-audit/evidence/text/1ae842821cea9840ac59424ffa240f0f0b0ed62241fed34acdcf8ee4b31376de.json",
+    "bytes_read": 128,
+    "sha256": "1ae842821cea9840ac59424ffa240f0f0b0ed62241fed34acdcf8ee4b31376de",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0684",
+    "location": "history/prior-audit/evidence/text/8e23f2f714ac199c87d5535962f95e3409d3751257c8f930e54234a43aac3530.json",
+    "bytes_read": 122,
+    "sha256": "8e23f2f714ac199c87d5535962f95e3409d3751257c8f930e54234a43aac3530",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0685",
+    "location": "history/prior-audit/evidence/text/9fee5fa9366d7d68a33be95b0fb1f3275466cfb3e5b6ee099bba8de8c2c77a7c.json",
+    "bytes_read": 120,
+    "sha256": "9fee5fa9366d7d68a33be95b0fb1f3275466cfb3e5b6ee099bba8de8c2c77a7c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0686",
+    "location": "history/prior-audit/evidence/text/3560f6d08f2df6dcac4e0bed96b6210240762e411d26e12b74741c3f3107b8f4.json",
+    "bytes_read": 92,
+    "sha256": "3560f6d08f2df6dcac4e0bed96b6210240762e411d26e12b74741c3f3107b8f4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0687",
+    "location": "history/prior-audit/evidence/text/cb433ab51fd591e85e82fd0ea9b554b27b0cc3b0e9818c92e84ceb5b7df648eb.json",
+    "bytes_read": 102,
+    "sha256": "cb433ab51fd591e85e82fd0ea9b554b27b0cc3b0e9818c92e84ceb5b7df648eb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0688",
+    "location": "history/prior-audit/evidence/text/ea40d261ea5ef3bd71ed02a8965c90b89324b26be6df665804299f04074b19c9.json",
+    "bytes_read": 108,
+    "sha256": "ea40d261ea5ef3bd71ed02a8965c90b89324b26be6df665804299f04074b19c9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0689",
+    "location": "history/prior-audit/evidence/text/c67f541c0f8001a77f7b424e3eed6ed0ce60067660a9b270298558b5ac658a46.json",
+    "bytes_read": 110,
+    "sha256": "c67f541c0f8001a77f7b424e3eed6ed0ce60067660a9b270298558b5ac658a46",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0690",
+    "location": "history/prior-audit/evidence/text/66c3239c233a78d2795141ea7bf8d85c79f8e8f0032dfdddc43a69285e02cf8e.json",
+    "bytes_read": 112,
+    "sha256": "66c3239c233a78d2795141ea7bf8d85c79f8e8f0032dfdddc43a69285e02cf8e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0691",
+    "location": "history/prior-audit/evidence/text/3038aad8f34bfc8a1732ae27c9b0aadd37715ab2cb15bbe4a7b8b60e1610f533.json",
+    "bytes_read": 133,
+    "sha256": "3038aad8f34bfc8a1732ae27c9b0aadd37715ab2cb15bbe4a7b8b60e1610f533",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0692",
+    "location": "history/prior-audit/evidence/text/7b7c826974e89eba0f5282ff2521bc9eb872be9447b5ca199452be3c45339328.json",
+    "bytes_read": 220,
+    "sha256": "7b7c826974e89eba0f5282ff2521bc9eb872be9447b5ca199452be3c45339328",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0693",
+    "location": "history/prior-audit/evidence/text/30156287ccc8418f92ff9e48783ae116d6fa4adc87c0cc7b14b8652b38e5ba4f.json",
+    "bytes_read": 382,
+    "sha256": "30156287ccc8418f92ff9e48783ae116d6fa4adc87c0cc7b14b8652b38e5ba4f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0694",
+    "location": "history/prior-audit/evidence/text/c0e33205eab382b29af3c0d6399e8f198839f5636c2a2a76ae7fa0ae23ff518f.json",
+    "bytes_read": 357,
+    "sha256": "c0e33205eab382b29af3c0d6399e8f198839f5636c2a2a76ae7fa0ae23ff518f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0695",
+    "location": "history/prior-audit/evidence/text/90e1c198a668bfe5518d4b700fed666cf3393e75418857707e107d1240c9db8b.json",
+    "bytes_read": 435,
+    "sha256": "90e1c198a668bfe5518d4b700fed666cf3393e75418857707e107d1240c9db8b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0696",
+    "location": "history/prior-audit/evidence/text/fe8ceb0c83ab246178adab8fb9ead76080b68039b012a91c6077397e5c008c84.json",
+    "bytes_read": 433,
+    "sha256": "fe8ceb0c83ab246178adab8fb9ead76080b68039b012a91c6077397e5c008c84",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0697",
+    "location": "history/prior-audit/evidence/text/2e08d990afc1c80a0e63589fe5eeccd9bbbe31c0353975ec7f01382341937b0e.json",
+    "bytes_read": 435,
+    "sha256": "2e08d990afc1c80a0e63589fe5eeccd9bbbe31c0353975ec7f01382341937b0e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0698",
+    "location": "history/prior-audit/evidence/text/eca1c041e4291afc307003f0077085e60836b8a5a18116deb1d9b089d55b2aab.json",
+    "bytes_read": 433,
+    "sha256": "eca1c041e4291afc307003f0077085e60836b8a5a18116deb1d9b089d55b2aab",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0699",
+    "location": "history/prior-audit/evidence/text/57a47be47c456a3f8f3c732dc7b83a8b505fe96aefce058f08e8c67758a8c08e.json",
+    "bytes_read": 99,
+    "sha256": "57a47be47c456a3f8f3c732dc7b83a8b505fe96aefce058f08e8c67758a8c08e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0700",
+    "location": "history/prior-audit/evidence/text/9a973c8d2aecbc532748fb433ff946cc1140745093eeb17e20cad76cd3e7fa70.json",
+    "bytes_read": 77,
+    "sha256": "9a973c8d2aecbc532748fb433ff946cc1140745093eeb17e20cad76cd3e7fa70",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0701",
+    "location": "history/prior-audit/evidence/text/3e47ca05f11139ba63994477ad1d630de2366c81b0134b07d513cce83459396d.json",
+    "bytes_read": 94,
+    "sha256": "3e47ca05f11139ba63994477ad1d630de2366c81b0134b07d513cce83459396d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0702",
+    "location": "history/prior-audit/evidence/text/6c9435a32fdafb7b2bde5648fb9376a67936593f6a326bade2f1b1087dc6446d.json",
+    "bytes_read": 270,
+    "sha256": "6c9435a32fdafb7b2bde5648fb9376a67936593f6a326bade2f1b1087dc6446d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0703",
+    "location": "history/prior-audit/evidence/text/82c74b664f306acc74075b6407aaf8e5c744ba68d8723d416f18c05a4fe24dba.json",
+    "bytes_read": 243,
+    "sha256": "82c74b664f306acc74075b6407aaf8e5c744ba68d8723d416f18c05a4fe24dba",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0704",
+    "location": "history/prior-audit/evidence/text/e640db279598bd5c6717aa7c8a0d736295fbc208d5a0d8b617ae6d7801e1b7ff.json",
+    "bytes_read": 183,
+    "sha256": "e640db279598bd5c6717aa7c8a0d736295fbc208d5a0d8b617ae6d7801e1b7ff",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0705",
+    "location": "history/prior-audit/evidence/text/c114298c2088750a04bb6fc6b645eca1781fc2399c9d1b88f87e6b04caa4b8ff.json",
+    "bytes_read": 271,
+    "sha256": "c114298c2088750a04bb6fc6b645eca1781fc2399c9d1b88f87e6b04caa4b8ff",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0706",
+    "location": "history/prior-audit/evidence/text/ceba0d3377cf58695294cfaff3bc2ca1ee5d2a70cdd38b7db0cb6c5a089b4f6b.json",
+    "bytes_read": 292,
+    "sha256": "ceba0d3377cf58695294cfaff3bc2ca1ee5d2a70cdd38b7db0cb6c5a089b4f6b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0707",
+    "location": "history/prior-audit/evidence/text/37b3e9fd295a1b1675b4abc9d476cd4a64bb9876b245d70c6e84ffcdc351c4cc.json",
+    "bytes_read": 105,
+    "sha256": "37b3e9fd295a1b1675b4abc9d476cd4a64bb9876b245d70c6e84ffcdc351c4cc",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0708",
+    "location": "history/prior-audit/evidence/text/36ecfcc5478282cb1befd7ce593ebd11e4ce018405a50cc5bcea3516837795df.json",
+    "bytes_read": 105,
+    "sha256": "36ecfcc5478282cb1befd7ce593ebd11e4ce018405a50cc5bcea3516837795df",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0709",
+    "location": "history/prior-audit/evidence/text/816d2e585800f962438e13202657bc41a7b62f3101238ac0f55098e096dbbd8d.json",
+    "bytes_read": 67,
+    "sha256": "816d2e585800f962438e13202657bc41a7b62f3101238ac0f55098e096dbbd8d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0710",
+    "location": "history/prior-audit/evidence/text/e4c18f887f3ffec8352f9af62cbcfaaa656d70332897ede9c3811a5c66aa468a.json",
+    "bytes_read": 105,
+    "sha256": "e4c18f887f3ffec8352f9af62cbcfaaa656d70332897ede9c3811a5c66aa468a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0711",
+    "location": "history/prior-audit/evidence/text/2c5da4effb144ff5e365bd91ccbda194e08ba4e3e16135684381ec7291ffe655.json",
+    "bytes_read": 105,
+    "sha256": "2c5da4effb144ff5e365bd91ccbda194e08ba4e3e16135684381ec7291ffe655",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0712",
+    "location": "history/prior-audit/evidence/text/fcb5d2dd53d958ad43de07c775284f442c72b5b2343e6e1879ba509d8502f1ac.json",
+    "bytes_read": 91,
+    "sha256": "fcb5d2dd53d958ad43de07c775284f442c72b5b2343e6e1879ba509d8502f1ac",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0713",
+    "location": "history/prior-audit/evidence/text/e13d17128980885df15f29eb44cbaf7cd42b7294f4875a23e48ec175dae67feb.json",
+    "bytes_read": 105,
+    "sha256": "e13d17128980885df15f29eb44cbaf7cd42b7294f4875a23e48ec175dae67feb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0714",
+    "location": "history/prior-audit/evidence/text/f254196e066536f992f4108d6ced861f942f73dd1d53ab2fe3f7ada872b92e41.json",
+    "bytes_read": 105,
+    "sha256": "f254196e066536f992f4108d6ced861f942f73dd1d53ab2fe3f7ada872b92e41",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0715",
+    "location": "history/prior-audit/evidence/text/f76446e4e1e1445a53866f2df92a16fd9e97346647dcf86b91a5be3afc17a305.json",
+    "bytes_read": 91,
+    "sha256": "f76446e4e1e1445a53866f2df92a16fd9e97346647dcf86b91a5be3afc17a305",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0716",
+    "location": "history/prior-audit/evidence/text/f1babb341e3dec27d2da7c54b1dce3500a3e283bd8190d11d6b5e4a9eae53f2a.json",
+    "bytes_read": 86,
+    "sha256": "f1babb341e3dec27d2da7c54b1dce3500a3e283bd8190d11d6b5e4a9eae53f2a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0717",
+    "location": "history/prior-audit/evidence/text/00990eb230f403dedf61b5ac7da148f9daf5a250796effcf9c90ab90f28181c2.json",
+    "bytes_read": 157,
+    "sha256": "00990eb230f403dedf61b5ac7da148f9daf5a250796effcf9c90ab90f28181c2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0718",
+    "location": "history/prior-audit/evidence/text/1aa73acc3e8498678363d88ab6263bdea4f5346de3c47982f291ab677c92d081.json",
+    "bytes_read": 85,
+    "sha256": "1aa73acc3e8498678363d88ab6263bdea4f5346de3c47982f291ab677c92d081",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0719",
+    "location": "history/prior-audit/evidence/text/b79f42c61df168e32facccd216765dcb532b74ab9f53bda89ae395e3a31fbc67.json",
+    "bytes_read": 85,
+    "sha256": "b79f42c61df168e32facccd216765dcb532b74ab9f53bda89ae395e3a31fbc67",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0720",
+    "location": "history/prior-audit/evidence/text/8103b451ecb54bf0194e4c05b62f5424f972be74fc23a5d4a2c0919becbdb020.json",
+    "bytes_read": 79,
+    "sha256": "8103b451ecb54bf0194e4c05b62f5424f972be74fc23a5d4a2c0919becbdb020",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0721",
+    "location": "history/prior-audit/evidence/text/b448b714b6df3ba935a4ec898913619701fb8d3913b4be6161c3dda285510216.json",
+    "bytes_read": 93,
+    "sha256": "b448b714b6df3ba935a4ec898913619701fb8d3913b4be6161c3dda285510216",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0722",
+    "location": "history/prior-audit/evidence/text/905c457c4cd06cbe79e8e529433c4b4d29eb2994a7f8cf113ec147d705c19c39.json",
+    "bytes_read": 93,
+    "sha256": "905c457c4cd06cbe79e8e529433c4b4d29eb2994a7f8cf113ec147d705c19c39",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0723",
+    "location": "history/prior-audit/evidence/text/deeeabf348e733272b72883334378497788da631c230d731379e814ad4ca5580.json",
+    "bytes_read": 91,
+    "sha256": "deeeabf348e733272b72883334378497788da631c230d731379e814ad4ca5580",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0724",
+    "location": "history/prior-audit/evidence/text/d3f3ae94dfb660faed70b3f1ad6d428e947ea70cca98a09e3e7305f77f5ecbc3.json",
+    "bytes_read": 82,
+    "sha256": "d3f3ae94dfb660faed70b3f1ad6d428e947ea70cca98a09e3e7305f77f5ecbc3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0725",
+    "location": "history/prior-audit/evidence/text/9c7cf2a1e1053cedd16094131d29aaacc726cf18a435d43b51af4410bae209f0.json",
+    "bytes_read": 80,
+    "sha256": "9c7cf2a1e1053cedd16094131d29aaacc726cf18a435d43b51af4410bae209f0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0726",
+    "location": "history/prior-audit/evidence/text/a855e30a0c0f5a93de072e165177430918073e495a77ae52740046505a41af2d.json",
+    "bytes_read": 61,
+    "sha256": "a855e30a0c0f5a93de072e165177430918073e495a77ae52740046505a41af2d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0727",
+    "location": "history/prior-audit/evidence/text/aa46fdf65d77f8fcc69cb5c53581268d9830445c4592d4b477cb121fad30d803.json",
+    "bytes_read": 65,
+    "sha256": "aa46fdf65d77f8fcc69cb5c53581268d9830445c4592d4b477cb121fad30d803",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0728",
+    "location": "history/prior-audit/evidence/text/b72fbaa4fea1ee45faea4b9346a55ed9aa0fc96e9a331220d431779cff65a78b.json",
+    "bytes_read": 78,
+    "sha256": "b72fbaa4fea1ee45faea4b9346a55ed9aa0fc96e9a331220d431779cff65a78b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0729",
+    "location": "history/prior-audit/evidence/text/ddf01a5a74757c74fe976379d547be775f6d1fe64575fcf8ed6534176ef80673.json",
+    "bytes_read": 80,
+    "sha256": "ddf01a5a74757c74fe976379d547be775f6d1fe64575fcf8ed6534176ef80673",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0730",
+    "location": "history/prior-audit/evidence/text/c14f43bf2241d3344991560c0b9fccba381829545e90f9c2f0b515bf463c6624.json",
+    "bytes_read": 75,
+    "sha256": "c14f43bf2241d3344991560c0b9fccba381829545e90f9c2f0b515bf463c6624",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0731",
+    "location": "history/prior-audit/evidence/text/38a41af079d0b0e1b8ce2fd3690b6b5081233ba7032280bbe74a60aa45665ee6.json",
+    "bytes_read": 74,
+    "sha256": "38a41af079d0b0e1b8ce2fd3690b6b5081233ba7032280bbe74a60aa45665ee6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0732",
+    "location": "history/prior-audit/evidence/text/6cc54a61fa9ec17753879a7d4e19cde54fd784b22e1e95e1f268dcb279aea48e.json",
+    "bytes_read": 44,
+    "sha256": "6cc54a61fa9ec17753879a7d4e19cde54fd784b22e1e95e1f268dcb279aea48e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0733",
+    "location": "history/prior-audit/evidence/text/b1627c2e74cb936dc9dbf8407afdbc185d605e11884fbecd8e4e7c2292b1b5dc.json",
+    "bytes_read": 172,
+    "sha256": "b1627c2e74cb936dc9dbf8407afdbc185d605e11884fbecd8e4e7c2292b1b5dc",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0734",
+    "location": "history/prior-audit/evidence/text/ac0b65a37bd95b5db989e78110dde725725a0ea35423741ebd362e77aa1b395f.json",
+    "bytes_read": 1659,
+    "sha256": "ac0b65a37bd95b5db989e78110dde725725a0ea35423741ebd362e77aa1b395f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0735",
+    "location": "history/prior-audit/evidence/text/f625f4de3105eebf9a71bd034570a2047b04f9c7402a3056d09655ddb0870f40.json",
+    "bytes_read": 178,
+    "sha256": "f625f4de3105eebf9a71bd034570a2047b04f9c7402a3056d09655ddb0870f40",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0736",
+    "location": "history/prior-audit/evidence/text/b9f7fc394433a0d850eae96e5ca8c2deb45a81a679ce10a91e05d823a42392eb.json",
+    "bytes_read": 1665,
+    "sha256": "b9f7fc394433a0d850eae96e5ca8c2deb45a81a679ce10a91e05d823a42392eb",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0737",
+    "location": "history/prior-audit/evidence/text/53ec4409e12f4fe344db3a57b118d0d19d09b4b3bb3fa654d480b28640a5fd55.json",
+    "bytes_read": 195,
+    "sha256": "53ec4409e12f4fe344db3a57b118d0d19d09b4b3bb3fa654d480b28640a5fd55",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0738",
+    "location": "history/prior-audit/evidence/text/c572b8b96991dbca2acb40d599eb1aebf122bfca791083e055d1601b3db33b7d.json",
+    "bytes_read": 1684,
+    "sha256": "c572b8b96991dbca2acb40d599eb1aebf122bfca791083e055d1601b3db33b7d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0739",
+    "location": "history/prior-audit/evidence/text/0573c98803d98be6f82b892078f5e4f8f79910d10be0943683312fb486ddeb2d.json",
+    "bytes_read": 168,
+    "sha256": "0573c98803d98be6f82b892078f5e4f8f79910d10be0943683312fb486ddeb2d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0740",
+    "location": "history/prior-audit/evidence/text/181753795a012578d7094f9ff47f530080bc113af786c83847029fc57bfe556d.json",
+    "bytes_read": 1650,
+    "sha256": "181753795a012578d7094f9ff47f530080bc113af786c83847029fc57bfe556d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0741",
+    "location": "history/prior-audit/evidence/text/bbeb543ee320eec7c65bfaa669210f7ec61466d605c08dd8cbdd8d94412c1849.json",
+    "bytes_read": 174,
+    "sha256": "bbeb543ee320eec7c65bfaa669210f7ec61466d605c08dd8cbdd8d94412c1849",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0742",
+    "location": "history/prior-audit/evidence/text/7125f2a4f8ba105c717f8542dde06917163f680dd6aa8e8a91a703f7b9e68544.json",
+    "bytes_read": 1657,
+    "sha256": "7125f2a4f8ba105c717f8542dde06917163f680dd6aa8e8a91a703f7b9e68544",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0743",
+    "location": "history/prior-audit/evidence/text/6080d0f5a5eb2154780b18798c04324e20b3d52a40e91634ecde45929be1a8a9.json",
+    "bytes_read": 191,
+    "sha256": "6080d0f5a5eb2154780b18798c04324e20b3d52a40e91634ecde45929be1a8a9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0744",
+    "location": "history/prior-audit/evidence/text/e8be0938a34ecd327c0603b8e0279688f806d1087927dbeb9daf6edf15547e56.json",
+    "bytes_read": 1674,
+    "sha256": "e8be0938a34ecd327c0603b8e0279688f806d1087927dbeb9daf6edf15547e56",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0745",
+    "location": "history/prior-audit/evidence/text/cbc41d78f43fd56ce256080d6cbdd1f3a5ef3949dfa413f562c108011ed4b4da.json",
+    "bytes_read": 8747,
+    "sha256": "cbc41d78f43fd56ce256080d6cbdd1f3a5ef3949dfa413f562c108011ed4b4da",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0746",
+    "location": "history/prior-audit/evidence/text/f710e7c6d24bbaf1649874f7974692eedf445f700152e80b7142034f1f12fbe8.mjs",
+    "bytes_read": 6356,
+    "sha256": "f710e7c6d24bbaf1649874f7974692eedf445f700152e80b7142034f1f12fbe8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0747",
+    "location": "history/prior-audit/evidence/text/e1214a0cfee4d2d8e1c337285c09e1891ea62fe82aaf7a6f88f577f972b145c3.json",
+    "bytes_read": 6159,
+    "sha256": "e1214a0cfee4d2d8e1c337285c09e1891ea62fe82aaf7a6f88f577f972b145c3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0748",
+    "location": "history/prior-audit/evidence/text/e47fce7743688c6a320ab0b9a213044674668873876c188abffcf0995ed0767f.json",
+    "bytes_read": 19974,
+    "sha256": "e47fce7743688c6a320ab0b9a213044674668873876c188abffcf0995ed0767f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0749",
+    "location": "history/prior-audit/evidence/text/dae906f54ceeec77e27b9775970652405c42db80b0e4c73764bbc1b5ced60250.json",
+    "bytes_read": 11064,
+    "sha256": "dae906f54ceeec77e27b9775970652405c42db80b0e4c73764bbc1b5ced60250",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0750",
+    "location": "history/prior-audit/evidence/text/050771c00eb4633310787ee2cfc1971aff39f48a7a81c3157a166d5dcd9e5984.json",
+    "bytes_read": 34276,
+    "sha256": "050771c00eb4633310787ee2cfc1971aff39f48a7a81c3157a166d5dcd9e5984",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0751",
+    "location": "history/prior-audit/evidence/text/e581b04c3023dcefec26c827938c4b372ed86840d6dd55cebf2650d5e33045e2.js",
+    "bytes_read": 162546,
+    "sha256": "e581b04c3023dcefec26c827938c4b372ed86840d6dd55cebf2650d5e33045e2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0752",
+    "location": "history/prior-audit/evidence/text/5919dccce274c55ef86cf454d90cf46ed1d0a18dcb86be4ccdb0c70f625d1dea.js",
+    "bytes_read": 45076,
+    "sha256": "5919dccce274c55ef86cf454d90cf46ed1d0a18dcb86be4ccdb0c70f625d1dea",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0753",
+    "location": "history/prior-audit/evidence/text/db9d14caf26e17e10f07c2f3a78ff52f14cb06b03c2502d5e1622a7631d75847.js",
+    "bytes_read": 6076,
+    "sha256": "db9d14caf26e17e10f07c2f3a78ff52f14cb06b03c2502d5e1622a7631d75847",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0754",
+    "location": "history/prior-audit/evidence/text/ed85af2c7ba46fc7d2fe3855a1a4757e92297cd255c864c06f9e515f33db8e3c.js",
+    "bytes_read": 29561,
+    "sha256": "ed85af2c7ba46fc7d2fe3855a1a4757e92297cd255c864c06f9e515f33db8e3c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0755",
+    "location": "history/prior-audit/evidence/text/fdba4d223c26d43f2902b6d2775dc32f8c51c2282fbf262f1a92bd8daee18538.js",
+    "bytes_read": 2767,
+    "sha256": "fdba4d223c26d43f2902b6d2775dc32f8c51c2282fbf262f1a92bd8daee18538",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0756",
+    "location": "history/prior-audit/evidence/text/949287899550f92bcbd6a133fc42c5a299160f97f99bac058db0fe1148bf424c.js",
+    "bytes_read": 1005,
+    "sha256": "949287899550f92bcbd6a133fc42c5a299160f97f99bac058db0fe1148bf424c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0757",
+    "location": "history/prior-audit/evidence/text/214eef583d0e8ad8149b41ec582b19ac2a1ba5cd00f0f89f831aa3a7481700b8.js",
+    "bytes_read": 19396,
+    "sha256": "214eef583d0e8ad8149b41ec582b19ac2a1ba5cd00f0f89f831aa3a7481700b8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0758",
+    "location": "history/prior-audit/evidence/text/f8f091bbb467d47a666abbb9ab5840a1c5d53689b506cb9d59653c73de9ef917.js",
+    "bytes_read": 1856,
+    "sha256": "f8f091bbb467d47a666abbb9ab5840a1c5d53689b506cb9d59653c73de9ef917",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0759",
+    "location": "history/prior-audit/evidence/text/c451af3365a58ef4b7cfaa3771e47764edc12f1e92327e5c7ffb25875a3990c1.js",
+    "bytes_read": 1032,
+    "sha256": "c451af3365a58ef4b7cfaa3771e47764edc12f1e92327e5c7ffb25875a3990c1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0760",
+    "location": "history/prior-audit/evidence/text/813ed79e3be67050056311bb0e4915512b21752226c4c597da74f9fef80588c7.js",
+    "bytes_read": 2891,
+    "sha256": "813ed79e3be67050056311bb0e4915512b21752226c4c597da74f9fef80588c7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0761",
+    "location": "history/prior-audit/evidence/text/0cf5194fbc79b2008d5101b9f5928dce5f965b56bad2c3069f9602f3a3667c39.js",
+    "bytes_read": 10180,
+    "sha256": "0cf5194fbc79b2008d5101b9f5928dce5f965b56bad2c3069f9602f3a3667c39",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0762",
+    "location": "history/prior-audit/evidence/text/f37ac9861eb22c4ed985cbe40e29d97b4d09f32653875a14349d486fae1d119f.js",
+    "bytes_read": 1308,
+    "sha256": "f37ac9861eb22c4ed985cbe40e29d97b4d09f32653875a14349d486fae1d119f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0763",
+    "location": "history/prior-audit/evidence/text/aabbaebe84402205a1423fa6b8da9a4825623d022a2841f18881e462cc8b9584.js",
+    "bytes_read": 26575,
+    "sha256": "aabbaebe84402205a1423fa6b8da9a4825623d022a2841f18881e462cc8b9584",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0764",
+    "location": "history/prior-audit/evidence/text/fce6589bd96788b82e05ea9f866389883eed0da2d0d31269c1b61aa9554dbbcc.js",
+    "bytes_read": 1995,
+    "sha256": "fce6589bd96788b82e05ea9f866389883eed0da2d0d31269c1b61aa9554dbbcc",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0765",
+    "location": "history/prior-audit/evidence/text/e8926465fd4ff293b5496aa7f47c964b3aa6acfc548b48ab3ac5faeb3a3a76ac.js",
+    "bytes_read": 1627,
+    "sha256": "e8926465fd4ff293b5496aa7f47c964b3aa6acfc548b48ab3ac5faeb3a3a76ac",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0766",
+    "location": "history/prior-audit/evidence/text/2848f5b03a858c8a0c36919a174329ffd9e0b99dbe66b5688eb7954bda15c526.js",
+    "bytes_read": 2097,
+    "sha256": "2848f5b03a858c8a0c36919a174329ffd9e0b99dbe66b5688eb7954bda15c526",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0767",
+    "location": "history/prior-audit/evidence/text/e9a833132532b7f559fac56ce9db051b4f74b734dbdc9e2554347723546d7c56.js",
+    "bytes_read": 1145,
+    "sha256": "e9a833132532b7f559fac56ce9db051b4f74b734dbdc9e2554347723546d7c56",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0768",
+    "location": "history/prior-audit/evidence/text/092b08168efd2bff942a7b1933c6982ae30a58a934d569b20c59f9fe95fae6da.js",
+    "bytes_read": 1077,
+    "sha256": "092b08168efd2bff942a7b1933c6982ae30a58a934d569b20c59f9fe95fae6da",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0769",
+    "location": "history/prior-audit/evidence/text/84f4c7e22f19c4a53b12188c51002a2ae6cfb96fb487003e9fa1026edffb4f31.js",
+    "bytes_read": 2466,
+    "sha256": "84f4c7e22f19c4a53b12188c51002a2ae6cfb96fb487003e9fa1026edffb4f31",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0770",
+    "location": "history/prior-audit/evidence/text/4912bbe88620b4f7f0720e4ea7c6caa3d71225fef26322c8c6e59623a490474e.js",
+    "bytes_read": 988,
+    "sha256": "4912bbe88620b4f7f0720e4ea7c6caa3d71225fef26322c8c6e59623a490474e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0771",
+    "location": "history/prior-audit/evidence/text/adc060ab45ed1f9bfd5b1816d0e9bece0a0e867e886864b79ad28de3bfa8db25.js",
+    "bytes_read": 3272,
+    "sha256": "adc060ab45ed1f9bfd5b1816d0e9bece0a0e867e886864b79ad28de3bfa8db25",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0772",
+    "location": "history/prior-audit/evidence/text/569c3f0be691345393922a471eb9dd890d83563dbae5781e75a178ba41af50f5.js",
+    "bytes_read": 1515,
+    "sha256": "569c3f0be691345393922a471eb9dd890d83563dbae5781e75a178ba41af50f5",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0773",
+    "location": "history/prior-audit/evidence/text/3dbc24dc46b5233d1639dabe4e71744b99cc7460538a88c0e077d58b639658ef.js",
+    "bytes_read": 1193,
+    "sha256": "3dbc24dc46b5233d1639dabe4e71744b99cc7460538a88c0e077d58b639658ef",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0774",
+    "location": "history/prior-audit/evidence/text/2f1a8bafb0cd4b40670005925733117a62d24ac89dc0103ad8c4d27161836243.js",
+    "bytes_read": 40860,
+    "sha256": "2f1a8bafb0cd4b40670005925733117a62d24ac89dc0103ad8c4d27161836243",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0775",
+    "location": "history/prior-audit/evidence/text/44ec2ae7ca3c9af5803a2a1e14d1996a670abd1933227bc115f5fdd5ca7a8e3d.js",
+    "bytes_read": 1106,
+    "sha256": "44ec2ae7ca3c9af5803a2a1e14d1996a670abd1933227bc115f5fdd5ca7a8e3d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0776",
+    "location": "history/prior-audit/evidence/text/f36ce88b583e90e1599d8c42cd5d956ed4bbd7f73390e464434f985ee62ec857.js",
+    "bytes_read": 27542,
+    "sha256": "f36ce88b583e90e1599d8c42cd5d956ed4bbd7f73390e464434f985ee62ec857",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0777",
+    "location": "history/prior-audit/evidence/text/c620bab98feeceb50732cb2e87f9ff7ec49340d83943841046cdba10d42afb7e.html",
+    "bytes_read": 103673,
+    "sha256": "d3561049f3ef539813e1cc9e6a2c26632e477ae338880e764bd4e4256433c16b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0778",
+    "location": "history/prior-audit/evidence/text/f5f92fc3259c8e0c3d58eef99649e1afcd7a53d69db0782d80aae4b5f3aa4cbe.json",
+    "bytes_read": 786,
+    "sha256": "f5f92fc3259c8e0c3d58eef99649e1afcd7a53d69db0782d80aae4b5f3aa4cbe",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0779",
+    "location": "history/prior-audit/evidence/text/0b689d683d4503896e5fb984c9f0a0c23dd6000d700d6baab70c0df82a62ec72.js",
+    "bytes_read": 42211,
+    "sha256": "0b689d683d4503896e5fb984c9f0a0c23dd6000d700d6baab70c0df82a62ec72",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0780",
+    "location": "history/prior-audit/evidence/text/bb2b575a71305d6b24316f8a494a4cb38bb38c6a5d3fd5995f33e4bce8f0fb35.js",
+    "bytes_read": 168741,
+    "sha256": "bb2b575a71305d6b24316f8a494a4cb38bb38c6a5d3fd5995f33e4bce8f0fb35",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0781",
+    "location": "history/prior-audit/evidence/text/9db47fa0bedaf16d5ca46c07aac80f2ff5eed2e0875d9c3584c03b6b1c92b91b.js",
+    "bytes_read": 3283025,
+    "sha256": "08f2e8a23a8dff1cd96b67095b120dc551a23d5f1ef577246fdbbd5fd16b0c5a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0782",
+    "location": "history/prior-audit/evidence/text/84fbc8cd25ab45b6f440c3650eb158b97092594a2adef748290c3547be21de2d.txt",
+    "bytes_read": 11426,
+    "sha256": "84fbc8cd25ab45b6f440c3650eb158b97092594a2adef748290c3547be21de2d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0783",
+    "location": "history/prior-audit/evidence/text/9ea579e7d455f38f3fbca8e32be133a28566471eef5c08e17ab752d575b38324.json",
+    "bytes_read": 4504,
+    "sha256": "9ea579e7d455f38f3fbca8e32be133a28566471eef5c08e17ab752d575b38324",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0784",
+    "location": "history/prior-audit/evidence/text/2f11d352eebcbfe0f504f26a4f934028010d418b0cc8388529df1c38eb9e84ed.json",
+    "bytes_read": 1502,
+    "sha256": "2f11d352eebcbfe0f504f26a4f934028010d418b0cc8388529df1c38eb9e84ed",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0785",
+    "location": "history/prior-audit/evidence/text/6197856b50663c1bd9c1bf46f86f0ae616a6b7a68c14018075bf9e55dd381c76.json",
+    "bytes_read": 5779,
+    "sha256": "6197856b50663c1bd9c1bf46f86f0ae616a6b7a68c14018075bf9e55dd381c76",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0786",
+    "location": "history/prior-audit/evidence/text/b60812946f93d0fec18aa67a30bb831542870aa7c7aaf338ce6ae3cfb449fa1e.txt",
+    "bytes_read": 2707,
+    "sha256": "8c0def144c1ec591b20e434c9f49a398f273cc3e66d2c435997883194483f5c2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0787",
+    "location": "history/prior-audit/evidence/text/cee84f6e0fcf886152acd6ad0a88e0d970be0ea3f1fd331e48767d612cbc6f2a.txt",
+    "bytes_read": 2707,
+    "sha256": "af5a0a4f5692a7bc8966de502217029f3db1db4aa5fd7b8ff79f6943de4ffd23",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0788",
+    "location": "history/prior-audit/evidence/text/fc6a30e936c2a0c6f15a458fdc52a1a744fe2294c8e5b3501cd3d9c4b252dbd1.txt",
+    "bytes_read": 2705,
+    "sha256": "b0b19457ca20653e8e4f315bd8299ff1d76a218f7be37edc0d7fe50a161ac22c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0789",
+    "location": "history/prior-audit/evidence/text/b914dfbca22d0d4347f7cce50ed4ca28a5859e1cff8dac057bde777334df2acf.json",
+    "bytes_read": 682,
+    "sha256": "b914dfbca22d0d4347f7cce50ed4ca28a5859e1cff8dac057bde777334df2acf",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0790",
+    "location": "history/prior-audit/evidence/text/8a09b5139b3885c5670c9210088a717bb73d9ab32d72de744852433beb713777.json",
+    "bytes_read": 67,
+    "sha256": "8a09b5139b3885c5670c9210088a717bb73d9ab32d72de744852433beb713777",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0791",
+    "location": "history/prior-audit/evidence/text/8cf855ada961379b36fa3a8bac53b2660dd5ebf19fc3cdd8cf30086044102cce.json",
+    "bytes_read": 115,
+    "sha256": "8cf855ada961379b36fa3a8bac53b2660dd5ebf19fc3cdd8cf30086044102cce",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0792",
+    "location": "history/prior-audit/evidence/text/6876204532f562e4cf411f8ae86cb488d6d0f82699a2d254dd1a94d37f9a9709.json",
+    "bytes_read": 115,
+    "sha256": "6876204532f562e4cf411f8ae86cb488d6d0f82699a2d254dd1a94d37f9a9709",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0793",
+    "location": "history/prior-audit/evidence/text/1d99186f3edd4b5f624beac7684695d1788db7fb5d29420aff284d9eedb0522b.json",
+    "bytes_read": 86,
+    "sha256": "1d99186f3edd4b5f624beac7684695d1788db7fb5d29420aff284d9eedb0522b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0794",
+    "location": "history/prior-audit/evidence/text/122c3ed97e20f7d834201ad62be3cde4f2fda24db8803482733e860ae67c4d33.json",
+    "bytes_read": 115,
+    "sha256": "122c3ed97e20f7d834201ad62be3cde4f2fda24db8803482733e860ae67c4d33",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0795",
+    "location": "history/prior-audit/evidence/text/37626e2c147cd26b30fd607f8df2a286d85eba631395ace0df2bfec69f4d6ca9.json",
+    "bytes_read": 115,
+    "sha256": "37626e2c147cd26b30fd607f8df2a286d85eba631395ace0df2bfec69f4d6ca9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0796",
+    "location": "history/prior-audit/evidence/text/e2f2c25b92bf1c3fbf626258c1b52470d6b8fefd2160bcbabda1c93f93d83c74.json",
+    "bytes_read": 115,
+    "sha256": "e2f2c25b92bf1c3fbf626258c1b52470d6b8fefd2160bcbabda1c93f93d83c74",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0797",
+    "location": "history/prior-audit/evidence/text/706b1b98d7428a1f8fb8c67cd3d8bfb063a1618ab77876db48c697d6c4e48d46.json",
+    "bytes_read": 197939,
+    "sha256": "706b1b98d7428a1f8fb8c67cd3d8bfb063a1618ab77876db48c697d6c4e48d46",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0798",
+    "location": "history/prior-audit/evidence/text/c34d2c483a298ee4f7194d67a1e30830559fdeaa2e1b2c8835444e17a59c94de.json",
+    "bytes_read": 286742,
+    "sha256": "c34d2c483a298ee4f7194d67a1e30830559fdeaa2e1b2c8835444e17a59c94de",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0799",
+    "location": "history/prior-audit/evidence/text/81c11a8fa3203b9960e6c43a066ded07b63f39e4cafa26a35e55a13f46092357.json",
+    "bytes_read": 248062,
+    "sha256": "81c11a8fa3203b9960e6c43a066ded07b63f39e4cafa26a35e55a13f46092357",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0800",
+    "location": "history/prior-audit/evidence/text/9fe9993541c180e59f3f190a15bcf157418ff08940dc38f1b9f760691c828c73.json",
+    "bytes_read": 1747,
+    "sha256": "9fe9993541c180e59f3f190a15bcf157418ff08940dc38f1b9f760691c828c73",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0801",
+    "location": "history/prior-audit/evidence/text/c064aeac3801297d2679d332b2133a9a93c220f6bdffbb0677777b31dcb65e8a.json",
+    "bytes_read": 1748,
+    "sha256": "c064aeac3801297d2679d332b2133a9a93c220f6bdffbb0677777b31dcb65e8a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0802",
+    "location": "history/prior-audit/evidence/text/f7440ffaf1d10e556afff6c843d7821bc6b5126792748bb25ea393dc4cc04533.json",
+    "bytes_read": 1775,
+    "sha256": "f7440ffaf1d10e556afff6c843d7821bc6b5126792748bb25ea393dc4cc04533",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0803",
+    "location": "history/prior-audit/evidence/text/0dd67febd556b9c81c445b4bd9e60f3709535311811920cba5b76f38cbe09e16.json",
+    "bytes_read": 488,
+    "sha256": "0dd67febd556b9c81c445b4bd9e60f3709535311811920cba5b76f38cbe09e16",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0804",
+    "location": "history/prior-audit/evidence/text/63fc62590e886ea5dabb178de6d643e1013d3434660ed992a5bf3506891473a7.json",
+    "bytes_read": 547,
+    "sha256": "63fc62590e886ea5dabb178de6d643e1013d3434660ed992a5bf3506891473a7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0805",
+    "location": "history/prior-audit/evidence/text/0edde93fa173dd926d959dc27c87111296c86121e2ad3375e36d8d9596d6a54c.json",
+    "bytes_read": 137097,
+    "sha256": "0edde93fa173dd926d959dc27c87111296c86121e2ad3375e36d8d9596d6a54c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0806",
+    "location": "history/prior-audit/evidence/text/67ccc4f7cd7385a25512f228d6c41b286c091695cc4de9013e9fa157d60c2e7c.json",
+    "bytes_read": 136295,
+    "sha256": "67ccc4f7cd7385a25512f228d6c41b286c091695cc4de9013e9fa157d60c2e7c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0807",
+    "location": "history/prior-audit/evidence/text/e3642c41e53040ebeff4327a13b709591bcb9891d7ca970398a8ade32c9366f3.json",
+    "bytes_read": 158529,
+    "sha256": "e3642c41e53040ebeff4327a13b709591bcb9891d7ca970398a8ade32c9366f3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0808",
+    "location": "history/prior-audit/evidence/text/9e0a126148a8592961161a6a38e743fcbcf3e7c9fef2d3095cade8211ffdfe60.json",
+    "bytes_read": 132639,
+    "sha256": "9e0a126148a8592961161a6a38e743fcbcf3e7c9fef2d3095cade8211ffdfe60",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0809",
+    "location": "history/prior-audit/evidence/text/447c9263aa911e0e3185ddde0917fed04fdd826f9884b35299e764e56b0f7dea.json",
+    "bytes_read": 133460,
+    "sha256": "447c9263aa911e0e3185ddde0917fed04fdd826f9884b35299e764e56b0f7dea",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0810",
+    "location": "history/prior-audit/evidence/text/8c9fb429b5e804dec6f04a316102e62a9b8629962a865562b3f1d917c2b16308.json",
+    "bytes_read": 133955,
+    "sha256": "8c9fb429b5e804dec6f04a316102e62a9b8629962a865562b3f1d917c2b16308",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0811",
+    "location": "history/prior-audit/evidence/text/ec0ecf507b8cf076f00a89104e7fd749c47cff406f61f06c61185435d35138d3.json",
+    "bytes_read": 161760,
+    "sha256": "ec0ecf507b8cf076f00a89104e7fd749c47cff406f61f06c61185435d35138d3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0812",
+    "location": "history/prior-audit/evidence/text/5dedac464481da11ade84d756924369b0139baf180932d907b719847d96dc1d6.json",
+    "bytes_read": 171589,
+    "sha256": "5dedac464481da11ade84d756924369b0139baf180932d907b719847d96dc1d6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0813",
+    "location": "history/prior-audit/evidence/text/567a3a363ab87a4e3bda11fb4f3110062ca5375dbfe6019b7f15ae5eaa113186.json",
+    "bytes_read": 172066,
+    "sha256": "567a3a363ab87a4e3bda11fb4f3110062ca5375dbfe6019b7f15ae5eaa113186",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0814",
+    "location": "history/prior-audit/evidence/text/f5c125ebd2746b70e7bb99b1601c82a1a6e5cfc8cf813543fdcc7d551090da73.json",
+    "bytes_read": 1662,
+    "sha256": "f5c125ebd2746b70e7bb99b1601c82a1a6e5cfc8cf813543fdcc7d551090da73",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0815",
+    "location": "history/prior-audit/evidence/text/a912fb4e94ae26a6163f9ca12eae4db2e726598d96e9d76e77e357c8001a1ee8.json",
+    "bytes_read": 1662,
+    "sha256": "a912fb4e94ae26a6163f9ca12eae4db2e726598d96e9d76e77e357c8001a1ee8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0816",
+    "location": "history/prior-audit/evidence/text/7d27e95c195d75c1f692fb917615a8438ab17b9294d626385053eb77680396b3.json",
+    "bytes_read": 1657,
+    "sha256": "7d27e95c195d75c1f692fb917615a8438ab17b9294d626385053eb77680396b3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0817",
+    "location": "history/prior-audit/evidence/text/574b6787a717030cfcca0fb2b913abbeb4f26b7407292ed7c32fb51a39567445.json",
+    "bytes_read": 1662,
+    "sha256": "574b6787a717030cfcca0fb2b913abbeb4f26b7407292ed7c32fb51a39567445",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0818",
+    "location": "history/prior-audit/evidence/text/3e7912dd4339630e9f44f2b66ca2abadd9703206eda6558cbc140187bc0b9c78.json",
+    "bytes_read": 1600,
+    "sha256": "3e7912dd4339630e9f44f2b66ca2abadd9703206eda6558cbc140187bc0b9c78",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0819",
+    "location": "history/prior-audit/evidence/text/f48e4a62af3fa2cca0b02499f5b378f9d47a909c5f76fc1cc936211eb6a47d88.json",
+    "bytes_read": 1590,
+    "sha256": "f48e4a62af3fa2cca0b02499f5b378f9d47a909c5f76fc1cc936211eb6a47d88",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0820",
+    "location": "history/prior-audit/evidence/text/908be2764c0f95208e21f240ac795ff37b3753a6ad2937f4d1c8d7e3d44e88fa.json",
+    "bytes_read": 1587,
+    "sha256": "908be2764c0f95208e21f240ac795ff37b3753a6ad2937f4d1c8d7e3d44e88fa",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0821",
+    "location": "history/prior-audit/evidence/text/124de40ebd9ea3b9a089eb88c0ce34f12b282acb6d90d181c1c598a09148b16b.json",
+    "bytes_read": 1563,
+    "sha256": "124de40ebd9ea3b9a089eb88c0ce34f12b282acb6d90d181c1c598a09148b16b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0822",
+    "location": "history/prior-audit/evidence/text/4c72d5336ac42c7d7eee6c5de79e7d02b98ab1c2337fbc0b6e291ab358475471.json",
+    "bytes_read": 695,
+    "sha256": "4c72d5336ac42c7d7eee6c5de79e7d02b98ab1c2337fbc0b6e291ab358475471",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0823",
+    "location": "history/prior-audit/evidence/text/c46f8c6cf54039d88e7b1d73fbdf60ceba7a8ca24d3b2d03c67b3e93dac31268.json",
+    "bytes_read": 1580,
+    "sha256": "c46f8c6cf54039d88e7b1d73fbdf60ceba7a8ca24d3b2d03c67b3e93dac31268",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0824",
+    "location": "history/prior-audit/evidence/text/b5652d112ea99629095966f1d96bbfda887aaab56e16fbd1320433797cb3d3e7.json",
+    "bytes_read": 1581,
+    "sha256": "b5652d112ea99629095966f1d96bbfda887aaab56e16fbd1320433797cb3d3e7",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0825",
+    "location": "history/prior-audit/evidence/text/dce1414e7737d9704f2ab178673267d6b083cc3a1ee413b924efc8b1dbb3966e.json",
+    "bytes_read": 1584,
+    "sha256": "dce1414e7737d9704f2ab178673267d6b083cc3a1ee413b924efc8b1dbb3966e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0826",
+    "location": "history/prior-audit/evidence/text/053167bf4f919f3167faab267eea238eba0333cd067d4855d4e045d5ce86e366.json",
+    "bytes_read": 1605,
+    "sha256": "053167bf4f919f3167faab267eea238eba0333cd067d4855d4e045d5ce86e366",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0827",
+    "location": "history/prior-audit/evidence/text/68a206e4b11c88aad3f4639678d58ff815320a2c8458afcc4f5ebb1dad4b87da.json",
+    "bytes_read": 731,
+    "sha256": "68a206e4b11c88aad3f4639678d58ff815320a2c8458afcc4f5ebb1dad4b87da",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0828",
+    "location": "history/prior-audit/evidence/text/5944404dd9a408703303a04e355431dc70706a9ab4babcbf35e973cf924b2792.json",
+    "bytes_read": 911,
+    "sha256": "5944404dd9a408703303a04e355431dc70706a9ab4babcbf35e973cf924b2792",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0829",
+    "location": "history/prior-audit/evidence/text/5f877d6dfce70086ccbb799b80ba1c6fa8d92cb20dce2162f57d024857df0dd3.json",
+    "bytes_read": 884,
+    "sha256": "5f877d6dfce70086ccbb799b80ba1c6fa8d92cb20dce2162f57d024857df0dd3",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0830",
+    "location": "history/prior-audit/evidence/text/27a4fa5fa4065f1d42822b1ae6ac3f6f0bff55a38f9112838f031d4dd7baea78.json",
+    "bytes_read": 1938,
+    "sha256": "27a4fa5fa4065f1d42822b1ae6ac3f6f0bff55a38f9112838f031d4dd7baea78",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0831",
+    "location": "history/prior-audit/evidence/text/47ebc3f68032e9237748ba787ab3e5a7a34e1421b05e48215c379de5260daf11.json",
+    "bytes_read": 1935,
+    "sha256": "47ebc3f68032e9237748ba787ab3e5a7a34e1421b05e48215c379de5260daf11",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0832",
+    "location": "history/prior-audit/evidence/text/9e4ca92f92c2af0d6950967149a70148658bc8b1b8e5099bef4f9301fc9812ef.json",
+    "bytes_read": 1936,
+    "sha256": "9e4ca92f92c2af0d6950967149a70148658bc8b1b8e5099bef4f9301fc9812ef",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0833",
+    "location": "history/prior-audit/evidence/text/1dcb84bab6afc6d90bc15f132136f741343caba61ca7e4ff1ec9722ccf76c5f8.json",
+    "bytes_read": 1936,
+    "sha256": "1dcb84bab6afc6d90bc15f132136f741343caba61ca7e4ff1ec9722ccf76c5f8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0834",
+    "location": "history/prior-audit/evidence/text/5b06faa553321a13a78397901efcbfcc94d003f9401f84bbd8e6dd6864c5ea43.json",
+    "bytes_read": 155965,
+    "sha256": "5b06faa553321a13a78397901efcbfcc94d003f9401f84bbd8e6dd6864c5ea43",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0835",
+    "location": "history/prior-audit/evidence/text/6680a6864b633db58d68fde1e0be8aa92832353383672b03a0765d4ab5d68b59.json",
+    "bytes_read": 1543,
+    "sha256": "6680a6864b633db58d68fde1e0be8aa92832353383672b03a0765d4ab5d68b59",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0836",
+    "location": "history/prior-audit/evidence/text/58fb9caff6297d6eefa79ec8f82fae70ae73f009b922b1ca10dfb2ad984cac27.json",
+    "bytes_read": 1565,
+    "sha256": "58fb9caff6297d6eefa79ec8f82fae70ae73f009b922b1ca10dfb2ad984cac27",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0837",
+    "location": "history/prior-audit/evidence/text/381002d31f1df42f6d8d4168983819edb6243a0393e75858b6ab3b702a5c0b34.json",
+    "bytes_read": 2262,
+    "sha256": "83913b52ef6bfdd88902602dc39be97b609b581c58fe6e51dabd2f30bcb0237d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0838",
+    "location": "history/prior-audit/evidence/text/0961e9ec73c34d2d6963726adddc0c9d8d4fe911421d9d594fc7a85b5682b683.json",
+    "bytes_read": 2894,
+    "sha256": "4de50ff6315ab281d08f99a761cdb77f189405efa24265872daa1f1e0a18160e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0839",
+    "location": "history/prior-audit/evidence/text/eca8680fa304ffbee854c03e0cd971dd4c0d1829149c58e4b6db51df20916348.json",
+    "bytes_read": 2207,
+    "sha256": "fbacb92cf821ab75a086cbc52c95809792a31de1a64965b4a7a9ac89bc5b615d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0840",
+    "location": "history/prior-audit/evidence/text/1fbe6d1ae3661e771905f598ec51fc6101fb3358a97884161c353b29b5ad6390.json",
+    "bytes_read": 3032,
+    "sha256": "ae0e1c1c66f5f92a23688c826f97cc1a8f1140a376a49e38fef3bee0f3c012bf",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0841",
+    "location": "history/prior-audit/evidence/text/d6095c23dc36d73b306eb0798e0cfcf3e473b8c99ed46e172052f4ce2fa2d540.json",
+    "bytes_read": 2091,
+    "sha256": "ce55f8a97f7c37da0252307f1eced0c39490e889da69936b681bed4f1cb064e2",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0842",
+    "location": "history/prior-audit/evidence/text/43fc0cef1993371775e1447ce3db95a71391464001ea7b5fa724fd24c151d6a6.json",
+    "bytes_read": 584,
+    "sha256": "43fc0cef1993371775e1447ce3db95a71391464001ea7b5fa724fd24c151d6a6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0843",
+    "location": "history/prior-audit/evidence/text/1765a2e583b05429253e898292483e945275ccf035b9536420d56f6c886094b9.json",
+    "bytes_read": 633,
+    "sha256": "1765a2e583b05429253e898292483e945275ccf035b9536420d56f6c886094b9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0844",
+    "location": "history/prior-audit/evidence/text/624509e53807221986b1dd5ba84066e2a782d5defc99d32e1dab8bd9d3e05b18.json",
+    "bytes_read": 1577,
+    "sha256": "624509e53807221986b1dd5ba84066e2a782d5defc99d32e1dab8bd9d3e05b18",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0845",
+    "location": "history/prior-audit/evidence/text/2c7c74acbbd6964592e6bcf5f8930022cfcab83a106ee6fd35587ba197d99ec6.json",
+    "bytes_read": 1577,
+    "sha256": "2c7c74acbbd6964592e6bcf5f8930022cfcab83a106ee6fd35587ba197d99ec6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0846",
+    "location": "history/prior-audit/evidence/text/d8f42aef6c0c1776da7181b17fc751fcec338b54656f76b26a4e4403510ee60a.json",
+    "bytes_read": 1533,
+    "sha256": "d8f42aef6c0c1776da7181b17fc751fcec338b54656f76b26a4e4403510ee60a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0847",
+    "location": "history/prior-audit/evidence/text/204c52634045b1e50c6aaef8b643067ad61b9778546fb27371503ef6e7385829.json",
+    "bytes_read": 1577,
+    "sha256": "204c52634045b1e50c6aaef8b643067ad61b9778546fb27371503ef6e7385829",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0848",
+    "location": "history/prior-audit/evidence/text/0aae401583bda7b988cd268e02dd0e0e5904e8b4bee6e563c0fbb76c8990c401.json",
+    "bytes_read": 1577,
+    "sha256": "0aae401583bda7b988cd268e02dd0e0e5904e8b4bee6e563c0fbb76c8990c401",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0849",
+    "location": "history/prior-audit/evidence/text/b3544719789b4afa11951e33c46780d08f13e2541af3bb1c190f4cbae1e5aa0f.json",
+    "bytes_read": 189,
+    "sha256": "b3544719789b4afa11951e33c46780d08f13e2541af3bb1c190f4cbae1e5aa0f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0850",
+    "location": "history/prior-audit/evidence/text/9c494cfd43f29f0ad18958e4480684f5bef624e05bc27154dcbe970efcc6902d.json",
+    "bytes_read": 214,
+    "sha256": "9c494cfd43f29f0ad18958e4480684f5bef624e05bc27154dcbe970efcc6902d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0851",
+    "location": "history/prior-audit/evidence/text/b26f85718e64062cf79e5b8d2b2e85ff8152d210f2a747bc358fc423dd251bef.json",
+    "bytes_read": 1730,
+    "sha256": "b26f85718e64062cf79e5b8d2b2e85ff8152d210f2a747bc358fc423dd251bef",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0852",
+    "location": "history/prior-audit/evidence/text/119f18b177e04174ae9975102094838bd295b66e691fda14dab0c56eec3e0cd6.json",
+    "bytes_read": 1631,
+    "sha256": "119f18b177e04174ae9975102094838bd295b66e691fda14dab0c56eec3e0cd6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0853",
+    "location": "history/prior-audit/evidence/text/a6e1e891c73202780cf511e99d53e6bb9c83b30509746bb33e95cfe27830a9e1.json",
+    "bytes_read": 1555,
+    "sha256": "a6e1e891c73202780cf511e99d53e6bb9c83b30509746bb33e95cfe27830a9e1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0854",
+    "location": "history/prior-audit/evidence/text/3572a05e5ab5694e3baadf70dbbc9f21ecfdcc0808b4f67e8777fb5660a95334.json",
+    "bytes_read": 1556,
+    "sha256": "3572a05e5ab5694e3baadf70dbbc9f21ecfdcc0808b4f67e8777fb5660a95334",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0855",
+    "location": "history/prior-audit/evidence/text/fde6dfac5df5af71b4c013ec529c406354621b249a59efce403b8626a3bb7eda.json",
+    "bytes_read": 1549,
+    "sha256": "fde6dfac5df5af71b4c013ec529c406354621b249a59efce403b8626a3bb7eda",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0856",
+    "location": "history/prior-audit/evidence/text/364eb421dc8f4cc42cc5ff31638411043ea2e38d3318a03916d3996653905785.json",
+    "bytes_read": 1563,
+    "sha256": "364eb421dc8f4cc42cc5ff31638411043ea2e38d3318a03916d3996653905785",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0857",
+    "location": "history/prior-audit/evidence/text/2e9eef34d7d0e56282c5af86705ce16ad8b26d11f9fb9d2db7256691d21aae06.json",
+    "bytes_read": 1563,
+    "sha256": "2e9eef34d7d0e56282c5af86705ce16ad8b26d11f9fb9d2db7256691d21aae06",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0858",
+    "location": "history/prior-audit/evidence/text/4f14edf879e2ec0af0779ffd5e7095ab2d7e862b10a9984a493bf3305c51b904.json",
+    "bytes_read": 1561,
+    "sha256": "4f14edf879e2ec0af0779ffd5e7095ab2d7e862b10a9984a493bf3305c51b904",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0859",
+    "location": "history/prior-audit/evidence/text/8863f04415a1735f910f7a326a1358addb88e322b3ed61cfe653f6e788bc4df1.json",
+    "bytes_read": 1552,
+    "sha256": "8863f04415a1735f910f7a326a1358addb88e322b3ed61cfe653f6e788bc4df1",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0860",
+    "location": "history/prior-audit/evidence/text/83d0d1cbb6a6dd34afe5f8c4dd48cd631e5893d2f6628b14ad23a7da93643ea8.json",
+    "bytes_read": 1550,
+    "sha256": "83d0d1cbb6a6dd34afe5f8c4dd48cd631e5893d2f6628b14ad23a7da93643ea8",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0861",
+    "location": "history/prior-audit/evidence/text/fc2ca295b3b96d7f551385cca87836c8b536d4b929cde8e7de4f67ac8c687e53.json",
+    "bytes_read": 1530,
+    "sha256": "fc2ca295b3b96d7f551385cca87836c8b536d4b929cde8e7de4f67ac8c687e53",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0862",
+    "location": "history/prior-audit/evidence/text/2aad0e3f790939a63956b7a637d916c6c02be3f33af3aabfed09d5c854782a2b.json",
+    "bytes_read": 1534,
+    "sha256": "2aad0e3f790939a63956b7a637d916c6c02be3f33af3aabfed09d5c854782a2b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0863",
+    "location": "history/prior-audit/evidence/text/8eb0444af960e0a26dab1ec3251bb1b2d8262feb54afc6095cc9b993de99b657.json",
+    "bytes_read": 1548,
+    "sha256": "8eb0444af960e0a26dab1ec3251bb1b2d8262feb54afc6095cc9b993de99b657",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0864",
+    "location": "history/prior-audit/evidence/text/524cdd83ddc1eac038131f74568fe803749d667728ebd1dfde4c5b474abc5852.json",
+    "bytes_read": 1550,
+    "sha256": "524cdd83ddc1eac038131f74568fe803749d667728ebd1dfde4c5b474abc5852",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0865",
+    "location": "history/prior-audit/evidence/text/3921c32d6cc6ce94a71160a6a336f32b152ebc7727d8582a72ae4dd10e00422c.json",
+    "bytes_read": 1541,
+    "sha256": "3921c32d6cc6ce94a71160a6a336f32b152ebc7727d8582a72ae4dd10e00422c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0866",
+    "location": "history/prior-audit/evidence/text/d3c90fee459be774ac8f95bed9f24321104dd7eb2daecc653c760a4f6244acbd.json",
+    "bytes_read": 1543,
+    "sha256": "d3c90fee459be774ac8f95bed9f24321104dd7eb2daecc653c760a4f6244acbd",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0867",
+    "location": "history/prior-audit/evidence/text/69544b814d4994c341022f4b87b183f008e73cb538f8bcea31472766db53b541.js",
+    "bytes_read": 4038,
+    "sha256": "69544b814d4994c341022f4b87b183f008e73cb538f8bcea31472766db53b541",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0868",
+    "location": "history/prior-audit/evidence/text/86ab80f5178043b52479e431c26e35734cc7a16bc53020d12c4a2d63d8bc3b9b.js",
+    "bytes_read": 7431,
+    "sha256": "86ab80f5178043b52479e431c26e35734cc7a16bc53020d12c4a2d63d8bc3b9b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0869",
+    "location": "history/prior-audit/evidence/text/07d6432e87a9745880904485680ea6dbdbc545aca922f2c55ffc066941fbba9c.mjs",
+    "bytes_read": 8121,
+    "sha256": "07d6432e87a9745880904485680ea6dbdbc545aca922f2c55ffc066941fbba9c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0870",
+    "location": "history/prior-audit/evidence/text/911a6715d45450b4a79ccd54b5796469ad01d9e6ccb9810bacc45a1a272cce11.json",
+    "bytes_read": 517,
+    "sha256": "911a6715d45450b4a79ccd54b5796469ad01d9e6ccb9810bacc45a1a272cce11",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0871",
+    "location": "history/prior-audit/evidence/text/adfa0d5be5ca5cab8b234826bda61c5923eafc675d4ee1f4ca3ea879764f09f4.md",
+    "bytes_read": 2560,
+    "sha256": "adfa0d5be5ca5cab8b234826bda61c5923eafc675d4ee1f4ca3ea879764f09f4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0872",
+    "location": "history/prior-audit/evidence/text/cef44a26b2193147ec602199be2491c42998bf4ea7fcf33e096b3ca73e6f8452.txt",
+    "bytes_read": 11490,
+    "sha256": "cef44a26b2193147ec602199be2491c42998bf4ea7fcf33e096b3ca73e6f8452",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0873",
+    "location": "history/prior-audit/evidence/text/e8d246460d378fdc750b4e8c7f9baccaa6441f5d2388875348490361f606e250.mjs",
+    "bytes_read": 6000,
+    "sha256": "e8d246460d378fdc750b4e8c7f9baccaa6441f5d2388875348490361f606e250",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0874",
+    "location": "history/prior-audit/evidence/text/5ca5c962f85b9a0ad1ec6e7b9bc762bda3b88fb17d92d49df9bd87ca25e9b613.txt",
+    "bytes_read": 4686,
+    "sha256": "5ca5c962f85b9a0ad1ec6e7b9bc762bda3b88fb17d92d49df9bd87ca25e9b613",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0875",
+    "location": "history/prior-audit/evidence/text/ccce04a549f1b1600d82a1fdd478cf17a877c2003d207bab12a8aa329fd4d688.mjs",
+    "bytes_read": 2350,
+    "sha256": "ccce04a549f1b1600d82a1fdd478cf17a877c2003d207bab12a8aa329fd4d688",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0941",
+    "location": "history/prior-audit/evidence/text/109a72ac76cbed0d72bd93acb8e0aa27bda64f0b846fec3233df014b0031e122.txt",
+    "bytes_read": 476,
+    "sha256": "109a72ac76cbed0d72bd93acb8e0aa27bda64f0b846fec3233df014b0031e122",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-0986",
+    "location": "history/prior-audit/evidence/text/71f624f93ef054182bbd622ed8b8db51730a1fd520799d3a1bdc451676bb362e.txt",
+    "bytes_read": 1743,
+    "sha256": "71f624f93ef054182bbd622ed8b8db51730a1fd520799d3a1bdc451676bb362e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1001",
+    "location": "history/prior-audit/evidence/text/d1e9231854da51581b90d827980f61c145e48e3d1175bffa3e8785b128cba692.txt",
+    "bytes_read": 831,
+    "sha256": "d1e9231854da51581b90d827980f61c145e48e3d1175bffa3e8785b128cba692",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1015",
+    "location": "history/prior-audit/evidence/text/b327e0f14abf3d98ff3aee7a14d2f170995973bed4a551df71fa31a3cad4f597.txt",
+    "bytes_read": 1126,
+    "sha256": "b327e0f14abf3d98ff3aee7a14d2f170995973bed4a551df71fa31a3cad4f597",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1051",
+    "location": "history/prior-audit/evidence/text/65f2cb2532e22938ac32c7b7429986c33a5f855516e29fcdd7b12a9cb55a1c58.txt",
+    "bytes_read": 1017,
+    "sha256": "65f2cb2532e22938ac32c7b7429986c33a5f855516e29fcdd7b12a9cb55a1c58",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1055",
+    "location": "history/prior-audit/evidence/text/59769b00272c425dbfe1764d8d75ba37d365f4b27d672487e74a6acfd6a7b43b.txt",
+    "bytes_read": 1059,
+    "sha256": "59769b00272c425dbfe1764d8d75ba37d365f4b27d672487e74a6acfd6a7b43b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1079",
+    "location": "history/prior-audit/evidence/text/3a7672505bf0937b8962144bf070c7eaaaf17b5f0c912e1054db51bf7d722032.txt",
+    "bytes_read": 609,
+    "sha256": "3a7672505bf0937b8962144bf070c7eaaaf17b5f0c912e1054db51bf7d722032",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1084",
+    "location": "history/prior-audit/evidence/text/ce0fac393b9dddfeece3c8da6def1a84dff8d36c5782023923576f35731fda5d.txt",
+    "bytes_read": 1571,
+    "sha256": "ce0fac393b9dddfeece3c8da6def1a84dff8d36c5782023923576f35731fda5d",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1136",
+    "location": "history/prior-audit/evidence/text/b524fbc66b2962944ac6242d90d120d6f2942c40f17da95033d795e34b2a0e42.js",
+    "bytes_read": 93656,
+    "sha256": "b524fbc66b2962944ac6242d90d120d6f2942c40f17da95033d795e34b2a0e42",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1137",
+    "location": "history/prior-audit/evidence/text/1feeb7e108b578394c47e9ff4395d8ed31222e84e7b335f7f30867785b38415e.js",
+    "bytes_read": 3660439,
+    "sha256": "eb7895faf4624fb9ddced6a330748406e90bfeb69353c453776965264e0db2d6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1140",
+    "location": "history/prior-audit/evidence/text/65d4cd6f066439236eb1153f545c867aeb6a9346bc6d0693d6b643fedba134f2.js",
+    "bytes_read": 40856,
+    "sha256": "cd80658b94b51b3f3b43f3ddd3d84092190370759410aae5a24007dec687f2ff",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1141",
+    "location": "history/prior-audit/evidence/text/2a9661e708b82108c4f17405a8a29093c99bebf5b50ace7fb0d244a22bedb8ec.js",
+    "bytes_read": 93567,
+    "sha256": "2a9661e708b82108c4f17405a8a29093c99bebf5b50ace7fb0d244a22bedb8ec",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1142",
+    "location": "history/prior-audit/evidence/text/fd31faa2544d5b3634ef31a391ed691e788fdfd68474c06777efa8c9ce0f504c.js",
+    "bytes_read": 6846,
+    "sha256": "fd31faa2544d5b3634ef31a391ed691e788fdfd68474c06777efa8c9ce0f504c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1143",
+    "location": "history/prior-audit/evidence/text/cb5b4c9902ca6e5c9e7bedde339a657ca9c1d2108c2daad54cc258185dc6f30c.js",
+    "bytes_read": 85511,
+    "sha256": "cb5b4c9902ca6e5c9e7bedde339a657ca9c1d2108c2daad54cc258185dc6f30c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1145",
+    "location": "history/prior-audit/evidence/text/1957f3e772151cc19da2d12c60ab3a7beb1ddbda3f3efd38ae9231a8d223017f.js",
+    "bytes_read": 28274,
+    "sha256": "1957f3e772151cc19da2d12c60ab3a7beb1ddbda3f3efd38ae9231a8d223017f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1146",
+    "location": "history/prior-audit/evidence/text/baaed8e88d4c05d47de70808692ad41ae1e4b6d3bdc5b8274d6b49ec83c333b4.js",
+    "bytes_read": 35368,
+    "sha256": "baaed8e88d4c05d47de70808692ad41ae1e4b6d3bdc5b8274d6b49ec83c333b4",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1147",
+    "location": "history/prior-audit/evidence/text/df965571b48133552caefbb4b552ba4cafcde273f2be5357a7fc413da1e6a781.txt",
+    "bytes_read": 1774,
+    "sha256": "df965571b48133552caefbb4b552ba4cafcde273f2be5357a7fc413da1e6a781",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1148",
+    "location": "history/prior-audit/evidence/text/271e206833d2a9ffc4ee8a276847d5ce03f82c334024bfac4fd1a5e2b9e7ee1b.txt",
+    "bytes_read": 1103,
+    "sha256": "271e206833d2a9ffc4ee8a276847d5ce03f82c334024bfac4fd1a5e2b9e7ee1b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1628",
+    "location": "history/prior-audit/evidence/text/7634ec4631404aa657067f23169247d5fb8c0f6ea9a00050a0f0207731860af8.md",
+    "bytes_read": 4182,
+    "sha256": "64972c95edf9f537ac21dbc99f3640766c96f1c59e88bce7aa88126f53f6fa11",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-1629",
+    "location": "history/prior-audit/evidence/text/45232eed52060fc33d35cb8b3c298f55f5dca7537730225245fbbe079b867a98.md",
+    "bytes_read": 5622,
+    "sha256": "5f7072edd4ecc7f15cd4c4e406846c2df3fa1cc5f04861fa3541c0250c530705",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-2047",
+    "location": "history/prior-audit/evidence/text/1eecd070e0afdb43b61a19aeb6acf5e7cf37e32dc1c5aa6e22ca64f836d4a6ba.md",
+    "bytes_read": 38874,
+    "sha256": "1eecd070e0afdb43b61a19aeb6acf5e7cf37e32dc1c5aa6e22ca64f836d4a6ba",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-2048",
+    "location": "history/prior-audit/evidence/text/6baef459d177ce57b003a33a273327c13e793a1236190f942fe7669797fdb50c.md",
+    "bytes_read": 16294,
+    "sha256": "6baef459d177ce57b003a33a273327c13e793a1236190f942fe7669797fdb50c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-2049",
+    "location": "history/prior-audit/evidence/text/b295bb5af6a3f9a3463e5be596f3ba2ea176d41d66915d311049a0980c38495a.txt",
+    "bytes_read": 8954,
+    "sha256": "b295bb5af6a3f9a3463e5be596f3ba2ea176d41d66915d311049a0980c38495a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3000",
+    "location": "evidence/new-public/PUBLIC-001.html",
+    "bytes_read": 227262,
+    "sha256": "278e99cd0ffad9e7d3a767eae6ce3d6e2be848c7fe0fdb5ebef435bf80ce0652",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3001",
+    "location": "evidence/new-public/PUBLIC-001.txt",
+    "bytes_read": 7064,
+    "sha256": "385c4ac914a825b05ed5a52f6e0c704fdc516f1209b25298b64a723a483c04be",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3002",
+    "location": "evidence/new-public/PUBLIC-002.html",
+    "bytes_read": 24123,
+    "sha256": "bd015f55a9b01fc4cbf8a91edd66c9780485205cb4a8356708ce50bf20df1ee6",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3003",
+    "location": "evidence/new-public/PUBLIC-002.txt",
+    "bytes_read": 1527,
+    "sha256": "0d6520a2a7abe82d1c08370664f47c719c53c210f0fc09f170866c840d142d6c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3004",
+    "location": "evidence/new-public/PUBLIC-003.html",
+    "bytes_read": 39096,
+    "sha256": "4da151d31b2e4758d7955b57e3ad5c78ad4c394e7706a65a6b38d373149ea13f",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3005",
+    "location": "evidence/new-public/PUBLIC-003.txt",
+    "bytes_read": 7424,
+    "sha256": "0bc685ae3249e979ffcbaf846a7f562b9363645709dc6ac3ce8bb5dc697dacf9",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3006",
+    "location": "evidence/new-public/PUBLIC-004.html",
+    "bytes_read": 198075,
+    "sha256": "3033d3bd20a3edb522595a37645fc76cc0ec2c759349c0a155cec11dd5c01f0e",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3007",
+    "location": "evidence/new-public/PUBLIC-004.txt",
+    "bytes_read": 5171,
+    "sha256": "16c810f184a237983c2f8460d05df054753900224d4f1e3823a4c7c064c51b8a",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3008",
+    "location": "evidence/new-public/PUBLIC-005.html",
+    "bytes_read": 134242,
+    "sha256": "eb7c0d248aaf6ce9d222ea6ccfe501cf432d9fc66583aa2fbb698e254d2b1413",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3009",
+    "location": "evidence/new-public/PUBLIC-005.txt",
+    "bytes_read": 1453,
+    "sha256": "b9765a6f024a8929064c262a9366f430a3fff8329479e465d32580f6fd90b43c",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3010",
+    "location": "evidence/new-public/PUBLIC-006.css",
+    "bytes_read": 139641,
+    "sha256": "a1aae101a09791af3026f5d85576db2c19ace181f0063ce6aa17c9bffc79cf9b",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3011",
+    "location": "evidence/new-public/PUBLIC-007.css",
+    "bytes_read": 104357,
+    "sha256": "9fee0122526c5adb80c2257cdc5f1828a81225820a624c0ca365fc97ef676270",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3012",
+    "location": "evidence/new-public/PUBLIC-008.css",
+    "bytes_read": 3124,
+    "sha256": "4279b532b1b4610493590910b247380aaa6c6fd753f23f9b464fa13c86fe8077",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3013",
+    "location": "evidence/new-public/PUBLIC-009.css",
+    "bytes_read": 28995,
+    "sha256": "c571a89a1b963cdd35e8456a82128d3188f4479dab6dee1d4e93a4e3f75249f0",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3019",
+    "location": "wasm-analysis/modules/module-003/loader.js",
+    "bytes_read": 42981,
+    "sha256": "b2cacb67453e6be099d6e76e717b40e8d8e8b93716ec8320011c14fda62fd317",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3021",
+    "location": "wasm-analysis/modules/module-004/loader.js",
+    "bytes_read": 26003,
+    "sha256": "b49d13f972f148f6797d968fcfc31462cb775deb2580be74f285b8fc9a8b27ef",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3024",
+    "location": "audit-metadata/public-request-log.json",
+    "bytes_read": 19743,
+    "sha256": "746af0e8e37d68caee77edda3521f3000b51d98eff812fc6ce5fe822cd544c27",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  },
+  {
+    "source_id": "SRC-3025",
+    "location": "audit-metadata/dns-tls-observations.json",
+    "bytes_read": 2973,
+    "sha256": "f78a4f2d4a89ae26304f5f04524c2c9bd0bc643b58ca593b45f8ce80abe69732",
+    "limits": "Complete text read and loader/asset-reference scan; not all functions semantically interpreted."
+  }
+]

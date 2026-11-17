@@ -1,0 +1,20 @@
+// source: chesscom/user_properties/v1/properties_time_windows.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+message TimeWindowsPropertiesData {
+  repeated .chesscom.user_properties.v1.TimeWindowsPropertiesData.PropertiesEntry properties = 1;
+  message PropertiesEntry {
+  optional string key = 1;
+  optional .chesscom.user_properties.v1.TimeWindowsPropertyData value = 2;
+  }
+}
+
+message TimeWindowsPropertyData {
+  repeated .chesscom.user_properties.v1.TimeWindowsPropertyData.DailyAggregatedEntry daily_aggregated = 1;
+  message DailyAggregatedEntry {
+  optional int32 key = 1;
+  optional double value = 2;
+  }
+}

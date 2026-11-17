@@ -1,0 +1,31 @@
+Chess.com Local Review — v0.1.6 quota-start fix
+
+INSTALL
+1. Extract chess-local-review-v0.1.6-quota-fix.zip into your EXISTING unpacked
+   extension folder (the folder containing manifest.json).
+2. Replace manifest.json and page-hook.js when prompted. Keep all existing
+   engines, lib files, bridge.js, service-worker.js, and offscreen files.
+3. Open chrome://extensions and click Reload on this extension.
+4. Reload the Chess.com tab (important: the permission state is captured when
+   the page starts). The badge should say hook installed v0.1.6.
+5. Try Game Review on a game you have NEVER reviewed, with quota exhausted.
+
+WHAT CHANGED
+The old hook patched hasUnlimitedReview, but the page's actual launch gate
+checks canCreate and locked before opening a review socket. Those local
+analysis permissions are now patched before the page snapshots them.
+Existing page configuration/PGN is preserved. Later normal quota assignments
+and replacement analysis configurations are handled as well.
+
+This does not change account membership, server quota, cloud storage rights,
+or library permissions. Game Review requests still use the local socket path.
+
+TESTED
+- Original page gate blocks an exhausted-quota control case.
+- Five configuration timing/replacement cases with exhausted quota and no
+  cache reach the local request bridge after the fix.
+- Existing brand-checked WebSocket regression suite: all pass.
+
+NOT YET VERIFIED
+A live signed-in Chrome session with exhausted quota still needs user testing.
+This patch does not claim to fix numerical matching or coach audio yet.

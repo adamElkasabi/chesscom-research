@@ -1,0 +1,126 @@
+export function original_fn_1671(a:int_ptr, b:int) {
+  var f:int;
+  var g:int;
+  var i:int;
+  var h:int;
+  var e:int;
+  var d:{ a:int, b:int }
+  var c:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int }
+  if (g_c == 2) {
+    g_d[0]:int = g_d[0]:int - 28;
+    c = g_d[0]:int;
+    a = c.a;
+    d = c.c;
+    e = c.d;
+    f = c.e;
+    g = c.f;
+    h = c.g;
+    b = c.b;
+  }
+  c = {
+        if (g_c == 2) {
+          g_d[0]:int = g_d[0]:int - 4;
+          i = (g_d[0]:int)[0]:int;
+        }
+        if (eqz(g_c)) {
+          f = g_a;
+          g = f - 16;
+          g_a = g;
+          h = a + 4;
+        }
+        if (eqz(g_c) | eqz(i)) {
+          boundary_original_fn_22864(h);
+          0;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          e = a[8];
+          f = eqz(e);
+        }
+        if (eqz(g_c)) {
+          if (f) goto B_g;
+          if (eqz(a[10])) goto B_g;
+          var j:int_ptr = a + 28;
+          c = j[0];
+          a = b & e - 1;
+          d = popcnt(e);
+          if (d <= 1) goto B_i;
+          if (e > (a = b)) goto B_i;
+          a = a % e;
+          label B_i:
+          f = a;
+          a = c[a]:int;
+          if (eqz(a)) goto B_g;
+          a = a[0];
+          if (eqz(a)) goto B_g;
+          c = e - 1;
+          var k:int = d > 1;
+          loop L_j {
+            d = a[1];
+            if (d != b) {
+              if (eqz(k)) {
+                d = c & d;
+                goto B_n;
+              }
+              if (d < e) goto B_n;
+              d = d % e;
+              label B_n:
+              if (d == f) goto B_l;
+              goto B_g;
+            }
+            d = a[2] == b;
+            if (d) goto B_k;
+            label B_l:
+            a = a[0];
+            if (a) continue L_j;
+            goto B_g;
+            label B_k:
+          }
+          boundary_original_fn_1672(g + 4, j, a);
+          a = g[1]:int;
+          g[1]:int = 0;
+          if (eqz(a)) goto B_g;
+          b = g[12]:ubyte != 1;
+        }
+        if (eqz(g_c)) {
+          if (b) goto B_p;
+          d = a[4];
+          if (eqz(d)) goto B_p;
+          d.b = (b = d.b) - 1;
+          if (b) goto B_p;
+          b = d.a[2]:int;
+        }
+        if (eqz(g_c) | i == 1) {
+          call_indirect(d, b);
+          1;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c) | i == 2) {
+          boundary_original_fn_22862(d);
+          2;
+          if (g_c == 1) goto B_b;
+        }
+        label B_p:
+        if (eqz(g_c)) { boundary_original_fn_22239(a) }
+        label B_g:
+        if (eqz(g_c) | i == 3) {
+          boundary_original_fn_22279(h);
+          3;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) { g_a = g + 16 }
+        return ;
+        label B_b:
+      }
+  (g_d[0]:int)[0]:int = c;
+  g_d[0]:int = g_d[0]:int + 4;
+  c = g_d[0]:int;
+  c.a = a;
+  c.b = b;
+  c.c = d;
+  c.d = e;
+  c.e = f;
+  c.f = g;
+  c.g = h;
+  g_d[0]:int = g_d[0]:int + 28;
+}

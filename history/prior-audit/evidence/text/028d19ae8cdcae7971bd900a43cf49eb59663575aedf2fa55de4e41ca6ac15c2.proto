@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_set_game_result.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message SetGameResultRequest {
+  optional .chesscom.chess.v1.GameResult claimed_game_result = 1;
+}
+
+message SetGameResultResponse {
+}

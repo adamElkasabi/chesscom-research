@@ -1,0 +1,61 @@
+{
+  "name": "chesscom/game_storage/v2/player_title.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "PlayerTitle",
+      "value": [
+        {
+          "name": "PLAYER_TITLE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_TITLE_WGM",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_TITLE_GM",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_TITLE_WIM",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_TITLE_IM",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_TITLE_WFM",
+          "number": 5
+        },
+        {
+          "name": "PLAYER_TITLE_FM",
+          "number": 6
+        },
+        {
+          "name": "PLAYER_TITLE_WNM",
+          "number": 7
+        },
+        {
+          "name": "PLAYER_TITLE_NM",
+          "number": 8
+        },
+        {
+          "name": "PLAYER_TITLE_M",
+          "number": 9
+        },
+        {
+          "name": "PLAYER_TITLE_CM",
+          "number": 10
+        },
+        {
+          "name": "PLAYER_TITLE_WCM",
+          "number": 11
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

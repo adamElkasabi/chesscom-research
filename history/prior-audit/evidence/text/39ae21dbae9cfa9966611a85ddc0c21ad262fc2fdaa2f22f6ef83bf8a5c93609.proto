@@ -1,0 +1,14 @@
+// source: chesscom/courses_common/v1/course_source.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum SourceType {
+  SOURCE_TYPE_UNSPECIFIED = 0;
+  SOURCE_TYPE_CHESSABLE = 1;
+}
+
+message CourseSource {
+  optional string id = 1;
+  optional .chesscom.courses_common.v1.SourceType type = 2;
+}

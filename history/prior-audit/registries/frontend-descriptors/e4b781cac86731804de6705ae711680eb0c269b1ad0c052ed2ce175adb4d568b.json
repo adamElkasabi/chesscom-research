@@ -1,0 +1,20 @@
+{
+  "name": "chesscom/courses/v1/goal_type.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "GoalType",
+      "value": [
+        {
+          "name": "GOAL_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GOAL_TYPE_FTUE_CHECKLIST",
+          "number": 1
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

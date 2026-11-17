@@ -1,0 +1,130 @@
+{
+  "name": "chesscom/courses/v1/course_video_playback.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseVideoPlayback",
+      "field": [
+        {
+          "name": "hls_url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "files",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseVideoPlaybackFile"
+        },
+        {
+          "name": "text_tracks",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseVideoTextTrack"
+        },
+        {
+          "name": "thumbnail_url",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "duration_seconds",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_hls_url"
+        },
+        {
+          "name": "_thumbnail_url"
+        },
+        {
+          "name": "_duration_seconds"
+        }
+      ]
+    },
+    {
+      "name": "CourseVideoPlaybackFile",
+      "field": [
+        {
+          "name": "url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "width",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "height",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "file_size",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_file_size"
+        }
+      ]
+    },
+    {
+      "name": "CourseVideoTextTrack",
+      "field": [
+        {
+          "name": "language",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "label",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "url",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_label"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

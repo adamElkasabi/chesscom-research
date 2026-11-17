@@ -1,0 +1,13 @@
+// source: chesscom/courses/v1/courses_has_user_access_to_sku_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetHasUserAccessToSkuRequest {
+  optional string chesscom_user_id = 1;
+  optional string sku = 2;
+}
+
+message GetHasUserAccessToSkuResponse {
+  optional bool has_access = 1;
+}

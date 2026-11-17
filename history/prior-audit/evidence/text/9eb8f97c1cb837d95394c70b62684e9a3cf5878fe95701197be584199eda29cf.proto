@@ -1,0 +1,49 @@
+// source: chesscom/audit_logs/v1/audit_options.proto
+// syntax: proto3
+
+package chesscom.audit_logs.v1;
+
+enum FieldSensitivity {
+  FIELD_SENSITIVITY_UNSPECIFIED = 0;
+  FIELD_SENSITIVITY_DEFAULT = 1;
+  FIELD_SENSITIVITY_ADVANCED = 2;
+  FIELD_SENSITIVITY_RESTRICTED = 3;
+}
+
+enum MessageSensitivity {
+  MESSAGE_SENSITIVITY_UNSPECIFIED = 0;
+  MESSAGE_SENSITIVITY_DEFAULT = 1;
+  MESSAGE_SENSITIVITY_RESTRICTED = 2;
+}
+
+message AuditFieldOptions {
+  oneof _indexed {
+  bool indexed = 4;
+  }
+  oneof _index_alias {
+  string index_alias = 5;
+  }
+  optional .chesscom.audit_logs.v1.FieldSensitivity field_sensitivity = 1;
+  optional string description = 2;
+  repeated string required_permissions = 3;
+}
+
+message AuditMessageOptions {
+  optional .chesscom.audit_logs.v1.MessageSensitivity message_sensitivity = 1;
+  optional string description = 2;
+  repeated string required_permissions = 3;
+}
+
+message AuditMethodOptions {
+  oneof _log_errors {
+  bool log_errors = 6;
+  }
+  oneof _log_response {
+  bool log_response = 7;
+  }
+  optional string action_name = 1;
+  optional .chesscom.audit_logs.v1.MessageSensitivity sensitivity = 2;
+  repeated string required_permissions = 3;
+  optional string request_reference_id_field = 4;
+  optional string response_reference_id_field = 5;
+}

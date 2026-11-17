@@ -1,0 +1,8 @@
+// source: chesscom/game_gateway/v1/pgn_metadata.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v1;
+
+message PgnMetadata {
+  optional string pgn = 1;
+}

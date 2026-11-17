@@ -1,0 +1,23 @@
+// source: chesscom/courses/v1/course_author.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum CourseAuthorType {
+  COURSE_AUTHOR_TYPE_UNSPECIFIED = 0;
+  COURSE_AUTHOR_TYPE_MAIN = 1;
+  COURSE_AUTHOR_TYPE_COAUTHOR = 2;
+  COURSE_AUTHOR_TYPE_ENDORSER = 3;
+  COURSE_AUTHOR_TYPE_PRESENTER = 4;
+}
+
+message CourseAuthor {
+  oneof _chess_title {
+  string chess_title = 2;
+  }
+  oneof _picture {
+  .chesscom.courses_common.v1.Picture picture = 3;
+  }
+  optional string name = 1;
+  optional .chesscom.courses.v1.CourseAuthorType type = 4;
+}

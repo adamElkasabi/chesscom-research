@@ -1,0 +1,83 @@
+{
+  "name": "chesscom/game_gateway/v2/hydrated_game.proto",
+  "package": "chesscom.game_gateway.v2",
+  "message_type": [
+    {
+      "name": "HydratedGame",
+      "field": [
+        {
+          "name": "game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.Game"
+        },
+        {
+          "name": "cheat_metadata",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.cheat_metadata_storage.v1.GameCheatMetadata"
+        },
+        {
+          "name": "relationship_metadata",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.GameRelationshipMetadata"
+        },
+        {
+          "name": "analysis_metadata",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.GameAnalysisMetadata"
+        },
+        {
+          "name": "player_metadata",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.PlayerDetailsMetadata"
+        },
+        {
+          "name": "favorite_metadata",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.FavoriteMetadata"
+        },
+        {
+          "name": "bot_metadata",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotMetadata"
+        },
+        {
+          "name": "coach_metadata",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.Coach"
+        },
+        {
+          "name": "opening_metadata",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.OpeningMetadata"
+        },
+        {
+          "name": "pgn_metadata",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v1.PgnMetadata"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

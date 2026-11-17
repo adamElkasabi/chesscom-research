@@ -1,0 +1,113 @@
+{
+  "name": "chesscom/text_item/v1alpha/takeaway_text_context.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "dependency": [
+    "chesscom/stats/v1/advanced_stat_type.proto"
+  ],
+  "message_type": [
+    {
+      "name": "TakeawayTextContext",
+      "field": [
+        {
+          "name": "stat",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "trend",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.TakeawayTextContextTrend"
+        },
+        {
+          "name": "skill",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.TakeawayTextContextQuality"
+        },
+        {
+          "name": "performance",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.TakeawayTextContextQuality"
+        }
+      ]
+    },
+    {
+      "name": "AdvancedStatCategoryTakeawayTextContext",
+      "field": [
+        {
+          "name": "stat",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "trend",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.TakeawayTextContextTrend"
+        },
+        {
+          "name": "skill",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.TakeawayTextContextQuality"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "TakeawayTextContextTrend",
+      "value": [
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_TREND_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_TREND_ANY",
+          "number": 1
+        },
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_TREND_UP",
+          "number": 2
+        },
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_TREND_DOWN",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "TakeawayTextContextQuality",
+      "value": [
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_QUALITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_QUALITY_ANY",
+          "number": 1
+        },
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_QUALITY_BAD",
+          "number": 2
+        },
+        {
+          "name": "TAKEAWAY_TEXT_CONTEXT_QUALITY_GOOD",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

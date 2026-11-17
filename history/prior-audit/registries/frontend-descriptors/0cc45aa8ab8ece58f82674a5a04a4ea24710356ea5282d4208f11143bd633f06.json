@@ -1,0 +1,2252 @@
+{
+  "name": "chesscom/user_properties/v1/properties.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PropertiesByUser",
+      "field": [
+        {
+          "name": "user",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "properties",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.Properties"
+        },
+        {
+          "name": "time_windows_properties",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TimeWindowsPropertiesData",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_time_windows_properties"
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "field": [
+        {
+          "name": "core",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.CoreProperty",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "pii",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PIIProperty",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_details",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.UserDetailsProperty",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "roles",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.RolesProperty",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "activity",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.ActivityProperty",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "subscription",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.SubscriptionProperty",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "attribution_signup_initial",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AttributionProperty",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "attribution_signup_last",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AttributionProperty",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "attribution_trial_initial",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AttributionProperty",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "attribution_trial_last",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AttributionProperty",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "ratings",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.RatingsProperty",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "wdl",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.WDLProperty",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "analysis",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AnalysisProperty",
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "settings_daily_chess",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.SettingsDailyChessProperty",
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "settings_live_chess",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.SettingsLiveChessProperty",
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_daily_chess",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsDailyProperty",
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_daily_chess960",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsDailyChess960Property",
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_chess_bullet",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_chess_blitz",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_chess_rapid",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_chess960_bullet",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_chess960_blitz",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_chess960_rapid",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "stats_live_bughouse",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.StatsLiveProperty",
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_settings",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.UserSettingsProperty",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzles_attempted",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PuzzlesAttemptedProperty",
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "clubs",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.ClubsProperty",
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_battle",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PuzzleBattleProperty",
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "audiences",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AudiencesProperty",
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_abuse",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.UserAbuseProperty",
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "settings",
+          "number": 31,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.Setting"
+        },
+        {
+          "name": "daily_puzzles_solved",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.DailyPuzzlesSolvedProperty",
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_chess",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_chess960",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_bughouse",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_threecheck",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_crazyhouse",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_kingofthehill",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_bullet_oddschess",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_chess",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_chess960",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_bughouse",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_threecheck",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 41,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_crazyhouse",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 42,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_kingofthehill",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 43,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_blitz_oddschess",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 44,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_chess",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 45,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_chess960",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 46,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_bughouse",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 47,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_threecheck",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 48,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_crazyhouse",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 49,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_kingofthehill",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 50,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_rapid_oddschess",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 51,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_daily_chess",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 52,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_daily_chess960",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 53,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_daily_oddschess",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsProperty",
+          "oneof_index": 54,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_chess",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 55,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_chess960",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 56,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_bughouse",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 57,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_threecheck",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 58,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_crazyhouse",
+          "number": 61,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 59,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_kingofthehill",
+          "number": 62,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 60,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_bullet_oddschess",
+          "number": 63,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 61,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_chess",
+          "number": 64,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 62,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_chess960",
+          "number": 65,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 63,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_bughouse",
+          "number": 66,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 64,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_threecheck",
+          "number": 67,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 65,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_crazyhouse",
+          "number": 68,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 66,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_kingofthehill",
+          "number": 69,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 67,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_blitz_oddschess",
+          "number": 70,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 68,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_chess",
+          "number": 71,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 69,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_chess960",
+          "number": 72,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 70,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_bughouse",
+          "number": 73,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 71,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_threecheck",
+          "number": 74,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 72,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_crazyhouse",
+          "number": 75,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 73,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_kingofthehill",
+          "number": 76,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 74,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_rapid_oddschess",
+          "number": 77,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 75,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_daily_chess",
+          "number": 78,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 76,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_daily_chess960",
+          "number": 79,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 77,
+          "proto3_optional": true
+        },
+        {
+          "name": "tournament_daily_oddschess",
+          "number": 80,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsProperty",
+          "oneof_index": 78,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_engagement",
+          "number": 81,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.UserEngagementProperty",
+          "oneof_index": 79,
+          "proto3_optional": true
+        },
+        {
+          "name": "coaches",
+          "number": 82,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.CoachesProperty",
+          "oneof_index": 80,
+          "proto3_optional": true
+        },
+        {
+          "name": "themes",
+          "number": 83,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.ThemesProperty",
+          "oneof_index": 81,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs",
+          "number": 84,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.IpqsProperty",
+          "oneof_index": 82,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_stats",
+          "number": 85,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.UserPuzzleStatsProperty",
+          "oneof_index": 83,
+          "proto3_optional": true
+        },
+        {
+          "name": "courses",
+          "number": 86,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.CoursesProperty",
+          "oneof_index": 84,
+          "proto3_optional": true
+        },
+        {
+          "name": "survey",
+          "number": 87,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.SurveyProperty",
+          "oneof_index": 85,
+          "proto3_optional": true
+        },
+        {
+          "name": "attribution_subscription_upgrade_initial",
+          "number": 88,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AttributionProperty",
+          "oneof_index": 86,
+          "proto3_optional": true
+        },
+        {
+          "name": "attribution_subscription_upgrade_last",
+          "number": 89,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.AttributionProperty",
+          "oneof_index": 87,
+          "proto3_optional": true
+        },
+        {
+          "name": "product_activity_rankings",
+          "number": 90,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.ProductActivityRankingsProperty",
+          "oneof_index": 88,
+          "proto3_optional": true
+        },
+        {
+          "name": "turnstile",
+          "number": 91,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TurnstileProperty",
+          "oneof_index": 89,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_streak_v2",
+          "number": 92,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.UserStreakV2Property",
+          "oneof_index": 90,
+          "proto3_optional": true
+        },
+        {
+          "name": "fair_play",
+          "number": 93,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.FairPlayProperty",
+          "oneof_index": 91,
+          "proto3_optional": true
+        },
+        {
+          "name": "navbar",
+          "number": 94,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.NavbarProperty",
+          "oneof_index": 92,
+          "proto3_optional": true
+        },
+        {
+          "name": "themes_ios",
+          "number": 95,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.ThemesProperty",
+          "oneof_index": 93,
+          "proto3_optional": true
+        },
+        {
+          "name": "themes_android",
+          "number": 96,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.ThemesProperty",
+          "oneof_index": 94,
+          "proto3_optional": true
+        },
+        {
+          "name": "widgets_ios",
+          "number": 97,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.WidgetsProperty",
+          "oneof_index": 95,
+          "proto3_optional": true
+        },
+        {
+          "name": "widgets_android",
+          "number": 98,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.WidgetsProperty",
+          "oneof_index": 96,
+          "proto3_optional": true
+        },
+        {
+          "name": "league",
+          "number": 99,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.LeagueProperty",
+          "oneof_index": 97,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_rush",
+          "number": 100,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PuzzleRushProperty",
+          "oneof_index": 98,
+          "proto3_optional": true
+        },
+        {
+          "name": "monthly_bot_event",
+          "number": 101,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.MonthlyBotEventProperty",
+          "oneof_index": 99,
+          "proto3_optional": true
+        },
+        {
+          "name": "predictive",
+          "number": 102,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PredictiveProperty",
+          "oneof_index": 100,
+          "proto3_optional": true
+        },
+        {
+          "name": "growth",
+          "number": 103,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.GrowthProperty",
+          "oneof_index": 101,
+          "proto3_optional": true
+        },
+        {
+          "name": "skills",
+          "number": 104,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.SkillsProperty",
+          "oneof_index": 102,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_courses",
+          "number": 105,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.OpeningCoursesProperty",
+          "oneof_index": 103,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_core"
+        },
+        {
+          "name": "_pii"
+        },
+        {
+          "name": "_user_details"
+        },
+        {
+          "name": "_roles"
+        },
+        {
+          "name": "_activity"
+        },
+        {
+          "name": "_subscription"
+        },
+        {
+          "name": "_attribution_signup_initial"
+        },
+        {
+          "name": "_attribution_signup_last"
+        },
+        {
+          "name": "_attribution_trial_initial"
+        },
+        {
+          "name": "_attribution_trial_last"
+        },
+        {
+          "name": "_ratings"
+        },
+        {
+          "name": "_wdl"
+        },
+        {
+          "name": "_analysis"
+        },
+        {
+          "name": "_settings_daily_chess"
+        },
+        {
+          "name": "_settings_live_chess"
+        },
+        {
+          "name": "_stats_daily_chess"
+        },
+        {
+          "name": "_stats_daily_chess960"
+        },
+        {
+          "name": "_stats_live_chess_bullet"
+        },
+        {
+          "name": "_stats_live_chess_blitz"
+        },
+        {
+          "name": "_stats_live_chess_rapid"
+        },
+        {
+          "name": "_stats_live_chess960_bullet"
+        },
+        {
+          "name": "_stats_live_chess960_blitz"
+        },
+        {
+          "name": "_stats_live_chess960_rapid"
+        },
+        {
+          "name": "_stats_live_bughouse"
+        },
+        {
+          "name": "_user_settings"
+        },
+        {
+          "name": "_puzzles_attempted"
+        },
+        {
+          "name": "_clubs"
+        },
+        {
+          "name": "_puzzle_battle"
+        },
+        {
+          "name": "_audiences"
+        },
+        {
+          "name": "_user_abuse"
+        },
+        {
+          "name": "_daily_puzzles_solved"
+        },
+        {
+          "name": "_play_bullet_chess"
+        },
+        {
+          "name": "_play_bullet_chess960"
+        },
+        {
+          "name": "_play_bullet_bughouse"
+        },
+        {
+          "name": "_play_bullet_threecheck"
+        },
+        {
+          "name": "_play_bullet_crazyhouse"
+        },
+        {
+          "name": "_play_bullet_kingofthehill"
+        },
+        {
+          "name": "_play_bullet_oddschess"
+        },
+        {
+          "name": "_play_blitz_chess"
+        },
+        {
+          "name": "_play_blitz_chess960"
+        },
+        {
+          "name": "_play_blitz_bughouse"
+        },
+        {
+          "name": "_play_blitz_threecheck"
+        },
+        {
+          "name": "_play_blitz_crazyhouse"
+        },
+        {
+          "name": "_play_blitz_kingofthehill"
+        },
+        {
+          "name": "_play_blitz_oddschess"
+        },
+        {
+          "name": "_play_rapid_chess"
+        },
+        {
+          "name": "_play_rapid_chess960"
+        },
+        {
+          "name": "_play_rapid_bughouse"
+        },
+        {
+          "name": "_play_rapid_threecheck"
+        },
+        {
+          "name": "_play_rapid_crazyhouse"
+        },
+        {
+          "name": "_play_rapid_kingofthehill"
+        },
+        {
+          "name": "_play_rapid_oddschess"
+        },
+        {
+          "name": "_play_daily_chess"
+        },
+        {
+          "name": "_play_daily_chess960"
+        },
+        {
+          "name": "_play_daily_oddschess"
+        },
+        {
+          "name": "_tournament_bullet_chess"
+        },
+        {
+          "name": "_tournament_bullet_chess960"
+        },
+        {
+          "name": "_tournament_bullet_bughouse"
+        },
+        {
+          "name": "_tournament_bullet_threecheck"
+        },
+        {
+          "name": "_tournament_bullet_crazyhouse"
+        },
+        {
+          "name": "_tournament_bullet_kingofthehill"
+        },
+        {
+          "name": "_tournament_bullet_oddschess"
+        },
+        {
+          "name": "_tournament_blitz_chess"
+        },
+        {
+          "name": "_tournament_blitz_chess960"
+        },
+        {
+          "name": "_tournament_blitz_bughouse"
+        },
+        {
+          "name": "_tournament_blitz_threecheck"
+        },
+        {
+          "name": "_tournament_blitz_crazyhouse"
+        },
+        {
+          "name": "_tournament_blitz_kingofthehill"
+        },
+        {
+          "name": "_tournament_blitz_oddschess"
+        },
+        {
+          "name": "_tournament_rapid_chess"
+        },
+        {
+          "name": "_tournament_rapid_chess960"
+        },
+        {
+          "name": "_tournament_rapid_bughouse"
+        },
+        {
+          "name": "_tournament_rapid_threecheck"
+        },
+        {
+          "name": "_tournament_rapid_crazyhouse"
+        },
+        {
+          "name": "_tournament_rapid_kingofthehill"
+        },
+        {
+          "name": "_tournament_rapid_oddschess"
+        },
+        {
+          "name": "_tournament_daily_chess"
+        },
+        {
+          "name": "_tournament_daily_chess960"
+        },
+        {
+          "name": "_tournament_daily_oddschess"
+        },
+        {
+          "name": "_user_engagement"
+        },
+        {
+          "name": "_coaches"
+        },
+        {
+          "name": "_themes"
+        },
+        {
+          "name": "_ipqs"
+        },
+        {
+          "name": "_puzzle_stats"
+        },
+        {
+          "name": "_courses"
+        },
+        {
+          "name": "_survey"
+        },
+        {
+          "name": "_attribution_subscription_upgrade_initial"
+        },
+        {
+          "name": "_attribution_subscription_upgrade_last"
+        },
+        {
+          "name": "_product_activity_rankings"
+        },
+        {
+          "name": "_turnstile"
+        },
+        {
+          "name": "_user_streak_v2"
+        },
+        {
+          "name": "_fair_play"
+        },
+        {
+          "name": "_navbar"
+        },
+        {
+          "name": "_themes_ios"
+        },
+        {
+          "name": "_themes_android"
+        },
+        {
+          "name": "_widgets_ios"
+        },
+        {
+          "name": "_widgets_android"
+        },
+        {
+          "name": "_league"
+        },
+        {
+          "name": "_puzzle_rush"
+        },
+        {
+          "name": "_monthly_bot_event"
+        },
+        {
+          "name": "_predictive"
+        },
+        {
+          "name": "_growth"
+        },
+        {
+          "name": "_skills"
+        },
+        {
+          "name": "_opening_courses"
+        }
+      ]
+    },
+    {
+      "name": "Definitions",
+      "field": [
+        {
+          "name": "core",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.CorePropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "pii",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PIIPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_details",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserDetailsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "roles",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.RolesPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "activity",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ActivityPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "subscription",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SubscriptionPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "attribution_signup_initial",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "attribution_signup_last",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "attribution_trial_initial",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "attribution_trial_last",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "ratings",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.RatingsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "wdl",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.WDLPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "analysis",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AnalysisPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "settings_daily_chess",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SettingsDailyChessPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "settings_live_chess",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SettingsLiveChessPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_daily_chess",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsDailyPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_daily_chess960",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsDailyChess960PropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_chess_bullet",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_chess_blitz",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_chess_rapid",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_chess960_bullet",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_chess960_blitz",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_chess960_rapid",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "stats_live_bughouse",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsLivePropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "user_settings",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserSettingsPropertyDefinition",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "puzzles_attempted",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PuzzlesAttemptedPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "clubs",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ClubsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "puzzle_battle",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PuzzleBattlePropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "audiences",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AudiencesPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_abuse",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserAbusePropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "setting",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.Setting",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "daily_puzzles_solved",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.DailyPuzzlesSolvedPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_chess",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_chess960",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_bughouse",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_threecheck",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_crazyhouse",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_kingofthehill",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_bullet_oddschess",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_chess",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_chess960",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_bughouse",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_threecheck",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_crazyhouse",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_kingofthehill",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_blitz_oddschess",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_chess",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_chess960",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_bughouse",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_threecheck",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_crazyhouse",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_kingofthehill",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_rapid_oddschess",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_daily_chess",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_daily_chess960",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_daily_oddschess",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_chess",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_chess960",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_bughouse",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_threecheck",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_crazyhouse",
+          "number": 61,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_kingofthehill",
+          "number": 62,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_bullet_oddschess",
+          "number": 63,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_chess",
+          "number": 64,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_chess960",
+          "number": 65,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_bughouse",
+          "number": 66,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_threecheck",
+          "number": 67,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_crazyhouse",
+          "number": 68,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_kingofthehill",
+          "number": 69,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_blitz_oddschess",
+          "number": 70,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_chess",
+          "number": 71,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_chess960",
+          "number": 72,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_bughouse",
+          "number": 73,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_threecheck",
+          "number": 74,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_crazyhouse",
+          "number": 75,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_kingofthehill",
+          "number": 76,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_rapid_oddschess",
+          "number": 77,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_daily_chess",
+          "number": 78,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_daily_chess960",
+          "number": 79,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "tournament_daily_oddschess",
+          "number": 80,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "user_engagement",
+          "number": 81,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserEngagementPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "coaches",
+          "number": 82,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.CoachesPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "themes",
+          "number": 83,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ThemesPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "ipqs",
+          "number": 84,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.IpqsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "puzzle_stats",
+          "number": 85,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserPuzzleStatsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "courses",
+          "number": 86,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.CoursesPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "survey",
+          "number": 87,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SurveyPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "attribution_subscription_upgrade_initial",
+          "number": 88,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "attribution_subscription_upgrade_last",
+          "number": 89,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AttributionPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "product_activity_rankings",
+          "number": 90,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ProductActivityRankingsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "turnstile",
+          "number": 91,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TurnstilePropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_streak_v2",
+          "number": 92,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserStreakV2PropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "fair_play",
+          "number": 93,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.FairPlayPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "navbar",
+          "number": 94,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.NavbarPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "themes_ios",
+          "number": 95,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ThemesPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "themes_android",
+          "number": 96,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ThemesPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "widgets_ios",
+          "number": 97,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.WidgetsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "widgets_android",
+          "number": 98,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.WidgetsPropertyDefinition",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "league",
+          "number": 99,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.LeaguePropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "puzzle_rush",
+          "number": 100,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PuzzleRushPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "monthly_bot_event",
+          "number": 101,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.MonthlyBotEventPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "predictive",
+          "number": 102,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PredictivePropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "growth",
+          "number": 103,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.GrowthPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "skills",
+          "number": 104,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SkillsPropertyDefinition",
+          "oneof_index": 0
+        },
+        {
+          "name": "opening_courses",
+          "number": 105,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.OpeningCoursesPropertyDefinition",
+          "oneof_index": 0
+        }
+      ],
+      "extension": [
+        {
+          "name": "property_name_prefix",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1999,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "json_name": "propertyNamePrefix",
+          "proto3_optional": true
+        },
+        {
+          "name": "deprecation_date",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 2001,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "json_name": "deprecationDate",
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "definition"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

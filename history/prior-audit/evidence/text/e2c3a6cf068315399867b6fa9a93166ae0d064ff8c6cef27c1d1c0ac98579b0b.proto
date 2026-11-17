@@ -1,0 +1,14 @@
+// source: chesscom/ceac/v1/game_analysis.proto
+// syntax: proto3
+
+package chesscom.ceac.v1;
+
+enum GameAnalysisGameType {
+  GAME_ANALYSIS_GAME_TYPE_UNSPECIFIED = 0;
+  GAME_ANALYSIS_GAME_TYPE_DAILY = 1;
+  GAME_ANALYSIS_GAME_TYPE_LIVE = 2;
+  GAME_ANALYSIS_GAME_TYPE_MASTER = 3;
+  GAME_ANALYSIS_GAME_TYPE_PGN = 4;
+  GAME_ANALYSIS_GAME_TYPE_VS_COMPUTER = 5;
+  GAME_ANALYSIS_GAME_TYPE_VS_COACH = 6;
+}

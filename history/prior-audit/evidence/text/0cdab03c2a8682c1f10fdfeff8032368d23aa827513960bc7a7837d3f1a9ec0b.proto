@@ -1,0 +1,35 @@
+// source: chesscom/courses/v1/course_video_playback.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseVideoPlayback {
+  oneof _hls_url {
+  string hls_url = 1;
+  }
+  oneof _thumbnail_url {
+  string thumbnail_url = 4;
+  }
+  oneof _duration_seconds {
+  int32 duration_seconds = 5;
+  }
+  repeated .chesscom.courses.v1.CourseVideoPlaybackFile files = 2;
+  repeated .chesscom.courses.v1.CourseVideoTextTrack text_tracks = 3;
+}
+
+message CourseVideoPlaybackFile {
+  oneof _file_size {
+  int64 file_size = 4;
+  }
+  optional string url = 1;
+  optional int32 width = 2;
+  optional int32 height = 3;
+}
+
+message CourseVideoTextTrack {
+  oneof _label {
+  string label = 2;
+  }
+  optional string language = 1;
+  optional string url = 3;
+}

@@ -1,0 +1,198 @@
+{
+  "name": "chesscom/ceac/v2/game_review.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "GameReviewRequest",
+      "field": [
+        {
+          "name": "new_game_req",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.NewGameRequest"
+        },
+        {
+          "name": "run_search_req",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RunSearchRequest"
+        },
+        {
+          "name": "charm_inf_req",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmInferenceRequest"
+        },
+        {
+          "name": "engine",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Engine"
+        },
+        {
+          "name": "game_evaluation_options",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GameEvaluationOptions"
+        },
+        {
+          "name": "request_metadata",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RequestMetadata"
+        },
+        {
+          "name": "request_options",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.RequestOptions"
+        },
+        {
+          "name": "set_coach",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SetCoachRequest"
+        },
+        {
+          "name": "game_review_options",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GameReviewOptions"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewResponse",
+      "field": [
+        {
+          "name": "progress",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GameReviewResponseProgress",
+          "oneof_index": 0
+        },
+        {
+          "name": "success",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GameReviewResponseSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GameReviewResponseFailure",
+          "oneof_index": 0
+        },
+        {
+          "name": "heartbeat",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.Heartbeat",
+          "oneof_index": 0
+        },
+        {
+          "name": "waiting_for_capacity",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.WaitingForCapacity",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewResponseSuccess",
+      "field": [
+        {
+          "name": "game_review",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReview"
+        },
+        {
+          "name": "cee_c_api_calls",
+          "number": 100,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewResponseProgress",
+      "field": [
+        {
+          "name": "progress",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewResponseFailure",
+      "field": [
+        {
+          "name": "reason",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invalid_game_error",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.InvalidGameError",
+          "oneof_index": 0
+        },
+        {
+          "name": "general_error",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.GeneralError",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure_error",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ceac.v2.FailureError"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "chesscom/ceac/v2/heartbeat.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "Heartbeat",
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

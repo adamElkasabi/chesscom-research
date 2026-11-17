@@ -1,0 +1,14 @@
+// source: chesscom/game_storage/v2/player_provider.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum PlayerProvider {
+  PLAYER_PROVIDER_UNSPECIFIED = 0;
+  PLAYER_PROVIDER_CHESS_COM = 1;
+  PLAYER_PROVIDER_CHESS_KID = 2;
+  PLAYER_PROVIDER_FIDE = 3;
+  PLAYER_PROVIDER_LICHESS_ORG = 4;
+  PLAYER_PROVIDER_CHESSBASE = 5;
+  PLAYER_PROVIDER_CHESS_COM_MASTER = 6;
+}

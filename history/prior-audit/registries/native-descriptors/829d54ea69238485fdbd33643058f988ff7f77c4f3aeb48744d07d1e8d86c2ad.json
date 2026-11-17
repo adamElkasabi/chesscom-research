@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/engine/v1/strength.proto",
+  "package": "chesscom.engine.v1",
+  "enum_type": [
+    {
+      "name": "Strength",
+      "value": [
+        {
+          "name": "STRENGTH_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "STRENGTH_FAST",
+          "number": 1
+        },
+        {
+          "name": "STRENGTH_STANDARD",
+          "number": 2
+        },
+        {
+          "name": "STRENGTH_DEEP",
+          "number": 3
+        },
+        {
+          "name": "STRENGTH_MAXIMUM",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

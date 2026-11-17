@@ -1,0 +1,189 @@
+// source: chesscom/user_properties/v1/properties_subscription.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum SubscriptionPropertyDefinition {
+  SUBSCRIPTION_PROPERTY_UNSPECIFIED = 0;
+  LAST_TRANSITION = 1;
+  MEMBERSHIP_LEVEL = 2;
+  IS_TRIAL = 4;
+  LTV = 5;
+  LAST_SUBSCRIPTION_DEACTIVATION_DATE = 6;
+  LAST_SUBSCRIPTION_ACTIVATION_DATE = 7;
+  LAST_TRIAL_DEACTIVATION_DATE = 8;
+  LAST_TRIAL_ACTIVATION_DATE = 9;
+  PLAN = 10;
+  PLAN_CODE = 11;
+  PLAN_BILLING_AMOUNT = 12;
+  PLAN_STATE = 13;
+  PAYMENT_METHOD = 14;
+  TRIAL_STATE = 15;
+  USER_LIFECYCLE_STATE = 16;
+  RENEWAL_DATE = 17;
+  IS_DEACTIVATED = 18;
+  PREVIOUS_MEMBERSHIP_LEVEL = 19;
+  PREVIOUS_PLAN = 21;
+  PREVIOUS_PLAN_CODE = 22;
+  PREVIOUS_PLAN_BILLING_AMOUNT = 23;
+  IS_TRIAL_ELIGIBLE = 24;
+  CANCELLATION_DATE = 25;
+  CUMULATIVE_SPEND = 26;
+  MEMBERSHIP_NAME = 27;
+  PREVIOUS_MEMBERSHIP_NAME = 28;
+  FORCED_TRIAL_ELIGIBILITY_STATUS = 29;
+  FORCED_TRIAL_ELIGIBILITY_REASON = 30;
+  LAST_SUBSCRIPTION_LENGTH = 31;
+  INCENTIVES_REDEEMED = 32;
+  CURRENT_SUBSCRIPTION_END_DATE = 33;
+  CURRENT_SUBSCRIPTION_PAYMENT_METHOD = 34;
+  CURRENT_SUBSCRIPTION_PAYMENT_GATEWAY = 35;
+  CURRENT_SUBSCRIPTION_CANCELLATION_SOURCE = 36;
+  FIRST_SUBSCRIPTION_START_DATE = 37;
+  CURRENT_SUBSCRIPTION_RENEWAL_DATE = 38;
+  LAST_SUBSCRIPTION_CANCELLATION_DATE = 39;
+  LAST_TRIAL_CANCELLATION_DATE = 40;
+  LAST_SUBSCRIPTION_PAYMENT_METHOD = 41;
+  LAST_TRIAL_PAYMENT_METHOD = 42;
+  LAST_SUBSCRIPTION_PAYMENT_GATEWAY = 43;
+  LAST_TRIAL_PAYMENT_GATEWAY = 44;
+  USER_LIFECYCLE_SECONDARY_STATE = 45;
+  PREVIOUS_USER_LIFECYCLE_STATE = 46;
+  PREVIOUS_USER_LIFECYCLE_SECONDARY_STATE = 47;
+}
+
+message SubscriptionProperty {
+  oneof _last_transition {
+  string last_transition = 1;
+  }
+  oneof _membership_name {
+  string membership_name = 2;
+  }
+  oneof _membership_level {
+  int32 membership_level = 3;
+  }
+  oneof _is_trial {
+  bool is_trial = 4;
+  }
+  oneof _ltv {
+  double ltv = 5;
+  }
+  oneof _last_subscription_deactivation_date {
+  .google.protobuf.Timestamp last_subscription_deactivation_date = 6;
+  }
+  oneof _last_subscription_activation_date {
+  .google.protobuf.Timestamp last_subscription_activation_date = 7;
+  }
+  oneof _last_trial_deactivation_date {
+  .google.protobuf.Timestamp last_trial_deactivation_date = 8;
+  }
+  oneof _last_trial_activation_date {
+  .google.protobuf.Timestamp last_trial_activation_date = 9;
+  }
+  oneof _plan {
+  string plan = 10;
+  }
+  oneof _plan_code {
+  string plan_code = 11;
+  }
+  oneof _plan_billing_amount {
+  float plan_billing_amount = 12;
+  }
+  oneof _plan_state {
+  string plan_state = 13;
+  }
+  oneof _payment_method {
+  string payment_method = 14;
+  }
+  oneof _trial_state {
+  string trial_state = 15;
+  }
+  oneof _user_lifecycle_state {
+  string user_lifecycle_state = 16;
+  }
+  oneof _renewal_date {
+  .google.protobuf.Timestamp renewal_date = 17;
+  }
+  oneof _is_deactivated {
+  bool is_deactivated = 18;
+  }
+  oneof _previous_membership_name {
+  string previous_membership_name = 19;
+  }
+  oneof _previous_membership_level {
+  int32 previous_membership_level = 20;
+  }
+  oneof _previous_plan {
+  string previous_plan = 21;
+  }
+  oneof _previous_plan_code {
+  string previous_plan_code = 22;
+  }
+  oneof _previous_plan_billing_amount {
+  float previous_plan_billing_amount = 23;
+  }
+  oneof _is_trial_eligible {
+  bool is_trial_eligible = 24;
+  }
+  oneof _cancellation_date {
+  .google.protobuf.Timestamp cancellation_date = 25;
+  }
+  oneof _cumulative_spend {
+  double cumulative_spend = 26;
+  }
+  oneof _forced_trial_eligibibility_status {
+  string forced_trial_eligibibility_status = 29;
+  }
+  oneof _forced_trial_eligibility_reason {
+  string forced_trial_eligibility_reason = 30;
+  }
+  oneof _last_subscription_length {
+  int32 last_subscription_length = 31;
+  }
+  oneof _current_subscription_end_date {
+  .google.protobuf.Timestamp current_subscription_end_date = 33;
+  }
+  oneof _current_subscription_payment_method {
+  string current_subscription_payment_method = 34;
+  }
+  oneof _current_subscription_payment_gateway {
+  string current_subscription_payment_gateway = 35;
+  }
+  oneof _current_subscription_cancellation_source {
+  string current_subscription_cancellation_source = 36;
+  }
+  oneof _first_subscription_start_date {
+  .google.protobuf.Timestamp first_subscription_start_date = 37;
+  }
+  oneof _current_subscription_renewal_date {
+  .google.protobuf.Timestamp current_subscription_renewal_date = 38;
+  }
+  oneof _last_subscription_cancellation_date {
+  .google.protobuf.Timestamp last_subscription_cancellation_date = 39;
+  }
+  oneof _last_trial_cancellation_date {
+  .google.protobuf.Timestamp last_trial_cancellation_date = 40;
+  }
+  oneof _last_subscription_payment_method {
+  string last_subscription_payment_method = 41;
+  }
+  oneof _last_trial_payment_method {
+  string last_trial_payment_method = 42;
+  }
+  oneof _last_subscription_payment_gateway {
+  string last_subscription_payment_gateway = 43;
+  }
+  oneof _last_trial_payment_gateway {
+  string last_trial_payment_gateway = 44;
+  }
+  oneof _user_lifecycle_secondary_state {
+  string user_lifecycle_secondary_state = 45;
+  }
+  oneof _previous_user_lifecycle_state {
+  string previous_user_lifecycle_state = 46;
+  }
+  oneof _previous_user_lifecycle_secondary_state {
+  string previous_user_lifecycle_secondary_state = 47;
+  }
+  repeated string incentives_redeemed = 32;
+}

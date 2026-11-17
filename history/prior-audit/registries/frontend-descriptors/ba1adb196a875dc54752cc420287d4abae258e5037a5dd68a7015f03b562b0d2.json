@@ -1,0 +1,270 @@
+{
+  "name": "chesscom/payments/v1/checkout_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "GetTotalBySkuRequest",
+      "field": [
+        {
+          "name": "sku",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "coupon_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "request_location",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.RequestLocation",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "payment_target",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.PaymentTarget",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "offer_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "platform",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.api.v1.Platform",
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_coupon_code"
+        },
+        {
+          "name": "_request_location"
+        },
+        {
+          "name": "_payment_target"
+        },
+        {
+          "name": "_offer_id"
+        },
+        {
+          "name": "_platform"
+        }
+      ]
+    },
+    {
+      "name": "GetTotalBySkuResponse",
+      "field": [
+        {
+          "name": "checkout_total",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.CheckoutTotal"
+        }
+      ]
+    },
+    {
+      "name": "GetTotalBySkuListRequest",
+      "field": [
+        {
+          "name": "sku",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "coupon_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "request_location",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.RequestLocation",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "payment_target",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.PaymentTarget",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_coupon_code"
+        },
+        {
+          "name": "_request_location"
+        },
+        {
+          "name": "_payment_target"
+        }
+      ]
+    },
+    {
+      "name": "GetTotalBySkuListResponse",
+      "field": [
+        {
+          "name": "checkout_total",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.CheckoutTotal"
+        }
+      ]
+    },
+    {
+      "name": "GetStorefrontDetailsRequest",
+      "field": [
+        {
+          "name": "request_location",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.RequestLocation",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_request_location"
+        }
+      ]
+    },
+    {
+      "name": "GetStorefrontDetailsResponse",
+      "field": [
+        {
+          "name": "storefront_country",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.StorefrontCountry"
+        },
+        {
+          "name": "membership_level",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MembershipLevel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_membership_level"
+        }
+      ]
+    },
+    {
+      "name": "GetAvailablePaymentMethodsRequest",
+      "field": [
+        {
+          "name": "sku",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "payment_context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.PaymentContext"
+        },
+        {
+          "name": "coupon_code",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_coupon_code"
+        }
+      ]
+    },
+    {
+      "name": "GetAvailablePaymentMethodsResponse",
+      "field": [
+        {
+          "name": "payment_methods",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.AvailablePaymentMethod"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CheckoutService",
+      "method": [
+        {
+          "name": "GetTotalBySku",
+          "input_type": ".chesscom.payments.v1.GetTotalBySkuRequest",
+          "output_type": ".chesscom.payments.v1.GetTotalBySkuResponse",
+          "options": {}
+        },
+        {
+          "name": "GetTotalBySkuList",
+          "input_type": ".chesscom.payments.v1.GetTotalBySkuListRequest",
+          "output_type": ".chesscom.payments.v1.GetTotalBySkuListResponse",
+          "options": {}
+        },
+        {
+          "name": "GetStorefrontDetails",
+          "input_type": ".chesscom.payments.v1.GetStorefrontDetailsRequest",
+          "output_type": ".chesscom.payments.v1.GetStorefrontDetailsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetAvailablePaymentMethods",
+          "input_type": ".chesscom.payments.v1.GetAvailablePaymentMethodsRequest",
+          "output_type": ".chesscom.payments.v1.GetAvailablePaymentMethodsResponse",
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

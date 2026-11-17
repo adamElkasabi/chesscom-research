@@ -1,0 +1,28 @@
+// source: chesscom/payments/v1/billing_history_entry.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message BillingHistoryEntry {
+  oneof _display_name {
+  string display_name = 2;
+  }
+  oneof _order_type {
+  .chesscom.payments.v1.OrderType order_type = 3;
+  }
+  oneof _gift_receiver {
+  .chesscom.payments.v1.BillingHistoryEntryUser gift_receiver = 6;
+  }
+  optional int32 id = 1;
+  optional .chesscom.api.v1.Money price = 4;
+  optional .chesscom.payments.v1.BillingHistoryEntryUser placed_by = 5;
+  optional .google.protobuf.Timestamp created_date = 7;
+  optional bool invoice_available = 8;
+}
+
+message BillingHistoryEntryUser {
+  oneof _email {
+  string email = 2;
+  }
+  optional string username = 1;
+}

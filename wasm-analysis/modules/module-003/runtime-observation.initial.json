@@ -1,0 +1,24 @@
+{
+  "module": "module-003",
+  "command": [
+    "node",
+    "--experimental-permission",
+    "--allow-fs-read=/home/user/forensic-mission-tools/runtime_probe.cjs",
+    "--allow-fs-read=/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm",
+    "--max-old-space-size=256",
+    "/home/user/forensic-mission-tools/runtime_probe.cjs",
+    "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm"
+  ],
+  "isolation": {
+    "filesystem": "Node permission model: read-only allowlist of probe and binary, no write or child/worker grant",
+    "network": "Linux seccomp denies socket/connect/bind/listen/accept/socketpair; global fetch also throws",
+    "CPU_seconds": 25,
+    "wall_timeout_seconds": 35,
+    "JS_heap_MiB": 256,
+    "core_dumps": false
+  },
+  "scope": "NEW bounded structural instantiation; historical full native searches separately retained",
+  "returncode": 1,
+  "stderr": "/home/user/forensic-mission-tools/runtime_probe.cjs:8\nfor(const imp of descriptors){imports[imp.module]??={};if(imp.kind==='function')imports[imp.module][imp.name]=(...args)=>{if(calls.length<30)calls.push({module:imp.module,name:imp.name,args:args.map(x=>typeof x==='bigint'?String(x):x)});return 0;};else throw Error('Non-function import requires explicit descriptor-aware mock: '+JSON.stringify(imp));}\n                                                                                                                                                                                                                                                             ^\n\nError: Non-function import requires explicit descriptor-aware mock: {\"module\":\"a\",\"name\":\"a\",\"kind\":\"memory\"}\n    at Object.<anonymous> (/home/user/forensic-mission-tools/runtime_probe.cjs:8:260)\n    at Module._compile (node:internal/modules/cjs/loader:1521:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)\n    at Module.load (node:internal/modules/cjs/loader:1266:32)\n    at Module._load (node:internal/modules/cjs/loader:1091:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)\n    at node:internal/main/run_main_module:28:49\n\nNode.js v20.20.2\n",
+  "stdout": ""
+}

@@ -1,0 +1,51 @@
+// source: chesscom/payments/v1/support_family_plan.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+enum SupportFamilyPlanState {
+  SUPPORT_FAMILY_PLAN_STATE_UNSPECIFIED = 0;
+  SUPPORT_FAMILY_PLAN_STATE_NONE = 1;
+  SUPPORT_FAMILY_PLAN_STATE_TRIAL = 2;
+  SUPPORT_FAMILY_PLAN_STATE_PAID = 3;
+}
+
+enum SupportFamilyPlanJoinStatus {
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_UNSPECIFIED = 0;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_CAN_JOIN = 1;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_TRIAL_COOLDOWN = 2;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_REMOVED_BY_OWNER = 3;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_ALREADY_PREMIUM = 4;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_OTHER_COUNTRY = 5;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_PLAN_FULL = 6;
+  SUPPORT_FAMILY_PLAN_JOIN_STATUS_ALREADY_MEMBER = 7;
+}
+
+enum SupportFamilyPlanRevokeResult {
+  SUPPORT_FAMILY_PLAN_REVOKE_RESULT_UNSPECIFIED = 0;
+  SUPPORT_FAMILY_PLAN_REVOKE_RESULT_REVOKED = 1;
+  SUPPORT_FAMILY_PLAN_REVOKE_RESULT_NOT_FOUND = 2;
+}
+
+enum SupportFamilyPlanCooldownResult {
+  SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_UNSPECIFIED = 0;
+  SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_CLEARED = 1;
+  SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_NOT_IN_COOLDOWN = 2;
+  SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_NO_PLAN = 3;
+  SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_PLAN_NOT_TRIAL = 4;
+  SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_FRIEND_NOT_FROM_THIS_OWNER = 5;
+}
+
+message SupportFamilyPlanInvitation {
+  optional string invitation_ref = 1;
+  optional string invitee_user_uuid = 2;
+  optional string invitee_username = 3;
+  optional string masked_email = 4;
+  optional .google.protobuf.Timestamp expires_at = 5;
+}
+
+message SupportFamilyPlanInviteeCheck {
+  optional string user_uuid = 1;
+  optional .chesscom.payments.v1.SupportFamilyPlanJoinStatus status = 2;
+  optional .google.protobuf.Timestamp trial_cooldown_ends_at = 3;
+}

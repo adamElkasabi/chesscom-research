@@ -1,0 +1,16 @@
+// source: chesscom/game_gateway/v2/chess_game.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v2;
+
+message ChessGame {
+  oneof _initial_fen {
+  string initial_fen = 1;
+  }
+  optional string final_fen = 2;
+  optional uint32 ply_count = 3;
+  optional string move_text = 4;
+  repeated uint32 move_timestamps = 5;
+  optional .chesscom.game_gateway.v2.Player white_player = 6;
+  optional .chesscom.game_gateway.v2.Player black_player = 7;
+}

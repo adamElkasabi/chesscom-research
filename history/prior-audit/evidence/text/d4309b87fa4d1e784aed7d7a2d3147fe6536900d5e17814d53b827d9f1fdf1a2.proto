@@ -1,0 +1,9 @@
+// source: chesscom/game_storage/v2/tournament_data.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+message TournamentData {
+  optional .chesscom.tdtools.v1.ChessComTournamentIdentifier chess_com_tournament_identifier = 1;
+  optional uint32 round = 2;
+}

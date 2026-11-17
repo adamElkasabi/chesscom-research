@@ -1,0 +1,14 @@
+// source: chesscom/chess/v1/arrow.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+message Arrow {
+  optional .chesscom.chess.v1.Square from = 1;
+  optional .chesscom.chess.v1.Square to = 2;
+}
+
+message ArrowsAndSquares {
+  repeated .chesscom.chess.v1.Arrow arrows = 1;
+  repeated .chesscom.chess.v1.Square squares = 2;
+}

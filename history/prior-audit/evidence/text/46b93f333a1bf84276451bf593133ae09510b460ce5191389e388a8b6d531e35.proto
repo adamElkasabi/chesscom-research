@@ -1,0 +1,38 @@
+// source: chesscom/explanation_engine/v1/takeaways.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum TakeawayClassification {
+  TAKEAWAY_CLASSIFICATION_UNSPECIFIED = 0;
+  TAKEAWAY_CLASSIFICATION_BUILDING_STRENGTH = 1;
+  TAKEAWAY_CLASSIFICATION_BE_AWARE = 2;
+  TAKEAWAY_CLASSIFICATION_MAKING_PROGRESS = 3;
+  TAKEAWAY_CLASSIFICATION_LEARNING_OPPORTUNITY = 4;
+}
+
+enum TakeawayPerformance {
+  TAKEAWAY_PERFORMANCE_UNSPECIFIED = 0;
+  TAKEAWAY_PERFORMANCE_GOOD = 1;
+  TAKEAWAY_PERFORMANCE_BAD = 2;
+}
+
+message Takeaway {
+  oneof _example {
+  .chesscom.stats.v1.AdvancedStatExample example = 4;
+  }
+  oneof _train_speech {
+  string train_speech = 6;
+  }
+  oneof _train_item_type {
+  .chesscom.train.v1.TrainItemType train_item_type = 7;
+  }
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional .chesscom.explanation_engine.v1.TakeawayClassification classification = 2;
+  optional string speech = 3;
+  optional .chesscom.explanation_engine.v1.TakeawayPerformance performance = 5;
+}
+
+message Takeaways {
+  repeated .chesscom.explanation_engine.v1.Takeaway takeaways = 1;
+}

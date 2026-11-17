@@ -1,0 +1,9 @@
+// source: chesscom/api/v1/money.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Money {
+  optional string amount = 1;
+  optional string currency_code = 2;
+}

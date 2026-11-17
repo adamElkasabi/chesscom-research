@@ -1,0 +1,14 @@
+// source: chesscom/courses_common/v1/course_target_level.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum CourseTargetLevel {
+  COURSE_TARGET_LEVEL_UNSPECIFIED = 0;
+  COURSE_TARGET_LEVEL_NOVICE = 1;
+  COURSE_TARGET_LEVEL_BEGINNER = 2;
+  COURSE_TARGET_LEVEL_INTERMEDIATE = 3;
+  COURSE_TARGET_LEVEL_ADVANCED = 4;
+  COURSE_TARGET_LEVEL_MASTER = 5;
+  COURSE_TARGET_LEVEL_EXPERT = 6;
+}

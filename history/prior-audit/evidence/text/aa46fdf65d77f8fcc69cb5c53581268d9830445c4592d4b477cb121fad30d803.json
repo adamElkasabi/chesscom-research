@@ -1,0 +1,6 @@
+{
+  "id": "uci-multipv-2",
+  "uciAfter": {
+    "MultiPV": 2
+  }
+}

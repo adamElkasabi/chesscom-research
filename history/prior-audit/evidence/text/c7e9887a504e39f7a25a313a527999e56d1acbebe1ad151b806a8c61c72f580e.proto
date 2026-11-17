@@ -1,0 +1,61 @@
+// source: chesscom/shared_board/v1alpha/shared_board_participant.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+enum SharedBoardRole {
+  SHARED_BOARD_ROLE_UNSPECIFIED = 0;
+  SHARED_BOARD_ROLE_HOST = 1;
+  SHARED_BOARD_ROLE_CO_HOST = 2;
+  SHARED_BOARD_ROLE_VIEWER = 3;
+}
+
+enum SharedBoardParticipantStatus {
+  SHARED_BOARD_PARTICIPANT_STATUS_UNSPECIFIED = 0;
+  SHARED_BOARD_PARTICIPANT_STATUS_PENDING = 1;
+  SHARED_BOARD_PARTICIPANT_STATUS_REQUESTING = 2;
+  SHARED_BOARD_PARTICIPANT_STATUS_ACCEPTED = 3;
+  SHARED_BOARD_PARTICIPANT_STATUS_DECLINED = 4;
+}
+
+enum SharedBoardCapability {
+  SHARED_BOARD_CAPABILITY_UNSPECIFIED = 0;
+  SHARED_BOARD_CAPABILITY_MOVE_WHITE = 1;
+  SHARED_BOARD_CAPABILITY_MOVE_BLACK = 2;
+  SHARED_BOARD_CAPABILITY_DRAW_ARROWS = 3;
+  SHARED_BOARD_CAPABILITY_EDIT_COLLECTION = 4;
+}
+
+message SharedBoardParticipant {
+  oneof _username {
+  string username = 8;
+  }
+  oneof _avatar_url {
+  string avatar_url = 9;
+  }
+  oneof _chess_title {
+  string chess_title = 10;
+  }
+  oneof _country {
+  string country = 11;
+  }
+  oneof _flair_code {
+  string flair_code = 12;
+  }
+  oneof _is_streamer {
+  bool is_streamer = 13;
+  }
+  oneof _flair {
+  .chesscom.flair.v1.FlairView flair = 14;
+  }
+  oneof _membership {
+  string membership = 15;
+  }
+  optional string user_id = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoardRole role = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoardParticipantStatus status = 3;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardCapability capabilities = 4;
+  optional string invited_by_id = 5;
+  optional .google.protobuf.Timestamp created_at = 6;
+  optional .google.protobuf.Timestamp updated_at = 7;
+}

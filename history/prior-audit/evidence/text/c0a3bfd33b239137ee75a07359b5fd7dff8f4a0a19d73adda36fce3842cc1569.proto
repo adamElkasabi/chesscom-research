@@ -1,0 +1,9 @@
+// source: chesscom/courses_common/v1/course_variation_alternative_move.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message CourseVariationAlternativeMove {
+  optional string san = 1;
+  optional string fen = 2;
+}

@@ -1,0 +1,12 @@
+// source: chesscom/courses/v1/shop_sort_option.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum ShopSortOption {
+  SHOP_SORT_OPTION_UNSPECIFIED = 0;
+  SHOP_SORT_OPTION_PRICE_ASC = 1;
+  SHOP_SORT_OPTION_PRICE_DESC = 2;
+  SHOP_SORT_OPTION_VARIATIONS_DESC = 3;
+  SHOP_SORT_OPTION_RELEASE_DATE_DESC = 4;
+}

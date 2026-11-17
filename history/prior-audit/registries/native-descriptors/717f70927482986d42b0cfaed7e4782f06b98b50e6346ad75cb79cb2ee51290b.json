@@ -1,0 +1,42 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_move_details.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/notation.proto",
+    "chesscom/explanation_engine/v1/move_details.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetMoveDetailsRequest",
+      "field": [
+        {
+          "name": "move_notation",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.MoveNotation",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_move_notation"
+        }
+      ]
+    },
+    {
+      "name": "GetMoveDetailsResponse",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveDetails"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

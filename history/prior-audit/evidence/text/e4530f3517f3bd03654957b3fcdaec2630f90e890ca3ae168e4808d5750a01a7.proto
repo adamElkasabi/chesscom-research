@@ -1,0 +1,241 @@
+// source: chesscom/user_properties/v1/properties_activity.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum ActivityPropertyDefinition {
+  ACTIVITY_PROPERTY_UNSPECIFIED = 0;
+  LAST_LOGIN_DATE = 1;
+  LAST_GAME_PLAYED = 2;
+  LAST_GAME_FINISHED = 3;
+  LAST_STREAM_DATE = 4;
+  TOTAL_TIME_SPENT = 5;
+  TOTAL_LOGINS = 6;
+  TOTAL_VIDEO_VIEWS = 7;
+  PROFILE_VIEW_COUNT = 8;
+  IS_IN_ITERABLE = 9;
+  ACTIVITY_STREAK_COUNT = 10;
+  ACTIVITY_STREAK_MAX_COUNT = 11;
+  ACTIVITY_STREAK_IS_FROZEN = 12;
+  ACTIVITY_STREAK_DAYS = 13;
+  ACTIVITY_STREAK_FROZEN_DAYS = 14;
+  ACTIVITY_STREAK_LAST_UPDATE_DATE = 15;
+  LAST_USED_CLIENT = 16;
+  HAS_USED_WEB_CLIENT = 17;
+  HAS_USED_IOS_CLIENT = 18;
+  HAS_USED_ANDROID_CLIENT = 19;
+  FRIENDS_COUNT = 20;
+  ACTIVITY_STREAK_MAX_COUNT_DAY = 21;
+  TOTAL_TROPHIES_RECEIVED = 22;
+  TOTAL_LESSONS_COMPLETED = 23;
+  TOTAL_COURSES_COMPLETED = 24;
+  ACTIVITY_STREAK_LAST_NOTIFICATION_DATE = 25;
+  LAST_FRIEND_ADDED_DATE = 26;
+  ACTIVITY_STREAK_LAST_REMINDER_SENT_DATE = 27;
+  TOTAL_LESSONS_ATTEMPTED = 28;
+  TOTAL_COURSES_ATTEMPTED = 29;
+  LAST_ATTEMPTED_LESSON_UUID = 30;
+  LAST_ATTEMPTED_COURSE_UUID = 31;
+  LAST_COMPLETED_LESSON_UUID = 32;
+  LAST_COMPLETED_COURSE_UUID = 33;
+  LAST_LESSON_ATTEMPTED_DATE = 34;
+  LAST_COURSE_ATTEMPTED_DATE = 35;
+  LAST_LESSON_COMPLETED_DATE = 36;
+  LAST_COURSE_COMPLETED_DATE = 37;
+  COMPLETED_LESSON_LEVEL_IDS = 38;
+  COMPLETED_LESSON_MAX_LEVEL_ID = 39;
+  LAST_LESSON_COMPLETED_DATES = 40;
+  LAST_LESSON_HISTORY_RESET_DATE = 41;
+  BLOCKED_BY_COUNT = 42;
+  LAST_SESSION_START_DATE = 43;
+  LAST_SESSION_END_DATE = 44;
+  DAILY_GAMES_IN_PROGRESS_COUNT = 45;
+  DAILY_GAMES_CHESS_IN_PROGRESS_TO_MOVE = 46;
+  DAILY_GAMES_CHESS960_IN_PROGRESS_TO_MOVE = 47;
+  DAILY_GAMES_CHESS_TIME_PERCENTAGE_USED_TO_MOVE = 48;
+  DAILY_GAMES_CHESS960_TIME_PERCENTAGE_USED_TO_MOVE = 49;
+  DAILY_GAMES_CHESS_IN_PROGRESS_IDS = 50;
+  DAILY_GAMES_CHESS960_IN_PROGRESS_IDS = 51;
+  OLD_MOBILE_CLIENT_PLAYED_ON_LC_DATE = 52;
+  BLOCKED_COUNT = 53;
+  LAST_FRIEND_REMOVED_DATE = 54;
+  ADDED_TO_ITERABLE_DATE = 55;
+  LAST_IOS_VERSION_USED = 56;
+  LAST_ANDROID_VERSION_USED = 57;
+  LAST_WEB_VERSION_USED = 58;
+  LEARN_PATH_COMPLETED_DATE = 59;
+  LAST_GAME_VS_COMPUTER_FINISHED = 60;
+  LAST_LIVE_TIME_CONTROLS = 61;
+}
+
+message ActivityProperty {
+  oneof _last_login_date {
+  .google.protobuf.Timestamp last_login_date = 1;
+  }
+  oneof _last_game_played {
+  .google.protobuf.Timestamp last_game_played = 2;
+  }
+  oneof _last_game_finished {
+  .google.protobuf.Timestamp last_game_finished = 3;
+  }
+  oneof _last_stream_date {
+  .google.protobuf.Timestamp last_stream_date = 4;
+  }
+  oneof _total_time_spent {
+  int64 total_time_spent = 5;
+  }
+  oneof _total_logins {
+  int32 total_logins = 6;
+  }
+  oneof _total_video_views {
+  int32 total_video_views = 7;
+  }
+  oneof _profile_view_count {
+  int32 profile_view_count = 8;
+  }
+  oneof _is_in_iterable {
+  bool is_in_iterable = 9;
+  }
+  oneof _activity_streak_count {
+  double activity_streak_count = 10;
+  }
+  oneof _activity_streak_max_count {
+  double activity_streak_max_count = 11;
+  }
+  oneof _activity_streak_is_frozen {
+  bool activity_streak_is_frozen = 12;
+  }
+  oneof _activity_streak_last_update_date {
+  .google.protobuf.Timestamp activity_streak_last_update_date = 15;
+  }
+  oneof _last_used_client {
+  string last_used_client = 16;
+  }
+  oneof _has_used_web_client {
+  bool has_used_web_client = 17;
+  }
+  oneof _has_used_ios_client {
+  bool has_used_ios_client = 18;
+  }
+  oneof _has_used_android_client {
+  bool has_used_android_client = 19;
+  }
+  oneof _friends_count {
+  int32 friends_count = 20;
+  }
+  oneof _activity_streak_max_count_day {
+  int32 activity_streak_max_count_day = 21;
+  }
+  oneof _total_trophies_received {
+  int32 total_trophies_received = 22;
+  }
+  oneof _total_lessons_completed {
+  int32 total_lessons_completed = 23;
+  }
+  oneof _total_courses_completed {
+  int32 total_courses_completed = 24;
+  }
+  oneof _activity_streak_last_notification_date {
+  .google.protobuf.Timestamp activity_streak_last_notification_date = 25;
+  }
+  oneof _last_friend_added_date {
+  .google.protobuf.Timestamp last_friend_added_date = 26;
+  }
+  oneof _activity_streak_last_reminder_sent_date {
+  .google.protobuf.Timestamp activity_streak_last_reminder_sent_date = 27;
+  }
+  oneof _total_lessons_attempted {
+  int32 total_lessons_attempted = 28;
+  }
+  oneof _total_courses_attempted {
+  int32 total_courses_attempted = 29;
+  }
+  oneof _last_attempted_lesson_uuid {
+  string last_attempted_lesson_uuid = 30;
+  }
+  oneof _last_attempted_course_uuid {
+  string last_attempted_course_uuid = 31;
+  }
+  oneof _last_completed_lesson_uuid {
+  string last_completed_lesson_uuid = 32;
+  }
+  oneof _last_completed_course_uuid {
+  string last_completed_course_uuid = 33;
+  }
+  oneof _last_lesson_attempted_date {
+  .google.protobuf.Timestamp last_lesson_attempted_date = 34;
+  }
+  oneof _last_course_attempted_date {
+  .google.protobuf.Timestamp last_course_attempted_date = 35;
+  }
+  oneof _last_lesson_completed_date {
+  .google.protobuf.Timestamp last_lesson_completed_date = 36;
+  }
+  oneof _last_course_completed_date {
+  .google.protobuf.Timestamp last_course_completed_date = 37;
+  }
+  oneof _completed_lesson_max_level_id {
+  int32 completed_lesson_max_level_id = 39;
+  }
+  oneof _last_lesson_history_reset_date {
+  .google.protobuf.Timestamp last_lesson_history_reset_date = 41;
+  }
+  oneof _blocked_by_count {
+  int32 blocked_by_count = 42;
+  }
+  oneof _last_session_start_date {
+  .google.protobuf.Timestamp last_session_start_date = 43;
+  }
+  oneof _last_session_end_date {
+  .google.protobuf.Timestamp last_session_end_date = 44;
+  }
+  oneof _daily_games_in_progress_count {
+  int32 daily_games_in_progress_count = 45;
+  }
+  oneof _daily_games_chess_in_progress_to_move {
+  int32 daily_games_chess_in_progress_to_move = 46;
+  }
+  oneof _daily_games_chess960_in_progress_to_move {
+  int32 daily_games_chess960_in_progress_to_move = 47;
+  }
+  oneof _daily_games_chess_time_percentage_used_to_move {
+  int32 daily_games_chess_time_percentage_used_to_move = 48;
+  }
+  oneof _daily_games_chess960_time_percentage_used_to_move {
+  int32 daily_games_chess960_time_percentage_used_to_move = 49;
+  }
+  oneof _old_mobile_client_played_on_lc_date {
+  .google.protobuf.Timestamp old_mobile_client_played_on_lc_date = 52;
+  }
+  oneof _blocked_count {
+  int32 blocked_count = 53;
+  }
+  oneof _last_friend_removed_date {
+  .google.protobuf.Timestamp last_friend_removed_date = 54;
+  }
+  oneof _added_to_iterable_date {
+  .google.protobuf.Timestamp added_to_iterable_date = 55;
+  }
+  oneof _last_ios_version_used {
+  string last_ios_version_used = 56;
+  }
+  oneof _last_android_version_used {
+  string last_android_version_used = 57;
+  }
+  oneof _last_web_version_used {
+  string last_web_version_used = 58;
+  }
+  oneof _learn_path_completed_date {
+  .google.protobuf.Timestamp learn_path_completed_date = 59;
+  }
+  oneof _last_game_vs_computer_finished {
+  .google.protobuf.Timestamp last_game_vs_computer_finished = 60;
+  }
+  repeated string activity_streak_days = 13;
+  repeated string activity_streak_frozen_days = 14;
+  repeated int32 completed_lesson_level_ids = 38;
+  repeated .google.protobuf.Timestamp last_lesson_completed_dates = 40;
+  repeated string daily_games_chess_in_progress_ids = 50;
+  repeated string daily_games_chess960_in_progress_ids = 51;
+  repeated string last_live_time_controls = 61;
+}

@@ -1,0 +1,130 @@
+{
+  "name": "chesscom/payments/v1/billing_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "GetUserBillingHistoryRequest"
+    },
+    {
+      "name": "GetUserBillingHistoryResponse",
+      "field": [
+        {
+          "name": "billing_history",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.BillingHistoryEntry"
+        }
+      ]
+    },
+    {
+      "name": "GetUserBillingInformationRequest"
+    },
+    {
+      "name": "GetUserBillingInformationResponse",
+      "field": [
+        {
+          "name": "payment_method",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.PaymentMethod",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "country",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Country"
+        },
+        {
+          "name": "is_tax_included_in_price",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "subscription_payment_status",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionPaymentStatus"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_payment_method"
+        },
+        {
+          "name": "_is_tax_included_in_price"
+        }
+      ]
+    },
+    {
+      "name": "GetOrderInvoiceRequest",
+      "field": [
+        {
+          "name": "order_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "bill_to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.InvoiceBillTo"
+        }
+      ]
+    },
+    {
+      "name": "GetOrderInvoiceResponse",
+      "field": [
+        {
+          "name": "pdf",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        },
+        {
+          "name": "file_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "BillingService",
+      "method": [
+        {
+          "name": "GetUserBillingHistory",
+          "input_type": ".chesscom.payments.v1.GetUserBillingHistoryRequest",
+          "output_type": ".chesscom.payments.v1.GetUserBillingHistoryResponse"
+        },
+        {
+          "name": "GetUserBillingInformation",
+          "input_type": ".chesscom.payments.v1.GetUserBillingInformationRequest",
+          "output_type": ".chesscom.payments.v1.GetUserBillingInformationResponse"
+        },
+        {
+          "name": "GetOrderInvoice",
+          "input_type": ".chesscom.payments.v1.GetOrderInvoiceRequest",
+          "output_type": ".chesscom.payments.v1.GetOrderInvoiceResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

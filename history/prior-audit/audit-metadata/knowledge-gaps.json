@@ -1,0 +1,192 @@
+[
+  {
+    "id": "GAP-001",
+    "title": "Unavailable independent conversation history",
+    "what_is_missing": "No other conversation archive,search API,or persistent-memory index exposed.",
+    "why_it_matters": "Cannot reconstruct omitted turns or all prior tool results.",
+    "sources_checked": [
+      "accessible-conversation/current-and-condensed-history"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "User export of other conversations/tool transcripts."
+  },
+  {
+    "id": "GAP-002",
+    "title": "Expected documentation count does not match recovered files",
+    "what_is_missing": "Six loose Markdown originals and four archived variants,not approximatelyadozenuniqueinvestigationdocuments.",
+    "why_it_matters": "Some cited documents may be missing.",
+    "sources_checked": [
+      "uploads/REVERSE-ENGINEERING.md",
+      "uploads/PREMIUM-ANALYSIS.md",
+      "extension/README.md"
+    ],
+    "resolvable_with_available_sources": "Partly: recovered all inventoried MD content",
+    "additional_evidence_needed": "Provide CLIENT-SIDE.md,REDOWNLOAD.md,and other original documents or archives."
+  },
+  {
+    "id": "GAP-003",
+    "title": "External REA evidence unavailable",
+    "what_is_missing": "Backing evidence bundle and individual2355findings inaccessible.",
+    "why_it_matters": "Quoted static analyzer metrics and unresolved semantics cannot be audited directly.",
+    "sources_checked": [
+      "uploads/REVERSE-ENGINEERING.md",
+      "uploads/PREMIUM-ANALYSIS.md"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "Original REA evidence export/repository."
+  },
+  {
+    "id": "GAP-004",
+    "title": "Minified frontend semantic coverage",
+    "what_is_missing": "All saved bundles fully scanned for literals/routes/references; not every function and branch independently semantically interpreted.",
+    "why_it_matters": "Regex/declaration extraction cannot establish all business logic.",
+    "sources_checked": [
+      "research/shared.eager.BOGLllgUUR.chunk.js",
+      "research/refinement/live-chunks/client.e0da4c65.BIjoPk3wAJ.chunk.js",
+      "research/analysis.js"
+    ],
+    "resolvable_with_available_sources": "Partly; requires additional bounded semantic batches",
+    "additional_evidence_needed": "AST extraction/de-minification and reviewed call-graph analysis per remaining module."
+  },
+  {
+    "id": "GAP-005",
+    "title": "Native algorithm internals",
+    "what_is_missing": "Full WASM instruction semantics,model weights and exact rating/accuracy algorithms not recovered.",
+    "why_it_matters": "Local execution outcomes do not reveal every algorithm or cloud configuration.",
+    "sources_checked": [
+      "extension/engines/cee/explanation-engine.wasm"
+    ],
+    "resolvable_with_available_sources": "Partly; major additional reverse engineering needed",
+    "additional_evidence_needed": "Native source/debugsymbols or bounded disassembly/native function mapping."
+  },
+  {
+    "id": "GAP-006",
+    "title": "Authenticated browser runtime",
+    "what_is_missing": "No logged-in website profile,DevTools network capture,cookies or session trace available.",
+    "why_it_matters": "Cannot verify account-specific routing,real cloud requests or role behavior.",
+    "sources_checked": [
+      "accessible-conversation/current-and-condensed-history",
+      "research/browser-pipeline-test.json"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "Authorized user-provided redacted HAR/WS capture and relevant runtime settings."
+  },
+  {
+    "id": "GAP-007",
+    "title": "Complete website beyond investigation scope",
+    "what_is_missing": "Login,registration,passwordreset,payments,allprivatepages,andfullnavigationnot investigated.",
+    "why_it_matters": "Route declarations alone do not establish workflows or access rules.",
+    "sources_checked": [
+      "research/shared.eager.BOGLllgUUR.chunk.js",
+      "research/refinement/live-game-page.html"
+    ],
+    "resolvable_with_available_sources": "No without new investigation",
+    "additional_evidence_needed": "Separate authorized passive browser study scoped by feature."
+  },
+  {
+    "id": "GAP-008",
+    "title": "HTTP security headers/cookies/CORS",
+    "what_is_missing": "No full current header,cookieattribute,CSRFtokenflow evidence.",
+    "why_it_matters": "Cannot make verified security posture claims.",
+    "sources_checked": [
+      "research/probe-results.txt",
+      "research/analysis.html"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "Redacted response headers and authorized session observations."
+  },
+  {
+    "id": "GAP-009",
+    "title": "Backend/database stack",
+    "what_is_missing": "No private server source,database schema or authenticated admin access.",
+    "why_it_matters": "Frontend vendor names/routes do not establish implementation technology.",
+    "sources_checked": [
+      "research/shared.eager.BOGLllgUUR.chunk.js",
+      "research/refinement/live-checkmate.js"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "Official architecture/source documentation or independently observed server evidence."
+  },
+  {
+    "id": "GAP-010",
+    "title": "Cloud TorchHuman parity",
+    "what_is_missing": "Exact engine build,nodes,normalization,model availability,rating parameters and hidden options unknown.",
+    "why_it_matters": "Local human mode works butaccuracy/talliesnotmatching.2100defaultmaydiffer.",
+    "sources_checked": [
+      "research/refinement/results/comparison-human.json"
+    ],
+    "resolvable_with_available_sources": "Partly; more offline experiments possible",
+    "additional_evidence_needed": "Authorized cloud request/response/config trace or official parameters."
+  },
+  {
+    "id": "GAP-011",
+    "title": "Individual reference move labels",
+    "what_is_missing": "Only aggregate Chess.com reference tallies known.",
+    "why_it_matters": "Cannot fill Chess.com per-move comparison accurately.",
+    "sources_checked": [
+      "research/refinement/target.json",
+      "torch-human-comparison.md"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "User export/screenshot/annotatedPGN with every original reference classification."
+  },
+  {
+    "id": "GAP-012",
+    "title": "Selected coach/threat feature verification",
+    "what_is_missing": "Audio generally confirmed by user; selected-coach assets and threat-arrow fetch not separately verified.",
+    "why_it_matters": "Cannot generalize sound success to all coaches/arrow workflows.",
+    "sources_checked": [
+      "accessible-conversation/current-and-condensed-history",
+      "extension/README.md"
+    ],
+    "resolvable_with_available_sources": "Partly",
+    "additional_evidence_needed": "Authorized runtime checks and preserved redacted asset/failure logs."
+  },
+  {
+    "id": "GAP-013",
+    "title": "v0.1.9 actual device confirmation",
+    "what_is_missing": "Timing estimator unit/mocked-offscreen/native regression tests exist; no later user report or stored real device timings.",
+    "why_it_matters": "Estimated progress persistence and accuracy on user device remain unconfirmed.",
+    "sources_checked": [
+      "extension/test/progress-test.mjs",
+      "accessible-conversation/current-and-condensed-history"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "User completion/runtimeconsole and timing history with identifiers removed."
+  },
+  {
+    "id": "GAP-014",
+    "title": "Unknown original log targets",
+    "what_is_missing": "Some repeated404callback/coachmodelURLs not in accessible summary.",
+    "why_it_matters": "Cannot recover exact reference without inventing.",
+    "sources_checked": [
+      "accessible-conversation/current-and-condensed-history"
+    ],
+    "resolvable_with_available_sources": "No",
+    "additional_evidence_needed": "Original network logs/tool result export."
+  },
+  {
+    "id": "GAP-015",
+    "title": "Clock/chronology inconsistency",
+    "what_is_missing": "Session date,originaldocumentdates2026-11-11,andartifactlogtimes2026-11-14/15differ.",
+    "why_it_matters": "Do not claim current deploy or exact observation date from mtimes.",
+    "sources_checked": [
+      "uploads/PREMIUM-ANALYSIS.md",
+      "uploads/REVERSE-ENGINEERING.md",
+      "accessible-conversation/current-and-condensed-history"
+    ],
+    "resolvable_with_available_sources": "No definitive mapping",
+    "additional_evidence_needed": "Trusted timestamped exports/timezone provenance."
+  },
+  {
+    "id": "GAP-016",
+    "title": "Saved input/result configuration divergence",
+    "what_is_missing": "1 trial records differ from current config file.",
+    "why_it_matters": "Can cause false claims about which parameters produced a cached result.",
+    "sources_checked": [
+      "research/refinement/sweep.mjs"
+    ],
+    "resolvable_with_available_sources": "Yes: use embedded result.config as execution provenance",
+    "additional_evidence_needed": "Freshrerunrequiredonlyifchangedconfigoutputisneeded; auditdoesnotrerun."
+  }
+]

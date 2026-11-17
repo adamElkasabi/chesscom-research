@@ -1,0 +1,6 @@
+{
+  "id": "uci-clear-between",
+  "uciAfter": {
+    "ClearBetweenSearches": true
+  }
+}

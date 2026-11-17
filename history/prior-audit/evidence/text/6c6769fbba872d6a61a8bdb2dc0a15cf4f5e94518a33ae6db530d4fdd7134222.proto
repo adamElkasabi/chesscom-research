@@ -1,0 +1,438 @@
+// source: chesscom/user_properties/v1/properties.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+message PropertiesByUser {
+  oneof _time_windows_properties {
+  .chesscom.user_properties.v1.TimeWindowsPropertiesData time_windows_properties = 3;
+  }
+  optional string user = 1;
+  optional .chesscom.user_properties.v1.Properties properties = 2;
+}
+
+message Properties {
+  oneof _core {
+  .chesscom.user_properties.v1.CoreProperty core = 1;
+  }
+  oneof _pii {
+  .chesscom.user_properties.v1.PIIProperty pii = 2;
+  }
+  oneof _user_details {
+  .chesscom.user_properties.v1.UserDetailsProperty user_details = 3;
+  }
+  oneof _roles {
+  .chesscom.user_properties.v1.RolesProperty roles = 4;
+  }
+  oneof _activity {
+  .chesscom.user_properties.v1.ActivityProperty activity = 5;
+  }
+  oneof _subscription {
+  .chesscom.user_properties.v1.SubscriptionProperty subscription = 6;
+  }
+  oneof _attribution_signup_initial {
+  .chesscom.user_properties.v1.AttributionProperty attribution_signup_initial = 7;
+  }
+  oneof _attribution_signup_last {
+  .chesscom.user_properties.v1.AttributionProperty attribution_signup_last = 8;
+  }
+  oneof _attribution_trial_initial {
+  .chesscom.user_properties.v1.AttributionProperty attribution_trial_initial = 9;
+  }
+  oneof _attribution_trial_last {
+  .chesscom.user_properties.v1.AttributionProperty attribution_trial_last = 10;
+  }
+  oneof _ratings {
+  .chesscom.user_properties.v1.RatingsProperty ratings = 11;
+  }
+  oneof _wdl {
+  .chesscom.user_properties.v1.WDLProperty wdl = 12;
+  }
+  oneof _analysis {
+  .chesscom.user_properties.v1.AnalysisProperty analysis = 13;
+  }
+  oneof _settings_daily_chess {
+  .chesscom.user_properties.v1.SettingsDailyChessProperty settings_daily_chess = 14;
+  }
+  oneof _settings_live_chess {
+  .chesscom.user_properties.v1.SettingsLiveChessProperty settings_live_chess = 15;
+  }
+  oneof _stats_daily_chess {
+  .chesscom.user_properties.v1.StatsDailyProperty stats_daily_chess = 16;
+  }
+  oneof _stats_daily_chess960 {
+  .chesscom.user_properties.v1.StatsDailyChess960Property stats_daily_chess960 = 17;
+  }
+  oneof _stats_live_chess_bullet {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_chess_bullet = 18;
+  }
+  oneof _stats_live_chess_blitz {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_chess_blitz = 19;
+  }
+  oneof _stats_live_chess_rapid {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_chess_rapid = 20;
+  }
+  oneof _stats_live_chess960_bullet {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_chess960_bullet = 21;
+  }
+  oneof _stats_live_chess960_blitz {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_chess960_blitz = 22;
+  }
+  oneof _stats_live_chess960_rapid {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_chess960_rapid = 23;
+  }
+  oneof _stats_live_bughouse {
+  .chesscom.user_properties.v1.StatsLiveProperty stats_live_bughouse = 24;
+  }
+  oneof _user_settings {
+  .chesscom.user_properties.v1.UserSettingsProperty user_settings = 25;
+  }
+  oneof _puzzles_attempted {
+  .chesscom.user_properties.v1.PuzzlesAttemptedProperty puzzles_attempted = 26;
+  }
+  oneof _clubs {
+  .chesscom.user_properties.v1.ClubsProperty clubs = 27;
+  }
+  oneof _puzzle_battle {
+  .chesscom.user_properties.v1.PuzzleBattleProperty puzzle_battle = 28;
+  }
+  oneof _audiences {
+  .chesscom.user_properties.v1.AudiencesProperty audiences = 29;
+  }
+  oneof _user_abuse {
+  .chesscom.user_properties.v1.UserAbuseProperty user_abuse = 30;
+  }
+  oneof _daily_puzzles_solved {
+  .chesscom.user_properties.v1.DailyPuzzlesSolvedProperty daily_puzzles_solved = 32;
+  }
+  oneof _play_bullet_chess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_chess = 33;
+  }
+  oneof _play_bullet_chess960 {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_chess960 = 34;
+  }
+  oneof _play_bullet_bughouse {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_bughouse = 35;
+  }
+  oneof _play_bullet_threecheck {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_threecheck = 36;
+  }
+  oneof _play_bullet_crazyhouse {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_crazyhouse = 37;
+  }
+  oneof _play_bullet_kingofthehill {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_kingofthehill = 38;
+  }
+  oneof _play_bullet_oddschess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_bullet_oddschess = 39;
+  }
+  oneof _play_blitz_chess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_chess = 40;
+  }
+  oneof _play_blitz_chess960 {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_chess960 = 41;
+  }
+  oneof _play_blitz_bughouse {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_bughouse = 42;
+  }
+  oneof _play_blitz_threecheck {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_threecheck = 43;
+  }
+  oneof _play_blitz_crazyhouse {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_crazyhouse = 44;
+  }
+  oneof _play_blitz_kingofthehill {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_kingofthehill = 45;
+  }
+  oneof _play_blitz_oddschess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_blitz_oddschess = 46;
+  }
+  oneof _play_rapid_chess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_chess = 47;
+  }
+  oneof _play_rapid_chess960 {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_chess960 = 48;
+  }
+  oneof _play_rapid_bughouse {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_bughouse = 49;
+  }
+  oneof _play_rapid_threecheck {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_threecheck = 50;
+  }
+  oneof _play_rapid_crazyhouse {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_crazyhouse = 51;
+  }
+  oneof _play_rapid_kingofthehill {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_kingofthehill = 52;
+  }
+  oneof _play_rapid_oddschess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_rapid_oddschess = 53;
+  }
+  oneof _play_daily_chess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_daily_chess = 54;
+  }
+  oneof _play_daily_chess960 {
+  .chesscom.user_properties.v1.PlayStatsProperty play_daily_chess960 = 55;
+  }
+  oneof _play_daily_oddschess {
+  .chesscom.user_properties.v1.PlayStatsProperty play_daily_oddschess = 56;
+  }
+  oneof _tournament_bullet_chess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_chess = 57;
+  }
+  oneof _tournament_bullet_chess960 {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_chess960 = 58;
+  }
+  oneof _tournament_bullet_bughouse {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_bughouse = 59;
+  }
+  oneof _tournament_bullet_threecheck {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_threecheck = 60;
+  }
+  oneof _tournament_bullet_crazyhouse {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_crazyhouse = 61;
+  }
+  oneof _tournament_bullet_kingofthehill {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_kingofthehill = 62;
+  }
+  oneof _tournament_bullet_oddschess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_bullet_oddschess = 63;
+  }
+  oneof _tournament_blitz_chess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_chess = 64;
+  }
+  oneof _tournament_blitz_chess960 {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_chess960 = 65;
+  }
+  oneof _tournament_blitz_bughouse {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_bughouse = 66;
+  }
+  oneof _tournament_blitz_threecheck {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_threecheck = 67;
+  }
+  oneof _tournament_blitz_crazyhouse {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_crazyhouse = 68;
+  }
+  oneof _tournament_blitz_kingofthehill {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_kingofthehill = 69;
+  }
+  oneof _tournament_blitz_oddschess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_blitz_oddschess = 70;
+  }
+  oneof _tournament_rapid_chess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_chess = 71;
+  }
+  oneof _tournament_rapid_chess960 {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_chess960 = 72;
+  }
+  oneof _tournament_rapid_bughouse {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_bughouse = 73;
+  }
+  oneof _tournament_rapid_threecheck {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_threecheck = 74;
+  }
+  oneof _tournament_rapid_crazyhouse {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_crazyhouse = 75;
+  }
+  oneof _tournament_rapid_kingofthehill {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_kingofthehill = 76;
+  }
+  oneof _tournament_rapid_oddschess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_rapid_oddschess = 77;
+  }
+  oneof _tournament_daily_chess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_daily_chess = 78;
+  }
+  oneof _tournament_daily_chess960 {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_daily_chess960 = 79;
+  }
+  oneof _tournament_daily_oddschess {
+  .chesscom.user_properties.v1.TournamentStatsProperty tournament_daily_oddschess = 80;
+  }
+  oneof _user_engagement {
+  .chesscom.user_properties.v1.UserEngagementProperty user_engagement = 81;
+  }
+  oneof _coaches {
+  .chesscom.user_properties.v1.CoachesProperty coaches = 82;
+  }
+  oneof _themes {
+  .chesscom.user_properties.v1.ThemesProperty themes = 83;
+  }
+  oneof _ipqs {
+  .chesscom.user_properties.v1.IpqsProperty ipqs = 84;
+  }
+  oneof _puzzle_stats {
+  .chesscom.user_properties.v1.UserPuzzleStatsProperty puzzle_stats = 85;
+  }
+  oneof _courses {
+  .chesscom.user_properties.v1.CoursesProperty courses = 86;
+  }
+  oneof _survey {
+  .chesscom.user_properties.v1.SurveyProperty survey = 87;
+  }
+  oneof _attribution_subscription_upgrade_initial {
+  .chesscom.user_properties.v1.AttributionProperty attribution_subscription_upgrade_initial = 88;
+  }
+  oneof _attribution_subscription_upgrade_last {
+  .chesscom.user_properties.v1.AttributionProperty attribution_subscription_upgrade_last = 89;
+  }
+  oneof _product_activity_rankings {
+  .chesscom.user_properties.v1.ProductActivityRankingsProperty product_activity_rankings = 90;
+  }
+  oneof _turnstile {
+  .chesscom.user_properties.v1.TurnstileProperty turnstile = 91;
+  }
+  oneof _user_streak_v2 {
+  .chesscom.user_properties.v1.UserStreakV2Property user_streak_v2 = 92;
+  }
+  oneof _fair_play {
+  .chesscom.user_properties.v1.FairPlayProperty fair_play = 93;
+  }
+  oneof _navbar {
+  .chesscom.user_properties.v1.NavbarProperty navbar = 94;
+  }
+  oneof _themes_ios {
+  .chesscom.user_properties.v1.ThemesProperty themes_ios = 95;
+  }
+  oneof _themes_android {
+  .chesscom.user_properties.v1.ThemesProperty themes_android = 96;
+  }
+  oneof _widgets_ios {
+  .chesscom.user_properties.v1.WidgetsProperty widgets_ios = 97;
+  }
+  oneof _widgets_android {
+  .chesscom.user_properties.v1.WidgetsProperty widgets_android = 98;
+  }
+  oneof _league {
+  .chesscom.user_properties.v1.LeagueProperty league = 99;
+  }
+  oneof _puzzle_rush {
+  .chesscom.user_properties.v1.PuzzleRushProperty puzzle_rush = 100;
+  }
+  oneof _monthly_bot_event {
+  .chesscom.user_properties.v1.MonthlyBotEventProperty monthly_bot_event = 101;
+  }
+  oneof _predictive {
+  .chesscom.user_properties.v1.PredictiveProperty predictive = 102;
+  }
+  oneof _growth {
+  .chesscom.user_properties.v1.GrowthProperty growth = 103;
+  }
+  oneof _skills {
+  .chesscom.user_properties.v1.SkillsProperty skills = 104;
+  }
+  oneof _opening_courses {
+  .chesscom.user_properties.v1.OpeningCoursesProperty opening_courses = 105;
+  }
+  repeated .chesscom.settings.v1.Setting settings = 31;
+}
+
+message Definitions {
+  oneof definition {
+  .chesscom.user_properties.v1.CorePropertyDefinition core = 1;
+  .chesscom.user_properties.v1.PIIPropertyDefinition pii = 2;
+  .chesscom.user_properties.v1.UserDetailsPropertyDefinition user_details = 3;
+  .chesscom.user_properties.v1.RolesPropertyDefinition roles = 4;
+  .chesscom.user_properties.v1.ActivityPropertyDefinition activity = 5;
+  .chesscom.user_properties.v1.SubscriptionPropertyDefinition subscription = 6;
+  .chesscom.user_properties.v1.AttributionPropertyDefinition attribution_signup_initial = 7;
+  .chesscom.user_properties.v1.AttributionPropertyDefinition attribution_signup_last = 8;
+  .chesscom.user_properties.v1.AttributionPropertyDefinition attribution_trial_initial = 9;
+  .chesscom.user_properties.v1.AttributionPropertyDefinition attribution_trial_last = 10;
+  .chesscom.user_properties.v1.RatingsPropertyDefinition ratings = 11;
+  .chesscom.user_properties.v1.WDLPropertyDefinition wdl = 12;
+  .chesscom.user_properties.v1.AnalysisPropertyDefinition analysis = 13;
+  .chesscom.user_properties.v1.SettingsDailyChessPropertyDefinition settings_daily_chess = 14;
+  .chesscom.user_properties.v1.SettingsLiveChessPropertyDefinition settings_live_chess = 15;
+  .chesscom.user_properties.v1.StatsDailyPropertyDefinition stats_daily_chess = 16;
+  .chesscom.user_properties.v1.StatsDailyChess960PropertyDefinition stats_daily_chess960 = 17;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_chess_bullet = 18;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_chess_blitz = 19;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_chess_rapid = 20;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_chess960_bullet = 21;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_chess960_blitz = 22;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_chess960_rapid = 23;
+  .chesscom.user_properties.v1.StatsLivePropertyDefinition stats_live_bughouse = 24;
+  .chesscom.user_properties.v1.UserSettingsPropertyDefinition user_settings = 25;
+  .chesscom.user_properties.v1.PuzzlesAttemptedPropertyDefinition puzzles_attempted = 26;
+  .chesscom.user_properties.v1.ClubsPropertyDefinition clubs = 27;
+  .chesscom.user_properties.v1.PuzzleBattlePropertyDefinition puzzle_battle = 28;
+  .chesscom.user_properties.v1.AudiencesPropertyDefinition audiences = 29;
+  .chesscom.user_properties.v1.UserAbusePropertyDefinition user_abuse = 30;
+  .chesscom.settings.v1.Setting setting = 31;
+  .chesscom.user_properties.v1.DailyPuzzlesSolvedPropertyDefinition daily_puzzles_solved = 32;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_chess = 33;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_chess960 = 34;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_bughouse = 35;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_threecheck = 36;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_crazyhouse = 37;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_kingofthehill = 38;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_bullet_oddschess = 39;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_chess = 40;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_chess960 = 41;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_bughouse = 42;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_threecheck = 43;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_crazyhouse = 44;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_kingofthehill = 45;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_blitz_oddschess = 46;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_chess = 47;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_chess960 = 48;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_bughouse = 49;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_threecheck = 50;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_crazyhouse = 51;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_kingofthehill = 52;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_rapid_oddschess = 53;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_daily_chess = 54;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_daily_chess960 = 55;
+  .chesscom.user_properties.v1.PlayStatsPropertyDefinition play_daily_oddschess = 56;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_chess = 57;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_chess960 = 58;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_bughouse = 59;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_threecheck = 60;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_crazyhouse = 61;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_kingofthehill = 62;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_bullet_oddschess = 63;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_chess = 64;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_chess960 = 65;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_bughouse = 66;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_threecheck = 67;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_crazyhouse = 68;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_kingofthehill = 69;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_blitz_oddschess = 70;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_chess = 71;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_chess960 = 72;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_bughouse = 73;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_threecheck = 74;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_crazyhouse = 75;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_kingofthehill = 76;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_rapid_oddschess = 77;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_daily_chess = 78;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_daily_chess960 = 79;
+  .chesscom.user_properties.v1.TournamentStatsPropertyDefinition tournament_daily_oddschess = 80;
+  .chesscom.user_properties.v1.UserEngagementPropertyDefinition user_engagement = 81;
+  .chesscom.user_properties.v1.CoachesPropertyDefinition coaches = 82;
+  .chesscom.user_properties.v1.ThemesPropertyDefinition themes = 83;
+  .chesscom.user_properties.v1.IpqsPropertyDefinition ipqs = 84;
+  .chesscom.user_properties.v1.UserPuzzleStatsPropertyDefinition puzzle_stats = 85;
+  .chesscom.user_properties.v1.CoursesPropertyDefinition courses = 86;
+  .chesscom.user_properties.v1.SurveyPropertyDefinition survey = 87;
+  .chesscom.user_properties.v1.AttributionPropertyDefinition attribution_subscription_upgrade_initial = 88;
+  .chesscom.user_properties.v1.AttributionPropertyDefinition attribution_subscription_upgrade_last = 89;
+  .chesscom.user_properties.v1.ProductActivityRankingsPropertyDefinition product_activity_rankings = 90;
+  .chesscom.user_properties.v1.TurnstilePropertyDefinition turnstile = 91;
+  .chesscom.user_properties.v1.UserStreakV2PropertyDefinition user_streak_v2 = 92;
+  .chesscom.user_properties.v1.FairPlayPropertyDefinition fair_play = 93;
+  .chesscom.user_properties.v1.NavbarPropertyDefinition navbar = 94;
+  .chesscom.user_properties.v1.ThemesPropertyDefinition themes_ios = 95;
+  .chesscom.user_properties.v1.ThemesPropertyDefinition themes_android = 96;
+  .chesscom.user_properties.v1.WidgetsPropertyDefinition widgets_ios = 97;
+  .chesscom.user_properties.v1.WidgetsPropertyDefinition widgets_android = 98;
+  .chesscom.user_properties.v1.LeaguePropertyDefinition league = 99;
+  .chesscom.user_properties.v1.PuzzleRushPropertyDefinition puzzle_rush = 100;
+  .chesscom.user_properties.v1.MonthlyBotEventPropertyDefinition monthly_bot_event = 101;
+  .chesscom.user_properties.v1.PredictivePropertyDefinition predictive = 102;
+  .chesscom.user_properties.v1.GrowthPropertyDefinition growth = 103;
+  .chesscom.user_properties.v1.SkillsPropertyDefinition skills = 104;
+  .chesscom.user_properties.v1.OpeningCoursesPropertyDefinition opening_courses = 105;
+  }
+}

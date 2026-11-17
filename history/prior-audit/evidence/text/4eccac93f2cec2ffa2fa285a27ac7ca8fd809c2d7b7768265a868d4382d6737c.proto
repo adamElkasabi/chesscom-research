@@ -1,0 +1,165 @@
+// source: chesscom/user_targeting/v1/user_targeting.proto
+// syntax: proto3
+
+package chesscom.user_targeting.v1;
+
+enum BinaryOperator {
+  BINARY_OPERATOR_UNSPECIFIED = 0;
+  GREATER = 1;
+  GREATER_OR_EQUAL = 2;
+  LESSER = 3;
+  LESSER_OR_EQUAL = 4;
+  EQUALS = 5;
+  NOT_EQUALS = 6;
+  CONTAINS = 7;
+  DOES_NOT_CONTAIN = 8;
+  WITHIN = 9;
+  STARTS_WITH = 10;
+  ENDS_WITH = 11;
+  MATCHES = 12;
+  NOT_WITHIN = 13;
+  ANY_OF = 14;
+  NONE_OF = 15;
+  EXISTS = 16;
+  NOT_EXISTS = 17;
+  BETWEEN = 18;
+  NOT_BETWEEN = 19;
+}
+
+enum LogicalOperator {
+  LOGICAL_OPERATOR_UNSPECIFIED = 0;
+  AND = 1;
+  OR = 2;
+}
+
+enum DataSourceType {
+  DATA_SOURCE_TYPE_UNSPECIFIED = 0;
+  EVENT = 1;
+  EVENT_TYPE_TRACK = 2;
+  EVENT_TYPE_TYPED = 3;
+  TEMPORARY_USER_DATA = 4;
+}
+
+enum TimeUnit {
+  TIME_UNIT_UNSPECIFIED = 0;
+  MILLISECONDS = 1;
+  SECONDS = 2;
+  MINUTES = 3;
+  HOURS = 4;
+  DAYS = 5;
+  MONTHS = 6;
+  YEARS = 7;
+}
+
+enum TimeDirection {
+  TIME_DIRECTION_UNSPECIFIED = 0;
+  LAST = 1;
+  NEXT = 2;
+}
+
+enum SortOrder {
+  SORT_ORDER_UNSPECIFIED = 0;
+  SORT_ORDER_ASC = 1;
+  SORT_ORDER_DESC = 2;
+}
+
+message Ruleset {
+  oneof _logical_operator {
+  .chesscom.user_targeting.v1.LogicalOperator logical_operator = 5;
+  }
+  optional string key = 1;
+  optional string name = 2;
+  optional bool enabled = 3;
+  repeated .chesscom.user_targeting.v1.Criterion criteria = 4;
+  repeated .chesscom.user_targeting.v1.NestedCriteria criteria_groups = 6;
+}
+
+message Criterion {
+  oneof _value {
+  string value = 3;
+  }
+  oneof _modifier {
+  .chesscom.user_targeting.v1.BinaryOperatorModifier modifier = 4;
+  }
+  oneof _second_value {
+  string second_value = 6;
+  }
+  optional string user_property = 1;
+  optional .chesscom.user_targeting.v1.BinaryOperator binary_operator = 2;
+  optional string key = 5;
+}
+
+message BinaryOperatorModifier {
+  oneof time_windows {
+  .chesscom.user_targeting.v1.RelativeTimeWindows relative = 50;
+  }
+  oneof _is_negated {
+  bool is_negated = 1;
+  }
+  oneof _is_case_insensitive {
+  bool is_case_insensitive = 2;
+  }
+  oneof _time_unit {
+  .chesscom.user_targeting.v1.TimeUnit time_unit = 3;
+  }
+  oneof _true_on_missing_values {
+  bool true_on_missing_values = 4;
+  }
+  oneof _time_direction {
+  .chesscom.user_targeting.v1.TimeDirection time_direction = 5;
+  }
+  oneof _second_time_unit {
+  .chesscom.user_targeting.v1.TimeUnit second_time_unit = 6;
+  }
+  oneof _second_time_direction {
+  .chesscom.user_targeting.v1.TimeDirection second_time_direction = 7;
+  }
+}
+
+message NestedCriteriaModifier {
+  oneof _is_negated {
+  bool is_negated = 1;
+  }
+  oneof _related_with_entity_type {
+  .chesscom.user_targeting.v1.DataSourceType related_with_entity_type = 2;
+  }
+  oneof _min_relations_matching {
+  int32 min_relations_matching = 3;
+  }
+  oneof _max_relations_matching {
+  int32 max_relations_matching = 4;
+  }
+  oneof _data_source_identifier {
+  string data_source_identifier = 5;
+  }
+}
+
+message RelativeTimeWindows {
+  oneof _from {
+  int32 from = 1;
+  }
+  oneof _to {
+  int32 to = 2;
+  }
+  oneof _time_unit {
+  .chesscom.user_targeting.v1.TimeUnit time_unit = 3;
+  }
+}
+
+message NestedCriteria {
+  oneof _logical_operator {
+  .chesscom.user_targeting.v1.LogicalOperator logical_operator = 3;
+  }
+  oneof _modifier {
+  .chesscom.user_targeting.v1.NestedCriteriaModifier modifier = 4;
+  }
+  repeated .chesscom.user_targeting.v1.NestedCriteria criteria_groups = 1;
+  repeated .chesscom.user_targeting.v1.Criterion criteria = 2;
+}
+
+message Sort {
+  oneof _sort_order {
+  .chesscom.user_targeting.v1.SortOrder sort_order = 2;
+  }
+  optional string key = 1;
+}

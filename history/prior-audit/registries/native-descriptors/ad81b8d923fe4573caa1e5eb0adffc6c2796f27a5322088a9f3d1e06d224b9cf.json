@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_key_game_state.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_state_spec.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureKeyGameStateRequest",
+      "field": [
+        {
+          "name": "game_state_spec",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameStateSpec"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureKeyGameStateResponse",
+      "field": [
+        {
+          "name": "game_state_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

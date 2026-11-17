@@ -1,0 +1,35 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_compress_data.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InternalFeatureCompressDataRequest",
+      "field": [
+        {
+          "name": "uncompressed_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        },
+        {
+          "name": "encrypt",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureCompressDataResponse",
+      "field": [
+        {
+          "name": "compressed_data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

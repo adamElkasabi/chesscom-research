@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/payments/v1/product_prices.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "ProductPrices",
+      "field": [
+        {
+          "name": "sku",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "country_prices",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.CountryPrice"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

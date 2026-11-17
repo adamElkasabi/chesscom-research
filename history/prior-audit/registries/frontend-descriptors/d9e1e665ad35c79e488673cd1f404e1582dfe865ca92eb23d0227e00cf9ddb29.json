@@ -1,0 +1,57 @@
+{
+  "name": "chesscom/game_storage/v2/vs_computer_game_data.proto",
+  "package": "chesscom.game_storage.v2",
+  "message_type": [
+    {
+      "name": "VsComputerGameData",
+      "field": [
+        {
+          "name": "assisted_game_features",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.computer.v2.AssistedGameFeature"
+        },
+        {
+          "name": "crowns_earned",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "bot_personality_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_mode",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.computer.v2.GameMode"
+        },
+        {
+          "name": "event_config_key",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_crowns_earned"
+        },
+        {
+          "name": "_event_config_key"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,17 @@
+// source: chesscom/courses/v1alpha/course_deviation.proto
+// syntax: proto3
+
+package chesscom.courses.v1alpha;
+
+message CourseDeviation {
+  repeated string correct_line = 1;
+  optional .chesscom.chess.v1.Arrow correct_line_move_arrow = 2;
+  optional string variation_url = 3;
+  optional int32 ply = 4;
+  optional string course_url = 5;
+  optional string course_name = 6;
+  optional string thumbnail_url = 7;
+  optional string author_name = 8;
+  optional string fen_in_course = 9;
+  optional string fen_deviated = 10;
+}

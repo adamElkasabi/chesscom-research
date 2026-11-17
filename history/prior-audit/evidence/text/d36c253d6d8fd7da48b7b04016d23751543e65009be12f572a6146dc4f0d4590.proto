@@ -1,0 +1,18 @@
+// source: chesscom/explanation_engine/v1/feature_get_san_moves.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetSanMovesRequest {
+  oneof variation {
+  .chesscom.explanation_engine.v1.MoveList proto_moves = 2;
+  .chesscom.explanation_engine.v1.UciMoveList uci_moves = 3;
+  }
+  oneof _fen {
+  string fen = 1;
+  }
+}
+
+message GetSanMovesResponse {
+  repeated string san_moves = 1;
+}

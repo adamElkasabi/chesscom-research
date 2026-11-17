@@ -1,0 +1,22 @@
+{
+  "status": "PASS within stated focused scope",
+  "baseline_sha256_unchanged": "b0fc69d224b390b13f7d44fa59c19ab17eb02ceff260e51459ca80ee0b715282",
+  "public_script_response_count": 19,
+  "public_script_hashes_verified": true,
+  "raw_page_and_cookie_headers_excluded": true,
+  "frontend_exact_function_checks": 32,
+  "portable_native_runner_recheck": {
+    "mode": "charm",
+    "success": true,
+    "model_ack_success": true,
+    "feature61_move_returned": true
+  },
+  "model_tensor_records": 134,
+  "model_tensor_end_offset": 11946339,
+  "model_unparsed_bytes": 0,
+  "markdown_relative_links_against_overlay_plus_baseline": "0 broken at QC",
+  "historical_artifacts_replaced": 0,
+  "native_binaries_replaced": 0,
+  "production_extension_files_changed": 0,
+  "coverage_limit": "No full browser session, production config response, private server implementation, full forward-equation recovery or every-native-function semantic completion."
+}

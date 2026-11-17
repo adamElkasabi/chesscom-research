@@ -1,0 +1,36 @@
+// source: chesscom/explanation_engine/v1/feature_get_bot_chat.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetBotChatRequest {
+  oneof _move_notation {
+  .chesscom.chess.v1.MoveNotation move_notation = 2;
+  }
+  oneof _request_hint {
+  bool request_hint = 3;
+  }
+  oneof _json {
+  string json = 4;
+  }
+  optional string bot_name = 1;
+}
+
+message GetBotChatResponse {
+  oneof _hinted_move {
+  .chesscom.explanation_engine.v1.MoveDetails hinted_move = 2;
+  }
+  oneof _json {
+  string json = 3;
+  }
+  oneof _trigger_info {
+  .chesscom.explanation_engine.v1.BotChatTriggerInfo trigger_info = 4;
+  }
+  optional .chesscom.explanation_engine.v1.Speech speech = 1;
+}
+
+message BotChatTriggerInfo {
+  optional string label = 1;
+  optional uint32 alternative = 2;
+  optional string personality = 3;
+}

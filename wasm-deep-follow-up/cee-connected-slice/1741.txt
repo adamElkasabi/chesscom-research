@@ -1,0 +1,102 @@
+export function original_fn_1741(a:{ a:int, b:int }):int {
+  var d:{ a:int, b:int, c:int, d:int }
+  var e:{ a:int, b:int, c:int, d:int }
+  var c:int;
+  var b:int;
+  if (g_c == 2) {
+    g_d[0]:int = g_d[0]:int - 16;
+    d = g_d[0]:int;
+    a = d.a;
+    b = d.b;
+    c = d.c;
+    d = d.d;
+  }
+  e = {
+        if (g_c == 2) {
+          g_d[0]:int = g_d[0]:int - 4;
+          e = (g_d[0]:int)[0]:int;
+        }
+        if (eqz(g_c)) {
+          d = g_a - 16;
+          g_a = d;
+          c = d + 8;
+          b = a >> 20;
+        }
+        if (eqz(g_c) | eqz(e)) {
+          original_fn_1670(c, 12157984, b);
+          0;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          c = d.c;
+          b = eqz(c);
+        }
+        if (eqz(g_c)) {
+          if (b) {
+            c = 0;
+            goto B_i;
+          }
+          18297676[0]:int = 0;
+          b = boundary_original_fn_7890(c);
+          c = 18297676[0]:int;
+          18297676[0]:int = 0;
+          c = c == 1;
+          if (c) goto B_g;
+          18297676[0]:int = 0;
+          c = boundary_original_fn_8691(b, a & 1048575);
+          a = 18297676[0]:int;
+          18297676[0]:int = 0;
+          a = a == 1;
+          if (a) goto B_g;
+          label B_i:
+          a = d.d;
+          b = eqz(a);
+        }
+        if (eqz(g_c)) {
+          if (b) goto B_k;
+          a.b = (b = a.b) - 1;
+          if (b) goto B_k;
+          b = a.a[2]:int;
+        }
+        if (eqz(g_c) | e == 1) {
+          call_indirect(a, b);
+          1;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c) | e == 2) {
+          boundary_original_fn_22862(a);
+          2;
+          if (g_c == 1) goto B_b;
+        }
+        label B_k:
+        if (eqz(g_c)) {
+          g_a = d + 16;
+          return c;
+        }
+        label B_g:
+        if (eqz(g_c)) {
+          c = d + 8;
+          a = boundary_original_fn_9();
+        }
+        if (eqz(g_c) | e == 3) {
+          boundary_original_fn_205(c);
+          3;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          boundary_original_fn_12(a);
+          unreachable;
+        }
+        unreachable;
+        label B_b:
+      }
+  (g_d[0]:int)[0]:int = e;
+  g_d[0]:int = g_d[0]:int + 4;
+  e = g_d[0]:int;
+  e.a = a;
+  e.b = b;
+  e.c = c;
+  e.d = d;
+  g_d[0]:int = g_d[0]:int + 16;
+  return 0;
+}

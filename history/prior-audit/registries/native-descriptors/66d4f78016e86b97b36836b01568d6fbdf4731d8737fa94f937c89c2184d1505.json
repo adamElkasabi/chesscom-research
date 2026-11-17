@@ -1,0 +1,75 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_pgn_move_annotations.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetPgnMoveAnnotationsRequest"
+    },
+    {
+      "name": "PgnMoveAnnotation",
+      "field": [
+        {
+          "name": "comments",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "before_comment",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "nags",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_before_comment"
+        }
+      ]
+    },
+    {
+      "name": "GetPgnMoveAnnotationsResponse",
+      "field": [
+        {
+          "name": "annotations",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GetPgnMoveAnnotationsResponse.AnnotationsEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "AnnotationsEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.PgnMoveAnnotation"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

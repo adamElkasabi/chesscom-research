@@ -1,0 +1,80 @@
+{
+  "name": "chesscom/flair/v1/flair_view.proto",
+  "package": "chesscom.flair.v1",
+  "message_type": [
+    {
+      "name": "FlairView",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "images",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.FlairView.ImagesEntry"
+        },
+        {
+          "name": "description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "ImagesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UserFlair",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "flair",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.FlairView",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_flair"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

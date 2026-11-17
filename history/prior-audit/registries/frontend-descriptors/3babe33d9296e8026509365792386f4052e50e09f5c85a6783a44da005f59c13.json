@@ -1,0 +1,54 @@
+{
+  "name": "chesscom/courses_common/v1/course_chapter_stats.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseChapterStats",
+      "field": [
+        {
+          "name": "trainable_variations",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "informational_variations",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "quickstarter_variations",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "alternative_variations",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "puzzles",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "average_training_depth",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "paid_video_minutes",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

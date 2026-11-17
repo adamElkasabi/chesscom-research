@@ -1,0 +1,190 @@
+
+Cchesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.proto#chesscom.explanation_engine.v1alpha"û
+ V1x7Depth20Multipv10LabelsRecord
+ep_diff_side_to_move (
+classification_name (	
+uci (	
+
+fen_before (	
+fen (	
+	fen_after (	"≤)
+"V1x7Depth20Multipv10FeaturesRecord
+move_number (
+
+game_phase (
+ep_diff_side_that_moved ('
+pv0_pv1_ep_diff_side_that_moved (
+ep_side_to_move ($
+pv0_pv1_ep_diff_side_to_move ($
+pv0_pv2_ep_diff_side_to_move ($
+pv0_pv3_ep_diff_side_to_move ($
+pv0_pv4_ep_diff_side_to_move	 ($
+pv0_pv5_ep_diff_side_to_move
+ ($
+pv0_pv6_ep_diff_side_to_move ($
+pv0_pv7_ep_diff_side_to_move ($
+pv0_pv8_ep_diff_side_to_move ($
+pv0_pv9_ep_diff_side_to_move (/
+'potential_legal_move_count_side_to_move (2
+*potential_legal_move_count_side_that_moved (1
+)previous_legal_move_count_side_that_moved (2
+*potential_legal_capture_count_side_to_move (5
+-potential_legal_capture_count_side_that_moved (4
+,previous_legal_capture_count_side_that_moved (9
+1potential_see_positive_capture_count_side_to_move (<
+4potential_see_positive_capture_count_side_that_moved (;
+3previous_see_positive_capture_count_side_that_moved (
+in_check_side_to_move ($
+was_in_check_side_that_moved (
+pv0_distance (
+pv1_distance (
+pv2_distance (
+pv3_distance (
+pv4_distance (
+pv5_distance (
+pv6_distance  (
+pv7_distance! (
+pv8_distance" (
+pv9_distance# (
+pv0_piece_type$ (
+pv1_piece_type% (
+pv2_piece_type& (
+pv3_piece_type' (
+pv4_piece_type( (
+pv5_piece_type) (
+pv6_piece_type* (
+pv7_piece_type+ (
+pv8_piece_type, (
+pv9_piece_type- (
+pv0_capture_piece_type. (
+pv1_capture_piece_type/ (
+pv2_capture_piece_type0 (
+pv3_capture_piece_type1 (
+pv4_capture_piece_type2 (
+pv5_capture_piece_type3 (
+pv6_capture_piece_type4 (
+pv7_capture_piece_type5 (
+pv8_capture_piece_type6 (
+pv9_capture_piece_type7 ("
+pv0_bestline_capture_count8 ("
+pv1_bestline_capture_count9 ("
+pv2_bestline_capture_count: ("
+pv3_bestline_capture_count; ("
+pv4_bestline_capture_count< ("
+pv5_bestline_capture_count= ("
+pv6_bestline_capture_count> ("
+pv7_bestline_capture_count? ("
+pv8_bestline_capture_count@ ("
+pv9_bestline_capture_countA (
+pv0_good_tag_countB (
+pv1_good_tag_countC (
+pv2_good_tag_countD (
+pv3_good_tag_countE (
+pv4_good_tag_countF (
+pv5_good_tag_countG (
+pv6_good_tag_countH (
+pv7_good_tag_countI (
+pv8_good_tag_countJ (
+pv9_good_tag_countK (
+pv0_bad_tag_countL (
+pv1_bad_tag_countM (
+pv2_bad_tag_countN (
+pv3_bad_tag_countO (
+pv4_bad_tag_countP (
+pv5_bad_tag_countQ (
+pv6_bad_tag_countR (
+pv7_bad_tag_countS (
+pv8_bad_tag_countT (
+pv9_bad_tag_countU (
+pv0_is_obvious_or_easyV (
+pv1_is_obvious_or_easyW (
+pv2_is_obvious_or_easyX (
+pv3_is_obvious_or_easyY (
+pv4_is_obvious_or_easyZ (
+pv5_is_obvious_or_easy[ (
+pv6_is_obvious_or_easy\ (
+pv7_is_obvious_or_easy] (
+pv8_is_obvious_or_easy^ (
+pv9_is_obvious_or_easy_ (
+pv0_is_backwards` (
+pv1_is_backwardsa (
+pv2_is_backwardsb (
+pv3_is_backwardsc (
+pv4_is_backwardsd (
+pv5_is_backwardse (
+pv6_is_backwardsf (
+pv7_is_backwardsg (
+pv8_is_backwardsh (
+pv9_is_backwardsi (
+pv0_is_checkj (
+pv1_is_checkk (
+pv2_is_checkl (
+pv3_is_checkm (
+pv4_is_checkn (
+pv5_is_checko (
+pv6_is_checkp (
+pv7_is_checkq (
+pv8_is_checkr (
+pv9_is_checks (
+pv0_is_tactict (
+pv1_is_tacticu (
+pv2_is_tacticv (
+pv3_is_tacticw (
+pv4_is_tacticx (
+pv5_is_tacticy (
+pv6_is_tacticz (
+pv7_is_tactic{ (
+pv8_is_tactic| (
+pv9_is_tactic} (
+pv0_is_sacrifice~ (
+pv1_is_sacrifice (
+pv2_is_sacrificeÄ (
+pv3_is_sacrificeÅ (
+pv4_is_sacrificeÇ (
+pv5_is_sacrificeÉ (
+pv6_is_sacrificeÑ (
+pv7_is_sacrificeÖ (
+pv8_is_sacrificeÜ (
+pv9_is_sacrificeá (
+pv0_is_deflectionà (
+pv1_is_deflectionâ (
+pv2_is_deflectionä (
+pv3_is_deflectionã (
+pv4_is_deflectionå (
+pv5_is_deflectionç (
+pv6_is_deflectioné (
+pv7_is_deflectionè (
+pv8_is_deflectionê (
+pv9_is_deflectionë (
+pv0_is_underpromotioní (
+pv1_is_underpromotionì (
+pv2_is_underpromotionî (
+pv3_is_underpromotionï (
+pv4_is_underpromotionñ (
+pv5_is_underpromotionó (
+pv6_is_underpromotionò (
+pv7_is_underpromotionô (
+pv8_is_underpromotionö (
+pv9_is_underpromotionõ (
+material_countú (
+material_differenceù (&
+pawn_piece_count_side_to_moveû ((
+knight_piece_count_side_to_moveü ((
+bishop_piece_count_side_to_move† (&
+rook_piece_count_side_to_move° ('
+queen_piece_count_side_to_move¢ ()
+ pawn_piece_count_side_that_moved£ (+
+"knight_piece_count_side_that_moved§ (+
+"bishop_piece_count_side_that_moved• ()
+ rook_piece_count_side_that_moved¶ (*
+!queen_piece_count_side_that_movedß (
+chip_ep_side_to_move® (,
+#chip_vs_engine_diff_ep_side_to_move© (
+chip_think_time_s™ (
+chip_p_best´ (
+
+chip_p_alt¨ ("Z
+%V1x7Depth20Multipv10PredictionsRecord
+probability_good_move (
+
+model_used (	bproto3

@@ -1,0 +1,122 @@
+{
+  "name": "chesscom/text_item/v1alpha/internal_feature_generate_coach_text_asset.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "dependency": [
+    "chesscom/text_item/v1alpha/google_sheet.proto",
+    "chesscom/text_item/v1alpha/text_item.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGenerateCoachTextAssetRequest",
+      "field": [
+        {
+          "name": "google_sheet_list",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.GoogleSheetList",
+          "oneof_index": 0
+        },
+        {
+          "name": "text_item_list",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.TextItemList",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "input"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGenerateCoachTextAssetResponse",
+      "field": [
+        {
+          "name": "text_asset_json",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sentences_for_audio_generation",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.text_item.v1alpha.AudioSentence"
+        },
+        {
+          "name": "warnings",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AudioSentence",
+      "field": [
+        {
+          "name": "presentation_sentence",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.text_item.v1alpha.AudioSentenceSource"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AudioSentenceSource",
+      "value": [
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_HIGH_PRIORITY",
+          "number": 1
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_GAME_REVIEW",
+          "number": 2
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_GAME_REVIEW_OPENINGS",
+          "number": 3
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_GAME_SUMMARY",
+          "number": 4
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_PLAY_VS_COACH_SCENARIOS",
+          "number": 5
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_PLAY_VS_COACH_OPENINGS",
+          "number": 6
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_PUZZLES",
+          "number": 7
+        },
+        {
+          "name": "AUDIO_SENTENCE_SOURCE_COURSE_RECOMMENDATIONS",
+          "number": 8
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

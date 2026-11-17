@@ -1,0 +1,32 @@
+{
+  "config": {
+    "id": "pvtree-no-maia",
+    "pvtrees": {
+      "request": {
+        "search": {
+          "case": "searchParameters",
+          "value": {
+            "nodesLimit": 1000,
+            "numLines": 1
+          }
+        },
+        "torchSearchMode": {
+          "mode": {
+            "case": "human",
+            "value": {
+              "disableMaia": true
+            }
+          }
+        }
+      },
+      "pvtreeOptions": {
+        "rating": 100
+      }
+    },
+    "searchOnly": true,
+    "timeoutSeconds": 20
+  },
+  "started": "2026-11-14T20:20:58.183Z",
+  "error": "trial timeout after 20s",
+  "warnings": []
+}

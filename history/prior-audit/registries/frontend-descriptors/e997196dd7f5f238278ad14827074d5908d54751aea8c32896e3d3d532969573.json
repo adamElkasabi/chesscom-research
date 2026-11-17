@@ -1,0 +1,47 @@
+{
+  "name": "chesscom/courses/v1/user_goal.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "UserGoal",
+      "field": [
+        {
+          "name": "goal_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.GoalType"
+        },
+        {
+          "name": "steps",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.GoalStep"
+        },
+        {
+          "name": "reward",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.Reward"
+        },
+        {
+          "name": "achieved_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "reward_claimed_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

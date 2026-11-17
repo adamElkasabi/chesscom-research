@@ -1,0 +1,15 @@
+// source: chesscom/payments/v1/gift_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message ListEligibleGiftRecipientsRequest {
+  oneof _product {
+  .chesscom.payments.v1.Product product = 2;
+  }
+  repeated string user_uuids = 1;
+}
+
+message ListEligibleGiftRecipientsResponse {
+  repeated string eligible_user_uuids = 1;
+}

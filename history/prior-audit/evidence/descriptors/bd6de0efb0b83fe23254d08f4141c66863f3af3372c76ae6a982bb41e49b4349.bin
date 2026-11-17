@@ -1,0 +1,78 @@
+
+Bchesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.proto#chesscom.explanation_engine.v1alpha"ù
+V1x6Depth20Multipv2LabelsRecord
+ep_diff_side_to_move (
+classification_name (	
+uci (	
+
+fen_before (	
+fen (	
+	fen_after (	"¥
+!V1x6Depth20Multipv2FeaturesRecord
+move_number (
+
+game_phase (
+ep_diff_side_that_moved ('
+pv0_pv1_ep_diff_side_that_moved (
+ep_side_to_move ($
+pv0_pv1_ep_diff_side_to_move (/
+'potential_legal_move_count_side_to_move (2
+*potential_legal_move_count_side_that_moved (1
+)previous_legal_move_count_side_that_moved	 (2
+*potential_legal_capture_count_side_to_move
+ (5
+-potential_legal_capture_count_side_that_moved (4
+,previous_legal_capture_count_side_that_moved (9
+1potential_see_positive_capture_count_side_to_move (<
+4potential_see_positive_capture_count_side_that_moved (;
+3previous_see_positive_capture_count_side_that_moved (
+in_check_side_to_move ($
+was_in_check_side_that_moved (
+pv0_distance (
+pv1_distance (
+pv0_piece_type (
+pv1_piece_type (
+pv0_capture_piece_type (
+pv1_capture_piece_type ("
+pv0_bestline_capture_count ("
+pv1_bestline_capture_count (
+pv0_good_tag_count (
+pv1_good_tag_count (
+pv0_bad_tag_count (
+pv1_bad_tag_count (
+pv0_is_obvious_or_easy (
+pv1_is_obvious_or_easy (
+pv0_is_backwards  (
+pv1_is_backwards! (
+pv0_is_check" (
+pv1_is_check# (
+pv0_is_tactic$ (
+pv1_is_tactic% (
+pv0_is_sacrifice& (
+pv1_is_sacrifice' (
+pv0_is_deflection( (
+pv1_is_deflection) (
+pv0_is_underpromotion* (
+pv1_is_underpromotion+ (
+material_count, (
+material_difference- (%
+pawn_piece_count_side_to_move. ('
+knight_piece_count_side_to_move/ ('
+bishop_piece_count_side_to_move0 (%
+rook_piece_count_side_to_move1 (&
+queen_piece_count_side_to_move2 ((
+ pawn_piece_count_side_that_moved3 (*
+"knight_piece_count_side_that_moved4 (*
+"bishop_piece_count_side_that_moved5 ((
+ rook_piece_count_side_that_moved6 ()
+!queen_piece_count_side_that_moved7 (
+chip_ep_side_to_move8 (+
+#chip_vs_engine_diff_ep_side_to_move9 (
+chip_think_time_s: (
+chip_p_best; (
+
+chip_p_alt< ("Y
+$V1x6Depth20Multipv2PredictionsRecord
+probability_good_move (
+
+model_used (	bproto3

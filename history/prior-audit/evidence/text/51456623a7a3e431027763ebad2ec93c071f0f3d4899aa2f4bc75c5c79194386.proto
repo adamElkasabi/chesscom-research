@@ -1,0 +1,15 @@
+// source: chesscom/payments/v1/membership_product_details.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message MembershipProductDetails {
+  optional string name = 1;
+  optional string image_url = 2;
+  optional string code = 3;
+  optional int32 level = 4;
+  optional string short_name = 5;
+  optional int32 max_applicable_accounts = 6;
+  repeated .chesscom.permissions.v1.PremiumFeature displayed_premium_features = 7;
+  repeated .chesscom.premium_access.v1.PremiumFeature displayed_premium_features_v2 = 8;
+}
