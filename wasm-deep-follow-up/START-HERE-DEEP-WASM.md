@@ -2,7 +2,7 @@
 
 **PARTIALLY AUDITED. The extreme-depth semantic mission is not fully complete.**
 
-[Read the new follow-up](website-audit/wasm-deep-follow-up/reports/00-START-HERE.md).
+[Read the new follow-up](reports/00-START-HERE.md).
 
 29 module identities include 25 downloaded/assembled runtimes and 4 inline probes. There are 225,335 explicitly statused defined functions; most remain structural. The original 2,475 baseline members are preserved byte-for-byte. New large raw runtime/parameter exclusions are explicit, not concealed.
 

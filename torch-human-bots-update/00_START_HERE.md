@@ -20,7 +20,7 @@
 - [06 — Evidence map and reproduction](06_EVIDENCE_AND_REPRODUCTION.md)
 - [07 — Architecture diagrams](07_ARCHITECTURE_DIAGRAMS.md)
 - [Machine claim ledger](evidence/claims.json)
-- [Patch verification / overlay instructions](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md)
+- [Patch verification / overlay instructions](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md)
 
 ## Evidence grades
 

@@ -5,7 +5,7 @@
 
 The Torch Human/bots overlay has its own path/hash/change manifest. It adds public source/evidence and updates explanatory reports only; the 11,946,339-byte Topaz model is hash-recorded but not embedded. Old file/count/QA manifests remain baseline snapshots rather than silently regenerated totals.
 
-[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](torch-human-bots-update/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 

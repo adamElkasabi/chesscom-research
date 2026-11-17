@@ -5,7 +5,7 @@
 
 A later focused follow-up now traces Human and bot paths and executes the genuine recovered Charm-small model. Prior structural function coverage is unchanged; this is not exhaustive native semantic recovery.
 
-[Evidence-graded focused update](../../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../../torch-human-bots-update/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 ## Status: PARTIALLY AUDITED — not an exhaustive semantic reconstruction

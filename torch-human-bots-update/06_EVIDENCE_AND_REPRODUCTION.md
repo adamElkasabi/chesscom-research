@@ -76,4 +76,4 @@ The runner records binary hashes/native version and uses original descriptor-bas
 
 ## Verify and apply the overlay
 
-Follow `../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md`. The machine manifest records before/after SHA256s for replacements, after SHA256s for additions and every expected path. Verification is offline and does not delete or extract anything. Original full-archive SHA256 remains `b0fc69d224b390b13f7d44fa59c19ab17eb02ceff260e51459ca80ee0b715282`.
+Follow `TORCH_HUMAN_BOTS_PATCH_MANIFEST.md`. The machine manifest records before/after SHA256s for replacements, after SHA256s for additions and every expected path. Verification is offline and does not delete or extract anything. Original full-archive SHA256 remains `b0fc69d224b390b13f7d44fa59c19ab17eb02ceff260e51459ca80ee0b715282`.

@@ -7,7 +7,7 @@
 1. Keep your original full ZIP/extraction as a backup.
 2. Extract this patch into the **parent folder that already contains `website-audit/`**.
 3. Allow replacement of the17 explanatory/index/packaging Markdown files listed in `TORCH_HUMAN_BOTS_PATCH_MANIFEST.json`; all other entries are additions. No deletion is required.
-4. Open [`torch-human-bots-update/00_START_HERE.md`](torch-human-bots-update/00_START_HERE.md).
+4. Open [`torch-human-bots-update/00_START_HERE.md`](00_START_HERE.md).
 
 Do not extract it inside `website-audit/` itself, or you will create an extra nested directory.
 
@@ -30,7 +30,7 @@ The11,946,339-byte model binary is intentionally not embedded. Its full SHA256, 
 ## Verify offline
 
 ```sh
-python3 website-audit/verify-torch-human-bots-patch.py \
+python3 tools/verify-torch-human-bots-patch.py \
   --patch website-audit-torch-human-bots-update.zip \
   --baseline website-complete-forensic-audit.zip
 ```
