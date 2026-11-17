@@ -174,5 +174,42 @@ put(O/'tools/INDEX.md','# Reproducibility tools\n\n[Master](../00_MASTER_INDEX.m
 # Detailed exact exclusions are finalized by packaging script after measuring sizes.
 put(O/'PACKAGING_AND_STORAGE.md','# Packaging and storage policy\n\n[Master](00_MASTER_INDEX.md)\n\nTheworkspacehasabest-effort128MiBpersistencelimit. Largeanalysisranintemporarydiskscratch,notintheevidenceworkspace. Originalbinariesarepreserved,notpatched.\n\nFullCEE/TorchWATandfullTorchdecompilationduplicatelargedata/weightpayloadsintotextandareomittedwhenlistedinthefinalexclusionmanifest. Theiroriginalbinary,offset/hashmaps,functioninventory,callgraph,selectedWATandcode-only/focusedpseudocoderemainintheprimaryZIP. NoavailablebinaryisexcludedfromtheWASManalysispackage.\n\n[Exact measured excluded intermediate outputs](audit-metadata/packaging-exclusions.json)\n\nSomeexistingworkspacearchivesmaybeconsolidatedinto`preserved-workspace/`insideprimaryZIPandexpandedengineassetsremovedonlyafterCRC/SHAverification. Ifthisisnecessary,therestorehelperandfinalreportstateitexplicitly. Archivingisnotdestruction,butrestorationcanexceedtheworkspacecap.\n')
 put(M/'audit-progress.md','# Extended mission checkpoint\n\n**Status: PARTIALLY AUDITED.**\n\nCompleted:priorrecoverypreserved;allfiveavailablebinariesstructurallyparsed/validated;staticfunctions/callgraphs/opcodes/data/stringsrecovered;allfiverestrictedstubinstantiationspassed;10focusedCEEexportsdecompiled;threefull-moduledecompilationssucceeded;new9publicGETand2TLS/DNSobservations;367UIdeclarationvariants/fourCSSassetsprocessed;technologyalternativesexplicitlyclassified;26mainchapters/13Mermaiddiagrams/dedicatedWASMreportsbuilt.\n\nUnfinishedbatches:additionalreferencedWASMversions/Rive/multipartretrieval;all-functionsemanticdecompilation;indirecttargetresolution;fullUIbehavior;authenticatedflows;privatebackend/source/schema;externalREA/otherconversationrecovery. Exactgapsandrequiredevidencearein23_KNOWLEDGE_GAPS.md.\n\nNoSQLinjectionorprivateconfigurationguessing. Nonewexpensivefull-reviewparametersearch. NooriginaldocumentationorWASMbyteschanged. Packagingmayrelocateverifiedworkingcopiesintoarchive;originalsnapshotpreservationchecksdescribetheanalysisinputbytes,notafutureunpackedpathguarantee.\n\nReproductiontoolsareincluded;importantlargeintermediatesareexplicitlylistedratherthansilentlyomitted. FinalQCreportcontainsactualID/link/hash/ZIP/redactioncounts.\n')
-put(O/'README.md','# Chess.com extended forensic architecture and WASM audit\n\nStartwith[00_MASTER_INDEX.md](00_MASTER_INDEX.md).\n\n**PARTIALLY AUDITED**,notacompleteprivate-source/database/schemaorall-functiondecompilation. OriginalfiveWASMbytesandgranularrecoveryevidenceareincluded. Historicalclaimsremainseparatefromnewpublicevidence.\n\n- [Technology stack](06_TECHNOLOGY_STACK.md)\n- [WASM master](wasm-analysis/00_WASM_MASTER_INDEX.md)\n- [All findings](findings/FINDINGS_INDEX.md)\n- [Exact counts](audit-metadata/completeness-metrics.json)\n- [Packaging and exclusions](PACKAGING_AND_STORAGE.md)\n- [QC report](audit-metadata/qa-report.json)\n\nMermaiddiagramsareplaintextandcanberenderedwithaMermaid-capableviewer;noexternalresourcesarerequiredtoreadtheMarkdown. GzipfilescontainplainWAT/JSONL/pseudocodeaslabelled.\n')
+put(O/'README.md','''# Chess.com forensic research: navigation
+
+This collection documents a partial forensic architecture audit of Chess.com client material, including WebAssembly analysis, historical findings, supporting evidence, and a focused Torch Human and bot-personality follow-up. It does not establish private server implementation details or a complete semantic reconstruction. Consult the linked reports for their evidence and limits.
+
+**Status: PARTIALLY AUDITED** — not a complete private-source, database, schema or all-function decompilation. The original five WASM bytes and granular recovery evidence are included. Historical claims remain separate from new public evidence. The audit and overlay manifests describe their recorded snapshots; this README and the folder layout have changed since those snapshots were taken.
+
+## Recommended reading order
+
+1. [Executive overview](chapters/01_EXECUTIVE_OVERVIEW.md) — scope, major findings, and limitations.
+2. [Master index](chapters/00_MASTER_INDEX.md) — the numbered architecture chapters and evidence indexes.
+3. [WASM master index](wasm-analysis/00_WASM_MASTER_INDEX.md) — the initial five-binary investigation.
+4. [Deep WASM follow-up](wasm-deep-follow-up/reports/00-START-HERE.md) — expanded structural coverage, case studies, limitations, and packaging. See also its [package entry note](wasm-deep-follow-up/START-HERE-DEEP-WASM.md).
+5. [Torch Human and bot-personality update](torch-human-bots-update/00_START_HERE.md) — focused evidence grades, corrections, and remaining questions, with its [overlay change manifest](torch-human-bots-update/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md) and [verification script](tools/verify-torch-human-bots-patch.py).
+6. [Findings index](findings/FINDINGS_INDEX.md) and [packaging and storage](PACKAGING_AND_STORAGE.md) — detailed records, provenance, and exclusions.
+
+## Collection map
+
+| Location | Contents |
+| --- | --- |
+| [chapters](chapters/) | Overview, site and frontend/backend architecture, technology, security, diagrams, and gaps. |
+| [wasm-analysis](wasm-analysis/) | Initial module reports, binary structure, imports/exports, runtime and known unknowns. |
+| [wasm-deep-follow-up](wasm-deep-follow-up/) | Later reports and analysis artifacts; see its packaging chapter for retained and omitted payloads. |
+| [torch-human-bots-update](torch-human-bots-update/) | Focused Human and bot research, evidence, tools, corrections, and overlay manifests. |
+| [findings](findings/) and [audit-metadata](audit-metadata/) | Detailed findings, machine ledgers, source manifests, checksums, metrics, and quality-control records. |
+| [evidence](evidence/), [registries](registries/), and [diagrams](diagrams/) | Supporting public artifacts, structured inventories, and Mermaid diagrams. |
+| [history](history/) and [original-documentation](original-documentation/) | Earlier audit material and labelled documentation copies. |
+| [tools](tools/) and [preserved-workspace](preserved-workspace/) | Research, restoration and verification scripts, and retained workspace assets. |
+
+## Reference
+
+- [Technology stack](chapters/06_TECHNOLOGY_STACK.md)
+- [Exact counts](audit-metadata/completeness-metrics.json)
+- [QC report](audit-metadata/qa-report.json)
+
+Mermaid diagrams are plaintext and can be rendered with a Mermaid-capable viewer; no external resources are required to read the Markdown. Gzip files contain plain WAT/JSONL/pseudo code as labelled.
+
+All links are relative to this repository. The reports label confidence and distinguish structural inspection, experiments, historical observations and unknowns. Structural coverage is not the same as semantic understanding, and an observed artifact is not proof of the current production system.
+''')
 put(O/'00_MASTER_INDEX.md','# Chess.com — forensic architecture reconstruction and WASM analysis\n\n**Overallstatus:PARTIALLY AUDITED.** Completeavailable-binarystructural/functionindexcoverageandpriorrecoverypreservation;incompletesemanticreviewandunavailableprivateserverfacts. Noall-websitecompletionclaim.\n\n## Read first\n\n- [Executive overview and actual counts](01_EXECUTIVE_OVERVIEW.md)\n- [Technology evidence,includingMySQL/PHPdistinctions](06_TECHNOLOGY_STACK.md)\n- [Dedicated WASM investigation](wasm-analysis/00_WASM_MASTER_INDEX.md)\n- [Final architecture assessment](25_FINAL_ARCHITECTURE_ASSESSMENT.md)\n\n## Main chapters\n\n'+''.join('- ['+p.name+']('+p.name+')\n' for p in sorted(O.glob('[0-9][0-9]_*.md')) if p.name!='00_MASTER_INDEX.md')+'\n## Evidence and indexes\n\n- [All finding records](findings/FINDINGS_INDEX.md)\n- [Combined machine findings](audit-metadata/findings-ledger.jsonl)\n- [Source manifest](audit-metadata/source-manifest.json)\n- [URL/reference ledger](audit-metadata/urls.jsonl)\n- [All prior audit content](history/prior-audit/00_MASTER_INDEX.md)\n- [Original documentation copies](original-documentation/INDEX.md)\n- [Architecture diagrams](24_ARCHITECTURE_DIAGRAMS.md)\n- [Reproducibility scripts](tools/INDEX.md)\n- [Complete output file index](audit-metadata/ALL_FILES.md)\n- [QC](audit-metadata/qa-report.json)\n- [Packaging and measured exclusions](PACKAGING_AND_STORAGE.md)\n- [Exact continuation checkpoint](audit-metadata/audit-progress.md)\n\nRawpublicresponsedatesandhistoricalartifactdatesconflictwithsessiondate;retainedasprovenance,notnormalizedintoanunsupportedcurrentdeploymentdate. Credentials/sessionvaluesarenotpartoftheanalysis.\n')
