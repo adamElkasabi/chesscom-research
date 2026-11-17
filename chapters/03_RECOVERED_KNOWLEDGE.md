@@ -5,7 +5,7 @@
 
 Newly verified: exact enum translation and skill adapter; gated configured-vs-legacy routing; public Charm-small model recovery/native positive and negative controls; state-dependent resource discovery.
 
-[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../torch-human-bots-update/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 

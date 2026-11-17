@@ -160,9 +160,9 @@
     "sha256": "1b8bacfc86b3cdd82216ef83dc5cbeb7ea0bd8c739dc0344b1400ec22b875b9b"
   },
   {
-    "path": "START-HERE-DEEP-WASM.md",
-    "bytes": 1144,
-    "sha256": "72c845f8e9a0ac27caf662be03c7335d0782c58fcb62775a60e7f0ec97c26296"
+    "path": "website-audit/wasm-deep-follow-up/START-HERE-DEEP-WASM.md",
+    "bytes": 1110,
+    "sha256": "901323ff5fed28e284cad83fca360189a8ea0e0aa713a226b1650732e610b8c5"
   },
   {
     "path": "website-audit/wasm-deep-follow-up/CEE-semantic-raw-observations.json",

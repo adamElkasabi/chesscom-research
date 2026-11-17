@@ -5,7 +5,7 @@
 
 New URL/hash records are in torch-human-bots-update/evidence/source-manifest.json and model-retrieval.json; legacy URL/reference ledgers remain baseline snapshots.
 
-[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../torch-human-bots-update/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 

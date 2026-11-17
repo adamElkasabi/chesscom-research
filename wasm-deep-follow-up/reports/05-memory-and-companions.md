@@ -5,7 +5,7 @@
 
 Newly recovered companion: public topaz_jackdaw.bin.q8mix, SHA256 1f78db3d3184550ff56db7a0f14b72910b039a894dcc97ff8ef7bb8915f26423, self-described charm-small; 134 tensor records parsed and model-dependent native bot move executed. It is distinct from old failed resources/NNUE files.
 
-[Evidence-graded focused update](../../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../../torch-human-bots-update/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 
