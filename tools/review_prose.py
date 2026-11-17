@@ -13,14 +13,14 @@ def splitword(m):
   if not x:continue
   out.append(x if x in terms else ' '.join(wordninja.split(x)))
  return ' '.join(out)
-paths=list(O.glob('*.md'))+list((O/'wasm-analysis').glob('*.md'))+list((O/'wasm-analysis/modules').glob('*/module-report.md'))
+paths=list((O/'chapters').glob('*.md'))+list((O/'wasm-analysis').glob('*.md'))+list((O/'wasm-analysis/modules').glob('*/module-report.md'))
 for p in paths:
  t=p.read_text();parts=re.split(r'(```.*?```|`[^`\n]*`|https?://[^\s)<>]+|\]\([^)]*\))',t,flags=re.S)
  for i in range(0,len(parts),2):parts[i]=re.sub(r'\b[a-z]{18,}\b',splitword,parts[i])
  t=''.join(parts).replace('All49kdefined','All48,089defined').replace('Noall-featurebehaviorclaim','No all-feature behavior claim')
  p.write_text(t)
 # Clear, human-reviewed opening and conclusion; detailed registries/reports remain linked.
-(O/'01_EXECUTIVE_OVERVIEW.md').write_text('''# Executive overview
+(O/'chapters/01_EXECUTIVE_OVERVIEW.md').write_text('''# Executive overview
 
 [Master index](00_MASTER_INDEX.md)
 
@@ -51,7 +51,7 @@ The source and finding counts below include declarations, protocol fields, liter
 
 '''+ '| Metric | Actual |\n|---|---|\n'+''.join('| '+k+' | '+str(v).replace('|','\\|')+' |\n' for k,v in metrics.items()))
 # Explicitly index the file-size/retrieval distinction where a reader will not miss it.
-p=O/'25_FINAL_ARCHITECTURE_ASSESSMENT.md';t=p.read_text();t+='''
+p=O/'chapters/25_FINAL_ARCHITECTURE_ASSESSMENT.md';t=p.read_text();t+='''
 
 ## Completion statement
 

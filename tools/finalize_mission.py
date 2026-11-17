@@ -42,7 +42,7 @@ for name in ['explanation-engine.js','explanation-engine.wasm']:
 dump(M/'workspace-asset-restore-map.json',assetmap)
 (O/'PACKAGING_AND_STORAGE.md').write_text('''# Packaging and storage
 
-[Master index](00_MASTER_INDEX.md)
+[Master index](chapters/00_MASTER_INDEX.md)
 
 The primary ZIP contains every report, all prior recovery evidence, all five available original WASM binaries, their loaders, full structural/function/call inventories, offset-linked strings, small full WAT translations, selected CEE/Torch WAT excerpts, successful Stockfish decompilations, code-only Torch pseudocode, and focused CEE export pseudocode.
 
@@ -151,7 +151,7 @@ if errors:
  print(json.dumps({'errors':errors,'link_errors':linkerrors[:20],'redaction_hits':hits,'original_missing':missing,'original_changed':changed},indent=2));raise SystemExit(1)
 # Comprehensive index and distributed-file hashes exclude deliberately omitted intermediates.
 files=[p for p in O.rglob('*') if p.is_file() and str(p.relative_to(O)) not in excluded and '__pycache__' not in p.parts]
-(M/'ALL_FILES.md').write_text('# Complete packaged file index\n\n[Master index](../00_MASTER_INDEX.md)\n\n'+''.join('- ['+str(p.relative_to(O))+'](../'+str(p.relative_to(O))+')\n' for p in sorted(files) if p.name!='ALL_FILES.md')+'\nLarge reproducible omitted intermediates are listed in packaging-exclusions.json.\n')
+(M/'ALL_FILES.md').write_text('# Complete packaged file index\n\n[Master index](../chapters/00_MASTER_INDEX.md)\n\n'+''.join('- ['+str(p.relative_to(O))+'](../'+str(p.relative_to(O))+')\n' for p in sorted(files) if p.name!='ALL_FILES.md')+'\nLarge reproducible omitted intermediates are listed in packaging-exclusions.json.\n')
 (M/'checksums.sha256').write_text(''.join(sha(p)+'  '+str(p.relative_to(O))+'\n' for p in sorted(files) if p.name!='checksums.sha256'))
 zipdest=B/'website-complete-forensic-audit.zip'
 with zipfile.ZipFile(zipdest,'w',zipfile.ZIP_DEFLATED,compresslevel=8) as z:

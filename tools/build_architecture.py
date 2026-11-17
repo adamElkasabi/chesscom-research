@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json,re,collections,hashlib,gzip,shutil,urllib.parse
+import json,re,sys,collections,hashlib,gzip,shutil,urllib.parse
+sys.path.insert(0,str(Path(__file__).resolve().parent));from collection_layout import route
 B=Path('/var/tmp/chess-forensic');O=B/'output/website-audit';P=O/'history/prior-audit';M=O/'audit-metadata';R=O/'registries';W=O/'wasm-analysis'
 def load(p):return json.loads(p.read_text())
 def dump(p,v):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,indent=2,ensure_ascii=False))
-def put(p,t):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(t)
+def put(p,t):rel,t=route(Path(p).relative_to(O).as_posix(),t);p=O/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(t)
 S=load(M/'source-manifest.json');SM={s['id']:s for s in S};byloc={s['location']:s for s in S}
 for p in [M/'public-request-log.json',M/'dns-tls-observations.json']:
  if str(p.relative_to(O)) not in byloc:
