@@ -1,0 +1,13 @@
+
++chesscom/explanation_engine/v1/speech.protochesscom.explanation_engine.v1chesscom/chess/v1/arrow.proto-chesscom/explanation_engine/v1/language.proto"e
+SentenceFragment
+fragment (	?
+arrows_and_squares (2#.chesscom.chess.v1.ArrowsAndSquares"p
+SentenceL
+sentence_fragments (20.chesscom.explanation_engine.v1.SentenceFragment
+audio_url_hash (	"E
+Speech;
+	sentences (2(.chesscom.explanation_engine.v1.Sentence"Å
+SpeechForLocale6
+locale (2&.chesscom.explanation_engine.v1.Locale6
+speech (2&.chesscom.explanation_engine.v1.Speechbproto3

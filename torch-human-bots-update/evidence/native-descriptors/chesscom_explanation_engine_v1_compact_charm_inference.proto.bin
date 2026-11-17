@@ -1,0 +1,20 @@
+
+<chesscom/explanation_engine/v1/compact_charm_inference.protochesscom.explanation_engine.v1"é
+CompactCharmInference
+	model_key (	
+ratings (
+	uci_moves (	B
+move_probabilities (
+expected_points (
+rank_probabilities (
+strength_probabilities ( 
+time_taken_probabilities (
+ldw_probabilities	 (/
+'strength_rating_sensitive_probabilities
+ ( 
+engine_line_move_indexes (
+move_indexes ("~
+CompactCharmInferencesI
+
+inferences (25.chesscom.explanation_engine.v1.CompactCharmInference
+quantization_bits (bproto3

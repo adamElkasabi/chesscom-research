@@ -1,0 +1,442 @@
+[
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/wasm 0.076822",
+    "source_id": "SRC-0202",
+    "line": 1,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8 0.112791",
+    "source_id": "SRC-0202",
+    "line": 2,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm",
+    "http_status": 404,
+    "size_download": 27150,
+    "content_type_and_optional_elapsed": "text/html 0.150929",
+    "source_id": "SRC-0202",
+    "line": 3,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm",
+    "http_status": 404,
+    "size_download": 27150,
+    "content_type_and_optional_elapsed": "text/html 0.151944",
+    "source_id": "SRC-0202",
+    "line": 4,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8 0.186076",
+    "source_id": "SRC-0202",
+    "line": 5,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/client-packages/analysis/2026.11.7/analysis.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/javascript 0.044203",
+    "source_id": "SRC-0202",
+    "line": 6,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8 0.229019",
+    "source_id": "SRC-0202",
+    "line": 7,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/client-packages/play-computer/2026.11.5/play-computer.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/javascript 0.046749",
+    "source_id": "SRC-0202",
+    "line": 8,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8 0.176903",
+    "source_id": "SRC-0202",
+    "line": 9,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8 0.305896",
+    "source_id": "SRC-0202",
+    "line": 10,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.js",
+    "http_status": 200,
+    "size_download": 40876,
+    "content_type_and_optional_elapsed": "application/javascript 0.138553",
+    "source_id": "SRC-0202",
+    "line": 11,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.1.js",
+    "http_status": 404,
+    "size_download": 548,
+    "content_type_and_optional_elapsed": "text/html 0.163742",
+    "source_id": "SRC-0202",
+    "line": 12,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/wasm 0.264840",
+    "source_id": "SRC-0202",
+    "line": 13,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/stockfish.js",
+    "http_status": 200,
+    "size_download": 93567,
+    "content_type_and_optional_elapsed": "application/javascript 0.147183",
+    "source_id": "SRC-0202",
+    "line": 14,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/wasm 0.431104",
+    "source_id": "SRC-0202",
+    "line": 15,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/stockfish.wasm",
+    "http_status": 200,
+    "size_download": 385560,
+    "content_type_and_optional_elapsed": "application/wasm 0.181921",
+    "source_id": "SRC-0202",
+    "line": 16,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm",
+    "http_status": 200,
+    "size_download": 707847,
+    "content_type_and_optional_elapsed": "application/wasm 0.205290",
+    "source_id": "SRC-0202",
+    "line": 17,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/torch.js",
+    "http_status": 200,
+    "size_download": 35359,
+    "content_type_and_optional_elapsed": "application/javascript 0.139400",
+    "source_id": "SRC-0202",
+    "line": 18,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/robots.txt",
+    "http_status": 200,
+    "size_download": 4197,
+    "content_type_and_optional_elapsed": "text/plain; charset=UTF-8 0.052364",
+    "source_id": "SRC-0202",
+    "line": 19,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/torch-lite.js",
+    "http_status": 200,
+    "size_download": 35368,
+    "content_type_and_optional_elapsed": "application/javascript 0.160463",
+    "source_id": "SRC-0202",
+    "line": 20,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/books/eco.json",
+    "http_status": 200,
+    "size_download": 30873759,
+    "content_type_and_optional_elapsed": "application/json 0.199615",
+    "source_id": "SRC-0202",
+    "line": 21,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/plain 0.138668",
+    "source_id": "SRC-0202",
+    "line": 22,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/plain 0.171573",
+    "source_id": "SRC-0202",
+    "line": 23,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/analysis",
+    "http_status": 200,
+    "size_download": 113132,
+    "content_type_and_optional_elapsed": "text/html; charset=UTF-8 0.252476",
+    "source_id": "SRC-0202",
+    "line": 24,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/torch.wasm",
+    "http_status": 200,
+    "size_download": 47327363,
+    "content_type_and_optional_elapsed": "application/wasm 0.731200",
+    "source_id": "SRC-0202",
+    "line": 25,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "https://www.chess.com/bundles/app/js/engine/torch-lite.wasm",
+    "http_status": 200,
+    "size_download": 6840976,
+    "content_type_and_optional_elapsed": "application/wasm 1.076223",
+    "source_id": "SRC-0202",
+    "line": 26,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-nnue-16-no-Worker.js",
+    "http_status": 200,
+    "size_download": 42981,
+    "content_type_and_optional_elapsed": "application/javascript",
+    "source_id": "SRC-0204",
+    "line": 1,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm",
+    "http_status": 200,
+    "size_download": 693497,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 2,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-nnue-16-single.js",
+    "http_status": 200,
+    "size_download": 26003,
+    "content_type_and_optional_elapsed": "application/javascript",
+    "source_id": "SRC-0204",
+    "line": 3,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-nnue-16-single.wasm",
+    "http_status": 200,
+    "size_download": 574106,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 4,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-single.js",
+    "http_status": 200,
+    "size_download": 2234930,
+    "content_type_and_optional_elapsed": "application/javascript",
+    "source_id": "SRC-0204",
+    "line": 5,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-single.wasm",
+    "http_status": 200,
+    "size_download": 1381822,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 6,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-nnue-16-no-simd.js",
+    "http_status": 200,
+    "size_download": 40939,
+    "content_type_and_optional_elapsed": "application/javascript",
+    "source_id": "SRC-0204",
+    "line": 7,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm",
+    "http_status": 200,
+    "size_download": 697387,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 8,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/stockfish.asm.js",
+    "http_status": 200,
+    "size_download": 4820790,
+    "content_type_and_optional_elapsed": "application/javascript",
+    "source_id": "SRC-0204",
+    "line": 9,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/engine/book-small.json",
+    "http_status": 200,
+    "size_download": 2140353,
+    "content_type_and_optional_elapsed": "application/json",
+    "source_id": "SRC-0204",
+    "line": 10,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/vendor/explanation-engine/explanation-engine.js",
+    "http_status": 200,
+    "size_download": 108056,
+    "content_type_and_optional_elapsed": "application/javascript",
+    "source_id": "SRC-0204",
+    "line": 11,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "bundles/app/js/vendor/explanation-engine/explanation-engine.wasm",
+    "http_status": 200,
+    "size_download": 32922478,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 12,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8",
+    "source_id": "SRC-0204",
+    "line": 13,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 14,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8",
+    "source_id": "SRC-0204",
+    "line": 15,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 16,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.js",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "text/javascript; charset=utf-8",
+    "source_id": "SRC-0204",
+    "line": 17,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  },
+  {
+    "target_literal": "r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.wasm",
+    "http_status": 206,
+    "size_download": 1,
+    "content_type_and_optional_elapsed": "application/wasm",
+    "source_id": "SRC-0204",
+    "line": 18,
+    "request_method": "GET",
+    "range": "bytes=0-0 for probe-results per probe.sh; probe2 invocation not independently preserved"
+  }
+]

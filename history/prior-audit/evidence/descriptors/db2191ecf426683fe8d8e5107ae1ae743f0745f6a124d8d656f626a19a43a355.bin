@@ -1,0 +1,5 @@
+
+<chesscom/explanation_engine/v1/feature_get_punish_move.protochesscom.explanation_engine.v10chesscom/explanation_engine/v1/punish_move.proto"
+GetPunishMoveRequest"X
+GetPunishMoveResponse?
+punish_move (2*.chesscom.explanation_engine.v1.PunishMovebproto3

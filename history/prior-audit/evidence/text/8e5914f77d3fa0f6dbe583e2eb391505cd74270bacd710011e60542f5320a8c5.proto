@@ -1,0 +1,64 @@
+// source: chesscom/courses/v1/courses_authentication_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message AuthenticateForCoursesWithCookieRequest {
+  optional string provider_name = 1;
+  optional string cookie_name = 2;
+}
+
+message AuthenticateForCoursesWithCookieResponse {
+  optional string access_token = 1;
+  optional string refresh_token = 2;
+  optional .google.protobuf.Timestamp expires_at = 3;
+  optional int64 expires_in_seconds = 4;
+}
+
+message GetOAuthURLForCoursesRequest {
+  optional string provider_name = 1;
+  optional string redirect_uri = 2;
+}
+
+message GetOAuthURLForCoursesResponse {
+  optional string url = 1;
+}
+
+message AuthenticateForCoursesRequest {
+  optional string provider_name = 1;
+  optional string code = 2;
+  optional string redirect_uri = 3;
+  optional string state = 4;
+}
+
+message AuthenticateForCoursesResponse {
+  optional string access_token = 1;
+  optional string refresh_token = 2;
+  optional .google.protobuf.Timestamp expires_at = 3;
+  optional int64 expires_in_seconds = 4;
+}
+
+message RefreshTokenForCoursesRequest {
+  optional string refresh_token = 1;
+}
+
+message RefreshTokenForCoursesResponse {
+  oneof _refresh_token {
+  string refresh_token = 2;
+  }
+  optional string access_token = 1;
+  optional .google.protobuf.Timestamp expires_at = 3;
+  optional int64 expires_in_seconds = 4;
+}
+
+message GetUserInfoForCoursesRequest {
+}
+
+message GetUserInfoForCoursesResponse {
+  optional string id = 1;
+  optional string username = 2;
+  optional .chesscom.courses_common.v1.Picture picture = 3;
+  optional string provider = 4;
+  repeated .chesscom.courses.v1.UserFlag flags = 5;
+  repeated .chesscom.courses.v1.UserGoal user_goal = 6;
+}

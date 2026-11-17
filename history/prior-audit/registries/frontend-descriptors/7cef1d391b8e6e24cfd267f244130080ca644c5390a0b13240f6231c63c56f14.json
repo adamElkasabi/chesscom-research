@@ -1,0 +1,26 @@
+{
+  "name": "chesscom/gameplay/v1/battle_ref.proto",
+  "package": "chesscom.gameplay.v1",
+  "message_type": [
+    {
+      "name": "BattleRef",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_id"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

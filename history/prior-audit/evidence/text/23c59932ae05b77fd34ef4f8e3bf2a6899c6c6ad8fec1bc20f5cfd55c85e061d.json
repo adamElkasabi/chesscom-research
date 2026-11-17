@@ -1,0 +1,18 @@
+{
+  "id": "comparison-human",
+  "reviewEvaluations": true,
+  "preSearch": {
+    "gameReviewSearchSettings": {
+      "strength": 1
+    },
+    "torchSearchMode": {
+      "mode": {
+        "case": "human",
+        "value": {}
+      }
+    }
+  },
+  "addPreSearch": true,
+  "saveReview": true,
+  "timeoutSeconds": 90
+}

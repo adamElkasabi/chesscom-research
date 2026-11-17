@@ -1,0 +1,20 @@
+{
+  "name": "chesscom/courses/v1/course_coach.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseCoach",
+      "field": [
+        {
+          "name": "avatar",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.CourseCoachAvatar"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

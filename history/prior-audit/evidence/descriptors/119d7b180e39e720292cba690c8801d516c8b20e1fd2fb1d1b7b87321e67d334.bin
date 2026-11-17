@@ -1,0 +1,7 @@
+
+<chesscom/explanation_engine/v1/feature_load_game_state.protochesscom.explanation_engine.v1/chesscom/explanation_engine/v1/game_state.proto4chesscom/explanation_engine/v1/game_point_info.proto"U
+LoadGameStateRequest=
+
+game_state (2).chesscom.explanation_engine.v1.GameState"[
+LoadGameStateResponseB
+played_line (2-.chesscom.explanation_engine.v1.GamePointInfobproto3

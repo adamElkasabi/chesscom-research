@@ -1,0 +1,48 @@
+// source: chesscom/payments/v1/product.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message Product {
+  oneof _subscription {
+  .chesscom.payments.v1.Subscription subscription = 4;
+  }
+  oneof _description {
+  string description = 5;
+  }
+  oneof _image {
+  string image = 6;
+  }
+  oneof _membership_code {
+  .chesscom.payments.v1.MembershipLevel membership_code = 8;
+  }
+  optional string name = 1;
+  optional string sku = 2;
+  optional .chesscom.api.v1.Money price_amount = 3;
+  optional .chesscom.payments.v1.ProductType product_type = 7;
+}
+
+message ProductSummary {
+  oneof _name {
+  string name = 1;
+  }
+  oneof _price_amount {
+  .chesscom.api.v1.Money price_amount = 3;
+  }
+  oneof _subscription {
+  .chesscom.payments.v1.Subscription subscription = 4;
+  }
+  oneof _description {
+  string description = 5;
+  }
+  oneof _image {
+  string image = 6;
+  }
+  oneof _product_type {
+  .chesscom.payments.v1.ProductType product_type = 7;
+  }
+  oneof _membership_code {
+  .chesscom.payments.v1.MembershipLevel membership_code = 8;
+  }
+  optional string sku = 2;
+}

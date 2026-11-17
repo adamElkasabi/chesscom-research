@@ -1,0 +1,272 @@
+{
+  "name": "chesscom/api/v1/error_reason.proto",
+  "package": "chesscom.api.v1",
+  "enum_type": [
+    {
+      "name": "ErrorReason",
+      "value": [
+        {
+          "name": "ERROR_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ERROR_REASON_INVALID_INPUT",
+          "number": 1
+        },
+        {
+          "name": "ERROR_REASON_INVALID_CAPTCHA",
+          "number": 12
+        },
+        {
+          "name": "ERROR_REASON_USER_DISABLED",
+          "number": 2
+        },
+        {
+          "name": "ERROR_REASON_USER_NOT_FOUND",
+          "number": 3
+        },
+        {
+          "name": "ERROR_REASON_AUTHENTICATION_INVALID_CHALLENGE",
+          "number": 4
+        },
+        {
+          "name": "ERROR_REASON_AUTHENTICATION_INVALID_VERIFICATION_CODE",
+          "number": 5
+        },
+        {
+          "name": "ERROR_REASON_AUTHENTICATION_INVALID_NEW_DEVICE_VERIFICATION_CODE",
+          "number": 54
+        },
+        {
+          "name": "ERROR_REASON_AUTHENTICATION_INVALID_OLD_DEVICE_VERIFICATION_CODE",
+          "number": 55
+        },
+        {
+          "name": "ERROR_REASON_AUTHENTICATION_VERIFICATION_FAILED",
+          "number": 6
+        },
+        {
+          "name": "ERROR_REASON_AUTHENTICATION_VERIFICATION_BLOCKED",
+          "number": 47
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_UPDATE_LIMIT_REACHED",
+          "number": 7
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_UPDATE_MUST_BE_DIFFERENT",
+          "number": 8
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_ALREADY_IN_USE",
+          "number": 9
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_REMOVE_NO_LOGIN_OPTIONS",
+          "number": 10
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_ACCOUNT_RECOVERY_LIMIT_REACHED",
+          "number": 11
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_INVALID_TYPE",
+          "number": 13
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_INVALID",
+          "number": 21
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_UNSUPPORTED_COUNTRY",
+          "number": 22
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_MISSING",
+          "number": 25
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_VERIFICATION_LIMIT_REACHED",
+          "number": 45
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_FRAUDULENT_ACTIVITY",
+          "number": 48
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_ACCOUNT_VERIFICATION_LIMIT_REACHED",
+          "number": 61
+        },
+        {
+          "name": "ERROR_REASON_PHONE_NUMBER_UNSUBSCRIBED_RECIPIENT",
+          "number": 62
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_JOIN_ALREADY_PREMIUM",
+          "number": 14
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_JOIN_CROSS_BORDER_RESTRICTION",
+          "number": 15
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_JOIN_INVALID_TYPE",
+          "number": 16
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_JOIN_ALL_SEATS_TAKEN",
+          "number": 17
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_JOIN_INVITATION_EXPIRED",
+          "number": 18
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_JOIN_INVALID_INVITATION",
+          "number": 19
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_NOT_FOUND",
+          "number": 20
+        },
+        {
+          "name": "ERROR_REASON_GROUP_MEMBERSHIP_USER_NOT_FOUND",
+          "number": 23
+        },
+        {
+          "name": "ERROR_REASON_SIGNUP_ISSUE_CHALLENGE_LIMIT_REACHED",
+          "number": 24
+        },
+        {
+          "name": "ERROR_REASON_SIGNUP_UNSUPPORTED_CHALLENGE_METHOD",
+          "number": 63
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_NOT_SUPPORTED_TYPE",
+          "number": 26
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_STATE_VALIDATION_FAILED",
+          "number": 27
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_NO_AUTH_CODE",
+          "number": 28
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_ACCOUNT_DOES_NOT_EXIST",
+          "number": 29
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_PROVIDER_EXCEPTION",
+          "number": 30
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_NO_PERMISSIONS_PROVIDED",
+          "number": 31
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_ALREADY_CONNECTED_SAME_ACCOUNT",
+          "number": 32
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_ALREADY_CONNECTED_ANOTHER_ACCOUNT",
+          "number": 33
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_ALREADY_CONNECTED_TO_ANOTHER_USER",
+          "number": 34
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_ONLY_AVAILABLE_LOGIN_OPTION",
+          "number": 35
+        },
+        {
+          "name": "ERROR_REASON_EXTERNAL_ACCOUNTS_CANNOT_DISCONNECT_ACCOUNT_ONLY_AVAILABLE_OPTION",
+          "number": 60
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_CURRENT_PASSWORD_INVALID",
+          "number": 36
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_NEW_PASSWORD_INVALID",
+          "number": 37
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_PASSWORD_UPDATE_LIMIT_REACHED",
+          "number": 38
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_NEW_EMAIL_INVALID",
+          "number": 39
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_UPDATE_LIMIT_REACHED",
+          "number": 40
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_UPDATE_FILLER_PASSWORD",
+          "number": 41
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_UPDATE_EQUALS_CURRENT",
+          "number": 42
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_UPDATE_ALREADY_IN_USE",
+          "number": 43
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_ALREADY_ACTIVATED",
+          "number": 57
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_NOT_FOUND",
+          "number": 58
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_EMAIL_RESEND_LIMIT_REACHED",
+          "number": 59
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_INVALID_DATA_PROVIDED",
+          "number": 44
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_OLD_PASSWORD_EXIST",
+          "number": 46
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_SKILL_CANNOT_BE_UPDATED_ANYMORE",
+          "number": 49
+        },
+        {
+          "name": "ERROR_REASON_ACCOUNT_INVALID_SELF_ASSESSED_SKILL_LEVEL",
+          "number": 56
+        },
+        {
+          "name": "ERROR_REASON_OTVC_CHALLENGE_TRY_AGAIN_LATER",
+          "number": 50
+        },
+        {
+          "name": "ERROR_REASON_OTVC_CHALLENGE_CHALLENGE_NOT_EXISTS",
+          "number": 51
+        },
+        {
+          "name": "ERROR_REASON_OTVC_CHALLENGE_USER_NOT_EXISTS",
+          "number": 52
+        },
+        {
+          "name": "ERROR_REASON_SURVEY_NO_ANSWERS",
+          "number": 53
+        },
+        {
+          "name": "ERROR_REASON_CONTACTS_ACCOUNT_NOT_VERIFIED",
+          "number": 64
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,11 @@
+// source: chesscom/payments/v1/invoice_bill_to.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message InvoiceBillTo {
+  optional string name = 1;
+  repeated string address_lines = 2;
+  optional string country_code = 3;
+  optional string tax_id = 4;
+}

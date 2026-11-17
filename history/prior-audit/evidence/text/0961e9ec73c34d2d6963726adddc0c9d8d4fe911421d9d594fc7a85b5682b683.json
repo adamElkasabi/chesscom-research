@@ -1,0 +1,102 @@
+{
+  "config": {
+    "id": "probe-human",
+    "preSearch": {
+      "search": {
+        "case": "searchParameters",
+        "value": {
+          "nodesLimit": 1000,
+          "numLines": 1
+        }
+      },
+      "torchSearchMode": {
+        "mode": {
+          "case": "human",
+          "value": {}
+        }
+      }
+    },
+    "rootOnly": true,
+    "searchOnly": true,
+    "timeoutSeconds": 20
+  },
+  "started": "2026-11-14T20:21:38.821Z",
+  "preSearch": [
+    {
+      "gamePoint": 1048576,
+      "score": {
+        "score": {
+          "score": {
+            "case": "scoreCentipawnsWhite",
+            "value": 18
+          }
+        },
+        "depth": 5,
+        "engine": 11,
+        "nodes": 859
+      },
+      "response": {
+        "evaluations": [
+          {
+            "score": {
+              "score": {
+                "score": {
+                  "case": "scoreCentipawnsWhite",
+                  "value": 18
+                }
+              },
+              "depth": 5,
+              "engine": 11,
+              "nodes": 859
+            },
+            "variation": [
+              {
+                "from": 11,
+                "to": 27
+              },
+              {
+                "from": 63,
+                "to": 46
+              }
+            ]
+          }
+        ],
+        "progress": 1,
+        "log": [
+          "engine: Torch master-20260925-87ee25a"
+        ]
+      }
+    }
+  ],
+  "elapsedSeconds": 1.541,
+  "searchLogs": [
+    "Explanation Engine 1.130.285 (C) 2025 Chess.com, LLC",
+    "[2026-11-14 20:21:40.184] [cee-ostream-logger] [info] CEE - API_LOG: [REDACTED_ENCODED_PAYLOAD]",
+    "",
+    "[2026-11-14 20:21:40.211] [cee-ostream-logger] [info] CEE - API_LOG: CKfXARoECAEqAA==",
+    "",
+    "[2026-11-14 20:21:40.212] [cee-ostream-logger] [info] CEE - API_LOG: CJffARIECAI6AA==",
+    "",
+    "[2026-11-14 20:21:40.291] [cee-ostream-logger] [info] CEE - API_LOG: CMHKBhoGCAJCAggB",
+    "",
+    "[2026-11-14 20:21:40.326] [cee-ostream-logger] [info] CEE - API_LOG: CNzWCBIECAMqAA==",
+    "",
+    "[2026-11-14 20:21:40.326] [cee-ostream-logger] [info] CEE - API_LOG: CJnaCBoECAMyAA==",
+    "",
+    "[2026-11-14 20:21:40.327] [cee-ostream-logger] [info] CEE - API_LOG: CLndCBIXCAQiEwgdEICAQBoLCgUQ6AcgAVoCCgA=",
+    "",
+    "[2026-11-14 20:21:40.327] [cee-ostream-logger] [info] CEE - API_LOG: CMjiCBoGCAQqAggB",
+    "",
+    "[2026-11-14 20:21:40.327] [cee-ostream-logger] [info] CEE - API_LOG: COTjCBIGCAU6AggB",
+    "",
+    "[2026-11-14 20:21:40.391] [cee-ostream-logger] [info] CEE - API_LOG: [REDACTED_ENCODED_PAYLOAD]",
+    "",
+    "[2026-11-14 20:21:40.392] [cee-ostream-logger] [info] CEE - API_LOG: CMjaDBoGCAVCAggB",
+    "",
+    "[2026-11-14 20:21:40.392] [cee-ostream-logger] [info] CEE - API_LOG: CObeDBIGCAYqAggB",
+    "",
+    "[2026-11-14 20:21:40.396] [cee-ostream-logger] [info] CEE - API_LOG: CIyBDRoECAYyAA==",
+    ""
+  ],
+  "warnings": []
+}

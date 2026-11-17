@@ -1,0 +1,14 @@
+// source: chesscom/train/v1/train_challenge.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+message TrainChallenge {
+  oneof challenge {
+  .chesscom.train.v1.TrainMissChallenge miss = 1;
+  .chesscom.train.v1.TrainBlunderChallenge blunder = 2;
+  .chesscom.train.v1.TrainOpeningMistakeChallenge opening_mistake = 3;
+  .chesscom.train.v1.TrainStrategyMistakeChallenge strategy_mistake = 4;
+  .chesscom.train.v1.TrainEndgameMistakeChallenge endgame_mistake = 5;
+  }
+}

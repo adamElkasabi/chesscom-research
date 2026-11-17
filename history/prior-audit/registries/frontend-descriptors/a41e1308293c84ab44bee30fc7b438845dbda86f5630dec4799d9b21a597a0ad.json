@@ -1,0 +1,70 @@
+{
+  "name": "chesscom/courses/v1/courses_previews_information_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetPreviewsInformationRequest"
+    },
+    {
+      "name": "GetPreviewsInformationResponse",
+      "field": [
+        {
+          "name": "used_amount",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "total_amount",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "variation_resets_in_days_amount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "period",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "max_previews_per_course",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_total_amount"
+        },
+        {
+          "name": "_variation_resets_in_days_amount"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CoursesPreviewsInformationService",
+      "method": [
+        {
+          "name": "GetPreviewsInformation",
+          "input_type": ".chesscom.courses.v1.GetPreviewsInformationRequest",
+          "output_type": ".chesscom.courses.v1.GetPreviewsInformationResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

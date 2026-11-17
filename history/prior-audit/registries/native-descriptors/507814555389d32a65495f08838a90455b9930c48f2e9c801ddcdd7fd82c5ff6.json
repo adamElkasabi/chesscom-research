@@ -1,0 +1,72 @@
+{
+  "name": "chesscom/engine/v1/engine.proto",
+  "package": "chesscom.engine.v1",
+  "enum_type": [
+    {
+      "name": "Engine",
+      "value": [
+        {
+          "name": "ENGINE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ENGINE_SF12",
+          "number": 1
+        },
+        {
+          "name": "ENGINE_SF15",
+          "number": 2
+        },
+        {
+          "name": "ENGINE_SF15_NNUE",
+          "number": 3
+        },
+        {
+          "name": "ENGINE_SF15_1",
+          "number": 4
+        },
+        {
+          "name": "ENGINE_SF15_1_NNUE",
+          "number": 5
+        },
+        {
+          "name": "ENGINE_SF16_NNUE",
+          "number": 6
+        },
+        {
+          "name": "ENGINE_SF9_FAIRPLAY_V1",
+          "number": 7
+        },
+        {
+          "name": "ENGINE_DRAGON_3_3",
+          "number": 8
+        },
+        {
+          "name": "ENGINE_KOMODO_3_3",
+          "number": 9
+        },
+        {
+          "name": "ENGINE_SF16_1_NNUE",
+          "number": 10
+        },
+        {
+          "name": "ENGINE_TORCH_3",
+          "number": 11
+        },
+        {
+          "name": "ENGINE_TORCH_HUMAN",
+          "number": 12
+        },
+        {
+          "name": "ENGINE_SF18_NNUE",
+          "number": 13
+        },
+        {
+          "name": "ENGINE_SF19_NNUE",
+          "number": 14
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

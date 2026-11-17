@@ -1,0 +1,65 @@
+{
+  "name": "chesscom/game_storage/v2/game_origin.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "GameOrigin",
+      "value": [
+        {
+          "name": "GAME_ORIGIN_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_ORIGIN_DIRECT_CHALLENGE",
+          "number": 1
+        },
+        {
+          "name": "GAME_ORIGIN_SEEK",
+          "number": 2
+        },
+        {
+          "name": "GAME_ORIGIN_POOL_SEEK",
+          "number": 3
+        },
+        {
+          "name": "GAME_ORIGIN_START_GAME",
+          "number": 4
+        },
+        {
+          "name": "GAME_ORIGIN_MATCH",
+          "number": 5
+        },
+        {
+          "name": "GAME_ORIGIN_ARENA",
+          "number": 6
+        },
+        {
+          "name": "GAME_ORIGIN_TOURNAMENT",
+          "number": 7
+        },
+        {
+          "name": "GAME_ORIGIN_TEAM_MATCH",
+          "number": 8
+        },
+        {
+          "name": "GAME_ORIGIN_COMPETITION",
+          "number": 9
+        },
+        {
+          "name": "GAME_ORIGIN_RECOMMENDED_MATCH",
+          "number": 10
+        },
+        {
+          "name": "GAME_ORIGIN_LEAGUE",
+          "number": 11
+        },
+        {
+          "name": "GAME_ORIGIN_SIMUL",
+          "number": 12
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,690 @@
+{
+  "name": "chesscom/themes/v2/themes_service.proto",
+  "package": "chesscom.themes.v2",
+  "message_type": [
+    {
+      "name": "ListAllThemeElementsRequest",
+      "field": [
+        {
+          "name": "board_size",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pieces_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListAllThemeElementsResponse",
+      "field": [
+        {
+          "name": "themes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PresetTheme"
+        },
+        {
+          "name": "backgrounds",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Background"
+        },
+        {
+          "name": "board_styles",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyle"
+        },
+        {
+          "name": "piece_sets",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSet"
+        },
+        {
+          "name": "sound_sets",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSet"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListThemesSelectionRequest",
+      "options": {}
+    },
+    {
+      "name": "ListThemesSelectionResponse",
+      "field": [
+        {
+          "name": "themes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.ThemeSelectionItem"
+        },
+        {
+          "name": "backgrounds",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BackgroundSelectionItem"
+        },
+        {
+          "name": "board_styles",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyleSelectionItem"
+        },
+        {
+          "name": "piece_sets",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSetSelectionItem"
+        },
+        {
+          "name": "sound_sets",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSetSelectionItem"
+        },
+        {
+          "name": "board_style_categories",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.ThemeElementCategory"
+        },
+        {
+          "name": "piece_set_categories",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.ThemeElementCategory"
+        },
+        {
+          "name": "sound_set_categories",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.ThemeElementCategory"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListThemesRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "board_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pieces_size",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListThemesResponse",
+      "field": [
+        {
+          "name": "themes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Theme"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListBackgroundsRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListBackgroundsResponse",
+      "field": [
+        {
+          "name": "backgrounds",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Background"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListBoardStylesRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "board_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListBoardStylesResponse",
+      "field": [
+        {
+          "name": "board_styles",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.BoardStyle"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListPieceSetsRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "pieces_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListPieceSetsResponse",
+      "field": [
+        {
+          "name": "piece_sets",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.PieceSet"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListSoundSetsRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListSoundSetsResponse",
+      "field": [
+        {
+          "name": "sound_sets",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.SoundSet"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListOnboardingThemesRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "board_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pieces_size",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListOnboardingThemesResponse",
+      "field": [
+        {
+          "name": "themes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Theme"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetThemeRequest",
+      "field": [
+        {
+          "name": "theme_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "platform",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "board_size",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pieces_size",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetThemeResponse",
+      "field": [
+        {
+          "name": "theme",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Theme"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCustomThemeRequest",
+      "field": [
+        {
+          "name": "background_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_style_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "piece_set_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sound_set_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "platform",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "board_size",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pieces_size",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_background_id"
+        }
+      ]
+    },
+    {
+      "name": "GetCustomThemeResponse",
+      "field": [
+        {
+          "name": "theme",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Theme"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SelectThemeRequest",
+      "field": [
+        {
+          "name": "theme_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "platform",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SelectThemeResponse",
+      "options": {}
+    },
+    {
+      "name": "SelectCustomThemeRequest",
+      "field": [
+        {
+          "name": "background_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_style_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "piece_set_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "sound_set_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "platform",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_background_id"
+        },
+        {
+          "name": "_board_style_id"
+        },
+        {
+          "name": "_piece_set_id"
+        },
+        {
+          "name": "_sound_set_id"
+        }
+      ]
+    },
+    {
+      "name": "SelectCustomThemeResponse",
+      "options": {}
+    },
+    {
+      "name": "GetActiveThemeRequest",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.themes.v2.Platform"
+        },
+        {
+          "name": "board_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pieces_size",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "user_id",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_id"
+        }
+      ]
+    },
+    {
+      "name": "GetActiveThemeResponse",
+      "field": [
+        {
+          "name": "theme",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.themes.v2.Theme"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "ThemesService",
+      "method": [
+        {
+          "name": "ListAllThemeElements",
+          "input_type": ".chesscom.themes.v2.ListAllThemeElementsRequest",
+          "output_type": ".chesscom.themes.v2.ListAllThemeElementsResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListThemesSelection",
+          "input_type": ".chesscom.themes.v2.ListThemesSelectionRequest",
+          "output_type": ".chesscom.themes.v2.ListThemesSelectionResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListThemes",
+          "input_type": ".chesscom.themes.v2.ListThemesRequest",
+          "output_type": ".chesscom.themes.v2.ListThemesResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListBackgrounds",
+          "input_type": ".chesscom.themes.v2.ListBackgroundsRequest",
+          "output_type": ".chesscom.themes.v2.ListBackgroundsResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListBoardStyles",
+          "input_type": ".chesscom.themes.v2.ListBoardStylesRequest",
+          "output_type": ".chesscom.themes.v2.ListBoardStylesResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListPieceSets",
+          "input_type": ".chesscom.themes.v2.ListPieceSetsRequest",
+          "output_type": ".chesscom.themes.v2.ListPieceSetsResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListSoundSets",
+          "input_type": ".chesscom.themes.v2.ListSoundSetsRequest",
+          "output_type": ".chesscom.themes.v2.ListSoundSetsResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListOnboardingThemes",
+          "input_type": ".chesscom.themes.v2.ListOnboardingThemesRequest",
+          "output_type": ".chesscom.themes.v2.ListOnboardingThemesResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "GetTheme",
+          "input_type": ".chesscom.themes.v2.GetThemeRequest",
+          "output_type": ".chesscom.themes.v2.GetThemeResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "GetCustomTheme",
+          "input_type": ".chesscom.themes.v2.GetCustomThemeRequest",
+          "output_type": ".chesscom.themes.v2.GetCustomThemeResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "SelectTheme",
+          "input_type": ".chesscom.themes.v2.SelectThemeRequest",
+          "output_type": ".chesscom.themes.v2.SelectThemeResponse",
+          "options": {}
+        },
+        {
+          "name": "SelectCustomTheme",
+          "input_type": ".chesscom.themes.v2.SelectCustomThemeRequest",
+          "output_type": ".chesscom.themes.v2.SelectCustomThemeResponse",
+          "options": {}
+        },
+        {
+          "name": "GetActiveTheme",
+          "input_type": ".chesscom.themes.v2.GetActiveThemeRequest",
+          "output_type": ".chesscom.themes.v2.GetActiveThemeResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

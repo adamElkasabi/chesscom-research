@@ -1,0 +1,13 @@
+// source: chesscom/game_storage/v2/player_result.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum PlayerResult {
+  PLAYER_RESULT_UNSPECIFIED = 0;
+  PLAYER_RESULT_WIN = 1;
+  PLAYER_RESULT_DRAW = 2;
+  PLAYER_RESULT_LOSE = 3;
+  PLAYER_RESULT_ABORT = 4;
+  PLAYER_RESULT_BUGHOUSE_PARTNER_LOSE = 5;
+}

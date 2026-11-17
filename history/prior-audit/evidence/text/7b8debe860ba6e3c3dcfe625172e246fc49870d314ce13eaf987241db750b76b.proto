@@ -1,0 +1,236 @@
+// source: chesscom/themes/v2/core.proto
+// syntax: proto3
+
+package chesscom.themes.v2;
+
+message Theme {
+  oneof _legacy_id {
+  int32 legacy_id = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional bool is_default = 3;
+  optional string localized_name = 5;
+  optional int32 display_priority = 6;
+  optional bool onboarding = 10;
+  optional .chesscom.themes.v2.Background background = 11;
+  optional .chesscom.themes.v2.BoardStyle board_style = 12;
+  optional .chesscom.themes.v2.PieceSet piece_set = 13;
+  optional .chesscom.themes.v2.SoundSet sound_set = 14;
+  optional bool is_accessibility_friendly = 15;
+}
+
+message PresetTheme {
+  optional string id = 1;
+  optional .chesscom.themes.v2.Attributes attributes = 2;
+  optional .chesscom.themes.v2.ThemeElementIds element_ids = 3;
+  optional bool onboarding = 11;
+  optional bool is_accessibility_friendly = 12;
+}
+
+message Background {
+  oneof style {
+  .chesscom.themes.v2.Background.ImageStyle image = 12;
+  .chesscom.themes.v2.Background.PlainColorStyle color = 13;
+  }
+  oneof _legacy_id {
+  int32 legacy_id = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional bool is_default = 3;
+  optional string localized_name = 5;
+  optional int32 display_priority = 6;
+  repeated .chesscom.api.v1.Platform supported_platforms = 7;
+  optional .chesscom.unlockables.v1.UnlockablePreview unlockable_preview = 8;
+  optional string preview_image = 11;
+  message ImageStyle {
+    oneof _fallback_color {
+  .chesscom.themes.v2.Background.PlainColorStyle fallback_color = 2;
+    }
+  optional string url = 1;
+  }
+  message PlainColorStyle {
+  optional string hex_code = 1;
+  }
+}
+
+message BoardStyle {
+  oneof _legacy_id {
+  int32 legacy_id = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional bool is_default = 3;
+  optional string localized_name = 5;
+  optional int32 display_priority = 6;
+  repeated .chesscom.api.v1.Platform supported_platforms = 7;
+  optional .chesscom.unlockables.v1.UnlockablePreview unlockable_preview = 8;
+  optional .chesscom.themes.v2.BoardStyle.PreviewImage preview_image = 11;
+  optional string image = 12;
+  optional .chesscom.themes.v2.BoardStyle.ThreeDimensionalImage image_3d = 13;
+  optional string coordinate_color_dark = 14;
+  optional string coordinate_color_light = 15;
+  optional string highlight_color = 16;
+  optional string category_id = 17;
+  message PreviewImage {
+  optional string square = 1;
+  optional string linear = 2;
+  }
+  message ThreeDimensionalImage {
+  optional string board = 1;
+  optional string coordinates = 2;
+  }
+}
+
+message PieceSet {
+  oneof _legacy_id {
+  int32 legacy_id = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional bool is_default = 3;
+  optional string localized_name = 5;
+  optional int32 display_priority = 6;
+  repeated .chesscom.api.v1.Platform supported_platforms = 7;
+  optional .chesscom.unlockables.v1.UnlockablePreview unlockable_preview = 8;
+  optional .chesscom.themes.v2.PieceSet.PreviewImage preview_image = 11;
+  optional .chesscom.themes.v2.PieceSet.Images images = 12;
+  optional .chesscom.themes.v2.PieceSet.PiecePerspective perspective = 13;
+  optional string category_id = 14;
+  enum PiecePerspective {
+    PIECE_PERSPECTIVE_UNSPECIFIED = 0;
+    PIECE_PERSPECTIVE_TOP_DOWN = 1;
+    PIECE_PERSPECTIVE_PSEUDO_3D = 2;
+    PIECE_PERSPECTIVE_REAL_3D = 3;
+  }
+  message PreviewImage {
+  optional string square = 1;
+  optional string linear = 2;
+  }
+  message Images {
+  optional string white_pawn = 1;
+  optional string white_knight = 2;
+  optional string white_bishop = 3;
+  optional string white_rook = 4;
+  optional string white_queen = 5;
+  optional string white_king = 6;
+  optional string black_pawn = 7;
+  optional string black_knight = 8;
+  optional string black_bishop = 9;
+  optional string black_rook = 10;
+  optional string black_queen = 11;
+  optional string black_king = 12;
+  }
+}
+
+message SoundSet {
+  oneof sounds {
+  .chesscom.themes.v2.SoundSet.SoundArchives sound_archives = 11;
+  .chesscom.themes.v2.SoundSet.SoundFiles sound_files = 12;
+  }
+  oneof _legacy_id {
+  int32 legacy_id = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional bool is_default = 3;
+  optional string localized_name = 5;
+  optional int32 display_priority = 6;
+  repeated .chesscom.api.v1.Platform supported_platforms = 7;
+  optional .chesscom.unlockables.v1.UnlockablePreview unlockable_preview = 8;
+  optional string category_id = 13;
+  message SoundArchives {
+  optional string mp3 = 1;
+  optional string ogg = 2;
+  optional string wav = 3;
+  optional string webm = 4;
+  }
+  message SoundFiles {
+  repeated .chesscom.themes.v2.SoundSet.SoundFiles.Mp3Entry mp3 = 1;
+  repeated .chesscom.themes.v2.SoundSet.SoundFiles.OggEntry ogg = 2;
+  repeated .chesscom.themes.v2.SoundSet.SoundFiles.WavEntry wav = 3;
+  repeated .chesscom.themes.v2.SoundSet.SoundFiles.WebmEntry webm = 4;
+    message Mp3Entry {
+  optional string key = 1;
+  optional string value = 2;
+    }
+    message OggEntry {
+  optional string key = 1;
+  optional string value = 2;
+    }
+    message WavEntry {
+  optional string key = 1;
+  optional string value = 2;
+    }
+    message WebmEntry {
+  optional string key = 1;
+  optional string value = 2;
+    }
+  }
+}
+
+message Attributes {
+  oneof _legacy_id {
+  int32 legacy_id = 3;
+  }
+  optional string name = 1;
+  optional bool is_default = 2;
+  optional string localized_name = 4;
+  optional int32 display_priority = 5;
+}
+
+message ThemeElementCategory {
+  optional string id = 1;
+  optional string localized_name = 2;
+  optional int32 display_priority = 3;
+}
+
+message ThemeId {
+  oneof id {
+  string preset = 1;
+  .chesscom.themes.v2.ThemeElementIds custom = 2;
+  }
+}
+
+message ThemeElementIds {
+  optional string background_id = 1;
+  optional string board_style_id = 2;
+  optional string piece_set_id = 3;
+  optional string sound_set_id = 4;
+}
+
+message ThemeSelectionItem {
+  optional .chesscom.themes.v2.PresetTheme theme = 1;
+  optional bool is_unlocked = 2;
+}
+
+message BackgroundSelectionItem {
+  optional .chesscom.themes.v2.Background background = 1;
+  optional bool is_unlocked = 2;
+}
+
+message BoardStyleSelectionItem {
+  optional .chesscom.themes.v2.BoardStyle board_style = 1;
+  optional bool is_unlocked = 2;
+}
+
+message PieceSetSelectionItem {
+  optional .chesscom.themes.v2.PieceSet piece_set = 1;
+  optional bool is_unlocked = 2;
+}
+
+message SoundSetSelectionItem {
+  optional .chesscom.themes.v2.SoundSet sound_set = 1;
+  optional bool is_unlocked = 2;
+}
+
+message ThemeSelection {
+  oneof _theme_id {
+  string theme_id = 16;
+  }
+  optional string background_id = 1;
+  optional string board_style_id = 2;
+  optional string piece_set_id = 3;
+  optional string sound_set_id = 4;
+}

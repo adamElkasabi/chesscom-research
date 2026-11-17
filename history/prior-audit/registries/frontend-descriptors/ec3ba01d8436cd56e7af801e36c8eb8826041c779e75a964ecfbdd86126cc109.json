@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/payments/v1/group_membership_type.proto",
+  "package": "chesscom.payments.v1",
+  "enum_type": [
+    {
+      "name": "GroupMembershipType",
+      "value": [
+        {
+          "name": "GROUP_MEMBERSHIP_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GROUP_MEMBERSHIP_TYPE_PRIMARY",
+          "number": 1
+        },
+        {
+          "name": "GROUP_MEMBERSHIP_TYPE_SECONDARY",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

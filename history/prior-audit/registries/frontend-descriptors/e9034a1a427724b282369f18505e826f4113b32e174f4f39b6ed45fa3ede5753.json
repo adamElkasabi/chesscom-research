@@ -1,0 +1,156 @@
+{
+  "name": "chesscom/computer/v1/computer_game.proto",
+  "package": "chesscom.computer.v1",
+  "message_type": [
+    {
+      "name": "AssistedGameFeatures",
+      "field": [
+        {
+          "name": "chat",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "analysis",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "hints",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "threats",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "CustomModeConfiguration",
+      "field": [
+        {
+          "name": "game_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.Variant"
+        },
+        {
+          "name": "base_time_ms",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "time_increment_ms",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "assisted_game_features",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.computer.v1.AssistedGameFeature"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserColor",
+      "value": [
+        {
+          "name": "USER_COLOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_COLOR_WHITE",
+          "number": 1
+        },
+        {
+          "name": "USER_COLOR_BLACK",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameMode",
+      "value": [
+        {
+          "name": "GAME_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_MODE_CHALLENGE",
+          "number": 1
+        },
+        {
+          "name": "GAME_MODE_FRIENDLY",
+          "number": 2
+        },
+        {
+          "name": "GAME_MODE_ASSISTED",
+          "number": 3
+        },
+        {
+          "name": "GAME_MODE_CUSTOM",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AssistedGameFeature",
+      "value": [
+        {
+          "name": "ASSISTED_GAME_FEATURE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_CHAT",
+          "number": 1
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_ANALYSIS",
+          "number": 2
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_HINTS",
+          "number": 3
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_THREATS",
+          "number": 4
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_EVALUATION",
+          "number": 5
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_ENGINE",
+          "number": 6
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_SUGGESTIONS",
+          "number": 7
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_TAKEBACKS",
+          "number": 8
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

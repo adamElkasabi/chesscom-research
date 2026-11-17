@@ -1,0 +1,26 @@
+// source: chesscom/explanation_engine/v1/charm_inference.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message MovePrediction {
+  optional .chesscom.chess.v1.Move move = 1;
+  optional string uci_move = 2;
+  optional float probability = 3;
+}
+
+message CharmInferenceResult {
+  oneof _engine {
+  .chesscom.engine.v1.Engine engine = 11;
+  }
+  optional string model_key = 1;
+  optional int32 elo = 2;
+  repeated .chesscom.explanation_engine.v1.MovePrediction moves = 3;
+  optional float expected_points = 4;
+  repeated float rank_probabilities = 5;
+  repeated float strength_probabilities = 6;
+  repeated float time_taken_probabilities = 7;
+  repeated float ldw_probabilities = 8;
+  repeated float strength_rating_sensitive_probabilities = 9;
+  repeated string engine_line_uci_moves = 10;
+}

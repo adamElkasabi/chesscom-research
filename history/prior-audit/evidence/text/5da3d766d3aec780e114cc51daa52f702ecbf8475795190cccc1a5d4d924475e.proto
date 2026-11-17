@@ -1,0 +1,27 @@
+// source: chesscom/chess/v1/board_markings.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum MarkingColor {
+  MARKING_COLOR_UNSPECIFIED = 0;
+  MARKING_COLOR_RED = 1;
+  MARKING_COLOR_BLUE = 2;
+  MARKING_COLOR_GREEN = 3;
+  MARKING_COLOR_ORANGE = 4;
+}
+
+message ArrowMarking {
+  optional .chesscom.chess.v1.Arrow arrow = 1;
+  optional .chesscom.chess.v1.MarkingColor color = 2;
+}
+
+message SquareMarking {
+  optional .chesscom.chess.v1.Square square = 1;
+  optional .chesscom.chess.v1.MarkingColor color = 2;
+}
+
+message BoardMarkings {
+  repeated .chesscom.chess.v1.ArrowMarking arrows = 1;
+  repeated .chesscom.chess.v1.SquareMarking squares = 2;
+}

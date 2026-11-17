@@ -1,0 +1,373 @@
+{
+  "name": "chesscom/skills/v1/skills_service.proto",
+  "package": "chesscom.skills.v1",
+  "message_type": [
+    {
+      "name": "GainSkillPointsRequest",
+      "field": [
+        {
+          "name": "game_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "skill_positions",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SkillsPosition"
+        },
+        {
+          "name": "coach_input",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.GainSkillPointsRequest.CoachInput",
+          "oneof_index": 0
+        },
+        {
+          "name": "game_review_input",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.GainSkillPointsRequest.GameReviewInput",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "CoachInput",
+          "field": [
+            {
+              "name": "player_color",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Color"
+            }
+          ]
+        },
+        {
+          "name": "GameReviewInput"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "input"
+        }
+      ]
+    },
+    {
+      "name": "GainSkillPointsResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.GainSkillPointsResponse.GainSkillPointsSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.GainSkillPointsResponse.GainSkillPointsFailure",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "GainSkillPointsSuccess",
+          "field": [
+            {
+              "name": "skills_unlocked",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1.Skill"
+            },
+            {
+              "name": "skill_points_gained",
+              "number": 2,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.skills.v1.SkillPointGained"
+            },
+            {
+              "name": "skills_mastered",
+              "number": 3,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1.Skill"
+            },
+            {
+              "name": "has_mastered_all",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            },
+            {
+              "name": "is_first_ever_skill_point",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "GainSkillPointsFailure",
+          "field": [
+            {
+              "name": "error",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.skills.v1.EligibilityError"
+            }
+          ],
+          "options": {}
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "GetSkillsRequest",
+      "options": {}
+    },
+    {
+      "name": "GetSkillsResponse",
+      "field": [
+        {
+          "name": "skill_items",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.SkillView"
+        },
+        {
+          "name": "has_mastered_all",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetSkillsPositionsRequest",
+      "field": [
+        {
+          "name": "game_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "skill_positions",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SkillsPosition"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetSkillsPositionsResponse",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.GetSkillsPositionsResponse.GetSkillsPositionsSuccess",
+          "oneof_index": 0
+        },
+        {
+          "name": "failure",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.GetSkillsPositionsResponse.GetSkillsPositionsFailure",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "GetSkillsPositionsSuccess",
+          "field": [
+            {
+              "name": "skill_positions",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.SkillsPosition"
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "GetSkillsPositionsFailure",
+          "field": [
+            {
+              "name": "error",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.skills.v1.EligibilityError"
+            }
+          ],
+          "options": {}
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "result"
+        }
+      ]
+    },
+    {
+      "name": "GetConfigRequest",
+      "field": [
+        {
+          "name": "version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_version"
+        }
+      ]
+    },
+    {
+      "name": "GetConfigResponse",
+      "field": [
+        {
+          "name": "status",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.GetConfigResponse.Status"
+        },
+        {
+          "name": "version",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "skill_configuration",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.SkillConfiguration",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "skill_category_configuration",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.skills.v1.SkillCategoryConfiguration",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Status",
+          "value": [
+            {
+              "name": "STATUS_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "STATUS_NEW_VERSION_AVAILABLE",
+              "number": 1
+            },
+            {
+              "name": "STATUS_UP_TO_DATE",
+              "number": 2
+            }
+          ],
+          "options": {}
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_skill_configuration"
+        },
+        {
+          "name": "_skill_category_configuration"
+        }
+      ]
+    },
+    {
+      "name": "ResetSkillsRequest",
+      "options": {}
+    },
+    {
+      "name": "ResetSkillsResponse",
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "SkillsService",
+      "method": [
+        {
+          "name": "GainSkillPoints",
+          "input_type": ".chesscom.skills.v1.GainSkillPointsRequest",
+          "output_type": ".chesscom.skills.v1.GainSkillPointsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetSkills",
+          "input_type": ".chesscom.skills.v1.GetSkillsRequest",
+          "output_type": ".chesscom.skills.v1.GetSkillsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetSkillsPositions",
+          "input_type": ".chesscom.skills.v1.GetSkillsPositionsRequest",
+          "output_type": ".chesscom.skills.v1.GetSkillsPositionsResponse",
+          "options": {}
+        },
+        {
+          "name": "GetConfig",
+          "input_type": ".chesscom.skills.v1.GetConfigRequest",
+          "output_type": ".chesscom.skills.v1.GetConfigResponse",
+          "options": {}
+        },
+        {
+          "name": "ResetSkills",
+          "input_type": ".chesscom.skills.v1.ResetSkillsRequest",
+          "output_type": ".chesscom.skills.v1.ResetSkillsResponse",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

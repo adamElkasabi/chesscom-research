@@ -1,0 +1,12 @@
+// source: chesscom/courses/v1/course_lesson_player.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseLessonPlayer {
+  oneof _picture {
+  .chesscom.courses_common.v1.Picture picture = 2;
+  }
+  optional string name = 1;
+  optional bool is_author = 3;
+}

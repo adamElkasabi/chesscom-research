@@ -1,0 +1,7 @@
+{
+  "id": "normalized-ClearBetweenSearches-true",
+  "uciAfter": {
+    "Normalize": false,
+    "ClearBetweenSearches": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_switch_sides.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SwitchSidesRequest"
+    },
+    {
+      "name": "SwitchSidesResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

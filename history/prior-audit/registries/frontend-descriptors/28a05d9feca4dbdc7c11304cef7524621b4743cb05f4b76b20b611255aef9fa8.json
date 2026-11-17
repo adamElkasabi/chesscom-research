@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/game_gateway/v1/pgn_metadata.proto",
+  "package": "chesscom.game_gateway.v1",
+  "message_type": [
+    {
+      "name": "PgnMetadata",
+      "field": [
+        {
+          "name": "pgn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "chesscom/user_properties/v1/properties_user_puzzle_stats.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "UserPuzzleStatsProperty",
+      "field": [
+        {
+          "name": "points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "level",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "tier",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "prestige",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_tactics_completed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1032,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserPuzzleStatsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_points"
+        },
+        {
+          "name": "_level"
+        },
+        {
+          "name": "_tier"
+        },
+        {
+          "name": "_prestige"
+        },
+        {
+          "name": "_total_tactics_completed"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserPuzzleStatsPropertyDefinition",
+      "value": [
+        {
+          "name": "USER_PUZZLE_STATS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_PUZZLE_STATS_POINTS",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "USER_PUZZLE_STATS_LEVEL",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "USER_PUZZLE_STATS_TIER",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "USER_PUZZLE_STATS_PRESTIGE",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "USER_PUZZLE_STATS_TOTAL_TACTICS_COMPLETED",
+          "number": 5,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

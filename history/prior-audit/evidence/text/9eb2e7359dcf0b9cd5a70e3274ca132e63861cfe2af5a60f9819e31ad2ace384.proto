@@ -1,0 +1,11 @@
+// source: chesscom/courses/v1/course_position.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CoursePosition {
+  optional string fen = 1;
+  repeated .chesscom.courses_common.v1.CourseDrawingSquare highlights = 2;
+  repeated .chesscom.courses_common.v1.CourseDrawingArrow arrows = 3;
+  repeated .chesscom.courses.v1.Nag nags = 4;
+}

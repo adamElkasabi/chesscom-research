@@ -1,0 +1,73 @@
+// source: chesscom/payments/v1/checkout_total.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message CheckoutTotal {
+  oneof product_details {
+  .chesscom.courses.v1.CourseProduct course_product_details = 16;
+  .chesscom.payments.v1.MembershipProductDetails membership_product_details = 17;
+  }
+  oneof _incentive {
+  .chesscom.payments.v1.Incentive incentive = 13;
+  }
+  oneof _subtotal_amount_in_months {
+  .chesscom.api.v1.Money subtotal_amount_in_months = 19;
+  }
+  oneof _subtotal_amount_with_taxes_in_months {
+  .chesscom.api.v1.Money subtotal_amount_with_taxes_in_months = 20;
+  }
+  optional .chesscom.payments.v1.Product product = 1;
+  optional .chesscom.api.v1.Money original_amount = 2;
+  optional .chesscom.api.v1.Money original_amount_with_taxes = 3;
+  optional .chesscom.api.v1.Money discount_amount = 4;
+  optional .chesscom.api.v1.Money discount_amount_with_taxes = 5;
+  optional .chesscom.api.v1.Money subtotal_amount = 6;
+  optional .chesscom.api.v1.Money subtotal_amount_with_taxes = 7;
+  optional .chesscom.api.v1.Money credit_amount = 8;
+  optional .chesscom.api.v1.Money credit_amount_with_taxes = 9;
+  optional .chesscom.api.v1.Money total_amount = 10;
+  optional .chesscom.api.v1.Money tax_amount = 11;
+  optional .chesscom.api.v1.Money total_amount_with_taxes = 12;
+  repeated .chesscom.payments.v1.TaxLine tax_lines = 14;
+  optional float usd_fx_rate = 15;
+  repeated .chesscom.payments.v1.Discount discount_amount_breakdown = 18;
+}
+
+message TaxLine {
+  optional string description = 1;
+  optional float rate = 2;
+  optional .chesscom.api.v1.Money amount = 3;
+}
+
+message TotalBreakdown {
+  optional .chesscom.api.v1.Money original_amount = 1;
+  optional .chesscom.api.v1.Money original_amount_with_taxes = 2;
+  optional .chesscom.api.v1.Money discount_amount = 3;
+  optional .chesscom.api.v1.Money discount_amount_with_taxes = 4;
+  optional .chesscom.api.v1.Money subtotal_amount = 5;
+  optional .chesscom.api.v1.Money subtotal_amount_with_taxes = 6;
+  optional .chesscom.api.v1.Money credit_amount = 7;
+  optional .chesscom.api.v1.Money credit_amount_with_taxes = 8;
+  optional .chesscom.api.v1.Money total_amount = 9;
+  optional .chesscom.api.v1.Money tax_amount = 10;
+  optional .chesscom.api.v1.Money total_amount_with_taxes = 11;
+}
+
+message CheckoutTotalSummary {
+  oneof _total_breakdown {
+  .chesscom.payments.v1.TotalBreakdown total_breakdown = 2;
+  }
+  oneof _incentive {
+  .chesscom.payments.v1.Incentive incentive = 3;
+  }
+  oneof _usd_fx_rate {
+  float usd_fx_rate = 5;
+  }
+  oneof _country {
+  .chesscom.api.v1.Country country = 7;
+  }
+  optional .chesscom.payments.v1.ProductSummary product = 1;
+  repeated .chesscom.payments.v1.TaxLine tax_lines = 4;
+  repeated .chesscom.payments.v1.Discount discount_amount_breakdown = 6;
+}

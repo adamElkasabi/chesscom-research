@@ -1,0 +1,99 @@
+export function original_fn_1670(a:int, b:int_ptr, c:int) {
+  var g:int;
+  var h:int;
+  var f:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int, f:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int }
+  if (g_c == 2) {
+    g_d[0]:int = g_d[0]:int - 24;
+    e = g_d[0]:int;
+    a = e.a;
+    b = e.b;
+    c = e.c;
+    f = e.d;
+    g = e.e;
+    e = e.f;
+  }
+  d = {
+        g = select_if(g, b + 4, g_c);
+        if (g_c == 2) {
+          g_d[0]:int = g_d[0]:int - 4;
+          h = (g_d[0]:int)[0]:int;
+        }
+        if (eqz(g_c) | eqz(h)) {
+          boundary_original_fn_22864(g);
+          0;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) {
+          f = b[8];
+          e = eqz(f);
+        }
+        if (eqz(g_c)) {
+          if (e) goto B_f;
+          if (eqz(b[10])) goto B_f;
+          var i:int = b[7];
+          b = c & f - 1;
+          d = popcnt(f);
+          if (d <= 1) goto B_h;
+          if (f > (b = c)) goto B_h;
+          b = b % f;
+          label B_h:
+          e = b;
+          b = i[b]:int;
+          if (eqz(b)) goto B_f;
+          b = b[0];
+          if (eqz(b)) goto B_f;
+          i = f - 1;
+          var j:int = d > 1;
+          loop L_i {
+            d = b[1];
+            if (d != c) {
+              if (eqz(j)) {
+                d = d & i;
+                goto B_m;
+              }
+              if (d < f) goto B_m;
+              d = d % f;
+              label B_m:
+              if (d == e) goto B_k;
+              goto B_f;
+            }
+            if (b[2] == c) goto B_j;
+            label B_k:
+            b = b[0];
+            if (b) continue L_i;
+            goto B_f;
+            label B_j:
+          }
+          a[0]:int = b[3];
+          a[1]:int = (b = b[4]);
+          if (b) { b[1] = (a = b[1] + 1) }
+        }
+        if (eqz(g_c) | h == 1) {
+          boundary_original_fn_22279(g);
+          1;
+          if (g_c == 1) goto B_b;
+        }
+        if (eqz(g_c)) { return  }
+        label B_f:
+        if (eqz(g_c)) { a[0]:long@4 = 0L }
+        if (eqz(g_c) | h == 2) {
+          boundary_original_fn_22279(g);
+          2;
+          if (g_c == 1) goto B_b;
+        }
+        return ;
+        label B_b:
+      }
+  (g_d[0]:int)[0]:int = d;
+  g_d[0]:int = g_d[0]:int + 4;
+  d = g_d[0]:int;
+  d.a = a;
+  d.b = b;
+  d.c = c;
+  d.d = f;
+  d.e = g;
+  d.f = e;
+  g_d[0]:int = g_d[0]:int + 24;
+}

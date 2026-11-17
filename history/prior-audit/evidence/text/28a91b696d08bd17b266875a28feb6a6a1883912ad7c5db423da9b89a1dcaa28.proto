@@ -1,0 +1,76 @@
+// source: chesscom/proto_options/api/v1/api_options.proto
+// syntax: proto3
+
+package chesscom.proto_options.api.v1;
+
+enum RpcProtocol {
+  RPC_PROTOCOL_UNSPECIFIED = 0;
+  RPC_PROTOCOL_TWIRP = 1;
+  RPC_PROTOCOL_CONNECT = 2;
+}
+
+message ApiNoAuth {
+}
+
+message ApiSecurityBasicAuth {
+}
+
+message ApiSecurityBearerAuth {
+}
+
+message ApiSecurityApiKeyAuth {
+  oneof _header {
+  string header = 1;
+  }
+  oneof _cookie {
+  string cookie = 2;
+  }
+}
+
+message ApiAuthenticationDefinition {
+  oneof auth {
+  .chesscom.proto_options.api.v1.ApiNoAuth no_auth = 1;
+  .chesscom.proto_options.api.v1.ApiSecurityBasicAuth basic_auth = 2;
+  .chesscom.proto_options.api.v1.ApiSecurityBearerAuth bearer_auth = 3;
+  .chesscom.proto_options.api.v1.ApiSecurityApiKeyAuth api_key_auth = 4;
+  }
+  optional string description = 5;
+}
+
+message ApiAuthenticationOption {
+  repeated .chesscom.proto_options.api.v1.ApiAuthenticationDefinition definition = 1;
+  repeated string reference = 2;
+}
+
+message ApiServerDefinition {
+  oneof _description {
+  string description = 2;
+  }
+  optional string url = 1;
+  repeated .chesscom.proto_options.api.v1.ApiAuthenticationOption authentication = 3;
+}
+
+message ApiServerOption {
+  repeated .chesscom.proto_options.api.v1.ApiServerDefinition definition = 1;
+  repeated string reference = 2;
+}
+
+message ApiServiceMetadata {
+  optional bool is_platform_service = 1;
+  optional bool is_mcp_service = 2;
+}
+
+message ApiOptions {
+  oneof _prefix {
+  string prefix = 1;
+  }
+  oneof _server {
+  .chesscom.proto_options.api.v1.ApiServerOption server = 2;
+  }
+  oneof _metadata {
+  .chesscom.proto_options.api.v1.ApiServiceMetadata metadata = 4;
+  }
+  repeated .chesscom.proto_options.api.v1.ApiAuthenticationOption authentication = 3;
+  repeated .chesscom.oauth.v1.Scope scope = 5;
+  optional .chesscom.proto_options.api.v1.RpcProtocol protocol = 6;
+}

@@ -1,0 +1,58 @@
+{
+  "name": "chesscom/ceac/v2/request_metadata.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "RequestMetadata",
+      "field": [
+        {
+          "name": "client",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.ceac.v2.Client"
+        },
+        {
+          "name": "product",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.ceac.v2.Product"
+        },
+        {
+          "name": "received_time",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "debug_mode",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RequestOptions",
+      "field": [
+        {
+          "name": "heartbeat_interval_seconds",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "use_progress_updates",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,17 @@
+// source: chesscom/courses/v1/reward.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum RewardType {
+  REWARD_TYPE_UNSPECIFIED = 0;
+  REWARD_TYPE_ANY_DIAMOND_COURSE = 1;
+  REWARD_TYPE_PAID_COURSE = 2;
+}
+
+message Reward {
+  oneof _value {
+  string value = 2;
+  }
+  optional .chesscom.courses.v1.RewardType type = 1;
+}

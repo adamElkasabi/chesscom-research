@@ -1,0 +1,101 @@
+{
+  "name": "chesscom/user_properties/v1/properties_roles.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "RolesProperty",
+      "field": [
+        {
+          "name": "is_streamer",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "roles",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "trust_level",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_affiliate_enabled",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1004,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.RolesPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_is_streamer"
+        },
+        {
+          "name": "_trust_level"
+        },
+        {
+          "name": "_is_affiliate_enabled"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "RolesPropertyDefinition",
+      "value": [
+        {
+          "name": "ROLES_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "IS_STREAMER",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "ROLES",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "ROLES_TRUST_LEVEL",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "IS_AFFILIATE_ENABLED",
+          "number": 4,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

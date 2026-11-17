@@ -1,0 +1,10 @@
+// source: chesscom/courses/v1/goal_step.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GoalStep {
+  optional string type = 1;
+  optional int32 completed_amount = 2;
+  optional int32 total_amount = 3;
+}

@@ -1,0 +1,618 @@
+{
+  "name": "chesscom/user_targeting/v1/user_targeting.proto",
+  "package": "chesscom.user_targeting.v1",
+  "message_type": [
+    {
+      "name": "Ruleset",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "enabled",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "criteria",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.Criterion"
+        },
+        {
+          "name": "logical_operator",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.LogicalOperator",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "criteria_groups",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.NestedCriteria"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_logical_operator"
+        }
+      ]
+    },
+    {
+      "name": "Criterion",
+      "field": [
+        {
+          "name": "user_property",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "binary_operator",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.BinaryOperator"
+        },
+        {
+          "name": "value",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "modifier",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.BinaryOperatorModifier",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "key",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "second_value",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_value"
+        },
+        {
+          "name": "_modifier"
+        },
+        {
+          "name": "_second_value"
+        }
+      ]
+    },
+    {
+      "name": "BinaryOperatorModifier",
+      "field": [
+        {
+          "name": "is_negated",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_case_insensitive",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_unit",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.TimeUnit",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "true_on_missing_values",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "relative",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.RelativeTimeWindows",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0
+        },
+        {
+          "name": "time_direction",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.TimeDirection",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "second_time_unit",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.TimeUnit",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "second_time_direction",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.TimeDirection",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "time_windows"
+        },
+        {
+          "name": "_is_negated"
+        },
+        {
+          "name": "_is_case_insensitive"
+        },
+        {
+          "name": "_time_unit"
+        },
+        {
+          "name": "_true_on_missing_values"
+        },
+        {
+          "name": "_time_direction"
+        },
+        {
+          "name": "_second_time_unit"
+        },
+        {
+          "name": "_second_time_direction"
+        }
+      ]
+    },
+    {
+      "name": "NestedCriteriaModifier",
+      "field": [
+        {
+          "name": "is_negated",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "related_with_entity_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.DataSourceType",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_relations_matching",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_relations_matching",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "data_source_identifier",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_is_negated"
+        },
+        {
+          "name": "_related_with_entity_type"
+        },
+        {
+          "name": "_min_relations_matching"
+        },
+        {
+          "name": "_max_relations_matching"
+        },
+        {
+          "name": "_data_source_identifier"
+        }
+      ]
+    },
+    {
+      "name": "RelativeTimeWindows",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_unit",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.TimeUnit",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "_from"
+        },
+        {
+          "name": "_to"
+        },
+        {
+          "name": "_time_unit"
+        }
+      ]
+    },
+    {
+      "name": "NestedCriteria",
+      "field": [
+        {
+          "name": "criteria_groups",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.NestedCriteria"
+        },
+        {
+          "name": "criteria",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.Criterion"
+        },
+        {
+          "name": "logical_operator",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.LogicalOperator",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "modifier",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_targeting.v1.NestedCriteriaModifier",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_logical_operator"
+        },
+        {
+          "name": "_modifier"
+        }
+      ]
+    },
+    {
+      "name": "Sort",
+      "field": [
+        {
+          "name": "key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sort_order",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_targeting.v1.SortOrder",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_sort_order"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "BinaryOperator",
+      "value": [
+        {
+          "name": "BINARY_OPERATOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GREATER",
+          "number": 1
+        },
+        {
+          "name": "GREATER_OR_EQUAL",
+          "number": 2
+        },
+        {
+          "name": "LESSER",
+          "number": 3
+        },
+        {
+          "name": "LESSER_OR_EQUAL",
+          "number": 4
+        },
+        {
+          "name": "EQUALS",
+          "number": 5
+        },
+        {
+          "name": "NOT_EQUALS",
+          "number": 6
+        },
+        {
+          "name": "CONTAINS",
+          "number": 7
+        },
+        {
+          "name": "DOES_NOT_CONTAIN",
+          "number": 8
+        },
+        {
+          "name": "WITHIN",
+          "number": 9
+        },
+        {
+          "name": "STARTS_WITH",
+          "number": 10
+        },
+        {
+          "name": "ENDS_WITH",
+          "number": 11
+        },
+        {
+          "name": "MATCHES",
+          "number": 12
+        },
+        {
+          "name": "NOT_WITHIN",
+          "number": 13
+        },
+        {
+          "name": "ANY_OF",
+          "number": 14
+        },
+        {
+          "name": "NONE_OF",
+          "number": 15
+        },
+        {
+          "name": "EXISTS",
+          "number": 16
+        },
+        {
+          "name": "NOT_EXISTS",
+          "number": 17
+        },
+        {
+          "name": "BETWEEN",
+          "number": 18
+        },
+        {
+          "name": "NOT_BETWEEN",
+          "number": 19
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "LogicalOperator",
+      "value": [
+        {
+          "name": "LOGICAL_OPERATOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "AND",
+          "number": 1
+        },
+        {
+          "name": "OR",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DataSourceType",
+      "value": [
+        {
+          "name": "DATA_SOURCE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "EVENT",
+          "number": 1
+        },
+        {
+          "name": "EVENT_TYPE_TRACK",
+          "number": 2
+        },
+        {
+          "name": "EVENT_TYPE_TYPED",
+          "number": 3
+        },
+        {
+          "name": "TEMPORARY_USER_DATA",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TimeUnit",
+      "value": [
+        {
+          "name": "TIME_UNIT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MILLISECONDS",
+          "number": 1
+        },
+        {
+          "name": "SECONDS",
+          "number": 2
+        },
+        {
+          "name": "MINUTES",
+          "number": 3
+        },
+        {
+          "name": "HOURS",
+          "number": 4
+        },
+        {
+          "name": "DAYS",
+          "number": 5
+        },
+        {
+          "name": "MONTHS",
+          "number": 6
+        },
+        {
+          "name": "YEARS",
+          "number": 7
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TimeDirection",
+      "value": [
+        {
+          "name": "TIME_DIRECTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "LAST",
+          "number": 1
+        },
+        {
+          "name": "NEXT",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SortOrder",
+      "value": [
+        {
+          "name": "SORT_ORDER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SORT_ORDER_ASC",
+          "number": 1
+        },
+        {
+          "name": "SORT_ORDER_DESC",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

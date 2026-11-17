@@ -1,0 +1,47 @@
+[
+  {
+    "export": "CEE_InitWithOpts",
+    "compile_exit": 0,
+    "stderr": "",
+    "scope": "Exact export function body from original WAT, but all callees are typed imports and data segments are absent; address constants remain numeric. Generated analysis-only module must not be mistaken for recovered source.",
+    "decompile_exit": 0,
+    "decompile_stderr": "",
+    "selection_found": true
+  },
+  {
+    "export": "CEE_Init",
+    "compile_exit": 0,
+    "stderr": "",
+    "scope": "Exact export function body from original WAT, but all callees are typed imports and data segments are absent; address constants remain numeric. Generated analysis-only module must not be mistaken for recovered source.",
+    "decompile_exit": 0,
+    "decompile_stderr": "",
+    "selection_found": true
+  },
+  {
+    "export": "CEE_NewFeature",
+    "compile_exit": 0,
+    "stderr": "",
+    "scope": "Exact export function body from original WAT, but all callees are typed imports and data segments are absent; address constants remain numeric. Generated analysis-only module must not be mistaken for recovered source.",
+    "decompile_exit": 0,
+    "decompile_stderr": "",
+    "selection_found": true
+  },
+  {
+    "export": "CEE_DisposeFeature",
+    "compile_exit": 0,
+    "stderr": "",
+    "scope": "Exact export function body from original WAT, but all callees are typed imports and data segments are absent; address constants remain numeric. Generated analysis-only module must not be mistaken for recovered source.",
+    "decompile_exit": 0,
+    "decompile_stderr": "",
+    "selection_found": true
+  },
+  {
+    "export": "CEE_Run",
+    "compile_exit": 0,
+    "stderr": "",
+    "scope": "Exact export function body from original WAT, but all callees are typed imports and data segments are absent; address constants remain numeric. Generated analysis-only module must not be mistaken for recovered source.",
+    "decompile_exit": 0,
+    "decompile_stderr": "",
+    "selection_found": true
+  }
+]

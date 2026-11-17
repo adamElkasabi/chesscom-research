@@ -1,0 +1,2412 @@
+[
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "ListCoaches",
+    "input_type": ".chesscom.coaches.v2.ListCoachesRequest",
+    "output_type": ".chesscom.coaches.v2.ListCoachesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "ListOnboardingCoaches",
+    "input_type": ".chesscom.coaches.v2.ListOnboardingCoachesRequest",
+    "output_type": ".chesscom.coaches.v2.ListOnboardingCoachesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "SetCurrentCoach",
+    "input_type": ".chesscom.coaches.v2.SetCurrentCoachRequest",
+    "output_type": ".chesscom.coaches.v2.SetCurrentCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "GetCurrentCoach",
+    "input_type": ".chesscom.coaches.v2.GetCurrentCoachRequest",
+    "output_type": ".chesscom.coaches.v2.GetCurrentCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "GetCoach",
+    "input_type": ".chesscom.coaches.v2.GetCoachRequest",
+    "output_type": ".chesscom.coaches.v2.GetCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "GetCoaches",
+    "input_type": ".chesscom.coaches.v2.GetCoachesRequest",
+    "output_type": ".chesscom.coaches.v2.GetCoachesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "GetCoachQuota",
+    "input_type": ".chesscom.coaches.v2.GetCoachQuotaRequest",
+    "output_type": ".chesscom.coaches.v2.GetCoachQuotaResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "StartedGameAgainstCoach",
+    "input_type": ".chesscom.coaches.v2.StartedGameAgainstCoachRequest",
+    "output_type": ".chesscom.coaches.v2.StartedGameAgainstCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "GetSettings",
+    "input_type": ".chesscom.coaches.v2.GetSettingsRequest",
+    "output_type": ".chesscom.coaches.v2.GetSettingsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "SetSettings",
+    "input_type": ".chesscom.coaches.v2.SetSettingsRequest",
+    "output_type": ".chesscom.coaches.v2.SetSettingsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "SaveCoachGame",
+    "input_type": ".chesscom.coaches.v2.SaveCoachGameRequest",
+    "output_type": ".chesscom.coaches.v2.SaveCoachGameResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "GetCoachSpeech",
+    "input_type": ".chesscom.coaches.v2.GetCoachSpeechRequest",
+    "output_type": ".chesscom.coaches.v2.GetCoachSpeechResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.coaches.v2.CoachesService",
+    "method": "HideCoachGame",
+    "input_type": ".chesscom.coaches.v2.HideCoachGameRequest",
+    "output_type": ".chesscom.coaches.v2.HideCoachGameResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairInternalService",
+    "method": "ListFlairInternal",
+    "input_type": ".chesscom.flair.v1.ListFlairInternalRequest",
+    "output_type": ".chesscom.flair.v1.ListFlairInternalResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairInternalService",
+    "method": "ListFlairByIdsInternal",
+    "input_type": ".chesscom.flair.v1.ListFlairByIdsInternalRequest",
+    "output_type": ".chesscom.flair.v1.ListFlairByIdsInternalResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairInternalService",
+    "method": "SetUserFlairInternal",
+    "input_type": ".chesscom.flair.v1.SetUserFlairInternalRequest",
+    "output_type": ".chesscom.flair.v1.SetUserFlairInternalResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairAdminService",
+    "method": "ListFlair",
+    "input_type": ".chesscom.flair.v1.ListFlairRequest",
+    "output_type": ".chesscom.flair.v1.ListFlairResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairAdminService",
+    "method": "ListFlairByIds",
+    "input_type": ".chesscom.flair.v1.ListFlairByIdsRequest",
+    "output_type": ".chesscom.flair.v1.ListFlairByIdsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairAdminService",
+    "method": "ListFlairByNamePrefix",
+    "input_type": ".chesscom.flair.v1.ListFlairByNamePrefixRequest",
+    "output_type": ".chesscom.flair.v1.ListFlairByNamePrefixResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairAdminService",
+    "method": "SetUserFlair",
+    "input_type": ".chesscom.flair.v1.SetUserFlairRequest",
+    "output_type": ".chesscom.flair.v1.SetUserFlairResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairService",
+    "method": "ListFlairSelection",
+    "input_type": ".chesscom.flair.v1.ListFlairSelectionRequest",
+    "output_type": ".chesscom.flair.v1.ListFlairSelectionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairService",
+    "method": "SelectFlair",
+    "input_type": ".chesscom.flair.v1.SelectFlairRequest",
+    "output_type": ".chesscom.flair.v1.SelectFlairResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairService",
+    "method": "RemoveFlair",
+    "input_type": ".chesscom.flair.v1.RemoveFlairRequest",
+    "output_type": ".chesscom.flair.v1.RemoveFlairResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairService",
+    "method": "GetUserFlair",
+    "input_type": ".chesscom.flair.v1.GetUserFlairRequest",
+    "output_type": ".chesscom.flair.v1.GetUserFlairResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.flair.v1.FlairService",
+    "method": "ListUserFlair",
+    "input_type": ".chesscom.flair.v1.ListUserFlairRequest",
+    "output_type": ".chesscom.flair.v1.ListUserFlairResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "HydrateGamesByCriteria",
+    "input_type": ".chesscom.game_gateway.v2.HydrateGamesByCriteriaRequest",
+    "output_type": ".chesscom.game_gateway.v2.HydrateGamesByCriteriaResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "CountGamesByCriteria",
+    "input_type": ".chesscom.game_gateway.v2.CountGamesByCriteriaRequest",
+    "output_type": ".chesscom.game_gateway.v2.CountGamesByCriteriaResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "DeleteGame",
+    "input_type": ".chesscom.game_gateway.v2.DeleteGameRequest",
+    "output_type": ".chesscom.game_gateway.v2.DeleteGameResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "AggregateGameResultsByPlayerAndCriteria",
+    "input_type": ".chesscom.game_gateway.v2.AggregateGameResultsByPlayerAndCriteriaRequest",
+    "output_type": ".chesscom.game_gateway.v2.AggregateGameResultsByPlayerAndCriteriaResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "HydrateGameByLegacyId",
+    "input_type": ".chesscom.game_gateway.v2.HydrateGameByLegacyIdRequest",
+    "output_type": ".chesscom.game_gateway.v2.HydrateGameByLegacyIdResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "PlayerOverviewStats",
+    "input_type": ".chesscom.game_gateway.v2.PlayerOverviewStatsRequest",
+    "output_type": ".chesscom.game_gateway.v2.PlayerOverviewStatsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "CountTournamentsByPlayer",
+    "input_type": ".chesscom.game_gateway.v2.CountTournamentsByPlayerRequest",
+    "output_type": ".chesscom.game_gateway.v2.CountTournamentsByPlayerResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.game_gateway.v2.GameGatewayService",
+    "method": "PlayerOverviewAllStats",
+    "input_type": ".chesscom.game_gateway.v2.PlayerOverviewAllStatsRequest",
+    "output_type": ".chesscom.game_gateway.v2.PlayerOverviewAllStatsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetCeeVersion",
+    "input_type": ".chesscom.explanation_engine.v1.CeeVersionRequest",
+    "output_type": ".chesscom.explanation_engine.v1.CeeVersionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "CreateNewGame",
+    "input_type": ".chesscom.explanation_engine.v1.NewGameRequest",
+    "output_type": ".chesscom.explanation_engine.v1.NewGameResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "LoadGameState",
+    "input_type": ".chesscom.explanation_engine.v1.LoadGameStateRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LoadGameStateResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "AddEvaluations",
+    "input_type": ".chesscom.explanation_engine.v1.AddEvaluationsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.AddEvaluationsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetExpectedPoints",
+    "input_type": ".chesscom.explanation_engine.v1.ExpectedPointsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.ExpectedPointsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "ValidateFen",
+    "input_type": ".chesscom.explanation_engine.v1.ValidateFenRequest",
+    "output_type": ".chesscom.explanation_engine.v1.ValidateFenResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "ValidatePgn",
+    "input_type": ".chesscom.explanation_engine.v1.ValidatePgnRequest",
+    "output_type": ".chesscom.explanation_engine.v1.ValidatePgnResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetPgn",
+    "input_type": ".chesscom.explanation_engine.v1.GetPgnRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetPgnResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetFen",
+    "input_type": ".chesscom.explanation_engine.v1.GetFenRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetFenResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetMoveDetails",
+    "input_type": ".chesscom.explanation_engine.v1.GetMoveDetailsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetMoveDetailsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetMoveClassification",
+    "input_type": ".chesscom.explanation_engine.v1.MoveClassificationRequest",
+    "output_type": ".chesscom.explanation_engine.v1.MoveClassificationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetAnalysisAnnotations",
+    "input_type": ".chesscom.explanation_engine.v1.AnalysisAnnotationsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.AnalysisAnnotationsResponse",
+    "client_streaming": false,
+    "server_streaming": true,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "MakeMoves",
+    "input_type": ".chesscom.explanation_engine.v1.MakeMovesRequest",
+    "output_type": ".chesscom.explanation_engine.v1.MakeMovesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "SetPlayedLine",
+    "input_type": ".chesscom.explanation_engine.v1.SetPlayedLineRequest",
+    "output_type": ".chesscom.explanation_engine.v1.SetPlayedLineResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetGameReview",
+    "input_type": ".chesscom.explanation_engine.v1.GameReviewRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GameReviewResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetGameState",
+    "input_type": ".chesscom.explanation_engine.v1.GetGameStateRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetGameStateResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetGamePointInfo",
+    "input_type": ".chesscom.explanation_engine.v1.GamePointInfoRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GamePointInfoResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetGameTree",
+    "input_type": ".chesscom.explanation_engine.v1.GameTreeRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GameTreeResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetGameResult",
+    "input_type": ".chesscom.explanation_engine.v1.GetGameResultRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetGameResultResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "SetGameResult",
+    "input_type": ".chesscom.explanation_engine.v1.SetGameResultRequest",
+    "output_type": ".chesscom.explanation_engine.v1.SetGameResultResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetLegalMoves",
+    "input_type": ".chesscom.explanation_engine.v1.LegalMovesRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LegalMovesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetLegalPremoves",
+    "input_type": ".chesscom.explanation_engine.v1.LegalPremovesRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LegalPremovesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetSanMoves",
+    "input_type": ".chesscom.explanation_engine.v1.GetSanMovesRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetSanMovesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetThreats",
+    "input_type": ".chesscom.explanation_engine.v1.SimpleThreatsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.SimpleThreatsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetGamePhaseTransitions",
+    "input_type": ".chesscom.explanation_engine.v1.GamePhaseTransitionsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GamePhaseTransitionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetOpening",
+    "input_type": ".chesscom.explanation_engine.v1.GetOpeningRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetOpeningResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "LoadBot",
+    "input_type": ".chesscom.explanation_engine.v1.LoadBotRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LoadBotResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetBotMove",
+    "input_type": ".chesscom.explanation_engine.v1.GetBotMoveRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetBotMoveResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetBotMoveFromConfig",
+    "input_type": ".chesscom.explanation_engine.v1.BotMoveFromConfigRequest",
+    "output_type": ".chesscom.explanation_engine.v1.BotMoveFromConfigResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetBotConfigResources",
+    "input_type": ".chesscom.explanation_engine.v1.BotConfigResourcesRequest",
+    "output_type": ".chesscom.explanation_engine.v1.BotConfigResourcesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetBotChat",
+    "input_type": ".chesscom.explanation_engine.v1.GetBotChatRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetBotChatResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetPunishMove",
+    "input_type": ".chesscom.explanation_engine.v1.GetPunishMoveRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetPunishMoveResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "LoadCoach",
+    "input_type": ".chesscom.explanation_engine.v1.LoadCoachRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LoadCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "SetCoach",
+    "input_type": ".chesscom.explanation_engine.v1.SetCoachRequest",
+    "output_type": ".chesscom.explanation_engine.v1.SetCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "LoadAndSetCoach",
+    "input_type": ".chesscom.explanation_engine.v1.LoadAndSetCoachRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LoadAndSetCoachResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetCoachChat",
+    "input_type": ".chesscom.explanation_engine.v1.GetCoachChatRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetCoachChatResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetCoachHint",
+    "input_type": ".chesscom.explanation_engine.v1.GetCoachHintRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetCoachHintResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetErgonomicPosition",
+    "input_type": ".chesscom.explanation_engine.v1.GetErgonomicPositionRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetErgonomicPositionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetErgonomicGame",
+    "input_type": ".chesscom.explanation_engine.v1.GetErgonomicGameRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetErgonomicGameResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetCompressedPosition",
+    "input_type": ".chesscom.explanation_engine.v1.GetCompressedPositionRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetCompressedPositionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "ConvertToProtoMoves",
+    "input_type": ".chesscom.explanation_engine.v1.ConvertToProtoMovesRequest",
+    "output_type": ".chesscom.explanation_engine.v1.ConvertToProtoMovesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetLuaCompletion",
+    "input_type": ".chesscom.explanation_engine.v1.LuaCompletionRequest",
+    "output_type": ".chesscom.explanation_engine.v1.LuaCompletionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "RunLua",
+    "input_type": ".chesscom.explanation_engine.v1.RunLuaRequest",
+    "output_type": ".chesscom.explanation_engine.v1.RunLuaResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "UpdateExperimentalOptions",
+    "input_type": ".chesscom.explanation_engine.v1.UpdateExperimentalOptionsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.UpdateExperimentalOptionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetCeeInternalComponents",
+    "input_type": ".chesscom.explanation_engine.v1.CeeInternalComponentsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.CeeInternalComponentsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "InternalFeaturePuzzleGen",
+    "input_type": ".chesscom.explanation_engine.v1.InternalFeaturePuzzleGenRequest",
+    "output_type": ".chesscom.explanation_engine.v1.InternalFeaturePuzzleGenResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "InternalFeatureUpdateDeveloperOptions",
+    "input_type": ".chesscom.explanation_engine.v1.InternalFeatureUpdateDeveloperOptionsRequest",
+    "output_type": ".chesscom.explanation_engine.v1.InternalFeatureUpdateDeveloperOptionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "InternalFeatureMaiaBotMove",
+    "input_type": ".chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveRequest",
+    "output_type": ".chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "RunSearch",
+    "input_type": ".chesscom.explanation_engine.v1.RunSearchRequest",
+    "output_type": ".chesscom.explanation_engine.v1.RunSearchResponse",
+    "client_streaming": false,
+    "server_streaming": true,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "DisposeGamePoint",
+    "input_type": ".chesscom.explanation_engine.v1.DisposeGamePointRequest",
+    "output_type": ".chesscom.explanation_engine.v1.DisposeGamePointResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetNonChessText",
+    "input_type": ".chesscom.explanation_engine.v1.GetNonChessTextRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetNonChessTextResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.explanation_engine.v1.ExplanationEngineService",
+    "method": "GetIllegalMoveExplanation",
+    "input_type": ".chesscom.explanation_engine.v1.GetIllegalMoveExplanationRequest",
+    "output_type": ".chesscom.explanation_engine.v1.GetIllegalMoveExplanationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "InviteSharedBoardParticipant",
+    "input_type": ".chesscom.shared_board.v1alpha.InviteSharedBoardParticipantRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.InviteSharedBoardParticipantResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "RequestToJoinSharedBoardSession",
+    "input_type": ".chesscom.shared_board.v1alpha.RequestToJoinSharedBoardSessionRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.RequestToJoinSharedBoardSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "RespondToSharedBoardInvitation",
+    "input_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardInvitationRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardInvitationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "RespondToSharedBoardJoinRequest",
+    "input_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardJoinRequestRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardJoinRequestResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "UpdateSharedBoardParticipantRole",
+    "input_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardParticipantRoleRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardParticipantRoleResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "SetSharedBoardParticipantCapabilities",
+    "input_type": ".chesscom.shared_board.v1alpha.SetSharedBoardParticipantCapabilitiesRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.SetSharedBoardParticipantCapabilitiesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "TransferSharedBoardHost",
+    "input_type": ".chesscom.shared_board.v1alpha.TransferSharedBoardHostRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.TransferSharedBoardHostResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "RemoveSharedBoardParticipant",
+    "input_type": ".chesscom.shared_board.v1alpha.RemoveSharedBoardParticipantRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.RemoveSharedBoardParticipantResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardSessionParticipantService",
+    "method": "LeaveSharedBoardSession",
+    "input_type": ".chesscom.shared_board.v1alpha.LeaveSharedBoardSessionRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.LeaveSharedBoardSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "GetSharedBoardSession",
+    "input_type": ".chesscom.shared_board.v1alpha.GetSharedBoardSessionRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.GetSharedBoardSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "FindSharedBoardSessionByResource",
+    "input_type": ".chesscom.shared_board.v1alpha.FindSharedBoardSessionByResourceRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.FindSharedBoardSessionByResourceResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "ListSharedBoardSessions",
+    "input_type": ".chesscom.shared_board.v1alpha.ListSharedBoardSessionsRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.ListSharedBoardSessionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "CreateSharedBoardSession",
+    "input_type": ".chesscom.shared_board.v1alpha.CreateSharedBoardSessionRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.CreateSharedBoardSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "CreateSharedBoardSessionForResource",
+    "input_type": ".chesscom.shared_board.v1alpha.CreateSharedBoardSessionForResourceRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.CreateSharedBoardSessionForResourceResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "SyncCollectionRoster",
+    "input_type": ".chesscom.shared_board.v1alpha.SyncCollectionRosterRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.SyncCollectionRosterResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "UpdateSharedBoardSession",
+    "input_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardSessionRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "UpdateSharedBoardClock",
+    "input_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardClockRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardClockResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "CreateSharedBoard",
+    "input_type": ".chesscom.shared_board.v1alpha.CreateSharedBoardRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.CreateSharedBoardResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "DeleteSharedBoard",
+    "input_type": ".chesscom.shared_board.v1alpha.DeleteSharedBoardRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.DeleteSharedBoardResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "UpdateSharedBoard",
+    "input_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.shared_board.v1alpha.SharedBoardService",
+    "method": "EndSharedBoardSession",
+    "input_type": ".chesscom.shared_board.v1alpha.EndSharedBoardSessionRequest",
+    "output_type": ".chesscom.shared_board.v1alpha.EndSharedBoardSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListAllThemeElements",
+    "input_type": ".chesscom.themes.v2.ListAllThemeElementsRequest",
+    "output_type": ".chesscom.themes.v2.ListAllThemeElementsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListThemesSelection",
+    "input_type": ".chesscom.themes.v2.ListThemesSelectionRequest",
+    "output_type": ".chesscom.themes.v2.ListThemesSelectionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListThemes",
+    "input_type": ".chesscom.themes.v2.ListThemesRequest",
+    "output_type": ".chesscom.themes.v2.ListThemesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListBackgrounds",
+    "input_type": ".chesscom.themes.v2.ListBackgroundsRequest",
+    "output_type": ".chesscom.themes.v2.ListBackgroundsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListBoardStyles",
+    "input_type": ".chesscom.themes.v2.ListBoardStylesRequest",
+    "output_type": ".chesscom.themes.v2.ListBoardStylesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListPieceSets",
+    "input_type": ".chesscom.themes.v2.ListPieceSetsRequest",
+    "output_type": ".chesscom.themes.v2.ListPieceSetsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListSoundSets",
+    "input_type": ".chesscom.themes.v2.ListSoundSetsRequest",
+    "output_type": ".chesscom.themes.v2.ListSoundSetsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "ListOnboardingThemes",
+    "input_type": ".chesscom.themes.v2.ListOnboardingThemesRequest",
+    "output_type": ".chesscom.themes.v2.ListOnboardingThemesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "GetTheme",
+    "input_type": ".chesscom.themes.v2.GetThemeRequest",
+    "output_type": ".chesscom.themes.v2.GetThemeResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "GetCustomTheme",
+    "input_type": ".chesscom.themes.v2.GetCustomThemeRequest",
+    "output_type": ".chesscom.themes.v2.GetCustomThemeResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "SelectTheme",
+    "input_type": ".chesscom.themes.v2.SelectThemeRequest",
+    "output_type": ".chesscom.themes.v2.SelectThemeResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "SelectCustomTheme",
+    "input_type": ".chesscom.themes.v2.SelectCustomThemeRequest",
+    "output_type": ".chesscom.themes.v2.SelectCustomThemeResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.themes.v2.ThemesService",
+    "method": "GetActiveTheme",
+    "input_type": ".chesscom.themes.v2.GetActiveThemeRequest",
+    "output_type": ".chesscom.themes.v2.GetActiveThemeResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.bots.v1.BotGroupService",
+    "method": "ListBotGroups",
+    "input_type": ".chesscom.bots.v1.ListBotGroupsRequest",
+    "output_type": ".chesscom.bots.v1.ListBotGroupsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.bots.v1.BotGroupService",
+    "method": "ListAllBotsInGroup",
+    "input_type": ".chesscom.bots.v1.ListAllBotsInGroupRequest",
+    "output_type": ".chesscom.bots.v1.ListAllBotsInGroupResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.bots.v1.BotGroupService",
+    "method": "ListAllBotsForClub",
+    "input_type": ".chesscom.bots.v1.ListAllBotsForClubRequest",
+    "output_type": ".chesscom.bots.v1.ListAllBotsForClubResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.bots.v1.BotGroupService",
+    "method": "ListAllBotNames",
+    "input_type": ".chesscom.bots.v1.ListAllBotNamesRequest",
+    "output_type": ".chesscom.bots.v1.ListAllBotNamesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_properties.v1.AuthenticatedPropertiesService",
+    "method": "GetPropertiesForAuthenticatedUser",
+    "input_type": ".chesscom.user_properties.v1.GetPropertiesForAuthenticatedUserRequest",
+    "output_type": ".chesscom.user_properties.v1.GetPropertiesForAuthenticatedUserResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "GetUserData",
+    "input_type": ".chesscom.user_gateway.v1.GetUserDataRequest",
+    "output_type": ".chesscom.user_gateway.v1.GetUserDataResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "GetUserDataByUsername",
+    "input_type": ".chesscom.user_gateway.v1.GetUserDataByUsernameRequest",
+    "output_type": ".chesscom.user_gateway.v1.GetUserDataByUsernameResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "GetUserDataMany",
+    "input_type": ".chesscom.user_gateway.v1.GetUserDataManyRequest",
+    "output_type": ".chesscom.user_gateway.v1.GetUserDataManyResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "ListRelatedUsersData",
+    "input_type": ".chesscom.user_gateway.v1.ListRelatedUsersDataRequest",
+    "output_type": ".chesscom.user_gateway.v1.ListRelatedUsersDataResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "GetUserDataWithOtherUsernames",
+    "input_type": ".chesscom.user_gateway.v1.GetUserDataWithOtherUsernamesRequest",
+    "output_type": ".chesscom.user_gateway.v1.GetUserDataWithOtherUsernamesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "ListUsers",
+    "input_type": ".chesscom.user_gateway.v1.ListUsersRequest",
+    "output_type": ".chesscom.user_gateway.v1.ListUsersResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "SendFriendRequest",
+    "input_type": ".chesscom.user_gateway.v1.SendFriendRequestRequest",
+    "output_type": ".chesscom.user_gateway.v1.SendFriendRequestResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "AcceptFriendRequest",
+    "input_type": ".chesscom.user_gateway.v1.AcceptFriendRequestRequest",
+    "output_type": ".chesscom.user_gateway.v1.AcceptFriendRequestResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "DeclineFriendRequest",
+    "input_type": ".chesscom.user_gateway.v1.DeclineFriendRequestRequest",
+    "output_type": ".chesscom.user_gateway.v1.DeclineFriendRequestResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "CancelFriendRequest",
+    "input_type": ".chesscom.user_gateway.v1.CancelFriendRequestRequest",
+    "output_type": ".chesscom.user_gateway.v1.CancelFriendRequestResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "RemoveFriend",
+    "input_type": ".chesscom.user_gateway.v1.RemoveFriendRequest",
+    "output_type": ".chesscom.user_gateway.v1.RemoveFriendResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "BlockUser",
+    "input_type": ".chesscom.user_gateway.v1.BlockUserRequest",
+    "output_type": ".chesscom.user_gateway.v1.BlockUserResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "UnblockUser",
+    "input_type": ".chesscom.user_gateway.v1.UnblockUserRequest",
+    "output_type": ".chesscom.user_gateway.v1.UnblockUserResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_gateway.v1.UserGatewayService",
+    "method": "AcceptFriendLink",
+    "input_type": ".chesscom.user_gateway.v1.AcceptFriendLinkRequest",
+    "output_type": ".chesscom.user_gateway.v1.AcceptFriendLinkResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsNavigationService",
+    "method": "ListRecentFriends",
+    "input_type": ".chesscom.friends_search.v1.ListRecentFriendsRequest",
+    "output_type": ".chesscom.friends_search.v1.ListRecentFriendsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsNavigationService",
+    "method": "ListRecentPendingFriends",
+    "input_type": ".chesscom.friends_search.v1.ListRecentPendingFriendsRequest",
+    "output_type": ".chesscom.friends_search.v1.ListRecentPendingFriendsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsNavigationService",
+    "method": "SocialAutocomplete",
+    "input_type": ".chesscom.friends_search.v1.SocialAutocompleteRequest",
+    "output_type": ".chesscom.friends_search.v1.SocialAutocompleteResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsSearchService",
+    "method": "QueryFriends",
+    "input_type": ".chesscom.friends_search.v1.QueryFriendsRequest",
+    "output_type": ".chesscom.friends_search.v1.QueryFriendsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsSearchService",
+    "method": "Autocomplete",
+    "input_type": ".chesscom.friends_search.v1.AutocompleteRequest",
+    "output_type": ".chesscom.friends_search.v1.AutocompleteResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsSearchService",
+    "method": "GetBlockersOf",
+    "input_type": ".chesscom.friends_search.v1.GetBlockersOfRequest",
+    "output_type": ".chesscom.friends_search.v1.GetBlockersOfResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsSearchService",
+    "method": "GetUsersBlockedBy",
+    "input_type": ".chesscom.friends_search.v1.GetUsersBlockedByRequest",
+    "output_type": ".chesscom.friends_search.v1.GetUsersBlockedByResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.friends_search.v1.FriendsSearchService",
+    "method": "GetFriendsCount",
+    "input_type": ".chesscom.friends_search.v1.GetFriendsCountRequest",
+    "output_type": ".chesscom.friends_search.v1.GetFriendsCountResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseRecommendationService",
+    "method": "GetCourseRecommendationForPosition",
+    "input_type": ".chesscom.courses.v1.GetCourseRecommendationForPositionRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseRecommendationForPositionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseRecommendationService",
+    "method": "GetCoursesForPosition",
+    "input_type": ".chesscom.courses.v1.GetCoursesForPositionRequest",
+    "output_type": ".chesscom.courses.v1.GetCoursesForPositionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseRecommendationService",
+    "method": "GetUserCourseRecommendations",
+    "input_type": ".chesscom.courses.v1.GetUserCourseRecommendationsRequest",
+    "output_type": ".chesscom.courses.v1.GetUserCourseRecommendationsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseRecommendationService",
+    "method": "ReportRecommendationImpression",
+    "input_type": ".chesscom.courses.v1.ReportRecommendationImpressionRequest",
+    "output_type": ".chesscom.courses.v1.ReportRecommendationImpressionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.UserGoalService",
+    "method": "SetUserGoal",
+    "input_type": ".chesscom.courses.v1.SetUserGoalRequest",
+    "output_type": ".chesscom.courses.v1.SetUserGoalResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.UserGoalService",
+    "method": "ClaimReward",
+    "input_type": ".chesscom.courses.v1.ClaimRewardRequest",
+    "output_type": ".chesscom.courses.v1.ClaimRewardResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesDashboardService",
+    "method": "GetCourseList",
+    "input_type": ".chesscom.courses.v1.GetCourseListRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseListResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesDashboardService",
+    "method": "SetCourseInactive",
+    "input_type": ".chesscom.courses.v1.SetCourseInactiveRequest",
+    "output_type": ".chesscom.courses.v1.SetCourseInactiveResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesDashboardService",
+    "method": "SetCoursePaused",
+    "input_type": ".chesscom.courses.v1.SetCoursePausedRequest",
+    "output_type": ".chesscom.courses.v1.SetCoursePausedResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesDashboardService",
+    "method": "SetCourseUnpaused",
+    "input_type": ".chesscom.courses.v1.SetCourseUnpausedRequest",
+    "output_type": ".chesscom.courses.v1.SetCourseUnpausedResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesDashboardService",
+    "method": "AssignTutorial",
+    "input_type": ".chesscom.courses.v1.AssignTutorialRequest",
+    "output_type": ".chesscom.courses.v1.AssignTutorialResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesDashboardService",
+    "method": "GetAvailableTutorials",
+    "input_type": ".chesscom.courses.v1.GetAvailableTutorialsRequest",
+    "output_type": ".chesscom.courses.v1.GetAvailableTutorialsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseProductDetailsService",
+    "method": "GetCourseProductBySlug",
+    "input_type": ".chesscom.courses.v1.GetCourseProductBySlugRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseProductBySlugResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseProductDetailsService",
+    "method": "ClaimCourseProduct",
+    "input_type": ".chesscom.courses.v1.ClaimCourseProductRequest",
+    "output_type": ".chesscom.courses.v1.ClaimCourseProductResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseProductDetailsService",
+    "method": "GetDefaultMoveTrainerIdByProductId",
+    "input_type": ".chesscom.courses.v1.GetDefaultMoveTrainerIdByProductIdRequest",
+    "output_type": ".chesscom.courses.v1.GetDefaultMoveTrainerIdByProductIdResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CourseProductDetailsService",
+    "method": "SetCourseActive",
+    "input_type": ".chesscom.courses.v1.SetCourseActiveRequest",
+    "output_type": ".chesscom.courses.v1.SetCourseActiveResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "GetCourseLearningSession",
+    "input_type": ".chesscom.courses.v1.GetCourseLearningSessionRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseLearningSessionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "GetCourseTrainingForLearning",
+    "input_type": ".chesscom.courses.v1.GetCourseTrainingForLearningRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseTrainingForLearningResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "GetCourseTrainingForReviewing",
+    "input_type": ".chesscom.courses.v1.GetCourseTrainingForReviewingRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseTrainingForReviewingResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "StoreCourseTrainingProgress",
+    "input_type": ".chesscom.courses.v1.StoreCourseTrainingProgressRequest",
+    "output_type": ".chesscom.courses.v1.StoreCourseTrainingProgressResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "StoreCourseVideoProgress",
+    "input_type": ".chesscom.courses.v1.StoreCourseVideoProgressRequest",
+    "output_type": ".chesscom.courses.v1.StoreCourseVideoProgressResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "GetCourseVideoPlayback",
+    "input_type": ".chesscom.courses.v1.GetCourseVideoPlaybackRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseVideoPlaybackResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "FinalizeCourseTraining",
+    "input_type": ".chesscom.courses.v1.FinalizeCourseTrainingRequest",
+    "output_type": ".chesscom.courses.v1.FinalizeCourseTrainingResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "GetCourseStats",
+    "input_type": ".chesscom.courses.v1.GetCourseStatsRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseStatsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "GetCourseConfiguration",
+    "input_type": ".chesscom.courses.v1.GetCourseConfigurationRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseConfigurationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "StoreCourseConfiguration",
+    "input_type": ".chesscom.courses.v1.StoreCourseConfigurationRequest",
+    "output_type": ".chesscom.courses.v1.StoreCourseConfigurationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "DeleteCourseProgress",
+    "input_type": ".chesscom.courses.v1.DeleteCourseProgressRequest",
+    "output_type": ".chesscom.courses.v1.DeleteCourseProgressResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "ClaimPreview",
+    "input_type": ".chesscom.courses.v1.ClaimPreviewRequest",
+    "output_type": ".chesscom.courses.v1.ClaimPreviewResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "SetVariationPaused",
+    "input_type": ".chesscom.courses.v1.SetVariationPausedRequest",
+    "output_type": ".chesscom.courses.v1.SetVariationPausedResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesTrainingService",
+    "method": "SetVariationUnpaused",
+    "input_type": ".chesscom.courses.v1.SetVariationUnpausedRequest",
+    "output_type": ".chesscom.courses.v1.SetVariationUnpausedResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.GetCourseProductBySKUService",
+    "method": "GetCourseProductBySKU",
+    "input_type": ".chesscom.courses.v1.GetCourseProductBySKURequest",
+    "output_type": ".chesscom.courses.v1.GetCourseProductBySKUResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesConfigurableUserFlagService",
+    "method": "SetConfigurableUserFlag",
+    "input_type": ".chesscom.courses.v1.SetConfigurableUserFlagRequest",
+    "output_type": ".chesscom.courses.v1.SetConfigurableUserFlagResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesPreviewsInformationService",
+    "method": "GetPreviewsInformation",
+    "input_type": ".chesscom.courses.v1.GetPreviewsInformationRequest",
+    "output_type": ".chesscom.courses.v1.GetPreviewsInformationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesAuthenticationService",
+    "method": "AuthenticateForCoursesWithCookie",
+    "input_type": ".chesscom.courses.v1.AuthenticateForCoursesWithCookieRequest",
+    "output_type": ".chesscom.courses.v1.AuthenticateForCoursesWithCookieResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesAuthenticationService",
+    "method": "GetOAuthURLForCourses",
+    "input_type": ".chesscom.courses.v1.GetOAuthURLForCoursesRequest",
+    "output_type": ".chesscom.courses.v1.GetOAuthURLForCoursesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesAuthenticationService",
+    "method": "AuthenticateForCourses",
+    "input_type": ".chesscom.courses.v1.AuthenticateForCoursesRequest",
+    "output_type": ".chesscom.courses.v1.AuthenticateForCoursesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesAuthenticationService",
+    "method": "RefreshTokenForCourses",
+    "input_type": ".chesscom.courses.v1.RefreshTokenForCoursesRequest",
+    "output_type": ".chesscom.courses.v1.RefreshTokenForCoursesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesAuthenticationService",
+    "method": "GetUserInfoForCourses",
+    "input_type": ".chesscom.courses.v1.GetUserInfoForCoursesRequest",
+    "output_type": ".chesscom.courses.v1.GetUserInfoForCoursesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.GetHasUserAccessToSkuService",
+    "method": "GetHasUserAccessToSku",
+    "input_type": ".chesscom.courses.v1.GetHasUserAccessToSkuRequest",
+    "output_type": ".chesscom.courses.v1.GetHasUserAccessToSkuResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesShopService",
+    "method": "GetCourseProductList",
+    "input_type": ".chesscom.courses.v1.GetCourseProductListRequest",
+    "output_type": ".chesscom.courses.v1.GetCourseProductListResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1.CoursesShopService",
+    "method": "GetShopMetadata",
+    "input_type": ".chesscom.courses.v1.GetShopMetadataRequest",
+    "output_type": ".chesscom.courses.v1.GetShopMetadataResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.courses.v1alpha.CourseDeviationsService",
+    "method": "GetCourseDeviations",
+    "input_type": ".chesscom.courses.v1alpha.GetCourseDeviationsRequest",
+    "output_type": ".chesscom.courses.v1alpha.GetCourseDeviationsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.skills.v1.SkillsService",
+    "method": "GainSkillPoints",
+    "input_type": ".chesscom.skills.v1.GainSkillPointsRequest",
+    "output_type": ".chesscom.skills.v1.GainSkillPointsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.skills.v1.SkillsService",
+    "method": "GetSkills",
+    "input_type": ".chesscom.skills.v1.GetSkillsRequest",
+    "output_type": ".chesscom.skills.v1.GetSkillsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.skills.v1.SkillsService",
+    "method": "GetSkillsPositions",
+    "input_type": ".chesscom.skills.v1.GetSkillsPositionsRequest",
+    "output_type": ".chesscom.skills.v1.GetSkillsPositionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.skills.v1.SkillsService",
+    "method": "GetConfig",
+    "input_type": ".chesscom.skills.v1.GetConfigRequest",
+    "output_type": ".chesscom.skills.v1.GetConfigResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.skills.v1.SkillsService",
+    "method": "ResetSkills",
+    "input_type": ".chesscom.skills.v1.ResetSkillsRequest",
+    "output_type": ".chesscom.skills.v1.ResetSkillsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.BillingService",
+    "method": "GetUserBillingHistory",
+    "input_type": ".chesscom.payments.v1.GetUserBillingHistoryRequest",
+    "output_type": ".chesscom.payments.v1.GetUserBillingHistoryResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.BillingService",
+    "method": "GetUserBillingInformation",
+    "input_type": ".chesscom.payments.v1.GetUserBillingInformationRequest",
+    "output_type": ".chesscom.payments.v1.GetUserBillingInformationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.BillingService",
+    "method": "GetOrderInvoice",
+    "input_type": ".chesscom.payments.v1.GetOrderInvoiceRequest",
+    "output_type": ".chesscom.payments.v1.GetOrderInvoiceResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.RefundService",
+    "method": "IssueRefund",
+    "input_type": ".chesscom.payments.v1.IssueRefundRequest",
+    "output_type": ".chesscom.payments.v1.IssueRefundResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.RefundService",
+    "method": "ListCharges",
+    "input_type": ".chesscom.payments.v1.ListChargesRequest",
+    "output_type": ".chesscom.payments.v1.ListChargesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.RefundService",
+    "method": "FindCharges",
+    "input_type": ".chesscom.payments.v1.FindChargesRequest",
+    "output_type": ".chesscom.payments.v1.FindChargesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.RefundService",
+    "method": "ListSubscriptions",
+    "input_type": ".chesscom.payments.v1.ListSubscriptionsRequest",
+    "output_type": ".chesscom.payments.v1.ListSubscriptionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.ProductService",
+    "method": "GetUserActiveMembership",
+    "input_type": ".chesscom.payments.v1.GetUserActiveMembershipRequest",
+    "output_type": ".chesscom.payments.v1.GetUserActiveMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.ProductService",
+    "method": "GetUserIsEligibleToRestartMembership",
+    "input_type": ".chesscom.payments.v1.GetUserIsEligibleToRestartMembershipRequest",
+    "output_type": ".chesscom.payments.v1.GetUserIsEligibleToRestartMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.ProductService",
+    "method": "RestartMembership",
+    "input_type": ".chesscom.payments.v1.RestartMembershipRequest",
+    "output_type": ".chesscom.payments.v1.RestartMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.MembershipService",
+    "method": "CancelMembership",
+    "input_type": ".chesscom.payments.v1.CancelMembershipRequest",
+    "output_type": ".chesscom.payments.v1.CancelMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.MembershipService",
+    "method": "SubmitCancellationSurvey",
+    "input_type": ".chesscom.payments.v1.SubmitCancellationSurveyRequest",
+    "output_type": ".chesscom.payments.v1.SubmitCancellationSurveyResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.MembershipService",
+    "method": "ExtendMembership",
+    "input_type": ".chesscom.payments.v1.ExtendMembershipRequest",
+    "output_type": ".chesscom.payments.v1.ExtendMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SupportPromotionService",
+    "method": "CheckMemberPromotions",
+    "input_type": ".chesscom.payments.v1.CheckMemberPromotionsRequest",
+    "output_type": ".chesscom.payments.v1.CheckMemberPromotionsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "CancelSubscription",
+    "input_type": ".chesscom.payments.v1.CancelSubscriptionRequest",
+    "output_type": ".chesscom.payments.v1.CancelSubscriptionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "StopRenewalByCardMatch",
+    "input_type": ".chesscom.payments.v1.StopRenewalByCardMatchRequest",
+    "output_type": ".chesscom.payments.v1.StopRenewalByCardMatchResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "ExtendSubscription",
+    "input_type": ".chesscom.payments.v1.ExtendSubscriptionRequest",
+    "output_type": ".chesscom.payments.v1.ExtendSubscriptionResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "GrantGoodwillDiamond",
+    "input_type": ".chesscom.payments.v1.GrantGoodwillDiamondRequest",
+    "output_type": ".chesscom.payments.v1.GrantGoodwillDiamondResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "GrantNoAdsOffer",
+    "input_type": ".chesscom.payments.v1.GrantNoAdsOfferRequest",
+    "output_type": ".chesscom.payments.v1.GrantNoAdsOfferResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "TransferMembership",
+    "input_type": ".chesscom.payments.v1.TransferMembershipRequest",
+    "output_type": ".chesscom.payments.v1.TransferMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "GrantMembership",
+    "input_type": ".chesscom.payments.v1.GrantMembershipRequest",
+    "output_type": ".chesscom.payments.v1.GrantMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "SwitchToMonthly",
+    "input_type": ".chesscom.payments.v1.SwitchToMonthlyRequest",
+    "output_type": ".chesscom.payments.v1.SwitchToMonthlyResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "GetFamilyPlanInvitations",
+    "input_type": ".chesscom.payments.v1.GetFamilyPlanInvitationsRequest",
+    "output_type": ".chesscom.payments.v1.GetFamilyPlanInvitationsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "RevokeFamilyPlanInvitation",
+    "input_type": ".chesscom.payments.v1.RevokeFamilyPlanInvitationRequest",
+    "output_type": ".chesscom.payments.v1.RevokeFamilyPlanInvitationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.SubscriptionAdminService",
+    "method": "ClearFamilyPlanTrialCooldown",
+    "input_type": ".chesscom.payments.v1.ClearFamilyPlanTrialCooldownRequest",
+    "output_type": ".chesscom.payments.v1.ClearFamilyPlanTrialCooldownResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.PricesService",
+    "method": "GetPriceForAllCountries",
+    "input_type": ".chesscom.payments.v1.GetPriceForAllCountriesRequest",
+    "output_type": ".chesscom.payments.v1.GetPriceForAllCountriesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.CheckoutService",
+    "method": "GetTotalBySku",
+    "input_type": ".chesscom.payments.v1.GetTotalBySkuRequest",
+    "output_type": ".chesscom.payments.v1.GetTotalBySkuResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.CheckoutService",
+    "method": "GetTotalBySkuList",
+    "input_type": ".chesscom.payments.v1.GetTotalBySkuListRequest",
+    "output_type": ".chesscom.payments.v1.GetTotalBySkuListResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.CheckoutService",
+    "method": "GetStorefrontDetails",
+    "input_type": ".chesscom.payments.v1.GetStorefrontDetailsRequest",
+    "output_type": ".chesscom.payments.v1.GetStorefrontDetailsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.CheckoutService",
+    "method": "GetAvailablePaymentMethods",
+    "input_type": ".chesscom.payments.v1.GetAvailablePaymentMethodsRequest",
+    "output_type": ".chesscom.payments.v1.GetAvailablePaymentMethodsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GiftService",
+    "method": "ListEligibleGiftRecipients",
+    "input_type": ".chesscom.payments.v1.ListEligibleGiftRecipientsRequest",
+    "output_type": ".chesscom.payments.v1.ListEligibleGiftRecipientsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "GenerateInvitationLink",
+    "input_type": ".chesscom.payments.v1.GenerateInvitationLinkRequest",
+    "output_type": ".chesscom.payments.v1.GenerateInvitationLinkResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "CheckJoinEligibility",
+    "input_type": ".chesscom.payments.v1.CheckJoinEligibilityRequest",
+    "output_type": ".chesscom.payments.v1.CheckJoinEligibilityResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "InviteMember",
+    "input_type": ".chesscom.payments.v1.InviteMemberRequest",
+    "output_type": ".chesscom.payments.v1.InviteMemberResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "RemoveMember",
+    "input_type": ".chesscom.payments.v1.RemoveMemberRequest",
+    "output_type": ".chesscom.payments.v1.RemoveMemberResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "GetMaxSecondaryMembers",
+    "input_type": ".chesscom.payments.v1.GetMaxSecondaryMembersRequest",
+    "output_type": ".chesscom.payments.v1.GetMaxSecondaryMembersResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "GetSecondaryMembers",
+    "input_type": ".chesscom.payments.v1.GetSecondaryMembersRequest",
+    "output_type": ".chesscom.payments.v1.GetSecondaryMembersResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "LeaveGroupMembership",
+    "input_type": ".chesscom.payments.v1.LeaveGroupMembershipRequest",
+    "output_type": ".chesscom.payments.v1.LeaveGroupMembershipResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "PreviewInvitation",
+    "input_type": ".chesscom.payments.v1.PreviewInvitationRequest",
+    "output_type": ".chesscom.payments.v1.PreviewInvitationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "JoinGroupFromInvitation",
+    "input_type": ".chesscom.payments.v1.JoinGroupFromInvitationRequest",
+    "output_type": ".chesscom.payments.v1.JoinGroupFromInvitationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "ListPendingInvitations",
+    "input_type": ".chesscom.payments.v1.ListPendingInvitationsRequest",
+    "output_type": ".chesscom.payments.v1.ListPendingInvitationsResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "DeclineInvitation",
+    "input_type": ".chesscom.payments.v1.DeclineInvitationRequest",
+    "output_type": ".chesscom.payments.v1.DeclineInvitationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.payments.v1.GroupMembershipService",
+    "method": "RevokeInvitation",
+    "input_type": ".chesscom.payments.v1.RevokeInvitationRequest",
+    "output_type": ".chesscom.payments.v1.RevokeInvitationResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_profile.v1.SocialService",
+    "method": "ListFollowedUsers",
+    "input_type": ".chesscom.user_profile.v1.ListFollowedUsersRequest",
+    "output_type": ".chesscom.user_profile.v1.ListFollowedUsersResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.user_profile.v1.SocialService",
+    "method": "DoesUserFollowOtherUsers",
+    "input_type": ".chesscom.user_profile.v1.DoesUserFollowOtherUsersRequest",
+    "output_type": ".chesscom.user_profile.v1.DoesUserFollowOtherUsersResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.inbox.v1.UserMessageService",
+    "method": "BatchSendUserMessage",
+    "input_type": ".chesscom.inbox.v1.BatchSendUserMessageRequest",
+    "output_type": ".chesscom.inbox.v1.BatchSendUserMessageResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.inbox.v1.UserMessageService",
+    "method": "CheckCanSendUserMessage",
+    "input_type": ".chesscom.inbox.v1.CheckCanSendUserMessageRequest",
+    "output_type": ".chesscom.inbox.v1.CheckCanSendUserMessageResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  },
+  {
+    "service": "chesscom.audiences.v1.AuthenticatedAudiencesService",
+    "method": "IsAuthenticatedUserInAudiences",
+    "input_type": ".chesscom.audiences.v1.IsAuthenticatedUserInAudiencesRequest",
+    "output_type": ".chesscom.audiences.v1.IsAuthenticatedUserInAudiencesResponse",
+    "client_streaming": false,
+    "server_streaming": false,
+    "source_id": "SRC-0045",
+    "source_format": "frontend FileDescriptorProto"
+  }
+]

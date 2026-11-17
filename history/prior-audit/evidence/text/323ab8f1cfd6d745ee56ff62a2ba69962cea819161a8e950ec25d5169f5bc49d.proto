@@ -1,0 +1,14 @@
+// source: chesscom/bots/v1/bot_metadata.proto
+// syntax: proto3
+
+package chesscom.bots.v1;
+
+message BotMetadata {
+  oneof _theme_uuid {
+  string theme_uuid = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional string rating_text = 3;
+  optional string image_url = 5;
+}

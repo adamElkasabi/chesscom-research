@@ -1,0 +1,67 @@
+// source: chesscom/user_properties/v1/properties_trust_and_safety.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum UserAbusePropertyDefinition {
+  USER_ABUSE_UNSPECIFIED = 0;
+  ABUSE_SCORE_AUTOMOD = 1;
+  ABUSE_SCORE_LIGHT = 2;
+  ABUSE_SCORE_HEAVY = 3;
+  ABUSE_SCORE_TOTAL = 4;
+  USERNAME_ABUSE_CATEGORY_SCORE_GOOD = 5;
+  USERNAME_ABUSE_CATEGORY_SCORE_IDENTITY_HATE = 6;
+  USERNAME_ABUSE_CATEGORY_SCORE_PROFANITY = 7;
+  USERNAME_ABUSE_CATEGORY_SCORE_SEXUAL = 8;
+  USERNAME_ABUSE_CATEGORY_SCORE_VIOLENT = 9;
+  USERNAME_ABUSE_CATEGORY_SCORE_PEDOPHILIC = 10;
+  LAST_USERNAME_ABUSE_PREDICTION_DATE = 11;
+  USERNAME_ABUSE_CONFIDENCE_SCORE = 12;
+  ABUSIVE_CHAT_MESSAGES = 13;
+  ABOUT_LAST_UPDATED_AT = 14;
+}
+
+message UserAbuseProperty {
+  oneof _abuse_score_automod {
+  int32 abuse_score_automod = 1;
+  }
+  oneof _abuse_score_light {
+  int32 abuse_score_light = 2;
+  }
+  oneof _abuse_score_heavy {
+  int32 abuse_score_heavy = 3;
+  }
+  oneof _abuse_score_total {
+  int32 abuse_score_total = 4;
+  }
+  oneof _username_abuse_category_score_good {
+  float username_abuse_category_score_good = 5;
+  }
+  oneof _username_abuse_category_score_identity_hate {
+  float username_abuse_category_score_identity_hate = 6;
+  }
+  oneof _username_abuse_category_score_profanity {
+  float username_abuse_category_score_profanity = 7;
+  }
+  oneof _username_abuse_category_score_sexual {
+  float username_abuse_category_score_sexual = 8;
+  }
+  oneof _username_abuse_category_score_violent {
+  float username_abuse_category_score_violent = 9;
+  }
+  oneof _username_abuse_category_score_pedophilic {
+  float username_abuse_category_score_pedophilic = 10;
+  }
+  oneof _last_username_abuse_prediction_date {
+  .google.protobuf.Timestamp last_username_abuse_prediction_date = 11;
+  }
+  oneof _username_abuse_confidence_score {
+  float username_abuse_confidence_score = 12;
+  }
+  oneof _abusive_chat_messages {
+  int32 abusive_chat_messages = 13;
+  }
+  oneof _about_last_updated_at {
+  .google.protobuf.Timestamp about_last_updated_at = 14;
+  }
+}

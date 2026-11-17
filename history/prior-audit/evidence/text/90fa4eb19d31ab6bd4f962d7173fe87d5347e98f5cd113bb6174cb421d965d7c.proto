@@ -1,0 +1,12 @@
+// source: chesscom/courses/v1/user_goal.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message UserGoal {
+  optional .chesscom.courses.v1.GoalType goal_type = 1;
+  repeated .chesscom.courses.v1.GoalStep steps = 2;
+  repeated .chesscom.courses.v1.Reward reward = 3;
+  optional .google.protobuf.Timestamp achieved_at = 4;
+  optional .google.protobuf.Timestamp reward_claimed_at = 5;
+}

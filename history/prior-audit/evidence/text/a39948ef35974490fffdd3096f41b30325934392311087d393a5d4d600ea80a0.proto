@@ -1,0 +1,21 @@
+// source: chesscom/game_storage/v2/opening_data.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+message OpeningData {
+  oneof _last_book_eco_id {
+  uint32 last_book_eco_id = 1;
+  }
+  oneof _last_book_ply {
+  uint32 last_book_ply = 2;
+  }
+  oneof _last_notable_eco_id {
+  uint32 last_notable_eco_id = 3;
+  }
+  oneof _last_notable_ply {
+  uint32 last_notable_ply = 4;
+  }
+  optional uint32 eco_family_id = 5;
+  optional string eco_code = 6;
+}

@@ -1,0 +1,402 @@
+[
+  {
+    "payload_kind": "core module",
+    "binary_id": "module-001",
+    "bytes": 32865067,
+    "sha256": "b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm"
+    ],
+    "included": true,
+    "archive_path": "website-audit/wasm-analysis/modules/module-001/module.wasm",
+    "reason": "Baseline original retained unchanged",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "module-002",
+    "bytes": 32922478,
+    "sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm",
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine/explanation-engine.wasm"
+    ],
+    "included": true,
+    "archive_path": "website-audit/wasm-analysis/modules/module-002/module.wasm",
+    "reason": "Baseline original retained unchanged",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "module-003",
+    "bytes": 693497,
+    "sha256": "064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm"
+    ],
+    "included": true,
+    "archive_path": "website-audit/wasm-analysis/modules/module-003/module.wasm",
+    "reason": "Baseline original retained unchanged",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "module-004",
+    "bytes": 574106,
+    "sha256": "198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-single.wasm"
+    ],
+    "included": true,
+    "archive_path": "website-audit/wasm-analysis/modules/module-004/module.wasm",
+    "reason": "Baseline original retained unchanged",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "module-005",
+    "bytes": 7234687,
+    "sha256": "59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm"
+    ],
+    "included": true,
+    "archive_path": "website-audit/wasm-analysis/modules/module-005/module.wasm",
+    "reason": "Baseline original retained unchanged",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-006",
+    "bytes": 673189,
+    "sha256": "5044ab7655431c0a351c91402d3f4bdf00338814d59b6325e2d4563f3f90c593",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-007",
+    "bytes": 683786,
+    "sha256": "3c974e280008a90e6b10f0f20d02c8e80550cd375413a09a0f1445c4040e827d",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-008",
+    "bytes": 687595,
+    "sha256": "e2f61ddf228c0bbbbcba5d6ea312976f1ff81abb240bd013d8bac50153b7fd25",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-009",
+    "bytes": 697387,
+    "sha256": "e866261192dc6ae6195dfeeabd4b5df51f2f5b67300f71f40e7f3a5adb7ff661",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-010",
+    "bytes": 707847,
+    "sha256": "e93bcc5913bb526dddaffa0c3a2f4e9ffae10b187ee1c9e5050cd8d7ce1466e1",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-011",
+    "bytes": 1381822,
+    "sha256": "a3185bb8d1236d241610e341b493aed57c58f456d5b0cbc8186518e2fe2305a2",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-single.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-012",
+    "bytes": 385560,
+    "sha256": "435f03585d4312b18374a85a21e8bb634be29faacf6cea3198d54a9186a17f62",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-013",
+    "bytes": 6840976,
+    "sha256": "9885a095f29f7e13b0ac512929e479d6a0115d4367c42b0479f9e1cea74fed23",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/torch-lite.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-014",
+    "bytes": 47327363,
+    "sha256": "cbf1a52983c706f419db9771d4a2c789f8c8983f9a6311a7d7f4e8aad6f670dc",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/torch.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-015",
+    "bytes": 16184029,
+    "sha256": "2dc42fe38488a96276349f6f460bd3f57ff2d228c52db043aeeac0c7c73122ea",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-016",
+    "bytes": 32766847,
+    "sha256": "5f7c70bb0d6e8786209395796be4900e3cda07c77c609259ac1e2468215a3e8c",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/default/explanation-engine.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-017",
+    "bytes": 7036486,
+    "sha256": "55926c9443a747428981c3692cf4884f910abb6a81a76a648c6c08b63de90271",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-018",
+    "bytes": 32557049,
+    "sha256": "fb93254e35d5ebdbac1eb1c8483e4396778f34304bdbb05467190ac35f8c1b33",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-019",
+    "bytes": 32500913,
+    "sha256": "9c03d62e2225e70aee50ce56e3cab74c47724d4f183d37a2289d039935be172b",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-020",
+    "bytes": 2447540,
+    "sha256": "f3eee5e37393cdfe150acf50f83183fb384276e9545a9f69d094d9d42d94234c",
+    "urls": [
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-021",
+    "bytes": 2448937,
+    "sha256": "b15cfb795697d4a59b6bf40d44d9fc55b42e3a87ca5562e3ba7d32638707eb6e",
+    "urls": [
+      "https://cdn.jsdelivr.net/npm/@rive-app/webgl2@2.38.2/rive_fallback.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-022",
+    "bytes": 2385648,
+    "sha256": "8f2f8c658a4fc0da0c19d78aafacdcba220289c27d908d82121e0a710abde96a",
+    "urls": [
+      "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-023",
+    "bytes": 2414644,
+    "sha256": "1ee92fb98f3d68bc8f81412dd9527215bdd6330e2cb22c0edd51bd85e8680f41",
+    "urls": [
+      "https://cdn.jsdelivr.net/npm/@rive-app/webgl2@2.49.3/rive_fallback.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-025",
+    "bytes": 32711388,
+    "sha256": "ec248bc774ed65c1f2110f01e64d16d87993b69ea5ec39c419e666017fd21591",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/no-simd/explanation-engine.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-026",
+    "bytes": 74951979,
+    "sha256": "38b70a9507d46b1f2b6f73583b7658cda514041e72beb7ae8708eb995d688b30",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-0.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-1.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-2.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-3.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-4.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-5.wasm"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "Publicly retrieved complete module analyzed in scratch;raw copy excluded from capped persistent package. Exact source URLs/hash and all derived records retained.",
+    "restoration": "six ordered parts;concatenate and verify final hash"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-027",
+    "bytes": 63,
+    "sha256": "cca43692c70324b16f13136b36f7137eaff1ccb4904dfb969d220ab6a8922a9f",
+    "urls": [],
+    "included": true,
+    "archive_path": "website-audit/wasm-deep-follow-up/retained-payloads/new-binary-027.wasm",
+    "reason": "Small exact inline/constructed module retained",
+    "restoration": "Exact inline probe bytes included"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-028",
+    "bytes": 31,
+    "sha256": "09e229d82c230105f939b305147a0795ac1d0bab0a482949782395e8da57464d",
+    "urls": [],
+    "included": true,
+    "archive_path": "website-audit/wasm-deep-follow-up/retained-payloads/new-binary-028.wasm",
+    "reason": "Small exact inline/constructed module retained",
+    "restoration": "Exact inline probe bytes included"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-029",
+    "bytes": 43,
+    "sha256": "df59b1c85df62673c2ccfbcdf9bc1356d02f826f96cd3d6be3f2ab66b6b135f6",
+    "urls": [],
+    "included": true,
+    "archive_path": "website-audit/wasm-deep-follow-up/retained-payloads/new-binary-029.wasm",
+    "reason": "Small exact inline/constructed module retained",
+    "restoration": "Exact inline probe bytes included"
+  },
+  {
+    "payload_kind": "core module",
+    "binary_id": "new-binary-030",
+    "bytes": 64,
+    "sha256": "27d72c3b40c120ec769ef14b7ae298a0b57f10f791079b91550e24e18ad55254",
+    "urls": [],
+    "included": true,
+    "archive_path": "website-audit/wasm-deep-follow-up/retained-payloads/new-binary-030.wasm",
+    "reason": "Small exact inline/constructed module retained",
+    "restoration": "Exact inline probe bytes included"
+  },
+  {
+    "payload_kind": "NNUE parameters",
+    "bytes": 47001499,
+    "sha256": "ad9b423546714137916bd38978af6fd68d7b8951bef25ff76bf43da72d6cb786",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/nn-ad9b42354671.nnue"
+    ],
+    "included": false,
+    "archive_path": null,
+    "reason": "87MBcombinedparameterbytesexcludedduetopersistentworkspacecap;headers/hashes/retrievalprovenanceretained.",
+    "restoration": "GET exact URL and verify SHA256"
+  },
+  {
+    "payload_kind": "NNUE parameters",
+    "bytes": 40119326,
+    "sha256": "5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/nn-5af11540bbfe.nnue"
+    ],
+    "included": true,
+    "archive_path": "website-audit/preserved-workspace/extension/engines/stockfish/nn-5af11540bbfe.nnue",
+    "reason": "The complete public acquisition hash-matches the preserved baseline parameter file;exact bytes already embedded.",
+    "restoration": "Restore exact baseline member without any HTTP request"
+  }
+]

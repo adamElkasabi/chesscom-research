@@ -1,0 +1,14 @@
+// source: chesscom/explanation_engine/v1/cee_internal_component.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum CeeInternalComponent {
+  CEE_INTERNAL_COMPONENT_UNSPECIFIED = 0;
+  CEE_INTERNAL_COMPONENT_LUA = 1;
+  CEE_INTERNAL_COMPONENT_POSITION_DIFFICULTY = 2;
+  CEE_INTERNAL_COMPONENT_TORCH_SMALL = 3;
+  CEE_INTERNAL_COMPONENT_TORCH_LARGE = 4;
+  CEE_INTERNAL_COMPONENT_KOMODO = 5;
+  CEE_INTERNAL_COMPONENT_INTERNAL_FEATURES = 6;
+}

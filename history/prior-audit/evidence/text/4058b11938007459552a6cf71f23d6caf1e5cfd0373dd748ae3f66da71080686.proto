@@ -1,0 +1,9 @@
+// source: chesscom/game_gateway/v2/bughouse_game.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v2;
+
+message BughouseGame {
+  optional .chesscom.game_gateway.v2.ChessGame first_board = 1;
+  optional string second_game_key = 2;
+}

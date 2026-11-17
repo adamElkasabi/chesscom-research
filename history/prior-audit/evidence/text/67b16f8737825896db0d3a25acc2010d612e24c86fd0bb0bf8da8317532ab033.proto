@@ -1,0 +1,23 @@
+// source: chesscom/explanation_engine/v1/feature_run_lua.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message RunLuaRequest {
+  oneof _lua_session_id {
+  int32 lua_session_id = 3;
+  }
+  optional string lua_code = 1;
+  optional bool keep_lua_session = 2;
+  optional string artifact_id = 4;
+}
+
+message RunLuaResponse {
+  oneof _lua_session_id {
+  int32 lua_session_id = 5;
+  }
+  optional bool is_lua_error = 1;
+  optional string lua_error_msg = 2;
+  optional string script_stdout = 3;
+  optional string json_result = 4;
+}

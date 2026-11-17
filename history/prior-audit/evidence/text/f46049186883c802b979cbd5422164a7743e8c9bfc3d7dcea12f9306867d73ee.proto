@@ -1,0 +1,28 @@
+// source: chesscom/chess/v1/position.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+message Position {
+  oneof _en_passant_square {
+  .chesscom.chess.v1.Square en_passant_square = 4;
+  }
+  oneof _in_check {
+  bool in_check = 7;
+  }
+  repeated .chesscom.chess.v1.Placement pieces = 1;
+  optional .chesscom.chess.v1.Color active_color = 2;
+  repeated .chesscom.chess.v1.CastlingRight castling_rights = 3;
+  optional uint32 halfmove_clock = 5;
+  optional uint32 fullmove_number = 6;
+}
+
+message Placement {
+  optional .chesscom.chess.v1.Piece piece = 1;
+  optional .chesscom.chess.v1.Square square = 2;
+}
+
+message CastlingRight {
+  optional .chesscom.chess.v1.Color color = 1;
+  optional .chesscom.chess.v1.File rook_file = 2;
+}

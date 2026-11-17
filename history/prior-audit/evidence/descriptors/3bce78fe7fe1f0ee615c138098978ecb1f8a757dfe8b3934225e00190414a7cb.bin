@@ -1,0 +1,7 @@
+
+<chesscom/explanation_engine/v1/feature_add_evaluations.protochesscom.explanation_engine.v1#chesscom/engine/v1/evaluation.proto"m
+AddEvaluationsRequest3
+evaluations (2.chesscom.engine.v1.Evaluation
+skip_eval_normalization ("C
+AddEvaluationsResponse)
+!added_variation_start_game_points (bproto3

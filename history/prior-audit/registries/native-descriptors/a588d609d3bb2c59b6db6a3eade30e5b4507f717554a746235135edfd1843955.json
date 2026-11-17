@@ -1,0 +1,93 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_point_info.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/engine/v1/score.proto",
+    "chesscom/chess/v1/move.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GamePointInfo",
+      "field": [
+        {
+          "name": "game_point",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "score",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Score",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "parent_game_point",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "child_game_points",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "null_move_child_game_point",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "played_child_game_point",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_played",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_move"
+        },
+        {
+          "name": "_score"
+        },
+        {
+          "name": "_parent_game_point"
+        },
+        {
+          "name": "_null_move_child_game_point"
+        },
+        {
+          "name": "_played_child_game_point"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

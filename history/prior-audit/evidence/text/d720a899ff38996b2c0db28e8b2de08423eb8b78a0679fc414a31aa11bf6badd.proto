@@ -1,0 +1,68 @@
+// source: chesscom/courses/v1/course_recommendation_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetCourseRecommendationForPositionRequest {
+  oneof _rating {
+  int32 rating = 1;
+  }
+  oneof _color {
+  .chesscom.chess.v1.Color color = 2;
+  }
+  oneof _eco_code {
+  string eco_code = 6;
+  }
+  optional string fen = 3;
+  optional .chesscom.courses.v1.RecommendationReason reason = 4;
+  optional string user_id = 5;
+}
+
+message GetCourseRecommendationForPositionResponse {
+  oneof _course {
+  .chesscom.courses.v1.CourseRecommendation course = 1;
+  }
+}
+
+message GetCoursesForPositionRequest {
+  oneof _color {
+  .chesscom.chess.v1.Color color = 3;
+  }
+  optional string fen = 1;
+  optional string user_id = 2;
+}
+
+message GetCoursesForPositionResponse {
+  repeated .chesscom.courses.v1.CourseSummary courses = 1;
+}
+
+message GetUserCourseRecommendationsRequest {
+  oneof _limit {
+  int32 limit = 3;
+  }
+  optional string user_id = 1;
+  optional .chesscom.courses.v1.RecommendationTouchpoint touchpoint = 2;
+}
+
+message GetUserCourseRecommendationsResponse {
+  oneof _set_id {
+  string set_id = 1;
+  }
+  repeated .chesscom.courses.v1.RecommendedCourse courses = 2;
+  optional bool is_fallback = 3;
+}
+
+message ReportRecommendationImpressionRequest {
+  oneof _set_id {
+  string set_id = 2;
+  }
+  oneof _is_fallback {
+  bool is_fallback = 5;
+  }
+  optional string user_id = 1;
+  repeated string course_ids = 3;
+  optional .chesscom.courses.v1.RecommendationTouchpoint touchpoint = 4;
+}
+
+message ReportRecommendationImpressionResponse {
+}

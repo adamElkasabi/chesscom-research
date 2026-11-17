@@ -1,0 +1,7 @@
+
+Gchesscom/explanation_engine/v1/internal_feature_uci_to_game_state.protochesscom.explanation_engine.v1/chesscom/explanation_engine/v1/game_state.proto"<
+$InternalFeatureUciToGameStateRequest
+uci_commands (	"f
+%InternalFeatureUciToGameStateResponse=
+
+game_state (2).chesscom.explanation_engine.v1.GameStatebproto3

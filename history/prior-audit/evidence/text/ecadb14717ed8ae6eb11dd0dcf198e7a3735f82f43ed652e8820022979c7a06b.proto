@@ -1,0 +1,30 @@
+// source: chesscom/game_gateway/v1/game_analysis_metadata.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v1;
+
+message GameAnalysisMetadata {
+  optional .chesscom.game_gateway.v1.AnalysisData white_player_metadata = 1;
+  optional .chesscom.game_gateway.v1.AnalysisData black_player_metadata = 2;
+}
+
+message AnalysisData {
+  oneof _accuracy {
+  float accuracy = 3;
+  }
+  repeated .chesscom.game_gateway.v1.AnalysisData.AnalysisTheme themes = 1;
+  repeated .chesscom.game_gateway.v1.AnalysisData.MoveClassificationCounts move_classification_counts = 2;
+  repeated .chesscom.game_gateway.v1.AnalysisData.MoveClassificationCountsV2 move_classification_counts_v2 = 4;
+  message MoveClassificationCounts {
+  optional .chesscom.analysis.v1.MoveClassification move_classification = 1;
+  optional uint32 count = 2;
+  }
+  message MoveClassificationCountsV2 {
+  optional .chesscom.analysis.v2.MoveClassification move_classification = 1;
+  optional uint32 count = 2;
+  }
+  message AnalysisTheme {
+  optional string theme = 1;
+  repeated uint32 ply = 2;
+  }
+}

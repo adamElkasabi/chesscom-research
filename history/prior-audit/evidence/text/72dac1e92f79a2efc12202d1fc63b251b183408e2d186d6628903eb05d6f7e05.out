@@ -1,0 +1,7 @@
+PASS control: original page blocks a fresh review with exhausted quota
+PASS preexisting config: exhausted quota + no cache reaches LOCAL review
+PASS late chesscom assignment: exhausted quota + no cache reaches LOCAL review
+PASS late analysis assignment: exhausted quota + no cache reaches LOCAL review
+PASS replaced analysis: exhausted quota + no cache reaches LOCAL review
+PASS replaced chesscom: exhausted quota + no cache reaches LOCAL review
+ALL PASS

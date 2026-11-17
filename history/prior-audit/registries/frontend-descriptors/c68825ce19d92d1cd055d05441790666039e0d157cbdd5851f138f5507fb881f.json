@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/courses_common/v1/course_price.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CoursePrice",
+      "field": [
+        {
+          "name": "original",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "discounted",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "diamond",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_discounted"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

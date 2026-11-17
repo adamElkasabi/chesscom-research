@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_game_state.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GetGameStateRequest",
+      "options": {}
+    },
+    {
+      "name": "GetGameStateResponse",
+      "field": [
+        {
+          "name": "game_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

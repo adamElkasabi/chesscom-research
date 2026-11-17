@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/chess/v1/rank.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "Rank",
+      "value": [
+        {
+          "name": "RANK_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RANK_1",
+          "number": 1
+        },
+        {
+          "name": "RANK_2",
+          "number": 2
+        },
+        {
+          "name": "RANK_3",
+          "number": 3
+        },
+        {
+          "name": "RANK_4",
+          "number": 4
+        },
+        {
+          "name": "RANK_5",
+          "number": 5
+        },
+        {
+          "name": "RANK_6",
+          "number": 6
+        },
+        {
+          "name": "RANK_7",
+          "number": 7
+        },
+        {
+          "name": "RANK_8",
+          "number": 8
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

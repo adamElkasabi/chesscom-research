@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Chess.com Local Premium Analysis",
+  "version": "0.1.8",
+  "description": "Runs chess.com's Game Review locally with the engines chess.com ships, so the real analysis UI works without server credits.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "offscreen"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.chess.com/*"
+      ],
+      "js": [
+        "bridge.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    },
+    {
+      "matches": [
+        "https://*.chess.com/*"
+      ],
+      "js": [
+        "page-hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "engines/**"
+      ],
+      "matches": [
+        "https://*.chess.com/*"
+      ]
+    }
+  ]
+}

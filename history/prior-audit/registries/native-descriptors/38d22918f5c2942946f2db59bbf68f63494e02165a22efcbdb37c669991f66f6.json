@@ -1,0 +1,69 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_game_analysis_json.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/stats.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGameAnalysisJsonRequest",
+      "field": [
+        {
+          "name": "uci_options",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.InternalFeatureGameAnalysisJsonRequest.UciOptionsEntry"
+        },
+        {
+          "name": "stats",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AdvancedStatsForGame",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "UciOptionsEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_stats"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGameAnalysisJsonResponse",
+      "field": [
+        {
+          "name": "game_analysis_json",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

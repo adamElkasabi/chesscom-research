@@ -1,0 +1,8 @@
+{
+  "id": "uci-classification-combo",
+  "uciAfter": {
+    "EloSensitivePD": true,
+    "ClassificationV3": true,
+    "ForgivingClassificationsElo": 1000
+  }
+}

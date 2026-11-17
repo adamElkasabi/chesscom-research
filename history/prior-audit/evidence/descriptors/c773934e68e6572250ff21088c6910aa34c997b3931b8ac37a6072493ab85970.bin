@@ -1,0 +1,7 @@
+
+8chesscom/train/v1/train_strategy_mistake_challenge.protochesscom.train.v1+chesscom/train/v1/train_position_type.proto0chesscom/train/v1/train_position_attribute.proto,chesscom/train/v1/train_strategy_theme.protochesscom/chess/v1/move.proto"ˆ
+TrainStrategyMistakeChallenge;
+position_type (2$.chesscom.train.v1.TrainPositionTypeE
+position_attribute (2).chesscom.train.v1.TrainPositionAttribute4
+theme (2%.chesscom.train.v1.TrainStrategyTheme-
+correct_move (2.chesscom.chess.v1.Movebproto3

@@ -1,0 +1,96 @@
+{
+  "code": [],
+  "data": [
+    {
+      "sha256": "bb79f1e5204e26f3147c9f3be961eb197c9ea16f681fd943da1e7e3918d8b400",
+      "binary_ids": [
+        "new-binary-020",
+        "new-binary-021"
+      ]
+    },
+    {
+      "sha256": "b5647acf777190ff3d62fdf92b4941783d8a95bf273f4897815c1c9faf0cf7bc",
+      "binary_ids": [
+        "new-binary-022",
+        "new-binary-023"
+      ]
+    }
+  ],
+  "type": [
+    {
+      "sha256": "37c3219c6c7400ff5f674a11264f596c4fe24fc0b8f805ff98a2787c428fd78a",
+      "binary_ids": [
+        "module-003",
+        "new-binary-009",
+        "new-binary-010"
+      ]
+    },
+    {
+      "sha256": "46c71ccc99e81dcb2f4d7c42744e7fe1cd37464794564c6715603a5cb62c918a",
+      "binary_ids": [
+        "module-005",
+        "new-binary-026"
+      ]
+    },
+    {
+      "sha256": "624f66e677f08ea25c41f3d359421a54744377a2c27edda65f01e9203c3f6853",
+      "binary_ids": [
+        "new-binary-006",
+        "new-binary-007",
+        "new-binary-008"
+      ]
+    },
+    {
+      "sha256": "a7d967b77a3634c383045c5e59273c25ccffbc47de40b0e51d1cfcb2539bff5d",
+      "binary_ids": [
+        "new-binary-013",
+        "new-binary-014"
+      ]
+    },
+    {
+      "sha256": "aea724400d6a103ecbd7e2f4a4f67df06d82f1d0fcdcf828dc8ad1581de5f8c9",
+      "binary_ids": [
+        "new-binary-020",
+        "new-binary-021"
+      ]
+    },
+    {
+      "sha256": "e0b9c47eb97449ea31295c0f62f77ef3935e35e3d9cc85d1ead78942e0862c9a",
+      "binary_ids": [
+        "new-binary-022",
+        "new-binary-023"
+      ]
+    },
+    {
+      "sha256": "5ab31fa5630e58a640d00783d5a93cac87c3b6707cbe2e0db45b9d73a6ca835c",
+      "binary_ids": [
+        "new-binary-028",
+        "new-binary-029",
+        "new-binary-030"
+      ]
+    }
+  ],
+  "export": [
+    {
+      "sha256": "226bd4f99f712505da3ad16fbb12fe531708417ed44f2211c6f8c3832248e32c",
+      "binary_ids": [
+        "module-005",
+        "new-binary-026"
+      ]
+    },
+    {
+      "sha256": "c692c09b111e5cb6a94ae9d4ba48ebbd5077c178aefa2e441fb5282658483502",
+      "binary_ids": [
+        "new-binary-013",
+        "new-binary-014"
+      ]
+    },
+    {
+      "sha256": "1d703beace2dec2a0a397ef9de0708fe89a01865c06a68d9153476d8a1170cbd",
+      "binary_ids": [
+        "new-binary-020",
+        "new-binary-021"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "chesscom/courses/v1/user_flag.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "UserFlag",
+      "value": [
+        {
+          "name": "USER_FLAG_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_FLAG_HAS_EXCLUSIVE_COURSES",
+          "number": 1
+        },
+        {
+          "name": "USER_FLAG_HAS_GLOBAL_STACKABLE_DISCOUNT",
+          "number": 2
+        },
+        {
+          "name": "USER_FLAG_HAS_UNLIMITED_PREVIEWS",
+          "number": 3
+        },
+        {
+          "name": "USER_FLAG_HAS_CLOSED_GIVE_FEEDBACK_WIDGET",
+          "number": 4
+        },
+        {
+          "name": "USER_FLAG_HAS_TUTORIAL",
+          "number": 5
+        },
+        {
+          "name": "USER_FLAG_HAS_CLOSED_WELCOME_WIDGET",
+          "number": 6
+        },
+        {
+          "name": "USER_FLAG_OWNS_A_COURSE",
+          "number": 7
+        },
+        {
+          "name": "USER_FLAG_HAS_GLOBAL_NON_STACKABLE_DISCOUNT",
+          "number": 8
+        },
+        {
+          "name": "USER_FLAG_HAS_PREVIEW_COURSES",
+          "number": 9
+        },
+        {
+          "name": "USER_FLAG_HAS_SKIPPED_FTUE_SELECTOR",
+          "number": 10
+        },
+        {
+          "name": "USER_FLAG_COACH_DEFAULT_OFF",
+          "number": 11
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

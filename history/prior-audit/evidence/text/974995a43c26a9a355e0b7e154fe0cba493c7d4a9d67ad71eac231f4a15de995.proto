@@ -1,0 +1,44 @@
+// source: chesscom/game_gateway/v2/game.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v2;
+
+message Game {
+  oneof game {
+  .chesscom.game_gateway.v2.ChessGame chess_game = 17;
+  .chesscom.game_gateway.v2.BughouseGame bughouse_game = 18;
+  }
+  oneof _name {
+  string name = 2;
+  }
+  oneof _special_game_event {
+  .chesscom.game_storage.v2.SpecialGameEvent special_game_event = 15;
+  }
+  oneof _legacy_id {
+  uint64 legacy_id = 19;
+  }
+  oneof _vs_computer_game_data {
+  .chesscom.game_storage.v2.VsComputerGameData vs_computer_game_data = 20;
+  }
+  oneof _rematch_of {
+  string rematch_of = 21;
+  }
+  oneof _vs_coach_game_data {
+  .chesscom.game_storage.v2.VsCoachGameData vs_coach_game_data = 23;
+  }
+  optional string key = 1;
+  optional .chesscom.game_storage.v2.GameProvider provider = 3;
+  optional .google.protobuf.Timestamp created_at = 4;
+  optional .google.protobuf.Timestamp started_at = 5;
+  optional .google.protobuf.Timestamp ended_at = 6;
+  optional .chesscom.chess.v1.TimeControl time_control = 7;
+  optional .chesscom.chess.v1.TimeClass time_class = 8;
+  optional .chesscom.game_storage.v2.RatingClass rating_class = 9;
+  optional .chesscom.chess.v1.Variant variant = 10;
+  optional .chesscom.game_storage.v2.GameResult result = 11;
+  optional .chesscom.game_storage.v2.GamePrivacy privacy = 12;
+  optional .chesscom.game_storage.v2.GameOrigin origin = 13;
+  optional .chesscom.game_storage.v2.GameServer game_server = 14;
+  optional .chesscom.game_storage.v2.TournamentData tournament_data = 16;
+  optional .chesscom.game_storage.v2.OpeningData opening_data = 22;
+}

@@ -1,0 +1,196 @@
+{
+  "name": "chesscom/payments/v1/incentive.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "Incentive",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.IncentiveType"
+        },
+        {
+          "name": "free_time",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "discount_percentage",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "discount_amount",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "discount_charge_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.IncentiveChargeType",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "discount_recurring_limit",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "incentive_offers",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.IncentiveOffer"
+        },
+        {
+          "name": "is_payment_information_required",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "incentive_external_associations",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.IncentiveExternalAssociation"
+        },
+        {
+          "name": "expires_at",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "starts_at",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "product",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "code",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "campaign_id",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "template",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.IncentiveTemplate",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "app_store_subscription_group_id",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 12,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_free_time"
+        },
+        {
+          "name": "_discount_percentage"
+        },
+        {
+          "name": "_discount_amount"
+        },
+        {
+          "name": "_discount_charge_type"
+        },
+        {
+          "name": "_discount_recurring_limit"
+        },
+        {
+          "name": "_is_payment_information_required"
+        },
+        {
+          "name": "_expires_at"
+        },
+        {
+          "name": "_starts_at"
+        },
+        {
+          "name": "_product"
+        },
+        {
+          "name": "_code"
+        },
+        {
+          "name": "_campaign_id"
+        },
+        {
+          "name": "_template"
+        },
+        {
+          "name": "_app_store_subscription_group_id"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

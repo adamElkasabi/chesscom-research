@@ -1,0 +1,77 @@
+{
+  "name": "chesscom/game_storage/v2/game_result.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "GameResult",
+      "value": [
+        {
+          "name": "GAME_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_TIMEOUT",
+          "number": 1
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_CHECKMATE",
+          "number": 2
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_RESIGNATION",
+          "number": 3
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_ABANDONMENT",
+          "number": 4
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_AGREEMENT",
+          "number": 5
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_REPETITION",
+          "number": 6
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_STALEMATE",
+          "number": 7
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_INSUFFICIENT_MATERIAL",
+          "number": 8
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_TIMEOUT_VS_INSUFFICIENT_MATERIAL",
+          "number": 9
+        },
+        {
+          "name": "GAME_RESULT_DRAW_BY_50_MOVE_RULE",
+          "number": 10
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_BUGHOUSE_PARTNER_LOSE",
+          "number": 11
+        },
+        {
+          "name": "GAME_RESULT_ABORTED",
+          "number": 12
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_THREE_CHECK",
+          "number": 13
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_KING_OF_THE_HILL",
+          "number": 14
+        },
+        {
+          "name": "GAME_RESULT_WIN_LOSE_BY_DOUBLE_FORFEIT",
+          "number": 15
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "chesscom/courses_common/v1/course_source.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseSource",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.SourceType"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SourceType",
+      "value": [
+        {
+          "name": "SOURCE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SOURCE_TYPE_CHESSABLE",
+          "number": 1
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

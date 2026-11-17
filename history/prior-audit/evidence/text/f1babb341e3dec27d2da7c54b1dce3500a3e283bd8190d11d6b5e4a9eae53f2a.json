@@ -1,0 +1,6 @@
+{
+  "id": "tricky-on",
+  "experimental": {
+    "allowTrickyClassification": true
+  }
+}

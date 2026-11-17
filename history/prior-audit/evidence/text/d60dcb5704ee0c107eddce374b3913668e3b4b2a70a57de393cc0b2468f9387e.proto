@@ -1,0 +1,10 @@
+// source: chesscom/courses/v1/course_chapter_details.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseChapterDetails {
+  optional string id = 1;
+  optional string name = 2;
+  optional .chesscom.courses_common.v1.CourseChapterStats stats = 3;
+}

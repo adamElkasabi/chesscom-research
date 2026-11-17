@@ -1,0 +1,8 @@
+// source: chesscom/game_gateway/v1/favorite_metadata.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v1;
+
+message FavoriteMetadata {
+  optional bool is_favorite = 1;
+}

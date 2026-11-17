@@ -1,0 +1,1315 @@
+{
+  "name": "chesscom/user_activity/v1/user_activity.proto",
+  "package": "chesscom.user_activity.v1",
+  "message_type": [
+    {
+      "name": "TrackEvent",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "headers",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.EventHeaders"
+        },
+        {
+          "name": "context",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Context"
+        },
+        {
+          "name": "event_properties",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.TrackEvent.EventPropertiesEntry"
+        },
+        {
+          "name": "user_properties",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.TrackEvent.UserPropertiesEntry"
+        },
+        {
+          "name": "page",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Page",
+          "oneof_index": 0
+        },
+        {
+          "name": "screen",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Screen",
+          "oneof_index": 0
+        },
+        {
+          "name": "increment_properties",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.TrackEvent.IncrementPropertiesEntry"
+        },
+        {
+          "name": "user_properties_cohorts",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.UserProperties",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "enrichment_user_properties",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.TrackEvent.EnrichmentUserPropertiesEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "EventPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "UserPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "IncrementPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT64"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "EnrichmentUserPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "source"
+        },
+        {
+          "name": "_user_properties_cohorts"
+        }
+      ]
+    },
+    {
+      "name": "TypedEvent",
+      "field": [
+        {
+          "name": "event",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Any"
+        },
+        {
+          "name": "headers",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.EventHeaders"
+        },
+        {
+          "name": "context",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Context"
+        },
+        {
+          "name": "page",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Page",
+          "oneof_index": 0
+        },
+        {
+          "name": "screen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Screen",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "source"
+        }
+      ]
+    },
+    {
+      "name": "IdentifyEvent",
+      "field": [
+        {
+          "name": "headers",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.EventHeaders"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Context"
+        },
+        {
+          "name": "user_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_properties",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.IdentifyEvent.UserPropertiesEntry"
+        },
+        {
+          "name": "increment_properties",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.IdentifyEvent.IncrementPropertiesEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "UserPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "IncrementPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT64"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "NavigationEvent",
+      "field": [
+        {
+          "name": "headers",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.EventHeaders"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Context"
+        },
+        {
+          "name": "page",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Page",
+          "oneof_index": 0
+        },
+        {
+          "name": "screen",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Screen",
+          "oneof_index": 0
+        },
+        {
+          "name": "deeplink",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Deeplink",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "source"
+        },
+        {
+          "name": "_deeplink"
+        }
+      ]
+    },
+    {
+      "name": "Deeplink",
+      "field": [
+        {
+          "name": "link",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "data",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Deeplink.DataEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "DataEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "EventHeaders",
+      "field": [
+        {
+          "name": "event_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "timestamp",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "local_time",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "legacy_user_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "sequence_number",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "sent_at",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "product_session_id",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "auth_user_id",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "event_trusted",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 6,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_local_time"
+        },
+        {
+          "name": "_user_id"
+        },
+        {
+          "name": "_legacy_user_id"
+        },
+        {
+          "name": "_sent_at"
+        },
+        {
+          "name": "_product_session_id"
+        },
+        {
+          "name": "_auth_user_id"
+        },
+        {
+          "name": "_event_trusted"
+        }
+      ]
+    },
+    {
+      "name": "Context",
+      "field": [
+        {
+          "name": "application",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_activity.v1.Application"
+        },
+        {
+          "name": "client",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Client"
+        },
+        {
+          "name": "library",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Library"
+        },
+        {
+          "name": "ip",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_agent",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "campaign",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Campaign",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "location",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Location",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "network",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Network",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "os",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.OS",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "screen_resolution",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.ScreenResolution",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "device",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Device",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "language",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "bucketing_id",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "interaction_event_id",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "extensions",
+          "number": 15,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Any"
+        },
+        {
+          "name": "unified_screen",
+          "number": 16,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_ip"
+        },
+        {
+          "name": "_user_agent"
+        },
+        {
+          "name": "_campaign"
+        },
+        {
+          "name": "_location"
+        },
+        {
+          "name": "_network"
+        },
+        {
+          "name": "_os"
+        },
+        {
+          "name": "_screen_resolution"
+        },
+        {
+          "name": "_device"
+        },
+        {
+          "name": "_language"
+        },
+        {
+          "name": "_bucketing_id"
+        },
+        {
+          "name": "_interaction_event_id"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "effective_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "provider_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Screen",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "properties",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_activity.v1.Screen.PropertiesEntry"
+        },
+        {
+          "name": "entity",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.navigation.v1.ScreenEntity",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "PropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_entity"
+        }
+      ]
+    },
+    {
+      "name": "ScreenResolution",
+      "field": [
+        {
+          "name": "width",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "height",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "dpi",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Page",
+      "field": [
+        {
+          "name": "host",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "path",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "title",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "referrer",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "search",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "hash",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "route_name",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "display_mode",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_activity.v1.DisplayMode",
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_referrer"
+        },
+        {
+          "name": "_search"
+        },
+        {
+          "name": "_hash"
+        },
+        {
+          "name": "_route_name"
+        },
+        {
+          "name": "_display_mode"
+        }
+      ]
+    },
+    {
+      "name": "OS",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "version",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Library",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_activity.v1.Library.Name"
+        },
+        {
+          "name": "version",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Name",
+          "value": [
+            {
+              "name": "LIBRARY_NAME_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "CHESSCOM_PHP_SDK",
+              "number": 1,
+              "options": {}
+            },
+            {
+              "name": "CHESSCOM_IOS_SDK",
+              "number": 2,
+              "options": {}
+            },
+            {
+              "name": "CHESSCOM_ANDROID_SDK",
+              "number": 3,
+              "options": {}
+            },
+            {
+              "name": "CHESSCOM_JS_SDK",
+              "number": 4,
+              "options": {}
+            },
+            {
+              "name": "CHESSCOM_JAVA_SDK",
+              "number": 5,
+              "options": {}
+            },
+            {
+              "name": "CHESSCOM_COURSES_PHP_SDK",
+              "number": 6,
+              "options": {}
+            }
+          ]
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Device",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "manufacturer",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "model",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_activity.v1.DeviceType"
+        },
+        {
+          "name": "brand",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_brand"
+        }
+      ]
+    },
+    {
+      "name": "Campaign",
+      "field": [
+        {
+          "name": "source",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "medium",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "term",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "content",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "campaign_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "template_id",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_campaign_id"
+        },
+        {
+          "name": "_template_id"
+        }
+      ]
+    },
+    {
+      "name": "Client",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_activity.v1.Client.Name"
+        },
+        {
+          "name": "version",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "build",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Name",
+          "value": [
+            {
+              "name": "CLIENT_NAME_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "WEB",
+              "number": 1
+            },
+            {
+              "name": "IOS",
+              "number": 2
+            },
+            {
+              "name": "ANDROID",
+              "number": 3
+            },
+            {
+              "name": "USER_PROPERTIES",
+              "number": 4
+            },
+            {
+              "name": "ON_PLATFORM_MESSAGING",
+              "number": 5
+            },
+            {
+              "name": "WORKFLOWS",
+              "number": 6
+            },
+            {
+              "name": "COURSES",
+              "number": 7
+            },
+            {
+              "name": "RCN_SERVICE",
+              "number": 8
+            },
+            {
+              "name": "PROGRESSION_SERVICE",
+              "number": 9
+            },
+            {
+              "name": "ITERABLE_CONNECTOR",
+              "number": 10
+            },
+            {
+              "name": "SENDGRID_WEBHOOKS",
+              "number": 11
+            },
+            {
+              "name": "EMAIL_SENDER",
+              "number": 12
+            },
+            {
+              "name": "PUSH_SENDER",
+              "number": 13
+            }
+          ]
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UserProperties",
+      "field": [
+        {
+          "name": "client_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_activity.v1.Client.Name",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "country",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "skill_level",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user.v1.SkillLevel",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "_client_name"
+        },
+        {
+          "name": "_country"
+        },
+        {
+          "name": "_skill_level"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "DisplayMode",
+      "value": [
+        {
+          "name": "DISPLAY_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DISPLAY_MODE_BROWSER",
+          "number": 1
+        },
+        {
+          "name": "DISPLAY_MODE_STANDALONE",
+          "number": 2
+        },
+        {
+          "name": "DISPLAY_MODE_FULLSCREEN",
+          "number": 3
+        },
+        {
+          "name": "DISPLAY_MODE_MINIMAL_UI",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DeviceType",
+      "value": [
+        {
+          "name": "DEVICE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DESKTOP",
+          "number": 1
+        },
+        {
+          "name": "MOBILE",
+          "number": 2
+        },
+        {
+          "name": "TABLET",
+          "number": 3
+        },
+        {
+          "name": "TV",
+          "number": 4
+        },
+        {
+          "name": "VR_HEADSET",
+          "number": 5
+        },
+        {
+          "name": "AR_HEADSET",
+          "number": 6
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Destination",
+      "value": [
+        {
+          "name": "DESTINATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DESTINATION_ITERABLE",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "DESTINATION_AMPLITUDE",
+          "number": 2
+        },
+        {
+          "name": "DESTINATION_BIGQUERY",
+          "number": 3
+        },
+        {
+          "name": "DESTINATION_WORKFLOWS",
+          "number": 4
+        },
+        {
+          "name": "DESTINATION_USER_PROPERTIES",
+          "number": 5
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Application",
+      "value": [
+        {
+          "name": "APPLICATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "APPLICATION_CHESSCOM",
+          "number": 1
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DestinationUpdateType",
+      "value": [
+        {
+          "name": "DESTINATION_UPDATE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DESTINATION_UPDATE_TYPE_ADDED",
+          "number": 1
+        },
+        {
+          "name": "DESTINATION_UPDATE_TYPE_REMOVED",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

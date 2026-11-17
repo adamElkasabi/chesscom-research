@@ -1,0 +1,126 @@
+{
+  "name": "chesscom/explanation_engine/v1/move_annotation.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/square.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AnnotationArrow",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "color",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.AnnotationColor"
+        }
+      ]
+    },
+    {
+      "name": "AnnotationSquare",
+      "field": [
+        {
+          "name": "square",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "color",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.AnnotationColor"
+        }
+      ]
+    },
+    {
+      "name": "MoveAnnotation",
+      "field": [
+        {
+          "name": "comments",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "before_comment",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "nags",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "arrows",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AnnotationArrow"
+        },
+        {
+          "name": "highlighted_squares",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.AnnotationSquare"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_before_comment"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AnnotationColor",
+      "value": [
+        {
+          "name": "ANNOTATION_COLOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ANNOTATION_COLOR_GREEN",
+          "number": 1
+        },
+        {
+          "name": "ANNOTATION_COLOR_RED",
+          "number": 2
+        },
+        {
+          "name": "ANNOTATION_COLOR_YELLOW",
+          "number": 3
+        },
+        {
+          "name": "ANNOTATION_COLOR_BLUE",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

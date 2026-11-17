@@ -1,0 +1,51 @@
+// source: chesscom/user_properties/v1/properties_opening_courses.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum OpeningCoursesPropertyDefinition {
+  OPENING_COURSES_PROPERTY_UNSPECIFIED = 0;
+  FIRST_OPENING_COURSES_SESSION_DATE = 1;
+  LAST_OPENING_COURSES_SESSION_DATE = 2;
+  LAST_OPENING_COURSES_STUDY_DATE = 3;
+  NUMBER_OF_OPENING_COURSES_VARIATIONS_LEARNED = 4;
+  NUMBER_OF_OPENING_COURSES_VARIATIONS_REVIEWED = 5;
+  NUMBER_OF_OPENING_COURSES_REVIEWS_PENDING = 6;
+  NUMBER_OF_OPENING_COURSES_STARTED = 7;
+  NUMBER_OF_OPENING_COURSES_COMPLETED = 8;
+  NUMBER_OF_OPENING_COURSES_FEATURE_LIMIT_HITS = 9;
+  NUMBER_OF_OPENING_COURSES_PREVIEWS_CLAIMED = 10;
+}
+
+message OpeningCoursesProperty {
+  oneof _first_opening_courses_session_date {
+  .google.protobuf.Timestamp first_opening_courses_session_date = 1;
+  }
+  oneof _last_opening_courses_session_date {
+  .google.protobuf.Timestamp last_opening_courses_session_date = 2;
+  }
+  oneof _last_opening_courses_study_date {
+  .google.protobuf.Timestamp last_opening_courses_study_date = 3;
+  }
+  oneof _number_of_opening_courses_variations_learned {
+  int32 number_of_opening_courses_variations_learned = 4;
+  }
+  oneof _number_of_opening_courses_variations_reviewed {
+  int32 number_of_opening_courses_variations_reviewed = 5;
+  }
+  oneof _number_of_opening_courses_reviews_pending {
+  int32 number_of_opening_courses_reviews_pending = 6;
+  }
+  oneof _number_of_opening_courses_started {
+  int32 number_of_opening_courses_started = 7;
+  }
+  oneof _number_of_opening_courses_completed {
+  int32 number_of_opening_courses_completed = 8;
+  }
+  oneof _number_of_opening_courses_feature_limit_hits {
+  int32 number_of_opening_courses_feature_limit_hits = 9;
+  }
+  oneof _number_of_opening_courses_previews_claimed {
+  int32 number_of_opening_courses_previews_claimed = 10;
+  }
+}

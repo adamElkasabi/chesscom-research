@@ -1,0 +1,12 @@
+
+Lchesscom/explanation_engine/v1alpha/internal_feature_get_coach_emotion.proto#chesscom.explanation_engine.v1alpha2chesscom/explanation_engine/v1/coach_emotion.proto8chesscom/explanation_engine/v1/move_classification.proto"'
+%InternalFeatureGetCoachEmotionRequest"½
+&InternalFeatureGetCoachEmotionResponseC
+coach_emotion (2,.chesscom.explanation_engine.v1.CoachEmotionN
+
+debug_info (2:.chesscom.explanation_engine.v1alpha.CoachEmotionDebugInfo"Þ
+CoachEmotionDebugInfo
+is_key_moment (O
+move_classification (22.chesscom.explanation_engine.v1.MoveClassificationJ
+move_precision (22.chesscom.explanation_engine.v1.MoveClassification
+	who_moved (	bproto3

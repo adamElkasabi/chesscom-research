@@ -1,0 +1,75 @@
+{
+  "static_memory_reads": [
+    {
+      "binary_id": "module-002",
+      "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+      "kind": "sysconf-stylekey84sentinel",
+      "memory_address": 8679352,
+      "binary_offset": 29525269,
+      "bytes": 2,
+      "hex": "07ff",
+      "ascii_bounded": "\u0007\ufffd"
+    },
+    {
+      "binary_id": "module-002",
+      "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+      "kind": "unknown_featurestring",
+      "memory_address": 107662,
+      "binary_offset": 20991269,
+      "bytes": 16,
+      "hex": "756e6b6e6f776e5f6665617475726500",
+      "ascii_bounded": "unknown_feature"
+    },
+    {
+      "binary_id": "module-002",
+      "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+      "kind": "invalidfeaturehandle",
+      "memory_address": 114487,
+      "binary_offset": 20998094,
+      "bytes": 23,
+      "hex": "496e76616c696420466561747572652068616e646c6500",
+      "ascii_bounded": "Invalid Feature handle"
+    },
+    {
+      "binary_id": "module-002",
+      "binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+      "kind": "messageparseerror",
+      "memory_address": 115868,
+      "binary_offset": 20999475,
+      "bytes": 32,
+      "hex": "556e61626c6520746f2070617273652066656174757265206d65737361676500",
+      "ascii_bounded": "Unable to parse feature message"
+    }
+  ],
+  "public_wrapper_evidence": [
+    {
+      "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js",
+      "body_sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+      "character_offset": 94948,
+      "pattern": "invoke_ii:function",
+      "excerpt": "invoke_ii:function(index,a1){var sp=stackSave();try{return dynCall_ii(index,a1)}catch(e){if(stackRestore(sp),!(e instanceof EmscriptenEH))throw e;_setThrew(1,0)}},invoke_iid:function(index,a1,a2){var sp=stackSave();try{return dynCall_iid(index,a1,a2)}catch(e){if(stackRestore(sp),!(e instanceof EmscriptenEH))throw e;_setThrew(1,0)}},invoke_iif:function(index,a1,a2){var sp=stackSave();try{return dynCall_iif(index,a1,a2)}catch(e){if(stackRestore(sp),!(e instanceof EmscriptenEH))throw e;_setThrew(1,0)}},invoke_iii:function(index,a1,a2){var sp=stackSave();try{return dynCall_iii(index,a1,a2)}catch(e){if(stackRestore(sp),!(e instanceof EmscriptenEH))throw e;_setThrew(1,0)}},invoke_iiidi:function(index,a1,a2,a3,a4){var sp=stackSave();try{return dynCall_iiidi(index,a1,a2,a3,a4)}catch(e){if(stackRestore(sp),!(e instanceof EmscriptenEH))throw e;_setThrew(1,0)}},invoke_iiii:function(index,a1,a2,a3){var sp=stackSave();try{return dynCall_iiii(index,a1,a2,a3)}catch(e){if(stackRestore(sp),!(e instanceof EmscriptenEH))throw e;_setThrew(1,0)}},invoke_iiiii:function(index,a1,a2,a3,a4){var sp=stackSave();try{return dynCall_iiiii(index,a1,a2,a3,a4)}catch(e){if(stackRestore(sp),!(e instanceof Emscripten"
+    },
+    {
+      "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js",
+      "body_sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+      "character_offset": 120995,
+      "pattern": "CEE_NewFeature:(Module,args)",
+      "excerpt": "CEE_NewFeature:(Module,args)=>{let game_point=args[0],feature_id=args[1],c_buf=js_buf_to_c_buf(Module,args[2]),buf=c_buf[0],size=c_buf[1];try{let feature_handle=Module.ccall(\"CEE_NewFeature\",\"number\",[\"number\",\"number\",\"number\",\"number\"],[game_point,feature_id,buf,size]);if(feature_handle<0)return void postMessage({error:get_last_error(Module)});postMessage({retval:feature_handle})}finally{0!==buf&&Module._free(buf)}},CEE_Run:(Module,args)=>{let feature_handle=args[0];return Promise.resolve(Module.ccall(\"CEE_Run\",\"number\",[\"number\",\"number\"],[feature_handle,0],{async:!0})).then((ret=>{ret<=0&&postMessage({error:get_last_error(Module)})}))},CEE_DisposeFeature:(Module,args)=>{let game_point=args[0];Module.ccall(\"CEE_DisposeFeature\",\"void\",[\"number\"],[game_point]),postMessage({retval:1})},CEE_EnableLog:(Module,args)=>{Module.ccall(\"CEE_EnableLog\",\"void\",[],[]),postMessage({retval:1})},CEE_DisableLog:(Module,args)=>{Module.ccall(\"CEE_DisableLog\",\"void\",[],[]),postMessage({retval:1})},CEE_LoadCharmModel:(Module,args)=>{let model_data=args[0],model_key=args[1],[c_buf,c_buf_size]=js_buf_to_c_buf(Module,model_data),key_buf=0,key_len=0,success=!1;try{if(\"string\"==typeof model_key){let key_b"
+    },
+    {
+      "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js",
+      "body_sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+      "character_offset": 121417,
+      "pattern": "CEE_Run:(Module,args)",
+      "excerpt": "CEE_Run:(Module,args)=>{let feature_handle=args[0];return Promise.resolve(Module.ccall(\"CEE_Run\",\"number\",[\"number\",\"number\"],[feature_handle,0],{async:!0})).then((ret=>{ret<=0&&postMessage({error:get_last_error(Module)})}))},CEE_DisposeFeature:(Module,args)=>{let game_point=args[0];Module.ccall(\"CEE_DisposeFeature\",\"void\",[\"number\"],[game_point]),postMessage({retval:1})},CEE_EnableLog:(Module,args)=>{Module.ccall(\"CEE_EnableLog\",\"void\",[],[]),postMessage({retval:1})},CEE_DisableLog:(Module,args)=>{Module.ccall(\"CEE_DisableLog\",\"void\",[],[]),postMessage({retval:1})},CEE_LoadCharmModel:(Module,args)=>{let model_data=args[0],model_key=args[1],[c_buf,c_buf_size]=js_buf_to_c_buf(Module,model_data),key_buf=0,key_len=0,success=!1;try{if(\"string\"==typeof model_key){let key_bytes=(new TextEncoder).encode(model_key);key_len=key_bytes.length,key_buf=Module._malloc(key_len+1),Module.HEAPU8.set(key_bytes,key_buf),Module.HEAPU8[key_buf+key_len]=0}let ret=Module.ccall(\"CEE_LoadCharmModel\",\"number\",[\"number\",\"number\",\"number\",\"number\"],[c_buf,c_buf_size,key_buf,key_len]);ret<0&&console.log(\"error loading charm model\"+(model_key?\": \"+model_key:\"\")),success=ret>=0}finally{0!==key_buf&&Module._free("
+    },
+    {
+      "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js",
+      "body_sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+      "character_offset": 120177,
+      "pattern": "js_buf_to_c_buf(Module,js_buf)",
+      "excerpt": "js_buf_to_c_buf(Module,js_buf){if(!js_buf)return[0,0];let c_buf_size=js_buf.length*js_buf.BYTES_PER_ELEMENT,c_buf=Module._malloc(c_buf_size);return Module.HEAPU8.set(js_buf,c_buf),[c_buf,c_buf_size]}return{CEE_DisposeGame:(Module,args)=>{let game_point=args[0];Module.ccall(\"CEE_DisposeGame\",\"void\",[\"number\"],[game_point]),postMessage({retval:1})},CEE_Play:(Module,args)=>{let game_point=args[0],uci_move=args[1],new_game_point=Module.ccall(\"CEE_Play\",\"number\",[\"number\",\"string\"],[game_point,uci_move]);new_game_point<0?postMessage({error:get_last_error(Module)}):postMessage({retval:new_game_point})},CEE_GetLastMove:(Module,args)=>{let game_point=args[0],uci_move=Module.ccall(\"CEE_GetLastMove\",\"string\",[\"number\"],[game_point]);uci_move?postMessage({retval:uci_move}):postMessage({error:get_last_error(Module)})},CEE_NewFeature:(Module,args)=>{let game_point=args[0],feature_id=args[1],c_buf=js_buf_to_c_buf(Module,args[2]),buf=c_buf[0],size=c_buf[1];try{let feature_handle=Module.ccall(\"CEE_NewFeature\",\"number\",[\"number\",\"number\",\"number\",\"number\"],[game_point,feature_id,buf,size]);if(feature_handle<0)return void postMessage({error:get_last_error(Module)});postMessage({retval:feature_handle"
+    }
+  ],
+  "qualification": "These bounded byte/text observations support manual semantic reviews;not a runtime trace."
+}

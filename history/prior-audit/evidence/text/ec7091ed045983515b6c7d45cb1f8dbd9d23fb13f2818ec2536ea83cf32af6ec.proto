@@ -1,0 +1,14 @@
+// source: chesscom/explanation_engine/v1/text_asset.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message TextAsset {
+  oneof content {
+  bytes encrypted_compressed_in_base64 = 1;
+  string json = 2;
+  string artifact_id = 6;
+  }
+  optional string text_id = 4;
+  optional string locale = 5;
+}

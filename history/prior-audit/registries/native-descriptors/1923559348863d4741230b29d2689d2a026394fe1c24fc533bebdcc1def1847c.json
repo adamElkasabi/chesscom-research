@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/game_status.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "GameStatus",
+      "value": [
+        {
+          "name": "GAME_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_STATUS_GREATLY_LOSING",
+          "number": 1
+        },
+        {
+          "name": "GAME_STATUS_LOSING",
+          "number": 2
+        },
+        {
+          "name": "GAME_STATUS_PROBABLY_LOSING",
+          "number": 3
+        },
+        {
+          "name": "GAME_STATUS_DRAWING",
+          "number": 4
+        },
+        {
+          "name": "GAME_STATUS_PROBABLY_WINNING",
+          "number": 5
+        },
+        {
+          "name": "GAME_STATUS_WINNING",
+          "number": 6
+        },
+        {
+          "name": "GAME_STATUS_GREATLY_WINNING",
+          "number": 7
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

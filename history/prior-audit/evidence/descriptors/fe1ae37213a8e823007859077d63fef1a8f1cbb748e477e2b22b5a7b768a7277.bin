@@ -1,0 +1,8 @@
+
+Bchesscom/explanation_engine/v1/feature_grade_train_item_move.protochesscom.explanation_engine.v1chesscom/chess/v1/move.proto+chesscom/explanation_engine/v1/speech.proto'chesscom/train/v1/train_challenge.proto(chesscom/train/v1/train_move_grade.proto"Å
+GradeTrainItemMoveRequest4
+	challenge (2!.chesscom.train.v1.TrainChallenge.
+original_move (2.chesscom.chess.v1.Move"å
+GradeTrainItemMoveResponse0
+grade (2!.chesscom.train.v1.TrainMoveGrade<
+reply_speech (2&.chesscom.explanation_engine.v1.Speechbproto3

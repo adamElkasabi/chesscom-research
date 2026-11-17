@@ -1,0 +1,6 @@
+{
+  "tool": "native WABT1.0.36",
+  "exit_code": 134,
+  "limit": "CPU60s,wall75s,addressspace2GiB",
+  "stderr": "wasm-decompile: ./include/wabt/decompiler-ast.h:346: void wabt::AST::Construct(const wabt::ExprList&, wabt::Index, wabt::Index, bool): Assertion `unreachable || value_stack_depth - value_stack_depth_start == static_cast<int>(nresults)' failed.\n"
+}

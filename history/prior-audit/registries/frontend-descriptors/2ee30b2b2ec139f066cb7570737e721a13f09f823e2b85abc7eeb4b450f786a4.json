@@ -1,0 +1,62 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_load_bot.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "LoadBotRequest",
+      "field": [
+        {
+          "name": "bot_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "content_format",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.BotContentFormat"
+        },
+        {
+          "name": "bot_content",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "artifact_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "LoadBotResponse",
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "BotContentFormat",
+      "value": [
+        {
+          "name": "BOT_CONTENT_FORMAT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOT_CONTENT_FORMAT_JSON",
+          "number": 1
+        },
+        {
+          "name": "BOT_CONTENT_FORMAT_BASE64",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

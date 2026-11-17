@@ -1,0 +1,33 @@
+// source: chesscom/explanation_engine/v1/invalid_game.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message InvalidGameUnparsable {
+}
+
+message InvalidGameIllegalMove {
+}
+
+message InvalidGameIllegalKingCount {
+}
+
+message InvalidGamePawnOnBackRank {
+}
+
+message InvalidGameKingsAdjacent {
+}
+
+message InvalidGameKingCapturable {
+}
+
+message InvalidGame {
+  oneof invalid_game {
+  .chesscom.explanation_engine.v1.InvalidGameUnparsable unparsable = 1;
+  .chesscom.explanation_engine.v1.InvalidGameIllegalMove illegal_move = 2;
+  .chesscom.explanation_engine.v1.InvalidGameIllegalKingCount illegal_king_count = 3;
+  .chesscom.explanation_engine.v1.InvalidGamePawnOnBackRank pawn_on_back_rank = 4;
+  .chesscom.explanation_engine.v1.InvalidGameKingsAdjacent kings_adjacent = 5;
+  .chesscom.explanation_engine.v1.InvalidGameKingCapturable king_capturable = 6;
+  }
+}

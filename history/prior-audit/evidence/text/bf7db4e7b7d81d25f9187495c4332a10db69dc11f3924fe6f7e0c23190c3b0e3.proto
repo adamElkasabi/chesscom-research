@@ -1,0 +1,12 @@
+// source: chesscom/courses_common/v1/course_price.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message CoursePrice {
+  oneof _discounted {
+  .chesscom.api.v1.Money discounted = 3;
+  }
+  optional .chesscom.api.v1.Money original = 2;
+  optional .chesscom.api.v1.Money diamond = 4;
+}

@@ -1,0 +1,30 @@
+// source: chesscom/stats/v1/advanced_stat_percentile.proto
+// syntax: proto3
+
+package chesscom.stats.v1;
+
+message AdvancedStatPercentile {
+  oneof _ewma_12_percentile {
+  float ewma_12_percentile = 3;
+  }
+  oneof _ewma_50_percentile {
+  float ewma_50_percentile = 4;
+  }
+  oneof _requested_game_percentile {
+  float requested_game_percentile = 5;
+  }
+  optional .chesscom.stats.v1.AdvancedStatType type = 1;
+  optional uint32 games_played = 2;
+}
+
+message AdvancedStatCategoryStats {
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional float percentile = 2;
+  optional uint32 old_rating = 3;
+  optional uint32 new_rating = 4;
+}
+
+message AdvancedStatCategoryGamePerformance {
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional float percentile = 2;
+}

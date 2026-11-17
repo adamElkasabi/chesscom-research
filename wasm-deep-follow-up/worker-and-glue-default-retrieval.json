@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish.worker.js",
+    "sources": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.js",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1.js",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-Worker.js",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-simd.js",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.js"
+    ],
+    "literal": "stockfish.worker.js",
+    "context": "{cmd:\"load\",urlOrBlob:i.mainScriptUrlOrBlob||Jt,wasmMemory:u,wasmModule:te})},Ua:function(){var e=Q(\"stockfish.worker.js\");v.xa.push(new Worker(e))},eb:function(){return 0==v.xa.length&&(v.Ua(),v.Xa(v.xa[0])),v.xa.pop()},wb:function(e){for(e=performance.now()+e;performance.now()<e;);}};function Se(e,",
+    "qualification": "Referenced generated-glue default. Runtime locateFile/worker overrides may select another resource.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/torch-lite.worker.js",
+    "sources": [
+      "https://www.chess.com/bundles/app/js/engine/torch-lite.js"
+    ],
+    "literal": "torch-lite.worker.js",
+    "context": "d\",urlOrBlob:d.mainScriptUrlOrBlob||_scriptDir,wasmMemory:J,wasmModule:ma})},Ja:function(){var a=ia(\"torch-lite.worker.js\");k.ka.push(new Worker(a))},Ma:function(){0==k.ka.length&&(k.Ja(),k.Ra(k.ka[0]));return k.ka.pop()}};d.establishStackSpace=function(a,b){Ya(a,b);sa(a)};d.invokeEntryPoint=function(",
+    "qualification": "Referenced generated-glue default. Runtime locateFile/worker overrides may select another resource.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/torch.worker.js",
+    "sources": [
+      "https://www.chess.com/bundles/app/js/engine/torch.js"
+    ],
+    "literal": "torch.worker.js",
+    "context": "d\",urlOrBlob:d.mainScriptUrlOrBlob||_scriptDir,wasmMemory:J,wasmModule:ma})},Ja:function(){var a=ia(\"torch.worker.js\");k.ka.push(new Worker(a))},Ma:function(){0==k.ka.length&&(k.Ja(),k.Ra(k.ka[0]));return k.ka.pop()}};d.establishStackSpace=function(a,b){Ya(a,b);sa(a)};d.invokeEntryPoint=function(",
+    "qualification": "Referenced generated-glue default. Runtime locateFile/worker overrides may select another resource.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch.worker.js",
+    "sources": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js"
+    ],
+    "literal": "torch.worker.js",
+    "context": "d\",urlOrBlob:d.mainScriptUrlOrBlob||_scriptDir,wasmMemory:I,wasmModule:na})},Aa:function(){var a=fa(\"torch.worker.js\");k.ba.push(new Worker(a))},Ga:function(){0==\nk.ba.length&&(k.Aa(),k.Ja(k.ba[0]));return k.ba.pop()}};d.establishStackSpace=function(){var a=X(),b=P[a+44>>2];Ra(b,b-P[a+48>>2]);W(b",
+    "qualification": "Referenced generated-glue default. Runtime locateFile/worker overrides may select another resource.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.38.2/webgl2_advanced.wasm",
+    "sources": [
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js",
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js",
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js",
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js"
+    ],
+    "literal": "webgl2_advanced.wasm",
+    "context": "{\n      sa(`Module.instantiateWasm callback failed with error: ${c}`), ba(c);\n    }\n  }\n  Ja ||= Ia(\"webgl2_advanced.wasm\") ? \"webgl2_advanced.wasm\" : l.locateFile ? l.locateFile(\"webgl2_advanced.wasm\", y) : y + \"webgl2_advanced.wasm\";\n  Na(b, function(c) {\n    a(c.instance);\n  }).catch(ba);\n  return ",
+    "qualification": "Referenced generated-glue default. Runtime locateFile/worker overrides may select another resource.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.49.3/webgl2_advanced.wasm",
+    "sources": [
+      "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js",
+      "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js"
+    ],
+    "literal": "webgl2_advanced.wasm",
+    "context": "asm)return new Promise(m=>{K.instantiateWasm(g,(u,y)=>{m(d(u,y))})});tb??=K.locateFile?K.locateFile(\"webgl2_advanced.wasm\",Qa):Qa+\"webgl2_advanced.wasm\";return d((await Ab(g)).instance)}());\n(function(){function d(){K.calledRun=!0;if(!Ya){pb=!0;Ue.__wasm_call_ctors();ab?.(K);K.onRuntimeInitialized?.()",
+    "qualification": "Referenced generated-glue default. Runtime locateFile/worker overrides may select another resource.",
+    "http_status": 404,
+    "error": "HTTP Error 404: Not Found"
+  }
+]

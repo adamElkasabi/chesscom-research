@@ -1,0 +1,38 @@
+// source: chesscom/courses/v1/course_product_details_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetCourseProductBySlugRequest {
+  optional string slug = 1;
+  optional string country_code = 2;
+}
+
+message GetCourseProductBySlugResponse {
+  optional .chesscom.courses.v1.CourseProductDetails details = 1;
+}
+
+message ClaimCourseProductRequest {
+  optional string product_id = 1;
+}
+
+message ClaimCourseProductResponse {
+  optional string default_move_trainer_id = 1;
+}
+
+message GetDefaultMoveTrainerIdByProductIdRequest {
+  optional string product_id = 1;
+}
+
+message GetDefaultMoveTrainerIdByProductIdResponse {
+  optional string default_move_trainer_id = 1;
+  optional bool is_course_owned = 2;
+  optional bool is_video_owned = 3;
+}
+
+message SetCourseActiveRequest {
+  optional string course_id = 1;
+}
+
+message SetCourseActiveResponse {
+}

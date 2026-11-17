@@ -1,0 +1,384 @@
+{
+  "name": "chesscom/progression/v1/event_configuration.proto",
+  "package": "chesscom.progression.v1",
+  "message_type": [
+    {
+      "name": "ProgressionRewardConfiguration",
+      "field": [
+        {
+          "name": "required_points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "reward_asset",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "reward_description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.i18n.v1.Translation",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "unlockable",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockableResourceIdentifier"
+        },
+        {
+          "name": "premium_only",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_reward_description"
+        },
+        {
+          "name": "_premium_only"
+        }
+      ]
+    },
+    {
+      "name": "ProgressionModifierTrigger",
+      "field": [
+        {
+          "name": "start_time",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 0
+        },
+        {
+          "name": "start_max_games_played",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "start_max_wins",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "end_time",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 1
+        },
+        {
+          "name": "duration_minutes",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "start_criteria"
+        },
+        {
+          "name": "end_criteria"
+        }
+      ]
+    },
+    {
+      "name": "EventProgress",
+      "field": [
+        {
+          "name": "current_points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "rewards",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.progression.v1.EventReward",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "event_config_key",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "bot_event_specifics",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.progression.v1.BotEventSpecifics",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "event_specifics"
+        }
+      ]
+    },
+    {
+      "name": "EventUnlockable",
+      "field": [
+        {
+          "name": "required_points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "unlockable",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockableResourceIdentifier"
+        },
+        {
+          "name": "image_url",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "premium_only",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_meets_external_requirements",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_premium_reward",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_premium_only"
+        },
+        {
+          "name": "_user_meets_external_requirements"
+        },
+        {
+          "name": "_is_premium_reward"
+        }
+      ]
+    },
+    {
+      "name": "EventReward",
+      "field": [
+        {
+          "name": "icon",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Asset"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.progression.v1.EventRewardType"
+        },
+        {
+          "name": "required_points",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "unlocked_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "_unlocked_at"
+        }
+      ]
+    },
+    {
+      "name": "EventProgressUpdate",
+      "field": [
+        {
+          "name": "current_points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "progress_update_steps",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.progression.v1.EventProgressUpdateStep"
+        },
+        {
+          "name": "event_config_key",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "EventProgressUpdateStep",
+      "field": [
+        {
+          "name": "points_to_add",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "bonus_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.progression.v1.EventProgressBonusType"
+        },
+        {
+          "name": "multiplier",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_multiplier"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "EventRewardType",
+      "value": [
+        {
+          "name": "EVENT_REWARD_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "EVENT_REWARD_TYPE_FLAIR",
+          "number": 1
+        },
+        {
+          "name": "EVENT_REWARD_TYPE_BOARD",
+          "number": 2
+        },
+        {
+          "name": "EVENT_REWARD_TYPE_PIECES",
+          "number": 3
+        },
+        {
+          "name": "EVENT_REWARD_TYPE_SOUNDS",
+          "number": 4
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "EventProgressBonusType",
+      "value": [
+        {
+          "name": "EVENT_PROGRESS_BONUS_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "EVENT_PROGRESS_BONUS_TYPE_DAILY_BONUS",
+          "number": 1
+        },
+        {
+          "name": "EVENT_PROGRESS_BONUS_TYPE_BOT_BUFF",
+          "number": 2
+        },
+        {
+          "name": "EVENT_PROGRESS_BONUS_TYPE_BASE",
+          "number": 3
+        },
+        {
+          "name": "EVENT_PROGRESS_BONUS_TYPE_VICTORY_MULTIPLIER",
+          "number": 4
+        },
+        {
+          "name": "EVENT_PROGRESS_BONUS_TYPE_GAME_REVIEW",
+          "number": 5
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

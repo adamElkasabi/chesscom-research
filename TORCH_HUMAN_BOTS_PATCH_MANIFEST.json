@@ -1,0 +1,822 @@
+{
+  "format": "incremental-overlay-v1",
+  "status": "PARTIALLY AUDITED",
+  "baseline": {
+    "filename": "website-complete-forensic-audit.zip",
+    "bytes": 106814152,
+    "sha256": "b0fc69d224b390b13f7d44fa59c19ab17eb02ceff260e51459ca80ee0b715282"
+  },
+  "preservation": "No original-documentation/history/native binaries/production extension replaced; no deletion required",
+  "manifest_self_hash_excluded": true,
+  "replacement_count": 17,
+  "addition_count": 109,
+  "files": [
+    {
+      "path": "website-audit/00_MASTER_INDEX.md",
+      "action": "replace",
+      "after_bytes": 3528,
+      "after_sha256": "b04c098a37d53b7080e1fcb608f169cbba0330fb760fbf849c87083fed5db4bf",
+      "before_bytes": 3114,
+      "before_sha256": "a92295111de7546287dc5841d4b53c7e187cf9d8f92b30d94a832ea8d5b8944b",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/01_EXECUTIVE_OVERVIEW.md",
+      "action": "replace",
+      "after_bytes": 6109,
+      "after_sha256": "8f9972b2cde1bc974cf4e515745b40bae11d65b76468b127fac0ce459cb081f3",
+      "before_bytes": 5620,
+      "before_sha256": "8117d6d29348f4137bcf38bc4d3eb211affe8cb1668ef74c1e69922c53a3aaf3",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/03_RECOVERED_KNOWLEDGE.md",
+      "action": "replace",
+      "after_bytes": 1893,
+      "after_sha256": "cebf6704a075dc28186f74396224b12437dda1ab5e5c458fa23e837c42aee825",
+      "before_bytes": 1376,
+      "before_sha256": "9f4dc58071f70b5004b9498e0ee20d8dddeca293f1a40935b6fcd9f9bfdccb3e",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/07_FRONTEND_ARCHITECTURE.md",
+      "action": "replace",
+      "after_bytes": 1844,
+      "after_sha256": "bffaa4d00ea00fe2b7e316a304a1cf5943432f06d97e2250bf849b0eb50a15bf",
+      "before_bytes": 1381,
+      "before_sha256": "519e0abfc245874a4aa4e19d3f5346ff1815d4cce51c1fa48e91bd31720fa3ee",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/12_SERVICES_AND_BUSINESS_LOGIC.md",
+      "action": "replace",
+      "after_bytes": 1793,
+      "after_sha256": "84c6d73fc44254283ebed1f9c9d67cb1abf3de9086e52eb9579a878ae8450475",
+      "before_bytes": 1294,
+      "before_sha256": "8c7bcb27ca76d65f139dc796a283c03c6621efa7f8250bda85469901e47fb024",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/13_API_AND_NETWORK_INVENTORY.md",
+      "action": "replace",
+      "after_bytes": 2083,
+      "after_sha256": "37266630a04c5c5fda4d91d74283e9a47bc9d7a24e01be03fabc9c7f077e2830",
+      "before_bytes": 1559,
+      "before_sha256": "3c96d3d971cd25fe59d30e8ac68b867cf7f64d988544fe3971330378954e2b98",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/21_URL_AND_REFERENCE_INDEX.md",
+      "action": "replace",
+      "after_bytes": 1397,
+      "after_sha256": "77040759c97e48707f41a7125100b290bb3fd0148c28bc1b8e9e9a6d2b222832",
+      "before_bytes": 920,
+      "before_sha256": "9bb15f1dd12d55ddeeb5302d34388b5a82fa5c63dcec9ee82f088a9abb888784",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/23_KNOWLEDGE_GAPS.md",
+      "action": "replace",
+      "after_bytes": 3548,
+      "after_sha256": "abfbf92eb665a5a39b56e13f95ce8972096b70b01ffcfd001427e18add2f5ca0",
+      "before_bytes": 2986,
+      "before_sha256": "77552f584695d71947c9c2cfa51fa10dfd4ce6078c70320d5658d444fb20b1d6",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/24_ARCHITECTURE_DIAGRAMS.md",
+      "action": "replace",
+      "after_bytes": 6725,
+      "after_sha256": "f2527875146cf5e63b5e5d4a4f8c586a97a35e6e58686f355ced15927e9db216",
+      "before_bytes": 6249,
+      "before_sha256": "9c29576265c5ab02a8ee2dce1fccef3462ef6cd57f882774657604da8abe5da0",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/25_FINAL_ARCHITECTURE_ASSESSMENT.md",
+      "action": "replace",
+      "after_bytes": 6193,
+      "after_sha256": "1b9b43b7f889dba2f31e4033690d3e0ad391273e22c8e299e80dd41a5ab5ad31",
+      "before_bytes": 5539,
+      "before_sha256": "1b41c638e0b833828ceae951cb8036d1b112cda82d7cfd2fb68f4811dbcd3d93",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/PACKAGING_AND_STORAGE.md",
+      "action": "replace",
+      "after_bytes": 3060,
+      "after_sha256": "642660eba5b57346973a635682a302232d99e4a1d7f32dd990a84fbef2f0affa",
+      "before_bytes": 2447,
+      "before_sha256": "6cb4f83fe5de1fa42dbadd90a851a35fccaaf7563fd37b5e276ab3166345c019",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/README.md",
+      "action": "replace",
+      "after_bytes": 1308,
+      "after_sha256": "1dcf05f19bba5d33d22b5d03689cf0a31ee4208838a3a5e1eac3cc5c0bc001f9",
+      "before_bytes": 803,
+      "before_sha256": "9a09f1df60a5c56b4ca9c2ce7eb937efe7b3f368711db4d52f06a008c68594de",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/TORCH_HUMAN_BOTS_PATCH_MANIFEST.md",
+      "action": "add",
+      "after_bytes": 3144,
+      "after_sha256": "c746e9dc38b88791880bf94bcee449762f56777d7cc5beb2a72356e3d5e9879e"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/00_START_HERE.md",
+      "action": "add",
+      "after_bytes": 3900,
+      "after_sha256": "c59ba103ea8fd2c74d1a2eb965dfaeabb351aa49ce879ca5ff037a82bc16a08d"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/01_TORCH_HUMAN.md",
+      "action": "add",
+      "after_bytes": 8076,
+      "after_sha256": "db5f81bc9a691c12510fab7ee0b47bfad94dd52b2bb2b71f8ab07a5268078af0"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/02_BOT_PERSONALITY_PIPELINE.md",
+      "action": "add",
+      "after_bytes": 9468,
+      "after_sha256": "2cca6163c0cad3d57c5d9089675e9494256f760c8dcdae1f5b10a2502f53c4a1"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/03_MODEL_AND_NATIVE_TESTS.md",
+      "action": "add",
+      "after_bytes": 7413,
+      "after_sha256": "9f1ab9ec08adc7359799a80edb9c9b6dde8f2bf8bac763d108e8952eba973b20"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/04_WORKER_AND_NAMESPACES.md",
+      "action": "add",
+      "after_bytes": 6134,
+      "after_sha256": "d9e21942799f2cc172d44da0b4b37454580be80a060d5bbd19e55147aa7d09b3"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/05_CORRECTIONS_AND_LIMITS.md",
+      "action": "add",
+      "after_bytes": 5852,
+      "after_sha256": "8b15dc6468d6ae93227beb915bad942ad24aae5facf05eec28e7044763cedc30"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/06_EVIDENCE_AND_REPRODUCTION.md",
+      "action": "add",
+      "after_bytes": 6368,
+      "after_sha256": "7a4acb869700fc9aadcba1cbf49cf48c0b83f93806317ed128084ef2551abd41"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/07_ARCHITECTURE_DIAGRAMS.md",
+      "action": "add",
+      "after_bytes": 2125,
+      "after_sha256": "8ddd18fca98ffbc311a525dcda13e45b1c00e2f8933f527796591eadfc1fb1d3"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/EVIDENCE_FILE_INDEX.json",
+      "action": "add",
+      "after_bytes": 21332,
+      "after_sha256": "36e131618dcbb0e169d69fc76b6e9dd720e278f14d5b79db6af36f2c4b3b8948"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/attempt-ledger.json",
+      "action": "add",
+      "after_bytes": 2682,
+      "after_sha256": "4bf857a488046b19bf50b62ea82b49d6ca1554658684ab649484953a07ac2117"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/baseline-source-references.json",
+      "action": "add",
+      "after_bytes": 762,
+      "after_sha256": "d42ef13ec878da3866f76b10e8b389eaada87e5987cd4abb52dc81cfa08aee18"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/claims.json",
+      "action": "add",
+      "after_bytes": 3701,
+      "after_sha256": "0ec65c51042ef0de974b679ab332338d50149ae501e1f25c1bd9750e00be9303"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/current-descriptors.json",
+      "action": "add",
+      "after_bytes": 698714,
+      "after_sha256": "a238f4e0d85e56c24cbfd0f62c3ba64b61f303c6c97106fbbbeaa6403c45a3b8"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/descriptor-index.json",
+      "action": "add",
+      "after_bytes": 68450,
+      "after_sha256": "5d00ea255dab6596de29d7e5da769627fba1c05dc58a12f4cd72ff199c655269"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/extracted-functions.json",
+      "action": "add",
+      "after_bytes": 90434,
+      "after_sha256": "0fed99e49d42618eeaf5fa379f2c702cf9ed70d75ef1e992078908c828397f22"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/focused-qc-report.json",
+      "action": "add",
+      "after_bytes": 943,
+      "after_sha256": "30bb3b7b39c47ea43b3f6715445de22607b2933542b0155a5e37375db0c41ccb"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/frontend-function-tests.json",
+      "action": "add",
+      "after_bytes": 6011,
+      "after_sha256": "bcae116feab1dfc02f681075adacbd089e1d6c692abab03f622d92c345235e40"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/historical-search-logs/probe-human-no-maia.txt",
+      "action": "add",
+      "after_bytes": 2076,
+      "after_sha256": "4af8cac723aad506566999182175456d34e537b625bc9e1a69b4a96a727a4621"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/historical-search-logs/probe-human.txt",
+      "action": "add",
+      "after_bytes": 2076,
+      "after_sha256": "b06e023c026662396acb7196a83bd581ffe1331661758f0236b4cf5d5434371b"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/historical-search-logs/probe-normal.txt",
+      "action": "add",
+      "after_bytes": 2074,
+      "after_sha256": "3549a8a3558314e5c6604fcf0b9066526782094ef8390bcecb26715535f317ee"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/model-header.json",
+      "action": "add",
+      "after_bytes": 1193,
+      "after_sha256": "d6a2ef41a9714fdce1c91d737a108e74b41460e502b3a1c3ad16bf017d0bcac9"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/model-retrieval.json",
+      "action": "add",
+      "after_bytes": 1068,
+      "after_sha256": "32fa1eed607f61e11e2665e9e911f5dfcd2978b3d521b2bae4bed2eeba590505"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/model-tensor-manifest.json",
+      "action": "add",
+      "after_bytes": 48838,
+      "after_sha256": "11d40dd02d668161ec635b9e72adc25d37d9d28a4cc5d9afe56abd4b44c969f2"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_bot.proto.bin",
+      "action": "add",
+      "after_bytes": 1141,
+      "after_sha256": "7fb8501d44c3d47169ffe39db95f5ffbe899a5baa4576ebc7802be0fe687dc10"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_bot_move_configuration.proto.bin",
+      "action": "add",
+      "after_bytes": 4277,
+      "after_sha256": "90afa533aa7db1142f8318cb6732c53b07b431002ed4f39179c73ef7d59317b4"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_charm_inference.proto.bin",
+      "action": "add",
+      "after_bytes": 659,
+      "after_sha256": "ecf527efa5de0c30e29c215d2421868ba4f1fca3af14d9d7dfdc2773578b4dbd"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_charm_inference_code.proto.bin",
+      "action": "add",
+      "after_bytes": 544,
+      "after_sha256": "27adf12affac3c40f21e3e0fa78e870209ba766081a11b4029b0eb4c9cb44981"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_compact_charm_inference.proto.bin",
+      "action": "add",
+      "after_bytes": 594,
+      "after_sha256": "a1865b8c9c5f836f272b0aee04176af2c721d1ba09d3583f175ae263f4801026"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_add_charm_inference.proto.bin",
+      "action": "add",
+      "after_bytes": 288,
+      "after_sha256": "9e86402b3b4a23314e09615485aba1ab16e43c882bea5eedaba299572404751e"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_bot_config_resources.proto.bin",
+      "action": "add",
+      "after_bytes": 590,
+      "after_sha256": "ba0275a8867cf91267168c44919a5578b598f2fe087fb37e6333aa93140c3679"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_bot_move_from_config.proto.bin",
+      "action": "add",
+      "after_bytes": 505,
+      "after_sha256": "cf3d205658502697498fa600f96ffab16dce0b4931d77a4b2c2e5ac04939c57e"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_cee_version.proto.bin",
+      "action": "add",
+      "after_bytes": 342,
+      "after_sha256": "2336a5dc15babdb552a87148d1b669a6131febe9c5ed7a7f4b5e152bfcb05632"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_charm_inference.proto.bin",
+      "action": "add",
+      "after_bytes": 503,
+      "after_sha256": "4ea6bc96ed648ea5060a3f0e843366ebddace5f2bd49d9406787828ee515dae6"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_get_bot_chat.proto.bin",
+      "action": "add",
+      "after_bytes": 797,
+      "after_sha256": "5a1148934a40da0323986ac532dac54986a4641da207425562d9f48853668310"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_get_bot_move.proto.bin",
+      "action": "add",
+      "after_bytes": 374,
+      "after_sha256": "a62625acb1f1330e868e86585c79bbd81baea366bdae3721675b81171ed6292a"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_load_bot.proto.bin",
+      "action": "add",
+      "after_bytes": 383,
+      "after_sha256": "4593bf5deb94b296f0e6a3e8635b957bf72ddfcb1d32cfd9343d2972a514d5cd"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_load_charm_model.proto.bin",
+      "action": "add",
+      "after_bytes": 272,
+      "after_sha256": "417612dd25c411b01a1da75ce43bbeb4d1a0918ddfadf0806f0668f189fba2b3"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_run_search.proto.bin",
+      "action": "add",
+      "after_bytes": 1228,
+      "after_sha256": "2358516f559ab23301015c0c896f31da14516ba3a99167790af70f33fb217349"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_features.proto.bin",
+      "action": "add",
+      "after_bytes": 5177,
+      "after_sha256": "26b41e4d42a351966093374854b69392a6398e43ea15a58ee4affeaba74ce1bc"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_game_features.proto.bin",
+      "action": "add",
+      "after_bytes": 6128,
+      "after_sha256": "301fe3f199c9f8ee6f64f80ea797fdc1adc471a06ee6f4633f72863c6904c7bb"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_game_settings.proto.bin",
+      "action": "add",
+      "after_bytes": 1673,
+      "after_sha256": "d38e4622d2e6052489aef9b253c0b6fad0c7a40e0ac0deefc1bce4c41b598cc1"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_internal_feature_maia_botmove.proto.bin",
+      "action": "add",
+      "after_bytes": 316,
+      "after_sha256": "a20cde4d6f01218b612e9ba57e56a06b00631048df4104fe367a3b5312ba441b"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_simple_charm_inference.proto.bin",
+      "action": "add",
+      "after_bytes": 638,
+      "after_sha256": "a97e2f464717de8faf5b1e2996ccdcc8d17852859572c92374019a080d285cb6"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_torch_search_mode.proto.bin",
+      "action": "add",
+      "after_bytes": 438,
+      "after_sha256": "c79f76757ddab3b564af82990e944ea80ac9f11ee67de137b477216f4630e382"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_game_features.proto.bin",
+      "action": "add",
+      "after_bytes": 4670,
+      "after_sha256": "0d529c14fa3449122518d92d5aa47eba764a94fb068769150c29848eb9d65422"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_charm_inference.proto.bin",
+      "action": "add",
+      "after_bytes": 707,
+      "after_sha256": "ee150c1da104b84d0ae1b302e1c955ea3a628888a018058d7e5521da9155081e"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_game_features.proto.bin",
+      "action": "add",
+      "after_bytes": 969,
+      "after_sha256": "8fcec798906fede23edc2f6976d4fceda0bcfbff373d6d65fe2c89675c9dc085"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_load_charm_model.proto.bin",
+      "action": "add",
+      "after_bytes": 343,
+      "after_sha256": "ce01f06d587db0f5b5041d08e934f036037e146fabd07d10589bbea5eaa02d4b"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_maia_botmove.proto.bin",
+      "action": "add",
+      "after_bytes": 326,
+      "after_sha256": "b0ee12e4b6a5d61e679736bd83b76a6a367b0b6862a60f9d83fd58cee3d35a4a"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_run_search.proto.bin",
+      "action": "add",
+      "after_bytes": 989,
+      "after_sha256": "ebcddb43e5481cd5f36dcec8fdd41569d0362eb7c4006ba8ca90acfb4b1a8561"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/offline-catalog-analysis.json",
+      "action": "add",
+      "after_bytes": 55632,
+      "after_sha256": "145aed50e3e769e649ef47a631e84b99da1f1f23eb1014392c168df049124fd1"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/page-safe-observations.json",
+      "action": "add",
+      "after_bytes": 966,
+      "after_sha256": "07128ba7ca2d067dfd37d4f6c5a18ba80f368a26167d270696aa445e259237ee"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.03a446da.Bw4BRYjdl2.chunk.js",
+      "action": "add",
+      "after_bytes": 2342,
+      "after_sha256": "d3219e420bdfb07e61b6f360add5928676fddcde01fb2d09622eda10da82a889"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.197936d8.CYY9Ulv5HI.chunk.js",
+      "action": "add",
+      "after_bytes": 1404,
+      "after_sha256": "4cd1703a45358e775ce4cae9639483a14df478c059b6d3ada94713ea617b59e9"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.3755d359.C_dFGAfc_J.chunk.js",
+      "action": "add",
+      "after_bytes": 10038,
+      "after_sha256": "c22ae37a566aea5f790169bafbed6f8f76c5aabf7e50d68957622f91b1aa683a"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.411a4358.B-kUvQ32jr.chunk.js",
+      "action": "add",
+      "after_bytes": 71162,
+      "after_sha256": "a80203a4fcd9241bb85f2b70b2977a73a06ad94b390f11849e698c56ee91f745"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.51b83ca9.CF4468reW-.chunk.js",
+      "action": "add",
+      "after_bytes": 6463,
+      "after_sha256": "0215221a8f480c3feddcbe52f3d16ce10b713fd5af5f9e62ab29885368bbc8a1"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.7b2a3a15.BJcgONyKOv.chunk.js",
+      "action": "add",
+      "after_bytes": 1961,
+      "after_sha256": "cd7c362b0f231d4a74654c39984e7efc00d3c12da10147691232291f032fdf3d"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.832f50bc.B3blLI0QnI.chunk.js",
+      "action": "add",
+      "after_bytes": 1390,
+      "after_sha256": "23bc865a14c8f62075acdfd5a2aaede29aca6a30857d96809012ca71c1426850"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.84ddf004.C_agZvH3k8.chunk.js",
+      "action": "add",
+      "after_bytes": 1462,
+      "after_sha256": "8df41d6956cd1aa6a89ae389274e24491d597b1ebae04221710877e7376eb355"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.95f74025.BEB99SqjwX.chunk.js",
+      "action": "add",
+      "after_bytes": 11529,
+      "after_sha256": "b453b3acf046973c0e4421d657c60b35ad35eb6bd7dfd3a4eecc454e26a708f7"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.97389e02.BM87mECVhI.chunk.js",
+      "action": "add",
+      "after_bytes": 3941,
+      "after_sha256": "a1194fd8552ffb60ff00ca781cbe0fe896fe7f0d184e0cbc2b827d089e60d391"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.c1bea4c9.y6HURMY3cu.chunk.js",
+      "action": "add",
+      "after_bytes": 16836,
+      "after_sha256": "c65b0722a931b96dd3b24f100d4930c6fdad3bd8a8f0ac520bcc9bc1a9526465"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.c7e9d7cf.2X_nVI74xM.chunk.js",
+      "action": "add",
+      "after_bytes": 1395,
+      "after_sha256": "0e68cd2beb70618bf247a859edde1960a1d36b2bd413da02c620065d10e1eaa8"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.ce4ac26f.oAXtK4-p_j.chunk.js",
+      "action": "add",
+      "after_bytes": 35075,
+      "after_sha256": "392b96fb6e10a5c104478f0b3e157636172c8f562fd9b5ad43eca3fcf9fc0e04"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.d25957d5.CGTiCJaz3J.chunk.js",
+      "action": "add",
+      "after_bytes": 56116,
+      "after_sha256": "29283e49477962f420226c50543e47b5aae5875a44be34e5e3b186a081ce49bf"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.dbeb9287.KRB1FxeFDj.chunk.js",
+      "action": "add",
+      "after_bytes": 1476,
+      "after_sha256": "de26fd077f7facb04be030b419c8df4d703b2ccc4bf801d26c9ab9ef22fb714d"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/client.f1259893.BXJ2Fy8QF8.chunk.js",
+      "action": "add",
+      "after_bytes": 3072,
+      "after_sha256": "78066c8ce494287148e04af22d44057c178bc655ecd2b7a688d86b4d1d09eef6"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/computer-shared.js",
+      "action": "add",
+      "after_bytes": 2991929,
+      "after_sha256": "8b8c2aa987b26cb39358a68a8d3395cd37d47439dff15bea3da44720243569f6"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/offline-bot-groups.js",
+      "action": "add",
+      "after_bytes": 384127,
+      "after_sha256": "3654aee90c398c0a5230ac572fe53bfe389cfc92aa013e624865ddf1e3766221"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/public-scripts/play-computer.js",
+      "action": "add",
+      "after_bytes": 417849,
+      "after_sha256": "c8ae87b4ff99d0c52d027c6f28d2b8a6042e9dd8551ad2f06eaa230dcac85bc1"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-charm-initial-timeout.json",
+      "action": "add",
+      "after_bytes": 1804,
+      "after_sha256": "0941eaccecde220e231b3ebfce5fb0f273bc9823daa2f91f2002670c01b26392"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-charm-missing.json",
+      "action": "add",
+      "after_bytes": 9269,
+      "after_sha256": "eac03713c790fbaa8ee98937d8323cef1de0769b861698d83face6cbe2cd5d03"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-charm.json",
+      "action": "add",
+      "after_bytes": 78703,
+      "after_sha256": "e663ac863de934ecda0e37fff3ce9685d92c8fc49c378fa81f24dd7479c2c995"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-human-default.json",
+      "action": "add",
+      "after_bytes": 9958,
+      "after_sha256": "24ae5e5afbab78b80f5d03a17bb4cb68d96006d6390a82303666554954040ac2"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-human-no-maia.json",
+      "action": "add",
+      "after_bytes": 9999,
+      "after_sha256": "f938ab1cc344fb80c51b8c480655a68a472277fe826cec82f822bec104d5aa26"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-human-normal.json",
+      "action": "add",
+      "after_bytes": 13635,
+      "after_sha256": "25e4716f8bb4c4546b749e3823bb5c6af214fafd2559968a626675f036fcbb78"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/runtime-legacy.json",
+      "action": "add",
+      "after_bytes": 9157,
+      "after_sha256": "1314ab751923a1ee47466f6cdf8e14d5cb5fb1b9d471aadebd2e1ef623fe8cb5"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/bot.proto",
+      "action": "add",
+      "after_bytes": 1325,
+      "after_sha256": "f170a23a8561c5b2f1f2da73f41a166ad39dcc916d1180ef1b8790a928df6140"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/bot_move_configuration.proto",
+      "action": "add",
+      "after_bytes": 4927,
+      "after_sha256": "37de2a1a8b9bcb2189bfe0e57362ba0ac4d9a375a77ac7e47bdf8cf005d0b9e9"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/charm_inference.proto",
+      "action": "add",
+      "after_bytes": 807,
+      "after_sha256": "51eb507e9bc00c2ef264047b0fef409d55df1ee1dc528ca678db10848a5be94b"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/charm_inference_code.proto",
+      "action": "add",
+      "after_bytes": 709,
+      "after_sha256": "b2f5e0af26a2fcda370f95955d3efb19c5b2dcc80d34c03893e1f0a520dd300a"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/compact_charm_inference.proto",
+      "action": "add",
+      "after_bytes": 827,
+      "after_sha256": "dd6caa770ad8e11b0dfe9830f336b244f32fc26816890a6dc8f4b21e68d63bfb"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_bot_config_resources.proto",
+      "action": "add",
+      "after_bytes": 670,
+      "after_sha256": "506def4c470e102777463216eb9f79c6d340c68e76833f9e02322a01ca26d5af"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_bot_move_from_config.proto",
+      "action": "add",
+      "after_bytes": 505,
+      "after_sha256": "ab0e28c0df8ccb21570171235df45cb11383f834347bb447e31642f0fa208959"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_cee_version.proto",
+      "action": "add",
+      "after_bytes": 390,
+      "after_sha256": "aea358ec1a5efe55db6035360761140aa0090dd43b7149738da5ef8e6579ea3c"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_charm_inference.proto",
+      "action": "add",
+      "after_bytes": 529,
+      "after_sha256": "f97f50e59a0f6fc72b7b9e5829e90f89bc70c4cd8da934e3494ce5dc3b216e96"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_get_bot_chat.proto",
+      "action": "add",
+      "after_bytes": 818,
+      "after_sha256": "811620cefaedbeb2aa37d8dcb43e7a82512c105602b60372da7f23dea41b0b6c"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_get_bot_move.proto",
+      "action": "add",
+      "after_bytes": 368,
+      "after_sha256": "848b46110957a8a5d4c8887e7b5a6981d581d75cdd9883201dcb515d3ee84d16"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_load_bot.proto",
+      "action": "add",
+      "after_bytes": 492,
+      "after_sha256": "9a04347a2a6693d2569fad4ff7d04dfc77a2480540695d6e0a7c945d46834551"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/feature_run_search.proto",
+      "action": "add",
+      "after_bytes": 1273,
+      "after_sha256": "5b49b8bbedb17793037dca90e4f7b7fe67c593e8b53bcebd73c04d1770c02a11"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/features.proto",
+      "action": "add",
+      "after_bytes": 5526,
+      "after_sha256": "66724324edca4bc1306a021d1c325b247a7c6af26f4fee5be7622facf4575fdf"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/game_settings.proto",
+      "action": "add",
+      "after_bytes": 1529,
+      "after_sha256": "35a295ef15e97658494692fbda49dd5765cad7be00b1743791c2a57fe82c3c0f"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/internal_feature_maia_botmove.proto",
+      "action": "add",
+      "after_bytes": 395,
+      "after_sha256": "ebf7ef3b338768978909e35e952aec7307e5bc25a194335bc85bd2e247b5ca99"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/simple_charm_inference.proto",
+      "action": "add",
+      "after_bytes": 834,
+      "after_sha256": "9cb1fdab6d43c74de096b64d0455265a9cfeb28f7e70e52c8da8bac9b554608f"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/schemas/torch_search_mode.proto",
+      "action": "add",
+      "after_bytes": 529,
+      "after_sha256": "e8ae3321a9e8827b1c2acb5a539aaedd4938e9cc15bcbc93b3d53930560f51e0"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/service-routing.json",
+      "action": "add",
+      "after_bytes": 72129,
+      "after_sha256": "f44427e74c60798c39d1dd853461cb167d9cb29cc61f16de65370d1ea5498bd0"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/evidence/source-manifest.json",
+      "action": "add",
+      "after_bytes": 15878,
+      "after_sha256": "ad0e10c940432e79f82896962795aa538ecbb337c38adb72699d7220e182db34"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/decode_descriptors.py",
+      "action": "add",
+      "after_bytes": 2005,
+      "after_sha256": "9844182829a8f1a0fa9fc7114c319bce530bf02a17ad4045e12050bec32b589e"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/extract.cjs",
+      "action": "add",
+      "after_bytes": 2602,
+      "after_sha256": "42d91df32169203523443c5047b495c115c61c79082b775fec08e36c091ca305"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/lib/descriptors.js",
+      "action": "add",
+      "after_bytes": 910354,
+      "after_sha256": "28b92c2eb005f7d6c2823c0012ebf9832b97a79615b3e5b10be0bbd67e6beada"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/lib/protobuf.js",
+      "action": "add",
+      "after_bytes": 17092,
+      "after_sha256": "9bfe315bd2c6c56a3c843cfd78efac6ff20485db2d0ca073cc752b1266e44e5a"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/package.json",
+      "action": "add",
+      "after_bytes": 18,
+      "after_sha256": "1239d4d885dcad42201a27ed9324f8f0f760b78700d8db9ced39a511cffe7eae"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/parse_model.py",
+      "action": "add",
+      "after_bytes": 1801,
+      "after_sha256": "b29c6795c964801753594aa1b52542738ec189c92abaed436f0421121066f0e9"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/probe.mjs",
+      "action": "add",
+      "after_bytes": 5367,
+      "after_sha256": "e4f7d6f8237dac6e1e59c9e688f70322cd20933654288573471444971bbece3c"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/retrieve-model.py",
+      "action": "add",
+      "after_bytes": 792,
+      "after_sha256": "66010cbcde65b1f9a98bb4e72a8609ba57f6f0cf5983bca758107ce38e020e84"
+    },
+    {
+      "path": "website-audit/torch-human-bots-update/tools/test-functions.cjs",
+      "action": "add",
+      "after_bytes": 4544,
+      "after_sha256": "c00849a8dbcfa5ea511579d3adb7c289a5eac47c4688f665d394f19050a6ff62"
+    },
+    {
+      "path": "website-audit/verify-torch-human-bots-patch.py",
+      "action": "add",
+      "after_bytes": 1717,
+      "after_sha256": "72229f979498af2c193b507f613de3bd6cfef7206821dd9d26b7d65c2b2dff4a"
+    },
+    {
+      "path": "website-audit/wasm-deep-follow-up/reports/00-START-HERE.md",
+      "action": "replace",
+      "after_bytes": 4209,
+      "after_sha256": "c9278cee7e0f7be760584a4d23a34a8c3a1685a9dae4367d728d3b7db3294dc8",
+      "before_bytes": 3674,
+      "before_sha256": "377cc2da6bb1633992f767e0f2b6bdc777a6d0d9ff2e44b724d334d5bb39b837",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/wasm-deep-follow-up/reports/04-CEE-semantic-case-studies.md",
+      "action": "replace",
+      "after_bytes": 8678,
+      "after_sha256": "968d94f7135f816cf9c93491811a57bf0dc9f488ecb0925166c56fb711ce127c",
+      "before_bytes": 8164,
+      "before_sha256": "8ddde5cd013f06440c2a23542b552b8fa005d9457bc28954f0695cb4b83deb11",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/wasm-deep-follow-up/reports/05-memory-and-companions.md",
+      "action": "replace",
+      "after_bytes": 3782,
+      "after_sha256": "3599601ac20274943275648138999e8d5cf42c766b535eed35d5deb9333022fd",
+      "before_bytes": 3171,
+      "before_sha256": "ab26d76f9a908db0350be65f8dbdfb04daf4931110eaf95e618d3e317a5da839",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/wasm-deep-follow-up/reports/07-architecture-and-reconstructability.md",
+      "action": "replace",
+      "after_bytes": 2910,
+      "after_sha256": "901eb233bc27695bfa3f9433a124b31524a70a64d4744548f2c22bb3446e4b43",
+      "before_bytes": 2384,
+      "before_sha256": "ce0d16b26f1411feb61c16a4c88cdbc0a9a7e37607b08ce6c43baef9fb4f5572",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    },
+    {
+      "path": "website-audit/wasm-deep-follow-up/reports/08-limitations-and-next-steps.md",
+      "action": "replace",
+      "after_bytes": 3088,
+      "after_sha256": "504b1e1865e6d999c704333aa237a5a22c6377e95bde0242a4dd0b26f0fe1dcb",
+      "before_bytes": 2522,
+      "before_sha256": "ce2c5a53c9a1fc1b90896c532dd07ddb74cbeaa561f7a096be7a975f820882c6",
+      "reason": "Explicit additive focused-update notice and cross-link; prior report text retained"
+    }
+  ]
+}

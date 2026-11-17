@@ -1,0 +1,153 @@
+Senior Backend (PHP) Product Engineer with Chess.com | Escape The City
+Home
+Live
+roles
+Search jobs
+Search volunteering roles
+Top 10 opportunities
+Top 1% Employers
+Top 1% Employers: Escape Certified
+Become a Top 1% Employer: Escape Certified?
+Search all organisations
+Compare organisations
+Programmes
+Resources
+Sign In
+Live
+roles
+Search jobs
+Unique roles to do something different
+Search volunteering roles
+Use your skills for the power of good
+Top 10 opportunities
+This week’s most exciting new roles
+Top 1% Employers
+Top 1% Employers: Escape Certified
+Browse people & culture that we have certified
+Become a Top 1% Employer: Escape Certified?
+Take our free People & Culture assessment
+Search all organisations
+Compare organisations
+Programmes
+Resources
+For Organisations
+Our services
+Overview of our services for organisations
+Job posting
+Everthing you need to know about posting a job to the #1 purpose led UK job board
+Top 1% Employer Certification
+The ultimate benmark for progressive organisations
+Shift
+People & Culture Services - Helping organisations to walk the talk
+Employer login / sign up
+Sign In
+Return to jobs
+Senior Backend (PHP) Product Engineer
+Chess.com
+Posted over 30 days ago...
+Expired
+Join the vibrant team at Chess.com to innovate and contribute to the world's premier chess platform
+Overview
+Salary
+No salary declared 😔
+Location
+Nomad Friendly?
+Expires
+Expires at anytime
+Role snap shot
+Full job description
+Chess.com is a beacon for chess enthusiasts around the globe, boasting one of the largest gaming communities and ranking as the top destination for chess gameplay, education, and enjoyment. With a remote workforce of over 700 people across 65+ countries, Chess.com is dedicated to enhancing the experience of 100M+ chess players by providing superior products, content, and tools. The company champions a mission-driven, flat-structured, celebratory culture free of corporate constraints, eagerly anticipating the unique skills each new team member can offer.
+Design and develop advanced backend systems for a top 200 global website.
+Collaborate closely with cross-functional teams throughout the product lifecycle.
+Apply software engineering best practices to ensure scalable and maintainable solutions.
+Share knowledge and mentor junior developers within the team.
+Comfortable working with multiple application stacks and a strong grasp of PHP (Symfony preferred).
+Effective communication skills and the ability to integrate systems holistically.
+Skilled in simplifying complex problems and thinking outside the box.
+At least 5 years of experience in PHP, with proficiency in MySQL, Git & GitHub, Doctrine, Redis, PHPUnit/PHPSpec, Resque, and Vagrant/VirtualBox.
+Deep knowledge of software design and architecture, SQL schema design, and query optimization.
+Familiarity with command line and Unix systems.
+Prior experience in a fully distributed team is beneficial.
+A strong sense of ownership and responsibility.
+Passionate about chess and a commitment to continuous learning.
+About Us
+Chess.com
+is one of the largest gaming sites in the world and the #1 platform for playing, learning, and enjoying chess.
+We are a team of 700+ fully remote people in 65+ countries working hard to serve the global chess community. We are here to support 100M+ chess players worldwide with the best possible product, content, and tools to serve the community!
+We are a tech company. A gaming company. A content company. And we do it all with passion and commitment to the game. Above all we prize our mission-driven, flat, life-celebrating, no-corporate culture, and we look forward to meeting you and learning more about what you can bring to the team.
+About You
+You are a product-minded multidisciplinary engineer who excels at working closely with Product Managers, Designers, and Frontend Developers at every stage of the product development cycle.
+You have a high tolerance for technical spec ambiguity during the early phases of product discovery. You cut through complexity while offering simplified solutions that maximize output and future-proofing.
+Your holistic understanding of product development and in-depth experience of software engineering principles, such as SOLID, are foundational to your nuanced architectural decisions. Being a naturally unorthodox thinker, you can confidently seek out innovative solutions for recurring development challenges.
+You are humble with a sense of humor and don’t take yourself too seriously. You have been working in or dreamed of working in the gaming industry and are ready to turn your talents towards chess!
+What You’ll Do
+Work with a multidisciplinary team to design and build the best possible chess experience using the most relevant software engineering principles
+Build and optimize backend systems, scaling for a global top 200 website
+Contribute to technology, architecture, workﬂow, and design decisions
+Contribute to the backend development team knowledge-base, and mentor junior developers
+Preferred Skills
+Multidisciplinary - familiar with many application stacks
+Concise communicator
+Holistic integrator
+Complexity simplifier
+Unorthodox thinker
+5+ years PHP experience (Symfony preferred)
+Experience with across programming softwares such as MySQL, Git & GitHub, Doctrine, Redis, PHPUnit/PHPSpec, Resque, and Development VMs: Vagrant/VirtualBox
+Excellent understanding of software design and architectural patterns
+Experience with SQL schema design and query optimization
+Experience with command line and Unix systems
+Experience working with a fully distributed team
+Sense of ownership and responsibility
+Chess player
+Lifelong learner
+About the Opportunity
+This is a full time or equivalent position
+We are 100% remote (work from anywhere!)
+This is open to applicants from anywhere!
+You can learn more about us here:
+https://www.chess.com/blog/erik/how-chess-com-s-100-person-virtual-team-works-together
+https://www.chess.com/about
+We look forward to meeting you!
+Chess.com
+Play chess online for free on Chess.com with over 50 million members from around the world. Have fun playing with friends or challenging the computer!
+Overview
+Size
+515
+Unique
+,
+purpose-driven
+companies...
+Escapes Overview
+Dom Jackman Co Founder - Escape the City
+The oldest game in the world and the most popular game in the world. The brainchild of two college students who wanted a place to play chess with friends online, Chess.com is now a global platform with 50 million members and over 1 billion games played. Not only a place to play, it is also a community of people who love the game. There are live tournaments, lessons from the world's best players, tactics puzzles and more. And if you're wondering, yes, you can play in space. It's a fun, vibrant and unique organisation that has built a truly global community.
+Introducing Top 1% Employer: Escape Verified.
+The ultimate benchmark for progressive organisations.
+Find out more
+FOR ORGANISATIONS
+Your progressive people partner
+Post your jobs, become a Top 1% Employer and more. We work with organisations who aspire to do things differently.
+Learn More
+Report a bug
+Escape The City Ltd.
+Platf9rm,
+Hove Town Hall,
+Hove,
+BN3 2AF
+Escapees
+Join
+Find a Job
+Courses
+Resources
+For Organisations
+How we can help
+Job Posting
+Top 1% Certification
+Shift - People & Culture
+About
+About Us
+Our Team
+Our Book
+Terms & Conditions
+Privacy Policy
+Cookies
+© 2009 - 2026 Co. # 07036498, VAT: GB 109 9293 88

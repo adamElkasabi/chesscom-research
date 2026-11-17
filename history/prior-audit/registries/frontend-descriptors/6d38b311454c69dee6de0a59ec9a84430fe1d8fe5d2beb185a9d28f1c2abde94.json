@@ -1,0 +1,133 @@
+{
+  "name": "chesscom/user_relationships/v2/user_relationships_model.proto",
+  "package": "chesscom.user_relationships.v2",
+  "message_type": [
+    {
+      "name": "UserRelationship",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipType"
+        },
+        {
+          "name": "direction",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipDirection"
+        },
+        {
+          "name": "created_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    },
+    {
+      "name": "UserRelationshipRequestCriteria",
+      "field": [
+        {
+          "name": "relationship_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipType"
+        },
+        {
+          "name": "direction",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipDirection"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UserRelationshipInteraction",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipType"
+        },
+        {
+          "name": "direction",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_relationships.v2.UserRelationshipDirection"
+        },
+        {
+          "name": "created_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_created_at"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserRelationshipDirection",
+      "value": [
+        {
+          "name": "USER_RELATIONSHIP_DIRECTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_RELATIONSHIP_DIRECTION_INCOMING",
+          "number": 1
+        },
+        {
+          "name": "USER_RELATIONSHIP_DIRECTION_OUTGOING",
+          "number": 2
+        },
+        {
+          "name": "USER_RELATIONSHIP_DIRECTION_MUTUAL",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UserRelationshipType",
+      "value": [
+        {
+          "name": "USER_RELATIONSHIP_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_RELATIONSHIP_TYPE_FRIENDSHIP",
+          "number": 1
+        },
+        {
+          "name": "USER_RELATIONSHIP_TYPE_BLOCK",
+          "number": 2
+        },
+        {
+          "name": "USER_RELATIONSHIP_TYPE_FRIEND_REQUEST",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

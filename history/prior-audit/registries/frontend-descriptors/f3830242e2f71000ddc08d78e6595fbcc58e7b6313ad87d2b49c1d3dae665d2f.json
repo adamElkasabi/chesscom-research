@@ -1,0 +1,98 @@
+{
+  "name": "chesscom/proto_options/annotations/v1/annotations.proto",
+  "package": "chesscom.proto_options.annotations.v1",
+  "message_type": [
+    {
+      "name": "Usage",
+      "field": [
+        {
+          "name": "platform",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.annotations.v1.Platform"
+        },
+        {
+          "name": "project",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.annotations.v1.Project"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "Platform",
+      "value": [
+        {
+          "name": "PLATFORM_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLATFORM_MOBILE",
+          "number": 1
+        },
+        {
+          "name": "PLATFORM_WEB",
+          "number": 2
+        },
+        {
+          "name": "PLATFORM_BACKEND",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "Project",
+      "value": [
+        {
+          "name": "PROJECT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PROJECT_CHESSCOM",
+          "number": 1
+        },
+        {
+          "name": "PROJECT_CHESSKID",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "message_used_by",
+      "extendee": ".google.protobuf.MessageOptions",
+      "number": 60000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.annotations.v1.Usage",
+      "json_name": "messageUsedBy",
+      "proto3_optional": true
+    },
+    {
+      "name": "enum_used_by",
+      "extendee": ".google.protobuf.EnumOptions",
+      "number": 60001,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.annotations.v1.Usage",
+      "json_name": "enumUsedBy",
+      "proto3_optional": true
+    },
+    {
+      "name": "service_used_by",
+      "extendee": ".google.protobuf.ServiceOptions",
+      "number": 60002,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.annotations.v1.Usage",
+      "json_name": "serviceUsedBy",
+      "proto3_optional": true
+    }
+  ],
+  "syntax": "proto3"
+}

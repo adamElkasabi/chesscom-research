@@ -1,0 +1,72 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_generate_train_items.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/color.proto",
+    "chesscom/train/v1/train_challenge.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureGenerateTrainItemsRequest"
+    },
+    {
+      "name": "GeneratedTrainItem",
+      "field": [
+        {
+          "name": "pre_pitch_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_color",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "opponent_pitch_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "ply",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "source_played_move",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "challenge",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainChallenge"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureGenerateTrainItemsResponse",
+      "field": [
+        {
+          "name": "train_items",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.GeneratedTrainItem"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,1 @@
+CEE wasm load: source=emscripten bytes=- attempts=- transfer=- compile=499ms engineInit=548ms total=1046ms

@@ -1,0 +1,49 @@
+{
+  "name": "chesscom/payments/v1/goodwill.proto",
+  "package": "chesscom.payments.v1",
+  "enum_type": [
+    {
+      "name": "GoodwillSiteFault",
+      "value": [
+        {
+          "name": "GOODWILL_SITE_FAULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GOODWILL_SITE_FAULT_OUTAGE",
+          "number": 1
+        },
+        {
+          "name": "GOODWILL_SITE_FAULT_BUG",
+          "number": 2
+        },
+        {
+          "name": "GOODWILL_SITE_FAULT_FAILED_OPERATION",
+          "number": 3
+        },
+        {
+          "name": "GOODWILL_SITE_FAULT_WRONG_ACTION",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "GrantGoodwillDiamondResult",
+      "value": [
+        {
+          "name": "GRANT_GOODWILL_DIAMOND_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GRANT_GOODWILL_DIAMOND_RESULT_DIAMOND_STARTED",
+          "number": 1
+        },
+        {
+          "name": "GRANT_GOODWILL_DIAMOND_RESULT_DAYS_ADDED",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

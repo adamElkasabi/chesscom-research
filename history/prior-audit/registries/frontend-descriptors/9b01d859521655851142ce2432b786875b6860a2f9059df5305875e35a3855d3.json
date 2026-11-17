@@ -1,0 +1,111 @@
+{
+  "name": "chesscom/explanation_engine/v1/simple_charm_inference.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SimpleCharmMovePrediction",
+      "field": [
+        {
+          "name": "uci_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "probability",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SimpleCharmInference",
+      "field": [
+        {
+          "name": "model_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "moves",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SimpleCharmMovePrediction"
+        },
+        {
+          "name": "expected_points",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "rank_probabilities",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "strength_probabilities",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "time_taken_probabilities",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "ldw_probabilities",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "strength_rating_sensitive_probabilities",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_rating"
+        },
+        {
+          "name": "_expected_points"
+        }
+      ]
+    },
+    {
+      "name": "SimpleCharmInferences",
+      "field": [
+        {
+          "name": "inferences",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SimpleCharmInference"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

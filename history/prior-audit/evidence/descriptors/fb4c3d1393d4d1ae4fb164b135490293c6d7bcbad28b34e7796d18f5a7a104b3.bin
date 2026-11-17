@@ -1,0 +1,11 @@
+
+Nchesscom/explanation_engine/v1alpha/internal_feature_position_properties.proto#chesscom.explanation_engine.v1alpha"*
+(InternalFeaturePositionPropertiesRequest"Ë
+)InternalFeaturePositionPropertiesResponse
+is_open (
+is_semi_open (
+	is_closed (
+white_is_active (
+white_is_passive (
+black_is_active (
+black_is_passive (bproto3

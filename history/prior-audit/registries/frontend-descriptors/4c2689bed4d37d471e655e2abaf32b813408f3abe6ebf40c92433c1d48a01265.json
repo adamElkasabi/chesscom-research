@@ -1,0 +1,36 @@
+{
+  "name": "chesscom/payments/v1/storefront_country.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "StorefrontCountry",
+      "field": [
+        {
+          "name": "country_code",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "currency_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "tax_inclusive_prices",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "should_display_checkout_disclaimer",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,161 @@
+[
+  {
+    "id": "UNAV-001",
+    "source": "Other conversations / historical tool transcript exports",
+    "reason": "No conversation-history retrieval mechanism or export available.",
+    "references": [
+      "SRC-2049"
+    ]
+  },
+  {
+    "id": "UNAV-002",
+    "source": "Separate persistent-memory database",
+    "reason": "No memory-search tool exposed; only current supplied context exists.",
+    "references": [
+      "SRC-2049"
+    ]
+  },
+  {
+    "id": "UNAV-003",
+    "source": "Original browser profile/history/DevTools HAR and WS session",
+    "reason": "No authorized profile/capture available; saved HTML is not a browser history export.",
+    "references": [
+      "SRC-2049"
+    ]
+  },
+  {
+    "id": "UNAV-004",
+    "source": "REA ev_a9a06871d585d6f7e3034afca02807f6a559738b9db111ce2259360bf479bcce",
+    "reason": "Only cited in uploaded documents; external record not accessible.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-005",
+    "source": "CLIENT-SIDE.md",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-006",
+    "source": "REDOWNLOAD.md",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-007",
+    "source": "ALL-SCHEMAS.proto",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-008",
+    "source": "chesscom/evidence/app-bundle.json",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-009",
+    "source": "tools/ceac-dump.mjs",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-010",
+    "source": "tools/protoread.py",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-011",
+    "source": "tools/extract-client-tables.py",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-012",
+    "source": "crosscheck/crosscheck.py",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-013",
+    "source": "crosscheck/analysis_subset_pb2.py",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-014",
+    "source": "client/analysis-client.mjs",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-015",
+    "source": "chess-eval-bar/page-agent.js",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-016",
+    "source": "chess-eval-bar/test/logic.test.mjs",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-017",
+    "source": "raw/play-computer.js",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  },
+  {
+    "id": "UNAV-018",
+    "source": "raw/shared.eager.B4_eyo3T4t.chunk.js",
+    "reason": "Referenced historical artifact not found at that path in the complete original file inventory. Related/re-downloaded schemas or bundles may exist; they are indexed separately, not claimed identical without checksum proof.",
+    "references": [
+      "SRC-2047",
+      "SRC-2048"
+    ]
+  }
+]

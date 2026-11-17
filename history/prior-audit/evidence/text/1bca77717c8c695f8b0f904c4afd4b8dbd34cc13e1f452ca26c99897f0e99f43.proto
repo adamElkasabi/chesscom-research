@@ -1,0 +1,9 @@
+// source: chesscom/chess/v1/eco.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+message EcoFamily {
+  optional uint32 eco_family_id = 1;
+  optional string name = 2;
+}

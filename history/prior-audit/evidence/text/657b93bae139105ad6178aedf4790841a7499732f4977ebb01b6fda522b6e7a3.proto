@@ -1,0 +1,72 @@
+// source: chesscom/chess/v1/square.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum Square {
+  SQUARE_UNSPECIFIED = 0;
+  SQUARE_A1 = 1;
+  SQUARE_B1 = 2;
+  SQUARE_C1 = 3;
+  SQUARE_D1 = 4;
+  SQUARE_E1 = 5;
+  SQUARE_F1 = 6;
+  SQUARE_G1 = 7;
+  SQUARE_H1 = 8;
+  SQUARE_A2 = 9;
+  SQUARE_B2 = 10;
+  SQUARE_C2 = 11;
+  SQUARE_D2 = 12;
+  SQUARE_E2 = 13;
+  SQUARE_F2 = 14;
+  SQUARE_G2 = 15;
+  SQUARE_H2 = 16;
+  SQUARE_A3 = 17;
+  SQUARE_B3 = 18;
+  SQUARE_C3 = 19;
+  SQUARE_D3 = 20;
+  SQUARE_E3 = 21;
+  SQUARE_F3 = 22;
+  SQUARE_G3 = 23;
+  SQUARE_H3 = 24;
+  SQUARE_A4 = 25;
+  SQUARE_B4 = 26;
+  SQUARE_C4 = 27;
+  SQUARE_D4 = 28;
+  SQUARE_E4 = 29;
+  SQUARE_F4 = 30;
+  SQUARE_G4 = 31;
+  SQUARE_H4 = 32;
+  SQUARE_A5 = 33;
+  SQUARE_B5 = 34;
+  SQUARE_C5 = 35;
+  SQUARE_D5 = 36;
+  SQUARE_E5 = 37;
+  SQUARE_F5 = 38;
+  SQUARE_G5 = 39;
+  SQUARE_H5 = 40;
+  SQUARE_A6 = 41;
+  SQUARE_B6 = 42;
+  SQUARE_C6 = 43;
+  SQUARE_D6 = 44;
+  SQUARE_E6 = 45;
+  SQUARE_F6 = 46;
+  SQUARE_G6 = 47;
+  SQUARE_H6 = 48;
+  SQUARE_A7 = 49;
+  SQUARE_B7 = 50;
+  SQUARE_C7 = 51;
+  SQUARE_D7 = 52;
+  SQUARE_E7 = 53;
+  SQUARE_F7 = 54;
+  SQUARE_G7 = 55;
+  SQUARE_H7 = 56;
+  SQUARE_A8 = 57;
+  SQUARE_B8 = 58;
+  SQUARE_C8 = 59;
+  SQUARE_D8 = 60;
+  SQUARE_E8 = 61;
+  SQUARE_F8 = 62;
+  SQUARE_G8 = 63;
+  SQUARE_H8 = 64;
+}

@@ -1,0 +1,22 @@
+// source: chesscom/api/v1/pagination.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message RequestPagination {
+  oneof _page_size {
+  int32 page_size = 1;
+  }
+  oneof _page_token {
+  string page_token = 2;
+  }
+}
+
+message ResponsePagination {
+  oneof _next_page_token {
+  string next_page_token = 1;
+  }
+  oneof _total_size {
+  int32 total_size = 2;
+  }
+}

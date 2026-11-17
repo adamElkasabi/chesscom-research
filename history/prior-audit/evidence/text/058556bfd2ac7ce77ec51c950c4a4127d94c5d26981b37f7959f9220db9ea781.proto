@@ -1,0 +1,19 @@
+// source: chesscom/settings/v1/settings_model.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message Setting {
+  oneof value {
+  .chesscom.settings.v1.GameplaySetting gameplay = 1;
+  .chesscom.settings.v1.NotificationSetting notification = 2;
+  .chesscom.settings.v1.PrivacySetting privacy = 3;
+  .chesscom.settings.v1.BoardSetting board = 4;
+  .chesscom.settings.v1.PuzzleSetting puzzle = 5;
+  .chesscom.settings.v1.LearnSetting learn = 6;
+  .chesscom.settings.v1.UiSetting ui = 7;
+  .chesscom.settings.v1.ToasterCenterSetting toaster_center = 8;
+  .chesscom.settings.v1.HomeSetting home = 9;
+  .chesscom.settings.v1.WatchSetting watch = 10;
+  }
+}

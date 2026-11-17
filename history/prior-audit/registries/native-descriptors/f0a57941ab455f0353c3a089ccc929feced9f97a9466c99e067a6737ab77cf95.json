@@ -1,0 +1,203 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/game_summary.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/game_phase.proto"
+  ],
+  "message_type": [
+    {
+      "name": "DecisiveMistake",
+      "field": [
+        {
+          "name": "phase",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "state_prior",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DecisiveMistakeGameState"
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DecisiveMistakeType"
+        }
+      ]
+    },
+    {
+      "name": "GameSummary",
+      "field": [
+        {
+          "name": "result_summary",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ResultSummary"
+        },
+        {
+          "name": "decisive_mistake",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DecisiveMistake",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "key_move_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.KeyMoveType"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_decisive_mistake"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ResultSummary",
+      "value": [
+        {
+          "name": "RESULT_SUMMARY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RESULT_SUMMARY_FALLBACK",
+          "number": 1
+        },
+        {
+          "name": "RESULT_SUMMARY_WIN_RESULT",
+          "number": 2
+        },
+        {
+          "name": "RESULT_SUMMARY_WIN_BY_FLAG_FROM_WORSE_POSITION",
+          "number": 3
+        },
+        {
+          "name": "RESULT_SUMMARY_WIN_BY_FLAG_FROM_EQUAL_POSITION",
+          "number": 4
+        },
+        {
+          "name": "RESULT_SUMMARY_DRAW_RESULT",
+          "number": 5
+        },
+        {
+          "name": "RESULT_SUMMARY_DRAW_FROM_WORSE_POSITION",
+          "number": 6
+        },
+        {
+          "name": "RESULT_SUMMARY_DRAW_FROM_BETTER_POSITION",
+          "number": 7
+        },
+        {
+          "name": "RESULT_SUMMARY_DRAW_TIMEOUT_VS_INSUFFICIENT_FROM_BETTER_POSITION",
+          "number": 8
+        },
+        {
+          "name": "RESULT_SUMMARY_STALEMATE_FROM_BETTER_POSITION",
+          "number": 9
+        },
+        {
+          "name": "RESULT_SUMMARY_STALEMATE_FROM_WORSE_POSITION",
+          "number": 10
+        },
+        {
+          "name": "RESULT_SUMMARY_LOSS_RESULT",
+          "number": 11
+        },
+        {
+          "name": "RESULT_SUMMARY_LOSS_BY_FLAG_FROM_BETTER_POSITION",
+          "number": 12
+        },
+        {
+          "name": "RESULT_SUMMARY_LOSS_BY_FLAG_FROM_EQUAL_POSITION",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "name": "DecisiveMistakeType",
+      "value": [
+        {
+          "name": "DECISIVE_MISTAKE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DECISIVE_MISTAKE_TYPE_MATERIAL_SIMPLE",
+          "number": 1
+        },
+        {
+          "name": "DECISIVE_MISTAKE_TYPE_MATERIAL_TACTIC",
+          "number": 2
+        },
+        {
+          "name": "DECISIVE_MISTAKE_TYPE_MATE",
+          "number": 3
+        },
+        {
+          "name": "DECISIVE_MISTAKE_TYPE_POSITIONAL",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "name": "DecisiveMistakeGameState",
+      "value": [
+        {
+          "name": "DECISIVE_MISTAKE_GAME_STATE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DECISIVE_MISTAKE_GAME_STATE_BETTER",
+          "number": 1
+        },
+        {
+          "name": "DECISIVE_MISTAKE_GAME_STATE_EQUAL",
+          "number": 2
+        },
+        {
+          "name": "DECISIVE_MISTAKE_GAME_STATE_WORSE",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "KeyMoveType",
+      "value": [
+        {
+          "name": "KEY_MOVE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "KEY_MOVE_TYPE_BRILLIANT",
+          "number": 1
+        },
+        {
+          "name": "KEY_MOVE_TYPE_MISSED_WIN",
+          "number": 2
+        },
+        {
+          "name": "KEY_MOVE_TYPE_FOUND_WIN",
+          "number": 3
+        },
+        {
+          "name": "KEY_MOVE_TYPE_WIN_PIECE",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

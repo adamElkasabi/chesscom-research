@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/skills/v1/skill_view.proto",
+  "package": "chesscom.skills.v1",
+  "message_type": [
+    {
+      "name": "SkillView",
+      "field": [
+        {
+          "name": "skill",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Skill"
+        },
+        {
+          "name": "category",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillCategory"
+        },
+        {
+          "name": "points_required",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "points_gained",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "is_unlocked",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_mastered",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

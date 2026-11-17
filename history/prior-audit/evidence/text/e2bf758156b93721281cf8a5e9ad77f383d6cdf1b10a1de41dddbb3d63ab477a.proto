@@ -1,0 +1,31 @@
+// source: chesscom/courses/v1/course_learning_session.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseLearningSession {
+  oneof _last_learned_variation_id {
+  string last_learned_variation_id = 4;
+  }
+  repeated .chesscom.courses.v1.CourseVariation lessons_headers = 1;
+  repeated .chesscom.courses.v1.CourseVariation reviews_headers = 2;
+  repeated .chesscom.courses.v1.MoveTrainer move_trainers = 3;
+}
+
+message CourseLearningSessionStats {
+  optional int32 total_learning_session_variations_amount = 1;
+  optional int32 total_learning_session_time_seconds = 2;
+  optional float total_learning_session_accuracy = 3;
+  optional int32 current_training_variations_amount = 4;
+  optional int32 current_training_time_seconds = 5;
+  repeated .chesscom.courses.v1.CourseVariationTypeCount total_learning_session_variations_by_type = 6;
+}
+
+message CourseLearningSessionProgress {
+  repeated .chesscom.courses.v1.CourseVariationTypeCount total_learning_session_variations_by_type = 1;
+}
+
+message CourseVariationTypeCount {
+  optional .chesscom.courses_common.v1.CourseVariationType type = 1;
+  optional int32 count = 2;
+}

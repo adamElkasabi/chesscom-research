@@ -1,0 +1,384 @@
+{
+  "original_binary_sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+  "selected_original_functions": [
+    165,
+    1664,
+    1665,
+    1666,
+    1667,
+    1670,
+    1671,
+    1679,
+    1686,
+    1687,
+    1688,
+    1689,
+    1690,
+    1694,
+    1695,
+    1696,
+    1697,
+    1698,
+    1699,
+    1731,
+    1741,
+    1888,
+    1889,
+    1892,
+    1901,
+    1906,
+    1907,
+    1909,
+    1911,
+    1943,
+    1950,
+    1954,
+    1961,
+    1965,
+    1970,
+    1984,
+    4396,
+    18367,
+    18368,
+    18370,
+    18380,
+    18527,
+    18550,
+    18562,
+    22947,
+    22950
+  ],
+  "original_to_slice_function_index": {
+    "165": 23108,
+    "1664": 23109,
+    "1665": 23110,
+    "1666": 23111,
+    "1667": 23112,
+    "1670": 23113,
+    "1671": 23114,
+    "1679": 23115,
+    "1686": 23116,
+    "1687": 23117,
+    "1688": 23118,
+    "1689": 23119,
+    "1690": 23120,
+    "1694": 23121,
+    "1695": 23122,
+    "1696": 23123,
+    "1697": 23124,
+    "1698": 23125,
+    "1699": 23126,
+    "1731": 23127,
+    "1741": 23128,
+    "1888": 23129,
+    "1889": 23130,
+    "1892": 23131,
+    "1901": 23132,
+    "1906": 23133,
+    "1907": 23134,
+    "1909": 23135,
+    "1911": 23136,
+    "1943": 23137,
+    "1950": 23138,
+    "1954": 23139,
+    "1961": 23140,
+    "1965": 23141,
+    "1970": 23142,
+    "1984": 23143,
+    "4396": 23144,
+    "18367": 23145,
+    "18368": 23146,
+    "18370": 23147,
+    "18380": 23148,
+    "18527": 23149,
+    "18550": 23150,
+    "18562": 23151,
+    "22947": 23152,
+    "22950": 23153
+  },
+  "rewritten_selected_direct_calls": [
+    {
+      "caller_original": 1664,
+      "callee_original": 22950,
+      "rewritten_callee_index": 23153,
+      "original_instruction_offset": 3049774
+    },
+    {
+      "caller_original": 1664,
+      "callee_original": 1665,
+      "rewritten_callee_index": 23110,
+      "original_instruction_offset": 3050758
+    },
+    {
+      "caller_original": 1666,
+      "callee_original": 1664,
+      "rewritten_callee_index": 23109,
+      "original_instruction_offset": 3051247
+    },
+    {
+      "caller_original": 1667,
+      "callee_original": 22950,
+      "rewritten_callee_index": 23153,
+      "original_instruction_offset": 3051399
+    },
+    {
+      "caller_original": 1667,
+      "callee_original": 1664,
+      "rewritten_callee_index": 23109,
+      "original_instruction_offset": 3051470
+    },
+    {
+      "caller_original": 1679,
+      "callee_original": 1943,
+      "rewritten_callee_index": 23137,
+      "original_instruction_offset": 3063954
+    },
+    {
+      "caller_original": 1694,
+      "callee_original": 1943,
+      "rewritten_callee_index": 23137,
+      "original_instruction_offset": 3084355
+    },
+    {
+      "caller_original": 1694,
+      "callee_original": 1695,
+      "rewritten_callee_index": 23122,
+      "original_instruction_offset": 3084379
+    },
+    {
+      "caller_original": 1694,
+      "callee_original": 1911,
+      "rewritten_callee_index": 23136,
+      "original_instruction_offset": 3085542
+    },
+    {
+      "caller_original": 1694,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3086085
+    },
+    {
+      "caller_original": 1694,
+      "callee_original": 1906,
+      "rewritten_callee_index": 23133,
+      "original_instruction_offset": 3086214
+    },
+    {
+      "caller_original": 1694,
+      "callee_original": 1906,
+      "rewritten_callee_index": 23133,
+      "original_instruction_offset": 3086281
+    },
+    {
+      "caller_original": 1697,
+      "callee_original": 1911,
+      "rewritten_callee_index": 23136,
+      "original_instruction_offset": 3087543
+    },
+    {
+      "caller_original": 1697,
+      "callee_original": 1906,
+      "rewritten_callee_index": 23133,
+      "original_instruction_offset": 3087872
+    },
+    {
+      "caller_original": 1697,
+      "callee_original": 1906,
+      "rewritten_callee_index": 23133,
+      "original_instruction_offset": 3087931
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1943,
+      "rewritten_callee_index": 23137,
+      "original_instruction_offset": 3092471
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1695,
+      "rewritten_callee_index": 23122,
+      "original_instruction_offset": 3092495
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1911,
+      "rewritten_callee_index": 23136,
+      "original_instruction_offset": 3093133
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1909,
+      "rewritten_callee_index": 23135,
+      "original_instruction_offset": 3093342
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3094223
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1906,
+      "rewritten_callee_index": 23133,
+      "original_instruction_offset": 3094352
+    },
+    {
+      "caller_original": 1699,
+      "callee_original": 1906,
+      "rewritten_callee_index": 23133,
+      "original_instruction_offset": 3094432
+    },
+    {
+      "caller_original": 1741,
+      "callee_original": 1670,
+      "rewritten_callee_index": 23113,
+      "original_instruction_offset": 3127385
+    },
+    {
+      "caller_original": 1888,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3258240
+    },
+    {
+      "caller_original": 1889,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3258937
+    },
+    {
+      "caller_original": 1892,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3261118
+    },
+    {
+      "caller_original": 1901,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3267823
+    },
+    {
+      "caller_original": 1907,
+      "callee_original": 1696,
+      "rewritten_callee_index": 23123,
+      "original_instruction_offset": 3276966
+    },
+    {
+      "caller_original": 1950,
+      "callee_original": 22950,
+      "rewritten_callee_index": 23153,
+      "original_instruction_offset": 3297506
+    }
+  ],
+  "unselected_boundary_function_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    17,
+    18,
+    21,
+    24,
+    26,
+    52,
+    154,
+    164,
+    167,
+    205,
+    241,
+    261,
+    497,
+    498,
+    521,
+    522,
+    610,
+    758,
+    760,
+    762,
+    763,
+    828,
+    829,
+    1672,
+    1674,
+    1680,
+    1693,
+    1732,
+    1736,
+    1739,
+    1885,
+    1939,
+    1942,
+    1962,
+    1972,
+    1975,
+    4398,
+    7890,
+    8691,
+    13216,
+    18365,
+    18474,
+    18498,
+    18528,
+    18551,
+    18563,
+    18630,
+    18656,
+    20496,
+    21116,
+    21127,
+    21129,
+    22140,
+    22211,
+    22239,
+    22278,
+    22279,
+    22281,
+    22502,
+    22503,
+    22751,
+    22753,
+    22862,
+    22864,
+    22866,
+    22910,
+    22965
+  ],
+  "tool_results": [
+    {
+      "tool": "native WABT1.0.36 wasm-validate",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "tool": "native WABT1.0.36 wasm2wat",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "tool": "native WABT1.0.36 wasm-decompile",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "Exact selected bodies except function-index remapping.",
+    "Selected direct callees are real bodies,unlike the earlier single-export/all-stub derivatives.",
+    "Host-mediated indirect dispatch still crosses typed boundaries; table entries retain original indices.",
+    "Original data content omitted and passive placeholders inserted. Numeric address constants refer to original data map,not derivative memory contents.",
+    "Not original source. Not an executable reproduction. Never runtime-tested or safe to run as a functional engine."
+  ]
+}

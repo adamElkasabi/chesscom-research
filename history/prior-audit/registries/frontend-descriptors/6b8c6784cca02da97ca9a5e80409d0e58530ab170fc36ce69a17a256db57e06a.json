@@ -1,0 +1,93 @@
+{
+  "name": "chesscom/analysis/v2/move_classifications.proto",
+  "package": "chesscom.analysis.v2",
+  "enum_type": [
+    {
+      "name": "MoveClassification",
+      "value": [
+        {
+          "name": "MOVE_CLASSIFICATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BOOK",
+          "number": 1
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BRILLIANT",
+          "number": 2
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_GREAT_FIND",
+          "number": 3
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BEST",
+          "number": 4
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_EXCELLENT",
+          "number": 5
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_GOOD",
+          "number": 6
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_INACCURACY",
+          "number": 7
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISTAKE",
+          "number": 8
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_BLUNDER",
+          "number": 9
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_WIN",
+          "number": 10
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_FORCED",
+          "number": 11
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_FASTER_MATE",
+          "number": 12
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_MATE",
+          "number": 13
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_FREE_PIECE",
+          "number": 14
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_TACTIC",
+          "number": 15
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_COMEBACK",
+          "number": 16
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_OPPORTUNITY",
+          "number": 17
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_BRILLIANT",
+          "number": 18
+        },
+        {
+          "name": "MOVE_CLASSIFICATION_MISSED_CRITICAL",
+          "number": 19
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

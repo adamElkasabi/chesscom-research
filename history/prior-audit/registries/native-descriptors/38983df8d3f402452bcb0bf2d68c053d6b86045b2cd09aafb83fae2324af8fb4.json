@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_reset_engine_state.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "ResetEngineStateRequest",
+      "field": [
+        {
+          "name": "engine_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_engine_id"
+        }
+      ]
+    },
+    {
+      "name": "ResetEngineStateResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

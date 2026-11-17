@@ -1,0 +1,6 @@
+
+Lchesscom/explanation_engine/v1/feature_generate_train_item_goal_speech.protochesscom.explanation_engine.v1'chesscom/train/v1/train_challenge.proto+chesscom/explanation_engine/v1/speech.proto"Z
+"GenerateTrainItemGoalSpeechRequest4
+	challenge (2!.chesscom.train.v1.TrainChallenge"b
+#GenerateTrainItemGoalSpeechResponse;
+goal_speech (2&.chesscom.explanation_engine.v1.Speechbproto3

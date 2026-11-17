@@ -1,0 +1,94 @@
+// source: chesscom/settings/v1/settings_metadata.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message SettingMetadata {
+  oneof _allow_null_values {
+  bool allow_null_values = 8;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional string description = 3;
+  optional .chesscom.settings.v1.SettingMetadata.Type type = 4;
+  optional .chesscom.settings.v1.SettingValue default_value = 5;
+  repeated .chesscom.settings.v1.SettingValue allowed_values = 6;
+  repeated .chesscom.settings.v1.SettingMetadata.Validator validators = 7;
+  enum Type {
+    TYPE_UNSPECIFIED = 0;
+    TYPE_BOOLEAN = 1;
+    TYPE_STRING = 2;
+    TYPE_INTEGER = 3;
+    TYPE_LONG = 4;
+    TYPE_DOUBLE = 5;
+  }
+  message Validator {
+    oneof value {
+  .chesscom.settings.v1.SettingMetadata.Validator.RangeValidator range = 1;
+  .chesscom.settings.v1.SettingMetadata.Validator.NotBlankValidator not_blank = 2;
+  .chesscom.settings.v1.SettingMetadata.Validator.LengthValidator length = 3;
+  .chesscom.settings.v1.SettingMetadata.Validator.RegexValidator regex = 4;
+    }
+    message RangeValidator {
+      oneof _min {
+  int32 min = 1;
+      }
+      oneof _max {
+  int32 max = 2;
+      }
+    }
+    message NotBlankValidator {
+    }
+    message LengthValidator {
+      oneof _min {
+  int32 min = 1;
+      }
+      oneof _max {
+  int32 max = 2;
+      }
+    }
+    message RegexValidator {
+  optional string pattern = 1;
+    }
+  }
+}
+
+message SettingValue {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean boolean = 1;
+  .chesscom.settings.v1.SettingValue.String string = 2;
+  .chesscom.settings.v1.SettingValue.Integer integer = 3;
+  .chesscom.settings.v1.SettingValue.Long long = 4;
+  .chesscom.settings.v1.SettingValue.Double double = 5;
+  }
+  message Boolean {
+    oneof wrapped_value {
+  bool value = 1;
+  .google.protobuf.Empty null = 2;
+    }
+  }
+  message String {
+    oneof wrapped_value {
+  string value = 1;
+  .google.protobuf.Empty null = 2;
+    }
+  }
+  message Integer {
+    oneof wrapped_value {
+  int32 value = 1;
+  .google.protobuf.Empty null = 2;
+    }
+  }
+  message Long {
+    oneof wrapped_value {
+  int64 value = 1;
+  .google.protobuf.Empty null = 2;
+    }
+  }
+  message Double {
+    oneof wrapped_value {
+  double value = 1;
+  .google.protobuf.Empty null = 2;
+    }
+  }
+}

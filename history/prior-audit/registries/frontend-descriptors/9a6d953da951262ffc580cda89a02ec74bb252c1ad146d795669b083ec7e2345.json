@@ -1,0 +1,404 @@
+{
+  "name": "chesscom/skills/v1/user_activity.proto",
+  "package": "chesscom.skills.v1",
+  "message_type": [
+    {
+      "name": "SkillContextExtension",
+      "field": [
+        {
+          "name": "skill_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.Skill"
+        },
+        {
+          "name": "skill_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "skill_category",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillCategory"
+        },
+        {
+          "name": "skill_status",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillStatus"
+        },
+        {
+          "name": "points_current",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "points_needed_to_master",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillSettingsContextExtension",
+      "field": [
+        {
+          "name": "new_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillSettingsNewState"
+        },
+        {
+          "name": "entry_point",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.SkillSettingsEntryPoint"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillPointAnimationViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillPointsIntroScreenViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillsButtonClicked",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillsListViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillCategoryViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillIntroFullScreenViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillRowClicked",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillDefinitionModalViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillMasteryModalViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillUnlockModalViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillMasteryShareButtonClicked",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "AllSkillsMasteredScreenViewed",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "AllSkillsMasteredShareButtonClicked",
+      "field": [
+        {
+          "name": "funnel",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_funnel"
+        }
+      ]
+    },
+    {
+      "name": "SkillsSettingToggleClicked",
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SkillStatus",
+      "value": [
+        {
+          "name": "SKILL_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILL_STATUS_UNLOCKED",
+          "number": 1
+        },
+        {
+          "name": "SKILL_STATUS_LOCKED",
+          "number": 2
+        },
+        {
+          "name": "SKILL_STATUS_MASTERED",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillSettingsNewState",
+      "value": [
+        {
+          "name": "SKILL_SETTINGS_NEW_STATE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILL_SETTINGS_NEW_STATE_ON",
+          "number": 1
+        },
+        {
+          "name": "SKILL_SETTINGS_NEW_STATE_OFF",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SkillSettingsEntryPoint",
+      "value": [
+        {
+          "name": "SKILL_SETTINGS_ENTRY_POINT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SKILL_SETTINGS_ENTRY_POINT_COACH_SETTINGS",
+          "number": 1
+        },
+        {
+          "name": "SKILL_SETTINGS_ENTRY_POINT_GAME_REVIEW_SETTINGS",
+          "number": 2
+        },
+        {
+          "name": "SKILL_SETTINGS_ENTRY_POINT_COACH_GAME_START_SETTINGS",
+          "number": 3
+        },
+        {
+          "name": "SKILL_SETTINGS_ENTRY_POINT_COACH_GAME_SETTINGS",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

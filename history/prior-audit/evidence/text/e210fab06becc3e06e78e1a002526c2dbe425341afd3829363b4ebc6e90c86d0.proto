@@ -1,0 +1,59 @@
+// source: chesscom/user_properties/v1/properties_ipqs.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum IpqsPropertyDefinition {
+  IPQS_UNSPECIFIED = 0;
+  IPQS_FRAUD_SCORE = 1;
+  IPQS_IS_LOW_QUALITY_EMAIL = 2;
+  IPQS_FIRST_SEEN = 3;
+  IPQS_IS_BOT = 4;
+  IPQS_IS_PROXY = 5;
+  IPQS_IS_KNOWN_ATTACKER = 6;
+  IPQS_ABUSE_VELOCITY = 7;
+  IPQS_HAS_ABUSED_RECENTLY = 8;
+  IPQS_IS_VPN = 9;
+  IPQS_IS_TOR = 10;
+  IPQS_IP_FRAUD_SCORE = 11;
+  IPQS_IP_HAS_ABUSED_RECENTLY = 12;
+}
+
+message IpqsProperty {
+  oneof _ipqs_fraud_score {
+  double ipqs_fraud_score = 1;
+  }
+  oneof _ipqs_is_low_quality_email {
+  bool ipqs_is_low_quality_email = 2;
+  }
+  oneof _ipqs_first_seen {
+  .google.protobuf.Timestamp ipqs_first_seen = 3;
+  }
+  oneof _ipqs_is_bot {
+  bool ipqs_is_bot = 4;
+  }
+  oneof _ipqs_is_proxy {
+  bool ipqs_is_proxy = 5;
+  }
+  oneof _ipqs_is_known_attacker {
+  bool ipqs_is_known_attacker = 6;
+  }
+  oneof _ipqs_abuse_velocity {
+  string ipqs_abuse_velocity = 7;
+  }
+  oneof _ipqs_has_abused_recently {
+  bool ipqs_has_abused_recently = 8;
+  }
+  oneof _ipqs_is_vpn {
+  bool ipqs_is_vpn = 9;
+  }
+  oneof _ipqs_is_tor {
+  bool ipqs_is_tor = 10;
+  }
+  oneof _ipqs_ip_fraud_score {
+  double ipqs_ip_fraud_score = 11;
+  }
+  oneof _ipqs_ip_has_abused_recently {
+  bool ipqs_ip_has_abused_recently = 12;
+  }
+}

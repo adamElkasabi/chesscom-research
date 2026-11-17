@@ -1,0 +1,207 @@
+// source: chesscom/coaches/v2/user_activity.proto
+// syntax: proto3
+
+package chesscom.coaches.v2;
+
+enum CoachSwitchSource {
+  COACH_SWITCH_SOURCE_UNSPECIFIED = 0;
+  COACH_SWITCH_SOURCE_SETTINGS = 1;
+  COACH_SWITCH_SOURCE_GAME_REVIEW = 2;
+  COACH_SWITCH_SOURCE_PLAY_COACH = 3;
+  COACH_SWITCH_SOURCE_DAILY_PUZZLE = 4;
+  COACH_SWITCH_SOURCE_PUZZLES_ROOT = 5;
+  COACH_SWITCH_SOURCE_PUZZLE = 6;
+  COACH_SWITCH_SOURCE_LESSONS_ROOT = 7;
+  COACH_SWITCH_SOURCE_LESSON = 8;
+  COACH_SWITCH_SOURCE_COACH_GAME_SETUP = 9;
+  COACH_SWITCH_SOURCE_LEARN_ROOT = 10;
+  COACH_SWITCH_SOURCE_DEEPLINK = 11;
+  COACH_SWITCH_SOURCE_WELCOME_MODAL = 12;
+  COACH_SWITCH_SOURCE_ONBOARDING = 13;
+  COACH_SWITCH_SOURCE_HOME = 14;
+  COACH_SWITCH_SOURCE_TRAIN = 15;
+}
+
+enum CoachTaglineUi {
+  COACH_TAGLINE_UI_UNSPECIFIED = 0;
+  COACH_TAGLINE_UI_CHOOSE_COACH_MODAL = 1;
+  COACH_TAGLINE_UI_SIGNUP_CHOOSE_COACH_STEP = 2;
+  COACH_TAGLINE_UI_SELECT_COACH_SETTINGS = 3;
+}
+
+enum PlayCoachOpenedSource {
+  PLAY_COACH_OPENED_SOURCE_UNSPECIFIED = 0;
+  PLAY_COACH_OPENED_SOURCE_PLAY_ROOT = 1;
+  PLAY_COACH_OPENED_SOURCE_HOME = 2;
+  PLAY_COACH_OPENED_SOURCE_LEARN_ROOT = 3;
+  PLAY_COACH_OPENED_SOURCE_LEARN_NAV = 4;
+  PLAY_COACH_OPENED_SOURCE_PLAY_NAV = 5;
+}
+
+enum PlayCoachAssistanceSetting {
+  PLAY_COACH_ASSISTANCE_SETTING_UNSPECIFIED = 0;
+  PLAY_COACH_ASSISTANCE_SETTING_SUGGESTION_ARROWS = 1;
+  PLAY_COACH_ASSISTANCE_SETTING_THREAT_ARROWS = 2;
+  PLAY_COACH_ASSISTANCE_SETTING_EVALUATION_BAR = 3;
+  PLAY_COACH_ASSISTANCE_SETTING_MOVE_FEEDBACK = 4;
+  PLAY_COACH_ASSISTANCE_SETTING_AUTO_HINTS = 5;
+}
+
+enum PlayCoachHint {
+  PLAY_COACH_HINT_UNSPECIFIED = 0;
+  PLAY_COACH_HINT_SPEECH = 1;
+  PLAY_COACH_HINT_HIGHLIGHTED_SQUARE = 2;
+  PLAY_COACH_HINT_BEST_MOVE = 3;
+}
+
+enum CoachMistakeWarningChoice {
+  COACH_MISTAKE_WARNING_CHOICE_UNSPECIFIED = 0;
+  COACH_MISTAKE_WARNING_CHOICE_RETRY = 1;
+  COACH_MISTAKE_WARNING_CHOICE_CONTINUE = 2;
+}
+
+enum CoachFlipBoardChoice {
+  COACH_FLIP_BOARD_CHOICE_UNSPECIFIED = 0;
+  COACH_FLIP_BOARD_CHOICE_SWITCH_SIDES = 1;
+  COACH_FLIP_BOARD_CHOICE_CONTINUE = 2;
+}
+
+enum GuidedCoachGameSource {
+  GUIDED_COACH_GAME_SOURCE_UNSPECIFIED = 0;
+  GUIDED_COACH_GAME_SOURCE_SIGNUP = 1;
+  GUIDED_COACH_GAME_SOURCE_PLAY_COACH_ENTRY = 2;
+  GUIDED_COACH_GAME_SOURCE_REPLAY = 3;
+}
+
+message CoachSwitched {
+  optional string new_coach_id = 1;
+  optional .chesscom.coaches.v2.CoachSwitchSource source = 2;
+}
+
+message ChooseYourCoachModalOpened {
+  optional .chesscom.coaches.v2.CoachSwitchSource source = 1;
+}
+
+message CoachTaglineShown {
+  optional string coach_id = 1;
+  optional .chesscom.coaches.v2.CoachTaglineUi coach_tagline_ui = 2;
+}
+
+message CoachWelcomeModalShown {
+}
+
+message PlayCoachOpened {
+  optional .chesscom.coaches.v2.PlayCoachOpenedSource source = 1;
+}
+
+message PlayCoachSettingChanged {
+  optional .chesscom.coaches.v2.PlayCoachAssistanceSetting setting = 1;
+  optional bool enabled = 2;
+}
+
+message PlayCoachGameStarted {
+  optional string coach_name = 1;
+  optional int32 coach_level = 2;
+  optional .chesscom.coaches.v2.PlayCoachAssistanceSettingsSnapshot assistance_settings = 3;
+  optional .chesscom.coaches.v2.FinishVsCoachContext finish_vs_coach = 4;
+}
+
+message PlayCoachGameCompleted {
+  optional string coach_name = 1;
+  optional int32 coach_level = 2;
+  optional .chesscom.game_storage.v2.PlayerResult result = 3;
+  optional .chesscom.chess.v1.Result game_result = 4;
+  optional .chesscom.chess.v1.ResultType game_result_type = 5;
+  optional string bot_personality = 6;
+  optional .chesscom.coaches.v2.FinishVsCoachContext finish_vs_coach = 7;
+}
+
+message PlayCoachHintRequested {
+  optional string coach_name = 1;
+  optional int32 coach_level = 2;
+  optional int32 stage = 3;
+  optional .chesscom.coaches.v2.PlayCoachHint type = 4;
+}
+
+message PlayCoachHintReceived {
+  optional string coach_name = 1;
+  optional int32 coach_level = 2;
+  optional int32 stage = 3;
+  optional .chesscom.coaches.v2.PlayCoachHint type = 4;
+  optional string fen = 5;
+}
+
+message PlayCoachMonetizationModalShowed {
+}
+
+message PlayCoachSignUpModalShowed {
+}
+
+message PlayCoachSignUpModalCTATapped {
+}
+
+message CoachSettingsOpened {
+}
+
+message CoachCouldWarnOfMistake {
+  optional string boardevent = 1;
+  optional int32 cooldown_counter = 2;
+}
+
+message CoachWarnedOfMistake {
+  optional string boardevent = 1;
+}
+
+message CoachMistakeWarningAnswered {
+  optional string boardevent = 1;
+  optional .chesscom.coaches.v2.CoachMistakeWarningChoice choice = 2;
+}
+
+message CoachFlipBoardOffered {
+  optional string boardevent = 1;
+}
+
+message CoachFlipBoardAnswered {
+  optional string boardevent = 1;
+  optional .chesscom.coaches.v2.CoachFlipBoardChoice choice = 2;
+}
+
+message CoachFlipBoardExerciseCompleted {
+  optional string boardevent = 1;
+  optional bool found_correct_move = 2;
+  optional int32 wrong_attempts = 3;
+}
+
+message CoachContextExtension {
+  optional string coach_analytics_id = 1;
+  optional string coach_locale = 2;
+}
+
+message PlayCoachRetryMissContextExtension {
+  oneof _found_correct_move {
+  bool found_correct_move = 2;
+  }
+  oneof _wrong_attempts {
+  int32 wrong_attempts = 3;
+  }
+  optional string boardevent = 1;
+}
+
+message CoachAnimationShown {
+  optional string animation_type = 1;
+  optional string interface = 2;
+}
+
+message GuidedCoachGameStarted {
+  optional string script_id = 1;
+  optional .chesscom.coaches.v2.GuidedCoachGameSource source = 2;
+}
+
+message GuidedCoachGameResigned {
+  optional string script_id = 1;
+  optional int32 ply_index = 2;
+}
+
+message GuidedCoachGameCompleted {
+  optional string script_id = 1;
+}

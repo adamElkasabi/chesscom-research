@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/chess/v1/notation.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "MoveNotation",
+      "value": [
+        {
+          "name": "MOVE_NOTATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MOVE_NOTATION_TCN",
+          "number": 1
+        },
+        {
+          "name": "MOVE_NOTATION_SAN",
+          "number": 2
+        },
+        {
+          "name": "MOVE_NOTATION_UCI_LAN",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

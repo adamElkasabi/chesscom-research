@@ -1,0 +1,37 @@
+{
+  "mode": "charm",
+  "started": "2026-11-15T14:16:48.311Z",
+  "tests": [],
+  "networkAttempts": [],
+  "binaries": {
+    "explanation-engine.js": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+    "explanation-engine.wasm": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373"
+  },
+  "gamePoint": 1048582,
+  "error": "hard timeout 75s",
+  "elapsedSeconds": 75.06,
+  "logs": [
+    "Explanation Engine 1.130.285 (C) 2025 Chess.com, LLC",
+    "CEE wasm load: source=emscripten bytes=- attempts=- transfer=- compile=412ms engineInit=371ms total=783ms",
+    "[2026-11-15 14:16:49.140] [cee-ostream-logger] [info] CEE - API_LOG: CIEBEmAIASJcCBoQ////////////ARpNCksyQwo/W0V2ZW50ICJJc29sYXRlZCBhdWRpdCBwcm9iZSJdCgoxLiBlNCBlNSAyLiBOZjMgTmM2IDMuIEJiNSBhNiAqEAEaBBgBIAA=",
+    "",
+    "[2026-11-15 14:16:49.164] [cee-ostream-logger] [info] CEE - API_LOG: CIDAARoECAEqAA==",
+    "",
+    "[2026-11-15 14:16:49.164] [cee-ostream-logger] [info] CEE - API_LOG: CLvFARIECAI6AA==",
+    "",
+    "[2026-11-15 14:16:49.214] [cee-ostream-logger] [info] CEE - API_LOG: CLHHBBoGCAJCAggB",
+    "",
+    "[2026-11-15 14:16:49.215] [cee-ostream-logger] [info] CEE - API_LOG: CJ3PBBIECAMqAA==",
+    "",
+    "[2026-11-15 14:16:49.215] [cee-ostream-logger] [info] CEE - API_LOG: CLnRBBoECAMyAA==",
+    ""
+  ],
+  "decodedApiLogs": [
+    "\b�\u0001\u0012`\b\u0001\"\\\b\u001a\u0010���������\u0001\u001aM\nK2C\n?[Event \"Isolated audit probe\"]\n\n1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 *\u0010\u0001\u001a\u0004\u0018\u0001 \u0000",
+    "\b��\u0001\u001a\u0004\b\u0001*\u0000",
+    "\b��\u0001\u0012\u0004\b\u0002:\u0000",
+    "\b��\u0004\u001a\u0006\b\u0002B\u0002\b\u0001",
+    "\b��\u0004\u0012\u0004\b\u0003*\u0000",
+    "\b��\u0004\u001a\u0004\b\u00032\u0000"
+  ]
+}

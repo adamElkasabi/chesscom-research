@@ -1,0 +1,17 @@
+// source: chesscom/tdtools/v1/identifiers.proto
+// syntax: proto3
+
+package chesscom.tdtools.v1;
+
+enum ChessComTournamentType {
+  CHESS_COM_TOURNAMENT_TYPE_UNSPECIFIED = 0;
+  TOURNAMENT = 1;
+  ARENA = 2;
+  TEAM_MATCH = 3;
+  SIMUL = 4;
+}
+
+message ChessComTournamentIdentifier {
+  optional uint32 id = 1;
+  optional .chesscom.tdtools.v1.ChessComTournamentType type = 2;
+}

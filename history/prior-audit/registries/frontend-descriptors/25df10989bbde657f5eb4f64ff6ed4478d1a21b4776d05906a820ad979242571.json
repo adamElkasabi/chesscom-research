@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/api/v1/decimal.proto",
+  "package": "chesscom.api.v1",
+  "message_type": [
+    {
+      "name": "Decimal",
+      "field": [
+        {
+          "name": "value",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "scale",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

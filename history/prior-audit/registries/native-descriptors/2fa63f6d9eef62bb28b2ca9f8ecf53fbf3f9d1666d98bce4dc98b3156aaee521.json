@@ -1,0 +1,34 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/feature_add_external_engine.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/engine_instance_options.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AddExternalEngineRequest",
+      "field": [
+        {
+          "name": "engine",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EngineInstanceOptions"
+        }
+      ]
+    },
+    {
+      "name": "AddExternalEngineResponse",
+      "field": [
+        {
+          "name": "engine_instance",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EngineInstance"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

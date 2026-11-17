@@ -1,0 +1,8 @@
+// source: chesscom/game_storage/v2/vs_coach_game_data.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+message VsCoachGameData {
+  optional string coach_id = 1;
+}

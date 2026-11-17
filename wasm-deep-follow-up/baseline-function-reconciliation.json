@@ -1,0 +1,37 @@
+{
+  "modules": [
+    {
+      "baseline_module_id": "module-001",
+      "sha256_unchanged": true,
+      "every_defined_index_body_offset_size_signature_unchanged": true,
+      "defined_functions": 22922
+    },
+    {
+      "baseline_module_id": "module-002",
+      "sha256_unchanged": true,
+      "every_defined_index_body_offset_size_signature_unchanged": true,
+      "defined_functions": 22953
+    },
+    {
+      "baseline_module_id": "module-003",
+      "sha256_unchanged": true,
+      "every_defined_index_body_offset_size_signature_unchanged": true,
+      "defined_functions": 756
+    },
+    {
+      "baseline_module_id": "module-004",
+      "sha256_unchanged": true,
+      "every_defined_index_body_offset_size_signature_unchanged": true,
+      "defined_functions": 709
+    },
+    {
+      "baseline_module_id": "module-005",
+      "sha256_unchanged": true,
+      "every_defined_index_body_offset_size_signature_unchanged": true,
+      "defined_functions": 749
+    }
+  ],
+  "baseline_defined_total": 48089,
+  "new_defined_total": 225335,
+  "baseline_members_unchanged": "Verified again at final ZIP QC;see final-qc.json"
+}

@@ -1,0 +1,95 @@
+{
+  "name": "chesscom/flair/v1/flair_internal_service.proto",
+  "package": "chesscom.flair.v1",
+  "message_type": [
+    {
+      "name": "ListFlairInternalRequest"
+    },
+    {
+      "name": "ListFlairInternalResponse",
+      "field": [
+        {
+          "name": "flair",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.Flair"
+        }
+      ]
+    },
+    {
+      "name": "ListFlairByIdsInternalRequest",
+      "field": [
+        {
+          "name": "flair_ids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ListFlairByIdsInternalResponse",
+      "field": [
+        {
+          "name": "flair",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.Flair"
+        }
+      ]
+    },
+    {
+      "name": "SetUserFlairInternalRequest",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "flair_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetUserFlairInternalResponse"
+    }
+  ],
+  "service": [
+    {
+      "name": "FlairInternalService",
+      "method": [
+        {
+          "name": "ListFlairInternal",
+          "input_type": ".chesscom.flair.v1.ListFlairInternalRequest",
+          "output_type": ".chesscom.flair.v1.ListFlairInternalResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListFlairByIdsInternal",
+          "input_type": ".chesscom.flair.v1.ListFlairByIdsInternalRequest",
+          "output_type": ".chesscom.flair.v1.ListFlairByIdsInternalResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "SetUserFlairInternal",
+          "input_type": ".chesscom.flair.v1.SetUserFlairInternalRequest",
+          "output_type": ".chesscom.flair.v1.SetUserFlairInternalResponse",
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

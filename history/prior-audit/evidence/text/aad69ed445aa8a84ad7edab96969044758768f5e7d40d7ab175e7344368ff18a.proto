@@ -1,0 +1,11 @@
+// source: chesscom/chess/v1/notation.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum MoveNotation {
+  MOVE_NOTATION_UNSPECIFIED = 0;
+  MOVE_NOTATION_TCN = 1;
+  MOVE_NOTATION_SAN = 2;
+  MOVE_NOTATION_UCI_LAN = 3;
+}

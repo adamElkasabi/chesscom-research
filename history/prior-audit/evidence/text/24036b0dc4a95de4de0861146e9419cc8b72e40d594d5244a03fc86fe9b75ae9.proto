@@ -1,0 +1,15 @@
+// source: chesscom/user_properties/v1/properties_puzzle_battle.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum PuzzleBattlePropertyDefinition {
+  PUZZLES_BATTLE_UNSPECIFIED = 0;
+  PUZZLE_BATTLE_WIN_STREAK = 1;
+}
+
+message PuzzleBattleProperty {
+  oneof _win_streak {
+  int32 win_streak = 1;
+  }
+}

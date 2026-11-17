@@ -1,0 +1,103 @@
+// source: chesscom/user_properties/v1/properties_settings_daily_chess.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum SettingsDailyChessPropertyDefinition {
+  DAILY_CHESS_SETTINGS_PROPERTY_UNSPECIFIED = 0;
+  MAX_GAME_COUNT = 1;
+  MIN_OPPONENT_RATING = 2;
+  MAX_OPPONENT_RATING = 3;
+  MIN_DAYS_PER_MOVE = 4;
+  MAX_DAYS_PER_MOVE = 5;
+  IS_FRIEND_EXEMPT = 6;
+  IS_TOUCH_MOVE = 7;
+  IS_NOT_AVAILABLE = 8;
+  GAME_PIECE_STYLE_ID = 9;
+  GAME_BOARD_COLOR_ID = 10;
+  GAME_BOARD_SIZE_ID = 11;
+  POST_MOVE_ACTION = 12;
+  VACATION_TIME = 13;
+  VACATION_LEAVE_DATE = 14;
+  IS_WHITE_ON_BOTTOM = 15;
+  SHOW_COORDINATES = 16;
+  AUTO_WIN_ON_TIME = 17;
+  HIGHLIGHT_MOVES = 18;
+  SOUNDS_ENABLED = 19;
+  DEFAULT_TAB = 20;
+  SHARED_SOUND_ON_MOVE = 21;
+  SHOW_LEGAL_MOVES = 22;
+  SOUNDS_ID = 23;
+}
+
+message SettingsDailyChessProperty {
+  oneof _max_game_count {
+  int32 max_game_count = 1;
+  }
+  oneof _min_opponent_rating {
+  int32 min_opponent_rating = 2;
+  }
+  oneof _max_opponent_rating {
+  int32 max_opponent_rating = 3;
+  }
+  oneof _min_days_per_move {
+  int32 min_days_per_move = 4;
+  }
+  oneof _max_days_per_move {
+  int32 max_days_per_move = 5;
+  }
+  oneof _is_friend_exempt {
+  bool is_friend_exempt = 6;
+  }
+  oneof _is_touch_move {
+  bool is_touch_move = 7;
+  }
+  oneof _is_not_available {
+  bool is_not_available = 8;
+  }
+  oneof _game_piece_style_id {
+  int32 game_piece_style_id = 9;
+  }
+  oneof _game_board_color_id {
+  int32 game_board_color_id = 10;
+  }
+  oneof _game_board_size_id {
+  int32 game_board_size_id = 11;
+  }
+  oneof _post_move_action {
+  string post_move_action = 12;
+  }
+  oneof _vacation_time {
+  int32 vacation_time = 13;
+  }
+  oneof _vacation_leave_date {
+  .google.protobuf.Timestamp vacation_leave_date = 14;
+  }
+  oneof _is_white_on_bottom {
+  bool is_white_on_bottom = 15;
+  }
+  oneof _show_coordinates {
+  int32 show_coordinates = 16;
+  }
+  oneof _auto_win_on_time {
+  bool auto_win_on_time = 17;
+  }
+  oneof _highlight_moves {
+  bool highlight_moves = 18;
+  }
+  oneof _sounds_enabled {
+  bool sounds_enabled = 19;
+  }
+  oneof _default_tab {
+  int32 default_tab = 20;
+  }
+  oneof _shared_sound_on_move {
+  bool shared_sound_on_move = 21;
+  }
+  oneof _show_legal_moves {
+  bool show_legal_moves = 22;
+  }
+  oneof _sounds_id {
+  int32 sounds_id = 23;
+  }
+}

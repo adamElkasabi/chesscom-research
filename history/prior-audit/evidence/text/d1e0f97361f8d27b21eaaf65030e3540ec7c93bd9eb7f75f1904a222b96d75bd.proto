@@ -1,0 +1,15 @@
+// source: chesscom/engine/v1/score.proto
+// syntax: proto3
+
+package chesscom.engine.v1;
+
+message Score {
+  oneof _strength {
+  .chesscom.engine.v1.Strength strength = 5;
+  }
+  optional .chesscom.chess.v1.Score score = 1;
+  optional int32 depth = 2;
+  optional int64 nodes = 6;
+  optional .chesscom.engine.v1.Engine engine = 3;
+  optional int32 variation = 4;
+}

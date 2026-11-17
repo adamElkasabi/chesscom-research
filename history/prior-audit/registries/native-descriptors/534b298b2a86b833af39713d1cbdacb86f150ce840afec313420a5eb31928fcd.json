@@ -1,0 +1,64 @@
+{
+  "name": "chesscom/chess/v1/piece.proto",
+  "package": "chesscom.chess.v1",
+  "dependency": [
+    "chesscom/chess/v1/color.proto"
+  ],
+  "message_type": [
+    {
+      "name": "Piece",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PieceType"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PieceType",
+      "value": [
+        {
+          "name": "PIECE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PIECE_TYPE_PAWN",
+          "number": 1
+        },
+        {
+          "name": "PIECE_TYPE_KNIGHT",
+          "number": 2
+        },
+        {
+          "name": "PIECE_TYPE_BISHOP",
+          "number": 3
+        },
+        {
+          "name": "PIECE_TYPE_ROOK",
+          "number": 4
+        },
+        {
+          "name": "PIECE_TYPE_QUEEN",
+          "number": 5
+        },
+        {
+          "name": "PIECE_TYPE_KING",
+          "number": 6
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

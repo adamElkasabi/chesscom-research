@@ -1,0 +1,505 @@
+{
+  "name": "chesscom/courses/v1/courses_training_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetCourseLearningSessionRequest",
+      "field": [
+        {
+          "name": "context_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "learning_session_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "course_slug",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_learning_session_id"
+        },
+        {
+          "name": "_course_slug"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseLearningSessionResponse",
+      "field": [
+        {
+          "name": "learning_session",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLearningSession"
+        },
+        {
+          "name": "learning_session_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "progress",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLearningSessionProgress"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseTrainingForLearningRequest",
+      "field": [
+        {
+          "name": "variation_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "learning_session_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseTrainingForLearningResponse",
+      "field": [
+        {
+          "name": "lesson",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLesson"
+        },
+        {
+          "name": "training_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseTrainingForReviewingRequest",
+      "field": [
+        {
+          "name": "variation_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "learning_session_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseTrainingForReviewingResponse",
+      "field": [
+        {
+          "name": "lesson",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLesson"
+        },
+        {
+          "name": "training_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "StoreCourseTrainingProgressRequest",
+      "field": [
+        {
+          "name": "ply_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "san",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "training_mode",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.MoveTrainerTrainingMode"
+        },
+        {
+          "name": "learning_session_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "training_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "StoreCourseTrainingProgressResponse"
+    },
+    {
+      "name": "StoreCourseVideoProgressRequest",
+      "field": [
+        {
+          "name": "video_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "learning_session_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "position_in_seconds",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "watched_seconds",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "StoreCourseVideoProgressResponse"
+    },
+    {
+      "name": "GetCourseVideoPlaybackRequest",
+      "field": [
+        {
+          "name": "video_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseVideoPlaybackResponse",
+      "field": [
+        {
+          "name": "playback",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseVideoPlayback"
+        }
+      ]
+    },
+    {
+      "name": "FinalizeCourseTrainingRequest",
+      "field": [
+        {
+          "name": "learning_session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "training_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "FinalizeCourseTrainingResponse",
+      "field": [
+        {
+          "name": "stats",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLearningSessionStats"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseStatsRequest",
+      "field": [
+        {
+          "name": "context_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseStatsResponse",
+      "field": [
+        {
+          "name": "stats",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseLearningSessionStats"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseConfigurationRequest",
+      "field": [
+        {
+          "name": "context_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_slug",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_course_slug"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseConfigurationResponse",
+      "field": [
+        {
+          "name": "configuration",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseConfiguration"
+        },
+        {
+          "name": "available_languages",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Language"
+        }
+      ]
+    },
+    {
+      "name": "StoreCourseConfigurationRequest",
+      "field": [
+        {
+          "name": "context_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "configuration",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseConfiguration"
+        }
+      ]
+    },
+    {
+      "name": "StoreCourseConfigurationResponse"
+    },
+    {
+      "name": "DeleteCourseProgressRequest",
+      "field": [
+        {
+          "name": "course_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "DeleteCourseProgressResponse"
+    },
+    {
+      "name": "ClaimPreviewRequest",
+      "field": [
+        {
+          "name": "variation_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ClaimPreviewResponse"
+    },
+    {
+      "name": "SetVariationPausedRequest",
+      "field": [
+        {
+          "name": "variation_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetVariationPausedResponse"
+    },
+    {
+      "name": "SetVariationUnpausedRequest",
+      "field": [
+        {
+          "name": "variation_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetVariationUnpausedResponse"
+    }
+  ],
+  "service": [
+    {
+      "name": "CoursesTrainingService",
+      "method": [
+        {
+          "name": "GetCourseLearningSession",
+          "input_type": ".chesscom.courses.v1.GetCourseLearningSessionRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseLearningSessionResponse"
+        },
+        {
+          "name": "GetCourseTrainingForLearning",
+          "input_type": ".chesscom.courses.v1.GetCourseTrainingForLearningRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseTrainingForLearningResponse"
+        },
+        {
+          "name": "GetCourseTrainingForReviewing",
+          "input_type": ".chesscom.courses.v1.GetCourseTrainingForReviewingRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseTrainingForReviewingResponse"
+        },
+        {
+          "name": "StoreCourseTrainingProgress",
+          "input_type": ".chesscom.courses.v1.StoreCourseTrainingProgressRequest",
+          "output_type": ".chesscom.courses.v1.StoreCourseTrainingProgressResponse"
+        },
+        {
+          "name": "StoreCourseVideoProgress",
+          "input_type": ".chesscom.courses.v1.StoreCourseVideoProgressRequest",
+          "output_type": ".chesscom.courses.v1.StoreCourseVideoProgressResponse"
+        },
+        {
+          "name": "GetCourseVideoPlayback",
+          "input_type": ".chesscom.courses.v1.GetCourseVideoPlaybackRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseVideoPlaybackResponse"
+        },
+        {
+          "name": "FinalizeCourseTraining",
+          "input_type": ".chesscom.courses.v1.FinalizeCourseTrainingRequest",
+          "output_type": ".chesscom.courses.v1.FinalizeCourseTrainingResponse"
+        },
+        {
+          "name": "GetCourseStats",
+          "input_type": ".chesscom.courses.v1.GetCourseStatsRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseStatsResponse"
+        },
+        {
+          "name": "GetCourseConfiguration",
+          "input_type": ".chesscom.courses.v1.GetCourseConfigurationRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseConfigurationResponse"
+        },
+        {
+          "name": "StoreCourseConfiguration",
+          "input_type": ".chesscom.courses.v1.StoreCourseConfigurationRequest",
+          "output_type": ".chesscom.courses.v1.StoreCourseConfigurationResponse"
+        },
+        {
+          "name": "DeleteCourseProgress",
+          "input_type": ".chesscom.courses.v1.DeleteCourseProgressRequest",
+          "output_type": ".chesscom.courses.v1.DeleteCourseProgressResponse"
+        },
+        {
+          "name": "ClaimPreview",
+          "input_type": ".chesscom.courses.v1.ClaimPreviewRequest",
+          "output_type": ".chesscom.courses.v1.ClaimPreviewResponse"
+        },
+        {
+          "name": "SetVariationPaused",
+          "input_type": ".chesscom.courses.v1.SetVariationPausedRequest",
+          "output_type": ".chesscom.courses.v1.SetVariationPausedResponse"
+        },
+        {
+          "name": "SetVariationUnpaused",
+          "input_type": ".chesscom.courses.v1.SetVariationUnpausedRequest",
+          "output_type": ".chesscom.courses.v1.SetVariationUnpausedResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

@@ -1,0 +1,43 @@
+// source: chesscom/proto_options/manifest/v1/annotations.proto
+// syntax: proto3
+
+package chesscom.proto_options.manifest.v1;
+
+enum ClientHash {
+  CLIENT_HASH_UNSPECIFIED = 0;
+  CLIENT_HASH_EMAIL_SHA256 = 1;
+  CLIENT_HASH_PHONE_SHA256 = 2;
+}
+
+message GnsServiceOptions {
+  repeated string providers = 1;
+  optional string cli_group = 2;
+  optional string scope = 3;
+  optional string description = 4;
+  optional bool skip = 5;
+  optional string cli_alias = 6;
+  optional .chesscom.proto_options.manifest.v1.GnsAccess default_access = 7;
+}
+
+message GnsMethodOptions {
+  optional string cli_name = 1;
+  optional string scope = 2;
+  optional string description = 3;
+  optional string examples = 4;
+  optional bool skip = 5;
+  optional .chesscom.proto_options.manifest.v1.GnsAgentTool agent_tool = 6;
+  optional .chesscom.proto_options.manifest.v1.GnsAccess access = 7;
+}
+
+message GnsAgentTool {
+  optional string name = 1;
+  optional string description = 2;
+}
+
+message GnsAccess {
+  optional string requires = 1;
+}
+
+message GnsFieldOptions {
+  optional .chesscom.proto_options.manifest.v1.ClientHash client_hash = 1;
+}

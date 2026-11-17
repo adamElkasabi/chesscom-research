@@ -1,0 +1,11 @@
+// source: chesscom/user_gateway/v1/user_identifier.proto
+// syntax: proto3
+
+package chesscom.user_gateway.v1;
+
+message UserIdentifier {
+  oneof id {
+  string user_uuid = 1;
+  string username = 2;
+  }
+}

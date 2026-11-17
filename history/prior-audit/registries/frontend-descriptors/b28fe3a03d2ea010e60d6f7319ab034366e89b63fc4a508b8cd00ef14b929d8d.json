@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_arc.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "GameArc",
+      "value": [
+        {
+          "name": "GAME_ARC_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_ARC_BALANCED",
+          "number": 1
+        },
+        {
+          "name": "GAME_ARC_SUDDEN",
+          "number": 2
+        },
+        {
+          "name": "GAME_ARC_SMOOTH",
+          "number": 3
+        },
+        {
+          "name": "GAME_ARC_ROUGH",
+          "number": 4
+        },
+        {
+          "name": "GAME_ARC_THROWAWAY",
+          "number": 5
+        },
+        {
+          "name": "GAME_ARC_WILD",
+          "number": 6
+        },
+        {
+          "name": "GAME_ARC_SHARP",
+          "number": 7
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

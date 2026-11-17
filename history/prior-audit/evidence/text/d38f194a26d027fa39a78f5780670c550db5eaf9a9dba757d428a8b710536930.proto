@@ -1,0 +1,35 @@
+// source: chesscom/user_properties/v1/properties_daily_puzzles_solved.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum DailyPuzzlesSolvedPropertyDefinition {
+  DAILY_PUZZLES_SOLVED_UNSPECIFIED = 0;
+  DAILY_PUZZLES_LAST_COMPLETED_TIMESTAMP = 1;
+  DAILY_PUZZLES_CURRENT_STREAK = 2;
+  DAILY_PUZZLES_LONGEST_STREAK = 3;
+  DAILY_PUZZLES_LONGEST_STREAK_TIMESTAMP = 4;
+  DAILY_PUZZLES_CURRENT_STREAK_IS_LONGEST_DAILY_PUZZLE_STREAK = 5;
+  DAILY_PUZZLES_CURRENT_STREAK_END_TIMESTAMP = 6;
+}
+
+message DailyPuzzlesSolvedProperty {
+  oneof _last_completed_timestamp {
+  .google.protobuf.Timestamp last_completed_timestamp = 1;
+  }
+  oneof _current_streak {
+  int32 current_streak = 2;
+  }
+  oneof _longest_streak {
+  int32 longest_streak = 3;
+  }
+  oneof _longest_streak_timestamp {
+  .google.protobuf.Timestamp longest_streak_timestamp = 4;
+  }
+  oneof _current_streak_is_longest_daily_puzzle_streak {
+  bool current_streak_is_longest_daily_puzzle_streak = 5;
+  }
+  oneof _current_streak_end_timestamp {
+  .google.protobuf.Timestamp current_streak_end_timestamp = 6;
+  }
+}

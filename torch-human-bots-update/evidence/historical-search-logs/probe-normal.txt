@@ -1,0 +1,23 @@
+uci_mock
+request uci-search-v1
+request engine TORCH
+request cmd setoption name MultiPV value 1
+request cmd setoption name UCI_Chess960 value false
+request cmd position fen rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+request cmd go nodes 1000 searchmoves a2a3 a2a4 b1a3 b1c3 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g1f3 g1h3 g2g3 g2g4 h2h3 h2h4
+output info depth 1 seldepth 1 multipv 1 score cp 15 nodes 20 nps 952 hashfull 0 tbhits 0 time 21 pv d2d4
+output info depth 2 seldepth 2 multipv 1 score cp 35 nodes 44 nps 2000 hashfull 0 tbhits 0 time 22 pv d2d4 c7c6
+output info depth 3 seldepth 3 multipv 1 score cp 14 nodes 78 nps 3545 hashfull 0 tbhits 0 time 22 pv a2a3
+output info depth 4 seldepth 4 multipv 1 score cp 13 lowerbound nodes 118 nps 5363 hashfull 0 tbhits 0 time 22 pv c2c4
+output info depth 4 seldepth 4 multipv 1 score cp 18 lowerbound nodes 124 nps 5636 hashfull 0 tbhits 0 time 22 pv c2c4
+output info depth 4 seldepth 4 multipv 1 score cp 30 lowerbound nodes 129 nps 5863 hashfull 0 tbhits 0 time 22 pv c2c4
+output info depth 4 seldepth 4 multipv 1 score cp 33 nodes 149 nps 6772 hashfull 0 tbhits 0 time 22 pv c2c4
+output info depth 5 seldepth 4 multipv 1 score cp 23 upperbound nodes 311 nps 13521 hashfull 0 tbhits 0 time 23 pv c2c4 c7c5
+output info depth 5 seldepth 5 multipv 1 score cp 17 upperbound nodes 400 nps 17391 hashfull 0 tbhits 0 time 23 pv c2c4 c7c5
+output info depth 5 seldepth 5 multipv 1 score cp 6 upperbound nodes 492 nps 20500 hashfull 0 tbhits 0 time 24 pv c2c4 c7c5
+output info depth 5 seldepth 5 multipv 1 score cp 11 nodes 571 nps 23791 hashfull 0 tbhits 0 time 24 pv c2c4 c7c5 b1c3 b8c6
+output info depth 6 seldepth 6 multipv 1 score cp 15 lowerbound nodes 664 nps 27666 hashfull 0 tbhits 0 time 24 pv c2c4
+output info depth 6 seldepth 6 multipv 1 score cp 17 nodes 717 nps 29875 hashfull 0 tbhits 0 time 24 pv c2c4 c7c5 g1f3 b8c6 b1c3
+output info depth 7 seldepth 7 multipv 1 score cp 8 upperbound nodes 1000 nps 38461 hashfull 0 tbhits 0 time 26 pv c2c4 c7c5
+output bestmove c2c4 ponder c7c5
+enduci_mock

@@ -1,0 +1,56 @@
+// source: chesscom/user/v1/user_view.proto
+// syntax: proto3
+
+package chesscom.user.v1;
+
+message UserView {
+  oneof _first_name {
+  string first_name = 5;
+  }
+  oneof _last_name {
+  string last_name = 6;
+  }
+  oneof _chess_title {
+  string chess_title = 7;
+  }
+  oneof _flair {
+  .chesscom.flair.v1.FlairView flair = 9;
+  }
+  oneof _country {
+  string country = 11;
+  }
+  oneof _timezone {
+  string timezone = 12;
+  }
+  oneof _created_at {
+  .google.protobuf.Timestamp created_at = 13;
+  }
+  oneof _updated_at {
+  .google.protobuf.Timestamp updated_at = 14;
+  }
+  oneof _is_enabled {
+  bool is_enabled = 15;
+  }
+  oneof _is_content_hidden {
+  bool is_content_hidden = 16;
+  }
+  oneof _is_verified {
+  bool is_verified = 18;
+  }
+  oneof _content_language_includes_english {
+  bool content_language_includes_english = 19;
+  }
+  optional string id = 1;
+  optional int64 user_id = 2;
+  optional .chesscom.user.v1.UserType type = 3;
+  optional string username = 4;
+  optional .chesscom.user.v1.Avatar avatar = 8;
+  optional string membership = 10;
+  optional bool is_streamer = 17;
+  optional string flair_code = 99;
+}
+
+message Avatar {
+  optional string url = 1;
+  optional string high_resolution_url = 2;
+}

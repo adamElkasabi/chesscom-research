@@ -1,0 +1,26 @@
+// source: chesscom/game_gateway/v2/player.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v2;
+
+message Player {
+  oneof _client {
+  string client = 6;
+  }
+  oneof _rating_diff {
+  float rating_diff = 7;
+  }
+  oneof _dw_incident_logged {
+  uint32 dw_incident_logged = 8;
+  }
+  oneof _bad_sport_behavior {
+  .chesscom.game_storage.v2.PlayerBadSportBehavior bad_sport_behavior = 9;
+  }
+  optional .chesscom.game_storage.v2.PlayerType type = 1;
+  optional .chesscom.game_storage.v2.PlayerProvider provider = 2;
+  optional string key = 3;
+  optional uint32 final_rating = 4;
+  optional .chesscom.game_storage.v2.PlayerResult result = 5;
+  optional string display_name = 10;
+  optional .chesscom.game_storage.v2.PlayerTitle title = 11;
+}

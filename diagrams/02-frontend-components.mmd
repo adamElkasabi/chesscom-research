@@ -1,0 +1,7 @@
+flowchart TD
+ Shell[HTML shell] --> App[Page-specific app]
+ App --> State[Pinia state observed]
+ App --> Shared[Shared compiled components]
+ Shared --> CC[cc-button cc-avatar cc-tooltip etc]
+ App --> Board[Chess custom element references]
+ Shared -. exact runtime parent child tree incomplete .-> Other[Other component declarations]

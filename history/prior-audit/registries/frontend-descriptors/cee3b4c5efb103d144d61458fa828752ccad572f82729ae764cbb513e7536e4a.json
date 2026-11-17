@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_session_updated_notification.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoardSessionUpdatedNotification",
+      "field": [
+        {
+          "name": "session",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSession"
+        },
+        {
+          "name": "author_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

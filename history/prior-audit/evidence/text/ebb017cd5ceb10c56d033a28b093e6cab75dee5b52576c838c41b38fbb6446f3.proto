@@ -1,0 +1,191 @@
+// source: chesscom/user_properties/v1/properties_wdl.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum WDLPropertyDefinition {
+  WDL_PROPERTY_UNSPECIFIED = 0;
+  TOTAL_WINS = 1;
+  TOTAL_WINS_BUGHOUSE = 2;
+  TOTAL_WINS_CHESS960 = 3;
+  TOTAL_WINS_CHESS = 4;
+  TOTAL_WINS_CRAZYHOUSE = 5;
+  TOTAL_WINS_KINGOFTHEHILL = 6;
+  TOTAL_WINS_ODDSCHESS = 7;
+  TOTAL_WINS_THREECHECK = 8;
+  TOTAL_DRAWS = 9;
+  TOTAL_DRAWS_BUGHOUSE = 10;
+  TOTAL_DRAWS_CHESS960 = 11;
+  TOTAL_DRAWS_CHESS = 12;
+  TOTAL_DRAWS_CRAZYHOUSE = 13;
+  TOTAL_DRAWS_KINGOFTHEHILL = 14;
+  TOTAL_DRAWS_ODDSCHESS = 15;
+  TOTAL_DRAWS_THREECHECK = 16;
+  TOTAL_LOSSES = 17;
+  TOTAL_LOSSES_BUGHOUSE = 18;
+  TOTAL_LOSSES_CHESS960 = 19;
+  TOTAL_LOSSES_CHESS = 20;
+  TOTAL_LOSSES_CRAZYHOUSE = 21;
+  TOTAL_LOSSES_KINGOFTHEHILL = 22;
+  TOTAL_LOSSES_ODDSCHESS = 23;
+  TOTAL_LOSSES_THREECHECK = 24;
+  TOTAL_GAMES = 25;
+  TOTAL_GAMES_4PC = 26;
+  TOTAL_GAMES_BUGHOUSE = 27;
+  TOTAL_GAMES_CHESS960 = 28;
+  TOTAL_GAMES_CHESS = 29;
+  TOTAL_GAMES_CRAZYHOUSE = 30;
+  TOTAL_GAMES_KINGOFTHEHILL = 31;
+  TOTAL_GAMES_ODDSCHESS = 32;
+  TOTAL_GAMES_THREECHECK = 33;
+  TOTAL_GAMES_VS_COMPUTER = 34;
+  LAST_GAME_RESULT = 35;
+  LAST_GAME_RESULT_CODE = 36;
+  LAST_DAILY_GAME_RESULT = 37;
+  LAST_DAILY_GAME_RESULT_CODE = 38;
+  TOTAL_ABORTED_GAMES = 39;
+  TOTAL_RATED_GAMES_CHESS_DAILY = 40;
+  TOTAL_RATED_GAMES_CHESS_BULLET = 41;
+  TOTAL_RATED_GAMES_CHESS_BLITZ = 42;
+  TOTAL_RATED_GAMES_CHESS_RAPID = 43;
+  TOTAL_RATED_GAMES = 44;
+  TOTAL_UNRATED_GAMES = 45;
+}
+
+message WDLProperty {
+  oneof _total_wins {
+  int32 total_wins = 1;
+  }
+  oneof _total_wins_bughouse {
+  int32 total_wins_bughouse = 2;
+  }
+  oneof _total_wins_chess960 {
+  int32 total_wins_chess960 = 3;
+  }
+  oneof _total_wins_chess {
+  int32 total_wins_chess = 4;
+  }
+  oneof _total_wins_crazyhouse {
+  int32 total_wins_crazyhouse = 5;
+  }
+  oneof _total_wins_kingofthehill {
+  int32 total_wins_kingofthehill = 6;
+  }
+  oneof _total_wins_oddschess {
+  int32 total_wins_oddschess = 7;
+  }
+  oneof _total_wins_threecheck {
+  int32 total_wins_threecheck = 8;
+  }
+  oneof _total_draws {
+  int32 total_draws = 9;
+  }
+  oneof _total_draws_bughouse {
+  int32 total_draws_bughouse = 10;
+  }
+  oneof _total_draws_chess960 {
+  int32 total_draws_chess960 = 11;
+  }
+  oneof _total_draws_chess {
+  int32 total_draws_chess = 12;
+  }
+  oneof _total_draws_crazyhouse {
+  int32 total_draws_crazyhouse = 13;
+  }
+  oneof _total_draws_kingofthehill {
+  int32 total_draws_kingofthehill = 14;
+  }
+  oneof _total_draws_oddschess {
+  int32 total_draws_oddschess = 15;
+  }
+  oneof _total_draws_threecheck {
+  int32 total_draws_threecheck = 16;
+  }
+  oneof _total_losses {
+  int32 total_losses = 17;
+  }
+  oneof _total_losses_bughouse {
+  int32 total_losses_bughouse = 18;
+  }
+  oneof _total_losses_chess960 {
+  int32 total_losses_chess960 = 19;
+  }
+  oneof _total_losses_chess {
+  int32 total_losses_chess = 20;
+  }
+  oneof _total_losses_crazyhouse {
+  int32 total_losses_crazyhouse = 21;
+  }
+  oneof _total_losses_kingofthehill {
+  int32 total_losses_kingofthehill = 22;
+  }
+  oneof _total_losses_oddschess {
+  int32 total_losses_oddschess = 23;
+  }
+  oneof _total_losses_threecheck {
+  int32 total_losses_threecheck = 24;
+  }
+  oneof _total_games {
+  int32 total_games = 25;
+  }
+  oneof _total_games_4pc {
+  int32 total_games_4pc = 26;
+  }
+  oneof _total_games_bughouse {
+  int32 total_games_bughouse = 27;
+  }
+  oneof _total_games_chess960 {
+  int32 total_games_chess960 = 28;
+  }
+  oneof _total_games_chess {
+  int32 total_games_chess = 29;
+  }
+  oneof _total_games_crazyhouse {
+  int32 total_games_crazyhouse = 30;
+  }
+  oneof _total_games_kingofthehill {
+  int32 total_games_kingofthehill = 31;
+  }
+  oneof _total_games_oddschess {
+  int32 total_games_oddschess = 32;
+  }
+  oneof _total_games_threecheck {
+  int32 total_games_threecheck = 33;
+  }
+  oneof _total_games_vs_computer {
+  int32 total_games_vs_computer = 34;
+  }
+  oneof _last_game_result {
+  string last_game_result = 35;
+  }
+  oneof _last_game_result_code {
+  string last_game_result_code = 36;
+  }
+  oneof _last_daily_game_result {
+  string last_daily_game_result = 37;
+  }
+  oneof _last_daily_game_result_code {
+  string last_daily_game_result_code = 38;
+  }
+  oneof _total_aborted_games {
+  int32 total_aborted_games = 39;
+  }
+  oneof _total_rated_games_chess_daily {
+  int32 total_rated_games_chess_daily = 40;
+  }
+  oneof _total_rated_games_chess_bullet {
+  int32 total_rated_games_chess_bullet = 41;
+  }
+  oneof _total_rated_games_chess_blitz {
+  int32 total_rated_games_chess_blitz = 42;
+  }
+  oneof _total_rated_games_chess_rapid {
+  int32 total_rated_games_chess_rapid = 43;
+  }
+  oneof _total_rated_games {
+  int32 total_rated_games = 44;
+  }
+  oneof _total_unrated_games {
+  int32 total_unrated_games = 45;
+  }
+}

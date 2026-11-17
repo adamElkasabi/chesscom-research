@@ -1,0 +1,47 @@
+// source: chesscom/user_properties/v1/properties_themes.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum ThemesPropertyDefinition {
+  THEMES_PROPERTY_UNSPECIFIED = 0;
+  THEMES_THEME_ID = 1;
+  THEMES_CUSTOM_BACKGROUND_ID = 2;
+  THEMES_CUSTOM_BOARD_STYLE_ID = 3;
+  THEMES_CUSTOM_PIECE_SET_ID = 4;
+  THEMES_CUSTOM_SOUND_SET_ID = 5;
+  THEMES_BACKGROUND_ID = 6;
+  THEMES_BOARD_STYLE_ID = 7;
+  THEMES_PIECE_SET_ID = 8;
+  THEMES_SOUND_SET_ID = 9;
+}
+
+message ThemesProperty {
+  oneof _theme_id {
+  string theme_id = 1;
+  }
+  oneof _custom_background_id {
+  string custom_background_id = 2;
+  }
+  oneof _custom_board_style_id {
+  string custom_board_style_id = 3;
+  }
+  oneof _custom_piece_set_id {
+  string custom_piece_set_id = 4;
+  }
+  oneof _custom_sound_set_id {
+  string custom_sound_set_id = 5;
+  }
+  oneof _background_id {
+  string background_id = 6;
+  }
+  oneof _board_style_id {
+  string board_style_id = 7;
+  }
+  oneof _piece_set_id {
+  string piece_set_id = 8;
+  }
+  oneof _sound_set_id {
+  string sound_set_id = 9;
+  }
+}

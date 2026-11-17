@@ -1,0 +1,184 @@
+{
+  "name": "chesscom/payments/v1/group_membership_invitation.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "InvitationPlanDetails",
+      "field": [
+        {
+          "name": "max_secondary_members",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "JoinEligibility",
+      "field": [
+        {
+          "name": "is_eligible",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "status",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.JoinEligibilityStatus",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_status"
+        }
+      ]
+    },
+    {
+      "name": "PendingInvitationForInvitee",
+      "field": [
+        {
+          "name": "invitation_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "primary_account_holder",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        },
+        {
+          "name": "plan_details",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.InvitationPlanDetails"
+        },
+        {
+          "name": "expires_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PendingInviteeIdentity",
+      "field": [
+        {
+          "name": "user",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView",
+          "oneof_index": 0
+        },
+        {
+          "name": "email",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "identity"
+        }
+      ]
+    },
+    {
+      "name": "PendingInvitation",
+      "field": [
+        {
+          "name": "invitation_hash",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invitee",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "expires_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "invitee_identity",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.PendingInviteeIdentity"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "JoinEligibilityStatus",
+      "value": [
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_ALREADY_PREMIUM",
+          "number": 1
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_CROSS_BORDER_RESTRICTION",
+          "number": 2
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_INVALID_TYPE",
+          "number": 3
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_ALL_SEATS_TAKEN",
+          "number": 4
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_INVITATION_EXPIRED",
+          "number": 5
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_INVALID_INVITATION",
+          "number": 6
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_REMOVED_BY_PRIMARY",
+          "number": 7
+        },
+        {
+          "name": "JOIN_ELIGIBILITY_STATUS_TRIAL_COOLDOWN",
+          "number": 8
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

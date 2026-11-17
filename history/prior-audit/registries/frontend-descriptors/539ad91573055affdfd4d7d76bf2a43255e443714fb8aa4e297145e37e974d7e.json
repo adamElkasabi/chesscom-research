@@ -1,0 +1,137 @@
+{
+  "name": "chesscom/train/v1/train_opening_theme.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainOpeningTheme",
+      "value": [
+        {
+          "name": "TRAIN_OPENING_THEME_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_TOO_EARLY_QUEEN_DEVELOPMENT",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MOVES_SAME_PIECE_IN_OPENING",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_CASTLES_INTO_ATTACK",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_LOSES_CASTLING_RIGHTS",
+          "number": 4
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_NEVER_PLAY_F3",
+          "number": 5
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS",
+          "number": 6
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS_OPENING",
+          "number": 7
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS_CENTER",
+          "number": 8
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS_LAST_PIECE",
+          "number": 9
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS_WITH_TEMPO",
+          "number": 10
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS_RECAPTURE",
+          "number": 11
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_DEVELOPS_AND_PREVENTS_BREAK",
+          "number": 12
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_PREPARES_BISHOP_DEVELOPMENT",
+          "number": 13
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_BISHOP_GAINS_SCOPE",
+          "number": 14
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_OPENS_UP_SCOPE",
+          "number": 15
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_FIANCHETTO",
+          "number": 16
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_PREPARES_TO_CASTLE_KINGSIDE",
+          "number": 17
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_PREPARES_TO_CASTLE_QUEENSIDE",
+          "number": 18
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_CASTLES_KING_SIDE",
+          "number": 19
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_CASTLES_QUEEN_SIDE",
+          "number": 20
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_CASTLES_SAME_SIDE",
+          "number": 21
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_CASTLES_OPPOSITE_SIDE",
+          "number": 22
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_PREVENTS_CASTLING",
+          "number": 23
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_FIRST_MOVE_CENTER_PAWN",
+          "number": 24
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_PUTS_PAWN_IN_CENTER",
+          "number": 25
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_WINS_TEMPO",
+          "number": 26
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MISSES_CONNECTS_ROOKS",
+          "number": 27
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_MOVES_PAWN_IN_FRONT_OF_KING",
+          "number": 28
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_DOUBLES_CASTLE_PAWNS",
+          "number": 29
+        },
+        {
+          "name": "TRAIN_OPENING_THEME_BLOCKS_CENTRAL_PAWN",
+          "number": 30
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

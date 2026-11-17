@@ -1,0 +1,6 @@
+
+9chesscom/explanation_engine/v1alpha/static_exchange.proto#chesscom.explanation_engine.v1alphachesscom/chess/v1/score.proto7chesscom/explanation_engine/v1alpha/piece_details.proto"ö
+StaticExchangeSquareDetailsJ
+piece_on_square (21.chesscom.explanation_engine.v1alpha.PieceDetailsR
+pieces_targeting_square (21.chesscom.explanation_engine.v1alpha.PieceDetails7
+static_exchange_value (2.chesscom.chess.v1.Scorebproto3

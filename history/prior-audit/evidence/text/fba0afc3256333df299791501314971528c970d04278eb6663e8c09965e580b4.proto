@@ -1,0 +1,80 @@
+// source: chesscom/user_properties/v1/properties_definition.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum RangeModifier {
+  RANGE_MODIFIER_UNSPECIFIED = 0;
+  RANGE_MODIFIER_RANGE = 1;
+  RANGE_MODIFIER_CEIL = 2;
+  RANGE_MODIFIER_FLOOR = 3;
+}
+
+enum PropertyPermissionLevel {
+  PROPERTY_PERMISSION_LEVEL_UNSPECIFIED = 0;
+  PROPERTY_PERMISSION_LEVEL_PRIVATE = 1;
+  PROPERTY_PERMISSION_LEVEL_SELF = 2;
+  PROPERTY_PERMISSION_LEVEL_FRIENDS = 3;
+  PROPERTY_PERMISSION_LEVEL_PUBLIC = 4;
+}
+
+message PropertyDefinitionMetadata {
+  oneof user_activity_enrichment_transformer {
+  .chesscom.user_properties.v1.RangeTransformer range_transformer = 11;
+  .chesscom.user_properties.v1.YearTransformer year_transformer = 12;
+  }
+  oneof _property_name {
+  string property_name = 1;
+  }
+  oneof _property_name_suffix {
+  string property_name_suffix = 2;
+  }
+  oneof _description {
+  string description = 3;
+  }
+  oneof _is_backfilled {
+  bool is_backfilled = 4;
+  }
+  oneof _repeated_limit {
+  int32 repeated_limit = 5;
+  }
+  oneof _deprecation_date {
+  .google.protobuf.Timestamp deprecation_date = 7;
+  }
+  oneof _is_private {
+  bool is_private = 8;
+  }
+  oneof _permission_level {
+  .chesscom.user_properties.v1.PropertyPermissionLevel permission_level = 9;
+  }
+  oneof _user_activity_enrichment_field_name {
+  string user_activity_enrichment_field_name = 10;
+  }
+  repeated .chesscom.user_activity.v1.Destination destination = 6;
+  repeated string event_name_allowlist = 13;
+  repeated .chesscom.user_properties.v1.PropertyPermissionCustomizableView customizable_views = 14;
+}
+
+message PropertyDefinition {
+}
+
+message RangeTransformer {
+  oneof _range_modifier {
+  .chesscom.user_properties.v1.RangeModifier range_modifier = 2;
+  }
+  optional uint32 range = 1;
+}
+
+message YearTransformer {
+}
+
+message PropertyPermissionCustomizableView {
+  oneof customization {
+  .chesscom.user_properties.v1.AllowlistViewCustomization allowlist = 2;
+  }
+  repeated .chesscom.user_properties.v1.PropertyPermissionLevel levels = 1;
+}
+
+message AllowlistViewCustomization {
+  repeated string values = 1;
+}

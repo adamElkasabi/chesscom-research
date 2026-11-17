@@ -1,0 +1,54 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/feature_advanced_stats_category_speech.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/stats/v1/advanced_stat_percentile.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AdvancedStatsCategorySpeechRequest",
+      "field": [
+        {
+          "name": "advanced_stats",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.stats.v1.AdvancedStatPercentile"
+        }
+      ]
+    },
+    {
+      "name": "AdvancedStatsCategorySpeechResponse"
+    },
+    {
+      "name": "AdvancedStatsCategorySpeechFeature",
+      "field": [
+        {
+          "name": "opening",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "tactics",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "strategy",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "endgame",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

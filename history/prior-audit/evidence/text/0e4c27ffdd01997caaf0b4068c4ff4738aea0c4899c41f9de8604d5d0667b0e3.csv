@@ -1,0 +1,13 @@
+Metric (White / Black),Chess.com reference,Working extension v0.1.7,Local Torch human mode (experimental)
+Accuracy (%),71.7 / 99.0,60.0 / 95.5,59.0 / 95.4
+Game Rating,100 / 1000,300 / 1000,400 / 1000
+Brilliant,0 / 0,0 / 0,0 / 0
+Great,0 / 1,0 / 1,0 / 1
+Book,2 / 2,2 / 2,2 / 2
+Best,0 / 2,0 / 4,0 / 4
+Excellent,4 / 5,0 / 2,0 / 2
+Good,1 / 0,2 / 1,1 / 1
+Inaccuracy,0 / 0,1 / 0,1 / 0
+Mistake,2 / 0,4 / 0,6 / 0
+Miss,0 / 0,0 / 0,0 / 0
+Blunder,1 / 0,1 / 0,0 / 0

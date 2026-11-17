@@ -1,0 +1,14 @@
+// source: chesscom/train/v1/train_tactical_theme.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+enum TrainTacticalTheme {
+  TRAIN_TACTICAL_THEME_UNSPECIFIED = 0;
+  TRAIN_TACTICAL_THEME_FORK = 1;
+  TRAIN_TACTICAL_THEME_PIN = 2;
+  TRAIN_TACTICAL_THEME_DISCOVERY = 3;
+  TRAIN_TACTICAL_THEME_REMOVES_DEFENDER = 4;
+  TRAIN_TACTICAL_THEME_TRAPPED_PIECE = 5;
+  TRAIN_TACTICAL_THEME_SKEWER = 6;
+}

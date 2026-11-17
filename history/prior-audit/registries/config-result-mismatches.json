@@ -1,0 +1,18 @@
+[
+  {
+    "trial_source": "SRC-0849",
+    "config_source": "SRC-0712",
+    "trial_config": {
+      "id": "strength-3-class-0",
+      "strength": 3,
+      "settings": {}
+    },
+    "current_saved_config": {
+      "id": "strength-3-class-0",
+      "strength": 3,
+      "settings": {},
+      "timeoutSeconds": 60
+    },
+    "meaning": "Result records executed config; current input may have been edited afterward. Never reinterpret output using a later plan."
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "name": "chesscom/user_properties/v1/properties_themes.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "ThemesProperty",
+      "field": [
+        {
+          "name": "theme_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "custom_background_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "custom_board_style_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "custom_piece_set_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "custom_sound_set_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "background_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_style_id",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "piece_set_id",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "sound_set_id",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1030,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ThemesPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_theme_id"
+        },
+        {
+          "name": "_custom_background_id"
+        },
+        {
+          "name": "_custom_board_style_id"
+        },
+        {
+          "name": "_custom_piece_set_id"
+        },
+        {
+          "name": "_custom_sound_set_id"
+        },
+        {
+          "name": "_background_id"
+        },
+        {
+          "name": "_board_style_id"
+        },
+        {
+          "name": "_piece_set_id"
+        },
+        {
+          "name": "_sound_set_id"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ThemesPropertyDefinition",
+      "value": [
+        {
+          "name": "THEMES_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "THEMES_THEME_ID",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "THEMES_CUSTOM_BACKGROUND_ID",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "THEMES_CUSTOM_BOARD_STYLE_ID",
+          "number": 3,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "THEMES_CUSTOM_PIECE_SET_ID",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "THEMES_CUSTOM_SOUND_SET_ID",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "THEMES_BACKGROUND_ID",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "THEMES_BOARD_STYLE_ID",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "THEMES_PIECE_SET_ID",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "THEMES_SOUND_SET_ID",
+          "number": 9,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

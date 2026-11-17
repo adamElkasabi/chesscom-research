@@ -1,0 +1,626 @@
+[
+  {
+    "file": "computer-shared.js",
+    "start": 184173,
+    "end": 184175,
+    "kind": "VariableDeclarator",
+    "name": "Us",
+    "text": "Us"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 185648,
+    "end": 185650,
+    "kind": "VariableDeclarator",
+    "name": "_c",
+    "text": "_c"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 309839,
+    "end": 310007,
+    "kind": "FunctionDeclaration",
+    "name": "Be",
+    "text": "function Be(e,t,n,r){var i;(a===0||e[n+8]&O)&&(Te(n)%7==0?(i=r|N.PROMOTION|t<<te|n<<A,c[u++]=i|4<<ne,c[u++]=i|3<<ne,c[u++]=i|2<<ne,c[u++]=i|1<<ne):c[u++]=r|t<<te|n<<A)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 316605,
+    "end": 342501,
+    "kind": "FunctionDeclaration",
+    "name": "Ge",
+    "text": "function Ge(we,ke){var F,I,Ke=0,qe=!0,Je=[],L=p,R=[],Ye=f,Xe=0,Ze=1,Qe=1,$e=[],et=[$e],tt=0;$e.id=tt;var nt={},rt=[],it=!1,at=!1,ot=Lt,st=function(e,t){var n=``,r,i,a,o,s,c;return e&N.KQSIDE_CASTLE?n=e&N.KSIDE_CASTLE?`O-O`:`O-O-O`:e&N.DROP?(a=e>>A&re,r=e>>ne,r&&(n+=be[r]),n+=`@`+De(a)):(a=e>>A&re,i=e>>te&re,o=I[i],o&h?(e&N.ANY_CAPTURE&&(n+=String.fromCharCode(Ee(i)+97)+`x`),n+=De(a),e&N.PROMOTION&&(r=e>>ne,n+=`=`+be[r])):(n+=M[o&C],d>1&&(n+=Vt(o,i,a)),e&N.ANY_CAPTURE&&(n+=`x`),n+=De(a))),t||(e&N.KQSIDE_CASTLE?(i=e>>te&re,a=e>>A&re):e&N.DROP_OR_PROMOTE&&(o=ye[r]+L),Ot(o,i,a,e)&&(ot(e,i,a,r),s=l,l=u,c=d,Ke&&Ut()||Dt()===l?n+=`#`:n+=`+`,u=l,l=s,d=c,Bt($e.pop()))),n};function ct(){var n=L===p?[4174784170,2938602761]:[0,0],r,i,a;for(a=0;a<120;++a)a&136&&(a+=8),r=I[a],r&&P(n,t.zobristPiece[64*t.zobristPieceValueNumbers[r&C]+8*(7-Te(a))+Ee(a)]);if(at)for(i=1;i<3;++i)R[i]&&(R[i]&R[i]-1?(P(n,t.zobristCastle[i-1]),P(n,t.zobristCastle[i+1])):R[i]>1<<Ee(Je[i])?P(n,t.zobristCastle[i-1]):P(n,t.zobristCastle[i+1]));else{for(i=1;i<3;++i)R[i]&&(R[i]&N.KSIDE_CASTLE&&P(n,t.zobristCastle[i-1]),R[i]&N.QSIDE_CASTLE&&P(n,t.zobristCastle[i+1]));it?Le(n,F._hand):Ke===e[`3-check`]&&Ie(n,rt)}return Ye!==f&&Re(I,n,Ye+(L===p?16:-16),h|L),n}function lt(){var e;return $e.length?e=$e[$e.length-1].hash:($e.hash||=ct(),e=$e.hash),[e[0],e[1]]}function ut(e){function t(e){return/#/.test(e)&&Mt()&&(e=e.replace(`#`,`+`)),e}function n(n,r){var i=e(n,r);return i&&typeof i!=`boolean`&&(typeof i==`string`?i=t(i):(i.san=t(i.san),$e[$e.length-1].san=i.san)),i}return n._isBughouseified=!0,n._orig=e,n}function dt(t,n){var r=Ke;Ke=t?e[t]||t*1||e[String(t).replace(/\\s/g,``).toLowerCase()]||e.Chess:0,r!==Ke&&(Ke===e.Bughouse?(it=!0,F.isDependent||(F.siblingGame=Ge(),F.siblingGame.hashing(qe),F.siblingGame.isDependent=!0,F.siblingGame.siblingGame=F,F.siblingGame.header({Variant:`Bughouse`})),Me(),ot=zt,st=ut(st),F.move=ut(F.move)):(delete F.siblingGame,it=Ke===e.Crazyhouse,at=Ke===e.Chess960,Ke?(Me(),ot=zt):ot=Lt,st._isBughouseified&&(st=st._orig,F.move=F.move._orig)),n||bt(vt()))}function ft(e,t){for(var n=e>7?p:m,r,i;!(e&136);){if(r=I[e],r&n){if(r&v){if(i)return;i=e%8+(n===p?65:97)}else if(r&b)return i}e+=t}}function pt(e,t,n){I=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],L=p,Je[p]=f,Je[m]=f,R[p]=0,R[m]=0,F._hand[p]=0,F._hand[m]=0,rt[p]=0,rt[m]=0,Ye=f,Xe=0,Ze=1,t||($e=[],et=[$e],tt=0,$e.id=tt,nt={Event:`?`,Site:`?`,Date:`????.??.??`,Round:`?`,White:`?`,Black:`?`,Result:`*`},e?yt([`Variant`,e]):dt(!1,n),n||bt(vt()))}function mt(){pt(0,!1,!0),$e.hash=[1178310168,378666140],I=[34,10,18,66,130,18,10,34,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,33,9,17,65,129,17,9,33,0,0,0,0,0,0,0,0],Qe=1,Je[p]=116,Je[m]=4,R[p]=48,R[m]=48}function ht(t,i,a,o){var s=0,c,l,u,d,g,_,y,S,C,w,E,D;if(o?(c=t.split(` `),D=c[3],E=c[2]):(c=t.trim().split(/\\s+/),D=c[3]||`-`,E=c[2]||`-`),i===void 0?(E.charCodeAt(0)&31)<9&&dt(e.Chess960,!0):dt(i,!0),l=c[0],!o&&!(l=Ne(l,Ke)))return!1;if(d=l.length,pt(n[Ke],a,!0),it){if(Ke===e.Bughouse&&!F.isDependent&&(_=t.split(` | `),!F.siblingGame.load(_.length===1?t:_[1],i,a,o)))return mt(),!1;for(g=0;g<d;++g)if(y=l[g],+y!=+y)if(y===`/`)if(s>111){for(++g;g<d;++g)y=l[g],F._hand[y<`a`?p:m]+=1<<ve[y]>>>0;break}else s+=8;else I[s]=oe[y],l[g+1]===`~`&&(++g,I[s]|=T),I[s]&b&&(Je[I[s]&x]=s),++s;else s+=y*1}else for(g=0;g<d;++g)y=l[g],+y==+y?s+=y*1:y===`/`?s+=8:(I[s]=oe[y],I[s]&b&&(Je[I[s]&x]=s),++s);if(L=c[1]===`b`?m:p,E!==`-`)if(at){for(C={1:[0,0],2:[0,0]},g=E.length-1;g>=0;--g)u=E.charCodeAt(g),u===75?u=ft(119,-1):u===81?u=ft(112,1):u===107?u=ft(7,-1):u===113&&(u=ft(0,1)),S=u<97?p:m,w=Se[String.fromCharCode(u)],(o||I[w]===(v|S))&&(u>=97?Je[S]>=1&&Je[S]<=6&&(R[S]|=1<<w):Je[S]>=113&&Je[S]<=118&&(R[S]|=1<<w-112),++C[S][(Je[S]<w)*1]);(C[p][0]>1||C[p][1]>1)&&(R[p]=0),(C[m][0]>1||C[m][1]>1)&&(R[m]=0)}else{if(!o)for(g=E.length-1;g>=0;--g)S=E.charCodeAt(g)<97?p:m,(I[Se[E[g]]]!==(v|S)||Je[S]!==(S===p?116:4))&&(E=E.substr(0,g)+E.substr(g+1));for(g=E.length-1;g>=0;--g)switch(E[g]){case`K`:R[p]|=N.KSIDE_CASTLE;break;case`Q`:R[p]|=N.QSIDE_CASTLE;break;case`k`:R[m]|=N.KSIDE_CASTLE;break;case`q`:R[m]|=N.QSIDE_CASTLE;break}}return!o&&(D.length!==2||L===p&&D[1]!==`6`||L===m&&D[1]!==`3`||I[D.charCodeAt(0)-97+(8-(D[1]===`3`?4:5))*16]!==(h|Oe(L))||I[r[D]])&&(D=`-`),Ye=D===`-`?f:r[D],Xe=c[4]*1||0,Ze=c[5]*1||1,Ke===e[`3-check`]&&(c[6]&&c[6]!==`+3+3`&&(_=c[6].match(/^\\+([0-3])\\+([0-3])$/)),_||=[0,0,0],rt[p]=_[1]*1,rt[m]=_[2]*1),a||(Qe=Ze,bt(vt())),!0}function gt(){var e=0,t=``,n,r=``,i;for(n=0;n<120;++n)n&136&&(e&&(t+=e),t+=`/`,e=0,n+=8),i=I[n],i?(e&&=(t+=e,0),t+=ce[i&C]):++e;return e&&(t+=e),R[p]&N.KSIDE_CASTLE&&(r+=`K`),R[p]&N.QSIDE_CASTLE&&(r+=`Q`),R[m]&N.KSIDE_CASTLE&&(r+=`k`),R[m]&N.QSIDE_CASTLE&&(r+=`q`),t+=` `+(L===p?`w`:`b`)+` `+(r||`-`)+` `+(Ye===f?`-`:De(Ye))+` `+Xe+` `+Ze,t}function _t(){var t=0,n=``,r,i,a=``,o;for(r=0;r<120;++r)r&136&&(t&&(n+=t),n+=`/`,t=0,r+=8),o=I[r],o?(t&&=(n+=t,0),n+=ce[o&C],it&&o&T&&(n+=`~`)):++t;if(t&&(n+=t),it&&(n+=`/`+Fe(F._hand[p],!0)+Fe(F._hand[m])),at){for(i=R[m],r=0;i;)i&1&&(a=String.fromCharCode(r+97)+a),i>>=1,++r;for(i=R[p],r=0;i;)i&1&&(a=String.fromCharCode(r+65)+a),i>>=1,++r}else R[p]&N.KSIDE_CASTLE&&(a+=`K`),R[p]&N.QSIDE_CASTLE&&(a+=`Q`),R[m]&N.KSIDE_CASTLE&&(a+=`k`),R[m]&N.QSIDE_CASTLE&&(a+=`q`);return n+=` `+(L===p?`w`:`b`)+` `+(a||`-`)+` `+(Ye===f?`-`:De(Ye))+` `+Xe+` `+Ze,Ke===e[`3-check`]?n+=` +`+rt[p]+`+`+rt[m]:Ke===e.Bughouse&&!F.isDependent&&(n+=` | `+F.siblingGame.fen()),n}function vt(){return Ke?_t():gt()}function yt(e){var t,r,i;for(t=0;t<e.length;t+=2)r=e[t],i=e[t+1],r&&(r===`Variant`&&(dt(i),i=Ke?n[Ke]:void 0),r===`Result`&&i!==`*`&&i!==`1-0`&&i!==`0-1`&&i!==`1/2-1/2`&&(i=`*`),i===void 0?Ce.indexOf(r)>-1?r===`Date`?nt[r]=`????.??.??`:nt[r]=`?`:delete nt[r]:nt[r]=String(i));return nt}function bt(e){$e.length>0||tt||(e===ae?(delete nt.SetUp,delete nt.FEN,$e.hash=[1178310168,378666140]):(nt.SetUp=`1`,nt.FEN=e,$e.hash=null))}function xt(e){var t=I[r[e]];return t?{type:ce[t&S|m],color:t&x,promoted:(t&T)!==0}:null}function St(e,t){return at&&R[e]?me:R[e]&N.KSIDE_CASTLE&&!I[t+1]&&!I[t+2]?R[e]&N.QSIDE_CASTLE&&!I[t-1]&&!I[t-2]&&!I[t-3]?(s=N.KQSIDE_CASTLE,pe):(s=N.KSIDE_CASTLE,de):R[e]&N.QSIDE_CASTLE&&!I[t-1]&&!I[t-2]&&!I[t-3]?(s=N.QSIDE_CASTLE,fe):ue}function Ct(e,t){var n,r,c,l=L,u,d,p,m,g,_,v,y,b,x,C=I;if(i=[],a=0,o=0,s=0,C[8]=C[9]=C[10]=C[11]=C[12]=C[13]=C[14]=C[15]=C[24]=C[25]=C[26]=C[27]=C[28]=C[29]=C[30]=C[31]=C[40]=C[41]=C[42]=C[43]=C[44]=C[45]=C[46]=C[47]=C[56]=C[57]=C[58]=C[59]=C[60]=C[61]=C[62]=C[63]=C[72]=C[73]=C[74]=C[75]=C[76]=C[77]=C[78]=C[79]=C[88]=C[89]=C[90]=C[91]=C[92]=C[93]=C[94]=C[95]=C[104]=C[105]=C[106]=C[107]=C[108]=C[109]=C[110]=C[111]=C[120]=C[121]=C[122]=C[123]=C[124]=C[125]=C[126]=C[127]=0,t===f){i=ze(I,l|e);return}for(b=St(l,t),n=0;n<120;++n)if(n&136&&(n+=8),u=I[n],u){if(u&l){(!e||(u|0)&e)&&i.push(n);continue}if(x=b[n-t+119],(x&u)!==0)if(u&h)for(_=j[u],r=1;r<3;++r)m=n+_[r],!(m&136)&&(C[m+8]|=D,m===t&&(++a,C[n+8]|=O));else{_=j[u&S],g=_.length,y=u&E;attackLoop:for(r=0;r<g;++r)if(v=_[r],m=n,!(t>m&&v<0&&t-m>16||t<m&&v>0&&m-t>16))for(;!((m+=v)&136);){if(C[m+8]|=D,d=I[m],d){if(d&l){if(m===t){for(c=m-v;c!==n;c-=v)C[c+8]|=O;C[n+8]|=O,++a,y&&(m+=v,m&136||(C[m+8]|=D))}else if(y&&x&w){for(p=m;(p+=v)!==t;)if(p&136||I[p])continue attackLoop;C[m+8]|=k+(Math.abs(v)<<ee),++o}}break}if(!y)break}}}a>1&&(i=[t])}function wt(e,t){var n,r,i=t+16*(L===p?1:-1),o;return a===1&&(I[t+8]&O)===0&&(I[i+8]&O)===0?!1:(n=I[e],I[t]=n,I[e]=0,r=I[i],I[i]=0,o=jt(),I[e]=n,I[t]=0,I[i]=r,!o)}function Tt(e){var t,n,r;if(at){if(R[e])for(t=Je[e],n=t%8,r=0;r<8;++r)R[e]&1<<r&&He(I,t,r,e)&&(c[u++]=(r>n?N.KSIDE_CASTLE:N.QSIDE_CASTLE)+(t<<te)+(t+(r-n)<<A),++r)}else s&N.KSIDE_CASTLE&&(t=Je[e],n=t+2,I[t+9]===0&&I[t+10]===0&&(c[u++]=N.KSIDE_CASTLE+(t<<te)+(n<<A))),s&N.QSIDE_CASTLE&&(t=Je[e],n=t-2,I[t+7]===0&&I[t+6]===0&&(c[u++]=N.QSIDE_CASTLE+(t<<te)+(n<<A)))}function Et(e,t,n){var r,i,o,s,l;if(!e){for(t&&(t>>=26),s=0;s<5;++s)if((!t||(t|0)==1<<s)&&F._hand[n]&_e[s]<<ge[s]){for(s===0?(r=16,i=103,o=N.DROP):(r=0,i=119,o=N.DROP|s<<ne),l=r;l<=i;++l)l&136&&(l+=8),I[l]||(a===0||a===1&&I[l+8]&O)&&(c[u++]=o|l<<A);if(t)return}}}function Dt(e,t){var n,r,s,f=L,p=Oe(f),m,_,v,y,b,x=Je[f],C,w;for(Ct(e,x),d=i.length,u=l,C=0;C<d;++C)if(n=i[C],m=I[n],!(a&&o&&I[n+8]&k))if(m&h)for(v=j[m],(o===0||(I[n+8]&k)===0||I[n+8]>>ee===16)&&(_=n+v[0],I[_]===0&&(Be(I,n,_,0),xe[f]===Te(n)&&(_+=v[0],I[_]||Be(I,n,_,N.BIG_PAWN)))),r=1;r<3;++r)y=v[r],_=n+y,!(_&136||o&&I[n+8]&k&&I[n+8]>>ee!==Math.abs(y))&&(I[_]&p?Be(I,n,_,N.CAPTURE):_===Ye&&wt(n,_)&&(c[u++]=N.EP_CAPTURE|n<<te|_<<A));else{if(o&&I[n+8]&k){if(m&g)continue;if(le[n-Je[f]+119]&m)y=I[n+8]>>ee,v=[y,-y];else continue}else v=j[m&S];if(w=n<<te,n===x){for(r=0;r<8;++r)y=v[r],_=n+y,_&136||(I[_]?I[_]&p&&(I[_+8]&D)===0&&(c[u++]=N.CAPTURE|w|_<<A):(I[_+8]&D)===0&&(c[u++]=w|_<<A));a===0&&Tt(f)}else for(s=v.length,b=m&E,r=0;r<s;++r)for(y=v[r],_=n;_+=y,!(_&136);){if(I[_]){I[_]&p&&(a===0||I[_+8]&O)&&(c[u++]=N.CAPTURE|w|_<<A);break}else(a===0||I[_+8]&O)&&(c[u++]=w|_<<A);if(!b)break}}return Ke&&(it?Et(t,e,f):!at&&Ut()&&(u=l)),u}function Ot(t,n,r,i){var a,o,s,c,l,u,d,m,g;if(Ke===e[`King of the Hill`]&&t&b&&Ve(r))return!0;if(i&N.KQSIDE_CASTLE&&(r=L===p?i&N.KSIDE_CASTLE?117:115:i&N.KSIDE_CASTLE?5:3,t=v,g=!0),a=Je[Oe(L)],a===f)return!1;if((t&b)===0&&(o=le[r-a+119],o&t))for(c=he[r-a+119],u=t&E,l=r+c;!(l&136);){if(l===a){if(t&h){if((t&x)===p?a-r<0:a-r>0)return!0;break}return!0}if(l!==n&&I[l]||!u)break;l+=c}if(!g){if(s=le[n-a+119],s&E&&(c=he[n-a+119],c!==he[r-a+119]))for(l=a-c;!(l&136);){if(l!==n&&(d=I[l],d)){if(d&L&&s&d&&d&E)return!0;break}l-=c}if(i&N.EP_CAPTURE&&(m=r+16*(L===p?1:-1),s=le[m-a+119],s&E))for(c=he[m-a+119],l=a-c;!(l&136);){if(l!==n&&l!==m){if(l===r)break;if(d=I[l],d){if(d&L&&s&d&&d&E)return!0;break}}l-=c}}return!1}function kt(e,t){var n,r,i,a=j[g],o,s=g|e;for(n=0;n<8;++n)if(i=t+a[n],!(i&136)&&(r=I[i],(r&s)===s))return!0;for(a=j[b],n=0;n<8;++n)for(o=a[n],i=t+o;!(i&136);){if(r=I[i],r){if(r&e&&le[t-i+119]&r)if(r&h){if(e===p?t-i<0:t-i>0)return!0}else return!0;break}i+=o}return!1}function At(e){return Je[e]!==f&&kt(Oe(e),Je[e])}function jt(){return At(L)}function Mt(){var e,t,n,r=1<<ge[4];return F._hand[L]+=r,e=l,l=u,t=d,n=Dt()!==l,u=l,l=e,d=t,F._hand[L]-=r,n}function z(){return jt()&&(c[0]=0)===Dt()&&!c[0]&&(Ke!==e.Bughouse||!Mt())}function Nt(){var t=!jt()&&(c[0]=0)===Dt()&&!c[0];return t&&Ke===e.Bughouse&&!F.isDependent&&(t=F.siblingGame.inStalemate()),t&&Je[L]!==f}function Pt(e){var t,n,r=100,i=0,a=0,o=0;for(n=0;n<120;++n)if(n&136&&(n+=8),t=I[n],t){if(e&&(t&e)===0)continue;if(r&t)return!1;if(t&g){if(a||i++)return!1}else if(t&_&&(i||(++a,(Te(n)+n)%2&&++o,o&&a!==o)))return!1}return Je[p]!==f&&Je[m]!==f}function Ft(){if(Xe<8)return!1;for(var e=lt(),t=!1,n,r=Xe,i=!1,a=$e,o=a.length-1;;){if(o-=2,o<0){if(a.id){o=a.atMoveNode+o+2,a=et[a.parentId];continue}if(o===-2)return!1;n=a.hash,i=!0}else n=a[o].hash,a[o].halfMoves>r||r<2?i=!0:r=a[o].halfMoves;if(n[0]===e[0]&&n[1]===e[1]){if(t)return!0;t=!0}if(i)return!1}}function It(n){var r=n.move,i,a,o,s,c,l,u,d,f,m;if(Ke===e.Crazyhouse||r&N.DROP?(a=F._hand,l=n.hash,m=n.color):(a=F.siblingGame._hand,n.handSibling=!0,qe&&(u=F.siblingGame._history(),u.length?l=u[u.length-1].hash:(u.hash||=F.siblingGame._hashPosition(),l=u.hash)),m=Oe(n.color)),n.captured){switch(o=n.captured&T?h:n.captured&S,o&S){case h:d=0;break;case g:d=1;break;case _:d=2;break;case v:d=3;break;default:d=4}i=1<<ge[d],qe&&(c=a[m]>>ge[d]&_e[d],f=t.zobristPiece[c+63*d+(m===p?0:315)])}else s=r>>ne,i=-1<<ge[s],qe&&(c=a[m]>>ge[s]&_e[s],f=t.zobristPiece[c-1+63*s+(m===p?0:315)]);a[m]+=i,n.handChange=i,qe&&P(l,[f[0]*31>>>0,f[1]*17>>>0])}function Lt(e,n,r,i){var a=L,o=Oe(a),s,c,l,u,d={move:e,epSquare:Ye,halfMoves:Xe,castlingW:R[p],castlingB:R[m],color:a},g,_,y=a===p,x,S;qe&&(u=lt(),d.hash=u,P(u,t.zobristTurn),Ye!==f&&Re(I,u,Ye+(y?16:-16),h|a)),(e&N.KQSIDE_CASTLE)===0?it&&e&N.DROP?(I[r]=ye[i]|a,qe&&P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[I[r]]+8*(7-Te(r))+Ee(r)]),It(d),x=0):(x=I[n],S=I[r],S&&(d.captured=S,qe&&P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[I[r]&C]+8*(7-Te(r))+Ee(r)]),S&v&&R[o]&&(at?Te(r)===(y?0:7)&&(l=1<<Ee(r),R[o]&l&&(R[o]^=l,qe&&(l>1<<Ee(Je[a])?P(u,t.zobristCastle[o-1]):P(u,t.zobristCastle[o+1])))):r===(y?7:119)?R[o]&N.KSIDE_CASTLE&&(R[o]^=N.KSIDE_CASTLE,qe&&P(u,t.zobristCastle[o-1])):r===(y?0:112)&&R[o]&N.QSIDE_CASTLE&&(R[o]^=N.QSIDE_CASTLE,qe&&P(u,t.zobristCastle[o+1])))),e&N.PROMOTION?I[r]=ye[i]|a|T:I[r]=I[n],I[n]=0,qe&&(P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[x&C]+8*(7-Te(n))+Ee(n)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[I[r]&C]+8*(7-Te(r))+Ee(r)]))):x=b,e&N.EP_CAPTURE?(y?(_=r+16,g=6):(_=r-16,g=8),d.captured=h|o,I[_]=0,qe&&P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[h|o]+8*(g-Te(r))+Ee(r)])):x&b?(at?(e&N.KQSIDE_CASTLE&&(I[r]=0,I[n]=0,e&N.KSIDE_CASTLE?y?(s=118,c=117):(s=6,c=5):y?(s=114,c=115):(s=2,c=3),I[s]=a|b,I[c]=a|v,qe&&(P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[b|a]+8*(7-Te(n))+Ee(n)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[v|a]+8*(7-Te(r))+Ee(r)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[b|a]+8*(7-Te(s))+Ee(s)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[v|a]+8*(7-Te(c))+Ee(c)]))),qe&&(R[a]&R[a]-1?(P(u,t.zobristCastle[a-1]),P(u,t.zobristCastle[a+1])):R[a]>1<<Ee(Je[a])?P(u,t.zobristCastle[a-1]):P(u,t.zobristCastle[a+1])),Je[a]=s||r):(e&N.KQSIDE_CASTLE&&(I[r]=I[n],I[n]=0,e&N.KSIDE_CASTLE?(s=r-1,c=r+1):(s=r+1,c=r-2),I[s]=I[c],I[c]=0,qe&&(P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[b|a]+8*(7-Te(n))+Ee(n)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[v|a]+8*(7-Te(c))+Ee(c)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[b|a]+8*(7-Te(r))+Ee(r)]),P(u,t.zobristPiece[64*t.zobristPieceValueNumbers[v|a]+8*(7-Te(s))+Ee(s)]))),qe&&(R[a]&N.KSIDE_CASTLE&&P(u,t.zobristCastle[a-1]),R[a]&N.QSIDE_CASTLE&&P(u,t.zobristCastle[a+1])),Je[a]=r),R[a]=0):x&v&&R[a]&&(at?Te(n)===(y?7:0)&&(l=1<<Ee(n),R[a]&l&&(R[a]^=l,qe&&(l>1<<Ee(Je[a])?P(u,t.zobristCastle[a-1]):P(u,t.zobristCastle[a+1])))):n===(y?119:7)?R[a]&N.KSIDE_CASTLE&&(R[a]^=N.KSIDE_CASTLE,qe&&P(u,t.zobristCastle[a-1])):n===(y?112:0)&&R[a]&N.QSIDE_CASTLE&&(R[a]^=N.QSIDE_CASTLE,qe&&P(u,t.zobristCastle[a+1]))),e&N.BIG_PAWN?(Ye=y?r+16:r-16,qe&&Re(I,u,r,h|o)):Ye=f,x&h||e&N.ANY_CAPTURE?Xe=0:Xe++,L=o,$e.push(d)}function Rt(){var e={color:L,san:`--`,epSquare:Ye},n={color:L,san:`--`},r;return qe&&(r=lt(),e.hash=r,P(r,t.zobristTurn),Ye!==f&&Re(I,r,Ye+(L===p?16:-16),h|L)),Ye=f,Xe++,L=Oe(L),L===p&&++Ze,$e.push(e),n}function zt(n,r,i,a){var o,s=L;Lt(n,r,i,a),o=$e[$e.length-1],it?(Xe=o.halfMoves+1,o.captured&&It(o),Ke===e.Bughouse&&(o.bughouseOrder=F.moveCount()-1+F.siblingGame.moveCount())):Ke===e[`3-check`]&&At(L)&&(o.checked=!0,qe&&rt[s]&&P(o.hash,t.zobristCheck[rt[s]+(s===p?-1:2)]),++rt[s],qe&&P(o.hash,t.zobristCheck[rt[s]+(s===p?-1:2)]))}function Bt(t){var n,r,i=L,a=Oe(i),o=t.move,s=o>>A&re,c=o>>te&re;if(L=a,R[m]=t.castlingB,R[p]=t.castlingW,Ye=t.epSquare,Xe=t.halfMoves,Ke){if(at&&o&N.KQSIDE_CASTLE){o&N.KSIDE_CASTLE?a===p?(r=118,n=117):(r=6,n=5):a===p?(r=114,n=115):(r=2,n=3),I[r]=0,I[n]=0,I[c]=a|b,I[s]=a|v,Je[a]=c;return}if(t.handChange&&(Ke===e.Crazyhouse||!t.handSibling?F._hand[a]-=t.handChange:F.siblingGame._hand[Oe(a)]-=t.handChange),o&N.DROP){I[s]=0;return}t.checked&&--rt[a]}o&N.PROMOTION?(I[c]=h|a,o&N.CAPTURE?I[s]=t.captured:I[s]=0):(I[c]=I[s],o&N.KQSIDE_CASTLE?(I[s]=0,o&N.KSIDE_CASTLE?(n=s+1,r=s-1):(n=s-2,r=s+1),I[n]=a|v,I[r]=0,Je[a]=c):(s===Je[a]&&(Je[a]=c),o&N.CAPTURE?I[s]=t.captured:(I[s]=0,o&N.EP_CAPTURE&&(I[s-(a===p?-16:16)]=h|i))))}function Vt(e,t,n){var r,i,a,o,s,l,d,f;if(u<2)return``;for(e&=S,f=0;f<u;++f)if(r=c[f],d=r>>A,n===d&&(o=r>>te&re,o!==t&&(i=I[o],i&e))){if(a=!0,Te(t)===Te(o)){if(s)return De(t);l=!0}if(Ee(t)===Ee(o)){if(l)return De(t);s=!0}}return a?s?String(8-Te(t)):String.fromCharCode(Ee(t)+97):``}function Ht(e,t,n){var r,i,a=e>>A&re,o={color:L,to:De(a),flags:e&re};return!it||(e&N.DROP)===0?(r=e>>te&re,o.from=De(r),o.piece=I[r],e&N.PROMOTION&&(i=e>>ne,o.promotion=ye[i]+L),e&N.CAPTURE?o.captured=I[a]:e&N.EP_CAPTURE&&(o.captured=h|Oe(L))):(i=e>>ne,o.drop=i,o.piece=ye[i]+L),t?o.san=t:o.san=st(e,n),o}function Ut(){if(Ke===e[`3-check`])return rt[Oe(L)]===3;if(Ke===e[`King of the Hill`])return Ve(Je[Oe(L)])}function Wt(){if(Ke===e.Bughouse)return F.siblingGame.inCheckmate()}function Gt(){if(Ke===e.Bughouse)return F.siblingGame.in50MoveRule()||F.siblingGame.inThreefoldRepetition()}function Kt(){var e=[],t=vt(),n=$e.length-1,r=$e[n];return r?(e.parentId=tt,e.id=et.length,$e.curFen=t,r.lines||=[],r.lines.push(e.id),r.move?Bt(r):(Ye=r.epSquare,--Xe,L=Oe(L)),L===m&&--Ze,e.atMoveNode=n,n?e.hash=$e[n-1].hash:e.hash=$e.hash,tt=e.id,et.push(e),$e=e,!0):!1}function qt(e){var t=vt();$e.curFen=t,$e=et[e],tt=e,ht($e.curFen,Ke,!0,!0)}return F={WHITE:p,BLACK:m,PAWN:h,KNIGHT:g,BISHOP:_,ROOK:v,QUEEN:y,KING:b,FLAGS:N,load:ht,reset:mt,moves:function(e){var t=[],n,r=st,i,a;for(e&&(e.verbose&&(r=Ht),e.type&&(i=e.type|e.type<<24),a=e.noDrop),Dt(i,a),n=0;n<u;++n)t.push(r(c[n]));return t},inCheck:jt,inCheckmate:z,inStalemate:Nt,isBughouseWin:Wt,in50MoveRule:function(){return Xe>=100},inDraw:function(){return Xe>=100||Nt()||Pt()||Ft()||!!Gt()},insufficientMaterial:Pt,inThreefoldRepetition:Ft,isVariantWin:Ut,gameOver:function(){return F.inDraw()||z()||!!Ut()||!!Wt()},isPositionValid:function(e){var t,n,r=0,i;if(e||={},e.pawns!==!1)for(t=0;t<=119;){if(i=I[t],i&h)return!1;++t===8&&(t=112)}if(e.kings!==!1){for(t=0;t<=119;++t)if(t&136&&(t+=8),i=I[t],i&b){if(++r>2||n&&n&i)return!1;n=i&x}if(r!==2)return!1}return!(e.check!==!1&&!(e.kings===!1&&Je[Oe(L)]===f)&&At(Oe(L)))},validateFen:Pe,fen:vt,pgn:function(e){return e||={},!e.useResultHeader&&!tt&&(Ut()||z()?nt.Result=L===m?`1-0`:`0-1`:F.inStalemate()?nt.Result=`1/2-1/2`:Wt()&&(nt.Result=F.siblingGame.turn()===p?`1-0`:`0-1`)),Ue(e,nt,et,Qe,Ke,F)},loadPgn:function(e,t,n){var r,i,a,o,s,c={},l,u,d=0,f,p;if(typeof t!=`number`&&(n||=t,t=0),n||={},typeof e==`string`?(n.singleGame&&(e=e.replace(/(?:\\r?\\n\\s*){2,}/g,`\n`)),s=F.tokenizePgn(e,n)):s=e,o=s[t<0?s.length+t:t],!o)return!1;for(n.recordErrorInfo&&(p=function(e,r){return n.errors||=[],n.errors.push({reason:e,token:r,lineStart:a._lineStart,colStart:a._colStart,lineEnd:a._lineEnd,colEnd:a._colEnd,pgnIndex:t}),!1}),mt(),i=o.length,r=0;r<i&&(a=o[r],a.type===`tagName`);++r){if(!o[r+1]||o[r+1].type!==`tagValue`)return!1;++r,a.value===`FEN`?f=Ae(o[r].value):c[a.value]=o[r].value}if(n.variant&&(c.Variant=n.variant),c.Variant&&!f&&(f=ae),f||c.SetUp===`1`){if(c.SetUp===`0`)c.FEN=f;else if(!f||!ht(f,c.Variant))return!1}for(F.header(c),l=F,u=l._history();r<i;++r)if(a=o[r],a.type===`san`&&d===0){if(!l.move(a.value)&&(a.value!==`Z0`&&a.value!==`<>`||n.rejectNullMoves||!l.move(`--`)))if(p&&p(`Invalid SAN move`,a.value),n.commentErrors)u.length?u[u.length-1].comment=((u[u.length-1].comment||``)+` `+a.value).trim():u.initComment=((u.initComment||``)+` `+a.value).trim();else if(n.skipBadLines&&(tt!==0||$e.length&&n.allowBadMainLine))d=1;else if(typeof e==`string`&&/[^\\S\\r\\n ]|[\\u2060\\u200B-\\u200F]/.test(e))return F.loadPgn(F.tokenizePgn(e.replace(/[^\\S\\r\\n ]/g,` `).replace(/[\\u2060\\u200B-\\u200F]/g,``),n),t,n);else return mt(),!1}else if(a.type===`result`&&nt.Result===`*`)yt([`Result`,a.value]);else if(a.type===`a`&&d===0&&u[u.length-1])u[u.length-1].annotation=a.value;else if((a.type===`nag`||a.type===`aa`)&&d===0&&u[u.length-1])u[u.length-1].additionalAnnotation||(u[u.length-1].additionalAnnotation=[]),u[u.length-1].additionalAnnotation.indexOf(a.value)===-1&&u[u.length-1].additionalAnnotation.push(a.value);else if(a.type===`comment`&&d===0)u.length?(a.value&&(u[u.length-1].comment=a.value),a.commands&&(u[u.length-1].commands=a.commands,a.commands.clk?u[u.length-1].time=je(a.commands.clk):a.commands.emt&&(a.commands.timestamp=String(je(a.commands.emt))))):(u.initComment=String(a.value),a.commands&&(u.commands=a.commands));else if(a.type===`variationStart`){if(d>0)++d;else if(!Kt())return mt(),p?p(`Invalid variation start`,`(`):!1;u=l._history()}else if(a.type===`variationEnd`)d>0&&--d,d===0&&(qt(u.parentId),u=l._history());else if(a.type===`number`){if(l=/b/i.test(a.value.slice(-1))?F.siblingGame:F,!l)return p?p(`Invalid Bughouse move number`,a.value):!1;u=l._history()}else a.type===`cont`&&tt&&!u.length&&l.move(l._lines()[u.parentId][u.atMoveNode].san);return!0},header:function(e){return Array.isArray(e)?yt(e):(typeof e==`object`&&Object.keys(e).forEach(function(t){yt([t,e[t]])}),nt)},turn:function(e){return(e===p||e===m)&&(L=e),L},move:function e(t){var n,i,a,o,s,l,d,f,m,g,_,v,y;if(typeof t==`string`){switch(o=t.length-1,t[o]){case`+`:case`#`:t=t.substr(0,o)}for(m=ie.indexOf(t[0])>6?se[t[0]]:t[0]===`O`?b:h,it&&(t.indexOf(`@`)===-1?g=!0:(g=!1,m<<=24)),Dt(m,g),o=0;o<u;++o)if(l=st(c[o],!0),t===l){i=c[o];break}if(i)d=i>>te&re,f=i>>A&re,a=i>>ne;else if(t===`--`)return Rt();else{if(t=F.fixMove(t))try{return e(t)}catch{}return null}}else{if(t.drop){switch(t.drop){case`p`:a=0;break;case`n`:a=1;break;case`b`:a=2;break;case`r`:a=3;break;case`q`:a=4;break;default:return null}m=1<<26+a}else{if(t.promotion)switch(t.promotion){case`q`:a=4;break;case`n`:a=1;break;case`r`:a=3;break;case`b`:a=2;break;default:return null}d=r[t.from],g=!0,m=I[d]&S}for(f=r[t.to],n=((a?a<<ne:0)|f<<A)>>te|d,Dt(m,g),o=0;o<u;++o)if(c[o]>>te===n){i=c[o];break}if(!i)return(t=F.fixMove(t))?e(t):null}return y=i&N.DROP_OR_PROMOTE?ye[a]+L:I[d],s=Ht(i,l,!0),_=Ot(y,d,f,i),ot(i,d,f,a),_&&(Ke&&Ut()||Dt()===0?s.san+=`#`:s.san+=`+`),v=$e[$e.length-1],v.san=s.san,s.piece&T&&(v.promoted=!0),L===p&&++Ze,s},undo:function(e){var t=$e.pop();return t?(L===p&&--Ze,t.move?(Bt(t),e?!0:Ht(t.move,t.san)):(Ye=t.epSquare,--Xe,L=Oe(L),e?!0:{san:`--`,color:t.color})):null},clear:function(e){pt(e)},put:function(e,t,n){var i=r[t],a=!1,o,s=I[i],c=s&x,l=e.color;if(isNaN(i)||!e.type||!l||ie.indexOf(e.type)===-1)return!1;if(I[i]=se[e.type]|l|(e.promoted?T:0),I[i]&b&&(Je[l]=i),s&&I[Je[c]]&&I[Je[c]]!==(b|c)){for(o=0;o<120;++o)o&136&&(o+=8),I[o]===(b|c)&&(Je[c]=o,a=!0);a||(Je[c]=f)}return n||ht(vt(),Ke,!1,!1),!0},get:xt,remove:function(e,t){var n=I[r[e]],i=xt(e),a=n&x,o;if(I[r[e]]=0,n&b){for(Je[a]=f,R[a]=0,o=0;o<120;++o)if(o&136&&(o+=8),I[o]===(b|a)){Je[n.color]=o;break}}return t||ht(vt(),Ke,!0,!1),i},history:function(e,t){for(var n=[],r,i=$e,a=i.length;;){if(--a===-1)if(i.id&&!t){a=i.atMoveNode,i=et[i.parentId];continue}else break;e?(r=Ht(i[a].move,i[a].san),r.color=i[a].color,a||(i.initComment&&(r.firstComment=i.initComment),i.commands&&(r.initCommands=i.commands)),i[a].comment!==void 0&&(r.comment=i[a].comment),i[a].time!==void 0&&(r.time=i[a].time),i[a].annotation!==void 0&&(r.annotation=i[a].annotation),i[a].additionalAnnotation!==void 0&&(r.additionalAnnotation=i[a].additionalAnnotation),i[a].commands!==void 0&&(r.commands=i[a].commands),i[a].captured!==void 0&&(r.captured=i[a].captured),i[a].promoted!==void 0&&(r.promoted=i[a].promoted),i[a].lines!==void 0&&(r.lines=i[a].lines),i[a].bughouseOrder!==void 0&&(r.bughouseOrder=i[a].bughouseOrder),ie.indexOf(i[a].san[0])>6?r.piece=se[i[a].san[0]]:i[a].san[0]===`O`?r.piece=b:r.piece=h,r.piece|=r.color,n.unshift(r)):n.unshift(i[a].san)}return n},hashes:function(){for(var e=[],t=$e,n=t.length;;){if(--n===-1)if(t.id){n=t.atMoveNode,t=et[t.parentId];continue}else{t.hash||lt(),e.unshift(t.hash);break}e.unshift(t[n].hash)}return e},moveCount:function(){return $e.length},startingMoveNumber:function(){return Qe},completeFen:Ae,createVariation:Kt,selectLine:qt,hash:function(){var t=lt();return Ke===e.Bughouse&&!F.isDependent?[t,F.siblingGame.hash()]:t},hashing:function(t){return typeof t==`boolean`&&(qe=t,Ke===e.Bughouse&&!F.isDependent&&F.siblingGame.hashing(qe)),qe},hand:function(){if(it)return Fe(F._hand[p],!0)+Fe(F._hand[m])},checks:function(){if(Ke===e[`3-check`])return[rt[p],rt[m]]},threats:function(){var e=L,t=Oe(e),n=[],r=[],i=[],s=[],d=[],p=Ye,m,h,g,_,v,y,b;if(Ct(0,Je[e]),a||o)for(m=0;m<120;++m)m&136&&(m+=8),I[m+8]&O&&I[m]?i.push(De(m)):I[m+8]&k&&n.push(De(m));for(L=t,Ye=f,Dt(),m=u;m--;){if(h=c[m],v=h>>A&re,y=h>>te&re,h&N.DROP_OR_PROMOTE){if(b=h>>ne,_=ye[b]|t,h&N.PROMOTION&&b%3!=1)continue}else _=I[y],b=0;if(Ot(_,y,v,h)&&(ot(h,y,v,b),l=m,(Ke&&Ut()||Dt()===m)&&r.push((h&N.DROP?ce[_].toLowerCase()+`@`:De(y))+De(v)),Bt($e.pop()),h&N.CAPTURE)){for(g=0,m=u;m>l;)if((c[--m]>>A&re)===v){g=1,m=l;break}if(!g){s.push(De(y)+De(v));continue}}h&N.CAPTURE&&b!==1&&(g=I[v]&124)&&(kt(e,v)?(_=I[y]&S,g>_&&g-_!==8&&d.push(De(y)+De(v))):s.push(De(y)+De(v)))}return l=0,L=e,Ye=p,{pins:n,checkers:i,mates:r,undefended:s,underdefended:d}},tokenizePgn:We,fixMove:function(e){var t,n,i;if(typeof e==`string`){if(/0|[?!+#]$|[18][QNRB]$|^P/i.test(e))return e.replace(/[?!+#]+$/,``).replace(/0/g,`O`).replace(/([18])([QNRB])$/i,`$1=$2`).replace(/^P+/i,``);if(n=e.indexOf(`=`)>0?-4:-2,t=r[e.substr(n,2)],typeof t==`number`){if(I[t]&Oe(L)||/^[a-h]x?[a-h][36]$/.test(e)){if(e.indexOf(`x`)===-1)return e.slice(0,n)+`x`+e.substr(n)}else if(e.indexOf(`x`)>-1)return e.replace(/x/g,``);if(i=e.match(/^([KQNRB]?)([a-h][1-8]?|[1-8])x?([a-h][1-8])=?(.?)$/)){if(I[r[i[2]]])return{from:i[2],to:i[3],promotion:i[4].toLowerCase()};if(/^\\d$/.test(i[2])){for(e=0,Dt(se[i[1]],!0),n=0;n<u;++n)if(c[n]>>A===t&&Te(c[n]>>te&re)===8-i[2]){if(e)return;e=c[n]}if(e)return st(e,!0)}return i[1]+i[3]+i[4]}}}else if(I[r[e.from]]===(b|L)&&e.to&&e.from[1]===e.to[1]){if(e.from<e.to)return`O-O`;if(e.from>e.to)return`O-O-O`}},_hand:[],_history:function(e){return e&&($e=e,tt=$e.id),$e},_lines:function(){return et},_hashPosition:ct,_board:function(){return I}},we&&ht(we,ke)||mt(),F}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 1564874,
+    "end": 1565095,
+    "kind": "FunctionDeclaration",
+    "name": "UG",
+    "text": "function UG(e,t){return $ae(e,e=>{switch(e.methodKind){case`unary`:return jRe(t,e);case`server_streaming`:return MRe(t,e);case`client_streaming`:return NRe(t,e);case`bidi_streaming`:return PRe(t,e);default:return null}})}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 1626668,
+    "end": 1626670,
+    "kind": "VariableDeclarator",
+    "name": "jJ",
+    "text": "jJ"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2286557,
+    "end": 2286641,
+    "kind": "FunctionDeclaration",
+    "name": "A4e",
+    "text": "function A4e(e,t=``,n={}){return new Intl.NumberFormat([r1(t),`en-US`],n).format(e)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2292747,
+    "end": 2293120,
+    "kind": "FunctionDeclaration",
+    "name": "W4e",
+    "text": "async function W4e(e,t,n){let r={name:e.name,trackers:e.trackers,userProperties:e.userProperties?{...e.userProperties}:{},eventProperties:e.eventProperties?{...e.eventProperties}:{}};t&&`eventProperties`in r&&Object.assign(r.eventProperties,t),n&&`userProperties`in r&&Object.assign(r.userProperties,n);for(let e of r.trackers)(!(`enabled`in e)||e.enabled)&&await G4e(e,r)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2296781,
+    "end": 2296860,
+    "kind": "FunctionDeclaration",
+    "name": "x3e",
+    "text": "function x3e(){dY()?pQ({name:aY.Coach,params:{}}):pQ({name:aY.Bots,params:{}})}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2351493,
+    "end": 2351661,
+    "kind": "FunctionDeclaration",
+    "name": "Be",
+    "text": "function Be(e,t,n,r){var i;(a===0||e[n+8]&O)&&(Te(n)%7==0?(i=r|N.PROMOTION|t<<te|n<<A,c[u++]=i|4<<ne,c[u++]=i|3<<ne,c[u++]=i|2<<ne,c[u++]=i|1<<ne):c[u++]=r|t<<te|n<<A)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2358259,
+    "end": 2384155,
+    "kind": "FunctionDeclaration",
+    "name": "Ge",
+    "text": "function Ge(we,ke){var F,I,Ke=0,qe=!0,Je=[],L=p,R=[],Ye=f,Xe=0,Ze=1,Qe=1,$e=[],et=[$e],tt=0;$e.id=tt;var nt={},rt=[],it=!1,at=!1,ot=Lt,st=function(e,t){var n=``,r,i,a,o,s,c;return e&N.KQSIDE_CASTLE?n=e&N.KSIDE_CASTLE?`O-O`:`O-O-O`:e&N.DROP?(a=e>>A&re,r=e>>ne,r&&(n+=be[r]),n+=`@`+De(a)):(a=e>>A&re,i=e>>te&re,o=I[i],o&h?(e&N.ANY_CAPTURE&&(n+=String.fromCharCode(Ee(i)+97)+`x`),n+=De(a),e&N.PROMOTION&&(r=e>>ne,n+=`=`+be[r])):(n+=M[o&C],d>1&&(n+=Vt(o,i,a)),e&N.ANY_CAPTURE&&(n+=`x`),n+=De(a))),t||(e&N.KQSIDE_CASTLE?(i=e>>te&re,a=e>>A&re):e&N.DROP_OR_PROMOTE&&(o=ye[r]+L),Ot(o,i,a,e)&&(ot(e,i,a,r),s=l,l=u,c=d,Ke&&Ut()||Dt()===l?n+=`#`:n+=`+`,u=l,l=s,d=c,Bt($e.pop()))),n};function ct(){var n=L===p?[4174784170,2938602761]:[0,0],r,i,a;for(a=0;a<120;++a)a&136&&(a+=8),r=I[a],r&&P(n,e.zobristPiece[64*e.zobristPieceValueNumbers[r&C]+8*(7-Te(a))+Ee(a)]);if(at)for(i=1;i<3;++i)R[i]&&(R[i]&R[i]-1?(P(n,e.zobristCastle[i-1]),P(n,e.zobristCastle[i+1])):R[i]>1<<Ee(Je[i])?P(n,e.zobristCastle[i-1]):P(n,e.zobristCastle[i+1]));else{for(i=1;i<3;++i)R[i]&&(R[i]&N.KSIDE_CASTLE&&P(n,e.zobristCastle[i-1]),R[i]&N.QSIDE_CASTLE&&P(n,e.zobristCastle[i+1]));it?Le(n,F._hand):Ke===t[`3-check`]&&Ie(n,rt)}return Ye!==f&&Re(I,n,Ye+(L===p?16:-16),h|L),n}function lt(){var e;return $e.length?e=$e[$e.length-1].hash:($e.hash||=ct(),e=$e.hash),[e[0],e[1]]}function ut(e){function t(e){return/#/.test(e)&&Mt()&&(e=e.replace(`#`,`+`)),e}function n(n,r){var i=e(n,r);return i&&typeof i!=`boolean`&&(typeof i==`string`?i=t(i):(i.san=t(i.san),$e[$e.length-1].san=i.san)),i}return n._isBughouseified=!0,n._orig=e,n}function dt(e,n){var r=Ke;Ke=e?t[e]||e*1||t[String(e).replace(/\\s/g,``).toLowerCase()]||t.Chess:0,r!==Ke&&(Ke===t.Bughouse?(it=!0,F.isDependent||(F.siblingGame=Ge(),F.siblingGame.hashing(qe),F.siblingGame.isDependent=!0,F.siblingGame.siblingGame=F,F.siblingGame.header({Variant:`Bughouse`})),Me(),ot=zt,st=ut(st),F.move=ut(F.move)):(delete F.siblingGame,it=Ke===t.Crazyhouse,at=Ke===t.Chess960,Ke?(Me(),ot=zt):ot=Lt,st._isBughouseified&&(st=st._orig,F.move=F.move._orig)),n||bt(vt()))}function ft(e,t){for(var n=e>7?p:m,r,i;!(e&136);){if(r=I[e],r&n){if(r&v){if(i)return;i=e%8+(n===p?65:97)}else if(r&b)return i}e+=t}}function pt(e,t,n){I=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],L=p,Je[p]=f,Je[m]=f,R[p]=0,R[m]=0,F._hand[p]=0,F._hand[m]=0,rt[p]=0,rt[m]=0,Ye=f,Xe=0,Ze=1,t||($e=[],et=[$e],tt=0,$e.id=tt,nt={Event:`?`,Site:`?`,Date:`????.??.??`,Round:`?`,White:`?`,Black:`?`,Result:`*`},e?yt([`Variant`,e]):dt(!1,n),n||bt(vt()))}function mt(){pt(0,!1,!0),$e.hash=[1178310168,378666140],I=[34,10,18,66,130,18,10,34,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,33,9,17,65,129,17,9,33,0,0,0,0,0,0,0,0],Qe=1,Je[p]=116,Je[m]=4,R[p]=48,R[m]=48}function ht(e,i,a,o){var s=0,c,l,u,d,g,_,y,S,C,w,E,D;if(o?(c=e.split(` `),D=c[3],E=c[2]):(c=e.trim().split(/\\s+/),D=c[3]||`-`,E=c[2]||`-`),i===void 0?(E.charCodeAt(0)&31)<9&&dt(t.Chess960,!0):dt(i,!0),l=c[0],!o&&!(l=Ne(l,Ke)))return!1;if(d=l.length,pt(n[Ke],a,!0),it){if(Ke===t.Bughouse&&!F.isDependent&&(_=e.split(` | `),!F.siblingGame.load(_.length===1?e:_[1],i,a,o)))return mt(),!1;for(g=0;g<d;++g)if(y=l[g],+y!=+y)if(y===`/`)if(s>111){for(++g;g<d;++g)y=l[g],F._hand[y<`a`?p:m]+=1<<ve[y]>>>0;break}else s+=8;else I[s]=oe[y],l[g+1]===`~`&&(++g,I[s]|=T),I[s]&b&&(Je[I[s]&x]=s),++s;else s+=y*1}else for(g=0;g<d;++g)y=l[g],+y==+y?s+=y*1:y===`/`?s+=8:(I[s]=oe[y],I[s]&b&&(Je[I[s]&x]=s),++s);if(L=c[1]===`b`?m:p,E!==`-`)if(at){for(C={1:[0,0],2:[0,0]},g=E.length-1;g>=0;--g)u=E.charCodeAt(g),u===75?u=ft(119,-1):u===81?u=ft(112,1):u===107?u=ft(7,-1):u===113&&(u=ft(0,1)),S=u<97?p:m,w=Se[String.fromCharCode(u)],(o||I[w]===(v|S))&&(u>=97?Je[S]>=1&&Je[S]<=6&&(R[S]|=1<<w):Je[S]>=113&&Je[S]<=118&&(R[S]|=1<<w-112),++C[S][(Je[S]<w)*1]);(C[p][0]>1||C[p][1]>1)&&(R[p]=0),(C[m][0]>1||C[m][1]>1)&&(R[m]=0)}else{if(!o)for(g=E.length-1;g>=0;--g)S=E.charCodeAt(g)<97?p:m,(I[Se[E[g]]]!==(v|S)||Je[S]!==(S===p?116:4))&&(E=E.substr(0,g)+E.substr(g+1));for(g=E.length-1;g>=0;--g)switch(E[g]){case`K`:R[p]|=N.KSIDE_CASTLE;break;case`Q`:R[p]|=N.QSIDE_CASTLE;break;case`k`:R[m]|=N.KSIDE_CASTLE;break;case`q`:R[m]|=N.QSIDE_CASTLE;break}}return!o&&(D.length!==2||L===p&&D[1]!==`6`||L===m&&D[1]!==`3`||I[D.charCodeAt(0)-97+(8-(D[1]===`3`?4:5))*16]!==(h|Oe(L))||I[r[D]])&&(D=`-`),Ye=D===`-`?f:r[D],Xe=c[4]*1||0,Ze=c[5]*1||1,Ke===t[`3-check`]&&(c[6]&&c[6]!==`+3+3`&&(_=c[6].match(/^\\+([0-3])\\+([0-3])$/)),_||=[0,0,0],rt[p]=_[1]*1,rt[m]=_[2]*1),a||(Qe=Ze,bt(vt())),!0}function gt(){var e=0,t=``,n,r=``,i;for(n=0;n<120;++n)n&136&&(e&&(t+=e),t+=`/`,e=0,n+=8),i=I[n],i?(e&&=(t+=e,0),t+=ce[i&C]):++e;return e&&(t+=e),R[p]&N.KSIDE_CASTLE&&(r+=`K`),R[p]&N.QSIDE_CASTLE&&(r+=`Q`),R[m]&N.KSIDE_CASTLE&&(r+=`k`),R[m]&N.QSIDE_CASTLE&&(r+=`q`),t+=` `+(L===p?`w`:`b`)+` `+(r||`-`)+` `+(Ye===f?`-`:De(Ye))+` `+Xe+` `+Ze,t}function _t(){var e=0,n=``,r,i,a=``,o;for(r=0;r<120;++r)r&136&&(e&&(n+=e),n+=`/`,e=0,r+=8),o=I[r],o?(e&&=(n+=e,0),n+=ce[o&C],it&&o&T&&(n+=`~`)):++e;if(e&&(n+=e),it&&(n+=`/`+Fe(F._hand[p],!0)+Fe(F._hand[m])),at){for(i=R[m],r=0;i;)i&1&&(a=String.fromCharCode(r+97)+a),i>>=1,++r;for(i=R[p],r=0;i;)i&1&&(a=String.fromCharCode(r+65)+a),i>>=1,++r}else R[p]&N.KSIDE_CASTLE&&(a+=`K`),R[p]&N.QSIDE_CASTLE&&(a+=`Q`),R[m]&N.KSIDE_CASTLE&&(a+=`k`),R[m]&N.QSIDE_CASTLE&&(a+=`q`);return n+=` `+(L===p?`w`:`b`)+` `+(a||`-`)+` `+(Ye===f?`-`:De(Ye))+` `+Xe+` `+Ze,Ke===t[`3-check`]?n+=` +`+rt[p]+`+`+rt[m]:Ke===t.Bughouse&&!F.isDependent&&(n+=` | `+F.siblingGame.fen()),n}function vt(){return Ke?_t():gt()}function yt(e){var t,r,i;for(t=0;t<e.length;t+=2)r=e[t],i=e[t+1],r&&(r===`Variant`&&(dt(i),i=Ke?n[Ke]:void 0),r===`Result`&&i!==`*`&&i!==`1-0`&&i!==`0-1`&&i!==`1/2-1/2`&&(i=`*`),i===void 0?Ce.indexOf(r)>-1?r===`Date`?nt[r]=`????.??.??`:nt[r]=`?`:delete nt[r]:nt[r]=String(i));return nt}function bt(e){$e.length>0||tt||(e===ae?(delete nt.SetUp,delete nt.FEN,$e.hash=[1178310168,378666140]):(nt.SetUp=`1`,nt.FEN=e,$e.hash=null))}function xt(e){var t=I[r[e]];return t?{type:ce[t&S|m],color:t&x,promoted:(t&T)!==0}:null}function St(e,t){return at&&R[e]?me:R[e]&N.KSIDE_CASTLE&&!I[t+1]&&!I[t+2]?R[e]&N.QSIDE_CASTLE&&!I[t-1]&&!I[t-2]&&!I[t-3]?(s=N.KQSIDE_CASTLE,pe):(s=N.KSIDE_CASTLE,de):R[e]&N.QSIDE_CASTLE&&!I[t-1]&&!I[t-2]&&!I[t-3]?(s=N.QSIDE_CASTLE,fe):ue}function Ct(e,t){var n,r,c,l=L,u,d,p,m,g,_,v,y,b,x,C=I;if(i=[],a=0,o=0,s=0,C[8]=C[9]=C[10]=C[11]=C[12]=C[13]=C[14]=C[15]=C[24]=C[25]=C[26]=C[27]=C[28]=C[29]=C[30]=C[31]=C[40]=C[41]=C[42]=C[43]=C[44]=C[45]=C[46]=C[47]=C[56]=C[57]=C[58]=C[59]=C[60]=C[61]=C[62]=C[63]=C[72]=C[73]=C[74]=C[75]=C[76]=C[77]=C[78]=C[79]=C[88]=C[89]=C[90]=C[91]=C[92]=C[93]=C[94]=C[95]=C[104]=C[105]=C[106]=C[107]=C[108]=C[109]=C[110]=C[111]=C[120]=C[121]=C[122]=C[123]=C[124]=C[125]=C[126]=C[127]=0,t===f){i=ze(I,l|e);return}for(b=St(l,t),n=0;n<120;++n)if(n&136&&(n+=8),u=I[n],u){if(u&l){(!e||(u|0)&e)&&i.push(n);continue}if(x=b[n-t+119],(x&u)!==0)if(u&h)for(_=j[u],r=1;r<3;++r)m=n+_[r],!(m&136)&&(C[m+8]|=D,m===t&&(++a,C[n+8]|=O));else{_=j[u&S],g=_.length,y=u&E;attackLoop:for(r=0;r<g;++r)if(v=_[r],m=n,!(t>m&&v<0&&t-m>16||t<m&&v>0&&m-t>16))for(;!((m+=v)&136);){if(C[m+8]|=D,d=I[m],d){if(d&l){if(m===t){for(c=m-v;c!==n;c-=v)C[c+8]|=O;C[n+8]|=O,++a,y&&(m+=v,m&136||(C[m+8]|=D))}else if(y&&x&w){for(p=m;(p+=v)!==t;)if(p&136||I[p])continue attackLoop;C[m+8]|=k+(Math.abs(v)<<ee),++o}}break}if(!y)break}}}a>1&&(i=[t])}function wt(e,t){var n,r,i=t+16*(L===p?1:-1),o;return a===1&&(I[t+8]&O)===0&&(I[i+8]&O)===0?!1:(n=I[e],I[t]=n,I[e]=0,r=I[i],I[i]=0,o=jt(),I[e]=n,I[t]=0,I[i]=r,!o)}function Tt(e){var t,n,r;if(at){if(R[e])for(t=Je[e],n=t%8,r=0;r<8;++r)R[e]&1<<r&&He(I,t,r,e)&&(c[u++]=(r>n?N.KSIDE_CASTLE:N.QSIDE_CASTLE)+(t<<te)+(t+(r-n)<<A),++r)}else s&N.KSIDE_CASTLE&&(t=Je[e],n=t+2,I[t+9]===0&&I[t+10]===0&&(c[u++]=N.KSIDE_CASTLE+(t<<te)+(n<<A))),s&N.QSIDE_CASTLE&&(t=Je[e],n=t-2,I[t+7]===0&&I[t+6]===0&&(c[u++]=N.QSIDE_CASTLE+(t<<te)+(n<<A)))}function Et(e,t,n){var r,i,o,s,l;if(!e){for(t&&(t>>=26),s=0;s<5;++s)if((!t||(t|0)==1<<s)&&F._hand[n]&_e[s]<<ge[s]){for(s===0?(r=16,i=103,o=N.DROP):(r=0,i=119,o=N.DROP|s<<ne),l=r;l<=i;++l)l&136&&(l+=8),I[l]||(a===0||a===1&&I[l+8]&O)&&(c[u++]=o|l<<A);if(t)return}}}function Dt(e,t){var n,r,s,f=L,p=Oe(f),m,_,v,y,b,x=Je[f],C,w;for(Ct(e,x),d=i.length,u=l,C=0;C<d;++C)if(n=i[C],m=I[n],!(a&&o&&I[n+8]&k))if(m&h)for(v=j[m],(o===0||(I[n+8]&k)===0||I[n+8]>>ee===16)&&(_=n+v[0],I[_]===0&&(Be(I,n,_,0),xe[f]===Te(n)&&(_+=v[0],I[_]||Be(I,n,_,N.BIG_PAWN)))),r=1;r<3;++r)y=v[r],_=n+y,!(_&136||o&&I[n+8]&k&&I[n+8]>>ee!==Math.abs(y))&&(I[_]&p?Be(I,n,_,N.CAPTURE):_===Ye&&wt(n,_)&&(c[u++]=N.EP_CAPTURE|n<<te|_<<A));else{if(o&&I[n+8]&k){if(m&g)continue;if(le[n-Je[f]+119]&m)y=I[n+8]>>ee,v=[y,-y];else continue}else v=j[m&S];if(w=n<<te,n===x){for(r=0;r<8;++r)y=v[r],_=n+y,_&136||(I[_]?I[_]&p&&(I[_+8]&D)===0&&(c[u++]=N.CAPTURE|w|_<<A):(I[_+8]&D)===0&&(c[u++]=w|_<<A));a===0&&Tt(f)}else for(s=v.length,b=m&E,r=0;r<s;++r)for(y=v[r],_=n;_+=y,!(_&136);){if(I[_]){I[_]&p&&(a===0||I[_+8]&O)&&(c[u++]=N.CAPTURE|w|_<<A);break}else(a===0||I[_+8]&O)&&(c[u++]=w|_<<A);if(!b)break}}return Ke&&(it?Et(t,e,f):!at&&Ut()&&(u=l)),u}function Ot(e,n,r,i){var a,o,s,c,l,u,d,m,g;if(Ke===t[`King of the Hill`]&&e&b&&Ve(r))return!0;if(i&N.KQSIDE_CASTLE&&(r=L===p?i&N.KSIDE_CASTLE?117:115:i&N.KSIDE_CASTLE?5:3,e=v,g=!0),a=Je[Oe(L)],a===f)return!1;if((e&b)===0&&(o=le[r-a+119],o&e))for(c=he[r-a+119],u=e&E,l=r+c;!(l&136);){if(l===a){if(e&h){if((e&x)===p?a-r<0:a-r>0)return!0;break}return!0}if(l!==n&&I[l]||!u)break;l+=c}if(!g){if(s=le[n-a+119],s&E&&(c=he[n-a+119],c!==he[r-a+119]))for(l=a-c;!(l&136);){if(l!==n&&(d=I[l],d)){if(d&L&&s&d&&d&E)return!0;break}l-=c}if(i&N.EP_CAPTURE&&(m=r+16*(L===p?1:-1),s=le[m-a+119],s&E))for(c=he[m-a+119],l=a-c;!(l&136);){if(l!==n&&l!==m){if(l===r)break;if(d=I[l],d){if(d&L&&s&d&&d&E)return!0;break}}l-=c}}return!1}function kt(e,t){var n,r,i,a=j[g],o,s=g|e;for(n=0;n<8;++n)if(i=t+a[n],!(i&136)&&(r=I[i],(r&s)===s))return!0;for(a=j[b],n=0;n<8;++n)for(o=a[n],i=t+o;!(i&136);){if(r=I[i],r){if(r&e&&le[t-i+119]&r)if(r&h){if(e===p?t-i<0:t-i>0)return!0}else return!0;break}i+=o}return!1}function At(e){return Je[e]!==f&&kt(Oe(e),Je[e])}function jt(){return At(L)}function Mt(){var e,t,n,r=1<<ge[4];return F._hand[L]+=r,e=l,l=u,t=d,n=Dt()!==l,u=l,l=e,d=t,F._hand[L]-=r,n}function z(){return jt()&&(c[0]=0)===Dt()&&!c[0]&&(Ke!==t.Bughouse||!Mt())}function Nt(){var e=!jt()&&(c[0]=0)===Dt()&&!c[0];return e&&Ke===t.Bughouse&&!F.isDependent&&(e=F.siblingGame.inStalemate()),e&&Je[L]!==f}function Pt(e){var t,n,r=100,i=0,a=0,o=0;for(n=0;n<120;++n)if(n&136&&(n+=8),t=I[n],t){if(e&&(t&e)===0)continue;if(r&t)return!1;if(t&g){if(a||i++)return!1}else if(t&_&&(i||(++a,(Te(n)+n)%2&&++o,o&&a!==o)))return!1}return Je[p]!==f&&Je[m]!==f}function Ft(){if(Xe<8)return!1;for(var e=lt(),t=!1,n,r=Xe,i=!1,a=$e,o=a.length-1;;){if(o-=2,o<0){if(a.id){o=a.atMoveNode+o+2,a=et[a.parentId];continue}if(o===-2)return!1;n=a.hash,i=!0}else n=a[o].hash,a[o].halfMoves>r||r<2?i=!0:r=a[o].halfMoves;if(n[0]===e[0]&&n[1]===e[1]){if(t)return!0;t=!0}if(i)return!1}}function It(n){var r=n.move,i,a,o,s,c,l,u,d,f,m;if(Ke===t.Crazyhouse||r&N.DROP?(a=F._hand,l=n.hash,m=n.color):(a=F.siblingGame._hand,n.handSibling=!0,qe&&(u=F.siblingGame._history(),u.length?l=u[u.length-1].hash:(u.hash||=F.siblingGame._hashPosition(),l=u.hash)),m=Oe(n.color)),n.captured){switch(o=n.captured&T?h:n.captured&S,o&S){case h:d=0;break;case g:d=1;break;case _:d=2;break;case v:d=3;break;default:d=4}i=1<<ge[d],qe&&(c=a[m]>>ge[d]&_e[d],f=e.zobristPiece[c+63*d+(m===p?0:315)])}else s=r>>ne,i=-1<<ge[s],qe&&(c=a[m]>>ge[s]&_e[s],f=e.zobristPiece[c-1+63*s+(m===p?0:315)]);a[m]+=i,n.handChange=i,qe&&P(l,[f[0]*31>>>0,f[1]*17>>>0])}function Lt(t,n,r,i){var a=L,o=Oe(a),s,c,l,u,d={move:t,epSquare:Ye,halfMoves:Xe,castlingW:R[p],castlingB:R[m],color:a},g,_,y=a===p,x,S;qe&&(u=lt(),d.hash=u,P(u,e.zobristTurn),Ye!==f&&Re(I,u,Ye+(y?16:-16),h|a)),(t&N.KQSIDE_CASTLE)===0?it&&t&N.DROP?(I[r]=ye[i]|a,qe&&P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[I[r]]+8*(7-Te(r))+Ee(r)]),It(d),x=0):(x=I[n],S=I[r],S&&(d.captured=S,qe&&P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[I[r]&C]+8*(7-Te(r))+Ee(r)]),S&v&&R[o]&&(at?Te(r)===(y?0:7)&&(l=1<<Ee(r),R[o]&l&&(R[o]^=l,qe&&(l>1<<Ee(Je[a])?P(u,e.zobristCastle[o-1]):P(u,e.zobristCastle[o+1])))):r===(y?7:119)?R[o]&N.KSIDE_CASTLE&&(R[o]^=N.KSIDE_CASTLE,qe&&P(u,e.zobristCastle[o-1])):r===(y?0:112)&&R[o]&N.QSIDE_CASTLE&&(R[o]^=N.QSIDE_CASTLE,qe&&P(u,e.zobristCastle[o+1])))),t&N.PROMOTION?I[r]=ye[i]|a|T:I[r]=I[n],I[n]=0,qe&&(P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[x&C]+8*(7-Te(n))+Ee(n)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[I[r]&C]+8*(7-Te(r))+Ee(r)]))):x=b,t&N.EP_CAPTURE?(y?(_=r+16,g=6):(_=r-16,g=8),d.captured=h|o,I[_]=0,qe&&P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[h|o]+8*(g-Te(r))+Ee(r)])):x&b?(at?(t&N.KQSIDE_CASTLE&&(I[r]=0,I[n]=0,t&N.KSIDE_CASTLE?y?(s=118,c=117):(s=6,c=5):y?(s=114,c=115):(s=2,c=3),I[s]=a|b,I[c]=a|v,qe&&(P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[b|a]+8*(7-Te(n))+Ee(n)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[v|a]+8*(7-Te(r))+Ee(r)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[b|a]+8*(7-Te(s))+Ee(s)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[v|a]+8*(7-Te(c))+Ee(c)]))),qe&&(R[a]&R[a]-1?(P(u,e.zobristCastle[a-1]),P(u,e.zobristCastle[a+1])):R[a]>1<<Ee(Je[a])?P(u,e.zobristCastle[a-1]):P(u,e.zobristCastle[a+1])),Je[a]=s||r):(t&N.KQSIDE_CASTLE&&(I[r]=I[n],I[n]=0,t&N.KSIDE_CASTLE?(s=r-1,c=r+1):(s=r+1,c=r-2),I[s]=I[c],I[c]=0,qe&&(P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[b|a]+8*(7-Te(n))+Ee(n)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[v|a]+8*(7-Te(c))+Ee(c)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[b|a]+8*(7-Te(r))+Ee(r)]),P(u,e.zobristPiece[64*e.zobristPieceValueNumbers[v|a]+8*(7-Te(s))+Ee(s)]))),qe&&(R[a]&N.KSIDE_CASTLE&&P(u,e.zobristCastle[a-1]),R[a]&N.QSIDE_CASTLE&&P(u,e.zobristCastle[a+1])),Je[a]=r),R[a]=0):x&v&&R[a]&&(at?Te(n)===(y?7:0)&&(l=1<<Ee(n),R[a]&l&&(R[a]^=l,qe&&(l>1<<Ee(Je[a])?P(u,e.zobristCastle[a-1]):P(u,e.zobristCastle[a+1])))):n===(y?119:7)?R[a]&N.KSIDE_CASTLE&&(R[a]^=N.KSIDE_CASTLE,qe&&P(u,e.zobristCastle[a-1])):n===(y?112:0)&&R[a]&N.QSIDE_CASTLE&&(R[a]^=N.QSIDE_CASTLE,qe&&P(u,e.zobristCastle[a+1]))),t&N.BIG_PAWN?(Ye=y?r+16:r-16,qe&&Re(I,u,r,h|o)):Ye=f,x&h||t&N.ANY_CAPTURE?Xe=0:Xe++,L=o,$e.push(d)}function Rt(){var t={color:L,san:`--`,epSquare:Ye},n={color:L,san:`--`},r;return qe&&(r=lt(),t.hash=r,P(r,e.zobristTurn),Ye!==f&&Re(I,r,Ye+(L===p?16:-16),h|L)),Ye=f,Xe++,L=Oe(L),L===p&&++Ze,$e.push(t),n}function zt(n,r,i,a){var o,s=L;Lt(n,r,i,a),o=$e[$e.length-1],it?(Xe=o.halfMoves+1,o.captured&&It(o),Ke===t.Bughouse&&(o.bughouseOrder=F.moveCount()-1+F.siblingGame.moveCount())):Ke===t[`3-check`]&&At(L)&&(o.checked=!0,qe&&rt[s]&&P(o.hash,e.zobristCheck[rt[s]+(s===p?-1:2)]),++rt[s],qe&&P(o.hash,e.zobristCheck[rt[s]+(s===p?-1:2)]))}function Bt(e){var n,r,i=L,a=Oe(i),o=e.move,s=o>>A&re,c=o>>te&re;if(L=a,R[m]=e.castlingB,R[p]=e.castlingW,Ye=e.epSquare,Xe=e.halfMoves,Ke){if(at&&o&N.KQSIDE_CASTLE){o&N.KSIDE_CASTLE?a===p?(r=118,n=117):(r=6,n=5):a===p?(r=114,n=115):(r=2,n=3),I[r]=0,I[n]=0,I[c]=a|b,I[s]=a|v,Je[a]=c;return}if(e.handChange&&(Ke===t.Crazyhouse||!e.handSibling?F._hand[a]-=e.handChange:F.siblingGame._hand[Oe(a)]-=e.handChange),o&N.DROP){I[s]=0;return}e.checked&&--rt[a]}o&N.PROMOTION?(I[c]=h|a,o&N.CAPTURE?I[s]=e.captured:I[s]=0):(I[c]=I[s],o&N.KQSIDE_CASTLE?(I[s]=0,o&N.KSIDE_CASTLE?(n=s+1,r=s-1):(n=s-2,r=s+1),I[n]=a|v,I[r]=0,Je[a]=c):(s===Je[a]&&(Je[a]=c),o&N.CAPTURE?I[s]=e.captured:(I[s]=0,o&N.EP_CAPTURE&&(I[s-(a===p?-16:16)]=h|i))))}function Vt(e,t,n){var r,i,a,o,s,l,d,f;if(u<2)return``;for(e&=S,f=0;f<u;++f)if(r=c[f],d=r>>A,n===d&&(o=r>>te&re,o!==t&&(i=I[o],i&e))){if(a=!0,Te(t)===Te(o)){if(s)return De(t);l=!0}if(Ee(t)===Ee(o)){if(l)return De(t);s=!0}}return a?s?String(8-Te(t)):String.fromCharCode(Ee(t)+97):``}function Ht(e,t,n){var r,i,a=e>>A&re,o={color:L,to:De(a),flags:e&re};return!it||(e&N.DROP)===0?(r=e>>te&re,o.from=De(r),o.piece=I[r],e&N.PROMOTION&&(i=e>>ne,o.promotion=ye[i]+L),e&N.CAPTURE?o.captured=I[a]:e&N.EP_CAPTURE&&(o.captured=h|Oe(L))):(i=e>>ne,o.drop=i,o.piece=ye[i]+L),t?o.san=t:o.san=st(e,n),o}function Ut(){if(Ke===t[`3-check`])return rt[Oe(L)]===3;if(Ke===t[`King of the Hill`])return Ve(Je[Oe(L)])}function Wt(){if(Ke===t.Bughouse)return F.siblingGame.inCheckmate()}function Gt(){if(Ke===t.Bughouse)return F.siblingGame.in50MoveRule()||F.siblingGame.inThreefoldRepetition()}function Kt(){var e=[],t=vt(),n=$e.length-1,r=$e[n];return r?(e.parentId=tt,e.id=et.length,$e.curFen=t,r.lines||=[],r.lines.push(e.id),r.move?Bt(r):(Ye=r.epSquare,--Xe,L=Oe(L)),L===m&&--Ze,e.atMoveNode=n,n?e.hash=$e[n-1].hash:e.hash=$e.hash,tt=e.id,et.push(e),$e=e,!0):!1}function qt(e){var t=vt();$e.curFen=t,$e=et[e],tt=e,ht($e.curFen,Ke,!0,!0)}return F={WHITE:p,BLACK:m,PAWN:h,KNIGHT:g,BISHOP:_,ROOK:v,QUEEN:y,KING:b,FLAGS:N,load:ht,reset:mt,moves:function(e){var t=[],n,r=st,i,a;for(e&&(e.verbose&&(r=Ht),e.type&&(i=e.type|e.type<<24),a=e.noDrop),Dt(i,a),n=0;n<u;++n)t.push(r(c[n]));return t},inCheck:jt,inCheckmate:z,inStalemate:Nt,isBughouseWin:Wt,in50MoveRule:function(){return Xe>=100},inDraw:function(){return Xe>=100||Nt()||Pt()||Ft()||!!Gt()},insufficientMaterial:Pt,inThreefoldRepetition:Ft,isVariantWin:Ut,gameOver:function(){return F.inDraw()||z()||!!Ut()||!!Wt()},isPositionValid:function(e){var t,n,r=0,i;if(e||={},e.pawns!==!1)for(t=0;t<=119;){if(i=I[t],i&h)return!1;++t===8&&(t=112)}if(e.kings!==!1){for(t=0;t<=119;++t)if(t&136&&(t+=8),i=I[t],i&b){if(++r>2||n&&n&i)return!1;n=i&x}if(r!==2)return!1}return!(e.check!==!1&&!(e.kings===!1&&Je[Oe(L)]===f)&&At(Oe(L)))},validateFen:Pe,fen:vt,pgn:function(e){return e||={},!e.useResultHeader&&!tt&&(Ut()||z()?nt.Result=L===m?`1-0`:`0-1`:F.inStalemate()?nt.Result=`1/2-1/2`:Wt()&&(nt.Result=F.siblingGame.turn()===p?`1-0`:`0-1`)),Ue(e,nt,et,Qe,Ke,F)},loadPgn:function(e,t,n){var r,i,a,o,s,c={},l,u,d=0,f,p;if(typeof t!=`number`&&(n||=t,t=0),n||={},typeof e==`string`?(n.singleGame&&(e=e.replace(/(?:\\r?\\n\\s*){2,}/g,`\n`)),s=F.tokenizePgn(e,n)):s=e,o=s[t<0?s.length+t:t],!o)return!1;for(n.recordErrorInfo&&(p=function(e,r){return n.errors||=[],n.errors.push({reason:e,token:r,lineStart:a._lineStart,colStart:a._colStart,lineEnd:a._lineEnd,colEnd:a._colEnd,pgnIndex:t}),!1}),mt(),i=o.length,r=0;r<i&&(a=o[r],a.type===`tagName`);++r){if(!o[r+1]||o[r+1].type!==`tagValue`)return!1;++r,a.value===`FEN`?f=Ae(o[r].value):c[a.value]=o[r].value}if(n.variant&&(c.Variant=n.variant),c.Variant&&!f&&(f=ae),f||c.SetUp===`1`){if(c.SetUp===`0`)c.FEN=f;else if(!f||!ht(f,c.Variant))return!1}for(F.header(c),l=F,u=l._history();r<i;++r)if(a=o[r],a.type===`san`&&d===0){if(!l.move(a.value)&&(a.value!==`Z0`&&a.value!==`<>`||n.rejectNullMoves||!l.move(`--`)))if(p&&p(`Invalid SAN move`,a.value),n.commentErrors)u.length?u[u.length-1].comment=((u[u.length-1].comment||``)+` `+a.value).trim():u.initComment=((u.initComment||``)+` `+a.value).trim();else if(n.skipBadLines&&(tt!==0||$e.length&&n.allowBadMainLine))d=1;else if(typeof e==`string`&&/[^\\S\\r\\n ]|[\\u2060\\u200B-\\u200F]/.test(e))return F.loadPgn(F.tokenizePgn(e.replace(/[^\\S\\r\\n ]/g,` `).replace(/[\\u2060\\u200B-\\u200F]/g,``),n),t,n);else return mt(),!1}else if(a.type===`result`&&nt.Result===`*`)yt([`Result`,a.value]);else if(a.type===`a`&&d===0&&u[u.length-1])u[u.length-1].annotation=a.value;else if((a.type===`nag`||a.type===`aa`)&&d===0&&u[u.length-1])u[u.length-1].additionalAnnotation||(u[u.length-1].additionalAnnotation=[]),u[u.length-1].additionalAnnotation.indexOf(a.value)===-1&&u[u.length-1].additionalAnnotation.push(a.value);else if(a.type===`comment`&&d===0)u.length?(a.value&&(u[u.length-1].comment=a.value),a.commands&&(u[u.length-1].commands=a.commands,a.commands.clk?u[u.length-1].time=je(a.commands.clk):a.commands.emt&&(a.commands.timestamp=String(je(a.commands.emt))))):(u.initComment=String(a.value),a.commands&&(u.commands=a.commands));else if(a.type===`variationStart`){if(d>0)++d;else if(!Kt())return mt(),p?p(`Invalid variation start`,`(`):!1;u=l._history()}else if(a.type===`variationEnd`)d>0&&--d,d===0&&(qt(u.parentId),u=l._history());else if(a.type===`number`){if(l=/b/i.test(a.value.slice(-1))?F.siblingGame:F,!l)return p?p(`Invalid Bughouse move number`,a.value):!1;u=l._history()}else a.type===`cont`&&tt&&!u.length&&l.move(l._lines()[u.parentId][u.atMoveNode].san);return!0},header:function(e){return Array.isArray(e)?yt(e):(typeof e==`object`&&Object.keys(e).forEach(function(t){yt([t,e[t]])}),nt)},turn:function(e){return(e===p||e===m)&&(L=e),L},move:function e(t){var n,i,a,o,s,l,d,f,m,g,_,v,y;if(typeof t==`string`){switch(o=t.length-1,t[o]){case`+`:case`#`:t=t.substr(0,o)}for(m=ie.indexOf(t[0])>6?se[t[0]]:t[0]===`O`?b:h,it&&(t.indexOf(`@`)===-1?g=!0:(g=!1,m<<=24)),Dt(m,g),o=0;o<u;++o)if(l=st(c[o],!0),t===l){i=c[o];break}if(i)d=i>>te&re,f=i>>A&re,a=i>>ne;else if(t===`--`)return Rt();else{if(t=F.fixMove(t))try{return e(t)}catch{}return null}}else{if(t.drop){switch(t.drop){case`p`:a=0;break;case`n`:a=1;break;case`b`:a=2;break;case`r`:a=3;break;case`q`:a=4;break;default:return null}m=1<<26+a}else{if(t.promotion)switch(t.promotion){case`q`:a=4;break;case`n`:a=1;break;case`r`:a=3;break;case`b`:a=2;break;default:return null}d=r[t.from],g=!0,m=I[d]&S}for(f=r[t.to],n=((a?a<<ne:0)|f<<A)>>te|d,Dt(m,g),o=0;o<u;++o)if(c[o]>>te===n){i=c[o];break}if(!i)return(t=F.fixMove(t))?e(t):null}return y=i&N.DROP_OR_PROMOTE?ye[a]+L:I[d],s=Ht(i,l,!0),_=Ot(y,d,f,i),ot(i,d,f,a),_&&(Ke&&Ut()||Dt()===0?s.san+=`#`:s.san+=`+`),v=$e[$e.length-1],v.san=s.san,s.piece&T&&(v.promoted=!0),L===p&&++Ze,s},undo:function(e){var t=$e.pop();return t?(L===p&&--Ze,t.move?(Bt(t),e?!0:Ht(t.move,t.san)):(Ye=t.epSquare,--Xe,L=Oe(L),e?!0:{san:`--`,color:t.color})):null},clear:function(e){pt(e)},put:function(e,t,n){var i=r[t],a=!1,o,s=I[i],c=s&x,l=e.color;if(isNaN(i)||!e.type||!l||ie.indexOf(e.type)===-1)return!1;if(I[i]=se[e.type]|l|(e.promoted?T:0),I[i]&b&&(Je[l]=i),s&&I[Je[c]]&&I[Je[c]]!==(b|c)){for(o=0;o<120;++o)o&136&&(o+=8),I[o]===(b|c)&&(Je[c]=o,a=!0);a||(Je[c]=f)}return n||ht(vt(),Ke,!1,!1),!0},get:xt,remove:function(e,t){var n=I[r[e]],i=xt(e),a=n&x,o;if(I[r[e]]=0,n&b){for(Je[a]=f,R[a]=0,o=0;o<120;++o)if(o&136&&(o+=8),I[o]===(b|a)){Je[n.color]=o;break}}return t||ht(vt(),Ke,!0,!1),i},history:function(e,t){for(var n=[],r,i=$e,a=i.length;;){if(--a===-1)if(i.id&&!t){a=i.atMoveNode,i=et[i.parentId];continue}else break;e?(r=Ht(i[a].move,i[a].san),r.color=i[a].color,a||(i.initComment&&(r.firstComment=i.initComment),i.commands&&(r.initCommands=i.commands)),i[a].comment!==void 0&&(r.comment=i[a].comment),i[a].time!==void 0&&(r.time=i[a].time),i[a].annotation!==void 0&&(r.annotation=i[a].annotation),i[a].additionalAnnotation!==void 0&&(r.additionalAnnotation=i[a].additionalAnnotation),i[a].commands!==void 0&&(r.commands=i[a].commands),i[a].captured!==void 0&&(r.captured=i[a].captured),i[a].promoted!==void 0&&(r.promoted=i[a].promoted),i[a].lines!==void 0&&(r.lines=i[a].lines),i[a].bughouseOrder!==void 0&&(r.bughouseOrder=i[a].bughouseOrder),ie.indexOf(i[a].san[0])>6?r.piece=se[i[a].san[0]]:i[a].san[0]===`O`?r.piece=b:r.piece=h,r.piece|=r.color,n.unshift(r)):n.unshift(i[a].san)}return n},hashes:function(){for(var e=[],t=$e,n=t.length;;){if(--n===-1)if(t.id){n=t.atMoveNode,t=et[t.parentId];continue}else{t.hash||lt(),e.unshift(t.hash);break}e.unshift(t[n].hash)}return e},moveCount:function(){return $e.length},startingMoveNumber:function(){return Qe},completeFen:Ae,createVariation:Kt,selectLine:qt,hash:function(){var e=lt();return Ke===t.Bughouse&&!F.isDependent?[e,F.siblingGame.hash()]:e},hashing:function(e){return typeof e==`boolean`&&(qe=e,Ke===t.Bughouse&&!F.isDependent&&F.siblingGame.hashing(qe)),qe},hand:function(){if(it)return Fe(F._hand[p],!0)+Fe(F._hand[m])},checks:function(){if(Ke===t[`3-check`])return[rt[p],rt[m]]},threats:function(){var e=L,t=Oe(e),n=[],r=[],i=[],s=[],d=[],p=Ye,m,h,g,_,v,y,b;if(Ct(0,Je[e]),a||o)for(m=0;m<120;++m)m&136&&(m+=8),I[m+8]&O&&I[m]?i.push(De(m)):I[m+8]&k&&n.push(De(m));for(L=t,Ye=f,Dt(),m=u;m--;){if(h=c[m],v=h>>A&re,y=h>>te&re,h&N.DROP_OR_PROMOTE){if(b=h>>ne,_=ye[b]|t,h&N.PROMOTION&&b%3!=1)continue}else _=I[y],b=0;if(Ot(_,y,v,h)&&(ot(h,y,v,b),l=m,(Ke&&Ut()||Dt()===m)&&r.push((h&N.DROP?ce[_].toLowerCase()+`@`:De(y))+De(v)),Bt($e.pop()),h&N.CAPTURE)){for(g=0,m=u;m>l;)if((c[--m]>>A&re)===v){g=1,m=l;break}if(!g){s.push(De(y)+De(v));continue}}h&N.CAPTURE&&b!==1&&(g=I[v]&124)&&(kt(e,v)?(_=I[y]&S,g>_&&g-_!==8&&d.push(De(y)+De(v))):s.push(De(y)+De(v)))}return l=0,L=e,Ye=p,{pins:n,checkers:i,mates:r,undefended:s,underdefended:d}},tokenizePgn:We,fixMove:function(e){var t,n,i;if(typeof e==`string`){if(/0|[?!+#]$|[18][QNRB]$|^P/i.test(e))return e.replace(/[?!+#]+$/,``).replace(/0/g,`O`).replace(/([18])([QNRB])$/i,`$1=$2`).replace(/^P+/i,``);if(n=e.indexOf(`=`)>0?-4:-2,t=r[e.substr(n,2)],typeof t==`number`){if(I[t]&Oe(L)||/^[a-h]x?[a-h][36]$/.test(e)){if(e.indexOf(`x`)===-1)return e.slice(0,n)+`x`+e.substr(n)}else if(e.indexOf(`x`)>-1)return e.replace(/x/g,``);if(i=e.match(/^([KQNRB]?)([a-h][1-8]?|[1-8])x?([a-h][1-8])=?(.?)$/)){if(I[r[i[2]]])return{from:i[2],to:i[3],promotion:i[4].toLowerCase()};if(/^\\d$/.test(i[2])){for(e=0,Dt(se[i[1]],!0),n=0;n<u;++n)if(c[n]>>A===t&&Te(c[n]>>te&re)===8-i[2]){if(e)return;e=c[n]}if(e)return st(e,!0)}return i[1]+i[3]+i[4]}}}else if(I[r[e.from]]===(b|L)&&e.to&&e.from[1]===e.to[1]){if(e.from<e.to)return`O-O`;if(e.from>e.to)return`O-O-O`}},_hand:[],_history:function(e){return e&&($e=e,tt=$e.id),$e},_lines:function(){return et},_hashPosition:ct,_board:function(){return I}},we&&ht(we,ke)||mt(),F}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2428569,
+    "end": 2428772,
+    "kind": "FunctionDeclaration",
+    "name": "m0",
+    "text": "function m0(){if(window.chesscom?.features?.includes(`explanation_engine_staff`)){let e=window.chesscom?.featuresConfig?.explanation_engine_staff;return e?.version?e.version:Zo.version}return cs.version}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2428772,
+    "end": 2428895,
+    "kind": "FunctionDeclaration",
+    "name": "h0",
+    "text": "function h0(){return window.chesscom?.features?.includes(`explanation_engine_no_simd`)?zce()?`default`:`no-simd`:`default`}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2428895,
+    "end": 2429015,
+    "kind": "FunctionDeclaration",
+    "name": "q6e",
+    "text": "function q6e(){return K6e()?jJ(`${g0}/${m0()}/${h0()}/explanation-engine.js`,!1):jJ(`${Kg()}/explanation-engine.js`,!1)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2429015,
+    "end": 2429139,
+    "kind": "FunctionDeclaration",
+    "name": "J6e",
+    "text": "function J6e(){return K6e()?jJ(`${g0}/${m0()}/${h0()}/explanation-engine.wasm`,!1):jJ(`${Kg()}/explanation-engine.wasm`,!1)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2429139,
+    "end": 2429201,
+    "kind": "FunctionDeclaration",
+    "name": "Y6e",
+    "text": "function Y6e(){return jJ(`${X6e}/topaz_jackdaw.bin.q8mix`,!1)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2429338,
+    "end": 2429635,
+    "kind": "FunctionDeclaration",
+    "name": "Z6e",
+    "text": "function Z6e(e){let t=window.chesscom?.features;return t?.includes(`bot_books_from_assets_bots`)?`${Q6e}${encodeURIComponent(e)}`:jJ(t?.includes(`book_binaries_from_npm_data_eco_webapp`)?`bundles/app/js/engine/books/${e}.bin`:`bundles/app/js/vendor/jschessengine/books/personalities/${e}.bin`,!1)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2565319,
+    "end": 2565321,
+    "kind": "VariableDeclarator",
+    "name": "F4",
+    "text": "F4"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2620587,
+    "end": 2620589,
+    "kind": "VariableDeclarator",
+    "name": "J4",
+    "text": "J4"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2633559,
+    "end": 2633943,
+    "kind": "FunctionDeclaration",
+    "name": "Xrt",
+    "text": "function Xrt(e,t){if(!dH(e,X4))throw Error(`method does not have has_gp option.`);let n=fH(e,X4);if(n&&(!t||!t.get(a3)))throw Error(`no gamePoint context provided. Pass value provided from gamePointContext()`);return{gamePoint:n?t.get(a3).gamePoint:-1,commandType:dH(e,Y4)?fH(e,Y4).commandType:void 0,ceacField:dH(e,Z4)?fH(e,Z4).replaceAll(/_([a-z])/g,(e,t)=>t.toUpperCase()):void 0}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2634353,
+    "end": 2634842,
+    "kind": "FunctionDeclaration",
+    "name": "o3",
+    "text": "function o3(e,t,n,r){if(e.terminated)throw new t3(`CEE worker terminated`,{recentLog:[...e.apiLogBuffer]});let i=new Promise((i,a)=>{let o=Error(`CEE Worker Error`);e.messageQueue.push({resolve:i,reject:t=>{if(t instanceof e3){a(t);return}let n={recentLog:[...e.apiLogBuffer]};if(t instanceof It){a(qrt(t.raw,n,{cause:o}));return}a(new n3(t instanceof Error?t.message:String(t),n,{cause:o}))},call:t,args:n,streamCb:r})});return e.messageQueue.length===1&&e.postMessage({call:t,args:n}),i}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2635443,
+    "end": 2636251,
+    "kind": "FunctionDeclaration",
+    "name": "eit",
+    "text": "function eit(e){let{data:t}=e;if(typeof t==`string`){this.logger(t),t.trim()!==``&&(this.apiLogBuffer.push(t),this.apiLogBuffer.length>this.apiLogBufferMax&&this.apiLogBuffer.splice(0,this.apiLogBuffer.length-this.apiLogBufferMax));return}if(this.messageQueue.length){let{resolve:e,reject:n,streamCb:r,call:i}=this.messageQueue[0];t.error?(l3(this),n(new It(String(t.error)))):i===s3.RUN&&Object.prototype.hasOwnProperty.call(t,`proto`)?t.is_final?(l3(this),e(t.proto),r&&r(t.proto,t.is_final)):r&&r(t.proto,!1):i===s3.LOAD_CHARM_MODEL&&t.call===`${s3.LOAD_CHARM_MODEL}_done`?(l3(this),t.success?e(void 0):n(Error(`Failed to load charm model: ${t.key}`))):Object.prototype.hasOwnProperty.call(t,`retval`)?(l3(this),e(t.retval)):this.logger(`Warning: discarding unexpected CEE response: `+JSON.stringify(t))}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2636280,
+    "end": 2636763,
+    "kind": "FunctionDeclaration",
+    "name": "nit",
+    "text": "function nit({workerJsPath:e,workerWasmPath:t,logger:n,apiLogBufferMax:r}){let i=Object.assign(new Worker(`${e}#${t}`),{messageQueue:[],featureHandles:[],terminated:!1,logger:n??console.log,apiLogBuffer:[],apiLogBufferMax:r??rit});return i.onmessage=eit.bind(i),i.addEventListener(`error`,e=>{i.terminated=!0;let t=i.messageQueue.splice(0,i.messageQueue.length),n=[...i.apiLogBuffer];for(let r of t)r.reject(new t3(`Worker fault: ${e.message}`,{recentLog:n},{cause:e.error??e}))}),i}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2636805,
+    "end": 2637035,
+    "kind": "FunctionDeclaration",
+    "name": "u3",
+    "text": "async function u3(e,t,n,r,i=null){e.featureHandles.length>=ait&&await o3(e,s3.DISPOSE_FEATURE,[e.featureHandles.shift()],null);let a=await o3(e,s3.NEW_FEATURE,[t,n,r],null);return e.featureHandles.push(a),await o3(e,s3.RUN,[a],i)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2637076,
+    "end": 2637350,
+    "kind": "FunctionDeclaration",
+    "name": "sit",
+    "text": "async function*sit(e,t,n,r){let i=[],a=null,o=null,s=!1,c=null;for(u3(e,t,n,r,(e,t)=>{i.push(e),a&&(a(),a=null,o=null),s=t}).catch(e=>{c=e,s=!0,o&&(o(e),o=null,a=null)});;){if(c)throw c;if(i.length>0)yield i.shift();else if(s)break;else await new Promise((e,t)=>{a=e,o=t})}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2637375,
+    "end": 2638790,
+    "kind": "FunctionDeclaration",
+    "name": "lit",
+    "text": "function lit(e){let t=nit(e);return{...Zrt({async handleUnary(e,n,r,i,a){if(t.terminated)throw new t3(`Worker has been terminated.`,{recentLog:[...t.apiLogBuffer]});let{gamePoint:o,commandType:s}=a;if(!s||s.case===void 0)throw Error(`command_type must be specified.`);let c=null;if(s.case===`featureId`){let n=await u3(t,o,s.value,oI(e.input,kF(e.input,i)));try{c=yI(e.output,n)}catch(e){throw new r3(`fromBinary failed`,{bytesBase64:fit(n),recentLog:[...t.apiLogBuffer]},{cause:e instanceof Error?e:Error(String(e))})}}else s.case===`ceeCommand`&&await o3(t,s.value,[o],null);return c??kF(e.output)},async*handleStream(e,n,r,i,a){if(t.terminated)throw new t3(`Worker has been terminated.`,{recentLog:[...t.apiLogBuffer]});if(e.methodKind!==`server_streaming`)throw Error(`${e.methodKind} is not supported.`);let{gamePoint:o,commandType:s}=a;if(s?.case!==`featureId`)throw Error(`command_type must specify a featureId for streaming RPCs.`);let c=await dit(i),l=oI(e.input,kF(e.input,c));yield*uit(e.output,sit(t,o,s.value,l))},dispose(){t.terminated||(t.terminated=!0,t.terminate(),t.messageQueue.forEach(e=>e.reject(Error(`Transport terminated.`))))}}),worker:t,async manualCall(e,n,r,i,a){return yI(r,await u3(t,a??-1,e,oI(n,kF(n,i))))},loadCharmModel(e,n){let r=n??`charm_model_${Date.now()}`;return o3(t,s3.LOAD_CHARM_MODEL,[e,r],null)},addArtifact(e,n){return o3(t,s3.ADD_ARTIFACT,n===void 0?[e]:[e,n],null)}}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2644304,
+    "end": 2644565,
+    "kind": "FunctionDeclaration",
+    "name": "Tit",
+    "text": "function Tit(e){let t={};for(let n of Object.keys(J4.method)){let r=J4.method[n];if(!dH(r,X4))throw Error(`method does not have has_gp option.`);fH(r,X4)?t[n]=(t,r)=>{let i=ls();return i.set(a3,{gamePoint:t}),e[n](r,{contextValues:i})}:t[n]=t=>e[n](t)}return t}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2644565,
+    "end": 2644751,
+    "kind": "FunctionDeclaration",
+    "name": "Eit",
+    "text": "function Eit(e){let t=lit(e);return{...Tit(UG(J4,t)),dispose:t.dispose,manualCall:t.manualCall,loadCharmModel:t.loadCharmModel.bind(t),addArtifact:t.addArtifact.bind(t),worker:t.worker}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2644968,
+    "end": 2645104,
+    "kind": "FunctionDeclaration",
+    "name": "h3",
+    "text": "function h3(e){if(e.from===$.UNSPECIFIED)return;let t=_3[e.from]+_3[e.to];return e.promotionPieceType&&(t+=Ait[e.promotionPieceType]),t}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2806474,
+    "end": 2806624,
+    "kind": "FunctionDeclaration",
+    "name": "hft",
+    "text": "function hft(e){if(!e){let e=P8(),t=e.rootId;return()=>e.rootId!==t}let{hash:t,ids:n}=e;return()=>JN().game.getRawLines()[n.line]?.[n.move]?.hash!==t}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2806738,
+    "end": 2807184,
+    "kind": "FunctionDeclaration",
+    "name": "vft",
+    "text": "function vft(e,t=`engineCall`){return(n,r)=>{let i=be(n===void 0?N8.getActiveChessboard().game.getSelectedNode():n),a=i&&i.hash,o=hft(i),s=Error(`Engine queue: no gamePoint registered for node (${t})`),c=N8.measureQueueWait?.()??(()=>void 0);return P8().queue.add(async()=>{if(c(),o())return;let n=P8().gamePointByNode.get(a);if(n===void 0){Dk(s,{tags:{engine_queue_label:t},extra:{node:_ft(a)}});return}let i=await e(n,r);return o()?void 0:i})}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2807225,
+    "end": 2807299,
+    "kind": "FunctionDeclaration",
+    "name": "I8",
+    "text": "function I8(e,t){return vft((n,r)=>{let i=e();return i[t].call(i,n,r)},t)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2807324,
+    "end": 2807420,
+    "kind": "FunctionDeclaration",
+    "name": "L8",
+    "text": "function L8(){if(zZ.engine===null)throw Error(`You must call setupCee first.`);return zZ.engine}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2807815,
+    "end": 2808642,
+    "kind": "FunctionDeclaration",
+    "name": "jft",
+    "text": "async function jft(e,t){if(e.classification===`engine`||!zX().botChat)return{text:``,ply:-1};let n=e.classification===`coach`,r=t?.moveNumber??-1,i;try{if(n){let e=j8()&&t!=null&&t.color===GX();e&&(b3(`request`,`play-coach 2/3 GetCoachChat → CEE (requesting coach reply + skills)`,{move:t.san,ply:t.moveNumber}),i=nft(t.moveNumber));let n=await Eft(t,{});return n?.speech?(e&&j8()&&tft(n,t),{text:g3(n.speech),ply:r,audioUrlHashes:n.speech.sentences.map(e=>e.audioUrlHash),retryMistake:Mft(n.retryMistake),retryMiss:Pft(n.retryMiss),flipBoardMistake:Nft(n.flipBoardMistake),coachEmotion:Fit(n.coachEmotion)}):{text:``,ply:-1}}let a=await Tft(t,{botName:e.username});return a?.speech?{text:g3(a.speech),ply:r,audioUrlHashes:a.speech.sentences.map(e=>e.audioUrlHash)}:{text:``,ply:-1}}catch{return{text:``,ply:-1}}finally{i?.()}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2839439,
+    "end": 2839523,
+    "kind": "FunctionDeclaration",
+    "name": "Mpt",
+    "text": "function Mpt(e){let t=e.getKomodoSkill();if(t)return e.is25Levels()?t*100+200:t*100}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2839523,
+    "end": 2840063,
+    "kind": "FunctionDeclaration",
+    "name": "Npt",
+    "text": "function Npt(e){switch(e){case vW.UNSPECIFIED_BEGINNER:return P4.BEGINNER;case vW.UNSPECIFIED_AGGRESSIVE:return P4.AGRESSIVE;case vW.UNSPECIFIED_POSITIONAL:return P4.POSITIONAL;case vW.UNSPECIFIED_DEFENSIVE:return P4.DEFENSIVE;case vW.UNSPECIFIED_ENDGAME:return P4.ENDGAME;case vW.UNSPECIFIED_HUMAN:return P4.HUMAN;case vW.UNSPECIFIED_HIKARU:return P4.HIKARU;case vW.UNSPECIFIED_ACTIVE:return P4.ACTIVE;case vW.UNSPECIFIED_NEW_TO_CHESS:return P4.NEW_TO_CHESS;case vW.UNSPECIFIED_UNLEASHED:return P4.UNLEASHED;default:return P4.UNSPECIFIED}}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2840092,
+    "end": 2840344,
+    "kind": "FunctionDeclaration",
+    "name": "Fpt",
+    "text": "function Fpt(e){if(!e)return O5=null,Promise.resolve();if(e===D5&&O5)return Promise.resolve();D5=e,O5=null;let t=Z6e(e);return new Promise(n=>{E5.default.loadBook(t,(t,r)=>{t||!r?Dk(t??Error(`Failed to load opening book: ${e}`)):D5===e&&(O5=r),n()})})}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2840344,
+    "end": 2840553,
+    "kind": "FunctionDeclaration",
+    "name": "Ipt",
+    "text": "function Ipt(e,t=!1){if(!O5)return;let n=O5.pick({fen:e,type:`random`,chess960:t});if(!n)return;let r=E5.default.createGame({fen:e,variant:t?`chess960`:`chess`,disableHashing:!0});return r&&r.move(n)?n:void 0}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2842177,
+    "end": 2842317,
+    "kind": "FunctionDeclaration",
+    "name": "Kpt",
+    "text": "function Kpt(){return window.chesscom.features.includes(`web_bot_move_next_experiment_bypass`)||I5(`bot_move_next_experiment`,qpt.SegmentA)}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2842390,
+    "end": 2842473,
+    "kind": "FunctionDeclaration",
+    "name": "R5",
+    "text": "function R5(){return window.chesscom.features.includes(`web_bot_move_next`)&&Kpt()}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2842497,
+    "end": 2842591,
+    "kind": "FunctionDeclaration",
+    "name": "Ypt",
+    "text": "function Ypt(){let e=h0();return R5()?TY()?.botMoveConfigurationKey?`${e}+charm`:`${e}+bmn`:e}"
+  },
+  {
+    "file": "computer-shared.js",
+    "start": 2847325,
+    "end": 2847836,
+    "kind": "FunctionDeclaration",
+    "name": "Z5",
+    "text": "async function Z5(e){if(wX().game.isGameOver())return;if(R5()&&zZ.botMoveConfig){Y5({moveSource:`charmConfig`});let t=await kft(e,{protoConfig:zZ.botMoveConfig});return t&&h3(t?.move)}let t=Ipt(e?.fen??wX().game.getFingerprints().startingFen,J0()===U.Variants.Chess960);if(t)return Y5({moveSource:`book`}),t;Y5({moveSource:`engine`});let n=await Cft(e,{options:{adaptive:IJ.selectedBot.adapt,rating:Mpt(IJ.selectedBot)??1500,personality:Npt(IJ.selectedBot.personality)},engine:F4.KOMODO});return n&&h3(n?.move)}"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "start": 28226,
+    "end": 28228,
+    "kind": "VariableDeclarator",
+    "name": "Us",
+    "text": "Us"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "start": 30491,
+    "end": 33004,
+    "kind": "FunctionDeclaration",
+    "name": "ac",
+    "text": "async function ac(e,t,n){let r=ia.selectedBot?.rating;lc&&=(await A().disposeGamePoint(lc,{}),null);let i=re.playingAs===U.ColorsAsNumbers.Black,a=i?I.BLACK:I.WHITE,c=P()?.classification===`coach`&&s(),l=c?Yi(`uuid`):void 0,u=``;c&&(await rc(),u=hi(),it().catch(()=>{}),Ca().catch(()=>{}),ir(`info`,`play-coach 0/3 createNewGame → CEE: skills identity`,{\"chesscomMetadata.userId (human player)\":l||`(EMPTY — not logged in / no uuid)`,\"user color\":a===I.WHITE?`white`:`black`,\"chesscomMetadata.gameId\":u||`(EMPTY — mint failed)`,enableSkills:!0}));let{variant:d,fen:te}=e.data,ne=t.lines[0]??[],f=ne.length?cc.default.encodeTCN(ne):``,ie=ne[0]?.beforeFen??te??``,p=()=>N().rootId!==n,ae=ee(`createNewGameMs`),oe={newGame:{from:{case:`tcnGame`,value:{tcn:f,initialFen:ie,metadata:{pgnHeaders:{},rules:{isChess960:d===U.Variants.Chess960},...u?{chesscomMetadata:{gameId:u}}:{},players:[{color:I.WHITE,ratings:[{rating:r}],...l&&a===I.WHITE?{chesscomMetadata:{userId:l}}:{}},{color:I.BLACK,ratings:[{rating:r}],...l&&a===I.BLACK?{chesscomMetadata:{userId:l}}:{}}]}}},settings:{locale:Ar[Er().toUpperCase()]??Ar.EN_US,search:sc(),userColor:i?I.BLACK:I.WHITE,...c?{enableSkills:!0}:{}}}};if(await ko(A(),oe,t,p),ae(),p())return!1;let se=S(null);if(await Ys(ne,p),p())return await oc(se),!1;let ce=S(null);if(ce===void 0)throw Error(`No valid game points exist.`);if(lc=ce,await tc(ce),et()){if(!uc){let e=ee(`charmFetchMs`),t=await ri(async()=>{let e=await fetch(Ni());if(!e.ok)throw new $s(`Failed to fetch Charm model`,e.status);return new Uint8Array(await e.arrayBuffer())},{...fc,shouldRetry:Qs});await A().loadCharmModel(t,`m-topaz-jackdaw`),uc=!0,e()}let e=P()?.botMoveConfigurationKey;if(!e)o.botMoveConfig=void 0;else try{o.botMoveConfig=fa(Oi,(await ri(()=>Us.getConfig({configKey:e,resolveAssets:!1}),{...fc,shouldRetry:Ze})).config.data.storedJson);let{book:t}=await A().getBotConfigResources({protoConfig:o.botMoveConfig});if(t){let e=Wi(t.key.replace(`.bin`,``)),n=await fetch(e);n.ok?await A().addArtifact(new Uint8Array(await n.arrayBuffer()),t.key):await Y(Error(`Failed to fetch bot config book \"${t.key}\": ${n.status}`))}}catch(e){if(e instanceof sr&&e.code===ni.NotFound)o.botMoveConfig=void 0;else throw e}}else{let e=ee(`bookFetchMs`);await ki(ia.selectedBot.book),e()}if(N().rootId!==n)return!1;if(P()?.classification!==`engine`){let e=ee(`speechAssetsMs`);try{if(await qs(n),N().rootId!==n)return!1;G()&&await Or(lc,A())}catch(e){e instanceof Error&&await Y(e)}finally{e()}}return N().rootId===n}"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "start": 33107,
+    "end": 33325,
+    "kind": "FunctionDeclaration",
+    "name": "sc",
+    "text": "function sc(){return to()&&!br()?{case:`preset`,value:Ur.PLAY_BOT_STANDARD}:{case:`searchSettings`,value:{searchParameters:{depthLimit:br()?9:15,numLines:2},nullMoveSearchParameters:{depthLimit:br()?9:15,numLines:2}}}}"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "start": 33613,
+    "end": 33989,
+    "kind": "FunctionDeclaration",
+    "name": "mc",
+    "text": "function mc(){let e=window.chesscom.features.includes(`web_cee_binary_interface_command_tracking`)||Qt(),t=yc();window.context.user?.isStaff&&!t&&console.log(`[info]: To enable CEE BI message logs, visit: ${window.location.href}?logBIMessages`);let n=Se({workerJsPath:ur(),workerWasmPath:Vr(),debugMode:!0,logger:t?hc(console.log.bind(console)):()=>{}});return e?gc(n,gi()):n}"
+  },
+  {
+    "file": "client.3755d359.C_dFGAfc_J.chunk.js",
+    "start": 4516,
+    "end": 4869,
+    "kind": "FunctionDeclaration",
+    "name": "Be",
+    "text": "async function Be(){let{offlineBotGroupsData:t}=await B(async()=>{let{offlineBotGroupsData:t}=await e(()=>import(`./offline-bot-groups-data.ecf9acfa.BtoZLNpVUD.chunk.js`),`./offline-bot-groups-data.ecf9acfa.BtoZLNpVUD.chunk.js`).then(e=>(e.t(),e.n));return{offlineBotGroupsData:t}},[],import.meta.url);return t.map(e=>we(te,e,{ignoreUnknownFields:!0}))}"
+  },
+  {
+    "file": "client.3755d359.C_dFGAfc_J.chunk.js",
+    "start": 4931,
+    "end": 5011,
+    "kind": "FunctionDeclaration",
+    "name": "Ue",
+    "text": "async function Ue(){return X.listBotGroups({withBots:!0,supportedLanguages:[]})}"
+  },
+  {
+    "file": "client.3755d359.C_dFGAfc_J.chunk.js",
+    "start": 5034,
+    "end": 5281,
+    "kind": "FunctionDeclaration",
+    "name": "Ge",
+    "text": "async function Ge(){try{let e=await Ue();return{botGroups:e.botGroups.filter(e=>!!e.botPersonalities),recommendedBotId:e.recommendedBotId}}catch(e){return e instanceof Error?q(e):q(Error(`Error fetching bot groups: ${e}`)),{botGroups:await Be()}}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 141367,
+    "end": 141438,
+    "kind": "FunctionDeclaration",
+    "name": "Be",
+    "text": "function Be(e,t,...n){if(n.length>0)throw Error();return e.services[t]}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 263420,
+    "end": 263422,
+    "kind": "VariableDeclarator",
+    "name": "Us",
+    "text": "Us"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 265035,
+    "end": 265037,
+    "kind": "VariableDeclarator",
+    "name": "_c",
+    "text": "_c"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 468229,
+    "end": 468308,
+    "kind": "FunctionDeclaration",
+    "name": "Be",
+    "text": "function Be(e,n,r,i){(e[r+1]===i||e[r-1]===i)&&je(n,t.zobristEnPassant[Oe(r)])}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 468592,
+    "end": 468667,
+    "kind": "FunctionDeclaration",
+    "name": "Ue",
+    "text": "function Ue(e){switch(e){case 67:case 68:case 51:case 52:return!0}return!1}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1250474,
+    "end": 1250553,
+    "kind": "FunctionDeclaration",
+    "name": "Be",
+    "text": "function Be(t,n,r,i){(t[r+1]===i||t[r-1]===i)&&je(n,e.zobristEnPassant[Oe(r)])}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1250837,
+    "end": 1250912,
+    "kind": "FunctionDeclaration",
+    "name": "Ue",
+    "text": "function Ue(e){switch(e){case 67:case 68:case 51:case 52:return!0}return!1}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1812400,
+    "end": 1812663,
+    "kind": "FunctionDeclaration",
+    "name": "O4e",
+    "text": "function O4e(){return window.chesscom.features.includes(`analysis_sandbox_server_idl`)?EW.Types.SandboxServerIDLGameReview:window.chesscom.features.includes(`analysis_staging_server_idl`)||Wf()?EW.Types.StagingServerIDLGameReview:EW.Types.ProdServerIDLGameReview}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1812692,
+    "end": 1812871,
+    "kind": "FunctionDeclaration",
+    "name": "A4e",
+    "text": "function A4e(e){return window.chesscom.features.includes(`web_analysis_torch_human_v2`)?e===sP.Engine.FullAnalysisOptions.Stockfish16?sA.SF16_1_NNUE:sA.TORCH_HUMAN:sA.SF16_1_NNUE}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1814494,
+    "end": 1816176,
+    "kind": "FunctionDeclaration",
+    "name": "W4e",
+    "text": "function W4e(e){let{chessGameProto:t,depth:n}=e,r=U4e(P4e(n)),i=H4e(),a=NW(),o=window.chesscom.features.includes(`game_review_user_selected_coach`)?HH():null;if(a){let e=t.metadata?.players??[],n=e.find(e=>e.color===wA.WHITE)?.chesscomMetadata?.userId??``,r=e.find(e=>e.color===wA.BLACK)?.chesscomMetadata?.userId??``,i=t.metadata?.chesscomMetadata?.gameId??``,a=!!(n&&r&&i);SW(a?`info`:`warn`,a?`0/3 IDL /v2/game-review — skills on; CEE has the ids to sign validationHash`:`0/3 IDL /v2/game-review — skills on but MISSING ids CEE needs; validationHash will come back empty`,{endpoint:`IDL /v2/game-review`,enableSkills:!0,\"white user id\":n||`(missing)`,\"black user id\":r||`(missing)`,\"game id\":i||`(missing)`,\"CEE can sign validationHash\":a})}let s=xKe(),c=sf(),l=M4e(),u=Am(),d=HO(ZV,{newGame:HO(JV,{from:{case:`game`,value:t},settings:HO(dz,{...i===void 0?{}:{userColor:i},...a?{enableSkills:!0}:{},...s?{enabledFeatureFlags:[`cee_tricky_classification`]}:{}})})}),f=HO(sz,{strength:r}),p=A4e(R4e());return HO(DH,{newGameReq:d,runSearchReq:HO(xz,{search:{case:`gameReviewSearchSettings`,value:f},searchMoves:[],streamResults:!1,heartbeatIntervalSeconds:0}),engine:p,gameEvaluationOptions:HO(FGe,{useGameStateCache:p!==sA.TORCH_HUMAN,useSerialEvaluations:!1}),requestMetadata:HO(bH,{client:_H.WEB,product:vH.GAME_REVIEW,receivedTime:Uk()}),requestOptions:HO(xH,{heartbeatIntervalSeconds:5,useProgressUpdates:!0}),...l||u?{gameReviewOptions:HO(zGe,{reportCardEntitled:l,includeTrainTakeaways:u,canAccessLockedTakeaways:u&&!Om(1)})}:{},...o?{setCoach:HO(PUe,{textId:o.textId,locale:o.locale})}:{},...s||c?{charmInfReq:HO(eWe,{...s?{tricky:HO(nWe)}:{},...c?{grv2:HO(tWe)}:{}})}:{}})}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1834609,
+    "end": 1835931,
+    "kind": "FunctionDeclaration",
+    "name": "x3e",
+    "text": "async function x3e(e){let{depth:t}=e,n=kU();if(!n){bW(`Game board is not available for CEAC.`);return}let r=dJe(n),i=window.chesscom.analysis.extraGameData?.isRated,a=fM(),o=n.getHeaders(),{game:s,consumedNodes:c}=uJe(r,{isRated:typeof i==`boolean`?i:void 0,gameUuid:$4e(),legacyGameId:a&&/^\\d+$/.test(a)?BigInt(a):void 0,gameSource:aJe(IW()),isChess960:n.getVariant()===G.Variants.Chess960,startingFen:n.getFingerprints().startingFen,whiteElo:sJe(o.WhiteElo),blackElo:sJe(o.BlackElo),whiteName:o.White,blackName:o.Black,whiteUserId:eG.white.uuid??void 0,blackUserId:eG.black.uuid??void 0,timeControl:X4e(o.TimeControl)});if(s.moves.length===0){bW(`No moves to analyze for CEAC.`);return}if(c.length>500){E3e(K4e());return}let l=v3e(),u=W4e({chessGameProto:s,depth:Number(t)});e_(fN,{engine:u.engine,coachAssetConfig:u.setCoach?{text_id:u.setCoach.textId,locale:u.setCoach.locale}:null});let d=yk(DH,u),f=c3e(O4e()),p;try{p=await S3e(f)}catch{if(!nG(l))return;bW(`Could not connect to the analysis server.`),TW.emit(mN.Events.AnalysisStream,{action:mN.StreamTypes.Error}),e_(fN,{progress:0});return}if(!nG(l)){O3e(p);return}let m=C3e(p,c,l);h3e(m);try{p.send(D3e(d))}catch{if(!nG(l))return;bW(`Failed to send the analysis request.`),TW.emit(mN.Events.AnalysisStream,{action:mN.StreamTypes.Error}),e_(fN,{progress:0}),m()}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1835931,
+    "end": 1836285,
+    "kind": "FunctionDeclaration",
+    "name": "S3e",
+    "text": "async function S3e(e){return new Promise((t,n)=>{let r=new WebSocket(e);r.binaryType=`arraybuffer`;let i=setTimeout(()=>{r.readyState!==WebSocket.OPEN&&(r.close(),n(Error(`CEAC IDL WebSocket connection timeout`)))},k3e);r.onopen=()=>{clearTimeout(i),r.onerror=null,t(r)},r.onerror=()=>{clearTimeout(i),n(Error(`CEAC IDL WebSocket connection failed`))}})}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1845079,
+    "end": 1848907,
+    "kind": "VariableDeclarator",
+    "name": "UG",
+    "text": "UG=r((()=>{Y(),fj(),X(),BG=J(`CjBjaGVzc2NvbS9zaGFyZWRfYm9hcmQvdjFhbHBoYS9zaGFyZWRfYm9hcmQucHJvdG8SHWNoZXNzY29tLnNoYXJlZF9ib2FyZC52MWFscGhhIu4ECgtTaGFyZWRCb2FyZBIKCgJpZBgBIAEoCRISCgpzZXNzaW9uX2lkGAIgASgJEg8KB3VzZXJfaWQYAyABKAkSDwoHZmxpcHBlZBgEIAEoCBIYChBpbml0aWFsX3Bvc2l0aW9uGAUgASgJEgsKA3BnbhgGIAEoCRIMCgRsaW5lGAcgASgFEgwKBG1vdmUYCCABKAUSSgoHc3F1YXJlcxgJIAMoCzI5LmNoZXNzY29tLnNoYXJlZF9ib2FyZC52MWFscGhhLlNoYXJlZEJvYXJkU3F1YXJlSGlnaGxpZ2h0Ej8KBmFycm93cxgKIAMoCzIvLmNoZXNzY29tLnNoYXJlZF9ib2FyZC52MWFscGhhLlNoYXJlZEJvYXJkQXJyb3cSRgoGaW1hZ2VzGAsgAygLMjYuY2hlc3Njb20uc2hhcmVkX2JvYXJkLnYxYWxwaGEuU2hhcmVkQm9hcmRJbWFnZU1hcmtpbmcSDQoFZHJhZnQYDCABKAgSDwoHdmVyc2lvbhgNIAEoBRIQCghzZXF1ZW5jZRgOIAEoBRIuCgpjcmVhdGVkX2F0GA8gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIuCgp1cGRhdGVkX2F0GBAgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBJACgZzb3VyY2UYESABKAsyMC5jaGVzc2NvbS5zaGFyZWRfYm9hcmQudjFhbHBoYS5TaGFyZWRCb2FyZFNvdXJjZRIZChFoaWRlX2VuZ2luZV9saW5lcxgSIAEoCBIWCg5oaWRlX21vdmVfbGlzdBgTIAEoCCLFAQoRU2hhcmVkQm9hcmRTb3VyY2USTwoKZXZlbnRfZ2FtZRgBIAEoCzI5LmNoZXNzY29tLnNoYXJlZF9ib2FyZC52MWFscGhhLlNoYXJlZEJvYXJkRXZlbnRHYW1lU291cmNlSAASVQoNYW5hbHlzaXNfZ2FtZRgCIAEoCzI8LmNoZXNzY29tLnNoYXJlZF9ib2FyZC52MWFscGhhLlNoYXJlZEJvYXJkQW5hbHlzaXNHYW1lU291cmNlSABCCAoGc291cmNlImgKGlNoYXJlZEJvYXJkRXZlbnRHYW1lU291cmNlEhIKCmV2ZW50X3NsdWcYASABKAkSEgoKcm91bmRfc2x1ZxgCIAEoCRIRCglnYW1lX3NsdWcYAyABKAkSDwoHZ2FtZV9pZBgEIAEoCSLjAQodU2hhcmVkQm9hcmRBbmFseXNpc0dhbWVTb3VyY2USWwoMbGlicmFyeV9nYW1lGAEgASgLMkMuY2hlc3Njb20uc2hhcmVkX2JvYXJkLnYxYWxwaGEuU2hhcmVkQm9hcmRBbmFseXNpc0xpYnJhcnlHYW1lU291cmNlSAASXQoNY2hlc3Njb21fZ2FtZRgCIAEoCzJELmNoZXNzY29tLnNoYXJlZF9ib2FyZC52MWFscGhhLlNoYXJlZEJvYXJkQW5hbHlzaXNDaGVzc2NvbUdhbWVTb3VyY2VIAEIGCgRnYW1lIpgBCiRTaGFyZWRCb2FyZEFuYWx5c2lzTGlicmFyeUdhbWVTb3VyY2USJwofbGlicmFyeV91c2VyX2NvbGxlY3Rpb25fZ2FtZV9pZBgBIAEoCRIXCg9jb2xsZWN0aW9uX3NsdWcYAiABKAkSFwoPbGlicmFyeV9pdGVtX2lkGAMgASgJEhUKDWNvbGxlY3Rpb25faWQYBCABKAkimgEKJVNoYXJlZEJvYXJkQW5hbHlzaXNDaGVzc2NvbUdhbWVTb3VyY2USTQoJZ2FtZV90eXBlGAEgASgOMjouY2hlc3Njb20uc2hhcmVkX2JvYXJkLnYxYWxwaGEuU2hhcmVkQm9hcmRBbmFseXNpc0dhbWVUeXBlEg8KB2dhbWVfaWQYAiABKAkSEQoJZ2FtZV91dWlkGAMgASgJIpQBChpTaGFyZWRCb2FyZFNxdWFyZUhpZ2hsaWdodBJLCgxrZXlfbW9kaWZpZXIYASABKA4yNS5jaGVzc2NvbS5zaGFyZWRfYm9hcmQudjFhbHBoYS5TaGFyZWRCb2FyZEtleU1vZGlmaWVyEikKBnNxdWFyZRgCIAEoDjIZLmNoZXNzY29tLmNoZXNzLnYxLlNxdWFyZSKvAQoQU2hhcmVkQm9hcmRBcnJvdxJLCgxrZXlfbW9kaWZpZXIYASABKA4yNS5jaGVzc2NvbS5zaGFyZWRfYm9hcmQudjFhbHBoYS5TaGFyZWRCb2FyZEtleU1vZGlmaWVyEicKBGZyb20YAiABKA4yGS5jaGVzc2NvbS5jaGVzcy52MS5TcXVhcmUSJQoCdG8YAyABKA4yGS5jaGVzc2NvbS5jaGVzcy52MS5TcXVhcmUiYAoXU2hhcmVkQm9hcmRJbWFnZU1hcmtpbmcSDAoEdHlwZRgBIAEoCRIMCgRuYW1lGAIgASgJEikKBnNxdWFyZRgDIAEoDjIZLmNoZXNzY29tLmNoZXNzLnYxLlNxdWFyZSr6AgobU2hhcmVkQm9hcmRBbmFseXNpc0dhbWVUeXBlEi8KK1NIQVJFRF9CT0FSRF9BTkFMWVNJU19HQU1FX1RZUEVfVU5TUEVDSUZJRUQQABIpCiVTSEFSRURfQk9BUkRfQU5BTFlTSVNfR0FNRV9UWVBFX0RBSUxZEAESKAokU0hBUkVEX0JPQVJEX0FOQUxZU0lTX0dBTUVfVFlQRV9MSVZFEAISKgomU0hBUkVEX0JPQVJEX0FOQUxZU0lTX0dBTUVfVFlQRV9NQVNURVIQAxInCiNTSEFSRURfQk9BUkRfQU5BTFlTSVNfR0FNRV9UWVBFX1BHThAEEicKI1NIQVJFRF9CT0FSRF9BTkFMWVNJU19HQU1FX1RZUEVfT1RCEAUSKQolU0hBUkVEX0JPQVJEX0FOQUxZU0lTX0dBTUVfVFlQRV9DT0FDSBAGEiwKKFNIQVJFRF9CT0FSRF9BTkFMWVNJU19HQU1FX1RZUEVfQ09NUFVURVIQByrTAQoWU2hhcmVkQm9hcmRLZXlNb2RpZmllchIpCiVTSEFSRURfQk9BUkRfS0VZX01PRElGSUVSX1VOU1BFQ0lGSUVEEAASIgoeU0hBUkVEX0JPQVJEX0tFWV9NT0RJRklFUl9OT05FEAESIwofU0hBUkVEX0JPQVJEX0tFWV9NT0RJRklFUl9TSElGVBACEiIKHlNIQVJFRF9CT0FSRF9LRVlfTU9ESUZJRVJfQ1RSTBADEiEKHVNIQVJFRF9CT0FSRF9LRVlfTU9ESUZJRVJfQUxUEARiBnByb3RvMw`,[jA,Bk]),i6e=N(BG,0),VG=(e=>(e[e.UNSPECIFIED=0]=`UNSPECIFIED`,e[e.DAILY=1]=`DAILY`,e[e.LIVE=2]=`LIVE`,e[e.MASTER=3]=`MASTER`,e[e.PGN=4]=`PGN`,e[e.OTB=5]=`OTB`,e[e.COACH=6]=`COACH`,e[e.COMPUTER=7]=`COMPUTER`,e))(VG||{}),HG=(e=>(e[e.UNSPECIFIED=0]=`UNSPECIFIED`,e[e.NONE=1]=`NONE`,e[e.SHIFT=2]=`SHIFT`,e[e.CTRL=3]=`CTRL`,e[e.ALT=4]=`ALT`,e))(HG||{})}))"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1878702,
+    "end": 1879365,
+    "kind": "FunctionDeclaration",
+    "name": "q6e",
+    "text": "function q6e(e,t){let n=Dj();if(n.watchedBoardListeners[e]?.chessboardId===t)return;gG(e);let r=mG.getChessboard(t);if(!r)return;let i,a=n=>{let r=Dj(),a=r.activeBoardId??r.boardId;!r.syncEnabled||r.syncResuming||a!==e||r.applyingSnapshots[e]||Y6e(e,t)&&!J6e(n)||!mG.canPublishEvent(n)||(i&&clearTimeout(i),i=setTimeout(()=>{let r=Dj(),i=r.activeBoardId??r.boardId;!r.syncEnabled||r.syncResuming||i!==e||r.watchedBoardListeners[e]?.chessboardEventHandler!==o||r.applyingSnapshots[e]||!r.watchedBoards[e]||Y6e(e,t)&&!J6e(n)||kK().catch(()=>void 0)},50))},o=e=>{Z6e(e)||a(e)};r.game.onMany(pG,o),n.watchedBoardListeners[e]={chessboardEventHandler:o,chessboardId:t}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1879365,
+    "end": 1879448,
+    "kind": "FunctionDeclaration",
+    "name": "J6e",
+    "text": "function J6e(e){return e.type===H.APIEvents.Move&&e.data?.move?.userGenerated===!0}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1879448,
+    "end": 1879698,
+    "kind": "FunctionDeclaration",
+    "name": "Y6e",
+    "text": "function Y6e(e,t){let n=Dj(),r=n.snapshotApplicationBaselines[e]??n.boardsById[e];if(!r)return!1;try{let e=mG.readSnapshot(t);if(JSON.stringify(e,X6e)===JSON.stringify(r,X6e))return!0}catch{return!1}return delete n.snapshotApplicationBaselines[e],!1}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1879746,
+    "end": 1879954,
+    "kind": "FunctionDeclaration",
+    "name": "Z6e",
+    "text": "function Z6e(e){if(![H.APIEvents.Mark,H.APIEvents.Unmark].includes(e.type)||!mG.isProgrammaticMarking)return!1;let t=Array.isArray(e.data)?e.data:[e.data];return t.length>0&&t.every(mG.isProgrammaticMarking)}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 1947265,
+    "end": 1947442,
+    "kind": "FunctionDeclaration",
+    "name": "jJ",
+    "text": "async function jJ(){let e=kJ(),t=e.channel,n=e.pendingSubscription;if(e.lifecycleGeneration+=1,F7e(),n)try{await n.promise}catch{}let r=t??n?.channel;r&&mG.chat?.unsubscribe(r)}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2353689,
+    "end": 2354114,
+    "kind": "FunctionDeclaration",
+    "name": "Xrt",
+    "text": "function Xrt(e,t=0,n={}){typeof n!=`object`&&(n={});let{leading:r=!1,trailing:i=!0,maxWait:a}=n,o=[,,];r&&(o[0]=`leading`),i&&(o[1]=`trailing`);let s,c=null,l=po(function(...t){s=e.apply(this,t),c=null},t,{edges:o}),u=function(...t){return a!=null&&(c===null&&(c=Date.now()),Date.now()-c>=a)?(s=e.apply(this,t),c=Date.now(),l.cancel(),l.schedule(),s):(l.apply(this,t),s)};return u.cancel=l.cancel,u.flush=()=>(l.flush(),s),u}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2354455,
+    "end": 2354835,
+    "kind": "FunctionDeclaration",
+    "name": "eit",
+    "text": "function eit(e,t){function n(n){let r=typeof e==`function`?e():e;if(t!==void 0){if(typeof t==`function`)return t(r,n);if(t[n.parent.name])return t[n.parent.name](r,n)}let i=pX(n.parent),a=i.metadata?.isPlatformService?aX(`base`)||`/`:r;return i.prefix&&!a.endsWith(i.prefix)?a.replace(/\\/?$/,i.prefix):a}return e=>async t=>{let r=n(t.method);return e({...t,url:tit(r,t.method)})}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2354912,
+    "end": 2355237,
+    "kind": "FunctionDeclaration",
+    "name": "nit",
+    "text": "function nit(){return e=>async t=>{if(pX(t.method.parent).metadata?.isPlatformService&&![`staging`,`prod`].includes(window.context.environment||``)&&window.context.user?.uuid){let[n,r=``]=t.url.split(`?`),i=new URLSearchParams(r);return i.set(`uid`,window.context.user.uuid),e({...t,url:`${n}?${i.toString()}`})}return e(t)}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2356081,
+    "end": 2357150,
+    "kind": "FunctionDeclaration",
+    "name": "sit",
+    "text": "function sit(e){switch(e.error.case){case`alreadyFriends`:return z(`This member is already your friend`);case`userBlocked`:return z(`This user has blocked you`);case`selfRelationshipNotAllowed`:return z(`You cannot add yourself as a friend`);case`friendshipLimitReached`:case`targetFriendCapReached`:return z(`One of the users involved has reached the maximum number of friends`);case`outgoingFriendRequestCapReached`:return z(`You have reached the maximum number of pending friend requests.`);case`rateLimitExceeded`:return z(`You have exceeded the limit of friend requests. Please try again later.`);case`targetNotAcceptingFriendRequests`:return z(`This user is not accepting friend requests`);case`targetUnavailable`:return z(`Friend’s account disabled/deactivated or cheater`);case`targetUserNotFound`:return z(`User not found`);case`invalidRequest`:return e.error.value.message||z(`Invalid request`);case`trustLevelDenied`:return e.error.value.reason||z(`Unable to send friend request at this time`);default:return z(`Unable to send friend request at this time`)}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2357174,
+    "end": 2357409,
+    "kind": "FunctionDeclaration",
+    "name": "lit",
+    "text": "async function lit(e,t,n=!1){if(window.chesscom.features.includes(`add_friend_user_gateway`)&&t?.id.case)return uit({userIdentifier:t});let r={user:e};return n&&(r.recommendation=1),bL.post(B.generate(`web_friend_request_callback`,r))}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2362962,
+    "end": 2363331,
+    "kind": "FunctionDeclaration",
+    "name": "Tit",
+    "text": "async function Tit(e,t){let n;try{n=await _X.blockUser(t)}catch(e){let t=_Y(e,z(`Failed to block user. Please try again later.`));throw SX(t.msg,t.status)}if(n.result.case===`success`)return Eit(z(`You are now blocking %username%`,{\"%username%\":e}));throw n.result.case===`failure`?SX(Sit(n.result.value),403):SX(z(`Failed to block user. Please try again later.`),500)}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2363331,
+    "end": 2363420,
+    "kind": "FunctionDeclaration",
+    "name": "Eit",
+    "text": "function Eit(e){return{data:{message:e},status:200,statusText:`OK`,headers:{},config:{}}}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2568008,
+    "end": 2568278,
+    "kind": "FunctionDeclaration",
+    "name": "Ypt",
+    "text": "function Ypt(){var e,t;return C$&&!!(!((e=window)==null||(e=e.navigator)==null)&&e.userAgent)&&(/iP(?:ad|hone|od)/.test(window.navigator.userAgent)||((t=window)==null||(t=t.navigator)==null?void 0:t.maxTouchPoints)>2&&/iPad|Macintosh/.test(window?.navigator.userAgent))}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2627589,
+    "end": 2627613,
+    "kind": "FunctionDeclaration",
+    "name": "h0",
+    "text": "function h0(){return v0}"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2776469,
+    "end": 2776610,
+    "kind": "VariableDeclarator",
+    "name": "F4",
+    "text": "F4=r((()=>{iD(),(function(e){e.NodeLimit=8,e.IgnoreBestMoveClassifications=[U.Book,U.Brilliant,U.GreatFind,U.Forced,U.BestMove]})(P4||={})}))"
+  },
+  {
+    "file": "SRC-1137.js",
+    "start": 2779701,
+    "end": 2779726,
+    "kind": "VariableDeclarator",
+    "name": "J4",
+    "text": "J4=r((()=>{V(),q4=pd()}))"
+  }
+]

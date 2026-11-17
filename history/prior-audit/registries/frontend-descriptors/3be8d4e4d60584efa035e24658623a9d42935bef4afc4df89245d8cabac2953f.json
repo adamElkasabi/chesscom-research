@@ -1,0 +1,209 @@
+{
+  "name": "chesscom/user_properties/v1/properties_analysis.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "AnalysisProperty",
+      "field": [
+        {
+          "name": "total_games_analyzed",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_game_reviews_requested",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_game_review_requested_date",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_last_game_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_last_game_legacy_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_last_game_opponent_username",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_last_game_final_fen",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_last_game_type",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_last_game_result",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_review_last_game_color",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1013,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AnalysisPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_total_games_analyzed"
+        },
+        {
+          "name": "_total_game_reviews_requested"
+        },
+        {
+          "name": "_last_game_review_requested_date"
+        },
+        {
+          "name": "_is_last_game_reviewed"
+        },
+        {
+          "name": "_game_review_last_game_legacy_id"
+        },
+        {
+          "name": "_game_review_last_game_opponent_username"
+        },
+        {
+          "name": "_game_review_last_game_final_fen"
+        },
+        {
+          "name": "_game_review_last_game_type"
+        },
+        {
+          "name": "_game_review_last_game_result"
+        },
+        {
+          "name": "_game_review_last_game_color"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AnalysisPropertyDefinition",
+      "value": [
+        {
+          "name": "ANALYSIS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TOTAL_GAMES_ANALYZED",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAME_REVIEWS_REQUESTED",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "LAST_GAME_REVIEW_REQUESTED_DATE",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "IS_LAST_GAME_REVIEWED",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_LAST_GAME_LEGACY_ID",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_LAST_GAME_OPPONENT_USERNAME",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_LAST_GAME_FINAL_FEN",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_LAST_GAME_TYPE",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_LAST_GAME_RESULT",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "GAME_REVIEW_LAST_GAME_COLOR",
+          "number": 10,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

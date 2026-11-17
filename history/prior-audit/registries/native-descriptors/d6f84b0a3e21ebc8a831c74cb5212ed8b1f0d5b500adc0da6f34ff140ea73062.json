@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/chess/v1/game_phase.proto",
+  "package": "chesscom.chess.v1",
+  "enum_type": [
+    {
+      "name": "GamePhase",
+      "value": [
+        {
+          "name": "GAME_PHASE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_PHASE_OPENING",
+          "number": 1
+        },
+        {
+          "name": "GAME_PHASE_MIDDLEGAME",
+          "number": 2
+        },
+        {
+          "name": "GAME_PHASE_ENDGAME",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

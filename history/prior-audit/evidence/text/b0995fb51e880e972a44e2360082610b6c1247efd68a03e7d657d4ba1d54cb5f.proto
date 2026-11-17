@@ -1,0 +1,15 @@
+// source: chesscom/explanation_engine/v1/feature_get_ergonomic_position.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetErgonomicPositionRequest {
+  oneof position_to_convert {
+  bytes compressed_position = 1;
+  string fen = 2;
+  }
+}
+
+message GetErgonomicPositionResponse {
+  optional .chesscom.chess.v1.Position position = 1;
+}

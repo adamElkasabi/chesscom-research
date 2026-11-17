@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/courses/v1/goal_step.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GoalStep",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "completed_amount",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "total_amount",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

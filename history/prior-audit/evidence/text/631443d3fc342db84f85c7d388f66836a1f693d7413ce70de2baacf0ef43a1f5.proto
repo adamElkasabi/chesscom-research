@@ -1,0 +1,9 @@
+// source: chesscom/shared_board/v1alpha/shared_board_session_ended_notification.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+message SharedBoardSessionEndedNotification {
+  optional string session_id = 1;
+  optional string author_id = 2;
+}

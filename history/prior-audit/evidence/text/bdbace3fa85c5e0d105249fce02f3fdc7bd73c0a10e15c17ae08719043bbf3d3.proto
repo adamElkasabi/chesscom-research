@@ -1,0 +1,35 @@
+// source: chesscom/payments/v1/billing_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message GetUserBillingHistoryRequest {
+}
+
+message GetUserBillingHistoryResponse {
+  repeated .chesscom.payments.v1.BillingHistoryEntry billing_history = 1;
+}
+
+message GetUserBillingInformationRequest {
+}
+
+message GetUserBillingInformationResponse {
+  oneof _payment_method {
+  .chesscom.payments.v1.PaymentMethod payment_method = 1;
+  }
+  oneof _is_tax_included_in_price {
+  bool is_tax_included_in_price = 3;
+  }
+  optional .chesscom.api.v1.Country country = 2;
+  optional .chesscom.payments.v1.SubscriptionPaymentStatus subscription_payment_status = 4;
+}
+
+message GetOrderInvoiceRequest {
+  optional int32 order_id = 1;
+  optional .chesscom.payments.v1.InvoiceBillTo bill_to = 2;
+}
+
+message GetOrderInvoiceResponse {
+  optional bytes pdf = 1;
+  optional string file_name = 2;
+}

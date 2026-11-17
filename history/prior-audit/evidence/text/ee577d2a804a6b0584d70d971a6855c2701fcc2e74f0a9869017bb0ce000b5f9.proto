@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_legal_moves.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message LegalMovesRequest {
+}
+
+message LegalMovesResponse {
+  repeated .chesscom.chess.v1.Move legal_moves = 1;
+}

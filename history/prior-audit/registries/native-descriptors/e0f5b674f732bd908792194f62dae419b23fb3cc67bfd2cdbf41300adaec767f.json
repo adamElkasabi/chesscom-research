@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/train/v1/train_endgame_mistake_challenge.proto",
+  "package": "chesscom.train.v1",
+  "dependency": [
+    "chesscom/train/v1/train_endgame_theme.proto",
+    "chesscom/chess/v1/move.proto"
+  ],
+  "message_type": [
+    {
+      "name": "TrainEndgameMistakeChallenge",
+      "field": [
+        {
+          "name": "theme",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainEndgameTheme"
+        },
+        {
+          "name": "correct_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,1952 @@
+[
+  {
+    "file": "computer-shared.js",
+    "offset": 1002668,
+    "name": "google/protobuf/timestamp.proto",
+    "sha256": "ccf002fcb7aeea1997ab1be96a02c8c8aa27459a33788f95f399d710dc68fb7e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1003041,
+    "name": "google/protobuf/any.proto",
+    "sha256": "e76d9462204f461502447210d1eb0cf97dd3636e273916ede19d8e12733df33b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1003966,
+    "name": "google/protobuf/duration.proto",
+    "sha256": "31e97da059b8d0bb4644601ebd0f617fce728faa0d9beba78a21e815d117705d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1004312,
+    "name": "google/protobuf/empty.proto",
+    "sha256": "0555769ad996450d230c4e2308c2c9fd7db780d44281230cb0d824137020a435"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1004598,
+    "name": "google/protobuf/field_mask.proto",
+    "sha256": "9b70667b865bf63c024d6fb42db56580e868593966af4ff2b05d5ea8d863bc0d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1004944,
+    "name": "google/protobuf/struct.proto",
+    "sha256": "fb5b28220303058d1bfffc4138d45c47790dd80d3030efcec70e792b245330aa"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1006047,
+    "name": "chesscom/proto_options/annotations/v1/annotations.proto",
+    "sha256": "f3830242e2f71000ddc08d78e6595fbcc58e7b6313ad87d2b49c1d3dae665d2f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1007166,
+    "name": "chesscom/unlockables/v1/resources.proto",
+    "sha256": "41a78de35ac3ed496c3806a39fe47ce68a3eb5029b7a95f8a8b2e30475659929"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1008584,
+    "name": "chesscom/proto_options/kafka/v1/kafka_options.proto",
+    "sha256": "63d2f702c396296243d192d05e8ac7727d21f28057fd2757ba83ef962450e440"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1010527,
+    "name": "chesscom/proto_options/events/v1/event_options.proto",
+    "sha256": "5ae623c11894cf61e53af5bd13973744ac10838d34203ef0c16866acd48e82f0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1065861,
+    "name": "chesscom/api/v1/pagination.proto",
+    "sha256": "9446decbf19e72d8b42417d87e59d0b60dfeee15acb1f49d7d20af79730701d7"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1066284,
+    "name": "chesscom/api/v1/location.proto",
+    "sha256": "7df2fd6a75e49f16d0c3e104b29c386e7e81b876be0c9e5a8d57c59f60ed5f82"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1066840,
+    "name": "chesscom/api/v1/platform.proto",
+    "sha256": "1753e70531b82c7bde286978f008790bf5be12463e48c93ed04ff12fce5014e3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1067095,
+    "name": "chesscom/api/v1/asset.proto",
+    "sha256": "f17b0d2c40feb509428c662754199fce895d39a12279433ece68f5c49fc38f9d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1067410,
+    "name": "chesscom/api/v1/date.proto",
+    "sha256": "ceaf4cbe7b0a440690c90a35db0897a6a219c42a38196cc489d659e71bf32d69"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1067600,
+    "name": "chesscom/api/v1/semantic_version.proto",
+    "sha256": "3c48d8bdf2040c64a9d1a3064e17b771bfea3d8b9fc21ab26d6ade209cff0207"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1067823,
+    "name": "chesscom/api/v1/decimal.proto",
+    "sha256": "25df10989bbde657f5eb4f64ff6ed4478d1a21b4776d05906a820ad979242571"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1068004,
+    "name": "chesscom/api/v1/country.proto",
+    "sha256": "4f76357e432d6b8bf4c409d8f7ae1c689254a0aa3d528c9440ce476001909962"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1068231,
+    "name": "chesscom/api/v1/speech.proto",
+    "sha256": "cac679c9ad7e3a61d77f8a3f890d3783f31428777ca0c643416470c9d3778090"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1068422,
+    "name": "chesscom/proto_options/configurator/v1/configurator_options.proto",
+    "sha256": "c3af7a1d2b0d5722c3b505baee70ca1488b9af5a0833e71c5e5f357bc450ce2c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1068895,
+    "name": "chesscom/api/v1/error.proto",
+    "sha256": "0c824db4d88e4ea7caef491f55cea0bb87c8af322f1a661557bd99fe7fa34297"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1069202,
+    "name": "chesscom/api/v1/error_reason.proto",
+    "sha256": "ba23e04b49bb3c006d6f961eab5bc3ca90f5a4b37a879681f32dc20b03fd8746"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1079227,
+    "name": "chesscom/unlockables/v1/resources.proto",
+    "sha256": "b67e5ff5ced70443d20e26d8e3421221f647a573e9fa716bae4be1aafae26cde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1080642,
+    "name": "chesscom/themes/v2/core.proto",
+    "sha256": "eec9f1b1d17a380ca979398b0141da8d76e844235dcab9cac984a8b5566f719c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1087481,
+    "name": "chesscom/proto_options/oauth/v1/scope_options.proto",
+    "sha256": "e921b6839b1df83849f8019e29b2aacd75a1688bca1ca4e8f4c045139ba75984"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1088703,
+    "name": "chesscom/oauth/v1/scope.proto",
+    "sha256": "0cabce6bede59c370c45d6ffa76478c47a8c02859d64586e4780981e0863c426"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1094838,
+    "name": "chesscom/proto_options/api/v1/api_options.proto",
+    "sha256": "e5d58f547ed866136fd0c473fd666854bee67f5520c1fa56d9f1ccdab6d94465"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1097617,
+    "name": "chesscom/themes/v2/platform.proto",
+    "sha256": "41045c56591b94138484bc300bab0ef93e3dcc68c26c3756f74a3af9cc9ffbde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1098023,
+    "name": "chesscom/themes/v2/themes_service.proto",
+    "sha256": "953dd030c02a2cd0ad5000919be82563e0d0489f552ce6f0148c7d59a78d5c01"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1486786,
+    "name": "chesscom/progression/v1/event_specifics.proto",
+    "sha256": "9c4f6fa77224e87cc0518c4bb0cf00b2b84808e5716dbad7c0dc35aed790b21c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1487879,
+    "name": "chesscom/i18n/v1/translation.proto",
+    "sha256": "c4a721bdaabef5a028af3df1981baa294742748dd3355e7261828901c3b18dde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1491181,
+    "name": "chesscom/proto_options/manifest/v1/annotations.proto",
+    "sha256": "8aa72c754ed88b46a16d30c355482bc681e1d944b7af4f20d0ccce6e212d553a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1492826,
+    "name": "chesscom/unlockables/v1/resources.proto",
+    "sha256": "b67e5ff5ced70443d20e26d8e3421221f647a573e9fa716bae4be1aafae26cde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1494253,
+    "name": "chesscom/progression/v1/event_configuration.proto",
+    "sha256": "8703809db606c953110f27936422fa4835e99d15591947e11a62294632b21dad"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1497341,
+    "name": "chesscom/game_storage/v2/player_title.proto",
+    "sha256": "3e9f4f9ad45045022b77aac6f757b713ed8ca814342895a78936f2c61df56cbb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1497874,
+    "name": "chesscom/game_storage/v2/game_origin.proto",
+    "sha256": "a4dfbdf9c23d7048d0c3070c0bb5491a92c3b395177d1ac910f6a3efd9e1be5e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1498523,
+    "name": "chesscom/game_storage/v2/player_result.proto",
+    "sha256": "c6cb88ea47a97dd46e50b64910ab6cea97dd33c6be8437dce38916705f99fca8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1499113,
+    "name": "chesscom/game_storage/v2/game_provider.proto",
+    "sha256": "602cb4c016146ba0d99cb31444b56a105eefb0f823a2b00062ae180b502ea2c9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1499876,
+    "name": "chesscom/game_storage/v2/rating_class.proto",
+    "sha256": "294a356a9e35689ec7586ecd6a456ce68561e2ffba74c0ef611bc056734b941d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1500865,
+    "name": "chesscom/game_storage/v2/game_result.proto",
+    "sha256": "678f8d3fd99c3b044ba319028e2ca8854fff809c89b318ed39255b9c04929012"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1501899,
+    "name": "chesscom/game_storage/v2/game_privacy.proto",
+    "sha256": "961c875fa2d8a94225fb6e3ded8e9e2aa43da3f572888e1931cdbb3bfc0b3b18"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1502185,
+    "name": "chesscom/computer/v2/assisted_game_feature.proto",
+    "sha256": "56681ef36e90ceaa9bf61dc8c9e4ecb27fa58b9b0b1dab294ed65cb63fc7b821"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1502807,
+    "name": "chesscom/computer/v2/game_mode.proto",
+    "sha256": "7c979b3e4ff5939debc2d731e371a9eebe7b885a7463ad94c4e625f4742b8ee3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1503163,
+    "name": "chesscom/game_storage/v2/vs_computer_game_data.proto",
+    "sha256": "d9e1e665ad35c79e488673cd1f404e1582dfe865ca92eb23d0227e00cf9ddb29"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1503706,
+    "name": "chesscom/game_storage/v2/vs_coach_game_data.proto",
+    "sha256": "206468936fc2c93c1d6c64c77a4e873645541de005e12b998a14a49e8ba52f43"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1503921,
+    "name": "chesscom/game_storage/v2/game_server.proto",
+    "sha256": "7bd0e57f04287df2bba79b577f78f1c99556ff8a17dbb6a11516846d8d0d6d69"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1504228,
+    "name": "chesscom/game_storage/v2/player_type.proto",
+    "sha256": "f3ce068239e785e612997588cfcbfd38aa09e0a818322ee73dfe1d88efbba028"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1504539,
+    "name": "chesscom/game_storage/v2/player_provider.proto",
+    "sha256": "06ac5d2e3d9db4805277df0d4819beb260ed70bb668573b13c2cd21d7968c972"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1505024,
+    "name": "chesscom/game_storage/v2/player_bad_sport_behavior.proto",
+    "sha256": "be15af34a58616258d32e9edd65a1f3833bcdc597f1385f5667c3c0faa46f5c0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1505712,
+    "name": "chesscom/chess/v1/time.proto",
+    "sha256": "77012c57693edb6a2fa970d83274c1af411b6fb90e1ffe38d0abb65c01e5dad4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1507282,
+    "name": "chesscom/chess/v1/variant.proto",
+    "sha256": "1b4691d61d2898075869caabec31158460ec81b83192a9c6481fd3caacc5fcc9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1508023,
+    "name": "chesscom/chess/v1/result.proto",
+    "sha256": "df65baf4c25700e5471e7367ea81e4dc7c941fe0c545d3e6f055e546e5803f6a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1510081,
+    "name": "chesscom/chess/v1/color.proto",
+    "sha256": "96d1b0e5b7591342fee9fdc4159fb5529bc91532525809422f548e82f697b378"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1510401,
+    "name": "chesscom/chess/v1/piece.proto",
+    "sha256": "9c762cd6d13963391c1cbbb51f051624716aadc031a6197cd4f458d4afbbd488"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1511079,
+    "name": "chesscom/chess/v1/square.proto",
+    "sha256": "36a88115bf0badafcdb97aa6dafa9acb95bd3194c37f0d268d92ee6d7cf2991c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1513622,
+    "name": "chesscom/chess/v1/move.proto",
+    "sha256": "7611c510da6cb6fd43e4b12871f8636840064e76c9e7c22991c0d67a5b89e073"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1515182,
+    "name": "chesscom/chess/v1/chesscom_game_source.proto",
+    "sha256": "9958ff836906c87864e4d195a7d94c22ce3487bdcc69a8dda0c826f0bbe6ac4b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1515676,
+    "name": "chesscom/chess/v1/score.proto",
+    "sha256": "93c8503f88ff7a5bb83d278712475d0f257c1d1eaf5a4d200e6bf576406e550a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1516043,
+    "name": "chesscom/chess/v1/arrow.proto",
+    "sha256": "3e6b651760a00144d9df6311dd804a9c498e41bfe38376dc1277e5796a97e169"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1516459,
+    "name": "chesscom/chess/v1/board_markings.proto",
+    "sha256": "7bc942d16f896caa0103c621f1811f02c30878b86bc3ef3ae9d40c01d07af4f9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1517409,
+    "name": "chesscom/chess/v1/file.proto",
+    "sha256": "c805bc5639e39e5b114d2d8be10b250b9fd95a9ee67444e0b3dd878a8a102b7b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1517726,
+    "name": "chesscom/chess/v1/position.proto",
+    "sha256": "e4510ee692d94fd07b484859ef157268adea5927a10b5e54bfcd257461046a45"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1518650,
+    "name": "chesscom/chess/v1/game.proto",
+    "sha256": "221887d0f08541ac03dfde3d21797323e00a9b59cc3115045b6f0ed110d8fab0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1521854,
+    "name": "chesscom/chess/v1/game_phase.proto",
+    "sha256": "5e62bb56deef0aceb9b54ba410f7640f404b4f6a11aa1df553ecfd2de34dad21"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1522144,
+    "name": "chesscom/chess/v1/notation.proto",
+    "sha256": "6c2f811d2d0514e192e67eb8f03e1c089ba75468f4d3f620b530974180135693"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1522524,
+    "name": "chesscom/game_storage/v2/opening_data.proto",
+    "sha256": "f52c52c184526b4e99d098bf521c2ad9b15c4b41b14bfedbcd058bfb541707fb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1523035,
+    "name": "chesscom/tdtools/v1/identifiers.proto",
+    "sha256": "e76e678c852b051f297b3bacda14f525812cc081b3779c1077a68941692b4613"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1523519,
+    "name": "chesscom/game_storage/v2/tournament_data.proto",
+    "sha256": "575f036190bb43ef24688ff696db04838a935b0b3b60d29a5610ed1c6b0f935e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1523852,
+    "name": "chesscom/game_storage/v2/special_game_event.proto",
+    "sha256": "df71184e93b58794b49b9c3d553480a85071f58b648ab8ce077237af8215b006"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1524241,
+    "name": "chesscom/bots/v1/bot_event.proto",
+    "sha256": "3040f79e72215178d876c6bf79142c381d3f4c299cb6aa4a5ac7b9bf45340163"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1527356,
+    "name": "chesscom/bots/v1/phrase_list.proto",
+    "sha256": "633b36708eb1aa391c7b52a77d28894c14788698ddca57efb1e998cf5369edf5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1530410,
+    "name": "chesscom/bots/v1/bot_personality.proto",
+    "sha256": "665cfa7d498601dbb45bc2e674b446e65660b63bdc387e76e510f3839f02db6a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1534395,
+    "name": "chesscom/bots/v1/bot_metadata.proto",
+    "sha256": "483d28e7e8a57bb393f45a2c2be8031c58c15862b7f427f55be5c11687753202"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1534694,
+    "name": "chesscom/bots/v1/custom_bot_game_over_modal.proto",
+    "sha256": "d79abde55514e0d746c9b568af04d86a49ddb4df1d59b6cc5915ea51d19cb401"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1535826,
+    "name": "chesscom/bots/v1/user_activity.proto",
+    "sha256": "eda2946ecf31b5787d7024b64b2b63fb8bb4e9e6137676d69149ec8bf44c7284"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1537547,
+    "name": "chesscom/bots/v1/bot_group.proto",
+    "sha256": "eb0b53265fe5b0c132aa302d48d131dcb8efb74946a8446046e8b6851990e785"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1538360,
+    "name": "chesscom/bots/v1/bot_group_service.proto",
+    "sha256": "5df9568b02a4227be7affc66101e595c926ddf0147416801a3e854f78b9dfbc2"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1540385,
+    "name": "chesscom/bots/v1/bot_service.proto",
+    "sha256": "9ba4b028499684f62a1dd5c04b832c1bf5385bbad00a4638818b1673680d8398"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1541867,
+    "name": "chesscom/bots/v1/custom_bot_game_over_modal_service.proto",
+    "sha256": "fb959e2abb65d6fd13ef0b86d1d3aa8cd25daaadfe9dbfe55912d01aa6d23b5b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1542646,
+    "name": "chesscom/progression/v1/event_specifics.proto",
+    "sha256": "9c4f6fa77224e87cc0518c4bb0cf00b2b84808e5716dbad7c0dc35aed790b21c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1543952,
+    "name": "chesscom/i18n/v1/translation.proto",
+    "sha256": "c4a721bdaabef5a028af3df1981baa294742748dd3355e7261828901c3b18dde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1547306,
+    "name": "chesscom/progression/v1/event_configuration.proto",
+    "sha256": "8703809db606c953110f27936422fa4835e99d15591947e11a62294632b21dad"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1550638,
+    "name": "chesscom/progression/v1/model.proto",
+    "sha256": "c1696d760fadf09838c1712631d83463234e892454c639bb5dd5f7b00e46e0b1"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1551318,
+    "name": "chesscom/progression/v1/progression_service.proto",
+    "sha256": "0ff4a2d7de75885ea0bf14d11d6c879785ead1809cc55f610db9cba9127a9d9c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1552786,
+    "name": "chesscom/progression/v1/progression_event_activity_type.proto",
+    "sha256": "2d5b4a537f5a0683994f388e8e138359c465b8db88eb43eb62638c4773205bd5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1553232,
+    "name": "chesscom/progression/v1/user_activity.proto",
+    "sha256": "0284b6a50712cb342ec42fbbc90ad6acb48d0db585322e56f5c839179d1a3ec0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1720961,
+    "name": "chesscom/interactions/v1/user_activity.proto",
+    "sha256": "552f50885f0e7adb95b0419c3d664f9bbe39bc432ac452ae3f522ae51c8122de"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1726055,
+    "name": "chesscom/bots/v2/user_activity_model.proto",
+    "sha256": "947aaa6796bf1f86c6b43d87add71032c026de17b4b0cc6c166ddf46ae2c9c0d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1728587,
+    "name": "chesscom/bots/v2/user_activity.proto",
+    "sha256": "500c067bfca848d3517b351393d5e80dd960cefa30c1a77f66eaca53b1c5e800"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1883067,
+    "name": "chesscom/user/v1/user_type.proto",
+    "sha256": "faba089a04ed14f4c93bed1fad12ff9a2bfc15dd83f5059d8d1fb162e80a0b22"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1883465,
+    "name": "chesscom/unlockables/v1/resources.proto",
+    "sha256": "b67e5ff5ced70443d20e26d8e3421221f647a573e9fa716bae4be1aafae26cde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1884869,
+    "name": "chesscom/flair/v1/flair.proto",
+    "sha256": "93792ec29b2bad6e385d37f2329ee572c6b3fc7beea95ce803fa58e8b971a3c6"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1885626,
+    "name": "chesscom/flair/v1/flair_view.proto",
+    "sha256": "cf6b6259430eb267addea0ef6e9be8ba9af417a216c82aec14867571b99a4b5a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1886109,
+    "name": "chesscom/flair/v1/flair_internal_service.proto",
+    "sha256": "8c1c36eb4ac3b7508a76d70b6da96732c25f7953e9f8ac4f07d7b8836228e25f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1887302,
+    "name": "chesscom/flair/v1/flair_admin_service.proto",
+    "sha256": "72e4dd4c3c3d6216d3fd137b299eed88d18142a89e7b7b716400bc309dca30ac"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1890870,
+    "name": "chesscom/flair/v1/flair_service.proto",
+    "sha256": "9dd761ed95132d33699336d988b57c309dce48a8b583d831c76ebf46df1cb949"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1892558,
+    "name": "chesscom/user/v1/user_view.proto",
+    "sha256": "698740560c163bb569408c079e29e693578d7686fab7b73b64ac27533f28aefb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1893873,
+    "name": "chesscom/user/v1/user_skill_level.proto",
+    "sha256": "b8a7bc53479a756df0fee60dfa46efb0c6bb37e318c0051b5ed8c292840c4a0e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1894258,
+    "name": "chesscom/game_storage/v1/game_stored.proto",
+    "sha256": "dd41d558adf06199fbc24b288fecd26e385bb83bd0c9a5da4d9a940ec8133312"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1904686,
+    "name": "chesscom/user_relationships/v2/user_relationships_model.proto",
+    "sha256": "6d38b311454c69dee6de0a59ec9a84430fe1d8fe5d2beb185a9d28f1c2abde94"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1906581,
+    "name": "chesscom/user_relationships/v2/list_user_relationships_model.proto",
+    "sha256": "7b79eac14b293469a8c30de1efb831e4848a951a7b128f870f4a91b0a8602a3e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1907507,
+    "name": "chesscom/gameplay/v1/game_ref.proto",
+    "sha256": "84b9d772107c2581babc44f214f798cda0904e0727792878d1e1499a6d25ca06"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1908247,
+    "name": "chesscom/gameplay/v1/battle_ref.proto",
+    "sha256": "7cef1d391b8e6e24cfd267f244130080ca644c5390a0b13240f6231c63c56f14"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1908440,
+    "name": "chesscom/stats/v1/advanced_stat_type.proto",
+    "sha256": "3594e948fd03ac5a09d18c2a8f77a5f09d29808cb1ed1642cda2ee75b707f63a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1914686,
+    "name": "chesscom/stats/v1/advanced_stat_example.proto",
+    "sha256": "690a03233269221025a8a9bb0bf027535e65dd9283fb2ce7a90debf8e9344662"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1915287,
+    "name": "chesscom/game_gateway/v2/player.proto",
+    "sha256": "9921477a5ddafb3bcbcdcd929b20a5cac58581f62f606a82b14a6a2720d51073"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1916159,
+    "name": "chesscom/game_gateway/v2/chess_game.proto",
+    "sha256": "48baf87d836135cfcd82ca18f61aa0e3306ecdad2803a5503ab358207c5d6f2b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1916660,
+    "name": "chesscom/game_gateway/v2/bughouse_game.proto",
+    "sha256": "60cb0341b7cb548b69352df6f2583367810d52762c0c4f7b731e8c9d5e7f19de"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1916983,
+    "name": "chesscom/game_gateway/v2/game.proto",
+    "sha256": "d9685b94cffae978792c55c280527297249f5bea5c0ee1308585ee9972af2b99"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1918952,
+    "name": "chesscom/bots/v1/bot_metadata.proto",
+    "sha256": "483d28e7e8a57bb393f45a2c2be8031c58c15862b7f427f55be5c11687753202"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1919284,
+    "name": "chesscom/coaches/v2/model.proto",
+    "sha256": "bcc475dc8a37dd65ef660f28051100bfb352404a11728e011d572b2db42371f4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1921939,
+    "name": "chesscom/computer/v1/computer_game.proto",
+    "sha256": "e9034a1a427724b282369f18505e826f4113b32e174f4f39b6ed45fa3ede5753"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1923326,
+    "name": "chesscom/coaches/v2/service.proto",
+    "sha256": "8a64a49d312541437ec487b67c7f511e815d4e38f21fdd7cca7e924baa27cdec"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1930695,
+    "name": "chesscom/coaches/v2/user_activity.proto",
+    "sha256": "551f376099c8ea84fd3d0ee99c27163b5108c20207ef3d3e58406a600733dddc"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1940471,
+    "name": "chesscom/cheat_metadata_storage/v1/cheat_metadata.proto",
+    "sha256": "e5e2accf062113daa7ddbc7c2f1f7c8cc6ee6bab67e18f729c1528da290d7862"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1942066,
+    "name": "chesscom/game_gateway/v1/favorite_metadata.proto",
+    "sha256": "b76c5578b7e911840a0a0b8b24d41c748ca56e168977bd88e868b6f1b2860b1d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1942287,
+    "name": "chesscom/game_gateway/v1/game_relationship_metadata.proto",
+    "sha256": "8dbcc39f20dfa5b6eb1787232bc4dd57afd739ef47b293939ad2d7ea44b080b4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1942531,
+    "name": "chesscom/analysis/v1/move_classifications.proto",
+    "sha256": "67990e0dcffa5b943e7d25e92720822bb228898cc2b0291be10ec9896ef120eb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1943657,
+    "name": "chesscom/analysis/v2/move_classifications.proto",
+    "sha256": "6b8c6784cca02da97ca9a5e80409d0e58530ab170fc36ce69a17a256db57e06a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1944859,
+    "name": "chesscom/game_gateway/v1/game_analysis_metadata.proto",
+    "sha256": "ca5dd3f6477432b3864ccf849ba5782bf3fa464bc13fda8f636b968d5dba72a0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1946088,
+    "name": "chesscom/game_gateway/v1/opening_metadata.proto",
+    "sha256": "022b4c888b2ca23fd0439aac6909994dbb45528c108fda05447dc5f9b9be7052"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1946312,
+    "name": "chesscom/game_gateway/v1/pgn_metadata.proto",
+    "sha256": "28a05d9feca4dbdc7c11304cef7524621b4743cb05f4b76b20b611255aef9fa8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1946509,
+    "name": "chesscom/user/v1/user_type.proto",
+    "sha256": "faba089a04ed14f4c93bed1fad12ff9a2bfc15dd83f5059d8d1fb162e80a0b22"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1946798,
+    "name": "chesscom/user/v1/user_view.proto",
+    "sha256": "698740560c163bb569408c079e29e693578d7686fab7b73b64ac27533f28aefb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1948142,
+    "name": "chesscom/game_gateway/v1/player_details_metadata.proto",
+    "sha256": "643a8112c66d6eb532dda9d41b2c9f55876e2011bf4e252b5926ea8d07220ca4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1948572,
+    "name": "chesscom/game_gateway/v2/hydrated_game.proto",
+    "sha256": "a5e17b1a8fcc3c6c3d216c02680203a09b692876febde0a7bc20cb8c52d2b526"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1949714,
+    "name": "chesscom/game_gateway/v2/game_gateway_service.proto",
+    "sha256": "d35bfd86dd9e75033e3ecd6b9833ad3c0d0d722848cc811952cd601c6797cbd1"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1962250,
+    "name": "chesscom/stats/v1/advanced_stat_percentile.proto",
+    "sha256": "319c9f421933f3782be9f18b492ee9ded1d9f32176ae408ee896474e61eaaa07"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1963183,
+    "name": "chesscom/train/v1/train_item_type.proto",
+    "sha256": "bf834d531260b4bac17d59ed081dd6fa8cceb5380bdf1f2d095515ad3cb29a24"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1963721,
+    "name": "chesscom/presence/v1/presence.proto",
+    "sha256": "555ab15ace0ba6e4a9cb46573f4e369ccfc905b25754f943d98e73acad78b289"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1966283,
+    "name": "chesscom/ratings/v2/rating.proto",
+    "sha256": "4678ac2c305a70847d2239d67c256125794709ed23b2418e5fa6d46af19afd98"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1966620,
+    "name": "chesscom/ratings/v2/variant_time_class_rating.proto",
+    "sha256": "6fcfb302bb86b2ee5746d15ede9d00cb66b1cdc7810c7fe634d46222661545b3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1967390,
+    "name": "chesscom/navigation/v1/screen_entity.proto",
+    "sha256": "4e7092d35229ffcfa5cce4da83c11adaa63a54db7d271feff5ba3150ae6968e5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1968067,
+    "name": "chesscom/proto_options/user_activity_connector/v1/options.proto",
+    "sha256": "5843aae2e7d814050de6720d6e0975feb032d79f02cf0053e2fd80a0a9fa5fc9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1968563,
+    "name": "chesscom/user_activity/v1/user_activity.proto",
+    "sha256": "01e1d3b074555b562e53a93a7d117045f5be9c4a79b96ff604ce845303b6b165"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1977341,
+    "name": "chesscom/user_targeting/v1/user_targeting.proto",
+    "sha256": "3b71ee5780771281ed1fb5f7f0adbe82e55feada6c23acd518cfc9413b77b569"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1981652,
+    "name": "chesscom/user_properties/v1/properties_definition.proto",
+    "sha256": "0336c962d2ffe1f4b1046d68f28d44b31077379cc8aa3f17979ffb604c0920f8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1984306,
+    "name": "chesscom/user_properties/v1/properties_core.proto",
+    "sha256": "f48698a4f840483f66ce5d3692caa7cde788c6c4422636efd6f917c6a8949ecb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1986540,
+    "name": "chesscom/user_properties/v1/properties_pii.proto",
+    "sha256": "e5246f18cd9377cc5149240c62b3ed4bf5475184fc1e08c00d367c21ca50527f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1989553,
+    "name": "chesscom/user_properties/v1/properties_user_details.proto",
+    "sha256": "c6da4d8c540a0851d4a207193ea86acf264c23ec9c70857f8908dcd26913c6cf"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 1999147,
+    "name": "chesscom/user_properties/v1/properties_roles.proto",
+    "sha256": "7954a162c697b9a91112333da6f93b823b05155b050d26bfa2a2cbba773e5b54"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2000450,
+    "name": "chesscom/user_properties/v1/properties_activity.proto",
+    "sha256": "ebd933a07ecd45395b8ac92c14f6a7be1042fbf4a1e0d4c6abcbe7fef506394c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2014616,
+    "name": "chesscom/user_properties/v1/properties_subscription.proto",
+    "sha256": "3a4ac68c00e3fd1e1de5d662cb081602361512bbd0de23d30cf394de8e3d74c4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2026492,
+    "name": "chesscom/user_properties/v1/properties_attribution.proto",
+    "sha256": "a7d6c64e795c71512db7555ff435fa4a9b27c223611e2206e2705be17fa516d7"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2028370,
+    "name": "chesscom/user_properties/v1/properties_ratings.proto",
+    "sha256": "1a1bbc6154d52eaa61e319f249b06b77dcc204e00dc68035fdbfa972cb0ed2a2"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2032046,
+    "name": "chesscom/user_properties/v1/properties_wdl.proto",
+    "sha256": "9bdc313f5a6ffd602aeb6e1f8b6b4196e18439b344955a46926cc698a23e2010"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2040803,
+    "name": "chesscom/user_properties/v1/properties_analysis.proto",
+    "sha256": "3be8d4e4d60584efa035e24658623a9d42935bef4afc4df89245d8cabac2953f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2043623,
+    "name": "chesscom/user_properties/v1/properties_settings_daily_chess.proto",
+    "sha256": "107ca443775534586cd0a57482ce44554a8fbbca32545690a1c4b9780f62d931"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2048459,
+    "name": "chesscom/user_properties/v1/properties_settings_live_chess.proto",
+    "sha256": "c579201c6c30526089f913b9bf91a0b05e00274f8b4ccaa65ae3ad99ddef167e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2053618,
+    "name": "chesscom/user_properties/v1/properties_stats_daily.proto",
+    "sha256": "b9f6c8f946c6215e33caa17dbc245d7f5c691c2dc5aad4a27dfe2827bd1c3380"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2061849,
+    "name": "chesscom/user_properties/v1/properties_stats_daily_chess960.proto",
+    "sha256": "9338b9b332d0c39e952532ab343d2d3b54b538451f903a71cb2830ba4282851c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2065541,
+    "name": "chesscom/user_properties/v1/properties_stats_live.proto",
+    "sha256": "f9cb12cac3441b7ae18379b96ab7835d6db9722e138c23149e4ed82c1687360f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2073920,
+    "name": "chesscom/user_properties/v1/properties_user_settings.proto",
+    "sha256": "0d08f01ffc097471233c745eb4af9f707267f2df2c3ead8deec27ad1c8a6d522"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2104216,
+    "name": "chesscom/user_properties/v1/properties_puzzles_attempted.proto",
+    "sha256": "7e289d5377dcca34dcff0214068fcde779fc8cedf6bbf2116acd5f8d7e94f34e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2110023,
+    "name": "chesscom/user_properties/v1/properties_daily_puzzles_solved.proto",
+    "sha256": "ed9760527652d4d415be74507b319025ef70a73b65691b0aa8b4d47b3df9f97d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2112029,
+    "name": "chesscom/user_properties/v1/properties_clubs.proto",
+    "sha256": "27574753dcd7f551434d59245b9eef593b8f5b790b41ba1c47c82345609147cb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2112722,
+    "name": "chesscom/user_properties/v1/properties_puzzle_battle.proto",
+    "sha256": "24bd1a110e50720c926f51dbc9bb485b5d8f24a9ec2431bba1131d5d41ccb9e8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2113370,
+    "name": "chesscom/user_properties/v1/properties_audiences.proto",
+    "sha256": "bb8d5006fe07ace7263d1048bee17914d1e688561d32cb1b3a23f004f0743a5d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2114893,
+    "name": "chesscom/user_properties/v1/properties_trust_and_safety.proto",
+    "sha256": "561c4b94f1c86199d76323e9dcb39e32d4db31b04274dece953038ed5f5a017e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2119283,
+    "name": "chesscom/user_properties/v1/properties_time_windows.proto",
+    "sha256": "0293c8e6ea7daa8f94a4a45e942407dc13f47c0d59670600954a7f2d03e08b5b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2120052,
+    "name": "chesscom/user_properties/v1/properties_play_stats.proto",
+    "sha256": "3ba8ec42694a884c303872678f34fb469ea7804583857f179e5f258b9999bcb2"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2123186,
+    "name": "chesscom/user_properties/v1/properties_tournament_stats.proto",
+    "sha256": "76a2e3df5a09792711bf6026336e9933fd224b277a02b6dde7cb92a400bf0a4d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2124282,
+    "name": "chesscom/user_properties/v1/properties_user_engagement.proto",
+    "sha256": "6ea135b4487f1660e2ac7bf945d1ad1145edc5b70405bce48c6dc5489580ab1b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2128911,
+    "name": "chesscom/user_properties/v1/properties_coaches.proto",
+    "sha256": "b73d71ba7f171ffba04454b46ad9fee8ac0b72cda941f0b105009ddf3b8baa98"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2133484,
+    "name": "chesscom/user_properties/v1/properties_themes.proto",
+    "sha256": "6e385ce367730034e63c62f8fdd98668e1224276aa3662d7a339ceac1dc96f37"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2135823,
+    "name": "chesscom/user_properties/v1/properties_ipqs.proto",
+    "sha256": "47e3b82f5acdd5f6aed5bb4b5d3851d7033ae9c281017f71d60167a14a94d311"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2139439,
+    "name": "chesscom/user_properties/v1/properties_user_puzzle_stats.proto",
+    "sha256": "52fc2de69410a4c6a9621118224d453dda154e1248bed520d9d8eb4ac437bc9a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2140632,
+    "name": "chesscom/user_properties/v1/properties_courses.proto",
+    "sha256": "15bf568a2693daaa30ffa93eee94e69d6b3fbc286696ee2324e04c0d79cedfa2"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2145167,
+    "name": "chesscom/user_properties/v1/properties_survey.proto",
+    "sha256": "f813a63b60f5c6fb7df8f9a556d0d6932531fc5b0a9417d2de11ddc9322915dc"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2146114,
+    "name": "chesscom/user_properties/v1/properties_product_activity_rankings.proto",
+    "sha256": "25e71197314fb83fbaa0c81a6d52bc45abedbe2e09166bc4c2bd8face541ac9f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2152810,
+    "name": "chesscom/user_properties/v1/properties_turnstile.proto",
+    "sha256": "d5c78f67747f8fb067d193f18dbb2e5ddba89ec505e483f3d61254f210dd280a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2153522,
+    "name": "chesscom/user_properties/v1/properties_user_streak_v2.proto",
+    "sha256": "aeee8fe4e8a5363bb2a216cf5d46fa6ea2e947824033b94316273ebc806e6b7b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2155736,
+    "name": "chesscom/user_properties/v1/properties_fair_play.proto",
+    "sha256": "4a3f721df71aa293e999b3bd8b65066f5db6fd512802e4c6d9d4dd8b6acd5acd"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2157182,
+    "name": "chesscom/user_properties/v1/properties_navbar.proto",
+    "sha256": "8aee5d6c48df772de628f876187feadb3e6785d2c62647c83a83956018771fe4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2157986,
+    "name": "chesscom/user_properties/v1/properties_widgets.proto",
+    "sha256": "f790594c07b2eb00e9bd9af1f99e9535637085f76d788274efe446a49abd7c4f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2158817,
+    "name": "chesscom/user_properties/v1/properties_league.proto",
+    "sha256": "6eaadc5720ddca92e726102d22e58543b304d94517cfaa1c5e0f50e0c0642b0d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2160244,
+    "name": "chesscom/user_properties/v1/properties_puzzle_rush.proto",
+    "sha256": "0c39b62be56a55f3cc777e5b163893c8851f00261663ca19af4a005aae7f90b8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2161475,
+    "name": "chesscom/user_properties/v1/properties_monthly_bot_event.proto",
+    "sha256": "04da192640b768e50778cb73e76248eb8e656ae0143a743af982e694bfcc4d3e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2163397,
+    "name": "chesscom/user_properties/v1/properties_predictive.proto",
+    "sha256": "adf45a65d21e0786f97bc0309c4bde368f2a21bd33d3afaaca37ccdd6823d0e0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2169352,
+    "name": "chesscom/user_properties/v1/properties_growth.proto",
+    "sha256": "6c08d16e53cd4549e3c59f1e19e79022c9b732f7543ad73a18bfaa5fc3cc01a0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2170694,
+    "name": "chesscom/user_properties/v1/properties_skills.proto",
+    "sha256": "33773c060fd1cbee2fb6aa60653ed8e44c0a5c01a1e2c28ee0147372ca1a54da"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2171587,
+    "name": "chesscom/user_properties/v1/properties_opening_courses.proto",
+    "sha256": "49c3bed40d696268a12cd055c883156bcbc57d94b01352bf9ee2cc4909c666ec"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2175109,
+    "name": "chesscom/settings/v1/settings_metadata.proto",
+    "sha256": "dd1f1b32230341c13dba295a31d74dccb512e2fe5df2955728fcf0eff5a81b99"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2177820,
+    "name": "chesscom/settings/v1/settings_board.proto",
+    "sha256": "0dfbfafb979a489b8d35586223285df7807992c79a836bfef545aa45c6e33912"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2183803,
+    "name": "chesscom/settings/v1/settings_gameplay.proto",
+    "sha256": "aedca5758a60067314ee2cb12b4af7ba97328ba477278d8f6e6859b1f8993674"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2199043,
+    "name": "chesscom/settings/v1/settings_home.proto",
+    "sha256": "20e1c062e71bb670c310d049941fd7fdc7aff1b7c49a0e91b9fc2af45a9dcbdf"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2200364,
+    "name": "chesscom/settings/v1/settings_learn.proto",
+    "sha256": "96b04bc2114e22623bf0af0b080b4ada30bfcd7d83a94ebf8b463e55fd6cedec"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2204459,
+    "name": "chesscom/settings/v1/settings_notification.proto",
+    "sha256": "d48e3475635cd048c1c35b85e3e3f6ae382b6ad482fc4f023873a714240019da"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2224670,
+    "name": "chesscom/settings/v1/settings_privacy.proto",
+    "sha256": "b077e6d624a400ce88da9496e9ec89110f1572936b10716fd165d811df0d56ea"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2228718,
+    "name": "chesscom/settings/v1/settings_puzzle.proto",
+    "sha256": "7fc0fcd7f32577401fe4059d7d45eacd351111170d64ef09f7668ac0b338244b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2231545,
+    "name": "chesscom/settings/v1/settings_toaster_center.proto",
+    "sha256": "b0571038004dbfb0e0fb87872ab9bd4aa55fe2d6cd93eb78ac87e93fe8f51646"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2233469,
+    "name": "chesscom/settings/v1/settings_ui.proto",
+    "sha256": "19f33c25192ba0e67bd563fff54b55171a2e870d337be02bf0a683610a6cbad3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2234190,
+    "name": "chesscom/settings/v1/settings_watch.proto",
+    "sha256": "35e2dabe656981266e59b4af4fa574dc68baf5189ea28697b34c7f97a508e398"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2235032,
+    "name": "chesscom/settings/v1/settings_model.proto",
+    "sha256": "6f8c4fa076c94b021077f452b9f1923edbe616edfce70ce33b57af03fe64425e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2236303,
+    "name": "chesscom/user_properties/v1/properties.proto",
+    "sha256": "0cc45aa8ab8ece58f82674a5a04a4ea24710356ea5282d4208f11143bd633f06"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2267267,
+    "name": "chesscom/user_properties/v1/authenticated_properties_service.proto",
+    "sha256": "5c23f5d639d1a209a2f95e38607df3dd2c317ad18ed2e9b8eb97fa7b61e650f9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2268389,
+    "name": "chesscom/user_gateway/v1/user_gateway.proto",
+    "sha256": "216112f83a32cff7b80b94a75fc8788cdc3a377064d1ae933b1253d7e799feaf"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2269076,
+    "name": "chesscom/user_gateway/v1/user_gateway_service_envelopes.proto",
+    "sha256": "00f37a22e18d4d30574310321376c4d5acbb58e9817288424318d90a1d97441e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2275354,
+    "name": "chesscom/user_gateway/v1/user_identifier.proto",
+    "sha256": "70672208d6e97fcce14765cbdc64b5537ce7ad8ae014e058307b54b8661995d6"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2275653,
+    "name": "chesscom/user_gateway/v1/user_gateway_service.proto",
+    "sha256": "a38dcdc75cf259603227d5510dda1226821733d27f294397e183144284791ae8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2284475,
+    "name": "chesscom/audiences/v1/authenticated_audiences_service.proto",
+    "sha256": "3b45baf4d5bff90e9e8323e9d33558942af3bfd4b5cb356fa5eb1aaae84c312c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2486046,
+    "name": "chesscom/engine/v1/engine.proto",
+    "sha256": "b33eb5d11a6fc2cb0b5613c30db094ad876223fd1b185e84cd322d36baeb4baa"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2486635,
+    "name": "chesscom/engine/v1/strength.proto",
+    "sha256": "51eec30aa623a08ffcb9dfba8bc5240f7b4feb956f1055734113682de6f4e0a3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2486950,
+    "name": "chesscom/engine/v1/score.proto",
+    "sha256": "ef098266c2e29c39e378be1e479c700c7a0bcf379a7ce3cbaaa84b079d0a2925"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2487381,
+    "name": "chesscom/engine/v1/evaluation.proto",
+    "sha256": "99456c4ece0b51e113e3235223e5c7121e6da6da4b22b2fd4104717f1a26d347"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2487703,
+    "name": "chesscom/explanation_engine/v1/move_classification.proto",
+    "sha256": "f21b19c4d85e1d855d9f77d964ca2129c6fa7dcc4314720c0e04c829785de3b9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2489285,
+    "name": "chesscom/explanation_engine/v1/language.proto",
+    "sha256": "269366253da36b9e7f941226973509b52554f2ce13d9e9e7cd33ffe1d23c65fa"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2490104,
+    "name": "chesscom/explanation_engine/v1/speech.proto",
+    "sha256": "3257e1fc2c34b443e869c74f517cedc3ba1f90352238b28a03b0b676ceede087"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2490880,
+    "name": "chesscom/explanation_engine/v1/feature_get_non_chess_text.proto",
+    "sha256": "f35bb4ee62f39197ca11cc0f2751b549903d336845b0ed08ac5cab3141d59eb8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2491847,
+    "name": "chesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto",
+    "sha256": "eb414f2fb40863ae59421d4f1df9ba6e6478dce169d22e7b7b8aff063d531cfd"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2494054,
+    "name": "chesscom/explanation_engine/v1/charm_inference_code.proto",
+    "sha256": "9ea2a2fa4230c00371a2641b7be1f2e0e38ad805b597d836c9e90bdc5d9db6f7"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2494858,
+    "name": "chesscom/explanation_engine/v1/coach_state.proto",
+    "sha256": "af516356006422bc14a879046c114a6f767696e42de425db3be1021878100e22"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2495253,
+    "name": "chesscom/explanation_engine/v1/compact_charm_inference.proto",
+    "sha256": "2d63dc95afb536618919f09685ca17e949dcba9c227af07cd543530472852da5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2496119,
+    "name": "chesscom/explanation_engine/v1/game_point_info.proto",
+    "sha256": "14d6d7daf7258bf79cc037e82526592f9a6c4677226857f418d328970ff80c00"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2496820,
+    "name": "chesscom/explanation_engine/v1/game_phase.proto",
+    "sha256": "0b83a85c83855e5db4c838dc1ab691c35ca04ca93af04a08f074d981400a4b57"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2497499,
+    "name": "chesscom/explanation_engine/v1/game_arc.proto",
+    "sha256": "b28fe3a03d2ea010e60d6f7319ab034366e89b63fc4a508b8cd00ef14b929d8d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2497901,
+    "name": "chesscom/explanation_engine/v1/accuracy.proto",
+    "sha256": "ac71e2b48473607c4a1814c1d8288ee78e8a38bfbd5993815fd7ebf63cf61967"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2498939,
+    "name": "chesscom/explanation_engine/v1/report_card.proto",
+    "sha256": "7644714bb0da6612de2abdbbc3ebe4e29f7f345265f28c77d2c411958e64d913"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2499702,
+    "name": "chesscom/explanation_engine/v1/game_analysis.proto",
+    "sha256": "b59a4f8bf95e7e132f80cae7045abff47a6c236fc5d48cea76148275351ef9ac"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2502343,
+    "name": "chesscom/explanation_engine/v1/search.proto",
+    "sha256": "5481c079f1656c2053f71e94eb819bbe824a85a7de8934ab76cda5931fba4525"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2503991,
+    "name": "chesscom/explanation_engine/v1/game_settings.proto",
+    "sha256": "37768a9175700be45c2412c83a2c1de441ecf0d848602724b5c45e7dcad14c4e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2505935,
+    "name": "chesscom/explanation_engine/v1/move_annotation.proto",
+    "sha256": "edbbc780e1301e69f022161ac82f711ea340ef481ebd2bd8b75babd20fe3bb18"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2507085,
+    "name": "chesscom/explanation_engine/v1/simple_charm_inference.proto",
+    "sha256": "9b01d859521655851142ce2432b786875b6860a2f9059df5305875e35a3855d3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2508060,
+    "name": "chesscom/explanation_engine/v1/game_state.proto",
+    "sha256": "0d56db806c2eec4101341f1a88109905e207a23e701f20cd144f842bd0e8da02"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2511344,
+    "name": "chesscom/explanation_engine/v1/puzzle_gen.proto",
+    "sha256": "beab41ccad835ad861b6ddb95f87d31a9d749ddc5fc6e56a4ae8e85d5213a79f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2522246,
+    "name": "chesscom/explanation_engine/v1/torch_search_mode.proto",
+    "sha256": "650f1851a64f73bffb77eb912c712a3ec106918f365c81386a0fc130a1b12036"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2522928,
+    "name": "chesscom/explanation_engine/v1/feature_run_search.proto",
+    "sha256": "338fb45e08a35b2c2b70f957618abefe6ee0a903044a4a78edee9570212358b9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2524430,
+    "name": "chesscom/explanation_engine/v1/opening.proto",
+    "sha256": "46fc61825c08ea0284fa9308b0efc429566f3e78b07223f3f83f4a9ea12d327b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2524806,
+    "name": "chesscom/explanation_engine/v1/coach_emotion.proto",
+    "sha256": "8f2889468414c7e18e5f409762d438cd872904186fb4b3dc54868840c2367b30"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2525594,
+    "name": "chesscom/explanation_engine/v1/takeaways.proto",
+    "sha256": "44e13a894ce6811f41c8d64cf32a40c2503098de2629de6ea839b97f0ab4c500"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2526991,
+    "name": "chesscom/explanation_engine/v1/skills.proto",
+    "sha256": "508f5ab1a158103b2399dfc45a9aced43bd89937f490c9203a55e0dcfba987fd"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2532890,
+    "name": "chesscom/explanation_engine/v1/game_review.proto",
+    "sha256": "6da0cc46537fee879d02e5fc8069beff1d23eed0db3f0073f62b7d12587f0fc0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2537847,
+    "name": "chesscom/explanation_engine/v1/tcn.proto",
+    "sha256": "086d1aafb1b62dd56b6c43a73acec5466e9965ddd3406b52eff52e04261bb236"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2538218,
+    "name": "chesscom/explanation_engine/v1/move_list.proto",
+    "sha256": "df1e32ea7ff8f297b6274440d9170b49bc51ede9b012d4fda914bd3331dfd7ff"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2538536,
+    "name": "chesscom/explanation_engine/v1/new_game.proto",
+    "sha256": "440d897f1c7eba51ca571d964ebc9763bb654212155c40b6d2cc2216363672c8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2540058,
+    "name": "chesscom/explanation_engine/v1/invalid_game.proto",
+    "sha256": "4687512dd0473045e63f7c18176a256a390466f67bee8080ebb573e3e41dcbbe"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2541262,
+    "name": "chesscom/explanation_engine/v1/feature_new_game.proto",
+    "sha256": "401a1924278d8c19dfe327a9a22bf20dad46b5746dd3c994ae4588c7f64072fd"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2541855,
+    "name": "chesscom/explanation_engine/v1/cee_internal_engine.proto",
+    "sha256": "782fc002de68910e00d0a32fb12cd2048aa7cc88e6114defdb11f48e62508362"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2542182,
+    "name": "chesscom/explanation_engine/v1/notation.proto",
+    "sha256": "ad6ffa01a8a05315e0aa0cc6ec3893e4a62410409ac6c5784a41d34037c77931"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2542517,
+    "name": "chesscom/explanation_engine/v1/dispose_game_point.proto",
+    "sha256": "e45b8564ab31f0dc662b46bba0a426a25d40615293044af6ba2e8ea5f1877668"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2542759,
+    "name": "chesscom/explanation_engine/v1/features.proto",
+    "sha256": "20426c9894008b01194819d25a54801bb00948e8b78064c4e944b1a6ed42a944"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2556952,
+    "name": "chesscom/explanation_engine/v1/command_type.proto",
+    "sha256": "741fb8cf4aedb827a4e9e1c50a571e52fc4c022118e2ccf9ce9698b132ea9648"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2557271,
+    "name": "chesscom/explanation_engine/v1/internal_feature_update_developer_options.proto",
+    "sha256": "7b42314c945256cfb703a946041221c2246a2e807e2c848b85ccd7c5db72843b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2557979,
+    "name": "chesscom/explanation_engine/v1/feature_expected_points.proto",
+    "sha256": "ec1894efd8980a7f4faa6996345b7924d94eeeb86d9fb06bf5d3b9f0a7c39546"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2558252,
+    "name": "chesscom/explanation_engine/v1/text_asset.proto",
+    "sha256": "b7cb404ded1fdd0224936b35bac376c3f7926533c71288262d4b5e3d47a5bf61"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2558614,
+    "name": "chesscom/explanation_engine/v1/feature_legal_premoves.proto",
+    "sha256": "e59384887c1a8b3fbbef39ff252d5a0442b819cc19b8e02db2224fe1dda4d8b5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2559180,
+    "name": "chesscom/explanation_engine/v1/feature_move_classification.proto",
+    "sha256": "5d6b313ce78e412bfc73740561af5354709bd576258da2a786296f41412fdde1"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2560301,
+    "name": "chesscom/explanation_engine/v1/cee_internal_component.proto",
+    "sha256": "3fb3eeb3edc1da2a095ef5375dac3b222462fa4b04515426fa51c9874089c7d7"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2560883,
+    "name": "chesscom/explanation_engine/v1/feature_cee_internal_components.proto",
+    "sha256": "edf8292690b333dc4191f2c876d0b337f23c939ff78804f01d239668e2d7fc5e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2561258,
+    "name": "chesscom/explanation_engine/v1/feature_set_coach.proto",
+    "sha256": "934476a07ee07523c11ff0ff0ac8b1b057026ed846c0c44ab94851312c383199"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2561562,
+    "name": "chesscom/explanation_engine/v1/punish_move.proto",
+    "sha256": "aca922d5b4422c9f2c9c6290471664507cb57919c32b5d0cc577da628e1a0abf"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2562116,
+    "name": "chesscom/explanation_engine/v1/feature_get_punish_move.proto",
+    "sha256": "9251fd9d882b51cc332a1fb4a799b5c665201e8b7d606cfd281c8b234a4a2ad2"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2562489,
+    "name": "chesscom/explanation_engine/v1/feature_get_pgn.proto",
+    "sha256": "829e45598d82d4d961ea051308a897d2dc401de5b4a8805680c03caf69521c77"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2564085,
+    "name": "chesscom/explanation_engine/v1/feature_get_opening.proto",
+    "sha256": "0c0220a76365251cf606ed2ef0091f0b5174490c3d6d8e3d70c146958363f5ff"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2564540,
+    "name": "chesscom/explanation_engine/v1/feature_validate_pgn.proto",
+    "sha256": "9df40ab05e2774685b01867524bacd82f4f992844b49ff311a0fe7277f6f5baa"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2565346,
+    "name": "chesscom/explanation_engine/v1/bot.proto",
+    "sha256": "eaf14d0e7916d3b045634ec3f1026cb50d61a41c9e19f61f91eb5a4e0da541e1"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2567513,
+    "name": "chesscom/explanation_engine/v1/stats.proto",
+    "sha256": "f7284cd0e97a42cfa5fca166ad1aa50e2b1ef5a69df28657e85c0461c6ae4eab"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2568632,
+    "name": "chesscom/explanation_engine/v1/analysis_type.proto",
+    "sha256": "95781c68e412e3467c6343936abaefabb47afb6e46d67ef02da824a4a56efb30"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2584632,
+    "name": "chesscom/explanation_engine/v1/circumstance.proto",
+    "sha256": "6d773e0420f566198790c04192e246067025b212eb86d2b5f109b42029d59665"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2585565,
+    "name": "chesscom/explanation_engine/v1/bot_move_configuration.proto",
+    "sha256": "de5e49ad9909f39664d089af399362aabbaed1bd1d93e76284d8d97670369411"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2591247,
+    "name": "chesscom/explanation_engine/v1/move_details.proto",
+    "sha256": "2bbcc67a49b3436bfc72e7058a566dfd080c3fa4b1bcfa2572149ef55425d4aa"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2593386,
+    "name": "chesscom/explanation_engine/v1/feature_get_move_details.proto",
+    "sha256": "0254b49be9329e02ec222fe63ca62e1ee6b72df54eb5dc64a776895174389713"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2593857,
+    "name": "chesscom/explanation_engine/v1/feature_bot_move_from_config.proto",
+    "sha256": "61245fa4b05ae7a3b1e41fecb1bf79a00e370a57597ecdf936dd5f7951205776"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2594486,
+    "name": "chesscom/explanation_engine/v1/feature_generate_uuid_v1.proto",
+    "sha256": "42c6cf62a1ebbb76c878a5dcf9518a052ee3b92898e3e81ff9578e9c500ea75e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2594812,
+    "name": "chesscom/explanation_engine/v1/feature_load_game_state.proto",
+    "sha256": "f127abd3e2d171c24ba6a4e0402a0fde74a901e28f7e8fd005803daa6df58e47"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2595264,
+    "name": "chesscom/explanation_engine/v1/feature_get_game_state.proto",
+    "sha256": "7915ad2b2cea58dda0294d4d5bceac86b74c8449a946106299d06f651f88f5f5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2595620,
+    "name": "chesscom/explanation_engine/v1/feature_load_coach.proto",
+    "sha256": "b5a742309851edfe8528314e17a4044eeea5c2de7cdda3cde9ac3df2c87bded6"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2595961,
+    "name": "chesscom/explanation_engine/v1/feature_cee_version.proto",
+    "sha256": "8c2b33d710cbc094cffecbfe92252796de19f1f232fe4ca678574e15df89f43c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2596448,
+    "name": "chesscom/explanation_engine/v1/feature_get_bot_chat.proto",
+    "sha256": "47a36b24da79df8fb68567c8b32ae37d26cd3be407708b16c0b471315c40ea18"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2597434,
+    "name": "chesscom/explanation_engine/v1/feature_get_ergonomic_game.proto",
+    "sha256": "113476ae681a71bfca63ea34ce44c4420fd01a2d837f4309214f6476a2fa49e9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2597955,
+    "name": "chesscom/explanation_engine/v1/simple_threat.proto",
+    "sha256": "1e700b9624612f43406eda7b4dddf0f35befa08896762e357c65e6e79e952681"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2598596,
+    "name": "chesscom/explanation_engine/v1/feature_add_evaluations.proto",
+    "sha256": "64f37e532d2860ab823ad5cf1de7b0b5aa77d368196faf7b5d86e0557ee57279"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2599018,
+    "name": "chesscom/explanation_engine/v1/feature_simple_threats.proto",
+    "sha256": "2700a5db739f297b3bae5c80737238297b4370a1d2ddbb7da233442c81a534d6"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2599414,
+    "name": "chesscom/explanation_engine/v1/feature_analysis_annotations.proto",
+    "sha256": "536a75b676b4d198dfdf4c5881a5ddbe8ea70f57ff72981d5f3b3a54294ec599"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2600034,
+    "name": "chesscom/explanation_engine/v1/feature_bot_config_resources.proto",
+    "sha256": "1771133222c2b8ccb767733b41a13920fd2785c4fbd6bcba1083f51953ff7d0d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2600837,
+    "name": "chesscom/explanation_engine/v1/feature_convert_to_proto_moves.proto",
+    "sha256": "b860ed6289f13ed3f128b0e17c341054afa9035ce8ee5775a9c41081a45d6f7d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2601328,
+    "name": "chesscom/explanation_engine/v1/feature_game_phase_transitions.proto",
+    "sha256": "05763e2cb2f05440eaa7ccf7f32532de363e18f3479056f8cdad1f0801cec7ae"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2601938,
+    "name": "chesscom/explanation_engine/v1/feature_game_point_info.proto",
+    "sha256": "21efb40e389ac585c7496e37b17e81a5ab8d436875b5c6f07ec822bb9ab77fb6"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2602316,
+    "name": "chesscom/explanation_engine/v1/feature_game_review.proto",
+    "sha256": "61fee999b005f09bdfbb925c3076506a8e331f8464242a74cc9a9c172bd9649a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2603134,
+    "name": "chesscom/explanation_engine/v1/feature_game_tree.proto",
+    "sha256": "fae1c33fda4d415165ad16b6b8999431106aad126e6037ddf695f1ca10c35d3d"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2603462,
+    "name": "chesscom/explanation_engine/v1/feature_get_bot_move.proto",
+    "sha256": "59099e989aa9fd99a6f79029d880c9acf78342bc38365a6c049b8ffdefa0cf71"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2603934,
+    "name": "chesscom/explanation_engine/v1/speech_debug_info.proto",
+    "sha256": "21c94701b75fc3f9c567cb7f5e5575640b12145c71a5843d904c1d155e5ca785"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2604288,
+    "name": "chesscom/explanation_engine/v1/feature_get_coach_chat.proto",
+    "sha256": "67dbf99efe9be60ece395d33bdf797cd8e75ef12073fab80970826d12e7b3a1a"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2608598,
+    "name": "chesscom/explanation_engine/v1/feature_get_coach_hint.proto",
+    "sha256": "0ceb7fbb317e141bb5f949ce9c0a49cb97d741baa745b5f2e7baef4f1a0e1afd"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2609281,
+    "name": "chesscom/explanation_engine/v1/feature_get_compressed_position.proto",
+    "sha256": "0c2d1cc191570644a78c3130a778b42f523eb78dac9fae006f9dd739e7bec1d3"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2609716,
+    "name": "chesscom/explanation_engine/v1/feature_get_ergonomic_position.proto",
+    "sha256": "3b3289b9014a57223500d6ef1ea13650490bb6c4fa5a3115c9ad6f6307c5ccc4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2610179,
+    "name": "chesscom/explanation_engine/v1/feature_get_fen.proto",
+    "sha256": "e87d8b0318ad9c5a4785c507b6e7d3168d60ef97c5e382c6c2e912060bdeebc9"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2610702,
+    "name": "chesscom/explanation_engine/v1/feature_get_game_result.proto",
+    "sha256": "ea943c20f3d41fe7f786887b6fa0ff1441af6ef006585671dbded63063f7eec8"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2611075,
+    "name": "chesscom/explanation_engine/v1/feature_get_san_moves.proto",
+    "sha256": "01d0d32b77e453cae05a4b63d5ce5119186a03effa3e31f3613b6da090326eb7"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2611595,
+    "name": "chesscom/explanation_engine/v1/feature_legal_moves.proto",
+    "sha256": "156f56dbdc071e2bf57396162904b7fb9ea6bef6fffe88f499d7a18dc59c0c56"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2611919,
+    "name": "chesscom/explanation_engine/v1/feature_load_and_set_coach.proto",
+    "sha256": "8c4c6924574257d6fd2bb166d8c836b50db29d5511be4d0bab431ae1fb570c8e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2612284,
+    "name": "chesscom/explanation_engine/v1/feature_load_bot.proto",
+    "sha256": "2ee30b2b2ec139f066cb7570737e721a13f09f823e2b85abc7eeb4b450f786a4"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2612963,
+    "name": "chesscom/explanation_engine/v1/feature_lua_completion.proto",
+    "sha256": "e733180481b71adc408d85c18ad97dfdbd939c2b4b5051e46420175530543bd5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2613230,
+    "name": "chesscom/explanation_engine/v1/feature_make_moves.proto",
+    "sha256": "9fff984dad7832ae08e596c8a2a619d4213a7dab5fcc042d3515f7564e889356"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2613648,
+    "name": "chesscom/explanation_engine/v1/feature_run_lua.proto",
+    "sha256": "d065c5b401074a2f536426c3805f11d8cae7299a2e1b60a6292ef74ff30f126c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2614198,
+    "name": "chesscom/explanation_engine/v1/feature_set_game_result.proto",
+    "sha256": "264825a7a617fdfd7284f6f6e0cee15b2fa8a78a1d7c40ab2f7137e5f4e1b8d0"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2614548,
+    "name": "chesscom/explanation_engine/v1/feature_set_played_line.proto",
+    "sha256": "cbbaae203d2dddcf2abe8b2bc7e8908764fbb62a1fd80c68951d9fed8559d0f5"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2614825,
+    "name": "chesscom/explanation_engine/v1/feature_update_experimental_options.proto",
+    "sha256": "8e180f060b8a56f3c261022580d951a70ee063cec1a5373aab05b77545b35081"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2615906,
+    "name": "chesscom/explanation_engine/v1/feature_validate_fen.proto",
+    "sha256": "ab629ae702b3d24981f56fef8df09ebdff5d4e6a6d0272e6a84d07ccf084816e"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2616359,
+    "name": "chesscom/explanation_engine/v1/internal_feature_maia_botmove.proto",
+    "sha256": "5fa5fc1b5ef57e26eace8409b75c98179b446cdd8818f549890332486d417ad6"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2616796,
+    "name": "chesscom/explanation_engine/v1/internal_feature_puzzle_gen.proto",
+    "sha256": "b663395716057de945e5be08c122e41e72ebf3dc32d4ef32c5e80634a894a4fe"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2620944,
+    "name": "chesscom/explanation_engine/v1/explanation_engine_service.proto",
+    "sha256": "3048d470b6b665ca97d582c043c8767a7cd5bf2e591407b9bb93bdab8480781c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2639367,
+    "name": "chesscom/ceac/v1alpha/client.proto",
+    "sha256": "64cde79dad684eaf76cb813cc92db0fdd8c3f31b2236ff023fa6061b98d51442"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2641856,
+    "name": "chesscom/ceac/v1alpha/request_metadata.proto",
+    "sha256": "ec67f776dc1a91aceabec902d34c5a9ab2e90a0365253019884cd718f74a64c1"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2642366,
+    "name": "chesscom/engine/v1/engine.proto",
+    "sha256": "b33eb5d11a6fc2cb0b5613c30db094ad876223fd1b185e84cd322d36baeb4baa"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2643006,
+    "name": "chesscom/ceac/v1alpha/brilliant_verification_service.proto",
+    "sha256": "fe90bc479678cfb76488955f9eaf0960c157484ab116af61ce62ed43334de800"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2647926,
+    "name": "chesscom/skills/v1/skill_category.proto",
+    "sha256": "8fb7f0fd82c4448ac6b00ea0e295976f80fb82e4bf504c75900fe30f0aa9826f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2648526,
+    "name": "chesscom/skills/v1/eligibility_error.proto",
+    "sha256": "b437bbc063186342ea42fc6daa8400d812586eb93309275b5d833d447af5cfde"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2649007,
+    "name": "chesscom/skills/v1/skill_point_gained.proto",
+    "sha256": "7f7426dec269b6365b40ff42468def5167bf3ea118885bbadc6e73be029d920b"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2649320,
+    "name": "chesscom/skills/v1/skill_view.proto",
+    "sha256": "abd6e217ca1e81fae023896d0363740a7f1e4efc7b5a327c0bb52aa91a77d51f"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2649772,
+    "name": "chesscom/skills/v1/skills_configuration.proto",
+    "sha256": "34ecb6c2d9ae01b37cfad319e459b7b525a50d5a81363f9b02125f8cfb61c49c"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2651389,
+    "name": "chesscom/skills/v1/skills_service.proto",
+    "sha256": "086b1df6ace9deaf356b58e9cc69f465b8383da25a4070993c5a0ff6d59f9734"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2655538,
+    "name": "chesscom/skills/v1/user_activity.proto",
+    "sha256": "9a6d953da951262ffc580cda89a02ec74bb252c1ad146d795669b083ec7e2345"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2703437,
+    "name": "chesscom/user/v1/user_type.proto",
+    "sha256": "faba089a04ed14f4c93bed1fad12ff9a2bfc15dd83f5059d8d1fb162e80a0b22"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2703726,
+    "name": "chesscom/user/v1/user_view.proto",
+    "sha256": "698740560c163bb569408c079e29e693578d7686fab7b73b64ac27533f28aefb"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2705080,
+    "name": "chesscom/presence/v1/presence.proto",
+    "sha256": "555ab15ace0ba6e4a9cb46573f4e369ccfc905b25754f943d98e73acad78b289"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2707658,
+    "name": "chesscom/friends_search/v1/friends_search.proto",
+    "sha256": "90abe257fac2500a3957247646859d5aa530d481baab6b0757153e5043ffb333"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2717741,
+    "name": "chesscom/friends_search/v1/friends_navigation_service.proto",
+    "sha256": "09dd528a0dad8fae9d8fcc760f10a414e955f467f54a3dadda9d98cabedbaef1"
+  },
+  {
+    "file": "computer-shared.js",
+    "offset": 2720243,
+    "name": "chesscom/friends_search/v1/friends_search_service.proto",
+    "sha256": "63f5fb729dd6db3a3c284baebd3af2b6b1a5e7abcc0554d34dadae3cf703d7e1"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "offset": 15623,
+    "name": "chesscom/proto_options/etron_search/v1/field_options.proto",
+    "sha256": "5f4add490f82095f8b30164aac44d95193c01f58a4de084557dc95c96d843750"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "offset": 17362,
+    "name": "chesscom/configurator/v3/configurator_common.proto",
+    "sha256": "97c9fe8bc428afcab5a1ae88c7004faab8578063870015bb547b745d9e891513"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "offset": 18922,
+    "name": "chesscom/configurator/v1/configurator_common.proto",
+    "sha256": "c9b8406e3545f381e332b68e148236331583a61867f748a70c70865d669e8aaf"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "offset": 21021,
+    "name": "chesscom/configurator/v3/configurator_service.proto",
+    "sha256": "fa33816d58906f99480bb63b9c3c5d0da7a11193d50991adf681a5195a605416"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "offset": 22959,
+    "name": "chesscom/configurator/v4/configurator_common.proto",
+    "sha256": "70690b5bcb6e8190edd5ae979258bbd1661c0b75d92b27c52ff6876a6276cf73"
+  },
+  {
+    "file": "client.d25957d5.CGTiCJaz3J.chunk.js",
+    "offset": 23407,
+    "name": "chesscom/configurator/v4/configurator_service.proto",
+    "sha256": "80126ccca9f7889c0b9ef832bf6758ea9e2232bee5bcb6f6faa80386dc9fccef"
+  }
+]

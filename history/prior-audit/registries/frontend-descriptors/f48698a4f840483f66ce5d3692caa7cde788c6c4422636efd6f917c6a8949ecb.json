@@ -1,0 +1,294 @@
+{
+  "name": "chesscom/user_properties/v1/properties_core.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "CoreProperty",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "username",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "created_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "updated_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "timezone",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "chess_title",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "flair_code",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_enabled",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "bitset_offset_number",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_uuid",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_usernames",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "flair_id",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "flair_png_url",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "registration_platform",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1001,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.CorePropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_id"
+        },
+        {
+          "name": "_username"
+        },
+        {
+          "name": "_type"
+        },
+        {
+          "name": "_created_at"
+        },
+        {
+          "name": "_updated_at"
+        },
+        {
+          "name": "_timezone"
+        },
+        {
+          "name": "_chess_title"
+        },
+        {
+          "name": "_flair_code"
+        },
+        {
+          "name": "_is_enabled"
+        },
+        {
+          "name": "_bitset_offset_number"
+        },
+        {
+          "name": "_user_uuid"
+        },
+        {
+          "name": "_flair_id"
+        },
+        {
+          "name": "_flair_png_url"
+        },
+        {
+          "name": "_registration_platform"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CorePropertyDefinition",
+      "value": [
+        {
+          "name": "CORE_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_ID",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "USERNAME",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "TYPE",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "CREATED_AT",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "UPDATED_AT",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "TIMEZONE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "CHESS_TITLE",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "FLAIR_CODE",
+          "number": 8,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_ENABLED",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "BITSET_OFFSET_NUMBER",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "USER_UUID",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_USERNAMES",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "FLAIR_ID",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "FLAIR_PNG_URL",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "REGISTRATION_PLATFORM",
+          "number": 15,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

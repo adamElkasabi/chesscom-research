@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/explanation_engine/v1/notation.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "FenNotation",
+      "value": [
+        {
+          "name": "FEN_NOTATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FEN_NOTATION_INFERRED",
+          "number": 1
+        },
+        {
+          "name": "FEN_NOTATION_STANDARD",
+          "number": 2
+        },
+        {
+          "name": "FEN_NOTATION_SHREDDER",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,532 @@
+[
+  {
+    "path": "torch-human-bots-update/00_START_HERE.md",
+    "bytes": 3900,
+    "sha256": "c59ba103ea8fd2c74d1a2eb965dfaeabb351aa49ce879ca5ff037a82bc16a08d"
+  },
+  {
+    "path": "torch-human-bots-update/01_TORCH_HUMAN.md",
+    "bytes": 8076,
+    "sha256": "db5f81bc9a691c12510fab7ee0b47bfad94dd52b2bb2b71f8ab07a5268078af0"
+  },
+  {
+    "path": "torch-human-bots-update/02_BOT_PERSONALITY_PIPELINE.md",
+    "bytes": 9468,
+    "sha256": "2cca6163c0cad3d57c5d9089675e9494256f760c8dcdae1f5b10a2502f53c4a1"
+  },
+  {
+    "path": "torch-human-bots-update/03_MODEL_AND_NATIVE_TESTS.md",
+    "bytes": 7413,
+    "sha256": "9f1ab9ec08adc7359799a80edb9c9b6dde8f2bf8bac763d108e8952eba973b20"
+  },
+  {
+    "path": "torch-human-bots-update/04_WORKER_AND_NAMESPACES.md",
+    "bytes": 6134,
+    "sha256": "d9e21942799f2cc172d44da0b4b37454580be80a060d5bbd19e55147aa7d09b3"
+  },
+  {
+    "path": "torch-human-bots-update/05_CORRECTIONS_AND_LIMITS.md",
+    "bytes": 5852,
+    "sha256": "8b15dc6468d6ae93227beb915bad942ad24aae5facf05eec28e7044763cedc30"
+  },
+  {
+    "path": "torch-human-bots-update/06_EVIDENCE_AND_REPRODUCTION.md",
+    "bytes": 6368,
+    "sha256": "7a4acb869700fc9aadcba1cbf49cf48c0b83f93806317ed128084ef2551abd41"
+  },
+  {
+    "path": "torch-human-bots-update/07_ARCHITECTURE_DIAGRAMS.md",
+    "bytes": 2125,
+    "sha256": "8ddd18fca98ffbc311a525dcda13e45b1c00e2f8933f527796591eadfc1fb1d3"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/attempt-ledger.json",
+    "bytes": 2682,
+    "sha256": "4bf857a488046b19bf50b62ea82b49d6ca1554658684ab649484953a07ac2117"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/baseline-source-references.json",
+    "bytes": 762,
+    "sha256": "d42ef13ec878da3866f76b10e8b389eaada87e5987cd4abb52dc81cfa08aee18"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/claims.json",
+    "bytes": 3701,
+    "sha256": "0ec65c51042ef0de974b679ab332338d50149ae501e1f25c1bd9750e00be9303"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/current-descriptors.json",
+    "bytes": 698714,
+    "sha256": "a238f4e0d85e56c24cbfd0f62c3ba64b61f303c6c97106fbbbeaa6403c45a3b8"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/descriptor-index.json",
+    "bytes": 68450,
+    "sha256": "5d00ea255dab6596de29d7e5da769627fba1c05dc58a12f4cd72ff199c655269"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/extracted-functions.json",
+    "bytes": 90434,
+    "sha256": "0fed99e49d42618eeaf5fa379f2c702cf9ed70d75ef1e992078908c828397f22"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/focused-qc-report.json",
+    "bytes": 943,
+    "sha256": "30bb3b7b39c47ea43b3f6715445de22607b2933542b0155a5e37375db0c41ccb"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/frontend-function-tests.json",
+    "bytes": 6011,
+    "sha256": "bcae116feab1dfc02f681075adacbd089e1d6c692abab03f622d92c345235e40"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/historical-search-logs/probe-human-no-maia.txt",
+    "bytes": 2076,
+    "sha256": "4af8cac723aad506566999182175456d34e537b625bc9e1a69b4a96a727a4621"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/historical-search-logs/probe-human.txt",
+    "bytes": 2076,
+    "sha256": "b06e023c026662396acb7196a83bd581ffe1331661758f0236b4cf5d5434371b"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/historical-search-logs/probe-normal.txt",
+    "bytes": 2074,
+    "sha256": "3549a8a3558314e5c6604fcf0b9066526782094ef8390bcecb26715535f317ee"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/model-header.json",
+    "bytes": 1193,
+    "sha256": "d6a2ef41a9714fdce1c91d737a108e74b41460e502b3a1c3ad16bf017d0bcac9"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/model-retrieval.json",
+    "bytes": 1068,
+    "sha256": "32fa1eed607f61e11e2665e9e911f5dfcd2978b3d521b2bae4bed2eeba590505"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/model-tensor-manifest.json",
+    "bytes": 48838,
+    "sha256": "11d40dd02d668161ec635b9e72adc25d37d9d28a4cc5d9afe56abd4b44c969f2"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_bot.proto.bin",
+    "bytes": 1141,
+    "sha256": "7fb8501d44c3d47169ffe39db95f5ffbe899a5baa4576ebc7802be0fe687dc10"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_bot_move_configuration.proto.bin",
+    "bytes": 4277,
+    "sha256": "90afa533aa7db1142f8318cb6732c53b07b431002ed4f39179c73ef7d59317b4"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_charm_inference.proto.bin",
+    "bytes": 659,
+    "sha256": "ecf527efa5de0c30e29c215d2421868ba4f1fca3af14d9d7dfdc2773578b4dbd"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_charm_inference_code.proto.bin",
+    "bytes": 544,
+    "sha256": "27adf12affac3c40f21e3e0fa78e870209ba766081a11b4029b0eb4c9cb44981"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_compact_charm_inference.proto.bin",
+    "bytes": 594,
+    "sha256": "a1865b8c9c5f836f272b0aee04176af2c721d1ba09d3583f175ae263f4801026"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_add_charm_inference.proto.bin",
+    "bytes": 288,
+    "sha256": "9e86402b3b4a23314e09615485aba1ab16e43c882bea5eedaba299572404751e"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_bot_config_resources.proto.bin",
+    "bytes": 590,
+    "sha256": "ba0275a8867cf91267168c44919a5578b598f2fe087fb37e6333aa93140c3679"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_bot_move_from_config.proto.bin",
+    "bytes": 505,
+    "sha256": "cf3d205658502697498fa600f96ffab16dce0b4931d77a4b2c2e5ac04939c57e"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_cee_version.proto.bin",
+    "bytes": 342,
+    "sha256": "2336a5dc15babdb552a87148d1b669a6131febe9c5ed7a7f4b5e152bfcb05632"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_charm_inference.proto.bin",
+    "bytes": 503,
+    "sha256": "4ea6bc96ed648ea5060a3f0e843366ebddace5f2bd49d9406787828ee515dae6"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_get_bot_chat.proto.bin",
+    "bytes": 797,
+    "sha256": "5a1148934a40da0323986ac532dac54986a4641da207425562d9f48853668310"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_get_bot_move.proto.bin",
+    "bytes": 374,
+    "sha256": "a62625acb1f1330e868e86585c79bbd81baea366bdae3721675b81171ed6292a"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_load_bot.proto.bin",
+    "bytes": 383,
+    "sha256": "4593bf5deb94b296f0e6a3e8635b957bf72ddfcb1d32cfd9343d2972a514d5cd"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_load_charm_model.proto.bin",
+    "bytes": 272,
+    "sha256": "417612dd25c411b01a1da75ce43bbeb4d1a0918ddfadf0806f0668f189fba2b3"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_feature_run_search.proto.bin",
+    "bytes": 1228,
+    "sha256": "2358516f559ab23301015c0c896f31da14516ba3a99167790af70f33fb217349"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_features.proto.bin",
+    "bytes": 5177,
+    "sha256": "26b41e4d42a351966093374854b69392a6398e43ea15a58ee4affeaba74ce1bc"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_game_features.proto.bin",
+    "bytes": 6128,
+    "sha256": "301fe3f199c9f8ee6f64f80ea797fdc1adc471a06ee6f4633f72863c6904c7bb"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_game_settings.proto.bin",
+    "bytes": 1673,
+    "sha256": "d38e4622d2e6052489aef9b253c0b6fad0c7a40e0ac0deefc1bce4c41b598cc1"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_internal_feature_maia_botmove.proto.bin",
+    "bytes": 316,
+    "sha256": "a20cde4d6f01218b612e9ba57e56a06b00631048df4104fe367a3b5312ba441b"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_simple_charm_inference.proto.bin",
+    "bytes": 638,
+    "sha256": "a97e2f464717de8faf5b1e2996ccdcc8d17852859572c92374019a080d285cb6"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1_torch_search_mode.proto.bin",
+    "bytes": 438,
+    "sha256": "c79f76757ddab3b564af82990e944ea80ac9f11ee67de137b477216f4630e382"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_game_features.proto.bin",
+    "bytes": 4670,
+    "sha256": "0d529c14fa3449122518d92d5aa47eba764a94fb068769150c29848eb9d65422"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_charm_inference.proto.bin",
+    "bytes": 707,
+    "sha256": "ee150c1da104b84d0ae1b302e1c955ea3a628888a018058d7e5521da9155081e"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_game_features.proto.bin",
+    "bytes": 969,
+    "sha256": "8fcec798906fede23edc2f6976d4fceda0bcfbff373d6d65fe2c89675c9dc085"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_load_charm_model.proto.bin",
+    "bytes": 343,
+    "sha256": "ce01f06d587db0f5b5041d08e934f036037e146fabd07d10589bbea5eaa02d4b"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_maia_botmove.proto.bin",
+    "bytes": 326,
+    "sha256": "b0ee12e4b6a5d61e679736bd83b76a6a367b0b6862a60f9d83fd58cee3d35a4a"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/native-descriptors/chesscom_explanation_engine_v1alpha_internal_feature_run_search.proto.bin",
+    "bytes": 989,
+    "sha256": "ebcddb43e5481cd5f36dcec8fdd41569d0362eb7c4006ba8ca90acfb4b1a8561"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/offline-catalog-analysis.json",
+    "bytes": 55632,
+    "sha256": "145aed50e3e769e649ef47a631e84b99da1f1f23eb1014392c168df049124fd1"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/page-safe-observations.json",
+    "bytes": 966,
+    "sha256": "07128ba7ca2d067dfd37d4f6c5a18ba80f368a26167d270696aa445e259237ee"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.03a446da.Bw4BRYjdl2.chunk.js",
+    "bytes": 2342,
+    "sha256": "d3219e420bdfb07e61b6f360add5928676fddcde01fb2d09622eda10da82a889"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.197936d8.CYY9Ulv5HI.chunk.js",
+    "bytes": 1404,
+    "sha256": "4cd1703a45358e775ce4cae9639483a14df478c059b6d3ada94713ea617b59e9"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.3755d359.C_dFGAfc_J.chunk.js",
+    "bytes": 10038,
+    "sha256": "c22ae37a566aea5f790169bafbed6f8f76c5aabf7e50d68957622f91b1aa683a"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.411a4358.B-kUvQ32jr.chunk.js",
+    "bytes": 71162,
+    "sha256": "a80203a4fcd9241bb85f2b70b2977a73a06ad94b390f11849e698c56ee91f745"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.51b83ca9.CF4468reW-.chunk.js",
+    "bytes": 6463,
+    "sha256": "0215221a8f480c3feddcbe52f3d16ce10b713fd5af5f9e62ab29885368bbc8a1"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.7b2a3a15.BJcgONyKOv.chunk.js",
+    "bytes": 1961,
+    "sha256": "cd7c362b0f231d4a74654c39984e7efc00d3c12da10147691232291f032fdf3d"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.832f50bc.B3blLI0QnI.chunk.js",
+    "bytes": 1390,
+    "sha256": "23bc865a14c8f62075acdfd5a2aaede29aca6a30857d96809012ca71c1426850"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.84ddf004.C_agZvH3k8.chunk.js",
+    "bytes": 1462,
+    "sha256": "8df41d6956cd1aa6a89ae389274e24491d597b1ebae04221710877e7376eb355"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.95f74025.BEB99SqjwX.chunk.js",
+    "bytes": 11529,
+    "sha256": "b453b3acf046973c0e4421d657c60b35ad35eb6bd7dfd3a4eecc454e26a708f7"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.97389e02.BM87mECVhI.chunk.js",
+    "bytes": 3941,
+    "sha256": "a1194fd8552ffb60ff00ca781cbe0fe896fe7f0d184e0cbc2b827d089e60d391"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.c1bea4c9.y6HURMY3cu.chunk.js",
+    "bytes": 16836,
+    "sha256": "c65b0722a931b96dd3b24f100d4930c6fdad3bd8a8f0ac520bcc9bc1a9526465"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.c7e9d7cf.2X_nVI74xM.chunk.js",
+    "bytes": 1395,
+    "sha256": "0e68cd2beb70618bf247a859edde1960a1d36b2bd413da02c620065d10e1eaa8"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.ce4ac26f.oAXtK4-p_j.chunk.js",
+    "bytes": 35075,
+    "sha256": "392b96fb6e10a5c104478f0b3e157636172c8f562fd9b5ad43eca3fcf9fc0e04"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.d25957d5.CGTiCJaz3J.chunk.js",
+    "bytes": 56116,
+    "sha256": "29283e49477962f420226c50543e47b5aae5875a44be34e5e3b186a081ce49bf"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.dbeb9287.KRB1FxeFDj.chunk.js",
+    "bytes": 1476,
+    "sha256": "de26fd077f7facb04be030b419c8df4d703b2ccc4bf801d26c9ab9ef22fb714d"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/client.f1259893.BXJ2Fy8QF8.chunk.js",
+    "bytes": 3072,
+    "sha256": "78066c8ce494287148e04af22d44057c178bc655ecd2b7a688d86b4d1d09eef6"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/computer-shared.js",
+    "bytes": 2991929,
+    "sha256": "8b8c2aa987b26cb39358a68a8d3395cd37d47439dff15bea3da44720243569f6"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/offline-bot-groups.js",
+    "bytes": 384127,
+    "sha256": "3654aee90c398c0a5230ac572fe53bfe389cfc92aa013e624865ddf1e3766221"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/public-scripts/play-computer.js",
+    "bytes": 417849,
+    "sha256": "c8ae87b4ff99d0c52d027c6f28d2b8a6042e9dd8551ad2f06eaa230dcac85bc1"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-charm-initial-timeout.json",
+    "bytes": 1804,
+    "sha256": "0941eaccecde220e231b3ebfce5fb0f273bc9823daa2f91f2002670c01b26392"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-charm-missing.json",
+    "bytes": 9269,
+    "sha256": "eac03713c790fbaa8ee98937d8323cef1de0769b861698d83face6cbe2cd5d03"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-charm.json",
+    "bytes": 78703,
+    "sha256": "e663ac863de934ecda0e37fff3ce9685d92c8fc49c378fa81f24dd7479c2c995"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-human-default.json",
+    "bytes": 9958,
+    "sha256": "24ae5e5afbab78b80f5d03a17bb4cb68d96006d6390a82303666554954040ac2"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-human-no-maia.json",
+    "bytes": 9999,
+    "sha256": "f938ab1cc344fb80c51b8c480655a68a472277fe826cec82f822bec104d5aa26"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-human-normal.json",
+    "bytes": 13635,
+    "sha256": "25e4716f8bb4c4546b749e3823bb5c6af214fafd2559968a626675f036fcbb78"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/runtime-legacy.json",
+    "bytes": 9157,
+    "sha256": "1314ab751923a1ee47466f6cdf8e14d5cb5fb1b9d471aadebd2e1ef623fe8cb5"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/bot.proto",
+    "bytes": 1325,
+    "sha256": "f170a23a8561c5b2f1f2da73f41a166ad39dcc916d1180ef1b8790a928df6140"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/bot_move_configuration.proto",
+    "bytes": 4927,
+    "sha256": "37de2a1a8b9bcb2189bfe0e57362ba0ac4d9a375a77ac7e47bdf8cf005d0b9e9"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/charm_inference.proto",
+    "bytes": 807,
+    "sha256": "51eb507e9bc00c2ef264047b0fef409d55df1ee1dc528ca678db10848a5be94b"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/charm_inference_code.proto",
+    "bytes": 709,
+    "sha256": "b2f5e0af26a2fcda370f95955d3efb19c5b2dcc80d34c03893e1f0a520dd300a"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/compact_charm_inference.proto",
+    "bytes": 827,
+    "sha256": "dd6caa770ad8e11b0dfe9830f336b244f32fc26816890a6dc8f4b21e68d63bfb"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_bot_config_resources.proto",
+    "bytes": 670,
+    "sha256": "506def4c470e102777463216eb9f79c6d340c68e76833f9e02322a01ca26d5af"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_bot_move_from_config.proto",
+    "bytes": 505,
+    "sha256": "ab0e28c0df8ccb21570171235df45cb11383f834347bb447e31642f0fa208959"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_cee_version.proto",
+    "bytes": 390,
+    "sha256": "aea358ec1a5efe55db6035360761140aa0090dd43b7149738da5ef8e6579ea3c"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_charm_inference.proto",
+    "bytes": 529,
+    "sha256": "f97f50e59a0f6fc72b7b9e5829e90f89bc70c4cd8da934e3494ce5dc3b216e96"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_get_bot_chat.proto",
+    "bytes": 818,
+    "sha256": "811620cefaedbeb2aa37d8dcb43e7a82512c105602b60372da7f23dea41b0b6c"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_get_bot_move.proto",
+    "bytes": 368,
+    "sha256": "848b46110957a8a5d4c8887e7b5a6981d581d75cdd9883201dcb515d3ee84d16"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_load_bot.proto",
+    "bytes": 492,
+    "sha256": "9a04347a2a6693d2569fad4ff7d04dfc77a2480540695d6e0a7c945d46834551"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/feature_run_search.proto",
+    "bytes": 1273,
+    "sha256": "5b49b8bbedb17793037dca90e4f7b7fe67c593e8b53bcebd73c04d1770c02a11"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/features.proto",
+    "bytes": 5526,
+    "sha256": "66724324edca4bc1306a021d1c325b247a7c6af26f4fee5be7622facf4575fdf"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/game_settings.proto",
+    "bytes": 1529,
+    "sha256": "35a295ef15e97658494692fbda49dd5765cad7be00b1743791c2a57fe82c3c0f"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/internal_feature_maia_botmove.proto",
+    "bytes": 395,
+    "sha256": "ebf7ef3b338768978909e35e952aec7307e5bc25a194335bc85bd2e247b5ca99"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/simple_charm_inference.proto",
+    "bytes": 834,
+    "sha256": "9cb1fdab6d43c74de096b64d0455265a9cfeb28f7e70e52c8da8bac9b554608f"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/schemas/torch_search_mode.proto",
+    "bytes": 529,
+    "sha256": "e8ae3321a9e8827b1c2acb5a539aaedd4938e9cc15bcbc93b3d53930560f51e0"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/service-routing.json",
+    "bytes": 72129,
+    "sha256": "f44427e74c60798c39d1dd853461cb167d9cb29cc61f16de65370d1ea5498bd0"
+  },
+  {
+    "path": "torch-human-bots-update/evidence/source-manifest.json",
+    "bytes": 15878,
+    "sha256": "ad0e10c940432e79f82896962795aa538ecbb337c38adb72699d7220e182db34"
+  },
+  {
+    "path": "torch-human-bots-update/tools/decode_descriptors.py",
+    "bytes": 2005,
+    "sha256": "9844182829a8f1a0fa9fc7114c319bce530bf02a17ad4045e12050bec32b589e"
+  },
+  {
+    "path": "torch-human-bots-update/tools/extract.cjs",
+    "bytes": 2602,
+    "sha256": "42d91df32169203523443c5047b495c115c61c79082b775fec08e36c091ca305"
+  },
+  {
+    "path": "torch-human-bots-update/tools/lib/descriptors.js",
+    "bytes": 910354,
+    "sha256": "28b92c2eb005f7d6c2823c0012ebf9832b97a79615b3e5b10be0bbd67e6beada"
+  },
+  {
+    "path": "torch-human-bots-update/tools/lib/protobuf.js",
+    "bytes": 17092,
+    "sha256": "9bfe315bd2c6c56a3c843cfd78efac6ff20485db2d0ca073cc752b1266e44e5a"
+  },
+  {
+    "path": "torch-human-bots-update/tools/package.json",
+    "bytes": 18,
+    "sha256": "1239d4d885dcad42201a27ed9324f8f0f760b78700d8db9ced39a511cffe7eae"
+  },
+  {
+    "path": "torch-human-bots-update/tools/parse_model.py",
+    "bytes": 1801,
+    "sha256": "b29c6795c964801753594aa1b52542738ec189c92abaed436f0421121066f0e9"
+  },
+  {
+    "path": "torch-human-bots-update/tools/probe.mjs",
+    "bytes": 5367,
+    "sha256": "e4f7d6f8237dac6e1e59c9e688f70322cd20933654288573471444971bbece3c"
+  },
+  {
+    "path": "torch-human-bots-update/tools/retrieve-model.py",
+    "bytes": 792,
+    "sha256": "66010cbcde65b1f9a98bb4e72a8609ba57f6f0cf5983bca758107ce38e020e84"
+  },
+  {
+    "path": "torch-human-bots-update/tools/test-functions.cjs",
+    "bytes": 4544,
+    "sha256": "c00849a8dbcfa5ea511579d3adb7c289a5eac47c4688f665d394f19050a6ff62"
+  }
+]

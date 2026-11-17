@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/game_gateway/v1/opening_metadata.proto",
+  "package": "chesscom.game_gateway.v1",
+  "message_type": [
+    {
+      "name": "OpeningMetadata",
+      "field": [
+        {
+          "name": "eco_family_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

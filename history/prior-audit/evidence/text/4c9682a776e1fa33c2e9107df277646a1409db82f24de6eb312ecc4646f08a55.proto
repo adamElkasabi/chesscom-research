@@ -1,0 +1,10 @@
+// source: chesscom/api/v1/date.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message Date {
+  optional int32 year = 1;
+  optional int32 month = 2;
+  optional int32 day = 3;
+}

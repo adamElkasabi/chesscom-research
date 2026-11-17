@@ -1,0 +1,6 @@
+
+4chesscom/explanation_engine/v1/game_state_spec.protochesscom.explanation_engine.v1chesscom/engine/v1/engine.proto5chesscom/explanation_engine/v1/feature_new_game.proto7chesscom/explanation_engine/v1/feature_run_search.proto"Ø
+GameStateSpecH
+new_game_request (2..chesscom.explanation_engine.v1.NewGameRequestL
+run_search_request (20.chesscom.explanation_engine.v1.RunSearchRequest/
+engine_type (2.chesscom.engine.v1.Enginebproto3

@@ -1,0 +1,24 @@
+{
+  "quotaExhausted": true,
+  "cachedReview": false,
+  "moves": 20,
+  "accuracy": {
+    "white": 59.95828628540039,
+    "black": 95.46183013916016
+  },
+  "statuses": [
+    "[local-review] WebSocket hook installed",
+    "[local-review] step ws OK",
+    "[local-review] step hook OK",
+    "[local-review] hook installed v0.1.6",
+    "[local-review] WS ← wss://analysis.chess.com/v2/game-review protocols=undefined",
+    "[local-review] step sock OK",
+    "[local-review] intercepted game-review socket → wss://analysis.chess.com/v2/game-review",
+    "[local-review] step req OK",
+    "[local-review] request 590 B → analysing…",
+    "[local-review] step open OK",
+    "[local-review] socket loopback open",
+    "[local-review] step eng OK",
+    "[local-review] socket closed (1000)"
+  ]
+}

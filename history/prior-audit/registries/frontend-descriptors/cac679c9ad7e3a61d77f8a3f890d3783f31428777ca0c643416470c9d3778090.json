@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/api/v1/speech.proto",
+  "package": "chesscom.api.v1",
+  "message_type": [
+    {
+      "name": "Speech",
+      "field": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "audio_url_hash",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

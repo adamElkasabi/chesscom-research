@@ -1,0 +1,9 @@
+UCI_LimitStrength
+setoption name UCI_Chess960 value true
+setoption name UCI_Chess960 value false
+UCI_AnalyseMode
+UCI_ShowWDL
+UCI_Chess960
+Clang 13.0.0 (https://github.com/llvm/llvm-project 31e75512174e1bdaa242ee5c7f30fe56e68c3748)
+the Universal Chess Interface (UCI) protocol to communicate with a GUI, an API, etc.
+For any further information, visit https://github.com/official-stockfish/Stockfish#readme

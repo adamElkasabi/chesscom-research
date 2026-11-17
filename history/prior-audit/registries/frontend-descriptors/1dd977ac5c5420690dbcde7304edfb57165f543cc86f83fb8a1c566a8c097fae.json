@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/support/v1/support_action_confirmation.proto",
+  "package": "chesscom.support.v1",
+  "enum_type": [
+    {
+      "name": "SupportActionConfirmation",
+      "value": [
+        {
+          "name": "SUPPORT_ACTION_CONFIRMATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SUPPORT_ACTION_CONFIRMATION_HUMAN_DIRECT",
+          "number": 1
+        },
+        {
+          "name": "SUPPORT_ACTION_CONFIRMATION_HUMAN_CONFIRMED",
+          "number": 2
+        },
+        {
+          "name": "SUPPORT_ACTION_CONFIRMATION_AGENT_AUTONOMOUS",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

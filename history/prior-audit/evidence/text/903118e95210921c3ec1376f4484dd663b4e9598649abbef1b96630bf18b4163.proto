@@ -1,0 +1,15 @@
+// source: chesscom/explanation_engine/v1/game_arc.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum GameArc {
+  GAME_ARC_UNSPECIFIED = 0;
+  GAME_ARC_BALANCED = 1;
+  GAME_ARC_SUDDEN = 2;
+  GAME_ARC_SMOOTH = 3;
+  GAME_ARC_ROUGH = 4;
+  GAME_ARC_THROWAWAY = 5;
+  GAME_ARC_WILD = 6;
+  GAME_ARC_SHARP = 7;
+}

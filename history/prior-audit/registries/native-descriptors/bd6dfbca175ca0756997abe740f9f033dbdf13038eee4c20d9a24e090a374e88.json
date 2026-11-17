@@ -1,0 +1,58 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_san_moves.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/move_list.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetSanMovesRequest",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "proto_moves",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveList",
+          "oneof_index": 0
+        },
+        {
+          "name": "uci_moves",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.UciMoveList",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "variation"
+        },
+        {
+          "name": "_fen"
+        }
+      ]
+    },
+    {
+      "name": "GetSanMovesResponse",
+      "field": [
+        {
+          "name": "san_moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

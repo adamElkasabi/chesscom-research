@@ -1,0 +1,56 @@
+model validation OK: bare object .binaryType= throws Illegal invocation
+[local-review] WebSocket hook installed
+[local-review] step ws OK
+[local-review] step hook OK
+[local-review] hook installed v0.1.6
+
+=== review socket: wss://analysis.chess.com:443/v2/game-review ===
+[local-review] WS ← wss://analysis.chess.com:443/v2/game-review protocols=undefined
+[local-review] step sock OK
+[local-review] intercepted game-review socket → wss://analysis.chess.com:443/v2/game-review
+  PASS constructor did not throw
+  PASS a socket object was returned
+  PASS intercepted socket is the fake (not a real NativeWS)
+  PASS fake still satisfies instanceof WebSocket
+  PASS socket-open posted to bridge (drives eng step)
+  PASS S3e's binaryType='arraybuffer' assignment works
+  PASS readyState readable === CONNECTING before open
+  PASS url readable
+[local-review] step open OK
+[local-review] socket loopback open
+  PASS S3e resolved: onopen fired (microtask beat k3e timer)
+  PASS readyState === OPEN after open
+[local-review] step req OK
+[local-review] request 7 B → analysing…
+  PASS send() did not throw
+  PASS request frame posted to bridge
+  PASS engine frame reached socket.onmessage as ArrayBuffer
+[local-review] socket closed (1000)
+  PASS readyState === CLOSED after close()
+  PASS socket-close posted to bridge
+
+=== review socket retry (chess.com re-runs S3e on failure) ===
+[local-review] WS ← wss://www.chess.com/v2/game-review protocols=undefined
+[local-review] intercepted game-review socket → wss://www.chess.com/v2/game-review
+  PASS same-origin review URL also intercepted without throwing
+  PASS socket-open posted for retry
+[local-review] socket loopback open
+[local-review] socket closed (1000)
+
+=== passthrough: wss://www.chess.com/pubsub?uid=x ===
+[local-review] WS ← wss://www.chess.com/pubsub?uid=x protocols=undefined
+[local-review] WS passthrough [other] → wss://www.chess.com/pubsub?uid=x
+  PASS passthrough constructor did not throw
+  PASS non-CEAC URL returns a real branded NativeWS
+  PASS no socket-open for passthrough
+  PASS passthrough logged
+  PASS real socket send() works (brand intact)
+
+=== diagnostics ===
+  PASS no HookedWS FAILED logged
+  PASS no Illegal invocation anywhere in page-hook output
+  PASS hook + ws steps set
+  PASS sock + open + req steps set
+  PASS page-hook reports v0.1.6
+
+ALL PASS

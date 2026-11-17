@@ -1,0 +1,243 @@
+{
+  "name": "chesscom/courses/v1/courses_shop_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetCourseProductListRequest",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CoursesShopPagination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "search_query",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_aspects",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.CourseGameAspectType"
+        },
+        {
+          "name": "elo_ranges",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Range"
+        },
+        {
+          "name": "color",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "tags",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseTag"
+        },
+        {
+          "name": "country_code",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "price_range_in_cents",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Range",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "exclude_owned_courses",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_rating",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "retrieve_mode",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.ProductListRetrieveMode",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "price_range",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.PriceRange",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "course_custom_tags",
+          "number": 14,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCustomTag"
+        },
+        {
+          "name": "sort",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.ShopSortOption",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_only_owned_courses",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 10,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_pagination"
+        },
+        {
+          "name": "_search_query"
+        },
+        {
+          "name": "_color"
+        },
+        {
+          "name": "_price_range_in_cents"
+        },
+        {
+          "name": "_exclude_owned_courses"
+        },
+        {
+          "name": "_user_rating"
+        },
+        {
+          "name": "_retrieve_mode"
+        },
+        {
+          "name": "_price_range"
+        },
+        {
+          "name": "_fen"
+        },
+        {
+          "name": "_sort"
+        },
+        {
+          "name": "_include_only_owned_courses"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseProductListResponse",
+      "field": [
+        {
+          "name": "total",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "product_list",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseProduct"
+        }
+      ]
+    },
+    {
+      "name": "GetShopMetadataRequest",
+      "field": [
+        {
+          "name": "country_code",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetShopMetadataResponse",
+      "field": [
+        {
+          "name": "number_of_courses_on_sale",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "max_price",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CoursesShopService",
+      "method": [
+        {
+          "name": "GetCourseProductList",
+          "input_type": ".chesscom.courses.v1.GetCourseProductListRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseProductListResponse"
+        },
+        {
+          "name": "GetShopMetadata",
+          "input_type": ".chesscom.courses.v1.GetShopMetadataRequest",
+          "output_type": ".chesscom.courses.v1.GetShopMetadataResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

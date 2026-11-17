@@ -1,0 +1,88 @@
+{
+  "config": {
+    "id": "example-game-normalize-off",
+    "fixture": "example-game",
+    "settings": {
+      "userColor": 1
+    },
+    "uciAfter": {
+      "Normalize": false
+    },
+    "timeoutSeconds": 200
+  },
+  "started": "2026-11-14T19:22:32.798Z",
+  "actual": {
+    "accuracy": {
+      "white": 88.43988037109375,
+      "black": 80.23229217529297
+    },
+    "ratings": {
+      "white": 1850,
+      "black": 1450
+    },
+    "tallies": {
+      "white": {
+        "1": 4,
+        "2": 0,
+        "3": 4,
+        "4": 27,
+        "5": 19,
+        "6": 4,
+        "7": 1,
+        "8": 0,
+        "9": 1,
+        "10": 1,
+        "11": 0,
+        "20": 0
+      },
+      "black": {
+        "1": 3,
+        "2": 0,
+        "3": 0,
+        "4": 16,
+        "5": 23,
+        "6": 7,
+        "7": 2,
+        "8": 7,
+        "9": 0,
+        "10": 1,
+        "11": 1,
+        "20": 0
+      }
+    }
+  },
+  "engines": [
+    11
+  ],
+  "numericHash": "a877ccf3d74e3c3674400b77d15b7d98934e6fd828c9bd1abc04ef1813e1575a",
+  "actualSettings": {
+    "userColor": 1,
+    "locale": 0,
+    "gameAnalysisSpeechVersion": 3,
+    "moveClassificationVersion": 2,
+    "search": {
+      "case": "searchSettings",
+      "value": {
+        "searchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 150000,
+          "timeLimitMs": 0,
+          "numLines": 2
+        },
+        "nullMoveSearchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 40000,
+          "timeLimitMs": 0,
+          "numLines": 1
+        }
+      }
+    },
+    "enableSkills": true
+  },
+  "speech": {
+    "sentences": 125,
+    "hashes": 125
+  },
+  "elapsedSeconds": 77.184,
+  "warnings": []
+}

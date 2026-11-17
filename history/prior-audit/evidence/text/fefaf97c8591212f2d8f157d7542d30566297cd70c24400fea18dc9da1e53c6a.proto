@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_cee_internal_components.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message CeeInternalComponentsRequest {
+}
+
+message CeeInternalComponentsResponse {
+  repeated .chesscom.explanation_engine.v1.CeeInternalComponent components = 1;
+}

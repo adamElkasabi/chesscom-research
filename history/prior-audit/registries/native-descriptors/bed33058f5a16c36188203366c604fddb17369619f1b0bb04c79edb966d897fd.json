@@ -1,0 +1,839 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/c_api.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "ApiCall",
+      "field": [
+        {
+          "name": "uid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "get_update",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.GetUpdateCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "stop",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.StopCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "new_feature",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.NewFeatureCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_feature",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeFeatureCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_game",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeGameCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "run",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.RunCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "join",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.JoinCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "get_last_error",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.GetLastErrorCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "is_valid_game_point",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.IsValidGamePointCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "init",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.InitCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "init_with_opts",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.InitWithOptsCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "enable_log",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EnableLogCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "disable_log",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisableLogCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "heartbeat",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.HeartbeatCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_all_games",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeAllGamesCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "set_log_fd",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.SetLogFDCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "set_log_file",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.SetLogFileCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "add_artifact",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AddArtifactCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "add_artifact_from_file",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AddArtifactFromFileCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_artifact",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeArtifactCall",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "call"
+        }
+      ]
+    },
+    {
+      "name": "ApiResult",
+      "field": [
+        {
+          "name": "uid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "err_msg",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "get_update",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.GetUpdateResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "stop",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.StopResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "new_feature",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.NewFeatureResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_feature",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeFeatureResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_game",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeGameResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "run",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.RunResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "join",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.JoinResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "get_last_error",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.GetLastErrorResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "is_valid_game_point",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.IsValidGamePointResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "init",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.InitResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "init_with_opts",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.InitWithOptsResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "enable_log",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EnableLogResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "disable_log",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisableLogResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "heartbeat",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.HeartbeatResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_all_games",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeAllGamesResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "set_log_fd",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.SetLogFDResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "set_log_file",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.SetLogFileResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "add_artifact",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AddArtifactResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "add_artifact_from_file",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AddArtifactFromFileResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "dispose_artifact",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.DisposeArtifactResult",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "result"
+        },
+        {
+          "name": "_err_msg"
+        }
+      ]
+    },
+    {
+      "name": "SearchMock",
+      "field": [
+        {
+          "name": "data",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "uid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "LogEntry",
+      "field": [
+        {
+          "name": "time_since_cee_init_us",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "call",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ApiCall",
+          "oneof_index": 0
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ApiResult",
+          "oneof_index": 0
+        },
+        {
+          "name": "search_mock",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.SearchMock",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "entry"
+        }
+      ]
+    },
+    {
+      "name": "HeartbeatCall"
+    },
+    {
+      "name": "InitCall"
+    },
+    {
+      "name": "InitWithOptsCall",
+      "field": [
+        {
+          "name": "n_async_task_processors",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "engine_pool_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "DisposeCall"
+    },
+    {
+      "name": "EnableLogCall"
+    },
+    {
+      "name": "DisableLogCall"
+    },
+    {
+      "name": "RunCall",
+      "field": [
+        {
+          "name": "feature_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "async",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "GetUpdateCall",
+      "field": [
+        {
+          "name": "feature_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "result_proto_ptr",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "size",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "non_blocking",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "StopCall",
+      "field": [
+        {
+          "name": "feature_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "non_blocking",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "JoinCall",
+      "field": [
+        {
+          "name": "feature_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "NewFeatureCall",
+      "field": [
+        {
+          "name": "feature_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_point_handle",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "feature_proto",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ]
+    },
+    {
+      "name": "IsValidGamePointCall",
+      "field": [
+        {
+          "name": "game_point_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "DisposeFeatureCall",
+      "field": [
+        {
+          "name": "feature_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "DisposeGameCall",
+      "field": [
+        {
+          "name": "game_point_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "DisposeAllGamesCall"
+    },
+    {
+      "name": "GetLastErrorCall"
+    },
+    {
+      "name": "SetLogFDCall",
+      "field": [
+        {
+          "name": "fd",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SetLogFileCall",
+      "field": [
+        {
+          "name": "file_path",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AddArtifactCall",
+      "field": [
+        {
+          "name": "artifact_ptr",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "key",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_key"
+        }
+      ]
+    },
+    {
+      "name": "AddArtifactFromFileCall",
+      "field": [
+        {
+          "name": "path",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "key",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_key"
+        }
+      ]
+    },
+    {
+      "name": "DisposeArtifactCall",
+      "field": [
+        {
+          "name": "artifact_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "HeartbeatResult"
+    },
+    {
+      "name": "GetUpdateResult",
+      "field": [
+        {
+          "name": "error_code",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "result_proto",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        }
+      ]
+    },
+    {
+      "name": "StopResult"
+    },
+    {
+      "name": "DisposeFeatureResult"
+    },
+    {
+      "name": "NewFeatureResult",
+      "field": [
+        {
+          "name": "feature_handle",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "IsValidGamePointResult",
+      "field": [
+        {
+          "name": "is_valid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "DisposeGameResult"
+    },
+    {
+      "name": "DisposeAllGamesResult"
+    },
+    {
+      "name": "JoinResult"
+    },
+    {
+      "name": "GetLastErrorResult",
+      "field": [
+        {
+          "name": "error",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "RunResult",
+      "field": [
+        {
+          "name": "error_code",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "EnableLogResult"
+    },
+    {
+      "name": "DisableLogResult"
+    },
+    {
+      "name": "InitResult"
+    },
+    {
+      "name": "InitWithOptsResult"
+    },
+    {
+      "name": "DisposeResult"
+    },
+    {
+      "name": "SetLogFDResult",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetLogFileResult",
+      "field": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "AddArtifactResult",
+      "field": [
+        {
+          "name": "artifact_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "AddArtifactFromFileResult",
+      "field": [
+        {
+          "name": "artifact_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "DisposeArtifactResult"
+    }
+  ],
+  "syntax": "proto3"
+}

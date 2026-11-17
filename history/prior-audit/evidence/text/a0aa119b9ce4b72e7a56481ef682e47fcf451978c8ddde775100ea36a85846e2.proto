@@ -1,0 +1,19 @@
+// source: chesscom/courses_common/v1/course_game_aspect.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum CourseGameAspectType {
+  COURSE_GAME_ASPECT_TYPE_UNSPECIFIED = 0;
+  COURSE_GAME_ASPECT_TYPE_OPENING = 1;
+  COURSE_GAME_ASPECT_TYPE_TACTICS = 2;
+  COURSE_GAME_ASPECT_TYPE_STRATEGY = 3;
+  COURSE_GAME_ASPECT_TYPE_ENDGAME = 4;
+}
+
+message CourseGameAspect {
+  oneof _secondary_game_aspect {
+  .chesscom.courses_common.v1.CourseGameAspectType secondary_game_aspect = 2;
+  }
+  optional .chesscom.courses_common.v1.CourseGameAspectType main_game_aspect = 1;
+}

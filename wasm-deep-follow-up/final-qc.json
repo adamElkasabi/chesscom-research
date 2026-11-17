@@ -1,0 +1,29 @@
+{
+  "duplicate_zip_members": 0,
+  "zip_crc": "PASS",
+  "baseline_members_byte_identical": 2475,
+  "baseline_outer_sha256": "aa4a215514161ca7f588a0dda342e36bace49ead965012e2ec0662bb4ef9321f",
+  "new_members_hash_manifest": "PASS",
+  "direct_new_json_documents_parsed": 31,
+  "new_source_and_finding_ids_unique": true,
+  "logical_analysis_files": 493,
+  "logical_analysis_bytes": 650278897,
+  "unredacted_email_pattern_hits_new_text": [],
+  "archive_members_before_qc_append": 2631,
+  "logical_analysis_materialization": "PASS:493decodedmembersverifiedbyte-for-byteagainstoriginalhashesusingmaterialize-analysis.py",
+  "scope_status": "PARTIALLY AUDITED;not exhaustive semantic recovery",
+  "v8_validation": "28default-featurepasses;relaxedSIMDprobe030passeswithexplicitfeatureflagandnativeWABTenable-all",
+  "selected_original_normal_CFGs": {
+    "functions": 46,
+    "instruction_nodes": 36154,
+    "scope": "Noexceptionunwind/interprocedural/pathfeasibilityfixedpoint"
+  },
+  "final_defined_functions": 225335,
+  "defined_function_statuses": {
+    "STRUCTURALLY ANALYZED": 209715,
+    "UNDERSTOOD": 13560,
+    "PARTIALLY UNDERSTOOD": 2054,
+    "MOSTLY UNDERSTOOD": 6
+  },
+  "archive_bytes_before_qc_append": 106813270
+}

@@ -1,0 +1,101 @@
+// source: chesscom/bots/v1/bot_event.proto
+// syntax: proto3
+
+package chesscom.bots.v1;
+
+enum BotLabelType {
+  BOT_LABEL_TYPE_UNSPECIFIED = 0;
+  BOT_LABEL_TYPE_HARDER = 1;
+  BOT_LABEL_TYPE_EASIER = 2;
+}
+
+message BotEvent {
+  oneof _premium_multiplier {
+  uint32 premium_multiplier = 12;
+  }
+  oneof _game_review_data {
+  .chesscom.bots.v1.GameReviewEventData game_review_data = 13;
+  }
+  optional string name = 1;
+  optional string description = 2;
+  optional .chesscom.bots.v1.BotEventTheme theme = 3;
+  optional .chesscom.progression.v1.EventProgress progress = 4;
+  optional string progress_unit_name = 5;
+  optional .google.protobuf.Timestamp end_time = 6;
+  optional string bot_event_key = 7;
+  optional .chesscom.bots.v1.BotVariationModalData variation_modal_data = 8;
+  repeated .chesscom.progression.v1.EventUnlockable unlockables = 9;
+  optional uint32 resign_min_plies = 10;
+  optional .chesscom.bots.v1.BotEventIntroModalData intro_modal_data = 11;
+}
+
+message GameReviewEventData {
+  optional uint32 points = 1;
+  optional .chesscom.api.v1.Asset points_icon = 2;
+}
+
+message BotProperties {
+  oneof _fen {
+  string fen = 5;
+  }
+  oneof _play_as_white {
+  bool play_as_white = 6;
+  }
+  oneof _label {
+  .chesscom.bots.v1.BotLabel label = 7;
+  }
+  oneof _komodo_skill_override {
+  uint32 komodo_skill_override = 8;
+  }
+  oneof _fen_player_is_white {
+  string fen_player_is_white = 9;
+  }
+  oneof _fen_player_is_black {
+  string fen_player_is_black = 10;
+  }
+  optional uint32 win_points = 1;
+  optional uint32 loss_points = 2;
+  optional uint32 draw_points = 3;
+  optional bool assistance_use_penalty = 4;
+}
+
+message BotLabel {
+  optional .chesscom.bots.v1.BotLabelType type = 1;
+}
+
+message BotEventTheme {
+  optional string primary_color = 1;
+  optional string secondary_color = 2;
+  optional .chesscom.api.v1.Asset points_icon = 3;
+  optional .chesscom.api.v1.Asset banner_image = 4;
+  optional .chesscom.api.v1.Asset background_image = 5;
+  optional .chesscom.bots.v1.BotEventSounds sounds = 6;
+}
+
+message BotEventSounds {
+  oneof _game_start {
+  .chesscom.api.v1.Asset game_start = 1;
+  }
+  oneof _gameplay_ambient {
+  .chesscom.api.v1.Asset gameplay_ambient = 2;
+  }
+}
+
+message BotVariationModalData {
+  optional .chesscom.api.v1.Asset image = 1;
+  optional string title = 2;
+  optional string bot_advantage_text = 3;
+  optional string bot_disadvantage_text = 4;
+}
+
+message BotEventIntroModalData {
+  optional .chesscom.api.v1.Asset image = 1;
+  optional string title = 2;
+  optional string subtitle = 3;
+  repeated .chesscom.bots.v1.BotEventIntroModalInfoItemData info_items = 4;
+}
+
+message BotEventIntroModalInfoItemData {
+  optional .chesscom.api.v1.Asset icon = 1;
+  optional string text = 2;
+}

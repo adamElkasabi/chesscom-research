@@ -1,0 +1,21 @@
+// source: chesscom/explanation_engine/v1/torch_search_mode.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message TorchSearchMode {
+  oneof mode {
+  .chesscom.explanation_engine.v1.TorchSearchMode.Human human = 1;
+  .chesscom.explanation_engine.v1.TorchSearchMode.Multisearch multisearch = 2;
+  }
+  message Human {
+    oneof _disable_maia {
+  bool disable_maia = 1;
+    }
+  }
+  message Multisearch {
+    oneof _reduce_nodes_on_successive_searches {
+  bool reduce_nodes_on_successive_searches = 1;
+    }
+  }
+}

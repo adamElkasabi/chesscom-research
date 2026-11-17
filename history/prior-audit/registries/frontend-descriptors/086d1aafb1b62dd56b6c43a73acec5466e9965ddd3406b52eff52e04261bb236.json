@@ -1,0 +1,45 @@
+{
+  "name": "chesscom/explanation_engine/v1/tcn.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "TcnGame",
+      "field": [
+        {
+          "name": "tcn",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "initial_fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_timestamps",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "metadata",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_initial_fen"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,76 @@
+{
+  "name": "chesscom/courses/v1/course_coach_speech.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseCoachSpeech",
+      "field": [
+        {
+          "name": "intro",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCoachSpeechItem",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "main",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCoachSpeechItem",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "subvariation_items",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseCoachSpeechItem"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_intro"
+        },
+        {
+          "name": "_main"
+        }
+      ]
+    },
+    {
+      "name": "CourseCoachSpeechItem",
+      "field": [
+        {
+          "name": "text_item_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "audio_url_hash",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "san",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_san"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

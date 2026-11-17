@@ -1,0 +1,17 @@
+// source: chesscom/stats/v1/advanced_stat_example.proto
+// syntax: proto3
+
+package chesscom.stats.v1;
+
+enum AdvancedStatExampleOutcome {
+  ADVANCED_STAT_EXAMPLE_OUTCOME_UNSPECIFIED = 0;
+  ADVANCED_STAT_EXAMPLE_OUTCOME_GOOD = 1;
+  ADVANCED_STAT_EXAMPLE_OUTCOME_BAD = 2;
+}
+
+message AdvancedStatExample {
+  optional .chesscom.stats.v1.AdvancedStatType stat = 1;
+  optional .chesscom.stats.v1.AdvancedStatExampleOutcome outcome = 2;
+  optional int32 ply = 3;
+  optional string san = 4;
+}

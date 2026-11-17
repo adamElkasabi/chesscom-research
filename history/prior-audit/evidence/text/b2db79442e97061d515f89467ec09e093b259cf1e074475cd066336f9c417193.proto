@@ -1,0 +1,51 @@
+// source: chesscom/user_properties/v1/properties_analysis.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum AnalysisPropertyDefinition {
+  ANALYSIS_PROPERTY_UNSPECIFIED = 0;
+  TOTAL_GAMES_ANALYZED = 1;
+  TOTAL_GAME_REVIEWS_REQUESTED = 2;
+  LAST_GAME_REVIEW_REQUESTED_DATE = 3;
+  IS_LAST_GAME_REVIEWED = 4;
+  GAME_REVIEW_LAST_GAME_LEGACY_ID = 5;
+  GAME_REVIEW_LAST_GAME_OPPONENT_USERNAME = 6;
+  GAME_REVIEW_LAST_GAME_FINAL_FEN = 7;
+  GAME_REVIEW_LAST_GAME_TYPE = 8;
+  GAME_REVIEW_LAST_GAME_RESULT = 9;
+  GAME_REVIEW_LAST_GAME_COLOR = 10;
+}
+
+message AnalysisProperty {
+  oneof _total_games_analyzed {
+  int32 total_games_analyzed = 1;
+  }
+  oneof _total_game_reviews_requested {
+  int32 total_game_reviews_requested = 2;
+  }
+  oneof _last_game_review_requested_date {
+  .google.protobuf.Timestamp last_game_review_requested_date = 3;
+  }
+  oneof _is_last_game_reviewed {
+  bool is_last_game_reviewed = 4;
+  }
+  oneof _game_review_last_game_legacy_id {
+  int64 game_review_last_game_legacy_id = 5;
+  }
+  oneof _game_review_last_game_opponent_username {
+  string game_review_last_game_opponent_username = 6;
+  }
+  oneof _game_review_last_game_final_fen {
+  string game_review_last_game_final_fen = 7;
+  }
+  oneof _game_review_last_game_type {
+  string game_review_last_game_type = 8;
+  }
+  oneof _game_review_last_game_result {
+  string game_review_last_game_result = 9;
+  }
+  oneof _game_review_last_game_color {
+  string game_review_last_game_color = 10;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/report_card_highlight.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/game_phase.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto"
+  ],
+  "message_type": [
+    {
+      "name": "ReportCardHighlight",
+      "field": [
+        {
+          "name": "phase",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "player_classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "opponent_classification",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

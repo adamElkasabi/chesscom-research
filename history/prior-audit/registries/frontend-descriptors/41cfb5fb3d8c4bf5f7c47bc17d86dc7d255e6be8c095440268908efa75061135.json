@@ -1,0 +1,92 @@
+{
+  "name": "chesscom/courses_common/v1/course_video.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseVideo",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "provider",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.CourseVideoProvider"
+        },
+        {
+          "name": "provider_video_identifier",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "thumbnail",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "duration_seconds",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_id"
+        },
+        {
+          "name": "_thumbnail"
+        },
+        {
+          "name": "_duration_seconds"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CourseVideoProvider",
+      "value": [
+        {
+          "name": "COURSE_VIDEO_PROVIDER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_VIDEO_PROVIDER_WISTIA",
+          "number": 1
+        },
+        {
+          "name": "COURSE_VIDEO_PROVIDER_YOUTUBE",
+          "number": 2
+        },
+        {
+          "name": "COURSE_VIDEO_PROVIDER_VIMEO",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

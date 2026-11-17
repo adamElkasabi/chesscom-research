@@ -1,0 +1,16 @@
+// source: chesscom/chess/v1/score.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+message Score {
+  oneof score {
+  sint32 score_centipawns_white = 1;
+  int32 mate_in_white = 2;
+  int32 mate_in_black = 3;
+  .chesscom.chess.v1.Stalemate stalemate = 4;
+  }
+}
+
+message Stalemate {
+}

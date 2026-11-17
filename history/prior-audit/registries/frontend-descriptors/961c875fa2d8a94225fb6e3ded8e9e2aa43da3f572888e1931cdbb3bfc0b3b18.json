@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/game_storage/v2/game_privacy.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "GamePrivacy",
+      "value": [
+        {
+          "name": "GAME_PRIVACY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_PRIVACY_PUBLIC",
+          "number": 1
+        },
+        {
+          "name": "GAME_PRIVACY_PRIVATE",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

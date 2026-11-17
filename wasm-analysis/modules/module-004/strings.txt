@@ -1,0 +1,43 @@
+# Offset-linked relevant ASCII strings (hex file offset); all candidates and UTF16 candidates are separate.
+0x00086c3d Clear Hash
+0x00086c75 setoption name Use NNUE value true
+0x00086cbf nn-5af11540bbfe.nnue
+0x00086cec setoption name Use NNUE value false
+0x00086e26  [with scaled NNUE, hybrid, ...]
+0x0008790e NNUE evaluation used, but the network file was not loaded successfully.
+0x000879dd info string NNUE evaluation enabled.
+0x00087a99 the Stockfish developers (see AUTHORS file)
+0x00087ad3 Clang 14.0.0 (https://github.com/llvm/llvm-project 78e87970af888bbbd5652c31f3a8454e8e9dd5b8)
+0x00087b30 aborted with emscripten_fetch_close()
+0x00087c7e  NNUE network contributions 
+0x00087ce5  hashfull 
+0x00087d0d Stockfish 
+0x00087d4b setoption name Hash value 
+0x00087efd clang++ 
+0x00087f3c NNUE evaluation        
+0x0008805c  NNUE derived piece values:
+0x000881c5 N9Stockfish7EndgameILNS_11EndgameCodeE5ENS_5ValueEEE
+0x0008821d N9Stockfish7EndgameILNS_11EndgameCodeE1ENS_5ValueEEE
+0x00088275 N9Stockfish7EndgameILNS_11EndgameCodeE4ENS_5ValueEEE
+0x000882cd N9Stockfish7EndgameILNS_11EndgameCodeE6ENS_5ValueEEE
+0x00088325 N9Stockfish7EndgameILNS_11EndgameCodeE7ENS_5ValueEEE
+0x0008837d N9Stockfish7EndgameILNS_11EndgameCodeE8ENS_5ValueEEE
+0x000883d5 N9Stockfish7EndgameILNS_11EndgameCodeE9ENS_5ValueEEE
+0x0008842d N9Stockfish7EndgameILNS_11EndgameCodeE10ENS_5ValueEEE
+0x00088485 N9Stockfish7EndgameILNS_11EndgameCodeE2ENS_5ValueEEE
+0x000884dd N9Stockfish7EndgameILNS_11EndgameCodeE14ENS_11ScaleFactorEEE
+0x0008853d N9Stockfish7EndgameILNS_11EndgameCodeE15ENS_11ScaleFactorEEE
+0x0008859d N9Stockfish7EndgameILNS_11EndgameCodeE18ENS_11ScaleFactorEEE
+0x000885fd N9Stockfish7EndgameILNS_11EndgameCodeE20ENS_11ScaleFactorEEE
+0x0008865d N9Stockfish7EndgameILNS_11EndgameCodeE19ENS_11ScaleFactorEEE
+0x000886bd N9Stockfish7EndgameILNS_11EndgameCodeE16ENS_11ScaleFactorEEE
+0x00088916 N9Stockfish7EndgameILNS_11EndgameCodeE3ENS_5ValueEEE
+0x0008894b N9Stockfish11EndgameBaseINS_5ValueEEE
+0x0008899a N9Stockfish7EndgameILNS_11EndgameCodeE12ENS_11ScaleFactorEEE
+0x000889d7 N9Stockfish11EndgameBaseINS_11ScaleFactorEEE
+0x00088a2e N9Stockfish7EndgameILNS_11EndgameCodeE13ENS_11ScaleFactorEEE
+0x00088a8e N9Stockfish7EndgameILNS_11EndgameCodeE17ENS_11ScaleFactorEEE
+0x00088aee N9Stockfish7EndgameILNS_11EndgameCodeE21ENS_11ScaleFactorEEE
+0x00088b7a N9Stockfish12_GLOBAL__N_13TieE
+0x0008907d N9Stockfish10MainThreadE
+0x0008911e N9Stockfish6ThreadE

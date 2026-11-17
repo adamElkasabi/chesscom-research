@@ -1,0 +1,52 @@
+// source: chesscom/explanation_engine/v1/game_analysis.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum GameAnalysisSpeechVersion {
+  GAME_ANALYSIS_SPEECH_VERSION_UNSPECIFIED = 0;
+  GAME_ANALYSIS_SPEECH_VERSION_2 = 2;
+  GAME_ANALYSIS_SPEECH_VERSION_3 = 3;
+}
+
+message VariationAnalysis {
+  oneof _result {
+  .chesscom.chess.v1.GameResult result = 6;
+  }
+  repeated .chesscom.explanation_engine.v1.GamePointInfo variation_game_points = 1;
+  optional .chesscom.explanation_engine.v1.GamePhaseTransitions game_phase_transitions = 4;
+  repeated .chesscom.explanation_engine.v1.GamePointInfo variation_cutoffs = 8;
+}
+
+message EngineVariationAnalysis {
+  optional .chesscom.explanation_engine.v1.VariationAnalysis variation_analysis = 1;
+  optional .chesscom.engine.v1.Score engine_score = 2;
+  optional string variation_theme_prompt = 3;
+}
+
+message PositionAnalysis {
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 2;
+  repeated .chesscom.explanation_engine.v1.EngineVariationAnalysis null_move_variations = 4;
+  repeated .chesscom.explanation_engine.v1.EngineVariationAnalysis best_move_variations = 5;
+  optional .chesscom.explanation_engine.v1.Speech position_speech = 7;
+}
+
+message GameAnalysisMetadata {
+  optional .chesscom.api.v1.SemanticVersion cee_version = 1;
+}
+
+message GameAnalysis {
+  optional .chesscom.explanation_engine.v1.VariationAnalysis main_line = 2;
+  repeated .chesscom.explanation_engine.v1.GameAnalysis.GamePositionAnalysisCollectionEntry game_position_analysis_collection = 3;
+  optional .chesscom.explanation_engine.v1.VariationAccuracy accuracy_by_color = 4;
+  optional .chesscom.explanation_engine.v1.ReportCard report_card = 5;
+  optional .chesscom.explanation_engine.v1.GameArc game_arc = 6;
+  repeated .chesscom.explanation_engine.v1.GamePointInfo key_moments_game_points = 7;
+  optional string annotated_pgn = 8;
+  optional string game_summary = 9;
+  optional .chesscom.explanation_engine.v1.GameAnalysisMetadata metadata = 10;
+  message GamePositionAnalysisCollectionEntry {
+  optional int32 key = 1;
+  optional .chesscom.explanation_engine.v1.PositionAnalysis value = 2;
+  }
+}

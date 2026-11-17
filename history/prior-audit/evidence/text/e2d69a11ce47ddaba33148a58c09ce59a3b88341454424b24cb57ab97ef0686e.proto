@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_get_punish_move.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetPunishMoveRequest {
+}
+
+message GetPunishMoveResponse {
+  optional .chesscom.explanation_engine.v1.PunishMove punish_move = 1;
+}

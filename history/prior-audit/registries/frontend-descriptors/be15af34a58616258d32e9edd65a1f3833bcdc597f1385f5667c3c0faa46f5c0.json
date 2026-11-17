@@ -1,0 +1,45 @@
+{
+  "name": "chesscom/game_storage/v2/player_bad_sport_behavior.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "PlayerBadSportBehavior",
+      "value": [
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_NONE",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_FIRST_MOVE_NOT_PLAYED",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_ABORT",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_DISCONNECT",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_RAGE_QUIT",
+          "number": 5
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_MOVE_NOT_PLAYED",
+          "number": 6
+        },
+        {
+          "name": "PLAYER_BAD_SPORT_BEHAVIOR_BOTH_PLAYERS_DISCONNECTED",
+          "number": 7
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

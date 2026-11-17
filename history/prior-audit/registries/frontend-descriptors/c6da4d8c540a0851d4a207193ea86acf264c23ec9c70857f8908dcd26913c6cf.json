@@ -1,0 +1,948 @@
+{
+  "name": "chesscom/user_properties/v1/properties_user_details.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "UserDetailsProperty",
+      "field": [
+        {
+          "name": "avatar_url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "high_res_avatar_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "content_language_includes_english",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_email_deliverable",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_activated",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_opened_verification_email",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "referred_by_method",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_content_hidden",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_verified",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_sendgrid_invalid_email",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_bounce_date",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_open_email_date",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_dropped_email_date",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_spam_report_date",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_pawniversary",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_reactivated",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "skill_level",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_click_email_date",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_on_do_not_email_list",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_pawniversary_tomorrow",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_guest",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_right_to_be_forgotten_status",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "next_pawniversary_start_date",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "experiment_bucketing_results",
+          "number": 27,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "opt_in_status",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "account_status",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "closure_type",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "closure_reason",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "activation_type",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_avatar",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "language",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "language_cloudflare",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_fcm_token",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_ios_fcm_token",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_android_fcm_token",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_web_fcm_token",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "experiment_bucketing_id",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "lists_member_of",
+          "number": 41,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "is_bot",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "trust_level",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "pawniversary_years",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "initial_rating",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_trusted",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_twitch_connection",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 41,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_youtube_connection",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 42,
+          "proto3_optional": true
+        },
+        {
+          "name": "blog_id",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 43,
+          "proto3_optional": true
+        },
+        {
+          "name": "stream_url",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 44,
+          "proto3_optional": true
+        },
+        {
+          "name": "closure_status",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 45,
+          "proto3_optional": true
+        },
+        {
+          "name": "temporary_datasets_member_of",
+          "number": 52,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "is_beta",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 46,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_linkedin_connection",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 47,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1003,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserDetailsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_avatar_url"
+        },
+        {
+          "name": "_high_res_avatar_url"
+        },
+        {
+          "name": "_content_language_includes_english"
+        },
+        {
+          "name": "_is_email_deliverable"
+        },
+        {
+          "name": "_is_activated"
+        },
+        {
+          "name": "_has_opened_verification_email"
+        },
+        {
+          "name": "_referred_by_method"
+        },
+        {
+          "name": "_is_content_hidden"
+        },
+        {
+          "name": "_is_verified"
+        },
+        {
+          "name": "_has_sendgrid_invalid_email"
+        },
+        {
+          "name": "_last_bounce_date"
+        },
+        {
+          "name": "_last_open_email_date"
+        },
+        {
+          "name": "_last_dropped_email_date"
+        },
+        {
+          "name": "_last_spam_report_date"
+        },
+        {
+          "name": "_is_pawniversary"
+        },
+        {
+          "name": "_is_reactivated"
+        },
+        {
+          "name": "_skill_level"
+        },
+        {
+          "name": "_last_click_email_date"
+        },
+        {
+          "name": "_is_on_do_not_email_list"
+        },
+        {
+          "name": "_is_pawniversary_tomorrow"
+        },
+        {
+          "name": "_is_guest"
+        },
+        {
+          "name": "_user_right_to_be_forgotten_status"
+        },
+        {
+          "name": "_next_pawniversary_start_date"
+        },
+        {
+          "name": "_opt_in_status"
+        },
+        {
+          "name": "_account_status"
+        },
+        {
+          "name": "_closure_type"
+        },
+        {
+          "name": "_closure_reason"
+        },
+        {
+          "name": "_activation_type"
+        },
+        {
+          "name": "_has_avatar"
+        },
+        {
+          "name": "_language"
+        },
+        {
+          "name": "_language_cloudflare"
+        },
+        {
+          "name": "_has_fcm_token"
+        },
+        {
+          "name": "_has_ios_fcm_token"
+        },
+        {
+          "name": "_has_android_fcm_token"
+        },
+        {
+          "name": "_has_web_fcm_token"
+        },
+        {
+          "name": "_experiment_bucketing_id"
+        },
+        {
+          "name": "_is_bot"
+        },
+        {
+          "name": "_trust_level"
+        },
+        {
+          "name": "_pawniversary_years"
+        },
+        {
+          "name": "_initial_rating"
+        },
+        {
+          "name": "_is_trusted"
+        },
+        {
+          "name": "_has_twitch_connection"
+        },
+        {
+          "name": "_has_youtube_connection"
+        },
+        {
+          "name": "_blog_id"
+        },
+        {
+          "name": "_stream_url"
+        },
+        {
+          "name": "_closure_status"
+        },
+        {
+          "name": "_is_beta"
+        },
+        {
+          "name": "_has_linkedin_connection"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 7,
+          "end": 8
+        },
+        {
+          "start": 8,
+          "end": 9
+        },
+        {
+          "start": 24,
+          "end": 25
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserDetailsPropertyDefinition",
+      "value": [
+        {
+          "name": "USER_DETAILS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "AVATAR_URL",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "HIGH_RES_AVATAR_URL",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "CONTENT_LANGUAGE_INCLUDES_ENGLISH",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "IS_EMAIL_DELIVERABLE",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "IS_ACTIVATED",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "HAS_OPENED_VERIFICATION_EMAIL",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "REFERRED_BY_METHOD",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "IS_CONTENT_HIDDEN",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "IS_VERIFIED",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "HAS_SENDGRID_INVALID_EMAIL",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "LAST_BOUNCE_DATE",
+          "number": 13,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_OPEN_EMAIL_DATE",
+          "number": 14,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_DROPPED_EMAIL_DATE",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_SPAM_REPORT_DATE",
+          "number": 16,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_PAWNIVERSARY",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "IS_REACTIVATED",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "SKILL_LEVEL",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "LAST_CLICK_EMAIL_DATE",
+          "number": 20,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_ON_DO_NOT_EMAIL_LIST",
+          "number": 21,
+          "options": {}
+        },
+        {
+          "name": "IS_PAWNIVERSARY_TOMORROW",
+          "number": 22,
+          "options": {}
+        },
+        {
+          "name": "IS_GUEST",
+          "number": 23,
+          "options": {}
+        },
+        {
+          "name": "USER_RIGHT_TO_BE_FORGOTTEN_STATUS",
+          "number": 25,
+          "options": {}
+        },
+        {
+          "name": "NEXT_PAWNIVERSARY_START_DATE",
+          "number": 26,
+          "options": {}
+        },
+        {
+          "name": "EXPERIMENT_BUCKETING_RESULTS",
+          "number": 27,
+          "options": {}
+        },
+        {
+          "name": "OPT_IN_STATUS",
+          "number": 28,
+          "options": {}
+        },
+        {
+          "name": "ACCOUNT_STATUS",
+          "number": 29,
+          "options": {}
+        },
+        {
+          "name": "CLOSURE_TYPE",
+          "number": 30,
+          "options": {}
+        },
+        {
+          "name": "CLOSURE_REASON",
+          "number": 31,
+          "options": {}
+        },
+        {
+          "name": "ACTIVATION_TYPE",
+          "number": 32,
+          "options": {}
+        },
+        {
+          "name": "HAS_AVATAR",
+          "number": 33,
+          "options": {}
+        },
+        {
+          "name": "LANGUAGE",
+          "number": 34,
+          "options": {}
+        },
+        {
+          "name": "LANGUAGE_CLOUDFLARE",
+          "number": 35,
+          "options": {}
+        },
+        {
+          "name": "HAS_FCM_TOKEN",
+          "number": 36,
+          "options": {}
+        },
+        {
+          "name": "HAS_IOS_FCM_TOKEN",
+          "number": 37,
+          "options": {}
+        },
+        {
+          "name": "HAS_ANDROID_FCM_TOKEN",
+          "number": 38,
+          "options": {}
+        },
+        {
+          "name": "HAS_WEB_FCM_TOKEN",
+          "number": 39,
+          "options": {}
+        },
+        {
+          "name": "EXPERIMENT_BUCKETING_ID",
+          "number": 40,
+          "options": {}
+        },
+        {
+          "name": "LISTS_MEMBER_OF",
+          "number": 41,
+          "options": {}
+        },
+        {
+          "name": "IS_BOT",
+          "number": 42,
+          "options": {}
+        },
+        {
+          "name": "TRUST_LEVEL",
+          "number": 43,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "PAWNIVERSARY_YEARS",
+          "number": 44,
+          "options": {}
+        },
+        {
+          "name": "INITIAL_RATING",
+          "number": 45,
+          "options": {}
+        },
+        {
+          "name": "IS_TRUSTED",
+          "number": 46,
+          "options": {}
+        },
+        {
+          "name": "HAS_TWITCH_CONNECTION",
+          "number": 47,
+          "options": {}
+        },
+        {
+          "name": "HAS_YOUTUBE_CONNECTION",
+          "number": 48,
+          "options": {}
+        },
+        {
+          "name": "BLOG_ID",
+          "number": 49,
+          "options": {}
+        },
+        {
+          "name": "STREAM_URL",
+          "number": 50,
+          "options": {}
+        },
+        {
+          "name": "CLOSURE_STATUS",
+          "number": 51,
+          "options": {}
+        },
+        {
+          "name": "TEMPORARY_DATASETS_MEMBER_OF",
+          "number": 52,
+          "options": {}
+        },
+        {
+          "name": "IS_BETA",
+          "number": 53,
+          "options": {}
+        },
+        {
+          "name": "HAS_LINKEDIN_CONNECTION",
+          "number": 54,
+          "options": {}
+        }
+      ],
+      "options": {},
+      "reserved_range": [
+        {
+          "start": 7,
+          "end": 7
+        },
+        {
+          "start": 8,
+          "end": 8
+        },
+        {
+          "start": 24,
+          "end": 24
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

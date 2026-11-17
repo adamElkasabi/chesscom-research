@@ -1,0 +1,13 @@
+// source: chesscom/train/v1/train_item_type.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+enum TrainItemType {
+  TRAIN_ITEM_TYPE_UNSPECIFIED = 0;
+  TRAIN_ITEM_TYPE_RETRY_MISS = 1;
+  TRAIN_ITEM_TYPE_RETRY_BLUNDER = 2;
+  TRAIN_ITEM_TYPE_RETRY_OPENING_MISTAKE = 3;
+  TRAIN_ITEM_TYPE_RETRY_STRATEGY_MISTAKE = 4;
+  TRAIN_ITEM_TYPE_RETRY_ENDGAME_MISTAKE = 5;
+}

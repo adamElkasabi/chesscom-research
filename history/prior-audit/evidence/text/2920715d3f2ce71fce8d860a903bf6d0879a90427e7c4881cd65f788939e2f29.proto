@@ -1,0 +1,23 @@
+// source: chesscom/user_properties/v1/properties_audiences.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum AudiencesPropertyDefinition {
+  AUDIENCES_PROPERTY_UNSPECIFIED = 0;
+  AUDIENCES_MEMBER_OF = 1;
+  AUDIENCES_MEMBER_OF_LAST_UPDATE = 2;
+  EPHEMERAL_AUDIENCES_MEMBER_OF = 3;
+  EPHEMERAL_AUDIENCES_MEMBER_OF_LAST_UPDATE = 4;
+}
+
+message AudiencesProperty {
+  oneof _member_of_last_update {
+  .google.protobuf.Timestamp member_of_last_update = 2;
+  }
+  oneof _ephemeral_audiences_member_of_last_update {
+  .google.protobuf.Timestamp ephemeral_audiences_member_of_last_update = 4;
+  }
+  repeated string member_of = 1;
+  repeated string ephemeral_audiences_member_of = 3;
+}

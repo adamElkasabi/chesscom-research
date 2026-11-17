@@ -1,0 +1,331 @@
+{
+  "name": "chesscom/user_properties/v1/properties_courses.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "CoursesProperty",
+      "field": [
+        {
+          "name": "last_course_purchased_date",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_course_study_date",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_purchased",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_courses_spent",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_diamond_courses_claimed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "first_courses_session_date",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_courses_session_date",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_refunded",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_variations_learned",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_reviews_pending",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_variations_reviewed",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_variations_previewed",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_completed",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_courses_owned",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "courses_tutorial_claimed",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_preview_courses_owned",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "courses_ftue_selector_skipped",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1033,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.CoursesPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_course_purchased_date"
+        },
+        {
+          "name": "_last_course_study_date"
+        },
+        {
+          "name": "_number_of_courses_purchased"
+        },
+        {
+          "name": "_total_courses_spent"
+        },
+        {
+          "name": "_number_of_diamond_courses_claimed"
+        },
+        {
+          "name": "_first_courses_session_date"
+        },
+        {
+          "name": "_last_courses_session_date"
+        },
+        {
+          "name": "_number_of_courses_refunded"
+        },
+        {
+          "name": "_number_of_courses_variations_learned"
+        },
+        {
+          "name": "_number_of_courses_reviews_pending"
+        },
+        {
+          "name": "_number_of_courses_variations_reviewed"
+        },
+        {
+          "name": "_number_of_courses_variations_previewed"
+        },
+        {
+          "name": "_number_of_courses_completed"
+        },
+        {
+          "name": "_number_of_courses_owned"
+        },
+        {
+          "name": "_courses_tutorial_claimed"
+        },
+        {
+          "name": "_number_of_preview_courses_owned"
+        },
+        {
+          "name": "_courses_ftue_selector_skipped"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CoursesPropertyDefinition",
+      "value": [
+        {
+          "name": "COURSES_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "LAST_COURSE_PURCHASED_DATE",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "LAST_COURSE_STUDY_DATE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_PURCHASED",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_COURSES_SPENT",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_DIAMOND_COURSES_CLAIMED",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "FIRST_COURSES_SESSION_DATE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "LAST_COURSES_SESSION_DATE",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_REFUNDED",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_VARIATIONS_LEARNED",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_REVIEWS_PENDING",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_VARIATIONS_REVIEWED",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_VARIATIONS_PREVIEWED",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_COMPLETED",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_COURSES_OWNED",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "COURSES_TUTORIAL_CLAIMED",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_PREVIEW_COURSES_OWNED",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "COURSES_FTUE_SELECTOR_SKIPPED",
+          "number": 17,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

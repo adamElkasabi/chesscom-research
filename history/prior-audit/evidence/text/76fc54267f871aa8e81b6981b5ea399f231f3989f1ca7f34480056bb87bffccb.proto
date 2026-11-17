@@ -1,0 +1,35 @@
+// source: chesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum IllegalMoveCase {
+  ILLEGAL_MOVE_CASE_UNSPECIFIED = 0;
+  ILLEGAL_MOVE_CASE_IN_CHECK = 1;
+  ILLEGAL_MOVE_CASE_PIECE_PINNED_TO_KING = 2;
+  ILLEGAL_MOVE_CASE_PIECE_HAS_OTHER_LEGAL_MOVES = 3;
+  ILLEGAL_MOVE_CASE_PIECE_HAS_NO_LEGAL_MOVES = 4;
+  ILLEGAL_MOVE_CASE_PAWN_CAN_ONLY_CAPTURE = 5;
+  ILLEGAL_MOVE_CASE_PAWN_HAS_NO_LEGAL_MOVES = 6;
+  ILLEGAL_MOVE_CASE_CASTLE_KING_MOVED = 7;
+  ILLEGAL_MOVE_CASE_CASTLE_IN_CHECK = 8;
+  ILLEGAL_MOVE_CASE_CASTLE_THROUGH_CHECK = 9;
+}
+
+enum IllegalMoveExplanationMode {
+  ILLEGAL_MOVE_EXPLANATION_MODE_UNSPECIFIED = 0;
+  ILLEGAL_MOVE_EXPLANATION_MODE_ALL = 1;
+  ILLEGAL_MOVE_EXPLANATION_MODE_SUPPRESS_PIECE_HAS_OTHER_LEGAL_MOVES = 2;
+}
+
+message GetIllegalMoveExplanationRequest {
+  optional .chesscom.chess.v1.Move attempted_move = 1;
+}
+
+message GetIllegalMoveExplanationResponse {
+  oneof _illegal_move_case {
+  .chesscom.explanation_engine.v1.IllegalMoveCase illegal_move_case = 1;
+  }
+  optional .chesscom.explanation_engine.v1.Speech speech = 2;
+  optional .chesscom.chess.v1.BoardMarkings board_markings = 3;
+}

@@ -1,0 +1,278 @@
+{
+  "name": "chesscom/user_properties/v1/properties_trust_and_safety.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "UserAbuseProperty",
+      "field": [
+        {
+          "name": "abuse_score_automod",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "abuse_score_light",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "abuse_score_heavy",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "abuse_score_total",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_category_score_good",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_category_score_identity_hate",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_category_score_profanity",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_category_score_sexual",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_category_score_violent",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_category_score_pedophilic",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_username_abuse_prediction_date",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "username_abuse_confidence_score",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "abusive_chat_messages",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "about_last_updated_at",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1024,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserAbusePropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_abuse_score_automod"
+        },
+        {
+          "name": "_abuse_score_light"
+        },
+        {
+          "name": "_abuse_score_heavy"
+        },
+        {
+          "name": "_abuse_score_total"
+        },
+        {
+          "name": "_username_abuse_category_score_good"
+        },
+        {
+          "name": "_username_abuse_category_score_identity_hate"
+        },
+        {
+          "name": "_username_abuse_category_score_profanity"
+        },
+        {
+          "name": "_username_abuse_category_score_sexual"
+        },
+        {
+          "name": "_username_abuse_category_score_violent"
+        },
+        {
+          "name": "_username_abuse_category_score_pedophilic"
+        },
+        {
+          "name": "_last_username_abuse_prediction_date"
+        },
+        {
+          "name": "_username_abuse_confidence_score"
+        },
+        {
+          "name": "_abusive_chat_messages"
+        },
+        {
+          "name": "_about_last_updated_at"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserAbusePropertyDefinition",
+      "value": [
+        {
+          "name": "USER_ABUSE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ABUSE_SCORE_AUTOMOD",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "ABUSE_SCORE_LIGHT",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "ABUSE_SCORE_HEAVY",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "ABUSE_SCORE_TOTAL",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CATEGORY_SCORE_GOOD",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CATEGORY_SCORE_IDENTITY_HATE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CATEGORY_SCORE_PROFANITY",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CATEGORY_SCORE_SEXUAL",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CATEGORY_SCORE_VIOLENT",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CATEGORY_SCORE_PEDOPHILIC",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "LAST_USERNAME_ABUSE_PREDICTION_DATE",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "USERNAME_ABUSE_CONFIDENCE_SCORE",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "ABUSIVE_CHAT_MESSAGES",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "ABOUT_LAST_UPDATED_AT",
+          "number": 14,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

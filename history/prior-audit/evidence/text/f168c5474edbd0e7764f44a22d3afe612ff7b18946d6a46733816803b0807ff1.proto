@@ -1,0 +1,82 @@
+// source: chesscom/explanation_engine/v1/game_state.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum NodeFlag {
+  NODE_FLAG_UNSPECIFIED = 0;
+  NODE_FLAG_PLAYED = 1;
+  NODE_FLAG_EXPLICITLY_UNSCORED = 2;
+  NODE_FLAG_SCORE_IS_WEAK = 4;
+  NODE_FLAG_MANUALLY_ADDED = 8;
+  NODE_FLAG_HAS_SCORE = 16;
+  NODE_FLAG_HAS_DEPTH = 32;
+  NODE_FLAG_HAS_ADDITIONAL_CHILDREN = 64;
+  NODE_FLAG_HAS_CLOCK = 128;
+}
+
+message GameState {
+  optional .chesscom.api.v1.SemanticVersion game_state_version = 1;
+  optional .chesscom.explanation_engine.v1.GameTree game_tree = 2;
+  optional .chesscom.explanation_engine.v1.GameSettings game_settings = 3;
+  optional .chesscom.chess.v1.GameMetadata game_metadata = 4;
+  optional .chesscom.engine.v1.Engine default_eval_source_engine = 5;
+  optional .chesscom.explanation_engine.v1.CoachState coach_state = 6;
+  repeated .chesscom.explanation_engine.v1.GameState.CharmInferencesEntry charm_inferences = 7;
+  repeated .chesscom.explanation_engine.v1.GameState.AnnotationsEntry annotations = 8;
+  repeated .chesscom.explanation_engine.v1.GameState.CompactCharmInferencesEntry compact_charm_inferences = 9;
+  optional .chesscom.explanation_engine.v1.CompactGameTree compact_game_tree = 10;
+  repeated .chesscom.explanation_engine.v1.GameState.QuantizedCharmInferencesEntry quantized_charm_inferences = 11;
+  optional .chesscom.explanation_engine.v1.CharmInferenceCodes charm_inference_codes = 12;
+  message CharmInferencesEntry {
+  optional int32 key = 1;
+  optional .chesscom.explanation_engine.v1.SimpleCharmInferences value = 2;
+  }
+  message AnnotationsEntry {
+  optional int32 key = 1;
+  optional .chesscom.explanation_engine.v1.MoveAnnotation value = 2;
+  }
+  message CompactCharmInferencesEntry {
+  optional int32 key = 1;
+  optional .chesscom.explanation_engine.v1.CompactCharmInferences value = 2;
+  }
+  message QuantizedCharmInferencesEntry {
+  optional int32 key = 1;
+  optional .chesscom.explanation_engine.v1.CompactCharmInferences value = 2;
+  }
+}
+
+message GameTree {
+  repeated .chesscom.explanation_engine.v1.GameTreeNode nodes = 1;
+}
+
+message GameTreeNode {
+  oneof board_state {
+  string initial_fen = 1;
+  int32 legal_move_index = 2;
+  }
+  oneof _score {
+  sint32 score = 5;
+  }
+  oneof _depth {
+  sint32 depth = 6;
+  }
+  oneof _time_on_clock_deciseconds {
+  int32 time_on_clock_deciseconds = 8;
+  }
+  optional bool is_played = 3;
+  optional bool is_explicitly_unscored = 4;
+  optional sint32 additional_children = 7;
+  optional bool score_is_weak = 9;
+  optional bool manually_added = 10;
+}
+
+message CompactGameTree {
+  optional string initial_fen = 1;
+  repeated uint32 legal_move_indexes = 2;
+  optional bytes node_flags = 3;
+  repeated sint32 additional_children = 4;
+  repeated sint32 scores = 5;
+  repeated sint32 depths = 6;
+  repeated uint32 clocks_deciseconds = 7;
+}

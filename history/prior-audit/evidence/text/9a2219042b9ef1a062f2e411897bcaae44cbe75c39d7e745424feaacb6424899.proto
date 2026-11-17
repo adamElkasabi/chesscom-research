@@ -1,0 +1,9 @@
+// source: chesscom/courses/v1/goal_type.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum GoalType {
+  GOAL_TYPE_UNSPECIFIED = 0;
+  GOAL_TYPE_FTUE_CHECKLIST = 1;
+}

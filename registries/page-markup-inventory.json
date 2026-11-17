@@ -1,0 +1,398 @@
+[
+  {
+    "source_id": "SRC-0065",
+    "location": "research/analysis.html",
+    "title": "Chess Analysis Board, Game Review &amp; PGN Editor - Chess.com",
+    "forms": [],
+    "inputs": [],
+    "stylesheets": [
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/design-system-global-styles.DoRq3eTC1O.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/main-global-styles.DDRjgUiMEQ.css\">",
+      "<link crossorigin rel=\"stylesheet\" data-href=\"/bundles/app/vite/alerts-global-styles.B15wm3MYCr.css\">",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out-global-styles.HBnLJ7dK8H.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/shared.DO_T7DKtPD.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out.css\" />",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/global-global-styles.D10t7xPVfa.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/chessboard-layout.CoelVQAgfc.css\">",
+      "<link href=\"https://www.chess.com/themes/css?board_size=200&pieces_size=150\" type=\"text/css\" rel=\"stylesheet\" id=\"active-theme-variables\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/analysis/2026.11.7/shared.CuXjoPOUJ_.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/analysis/2026.11.7/analysis.css\" />"
+    ],
+    "script_opening_tags": [
+      "<script type=\"application/ld+json\">",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script type=\"text/javascript\">",
+      "<script type=\"text/javascript\">",
+      "<script defer src=\"/bundles/app/js/client/es6-translations/es6-translation.en_US.ca729be9.js\">",
+      "<script type=\"text/javascript\">",
+      "<script>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/global.BjtzebFqEP.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/sentry.sGzKJdPHz-.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/turnstile.CBslv1dJqM.js\" defer>",
+      "<script src=\"https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback\" crossorigin async defer>",
+      "<script type=\"text/javascript\">",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/tinymce.Cu8wwxsXZ6.js\" defer data-skip-global>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/chessboard-layout.CKkjF8P48L.js\" defer>",
+      "<script>",
+      "<script type=\"module\" defer src=\"/r2/client-packages/analysis/2026.11.7/analysis.js\">",
+      "<script type=\"module\" defer src=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out.js\">",
+      "<script\n      defer\n      type=\"text/javascript\"\n      src=\"https://cdn.cookielaw.org/consent/018fe808-534b-7764-9c67-c3def682a1ab/OtAutoBlock.js\"\n      crossorigin=\"anonymous\">",
+      "<script\n    defer\n    type=\"text/javascript\"\n    src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\"\n    charset=\"UTF-8\"\n    data-document-language=\"true\"\n    data-domain-script=\"018fe808-534b-7764-9c67-c3def682a1ab\"\n    crossorigin=\"anonymous\">",
+      "<script type=\"text/javascript\">",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/ui-fragments.BSYDJ-1nPG.js\" defer>"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  },
+  {
+    "source_id": "SRC-0777",
+    "location": "research/refinement/live-game-page.html",
+    "title": "Chess: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED] - Chess.com",
+    "forms": [],
+    "inputs": [],
+    "stylesheets": [
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/design-system-global-styles.DoRq3eTC1O.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/main-global-styles.DDRjgUiMEQ.css\">",
+      "<link crossorigin rel=\"stylesheet\" data-href=\"/bundles/app/vite/alerts-global-styles.B15wm3MYCr.css\">",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/checkmate/2026.11.13/checkmate.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out-global-styles.HBnLJ7dK8H.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/shared.DO_T7DKtPD.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out.css\" />",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/global-global-styles.D10t7xPVfa.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/chessboard-layout.CoelVQAgfc.css\">",
+      "<link href=\"https://www.chess.com/themes/css?board_size=200&pieces_size=150\" type=\"text/css\" rel=\"stylesheet\" id=\"active-theme-variables\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/play/2026.11.4/play-global-styles.BIN21hGp5P.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/play/2026.11.4/shared.CjNjSlFw1V.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/play/2026.11.4/play.css\" />",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/shared.CPRfTAPKSE.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/comments.ieqE1fg_oJ.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/sprites-global-styles.-XqAhS6hzY.css\">"
+    ],
+    "script_opening_tags": [
+      "<script type=\"application/ld+json\">",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script type=\"text/javascript\">",
+      "<script type=\"text/javascript\">",
+      "<script defer src=\"/bundles/app/js/client/es6-translations/es6-translation.en_US.ca729be9.js\">",
+      "<script type=\"text/javascript\">",
+      "<script>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/global.CUnpUfzXLg.js\" defer>",
+      "<script type=\"module\" defer data-src=\"/r2/client-packages/checkmate/2026.11.13/checkmate.js\">",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/sentry.sGzKJdPHz-.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/turnstile.Bt-bkXiSFU.js\" defer>",
+      "<script src=\"https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback\" crossorigin async defer>",
+      "<script>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/chessboard-layout.CKkjF8P48L.js\" defer>",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/comments.DmYeHWd4Ek.js\" defer data-skip-global>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script type=\"module\" defer src=\"/r2/client-packages/play/2026.11.4/play.js\">",
+      "<script type=\"module\" defer src=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out.js\">",
+      "<script>",
+      "<script\n      defer\n      type=\"text/javascript\"\n      src=\"https://cdn.cookielaw.org/consent/018fe808-534b-7764-9c67-c3def682a1ab/OtAutoBlock.js\"\n      crossorigin=\"anonymous\">",
+      "<script\n    defer\n    type=\"text/javascript\"\n    src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\"\n    charset=\"UTF-8\"\n    data-document-language=\"true\"\n    data-domain-script=\"018fe808-534b-7764-9c67-c3def682a1ab\"\n    crossorigin=\"anonymous\">",
+      "<script type=\"text/javascript\">",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/ui-fragments.98kQRL8LIY.js\" defer>"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  },
+  {
+    "source_id": "SRC-3000",
+    "location": "evidence/new-public/PUBLIC-001.html",
+    "title": "Chess.com upgrades to Cloud SQL Enterprise Plus edition | Google Cloud Blog",
+    "forms": [
+      {
+        "opening_tag": "<form action=\"/blog/search/\" class=\"A2C6Ob\">",
+        "offset": 113528
+      },
+      {
+        "opening_tag": "<form action=\"/blog/search/\" class=\"A2C6Ob\">",
+        "offset": 135278
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "<input class=\"BAhdXd\" jsname=\"oJAbI\" name=\"query\" type=\"text\" placeholder=\"Find an article...\">",
+        "offset": 113572
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"language\" value=en hidden>",
+        "offset": 113667
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"category\" value=article hidden>",
+        "offset": 113720
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"paginate\" value=\"25\" hidden>",
+        "offset": 113778
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"order\" value=\"newest\" hidden>",
+        "offset": 113833
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"hl\" value=en hidden>",
+        "offset": 113889
+      },
+      {
+        "tag": "<input class=\"BAhdXd\" jsname=\"oJAbI\" name=\"query\" type=\"text\" placeholder=\"Find an article...\">",
+        "offset": 135322
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"language\" value=en hidden>",
+        "offset": 135417
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"category\" value=article hidden>",
+        "offset": 135470
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"paginate\" value=\"25\" hidden>",
+        "offset": 135528
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"order\" value=\"newest\" hidden>",
+        "offset": 135583
+      },
+      {
+        "tag": "<input type=\"hidden\" name=\"hl\" value=en hidden>",
+        "offset": 135639
+      },
+      {
+        "tag": "<select jsaction=\"change:xU0iy\" aria-label=\"Change language\" class=\"nRhiJb-CL4aqd-j4gsHd\">",
+        "offset": 223750
+      }
+    ],
+    "stylesheets": [
+      "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500,700,400i,500i,700i\" nonce=\"3mx_TY8i-WGQU9McIvf7rg\">",
+      "<link rel=\"stylesheet\" href=\"https://www.gstatic.com/_/mss/boq-cloudx-web-blog/_/ss/k=boq-cloudx-web-blog.TransformBlogUi.8ka13Kbw1Lg.L.X.O/am=AgAAABjQBAAg/d=1/ed=1/rs=AHrnUqXMLfzVL9w1hnvRnRcT330Sc5PJJQ/m=articleview,_b,_tp\" data-id=\"_cl\" nonce=\"3mx_TY8i-WGQU9McIvf7rg\">"
+    ],
+    "script_opening_tags": [
+      "<script data-id=\"_gd\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script noCollect src=\"https://www.gstatic.com/_/mss/boq-cloudx-web-blog/_/js/k=boq-cloudx-web-blog.TransformBlogUi.en_US.xUNq-ckhHW4.2018.O/am=AAAAAADQBA/d=1/excm=_b,_tp,articleview/ed=1/dg=0/wt=2/ujg=1/rs=AHrnUqXsRczxuKNmIoNYM6lggDZWyw_n4g/dti=1/m=_b,_tp\" defer id=\"base-js\" fetchpriority=\"high\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script type=\"application/ld+json\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script aria-hidden=\"true\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script aria-hidden=\"true\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script id=\"_ij\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script class=\"ds:0\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script id=\"wiz_jd\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">",
+      "<script aria-hidden=\"true\" id=\"WIZ-footer\" nonce=\"Hkmyewz8ykTVnqRPdOunfg\">"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  },
+  {
+    "source_id": "SRC-3002",
+    "location": "evidence/new-public/PUBLIC-002.html",
+    "title": "MySQL :: MySQL Customer: Chess.com",
+    "forms": [
+      {
+        "opening_tag": "<form id=\"l1-search-form\" method=\"get\" action=\"https://search.oracle.com/mysql\">",
+        "offset": 7092
+      }
+    ],
+    "inputs": [
+      {
+        "tag": "<input type=\"hidden\" name=\"app\" value=\"mysql\" />",
+        "offset": 7197
+      },
+      {
+        "tag": "<input id=\"l1-search-input\" type=\"search\" class=\"icon-search\" placeholder=\"Search\" aria-label=\"Search\" name=\"q\" />",
+        "offset": 7270
+      }
+    ],
+    "stylesheets": [
+      "<link rel=\"stylesheet\" media=\"all\" href=\"https://labs.mysql.com/common/css/main-20260812.min.css\" />",
+      "<link rel=\"stylesheet\" media=\"all\" href=\"https://labs.mysql.com/common/css/page-20260812.min.css\" />",
+      "<link rel=\"stylesheet\" media=\"print\" href=\"https://labs.mysql.com/common/css/print-20260812.min.css\" />"
+    ],
+    "script_opening_tags": [
+      "<script async=\"async\" type=\"text/javascript\" src='https://consent.truste.com/notice?domain=oracle.com&c=teconsent&js=bb&noticeType=bb&text=true&cdn=1&pcookie&gtm=1' crossorigin>",
+      "<script src=\"https://www.oracle.com/assets/truste-oraclelib.js\">",
+      "<script>",
+      "<script src=\"https://labs.mysql.com/common/js/site-20250121.min.js\">",
+      "<script src=\"https://labs.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js\">",
+      "<script src=\"https://labs.mysql.com/common/js/polyfills/respond-1.4.2.min.js\">",
+      "<script>",
+      "<script>",
+      "<script src=\"https://labs.mysql.com/common/js/metrics/ora_mysql.js\">",
+      "<script type=\"text/javascript\" async src=\"//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/mysql/odc.js?_ora.context=analytics:production\">"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  },
+  {
+    "source_id": "SRC-3004",
+    "location": "evidence/new-public/PUBLIC-003.html",
+    "title": "Senior Backend (PHP) Product Engineer with Chess.com | Escape The City",
+    "forms": [],
+    "inputs": [
+      {
+        "tag": "<input type=\"checkbox\" id=\"mobile-jobs-checkbox\" class=\"mobile-checkbox\">",
+        "offset": 5954
+      },
+      {
+        "tag": "<input type=\"checkbox\" id=\"mobile-top_1_percent-checkbox\" class=\"mobile-checkbox\">",
+        "offset": 6754
+      },
+      {
+        "tag": "<input type=\"radio\" name=\"desc\" id=\"short\"  checked  />",
+        "offset": 21554
+      },
+      {
+        "tag": "<input type=\"radio\" name=\"desc\" id=\"long\" />",
+        "offset": 21612
+      }
+    ],
+    "stylesheets": [
+      "<link media=\"print\" onload=\"this.onload=null;this.removeAttribute('media');\" href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">",
+      "<link media=\"print\" onload=\"this.onload=null;this.removeAttribute('media');\" href=\"/css/main/blackout.css\" rel=\"stylesheet\">",
+      "<link href=\"/css/main/app.css?id=1505fa8b46c00f9df657b4e5c8534bf5\" rel=\"stylesheet\" toRefresh=\"/css/main/app.css\">"
+    ],
+    "script_opening_tags": [
+      "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-QD7F89SBH0\">",
+      "<script>",
+      "<script type=\"application/ld+json\">",
+      "<script src=\"https://maps.googleapis.com/maps/api/js?key=[REDACTED]&libraries=places\">",
+      "<script src=\"/js/main/app.js?id=e49c44743a31d93465091d27855b8f32\">"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  },
+  {
+    "source_id": "SRC-3006",
+    "location": "evidence/new-public/PUBLIC-004.html",
+    "title": "Chess.com Jobs | Chess Is for Everyone. So Are We - Chess.com",
+    "forms": [],
+    "inputs": [
+      {
+        "tag": "<input\n                type=\"range\"\n                class=\"hero__video-vol-slider\"\n                min=\"0\"\n                max=\"1\"\n                step=\"0.05\"\n                value=\"0.4\"\n                aria-label=\"Volume\"\n              />",
+        "offset": 43002
+      },
+      {
+        "tag": "<input\n                type=\"text\"\n                id=\"jobs-search\"\n                class=\"open-roles__search-input\"\n                placeholder=\"Search\"\n                autocomplete=\"off\"\n              />",
+        "offset": 102017
+      },
+      {
+        "tag": "<select\n                id=\"jobs-dept\"\n                class=\"open-roles__select\"\n                aria-label=\"Filter by team\"\n              >",
+        "offset": 103617
+      }
+    ],
+    "stylesheets": [
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/design-system-global-styles.DoRq3eTC1O.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/main-global-styles.DDRjgUiMEQ.css\">",
+      "<link crossorigin rel=\"stylesheet\" data-href=\"/bundles/app/vite/alerts-global-styles.B15wm3MYCr.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/content-global-styles.BtcnwlWS1b.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/layout-global-styles.Bk4v-OEjoC.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/articles-global-styles.-ybqMFdJqf.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/articles.D2lXsP0yqw.css\">",
+      "<link href=\"https://www.chess.com/themes/css?board_size=200&pieces_size=150\" type=\"text/css\" rel=\"stylesheet\" id=\"active-theme-variables\" />"
+    ],
+    "script_opening_tags": [
+      "<script type=\"application/ld+json\">",
+      "<script type=\"application/ld+json\">",
+      "<script type=\"application/ld+json\">",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script type=\"text/javascript\">",
+      "<script type=\"text/javascript\">",
+      "<script defer src=\"/bundles/app/js/client/es6-translations/es6-translation.en_US.ca729be9.js\">",
+      "<script type=\"text/javascript\">",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/global.CUnpUfzXLg.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/sentry.sGzKJdPHz-.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/turnstile.Bt-bkXiSFU.js\" defer>",
+      "<script src=\"https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback\" crossorigin async defer>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/diagram-viewer.Cpavvl1yNS.js\" defer>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/articles.Dlsas3sRtO.js\" defer>",
+      "<script>",
+      "<script\n      defer\n      type=\"text/javascript\"\n      src=\"https://cdn.cookielaw.org/consent/018fe808-534b-7764-9c67-c3def682a1ab/OtAutoBlock.js\"\n      crossorigin=\"anonymous\">",
+      "<script\n    defer\n    type=\"text/javascript\"\n    src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\"\n    charset=\"UTF-8\"\n    data-document-language=\"true\"\n    data-domain-script=\"018fe808-534b-7764-9c67-c3def682a1ab\"\n    crossorigin=\"anonymous\">",
+      "<script type=\"text/javascript\">",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/ui-fragments.98kQRL8LIY.js\" defer>"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  },
+  {
+    "source_id": "SRC-3008",
+    "location": "evidence/new-public/PUBLIC-005.html",
+    "title": "Chess.com - Play Chess Online - Free Games",
+    "forms": [],
+    "inputs": [],
+    "stylesheets": [
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/design-system-global-styles.DoRq3eTC1O.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/main-global-styles.DDRjgUiMEQ.css\">",
+      "<link crossorigin rel=\"stylesheet\" data-href=\"/bundles/app/vite/alerts-global-styles.B15wm3MYCr.css\">",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out-global-styles.HBnLJ7dK8H.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/shared.DO_T7DKtPD.css\" />",
+      "<link rel=\"stylesheet\" href=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out.css\" />",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/global-global-styles.D10t7xPVfa.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/navigation-footer-global-styles.FHNI5Fwlig.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/navigation-footer.CqZ7E1nsLS.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/content-global-styles.BtcnwlWS1b.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/layout-global-styles.Bk4v-OEjoC.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/web-index-global-styles.Dr5bb39wv1.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/shared.DKddFzm1Kf.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/web-index.ldZb9CWzBJ.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/landing-page-global-styles.Bo8IOLNNwO.css\">",
+      "<link crossorigin rel=\"stylesheet\" href=\"/bundles/app/vite/landing-page.BgCd4RvvaE.css\">",
+      "<link href=\"https://www.chess.com/themes/css?board_size=200&pieces_size=150\" type=\"text/css\" rel=\"stylesheet\" id=\"active-theme-variables\" />"
+    ],
+    "script_opening_tags": [
+      "<script type=\"application/ld+json\">",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script>",
+      "<script type=\"text/javascript\">",
+      "<script type=\"text/javascript\">",
+      "<script defer src=\"/bundles/app/js/client/es6-translations/es6-translation.en_US.ca729be9.js\">",
+      "<script type=\"text/javascript\">",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/global.CUnpUfzXLg.js\" defer>",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/language-banner-loader.404IgKsI_a.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/sentry.sGzKJdPHz-.js\" defer>",
+      "<script>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/turnstile.Bt-bkXiSFU.js\" defer>",
+      "<script src=\"https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback\" crossorigin async defer>",
+      "<script type=\"text/javascript\">",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/web-index.DO9gBJ_-b7.js\" defer>",
+      "<script crossorigin type=\"module\" src=\"/bundles/app/vite/landing-page.Ddm4N8pEAG.js\" defer>",
+      "<script type=\"module\" defer src=\"/r2/client-packages/navigation/2026.11.5/navigation-logged-out.js\">",
+      "<script\n      defer\n      type=\"text/javascript\"\n      src=\"https://cdn.cookielaw.org/consent/018fe808-534b-7764-9c67-c3def682a1ab/OtAutoBlock.js\"\n      crossorigin=\"anonymous\">",
+      "<script\n    defer\n    type=\"text/javascript\"\n    src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\"\n    charset=\"UTF-8\"\n    data-document-language=\"true\"\n    data-domain-script=\"018fe808-534b-7764-9c67-c3def682a1ab\"\n    crossorigin=\"anonymous\">",
+      "<script type=\"text/javascript\">",
+      "<script crossorigin type=\"module\" data-src=\"/bundles/app/vite/ui-fragments.98kQRL8LIY.js\" defer>"
+    ],
+    "limits": "Saved/public unauthenticated static HTML only; forms not submitted, roles/session/error/redirect behavior not inferred."
+  }
+]

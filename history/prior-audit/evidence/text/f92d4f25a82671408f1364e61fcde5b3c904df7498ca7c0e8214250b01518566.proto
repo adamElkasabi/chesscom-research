@@ -1,0 +1,79 @@
+// source: chesscom/user_properties/v1/properties_courses.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum CoursesPropertyDefinition {
+  COURSES_PROPERTY_UNSPECIFIED = 0;
+  LAST_COURSE_PURCHASED_DATE = 1;
+  LAST_COURSE_STUDY_DATE = 2;
+  NUMBER_OF_COURSES_PURCHASED = 3;
+  TOTAL_COURSES_SPENT = 4;
+  NUMBER_OF_DIAMOND_COURSES_CLAIMED = 5;
+  FIRST_COURSES_SESSION_DATE = 6;
+  LAST_COURSES_SESSION_DATE = 7;
+  NUMBER_OF_COURSES_REFUNDED = 8;
+  NUMBER_OF_COURSES_VARIATIONS_LEARNED = 9;
+  NUMBER_OF_COURSES_REVIEWS_PENDING = 10;
+  NUMBER_OF_COURSES_VARIATIONS_REVIEWED = 11;
+  NUMBER_OF_COURSES_VARIATIONS_PREVIEWED = 12;
+  NUMBER_OF_COURSES_COMPLETED = 13;
+  NUMBER_OF_COURSES_OWNED = 14;
+  COURSES_TUTORIAL_CLAIMED = 15;
+  NUMBER_OF_PREVIEW_COURSES_OWNED = 16;
+  COURSES_FTUE_SELECTOR_SKIPPED = 17;
+}
+
+message CoursesProperty {
+  oneof _last_course_purchased_date {
+  .google.protobuf.Timestamp last_course_purchased_date = 1;
+  }
+  oneof _last_course_study_date {
+  .google.protobuf.Timestamp last_course_study_date = 2;
+  }
+  oneof _number_of_courses_purchased {
+  int32 number_of_courses_purchased = 3;
+  }
+  oneof _total_courses_spent {
+  double total_courses_spent = 4;
+  }
+  oneof _number_of_diamond_courses_claimed {
+  int32 number_of_diamond_courses_claimed = 5;
+  }
+  oneof _first_courses_session_date {
+  .google.protobuf.Timestamp first_courses_session_date = 6;
+  }
+  oneof _last_courses_session_date {
+  .google.protobuf.Timestamp last_courses_session_date = 7;
+  }
+  oneof _number_of_courses_refunded {
+  int32 number_of_courses_refunded = 8;
+  }
+  oneof _number_of_courses_variations_learned {
+  int32 number_of_courses_variations_learned = 9;
+  }
+  oneof _number_of_courses_reviews_pending {
+  int32 number_of_courses_reviews_pending = 10;
+  }
+  oneof _number_of_courses_variations_reviewed {
+  int32 number_of_courses_variations_reviewed = 11;
+  }
+  oneof _number_of_courses_variations_previewed {
+  int32 number_of_courses_variations_previewed = 12;
+  }
+  oneof _number_of_courses_completed {
+  int32 number_of_courses_completed = 13;
+  }
+  oneof _number_of_courses_owned {
+  int32 number_of_courses_owned = 14;
+  }
+  oneof _courses_tutorial_claimed {
+  bool courses_tutorial_claimed = 15;
+  }
+  oneof _number_of_preview_courses_owned {
+  int32 number_of_preview_courses_owned = 16;
+  }
+  oneof _courses_ftue_selector_skipped {
+  bool courses_ftue_selector_skipped = 17;
+  }
+}

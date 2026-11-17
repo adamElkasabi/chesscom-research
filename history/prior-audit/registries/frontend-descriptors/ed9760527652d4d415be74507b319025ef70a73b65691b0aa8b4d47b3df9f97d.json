@@ -1,0 +1,143 @@
+{
+  "name": "chesscom/user_properties/v1/properties_daily_puzzles_solved.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "DailyPuzzlesSolvedProperty",
+      "field": [
+        {
+          "name": "last_completed_timestamp",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_streak",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "longest_streak",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "longest_streak_timestamp",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_streak_is_longest_daily_puzzle_streak",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_streak_end_timestamp",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1025,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.DailyPuzzlesSolvedPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_completed_timestamp"
+        },
+        {
+          "name": "_current_streak"
+        },
+        {
+          "name": "_longest_streak"
+        },
+        {
+          "name": "_longest_streak_timestamp"
+        },
+        {
+          "name": "_current_streak_is_longest_daily_puzzle_streak"
+        },
+        {
+          "name": "_current_streak_end_timestamp"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "DailyPuzzlesSolvedPropertyDefinition",
+      "value": [
+        {
+          "name": "DAILY_PUZZLES_SOLVED_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DAILY_PUZZLES_LAST_COMPLETED_TIMESTAMP",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "DAILY_PUZZLES_CURRENT_STREAK",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "DAILY_PUZZLES_LONGEST_STREAK",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "DAILY_PUZZLES_LONGEST_STREAK_TIMESTAMP",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "DAILY_PUZZLES_CURRENT_STREAK_IS_LONGEST_DAILY_PUZZLE_STREAK",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "DAILY_PUZZLES_CURRENT_STREAK_END_TIMESTAMP",
+          "number": 6,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

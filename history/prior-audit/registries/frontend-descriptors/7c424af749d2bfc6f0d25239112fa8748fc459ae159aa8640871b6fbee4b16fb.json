@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/ceac/v2/game_evaluation_options.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "GameEvaluationOptions",
+      "field": [
+        {
+          "name": "use_game_state_cache",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "use_serial_evaluations",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,805 @@
+{
+  "name": "chesscom/coaches/v2/service.proto",
+  "package": "chesscom.coaches.v2",
+  "message_type": [
+    {
+      "name": "ListCoachesRequest",
+      "field": [
+        {
+          "name": "locale_override",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "with_celebrity_coaches",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_locale_override"
+        },
+        {
+          "name": "_with_celebrity_coaches"
+        }
+      ]
+    },
+    {
+      "name": "ListCoachesResponse",
+      "field": [
+        {
+          "name": "coach_categories",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.CoachCategory"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListOnboardingCoachesRequest",
+      "field": [
+        {
+          "name": "locale_override",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "with_celebrity_coaches",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_locale_override"
+        },
+        {
+          "name": "_with_celebrity_coaches"
+        }
+      ]
+    },
+    {
+      "name": "ListOnboardingCoachesResponse",
+      "field": [
+        {
+          "name": "coach_categories",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.CoachCategory"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachRequest",
+      "field": [
+        {
+          "name": "coach_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachResponse",
+      "field": [
+        {
+          "name": "coach",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.Coach"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachesRequest",
+      "field": [
+        {
+          "name": "coach_ids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachesResponse",
+      "field": [
+        {
+          "name": "coaches",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.Coach"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SetCurrentCoachRequest",
+      "field": [
+        {
+          "name": "coach_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "locale_override",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_locale_override"
+        }
+      ]
+    },
+    {
+      "name": "SetCurrentCoachResponse",
+      "field": [
+        {
+          "name": "current_coach",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.Coach"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCurrentCoachRequest",
+      "field": [
+        {
+          "name": "locale_override",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "device_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "bucketing_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "with_celebrity_coaches",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_locale_override"
+        },
+        {
+          "name": "_device_id"
+        },
+        {
+          "name": "_bucketing_id"
+        },
+        {
+          "name": "_with_celebrity_coaches"
+        }
+      ]
+    },
+    {
+      "name": "GetCurrentCoachResponse",
+      "field": [
+        {
+          "name": "current_coach",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.Coach"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachQuotaRequest",
+      "options": {}
+    },
+    {
+      "name": "GetCoachQuotaResponse",
+      "field": [
+        {
+          "name": "remaining",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "StartedGameAgainstCoachRequest",
+      "field": [
+        {
+          "name": "game_token",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "StartedGameAgainstCoachResponse",
+      "options": {}
+    },
+    {
+      "name": "SetSettingsResponse",
+      "options": {}
+    },
+    {
+      "name": "SetSettingsRequest",
+      "field": [
+        {
+          "name": "enable_motivational",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_voice",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_reminders",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_goals",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_mistake_feedback",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_hints",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "voice_speed",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.coaches.v2.CoachVoiceSpeed",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "show_coach_avatar_game_review",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_auto_save_coach_games",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_evaluation_bar",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_suggestion_arrows",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_threat_arrows",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_skills",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "enable_teach_legal_moves",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 13,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_enable_motivational"
+        },
+        {
+          "name": "_enable_voice"
+        },
+        {
+          "name": "_enable_reminders"
+        },
+        {
+          "name": "_puzzle_goals"
+        },
+        {
+          "name": "_puzzle_mistake_feedback"
+        },
+        {
+          "name": "_puzzle_hints"
+        },
+        {
+          "name": "_voice_speed"
+        },
+        {
+          "name": "_show_coach_avatar_game_review"
+        },
+        {
+          "name": "_enable_auto_save_coach_games"
+        },
+        {
+          "name": "_enable_evaluation_bar"
+        },
+        {
+          "name": "_enable_suggestion_arrows"
+        },
+        {
+          "name": "_enable_threat_arrows"
+        },
+        {
+          "name": "_enable_skills"
+        },
+        {
+          "name": "_enable_teach_legal_moves"
+        }
+      ]
+    },
+    {
+      "name": "GetSettingsRequest",
+      "options": {}
+    },
+    {
+      "name": "GetSettingsResponse",
+      "field": [
+        {
+          "name": "enable_motivational",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_voice",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_reminders",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_puzzle_goals",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_puzzle_mistake_feedback",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_puzzle_hints",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "voice_speed",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.coaches.v2.CoachVoiceSpeed"
+        },
+        {
+          "name": "show_coach_avatar_game_review",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_auto_save_coach_games",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_evaluation_bar",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_suggestion_arrows",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_threat_arrows",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_skills",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_teach_legal_moves",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SaveCoachGameRequest",
+      "field": [
+        {
+          "name": "user_position",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.computer.v1.UserColor"
+        },
+        {
+          "name": "coach_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "coach_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "coach_result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.PlayerResult"
+        },
+        {
+          "name": "user_result",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.PlayerResult"
+        },
+        {
+          "name": "initial_fen",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "final_fen",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_start_time",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "game_end_time",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "move_text",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_result",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v2.GameResult"
+        },
+        {
+          "name": "game_uuid",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "finish_vs_coach",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_uuid"
+        }
+      ]
+    },
+    {
+      "name": "HideCoachGameRequest",
+      "field": [
+        {
+          "name": "game_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "HideCoachGameResponse",
+      "options": {}
+    },
+    {
+      "name": "SaveCoachGameResponse",
+      "field": [
+        {
+          "name": "game_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT64"
+        },
+        {
+          "name": "game_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachSpeechRequest",
+      "field": [
+        {
+          "name": "coach_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.coaches.v2.CoachContext"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GetCoachSpeechResponse",
+      "field": [
+        {
+          "name": "speech",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.coaches.v2.SpeechString"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "CoachesService",
+      "method": [
+        {
+          "name": "ListCoaches",
+          "input_type": ".chesscom.coaches.v2.ListCoachesRequest",
+          "output_type": ".chesscom.coaches.v2.ListCoachesResponse",
+          "options": {}
+        },
+        {
+          "name": "ListOnboardingCoaches",
+          "input_type": ".chesscom.coaches.v2.ListOnboardingCoachesRequest",
+          "output_type": ".chesscom.coaches.v2.ListOnboardingCoachesResponse",
+          "options": {}
+        },
+        {
+          "name": "SetCurrentCoach",
+          "input_type": ".chesscom.coaches.v2.SetCurrentCoachRequest",
+          "output_type": ".chesscom.coaches.v2.SetCurrentCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCurrentCoach",
+          "input_type": ".chesscom.coaches.v2.GetCurrentCoachRequest",
+          "output_type": ".chesscom.coaches.v2.GetCurrentCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCoach",
+          "input_type": ".chesscom.coaches.v2.GetCoachRequest",
+          "output_type": ".chesscom.coaches.v2.GetCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCoaches",
+          "input_type": ".chesscom.coaches.v2.GetCoachesRequest",
+          "output_type": ".chesscom.coaches.v2.GetCoachesResponse",
+          "options": {}
+        },
+        {
+          "name": "GetCoachQuota",
+          "input_type": ".chesscom.coaches.v2.GetCoachQuotaRequest",
+          "output_type": ".chesscom.coaches.v2.GetCoachQuotaResponse",
+          "options": {}
+        },
+        {
+          "name": "StartedGameAgainstCoach",
+          "input_type": ".chesscom.coaches.v2.StartedGameAgainstCoachRequest",
+          "output_type": ".chesscom.coaches.v2.StartedGameAgainstCoachResponse",
+          "options": {}
+        },
+        {
+          "name": "GetSettings",
+          "input_type": ".chesscom.coaches.v2.GetSettingsRequest",
+          "output_type": ".chesscom.coaches.v2.GetSettingsResponse",
+          "options": {}
+        },
+        {
+          "name": "SetSettings",
+          "input_type": ".chesscom.coaches.v2.SetSettingsRequest",
+          "output_type": ".chesscom.coaches.v2.SetSettingsResponse",
+          "options": {}
+        },
+        {
+          "name": "SaveCoachGame",
+          "input_type": ".chesscom.coaches.v2.SaveCoachGameRequest",
+          "output_type": ".chesscom.coaches.v2.SaveCoachGameResponse"
+        },
+        {
+          "name": "GetCoachSpeech",
+          "input_type": ".chesscom.coaches.v2.GetCoachSpeechRequest",
+          "output_type": ".chesscom.coaches.v2.GetCoachSpeechResponse"
+        },
+        {
+          "name": "HideCoachGame",
+          "input_type": ".chesscom.coaches.v2.HideCoachGameRequest",
+          "output_type": ".chesscom.coaches.v2.HideCoachGameResponse"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

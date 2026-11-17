@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/courses/v1/course_tag.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "CourseTag",
+      "value": [
+        {
+          "name": "COURSE_TAG_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_TAG_RECOMMENDED",
+          "number": 1
+        },
+        {
+          "name": "COURSE_TAG_BEST_SELLER",
+          "number": 2
+        },
+        {
+          "name": "COURSE_TAG_ON_SALE",
+          "number": 3
+        },
+        {
+          "name": "COURSE_TAG_VIDEO",
+          "number": 4
+        },
+        {
+          "name": "COURSE_TAG_DIAMOND_EXCLUSIVE",
+          "number": 5
+        },
+        {
+          "name": "COURSE_TAG_FREE",
+          "number": 6
+        },
+        {
+          "name": "COURSE_TAG_TOP_PLAYERS",
+          "number": 7
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,63 @@
+// source: chesscom/user_properties/v1/properties_user_engagement.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum UserEngagementPropertyDefinition {
+  USER_ENGAGEMENT_PROPERTY_UNSPECIFIED = 0;
+  LAST_BOUNCE_DATE_SENDGRID = 1;
+  LAST_OPEN_EMAIL_DATE_SENDGRID = 2;
+  LAST_CLICK_EMAIL_DATE_SENDGRID = 3;
+  LAST_BOUNCE_DATE_ITERABLE = 4;
+  LAST_OPEN_EMAIL_DATE_ITERABLE = 5;
+  LAST_CLICK_EMAIL_DATE_ITERABLE = 6;
+  LAST_DROPPED_EMAIL_DATE_SENDGRID = 7;
+  LAST_SPAM_REPORT_DATE_SENDGRID = 8;
+  LAST_OPENED_PUSH_NOTIFICATION_DATE_FIREBASE = 9;
+  LAST_VIEWED_PAYMENT_PAGE_DATE = 10;
+  LAST_PUSH_OPEN_DATE_ITERABLE = 11;
+  LAST_EMAIL_COMPLAINT_DATE_ITERABLE = 12;
+  TOTAL_EMAIL_BOUNCES_ITERABLE = 13;
+}
+
+message UserEngagementProperty {
+  oneof _last_bounce_date_sendgrid {
+  .google.protobuf.Timestamp last_bounce_date_sendgrid = 1;
+  }
+  oneof _last_open_email_date_sendgrid {
+  .google.protobuf.Timestamp last_open_email_date_sendgrid = 2;
+  }
+  oneof _last_click_email_date_sendgrid {
+  .google.protobuf.Timestamp last_click_email_date_sendgrid = 3;
+  }
+  oneof _last_bounce_date_iterable {
+  .google.protobuf.Timestamp last_bounce_date_iterable = 4;
+  }
+  oneof _last_open_email_date_iterable {
+  .google.protobuf.Timestamp last_open_email_date_iterable = 5;
+  }
+  oneof _last_click_email_date_iterable {
+  .google.protobuf.Timestamp last_click_email_date_iterable = 6;
+  }
+  oneof _last_dropped_email_date_sendgrid {
+  .google.protobuf.Timestamp last_dropped_email_date_sendgrid = 7;
+  }
+  oneof _last_spam_report_date_sendgrid {
+  .google.protobuf.Timestamp last_spam_report_date_sendgrid = 8;
+  }
+  oneof _last_opened_push_notification_date_firebase {
+  .google.protobuf.Timestamp last_opened_push_notification_date_firebase = 9;
+  }
+  oneof _last_viewed_payment_page_date {
+  .google.protobuf.Timestamp last_viewed_payment_page_date = 10;
+  }
+  oneof _last_push_open_date_iterable {
+  .google.protobuf.Timestamp last_push_open_date_iterable = 11;
+  }
+  oneof _last_email_complaint_date_iterable {
+  .google.protobuf.Timestamp last_email_complaint_date_iterable = 12;
+  }
+  oneof _total_email_bounces_iterable {
+  double total_email_bounces_iterable = 13;
+  }
+}

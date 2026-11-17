@@ -1,0 +1,30 @@
+[
+  {
+    "path": "wasm-analysis/modules/module-001/module.wat.gz",
+    "bytes": 36514028,
+    "sha256": "8b65fdf712bcef9d3432ab16c77ec2f5532a08ca64cb291a32d886d3de7d0bdc",
+    "reason": "Large escaped text duplicates code/data/weights; omitted from downloadable archive to preserve workspace headroom. Exact original binary and generation command,all function/call inventories,selected WAT and available code-only/focused pseudocode included.",
+    "reproduction": "wasm2wat --enable-all module.wasm -o module.wat; or wasm-decompile --enable-all module.wasm; tool-specific failures recorded."
+  },
+  {
+    "path": "wasm-analysis/modules/module-002/module.wat.gz",
+    "bytes": 36564846,
+    "sha256": "4af659d7850a81c28c5424893a354e88080124c9a1a4efedbdbd0d2e5d225cf6",
+    "reason": "Large escaped text duplicates code/data/weights; omitted from downloadable archive to preserve workspace headroom. Exact original binary and generation command,all function/call inventories,selected WAT and available code-only/focused pseudocode included.",
+    "reproduction": "wasm2wat --enable-all module.wasm -o module.wat; or wasm-decompile --enable-all module.wasm; tool-specific failures recorded."
+  },
+  {
+    "path": "wasm-analysis/modules/module-005/decompilation.txt.gz",
+    "bytes": 7338672,
+    "sha256": "55d683501a3f8a745c9da9da1ae7feeccd062dc39b61084a494194081aed36ea",
+    "reason": "Large escaped text duplicates code/data/weights; omitted from downloadable archive to preserve workspace headroom. Exact original binary and generation command,all function/call inventories,selected WAT and available code-only/focused pseudocode included.",
+    "reproduction": "wasm2wat --enable-all module.wasm -o module.wat; or wasm-decompile --enable-all module.wasm; tool-specific failures recorded."
+  },
+  {
+    "path": "wasm-analysis/modules/module-005/module.wat.gz",
+    "bytes": 7194360,
+    "sha256": "d3319a7bb5c2099861dca83df0ee1da318075a71f0333dc8f04ea995096bd5a5",
+    "reason": "Large escaped text duplicates code/data/weights; omitted from downloadable archive to preserve workspace headroom. Exact original binary and generation command,all function/call inventories,selected WAT and available code-only/focused pseudocode included.",
+    "reproduction": "wasm2wat --enable-all module.wasm -o module.wat; or wasm-decompile --enable-all module.wasm; tool-specific failures recorded."
+  }
+]

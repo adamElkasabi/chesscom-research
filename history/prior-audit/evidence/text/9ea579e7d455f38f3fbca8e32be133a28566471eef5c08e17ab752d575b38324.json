@@ -1,0 +1,238 @@
+[
+  {
+    "id": "normalized-repeat-1",
+    "saveReview": true,
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-repeat-2",
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-evaluate-normal",
+    "evaluateGame": {
+      "search": {
+        "case": "gameReviewSearchSettings",
+        "value": {
+          "strength": 1
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-standard",
+    "strength": 2,
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-class-v2",
+    "settings": {
+      "moveClassificationVersion": 1
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-UseSoftNodes-true",
+    "uciAfter": {
+      "Normalize": false,
+      "UseSoftNodes": true
+    }
+  },
+  {
+    "id": "normalized-HardSoftNodeFactor-50",
+    "uciAfter": {
+      "Normalize": false,
+      "HardSoftNodeFactor": 50
+    }
+  },
+  {
+    "id": "normalized-HardSoftNodeFactor-200",
+    "uciAfter": {
+      "Normalize": false,
+      "HardSoftNodeFactor": 200
+    }
+  },
+  {
+    "id": "normalized-NodeFudging-100",
+    "uciAfter": {
+      "Normalize": false,
+      "NodeFudging": 100
+    }
+  },
+  {
+    "id": "normalized-NodeFudging-1000",
+    "uciAfter": {
+      "Normalize": false,
+      "NodeFudging": 1000
+    }
+  },
+  {
+    "id": "normalized-Hash-64",
+    "uciAfter": {
+      "Normalize": false,
+      "Hash": 64
+    }
+  },
+  {
+    "id": "normalized-ClearBetweenSearches-true",
+    "uciAfter": {
+      "Normalize": false,
+      "ClearBetweenSearches": true
+    }
+  },
+  {
+    "id": "normalized-Minimal-true",
+    "uciAfter": {
+      "Normalize": false,
+      "Minimal": true
+    }
+  },
+  {
+    "id": "normalized-nodes-40000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-nodes-75000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 75000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-nodes-300000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 300000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-nodes-600000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 600000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-human",
+    "timeoutSeconds": 90,
+    "evaluateGame": {
+      "search": {
+        "case": "gameReviewSearchSettings",
+        "value": {
+          "strength": 1
+        }
+      },
+      "torchSearchMode": {
+        "mode": {
+          "case": "human",
+          "value": {}
+        }
+      }
+    },
+    "saveReview": true,
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  {
+    "id": "normalized-human-no-maia",
+    "timeoutSeconds": 90,
+    "evaluateGame": {
+      "search": {
+        "case": "gameReviewSearchSettings",
+        "value": {
+          "strength": 1
+        }
+      },
+      "torchSearchMode": {
+        "mode": {
+          "case": "human",
+          "value": {
+            "disableMaia": true
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "name": "chesscom/chess/v1/board_markings.proto",
+  "package": "chesscom.chess.v1",
+  "dependency": [
+    "chesscom/chess/v1/arrow.proto",
+    "chesscom/chess/v1/square.proto"
+  ],
+  "message_type": [
+    {
+      "name": "ArrowMarking",
+      "field": [
+        {
+          "name": "arrow",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Arrow"
+        },
+        {
+          "name": "color",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.MarkingColor"
+        }
+      ]
+    },
+    {
+      "name": "SquareMarking",
+      "field": [
+        {
+          "name": "square",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "color",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.MarkingColor"
+        }
+      ]
+    },
+    {
+      "name": "BoardMarkings",
+      "field": [
+        {
+          "name": "arrows",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.ArrowMarking"
+        },
+        {
+          "name": "squares",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.SquareMarking"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "MarkingColor",
+      "value": [
+        {
+          "name": "MARKING_COLOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MARKING_COLOR_RED",
+          "number": 1
+        },
+        {
+          "name": "MARKING_COLOR_BLUE",
+          "number": 2
+        },
+        {
+          "name": "MARKING_COLOR_GREEN",
+          "number": 3
+        },
+        {
+          "name": "MARKING_COLOR_ORANGE",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

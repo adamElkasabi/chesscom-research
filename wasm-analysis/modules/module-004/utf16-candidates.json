@@ -1,0 +1,42 @@
+[
+  {
+    "file_offset": 558924,
+    "encoding": "LE",
+    "text": "5(58<:>AEHNNSW[X`b"
+  },
+  {
+    "file_offset": 559058,
+    "encoding": "LE",
+    "text": ";%I)L6_A_DeE|F"
+  },
+  {
+    "file_offset": 559315,
+    "encoding": "LE",
+    "text": "%@2R9g"
+  },
+  {
+    "file_offset": 561245,
+    "encoding": "LE",
+    "text": "X/xyAt!"
+  },
+  {
+    "file_offset": 558923,
+    "encoding": "BE",
+    "text": "5(58<:>AEHNNSW[X`bA"
+  },
+  {
+    "file_offset": 559057,
+    "encoding": "BE",
+    "text": ";%I)L6_A_DeE|F"
+  },
+  {
+    "file_offset": 559314,
+    "encoding": "BE",
+    "text": "%@2R9g"
+  },
+  {
+    "file_offset": 561244,
+    "encoding": "BE",
+    "text": "X/xyAt!"
+  }
+]

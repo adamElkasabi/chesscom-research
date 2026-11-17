@@ -1,0 +1,8 @@
+
+chesscom/chess/v1/arrow.protochesscom.chess.v1chesscom/chess/v1/square.proto"W
+Arrow'
+from (2.chesscom.chess.v1.Square%
+to (2.chesscom.chess.v1.Square"h
+ArrowsAndSquares(
+arrows (2.chesscom.chess.v1.Arrow*
+squares (2.chesscom.chess.v1.Squarebproto3

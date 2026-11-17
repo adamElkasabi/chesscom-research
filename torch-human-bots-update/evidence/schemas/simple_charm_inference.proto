@@ -1,0 +1,29 @@
+// source: chesscom/explanation_engine/v1/simple_charm_inference.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message SimpleCharmMovePrediction {
+  optional string uci_move = 1;
+  optional float probability = 2;
+}
+
+message SimpleCharmInference {
+  oneof _rating {
+  int32 rating = 2;
+  }
+  oneof _expected_points {
+  float expected_points = 4;
+  }
+  optional string model_key = 1;
+  repeated .chesscom.explanation_engine.v1.SimpleCharmMovePrediction moves = 3;
+  repeated float rank_probabilities = 5;
+  repeated float strength_probabilities = 6;
+  repeated float time_taken_probabilities = 7;
+  repeated float ldw_probabilities = 8;
+  repeated float strength_rating_sensitive_probabilities = 9;
+}
+
+message SimpleCharmInferences {
+  repeated .chesscom.explanation_engine.v1.SimpleCharmInference inferences = 1;
+}

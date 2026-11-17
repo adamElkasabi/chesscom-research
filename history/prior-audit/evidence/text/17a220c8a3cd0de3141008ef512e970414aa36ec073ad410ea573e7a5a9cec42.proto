@@ -1,0 +1,18 @@
+// source: chesscom/proto_options/oauth/v1/scope_options.proto
+// syntax: proto3
+
+package chesscom.proto_options.oauth.v1;
+
+enum ScopeVisibility {
+  SCOPE_VISIBILITY_UNSPECIFIED = 0;
+  SCOPE_VISIBILITY_INTERNAL = 1;
+  SCOPE_VISIBILITY_PUBLIC = 2;
+  SCOPE_VISIBILITY_PRIVILEGED = 3;
+}
+
+enum ScopeConsent {
+  SCOPE_CONSENT_UNSPECIFIED = 0;
+  SCOPE_CONSENT_OPTIONAL = 1;
+  SCOPE_CONSENT_REQUIRED = 2;
+  SCOPE_CONSENT_IMPLICIT = 3;
+}

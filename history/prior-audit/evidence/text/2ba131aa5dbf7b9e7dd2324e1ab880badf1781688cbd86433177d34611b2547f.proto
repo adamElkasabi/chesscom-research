@@ -1,0 +1,16 @@
+// source: chesscom/ceac/v2/request_metadata.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message RequestMetadata {
+  optional .chesscom.ceac.v2.Client client = 1;
+  optional .chesscom.ceac.v2.Product product = 2;
+  optional .google.protobuf.Timestamp received_time = 3;
+  optional bool debug_mode = 4;
+}
+
+message RequestOptions {
+  optional int32 heartbeat_interval_seconds = 4;
+  optional bool use_progress_updates = 5;
+}

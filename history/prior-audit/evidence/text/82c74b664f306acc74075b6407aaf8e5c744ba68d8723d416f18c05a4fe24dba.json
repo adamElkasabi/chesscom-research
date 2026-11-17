@@ -1,0 +1,1 @@
+{"id": "probe-human", "preSearch": {"search": {"case": "searchParameters", "value": {"nodesLimit": 1000, "numLines": 1}}, "torchSearchMode": {"mode": {"case": "human", "value": {}}}}, "rootOnly": true, "searchOnly": true, "timeoutSeconds": 20}

@@ -1,0 +1,11 @@
+{
+  "name": "chesscom/ceac/v2/waiting_for_capacity.proto",
+  "package": "chesscom.ceac.v2",
+  "message_type": [
+    {
+      "name": "WaitingForCapacity",
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

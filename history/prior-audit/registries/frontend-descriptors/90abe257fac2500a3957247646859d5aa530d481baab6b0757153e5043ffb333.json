@@ -1,0 +1,938 @@
+{
+  "name": "chesscom/friends_search/v1/friends_search.proto",
+  "package": "chesscom.friends_search.v1",
+  "message_type": [
+    {
+      "name": "FriendsSearchRootQuery",
+      "field": [
+        {
+          "name": "order_by",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchOrderBy"
+        },
+        {
+          "name": "query",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchQuery"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchQuery",
+      "field": [
+        {
+          "name": "statement",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchStatement"
+        },
+        {
+          "name": "or",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchQuery",
+          "oneof_index": 0
+        },
+        {
+          "name": "and",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchQuery",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "operator"
+        }
+      ]
+    },
+    {
+      "name": "FriendsSearchStatement",
+      "field": [
+        {
+          "name": "field_value",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchFieldValueCriteria",
+          "oneof_index": 0
+        },
+        {
+          "name": "rating_range",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRatingRangeCriteria",
+          "oneof_index": 0
+        },
+        {
+          "name": "all_fields_text",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchTextCriteria",
+          "oneof_index": 0
+        },
+        {
+          "name": "last_login_date",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchLastLoginDateCriteria",
+          "oneof_index": 0
+        },
+        {
+          "name": "is_online",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchIsOnlineCriteria",
+          "oneof_index": 0
+        },
+        {
+          "name": "all_fields_text_except_email",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchTextCriteria",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "criteria"
+        }
+      ]
+    },
+    {
+      "name": "FriendsSearchFieldValueCriteria",
+      "field": [
+        {
+          "name": "searchable_field",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchSearchableField"
+        },
+        {
+          "name": "field_value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchTextCriteria",
+      "field": [
+        {
+          "name": "text_to_search",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "exact_username_first",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "boost_username",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_exact_username_first"
+        },
+        {
+          "name": "_boost_username"
+        }
+      ]
+    },
+    {
+      "name": "FriendsSearchRatingRangeCriteria",
+      "field": [
+        {
+          "name": "variant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.Variant"
+        },
+        {
+          "name": "timeclass",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_storage.v1.TimeClass"
+        },
+        {
+          "name": "min_inclusive",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "max_inclusive",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchLastLoginDateCriteria",
+      "field": [
+        {
+          "name": "last_login_date",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchIsOnlineCriteria",
+      "field": [
+        {
+          "name": "is_online",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchFriend",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_view",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        },
+        {
+          "name": "friend_since",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_login_date",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_staff",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "presence",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchPresenceStatus"
+        },
+        {
+          "name": "best_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "is_requestor_friend",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "country",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Country"
+        },
+        {
+          "name": "requestor_friend_request_direction",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendRequestDirection",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "ratings",
+          "number": 90,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRatingItem"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_friend_since"
+        },
+        {
+          "name": "_last_login_date"
+        },
+        {
+          "name": "_requestor_friend_request_direction"
+        }
+      ]
+    },
+    {
+      "name": "FriendsSearchRecommendation",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_view",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        },
+        {
+          "name": "country",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Country"
+        },
+        {
+          "name": "best_rating",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "ratings",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRatingItem"
+        },
+        {
+          "name": "presence",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchPresenceStatus"
+        },
+        {
+          "name": "is_staff",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "rank",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "score",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "reason",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SocialFriendsSearchFriend",
+      "field": [
+        {
+          "name": "friend",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchFriend"
+        },
+        {
+          "name": "allows_challenges",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "allows_messages",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "full_presence",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.presence.v1.UserPresence"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PendingFriendsSearchFriend",
+      "field": [
+        {
+          "name": "friend",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.SocialFriendsSearchFriend"
+        },
+        {
+          "name": "is_incoming_request",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchFriendship",
+      "field": [
+        {
+          "name": "created_at",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "friend_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "FriendsSearchRatingItem",
+      "field": [
+        {
+          "name": "variant_timeclass",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchVariantTimeclass"
+        },
+        {
+          "name": "rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchOrderBy",
+      "field": [
+        {
+          "name": "field",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchSearchableField"
+        },
+        {
+          "name": "order",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchOrder",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_order"
+        }
+      ]
+    },
+    {
+      "name": "FriendsSearchCursorToken",
+      "field": [
+        {
+          "name": "page_number",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "page_size",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "how_many_pages",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_elements",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_how_many_pages"
+        },
+        {
+          "name": "_total_elements"
+        }
+      ]
+    },
+    {
+      "name": "BlockedUsers",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "legacy_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "username",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "extra_fields",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchExtraFieldResponse"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchExtraFieldResponse",
+      "field": [
+        {
+          "name": "field",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendsSearchRetrievableField"
+        },
+        {
+          "name": "string_value",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "long_value",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 0
+        },
+        {
+          "name": "integer_value",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "float_value",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 0
+        },
+        {
+          "name": "double_value",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0
+        },
+        {
+          "name": "bool_value",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "FriendsSearchPresenceStatus",
+      "value": [
+        {
+          "name": "FRIENDS_SEARCH_PRESENCE_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FRIENDS_SEARCH_PRESENCE_STATUS_OFFLINE",
+          "number": 1
+        },
+        {
+          "name": "FRIENDS_SEARCH_PRESENCE_STATUS_ONLINE",
+          "number": 2
+        },
+        {
+          "name": "FRIENDS_SEARCH_PRESENCE_STATUS_PLAYING",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendRequestDirection",
+      "value": [
+        {
+          "name": "FRIEND_REQUEST_DIRECTION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FRIEND_REQUEST_DIRECTION_OUTGOING",
+          "number": 1
+        },
+        {
+          "name": "FRIEND_REQUEST_DIRECTION_INCOMING",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchOrder",
+      "value": [
+        {
+          "name": "FRIENDS_SEARCH_ORDER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FRIENDS_SEARCH_ORDER_ASC",
+          "number": 1
+        },
+        {
+          "name": "FRIENDS_SEARCH_ORDER_DESC",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchSearchableField",
+      "value": [
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_FIRST_NAME",
+          "number": 1
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_LAST_NAME",
+          "number": 2
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_EMAIL",
+          "number": 3
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_COUNTRY",
+          "number": 4
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_USERNAME",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_LAST_LOGIN_DATE",
+          "number": 6
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_IS_ONLINE",
+          "number": 7
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_ALL",
+          "number": 8
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_ALL_EXCEPT_EMAIL",
+          "number": 9
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_CREATED_DATE",
+          "number": 10
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_USERNAME_PREFIX",
+          "number": 11
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_USERNAME_UNIQUE",
+          "number": 12
+        },
+        {
+          "name": "FRIENDS_SEARCH_SEARCHABLE_FIELD_LAST_FEED_ACTIVITY",
+          "number": 13
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchVariantTimeclass",
+      "value": [
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_BLITZ",
+          "number": 1
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_BULLET",
+          "number": 2
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_DAILY",
+          "number": 3
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS_RAPID",
+          "number": 4
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_BLITZ",
+          "number": 5
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_BULLET",
+          "number": 6
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_DAILY",
+          "number": 7
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960_RAPID",
+          "number": 8
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_BLITZ",
+          "number": 9
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_BLITZ",
+          "number": 10
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_BLITZ",
+          "number": 11
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_BLITZ",
+          "number": 12
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_BLITZ",
+          "number": 13
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_BULLET",
+          "number": 14
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_BULLET",
+          "number": 15
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_BULLET",
+          "number": 16
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_BULLET",
+          "number": 17
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_BULLET",
+          "number": 18
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_DAILY",
+          "number": 19
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_DAILY",
+          "number": 20
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_DAILY",
+          "number": 21
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_DAILY",
+          "number": 22
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_DAILY",
+          "number": 23
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE_RAPID",
+          "number": 24
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE_RAPID",
+          "number": 25
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL_RAPID",
+          "number": 26
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS_RAPID",
+          "number": 27
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK_RAPID",
+          "number": 28
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CHESS960",
+          "number": 29
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_ODDSCHESS",
+          "number": 30
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_THREECHECK",
+          "number": 31
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_CRAZYHOUSE",
+          "number": 32
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_BUGHOUSE",
+          "number": 33
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_KINGOFTHEHILL",
+          "number": 34
+        },
+        {
+          "name": "FRIENDS_SEARCH_VARIANT_TIMECLASS_UNRATED",
+          "number": 35
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendsSearchRetrievableField",
+      "value": [
+        {
+          "name": "FRIENDS_SEARCH_RETRIEVABLE_FIELD_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FRIENDS_SEARCH_RETRIEVABLE_FIELD_AVATAR",
+          "number": 1
+        },
+        {
+          "name": "FRIENDS_SEARCH_RETRIEVABLE_FIELD_COUNTRY_CODE",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

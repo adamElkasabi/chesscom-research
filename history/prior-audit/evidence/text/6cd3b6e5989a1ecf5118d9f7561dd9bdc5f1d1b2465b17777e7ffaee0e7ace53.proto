@@ -1,0 +1,76 @@
+// source: chesscom/courses/v1/course_product.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseProduct {
+  oneof _video {
+  .chesscom.courses_common.v1.CourseVideo video = 13;
+  }
+  oneof _move_trainer_sku {
+  string move_trainer_sku = 15;
+  }
+  oneof _video_sku {
+  string video_sku = 16;
+  }
+  oneof _move_trainer_price {
+  .chesscom.courses_common.v1.CoursePrice move_trainer_price = 17;
+  }
+  oneof _video_price {
+  .chesscom.courses_common.v1.CoursePrice video_price = 18;
+  }
+  oneof _move_trainer_purchase_date {
+  .google.protobuf.Timestamp move_trainer_purchase_date = 19;
+  }
+  oneof _video_purchase_date {
+  .google.protobuf.Timestamp video_purchase_date = 20;
+  }
+  oneof _video_hours_count {
+  int32 video_hours_count = 23;
+  }
+  oneof _is_deleted {
+  bool is_deleted = 26;
+  }
+  oneof _free_video_minutes {
+  int32 free_video_minutes = 27;
+  }
+  oneof _user_access_grant {
+  .chesscom.courses.v1.UserAccessGrant user_access_grant = 29;
+  }
+  oneof _best_for {
+  .chesscom.courses_common.v1.CourseTargetLevel best_for = 30;
+  }
+  oneof _canonical_line {
+  .chesscom.courses.v1.CourseCanonicalLine canonical_line = 32;
+  }
+  oneof _first_coach_comment {
+  .chesscom.courses.v1.CourseCoachComment first_coach_comment = 34;
+  }
+  oneof _board_preview {
+  .chesscom.courses_common.v1.CourseBoardPreview board_preview = 35;
+  }
+  optional string id = 1;
+  optional string name = 2;
+  optional string description = 3;
+  optional string short_description = 4;
+  optional .chesscom.courses_common.v1.Picture square_picture = 5;
+  optional .chesscom.courses_common.v1.Picture rectangular_picture = 6;
+  optional .chesscom.courses_common.v1.CourseRating rating = 7;
+  optional .chesscom.courses_common.v1.Range recommended_level_range = 8;
+  optional .chesscom.courses_common.v1.CourseGameAspect game_aspect = 9;
+  repeated .chesscom.chess.v1.Color color = 10;
+  optional .google.protobuf.Timestamp release_date = 11;
+  repeated .chesscom.courses.v1.CourseAuthor authors = 12;
+  optional string slug = 14;
+  repeated string move_trainer_ids = 21;
+  optional int32 variation_count = 22;
+  optional bool is_diamond_exclusive = 24;
+  repeated .chesscom.api.v1.Language language = 25;
+  optional .chesscom.courses_common.v1.CourseSource course_source = 28;
+  repeated .chesscom.courses.v1.CourseCustomTag course_custom_tags = 31;
+  optional bool is_recommended = 33;
+}
+
+message CourseProductList {
+  repeated .chesscom.courses.v1.CourseProduct course_list = 1;
+}

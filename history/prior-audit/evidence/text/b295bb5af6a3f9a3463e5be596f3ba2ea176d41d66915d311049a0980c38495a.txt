@@ -1,0 +1,47 @@
+Accessible conversation recovery record
+Source type: reconstruction from the current conversation and the condensed history supplied at its beginning. This is NOT an independent transcript export, retrieval from another conversation, or a browser log. Claims below retain that provenance. Exact earlier tool transcripts not in the visible context cannot be recovered through a separate search API.
+
+Website and scope: Chess.com, primarily Game Review, local CEE/WASM, Torch human mode, Quick Analysis, evaluation-bar historical research, and a Chrome extension that relays the page's CEAC requests to a local engine. No authorized logged-in browser profile or server/database/repository access is available to this audit.
+
+Earlier condensed history:
+- User corrected the project's focus to working extension analysis numbers and audio; avoid endless engine research.
+- User confirmed quota behavior in v0.1.6: "PERFECT it worked keep it like that step by step".
+- User confirmed v0.1.7 UI and audio: "HOLY shit it worked even the sound worked everything turned out perfectly the UI the sound everything is nice now it's refinement time!". This is a user runtime report, not independent playback verification.
+- Exact cloud parity was never achieved. User rejected invented accuracy/rating formulas; native Chess.com implementation should supply the numbers.
+- User requested Torch Human + Fast; accepted failure to find it. Later requested automated engine-parameter comparison against their original 20-ply reference.
+- Original reference URL: https://www.chess.com/analysis/game/live/186934806892/review?move=0 ; 20 plies, result0-1, White Elo100/Black333, 600-second control. Reference accuracy71.7/99.0, ratings100/1000. Full targets remain in research/refinement/target.json.
+- Earlier bot fixture target accuracy86.8/79.8, ratings1850/1500 supersedes older93.7/85.6,1800/1700. Earlier human fixture target76.8/70.2,1350/600. Individual per-move Chess.com labels for these references were not provided.
+- Compact tally strings can concatenate White and Black counts; Blunder10 means White1/Black0, not ten blunders. Six visible categories do not establish hidden categories are zero.
+- Initial parallel WASM sweep with concurrency3 exhausted sandbox resources; children exited with null codes. Artifacts were separated as resource failures, not numerical results. Later sweeps ran sequentially.
+- Repeated coach .bzp/charm-model probes returned404; their precise URLs are not preserved in the available condensed context. Do not reconstruct guessed URLs or re-probe them.
+- Logged-out game/callback JSON probes returned404/HTML; exact targets not all retained. These failures do not establish endpoint absence for authenticated users.
+- Raw-state source12 experiments, explicit classification versions1/2, pool stamping, ForceDisableInternalEngineSearches, and fake external engine paths failed to establish full human/cloud parity. Preserve the detailed local code/artifacts where available rather than relying on this condensed statement.
+- Runtime CEE banner1.130.285 and review metadata1.211.5 both appeared; these version namespaces must not automatically be treated as contradictory.
+
+Visible follow-up investigation:
+- User supplied https://www.chess.com/game/live/187158515860 as an example of a page loading explanation-engine.js/.wasm. A fetch_page result displayed game moves and linked review/analysis/classroom URLs. Public page HTML and its package assets were retrieved and saved under research/refinement/live-*. No interactive logged-in DevTools trace was captured.
+- The page's play package pointed to play/2026.11.4/play.js and shared.eager.CO8OPvF5Fi.chunk.js. Static dependency tracing reached client.e0da4c65.BIjoPk3wAJ.chunk.js (Quick Analysis) and shared.b9742e37.Cgvw1kitOr.chunk.js (its store).
+- Quick Analysis binary path used depth10,numLines2; V3 with coach, V2 otherwise. Legacy path used external evaluation workers feeding CEE, with WhiteElo/BlackElo and ClassificationV3. It was not equivalent to full server Torch Human+Fast.
+- A built-in ?logBIMessages switch exposed getCeeBinaryInterfaceLogs when the appropriate binary-interface client initializes. User tried window.chesscom.getCeeBinaryInterfaceLogs() and got TypeError because window.chesscom was undefined in that console context. The precise cause/frame context was NOT established; it does not prove the API is globally available on every page.
+- Static full Game Review path selected engine12 for web_analysis_torch_human_v2, encoded it, and sent it to wss://analysis.chess.com:443/v2/game-review. Local worker loading alone was not evidence that the full website review ran locally.
+- Local feature29 RunSearch with torchSearchMode.human and1000nodes succeeded under the Node wrapper with fetch replaced by a rejecting function. No fetch attempt was recorded. Human changed actual commands to PVtrees rather than ordinary searchmoves. Both human and normal results retained underlying engine11. Prior inference "engine11 means human mode inactive" was retracted as too strict.
+- Normal probe returned+17cp,depth6; human+18cp,depth5; log engine Torch master-20260925-87ee25a. Human logs included internal rating2100. This proves local execution of a human search mode, not server parity, standalone Maia prediction, or a completed Chrome UI integration.
+- Feature288 human PVtree probes timed out even with1000nodes; EvaluateGame54 probes aborted including the normal control. Those failures did not negate the successful feature29 path.
+- The later whole-reference experiment used GetGameReviewEvaluations79 at21gamepoints, AddEvaluations1, then GameReview42. All21evaluation calls completed; logs had20human PVtree searches plus auxiliary normal searches and no new search commands during final review generation. Accuracy59.01492691040039/95.37910461425781, ratings400/1000. No Normalize/Hash tuning applied. Matched preload control60.15205383300781/96.07951354980469,ratings300/1000. Thus not a perfectly isolated comparison to the direct production baseline.
+- Human experiment changed only three per-move local labels versus direct baseline:3.Be2 Good->Inaccuracy,4.Qd3 Blunder->Mistake,7.Bd2 Inaccuracy->Mistake. Original Chess.com labels per move were unknown.
+- Experimental human and normalization changes were not promoted to production.
+
+Visible release/UI/progress sequence:
+- User asked only to hide bottom-left debug card. v0.1.8 introduced SHOW_DEBUG_BADGE=false and buildBadge early return; kept console logging and hook VERSION0.1.6. Manifest0.1.8. Small ZIP contained manifest,page-hook,README only, intended as overlay.
+- Hook/quota tests passed; comparison against delivered v0.1.7 confirmed review/CEE/offscreen/engine bytes unchanged. A DOM-creation-count regression asserted the hidden card creates no elements.
+- User initially reported the update stopped at progress0.019999999552965164, then explicitly corrected: "Sorry it worked BUT the analysis progress doesnt work!". No rollback was implemented. The apparent breakage was a coarse progress issue, not confirmed failure of the hidden-card update.
+- Offscreen originally emitted0,0.02,1 and repeated its last value every4seconds because whole-game CEE did not provide granular progress. This was not caused by hiding the card.
+- User explicitly chose a realistic estimate based on real measurements.
+- v0.1.9 introduced presentation-only device-local successful-duration history, grouped by exact search settings and scaled by positions. First matching review calibrates; later estimates use up to7nearest-length samples and median scaled timings, last40samples retained. One-second ticks,95%cap,100%only at result. Failed/cancelled runs excluded. localStorage failure falls back to memory-only history.
+- v0.1.9 added onWorkload metadata callback after native NewGame; did not alter CEE search settings or evaluation order. Production engine binaries/CEE client remained unchanged. Debug card stayed hidden. Numeric and mocked offscreen progress tests passed. User has not yet confirmed v0.1.9 runtime behavior in the visible conversation.
+
+Access/time limitations:
+- No separate memory-search or conversation-search mechanism is exposed in the available toolset. Only the above condensed history and current visible conversation are accessible.
+- Previous external REA evidence ev_a9a06871d585d6f7e3034afca02807f6a559738b9db111ce2259360bf479bcce is mentioned by uploaded Markdown but the backing evidence record is not present or queried.
+- Uploaded documents reference raw/,CLIENT-SIDE.md,REDOWNLOAD.md,ALL-SCHEMAS.proto,tools/ceac-dump.mjs,crosscheck/,client/ and chess-eval-bar/ which may be absent. Inventory must determine actual availability; do not claim their tests were rerun just because their results are quoted.
+- Session-supplied date and embedded artifact timestamps differ; preserve source dates and do not invent a consistent deployment/audit chronology.

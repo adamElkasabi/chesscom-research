@@ -1,0 +1,48 @@
+// source: chesscom/ceac/v2/error.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message NoCapacityError {
+}
+
+message InvalidGameError {
+}
+
+message GeneralError {
+}
+
+message BadRequest {
+  oneof reason {
+  .chesscom.explanation_engine.v1.InvalidGame invalid_game = 1;
+  .chesscom.explanation_engine.v1.UnanalyzableGame unanalyzable_game = 2;
+  .chesscom.ceac.v2.InvalidRequestError invalid_request = 3;
+  }
+}
+
+message RateLimitedError {
+}
+
+message InvalidRequestError {
+}
+
+message AuthRequiredError {
+}
+
+message ClientError {
+  oneof reason {
+  .chesscom.ceac.v2.BadRequest bad_request = 1;
+  .chesscom.ceac.v2.RateLimitedError rate_limited = 2;
+  .chesscom.ceac.v2.AuthRequiredError auth_required = 3;
+  }
+}
+
+message ServerError {
+}
+
+message FailureError {
+  oneof kind {
+  .chesscom.ceac.v2.ClientError client_error = 1;
+  .chesscom.ceac.v2.ServerError server_error = 2;
+  }
+}

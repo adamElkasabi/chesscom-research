@@ -1,0 +1,161 @@
+{
+  "name": "chesscom/bots/v1/bot_group.proto",
+  "package": "chesscom.bots.v1",
+  "message_type": [
+    {
+      "name": "BotGroup",
+      "field": [
+        {
+          "name": "uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "hint_description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "club_uuid",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "bot_personalities",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotPersonality"
+        },
+        {
+          "name": "avatar",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "featured",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "configuration_key",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "event",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotEvent",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "url",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "enabled",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "staff_enabled",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 6,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_club_uuid"
+        },
+        {
+          "name": "_avatar"
+        },
+        {
+          "name": "_configuration_key"
+        },
+        {
+          "name": "_event"
+        },
+        {
+          "name": "_url"
+        },
+        {
+          "name": "_enabled"
+        },
+        {
+          "name": "_staff_enabled"
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 4,
+          "end": 5
+        },
+        {
+          "start": 5,
+          "end": 6
+        },
+        {
+          "start": 6,
+          "end": 7
+        },
+        {
+          "start": 7,
+          "end": 8
+        },
+        {
+          "start": 8,
+          "end": 9
+        },
+        {
+          "start": 10,
+          "end": 11
+        },
+        {
+          "start": 11,
+          "end": 12
+        },
+        {
+          "start": 13,
+          "end": 14
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

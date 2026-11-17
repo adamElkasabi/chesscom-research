@@ -1,0 +1,9 @@
+// source: chesscom/shared_board/v1alpha/shared_board_session_resource.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+message SharedBoardSessionResource {
+  optional string resource_type = 1;
+  optional string resource_id = 2;
+}

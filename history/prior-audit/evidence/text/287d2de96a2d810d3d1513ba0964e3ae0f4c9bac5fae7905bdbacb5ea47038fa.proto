@@ -1,0 +1,56 @@
+// source: chesscom/explanation_engine/v1/move_details.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message PieceMove {
+  optional .chesscom.chess.v1.Square from = 1;
+  optional .chesscom.chess.v1.Square to = 2;
+  optional .chesscom.chess.v1.Piece piece = 3;
+}
+
+message NormalMove {
+  oneof _captured_piece {
+  .chesscom.chess.v1.Piece captured_piece = 2;
+  }
+  optional .chesscom.explanation_engine.v1.PieceMove moved_piece = 1;
+}
+
+message CastlingMove {
+  optional .chesscom.explanation_engine.v1.PieceMove king_move = 1;
+  optional .chesscom.explanation_engine.v1.PieceMove rook_move = 2;
+}
+
+message PromotionMove {
+  oneof _captured_piece {
+  .chesscom.chess.v1.Piece captured_piece = 2;
+  }
+  optional .chesscom.explanation_engine.v1.PieceMove moved_piece = 1;
+  optional .chesscom.chess.v1.PromotionPieceType promoted_piece_type = 3;
+}
+
+message EnpassantMove {
+  optional .chesscom.explanation_engine.v1.PieceMove moved_piece = 1;
+  optional .chesscom.chess.v1.Square capture_square = 2;
+}
+
+message NullMove {
+}
+
+message MoveDetails {
+  oneof kind {
+  .chesscom.explanation_engine.v1.NormalMove regular_move = 4;
+  .chesscom.explanation_engine.v1.CastlingMove castling_move = 5;
+  .chesscom.explanation_engine.v1.PromotionMove promotion_move = 6;
+  .chesscom.explanation_engine.v1.EnpassantMove en_passant_move = 7;
+  .chesscom.explanation_engine.v1.NullMove null_move = 8;
+  }
+  oneof _game_result {
+  .chesscom.chess.v1.GameResult game_result = 11;
+  }
+  optional string move_string = 1;
+  optional .chesscom.chess.v1.Move move = 2;
+  optional int32 time_taken_ms = 3;
+  optional .chesscom.chess.v1.Color moved_color = 9;
+  optional int32 full_move_number = 10;
+}

@@ -1,0 +1,10 @@
+{
+  "config": {
+    "id": "strength-3-class-0",
+    "strength": 3,
+    "settings": {}
+  },
+  "started": "2026-11-14T18:51:28.064Z",
+  "error": "trial timeout after 150s",
+  "warnings": []
+}

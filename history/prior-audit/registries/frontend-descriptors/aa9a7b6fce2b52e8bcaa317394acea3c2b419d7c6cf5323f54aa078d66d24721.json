@@ -1,0 +1,329 @@
+{
+  "name": "chesscom/train/v1/train_strategy_theme.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainStrategyTheme",
+      "value": [
+        {
+          "name": "TRAIN_STRATEGY_THEME_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_CREATES_BACKWARD_PAWN",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_ISOLATES_PAWN",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_ISOLATES_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_DOUBLES_PAWNS",
+          "number": 4
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_DOUBLES_CASTLE_PAWNS",
+          "number": 5
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_DOUBLED_ISOLATED_PAWN",
+          "number": 6
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_DOUBLED_ISOLATED_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 7
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_DOUBLED_BACKWARD_PAWN",
+          "number": 8
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_DOUBLED_BACKWARD_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 9
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_BACKWARD_PAWN_ON_SEMI_OPEN_FILE",
+          "number": 10
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_CREATES_OPPONENT_PROTECTED_PASSED_PAWN",
+          "number": 11
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MOVES_PAWN_IN_FRONT_OF_KING",
+          "number": 12
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_CASTLES_INTO_ATTACK",
+          "number": 13
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MOVES_TO_PASSIVE_SQUARE",
+          "number": 14
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_ROOK_PASSIVE_PROTECTION",
+          "number": 15
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_TAKES_OUTPOST",
+          "number": 16
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ROOK_TAKES_OUTPOST",
+          "number": 17
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_TAKES_OUTPOST_WITH_TEMPO",
+          "number": 18
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CENTRALIZES_KNIGHT",
+          "number": 19
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_BISHOP_GAINS_SCOPE",
+          "number": 20
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CONNECTS_ROOKS",
+          "number": 21
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CONNECTS_ROOKS_7TH",
+          "number": 22
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_DOUBLES_ROOKS",
+          "number": 23
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ROOK_LIFT",
+          "number": 24
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PREPARES_TO_DOUBLE_ROOKS",
+          "number": 25
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_TAKES_OPEN_FILE",
+          "number": 26
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CHALLENGES_OPEN_FILE",
+          "number": 27
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ROOK_BEHIND_OWN_PAWN",
+          "number": 28
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ROOK_BEHIND_OPP_PAWN",
+          "number": 29
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_MANEUVERS_TO_ACTIVE_SQUARE",
+          "number": 30
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_MOVES_TO_ACTIVE_SQUARE",
+          "number": 31
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PILLSBURY_KNIGHT",
+          "number": 32
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CARLSBAD_KNIGHT",
+          "number": 33
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_GAINS_CENTRAL_SPACE",
+          "number": 34
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_GAINS_KINGSIDE_SPACE",
+          "number": 35
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_GAINS_QUEENSIDE_SPACE",
+          "number": 36
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_STRIKES_AT_CENTER",
+          "number": 37
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CENTRAL_BREAK",
+          "number": 38
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PREPARES_CENTRAL_PUSH",
+          "number": 39
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PUTS_PAWN_IN_CENTER",
+          "number": 40
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PREVENTS_CENTRAL_BREAK",
+          "number": 41
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_DEVELOPS_AND_PREVENTS_BREAK",
+          "number": 42
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CURES_BACKWARD_PAWN",
+          "number": 43
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CURES_ISOLATED_PAWN",
+          "number": 44
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_FIXES_PAWN_STRUCTURE",
+          "number": 45
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_UNDOUBLES_PAWNS",
+          "number": 46
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_UNTRIPLES_PAWNS",
+          "number": 47
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CREATES_PAWN_CHAIN",
+          "number": 48
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_SUPPORTS_PAWN_CHAIN",
+          "number": 49
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_MAKES_PASSED_PAWN",
+          "number": 50
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CREATES_LUFT",
+          "number": 51
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PREVENTS_CASTLING",
+          "number": 52
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ATTACKS_PAWN_CHAIN",
+          "number": 53
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ATTACKS_PAWN_CHAIN_COVER",
+          "number": 54
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_EDGE_PAWN_CHASES_KNIGHT",
+          "number": 55
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_BLOCKADE",
+          "number": 56
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_BLOCKADE_MOVING_PAWN",
+          "number": 57
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_BLOCKADES_OPP_PUSHING_SQUARE",
+          "number": 58
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_BLOCKADES_OPP_PROMOTION_SQUARE",
+          "number": 59
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_CONTROLS_OPP_PUSHING_SQUARE",
+          "number": 60
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_ELIMINATES_OPP_PASSED_PAWN",
+          "number": 61
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PROTECTS_PASSED_PAWN",
+          "number": 62
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_VACATES_PUSHING_SQUARE",
+          "number": 63
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_PUSHES_PASSED_PAWN_MIDDLEGAME",
+          "number": 64
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_TRADE_TO_SIMPLIFY",
+          "number": 65
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_AVOIDS_TRADE",
+          "number": 66
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MISSES_GOOD_TRADE",
+          "number": 67
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_BAD_TRADE",
+          "number": 68
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_INFERIOR_TRADE",
+          "number": 69
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_BAD_TRADE_KNIGHT_FOR_BISHOP",
+          "number": 70
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_BAD_TRADE_BISHOP_FOR_KNIGHT",
+          "number": 71
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_QUEEN_FOR_TWO_ROOKS",
+          "number": 72
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_QUEEN_FOR_ROOK_MINOR",
+          "number": 73
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MINORS_FOR_ROOK_PAWN",
+          "number": 74
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_LOSES_CASTLING_RIGHTS",
+          "number": 75
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_MIDDLEGAME_START_NO_CASTLE",
+          "number": 76
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_PASSIVE_RETREAT",
+          "number": 77
+        },
+        {
+          "name": "TRAIN_STRATEGY_THEME_BLOCKS_CENTRAL_PAWN",
+          "number": 78
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

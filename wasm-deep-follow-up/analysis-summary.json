@@ -1,0 +1,679 @@
+[
+  {
+    "binary_id": "module-001",
+    "sha256": "b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28",
+    "bytes": 32865067,
+    "defined_functions": 22922,
+    "complete_function_decodes": 22922,
+    "instruction_count": 10191090,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 21403,
+      "UNDERSTOOD": 1512,
+      "PARTIALLY UNDERSTOOD": 7
+    },
+    "dispatch": {
+      "HOST_INVOKE_DISPATCH:INITIAL_SLOT_CANDIDATE": 41928,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 3037,
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 9437,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 5369,
+    "direct_SCC_count": 23025,
+    "largest_direct_SCC": 25,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 28.756
+  },
+  {
+    "binary_id": "module-002",
+    "sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "bytes": 32922478,
+    "defined_functions": 22953,
+    "complete_function_decodes": 22953,
+    "instruction_count": 10194907,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 21419,
+      "UNDERSTOOD": 1512,
+      "PARTIALLY UNDERSTOOD": 16,
+      "MOSTLY UNDERSTOOD": 6
+    },
+    "dispatch": {
+      "HOST_INVOKE_DISPATCH:INITIAL_SLOT_CANDIDATE": 42137,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 3060,
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 9450,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 5398,
+    "direct_SCC_count": 23057,
+    "largest_direct_SCC": 25,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 28.781
+  },
+  {
+    "binary_id": "module-003",
+    "sha256": "064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35",
+    "bytes": 693497,
+    "defined_functions": 756,
+    "complete_function_decodes": 756,
+    "instruction_count": 336466,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 741,
+      "PARTIALLY UNDERSTOOD": 3,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 704,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 789,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 1.048
+  },
+  {
+    "binary_id": "module-004",
+    "sha256": "198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04",
+    "bytes": 574106,
+    "defined_functions": 709,
+    "complete_function_decodes": 709,
+    "instruction_count": 274200,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 692,
+      "PARTIALLY UNDERSTOOD": 5,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 641,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 15,
+    "direct_SCC_count": 729,
+    "largest_direct_SCC": 2,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.745
+  },
+  {
+    "binary_id": "module-005",
+    "sha256": "59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559",
+    "bytes": 7234687,
+    "defined_functions": 749,
+    "complete_function_decodes": 749,
+    "instruction_count": 261508,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 715,
+      "PARTIALLY UNDERSTOOD": 1,
+      "UNDERSTOOD": 33
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 641,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 11,
+    "direct_SCC_count": 765,
+    "largest_direct_SCC": 2,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.944
+  },
+  {
+    "binary_id": "new-binary-006",
+    "sha256": "5044ab7655431c0a351c91402d3f4bdf00338814d59b6325e2d4563f3f90c593",
+    "bytes": 673189,
+    "defined_functions": 754,
+    "complete_function_decodes": 754,
+    "instruction_count": 326446,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 739,
+      "PARTIALLY UNDERSTOOD": 3,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 704,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 787,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.894
+  },
+  {
+    "binary_id": "new-binary-007",
+    "sha256": "3c974e280008a90e6b10f0f20d02c8e80550cd375413a09a0f1445c4040e827d",
+    "bytes": 683786,
+    "defined_functions": 758,
+    "complete_function_decodes": 758,
+    "instruction_count": 332628,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 743,
+      "PARTIALLY UNDERSTOOD": 3,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 778,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 791,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.975
+  },
+  {
+    "binary_id": "new-binary-008",
+    "sha256": "e2f61ddf228c0bbbbcba5d6ea312976f1ff81abb240bd013d8bac50153b7fd25",
+    "bytes": 687595,
+    "defined_functions": 756,
+    "complete_function_decodes": 756,
+    "instruction_count": 333804,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 741,
+      "PARTIALLY UNDERSTOOD": 3,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 778,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 789,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.905
+  },
+  {
+    "binary_id": "new-binary-009",
+    "sha256": "e866261192dc6ae6195dfeeabd4b5df51f2f5b67300f71f40e7f3a5adb7ff661",
+    "bytes": 697387,
+    "defined_functions": 760,
+    "complete_function_decodes": 760,
+    "instruction_count": 340173,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 745,
+      "PARTIALLY UNDERSTOOD": 3,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 778,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 793,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.921
+  },
+  {
+    "binary_id": "new-binary-010",
+    "sha256": "e93bcc5913bb526dddaffa0c3a2f4e9ffae10b187ee1c9e5050cd8d7ce1466e1",
+    "bytes": 707847,
+    "defined_functions": 758,
+    "complete_function_decodes": 758,
+    "instruction_count": 343812,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 743,
+      "PARTIALLY UNDERSTOOD": 3,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 778,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 13,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 791,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.916
+  },
+  {
+    "binary_id": "new-binary-011",
+    "sha256": "a3185bb8d1236d241610e341b493aed57c58f456d5b0cbc8186518e2fe2305a2",
+    "bytes": 1381822,
+    "defined_functions": 4631,
+    "complete_function_decodes": 4631,
+    "instruction_count": 369169,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 4371,
+      "PARTIALLY UNDERSTOOD": 192,
+      "UNDERSTOOD": 68
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 887,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 2
+    },
+    "relevant_string_references": 17,
+    "direct_SCC_count": 4741,
+    "largest_direct_SCC": 33,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 1.369
+  },
+  {
+    "binary_id": "new-binary-012",
+    "sha256": "435f03585d4312b18374a85a21e8bb634be29faacf6cea3198d54a9186a17f62",
+    "bytes": 385560,
+    "defined_functions": 951,
+    "complete_function_decodes": 951,
+    "instruction_count": 172669,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 900,
+      "PARTIALLY UNDERSTOOD": 39,
+      "UNDERSTOOD": 12
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 693,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 1
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 979,
+    "largest_direct_SCC": 6,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.562
+  },
+  {
+    "binary_id": "new-binary-013",
+    "sha256": "9885a095f29f7e13b0ac512929e479d6a0115d4367c42b0479f9e1cea74fed23",
+    "bytes": 6840976,
+    "defined_functions": 752,
+    "complete_function_decodes": 752,
+    "instruction_count": 139240,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 713,
+      "PARTIALLY UNDERSTOOD": 7,
+      "UNDERSTOOD": 32
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 618,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 777,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.457
+  },
+  {
+    "binary_id": "new-binary-014",
+    "sha256": "cbf1a52983c706f419db9771d4a2c789f8c8983f9a6311a7d7f4e8aad6f670dc",
+    "bytes": 47327363,
+    "defined_functions": 752,
+    "complete_function_decodes": 752,
+    "instruction_count": 139311,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 713,
+      "PARTIALLY UNDERSTOOD": 7,
+      "UNDERSTOOD": 32
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 618,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 777,
+    "largest_direct_SCC": 7,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.822
+  },
+  {
+    "binary_id": "new-binary-015",
+    "sha256": "2dc42fe38488a96276349f6f460bd3f57ff2d228c52db043aeeac0c7c73122ea",
+    "bytes": 16184029,
+    "defined_functions": 7783,
+    "complete_function_decodes": 7783,
+    "instruction_count": 2027410,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 7135,
+      "PARTIALLY UNDERSTOOD": 275,
+      "UNDERSTOOD": 373
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 8808,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 187,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 4
+    },
+    "relevant_string_references": 566,
+    "direct_SCC_count": 7802,
+    "largest_direct_SCC": 10,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 5.882
+  },
+  {
+    "binary_id": "new-binary-016",
+    "sha256": "5f7c70bb0d6e8786209395796be4900e3cda07c77c609259ac1e2468215a3e8c",
+    "bytes": 32766847,
+    "defined_functions": 22824,
+    "complete_function_decodes": 22824,
+    "instruction_count": 10150708,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 21311,
+      "UNDERSTOOD": 1506,
+      "PARTIALLY UNDERSTOOD": 7
+    },
+    "dispatch": {
+      "HOST_INVOKE_DISPATCH:INITIAL_SLOT_CANDIDATE": 42090,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 3059,
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 9427,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 5334,
+    "direct_SCC_count": 22928,
+    "largest_direct_SCC": 25,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 28.185
+  },
+  {
+    "binary_id": "new-binary-017",
+    "sha256": "55926c9443a747428981c3692cf4884f910abb6a81a76a648c6c08b63de90271",
+    "bytes": 7036486,
+    "defined_functions": 801,
+    "complete_function_decodes": 801,
+    "instruction_count": 152246,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 765,
+      "PARTIALLY UNDERSTOOD": 4,
+      "UNDERSTOOD": 32
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 658,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 19
+    },
+    "relevant_string_references": 0,
+    "direct_SCC_count": 822,
+    "largest_direct_SCC": 6,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.557
+  },
+  {
+    "binary_id": "new-binary-018",
+    "sha256": "fb93254e35d5ebdbac1eb1c8483e4396778f34304bdbb05467190ac35f8c1b33",
+    "bytes": 32557049,
+    "defined_functions": 22565,
+    "complete_function_decodes": 22565,
+    "instruction_count": 10057203,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 21076,
+      "UNDERSTOOD": 1482,
+      "PARTIALLY UNDERSTOOD": 7
+    },
+    "dispatch": {
+      "HOST_INVOKE_DISPATCH:INITIAL_SLOT_CANDIDATE": 41801,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 3050,
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 9408,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 5265,
+    "direct_SCC_count": 22669,
+    "largest_direct_SCC": 25,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 28.457
+  },
+  {
+    "binary_id": "new-binary-019",
+    "sha256": "9c03d62e2225e70aee50ce56e3cab74c47724d4f183d37a2289d039935be172b",
+    "bytes": 32500913,
+    "defined_functions": 22534,
+    "complete_function_decodes": 22534,
+    "instruction_count": 10053867,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 21045,
+      "UNDERSTOOD": 1482,
+      "PARTIALLY UNDERSTOOD": 7
+    },
+    "dispatch": {
+      "HOST_INVOKE_DISPATCH:INITIAL_SLOT_CANDIDATE": 41592,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 3027,
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 9395,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 5224,
+    "direct_SCC_count": 22637,
+    "largest_direct_SCC": 25,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 27.873
+  },
+  {
+    "binary_id": "new-binary-020",
+    "sha256": "f3eee5e37393cdfe150acf50f83183fb384276e9545a9f69d094d9d42d94234c",
+    "bytes": 2447540,
+    "defined_functions": 21413,
+    "complete_function_decodes": 21413,
+    "instruction_count": 981050,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 19303,
+      "PARTIALLY UNDERSTOOD": 626,
+      "UNDERSTOOD": 1484
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 4093,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 8,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 5,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 1
+    },
+    "relevant_string_references": 48,
+    "direct_SCC_count": 21385,
+    "largest_direct_SCC": 35,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 3.761
+  },
+  {
+    "binary_id": "new-binary-021",
+    "sha256": "b15cfb795697d4a59b6bf40d44d9fc55b42e3a87ca5562e3ba7d32638707eb6e",
+    "bytes": 2448937,
+    "defined_functions": 21413,
+    "complete_function_decodes": 21413,
+    "instruction_count": 981887,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 19303,
+      "PARTIALLY UNDERSTOOD": 626,
+      "UNDERSTOOD": 1484
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 4093,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 8,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 5,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 1
+    },
+    "relevant_string_references": 48,
+    "direct_SCC_count": 21385,
+    "largest_direct_SCC": 35,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 3.812
+  },
+  {
+    "binary_id": "new-binary-022",
+    "sha256": "8f2f8c658a4fc0da0c19d78aafacdcba220289c27d908d82121e0a710abde96a",
+    "bytes": 2385648,
+    "defined_functions": 11744,
+    "complete_function_decodes": 11744,
+    "instruction_count": 941012,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 11199,
+      "UNDERSTOOD": 444,
+      "PARTIALLY UNDERSTOOD": 101
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 4209,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 1,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 4,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 8
+    },
+    "relevant_string_references": 245,
+    "direct_SCC_count": 11831,
+    "largest_direct_SCC": 24,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 3.393
+  },
+  {
+    "binary_id": "new-binary-023",
+    "sha256": "1ee92fb98f3d68bc8f81412dd9527215bdd6330e2cb22c0edd51bd85e8680f41",
+    "bytes": 2414644,
+    "defined_functions": 11750,
+    "complete_function_decodes": 11750,
+    "instruction_count": 966003,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 11205,
+      "UNDERSTOOD": 444,
+      "PARTIALLY UNDERSTOOD": 101
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 4209,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 1,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 4,
+      "WASM_CALL_INDIRECT:INITIAL_SLOT_CANDIDATE": 8
+    },
+    "relevant_string_references": 244,
+    "direct_SCC_count": 11837,
+    "largest_direct_SCC": 24,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 3.28
+  },
+  {
+    "binary_id": "new-binary-025",
+    "sha256": "ec248bc774ed65c1f2110f01e64d16d87993b69ea5ec39c419e666017fd21591",
+    "bytes": 32711388,
+    "defined_functions": 22793,
+    "complete_function_decodes": 22793,
+    "instruction_count": 10147795,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 21280,
+      "UNDERSTOOD": 1506,
+      "PARTIALLY UNDERSTOOD": 7
+    },
+    "dispatch": {
+      "HOST_INVOKE_DISPATCH:INITIAL_SLOT_CANDIDATE": 41881,
+      "HOST_INVOKE_DISPATCH:TYPE_FILTERED_INITIAL_CANDIDATES": 3036,
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 9414,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 5330,
+    "direct_SCC_count": 22896,
+    "largest_direct_SCC": 25,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 28.266
+  },
+  {
+    "binary_id": "new-binary-026",
+    "sha256": "38b70a9507d46b1f2b6f73583b7658cda514041e72beb7ae8708eb995d688b30",
+    "bytes": 74951979,
+    "defined_functions": 749,
+    "complete_function_decodes": 749,
+    "instruction_count": 260474,
+    "function_statuses": {
+      "STRUCTURALLY ANALYZED": 715,
+      "PARTIALLY UNDERSTOOD": 1,
+      "UNDERSTOOD": 33
+    },
+    "dispatch": {
+      "WASM_CALL_INDIRECT:TYPE_FILTERED_INITIAL_CANDIDATES": 641,
+      "WASM_CALL_INDIRECT:UNRESOLVED": 1
+    },
+    "relevant_string_references": 11,
+    "direct_SCC_count": 765,
+    "largest_direct_SCC": 2,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 2.741
+  },
+  {
+    "binary_id": "new-binary-027",
+    "sha256": "cca43692c70324b16f13136b36f7137eaff1ccb4904dfb969d220ab6a8922a9f",
+    "bytes": 63,
+    "defined_functions": 2,
+    "complete_function_decodes": 2,
+    "instruction_count": 5,
+    "function_statuses": {
+      "UNDERSTOOD": 2
+    },
+    "dispatch": {},
+    "relevant_string_references": 0,
+    "direct_SCC_count": 2,
+    "largest_direct_SCC": 1,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.035
+  },
+  {
+    "binary_id": "new-binary-028",
+    "sha256": "09e229d82c230105f939b305147a0795ac1d0bab0a482949782395e8da57464d",
+    "bytes": 31,
+    "defined_functions": 1,
+    "complete_function_decodes": 1,
+    "instruction_count": 4,
+    "function_statuses": {
+      "UNDERSTOOD": 1
+    },
+    "dispatch": {},
+    "relevant_string_references": 0,
+    "direct_SCC_count": 1,
+    "largest_direct_SCC": 1,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.041
+  },
+  {
+    "binary_id": "new-binary-029",
+    "sha256": "df59b1c85df62673c2ccfbcdf9bc1356d02f826f96cd3d6be3f2ab66b6b135f6",
+    "bytes": 43,
+    "defined_functions": 1,
+    "complete_function_decodes": 1,
+    "instruction_count": 2,
+    "function_statuses": {
+      "UNDERSTOOD": 1
+    },
+    "dispatch": {},
+    "relevant_string_references": 0,
+    "direct_SCC_count": 1,
+    "largest_direct_SCC": 1,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.034
+  },
+  {
+    "binary_id": "new-binary-030",
+    "sha256": "27d72c3b40c120ec769ef14b7ae298a0b57f10f791079b91550e24e18ad55254",
+    "bytes": 64,
+    "defined_functions": 1,
+    "complete_function_decodes": 1,
+    "instruction_count": 4,
+    "function_statuses": {
+      "UNDERSTOOD": 1
+    },
+    "dispatch": {},
+    "relevant_string_references": 0,
+    "direct_SCC_count": 1,
+    "largest_direct_SCC": 1,
+    "validation_exit": 0,
+    "unparsed_section_remainders": [],
+    "elapsed_seconds": 0.031
+  }
+]

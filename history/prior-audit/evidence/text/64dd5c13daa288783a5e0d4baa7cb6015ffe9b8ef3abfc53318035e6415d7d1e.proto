@@ -1,0 +1,11 @@
+// source: chesscom/chess/v1/game_phase.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum GamePhase {
+  GAME_PHASE_UNSPECIFIED = 0;
+  GAME_PHASE_OPENING = 1;
+  GAME_PHASE_MIDDLEGAME = 2;
+  GAME_PHASE_ENDGAME = 3;
+}

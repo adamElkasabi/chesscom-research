@@ -1,0 +1,48 @@
+{
+  "name": "chesscom/courses/v1/courses_has_user_access_to_sku_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetHasUserAccessToSkuRequest",
+      "field": [
+        {
+          "name": "chesscom_user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "sku",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetHasUserAccessToSkuResponse",
+      "field": [
+        {
+          "name": "has_access",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "GetHasUserAccessToSkuService",
+      "method": [
+        {
+          "name": "GetHasUserAccessToSku",
+          "input_type": ".chesscom.courses.v1.GetHasUserAccessToSkuRequest",
+          "output_type": ".chesscom.courses.v1.GetHasUserAccessToSkuResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

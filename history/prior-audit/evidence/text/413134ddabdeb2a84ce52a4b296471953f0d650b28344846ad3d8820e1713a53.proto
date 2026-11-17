@@ -1,0 +1,22 @@
+// source: chesscom/explanation_engine/v1/stats.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message AdvancedStatsUser {
+  repeated .chesscom.stats.v1.AdvancedStatPercentile advanced_stats_percentiles = 1;
+  repeated .chesscom.stats.v1.AdvancedStatCategoryStats category_performances = 2;
+}
+
+message AdvancedStatsOther {
+  repeated .chesscom.stats.v1.AdvancedStatCategoryGamePerformance white_player_category_performances = 1;
+  repeated .chesscom.stats.v1.AdvancedStatCategoryGamePerformance black_player_category_performances = 2;
+  repeated .chesscom.stats.v1.AdvancedStatPercentile user_advanced_stats_percentiles = 3;
+}
+
+message AdvancedStatsForGame {
+  oneof advanced_stats {
+  .chesscom.explanation_engine.v1.AdvancedStatsUser advanced_stats_user = 1;
+  .chesscom.explanation_engine.v1.AdvancedStatsOther advanced_stats_other = 2;
+  }
+}

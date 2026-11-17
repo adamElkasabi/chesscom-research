@@ -1,0 +1,6 @@
+{
+  "id": "uci-normalize-off",
+  "uciAfter": {
+    "Normalize": false
+  }
+}

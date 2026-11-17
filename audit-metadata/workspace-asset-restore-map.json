@@ -1,0 +1,74 @@
+[
+  {
+    "original_path": "extension/engines/book/book-small.json",
+    "archive_path": "preserved-workspace/extension/engines/book/book-small.json",
+    "bytes": 2140353,
+    "sha256": "e2a91c1d8bf8a5bdd7a7987cedc54998252a7c4d449b93cec39ad8e1c0e8795e"
+  },
+  {
+    "original_path": "extension/engines/cee/explanation-engine.no-simd.js",
+    "archive_path": "wasm-analysis/modules/module-001/loader.js",
+    "bytes": 131517,
+    "sha256": "ccd9626036c3d7295de6f3039daf0d3cf244924f7b2d4031b4be33ac7e2b0fb8"
+  },
+  {
+    "original_path": "extension/engines/cee/explanation-engine.no-simd.wasm",
+    "archive_path": "wasm-analysis/modules/module-001/module.wasm",
+    "bytes": 32865067,
+    "sha256": "b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28"
+  },
+  {
+    "original_path": "extension/engines/stockfish/nn-5af11540bbfe.nnue",
+    "archive_path": "preserved-workspace/extension/engines/stockfish/nn-5af11540bbfe.nnue",
+    "bytes": 40119326,
+    "sha256": "5af11540bbfefcb54e38c5dd000cab4b469dfa7599a1d55be5d2722c20a8929b"
+  },
+  {
+    "original_path": "extension/engines/stockfish/stockfish-nnue-16-no-Worker.js",
+    "archive_path": "wasm-analysis/modules/module-003/loader.js",
+    "bytes": 42981,
+    "sha256": "b2cacb67453e6be099d6e76e717b40e8d8e8b93716ec8320011c14fda62fd317"
+  },
+  {
+    "original_path": "extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm",
+    "archive_path": "wasm-analysis/modules/module-003/module.wasm",
+    "bytes": 693497,
+    "sha256": "064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35"
+  },
+  {
+    "original_path": "extension/engines/stockfish/stockfish-nnue-16-single.js",
+    "archive_path": "wasm-analysis/modules/module-004/loader.js",
+    "bytes": 26003,
+    "sha256": "b49d13f972f148f6797d968fcfc31462cb775deb2580be74f285b8fc9a8b27ef"
+  },
+  {
+    "original_path": "extension/engines/stockfish/stockfish-nnue-16-single.wasm",
+    "archive_path": "wasm-analysis/modules/module-004/module.wasm",
+    "bytes": 574106,
+    "sha256": "198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04"
+  },
+  {
+    "original_path": "extension/engines/torch-lite/torch-2-lite-single.js",
+    "archive_path": "wasm-analysis/modules/module-005/loader.js",
+    "bytes": 28254,
+    "sha256": "ac824a28f05d12c5098d92048f024f786302e45ac9e0aaa9daf975ad4a8889bf"
+  },
+  {
+    "original_path": "extension/engines/torch-lite/torch-2-lite-single.wasm",
+    "archive_path": "wasm-analysis/modules/module-005/module.wasm",
+    "bytes": 7234687,
+    "sha256": "59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559"
+  },
+  {
+    "original_path": "extension/engines/cee/explanation-engine.js",
+    "archive_path": "wasm-analysis/modules/module-002/loader.js",
+    "bytes": 131754,
+    "sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70"
+  },
+  {
+    "original_path": "extension/engines/cee/explanation-engine.wasm",
+    "archive_path": "wasm-analysis/modules/module-002/module.wasm",
+    "bytes": 32922478,
+    "sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373"
+  }
+]

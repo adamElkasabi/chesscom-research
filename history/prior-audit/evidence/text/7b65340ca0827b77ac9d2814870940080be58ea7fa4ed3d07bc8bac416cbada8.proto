@@ -1,0 +1,90 @@
+// source: chesscom/payments/v1/available_payment_method.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message AvailablePaymentMethod {
+  optional string gateway = 1;
+  optional string method = 2;
+  optional .chesscom.payments.v1.PaymentMethodConfig config = 3;
+}
+
+message PaymentMethodConfig {
+  oneof _parameters {
+  .chesscom.payments.v1.PaymentParameters parameters = 5;
+  }
+  oneof _cvv_confirmation_required {
+  bool cvv_confirmation_required = 8;
+  }
+  oneof _captcha {
+  string captcha = 9;
+  }
+  optional string id = 1;
+  optional string type = 2;
+  optional string name = 3;
+  optional string image = 4;
+  repeated .chesscom.payments.v1.AdditionalDataField additional_data_required = 6;
+  repeated .chesscom.payments.v1.StoredPaymentDetail stored_payment_details = 7;
+}
+
+message PaymentParameters {
+  oneof _environment {
+  string environment = 1;
+  }
+  oneof _integrity {
+  string integrity = 2;
+  }
+  oneof _client_id {
+  string client_id = 3;
+  }
+  oneof _key {
+  string key = 4;
+  }
+  oneof _merchant {
+  string merchant = 5;
+  }
+  oneof _origin_key {
+  string origin_key = 6;
+  }
+  oneof _sdk {
+  string sdk = 7;
+  }
+  oneof _script_src {
+  string script_src = 8;
+  }
+  oneof _merchant_id {
+  string merchant_id = 9;
+  }
+  oneof _merchant_name {
+  string merchant_name = 10;
+  }
+}
+
+message AdditionalDataField {
+  oneof _validation_rule {
+  string validation_rule = 6;
+  }
+  oneof _validation_err_msg {
+  string validation_err_msg = 7;
+  }
+  optional string name = 1;
+  optional string label = 2;
+  optional .chesscom.payments.v1.AdditionalDataFieldType type = 3;
+  optional bool required = 4;
+  repeated .chesscom.payments.v1.AdditionalDataFieldSelectOption options = 5;
+}
+
+message AdditionalDataFieldSelectOption {
+  optional string label = 1;
+  optional string value = 2;
+}
+
+message StoredPaymentDetail {
+  oneof _number {
+  string number = 2;
+  }
+  oneof _owner_name {
+  string owner_name = 3;
+  }
+  optional string id = 1;
+}

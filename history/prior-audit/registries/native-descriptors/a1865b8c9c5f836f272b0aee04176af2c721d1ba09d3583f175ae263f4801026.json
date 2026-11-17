@@ -1,0 +1,105 @@
+{
+  "name": "chesscom/explanation_engine/v1/compact_charm_inference.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "CompactCharmInference",
+      "field": [
+        {
+          "name": "model_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "ratings",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "uci_moves",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "move_probabilities",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "expected_points",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "rank_probabilities",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "strength_probabilities",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "time_taken_probabilities",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "ldw_probabilities",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "strength_rating_sensitive_probabilities",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "engine_line_move_indexes",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "move_indexes",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    },
+    {
+      "name": "CompactCharmInferences",
+      "field": [
+        {
+          "name": "inferences",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CompactCharmInference"
+        },
+        {
+          "name": "quantization_bits",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

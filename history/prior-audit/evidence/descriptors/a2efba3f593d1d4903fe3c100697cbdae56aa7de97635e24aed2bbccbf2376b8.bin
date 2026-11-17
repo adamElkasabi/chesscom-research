@@ -1,0 +1,5 @@
+
+6chesscom/explanation_engine/v1alpha/location_fan.proto#chesscom.explanation_engine.v1alphachesscom/chess/v1/square.proto7chesscom/explanation_engine/v1alpha/piece_details.proto"|
+LocationFanA
+source (21.chesscom.explanation_engine.v1alpha.PieceDetails*
+targets (2.chesscom.chess.v1.Squarebproto3

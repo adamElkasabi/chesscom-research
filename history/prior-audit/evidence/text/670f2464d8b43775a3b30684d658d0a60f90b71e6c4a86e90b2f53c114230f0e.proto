@@ -1,0 +1,91 @@
+// source: chesscom/user_properties/v1/properties_ratings.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum RatingsPropertyDefinition {
+  RATING_PROPERTY_UNSPECIFIED = 0;
+  RATING_CHESS_BLITZ = 1;
+  RATING_CHESS_BULLET = 2;
+  RATING_CHESS_DAILY = 3;
+  RATING_CHESS_RAPID = 4;
+  RATING_CHESS960_BLITZ = 5;
+  RATING_CHESS960_BULLET = 6;
+  RATING_CHESS960_DAILY = 7;
+  RATING_CHESS960_RAPID = 8;
+  RATING_CRAZYHOUSE = 9;
+  RATING_BUGHOUSE = 10;
+  RATING_KINGOFTHEHILL = 11;
+  RATING_ODDSCHESS = 12;
+  RATING_THREECHECK = 13;
+  RATING_ONE = 14;
+  RATING_CHESS_BLITZ_RD = 15;
+  RATING_CHESS_BULLET_RD = 16;
+  RATING_CHESS_DAILY_RD = 17;
+  RATING_CHESS_RAPID_RD = 18;
+  RATING_BEST = 19;
+  RATING_BEST_TYPE = 20;
+}
+
+message RatingsProperty {
+  oneof _rating_chess_blitz {
+  int32 rating_chess_blitz = 1;
+  }
+  oneof _rating_chess_bullet {
+  int32 rating_chess_bullet = 2;
+  }
+  oneof _rating_chess_daily {
+  int32 rating_chess_daily = 3;
+  }
+  oneof _rating_chess_rapid {
+  int32 rating_chess_rapid = 4;
+  }
+  oneof _rating_chess960_blitz {
+  int32 rating_chess960_blitz = 5;
+  }
+  oneof _rating_chess960_bullet {
+  int32 rating_chess960_bullet = 6;
+  }
+  oneof _rating_chess960_daily {
+  int32 rating_chess960_daily = 7;
+  }
+  oneof _rating_chess960_rapid {
+  int32 rating_chess960_rapid = 8;
+  }
+  oneof _rating_crazyhouse {
+  int32 rating_crazyhouse = 9;
+  }
+  oneof _rating_bughouse {
+  int32 rating_bughouse = 10;
+  }
+  oneof _rating_kingofthehill {
+  int32 rating_kingofthehill = 11;
+  }
+  oneof _rating_oddschess {
+  int32 rating_oddschess = 12;
+  }
+  oneof _rating_threecheck {
+  int32 rating_threecheck = 13;
+  }
+  oneof _rating_one {
+  int32 rating_one = 14;
+  }
+  oneof _rating_chess_blitz_rd {
+  double rating_chess_blitz_rd = 15;
+  }
+  oneof _rating_chess_bullet_rd {
+  double rating_chess_bullet_rd = 16;
+  }
+  oneof _rating_chess_daily_rd {
+  double rating_chess_daily_rd = 17;
+  }
+  oneof _rating_chess_rapid_rd {
+  double rating_chess_rapid_rd = 18;
+  }
+  oneof _rating_best {
+  int32 rating_best = 19;
+  }
+  oneof _rating_best_type {
+  string rating_best_type = 20;
+  }
+}

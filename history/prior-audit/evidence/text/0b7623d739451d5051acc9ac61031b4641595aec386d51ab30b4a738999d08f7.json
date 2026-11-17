@@ -1,0 +1,9 @@
+{
+  "id": "followup-hash64-softfalse",
+  "uciAfter": {
+    "Normalize": false,
+    "Hash": 64,
+    "UseSoftNodes": false
+  },
+  "saveReview": true
+}

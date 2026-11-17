@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_set_move_annotations.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/move_annotation.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureSetMoveAnnotationsRequest",
+      "field": [
+        {
+          "name": "annotation",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MoveAnnotation"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureSetMoveAnnotationsResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

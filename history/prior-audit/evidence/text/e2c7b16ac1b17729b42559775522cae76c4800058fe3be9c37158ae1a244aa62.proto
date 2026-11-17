@@ -1,0 +1,11 @@
+// source: chesscom/courses/v1/user_access_grant.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum UserAccessGrant {
+  USER_ACCESS_GRANT_UNSPECIFIED = 0;
+  USER_ACCESS_GRANT_FULL = 1;
+  USER_ACCESS_GRANT_DIAMOND_EXCLUSIVE = 2;
+  USER_ACCESS_GRANT_PREVIEW = 3;
+}

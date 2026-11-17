@@ -1,0 +1,10 @@
+// source: chesscom/explanation_engine/v1/dispose_game_point.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message DisposeGamePointRequest {
+}
+
+message DisposeGamePointResponse {
+}

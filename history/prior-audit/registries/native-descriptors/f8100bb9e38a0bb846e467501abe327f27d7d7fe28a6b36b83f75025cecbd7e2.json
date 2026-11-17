@@ -1,0 +1,57 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_validate_fen.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/result.proto"
+  ],
+  "message_type": [
+    {
+      "name": "ValidateFenRequest",
+      "field": [
+        {
+          "name": "fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "check_syntax_only",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "ValidateFenResponse",
+      "field": [
+        {
+          "name": "error",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.ResultType",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_error"
+        },
+        {
+          "name": "_result_type"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

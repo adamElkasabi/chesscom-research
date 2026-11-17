@@ -1,0 +1,244 @@
+{
+  "name": "chesscom/user_properties/v1/properties_play_stats.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PlayStatsProperty",
+      "field": [
+        {
+          "name": "avg_moves_per_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "avg_opponent_rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_opponent_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_rated_opponent_win_game",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_rated_opponent_win_game_timestamp",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_game_date",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_game_count_all",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_game_count_rated",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_game_count_unrated",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_win_count",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draw_count",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_loss_count",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1026,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PlayStatsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_avg_moves_per_game"
+        },
+        {
+          "name": "_avg_opponent_rating"
+        },
+        {
+          "name": "_highest_opponent_rating"
+        },
+        {
+          "name": "_highest_rated_opponent_win_game"
+        },
+        {
+          "name": "_highest_rated_opponent_win_game_timestamp"
+        },
+        {
+          "name": "_last_game_date"
+        },
+        {
+          "name": "_total_game_count_all"
+        },
+        {
+          "name": "_total_game_count_rated"
+        },
+        {
+          "name": "_total_game_count_unrated"
+        },
+        {
+          "name": "_total_win_count"
+        },
+        {
+          "name": "_total_draw_count"
+        },
+        {
+          "name": "_total_loss_count"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PlayStatsPropertyDefinition",
+      "value": [
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_AVG_MOVES_PER_GAME",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_AVG_OPPONENT_RATING",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_HIGHEST_OPPONENT_RATING",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_HIGHEST_RATED_OPPONENT_WIN_GAME",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_HIGHEST_RATED_OPPONENT_WIN_GAME_TIMESTAMP",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_LAST_GAME_DATE",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_TOTAL_GAME_COUNT_ALL",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_TOTAL_GAME_COUNT_RATED",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_TOTAL_GAME_COUNT_UNRATED",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_TOTAL_WIN_COUNT",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_TOTAL_DRAW_COUNT",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "PLAY_STATS_PROPERTY_DEFINITION_TOTAL_LOSS_COUNT",
+          "number": 12,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

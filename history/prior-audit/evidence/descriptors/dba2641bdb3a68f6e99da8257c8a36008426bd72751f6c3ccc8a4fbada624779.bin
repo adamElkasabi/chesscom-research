@@ -1,0 +1,7 @@
+
+7chesscom/explanation_engine/v1/feature_make_moves.protochesscom.explanation_engine.v1chesscom/chess/v1/move.proto4chesscom/explanation_engine/v1/game_point_info.proto"R
+MakeMovesRequest&
+moves (2.chesscom.chess.v1.Move
+is_played_line ("P
+MakeMovesResponse;
+line (2-.chesscom.explanation_engine.v1.GamePointInfobproto3

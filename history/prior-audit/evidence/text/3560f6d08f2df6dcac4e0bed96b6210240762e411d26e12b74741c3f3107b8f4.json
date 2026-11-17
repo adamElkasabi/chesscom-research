@@ -1,0 +1,7 @@
+{
+  "id": "normalized-Hash-64",
+  "uciAfter": {
+    "Normalize": false,
+    "Hash": 64
+  }
+}

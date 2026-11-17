@@ -1,0 +1,93 @@
+// source: chesscom/courses/v1/course_configuration.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum CourseLearnType {
+  COURSE_LEARN_TYPE_UNSPECIFIED = 0;
+  COURSE_LEARN_TYPE_ALL = 1;
+  COURSE_LEARN_TYPE_KEY = 2;
+}
+
+enum CourseConsumptionMode {
+  COURSE_CONSUMPTION_MODE_UNSPECIFIED = 0;
+  COURSE_CONSUMPTION_MODE_LEARN = 1;
+  COURSE_CONSUMPTION_MODE_READ = 2;
+  COURSE_CONSUMPTION_MODE_LEARN_WITHOUT_COACH = 3;
+}
+
+enum CourseReviewType {
+  COURSE_REVIEW_TYPE_UNSPECIFIED = 0;
+  COURSE_REVIEW_TYPE_LEARNED_ORDER = 1;
+  COURSE_REVIEW_TYPE_RANDOM_ORDER = 2;
+  COURSE_REVIEW_TYPE_MOVE_TRAINER_ORDER = 3;
+}
+
+enum CourseScheduleType {
+  COURSE_SCHEDULE_TYPE_UNSPECIFIED = 0;
+  COURSE_SCHEDULE_TYPE_SPACED_REPETITION = 1;
+  COURSE_SCHEDULE_TYPE_CYCLICAL = 2;
+  COURSE_SCHEDULE_TYPE_CUSTOM = 3;
+}
+
+enum CourseReviewFailedBehavior {
+  COURSE_REVIEW_FAILED_BEHAVIOR_UNSPECIFIED = 0;
+  COURSE_REVIEW_FAILED_BEHAVIOR_MOVE_TO_NEXT_CYCLE = 1;
+  COURSE_REVIEW_FAILED_BEHAVIOR_REPEAT_CURRENT_CYCLE = 2;
+  COURSE_REVIEW_FAILED_BEHAVIOR_BACK_TO_FIRST_CYCLE = 3;
+}
+
+message CourseConfiguration {
+  oneof _show_video {
+  bool show_video = 1;
+  }
+  oneof _language {
+  string language = 2;
+  }
+  oneof _learn_type {
+  .chesscom.courses.v1.CourseLearnType learn_type = 3;
+  }
+  oneof _review_type {
+  .chesscom.courses.v1.CourseReviewType review_type = 4;
+  }
+  oneof _repetition_amount {
+  int32 repetition_amount = 5;
+  }
+  oneof _depth {
+  int32 depth = 6;
+  }
+  oneof _schedule_type {
+  .chesscom.courses.v1.CourseScheduleType schedule_type = 7;
+  }
+  oneof _schedule {
+  .chesscom.courses.v1.SpacedRepetitionSchedule schedule = 8;
+  }
+  oneof _auto_next {
+  bool auto_next = 9;
+  }
+  oneof _quiz_time_limit {
+  bool quiz_time_limit = 10;
+  }
+  oneof _timer {
+  int32 timer = 11;
+  }
+  oneof _assisted_quiz {
+  bool assisted_quiz = 12;
+  }
+  oneof _review_failed_behavior {
+  .chesscom.courses.v1.CourseReviewFailedBehavior review_failed_behavior = 13;
+  }
+  oneof _assisted_quiz_pause_to_read {
+  bool assisted_quiz_pause_to_read = 14;
+  }
+  oneof _learn_mode {
+  .chesscom.courses.v1.CourseConsumptionMode learn_mode = 15;
+  }
+  oneof _learn_mode_set_by_user {
+  bool learn_mode_set_by_user = 16;
+  }
+}
+
+message SpacedRepetitionSchedule {
+  repeated int32 seconds_amount = 1;
+}

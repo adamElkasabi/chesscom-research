@@ -1,0 +1,144 @@
+{
+  "name": "chesscom/flair/v1/flair_service.proto",
+  "package": "chesscom.flair.v1",
+  "message_type": [
+    {
+      "name": "ListFlairSelectionRequest",
+      "options": {}
+    },
+    {
+      "name": "ListFlairSelectionResponse",
+      "field": [
+        {
+          "name": "flair_selection",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.FlairSelectionItem"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SelectFlairRequest",
+      "field": [
+        {
+          "name": "flair_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SelectFlairResponse",
+      "options": {}
+    },
+    {
+      "name": "RemoveFlairRequest",
+      "options": {}
+    },
+    {
+      "name": "RemoveFlairResponse",
+      "options": {}
+    },
+    {
+      "name": "GetUserFlairRequest",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_id"
+        }
+      ]
+    },
+    {
+      "name": "GetUserFlairResponse",
+      "field": [
+        {
+          "name": "user_flair",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.UserFlair"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListUserFlairRequest",
+      "field": [
+        {
+          "name": "user_ids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListUserFlairResponse",
+      "field": [
+        {
+          "name": "user_flair",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.UserFlair"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "FlairService",
+      "method": [
+        {
+          "name": "ListFlairSelection",
+          "input_type": ".chesscom.flair.v1.ListFlairSelectionRequest",
+          "output_type": ".chesscom.flair.v1.ListFlairSelectionResponse",
+          "options": {}
+        },
+        {
+          "name": "SelectFlair",
+          "input_type": ".chesscom.flair.v1.SelectFlairRequest",
+          "output_type": ".chesscom.flair.v1.SelectFlairResponse",
+          "options": {}
+        },
+        {
+          "name": "RemoveFlair",
+          "input_type": ".chesscom.flair.v1.RemoveFlairRequest",
+          "output_type": ".chesscom.flair.v1.RemoveFlairResponse",
+          "options": {}
+        },
+        {
+          "name": "GetUserFlair",
+          "input_type": ".chesscom.flair.v1.GetUserFlairRequest",
+          "output_type": ".chesscom.flair.v1.GetUserFlairResponse",
+          "options": {}
+        },
+        {
+          "name": "ListUserFlair",
+          "input_type": ".chesscom.flair.v1.ListUserFlairRequest",
+          "output_type": ".chesscom.flair.v1.ListUserFlairResponse",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

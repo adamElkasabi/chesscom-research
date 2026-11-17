@@ -1,0 +1,137 @@
+[
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.js",
+    "raw_body_sha256": "9e8d3992427897e0c825dafab8a7e91041911c581ebbc8dd52ec413c50030e61",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/14feb30249a8ae14ad95bcfdc466f8eedf0362c8f59d9dea287a15c67e5dcef6.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js",
+    "raw_body_sha256": "da1dc3d4b21bf1e50b3f12a6a738fcfefbf86518dc998e5a429c40cc97c29aab",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/bad6768052020bbcff9934ef3429926d881df3631c6c447d7cde704268cd71a3.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1.js",
+    "raw_body_sha256": "2bb3ff7cc0e87c32797ed3a41b91403d10cfb5598704aa5094612dadc290e648",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/09b08de8a8ecc9be65a12c7327ea98ac842d5725578971323d3376367b622e91.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-Worker.js",
+    "raw_body_sha256": "b2cacb67453e6be099d6e76e717b40e8d8e8b93716ec8320011c14fda62fd317",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/a761e8db765777342e325a0987c424c8ae557f3d5d3978b37b77cadb702405df.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-simd.js",
+    "raw_body_sha256": "1bc27dd493cda5c172498c50590aed2f4fbd13132d9a1a6e784b8b7e528b2d43",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/8e93182bdddda9fbb996c6dcf102066efa54d94a4d99cafaa7972be5f736b768.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-single.js",
+    "raw_body_sha256": "b49d13f972f148f6797d968fcfc31462cb775deb2580be74f285b8fc9a8b27ef",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/8f5ed818d24cc5746e3b8432bdfbecc70ff0a5620a2535bd7947dcd5a9070e48.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.js",
+    "raw_body_sha256": "65d4cd6f066439236eb1153f545c867aeb6a9346bc6d0693d6b643fedba134f2",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/3f6108c1b3ac08bdadc86ff49fe79a242bcfa1e196d11bc888c100b061fa08a1.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish-single.js",
+    "raw_body_sha256": "9690014e59e8658dbd2912081a0447db6edd40366a4af99701336773955187c7",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/b90f8d2ff3803d26038efe5ad5d462f9ab93abb42d0132b6e8d2cbc3f55644ff.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/stockfish.js",
+    "raw_body_sha256": "2a9661e708b82108c4f17405a8a29093c99bebf5b50ace7fb0d244a22bedb8ec",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/a376d71a98687afdbe57ac4b9ab10057d3b0b9d7284a7ababa10fe9f1e02dc79.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/torch-lite.js",
+    "raw_body_sha256": "baaed8e88d4c05d47de70808692ad41ae1e4b6d3bdc5b8274d6b49ec83c333b4",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/f00936f87bbca0202fccf6d5153e88fc3afed13bb76d8c50412c7808b896bbed.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/engine/torch.js",
+    "raw_body_sha256": "cc7e423c7c09da0473c7fa9a659724bbe6c45b3f6b7330da09ac290487076a6b",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/26071fabb8159f511a6333d58f08351fd11eb1e095a5d06e34acc1f2c1f43186.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js",
+    "raw_body_sha256": "a84785c59cc77cba24b3d8dde0ed88f33b44fd1a7c055a74a3712656a01aca51",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/497b14e815bc1729430b10baec52f0060bf99856191134ac7600d5297ab480d9.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js",
+    "raw_body_sha256": "8b86e2b23081defc88218797574b523f72b4054b51a02dac4e499773356940ba",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/402a34a92c6e6438ee1b0eaec5983aec1c334827beec6b670cb47aaee51d9699.js"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/vendor/explanation-engine/explanation-engine.js",
+    "raw_body_sha256": "ca8ed23f85266c99eceede7d372c0c712cebe42a17b52540e8bc475eb6355fd2",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/3bc8ad3c6bd87cb40ac0ba8cf45e828af419516e525928b5746e2a3bd4a4d886.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js",
+    "raw_body_sha256": "b6fc95ea2a23af7f2a3defae84f9279648c99a5412dd427c6822c66fbc204ac1",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/e25e3f9212587b3f23dad797f143f80a69dac20d7f2b08549f8b4f5cb66970d9.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js",
+    "raw_body_sha256": "ac824a28f05d12c5098d92048f024f786302e45ac9e0aaa9daf975ad4a8889bf",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/0489cd9c2f2310dff46b836a5566cfb3a88eb54876bfb33b941f75ea8b418703.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.js",
+    "raw_body_sha256": "5bdc8a36772944d4af938ae744d9e4c493780b49a3e13bd5b6180930b7840cc2",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/462ac0c51f5e9e6e125ffd4eae0046bb9bd65a34a4f49d8a8cbb4f226616c7f6.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js",
+    "raw_body_sha256": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/bbcadbd92623f2f53f46db134d59ae07a67d03819dc7c8cd0c4436dc78c6d64f.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.js",
+    "raw_body_sha256": "ccd9626036c3d7295de6f3039daf0d3cf244924f7b2d4031b4be33ac7e2b0fb8",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/9bd415222d81ecf8a2323e2940ad4d0a03aef27c8a92a42fc7caf8395deafa6a.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.js",
+    "raw_body_sha256": "fac6c3240d7414c94e18781715058fd04726f5422ef2294be30c8e7bc016408d",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/9e8705b94d714f7f8f97a01eb7a197fc517f61e691ce17e47247d2ce79751732.js"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js",
+    "raw_body_sha256": "726f787abedff0fb048199ae7856175c260a03237f28af5bf98b8fb329f5d263",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/3efeeb8f0979a3440641a1db13900b9cfde30d83d6cd90ec2b52cf99b377e108.js"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js",
+    "raw_body_sha256": "a647b7de1dd4d8f0967084572353ba111093cc8161155afb1550825b974bb40c",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/38fa126852a92b8f3529ab1cf856958924da13fbc2f8268f28a0aaf6825e274b.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/default/explanation-engine.js",
+    "raw_body_sha256": "8b86e2b23081defc88218797574b523f72b4054b51a02dac4e499773356940ba",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/00ee3f14696d50b53aa1c16a18d9742293b4b6154a272e93597d3f53f3c8e3b1.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/no-simd/explanation-engine.js",
+    "raw_body_sha256": "15ec06bff998637a32f563cec051a63b1576ac9b6f32ea096eec26ee850e0b42",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/7f6669cb4d0a1762879901807c6df7944069ee7be93ca56b3fb40316897f1e4b.js"
+  },
+  {
+    "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js",
+    "raw_body_sha256": "1957f3e772151cc19da2d12c60ab3a7beb1ddbda3f3efd38ae9231a8d223017f",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/671eb2e2ee6371b6417aa8471dfe76b571053fa8796610be08d4ba6469045f74.js"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.js.map",
+    "raw_body_sha256": "6f3ec9970bccaab98ac627e9da56cdd385acd2c0940f419d92975d2e0d35d57f",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/3f10942e59af0b9208f89ae0e23b2689e41aa5520a2954af77d3e5a2aa70717b.map.json"
+  },
+  {
+    "url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "raw_body_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "scrubbed_path": "website-audit/wasm-deep-follow-up/retrieved-text/e8fd33e85004c3d593876b48113014c444f95f98f109abe2efcba4149c91fd4b.map.json"
+  }
+]

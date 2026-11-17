@@ -1,0 +1,63 @@
+{
+  "name": "chesscom/payments/v1/membership_product_details.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "MembershipProductDetails",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "image_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "code",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "level",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "short_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "max_applicable_accounts",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "displayed_premium_features",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.permissions.v1.PremiumFeature"
+        },
+        {
+          "name": "displayed_premium_features_v2",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.premium_access.v1.PremiumFeature"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,11 @@
+// source: chesscom/courses/v1/course_coach_comment.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseCoachComment {
+  oneof _speech {
+  .chesscom.courses.v1.CourseCoachSpeechItem speech = 2;
+  }
+  optional string text = 1;
+}

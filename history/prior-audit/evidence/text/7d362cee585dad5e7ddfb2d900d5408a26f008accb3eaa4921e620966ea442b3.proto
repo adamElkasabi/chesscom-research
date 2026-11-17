@@ -1,0 +1,7 @@
+// source: chesscom/proto_options/user_activity_connector/v1/options.proto
+// syntax: proto3
+
+package chesscom.proto_options.user_activity_connector.v1;
+
+message UserActivityConnectorDefinition {
+}

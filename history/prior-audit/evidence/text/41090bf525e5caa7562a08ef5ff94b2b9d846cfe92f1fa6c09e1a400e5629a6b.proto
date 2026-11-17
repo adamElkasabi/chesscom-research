@@ -1,0 +1,8 @@
+// source: chesscom/proto_options/configurator/v1/configurator_options.proto
+// syntax: proto3
+
+package chesscom.proto_options.configurator.v1;
+
+message ConfiguratorMessageOptions {
+  optional bool configurable = 1;
+}

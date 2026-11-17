@@ -1,0 +1,346 @@
+{
+  "name": "chesscom/user_properties/v1/properties_predictive.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "PredictiveProperty",
+      "field": [
+        {
+          "name": "churn_risk_30d",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "predictive_scores_updated_at",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "churn_risk_30d_generated_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "churn_risk_30d_model_version",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "activation_7d",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzle_slump_7d",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "lessons_progression_7d",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "review_upsell_30d",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "return_7d",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "trial_start_7d",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "trial_conversion_30d",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "subscription_conversion_30d",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "annual_renewal_365d",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "nurr_7d",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "curr_14d",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "lesson_adoption_30d",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "reactivation_7d",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "trial_propensity_score",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 17,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1008,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.PredictivePropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_churn_risk_30d"
+        },
+        {
+          "name": "_predictive_scores_updated_at"
+        },
+        {
+          "name": "_churn_risk_30d_generated_at"
+        },
+        {
+          "name": "_churn_risk_30d_model_version"
+        },
+        {
+          "name": "_activation_7d"
+        },
+        {
+          "name": "_puzzle_slump_7d"
+        },
+        {
+          "name": "_lessons_progression_7d"
+        },
+        {
+          "name": "_review_upsell_30d"
+        },
+        {
+          "name": "_return_7d"
+        },
+        {
+          "name": "_trial_start_7d"
+        },
+        {
+          "name": "_trial_conversion_30d"
+        },
+        {
+          "name": "_subscription_conversion_30d"
+        },
+        {
+          "name": "_annual_renewal_365d"
+        },
+        {
+          "name": "_nurr_7d"
+        },
+        {
+          "name": "_curr_14d"
+        },
+        {
+          "name": "_lesson_adoption_30d"
+        },
+        {
+          "name": "_reactivation_7d"
+        },
+        {
+          "name": "_trial_propensity_score"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PredictivePropertyDefinition",
+      "value": [
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_CHURN_RISK_30D",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_SCORES_UPDATED_AT",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_CHURN_RISK_30D_GENERATED_AT",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_CHURN_RISK_30D_MODEL_VERSION",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_ACTIVATION_7D",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_PUZZLE_SLUMP_7D",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_LESSONS_PROGRESSION_7D",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_REVIEW_UPSELL_30D",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_RETURN_7D",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_TRIAL_START_7D",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_TRIAL_CONVERSION_30D",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_SUBSCRIPTION_CONVERSION_30D",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_ANNUAL_RENEWAL_365D",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_NURR_7D",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_CURR_14D",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_LESSON_ADOPTION_30D",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_REACTIVATION_7D",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "PREDICTIVE_PROPERTY_DEFINITION_TRIAL_PROPENSITY_SCORE",
+          "number": 18,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

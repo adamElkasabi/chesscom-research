@@ -1,0 +1,22 @@
+{
+  "name": "chesscom/text_item/v1alpha/train_goal_text_context.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "dependency": [
+    "chesscom/train/v1/train_challenge.proto"
+  ],
+  "message_type": [
+    {
+      "name": "TrainGoalTextContext",
+      "field": [
+        {
+          "name": "challenge",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainChallenge"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

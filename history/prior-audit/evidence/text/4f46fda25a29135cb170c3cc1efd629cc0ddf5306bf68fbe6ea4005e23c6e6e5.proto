@@ -1,0 +1,24 @@
+// source: chesscom/explanation_engine/v1/feature_game_review.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GameReviewRequest {
+  oneof _stats {
+  .chesscom.explanation_engine.v1.AdvancedStatsForGame stats = 1;
+  }
+  oneof _starting_game_point {
+  int32 starting_game_point = 2;
+  }
+  repeated .chesscom.explanation_engine.v1.GameReviewRequest.UciOptionsEntry uci_options = 3;
+  optional bool include_train_takeaways = 4;
+  optional bool can_access_locked_takeaways = 5;
+  message UciOptionsEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+}
+
+message GameReviewResponse {
+  optional .chesscom.explanation_engine.v1.GameReview game_review = 1;
+}

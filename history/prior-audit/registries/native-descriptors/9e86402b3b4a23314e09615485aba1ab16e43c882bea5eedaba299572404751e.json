@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_add_charm_inference.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/charm_inference.proto"
+  ],
+  "message_type": [
+    {
+      "name": "AddCharmInferenceRequest",
+      "field": [
+        {
+          "name": "results",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmInferenceResult"
+        }
+      ]
+    },
+    {
+      "name": "AddCharmInferenceResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

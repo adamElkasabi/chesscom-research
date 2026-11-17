@@ -1,0 +1,64 @@
+{
+  "name": "chesscom/explanation_engine/v1/language.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "Locale",
+      "value": [
+        {
+          "name": "LOCALE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "LOCALE_DE_DE",
+          "number": 1
+        },
+        {
+          "name": "LOCALE_EN_US",
+          "number": 2
+        },
+        {
+          "name": "LOCALE_ES_ES",
+          "number": 3
+        },
+        {
+          "name": "LOCALE_FR_FR",
+          "number": 4
+        },
+        {
+          "name": "LOCALE_IT_IT",
+          "number": 5
+        },
+        {
+          "name": "LOCALE_PL_PL",
+          "number": 6
+        },
+        {
+          "name": "LOCALE_PT_PT",
+          "number": 7
+        },
+        {
+          "name": "LOCALE_RU_RU",
+          "number": 8
+        },
+        {
+          "name": "LOCALE_TR_TR",
+          "number": 9
+        },
+        {
+          "name": "LOCALE_AR_SA",
+          "number": 10
+        },
+        {
+          "name": "LOCALE_ID_ID",
+          "number": 11
+        },
+        {
+          "name": "LOCALE_KO_KR",
+          "number": 12
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

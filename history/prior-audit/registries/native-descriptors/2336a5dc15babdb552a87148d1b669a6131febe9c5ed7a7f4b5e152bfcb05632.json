@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_cee_version.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/api/v1/semantic_version.proto"
+  ],
+  "message_type": [
+    {
+      "name": "CeeVersionRequest"
+    },
+    {
+      "name": "CeeVersionResponse",
+      "field": [
+        {
+          "name": "cee_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion"
+        },
+        {
+          "name": "cee_git_sha",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "definitions_git_sha",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "uci_version",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

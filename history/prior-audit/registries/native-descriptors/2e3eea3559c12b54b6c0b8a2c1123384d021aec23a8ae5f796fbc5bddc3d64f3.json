@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/train/v1/train_challenge_bucket.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainChallengeBucket",
+      "value": [
+        {
+          "name": "TRAIN_CHALLENGE_BUCKET_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_CHALLENGE_BUCKET_FREE_PIECES",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_CHALLENGE_BUCKET_TACTICS",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_CHALLENGE_BUCKET_LEADS_TO",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_CHALLENGE_BUCKET_BRILLIANT",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

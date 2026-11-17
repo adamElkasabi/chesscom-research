@@ -1,0 +1,124 @@
+{
+  "name": "chesscom/user_properties/v1/properties_fair_play.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "FairPlayProperty",
+      "field": [
+        {
+          "name": "cheat_report_count",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_cheat_report_date",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "previous_chance_user",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "next_chance_user",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "second_chance_tag",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1038,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.FairPlayPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_cheat_report_count"
+        },
+        {
+          "name": "_last_cheat_report_date"
+        },
+        {
+          "name": "_previous_chance_user"
+        },
+        {
+          "name": "_next_chance_user"
+        },
+        {
+          "name": "_second_chance_tag"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "FairPlayPropertyDefinition",
+      "value": [
+        {
+          "name": "FAIR_PLAY_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CHEAT_REPORT_COUNT",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "LAST_CHEAT_REPORT_DATE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "PREVIOUS_CHANCE_USER",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "NEXT_CHANCE_USER",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "SECOND_CHANCE_TAG",
+          "number": 5,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

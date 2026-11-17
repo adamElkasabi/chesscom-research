@@ -1,0 +1,59 @@
+// source: chesscom/courses/v1/courses_shop_service.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message GetCourseProductListRequest {
+  oneof _pagination {
+  .chesscom.courses.v1.CoursesShopPagination pagination = 1;
+  }
+  oneof _search_query {
+  string search_query = 2;
+  }
+  oneof _color {
+  .chesscom.chess.v1.Color color = 5;
+  }
+  oneof _price_range_in_cents {
+  .chesscom.courses_common.v1.Range price_range_in_cents = 8;
+  }
+  oneof _exclude_owned_courses {
+  bool exclude_owned_courses = 9;
+  }
+  oneof _user_rating {
+  int32 user_rating = 10;
+  }
+  oneof _retrieve_mode {
+  .chesscom.courses.v1.ProductListRetrieveMode retrieve_mode = 11;
+  }
+  oneof _price_range {
+  .chesscom.courses.v1.PriceRange price_range = 12;
+  }
+  oneof _fen {
+  string fen = 13;
+  }
+  oneof _sort {
+  .chesscom.courses.v1.ShopSortOption sort = 15;
+  }
+  oneof _include_only_owned_courses {
+  bool include_only_owned_courses = 16;
+  }
+  repeated .chesscom.courses_common.v1.CourseGameAspectType game_aspects = 3;
+  repeated .chesscom.courses_common.v1.Range elo_ranges = 4;
+  repeated .chesscom.courses.v1.CourseTag tags = 6;
+  optional string country_code = 7;
+  repeated .chesscom.courses.v1.CourseCustomTag course_custom_tags = 14;
+}
+
+message GetCourseProductListResponse {
+  optional int32 total = 1;
+  repeated .chesscom.courses.v1.CourseProduct product_list = 2;
+}
+
+message GetShopMetadataRequest {
+  optional string country_code = 1;
+}
+
+message GetShopMetadataResponse {
+  optional int32 number_of_courses_on_sale = 1;
+  optional .chesscom.api.v1.Money max_price = 2;
+}

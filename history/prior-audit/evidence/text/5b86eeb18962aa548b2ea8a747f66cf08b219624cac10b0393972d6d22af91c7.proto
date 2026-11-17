@@ -1,0 +1,99 @@
+// source: chesscom/settings/v1/settings_notification.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message NotificationSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean auto_track_content = 1;
+  .chesscom.settings.v1.NotificationSetting.NotificationWebSetting web = 2;
+  .chesscom.settings.v1.NotificationSetting.NotificationMobileSetting mobile = 3;
+  .chesscom.settings.v1.NotificationSetting.NotificationEmailSetting email = 4;
+  .chesscom.settings.v1.SettingValue.Boolean show_internal_ads = 5;
+  }
+  message NotificationWebSetting {
+    oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean my_turn_to_move = 1;
+  .chesscom.settings.v1.SettingValue.Boolean game_event = 2;
+  .chesscom.settings.v1.SettingValue.Boolean new_message = 3;
+  .chesscom.settings.v1.SettingValue.Boolean new_friend_request = 4;
+  .chesscom.settings.v1.SettingValue.Boolean new_social_trophy = 5;
+  .chesscom.settings.v1.SettingValue.Boolean new_user_comment = 6;
+  .chesscom.settings.v1.SettingValue.Boolean new_content = 7;
+  .chesscom.settings.v1.SettingValue.Boolean new_comment = 8;
+  .chesscom.settings.v1.SettingValue.Boolean hero_playing = 9;
+  .chesscom.settings.v1.SettingValue.Boolean chess_tv = 10;
+  .chesscom.settings.v1.SettingValue.Boolean lesson_quota = 11;
+  .chesscom.settings.v1.SettingValue.Boolean vote_chess = 12;
+  .chesscom.settings.v1.SettingValue.Boolean news_and_announcements = 13;
+  .chesscom.settings.v1.SettingValue.Boolean lesson_and_practice = 14;
+  .chesscom.settings.v1.SettingValue.Boolean friend_activity_updates = 15;
+  .chesscom.settings.v1.SettingValue.Boolean streaks_reminders = 16;
+  .chesscom.settings.v1.SettingValue.Boolean leagues_reminders = 17;
+  .chesscom.settings.v1.SettingValue.Boolean contact_match = 18;
+  .chesscom.settings.v1.SettingValue.Boolean puzzle_reminders = 19;
+  .chesscom.settings.v1.SettingValue.Boolean game_review_reminders = 20;
+  .chesscom.settings.v1.SettingValue.Boolean coach_reminders = 21;
+  .chesscom.settings.v1.SettingValue.Boolean special_offers = 23;
+  .chesscom.settings.v1.SettingValue.Boolean courses_reminders = 24;
+  .chesscom.settings.v1.SettingValue.Boolean community_updates = 25;
+    }
+  }
+  message NotificationMobileSetting {
+    oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean my_turn_to_move = 1;
+  .chesscom.settings.v1.SettingValue.Boolean game_event = 2;
+  .chesscom.settings.v1.SettingValue.Boolean new_message = 3;
+  .chesscom.settings.v1.SettingValue.Boolean new_friend_request = 4;
+  .chesscom.settings.v1.SettingValue.Boolean new_social_trophy = 5;
+  .chesscom.settings.v1.SettingValue.Boolean new_user_comment = 6;
+  .chesscom.settings.v1.SettingValue.Boolean new_content = 7;
+  .chesscom.settings.v1.SettingValue.Boolean new_comment = 8;
+  .chesscom.settings.v1.SettingValue.Boolean hero_playing = 9;
+  .chesscom.settings.v1.SettingValue.Boolean chess_tv = 10;
+  .chesscom.settings.v1.SettingValue.Boolean lesson_quota = 11;
+  .chesscom.settings.v1.SettingValue.Boolean vote_chess = 12;
+  .chesscom.settings.v1.SettingValue.Boolean news_and_announcements = 13;
+  .chesscom.settings.v1.SettingValue.Boolean lesson_and_practice = 14;
+  .chesscom.settings.v1.SettingValue.Boolean friend_activity_updates = 15;
+  .chesscom.settings.v1.SettingValue.Boolean recommended_match = 16;
+  .chesscom.settings.v1.SettingValue.Boolean puzzle_reminder = 17;
+  .chesscom.settings.v1.SettingValue.Boolean streaks_reminders = 18;
+  .chesscom.settings.v1.SettingValue.Boolean leagues_reminders = 19;
+  .chesscom.settings.v1.SettingValue.Boolean contact_match = 20;
+  .chesscom.settings.v1.SettingValue.Boolean game_review_reminders = 21;
+  .chesscom.settings.v1.SettingValue.Boolean coach_reminders = 22;
+  .chesscom.settings.v1.SettingValue.Boolean special_offers = 23;
+  .chesscom.settings.v1.SettingValue.Boolean courses_reminders = 24;
+  .chesscom.settings.v1.SettingValue.Boolean community_updates = 25;
+    }
+  }
+  message NotificationEmailSetting {
+    oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean my_turn_to_move = 1;
+  .chesscom.settings.v1.SettingValue.Boolean game_event = 2;
+  .chesscom.settings.v1.SettingValue.Boolean new_message = 3;
+  .chesscom.settings.v1.SettingValue.Boolean new_friend_request = 4;
+  .chesscom.settings.v1.SettingValue.Boolean new_social_trophy = 5;
+  .chesscom.settings.v1.SettingValue.Boolean new_user_comment = 6;
+  .chesscom.settings.v1.SettingValue.Boolean new_content = 7;
+  .chesscom.settings.v1.SettingValue.Boolean new_comment = 8;
+  .chesscom.settings.v1.SettingValue.Boolean hero_playing = 9;
+  .chesscom.settings.v1.SettingValue.Boolean chess_tv = 10;
+  .chesscom.settings.v1.SettingValue.Boolean lesson_quota = 11;
+  .chesscom.settings.v1.SettingValue.Boolean vote_chess = 12;
+  .chesscom.settings.v1.SettingValue.Boolean news_and_announcements = 13;
+  .chesscom.settings.v1.SettingValue.Boolean lesson_and_practice = 14;
+  .chesscom.settings.v1.SettingValue.Boolean friend_activity_updates = 15;
+  .chesscom.settings.v1.SettingValue.Boolean puzzle_reminder = 16;
+  .chesscom.settings.v1.SettingValue.Boolean streaks_reminders = 17;
+  .chesscom.settings.v1.SettingValue.Boolean leagues_reminders = 18;
+  .chesscom.settings.v1.SettingValue.Boolean contact_match = 19;
+  .chesscom.settings.v1.SettingValue.Boolean game_review_reminders = 21;
+  .chesscom.settings.v1.SettingValue.Boolean coach_reminders = 22;
+  .chesscom.settings.v1.SettingValue.Boolean special_offers = 23;
+  .chesscom.settings.v1.SettingValue.Boolean courses_reminders = 24;
+  .chesscom.settings.v1.SettingValue.Boolean community_updates = 25;
+    }
+  }
+}

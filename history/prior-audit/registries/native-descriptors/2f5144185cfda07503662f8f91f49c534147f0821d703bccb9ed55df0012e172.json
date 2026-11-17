@@ -1,0 +1,13 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_enable_test_mode.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InternalFeatureEnableTestModeRequest"
+    },
+    {
+      "name": "InternalFeatureEnableTestModeResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

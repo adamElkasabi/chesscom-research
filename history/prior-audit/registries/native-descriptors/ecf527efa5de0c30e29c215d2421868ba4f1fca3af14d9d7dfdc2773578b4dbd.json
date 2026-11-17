@@ -1,0 +1,115 @@
+{
+  "name": "chesscom/explanation_engine/v1/charm_inference.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/engine/v1/engine.proto"
+  ],
+  "message_type": [
+    {
+      "name": "MovePrediction",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "uci_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "probability",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        }
+      ]
+    },
+    {
+      "name": "CharmInferenceResult",
+      "field": [
+        {
+          "name": "model_key",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "elo",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "moves",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.MovePrediction"
+        },
+        {
+          "name": "expected_points",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "rank_probabilities",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "strength_probabilities",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "time_taken_probabilities",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "ldw_probabilities",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "strength_rating_sensitive_probabilities",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "engine_line_uci_moves",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "engine",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Engine",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_engine"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

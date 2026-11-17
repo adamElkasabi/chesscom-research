@@ -1,0 +1,394 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_state.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/charm_inference_code.proto",
+    "chesscom/explanation_engine/v1/coach_state.proto",
+    "chesscom/explanation_engine/v1/compact_charm_inference.proto",
+    "chesscom/explanation_engine/v1/game_settings.proto",
+    "chesscom/explanation_engine/v1/move_annotation.proto",
+    "chesscom/explanation_engine/v1/simple_charm_inference.proto",
+    "chesscom/chess/v1/game.proto",
+    "chesscom/api/v1/semantic_version.proto",
+    "chesscom/engine/v1/engine.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GameState",
+      "field": [
+        {
+          "name": "game_state_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion"
+        },
+        {
+          "name": "game_tree",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameTree",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "game_settings",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameSettings"
+        },
+        {
+          "name": "game_metadata",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameMetadata"
+        },
+        {
+          "name": "default_eval_source_engine",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.engine.v1.Engine"
+        },
+        {
+          "name": "coach_state",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CoachState"
+        },
+        {
+          "name": "charm_inferences",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState.CharmInferencesEntry",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "annotations",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState.AnnotationsEntry"
+        },
+        {
+          "name": "compact_charm_inferences",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState.CompactCharmInferencesEntry",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "compact_game_tree",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CompactGameTree"
+        },
+        {
+          "name": "quantized_charm_inferences",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState.QuantizedCharmInferencesEntry",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "charm_inference_codes",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.CharmInferenceCodes"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "CharmInferencesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.SimpleCharmInferences"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "AnnotationsEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.MoveAnnotation"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "CompactCharmInferencesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.CompactCharmInferences"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        },
+        {
+          "name": "QuantizedCharmInferencesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.CompactCharmInferences"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "GameTree",
+      "field": [
+        {
+          "name": "nodes",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameTreeNode"
+        }
+      ]
+    },
+    {
+      "name": "GameTreeNode",
+      "field": [
+        {
+          "name": "initial_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "legal_move_index",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "is_played",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_explicitly_unscored",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "score",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_SINT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "depth",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_SINT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "additional_children",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_SINT32"
+        },
+        {
+          "name": "time_on_clock_deciseconds",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "score_is_weak",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "manually_added",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "board_state"
+        },
+        {
+          "name": "_score"
+        },
+        {
+          "name": "_depth"
+        },
+        {
+          "name": "_time_on_clock_deciseconds"
+        }
+      ]
+    },
+    {
+      "name": "CompactGameTree",
+      "field": [
+        {
+          "name": "initial_fen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "legal_move_indexes",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "node_flags",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BYTES"
+        },
+        {
+          "name": "additional_children",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_SINT32"
+        },
+        {
+          "name": "scores",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_SINT32"
+        },
+        {
+          "name": "depths",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_SINT32"
+        },
+        {
+          "name": "clocks_deciseconds",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_UINT32"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "NodeFlag",
+      "value": [
+        {
+          "name": "NODE_FLAG_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "NODE_FLAG_PLAYED",
+          "number": 1
+        },
+        {
+          "name": "NODE_FLAG_EXPLICITLY_UNSCORED",
+          "number": 2
+        },
+        {
+          "name": "NODE_FLAG_SCORE_IS_WEAK",
+          "number": 4
+        },
+        {
+          "name": "NODE_FLAG_MANUALLY_ADDED",
+          "number": 8
+        },
+        {
+          "name": "NODE_FLAG_HAS_SCORE",
+          "number": 16
+        },
+        {
+          "name": "NODE_FLAG_HAS_DEPTH",
+          "number": 32
+        },
+        {
+          "name": "NODE_FLAG_HAS_ADDITIONAL_CHILDREN",
+          "number": 64
+        },
+        {
+          "name": "NODE_FLAG_HAS_CLOCK",
+          "number": 128
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

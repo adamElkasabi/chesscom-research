@@ -1,0 +1,9 @@
+// source: chesscom/courses_common/v1/range.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message Range {
+  optional int32 from = 1;
+  optional int32 to = 2;
+}

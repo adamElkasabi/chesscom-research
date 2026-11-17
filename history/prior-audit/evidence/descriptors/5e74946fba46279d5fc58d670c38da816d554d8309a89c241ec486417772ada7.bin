@@ -1,0 +1,5 @@
+
+8chesscom/explanation_engine/v1/feature_legal_moves.protochesscom.explanation_engine.v1chesscom/chess/v1/move.proto"
+LegalMovesRequest"B
+LegalMovesResponse,
+legal_moves (2.chesscom.chess.v1.Movebproto3

@@ -1,0 +1,27 @@
+// source: chesscom/payments/v1/charge.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+enum ChargePlatform {
+  CHARGE_PLATFORM_UNSPECIFIED = 0;
+  CHARGE_PLATFORM_WEB = 1;
+  CHARGE_PLATFORM_APPLE = 2;
+  CHARGE_PLATFORM_GOOGLE = 3;
+}
+
+message Charge {
+  optional string charge_id = 1;
+  optional int32 amount_cents = 2;
+  optional string currency = 3;
+  optional .google.protobuf.Timestamp charged_at = 4;
+  optional string gateway = 5;
+  optional string payment_method = 6;
+  optional .chesscom.payments.v1.ChargePlatform platform = 7;
+  optional int32 refunded_cents = 8;
+  optional bool is_trial = 9;
+  optional string plan = 10;
+  optional string subscription_id = 11;
+  optional bool auto_refund_eligible = 12;
+  optional .chesscom.support.v1.RefundIneligibilityReason ineligibility_reason = 13;
+}

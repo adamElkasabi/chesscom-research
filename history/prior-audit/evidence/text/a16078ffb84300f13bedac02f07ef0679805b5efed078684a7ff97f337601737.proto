@@ -1,0 +1,9 @@
+// source: chesscom/courses_common/v1/course_rating.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message CourseRating {
+  optional float average = 1;
+  optional int32 amount = 2;
+}

@@ -1,0 +1,74 @@
+{
+  "name": "chesscom/explanation_engine/v1/report_card.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/game_phase.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GamePhaseGlyph",
+      "field": [
+        {
+          "name": "game_phase",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.GamePhase"
+        },
+        {
+          "name": "glyph",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        }
+      ]
+    },
+    {
+      "name": "PlayerReportCard",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "glyph_by_phase",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseGlyph"
+        },
+        {
+          "name": "effective_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "ReportCard",
+      "field": [
+        {
+          "name": "report_card_by_color",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PlayerReportCard"
+        },
+        {
+          "name": "speech",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

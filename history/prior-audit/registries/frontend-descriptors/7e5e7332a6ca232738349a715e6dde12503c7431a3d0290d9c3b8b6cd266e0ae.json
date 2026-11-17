@@ -1,0 +1,316 @@
+{
+  "name": "chesscom/courses/v1/course_configuration.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CourseConfiguration",
+      "field": [
+        {
+          "name": "show_video",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "language",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "learn_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseLearnType",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "review_type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseReviewType",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "repetition_amount",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "depth",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "schedule_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseScheduleType",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "schedule",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.SpacedRepetitionSchedule",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "auto_next",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "quiz_time_limit",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "timer",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "assisted_quiz",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "review_failed_behavior",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseReviewFailedBehavior",
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "assisted_quiz_pause_to_read",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "learn_mode",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.CourseConsumptionMode",
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "learn_mode_set_by_user",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 15,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_show_video"
+        },
+        {
+          "name": "_language"
+        },
+        {
+          "name": "_learn_type"
+        },
+        {
+          "name": "_review_type"
+        },
+        {
+          "name": "_repetition_amount"
+        },
+        {
+          "name": "_depth"
+        },
+        {
+          "name": "_schedule_type"
+        },
+        {
+          "name": "_schedule"
+        },
+        {
+          "name": "_auto_next"
+        },
+        {
+          "name": "_quiz_time_limit"
+        },
+        {
+          "name": "_timer"
+        },
+        {
+          "name": "_assisted_quiz"
+        },
+        {
+          "name": "_review_failed_behavior"
+        },
+        {
+          "name": "_assisted_quiz_pause_to_read"
+        },
+        {
+          "name": "_learn_mode"
+        },
+        {
+          "name": "_learn_mode_set_by_user"
+        }
+      ]
+    },
+    {
+      "name": "SpacedRepetitionSchedule",
+      "field": [
+        {
+          "name": "seconds_amount",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CourseLearnType",
+      "value": [
+        {
+          "name": "COURSE_LEARN_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_LEARN_TYPE_ALL",
+          "number": 1
+        },
+        {
+          "name": "COURSE_LEARN_TYPE_KEY",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "CourseConsumptionMode",
+      "value": [
+        {
+          "name": "COURSE_CONSUMPTION_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_CONSUMPTION_MODE_LEARN",
+          "number": 1
+        },
+        {
+          "name": "COURSE_CONSUMPTION_MODE_READ",
+          "number": 2
+        },
+        {
+          "name": "COURSE_CONSUMPTION_MODE_LEARN_WITHOUT_COACH",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "CourseReviewType",
+      "value": [
+        {
+          "name": "COURSE_REVIEW_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_REVIEW_TYPE_LEARNED_ORDER",
+          "number": 1
+        },
+        {
+          "name": "COURSE_REVIEW_TYPE_RANDOM_ORDER",
+          "number": 2
+        },
+        {
+          "name": "COURSE_REVIEW_TYPE_MOVE_TRAINER_ORDER",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "CourseScheduleType",
+      "value": [
+        {
+          "name": "COURSE_SCHEDULE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_SCHEDULE_TYPE_SPACED_REPETITION",
+          "number": 1
+        },
+        {
+          "name": "COURSE_SCHEDULE_TYPE_CYCLICAL",
+          "number": 2
+        },
+        {
+          "name": "COURSE_SCHEDULE_TYPE_CUSTOM",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "CourseReviewFailedBehavior",
+      "value": [
+        {
+          "name": "COURSE_REVIEW_FAILED_BEHAVIOR_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_REVIEW_FAILED_BEHAVIOR_MOVE_TO_NEXT_CYCLE",
+          "number": 1
+        },
+        {
+          "name": "COURSE_REVIEW_FAILED_BEHAVIOR_REPEAT_CURRENT_CYCLE",
+          "number": 2
+        },
+        {
+          "name": "COURSE_REVIEW_FAILED_BEHAVIOR_BACK_TO_FIRST_CYCLE",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

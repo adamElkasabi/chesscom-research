@@ -1,0 +1,16 @@
+// source: chesscom/explanation_engine/v1/feature_get_ergonomic_game.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetErgonomicGameRequest {
+  oneof game_to_convert {
+  .chesscom.explanation_engine.v1.GameState game_state = 1;
+  string pgn = 2;
+  int32 starting_game_point = 3;
+  }
+}
+
+message GetErgonomicGameResponse {
+  optional .chesscom.chess.v1.Game game = 1;
+}

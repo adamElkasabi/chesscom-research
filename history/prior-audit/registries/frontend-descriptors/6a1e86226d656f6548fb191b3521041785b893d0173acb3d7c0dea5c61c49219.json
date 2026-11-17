@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/train/v1/train_membership_context.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainMembershipContext",
+      "value": [
+        {
+          "name": "TRAIN_MEMBERSHIP_CONTEXT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_MEMBERSHIP_CONTEXT_PRO",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_MEMBERSHIP_CONTEXT_FREEVIEW",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

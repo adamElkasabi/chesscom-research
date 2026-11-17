@@ -1,0 +1,168 @@
+// source: chesscom/user_gateway/v1/user_gateway_service.proto
+// syntax: proto3
+
+package chesscom.user_gateway.v1;
+
+message GetUserDataRequest {
+  optional string user_uuid = 1;
+  repeated string other_user_uuids = 2;
+  repeated .chesscom.user_relationships.v2.UserRelationshipRequestCriteria user_relationships = 3;
+  optional .google.protobuf.FieldMask field_mask = 4;
+}
+
+message GetUserDataResponse {
+  optional .chesscom.user_gateway.v1.GatewayUserView user_data = 1;
+}
+
+message GetUserDataByUsernameRequest {
+  optional string username = 1;
+  repeated string other_user_uuids = 2;
+  repeated .chesscom.user_relationships.v2.UserRelationshipRequestCriteria user_relationships = 3;
+  optional .google.protobuf.FieldMask field_mask = 4;
+  optional bool include_disabled = 5;
+}
+
+message GetUserDataByUsernameResponse {
+  optional .chesscom.user_gateway.v1.GatewayUserView user_data = 1;
+}
+
+message GetUserDataManyRequest {
+  repeated string user_uuids = 1;
+  repeated string other_user_uuids = 2;
+  repeated .chesscom.user_relationships.v2.UserRelationshipRequestCriteria user_relationships = 3;
+  optional .google.protobuf.FieldMask field_mask = 4;
+}
+
+message GetUserDataManyResponse {
+  repeated .chesscom.user_gateway.v1.GatewayUserView user_data = 1;
+}
+
+message ListRelatedUsersDataRequest {
+  optional string user_uuid = 1;
+  repeated string other_user_uuids = 2;
+  repeated .chesscom.user_relationships.v2.UserRelationshipRequestCriteria user_relationships = 3;
+  optional .google.protobuf.FieldMask field_mask = 4;
+}
+
+message ListRelatedUsersDataResponse {
+  repeated .chesscom.user_gateway.v1.GatewayUserView user_data = 1;
+}
+
+message GetUserDataWithOtherUsernamesRequest {
+  optional string user_uuid = 1;
+  repeated string other_usernames = 2;
+  repeated .chesscom.user_relationships.v2.UserRelationshipRequestCriteria user_relationships = 3;
+  optional .google.protobuf.FieldMask field_mask = 4;
+  optional bool include_disabled = 5;
+}
+
+message GetUserDataWithOtherUsernamesResponse {
+  optional .chesscom.user_gateway.v1.GatewayUserView user_data = 1;
+}
+
+message ListUsersRequest {
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 1;
+  }
+  repeated .chesscom.user_targeting.v1.Criterion criteria = 2;
+  optional .google.protobuf.FieldMask field_mask = 3;
+}
+
+message ListUsersResponse {
+  repeated .chesscom.user_gateway.v1.GatewayUserView user_data = 1;
+  optional .chesscom.api.v1.ResponsePagination pagination = 2;
+}
+
+message SendFriendRequestRequest {
+  oneof _source {
+  string source = 2;
+  }
+  oneof _method {
+  string method = 3;
+  }
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message SendFriendRequestResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.SendFriendRequestFailure failure = 2;
+  }
+}
+
+message AcceptFriendRequestRequest {
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message AcceptFriendRequestResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.AcceptFriendRequestFailure failure = 2;
+  }
+}
+
+message DeclineFriendRequestRequest {
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message DeclineFriendRequestResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.DeclineFriendRequestFailure failure = 2;
+  }
+}
+
+message CancelFriendRequestRequest {
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message CancelFriendRequestResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.CancelFriendRequestFailure failure = 2;
+  }
+}
+
+message RemoveFriendRequest {
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message RemoveFriendResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.RemoveFriendFailure failure = 2;
+  }
+}
+
+message BlockUserRequest {
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message BlockUserResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.BlockUserFailure failure = 2;
+  }
+}
+
+message UnblockUserRequest {
+  optional .chesscom.user_gateway.v1.UserIdentifier user_identifier = 1;
+}
+
+message UnblockUserResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.RelationshipWriteSuccess success = 1;
+  .chesscom.user_gateway.v1.UnblockUserFailure failure = 2;
+  }
+}
+
+message AcceptFriendLinkRequest {
+  optional string friend_link_hash = 1;
+}
+
+message AcceptFriendLinkResponse {
+  oneof result {
+  .chesscom.user_gateway.v1.AcceptFriendLinkSuccess success = 1;
+  .chesscom.user_gateway.v1.AcceptFriendLinkFailure failure = 2;
+  }
+}

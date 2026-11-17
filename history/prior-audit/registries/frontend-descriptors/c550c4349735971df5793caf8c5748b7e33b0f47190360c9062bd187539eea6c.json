@@ -1,0 +1,51 @@
+{
+  "name": "chesscom/courses/v1alpha/course_deviations_service.proto",
+  "package": "chesscom.courses.v1alpha",
+  "message_type": [
+    {
+      "name": "GetCourseDeviationsRequest",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "fens",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseDeviationsResponse",
+      "field": [
+        {
+          "name": "deviations",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1alpha.CourseDeviation"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "CourseDeviationsService",
+      "method": [
+        {
+          "name": "GetCourseDeviations",
+          "input_type": ".chesscom.courses.v1alpha.GetCourseDeviationsRequest",
+          "output_type": ".chesscom.courses.v1alpha.GetCourseDeviationsResponse",
+          "options": {}
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

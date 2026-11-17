@@ -1,0 +1,14 @@
+
+Achesscom/explanation_engine/v1alpha/engine_instance_options.proto#chesscom.explanation_engine.v1alphachesscom/engine/v1/engine.proto"§
+EngineInstanceOptions
+binary_path (	(
+type (2.chesscom.engine.v1.EngineO
+
+web_worker (2;.chesscom.explanation_engine.v1alpha.WebWorkerEngineOptions",
+WebWorkerEngineOptions
+
+script_url (	")
+EngineInstance
+
+id (
+pid (bproto3

@@ -1,0 +1,30 @@
+{
+  "name": "chesscom/text_item/v1alpha/train_reply_text_context.proto",
+  "package": "chesscom.text_item.v1alpha",
+  "dependency": [
+    "chesscom/train/v1/train_challenge.proto",
+    "chesscom/train/v1/train_move_grade.proto"
+  ],
+  "message_type": [
+    {
+      "name": "TrainReplyTextContext",
+      "field": [
+        {
+          "name": "challenge",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainChallenge"
+        },
+        {
+          "name": "grade",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainMoveGrade"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,1625 @@
+[
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "b",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 0,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 3149,
+    "loader_excerpt": "peof document&&document.currentScript&&(a=document.currentScript.src),a=0!==(a=Jt?Jt:a).indexOf(\"blob:\")?a.substr(0,a.lastIndexOf(\"/\")+1):\"\",s?(X=function(e,t){return r=r||require(\"fs\"),e=(V=V||require(\"path\")).normalize(e),r.readFileSync(e,t?null:\"utf8\")},K=function(e){return re((e=(e=X(e,!0)).buffer?e:new Uint8Array(e)).buffer),e}):(X=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.send(null),t.responseText},o&&(K=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.responseType=\"arraybuffer\",t.send(null),new Uint8Array(t.response)})));s&&\"undefined\"==typeof performance&&(global.performance=require(\"perf_hooks\").performance);var J,$,Z=i.print||console.log.bind(console),l=i.printErr||console.warn.bind(console);for(e in N)N.hasOwnProperty(e)&&(i[e]=N[e]);N=null",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31051"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "c",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 1,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 27403,
+    "loader_excerpt": "){},M:function(e,t,n){return R+=1,setTimeout(function(){--R,j(function(){P.apply(null,[e,n])})},t)},c:function(n){At(function(e){var t;t=e,R+=1,$t(function(){--R,j(t)},n)})},o:function(e,n,t,r,a){function o(e,t){Qe(e,t.response,function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)},function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)})}function i(e){j(function(){h?P.apply(null,[h,e]):a&&a(e)},w)}function s(e){--R,j(function(){p?P.apply(null,[p,e]):t&&t(e)},w)}function u(e){j(function(){m?P.apply(null,[m,e]):r&&r(e)},w)}function c(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)}R+=1;var f=e+112,l=O(f),d=C[f+36>>2],p=C[f+40>>2],m=C[f+44>>2],h=C[f+48>>2],_=C[f+52>>2],y=!!(4&_),g=!!(32&_),v=!!(16&_),w=!!(64&_);if(\"EM_IDB_STORE\"===l)l=C[f+84>>2],Qe(e,I.slice(l,l+C[f+88>",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31052"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "d",
+    "kind": "function",
+    "type_index": 10,
+    "function_index": 2,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 723,
+    "loader_excerpt": "ined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var n,r={open:function(e,t){n=t},send:function(){require(\"fs\").readFile(n,function(e,t){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=t,r.onreadystatechange(),r.onload())})}};return r}),i.postCustomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.forEach(function(e){i.queue.put(e)}),i.queue.process()},i.postMes",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31053"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "e",
+    "kind": "function",
+    "type_index": 9,
+    "function_index": 3,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 96,
+    "loader_excerpt": "/*!\n * Stockfish.js (c) 2023, Chess.com, LLC\n * https://github.com/nmrugg/stockfish.js\n * License: GPLv3\n *\n * Based on stockfish.wasm (c)\n * Niklas Fiekas <niklas.fiekas@backscattering.de>\n * Hiroshi Ogawa <hi.ogawa.zz@gmail.com>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski, G. Linscott and other contributors.\n * https://github.com/official-stockfish/Stockfish\n */!function(){var $t,e,n,t,r,a;function i(){function e(S){var i,k,T,t,n;S=S||{},(i=i||(void 0!==S?S:{})).ready=new Promise(function(e,t){k=e,T=t}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var n,r={open:function(e,t){n=t},send:function(){require(\"fs\").readFile(n,function(e,t){r.readyState=4,e?(con",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31054"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "f",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 4,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 3032,
+    "loader_excerpt": "d - perhaps a newer version is needed?'),e}global.Worker=d.Worker}else(z||o)&&(o?a=self.location.href:\"undefined\"!=typeof document&&document.currentScript&&(a=document.currentScript.src),a=0!==(a=Jt?Jt:a).indexOf(\"blob:\")?a.substr(0,a.lastIndexOf(\"/\")+1):\"\",s?(X=function(e,t){return r=r||require(\"fs\"),e=(V=V||require(\"path\")).normalize(e),r.readFileSync(e,t?null:\"utf8\")},K=function(e){return re((e=(e=X(e,!0)).buffer?e:new Uint8Array(e)).buffer),e}):(X=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.send(null),t.responseText},o&&(K=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.responseType=\"arraybuffer\",t.send(null),new Uint8Array(t.response)})));s&&\"undefined\"==typeof performance&&(global.performance=require(\"perf_hooks\").performance);var J,$,Z=i.print||",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31055"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "g",
+    "kind": "function",
+    "type_index": 43,
+    "function_index": 5,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "f64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 12119,
+    "loader_excerpt": "s.store(C,29+o,e.detached),n=Lt()+40,Atomics.store(C,43+o,n),t.ua=r,{cmd:\"run\",start_routine:e.nb,arg:e.Aa,threadInfoStruct:e.Ia,stackBase:e.za,stackSize:e.Ba});return t.Da=function(){i.time=performance.now(),t.postMessage(i,e.ub)},t.loaded&&(t.Da(),delete t.Da),0}function Te(e,t,n){if(e<=0||e>h.length||1&e)return-28;if(z){if(Atomics.load(_,e>>2)!=t)return-6;for(n=performance.now()+n,Atomics.exchange(_,zt>>2,e);;){if(n<performance.now())return Atomics.exchange(_,zt>>2,0),-73;if(0==Atomics.exchange(_,zt>>2,0))break;if(Dt(),Atomics.load(_,e>>2)!=t)return-6;Atomics.exchange(_,zt>>2,e)}return 0}if(\"timed-out\"===(e=Atomics.wait(_,e>>2,t,n)))return-73;if(\"not-equal\"===e)return-6;if(\"ok\"===e)return 0;throw\"Atomics.wait returned an unexpected value \"+e}function Ie(){s||o||(J=J||{})[\"Blocking on th",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31056"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "h",
+    "kind": "function",
+    "type_index": 44,
+    "function_index": 6,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "f64"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 15069,
+    "loader_excerpt": "/4294967296|0}function ze(r,n,a,o,t){function i(e){var t=0,n=0;e&&(n=w.response?w.response.byteLength:0,t=U(n),I.set(new Uint8Array(w.response),t)),C[r+12>>2]=t,L(r+16,n)}if(p=C[r+8>>2]){var e=O(p),s=(s=O(_=r+112))||\"GET\",u=C[_+52>>2],c=C[_+56>>2],f=!!C[_+60>>2],l=C[_+68>>2],d=C[_+72>>2],p=C[_+76>>2],m=C[_+80>>2],h=C[_+84>>2],_=C[_+88>>2],y=!!(1&u),g=!!(2&u),u=!!(64&u),l=l?O(l):void 0,d=d?O(d):void 0,v=m?O(m):void 0,w=new XMLHttpRequest;if(w.withCredentials=f,w.open(s,e,!u,l,d),u||(w.timeout=c),w.vb=e,w.responseType=\"arraybuffer\",m&&w.overrideMimeType(v),p)for(;(s=C[p>>2])&&(e=C[p+4>>2]);)p+=8,s=O(s),e=O(e),w.setRequestHeader(s,e);Ve.push(w),C[r+0>>2]=Ve.length,p=h&&_?I.slice(h,h+_):null,w.onload=function(e){i(y&&!g);var t=w.response?w.response.byteLength:0;L(r+24,0),t&&L(r+32,t),D[r+40>>1",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31057"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "i",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 7,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29732,
+    "loader_excerpt": "_[t+8],Db:_[t+9],Va:_[t+10],cb:_[t+11],Fb:_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to asynchronously ",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31058"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "j",
+    "kind": "function",
+    "type_index": 10,
+    "function_index": 8,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29846,
+    "loader_excerpt": "Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to asynchronously prepare wasm: \"+e),y(e)})}var a={a:St};if(f||ve(),i.instantiateWasm)try{var e=i.instantiateWasm(a,t);return Et(e)}",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31059"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "k",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 9,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 26473,
+    "loader_excerpt": "e(C,n+64>>2,1),f?postMessage({cmd:\"cleanupThread\",thread:n}):Me(n),0;Ft(),f||Dt(),Te(n,a,f?100:1)}},k:Re,w:je,x:Le,O:function(e){delete Ve[e-1]},N:function(e,t){if(e==t)postMessage({cmd:\"processQueuedMainThreadWork\"});else if(f)postMessage({targetThread:e,cmd:\"processThreadQueue\"});else{if(!(e=(e=v.va[e])&&e.worker))return;e.postMessage({cmd:\"processThreadQueue\"})}return 1},d:Ue,D:function(e,t){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return _[Ut()>>2]=28,-1;e=De()}return _[t>>2]=e/1e3|0,_[t+4>>2]=e%1e3*1e6|0,0},P:function(e,t,n){var r;for(Pe.length=0,n>>=2;r=I[t++];)(r=r<105)&&1&n&&n++,Pe.push(r?oe[n++>>1]:_[n]),++n;return Ae[e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=o",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31060"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "l",
+    "kind": "function",
+    "type_index": 1,
+    "function_index": 10,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 2396,
+    "loader_excerpt": "function(e,t){return r=r||require(\"fs\"),e=(V=V||require(\"path\")).normalize(e),r.readFileSync(e,t?null:\"utf8\")},K=function(e){return re((e=(e=X(e,!0)).buffer?e:new Uint8Array(e)).buffer),e};1<process.argv.length&&(Y=process.argv[1].replace(/\\\\/g,\"/\")),H=process.argv.slice(2),process.on(\"uncaughtException\",function(e){if(!(e instanceof M))throw e}),process.on(\"unhandledRejection\",y),G=function(e,t){if(_e())throw process.exitCode=e,t;process.exit(e)},i.inspect=function(){return\"[Emscripten Module object]\"};try{d=require(\"worker_threads\")}catch(e){throw console.error('The \"worker_threads\" module is not supported in this node.js build - perhaps a newer version is needed?'),e}global.Worker=d.Worker}else(z||o)&&(o?a=self.location.href:\"undefined\"!=typeof document&&document.currentScript&&(a=docum",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31061"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "m",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 11,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 5673,
+    "loader_excerpt": "ffer;else if(i.wasmMemory)u=i.wasmMemory;else if(!((u=new WebAssembly.Memory({initial:d/65536,maximum:d/65536,shared:!0})).buffer instanceof SharedArrayBuffer))throw l(\"requested a shared WebAssembly.Memory but the returned buffer is not a SharedArrayBuffer, indicating that while the browser has SharedArrayBuffer it does not have WebAssembly threads support - you may need to set a flag\"),s&&console.log(\"(on node you may need: --experimental-wasm-threads --experimental-wasm-bulk-memory and also use a recent version)\"),Error(\"bad memory\");(fe=u?u.buffer:fe).byteLength;var fe=d=fe,le=(i.HEAP8=h=new Int8Array(d),i.HEAP16=new Int16Array(d),i.HEAP32=_=new Int32Array(d),i.HEAPU8=I=new Uint8Array(d),i.HEAPU16=D=new Uint16Array(d),i.HEAPU32=C=new Uint32Array(d),i.HEAPF32=new Float32Array(d),i.HEAPF",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31062"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "n",
+    "kind": "function",
+    "type_index": 4,
+    "function_index": 12,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 699,
+    "loader_excerpt": "on(e,t){k=e,T=t}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var n,r={open:function(e,t){n=t},send:function(){require(\"fs\").readFile(n,function(e,t){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=t,r.onreadystatechange(),r.onload())})}};return r}),i.postCustomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.forEach(function(e){i.queue.put(e)}),i.qu",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31063"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "o",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 13,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 4606,
+    "loader_excerpt": "[t++],192==(224&i)?r+=String.fromCharCode((31&i)<<6|a):(o=63&e[t++],(i=224==(240&i)?(15&i)<<12|a<<6|o:(7&i)<<18|a<<12|o<<6|63&e[t++])<65536?r+=String.fromCharCode(i):(i-=65536,r+=String.fromCharCode(55296|i>>10,56320|1023&i)))):r+=String.fromCharCode(i)}return r}function O(e){return e?se(I,e,void 0):\"\"}function F(e,t,n,r){if(0<r){r=n+r-1;for(var a=0;a<e.length;++a){var o=e.charCodeAt(a);if((o=55296<=o&&o<=57343?65536+((1023&o)<<10)|1023&e.charCodeAt(++a):o)<=127){if(r<=n)break;t[n++]=o}else{if(o<=2047){if(r<=n+1)break;t[n++]=192|o>>6}else{if(o<=65535){if(r<=n+2)break;t[n++]=224|o>>12}else{if(r<=n+3)break;t[n++]=240|o>>18,t[n++]=128|o>>12&63}t[n++]=128|o>>6&63}t[n++]=128|63&o}}t[n]=0}}function ue(e){for(var t=0,n=0;n<e.length;++n){var r=e.charCodeAt(n);(r=55296<=r&&r<=57343?65536+((1023&r)<",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31064"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "p",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 14,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 25062,
+    "loader_excerpt": "y(\"Assertion failed: \"+O(e)+\", at: \"+[t?O(t):\"unknown filename\",n,r?O(r):\"unknown function\"])},b:Se,p:function(e,t){v.Sa.push(function(){P.apply(null,[e,t])})},K:function(e,t,n,r){if(\"undefined\"==typeof SharedArrayBuffer)return l(\"Current environment does not support SharedArrayBuffer, pthreads are not available!\"),6;if(!e)return l(\"pthread_create called with a null thread pointer!\"),28;var a=[];if(f&&0===a.length)return It(687865856,e,t,n,r);var o,i=0,s=0;t&&-1!=t?(o=_[t>>2],o+=81920,i=_[t+8>>2],s=0!==_[t+12>>2]):o=2097152,(t=0==i)?i=Ht(16,o):re(0<(i-=o));for(var u=U(228),c=0;c<57;++c)C[(u>>2)+c]=0;return _[e>>2]=u,_[u+12>>2]=u,_[(e=u+152)>>2]=e,n={za:i,Ba:o,Na:t,detached:s,nb:n,Ia:u,Aa:r,ub:a},f?(n.xb=\"spawnThread\",postMessage(n,a),0):ke(n)},I:function(e){throw f?v.ab(e):(v.Za(),Xt(e)),\"",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31065"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "q",
+    "kind": "function",
+    "type_index": 14,
+    "function_index": 15,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29279,
+    "loader_excerpt": "Not Found\",I,M+44,64),k(M,0,e)}}catch(e){k(M,0,e)}}else k(M,0,\"IndexedDB not available!\")}return e},q:function(){return t=async()=>{var e=await i.queue.get(),t=ue(e)+1,n=U(t);return F(e,I,n,t),n},At(function(e){t().then(e)});var t},H:function(e,t){return t={alpha:!!_[t>>=2],depth:!!_[t+1],stencil:!!_[t+2],antialias:!!_[t+3],premultipliedAlpha:!!_[t+4],preserveDrawingBuffer:!!_[t+5],powerPreference:$e[_[t+6]],failIfMajorPerformanceCaveat:!!_[t+7],jb:_[t+8],Db:_[t+9],Va:_[t+10],cb:_[t+11],Fb:_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T)",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31066"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "r",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 16,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 6129,
+    "loader_excerpt": "s --experimental-wasm-bulk-memory and also use a recent version)\"),Error(\"bad memory\");(fe=u?u.buffer:fe).byteLength;var fe=d=fe,le=(i.HEAP8=h=new Int8Array(d),i.HEAP16=new Int16Array(d),i.HEAP32=_=new Int32Array(d),i.HEAPU8=I=new Uint8Array(d),i.HEAPU16=D=new Uint16Array(d),i.HEAPU32=C=new Uint32Array(d),i.HEAPF32=new Float32Array(d),i.HEAPF64=oe=new Float64Array(d),[]),de=[],pe=[],me=[],he=[],R=0;function _e(){return ee||0<R}var p,m=0,ye=null,ge=null;function ve(){m++,i.monitorRunDependencies&&i.monitorRunDependencies(m)}function we(){var e;m--,i.monitorRunDependencies&&i.monitorRunDependencies(m),0==m&&(null!==ye&&(clearInterval(ye),ye=null),ge)&&(e=ge,ge=null,e())}function y(e){throw i.onAbort&&i.onAbort(e),re(!f),l(e),c=!0,ne=1,e=new WebAssembly.RuntimeError(\"abort(\"+e+\"). Build with ",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31067"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "s",
+    "kind": "function",
+    "type_index": 10,
+    "function_index": 17,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 52,
+    "loader_excerpt": "/*!\n * Stockfish.js (c) 2023, Chess.com, LLC\n * https://github.com/nmrugg/stockfish.js\n * License: GPLv3\n *\n * Based on stockfish.wasm (c)\n * Niklas Fiekas <niklas.fiekas@backscattering.de>\n * Hiroshi Ogawa <hi.ogawa.zz@gmail.com>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski, G. Linscott and other contributors.\n * https://github.com/official-stockfish/Stockfish\n */!function(){var $t,e,n,t,r,a;function i(){function e(S){var i,k,T,t,n;S=S||{},(i=i||(void 0!==S?S:{})).ready=new Promise(function(e,t){k=e,T=t}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var n,r={open:function(e,t){n=t},send:function(){require(\"fs\").re",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31068"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "t",
+    "kind": "function",
+    "type_index": 7,
+    "function_index": 18,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 1023,
+    "loader_excerpt": "tomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.forEach(function(e){i.queue.put(e)}),i.queue.process()},i.postMessage=i.postCustomMessage,[]),N=(i.addMessageListener=function(e){W.push(e)},i.removeMessageListener=function(e){0<=(e=W.indexOf(e))&&W.splice(e,1)},i.print=i.printErr=function(e){if(\"Blocking on the main thread is very dangerous, see https://emscripten.org/docs/porting/pthreads.html#blocking-on-the-",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31069"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "u",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 19,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 27069,
+    "loader_excerpt": "Pe.push(r?oe[n++>>1]:_[n]),++n;return Ae[e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];return(e<0?Ae[-e-1]:Mt[e]).apply(null,qe)},v:function(){y(\"OOM\")},G:function(e,t,n){return(Ne(e)?He:Ye)(e,t,n)},m:function(){},M:function(e,t,n){return R+=1,setTimeout(function(){--R,j(function(){P.apply(null,[e,n])})},t)},c:function(n){At(function(e){var t;t=e,R+=1,$t(function(){--R,j(t)},n)})},o:function(e,n,t,r,a){function o(e,t){Qe(e,t.response,function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)},function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)})}function i(e){j(function(){h?P.apply(null,[h,e]):a&&a(e)},w)}function s(e){--R,j(function(){p?P.apply(null,[p",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31070"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "v",
+    "kind": "function",
+    "type_index": 1,
+    "function_index": 20,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 27223,
+    "loader_excerpt": "t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];return(e<0?Ae[-e-1]:Mt[e]).apply(null,qe)},v:function(){y(\"OOM\")},G:function(e,t,n){return(Ne(e)?He:Ye)(e,t,n)},m:function(){},M:function(e,t,n){return R+=1,setTimeout(function(){--R,j(function(){P.apply(null,[e,n])})},t)},c:function(n){At(function(e){var t;t=e,R+=1,$t(function(){--R,j(t)},n)})},o:function(e,n,t,r,a){function o(e,t){Qe(e,t.response,function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)},function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)})}function i(e){j(function(){h?P.apply(null,[h,e]):a&&a(e)},w)}function s(e){--R,j(function(){p?P.apply(null,[p,e]):t&&t(e)},w)}function u(e){j(function(){m?P.apply(null,[m,e]):r&&r(e)},w)}function c(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)}R+=1;var f=",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31071"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "w",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 21,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 14086,
+    "loader_excerpt": ",t),qt(r),n}var qe=[],We=[0,\"undefined\"!=typeof document?document:0,\"undefined\"!=typeof window?window:0];function Ne(e){return e=2<e?O(e):e,We[e]||(\"undefined\"!=typeof document?document.querySelector(e):void 0)}function He(e,t,n){var r,a,o,i,s=Ne(e);return s?(s.Ha&&(_[s.Ha>>2]=t,_[s.Ha+4>>2]=n),!s.Ya&&s.yb?s.Ha?(s=_[s.Ha+8>>2],e=e?O(e):\"\",r=Bt(),a=Wt(12),o=0,e&&(o=ue(e)+1,i=U(o),F(e,I,i,o),o=i),_[a>>2]=o,_[a+4>>2]=t,_[a+8>>2]=n,Ot(0,s,657457152,0,o,a),qt(r),1):-4:(e=!1,(s=s.Ya?s.Ya:s).Ga&&s.Ga.Fa&&(e=0===(e=s.Ga.Fa.getParameter(2978))[0]&&0===e[1]&&e[2]===s.width&&e[3]===s.height),s.width=t,s.height=n,e&&s.Ga.Fa.viewport(0,0,t,n),0)):-4}function Ye(e,t,n){return f?w(7,1,e,t,n):He(e,t,n)}function j(e,t){if(!c)if(t)e();else{try{e()}catch(e){if(e instanceof M)return;if(\"unwind\"!==e)throw e&&\"",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31072"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "x",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 22,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 26483,
+    "loader_excerpt": "2,1),f?postMessage({cmd:\"cleanupThread\",thread:n}):Me(n),0;Ft(),f||Dt(),Te(n,a,f?100:1)}},k:Re,w:je,x:Le,O:function(e){delete Ve[e-1]},N:function(e,t){if(e==t)postMessage({cmd:\"processQueuedMainThreadWork\"});else if(f)postMessage({targetThread:e,cmd:\"processThreadQueue\"});else{if(!(e=(e=v.va[e])&&e.worker))return;e.postMessage({cmd:\"processThreadQueue\"})}return 1},d:Ue,D:function(e,t){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return _[Ut()>>2]=28,-1;e=De()}return _[t>>2]=e/1e3|0,_[t+4>>2]=e%1e3*1e6|0,0},P:function(e,t,n){var r;for(Pe.length=0,n>>=2;r=I[t++];)(r=r<105)&&1&n&&n++,Pe.push(r?oe[n++>>1]:_[n]),++n;return Ae[e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];ret",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31073"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "y",
+    "kind": "function",
+    "type_index": 6,
+    "function_index": 23,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 11163,
+    "loader_excerpt": "),a.on(\"exit\",function(){})),a.postMessage({cmd:\"load\",urlOrBlob:i.mainScriptUrlOrBlob||Jt,wasmMemory:u,wasmModule:te})},Ua:function(){var e=Q(\"stockfish.worker.js\");v.xa.push(new Worker(e))},eb:function(){return 0==v.xa.length&&(v.Ua(),v.Xa(v.xa[0])),v.xa.pop()},wb:function(e){for(e=performance.now()+e;performance.now()<e;);}};function Se(e,t){if(f)return w(1,1,e,t);me.unshift({Pa:e,Aa:t})}function ke(e){if(f)throw\"Internal Error! spawnThread() can only ever be called from main application thread!\";var t=v.eb();if(!t)return 6;if(void 0!==t.ua)throw\"Internal error!\";if(!e.Ia)throw\"Internal error, no pthread ptr!\";v.ya.push(t);for(var n=U(512),r=0;r<128;++r)_[n+4*r>>2]=0;var a=e.za+e.Ba,o=(r=v.va[e.Ia]={worker:t,za:e.za,Ba:e.Ba,Na:e.Na,wa:e.Ia}).wa>>2,i=(Atomics.store(C,16+o,e.detached),Ato",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31074"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "z",
+    "kind": "function",
+    "type_index": 6,
+    "function_index": 24,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29758,
+    "loader_excerpt": "],cb:_[t+11],Fb:_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to asynchronously prepare wasm: \"+e),y(e)})}",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31075"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "A",
+    "kind": "function",
+    "type_index": 7,
+    "function_index": 25,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29841,
+    "loader_excerpt": "n(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to asynchronously prepare wasm: \"+e),y(e)})}var a={a:St};if(f||ve(),i.instantiateWasm)try{var e=i.instantiateWasm(a,t);return E",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31076"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "B",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 26,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29722,
+    "loader_excerpt": "_[t+7],jb:_[t+8],Db:_[t+9],Va:_[t+10],cb:_[t+11],Fb:_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to async",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31077"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "C",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 27,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29727,
+    "loader_excerpt": "],jb:_[t+8],Db:_[t+9],Va:_[t+10],cb:_[t+11],Fb:_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to asynchrono",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31078"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "D",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 28,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 18369,
+    "loader_excerpt": "gh-performance\"],Ze={};function et(){if(!Je){var e,t={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:Y||\"./this.program\"};for(e in Ze)void 0===Ze[e]?delete t[e]:t[e]=Ze[e];var n=[];for(e in t)n.push(e+\"=\"+t[e]);Je=n}return Je}function tt(r,a){var o;return f?w(8,1,r,a):(o=0,et().forEach(function(e,t){var n=a+o;for(t=_[r+4*t>>2]=n,n=0;n<e.length;++n)h[t++>>0]=e.charCodeAt(n);h[t>>0]=0,o+=e.length+1}),0)}function nt(e,t){var n,r;return f?w(9,1,e,t):(n=et(),_[e>>2]=n.length,r=0,n.forEach(function(e){r+=e.length+1}),_[t>>2]=r,0)}function rt(e){return f?w(10,1,e):0}function at(e,t,n,r){return f?w(11,1,e,t,n,r):(e=Fe.Bb(e),t=Fe.Ab(e,t,n),_[r>>2]=t,0)}function ",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31079"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "E",
+    "kind": "function",
+    "type_index": 10,
+    "function_index": 29,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 18345,
+    "loader_excerpt": "default\",\"low-power\",\"high-performance\"],Ze={};function et(){if(!Je){var e,t={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:Y||\"./this.program\"};for(e in Ze)void 0===Ze[e]?delete t[e]:t[e]=Ze[e];var n=[];for(e in t)n.push(e+\"=\"+t[e]);Je=n}return Je}function tt(r,a){var o;return f?w(8,1,r,a):(o=0,et().forEach(function(e,t){var n=a+o;for(t=_[r+4*t>>2]=n,n=0;n<e.length;++n)h[t++>>0]=e.charCodeAt(n);h[t>>0]=0,o+=e.length+1}),0)}function nt(e,t){var n,r;return f?w(9,1,e,t):(n=et(),_[e>>2]=n.length,r=0,n.forEach(function(e){r+=e.length+1}),_[t>>2]=r,0)}function rt(e){return f?w(10,1,e):0}function at(e,t,n,r){return f?w(11,1,e,t,n,r):(e=Fe.Bb(e),t=Fe.Ab(e,t,n",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31080"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "F",
+    "kind": "function",
+    "type_index": 25,
+    "function_index": 30,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "f64"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 27110,
+    "loader_excerpt": "e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];return(e<0?Ae[-e-1]:Mt[e]).apply(null,qe)},v:function(){y(\"OOM\")},G:function(e,t,n){return(Ne(e)?He:Ye)(e,t,n)},m:function(){},M:function(e,t,n){return R+=1,setTimeout(function(){--R,j(function(){P.apply(null,[e,n])})},t)},c:function(n){At(function(e){var t;t=e,R+=1,$t(function(){--R,j(t)},n)})},o:function(e,n,t,r,a){function o(e,t){Qe(e,t.response,function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)},function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)})}function i(e){j(function(){h?P.apply(null,[h,e]):a&&a(e)},w)}function s(e){--R,j(function(){p?P.apply(null,[p,e]):t&&t(e)},w)}function u(e){j(function",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31081"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "G",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 31,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 18400,
+    "loader_excerpt": " et(){if(!Je){var e,t={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:Y||\"./this.program\"};for(e in Ze)void 0===Ze[e]?delete t[e]:t[e]=Ze[e];var n=[];for(e in t)n.push(e+\"=\"+t[e]);Je=n}return Je}function tt(r,a){var o;return f?w(8,1,r,a):(o=0,et().forEach(function(e,t){var n=a+o;for(t=_[r+4*t>>2]=n,n=0;n<e.length;++n)h[t++>>0]=e.charCodeAt(n);h[t>>0]=0,o+=e.length+1}),0)}function nt(e,t){var n,r;return f?w(9,1,e,t):(n=et(),_[e>>2]=n.length,r=0,n.forEach(function(e){r+=e.length+1}),_[t>>2]=r,0)}function rt(e){return f?w(10,1,e):0}function at(e,t,n,r){return f?w(11,1,e,t,n,r):(e=Fe.Bb(e),t=Fe.Ab(e,t,n),_[r>>2]=t,0)}function ot(e,t,n,r,a){if(f)return w(12,",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31082"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "H",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 32,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 18361,
+    "loader_excerpt": "wer\",\"high-performance\"],Ze={};function et(){if(!Je){var e,t={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:Y||\"./this.program\"};for(e in Ze)void 0===Ze[e]?delete t[e]:t[e]=Ze[e];var n=[];for(e in t)n.push(e+\"=\"+t[e]);Je=n}return Je}function tt(r,a){var o;return f?w(8,1,r,a):(o=0,et().forEach(function(e,t){var n=a+o;for(t=_[r+4*t>>2]=n,n=0;n<e.length;++n)h[t++>>0]=e.charCodeAt(n);h[t>>0]=0,o+=e.length+1}),0)}function nt(e,t){var n,r;return f?w(9,1,e,t):(n=et(),_[e>>2]=n.length,r=0,n.forEach(function(e){r+=e.length+1}),_[t>>2]=r,0)}function rt(e){return f?w(10,1,e):0}function at(e,t,n,r){return f?w(11,1,e,t,n,r):(e=Fe.Bb(e),t=Fe.Ab(e,t,n),_[r>>2]=t,0)}f",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31083"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "I",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 33,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 20862,
+    "loader_excerpt": "b:f?O(f):\"\"},n=O(n),f={\"%c\":\"%a %b %d %H:%M:%S %Y\",\"%D\":\"%m/%d/%y\",\"%F\":\"%Y-%m-%d\",\"%h\":\"%b\",\"%r\":\"%I:%M:%S %p\",\"%R\":\"%H:%M\",\"%T\":\"%H:%M:%S\",\"%x\":\"%m/%d/%y\",\"%X\":\"%H:%M:%S\",\"%Ec\":\"%c\",\"%EC\":\"%C\",\"%Ex\":\"%m/%d/%y\",\"%EX\":\"%H:%M:%S\",\"%Ey\":\"%y\",\"%EY\":\"%Y\",\"%Od\":\"%d\",\"%Oe\":\"%e\",\"%OH\":\"%H\",\"%OI\":\"%I\",\"%Om\":\"%m\",\"%OM\":\"%M\",\"%OS\":\"%S\",\"%Ou\":\"%u\",\"%OU\":\"%U\",\"%OV\":\"%V\",\"%Ow\":\"%w\",\"%OW\":\"%W\",\"%Oy\":\"%y\"})n=n.replace(new RegExp(c,\"g\"),f[c]);var l,d,p=\"Sunday Monday Tuesday Wednesday Thursday Friday Saturday\".split(\" \"),m=\"January February March April May June July August September October November December\".split(\" \");for(c in f={\"%a\":function(e){return p[e.La].substring(0,3)},\"%A\":function(e){return p[e.La]},\"%b\":function(e){return m[e.Ca].substring(0,3)},\"%B\":function(e){return m[e.Ca]},\"%C\":function(",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31084"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "J",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 34,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 25771,
+    "loader_excerpt": ".xb=\"spawnThread\",postMessage(n,a),0):ke(n)},I:function(e){throw f?v.ab(e):(v.Za(),Xt(e)),\"unwind\"},J:function(e,t){var n=e,r=t;if(!n)return l(\"pthread_join attempted on a null thread pointer!\"),71;if(f&&x()==n)return l(\"PThread \"+n+\" is attempting to join to itself!\"),16;if(!f&&Tt()==n)return l(\"Main thread \"+n+\" is attempting to join to itself!\"),16;if(_[n+12>>2]!==n)return l(\"pthread_join attempted on thread \"+n+\", which does not point to a valid thread, or does not exist anymore!\"),71;if(Atomics.load(C,n+64>>2))return l(\"Attempted to join thread \"+n+\", which was already detached!\"),28;for(Ie();;){var a=Atomics.load(C,n>>2);if(1==a)return a=Atomics.load(C,n+4>>2),r&&(_[r>>2]=a),Atomics.store(C,n+64>>2,1),f?postMessage({cmd:\"cleanupThread\",thread:n}):Me(n),0;Ft(),f||Dt(),Te(n,a,f?100:1)}",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31085"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "K",
+    "kind": "function",
+    "type_index": 6,
+    "function_index": 35,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 25122,
+    "loader_excerpt": "me\",n,r?O(r):\"unknown function\"])},b:Se,p:function(e,t){v.Sa.push(function(){P.apply(null,[e,t])})},K:function(e,t,n,r){if(\"undefined\"==typeof SharedArrayBuffer)return l(\"Current environment does not support SharedArrayBuffer, pthreads are not available!\"),6;if(!e)return l(\"pthread_create called with a null thread pointer!\"),28;var a=[];if(f&&0===a.length)return It(687865856,e,t,n,r);var o,i=0,s=0;t&&-1!=t?(o=_[t>>2],o+=81920,i=_[t+8>>2],s=0!==_[t+12>>2]):o=2097152,(t=0==i)?i=Ht(16,o):re(0<(i-=o));for(var u=U(228),c=0;c<57;++c)C[(u>>2)+c]=0;return _[e>>2]=u,_[u+12>>2]=u,_[(e=u+152)>>2]=e,n={za:i,Ba:o,Na:t,detached:s,nb:n,Ia:u,Aa:r,ub:a},f?(n.xb=\"spawnThread\",postMessage(n,a),0):ke(n)},I:function(e){throw f?v.ab(e):(v.Za(),Xt(e)),\"unwind\"},J:function(e,t){var n=e,r=t;if(!n)return l(\"pthread",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31086"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "L",
+    "kind": "function",
+    "type_index": 10,
+    "function_index": 36,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 29773,
+    "loader_excerpt": ":_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"!=typeof fetch?Promise.resolve().then(Ee):fetch(p,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+p+\"'\"}).catch(Ee)).then(function(e){return WebAssembly.instantiate(e,a)}).then(e,function(e){l(\"failed to asynchronously prepare wasm: \"+e),y(e)})}var a={a:St};if",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31087"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "M",
+    "kind": "function",
+    "type_index": 45,
+    "function_index": 37,
+    "signature": {
+      "parameters": [
+        "i32",
+        "f64",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 20804,
+    "loader_excerpt": ",La:_[r+24>>2],Ma:_[r+28>>2],Ib:_[r+32>>2],qb:_[r+36>>2],tb:f?O(f):\"\"},n=O(n),f={\"%c\":\"%a %b %d %H:%M:%S %Y\",\"%D\":\"%m/%d/%y\",\"%F\":\"%Y-%m-%d\",\"%h\":\"%b\",\"%r\":\"%I:%M:%S %p\",\"%R\":\"%H:%M\",\"%T\":\"%H:%M:%S\",\"%x\":\"%m/%d/%y\",\"%X\":\"%H:%M:%S\",\"%Ec\":\"%c\",\"%EC\":\"%C\",\"%Ex\":\"%m/%d/%y\",\"%EX\":\"%H:%M:%S\",\"%Ey\":\"%y\",\"%EY\":\"%Y\",\"%Od\":\"%d\",\"%Oe\":\"%e\",\"%OH\":\"%H\",\"%OI\":\"%I\",\"%Om\":\"%m\",\"%OM\":\"%M\",\"%OS\":\"%S\",\"%Ou\":\"%u\",\"%OU\":\"%U\",\"%OV\":\"%V\",\"%Ow\":\"%w\",\"%OW\":\"%W\",\"%Oy\":\"%y\"})n=n.replace(new RegExp(c,\"g\"),f[c]);var l,d,p=\"Sunday Monday Tuesday Wednesday Thursday Friday Saturday\".split(\" \"),m=\"January February March April May June July August September October November December\".split(\" \");for(c in f={\"%a\":function(e){return p[e.La].substring(0,3)},\"%A\":function(e){return p[e.La]},\"%b\":function(e){return m[e.Ca].subst",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31088"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "N",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 38,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 26518,
+    "loader_excerpt": "ead\",thread:n}):Me(n),0;Ft(),f||Dt(),Te(n,a,f?100:1)}},k:Re,w:je,x:Le,O:function(e){delete Ve[e-1]},N:function(e,t){if(e==t)postMessage({cmd:\"processQueuedMainThreadWork\"});else if(f)postMessage({targetThread:e,cmd:\"processThreadQueue\"});else{if(!(e=(e=v.va[e])&&e.worker))return;e.postMessage({cmd:\"processThreadQueue\"})}return 1},d:Ue,D:function(e,t){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return _[Ut()>>2]=28,-1;e=De()}return _[t>>2]=e/1e3|0,_[t+4>>2]=e%1e3*1e6|0,0},P:function(e,t,n){var r;for(Pe.length=0,n>>=2;r=I[t++];)(r=r<105)&&1&n&&n++,Pe.push(r?oe[n++>>1]:_[n]),++n;return Ae[e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];return(e<0?Ae[-e-1]:Mt[e]).apply(null,",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31089"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "O",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 39,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 26488,
+    "loader_excerpt": "f?postMessage({cmd:\"cleanupThread\",thread:n}):Me(n),0;Ft(),f||Dt(),Te(n,a,f?100:1)}},k:Re,w:je,x:Le,O:function(e){delete Ve[e-1]},N:function(e,t){if(e==t)postMessage({cmd:\"processQueuedMainThreadWork\"});else if(f)postMessage({targetThread:e,cmd:\"processThreadQueue\"});else{if(!(e=(e=v.va[e])&&e.worker))return;e.postMessage({cmd:\"processThreadQueue\"})}return 1},d:Ue,D:function(e,t){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return _[Ut()>>2]=28,-1;e=De()}return _[t>>2]=e/1e3|0,_[t+4>>2]=e%1e3*1e6|0,0},P:function(e,t,n){var r;for(Pe.length=0,n>>=2;r=I[t++];)(r=r<105)&&1&n&&n++,Pe.push(r?oe[n++>>1]:_[n]),++n;return Ae[e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];return(e",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31090"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "P",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 40,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 26893,
+    "loader_excerpt": "else{if(1!==e&&4!==e)return _[Ut()>>2]=28,-1;e=De()}return _[t>>2]=e/1e3|0,_[t+4>>2]=e%1e3*1e6|0,0},P:function(e,t,n){var r;for(Pe.length=0,n>>=2;r=I[t++];)(r=r<105)&&1&n&&n++,Pe.push(r?oe[n++>>1]:_[n]),++n;return Ae[e].apply(null,Pe)},E:Ie,n:function(){},r:Be,g:Te,f:xe,h:De,u:function(e,t,n){I.copyWithin(e,t,t+n)},F:function(e,t,n){qe.length=t,n>>=3;for(var r=0;r<t;r++)qe[r]=oe[n+r];return(e<0?Ae[-e-1]:Mt[e]).apply(null,qe)},v:function(){y(\"OOM\")},G:function(e,t,n){return(Ne(e)?He:Ye)(e,t,n)},m:function(){},M:function(e,t,n){return R+=1,setTimeout(function(){--R,j(function(){P.apply(null,[e,n])})},t)},c:function(n){At(function(e){var t;t=e,R+=1,$t(function(){--R,j(t)},n)})},o:function(e,n,t,r,a){function o(e,t){Qe(e,t.response,function(e){--R,j(function(){d?P.apply(null,[d,e]):n&&n(e)},w)",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31091"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "import",
+    "module": "a",
+    "name": "a",
+    "kind": "memory",
+    "limits": {
+      "flags": 3,
+      "minimum": 8192,
+      "shared": true,
+      "memory64": false,
+      "maximum": 8192
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 999,
+    "loader_excerpt": ")}};return r}),i.postCustomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.forEach(function(e){i.queue.put(e)}),i.queue.process()},i.postMessage=i.postCustomMessage,[]),N=(i.addMessageListener=function(e){W.push(e)},i.removeMessageListener=function(e){0<=(e=W.indexOf(e))&&W.splice(e,1)},i.print=i.printErr=function(e){if(\"Blocking on the main thread is very dangerous, see https://emscripten.org/docs/porting/pthrea",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31092"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "Q",
+    "kind": "function",
+    "index": 505,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 23980,
+    "loader_excerpt": "=e||0,r=!0,a)&&(b=2,pt(function(){i._asyncify_start_rewind(E)}),\"undefined\"!=typeof Browser&&Browser.Qa.Pa&&Browser.Qa.resume(),n=i.asm[yt[_[E+8>>2]]],--R,t=n(),E||(e=wt,wt=[],e.forEach(function(e){e(t)})))}),a=!0,r||(b=1,e=U(4108),t=e+12,_[e>>2]=t,_[e+4>>2]=t+4096,t=ht[0],void 0===(n=_t[t])&&(n=gt++,_t[t]=n,yt[n]=t),_[e+8>>2]=n,E=e,pt(function(){i._asyncify_start_unwind(E)}),\"undefined\"!=typeof Browser&&Browser.Qa.Pa&&Browser.Qa.pause())):2===b?(b=0,pt(i._asyncify_stop_rewind),A(E),E=null,bt.forEach(function(e){j(e)})):y(\"invalid state: \"+b),mt}f||v.gb(),f||(function(t,n){try{var e=indexedDB.open(\"emscripten_filesystem\",1)}catch(e){return n(e)}e.onupgradeneeded=function(e){(e=e.target.result).objectStoreNames.contains(\"FILES\")&&e.deleteObjectStore(\"FILES\"),e.createObjectStore(\"FILES\")},e.",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31093"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "R",
+    "kind": "function",
+    "index": 794,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 2,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 18326,
+    "loader_excerpt": " 0}}var Ke,Je,$e=[\"default\",\"low-power\",\"high-performance\"],Ze={};function et(){if(!Je){var e,t={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:Y||\"./this.program\"};for(e in Ze)void 0===Ze[e]?delete t[e]:t[e]=Ze[e];var n=[];for(e in t)n.push(e+\"=\"+t[e]);Je=n}return Je}function tt(r,a){var o;return f?w(8,1,r,a):(o=0,et().forEach(function(e,t){var n=a+o;for(t=_[r+4*t>>2]=n,n=0;n<e.length;++n)h[t++>>0]=e.charCodeAt(n);h[t>>0]=0,o+=e.length+1}),0)}function nt(e,t){var n,r;return f?w(9,1,e,t):(n=et(),_[e>>2]=n.length,r=0,n.forEach(function(e){r+=e.length+1}),_[t>>2]=r,0)}function rt(e){return f?w(10,1,e):0}function at(e,t,n,r){return f?w(11,1,e,t,n,r):(e=Fe.",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31094"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "S",
+    "kind": "function",
+    "index": 41,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 568,
+    "loader_excerpt": "\n */!function(){var $t,e,n,t,r,a;function i(){function e(S){var i,k,T,t,n;S=S||{},(i=i||(void 0!==S?S:{})).ready=new Promise(function(e,t){k=e,T=t}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var n,r={open:function(e,t){n=t},send:function(){require(\"fs\").readFile(n,function(e,t){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=t,r.onreadystatechange(),r.onload())})}};return r}),i.postCustomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};va",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31095"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "T",
+    "kind": "function",
+    "index": 476,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 9317,
+    "loader_excerpt": ",lb:function(e){_[Vt>>2]=0;try{e()}finally{_[Vt>>2]=1}},kb:function(){},pb:function(){for(var e in v.Ta)v.Ta[e]()},Xa:function(a,o){a.onmessage=function(e){var t=e.data,n=t.cmd;if(a.ua&&(v.bb=a.ua.wa),t.targetThread&&t.targetThread!=x()){var r=v.va[t.Hb];r?r.worker.postMessage(e.data,t.transferList):l('Internal error! Worker sent a message \"'+n+'\" to target pthread '+t.targetThread+\", but that thread no longer exists!\")}else if(\"processQueuedMainThreadWork\"===n)Dt();else if(\"spawnThread\"===n)ke(e.data);else if(\"cleanupThread\"===n)Me(t.thread);else if(\"killThread\"===n){if(e=t.thread,f)throw\"Internal Error! killThread() can only ever be called from main application thread!\";if(!e)throw\"Internal Error! Null pthread_ptr in killThread!\";_[e+12>>2]=0,t=v.va[e],delete v.va[e],t.worker.terminate()",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31096"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "U",
+    "kind": "table",
+    "index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 20692,
+    "loader_excerpt": ")-1}var c,f=_[r+40>>2];for(c in r={sb:_[r>>2],rb:_[r+4>>2],Ka:_[r+8>>2],Ea:_[r+12>>2],Ca:_[r+16>>2],U:_[r+20>>2],La:_[r+24>>2],Ma:_[r+28>>2],Ib:_[r+32>>2],qb:_[r+36>>2],tb:f?O(f):\"\"},n=O(n),f={\"%c\":\"%a %b %d %H:%M:%S %Y\",\"%D\":\"%m/%d/%y\",\"%F\":\"%Y-%m-%d\",\"%h\":\"%b\",\"%r\":\"%I:%M:%S %p\",\"%R\":\"%H:%M\",\"%T\":\"%H:%M:%S\",\"%x\":\"%m/%d/%y\",\"%X\":\"%H:%M:%S\",\"%Ec\":\"%c\",\"%EC\":\"%C\",\"%Ex\":\"%m/%d/%y\",\"%EX\":\"%H:%M:%S\",\"%Ey\":\"%y\",\"%EY\":\"%Y\",\"%Od\":\"%d\",\"%Oe\":\"%e\",\"%OH\":\"%H\",\"%OI\":\"%I\",\"%Om\":\"%m\",\"%OM\":\"%M\",\"%OS\":\"%S\",\"%Ou\":\"%u\",\"%OU\":\"%U\",\"%OV\":\"%V\",\"%Ow\":\"%w\",\"%OW\":\"%W\",\"%Oy\":\"%y\"})n=n.replace(new RegExp(c,\"g\"),f[c]);var l,d,p=\"Sunday Monday Tuesday Wednesday Thursday Friday Saturday\".split(\" \"),m=\"January February March April May June July August September October November December\".split(\" \");for(c in f={\"%a\":f",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31097"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "V",
+    "kind": "function",
+    "index": 60,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 1,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 17276,
+    "loader_excerpt": "e,r=U(8),_[r+4>>2]=x(),a={Cb:r,attributes:e,version:e.jb,Fa:o},o.canvas&&(o.canvas.Ga=a),(void 0===e.Va||e.Va)&&!(o=(o=a)||Ke).fb){o.fb=!0;var i=t=o.Fa,s=i.getExtension(\"ANGLE_instanced_arrays\"),u=(s&&(i.vertexAttribDivisor=function(e,t){s.vertexAttribDivisorANGLE(e,t)},i.drawArraysInstanced=function(e,t,n,r){s.drawArraysInstancedANGLE(e,t,n,r)},i.drawElementsInstanced=function(e,t,n,r,a){s.drawElementsInstancedANGLE(e,t,n,r,a)}),t),c=u.getExtension(\"OES_vertex_array_object\"),f=(c&&(u.createVertexArray=function(){return c.createVertexArrayOES()},u.deleteVertexArray=function(e){c.deleteVertexArrayOES(e)},u.bindVertexArray=function(e){c.bindVertexArrayOES(e)},u.isVertexArray=function(e){return c.isVertexArrayOES(e)}),t),l=f.getExtension(\"WEBGL_draw_buffers\");l&&(f.drawBuffers=function(e,t){l",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31098"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "W",
+    "kind": "function",
+    "index": 461,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 2981,
+    "loader_excerpt": "reads\" module is not supported in this node.js build - perhaps a newer version is needed?'),e}global.Worker=d.Worker}else(z||o)&&(o?a=self.location.href:\"undefined\"!=typeof document&&document.currentScript&&(a=document.currentScript.src),a=0!==(a=Jt?Jt:a).indexOf(\"blob:\")?a.substr(0,a.lastIndexOf(\"/\")+1):\"\",s?(X=function(e,t){return r=r||require(\"fs\"),e=(V=V||require(\"path\")).normalize(e),r.readFileSync(e,t?null:\"utf8\")},K=function(e){return re((e=(e=X(e,!0)).buffer?e:new Uint8Array(e)).buffer),e}):(X=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.send(null),t.responseText},o&&(K=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.responseType=\"arraybuffer\",t.send(null),new Uint8Array(t.response)})));s&&\"undefined\"==typeof performance&&(global.performance=req",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31099"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "X",
+    "kind": "function",
+    "index": 763,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 660,
+    "loader_excerpt": "d 0!==S?S:{})).ready=new Promise(function(e,t){k=e,T=t}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var n,r={open:function(e,t){n=t},send:function(){require(\"fs\").readFile(n,function(e,t){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=t,r.onreadystatechange(),r.onload())})}};return r}),i.postCustomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.fo",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31100"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "Y",
+    "kind": "function",
+    "index": 762,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 14,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 14284,
+    "loader_excerpt": "r(e):void 0)}function He(e,t,n){var r,a,o,i,s=Ne(e);return s?(s.Ha&&(_[s.Ha>>2]=t,_[s.Ha+4>>2]=n),!s.Ya&&s.yb?s.Ha?(s=_[s.Ha+8>>2],e=e?O(e):\"\",r=Bt(),a=Wt(12),o=0,e&&(o=ue(e)+1,i=U(o),F(e,I,i,o),o=i),_[a>>2]=o,_[a+4>>2]=t,_[a+8>>2]=n,Ot(0,s,657457152,0,o,a),qt(r),1):-4:(e=!1,(s=s.Ya?s.Ya:s).Ga&&s.Ga.Fa&&(e=0===(e=s.Ga.Fa.getParameter(2978))[0]&&0===e[1]&&e[2]===s.width&&e[3]===s.height),s.width=t,s.height=n,e&&s.Ga.Fa.viewport(0,0,t,n),0)):-4}function Ye(e,t,n){return f?w(7,1,e,t,n):He(e,t,n)}function j(e,t){if(!c)if(t)e();else{try{e()}catch(e){if(e instanceof M)return;if(\"unwind\"!==e)throw e&&\"object\"==typeof e&&e.stack&&l(\"exception thrown: \"+[e,e.stack]),e}if(!_e())try{(f?Rt:Xt)(ne)}catch(e){if(!(e instanceof M))throw e}}}var Ge,Ve=[];function L(e,t){C[e>>2]=t,C[e+4>>2]=t/4294967296|0}f",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31101"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "Z",
+    "kind": "function",
+    "index": 761,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 7,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 13590,
+    "loader_excerpt": "tion(){return performance.now()},Ce=[null,[],[]];function Oe(e,t){var n=Ce[e];0===t||10===t?((1===e?Z:l)(se(n,0)),n.length=0):n.push(t)}var Fe={};function Re(e,t,n){return f?w(2,1,e,t,n):0}function je(e,t,n){return f?w(3,1,e,t,n):0}function Le(e,t,n){if(f)return w(4,1,e,t,n)}function Ue(){if(f)return w(5,1);y()}var Pe=[];function Be(e){if(f)return w(6,1,e);ee=!1,R=0,Xt(e)}function w(e,t){for(var n=arguments.length-2,r=Bt(),a=Wt(8*n),o=a>>3,i=0;i<n;i++)oe[o+i]=arguments[2+i];return n=Ct(e,n,a,t),qt(r),n}var qe=[],We=[0,\"undefined\"!=typeof document?document:0,\"undefined\"!=typeof window?window:0];function Ne(e){return e=2<e?O(e):e,We[e]||(\"undefined\"!=typeof document?document.querySelector(e):void 0)}function He(e,t,n){var r,a,o,i,s=Ne(e);return s?(s.Ha&&(_[s.Ha>>2]=t,_[s.Ha+4>>2]=n),!s.Ya&&s",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31102"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "_",
+    "kind": "function",
+    "index": 297,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 18507,
+    "loader_excerpt": "ect\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:Y||\"./this.program\"};for(e in Ze)void 0===Ze[e]?delete t[e]:t[e]=Ze[e];var n=[];for(e in t)n.push(e+\"=\"+t[e]);Je=n}return Je}function tt(r,a){var o;return f?w(8,1,r,a):(o=0,et().forEach(function(e,t){var n=a+o;for(t=_[r+4*t>>2]=n,n=0;n<e.length;++n)h[t++>>0]=e.charCodeAt(n);h[t>>0]=0,o+=e.length+1}),0)}function nt(e,t){var n,r;return f?w(9,1,e,t):(n=et(),_[e>>2]=n.length,r=0,n.forEach(function(e){r+=e.length+1}),_[t>>2]=r,0)}function rt(e){return f?w(10,1,e):0}function at(e,t,n,r){return f?w(11,1,e,t,n,r):(e=Fe.Bb(e),t=Fe.Ab(e,t,n),_[r>>2]=t,0)}function ot(e,t,n,r,a){if(f)return w(12,1,e,t,n,r,a)}function it(e,t,n,r){if(f)return w(13,1,e,t,n,r);for(var a=0,o=0;o<n;o++){for(var i=_[t+8*o>>2",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31103"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "$",
+    "kind": "function",
+    "index": 760,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "f64"
+      ]
+    },
+    "type_index": 74,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 8631,
+    "loader_excerpt": ".store(C,e+0>>2,1),xe(e+0,2147483647),jt(0,0,0)},mb:function(e){ne=e},ab:function(e){var t=x();t&&(v.$a(t,e),f)&&postMessage({cmd:\"exit\"})},ob:function(){v.$a(x(),-1),postMessage({cmd:\"cancelDone\"})},Ra:function(){for(var e in v.va){var t=v.va[e];t&&t.worker&&v.Ja(t.worker)}for(v.va={},e=0;e<v.xa.length;++e){var n=v.xa[e];n.terminate()}for(v.xa=[],e=0;e<v.ya.length;++e)t=(n=v.ya[e]).ua,v.Oa(t),n.terminate();v.ya=[]},Oa:function(e){var t;e&&(e.wa&&(t=_[e.wa+100>>2],_[e.wa+100>>2]=0,A(t),A(e.wa)),e.wa=0,e.Na&&e.za&&A(e.za),e.za=0,e.worker)&&(e.worker.ua=null)},Ja:function(e){v.lb(function(){delete v.va[e.ua.wa],v.xa.push(e),v.ya.splice(v.ya.indexOf(e),1),v.Oa(e.ua),e.ua=void 0})},lb:function(e){_[Vt>>2]=0;try{e()}finally{_[Vt>>2]=1}},kb:function(){},pb:function(){for(var e in v.Ta)v.Ta[e]()}",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31104"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "aa",
+    "kind": "function",
+    "index": 758,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 5,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 32295,
+    "loader_excerpt": "rguments)},Ot=i.__emscripten_call_on_thread=function(){return(Ot=i.__emscripten_call_on_thread=i.asm.aa).apply(null,arguments)},Ft=i._pthread_testcancel=function(){return(Ft=i._pthread_testcancel=i.asm.ba).apply(null,arguments)},x=i._pthread_self=function(){return(x=i._pthread_self=i.asm.ca).apply(null,arguments)},Rt=i._pthread_exit=function(){return(Rt=i._pthread_exit=i.asm.da).apply(null,arguments)},jt=i.__emscripten_thread_init=function(){return(jt=i.__emscripten_thread_init=i.asm.ea).apply(null,arguments)},Lt=i._emscripten_get_global_libc=function(){return(Lt=i._emscripten_get_global_libc=i.asm.fa).apply(null,arguments)},Ut=i.___errno_location=function(){return(Ut=i.___errno_location=i.asm.ga).apply(null,arguments)},Pt=i.___pthread_tsd_run_dtors=function(){return(Pt=i.___pthread_tsd_ru",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31105"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ba",
+    "kind": "function",
+    "index": 239,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 32396,
+    "loader_excerpt": "aa).apply(null,arguments)},Ft=i._pthread_testcancel=function(){return(Ft=i._pthread_testcancel=i.asm.ba).apply(null,arguments)},x=i._pthread_self=function(){return(x=i._pthread_self=i.asm.ca).apply(null,arguments)},Rt=i._pthread_exit=function(){return(Rt=i._pthread_exit=i.asm.da).apply(null,arguments)},jt=i.__emscripten_thread_init=function(){return(jt=i.__emscripten_thread_init=i.asm.ea).apply(null,arguments)},Lt=i._emscripten_get_global_libc=function(){return(Lt=i._emscripten_get_global_libc=i.asm.fa).apply(null,arguments)},Ut=i.___errno_location=function(){return(Ut=i.___errno_location=i.asm.ga).apply(null,arguments)},Pt=i.___pthread_tsd_run_dtors=function(){return(Pt=i.___pthread_tsd_run_dtors=i.asm.ha).apply(null,arguments)},Bt=i.stackSave=function(){return(Bt=i.stackSave=i.asm.ia).ap",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31106"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ca",
+    "kind": "function",
+    "index": 750,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 14,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 4259,
+    "loader_excerpt": "this.decode=function(e){return e.buffer instanceof SharedArrayBuffer&&(e=new Uint8Array(e)),t.decode.call(t,e)}}var h,I,D,_,C,oe,ie=\"undefined\"!=typeof TextDecoder?new ae(\"utf8\"):void 0;function se(e,t,n){var r=t+n;for(n=t;e[n]&&!(r<=n);)++n;if(16<n-t&&e.subarray&&ie)return ie.decode(e.subarray(t,n));for(r=\"\";t<n;){var a,o,i=e[t++];128&i?(a=63&e[t++],192==(224&i)?r+=String.fromCharCode((31&i)<<6|a):(o=63&e[t++],(i=224==(240&i)?(15&i)<<12|a<<6|o:(7&i)<<18|a<<12|o<<6|63&e[t++])<65536?r+=String.fromCharCode(i):(i-=65536,r+=String.fromCharCode(55296|i>>10,56320|1023&i)))):r+=String.fromCharCode(i)}return r}function O(e){return e?se(I,e,void 0):\"\"}function F(e,t,n,r){if(0<r){r=n+r-1;for(var a=0;a<e.length;++a){var o=e.charCodeAt(a);if((o=55296<=o&&o<=57343?65536+((1023&o)<<10)|1023&e.charCodeAt",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31107"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "da",
+    "kind": "function",
+    "index": 756,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 9380,
+    "loader_excerpt": "tion(){},pb:function(){for(var e in v.Ta)v.Ta[e]()},Xa:function(a,o){a.onmessage=function(e){var t=e.data,n=t.cmd;if(a.ua&&(v.bb=a.ua.wa),t.targetThread&&t.targetThread!=x()){var r=v.va[t.Hb];r?r.worker.postMessage(e.data,t.transferList):l('Internal error! Worker sent a message \"'+n+'\" to target pthread '+t.targetThread+\", but that thread no longer exists!\")}else if(\"processQueuedMainThreadWork\"===n)Dt();else if(\"spawnThread\"===n)ke(e.data);else if(\"cleanupThread\"===n)Me(t.thread);else if(\"killThread\"===n){if(e=t.thread,f)throw\"Internal Error! killThread() can only ever be called from main application thread!\";if(!e)throw\"Internal Error! Null pthread_ptr in killThread!\";_[e+12>>2]=0,t=v.va[e],delete v.va[e],t.worker.terminate(),v.Oa(t),v.ya.splice(v.ya.indexOf(t.worker),1),t.worker.ua=void",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31108"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ea",
+    "kind": "function",
+    "index": 725,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 8,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 32683,
+    "loader_excerpt": "null,arguments)},jt=i.__emscripten_thread_init=function(){return(jt=i.__emscripten_thread_init=i.asm.ea).apply(null,arguments)},Lt=i._emscripten_get_global_libc=function(){return(Lt=i._emscripten_get_global_libc=i.asm.fa).apply(null,arguments)},Ut=i.___errno_location=function(){return(Ut=i.___errno_location=i.asm.ga).apply(null,arguments)},Pt=i.___pthread_tsd_run_dtors=function(){return(Pt=i.___pthread_tsd_run_dtors=i.asm.ha).apply(null,arguments)},Bt=i.stackSave=function(){return(Bt=i.stackSave=i.asm.ia).apply(null,arguments)},qt=i.stackRestore=function(){return(qt=i.stackRestore=i.asm.ja).apply(null,arguments)},Wt=i.stackAlloc=function(){return(Wt=i.stackAlloc=i.asm.ka).apply(null,arguments)},Nt=i._emscripten_stack_set_limits=function(){return(Nt=i._emscripten_stack_set_limits=i.asm.la).",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31109"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "fa",
+    "kind": "function",
+    "index": 755,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 14,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 32800,
+    "loader_excerpt": "rguments)},Lt=i._emscripten_get_global_libc=function(){return(Lt=i._emscripten_get_global_libc=i.asm.fa).apply(null,arguments)},Ut=i.___errno_location=function(){return(Ut=i.___errno_location=i.asm.ga).apply(null,arguments)},Pt=i.___pthread_tsd_run_dtors=function(){return(Pt=i.___pthread_tsd_run_dtors=i.asm.ha).apply(null,arguments)},Bt=i.stackSave=function(){return(Bt=i.stackSave=i.asm.ia).apply(null,arguments)},qt=i.stackRestore=function(){return(qt=i.stackRestore=i.asm.ja).apply(null,arguments)},Wt=i.stackAlloc=function(){return(Wt=i.stackAlloc=i.asm.ka).apply(null,arguments)},Nt=i._emscripten_stack_set_limits=function(){return(Nt=i._emscripten_stack_set_limits=i.asm.la).apply(null,arguments)},Ht=i._memalign=function(){return(Ht=i._memalign=i.asm.ma).apply(null,arguments)},P=i.dynCall_v",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31110"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ga",
+    "kind": "function",
+    "index": 754,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 14,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 32897,
+    "loader_excerpt": "asm.fa).apply(null,arguments)},Ut=i.___errno_location=function(){return(Ut=i.___errno_location=i.asm.ga).apply(null,arguments)},Pt=i.___pthread_tsd_run_dtors=function(){return(Pt=i.___pthread_tsd_run_dtors=i.asm.ha).apply(null,arguments)},Bt=i.stackSave=function(){return(Bt=i.stackSave=i.asm.ia).apply(null,arguments)},qt=i.stackRestore=function(){return(qt=i.stackRestore=i.asm.ja).apply(null,arguments)},Wt=i.stackAlloc=function(){return(Wt=i.stackAlloc=i.asm.ka).apply(null,arguments)},Nt=i._emscripten_stack_set_limits=function(){return(Nt=i._emscripten_stack_set_limits=i.asm.la).apply(null,arguments)},Ht=i._memalign=function(){return(Ht=i._memalign=i.asm.ma).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.na).apply(null,arguments)},Yt=i.dynCall_ii=function(){re",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31111"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ha",
+    "kind": "function",
+    "index": 535,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 29440,
+    "loader_excerpt": "e(e)+1,n=U(t);return F(e,I,n,t),n},At(function(e){t().then(e)});var t},H:function(e,t){return t={alpha:!!_[t>>=2],depth:!!_[t+1],stencil:!!_[t+2],antialias:!!_[t+3],premultipliedAlpha:!!_[t+4],preserveDrawingBuffer:!!_[t+5],powerPreference:$e[_[t+6]],failIfMajorPerformanceCaveat:!!_[t+7],jb:_[t+8],Db:_[t+9],Va:_[t+10],cb:_[t+11],Fb:_[t+12],Gb:_[t+13]},!(e=Ne(e))||t.cb?0:Xe(e,t)},B:tt,C:nt,i:function(e){Xt(e)},l:rt,z:at,t:ot,y:it,L:function(){v.hb()},a:u||i.wasmMemory,s:function(){i.pauseQueue()},A:dt,j:function(){i.unpauseQueue()}},A=(!function(){function t(e,t){var n;e=Et(e=e.exports),i.asm=e,de.unshift(i.asm.Q),v.Ta.push(i.asm.T),te=t,f||(n=v.xa.length,v.xa.forEach(function(e){v.Xa(e,function(){--n||we()})}))}function n(e){t(e.instance,e.module)}function r(e){return($||!z&&!o||\"function\"",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31112"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ia",
+    "kind": "function",
+    "index": 766,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 14,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33089,
+    "loader_excerpt": "tsd_run_dtors=i.asm.ha).apply(null,arguments)},Bt=i.stackSave=function(){return(Bt=i.stackSave=i.asm.ia).apply(null,arguments)},qt=i.stackRestore=function(){return(qt=i.stackRestore=i.asm.ja).apply(null,arguments)},Wt=i.stackAlloc=function(){return(Wt=i.stackAlloc=i.asm.ka).apply(null,arguments)},Nt=i._emscripten_stack_set_limits=function(){return(Nt=i._emscripten_stack_set_limits=i.asm.la).apply(null,arguments)},Ht=i._memalign=function(){return(Ht=i._memalign=i.asm.ma).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.na).apply(null,arguments)},Yt=i.dynCall_ii=function(){return(Yt=i.dynCall_ii=i.asm.oa).apply(null,arguments)},Gt=i.dynCall_v=function(){return(Gt=i.dynCall_v=i.asm.pa).apply(null,arguments)},Vt=(i._asyncify_start_unwind=function(){return(i._asyncif",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31113"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ja",
+    "kind": "function",
+    "index": 764,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33176,
+    "loader_excerpt": "ackSave=i.asm.ia).apply(null,arguments)},qt=i.stackRestore=function(){return(qt=i.stackRestore=i.asm.ja).apply(null,arguments)},Wt=i.stackAlloc=function(){return(Wt=i.stackAlloc=i.asm.ka).apply(null,arguments)},Nt=i._emscripten_stack_set_limits=function(){return(Nt=i._emscripten_stack_set_limits=i.asm.la).apply(null,arguments)},Ht=i._memalign=function(){return(Ht=i._memalign=i.asm.ma).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.na).apply(null,arguments)},Yt=i.dynCall_ii=function(){return(Yt=i.dynCall_ii=i.asm.oa).apply(null,arguments)},Gt=i.dynCall_v=function(){return(Gt=i.dynCall_v=i.asm.pa).apply(null,arguments)},Vt=(i._asyncify_start_unwind=function(){return(i._asyncify_start_unwind=i.asm.qa).apply(null,arguments)},i._asyncify_stop_unwind=function(){retu",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31114"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ka",
+    "kind": "function",
+    "index": 759,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 1,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33259,
+    "loader_excerpt": "tackRestore=i.asm.ja).apply(null,arguments)},Wt=i.stackAlloc=function(){return(Wt=i.stackAlloc=i.asm.ka).apply(null,arguments)},Nt=i._emscripten_stack_set_limits=function(){return(Nt=i._emscripten_stack_set_limits=i.asm.la).apply(null,arguments)},Ht=i._memalign=function(){return(Ht=i._memalign=i.asm.ma).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.na).apply(null,arguments)},Yt=i.dynCall_ii=function(){return(Yt=i.dynCall_ii=i.asm.oa).apply(null,arguments)},Gt=i.dynCall_v=function(){return(Gt=i.dynCall_v=i.asm.pa).apply(null,arguments)},Vt=(i._asyncify_start_unwind=function(){return(i._asyncify_start_unwind=i.asm.qa).apply(null,arguments)},i._asyncify_stop_unwind=function(){return(i._asyncify_stop_unwind=i.asm.ra).apply(null,arguments)},i._asyncify_start_rewin",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31115"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "la",
+    "kind": "function",
+    "index": 682,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 4,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 3166,
+    "loader_excerpt": "cument.currentScript&&(a=document.currentScript.src),a=0!==(a=Jt?Jt:a).indexOf(\"blob:\")?a.substr(0,a.lastIndexOf(\"/\")+1):\"\",s?(X=function(e,t){return r=r||require(\"fs\"),e=(V=V||require(\"path\")).normalize(e),r.readFileSync(e,t?null:\"utf8\")},K=function(e){return re((e=(e=X(e,!0)).buffer?e:new Uint8Array(e)).buffer),e}):(X=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.send(null),t.responseText},o&&(K=function(e){var t=new XMLHttpRequest;return t.open(\"GET\",e,!1),t.responseType=\"arraybuffer\",t.send(null),new Uint8Array(t.response)})));s&&\"undefined\"==typeof performance&&(global.performance=require(\"perf_hooks\").performance);var J,$,Z=i.print||console.log.bind(console),l=i.printErr||console.warn.bind(console);for(e in N)N.hasOwnProperty(e)&&(i[e]=N[e]);N=null,i.arguments&&(H=",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31116"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ma",
+    "kind": "function",
+    "index": 322,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 2,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 11129,
+    "loader_excerpt": "(\"error\",function(e){a.onerror(e)}),a.on(\"exit\",function(){})),a.postMessage({cmd:\"load\",urlOrBlob:i.mainScriptUrlOrBlob||Jt,wasmMemory:u,wasmModule:te})},Ua:function(){var e=Q(\"stockfish.worker.js\");v.xa.push(new Worker(e))},eb:function(){return 0==v.xa.length&&(v.Ua(),v.Xa(v.xa[0])),v.xa.pop()},wb:function(e){for(e=performance.now()+e;performance.now()<e;);}};function Se(e,t){if(f)return w(1,1,e,t);me.unshift({Pa:e,Aa:t})}function ke(e){if(f)throw\"Internal Error! spawnThread() can only ever be called from main application thread!\";var t=v.eb();if(!t)return 6;if(void 0!==t.ua)throw\"Internal error!\";if(!e.Ia)throw\"Internal error, no pthread ptr!\";v.ya.push(t);for(var n=U(512),r=0;r<128;++r)_[n+4*r>>2]=0;var a=e.za+e.Ba,o=(r=v.va[e.Ia]={worker:t,za:e.za,Ba:e.Ba,Na:e.Na,wa:e.Ia}).wa>>2,i=(At",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31117"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "na",
+    "kind": "function",
+    "index": 519,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 4,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33540,
+    "loader_excerpt": "t=i._memalign=i.asm.ma).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.na).apply(null,arguments)},Yt=i.dynCall_ii=function(){return(Yt=i.dynCall_ii=i.asm.oa).apply(null,arguments)},Gt=i.dynCall_v=function(){return(Gt=i.dynCall_v=i.asm.pa).apply(null,arguments)},Vt=(i._asyncify_start_unwind=function(){return(i._asyncify_start_unwind=i.asm.qa).apply(null,arguments)},i._asyncify_stop_unwind=function(){return(i._asyncify_stop_unwind=i.asm.ra).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.sa).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.ta).apply(null,arguments)},i.__emscripten_allow_main_runtime_queued_calls=29752),zt=i.__emscripten_main_thread_futex=1246688;functi",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31118"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "oa",
+    "kind": "function",
+    "index": 518,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 2,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33623,
+    "loader_excerpt": ".dynCall_vi=i.asm.na).apply(null,arguments)},Yt=i.dynCall_ii=function(){return(Yt=i.dynCall_ii=i.asm.oa).apply(null,arguments)},Gt=i.dynCall_v=function(){return(Gt=i.dynCall_v=i.asm.pa).apply(null,arguments)},Vt=(i._asyncify_start_unwind=function(){return(i._asyncify_start_unwind=i.asm.qa).apply(null,arguments)},i._asyncify_stop_unwind=function(){return(i._asyncify_stop_unwind=i.asm.ra).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.sa).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.ta).apply(null,arguments)},i.__emscripten_allow_main_runtime_queued_calls=29752),zt=i.__emscripten_main_thread_futex=1246688;function M(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",t",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31119"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "pa",
+    "kind": "function",
+    "index": 516,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 1283,
+    "loader_excerpt": ".length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.forEach(function(e){i.queue.put(e)}),i.queue.process()},i.postMessage=i.postCustomMessage,[]),N=(i.addMessageListener=function(e){W.push(e)},i.removeMessageListener=function(e){0<=(e=W.indexOf(e))&&W.splice(e,1)},i.print=i.printErr=function(e){if(\"Blocking on the main thread is very dangerous, see https://emscripten.org/docs/porting/pthreads.html#blocking-on-the-main-browser-thread\"!==e){if(0===W.length)return console.log(e);for(var t of W)t(e)}},i.terminate=function(){v.Ra()},i.__IS_NON_NESTED__=!0,{});for(e in i)i.hasOwnProperty(e)&&(N[e]=i[e]);var H=[],Y=\"./this.program\";function G(e,t){if(0!==e)throw t}var r,V,z=\"",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31120"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "qa",
+    "kind": "function",
+    "index": 515,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33809,
+    "loader_excerpt": "apply(null,arguments)},Vt=(i._asyncify_start_unwind=function(){return(i._asyncify_start_unwind=i.asm.qa).apply(null,arguments)},i._asyncify_stop_unwind=function(){return(i._asyncify_stop_unwind=i.asm.ra).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.sa).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.ta).apply(null,arguments)},i.__emscripten_allow_main_runtime_queued_calls=29752),zt=i.__emscripten_main_thread_futex=1246688;function M(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",this.status=e}function Qt(o){function e(){if(!xt&&(xt=!0,i.calledRun=!0,!c)){if(f||g(de),f||g(pe),k(i),i.onRuntimeInitialized&&i.onRuntimeInitialized(),Kt){var t=o,e=i._main,n=(t=t||[]).l",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31121"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ra",
+    "kind": "function",
+    "index": 514,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 33908,
+    "loader_excerpt": "m.qa).apply(null,arguments)},i._asyncify_stop_unwind=function(){return(i._asyncify_stop_unwind=i.asm.ra).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.sa).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.ta).apply(null,arguments)},i.__emscripten_allow_main_runtime_queued_calls=29752),zt=i.__emscripten_main_thread_futex=1246688;function M(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",this.status=e}function Qt(o){function e(){if(!xt&&(xt=!0,i.calledRun=!0,!c)){if(f||g(de),f||g(pe),k(i),i.onRuntimeInitialized&&i.onRuntimeInitialized(),Kt){var t=o,e=i._main,n=(t=t||[]).length+1,r=Wt(4*(n+1));_[r>>2]=ce(Y);for(var a=1;a<n;a++)_[(r>>2)+a]=ce(t[a-1]);_[(r>>2)+n]=0;try{Xt",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31122"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "sa",
+    "kind": "function",
+    "index": 513,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 34009,
+    "loader_excerpt": "ra).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.sa).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.ta).apply(null,arguments)},i.__emscripten_allow_main_runtime_queued_calls=29752),zt=i.__emscripten_main_thread_futex=1246688;function M(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",this.status=e}function Qt(o){function e(){if(!xt&&(xt=!0,i.calledRun=!0,!c)){if(f||g(de),f||g(pe),k(i),i.onRuntimeInitialized&&i.onRuntimeInitialized(),Kt){var t=o,e=i._main,n=(t=t||[]).length+1,r=Wt(4*(n+1));_[r>>2]=ce(Y);for(var a=1;a<n;a++)_[(r>>2)+a]=ce(t[a-1]);_[(r>>2)+n]=0;try{Xt(e(n,r),!0)}catch(e){e instanceof M||\"unwind\"==e||((t=e)&&\"object\"==typeof e&&e.stack&&(t=[e,e.stack]",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31123"
+  },
+  {
+    "module_id": "module-003",
+    "direction": "export",
+    "name": "ta",
+    "kind": "function",
+    "index": 512,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 10,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 998,
+    "loader_excerpt": "})}};return r}),i.postCustomMessage=function(e){for(var t of v.ya)t.postMessage({cmd:\"custom\",userData:e})},i.queue=(n=[],{get:async function(){return!B&&0<n.length?n.shift():await new Promise(function(e){return t=e})},put:function(e){t?(t(e),t=null):n.push(e)},process:function(){t&&n.length&&t(n.shift())}}),i.onCustomMessage=function(e){B?q.push(e):i.queue.put(e)};var B,e,q=[],W=(i.pauseQueue=function(){B=!0},i.unpauseQueue=function(){var e=q;B=!(q=[]),e.forEach(function(e){i.queue.put(e)}),i.queue.process()},i.postMessage=i.postCustomMessage,[]),N=(i.addMessageListener=function(e){W.push(e)},i.removeMessageListener=function(e){0<=(e=W.indexOf(e))&&W.splice(e,1)},i.print=i.printErr=function(e){if(\"Blocking on the main thread is very dangerous, see https://emscripten.org/docs/porting/pthre",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31124"
+  }
+]

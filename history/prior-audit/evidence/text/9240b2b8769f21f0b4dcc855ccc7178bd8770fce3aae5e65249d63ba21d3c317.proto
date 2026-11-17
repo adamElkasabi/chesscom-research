@@ -1,0 +1,24 @@
+// source: chesscom/courses/v1/course_variation_ply.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseVariationPly {
+  oneof _pre_comment {
+  string pre_comment = 8;
+  }
+  oneof _post_comment {
+  string post_comment = 9;
+  }
+  oneof _coach_speech {
+  .chesscom.courses.v1.CourseCoachSpeech coach_speech = 11;
+  }
+  optional string id = 1;
+  optional int32 move_number = 2;
+  optional string san = 3;
+  optional .chesscom.courses.v1.CoursePosition position = 4;
+  optional .chesscom.chess.v1.Color color = 5;
+  optional bool is_learnable = 6;
+  repeated .chesscom.courses_common.v1.CourseVariationAlternativeMove alternative_moves = 7;
+  optional int32 ply_index = 10;
+}

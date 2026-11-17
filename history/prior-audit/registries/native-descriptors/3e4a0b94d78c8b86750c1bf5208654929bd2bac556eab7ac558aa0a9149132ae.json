@@ -1,0 +1,92 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/circumstance.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "Circumstance",
+      "value": [
+        {
+          "name": "CIRCUMSTANCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CIRCUMSTANCE_BASE",
+          "number": 1
+        },
+        {
+          "name": "CIRCUMSTANCE_THREATENS",
+          "number": 2
+        },
+        {
+          "name": "CIRCUMSTANCE_PREVENTS",
+          "number": 3
+        },
+        {
+          "name": "CIRCUMSTANCE_PERMITS",
+          "number": 4
+        },
+        {
+          "name": "CIRCUMSTANCE_MISSES",
+          "number": 5
+        },
+        {
+          "name": "CIRCUMSTANCE_MISSES_SAME",
+          "number": 6
+        },
+        {
+          "name": "CIRCUMSTANCE_ENDGAME",
+          "number": 7
+        },
+        {
+          "name": "CIRCUMSTANCE_GAME_STATUS",
+          "number": 8
+        },
+        {
+          "name": "CIRCUMSTANCE_LEADS_TO",
+          "number": 9
+        },
+        {
+          "name": "CIRCUMSTANCE_WINS_MATERIAL",
+          "number": 10
+        },
+        {
+          "name": "CIRCUMSTANCE_GAME_OVER",
+          "number": 11
+        },
+        {
+          "name": "CIRCUMSTANCE_MATE",
+          "number": 12
+        },
+        {
+          "name": "CIRCUMSTANCE_BRILLIANT",
+          "number": 13
+        },
+        {
+          "name": "CIRCUMSTANCE_GREAT_FIND",
+          "number": 14
+        },
+        {
+          "name": "CIRCUMSTANCE_LONG_THINK",
+          "number": 15
+        },
+        {
+          "name": "CIRCUMSTANCE_SHORT_THINK",
+          "number": 16
+        },
+        {
+          "name": "CIRCUMSTANCE_TIME_TROUBLE",
+          "number": 17
+        },
+        {
+          "name": "CIRCUMSTANCE_FORCES",
+          "number": 18
+        },
+        {
+          "name": "CIRCUMSTANCE_TRICKY",
+          "number": 19
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

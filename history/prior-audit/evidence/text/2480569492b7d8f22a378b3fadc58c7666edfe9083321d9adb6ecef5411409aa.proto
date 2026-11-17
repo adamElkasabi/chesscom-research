@@ -1,0 +1,22 @@
+// source: chesscom/engine/v1/engine.proto
+// syntax: proto3
+
+package chesscom.engine.v1;
+
+enum Engine {
+  ENGINE_UNSPECIFIED = 0;
+  ENGINE_SF12 = 1;
+  ENGINE_SF15 = 2;
+  ENGINE_SF15_NNUE = 3;
+  ENGINE_SF15_1 = 4;
+  ENGINE_SF15_1_NNUE = 5;
+  ENGINE_SF16_NNUE = 6;
+  ENGINE_SF9_FAIRPLAY_V1 = 7;
+  ENGINE_DRAGON_3_3 = 8;
+  ENGINE_KOMODO_3_3 = 9;
+  ENGINE_SF16_1_NNUE = 10;
+  ENGINE_TORCH_3 = 11;
+  ENGINE_TORCH_HUMAN = 12;
+  ENGINE_SF18_NNUE = 13;
+  ENGINE_SF19_NNUE = 14;
+}

@@ -1,0 +1,15 @@
+
+stockfish-nnue-16-single.wasm:	file format wasm 0x1
+
+Sections:
+
+     Type start=0x0000000b end=0x000001e5 (size=0x000001da) count: 59
+   Import start=0x000001e8 end=0x0000026d (size=0x00000085) count: 22
+ Function start=0x00000270 end=0x00000537 (size=0x000002c7) count: 709
+    Table start=0x00000539 end=0x00000540 (size=0x00000007) count: 1
+   Memory start=0x00000542 end=0x00000549 (size=0x00000007) count: 1
+   Global start=0x0000054b end=0x00000568 (size=0x0000001d) count: 5
+   Export start=0x0000056a end=0x000005b7 (size=0x0000004d) count: 16
+     Elem start=0x000005ba end=0x00000901 (size=0x00000347) count: 1
+     Code start=0x00000905 end=0x000869dd (size=0x000860d8) count: 709
+     Data start=0x000869e1 end=0x0008c29a (size=0x000058b9) count: 93

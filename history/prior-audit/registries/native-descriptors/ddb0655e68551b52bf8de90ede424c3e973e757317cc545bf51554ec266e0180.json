@@ -1,0 +1,44 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_set_pgn_headers.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SetPgnHeadersRequest",
+      "field": [
+        {
+          "name": "headers",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SetPgnHeadersRequest.HeadersEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "HeadersEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "SetPgnHeadersResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/train/v1/train_tactical_theme.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainTacticalTheme",
+      "value": [
+        {
+          "name": "TRAIN_TACTICAL_THEME_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_TACTICAL_THEME_FORK",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_TACTICAL_THEME_PIN",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_TACTICAL_THEME_DISCOVERY",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_TACTICAL_THEME_REMOVES_DEFENDER",
+          "number": 4
+        },
+        {
+          "name": "TRAIN_TACTICAL_THEME_TRAPPED_PIECE",
+          "number": 5
+        },
+        {
+          "name": "TRAIN_TACTICAL_THEME_SKEWER",
+          "number": 6
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,12 @@
+{
+  "config": {
+    "id": "normalized-Minimal-true",
+    "uciAfter": {
+      "Normalize": false,
+      "Minimal": true
+    }
+  },
+  "started": "2026-11-14T19:11:54.686Z",
+  "error": "Error: RuntimeError: Aborted(Assertion failed: n.has_score(), at: ../../src/features/game_review.cpp,144,build_move_from_node). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:25:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:35:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+  "warnings": []
+}

@@ -1,0 +1,76 @@
+{
+  "status": "PASS within declared checks",
+  "overall_audit_status": "PARTIALLY AUDITED",
+  "checks": {
+    "source_ids_unique": true,
+    "finding_ids_unique": true,
+    "url_ids_unique": true,
+    "url_literals_unique": true,
+    "findings_validated": 22264,
+    "source_records_validated": 2075,
+    "url_records_validated": 2806,
+    "original_snapshot_sources_checked": 1135,
+    "original_snapshot_sources_unresolved": [],
+    "original_snapshot_resolved_hash_mismatches": [],
+    "original_WASM_hashes_and_structure": [
+      {
+        "module_id": "module-001",
+        "sha256": "b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28",
+        "functions": 22922,
+        "export_entries": 152,
+        "validation_exit": 0,
+        "runtime_stub_instantiation_exit": 0
+      },
+      {
+        "module_id": "module-002",
+        "sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+        "functions": 22953,
+        "export_entries": 153,
+        "validation_exit": 0,
+        "runtime_stub_instantiation_exit": 0
+      },
+      {
+        "module_id": "module-003",
+        "sha256": "064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35",
+        "functions": 756,
+        "export_entries": 32,
+        "validation_exit": 0,
+        "runtime_stub_instantiation_exit": 0
+      },
+      {
+        "module_id": "module-004",
+        "sha256": "198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04",
+        "functions": 709,
+        "export_entries": 16,
+        "validation_exit": 0,
+        "runtime_stub_instantiation_exit": 0
+      },
+      {
+        "module_id": "module-005",
+        "sha256": "59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559",
+        "functions": 749,
+        "export_entries": 17,
+        "validation_exit": 0,
+        "runtime_stub_instantiation_exit": 0
+      }
+    ],
+    "JSON_files_validated": 978,
+    "JSONL_lines_validated": 49259,
+    "gzip_files_validated": 19,
+    "internal_links_checked": 79272,
+    "broken_internal_links": [],
+    "redaction_text_files_scanned": 2177,
+    "redaction_pattern_hits": [],
+    "empty_Markdown_documents": [],
+    "empty_tool_outputs_note": "Zero-length tool stdout/stderr retained only as command outcomes; module reports and exit statuses explain failures."
+  },
+  "errors": [],
+  "limitations": [
+    "No exhaustive semantic review of every function/component.",
+    "Additional referenced WASM versions remain un-retrieved.",
+    "Public engineering disclosures establish reported technology usage,not endpoint-specific schemas.",
+    "Binary/opaque-data redaction is not guaranteed; known text patterns checked.",
+    "Historical original raw paths may be archived; verification resolves restored copies and reports any unresolved files.",
+    "A valid call graph records direct static calls; indirect targets remain unresolved."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/game_gateway/v1/game_relationship_metadata.proto",
+  "package": "chesscom.game_gateway.v1",
+  "message_type": [
+    {
+      "name": "GameRelationshipMetadata",
+      "field": [
+        {
+          "name": "are_friends",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "chesscom/train/v1/train_generated_challenge.proto",
+  "package": "chesscom.train.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/train/v1/train_challenge.proto",
+    "chesscom/train/v1/train_item_type.proto"
+  ],
+  "message_type": [
+    {
+      "name": "TrainGeneratedChallenge",
+      "field": [
+        {
+          "name": "ply",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainItemType"
+        },
+        {
+          "name": "pre_pitch_fen",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "opponent_pitch_move",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "source_played_move",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "challenge",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.train.v1.TrainChallenge"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

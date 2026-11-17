@@ -1,0 +1,12 @@
+// source: chesscom/train/v1/train_blunder_challenge.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+message TrainBlunderChallenge {
+  oneof _theme {
+  .chesscom.train.v1.TrainTacticalTheme theme = 2;
+  }
+  optional .chesscom.train.v1.TrainChallengeBucket bucket = 1;
+  optional .chesscom.chess.v1.Move correct_move = 3;
+}

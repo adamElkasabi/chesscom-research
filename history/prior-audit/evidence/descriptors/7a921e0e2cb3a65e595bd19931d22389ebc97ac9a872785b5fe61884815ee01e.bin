@@ -1,0 +1,13 @@
+
+Ochesscom/explanation_engine/v1alpha/internal_feature_generate_train_items.proto#chesscom.explanation_engine.v1alphachesscom/chess/v1/move.protochesscom/chess/v1/color.proto'chesscom/train/v1/train_challenge.proto"*
+(InternalFeatureGenerateTrainItemsRequest"‡
+GeneratedTrainItem
+pre_pitch_fen (	,
+
+user_color (2.chesscom.chess.v1.Color4
+opponent_pitch_move (2.chesscom.chess.v1.Move
+ply (3
+source_played_move (2.chesscom.chess.v1.Move4
+	challenge (2!.chesscom.train.v1.TrainChallenge"y
+)InternalFeatureGenerateTrainItemsResponseL
+train_items (27.chesscom.explanation_engine.v1alpha.GeneratedTrainItembproto3

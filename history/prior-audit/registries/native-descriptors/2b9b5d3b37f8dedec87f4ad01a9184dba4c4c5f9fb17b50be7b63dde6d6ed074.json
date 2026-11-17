@@ -1,0 +1,13 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_delete_pgn_move.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "DeletePgnMoveRequest"
+    },
+    {
+      "name": "DeletePgnMoveResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

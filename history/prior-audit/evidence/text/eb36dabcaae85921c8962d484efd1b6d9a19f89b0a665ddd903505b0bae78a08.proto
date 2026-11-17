@@ -1,0 +1,24 @@
+// source: chesscom/settings/v1/settings_learn.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message LearnSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.String coach = 1;
+  .chesscom.settings.v1.SettingValue.String coach_id = 2;
+  .chesscom.settings.v1.SettingValue.Boolean coach_nudge = 3;
+  .chesscom.settings.v1.SettingValue.Boolean enable_coach_voice = 4;
+  .chesscom.settings.v1.SettingValue.Double coach_voice_speed = 5;
+  .chesscom.settings.v1.SettingValue.Boolean enable_coach = 6;
+  .chesscom.settings.v1.SettingValue.Boolean enable_motivational = 7;
+  .chesscom.settings.v1.SettingValue.Boolean show_coach_avatar_game_review = 8;
+  .chesscom.settings.v1.SettingValue.String lesson_view = 9;
+  .chesscom.settings.v1.SettingValue.Boolean auto_save_coach_games = 10;
+  .chesscom.settings.v1.SettingValue.Boolean skills_enabled = 11;
+  .chesscom.settings.v1.SettingValue.Boolean coach_evaluation_bar = 12;
+  .chesscom.settings.v1.SettingValue.Boolean coach_suggestion_arrows = 13;
+  .chesscom.settings.v1.SettingValue.Boolean coach_threat_arrows = 14;
+  .chesscom.settings.v1.SettingValue.Boolean teach_legal_moves = 15;
+  }
+}

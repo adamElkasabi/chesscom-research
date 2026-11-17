@@ -1,0 +1,89 @@
+{
+  "name": "chesscom/user_properties/v1/properties_tournament_stats.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "TournamentStatsProperty",
+      "field": [
+        {
+          "name": "game_win_count",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_draw_count",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_loss_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1027,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.TournamentStatsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_win_count"
+        },
+        {
+          "name": "_game_draw_count"
+        },
+        {
+          "name": "_game_loss_count"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "TournamentStatsPropertyDefinition",
+      "value": [
+        {
+          "name": "TOURNAMENT_STATS_PROPERTY_DEFINITION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TOURNAMENT_STATS_PROPERTY_DEFINITION_GAME_WIN_COUNT",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "TOURNAMENT_STATS_PROPERTY_DEFINITION_GAME_DRAW_COUNT",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "TOURNAMENT_STATS_PROPERTY_DEFINITION_GAME_LOSS_COUNT",
+          "number": 3,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

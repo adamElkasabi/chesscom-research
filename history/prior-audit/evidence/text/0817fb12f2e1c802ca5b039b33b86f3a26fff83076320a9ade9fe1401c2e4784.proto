@@ -1,0 +1,65 @@
+// source: chesscom/payments/v1/product_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message GetUserActiveMembershipRequest {
+}
+
+message GetUserActiveMembershipResponse {
+  oneof _product {
+  .chesscom.payments.v1.Product product = 2;
+  }
+  oneof _will_expire {
+  bool will_expire = 4;
+  }
+  oneof _status_code {
+  .chesscom.payments.v1.StatusCode status_code = 6;
+  }
+  oneof _group_membership_type {
+  .chesscom.payments.v1.GroupMembershipType group_membership_type = 7;
+  }
+  oneof _renewal_date {
+  .google.protobuf.Timestamp renewal_date = 8;
+  }
+  oneof _renewal_price {
+  .chesscom.api.v1.Money renewal_price = 9;
+  }
+  oneof _expiry_date {
+  .google.protobuf.Timestamp expiry_date = 10;
+  }
+  oneof _membership_description {
+  string membership_description = 11;
+  }
+  oneof _is_gift {
+  bool is_gift = 12;
+  }
+  oneof _is_free {
+  bool is_free = 13;
+  }
+  oneof _has_active_billing {
+  bool has_active_billing = 14;
+  }
+  oneof _disallow_cancellation_reason {
+  string disallow_cancellation_reason = 15;
+  }
+  oneof _primary_account_holder {
+  .chesscom.user.v1.UserView primary_account_holder = 16;
+  }
+  optional .chesscom.payments.v1.MembershipLevel membership_level = 1;
+  optional string membership_name = 3;
+  optional bool is_lifetime = 5;
+}
+
+message GetUserIsEligibleToRestartMembershipRequest {
+}
+
+message GetUserIsEligibleToRestartMembershipResponse {
+  optional bool is_eligible = 1;
+}
+
+message RestartMembershipRequest {
+}
+
+message RestartMembershipResponse {
+}

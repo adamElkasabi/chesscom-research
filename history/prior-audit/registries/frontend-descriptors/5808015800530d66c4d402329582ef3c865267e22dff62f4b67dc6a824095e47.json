@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/train/v1/train_strategy_mistake_challenge.proto",
+  "package": "chesscom.train.v1",
+  "message_type": [
+    {
+      "name": "TrainStrategyMistakeChallenge",
+      "field": [
+        {
+          "name": "position_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainPositionType"
+        },
+        {
+          "name": "position_attribute",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainPositionAttribute"
+        },
+        {
+          "name": "theme",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainStrategyTheme"
+        },
+        {
+          "name": "correct_move",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

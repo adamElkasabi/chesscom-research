@@ -1,0 +1,14 @@
+
+?chesscom/explanation_engine/v1/feature_relaxed_apply_move.protochesscom.explanation_engine.v1chesscom/chess/v1/move.protochesscom/chess/v1/square.proto"Å
+RelaxedApplyMoveRequest
+fen (	2
+extra_occupancy (2.chesscom.chess.v1.Square%
+move (2.chesscom.chess.v1.Move"≈
+RelaxedApplyMoveResponse
+
+result_fen (	9
+result_extra_occupancy (2.chesscom.chess.v1.Square
+captured_opp_piece (
+captured_extra_occ (
+in_check (
+move_san (	bproto3

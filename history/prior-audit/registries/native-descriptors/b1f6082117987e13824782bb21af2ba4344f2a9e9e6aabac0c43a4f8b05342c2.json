@@ -1,0 +1,1102 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "V1x7Depth20Multipv10LabelsRecord",
+      "field": [
+        {
+          "name": "ep_diff_side_to_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "classification_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "uci",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen_before",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen_after",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "V1x7Depth20Multipv10FeaturesRecord",
+      "field": [
+        {
+          "name": "move_number",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_phase",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "ep_diff_side_that_moved",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv1_ep_diff_side_that_moved",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "ep_side_to_move",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv1_ep_diff_side_to_move",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv2_ep_diff_side_to_move",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv3_ep_diff_side_to_move",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv4_ep_diff_side_to_move",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv5_ep_diff_side_to_move",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv6_ep_diff_side_to_move",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv7_ep_diff_side_to_move",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv8_ep_diff_side_to_move",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "pv0_pv9_ep_diff_side_to_move",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "potential_legal_move_count_side_to_move",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_legal_move_count_side_that_moved",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "previous_legal_move_count_side_that_moved",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_legal_capture_count_side_to_move",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_legal_capture_count_side_that_moved",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "previous_legal_capture_count_side_that_moved",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_see_positive_capture_count_side_to_move",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "potential_see_positive_capture_count_side_that_moved",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "previous_see_positive_capture_count_side_that_moved",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "in_check_side_to_move",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "was_in_check_side_that_moved",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_distance",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_distance",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_distance",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_distance",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_distance",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_distance",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_distance",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_distance",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_distance",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_distance",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_piece_type",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_piece_type",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_piece_type",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_piece_type",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_piece_type",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_piece_type",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_piece_type",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_piece_type",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_piece_type",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_piece_type",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_capture_piece_type",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_capture_piece_type",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_capture_piece_type",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_capture_piece_type",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_capture_piece_type",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_capture_piece_type",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_capture_piece_type",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_capture_piece_type",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_capture_piece_type",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_capture_piece_type",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_bestline_capture_count",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_bestline_capture_count",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_bestline_capture_count",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_bestline_capture_count",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_bestline_capture_count",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_bestline_capture_count",
+          "number": 61,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_bestline_capture_count",
+          "number": 62,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_bestline_capture_count",
+          "number": 63,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_bestline_capture_count",
+          "number": 64,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_bestline_capture_count",
+          "number": 65,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_good_tag_count",
+          "number": 66,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_good_tag_count",
+          "number": 67,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_good_tag_count",
+          "number": 68,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_good_tag_count",
+          "number": 69,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_good_tag_count",
+          "number": 70,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_good_tag_count",
+          "number": 71,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_good_tag_count",
+          "number": 72,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_good_tag_count",
+          "number": 73,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_good_tag_count",
+          "number": 74,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_good_tag_count",
+          "number": 75,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_bad_tag_count",
+          "number": 76,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_bad_tag_count",
+          "number": 77,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_bad_tag_count",
+          "number": 78,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_bad_tag_count",
+          "number": 79,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_bad_tag_count",
+          "number": 80,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_bad_tag_count",
+          "number": 81,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_bad_tag_count",
+          "number": 82,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_bad_tag_count",
+          "number": 83,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_bad_tag_count",
+          "number": 84,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_bad_tag_count",
+          "number": 85,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_obvious_or_easy",
+          "number": 86,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_obvious_or_easy",
+          "number": 87,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_obvious_or_easy",
+          "number": 88,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_obvious_or_easy",
+          "number": 89,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_obvious_or_easy",
+          "number": 90,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_obvious_or_easy",
+          "number": 91,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_obvious_or_easy",
+          "number": 92,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_obvious_or_easy",
+          "number": 93,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_obvious_or_easy",
+          "number": 94,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_obvious_or_easy",
+          "number": 95,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_backwards",
+          "number": 96,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_backwards",
+          "number": 97,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_backwards",
+          "number": 98,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_backwards",
+          "number": 99,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_backwards",
+          "number": 100,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_backwards",
+          "number": 101,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_backwards",
+          "number": 102,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_backwards",
+          "number": 103,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_backwards",
+          "number": 104,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_backwards",
+          "number": 105,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_check",
+          "number": 106,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_check",
+          "number": 107,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_check",
+          "number": 108,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_check",
+          "number": 109,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_check",
+          "number": 110,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_check",
+          "number": 111,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_check",
+          "number": 112,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_check",
+          "number": 113,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_check",
+          "number": 114,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_check",
+          "number": 115,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_tactic",
+          "number": 116,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_tactic",
+          "number": 117,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_tactic",
+          "number": 118,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_tactic",
+          "number": 119,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_tactic",
+          "number": 120,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_tactic",
+          "number": 121,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_tactic",
+          "number": 122,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_tactic",
+          "number": 123,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_tactic",
+          "number": 124,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_tactic",
+          "number": 125,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_sacrifice",
+          "number": 126,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_sacrifice",
+          "number": 127,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_sacrifice",
+          "number": 128,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_sacrifice",
+          "number": 129,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_sacrifice",
+          "number": 130,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_sacrifice",
+          "number": 131,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_sacrifice",
+          "number": 132,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_sacrifice",
+          "number": 133,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_sacrifice",
+          "number": 134,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_sacrifice",
+          "number": 135,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_deflection",
+          "number": 136,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_deflection",
+          "number": 137,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_deflection",
+          "number": 138,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_deflection",
+          "number": 139,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_deflection",
+          "number": 140,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_deflection",
+          "number": 141,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_deflection",
+          "number": 142,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_deflection",
+          "number": 143,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_deflection",
+          "number": 144,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_deflection",
+          "number": 145,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv0_is_underpromotion",
+          "number": 146,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv1_is_underpromotion",
+          "number": 147,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv2_is_underpromotion",
+          "number": 148,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv3_is_underpromotion",
+          "number": 149,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv4_is_underpromotion",
+          "number": 150,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv5_is_underpromotion",
+          "number": 151,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv6_is_underpromotion",
+          "number": 152,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv7_is_underpromotion",
+          "number": 153,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv8_is_underpromotion",
+          "number": 154,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pv9_is_underpromotion",
+          "number": 155,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "material_count",
+          "number": 156,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "material_difference",
+          "number": 157,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pawn_piece_count_side_to_move",
+          "number": 158,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "knight_piece_count_side_to_move",
+          "number": 159,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "bishop_piece_count_side_to_move",
+          "number": 160,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "rook_piece_count_side_to_move",
+          "number": 161,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "queen_piece_count_side_to_move",
+          "number": 162,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "pawn_piece_count_side_that_moved",
+          "number": 163,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "knight_piece_count_side_that_moved",
+          "number": 164,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "bishop_piece_count_side_that_moved",
+          "number": 165,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "rook_piece_count_side_that_moved",
+          "number": 166,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "queen_piece_count_side_that_moved",
+          "number": 167,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "chip_ep_side_to_move",
+          "number": 168,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_vs_engine_diff_ep_side_to_move",
+          "number": 169,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_think_time_s",
+          "number": 170,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_p_best",
+          "number": 171,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "chip_p_alt",
+          "number": 172,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ]
+    },
+    {
+      "name": "V1x7Depth20Multipv10PredictionsRecord",
+      "field": [
+        {
+          "name": "probability_good_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        },
+        {
+          "name": "model_used",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

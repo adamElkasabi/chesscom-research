@@ -1,0 +1,8 @@
+flowchart TD
+ Browser[Browser HTML and client packages] --> Edge[Cloudflare observed]
+ Edge --> Web[PHP Symfony web tier strongly indicated]
+ Browser --> WS[CEAC analysis WebSocket observed in source]
+ Browser --> Worker[Local CEE or UCI Worker]
+ Browser --> RPC[BrilliantVerification declared RPC]
+ Web -. unmapped database ownership .-> DB[Published MySQL Cloud SQL plus other data systems]
+ WS -. private implementation unknown .-> Unknown[Unknown server implementation]

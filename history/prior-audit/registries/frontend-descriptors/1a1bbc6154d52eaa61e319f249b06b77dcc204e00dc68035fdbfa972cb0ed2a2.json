@@ -1,0 +1,378 @@
+{
+  "name": "chesscom/user_properties/v1/properties_ratings.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "RatingsProperty",
+      "field": [
+        {
+          "name": "rating_chess_blitz",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_bullet",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_daily",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_rapid",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess960_blitz",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess960_bullet",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess960_daily",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess960_rapid",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_crazyhouse",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_bughouse",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_kingofthehill",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_oddschess",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_threecheck",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_one",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_blitz_rd",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_bullet_rd",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_daily_rd",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_chess_rapid_rd",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_best",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating_best_type",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1011,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.RatingsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_rating_chess_blitz"
+        },
+        {
+          "name": "_rating_chess_bullet"
+        },
+        {
+          "name": "_rating_chess_daily"
+        },
+        {
+          "name": "_rating_chess_rapid"
+        },
+        {
+          "name": "_rating_chess960_blitz"
+        },
+        {
+          "name": "_rating_chess960_bullet"
+        },
+        {
+          "name": "_rating_chess960_daily"
+        },
+        {
+          "name": "_rating_chess960_rapid"
+        },
+        {
+          "name": "_rating_crazyhouse"
+        },
+        {
+          "name": "_rating_bughouse"
+        },
+        {
+          "name": "_rating_kingofthehill"
+        },
+        {
+          "name": "_rating_oddschess"
+        },
+        {
+          "name": "_rating_threecheck"
+        },
+        {
+          "name": "_rating_one"
+        },
+        {
+          "name": "_rating_chess_blitz_rd"
+        },
+        {
+          "name": "_rating_chess_bullet_rd"
+        },
+        {
+          "name": "_rating_chess_daily_rd"
+        },
+        {
+          "name": "_rating_chess_rapid_rd"
+        },
+        {
+          "name": "_rating_best"
+        },
+        {
+          "name": "_rating_best_type"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "RatingsPropertyDefinition",
+      "value": [
+        {
+          "name": "RATING_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RATING_CHESS_BLITZ",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_BULLET",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_DAILY",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_RAPID",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS960_BLITZ",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS960_BULLET",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS960_DAILY",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS960_RAPID",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "RATING_CRAZYHOUSE",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "RATING_BUGHOUSE",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "RATING_KINGOFTHEHILL",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "RATING_ODDSCHESS",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "RATING_THREECHECK",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "RATING_ONE",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_BLITZ_RD",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_BULLET_RD",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_DAILY_RD",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "RATING_CHESS_RAPID_RD",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "RATING_BEST",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "RATING_BEST_TYPE",
+          "number": 20,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

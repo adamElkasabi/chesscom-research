@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_simple_threats.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/simple_threat.proto"
+  ],
+  "message_type": [
+    {
+      "name": "SimpleThreatsRequest",
+      "field": [
+        {
+          "name": "threats_limit",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "SimpleThreatsResponse",
+      "field": [
+        {
+          "name": "threats",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SimpleThreat"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

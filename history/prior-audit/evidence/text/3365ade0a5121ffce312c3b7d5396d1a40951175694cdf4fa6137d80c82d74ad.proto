@@ -1,0 +1,28 @@
+// source: chesscom/courses/v1/user_course_recommendation.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum RecommendationTouchpoint {
+  RECOMMENDATION_TOUCHPOINT_UNSPECIFIED = 0;
+  RECOMMENDATION_TOUCHPOINT_DASHBOARD = 1;
+  RECOMMENDATION_TOUCHPOINT_SHOP = 2;
+  RECOMMENDATION_TOUCHPOINT_APP = 3;
+}
+
+enum RecommendationSignal {
+  RECOMMENDATION_SIGNAL_UNSPECIFIED = 0;
+  RECOMMENDATION_SIGNAL_OPENING_MATCH = 1;
+  RECOMMENDATION_SIGNAL_WEAKNESS_MATCH = 2;
+  RECOMMENDATION_SIGNAL_ACTIVITY = 3;
+  RECOMMENDATION_SIGNAL_QUALITY = 4;
+}
+
+message RecommendedCourse {
+  oneof _eco_family {
+  .chesscom.chess.v1.EcoFamily eco_family = 4;
+  }
+  optional .chesscom.courses.v1.CourseProduct product = 1;
+  optional int32 rank = 2;
+  optional .chesscom.courses.v1.RecommendationSignal primary_signal = 3;
+}

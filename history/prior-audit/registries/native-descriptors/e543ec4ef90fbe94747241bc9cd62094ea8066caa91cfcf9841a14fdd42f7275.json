@@ -1,0 +1,49 @@
+{
+  "name": "chesscom/chess/v1/score.proto",
+  "package": "chesscom.chess.v1",
+  "message_type": [
+    {
+      "name": "Score",
+      "field": [
+        {
+          "name": "score_centipawns_white",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_SINT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "mate_in_white",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "mate_in_black",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        },
+        {
+          "name": "stalemate",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Stalemate",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "score"
+        }
+      ]
+    },
+    {
+      "name": "Stalemate"
+    }
+  ],
+  "syntax": "proto3"
+}

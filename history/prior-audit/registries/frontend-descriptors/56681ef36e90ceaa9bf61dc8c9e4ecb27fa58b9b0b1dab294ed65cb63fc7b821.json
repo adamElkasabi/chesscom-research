@@ -1,0 +1,49 @@
+{
+  "name": "chesscom/computer/v2/assisted_game_feature.proto",
+  "package": "chesscom.computer.v2",
+  "enum_type": [
+    {
+      "name": "AssistedGameFeature",
+      "value": [
+        {
+          "name": "ASSISTED_GAME_FEATURE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_CHAT",
+          "number": 1
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_ANALYSIS",
+          "number": 2
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_HINTS",
+          "number": 3
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_THREATS",
+          "number": 4
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_EVALUATION",
+          "number": 5
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_ENGINE",
+          "number": 6
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_SUGGESTIONS",
+          "number": 7
+        },
+        {
+          "name": "ASSISTED_GAME_FEATURE_TAKEBACKS",
+          "number": 8
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

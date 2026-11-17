@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/game_storage/v2/special_game_event.proto",
+  "package": "chesscom.game_storage.v2",
+  "message_type": [
+    {
+      "name": "SpecialGameEvent",
+      "field": [
+        {
+          "name": "is_featured",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_pcl",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

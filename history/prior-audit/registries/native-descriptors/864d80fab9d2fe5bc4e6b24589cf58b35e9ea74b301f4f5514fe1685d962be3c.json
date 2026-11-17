@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_uci_to_game_state.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_state.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureUciToGameStateRequest",
+      "field": [
+        {
+          "name": "uci_commands",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureUciToGameStateResponse",
+      "field": [
+        {
+          "name": "game_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

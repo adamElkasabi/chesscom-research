@@ -1,0 +1,560 @@
+// source: chesscom/game_review/v2/user_activity.proto
+// syntax: proto3
+
+package chesscom.game_review.v2;
+
+enum GameReviewScreen {
+  GAME_REVIEW_SCREEN_UNSPECIFIED = 0;
+  GAME_REVIEW_SCREEN_OVERVIEW = 1;
+  GAME_REVIEW_SCREEN_MOVES = 2;
+}
+
+enum ShowMovesButtonState {
+  SHOW_MOVES_BUTTON_STATE_UNSPECIFIED = 0;
+  SHOW_MOVES_BUTTON_STATE_SHOW = 1;
+  SHOW_MOVES_BUTTON_STATE_HIDE = 2;
+}
+
+enum UserOrOpponentMove {
+  USER_OR_OPPONENT_MOVE_UNSPECIFIED = 0;
+  USER_OR_OPPONENT_MOVE_USER = 1;
+  USER_OR_OPPONENT_MOVE_OPPONENT = 2;
+}
+
+enum GameReviewMoveNavigationMethod {
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_UNSPECIFIED = 0;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_MOVE_NODE_CLICKED = 1;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_NEXT_MOVE_ARROW_TAPPED = 2;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_NEXT_MOVE_ARROW_HOLD = 3;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_PREVIOUS_MOVE_ARROW_TAPPED = 4;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_PREVIOUS_MOVE_ARROW_HOLD = 5;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_MOVE_WHEEL_DRAGGED = 6;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_MOVE_WHEEL_FLUNG = 7;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_FIRST_MOVE_ARROW_TAPPED = 8;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_LAST_MOVE_ARROW_TAPPED = 9;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_RIGHT = 10;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_LEFT = 11;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_UP = 12;
+  GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_DOWN = 13;
+}
+
+enum GameReviewBackButtonWeb {
+  GAME_REVIEW_BACK_BUTTON_WEB_UNSPECIFIED = 0;
+  GAME_REVIEW_BACK_BUTTON_WEB_SIDEBAR_HEADER = 1;
+  GAME_REVIEW_BACK_BUTTON_WEB_END_OF_MOVELIST = 2;
+}
+
+enum GameReviewMoveFeedbackButton {
+  GAME_REVIEW_MOVE_FEEDBACK_BUTTON_UNSPECIFIED = 0;
+  GAME_REVIEW_MOVE_FEEDBACK_BUTTON_RETRY = 1;
+  GAME_REVIEW_MOVE_FEEDBACK_BUTTON_BEST_MOVE = 2;
+  GAME_REVIEW_MOVE_FEEDBACK_BUTTON_SHARE = 3;
+  GAME_REVIEW_MOVE_FEEDBACK_BUTTON_NEXT_KEY_MOVE = 4;
+  GAME_REVIEW_MOVE_FEEDBACK_BUTTON_HINT = 5;
+}
+
+enum GameReviewPremiumModalButton {
+  GAME_REVIEW_PREMIUM_MODAL_BUTTON_UNSPECIFIED = 0;
+  GAME_REVIEW_PREMIUM_MODAL_BUTTON_CLOSE = 1;
+  GAME_REVIEW_PREMIUM_MODAL_BUTTON_OUTSIDE = 2;
+  GAME_REVIEW_PREMIUM_MODAL_BUTTON_BACK = 3;
+}
+
+enum GameReviewStartSource {
+  GAME_REVIEW_START_SOURCE_UNSPECIFIED = 0;
+  GAME_REVIEW_START_SOURCE_HOME = 1;
+  GAME_REVIEW_START_SOURCE_GAME_ARCHIVE = 2;
+  GAME_REVIEW_START_SOURCE_PROFILE = 3;
+  GAME_REVIEW_START_SOURCE_GAME_END = 4;
+  GAME_REVIEW_START_SOURCE_ANALYSIS = 5;
+  GAME_REVIEW_START_SOURCE_COACH_NUDGE = 6;
+  GAME_REVIEW_START_SOURCE_DEEPLINK = 7;
+  GAME_REVIEW_START_SOURCE_STATS = 8;
+}
+
+enum GameReviewResult {
+  GAME_REVIEW_RESULT_UNSPECIFIED = 0;
+  GAME_REVIEW_RESULT_USER_WON = 1;
+  GAME_REVIEW_RESULT_USER_LOST = 2;
+  GAME_REVIEW_RESULT_USER_DRAW = 3;
+}
+
+enum GameReviewCourseRecommendationType {
+  GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_UNSPECIFIED = 0;
+  GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_BOOK = 1;
+  GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_MISTAKE = 2;
+  GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_EXPLORER = 3;
+}
+
+enum GameReviewCourseRecommendationDecisionReason {
+  GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_UNSPECIFIED = 0;
+  GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_NO_COURSE_MATCHED = 1;
+  GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_OWNS_OR_CLAIMED = 2;
+  GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_COURSE_FIT_RATING = 3;
+  GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_MATCHED = 4;
+}
+
+enum GameReviewCourseRecommendationSuppressionReason {
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_UNSPECIFIED = 0;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_AUDIENCE_INELIGIBLE = 1;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_LOCALE = 2;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_COACH_COMMENTARY = 3;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_FEATURE_FLAG = 4;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_EXPERIMENT_SEGMENT = 5;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_DEVIATION_SHOWN = 6;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_NOT_LOGGED_IN = 7;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_NO_USER_COLOR = 8;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_NO_QUALIFYING_POSITION = 9;
+  GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_RPC_ERROR = 10;
+}
+
+enum GameReviewSharePlacement {
+  GAME_REVIEW_SHARE_PLACEMENT_UNSPECIFIED = 0;
+  GAME_REVIEW_SHARE_PLACEMENT_REPLACE_COG = 1;
+  GAME_REVIEW_SHARE_PLACEMENT_BY_NEW_GAME = 2;
+  GAME_REVIEW_SHARE_PLACEMENT_MOVES_HEADER = 3;
+  GAME_REVIEW_SHARE_PLACEMENT_MOVES_BOTTOM_BAR = 4;
+  GAME_REVIEW_SHARE_PLACEMENT_COACH_BUBBLE = 5;
+}
+
+enum GameReviewTakeawaysTrainCtaDestination {
+  GAME_REVIEW_TAKEAWAYS_TRAIN_CTA_DESTINATION_UNSPECIFIED = 0;
+  GAME_REVIEW_TAKEAWAYS_TRAIN_CTA_DESTINATION_TRAIN = 1;
+  GAME_REVIEW_TAKEAWAYS_TRAIN_CTA_DESTINATION_UPGRADE = 2;
+}
+
+enum GameReviewPremiumModalTrigger {
+  GAME_REVIEW_PREMIUM_MODAL_TRIGGER_UNSPECIFIED = 0;
+  GAME_REVIEW_PREMIUM_MODAL_TRIGGER_REVIEW_LIMIT = 1;
+  GAME_REVIEW_PREMIUM_MODAL_TRIGGER_TAKEAWAYS_TRAIN = 2;
+}
+
+message GameReviewStart {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  oneof _game_id {
+  string game_id = 5;
+  }
+  optional .chesscom.ceac.v1.GameAnalysisGameType game_type = 1;
+  optional .chesscom.game_review.v2.GameReviewStartSource source = 3;
+  optional .chesscom.proto_options.events.v1.Funnel funnel = 4;
+}
+
+message GameReviewPremiumModalOpened {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 1;
+  }
+  oneof _trigger {
+  .chesscom.game_review.v2.GameReviewPremiumModalTrigger trigger = 2;
+  }
+  oneof _category {
+  .chesscom.stats.v1.AdvancedStatType category = 3;
+  }
+}
+
+message GameReviewPremiumModalClosed {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  oneof _trigger {
+  .chesscom.game_review.v2.GameReviewPremiumModalTrigger trigger = 3;
+  }
+  optional .chesscom.game_review.v2.GameReviewPremiumModalButton button_name = 1;
+}
+
+message GameReviewPremiumModalUpgradeClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 1;
+  }
+  oneof _trigger {
+  .chesscom.game_review.v2.GameReviewPremiumModalTrigger trigger = 2;
+  }
+}
+
+message GameReviewStartReviewClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 1;
+  }
+}
+
+message GameReviewOverviewScreenContinueReviewClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 1;
+  }
+}
+
+message GameReviewSelfAnalysisClicked {
+  oneof _game_review_screen {
+  .chesscom.game_review.v2.GameReviewScreen game_review_screen = 1;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  optional int32 percent_reviewed = 3;
+}
+
+message GameReviewOverviewScreenEvalGraphClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 3;
+}
+
+message GameReviewClassificationsExpandClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  optional bool is_expanded = 1;
+}
+
+message GameReviewMoveClassificationClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+}
+
+message GameReviewStartGameClicked {
+  oneof _game_review_screen {
+  .chesscom.game_review.v2.GameReviewScreen game_review_screen = 3;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 4;
+  }
+  optional .chesscom.chess.v1.TimeClass time_class = 1;
+  optional .chesscom.ceac.v1.GameAnalysisGameType game_type = 2;
+}
+
+message GameReviewMoveFeedbackButtonClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 4;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional .chesscom.game_review.v2.GameReviewMoveFeedbackButton button_name = 3;
+  optional int32 percent_reviewed = 5;
+}
+
+message GameReviewMovesMoveNodeClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 4;
+}
+
+message GameReviewMoveChangedClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 4;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional .chesscom.game_review.v2.GameReviewMoveNavigationMethod move_navigation_method = 3;
+  optional int32 percent_reviewed = 5;
+}
+
+message GameReviewMoveChangedArrowKeyPressed {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 4;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional .chesscom.game_review.v2.GameReviewMoveNavigationMethod move_navigation_method = 3;
+  optional int32 percent_reviewed = 5;
+}
+
+message GameReviewBackButtonClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  optional .chesscom.game_review.v2.GameReviewBackButtonWeb button_name = 1;
+  optional int32 percent_reviewed = 3;
+}
+
+message GameReviewMovesEvalGraphClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 3;
+}
+
+message GameReviewMovesMovesPlaybackToggled {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+  optional bool moves_playback_enabled = 1;
+  optional int32 percent_reviewed = 3;
+}
+
+message GameReviewCoachAudioToggleMuteClicked {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  oneof _game_review_screen {
+  .chesscom.game_review.v2.GameReviewScreen game_review_screen = 5;
+  }
+  optional bool coach_speech_muted = 1;
+  optional string coach_name = 2;
+  optional int32 percent_reviewed = 4;
+}
+
+message GameReviewShowMovesToggleClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 3;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 4;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional .chesscom.game_review.v2.ShowMovesButtonState button_state = 2;
+  optional int32 percent_reviewed = 5;
+}
+
+message GameReviewCoachVisualization {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 4;
+}
+
+message GameReviewCeacResponse {
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional bool is_user_game = 1;
+  optional .chesscom.ceac.v1.GameAnalysisGameType game_type = 2;
+  optional .chesscom.game_review.v2.GameReviewStartSource source = 4;
+  optional bool ceac_response_result = 5;
+}
+
+message GameReviewCoachTextFeedback {
+  oneof _user_feedback {
+  string user_feedback = 2;
+  }
+  optional string celebrity_coach_text = 1;
+  optional string game_link = 3;
+  optional int32 move_number = 4;
+  optional string selected_coach_name = 5;
+  optional string selected_coach_id = 6;
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 7;
+  optional string cee_version = 8;
+  optional string engine_strength = 9;
+}
+
+message GameReviewCourseRecommendationViewed {
+  optional string course_name = 1;
+  optional string author_name = 2;
+  optional .chesscom.game_review.v2.GameReviewCourseRecommendationType type = 3;
+}
+
+message GameReviewCourseRecommendationClicked {
+  optional string course_name = 1;
+  optional string author_name = 2;
+  optional .chesscom.game_review.v2.GameReviewCourseRecommendationType type = 3;
+  optional string opening_name = 4;
+  optional string fen = 5;
+  optional string variation_preview_url = 6;
+  optional string course_id = 7;
+  optional string course_url = 8;
+  optional string cover_image_url = 9;
+  optional float rating = 10;
+  optional int32 review_count = 11;
+  optional string short_description = 12;
+  optional string user_color = 13;
+}
+
+message GameReviewCourseRecommendationDecision {
+  oneof _rating {
+  int32 rating = 6;
+  }
+  optional bool rec_eligible = 1;
+  optional bool course_matched = 2;
+  optional .chesscom.game_review.v2.GameReviewCourseRecommendationDecisionReason reason = 3;
+  optional .chesscom.courses.v1.RecommendationReason recommendation_reason = 4;
+  optional string fen = 5;
+}
+
+message GameReviewCourseRecommendationSuppressed {
+  oneof _type {
+  .chesscom.game_review.v2.GameReviewCourseRecommendationType type = 2;
+  }
+  oneof _rating {
+  int32 rating = 3;
+  }
+  oneof _fen {
+  string fen = 4;
+  }
+  oneof _opening {
+  string opening = 5;
+  }
+  optional .chesscom.game_review.v2.GameReviewCourseRecommendationSuppressionReason reason = 1;
+}
+
+message GameReviewCourseDeviationViewed {
+  optional string course_name = 1;
+  optional string author_name = 2;
+}
+
+message GameReviewCourseDeviationClicked {
+  optional string course_name = 1;
+  optional string author_name = 2;
+}
+
+message GameReviewCourseDeviationShowMovesClicked {
+  optional string course_name = 1;
+  optional string author_name = 2;
+}
+
+message GameReviewUserMoveMade {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 4;
+}
+
+message GameReviewTakeawaysViewed {
+  oneof _train_cta_destination {
+  .chesscom.game_review.v2.GameReviewTakeawaysTrainCtaDestination train_cta_destination = 3;
+  }
+  oneof _train_item_type {
+  .chesscom.train.v1.TrainItemType train_item_type = 4;
+  }
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional bool paywall_shown = 2;
+}
+
+message GameReviewTakeawaysUpgradeClicked {
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+}
+
+message GameReviewTakeawaysTrainCtaClicked {
+  oneof _game_id {
+  string game_id = 3;
+  }
+  oneof _train_item_type {
+  .chesscom.train.v1.TrainItemType train_item_type = 4;
+  }
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional .chesscom.game_review.v2.GameReviewTakeawaysTrainCtaDestination destination = 2;
+}
+
+message GameReviewTakeawaysNextClicked {
+  oneof _train_item_type {
+  .chesscom.train.v1.TrainItemType train_item_type = 3;
+  }
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional bool train_cta_shown = 2;
+}
+
+message GameReviewMoveContextExtension {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  optional int32 move_number = 1;
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 3;
+  optional bool is_key_move = 4;
+}
+
+message GameReviewContextExtension {
+  oneof _specific_move {
+  .chesscom.game_review.v2.GameReviewContextExtension.GameReviewMove specific_move = 1;
+  }
+  message GameReviewMove {
+    oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+    }
+  optional int32 move_number = 1;
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 3;
+  optional bool is_key_move = 4;
+  }
+}
+
+message GameReviewExplainButtonClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 4;
+}
+
+message GameReviewExplainButtonClosed {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 4;
+}
+
+message GameReviewExplainMoveNavClicked {
+  oneof _user_or_opponent_move {
+  .chesscom.game_review.v2.UserOrOpponentMove user_or_opponent_move = 2;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 percent_reviewed = 4;
+  optional int32 line_ply = 5;
+  optional .chesscom.game_review.v2.GameReviewMoveNavigationMethod move_navigation_method = 6;
+}
+
+message GameReviewShareButtonClicked {
+  oneof _game_review_screen {
+  .chesscom.game_review.v2.GameReviewScreen game_review_screen = 1;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 3;
+  }
+  optional .chesscom.game_review.v2.GameReviewSharePlacement placement = 2;
+}
+
+message GameReviewShareCompleted {
+  oneof _game_review_screen {
+  .chesscom.game_review.v2.GameReviewScreen game_review_screen = 1;
+  }
+  oneof _destination {
+  string destination = 3;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 4;
+  }
+  optional .chesscom.game_review.v2.GameReviewSharePlacement placement = 2;
+}
+
+message GameReviewSettingsClicked {
+  oneof _game_review_screen {
+  .chesscom.game_review.v2.GameReviewScreen game_review_screen = 1;
+  }
+  oneof _result {
+  .chesscom.game_review.v2.GameReviewResult result = 2;
+  }
+}

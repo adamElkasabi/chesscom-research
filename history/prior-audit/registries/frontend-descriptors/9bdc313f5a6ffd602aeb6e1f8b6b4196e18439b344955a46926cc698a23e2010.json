@@ -1,0 +1,803 @@
+{
+  "name": "chesscom/user_properties/v1/properties_wdl.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "WDLProperty",
+      "field": [
+        {
+          "name": "total_wins",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_bughouse",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_chess960",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_chess",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_crazyhouse",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_kingofthehill",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_oddschess",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_wins_threecheck",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_bughouse",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_chess960",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_chess",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_crazyhouse",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_kingofthehill",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_oddschess",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_draws_threecheck",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_bughouse",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_chess960",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_chess",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_crazyhouse",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_kingofthehill",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_oddschess",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_losses_threecheck",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_4pc",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_bughouse",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_chess960",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_chess",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_crazyhouse",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_kingofthehill",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_oddschess",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_threecheck",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_vs_computer",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_game_result",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_game_result_code",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_daily_game_result",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_daily_game_result_code",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_aborted_games",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_games_chess_daily",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_games_chess_bullet",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_games_chess_blitz",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 41,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_games_chess_rapid",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 42,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_games",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 43,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_unrated_games",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 44,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1012,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.WDLPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_total_wins"
+        },
+        {
+          "name": "_total_wins_bughouse"
+        },
+        {
+          "name": "_total_wins_chess960"
+        },
+        {
+          "name": "_total_wins_chess"
+        },
+        {
+          "name": "_total_wins_crazyhouse"
+        },
+        {
+          "name": "_total_wins_kingofthehill"
+        },
+        {
+          "name": "_total_wins_oddschess"
+        },
+        {
+          "name": "_total_wins_threecheck"
+        },
+        {
+          "name": "_total_draws"
+        },
+        {
+          "name": "_total_draws_bughouse"
+        },
+        {
+          "name": "_total_draws_chess960"
+        },
+        {
+          "name": "_total_draws_chess"
+        },
+        {
+          "name": "_total_draws_crazyhouse"
+        },
+        {
+          "name": "_total_draws_kingofthehill"
+        },
+        {
+          "name": "_total_draws_oddschess"
+        },
+        {
+          "name": "_total_draws_threecheck"
+        },
+        {
+          "name": "_total_losses"
+        },
+        {
+          "name": "_total_losses_bughouse"
+        },
+        {
+          "name": "_total_losses_chess960"
+        },
+        {
+          "name": "_total_losses_chess"
+        },
+        {
+          "name": "_total_losses_crazyhouse"
+        },
+        {
+          "name": "_total_losses_kingofthehill"
+        },
+        {
+          "name": "_total_losses_oddschess"
+        },
+        {
+          "name": "_total_losses_threecheck"
+        },
+        {
+          "name": "_total_games"
+        },
+        {
+          "name": "_total_games_4pc"
+        },
+        {
+          "name": "_total_games_bughouse"
+        },
+        {
+          "name": "_total_games_chess960"
+        },
+        {
+          "name": "_total_games_chess"
+        },
+        {
+          "name": "_total_games_crazyhouse"
+        },
+        {
+          "name": "_total_games_kingofthehill"
+        },
+        {
+          "name": "_total_games_oddschess"
+        },
+        {
+          "name": "_total_games_threecheck"
+        },
+        {
+          "name": "_total_games_vs_computer"
+        },
+        {
+          "name": "_last_game_result"
+        },
+        {
+          "name": "_last_game_result_code"
+        },
+        {
+          "name": "_last_daily_game_result"
+        },
+        {
+          "name": "_last_daily_game_result_code"
+        },
+        {
+          "name": "_total_aborted_games"
+        },
+        {
+          "name": "_total_rated_games_chess_daily"
+        },
+        {
+          "name": "_total_rated_games_chess_bullet"
+        },
+        {
+          "name": "_total_rated_games_chess_blitz"
+        },
+        {
+          "name": "_total_rated_games_chess_rapid"
+        },
+        {
+          "name": "_total_rated_games"
+        },
+        {
+          "name": "_total_unrated_games"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "WDLPropertyDefinition",
+      "value": [
+        {
+          "name": "WDL_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TOTAL_WINS",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_BUGHOUSE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_CHESS960",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_CHESS",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_CRAZYHOUSE",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_KINGOFTHEHILL",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_ODDSCHESS",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_WINS_THREECHECK",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_BUGHOUSE",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_CHESS960",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_CHESS",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_CRAZYHOUSE",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_KINGOFTHEHILL",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_ODDSCHESS",
+          "number": 15,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_DRAWS_THREECHECK",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_BUGHOUSE",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_CHESS960",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_CHESS",
+          "number": 20,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_CRAZYHOUSE",
+          "number": 21,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_KINGOFTHEHILL",
+          "number": 22,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_ODDSCHESS",
+          "number": 23,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_LOSSES_THREECHECK",
+          "number": 24,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES",
+          "number": 25,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_4PC",
+          "number": 26,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_BUGHOUSE",
+          "number": 27,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_CHESS960",
+          "number": 28,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_CHESS",
+          "number": 29,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_CRAZYHOUSE",
+          "number": 30,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_KINGOFTHEHILL",
+          "number": 31,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_ODDSCHESS",
+          "number": 32,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_THREECHECK",
+          "number": 33,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_VS_COMPUTER",
+          "number": 34,
+          "options": {}
+        },
+        {
+          "name": "LAST_GAME_RESULT",
+          "number": 35,
+          "options": {}
+        },
+        {
+          "name": "LAST_GAME_RESULT_CODE",
+          "number": 36,
+          "options": {}
+        },
+        {
+          "name": "LAST_DAILY_GAME_RESULT",
+          "number": 37,
+          "options": {}
+        },
+        {
+          "name": "LAST_DAILY_GAME_RESULT_CODE",
+          "number": 38,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_ABORTED_GAMES",
+          "number": 39,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_RATED_GAMES_CHESS_DAILY",
+          "number": 40,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_RATED_GAMES_CHESS_BULLET",
+          "number": 41,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_RATED_GAMES_CHESS_BLITZ",
+          "number": 42,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_RATED_GAMES_CHESS_RAPID",
+          "number": 43,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_RATED_GAMES",
+          "number": 44,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_UNRATED_GAMES",
+          "number": 45,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

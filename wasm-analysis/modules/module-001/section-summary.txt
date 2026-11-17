@@ -1,0 +1,16 @@
+
+explanation-engine.no-simd.wasm:	file format wasm 0x1
+
+Sections:
+
+     Type start=0x0000000b end=0x0000065e (size=0x00000653) count: 193
+   Import start=0x00000661 end=0x00001427 (size=0x00000dc6) count: 154
+ Function start=0x0000142b end=0x00006dff (size=0x000059d4) count: 22922
+    Table start=0x00006e01 end=0x00006e0a (size=0x00000009) count: 1
+   Memory start=0x00006e0c end=0x00006e13 (size=0x00000007) count: 1
+   Global start=0x00006e15 end=0x00006e2d (size=0x00000018) count: 4
+   Export start=0x00006e30 end=0x00007a47 (size=0x00000c17) count: 152
+     Elem start=0x00007a4b end=0x00015b61 (size=0x0000e116) count: 1
+DataCount start=0x00015b63 end=0x00015b65 (size=0x00000002) count: 4270
+     Code start=0x00015b6a end=0x013dcbf4 (size=0x013c708a) count: 22922
+     Data start=0x013dcbf9 end=0x01f57b2b (size=0x00b7af32) count: 4270

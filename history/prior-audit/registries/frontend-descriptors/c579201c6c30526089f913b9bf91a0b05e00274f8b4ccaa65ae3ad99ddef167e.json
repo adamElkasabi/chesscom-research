@@ -1,0 +1,544 @@
+{
+  "name": "chesscom/user_properties/v1/properties_settings_live_chess.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "SettingsLiveChessProperty",
+      "field": [
+        {
+          "name": "auto_queen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "play_multiple_games",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_increment",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_rated",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_filter_premium_only",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "premove_enabled",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_filter_rated_only",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "allow_chat_request_from",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "auto_top",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "focus_mode_enabled",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "allow_challenges_from",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_base_time",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_min_rating",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_max_rating",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "challenge_popup_alert",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "friend_popup_alert",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "event_announcement",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "challenge_min_rating",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "challenge_max_rating",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_base_time_variants",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_increment_variants",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_base_time_chess",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "seek_increment_chess",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "allow_game_chat",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 23,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1015,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SettingsLiveChessPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "_auto_queen"
+        },
+        {
+          "name": "_play_multiple_games"
+        },
+        {
+          "name": "_seek_increment"
+        },
+        {
+          "name": "_seek_rated"
+        },
+        {
+          "name": "_seek_filter_premium_only"
+        },
+        {
+          "name": "_premove_enabled"
+        },
+        {
+          "name": "_seek_filter_rated_only"
+        },
+        {
+          "name": "_allow_chat_request_from"
+        },
+        {
+          "name": "_auto_top"
+        },
+        {
+          "name": "_focus_mode_enabled"
+        },
+        {
+          "name": "_allow_challenges_from"
+        },
+        {
+          "name": "_seek_base_time"
+        },
+        {
+          "name": "_seek_min_rating"
+        },
+        {
+          "name": "_seek_max_rating"
+        },
+        {
+          "name": "_challenge_popup_alert"
+        },
+        {
+          "name": "_friend_popup_alert"
+        },
+        {
+          "name": "_event_announcement"
+        },
+        {
+          "name": "_challenge_min_rating"
+        },
+        {
+          "name": "_challenge_max_rating"
+        },
+        {
+          "name": "_seek_base_time_variants"
+        },
+        {
+          "name": "_seek_increment_variants"
+        },
+        {
+          "name": "_seek_base_time_chess"
+        },
+        {
+          "name": "_seek_increment_chess"
+        },
+        {
+          "name": "_allow_game_chat"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SettingsLiveChessPropertyDefinition",
+      "value": [
+        {
+          "name": "LIVE_CHESS_SETTINGS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "AUTO_QUEEN",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "PLAY_MULTIPLE_GAMES",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_INCREMENT",
+          "number": 3,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_RATED",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_FILTER_PREMIUM_ONLY",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "PREMOVE_ENABLED",
+          "number": 6,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_FILTER_RATED_ONLY",
+          "number": 7,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "ALLOW_CHAT_REQUEST_FROM",
+          "number": 8,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "AUTO_TOP",
+          "number": 9,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "FOCUS_MODE_ENABLED",
+          "number": 10,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "ALLOW_CHALLENGES_FROM",
+          "number": 11,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_BASE_TIME",
+          "number": 12,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_MIN_RATING",
+          "number": 13,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_MAX_RATING",
+          "number": 14,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "CHALLENGE_POPUP_ALERT",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "FRIEND_POPUP_ALERT",
+          "number": 16,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "EVENT_ANNOUNCEMENT",
+          "number": 17,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "CHALLENGE_MIN_RATING",
+          "number": 18,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "CHALLENGE_MAX_RATING",
+          "number": 19,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_BASE_TIME_VARIANTS",
+          "number": 20,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_INCREMENT_VARIANTS",
+          "number": 21,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_BASE_TIME_CHESS",
+          "number": 22,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SEEK_INCREMENT_CHESS",
+          "number": 23,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "ALLOW_GAME_CHAT",
+          "number": 24,
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

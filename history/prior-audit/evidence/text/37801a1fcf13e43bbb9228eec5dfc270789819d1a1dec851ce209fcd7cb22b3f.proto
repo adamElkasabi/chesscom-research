@@ -1,0 +1,16 @@
+// source: chesscom/game_storage/v2/vs_computer_game_data.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+message VsComputerGameData {
+  oneof _crowns_earned {
+  uint32 crowns_earned = 2;
+  }
+  oneof _event_config_key {
+  string event_config_key = 5;
+  }
+  repeated .chesscom.computer.v2.AssistedGameFeature assisted_game_features = 1;
+  optional string bot_personality_id = 3;
+  optional .chesscom.computer.v2.GameMode game_mode = 4;
+}

@@ -1,0 +1,75 @@
+{
+  "name": "chesscom/navigation/v1/screen_entity.proto",
+  "package": "chesscom.navigation.v1",
+  "message_type": [
+    {
+      "name": "ScreenEntity",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.navigation.v1.ScreenEntityType"
+        },
+        {
+          "name": "name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_name"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ScreenEntityType",
+      "value": [
+        {
+          "name": "SCREEN_ENTITY_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SCREEN_ENTITY_TYPE_FORUM_TOPIC",
+          "number": 1
+        },
+        {
+          "name": "SCREEN_ENTITY_TYPE_ARTICLE",
+          "number": 2
+        },
+        {
+          "name": "SCREEN_ENTITY_TYPE_NEWS_ARTICLE",
+          "number": 3
+        },
+        {
+          "name": "SCREEN_ENTITY_TYPE_EVENT",
+          "number": 4
+        },
+        {
+          "name": "SCREEN_ENTITY_TYPE_PLAYER",
+          "number": 5
+        },
+        {
+          "name": "SCREEN_ENTITY_TYPE_MEMBER",
+          "number": 6
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

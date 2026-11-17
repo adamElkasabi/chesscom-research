@@ -1,0 +1,315 @@
+{
+  "name": "chesscom/proto_options/api/v1/api_options.proto",
+  "package": "chesscom.proto_options.api.v1",
+  "message_type": [
+    {
+      "name": "ApiNoAuth"
+    },
+    {
+      "name": "ApiSecurityBasicAuth"
+    },
+    {
+      "name": "ApiSecurityBearerAuth"
+    },
+    {
+      "name": "ApiSecurityApiKeyAuth",
+      "field": [
+        {
+          "name": "header",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "cookie",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_header"
+        },
+        {
+          "name": "_cookie"
+        }
+      ]
+    },
+    {
+      "name": "ApiAuthenticationDefinition",
+      "field": [
+        {
+          "name": "no_auth",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiNoAuth",
+          "oneof_index": 0
+        },
+        {
+          "name": "basic_auth",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiSecurityBasicAuth",
+          "oneof_index": 0
+        },
+        {
+          "name": "bearer_auth",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiSecurityBearerAuth",
+          "oneof_index": 0
+        },
+        {
+          "name": "api_key_auth",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiSecurityApiKeyAuth",
+          "oneof_index": 0
+        },
+        {
+          "name": "description",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "auth"
+        }
+      ]
+    },
+    {
+      "name": "ApiAuthenticationOption",
+      "field": [
+        {
+          "name": "definition",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiAuthenticationDefinition"
+        },
+        {
+          "name": "reference",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ApiServerDefinition",
+      "field": [
+        {
+          "name": "url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "authentication",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiAuthenticationOption"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "_description"
+        }
+      ]
+    },
+    {
+      "name": "ApiServerOption",
+      "field": [
+        {
+          "name": "definition",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiServerDefinition",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "reference",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "ApiServiceMetadata",
+      "field": [
+        {
+          "name": "is_platform_service",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_mcp_service",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "ApiOptions",
+      "field": [
+        {
+          "name": "prefix",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "server",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiServerOption",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "authentication",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiAuthenticationOption"
+        },
+        {
+          "name": "metadata",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.api.v1.ApiServiceMetadata",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "scope",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.oauth.v1.Scope"
+        },
+        {
+          "name": "protocol",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.api.v1.RpcProtocol"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_prefix"
+        },
+        {
+          "name": "_server"
+        },
+        {
+          "name": "_metadata"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "RpcProtocol",
+      "value": [
+        {
+          "name": "RPC_PROTOCOL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RPC_PROTOCOL_TWIRP",
+          "number": 1
+        },
+        {
+          "name": "RPC_PROTOCOL_CONNECT",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "service_options",
+      "extendee": ".google.protobuf.ServiceOptions",
+      "number": 91000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.api.v1.ApiOptions",
+      "json_name": "serviceOptions",
+      "proto3_optional": true
+    },
+    {
+      "name": "file_options",
+      "extendee": ".google.protobuf.FileOptions",
+      "number": 91001,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.api.v1.ApiOptions",
+      "json_name": "fileOptions",
+      "proto3_optional": true
+    },
+    {
+      "name": "package_options",
+      "extendee": ".google.protobuf.FileOptions",
+      "number": 91002,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.api.v1.ApiOptions",
+      "json_name": "packageOptions",
+      "proto3_optional": true
+    },
+    {
+      "name": "scope",
+      "extendee": ".google.protobuf.MethodOptions",
+      "number": 91003,
+      "label": "LABEL_REPEATED",
+      "type": "TYPE_ENUM",
+      "type_name": ".chesscom.oauth.v1.Scope",
+      "json_name": "scope"
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "normalized-HardSoftNodeFactor-50",
+  "uciAfter": {
+    "Normalize": false,
+    "HardSoftNodeFactor": 50
+  }
+}

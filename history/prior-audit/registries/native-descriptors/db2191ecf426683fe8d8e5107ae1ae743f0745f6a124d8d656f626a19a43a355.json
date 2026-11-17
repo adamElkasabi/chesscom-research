@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_punish_move.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/punish_move.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetPunishMoveRequest"
+    },
+    {
+      "name": "GetPunishMoveResponse",
+      "field": [
+        {
+          "name": "punish_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.PunishMove"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

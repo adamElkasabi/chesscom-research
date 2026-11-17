@@ -1,0 +1,21 @@
+// source: chesscom/payments/v1/member_promotion.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message MemberPromotion {
+  optional string name = 1;
+  optional .chesscom.payments.v1.IncentiveType type = 2;
+  optional float discount_percent = 3;
+  optional int32 free_time_days = 4;
+  optional .google.protobuf.Timestamp ends_at = 5;
+  repeated .chesscom.api.v1.Platform redeemable_platforms = 6;
+}
+
+message PromotionOnCharge {
+  optional string charge_id = 1;
+  optional .google.protobuf.Timestamp charged_at = 2;
+  optional .chesscom.payments.v1.MemberPromotion promotion = 3;
+  optional bool coupon_code_used = 4;
+  optional .chesscom.api.v1.Platform platform = 5;
+}

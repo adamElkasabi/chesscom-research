@@ -1,0 +1,6 @@
+flowchart TD
+ Internet --> CF[Cloudflare observed edge]
+ CF -. header naming evidence .-> K[Kubernetes FPM-named web pool]
+ Assets[Versioned hashed static assets] --> Internet
+ GCP[Published Google Cloud regions] --> SQL[Cloud SQL MySQL Enterprise Plus]
+ K -. service to cluster mapping unknown .-> SQL

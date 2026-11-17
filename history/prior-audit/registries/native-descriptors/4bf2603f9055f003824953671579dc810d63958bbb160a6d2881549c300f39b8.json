@@ -1,0 +1,243 @@
+{
+  "name": "chesscom/explanation_engine/v1/game_analysis.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/api/v1/semantic_version.proto",
+    "chesscom/chess/v1/game.proto",
+    "chesscom/engine/v1/score.proto",
+    "chesscom/explanation_engine/v1/move_classification.proto",
+    "chesscom/explanation_engine/v1/game_phase.proto",
+    "chesscom/explanation_engine/v1/game_arc.proto",
+    "chesscom/explanation_engine/v1/accuracy.proto",
+    "chesscom/explanation_engine/v1/report_card.proto",
+    "chesscom/explanation_engine/v1/speech.proto",
+    "chesscom/explanation_engine/v1/game_point_info.proto"
+  ],
+  "message_type": [
+    {
+      "name": "VariationAnalysis",
+      "field": [
+        {
+          "name": "variation_game_points",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        },
+        {
+          "name": "game_phase_transitions",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePhaseTransitions"
+        },
+        {
+          "name": "result",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.GameResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "variation_cutoffs",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "EngineVariationAnalysis",
+      "field": [
+        {
+          "name": "variation_analysis",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.VariationAnalysis"
+        },
+        {
+          "name": "engine_score",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Score"
+        },
+        {
+          "name": "variation_theme_prompt",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "PositionAnalysis",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "null_move_variations",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EngineVariationAnalysis"
+        },
+        {
+          "name": "best_move_variations",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.EngineVariationAnalysis"
+        },
+        {
+          "name": "position_speech",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        }
+      ]
+    },
+    {
+      "name": "GameAnalysisMetadata",
+      "field": [
+        {
+          "name": "cee_version",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.SemanticVersion"
+        }
+      ]
+    },
+    {
+      "name": "GameAnalysis",
+      "field": [
+        {
+          "name": "main_line",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.VariationAnalysis"
+        },
+        {
+          "name": "game_position_analysis_collection",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameAnalysis.GamePositionAnalysisCollectionEntry"
+        },
+        {
+          "name": "accuracy_by_color",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.VariationAccuracy"
+        },
+        {
+          "name": "report_card",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ReportCard"
+        },
+        {
+          "name": "game_arc",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.GameArc"
+        },
+        {
+          "name": "key_moments_game_points",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        },
+        {
+          "name": "annotated_pgn",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_summary",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "metadata",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameAnalysisMetadata"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "GamePositionAnalysisCollectionEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1.PositionAnalysis"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "reserved_range": [
+        {
+          "start": 1,
+          "end": 2
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "GameAnalysisSpeechVersion",
+      "value": [
+        {
+          "name": "GAME_ANALYSIS_SPEECH_VERSION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_ANALYSIS_SPEECH_VERSION_2",
+          "number": 2
+        },
+        {
+          "name": "GAME_ANALYSIS_SPEECH_VERSION_3",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

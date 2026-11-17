@@ -1,0 +1,130 @@
+// source: chesscom/bots/v1/bot_personality.proto
+// syntax: proto3
+
+package chesscom.bots.v1;
+
+enum Personality {
+  PERSONALITY_UNSPECIFIED = 0;
+  PERSONALITY_UNSPECIFIED_DEFAULT = 1;
+  PERSONALITY_UNSPECIFIED_BEGINNER = 2;
+  PERSONALITY_UNSPECIFIED_AGGRESSIVE = 3;
+  PERSONALITY_UNSPECIFIED_POSITIONAL = 4;
+  PERSONALITY_UNSPECIFIED_DEFENSIVE = 5;
+  PERSONALITY_UNSPECIFIED_ENDGAME = 6;
+  PERSONALITY_UNSPECIFIED_HUMAN = 7;
+  PERSONALITY_UNSPECIFIED_HIKARU = 8;
+  PERSONALITY_UNSPECIFIED_DANNY = 9;
+  PERSONALITY_UNSPECIFIED_ACTIVE = 10;
+  PERSONALITY_UNSPECIFIED_NEW_TO_CHESS = 11;
+  PERSONALITY_UNSPECIFIED_UNLEASHED = 12;
+}
+
+message BotPersonality {
+  oneof _premium {
+  bool premium = 10;
+  }
+  oneof _komodo_skill_level {
+  int32 komodo_skill_level = 11;
+  }
+  oneof _komodo_skill {
+  int32 komodo_skill = 12;
+  }
+  oneof _adapt {
+  bool adapt = 13;
+  }
+  oneof _human {
+  string human = 14;
+  }
+  oneof _book {
+  string book = 16;
+  }
+  oneof _country_code {
+  string country_code = 17;
+  }
+  oneof _gender {
+  string gender = 18;
+  }
+  oneof _rating {
+  int32 rating = 19;
+  }
+  oneof _rating_text {
+  string rating_text = 20;
+  }
+  oneof _live_online_rating {
+  int32 live_online_rating = 21;
+  }
+  oneof _description {
+  string description = 22;
+  }
+  oneof _pawn_endgame {
+  string pawn_endgame = 23;
+  }
+  oneof _major_piece_endgame {
+  string major_piece_endgame = 24;
+  }
+  oneof _minor_piece_endgame {
+  string minor_piece_endgame = 25;
+  }
+  oneof _theme_uuid {
+  string theme_uuid = 27;
+  }
+  oneof _minimum_cee_version {
+  string minimum_cee_version = 28;
+  }
+  oneof _crown_earned {
+  int32 crown_earned = 29;
+  }
+  oneof _image_url {
+  string image_url = 30;
+  }
+  oneof _image_url_override {
+  string image_url_override = 31;
+  }
+  oneof _v2_spread_sheet {
+  string v2_spread_sheet = 33;
+  }
+  oneof _book_fallback {
+  string book_fallback = 35;
+  }
+  oneof _can_play {
+  bool can_play = 36;
+  }
+  oneof _fen_as_black {
+  string fen_as_black = 37;
+  }
+  oneof _fen_as_white {
+  string fen_as_white = 38;
+  }
+  oneof _avatar_without_background {
+  string avatar_without_background = 39;
+  }
+  oneof _has_custom_modal {
+  bool has_custom_modal = 40;
+  }
+  oneof _custom_modal_requires_account_activation {
+  bool custom_modal_requires_account_activation = 41;
+  }
+  oneof _properties {
+  .chesscom.bots.v1.BotProperties properties = 42;
+  }
+  oneof _bot_move_configuration_key {
+  string bot_move_configuration_key = 43;
+  }
+  optional string id = 1;
+  optional int32 sort_order = 2;
+  optional bool enabled = 3;
+  optional string username = 4;
+  optional string classification = 5;
+  optional .google.protobuf.Timestamp updated_at = 6;
+  optional string name = 7;
+  optional int32 user_id = 8;
+  optional string classification_hint_text = 9;
+  optional .chesscom.bots.v1.Personality personality = 15;
+  optional bool v2 = 26;
+  optional .chesscom.bots.v1.PhraseList phrase_list = 32;
+  repeated string supported_languages = 34;
+}
+
+message SupportedBot {
+  optional string bot_name = 1;
+}

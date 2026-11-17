@@ -1,0 +1,17 @@
+// source: chesscom/explanation_engine/v1/feature_game_phase_transitions.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GamePhaseTransitionsRequest {
+  oneof _starting_game_point {
+  int32 starting_game_point = 1;
+  }
+  oneof _game_phase_version {
+  .chesscom.explanation_engine.v1.GamePhaseVersion game_phase_version = 2;
+  }
+}
+
+message GamePhaseTransitionsResponse {
+  optional .chesscom.explanation_engine.v1.GamePhaseTransitions game_phase_transition = 1;
+}

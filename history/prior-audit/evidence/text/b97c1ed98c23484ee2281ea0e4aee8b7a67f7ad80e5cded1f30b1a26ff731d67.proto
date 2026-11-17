@@ -1,0 +1,34 @@
+// source: chesscom/gameplay/v1/game_ref.proto
+// syntax: proto3
+
+package chesscom.gameplay.v1;
+
+enum GameSource {
+  GAME_SOURCE_UNSPECIFIED = 0;
+  GAME_SOURCE_RCN = 1;
+  GAME_SOURCE_LC = 2;
+}
+
+message GameRef {
+  oneof _id {
+  string id = 1;
+  }
+  oneof _numeric_id {
+  int64 numeric_id = 2;
+  }
+  oneof _variant {
+  .chesscom.chess.v1.Variant variant = 3;
+  }
+  oneof _timeclass {
+  .chesscom.chess.v1.TimeClass timeclass = 4;
+  }
+  oneof _source {
+  .chesscom.gameplay.v1.GameSource source = 5;
+  }
+  oneof _is_private {
+  bool is_private = 6;
+  }
+  oneof _legacy_id {
+  int64 legacy_id = 7;
+  }
+}

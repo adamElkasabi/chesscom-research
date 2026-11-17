@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/explanation_engine/v1/move_list.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto"
+  ],
+  "message_type": [
+    {
+      "name": "MoveList",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    },
+    {
+      "name": "UciMoveList",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

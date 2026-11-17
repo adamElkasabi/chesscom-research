@@ -1,0 +1,126 @@
+{
+  "name": "chesscom/progression/v1/event_specifics.proto",
+  "package": "chesscom.progression.v1",
+  "message_type": [
+    {
+      "name": "BotEventSpecifics",
+      "field": [
+        {
+          "name": "active_variations",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.progression.v1.BotEventSpecifics.ActiveVariationsEntry"
+        },
+        {
+          "name": "variation_timestamp",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "ActiveVariationsEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.progression.v1.BotOverrides"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotOverrides",
+      "field": [
+        {
+          "name": "bot_label",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.progression.v1.BotLabel",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen_player_is_white",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen_player_is_black",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_bot_label"
+        },
+        {
+          "name": "_fen_player_is_white"
+        },
+        {
+          "name": "_fen_player_is_black"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "BotVariationSupport",
+      "value": [
+        {
+          "name": "BOT_VARIATION_SUPPORT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOT_VARIATION_SUPPORT_CUSTOM_FEN",
+          "number": 1
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "BotLabel",
+      "value": [
+        {
+          "name": "BOT_LABEL_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOT_LABEL_TYPE_HARDER",
+          "number": 1
+        },
+        {
+          "name": "BOT_LABEL_TYPE_EASIER",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

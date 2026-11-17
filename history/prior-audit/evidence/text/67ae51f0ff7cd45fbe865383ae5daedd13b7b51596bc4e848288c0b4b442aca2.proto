@@ -1,0 +1,19 @@
+// source: chesscom/game_storage/v2/player_title.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum PlayerTitle {
+  PLAYER_TITLE_UNSPECIFIED = 0;
+  PLAYER_TITLE_WGM = 1;
+  PLAYER_TITLE_GM = 2;
+  PLAYER_TITLE_WIM = 3;
+  PLAYER_TITLE_IM = 4;
+  PLAYER_TITLE_WFM = 5;
+  PLAYER_TITLE_FM = 6;
+  PLAYER_TITLE_WNM = 7;
+  PLAYER_TITLE_NM = 8;
+  PLAYER_TITLE_M = 9;
+  PLAYER_TITLE_CM = 10;
+  PLAYER_TITLE_WCM = 11;
+}

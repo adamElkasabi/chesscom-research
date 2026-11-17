@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_game_point_info.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "GamePointInfoRequest",
+      "options": {}
+    },
+    {
+      "name": "GamePointInfoResponse",
+      "field": [
+        {
+          "name": "game_point_info",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GamePointInfo"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

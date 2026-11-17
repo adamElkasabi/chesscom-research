@@ -1,0 +1,60 @@
+{
+  "name": "chesscom/user_gateway/v1/user_gateway.proto",
+  "package": "chesscom.user_gateway.v1",
+  "message_type": [
+    {
+      "name": "GatewayUserView",
+      "field": [
+        {
+          "name": "user",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.UserView"
+        },
+        {
+          "name": "user_properties",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.PropertiesByUser",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "presence",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.presence.v1.UserPresence",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "ratings",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ratings.v2.VariantTimeClassRatingGroup"
+        },
+        {
+          "name": "relationships",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_relationships.v2.ListableUserRelationship"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_properties"
+        },
+        {
+          "name": "_presence"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

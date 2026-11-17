@@ -1,0 +1,469 @@
+[
+  {
+    "sha256": "b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28",
+    "bytes": 32865067,
+    "path": "/var/tmp/wasm-deep/input/website-audit/wasm-analysis/modules/module-001/module.wasm",
+    "existing_module_id": "module-001",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm"
+    ],
+    "classification": "available baseline module",
+    "provenance": [
+      "previous verified audit",
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm"
+    ],
+    "binary_id": "module-001"
+  },
+  {
+    "sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "bytes": 32922478,
+    "path": "/var/tmp/wasm-deep/input/website-audit/wasm-analysis/modules/module-002/module.wasm",
+    "existing_module_id": "module-002",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm",
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine/explanation-engine.wasm"
+    ],
+    "classification": "available baseline module",
+    "provenance": [
+      "previous verified audit",
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine/explanation-engine.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm"
+    ],
+    "binary_id": "module-002"
+  },
+  {
+    "sha256": "064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35",
+    "bytes": 693497,
+    "path": "/var/tmp/wasm-deep/input/website-audit/wasm-analysis/modules/module-003/module.wasm",
+    "existing_module_id": "module-003",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm"
+    ],
+    "classification": "available baseline module",
+    "provenance": [
+      "previous verified audit",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm"
+    ],
+    "binary_id": "module-003"
+  },
+  {
+    "sha256": "198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04",
+    "bytes": 574106,
+    "path": "/var/tmp/wasm-deep/input/website-audit/wasm-analysis/modules/module-004/module.wasm",
+    "existing_module_id": "module-004",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-single.wasm"
+    ],
+    "classification": "available baseline module",
+    "provenance": [
+      "previous verified audit",
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-single.wasm"
+    ],
+    "binary_id": "module-004"
+  },
+  {
+    "sha256": "59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559",
+    "bytes": 7234687,
+    "path": "/var/tmp/wasm-deep/input/website-audit/wasm-analysis/modules/module-005/module.wasm",
+    "existing_module_id": "module-005",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm"
+    ],
+    "classification": "available baseline module",
+    "provenance": [
+      "previous verified audit",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm"
+    ],
+    "binary_id": "module-005"
+  },
+  {
+    "sha256": "5044ab7655431c0a351c91402d3f4bdf00338814d59b6325e2d4563f3f90c593",
+    "bytes": 673189,
+    "path": "/var/tmp/wasm-deep/downloads/cb1bee58f4b420e77642a50fa0a82706d910d146f709ef6bd42915df054e3ec1.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm"
+    ],
+    "binary_id": "new-binary-006"
+  },
+  {
+    "sha256": "3c974e280008a90e6b10f0f20d02c8e80550cd375413a09a0f1445c4040e827d",
+    "bytes": 683786,
+    "path": "/var/tmp/wasm-deep/downloads/32523c5a8c4e9d6356b5b1bca3582d750819c1099a50176b7764b05adf984e1e.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm"
+    ],
+    "binary_id": "new-binary-007"
+  },
+  {
+    "sha256": "e2f61ddf228c0bbbbcba5d6ea312976f1ff81abb240bd013d8bac50153b7fd25",
+    "bytes": 687595,
+    "path": "/var/tmp/wasm-deep/downloads/71f55ce09aee10bb88c5c58d740996a72a57af86c7bb1cc31cc6490e60833178.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-15.1.wasm"
+    ],
+    "binary_id": "new-binary-008"
+  },
+  {
+    "sha256": "e866261192dc6ae6195dfeeabd4b5df51f2f5b67300f71f40e7f3a5adb7ff661",
+    "bytes": 697387,
+    "path": "/var/tmp/wasm-deep/downloads/d0c9c7e1870c2957d775bcbc27e5ec1c8c282f30fbd8bdb57e48353bea14d62c.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm"
+    ],
+    "binary_id": "new-binary-009"
+  },
+  {
+    "sha256": "e93bcc5913bb526dddaffa0c3a2f4e9ffae10b187ee1c9e5050cd8d7ce1466e1",
+    "bytes": 707847,
+    "path": "/var/tmp/wasm-deep/downloads/367db475243c624c52815882ef9c029311d7594908b5350d7cfcacc31cb7f518.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm"
+    ],
+    "binary_id": "new-binary-010"
+  },
+  {
+    "sha256": "a3185bb8d1236d241610e341b493aed57c58f456d5b0cbc8186518e2fe2305a2",
+    "bytes": 1381822,
+    "path": "/var/tmp/wasm-deep/downloads/f9101c10c53849c4dcebbab7bc1e97420b397268837cde1e61de2563af868461.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-single.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish-single.wasm"
+    ],
+    "binary_id": "new-binary-011"
+  },
+  {
+    "sha256": "435f03585d4312b18374a85a21e8bb634be29faacf6cea3198d54a9186a17f62",
+    "bytes": 385560,
+    "path": "/var/tmp/wasm-deep/downloads/258d2e20e8991fce837bf3974a4f6c6e8139b77484178d7a17208480cb7a9c53.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/stockfish.wasm"
+    ],
+    "binary_id": "new-binary-012"
+  },
+  {
+    "sha256": "9885a095f29f7e13b0ac512929e479d6a0115d4367c42b0479f9e1cea74fed23",
+    "bytes": 6840976,
+    "path": "/var/tmp/wasm-deep/downloads/6a086fff90bf232f34f664a49cba7af357ed15f54d34c3f7f296147869319d9f.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/torch-lite.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/torch-lite.wasm"
+    ],
+    "binary_id": "new-binary-013"
+  },
+  {
+    "sha256": "cbf1a52983c706f419db9771d4a2c789f8c8983f9a6311a7d7f4e8aad6f670dc",
+    "bytes": 47327363,
+    "path": "/var/tmp/wasm-deep/downloads/ca7f1b27fa8c572b6f9d52c2b9c15fa544709a1157f288b021438e5b7ef5e21d.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/engine/torch.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/engine/torch.wasm"
+    ],
+    "binary_id": "new-binary-014"
+  },
+  {
+    "sha256": "2dc42fe38488a96276349f6f460bd3f57ff2d228c52db043aeeac0c7c73122ea",
+    "bytes": 16184029,
+    "path": "/var/tmp/wasm-deep/downloads/c54301de0bc7d50cedc014c86d3a67f785e06245b31033226fa9fb871747811d.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm"
+    ],
+    "binary_id": "new-binary-015"
+  },
+  {
+    "sha256": "5f7c70bb0d6e8786209395796be4900e3cda07c77c609259ac1e2468215a3e8c",
+    "bytes": 32766847,
+    "path": "/var/tmp/wasm-deep/downloads/3599ef632351f82e672a89ebcda46bb707b28d5fc82de45632efb0452016f6b6.body",
+    "urls": [
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/default/explanation-engine.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/default/explanation-engine.wasm"
+    ],
+    "binary_id": "new-binary-016"
+  },
+  {
+    "sha256": "55926c9443a747428981c3692cf4884f910abb6a81a76a648c6c08b63de90271",
+    "bytes": 7036486,
+    "path": "/var/tmp/wasm-deep/downloads/74d1189f599433168433debd7f3ab812a500a548f8cd2ed336c821c7de76b68f.body",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm"
+    ],
+    "binary_id": "new-binary-017"
+  },
+  {
+    "sha256": "fb93254e35d5ebdbac1eb1c8483e4396778f34304bdbb05467190ac35f8c1b33",
+    "bytes": 32557049,
+    "path": "/var/tmp/wasm-deep/downloads/5f7b110e8f97519064198de3261361bb191f92e1012cdc9d6da6321aa808b8f7.body",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm"
+    ],
+    "binary_id": "new-binary-018"
+  },
+  {
+    "sha256": "9c03d62e2225e70aee50ce56e3cab74c47724d4f183d37a2289d039935be172b",
+    "bytes": 32500913,
+    "path": "/var/tmp/wasm-deep/downloads/ab1fc0b67d6402dece16a1b92314f0140de2ef6526706a67209577df74f04e46.body",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.wasm"
+    ],
+    "binary_id": "new-binary-019"
+  },
+  {
+    "sha256": "f3eee5e37393cdfe150acf50f83183fb384276e9545a9f69d094d9d42d94234c",
+    "bytes": 2447540,
+    "path": "/var/tmp/wasm-deep/downloads/563b48a93ebc352dca717f769cafe9b32fcf68fbf579d00951b472fd615d7ce5.body",
+    "urls": [
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://unpkg.com/@rive-app/webgl2@2.38.2/rive.wasm"
+    ],
+    "binary_id": "new-binary-020"
+  },
+  {
+    "sha256": "b15cfb795697d4a59b6bf40d44d9fc55b42e3a87ca5562e3ba7d32638707eb6e",
+    "bytes": 2448937,
+    "path": "/var/tmp/wasm-deep/downloads/ce164b2897457ae25996425f58771cad2837b514da20ee4c15351806da34908e.body",
+    "urls": [
+      "https://cdn.jsdelivr.net/npm/@rive-app/webgl2@2.38.2/rive_fallback.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://cdn.jsdelivr.net/npm/@rive-app/webgl2@2.38.2/rive_fallback.wasm"
+    ],
+    "binary_id": "new-binary-021"
+  },
+  {
+    "sha256": "8f2f8c658a4fc0da0c19d78aafacdcba220289c27d908d82121e0a710abde96a",
+    "bytes": 2385648,
+    "path": "/var/tmp/wasm-deep/downloads/264bc151dc544f96b686543608feedce28f8f1bdd763dd84fc47b5f72fe1fccd.body",
+    "urls": [
+      "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.wasm"
+    ],
+    "binary_id": "new-binary-022"
+  },
+  {
+    "sha256": "1ee92fb98f3d68bc8f81412dd9527215bdd6330e2cb22c0edd51bd85e8680f41",
+    "bytes": 2414644,
+    "path": "/var/tmp/wasm-deep/downloads/8f6a271e4e9df59a4b8e69bf03adec8b4427b83f651329afff35ffb98b5f8a30.body",
+    "urls": [
+      "https://cdn.jsdelivr.net/npm/@rive-app/webgl2@2.49.3/rive_fallback.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://cdn.jsdelivr.net/npm/@rive-app/webgl2@2.49.3/rive_fallback.wasm"
+    ],
+    "binary_id": "new-binary-023"
+  },
+  {
+    "sha256": "ec248bc774ed65c1f2110f01e64d16d87993b69ea5ec39c419e666017fd21591",
+    "bytes": 32711388,
+    "path": "/var/tmp/wasm-deep/downloads/b9ff4eeffae2e31277ace639138df7929d58ab8d567e7bf56dc48d378f196e4c.body",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/no-simd/explanation-engine.wasm"
+    ],
+    "classification": "newly retrieved core module",
+    "provenance": [
+      "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.254/no-simd/explanation-engine.wasm"
+    ],
+    "binary_id": "new-binary-025"
+  },
+  {
+    "binary_id": "new-binary-026",
+    "sha256": "38b70a9507d46b1f2b6f73583b7658cda514041e72beb7ae8708eb995d688b30",
+    "bytes": 74951979,
+    "path": "/var/tmp/wasm-deep/downloads/torch-assembled.wasm",
+    "urls": [
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-0.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-1.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-2.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-3.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-4.wasm",
+      "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-5.wasm"
+    ],
+    "classification": "assembled multipart core module",
+    "provenance": [
+      "Explicit wrapper Buffer.concat and ordered0..5parts"
+    ],
+    "assembly": {
+      "method": "byte concatenation in numeric part order",
+      "parts": [
+        {
+          "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-0.wasm",
+          "sha256": "c456b0fc5d87da71f02cd1f972227f46a808d4a7477b550179a54cafb43f3be2",
+          "bytes": 12491997
+        },
+        {
+          "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-1.wasm",
+          "sha256": "ec1f7c0f5e9aa34676d5ad9d2b6b3ef756a0fe4596c4f1254d0c527c0cbe842d",
+          "bytes": 12491997
+        },
+        {
+          "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-2.wasm",
+          "sha256": "da5e1484011cad1d96adeb9c3c97e89f501f837eec57d51fa707693de312d1d2",
+          "bytes": 12491997
+        },
+        {
+          "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-3.wasm",
+          "sha256": "fd1a35f2e3b776d559775044d5489a6b4b213f7dadca99c386b8074c95b327a2",
+          "bytes": 12491997
+        },
+        {
+          "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-4.wasm",
+          "sha256": "e3d66fd0c85352d4dbae73811f02ff7d83b1f48778585bd275b99874e395b2fd",
+          "bytes": 12491997
+        },
+        {
+          "url": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e-part-5.wasm",
+          "sha256": "48ab91063451bc0270bae94a5700ad10b234e42d561a099cac944ad287bee1f2",
+          "bytes": 12491994
+        }
+      ],
+      "loader_path": "/var/tmp/wasm-deep/downloads/torch-part-loader.js"
+    }
+  },
+  {
+    "binary_id": "new-binary-027",
+    "sha256": "cca43692c70324b16f13136b36f7137eaff1ccb4904dfb969d220ab6a8922a9f",
+    "bytes": 63,
+    "path": "/var/tmp/wasm-deep/downloads/rive-threads-probe.wasm",
+    "urls": [],
+    "identity_kind": "inline feature-detection core module,not separate network GET",
+    "source": "Rive2.49.3source map runtimeLoader.ts:threadsProbe",
+    "source_map_url": "https://unpkg.com/@rive-app/webgl2@2.49.3/rive.js.map",
+    "source_map_sha256": "1486d0b96f757fd80ef06a9895e21751fcc765010e224d2a4a2bf1445bbe651a",
+    "purpose": "Probe shared memory,atomic load,and SIMD validation. It is passed to WebAssembly.validate,not the animation runtime itself.",
+    "source_references": [
+      {
+        "source_id": "SRC-1137",
+        "offset": 3147552
+      }
+    ]
+  },
+  {
+    "binary_id": "new-binary-028",
+    "sha256": "09e229d82c230105f939b305147a0795ac1d0bab0a482949782395e8da57464d",
+    "bytes": 31,
+    "path": "/var/tmp/wasm-deep/downloads/09e229d82c230105f939b305147a0795ac1d0bab0a482949782395e8da57464d.inline.wasm",
+    "urls": [],
+    "identity_kind": "inline source module",
+    "source_references": [
+      {
+        "source_id": "SRC-0781",
+        "offset": 311550
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 809553
+      },
+      {
+        "source_id": "SRC-0781",
+        "offset": 1228515
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 315522
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 543290
+      },
+      {
+        "source_id": "SRC-1137",
+        "offset": 1325535
+      }
+    ],
+    "purpose": "Frontend WebAssembly.validate SIMD capability probe; not a chess algorithm."
+  },
+  {
+    "binary_id": "new-binary-029",
+    "sha256": "df59b1c85df62673c2ccfbcdf9bc1356d02f826f96cd3d6be3f2ab66b6b135f6",
+    "bytes": 43,
+    "path": "/var/tmp/wasm-deep/downloads/rive-probe-29.wasm",
+    "urls": [],
+    "identity_kind": "constructed literal capability-probe module",
+    "source_references": [
+      {
+        "source_id": "SRC-1137",
+        "builder_offset": 3247763,
+        "declaration_offset": 3253500,
+        "expression": "le=[253,12,...Array(16).fill(0)],ue=x([...le]),de=x([...le,...le,253,128,2])"
+      }
+    ],
+    "purpose": "Rive runtime checks base SIMD support; generated deterministically from exact literal builder,not downloaded."
+  },
+  {
+    "binary_id": "new-binary-030",
+    "sha256": "27d72c3b40c120ec769ef14b7ae298a0b57f10f791079b91550e24e18ad55254",
+    "bytes": 64,
+    "path": "/var/tmp/wasm-deep/downloads/rive-probe-30.wasm",
+    "urls": [],
+    "identity_kind": "constructed literal capability-probe module",
+    "source_references": [
+      {
+        "source_id": "SRC-1137",
+        "builder_offset": 3247763,
+        "declaration_offset": 3253500,
+        "expression": "le=[253,12,...Array(16).fill(0)],ue=x([...le]),de=x([...le,...le,253,128,2])"
+      }
+    ],
+    "purpose": "Rive runtime checks relaxed SIMD i8x16.relaxed_swizzle support; generated deterministically from exact literal builder,not downloaded."
+  }
+]

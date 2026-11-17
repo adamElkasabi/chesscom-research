@@ -1,0 +1,121 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/board_markings.proto",
+    "chesscom/chess/v1/move.proto",
+    "chesscom/explanation_engine/v1/speech.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetIllegalMoveExplanationRequest",
+      "field": [
+        {
+          "name": "attempted_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    },
+    {
+      "name": "GetIllegalMoveExplanationResponse",
+      "field": [
+        {
+          "name": "illegal_move_case",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.IllegalMoveCase",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "speech",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "board_markings",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.BoardMarkings"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_illegal_move_case"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "IllegalMoveCase",
+      "value": [
+        {
+          "name": "ILLEGAL_MOVE_CASE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_IN_CHECK",
+          "number": 1
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_PIECE_PINNED_TO_KING",
+          "number": 2
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_PIECE_HAS_OTHER_LEGAL_MOVES",
+          "number": 3
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_PIECE_HAS_NO_LEGAL_MOVES",
+          "number": 4
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_PAWN_CAN_ONLY_CAPTURE",
+          "number": 5
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_PAWN_HAS_NO_LEGAL_MOVES",
+          "number": 6
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_CASTLE_KING_MOVED",
+          "number": 7
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_CASTLE_IN_CHECK",
+          "number": 8
+        },
+        {
+          "name": "ILLEGAL_MOVE_CASE_CASTLE_THROUGH_CHECK",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "name": "IllegalMoveExplanationMode",
+      "value": [
+        {
+          "name": "ILLEGAL_MOVE_EXPLANATION_MODE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ILLEGAL_MOVE_EXPLANATION_MODE_ALL",
+          "number": 1
+        },
+        {
+          "name": "ILLEGAL_MOVE_EXPLANATION_MODE_SUPPRESS_PIECE_HAS_OTHER_LEGAL_MOVES",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,23 @@
+// source: chesscom/user_properties/v1/properties_tournament_stats.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum TournamentStatsPropertyDefinition {
+  TOURNAMENT_STATS_PROPERTY_DEFINITION_UNSPECIFIED = 0;
+  TOURNAMENT_STATS_PROPERTY_DEFINITION_GAME_WIN_COUNT = 1;
+  TOURNAMENT_STATS_PROPERTY_DEFINITION_GAME_DRAW_COUNT = 2;
+  TOURNAMENT_STATS_PROPERTY_DEFINITION_GAME_LOSS_COUNT = 3;
+}
+
+message TournamentStatsProperty {
+  oneof _game_win_count {
+  int32 game_win_count = 1;
+  }
+  oneof _game_draw_count {
+  int32 game_draw_count = 2;
+  }
+  oneof _game_loss_count {
+  int32 game_loss_count = 3;
+  }
+}

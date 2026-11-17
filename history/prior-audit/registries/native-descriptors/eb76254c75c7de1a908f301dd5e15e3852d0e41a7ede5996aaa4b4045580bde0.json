@@ -1,0 +1,1336 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/speech_trigger_label.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "SpeechTriggerLabel",
+      "value": [
+        {
+          "name": "SPEECH_TRIGGER_LABEL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_STARTS",
+          "number": 1
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ADVANTAGE",
+          "number": 2
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MILD_ADVANTAGE",
+          "number": 3
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_STRONG_ADVANTAGE",
+          "number": 4
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ADVANTAGE_EQUAL_MATERIAL",
+          "number": 5
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ADVANTAGE_DOWN_MATERIAL",
+          "number": 6
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_WIN_BY_CHECKMATE",
+          "number": 7
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GAMEOVER_DRAW",
+          "number": 8
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DRAW_BY_STALEMATE_BLUNDER_MATING",
+          "number": 9
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DRAW_BY_STALEMATE_BLUNDER_WINNING",
+          "number": 10
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DRAW_BY_STALEMATE_OK",
+          "number": 11
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DRAW_BY_REPETITION",
+          "number": 12
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DRAW_BY_FIFTY_MOVE_RULE",
+          "number": 13
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPPONENT_RESIGNATION",
+          "number": 14
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TIMEOUT",
+          "number": 15
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DRAW_BY_INSUFFICIENT_MATERIAL",
+          "number": 16
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HAS_MATE_IN_X",
+          "number": 17
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GIVES_CHECK",
+          "number": 18
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PROMOTES",
+          "number": 19
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_QUEEN",
+          "number": 20
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_E4",
+          "number": 21
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_D4",
+          "number": 22
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_C4_ENGLISH",
+          "number": 23
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_NF3",
+          "number": 24
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_E4_E5_KINGS_PAWN",
+          "number": 25
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_E4_C5_SICILIAN",
+          "number": 26
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_E4_C6_CARO_KANN",
+          "number": 27
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_E4_E6_FRENCH",
+          "number": 28
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_D4_NF6_INDIAN",
+          "number": 29
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_D4_D5_QUEENS_GAMBIT",
+          "number": 30
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GAME_REACHED_MOVE_40",
+          "number": 31
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GAME_REACHED_MOVE_100",
+          "number": 32
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_ENDGAME",
+          "number": 33
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KNIGHT_ENDGAME",
+          "number": 34
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BISHOP_ENDGAME",
+          "number": 35
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ROOK_ENDGAME",
+          "number": 36
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_QUEEN_ENDGAME",
+          "number": 37
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MINOR_PIECE_ENDGAME",
+          "number": 38
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MAJOR_PIECE_ENDGAME",
+          "number": 39
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FIRST_CAPTURE",
+          "number": 40
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DONT_CAPTURE_CHECKER",
+          "number": 41
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SAFE_BECAUSE_PIN",
+          "number": 42
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_THREAT",
+          "number": 43
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CASTLES",
+          "number": 44
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES",
+          "number": 45
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_TWO_PAWNS_IN_A_ROW",
+          "number": 46
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FIRST_QUEEN_MOVE",
+          "number": 47
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_THREE_PLUS_CAPTURES_IN_A_ROW",
+          "number": 48
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SAME_PIECE_MOVED_THREE_TIMES",
+          "number": 49
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GIVES_CHECK_THREE_TIMES",
+          "number": 50
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_EQUAL_MATERIAL_HUMAN_SLIGHTLY_BETTER",
+          "number": 51
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_KNIGHT",
+          "number": 52
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_BISHOP",
+          "number": 53
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_ROOK",
+          "number": 54
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_PAWN",
+          "number": 55
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_PASSED_PAWN",
+          "number": 56
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_WITH_PAWN",
+          "number": 57
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_WITH_KNIGHT",
+          "number": 58
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_WITH_BISHOP",
+          "number": 59
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_WITH_ROOK",
+          "number": 60
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_WITH_QUEEN",
+          "number": 61
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURES_WITH_KING",
+          "number": 62
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_STRONG_OPENING_MOVE",
+          "number": 63
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_ACTIVATES_KING",
+          "number": 64
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_BLOCKS_CHECKER",
+          "number": 65
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_BLUNDER_PUNISH",
+          "number": 66
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_CAPTURES_CHECKER",
+          "number": 67
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_CASTLES_OPPOSITE_SIDE",
+          "number": 68
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_DEFENDS_PIECE",
+          "number": 69
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_DIRECT_OPPOSITION",
+          "number": 70
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_DOUBLES_ROOKS",
+          "number": 71
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_EQUAL_TRADE",
+          "number": 72
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_EVADES_CHECK",
+          "number": 73
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_LOSES_CASTLING_RIGHTS",
+          "number": 74
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_MAKES_PASSED_PAWN",
+          "number": 75
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_PIN",
+          "number": 76
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_RETREAT",
+          "number": 77
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_STRIKES_AT_CENTER",
+          "number": 78
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_TAKES_OPEN_FILE",
+          "number": 79
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SAME_PIECETYPE_MOVED",
+          "number": 80
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_CHALLENGE",
+          "number": 81
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MIDGAME_EQUAL",
+          "number": 82
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FIFTY_PLUS_MOVES",
+          "number": 83
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_COMPLEX_NOT_OBVIOUS",
+          "number": 84
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOPS_DEVELOPS",
+          "number": 85
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FIRST_MOVE",
+          "number": 86
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SECOND_MOVE",
+          "number": 87
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_THIRD_MOVE",
+          "number": 88
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOPS_KNIGHT",
+          "number": 89
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOPS_BISHOP",
+          "number": 90
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOPS_ROOK",
+          "number": 91
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOPMENT_COMPLETE",
+          "number": 92
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVES_PAWN",
+          "number": 93
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVES_BISHOP",
+          "number": 94
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVES_KNIGHT",
+          "number": 95
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVES_ROOK",
+          "number": 96
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVES_QUEEN",
+          "number": 97
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVES_KING",
+          "number": 98
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_IDLE_BANTER",
+          "number": 99
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_BOOK",
+          "number": 100
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_BRILLIANT",
+          "number": 101
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_GREAT_FIND",
+          "number": 102
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_BEST",
+          "number": 103
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_EXCELLENT",
+          "number": 104
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_GOOD",
+          "number": 105
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_INACCURACY",
+          "number": 106
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_MISTAKE",
+          "number": 107
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_BLUNDER",
+          "number": 108
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CLASSIFICATION_MISSED",
+          "number": 109
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURE_CHECKER",
+          "number": 110
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ALLOWS_CASTLING",
+          "number": 111
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPENING_MOVED_PIECE_TWICE",
+          "number": 112
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BAD_F_PAWN_MOVE_IN_OPENING",
+          "number": 113
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MIDGAME_ADVANTAGE",
+          "number": 114
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TOO_MANY_OPENING_PAWN_MOVES",
+          "number": 115
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_THIRD_PIECE_DEVELOPED",
+          "number": 116
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OBVIOUS",
+          "number": 117
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OBVIOUS_RECAPTURE",
+          "number": 118
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OBVIOUS_RETREAT",
+          "number": 119
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_THREAT_PARRIED",
+          "number": 120
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_RETREAT_TRADABLE",
+          "number": 121
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FIFTEEN_PLY_NO_CAPTURE",
+          "number": 122
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FIRST_CAPTURE_IN_A_WHILE",
+          "number": 123
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_FACES_PAWN",
+          "number": 124
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KNIGHTS_DEVELOPED",
+          "number": 125
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BISHOPS_DEVELOPED",
+          "number": 126
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BAD_FLANK_PAWN_MOVE",
+          "number": 127
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ROOK_DEVELOPED_TOO_EARLY",
+          "number": 128
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_QUEEN_DEVELOPED_TOO_EARLY",
+          "number": 129
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KING_PAWN_THREATENED",
+          "number": 130
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOPMENT_ADVANTAGE",
+          "number": 131
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_LATE_DEVELOPMENT",
+          "number": 132
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KNIGHT_ON_RIM_BAD",
+          "number": 133
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KNIGHT_ON_RIM_NOT_BAD",
+          "number": 134
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_NEXT_MOVE_OBVIOUS_RECAPTURE",
+          "number": 135
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_OPP_BLUNDER_BUT_OPP_STILL_WINNING",
+          "number": 136
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_WINNING_THE_EXCHANGE",
+          "number": 137
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FINALLY_FOUND_IT",
+          "number": 138
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_RETREAT_FORWARD",
+          "number": 139
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_LOSING_WIDE_OPEN_BOARD",
+          "number": 140
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SECOND_CHANCE",
+          "number": 141
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GIVES_OPPORTUNITY",
+          "number": 142
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_CHALLENGE_GOOD",
+          "number": 143
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_SHIELD_BROKEN",
+          "number": 144
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BISHOP_ON_LONG_DIAGONAL",
+          "number": 145
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOBILIZES_SLIDING_PIECE",
+          "number": 146
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TRADE_DOWN_WHEN_AHEAD",
+          "number": 147
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CREATES_CRITICAL_POSITION",
+          "number": 148
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MULTIPLE_THREATS_MADE",
+          "number": 149
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MULTIPLE_THREATS_ADDRESSED",
+          "number": 150
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_TO_PAWN",
+          "number": 151
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_TO_KNIGHT",
+          "number": 152
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_TO_BISHOP",
+          "number": 153
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_TO_ROOK",
+          "number": 154
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_TO_QUEEN",
+          "number": 155
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_FROM_PAWN",
+          "number": 156
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_FROM_KNIGHT",
+          "number": 157
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_FROM_BISHOP",
+          "number": 158
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_FROM_ROOK",
+          "number": 159
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_FROM_QUEEN",
+          "number": 160
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_REPEAT_CAPTURE_THREAT_FROM_KING",
+          "number": 161
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_LOST_CASTLING_BAD",
+          "number": 162
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_UNFORESEEN_BACKWARDS_MOVE",
+          "number": 163
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MIRROR_BOARD",
+          "number": 164
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FORCES_KING_MOVE",
+          "number": 165
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DOUBLE_FORCES_KING_MOVE",
+          "number": 166
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MISTAKE_BUT",
+          "number": 167
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BLUNDER_BUT",
+          "number": 168
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEVELOP",
+          "number": 169
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_CASTLE",
+          "number": 170
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_NOW_ISOLATED",
+          "number": 171
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_UNPINS_KNIGHT",
+          "number": 172
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_UNPINS_BISHOP",
+          "number": 173
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_UNPINS_ROOK",
+          "number": 174
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CONTESTS_OPEN_FILE",
+          "number": 175
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CREATES_KING_FLIGHT_SQUARE",
+          "number": 176
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DESTROYS_KING_FLIGHT_SQUARE",
+          "number": 177
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_GIVES_BRILLIANT_OPPORTUNITY",
+          "number": 178
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TRADE_OFFER_ACCEPTED",
+          "number": 179
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TRADE_OFFER_DECLINED",
+          "number": 180
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TRADES_ROOKS_OR_QUEENS",
+          "number": 181
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_LONG_DISTANCE_CAPTURE",
+          "number": 182
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_IS_ENDGAME",
+          "number": 183
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEFENDER_MOVED_PAWN",
+          "number": 184
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEFENDER_MOVED_KNIGHT",
+          "number": 185
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEFENDER_MOVED_BISHOP",
+          "number": 186
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEFENDER_MOVED_ROOK",
+          "number": 187
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEFENDER_MOVED_QUEEN",
+          "number": 188
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_DEFENDER_MOVED_KING",
+          "number": 189
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_HINT_TO_TRADE_PAWNS",
+          "number": 190
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_PAWN_MAKES_THIRD_CAPTURE",
+          "number": 191
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KNIGHT_MAKES_THIRD_CAPTURE",
+          "number": 192
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_BISHOP_MAKES_THIRD_CAPTURE",
+          "number": 193
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ROOK_MAKES_THIRD_CAPTURE",
+          "number": 194
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_QUEEN_MAKES_THIRD_CAPTURE",
+          "number": 195
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KING_MAKES_THIRD_CAPTURE",
+          "number": 196
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_IS_FORCED",
+          "number": 197
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURE_THREAT_TO_PAWN",
+          "number": 198
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURE_THREAT_TO_KNIGHT",
+          "number": 199
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURE_THREAT_TO_BISHOP",
+          "number": 200
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURE_THREAT_TO_ROOK",
+          "number": 201
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_CAPTURE_THREAT_TO_QUEEN",
+          "number": 202
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_PAWN",
+          "number": 203
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_KNIGHT",
+          "number": 204
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_BISHOP",
+          "number": 205
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_ROOK",
+          "number": 206
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_QUEEN",
+          "number": 207
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_WITH_PAWN",
+          "number": 208
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_WITH_KNIGHT",
+          "number": 209
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_WITH_BISHOP",
+          "number": 210
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_WITH_ROOK",
+          "number": 211
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_WITH_QUEEN",
+          "number": 212
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_HAVE_CAPTURED_WITH_KING",
+          "number": 213
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_EN_PASSANT_OK",
+          "number": 214
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_EN_PASSANT_BAD",
+          "number": 215
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FOUND_CRITICAL_MOVE",
+          "number": 216
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_MOVE_PAWN",
+          "number": 217
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_MOVE_KNIGHT",
+          "number": 218
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_MOVE_BISHOP",
+          "number": 219
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_MOVE_ROOK",
+          "number": 220
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_MOVE_QUEEN",
+          "number": 221
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SHOULD_MOVE_KING",
+          "number": 222
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_SAW_IT_TOO_LATE",
+          "number": 223
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_DEVELOP_WITH_THREAT",
+          "number": 224
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MIRROR_MOVES",
+          "number": 225
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_ALSO_CONNECTED_ROOKS",
+          "number": 226
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_KING_ON_OTHER_SIDE",
+          "number": 227
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FEN",
+          "number": 228
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_FEN_PLUS_MOVE",
+          "number": 229
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_TAG_EQUAL_TRADE_SEQUENCE",
+          "number": 230
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_1",
+          "number": 231
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_2",
+          "number": 232
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_3",
+          "number": 233
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_4",
+          "number": 234
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_5",
+          "number": 235
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_6",
+          "number": 236
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_7",
+          "number": 237
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_8",
+          "number": 238
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_9",
+          "number": 239
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_10",
+          "number": 240
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_11",
+          "number": 241
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_12",
+          "number": 242
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_13",
+          "number": 243
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_14",
+          "number": 244
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_15",
+          "number": 245
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_16",
+          "number": 246
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_17",
+          "number": 247
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_18",
+          "number": 248
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_19",
+          "number": 249
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_20",
+          "number": 250
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_21",
+          "number": 251
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_22",
+          "number": 252
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_23",
+          "number": 253
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_24",
+          "number": 254
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_25",
+          "number": 255
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_26",
+          "number": 256
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_27",
+          "number": 257
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_28",
+          "number": 258
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_29",
+          "number": 259
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_30",
+          "number": 260
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_31",
+          "number": 261
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_32",
+          "number": 262
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_33",
+          "number": 263
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_34",
+          "number": 264
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_35",
+          "number": 265
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_36",
+          "number": 266
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_37",
+          "number": 267
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_38",
+          "number": 268
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_39",
+          "number": 269
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_40",
+          "number": 270
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_41",
+          "number": 271
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_42",
+          "number": 272
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_43",
+          "number": 273
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_44",
+          "number": 274
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_45",
+          "number": 275
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_46",
+          "number": 276
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_47",
+          "number": 277
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_48",
+          "number": 278
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_49",
+          "number": 279
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_50",
+          "number": 280
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_51",
+          "number": 281
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_52",
+          "number": 282
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_53",
+          "number": 283
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_54",
+          "number": 284
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_55",
+          "number": 285
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_56",
+          "number": 286
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_57",
+          "number": 287
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_58",
+          "number": 288
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_59",
+          "number": 289
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_60",
+          "number": 290
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_61",
+          "number": 291
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_62",
+          "number": 292
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_63",
+          "number": 293
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_64",
+          "number": 294
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_65",
+          "number": 295
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_66",
+          "number": 296
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_67",
+          "number": 297
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_68",
+          "number": 298
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_69",
+          "number": 299
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_70",
+          "number": 300
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_71",
+          "number": 301
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_72",
+          "number": 302
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_73",
+          "number": 303
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_74",
+          "number": 304
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_75",
+          "number": 305
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_76",
+          "number": 306
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_77",
+          "number": 307
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_78",
+          "number": 308
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_79",
+          "number": 309
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_80",
+          "number": 310
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_81",
+          "number": 311
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_82",
+          "number": 312
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_83",
+          "number": 313
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_84",
+          "number": 314
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_85",
+          "number": 315
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_86",
+          "number": 316
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_87",
+          "number": 317
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_88",
+          "number": 318
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_89",
+          "number": 319
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_90",
+          "number": 320
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_91",
+          "number": 321
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_92",
+          "number": 322
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_93",
+          "number": 323
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_94",
+          "number": 324
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_95",
+          "number": 325
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_96",
+          "number": 326
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_97",
+          "number": 327
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_98",
+          "number": 328
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_99",
+          "number": 329
+        },
+        {
+          "name": "SPEECH_TRIGGER_LABEL_MOVE_100",
+          "number": 330
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

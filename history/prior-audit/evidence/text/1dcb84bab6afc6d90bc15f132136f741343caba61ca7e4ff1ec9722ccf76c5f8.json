@@ -1,0 +1,100 @@
+{
+  "config": {
+    "id": "normalized-nodes-75000",
+    "settings": {
+      "search": {
+        "case": "searchSettings",
+        "value": {
+          "searchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 75000,
+            "numLines": 2
+          },
+          "nullMoveSearchParameters": {
+            "depthLimit": 6,
+            "nodesLimit": 40000,
+            "numLines": 1
+          }
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  "started": "2026-11-14T19:12:16.610Z",
+  "actual": {
+    "accuracy": {
+      "white": 64.58173370361328,
+      "black": 99.13462829589844
+    },
+    "ratings": {
+      "white": 100,
+      "black": 1000
+    },
+    "tallies": {
+      "white": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 6,
+        "9": 1,
+        "10": 0,
+        "11": 0,
+        "20": 0
+      },
+      "black": {
+        "1": 2,
+        "2": 0,
+        "3": 1,
+        "4": 4,
+        "5": 3,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "20": 0
+      }
+    }
+  },
+  "engines": [
+    11
+  ],
+  "numericHash": "ade09abf3167caeb0866750d350ccc8e3a4d9f30789dd8e6fcd6efb6d94812a7",
+  "actualSettings": {
+    "userColor": 2,
+    "locale": 0,
+    "gameAnalysisSpeechVersion": 3,
+    "moveClassificationVersion": 2,
+    "search": {
+      "case": "searchSettings",
+      "value": {
+        "searchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 75000,
+          "timeLimitMs": 0,
+          "numLines": 2
+        },
+        "nullMoveSearchParameters": {
+          "depthLimit": 6,
+          "nodesLimit": 40000,
+          "timeLimitMs": 0,
+          "numLines": 1
+        }
+      }
+    },
+    "enableSkills": true
+  },
+  "speech": {
+    "sentences": 20,
+    "hashes": 20
+  },
+  "elapsedSeconds": 10.692,
+  "warnings": []
+}

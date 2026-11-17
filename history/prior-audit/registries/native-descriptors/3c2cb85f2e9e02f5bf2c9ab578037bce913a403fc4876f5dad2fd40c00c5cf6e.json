@@ -1,0 +1,47 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_convert_to_proto_moves.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/notation.proto"
+  ],
+  "message_type": [
+    {
+      "name": "ConvertToProtoMovesRequest",
+      "field": [
+        {
+          "name": "move_notation",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.MoveNotation"
+        },
+        {
+          "name": "initial_fen",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "moves_to_convert",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ConvertToProtoMovesResponse",
+      "field": [
+        {
+          "name": "moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

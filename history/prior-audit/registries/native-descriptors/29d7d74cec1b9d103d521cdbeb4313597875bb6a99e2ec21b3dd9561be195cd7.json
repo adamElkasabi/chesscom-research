@@ -1,0 +1,55 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_get_ergonomic_game.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/game.proto",
+    "chesscom/explanation_engine/v1/game_state.proto"
+  ],
+  "message_type": [
+    {
+      "name": "GetErgonomicGameRequest",
+      "field": [
+        {
+          "name": "game_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState",
+          "oneof_index": 0
+        },
+        {
+          "name": "pgn",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "starting_game_point",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "game_to_convert"
+        }
+      ]
+    },
+    {
+      "name": "GetErgonomicGameResponse",
+      "field": [
+        {
+          "name": "game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Game"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

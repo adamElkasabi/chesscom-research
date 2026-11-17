@@ -1,0 +1,42 @@
+// source: chesscom/unlockables/v1/resources.proto
+// syntax: proto3
+
+package chesscom.unlockables.v1;
+
+enum ResourceType {
+  RESOURCE_TYPE_UNSPECIFIED = 0;
+  RESOURCE_TYPE_FLAIR = 1;
+  RESOURCE_TYPE_THEME_BACKGROUND = 2;
+  RESOURCE_TYPE_THEME_BOARD_STYLE = 3;
+  RESOURCE_TYPE_THEME_PIECE_SET = 4;
+  RESOURCE_TYPE_THEME_SOUND_SET = 5;
+}
+
+enum ResourceStatus {
+  RESOURCE_STATUS_UNSPECIFIED = 0;
+  RESOURCE_STATUS_LOCKED = 1;
+  RESOURCE_STATUS_UNLOCKED = 2;
+}
+
+message UnlockableResourceIdentifier {
+  optional .chesscom.unlockables.v1.ResourceType resource_type = 1;
+  optional string resource_id = 2;
+}
+
+message UnlockablePreview {
+  optional string label = 1;
+  optional string image_url = 2;
+}
+
+message UnlockablePreviewItem {
+  optional .chesscom.unlockables.v1.UnlockableResourceIdentifier identifier = 1;
+  optional .chesscom.unlockables.v1.UnlockablePreview preview = 2;
+}
+
+message Unlockable {
+  oneof _unlocked_at {
+  .google.protobuf.Timestamp unlocked_at = 3;
+  }
+  optional .chesscom.unlockables.v1.UnlockableResourceIdentifier identifier = 1;
+  optional .chesscom.unlockables.v1.UnlockablePreview preview = 2;
+}

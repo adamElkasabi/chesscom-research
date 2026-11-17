@@ -1,0 +1,106 @@
+{
+  "name": "chesscom/payments/v1/billing_history_entry.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "BillingHistoryEntry",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "display_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "order_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.OrderType",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "price",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Money"
+        },
+        {
+          "name": "placed_by",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.BillingHistoryEntryUser"
+        },
+        {
+          "name": "gift_receiver",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.BillingHistoryEntryUser",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "created_date",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "invoice_available",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_display_name"
+        },
+        {
+          "name": "_order_type"
+        },
+        {
+          "name": "_gift_receiver"
+        }
+      ]
+    },
+    {
+      "name": "BillingHistoryEntryUser",
+      "field": [
+        {
+          "name": "username",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "email",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_email"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

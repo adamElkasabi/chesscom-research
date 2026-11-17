@@ -1,0 +1,37 @@
+// source: chesscom/user_relationships/v2/user_relationships_model.proto
+// syntax: proto3
+
+package chesscom.user_relationships.v2;
+
+enum UserRelationshipDirection {
+  USER_RELATIONSHIP_DIRECTION_UNSPECIFIED = 0;
+  USER_RELATIONSHIP_DIRECTION_INCOMING = 1;
+  USER_RELATIONSHIP_DIRECTION_OUTGOING = 2;
+  USER_RELATIONSHIP_DIRECTION_MUTUAL = 3;
+}
+
+enum UserRelationshipType {
+  USER_RELATIONSHIP_TYPE_UNSPECIFIED = 0;
+  USER_RELATIONSHIP_TYPE_FRIENDSHIP = 1;
+  USER_RELATIONSHIP_TYPE_BLOCK = 2;
+  USER_RELATIONSHIP_TYPE_FRIEND_REQUEST = 3;
+}
+
+message UserRelationship {
+  optional .chesscom.user_relationships.v2.UserRelationshipType type = 1;
+  optional .chesscom.user_relationships.v2.UserRelationshipDirection direction = 2;
+  optional .google.protobuf.Timestamp created_at = 3;
+}
+
+message UserRelationshipRequestCriteria {
+  optional .chesscom.user_relationships.v2.UserRelationshipType relationship_type = 1;
+  optional .chesscom.user_relationships.v2.UserRelationshipDirection direction = 2;
+}
+
+message UserRelationshipInteraction {
+  oneof _created_at {
+  .google.protobuf.Timestamp created_at = 3;
+  }
+  optional .chesscom.user_relationships.v2.UserRelationshipType type = 1;
+  optional .chesscom.user_relationships.v2.UserRelationshipDirection direction = 2;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/board_event_details.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/analysis_type.proto",
+    "chesscom/explanation_engine/v1alpha/board_event_profile.proto",
+    "chesscom/explanation_engine/v1alpha/circumstance.proto"
+  ],
+  "message_type": [
+    {
+      "name": "BoardEventDetails",
+      "field": [
+        {
+          "name": "circumstance",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.Circumstance"
+        },
+        {
+          "name": "child_circumstance",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.Circumstance",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "analysis_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AnalysisType"
+        },
+        {
+          "name": "profile",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_child_circumstance"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,32 @@
+// source: chesscom/courses/v1/course_recommendation.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum RecommendationReason {
+  RECOMMENDATION_REASON_UNSPECIFIED = 0;
+  RECOMMENDATION_REASON_LAST_BOOK_MOVE = 1;
+  RECOMMENDATION_REASON_FIRST_MISTAKE = 2;
+}
+
+message CourseRecommendation {
+  optional string coach_text = 1;
+  optional string variation_preview_url = 2;
+  optional string course_name = 3;
+  optional string author_name = 4;
+  optional string course_id = 5;
+  optional string course_url = 6;
+  optional string cover_image_url = 7;
+  optional float rating = 8;
+  optional int32 review_count = 9;
+  optional string short_description = 10;
+}
+
+message CourseSummary {
+  optional string variation_preview_url = 1;
+  optional string course_name = 2;
+  optional string author_name = 3;
+  optional float rating = 4;
+  optional int32 num_reviews = 5;
+  optional string thumbnail_url = 6;
+}

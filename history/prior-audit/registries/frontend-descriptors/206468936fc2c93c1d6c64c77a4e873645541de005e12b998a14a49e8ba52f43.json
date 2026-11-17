@@ -1,0 +1,19 @@
+{
+  "name": "chesscom/game_storage/v2/vs_coach_game_data.proto",
+  "package": "chesscom.game_storage.v2",
+  "message_type": [
+    {
+      "name": "VsCoachGameData",
+      "field": [
+        {
+          "name": "coach_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "chesscom/payments/v1/membership_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "CancelMembershipRequest"
+    },
+    {
+      "name": "CancelMembershipResponse"
+    },
+    {
+      "name": "SubmitCancellationSurveyRequest",
+      "field": [
+        {
+          "name": "reason",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.CancelSurveyReason"
+        },
+        {
+          "name": "feedback",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_feedback"
+        }
+      ]
+    },
+    {
+      "name": "SubmitCancellationSurveyResponse"
+    },
+    {
+      "name": "ExtendMembershipRequest"
+    },
+    {
+      "name": "ExtendMembershipResponse"
+    }
+  ],
+  "service": [
+    {
+      "name": "MembershipService",
+      "method": [
+        {
+          "name": "CancelMembership",
+          "input_type": ".chesscom.payments.v1.CancelMembershipRequest",
+          "output_type": ".chesscom.payments.v1.CancelMembershipResponse"
+        },
+        {
+          "name": "SubmitCancellationSurvey",
+          "input_type": ".chesscom.payments.v1.SubmitCancellationSurveyRequest",
+          "output_type": ".chesscom.payments.v1.SubmitCancellationSurveyResponse"
+        },
+        {
+          "name": "ExtendMembership",
+          "input_type": ".chesscom.payments.v1.ExtendMembershipRequest",
+          "output_type": ".chesscom.payments.v1.ExtendMembershipResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

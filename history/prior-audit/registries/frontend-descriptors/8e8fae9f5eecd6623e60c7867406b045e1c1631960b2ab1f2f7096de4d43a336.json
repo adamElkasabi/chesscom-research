@@ -1,0 +1,137 @@
+{
+  "name": "chesscom/user_profile/v1/social_service.proto",
+  "package": "chesscom.user_profile.v1",
+  "message_type": [
+    {
+      "name": "ListFollowedUsersRequest",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "requester_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_pagination"
+        },
+        {
+          "name": "_requester_uuid"
+        }
+      ]
+    },
+    {
+      "name": "ListFollowedUsersResponse",
+      "field": [
+        {
+          "name": "followed_users",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_profile.v1.FollowedUser"
+        },
+        {
+          "name": "pagination",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "DoesUserFollowOtherUsersRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "target_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_uuid"
+        }
+      ]
+    },
+    {
+      "name": "DoesUserFollowOtherUsersResponse",
+      "field": [
+        {
+          "name": "follow_status",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_profile.v1.DoesUserFollowOtherUsersResponse.FollowStatusEntry"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "FollowStatusEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "SocialService",
+      "method": [
+        {
+          "name": "ListFollowedUsers",
+          "input_type": ".chesscom.user_profile.v1.ListFollowedUsersRequest",
+          "output_type": ".chesscom.user_profile.v1.ListFollowedUsersResponse"
+        },
+        {
+          "name": "DoesUserFollowOtherUsers",
+          "input_type": ".chesscom.user_profile.v1.DoesUserFollowOtherUsersRequest",
+          "output_type": ".chesscom.user_profile.v1.DoesUserFollowOtherUsersResponse"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

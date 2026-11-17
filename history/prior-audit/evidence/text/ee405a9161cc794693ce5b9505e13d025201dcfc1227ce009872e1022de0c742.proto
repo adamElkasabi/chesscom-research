@@ -1,0 +1,15 @@
+// source: chesscom/courses/v1/course_chapter.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseChapter {
+  oneof _video {
+  .chesscom.courses_common.v1.CourseVideo video = 3;
+  }
+  oneof _user_video_position {
+  int32 user_video_position = 4;
+  }
+  optional string id = 1;
+  optional string name = 2;
+}

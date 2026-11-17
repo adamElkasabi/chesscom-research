@@ -1,0 +1,18 @@
+// source: chesscom/explanation_engine/v1/simple_threat.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum ThreatType {
+  THREAT_TYPE_UNSPECIFIED = 0;
+  THREAT_TYPE_CHECK = 1;
+  THREAT_TYPE_CAPTURE = 2;
+  THREAT_TYPE_MATE = 3;
+}
+
+message SimpleThreat {
+  optional .chesscom.explanation_engine.v1.ThreatType threat_type = 1;
+  optional .chesscom.chess.v1.Move threatened_move = 2;
+  optional .chesscom.chess.v1.Score see_value = 3;
+  optional .chesscom.engine.v1.Score score = 4;
+}

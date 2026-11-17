@@ -1,0 +1,28 @@
+{
+  "name": "chesscom/courses/v1/course_type.proto",
+  "package": "chesscom.courses.v1",
+  "enum_type": [
+    {
+      "name": "CourseType",
+      "value": [
+        {
+          "name": "COURSE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_TYPE_FREE",
+          "number": 1
+        },
+        {
+          "name": "COURSE_TYPE_DIAMOND_EXCLUSIVE",
+          "number": 2
+        },
+        {
+          "name": "COURSE_TYPE_PAID",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

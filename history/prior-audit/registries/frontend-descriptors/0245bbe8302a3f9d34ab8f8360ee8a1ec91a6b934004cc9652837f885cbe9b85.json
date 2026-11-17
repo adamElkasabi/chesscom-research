@@ -1,0 +1,147 @@
+{
+  "name": "chesscom/ceac/v2/client.proto",
+  "package": "chesscom.ceac.v2",
+  "enum_type": [
+    {
+      "name": "Client",
+      "value": [
+        {
+          "name": "CLIENT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CLIENT_WEB",
+          "number": 1
+        },
+        {
+          "name": "CLIENT_ANDROID",
+          "number": 2
+        },
+        {
+          "name": "CLIENT_IOS",
+          "number": 3
+        },
+        {
+          "name": "CLIENT_LC",
+          "number": 4
+        },
+        {
+          "name": "CLIENT_RCN",
+          "number": 5
+        },
+        {
+          "name": "CLIENT_EVENTS",
+          "number": 6
+        },
+        {
+          "name": "CLIENT_INSIGHTS",
+          "number": 7
+        },
+        {
+          "name": "CLIENT_STATS",
+          "number": 8
+        },
+        {
+          "name": "CLIENT_COACH_ASSET_UPDATER",
+          "number": 9
+        },
+        {
+          "name": "CLIENT_EVAL_CACHE_GENERATOR",
+          "number": 10
+        },
+        {
+          "name": "CLIENT_DEVELOPER",
+          "number": 11
+        },
+        {
+          "name": "CLIENT_PUZZLE_GEN",
+          "number": 12
+        },
+        {
+          "name": "CLIENT_TEXT_AUDIO",
+          "number": 13
+        },
+        {
+          "name": "CLIENT_CHESSKID_WEB",
+          "number": 14
+        },
+        {
+          "name": "CLIENT_CHESSKID_IOS",
+          "number": 15
+        },
+        {
+          "name": "CLIENT_CHESSKID_ANDROID",
+          "number": 16
+        },
+        {
+          "name": "CLIENT_TRAIN",
+          "number": 17
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Product",
+      "value": [
+        {
+          "name": "PRODUCT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PRODUCT_CEAC_INTERNAL",
+          "number": 1
+        },
+        {
+          "name": "PRODUCT_GAME_REVIEW",
+          "number": 2
+        },
+        {
+          "name": "PRODUCT_INSIGHTS",
+          "number": 3
+        },
+        {
+          "name": "PRODUCT_RAGE_QUIT_DETECTION",
+          "number": 4
+        },
+        {
+          "name": "PRODUCT_FAIR_PLAY_PRODUCTION",
+          "number": 5
+        },
+        {
+          "name": "PRODUCT_FAIR_PLAY_RESEARCH",
+          "number": 6
+        },
+        {
+          "name": "PRODUCT_EVENTS",
+          "number": 7
+        },
+        {
+          "name": "PRODUCT_ADVANCED_STATS",
+          "number": 8
+        },
+        {
+          "name": "PRODUCT_CORE_CHESS_RESEARCH",
+          "number": 9
+        },
+        {
+          "name": "PRODUCT_PUZZLES",
+          "number": 10
+        },
+        {
+          "name": "PRODUCT_TEXT_AUDIO",
+          "number": 11
+        },
+        {
+          "name": "PRODUCT_BRILLIANT_VERIFICATION",
+          "number": 12
+        },
+        {
+          "name": "PRODUCT_TRAIN",
+          "number": 13
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

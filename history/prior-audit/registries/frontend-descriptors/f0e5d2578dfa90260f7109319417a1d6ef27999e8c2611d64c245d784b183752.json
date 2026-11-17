@@ -1,0 +1,2209 @@
+{
+  "name": "chesscom/game_review/v2/user_activity.proto",
+  "package": "chesscom.game_review.v2",
+  "message_type": [
+    {
+      "name": "GameReviewStart",
+      "field": [
+        {
+          "name": "game_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.ceac.v1.GameAnalysisGameType"
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "source",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewStartSource"
+        },
+        {
+          "name": "funnel",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel"
+        },
+        {
+          "name": "game_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        },
+        {
+          "name": "_game_id"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewPremiumModalOpened",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "trigger",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewPremiumModalTrigger",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "category",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        },
+        {
+          "name": "_trigger"
+        },
+        {
+          "name": "_category"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewPremiumModalClosed",
+      "field": [
+        {
+          "name": "button_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewPremiumModalButton",
+          "options": {}
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "trigger",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewPremiumModalTrigger",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        },
+        {
+          "name": "_trigger"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewPremiumModalUpgradeClicked",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "trigger",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewPremiumModalTrigger",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        },
+        {
+          "name": "_trigger"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewStartReviewClicked",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewOverviewScreenContinueReviewClicked",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewSelfAnalysisClicked",
+      "field": [
+        {
+          "name": "game_review_screen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewScreen",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_review_screen"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewOverviewScreenEvalGraphClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewClassificationsExpandClicked",
+      "field": [
+        {
+          "name": "is_expanded",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMoveClassificationClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewStartGameClicked",
+      "field": [
+        {
+          "name": "time_class",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "game_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.ceac.v1.GameAnalysisGameType"
+        },
+        {
+          "name": "game_review_screen",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewScreen",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_review_screen"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMoveFeedbackButtonClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "button_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewMoveFeedbackButton",
+          "options": {}
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMovesMoveNodeClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMoveChangedClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_navigation_method",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewMoveNavigationMethod"
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMoveChangedArrowKeyPressed",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_navigation_method",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewMoveNavigationMethod"
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewBackButtonClicked",
+      "field": [
+        {
+          "name": "button_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewBackButtonWeb",
+          "options": {}
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMovesEvalGraphClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMovesMovesPlaybackToggled",
+      "field": [
+        {
+          "name": "moves_playback_enabled",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCoachAudioToggleMuteClicked",
+      "field": [
+        {
+          "name": "coach_speech_muted",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "coach_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "game_review_screen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewScreen",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        },
+        {
+          "name": "_game_review_screen"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewShowMovesToggleClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "button_state",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.ShowMovesButtonState"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCoachVisualization",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCeacResponse",
+      "field": [
+        {
+          "name": "is_user_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "game_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.ceac.v1.GameAnalysisGameType"
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "source",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewStartSource"
+        },
+        {
+          "name": "ceac_response_result",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCoachTextFeedback",
+      "field": [
+        {
+          "name": "celebrity_coach_text",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_feedback",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_link",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_number",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "selected_coach_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "selected_coach_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move_classification",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "cee_version",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "engine_strength",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_feedback"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCourseRecommendationViewed",
+      "field": [
+        {
+          "name": "course_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewCourseRecommendationType"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseRecommendationClicked",
+      "field": [
+        {
+          "name": "course_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewCourseRecommendationType"
+        },
+        {
+          "name": "opening_name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "fen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "variation_preview_url",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_id",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "course_url",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "cover_image_url",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "review_count",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "short_description",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_color",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseRecommendationDecision",
+      "field": [
+        {
+          "name": "rec_eligible",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "course_matched",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "reason",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewCourseRecommendationDecisionReason"
+        },
+        {
+          "name": "recommendation_reason",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.RecommendationReason"
+        },
+        {
+          "name": "fen",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "rating",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_rating"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCourseRecommendationSuppressed",
+      "field": [
+        {
+          "name": "reason",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewCourseRecommendationSuppressionReason"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewCourseRecommendationType",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "fen",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_type"
+        },
+        {
+          "name": "_rating"
+        },
+        {
+          "name": "_fen"
+        },
+        {
+          "name": "_opening"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewCourseDeviationViewed",
+      "field": [
+        {
+          "name": "course_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseDeviationClicked",
+      "field": [
+        {
+          "name": "course_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseDeviationShowMovesClicked",
+      "field": [
+        {
+          "name": "course_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "author_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewUserMoveMade",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewTakeawaysViewed",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "paywall_shown",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "train_cta_destination",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewTakeawaysTrainCtaDestination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "train_item_type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainItemType",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_train_cta_destination"
+        },
+        {
+          "name": "_train_item_type"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewTakeawaysUpgradeClicked",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewTakeawaysTrainCtaClicked",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "destination",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewTakeawaysTrainCtaDestination"
+        },
+        {
+          "name": "game_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "train_item_type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainItemType",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_id"
+        },
+        {
+          "name": "_train_item_type"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewTakeawaysNextClicked",
+      "field": [
+        {
+          "name": "category",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.stats.v1.AdvancedStatType"
+        },
+        {
+          "name": "train_cta_shown",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "train_item_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainItemType",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_train_item_type"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewMoveContextExtension",
+      "field": [
+        {
+          "name": "move_number",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "move_classification",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "is_key_move",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      },
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewContextExtension",
+      "field": [
+        {
+          "name": "specific_move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_review.v2.GameReviewContextExtension.GameReviewMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "GameReviewMove",
+          "field": [
+            {
+              "name": "move_number",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "user_or_opponent_move",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+              "oneof_index": 0,
+              "proto3_optional": true
+            },
+            {
+              "name": "move_classification",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+            },
+            {
+              "name": "is_key_move",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL"
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "_user_or_opponent_move"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_specific_move"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewExplainButtonClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewExplainButtonClosed",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewExplainMoveNavClicked",
+      "field": [
+        {
+          "name": "move_classification",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.MoveClassification"
+        },
+        {
+          "name": "user_or_opponent_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.UserOrOpponentMove",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "percent_reviewed",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "line_ply",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "move_navigation_method",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewMoveNavigationMethod"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_user_or_opponent_move"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewShareButtonClicked",
+      "field": [
+        {
+          "name": "game_review_screen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewScreen",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "placement",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewSharePlacement",
+          "options": {}
+        },
+        {
+          "name": "result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_review_screen"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewShareCompleted",
+      "field": [
+        {
+          "name": "game_review_screen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewScreen",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "placement",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewSharePlacement",
+          "options": {}
+        },
+        {
+          "name": "destination",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_review_screen"
+        },
+        {
+          "name": "_destination"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    },
+    {
+      "name": "GameReviewSettingsClicked",
+      "field": [
+        {
+          "name": "game_review_screen",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewScreen",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.game_review.v2.GameReviewResult",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_game_review_screen"
+        },
+        {
+          "name": "_result"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "GameReviewScreen",
+      "value": [
+        {
+          "name": "GAME_REVIEW_SCREEN_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_SCREEN_OVERVIEW",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_SCREEN_MOVES",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ShowMovesButtonState",
+      "value": [
+        {
+          "name": "SHOW_MOVES_BUTTON_STATE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHOW_MOVES_BUTTON_STATE_SHOW",
+          "number": 1
+        },
+        {
+          "name": "SHOW_MOVES_BUTTON_STATE_HIDE",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UserOrOpponentMove",
+      "value": [
+        {
+          "name": "USER_OR_OPPONENT_MOVE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_OR_OPPONENT_MOVE_USER",
+          "number": 1
+        },
+        {
+          "name": "USER_OR_OPPONENT_MOVE_OPPONENT",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewMoveNavigationMethod",
+      "value": [
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_MOVE_NODE_CLICKED",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_NEXT_MOVE_ARROW_TAPPED",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_NEXT_MOVE_ARROW_HOLD",
+          "number": 3
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_PREVIOUS_MOVE_ARROW_TAPPED",
+          "number": 4
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_PREVIOUS_MOVE_ARROW_HOLD",
+          "number": 5
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_MOVE_WHEEL_DRAGGED",
+          "number": 6
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_MOVE_WHEEL_FLUNG",
+          "number": 7
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_FIRST_MOVE_ARROW_TAPPED",
+          "number": 8
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_LAST_MOVE_ARROW_TAPPED",
+          "number": 9
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_RIGHT",
+          "number": 10
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_LEFT",
+          "number": 11
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_UP",
+          "number": 12
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_NAVIGATION_METHOD_ARROW_KEY_DOWN",
+          "number": 13
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewBackButtonWeb",
+      "value": [
+        {
+          "name": "GAME_REVIEW_BACK_BUTTON_WEB_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_BACK_BUTTON_WEB_SIDEBAR_HEADER",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_BACK_BUTTON_WEB_END_OF_MOVELIST",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewMoveFeedbackButton",
+      "value": [
+        {
+          "name": "GAME_REVIEW_MOVE_FEEDBACK_BUTTON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_FEEDBACK_BUTTON_RETRY",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_FEEDBACK_BUTTON_BEST_MOVE",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_FEEDBACK_BUTTON_SHARE",
+          "number": 3
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_FEEDBACK_BUTTON_NEXT_KEY_MOVE",
+          "number": 4
+        },
+        {
+          "name": "GAME_REVIEW_MOVE_FEEDBACK_BUTTON_HINT",
+          "number": 5
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewPremiumModalButton",
+      "value": [
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_BUTTON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_BUTTON_CLOSE",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_BUTTON_OUTSIDE",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_BUTTON_BACK",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewStartSource",
+      "value": [
+        {
+          "name": "GAME_REVIEW_START_SOURCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_HOME",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_GAME_ARCHIVE",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_PROFILE",
+          "number": 3
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_GAME_END",
+          "number": 4
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_ANALYSIS",
+          "number": 5
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_COACH_NUDGE",
+          "number": 6
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_DEEPLINK",
+          "number": 7
+        },
+        {
+          "name": "GAME_REVIEW_START_SOURCE_STATS",
+          "number": 8
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewResult",
+      "value": [
+        {
+          "name": "GAME_REVIEW_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_RESULT_USER_WON",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_RESULT_USER_LOST",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_RESULT_USER_DRAW",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseRecommendationType",
+      "value": [
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_BOOK",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_MISTAKE",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_TYPE_EXPLORER",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseRecommendationDecisionReason",
+      "value": [
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_NO_COURSE_MATCHED",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_OWNS_OR_CLAIMED",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_COURSE_FIT_RATING",
+          "number": 3
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_DECISION_REASON_MATCHED",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewCourseRecommendationSuppressionReason",
+      "value": [
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_AUDIENCE_INELIGIBLE",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_LOCALE",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_COACH_COMMENTARY",
+          "number": 3
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_FEATURE_FLAG",
+          "number": 4
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_EXPERIMENT_SEGMENT",
+          "number": 5
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_DEVIATION_SHOWN",
+          "number": 6
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_NOT_LOGGED_IN",
+          "number": 7
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_NO_USER_COLOR",
+          "number": 8
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_NO_QUALIFYING_POSITION",
+          "number": 9
+        },
+        {
+          "name": "GAME_REVIEW_COURSE_RECOMMENDATION_SUPPRESSION_REASON_RPC_ERROR",
+          "number": 10
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewSharePlacement",
+      "value": [
+        {
+          "name": "GAME_REVIEW_SHARE_PLACEMENT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_SHARE_PLACEMENT_REPLACE_COG",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_SHARE_PLACEMENT_BY_NEW_GAME",
+          "number": 2
+        },
+        {
+          "name": "GAME_REVIEW_SHARE_PLACEMENT_MOVES_HEADER",
+          "number": 3
+        },
+        {
+          "name": "GAME_REVIEW_SHARE_PLACEMENT_MOVES_BOTTOM_BAR",
+          "number": 4
+        },
+        {
+          "name": "GAME_REVIEW_SHARE_PLACEMENT_COACH_BUBBLE",
+          "number": 5
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewTakeawaysTrainCtaDestination",
+      "value": [
+        {
+          "name": "GAME_REVIEW_TAKEAWAYS_TRAIN_CTA_DESTINATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_TAKEAWAYS_TRAIN_CTA_DESTINATION_TRAIN",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_TAKEAWAYS_TRAIN_CTA_DESTINATION_UPGRADE",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "GameReviewPremiumModalTrigger",
+      "value": [
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_TRIGGER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_TRIGGER_REVIEW_LIMIT",
+          "number": 1
+        },
+        {
+          "name": "GAME_REVIEW_PREMIUM_MODAL_TRIGGER_TAKEAWAYS_TRAIN",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,9 @@
+sequenceDiagram
+ participant U as Review UI
+ participant J as Request builder W4e/x3e
+ participant S as CEAC WebSocket
+ U->>J: Review options
+ J->>S: protobuf GameReviewRequest
+ S-->>J: progress heartbeat waiting or success
+ J-->>U: decoded native review
+ Note over S: Server language and DB mapping unknown

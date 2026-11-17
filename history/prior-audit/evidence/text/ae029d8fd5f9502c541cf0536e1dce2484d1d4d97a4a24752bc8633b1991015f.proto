@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/speech_debug_info.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message SpeechDebugInfo {
+  optional string source = 1;
+  repeated string botchat_triggers = 2;
+  repeated string board_events = 3;
+  repeated string selected_keys = 4;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "chesscom/courses/v1/configurable_user_flag_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "SetConfigurableUserFlagRequest",
+      "field": [
+        {
+          "name": "user_flag",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses.v1.UserFlag"
+        }
+      ]
+    },
+    {
+      "name": "SetConfigurableUserFlagResponse"
+    }
+  ],
+  "service": [
+    {
+      "name": "CoursesConfigurableUserFlagService",
+      "method": [
+        {
+          "name": "SetConfigurableUserFlag",
+          "input_type": ".chesscom.courses.v1.SetConfigurableUserFlagRequest",
+          "output_type": ".chesscom.courses.v1.SetConfigurableUserFlagResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

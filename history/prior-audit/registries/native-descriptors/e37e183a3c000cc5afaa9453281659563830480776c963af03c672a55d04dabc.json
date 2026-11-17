@@ -1,0 +1,168 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/position_difficulty.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/pd_v1_6_depth20_multipv2.proto",
+    "chesscom/explanation_engine/v1alpha/pd_v1_7_depth20_multipv10.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeaturePositionDifficultyLabelsRequest",
+      "field": [
+        {
+          "name": "desired_model",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ModelVersion"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePositionDifficultyLabelsResponse",
+      "field": [
+        {
+          "name": "returned_model",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "v1_6_depth20_multipv2_labels_record",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.V1x6Depth20Multipv2LabelsRecord",
+          "oneof_index": 0
+        },
+        {
+          "name": "v1_7_depth20_multipv10_labels_record",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.V1x7Depth20Multipv10LabelsRecord",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "labels_record"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePositionDifficultyFeaturesRequest",
+      "field": [
+        {
+          "name": "desired_model",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ModelVersion"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePositionDifficultyFeaturesResponse",
+      "field": [
+        {
+          "name": "returned_model",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "v1_6_depth20_multipv2_features_record",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.V1x6Depth20Multipv2FeaturesRecord",
+          "oneof_index": 0
+        },
+        {
+          "name": "v1_7_depth20_multipv10_features_record",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.V1x7Depth20Multipv10FeaturesRecord",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "features_record"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePositionDifficultyPredictionsRequest",
+      "field": [
+        {
+          "name": "desired_model",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1alpha.ModelVersion"
+        },
+        {
+          "name": "is_elo_sensitive",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeaturePositionDifficultyPredictionsResponse",
+      "field": [
+        {
+          "name": "returned_model",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "v1_6_depth20_multipv2_predictions_record",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.V1x6Depth20Multipv2PredictionsRecord",
+          "oneof_index": 0
+        },
+        {
+          "name": "v1_7_depth20_multipv10_predictions_record",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.V1x7Depth20Multipv10PredictionsRecord",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "predictions_record"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ModelVersion",
+      "value": [
+        {
+          "name": "MODEL_VERSION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MODEL_VERSION_V1_6_DEPTH20_MULTIPV2",
+          "number": 1
+        },
+        {
+          "name": "MODEL_VERSION_V1_7_DEPTH20_MULTIPV10",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

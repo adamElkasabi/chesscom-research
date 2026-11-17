@@ -1,0 +1,31 @@
+// source: chesscom/user_properties/v1/properties_user_puzzle_stats.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum UserPuzzleStatsPropertyDefinition {
+  USER_PUZZLE_STATS_UNSPECIFIED = 0;
+  USER_PUZZLE_STATS_POINTS = 1;
+  USER_PUZZLE_STATS_LEVEL = 2;
+  USER_PUZZLE_STATS_TIER = 3;
+  USER_PUZZLE_STATS_PRESTIGE = 4;
+  USER_PUZZLE_STATS_TOTAL_TACTICS_COMPLETED = 5;
+}
+
+message UserPuzzleStatsProperty {
+  oneof _points {
+  int32 points = 1;
+  }
+  oneof _level {
+  int32 level = 2;
+  }
+  oneof _tier {
+  int32 tier = 3;
+  }
+  oneof _prestige {
+  int32 prestige = 4;
+  }
+  oneof _total_tactics_completed {
+  int32 total_tactics_completed = 5;
+  }
+}

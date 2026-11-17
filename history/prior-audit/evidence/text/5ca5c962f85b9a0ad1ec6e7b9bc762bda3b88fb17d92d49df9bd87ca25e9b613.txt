@@ -1,0 +1,106 @@
+Explanation Engine 1.130.285 (C) 2025 Chess.com, LLC
+info string CEE
+option name LogFD default -1
+option name IllegalMoveExplanationMode default all
+option name ForceDisableInternalEngineSearches default false
+option name PlayVsCoachRetryMissesEnabled default false
+option name GameFinishedAtMs default 0
+option name Threads default 1
+option name UsePersonalizedGameOverModal default false
+option name CoachAssetsV2 default true
+option name BasicVariationThemes default false
+option name CoachTextId default 
+option name UseOpposingCoachSpeech default true
+option name NullMoveRepresentation default (none)
+option name BotName default 
+option name IsRated default false
+option name Chess960 default false
+option name ChesscomGameId default 
+option name UseRatingRanges default false
+option name BlackChesscomUserId default 
+option name SerializeSpeechDetails default false
+option name WhiteChesscomUserId default 
+option name ForgivingClassificationsElo default 0
+option name TimeControl default 
+option name HandleNullMoveContinuations default false
+option name Termination default *
+option name ChesscomGameMetadataPb default 
+option name UserColor default NotSpecified
+option name HumanPlaysBlack default false
+option name LogFile default -
+option name NewSpeech default false
+option name WhiteChesscomUsername default 
+option name Strength default 
+option name SuppressBrilliantSpeech default false
+option name SpeechV2 default false
+option name BotChatPrioritizePlayerMovePercent default 50
+option name BotChatPrioritizePlayerMove default false
+option name GamePhaseV2 default true
+option name ScoreWhiteToMove default false
+option name DefaultNumNullMoveVariations default 1
+option name PrintCoachTags default false
+option name SerializeLikeCEACV3 default false
+option name SpeechV3 default false
+option name WhiteElo default 2000
+option name DoProgressUpdates default false
+option name BotChatOnlyAfterBotMove default false
+option name AllowTrickyClassification default false
+option name ClassificationV3 default false
+option name SerializeEvals default true
+option name SerializeLikeCEAC default true
+option name AutoDetectTermination default false
+option name SerializeSkills default false
+option name ServeCommandV2 default false
+option name Coach default 
+option name BlackElo default 2000
+option name SerializeBoardEvents default false
+option name Engine default Torch
+option name PersonalSpeechForOpponentMoves default true
+option name HandleNullMoveContinuationsDepth default 12
+option name EloSensitivePD default false
+option name HandleContinuationsDepth default 12
+option name GetThemes default false
+option name TestMode default false
+option name EvalSourceEngine default Komodo
+option name AllowBoardEventsWithoutSpeech default false
+option name HandleNullMoveContinuationsNodes default 0
+option name UseImmediateStop default false
+option name IgnoreStopCommand default false
+option name HandleContinuationsNodes default 0
+option name BlackChesscomUsername default 
+option name HandleCharmInferences default false
+option name HandleContinuationsTimeMs default 0
+option name CoachLocale default 
+option name DefaultNumVariations default 2
+option name PlayVsCoachFlipBoardEnabled default false
+option name GameStartedAtMs default 0
+option name UseExplainSpeechType default true
+option name HandleContinuations default false
+option name Language default en_US
+option name PgnHeadersJson default {}
+option name HandleNullMoveContinuationsTimeMs default 0
+option name UseDeclarativePositionCommand default false
+option name BadKeyMomentsNeedMaterialOrMate default false
+option name Result default *
+option name InsightsTags default false
+info string Torch
+option name ClearBetweenSearches type check default false
+option name ClearHash type button
+option name HardSoftNodeFactor type spin default 100 min 1 max 1000
+option name Hash type spin default 16 min 2 max 1048576
+option name Minimal type check default false
+option name MoveOverhead type spin default 100 min 0 max 5000
+option name MultiPV type spin default 1 min 1 max 384
+option name NodeFudging type spin default 0 min 0 max 10000
+option name Normalize type check default true
+option name Ponder type check default false
+option name SilenceUCI type check default false
+option name Syzygy50MoveRule type check default false
+option name SyzygyDTZFiltering type check default true
+option name SyzygyPath type string default <empty>
+option name SyzygyProbeDepth type spin default 1 min 1 max 127
+option name SyzygyProbeLimit type spin default 7 min 1 max 7
+option name Threads type spin default 1 min 1 max 1
+option name UCI_Chess960 type check default false
+option name UseSoftNodes type check default false
+uciok

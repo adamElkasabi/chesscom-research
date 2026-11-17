@@ -1,0 +1,592 @@
+{
+  "name": "chesscom/user_gateway/v1/user_gateway_service_envelopes.proto",
+  "package": "chesscom.user_gateway.v1",
+  "message_type": [
+    {
+      "name": "RelationshipWriteSuccess",
+      "field": [
+        {
+          "name": "completed_at",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SendFriendRequestFailure",
+      "field": [
+        {
+          "name": "already_friends",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.AlreadyFriends",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_blocked",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserBlocked",
+          "oneof_index": 0
+        },
+        {
+          "name": "self_relationship_not_allowed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.SelfRelationshipNotAllowed",
+          "oneof_index": 0
+        },
+        {
+          "name": "friendship_limit_reached",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.FriendshipLimitReached",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_friend_cap_reached",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetFriendCapReached",
+          "oneof_index": 0
+        },
+        {
+          "name": "outgoing_friend_request_cap_reached",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.OutgoingFriendRequestCapReached",
+          "oneof_index": 0
+        },
+        {
+          "name": "trust_level_denied",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TrustLevelDenied",
+          "oneof_index": 0
+        },
+        {
+          "name": "rate_limit_exceeded",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RateLimitExceeded",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_not_accepting_friend_requests",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetNotAcceptingFriendRequests",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_unavailable",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUnavailable",
+          "oneof_index": 0
+        },
+        {
+          "name": "sender_not_allowed",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.SenderNotAllowed",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_user_not_found",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "AcceptFriendRequestFailure",
+      "field": [
+        {
+          "name": "not_found",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RelationshipNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "friend_request_not_pending",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.FriendRequestNotPending",
+          "oneof_index": 0
+        },
+        {
+          "name": "friendship_limit_reached",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.FriendshipLimitReached",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_blocked",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserBlocked",
+          "oneof_index": 0
+        },
+        {
+          "name": "rate_limit_exceeded",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RateLimitExceeded",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_user_not_found",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "DeclineFriendRequestFailure",
+      "field": [
+        {
+          "name": "rate_limit_exceeded",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RateLimitExceeded",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_user_not_found",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "CancelFriendRequestFailure",
+      "field": [
+        {
+          "name": "rate_limit_exceeded",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RateLimitExceeded",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_user_not_found",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "RemoveFriendFailure",
+      "field": [
+        {
+          "name": "target_user_not_found",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "BlockUserFailure",
+      "field": [
+        {
+          "name": "target_immune",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetImmune",
+          "oneof_index": 0
+        },
+        {
+          "name": "block_limit_reached",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.BlockLimitReached",
+          "oneof_index": 0
+        },
+        {
+          "name": "self_relationship_not_allowed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.SelfRelationshipNotAllowed",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_user_not_found",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "UnblockUserFailure",
+      "field": [
+        {
+          "name": "target_user_not_found",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.TargetUserNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "AcceptFriendLinkSuccess",
+      "field": [
+        {
+          "name": "friend_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "friend_username",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "AcceptFriendLinkFailure",
+      "field": [
+        {
+          "name": "friend_link_invalid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.FriendLinkInvalid",
+          "oneof_index": 0
+        },
+        {
+          "name": "friend_link_not_found",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.FriendLinkNotFound",
+          "oneof_index": 0
+        },
+        {
+          "name": "self_relationship_not_allowed",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.SelfRelationshipNotAllowed",
+          "oneof_index": 0
+        },
+        {
+          "name": "user_blocked",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.UserBlocked",
+          "oneof_index": 0
+        },
+        {
+          "name": "friendship_limit_reached",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.FriendshipLimitReached",
+          "oneof_index": 0
+        },
+        {
+          "name": "rate_limit_exceeded",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.RateLimitExceeded",
+          "oneof_index": 0
+        },
+        {
+          "name": "invalid_request",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_gateway.v1.InvalidRequest",
+          "oneof_index": 0
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "error"
+        }
+      ]
+    },
+    {
+      "name": "AlreadyFriends",
+      "options": {}
+    },
+    {
+      "name": "TargetFriendCapReached",
+      "options": {}
+    },
+    {
+      "name": "OutgoingFriendRequestCapReached",
+      "options": {}
+    },
+    {
+      "name": "TrustLevelDenied",
+      "field": [
+        {
+          "name": "reason",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_reason"
+        }
+      ]
+    },
+    {
+      "name": "TargetNotAcceptingFriendRequests",
+      "options": {}
+    },
+    {
+      "name": "TargetUnavailable",
+      "options": {}
+    },
+    {
+      "name": "SenderNotAllowed",
+      "options": {}
+    },
+    {
+      "name": "TargetUserNotFound",
+      "options": {}
+    },
+    {
+      "name": "RelationshipNotFound",
+      "options": {}
+    },
+    {
+      "name": "FriendRequestNotPending",
+      "options": {}
+    },
+    {
+      "name": "FriendLinkInvalid",
+      "options": {}
+    },
+    {
+      "name": "FriendLinkNotFound",
+      "options": {}
+    },
+    {
+      "name": "SelfRelationshipNotAllowed",
+      "options": {}
+    },
+    {
+      "name": "UserBlocked",
+      "options": {}
+    },
+    {
+      "name": "TargetImmune",
+      "options": {}
+    },
+    {
+      "name": "BlockLimitReached",
+      "field": [
+        {
+          "name": "max_blocked_users",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "FriendshipLimitReached",
+      "field": [
+        {
+          "name": "max_friends",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "RateLimitExceeded",
+      "field": [
+        {
+          "name": "retry_after_seconds",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "InvalidRequest",
+      "field": [
+        {
+          "name": "message",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_message"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

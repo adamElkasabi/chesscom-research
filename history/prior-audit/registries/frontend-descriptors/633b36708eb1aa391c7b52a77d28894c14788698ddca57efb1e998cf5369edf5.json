@@ -1,0 +1,444 @@
+{
+  "name": "chesscom/bots/v1/phrase_list.proto",
+  "package": "chesscom.bots.v1",
+  "message_type": [
+    {
+      "name": "PhraseList",
+      "field": [
+        {
+          "name": "greeting",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "won",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "lost",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "draw",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "winning",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "losing",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "giving_check",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "being_checked",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "capturing_queen",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "queen_captured",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "promoting_pawn",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "player_pawn_promote",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "first_capture",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "threatening",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "threatened",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "computer_has_mate_in_x",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "player_has_mate_in_x",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "random",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_e4",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_d4",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_c4_english",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_nf3",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_e4_e5_kings_pawn",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_e4_c5_sicilian",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_e4_c6_carokann",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_e4_e6_french",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_d4_nf6_indian",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_d4_d5_queens_gambit",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "opening_other",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_spends_more_than_15_seconds_on_a_move",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_spends_more_than_1_minute_on_a_move",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "user_spends_more_than_3_minutes_on_move",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "r_p_endgame_reached",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "k_p_endgame_reached",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_reached_move_40",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_reached_move_100",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "rematch_if_user_has_played_before",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "heavy_piece_endgame_reached",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "minor_piece_endgame_reached",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 38,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_greeting"
+        },
+        {
+          "name": "_won"
+        },
+        {
+          "name": "_lost"
+        },
+        {
+          "name": "_draw"
+        },
+        {
+          "name": "_winning"
+        },
+        {
+          "name": "_losing"
+        },
+        {
+          "name": "_giving_check"
+        },
+        {
+          "name": "_being_checked"
+        },
+        {
+          "name": "_capturing_queen"
+        },
+        {
+          "name": "_queen_captured"
+        },
+        {
+          "name": "_promoting_pawn"
+        },
+        {
+          "name": "_player_pawn_promote"
+        },
+        {
+          "name": "_first_capture"
+        },
+        {
+          "name": "_threatening"
+        },
+        {
+          "name": "_threatened"
+        },
+        {
+          "name": "_computer_has_mate_in_x"
+        },
+        {
+          "name": "_player_has_mate_in_x"
+        },
+        {
+          "name": "_random"
+        },
+        {
+          "name": "_opening_e4"
+        },
+        {
+          "name": "_opening_d4"
+        },
+        {
+          "name": "_opening_c4_english"
+        },
+        {
+          "name": "_opening_nf3"
+        },
+        {
+          "name": "_opening_e4_e5_kings_pawn"
+        },
+        {
+          "name": "_opening_e4_c5_sicilian"
+        },
+        {
+          "name": "_opening_e4_c6_carokann"
+        },
+        {
+          "name": "_opening_e4_e6_french"
+        },
+        {
+          "name": "_opening_d4_nf6_indian"
+        },
+        {
+          "name": "_opening_d4_d5_queens_gambit"
+        },
+        {
+          "name": "_opening_other"
+        },
+        {
+          "name": "_user_spends_more_than_15_seconds_on_a_move"
+        },
+        {
+          "name": "_user_spends_more_than_1_minute_on_a_move"
+        },
+        {
+          "name": "_user_spends_more_than_3_minutes_on_move"
+        },
+        {
+          "name": "_r_p_endgame_reached"
+        },
+        {
+          "name": "_k_p_endgame_reached"
+        },
+        {
+          "name": "_game_reached_move_40"
+        },
+        {
+          "name": "_game_reached_move_100"
+        },
+        {
+          "name": "_rematch_if_user_has_played_before"
+        },
+        {
+          "name": "_heavy_piece_endgame_reached"
+        },
+        {
+          "name": "_minor_piece_endgame_reached"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

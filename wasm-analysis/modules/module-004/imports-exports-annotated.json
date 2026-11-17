@@ -1,0 +1,813 @@
+[
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "a",
+    "kind": "function",
+    "type_index": 11,
+    "function_index": 0,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 1175,
+    "loader_excerpt": "nction(e){if(\"undefined\"!=typeof PThread)for(var n of PThread.ba)n.postMessage({cmd:\"custom\",userData:e})},i.queue=(t=[],{get:async function(){return 0<t.length?t.shift():await new Promise(function(e){return n=e})},put:function(e){n?(n(e),n=null):t.push(e)}}),i.onCustomMessage=function(e){A?H.push(e):i.queue.put(e)};var A,r,H=[],o=(i.pauseQueue=function(){A=!0},i.unpauseQueue=function(){var e=H;A=!(H=[]),e.forEach(function(e){i.queue.put(e)})},i.postMessage=i.postCustomMessage,[]),a=(i.addMessageListener=function(e){o.push(e)},i.removeMessageListener=function(e){0<=(e=o.indexOf(e))&&o.splice(e,1)},i.print=i.printErr=function(e){if(0===o.length)return console.log(e);for(var n of o)n(e)},i.terminate=function(){\"undefined\"!=typeof PThread&&PThread.da()},i.__IS_SINGLE_THREADED__=!0,i._origOnCu",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31130"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "b",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 1,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 3071,
+    "loader_excerpt": "peof document&&document.currentScript&&(p=document.currentScript.src),p=0!==(p=Xe?Xe:p).indexOf(\"blob:\")?p.substr(0,p.lastIndexOf(\"/\")+1):\"\",Y=function(e){var n=new XMLHttpRequest;return n.open(\"GET\",e,!1),n.send(null),n.responseText},l)&&(c=function(e){var n=new XMLHttpRequest;return n.open(\"GET\",e,!1),n.responseType=\"arraybuffer\",n.send(null),new Uint8Array(n.response)}),i.print||console.log.bind(console)),d=i.printErr||console.warn.bind(console);for(r in a)a.hasOwnProperty(r)&&(i[r]=a[r]);a=null,i.arguments&&(N=i.arguments),i.thisProgram&&(u=i.thisProgram),i.quit&&(s=i.quit),i.wasmBinary&&(f=i.wasmBinary);var V=i.noExitRuntime||!0;\"object\"!=typeof WebAssembly&&_(\"no native wasm support detected\");var z,K,y,C,x,g,O,m=!1,J=\"undefined\"!=typeof TextDecoder?new TextDecoder(\"utf8\"):void 0;fun",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31131"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "c",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 2,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 17260,
+    "loader_excerpt": "on(e,n){var t=_e(),r=(g[e>>2]=t.length,0);return t.forEach(function(e){r+=e.length+1}),g[n>>2]=r,0},c:function(e){Be(e)},g:function(){return 0},s:function(e,n,t,r){return e=de.aa(e),n=de.$(e,n,t),g[r>>2]=n,0},n:function(){},r:function(e,n,t,r){for(var o=0,a=0;a<t;a++){for(var i=g[n+8*a>>2],u=g[n+(8*a+4)>>2],s=0;s<u;s++){var c=C[i+s],f=pe[e];0===c||10===c?((1===e?X:d)(Q(f,0)),f.length=0):f.push(c)}o+=u}return g[r>>2]=o,0},m:function(){i.pauseQueue()},t:Ee,e:function(){i.unpauseQueue()}},Pe=(!function(){function n(e){e=Le(e=e.exports),i.asm=e,z=i.asm.w,ee(),re.unshift(i.asm.x),ce()}function t(e){n(e.instance)}function r(e){return(f||!B&&!l||\"function\"!=typeof fetch?Promise.resolve().then(le):fetch(h,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to ",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31132"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "d",
+    "kind": "function",
+    "type_index": 1,
+    "function_index": 3,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 725,
+    "loader_excerpt": "ined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var t,r={open:function(e,n){t=n},send:function(){require(\"fs\").readFile(t,function(e,n){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=n,r.onreadystatechange(),r.onload())})}};return r}),\"undefined\"!=typeof global&&\"[object process]\"===Object.prototype.toString.call(global.process)&&\"undefined\"!=typeof fetch&&(fetch=null),i.postCustomMessage=function(e){if(\"undefined\"!=typeof PThread)for(var n of PThread.ba)n.postMessage({cmd:\"custom\",userData:e})},i.queue=(t=[],{get:async function(){return 0<t.length?t.shift():await new Promise(function(e){return n=e})},put:function(e){n?(n(e),n=null):t.push(e)}}),i.onCustomMessage=function(e){A?H.push(e):i.queue.put(e)};var A,r,H=[],o=(i.pauseQueue=fun",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31133"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "e",
+    "kind": "function",
+    "type_index": 11,
+    "function_index": 4,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 99,
+    "loader_excerpt": "/*!\n * Stockfish.js 16 (c) 2023, Chess.com, LLC\n * https://github.com/nmrugg/stockfish.js\n * License: GPLv3\n *\n * Based on stockfish.wasm (c)\n * Niklas Fiekas <niklas.fiekas@backscattering.de>\n * Hiroshi Ogawa <hi.ogawa.zz@gmail.com>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski, G. Linscott and other contributors.\n * https://github.com/official-stockfish/Stockfish\n */!function(){var t,n,r,e,o,a;function i(){function e(e){var i,D,I,n,t;e=e||{},(i=i||(void 0!==e?e:{})).ready=new Promise(function(e,n){D=e,I=n}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var t,r={open:function(e,n){t=n},send:function(){require(\"fs\").readFile(t,function(e,n){r.readyState=4,e?(cons",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31134"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "f",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 5,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 2954,
+    "loader_excerpt": "ss.exit(e)},i.inspect=function(){return\"[Emscripten Module object]\"}):(B||l)&&(l?p=self.location.href:\"undefined\"!=typeof document&&document.currentScript&&(p=document.currentScript.src),p=0!==(p=Xe?Xe:p).indexOf(\"blob:\")?p.substr(0,p.lastIndexOf(\"/\")+1):\"\",Y=function(e){var n=new XMLHttpRequest;return n.open(\"GET\",e,!1),n.send(null),n.responseText},l)&&(c=function(e){var n=new XMLHttpRequest;return n.open(\"GET\",e,!1),n.responseType=\"arraybuffer\",n.send(null),new Uint8Array(n.response)}),i.print||console.log.bind(console)),d=i.printErr||console.warn.bind(console);for(r in a)a.hasOwnProperty(r)&&(i[r]=a[r]);a=null,i.arguments&&(N=i.arguments),i.thisProgram&&(u=i.thisProgram),i.quit&&(s=i.quit),i.wasmBinary&&(f=i.wasmBinary);var V=i.noExitRuntime||!0;\"object\"!=typeof WebAssembly&&_(\"no nativ",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31135"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "g",
+    "kind": "function",
+    "type_index": 1,
+    "function_index": 6,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 17281,
+    "loader_excerpt": "(g[e>>2]=t.length,0);return t.forEach(function(e){r+=e.length+1}),g[n>>2]=r,0},c:function(e){Be(e)},g:function(){return 0},s:function(e,n,t,r){return e=de.aa(e),n=de.$(e,n,t),g[r>>2]=n,0},n:function(){},r:function(e,n,t,r){for(var o=0,a=0;a<t;a++){for(var i=g[n+8*a>>2],u=g[n+(8*a+4)>>2],s=0;s<u;s++){var c=C[i+s],f=pe[e];0===c||10===c?((1===e?X:d)(Q(f,0)),f.length=0):f.push(c)}o+=u}return g[r>>2]=o,0},m:function(){i.pauseQueue()},t:Ee,e:function(){i.unpauseQueue()}},Pe=(!function(){function n(e){e=Le(e=e.exports),i.asm=e,z=i.asm.w,ee(),re.unshift(i.asm.x),ce()}function t(e){n(e.instance)}function r(e){return(f||!B&&!l||\"function\"!=typeof fetch?Promise.resolve().then(le):fetch(h,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31136"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "h",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 7,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 6353,
+    "loader_excerpt": "/4294967296|0}function ge(r,t,o,a,n){function i(e){var n=0,t=0;e&&(t=_.response?_.response.byteLength:0,n=k(t),C.set(new Uint8Array(_.response),n)),O[r+12>>2]=n,U(r+16,t)}if(d=O[r+8>>2]){var e=R(d),u=(u=R(g=r+112))||\"GET\",s=O[g+52>>2],c=O[g+56>>2],f=!!O[g+60>>2],l=O[g+68>>2],p=O[g+72>>2],d=O[g+76>>2],m=O[g+80>>2],y=O[g+84>>2],g=O[g+88>>2],h=!!(1&s),v=!!(2&s),s=!!(64&s),l=l?R(l):void 0,p=p?R(p):void 0,w=m?R(m):void 0,_=new XMLHttpRequest;if(_.withCredentials=f,_.open(u,e,!s,l,p),s||(_.timeout=c),_.Z=e,_.responseType=\"arraybuffer\",m&&_.overrideMimeType(w),d)for(;(u=O[d>>2])&&(e=O[d+4>>2]);)d+=8,u=R(u),e=R(e),_.setRequestHeader(u,e);ye.push(_),O[r+0>>2]=ye.length,d=y&&g?C.slice(y,y+g):null,_.onload=function(e){i(h&&!v);var n=_.response?_.response.byteLength:0;U(r+24,0),n&&U(r+32,n),x[r+40>>1]",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31137"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "i",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 8,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 14464,
+    "loader_excerpt": "NMENT_IS_FETCH_WORKER||se();var je,ke={f:function(){return 0},p:function(){return 0},q:function(){},i:function(e){delete ye[e-1]},a:function(){_()},h:function(e,n){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return g[He()>>2]=28,-1;e=me()}return g[n>>2]=e/1e3|0,g[n+4>>2]=e%1e3*1e6|0,0},k:function(){return!l},o:function(e,n,t){C.copyWithin(e,n,n+t)},d:function(e){var n=C.length;if(!(2147483648<(e>>>=0)))for(var t=1;t<=4;t*=2){var r=n*(1+.2/t),r=Math.min(r,e+100663296);0<(r=Math.max(e,r))%65536&&(r+=65536-r%65536);e:{try{z.grow(Math.min(2147483648,r)-K.byteLength+65535>>>16),ee();var o=1;break e}catch(e){}o=void 0}if(o)return!0}return!1},b:function(t){Ue(function(e){var n;n=e,setTimeout(function(){j(n)},t)})},j:function(e,t,n,r,o){function a(e,n){he(e,n.response,function(e){j(function(){p?P.a",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31138"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "j",
+    "kind": "function",
+    "type_index": 0,
+    "function_index": 9,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 15080,
+    "loader_excerpt": " 0}if(o)return!0}return!1},b:function(t){Ue(function(e){var n;n=e,setTimeout(function(){j(n)},t)})},j:function(e,t,n,r,o){function a(e,n){he(e,n.response,function(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)},function(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)})}function i(e){j(function(){y?P.apply(null,[y,e]):o&&o(e)},_)}function u(e){j(function(){d?P.apply(null,[d,e]):n&&n(e)},_)}function s(e){j(function(){m?P.apply(null,[m,e]):r&&r(e)},_)}function c(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)}var f=e+112,l=R(f),p=O[f+36>>2],d=O[f+40>>2],m=O[f+44>>2],y=O[f+48>>2],g=O[f+52>>2],h=!!(4&g),v=!!(32&g),w=!!(16&g),_=!!(64&g);if(\"EM_IDB_STORE\"===l)l=O[f+84>>2],he(e,C.slice(l,l+O[f+88>>2]),c,u);else if(\"EM_IDB_DELETE\"===l){var b=e;var S=c;var M=u;g=L;if(g){f=O[b+112+64>>2];f=R(f",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31139"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "k",
+    "kind": "function",
+    "type_index": 17,
+    "function_index": 10,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 14650,
+    "loader_excerpt": "else{if(1!==e&&4!==e)return g[He()>>2]=28,-1;e=me()}return g[n>>2]=e/1e3|0,g[n+4>>2]=e%1e3*1e6|0,0},k:function(){return!l},o:function(e,n,t){C.copyWithin(e,n,n+t)},d:function(e){var n=C.length;if(!(2147483648<(e>>>=0)))for(var t=1;t<=4;t*=2){var r=n*(1+.2/t),r=Math.min(r,e+100663296);0<(r=Math.max(e,r))%65536&&(r+=65536-r%65536);e:{try{z.grow(Math.min(2147483648,r)-K.byteLength+65535>>>16),ee();var o=1;break e}catch(e){}o=void 0}if(o)return!0}return!1},b:function(t){Ue(function(e){var n;n=e,setTimeout(function(){j(n)},t)})},j:function(e,t,n,r,o){function a(e,n){he(e,n.response,function(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)},function(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)})}function i(e){j(function(){y?P.apply(null,[y,e]):o&&o(e)},_)}function u(e){j(function(){d?P.app",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31140"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "l",
+    "kind": "function",
+    "type_index": 17,
+    "function_index": 11,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 2481,
+    "loader_excerpt": "function(e,n){return q=q||require(\"fs\"),e=(W=W||require(\"path\")).normalize(e),q.readFileSync(e,n?null:\"utf8\")},c=function(e){return(e=(e=Y(e,!0)).buffer?e:new Uint8Array(e)).buffer||_(\"Assertion failed: undefined\"),e},1<process.argv.length&&(u=process.argv[1].replace(/\\\\/g,\"/\")),N=process.argv.slice(2),process.on(\"uncaughtException\",function(e){if(!(e instanceof qe))throw e}),process.on(\"unhandledRejection\",_),s=function(e,n){if(V||0<ie)throw process.exitCode=e,n;process.exit(e)},i.inspect=function(){return\"[Emscripten Module object]\"}):(B||l)&&(l?p=self.location.href:\"undefined\"!=typeof document&&document.currentScript&&(p=document.currentScript.src),p=0!==(p=Xe?Xe:p).indexOf(\"blob:\")?p.substr(0,p.lastIndexOf(\"/\")+1):\"\",Y=function(e){var n=new XMLHttpRequest;return n.open(\"GET\",e,!1),n.se",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31141"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "m",
+    "kind": "function",
+    "type_index": 11,
+    "function_index": 12,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 17585,
+    "loader_excerpt": " c=C[i+s],f=pe[e];0===c||10===c?((1===e?X:d)(Q(f,0)),f.length=0):f.push(c)}o+=u}return g[r>>2]=o,0},m:function(){i.pauseQueue()},t:Ee,e:function(){i.unpauseQueue()}},Pe=(!function(){function n(e){e=Le(e=e.exports),i.asm=e,z=i.asm.w,ee(),re.unshift(i.asm.x),ce()}function t(e){n(e.instance)}function r(e){return(f||!B&&!l||\"function\"!=typeof fetch?Promise.resolve().then(le):fetch(h,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+h+\"'\"}).catch(le)).then(function(e){return WebAssembly.instantiate(e,o)}).then(function(e){return e}).then(e,function(e){d(\"failed to asynchronously prepare wasm: \"+e),_(e)})}var o={a:ke};if(se(),i.instantiateWasm)try{var e=i.instantiateWasm(o,n);return Le(e)}catch(e){return d(\"Module.instantiate",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31142"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "n",
+    "kind": "function",
+    "type_index": 6,
+    "function_index": 13,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 701,
+    "loader_excerpt": "on(e,n){D=e,I=n}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var t,r={open:function(e,n){t=n},send:function(){require(\"fs\").readFile(t,function(e,n){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=n,r.onreadystatechange(),r.onload())})}};return r}),\"undefined\"!=typeof global&&\"[object process]\"===Object.prototype.toString.call(global.process)&&\"undefined\"!=typeof fetch&&(fetch=null),i.postCustomMessage=function(e){if(\"undefined\"!=typeof PThread)for(var n of PThread.ba)n.postMessage({cmd:\"custom\",userData:e})},i.queue=(t=[],{get:async function(){return 0<t.length?t.shift():await new Promise(function(e){return n=e})},put:function(e){n?(n(e),n=null):t.push(e)}}),i.onCustomMessage=function(e){A?H.push(e):i.queue.put(e)};var A,r,",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31143"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "o",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 14,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 14673,
+    "loader_excerpt": "turn g[He()>>2]=28,-1;e=me()}return g[n>>2]=e/1e3|0,g[n+4>>2]=e%1e3*1e6|0,0},k:function(){return!l},o:function(e,n,t){C.copyWithin(e,n,n+t)},d:function(e){var n=C.length;if(!(2147483648<(e>>>=0)))for(var t=1;t<=4;t*=2){var r=n*(1+.2/t),r=Math.min(r,e+100663296);0<(r=Math.max(e,r))%65536&&(r+=65536-r%65536);e:{try{z.grow(Math.min(2147483648,r)-K.byteLength+65535>>>16),ee();var o=1;break e}catch(e){}o=void 0}if(o)return!0}return!1},b:function(t){Ue(function(e){var n;n=e,setTimeout(function(){j(n)},t)})},j:function(e,t,n,r,o){function a(e,n){he(e,n.response,function(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)},function(e){j(function(){p?P.apply(null,[p,e]):t&&t(e)},_)})}function i(e){j(function(){y?P.apply(null,[y,e]):o&&o(e)},_)}function u(e){j(function(){d?P.apply(null,[d,e]):n&&n(e)}",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31144"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "p",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 15,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 14426,
+    "loader_excerpt": "of ENVIRONMENT_IS_FETCH_WORKER&&ENVIRONMENT_IS_FETCH_WORKER||se();var je,ke={f:function(){return 0},p:function(){return 0},q:function(){},i:function(e){delete ye[e-1]},a:function(){_()},h:function(e,n){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return g[He()>>2]=28,-1;e=me()}return g[n>>2]=e/1e3|0,g[n+4>>2]=e%1e3*1e6|0,0},k:function(){return!l},o:function(e,n,t){C.copyWithin(e,n,n+t)},d:function(e){var n=C.length;if(!(2147483648<(e>>>=0)))for(var t=1;t<=4;t*=2){var r=n*(1+.2/t),r=Math.min(r,e+100663296);0<(r=Math.max(e,r))%65536&&(r+=65536-r%65536);e:{try{z.grow(Math.min(2147483648,r)-K.byteLength+65535>>>16),ee();var o=1;break e}catch(e){}o=void 0}if(o)return!0}return!1},b:function(t){Ue(function(e){var n;n=e,setTimeout(function(){j(n)},t)})},j:function(e,t,n,r,o){function a(e,n){he(e,n.r",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31145"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "q",
+    "kind": "function",
+    "type_index": 3,
+    "function_index": 16,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 14449,
+    "loader_excerpt": "_WORKER&&ENVIRONMENT_IS_FETCH_WORKER||se();var je,ke={f:function(){return 0},p:function(){return 0},q:function(){},i:function(e){delete ye[e-1]},a:function(){_()},h:function(e,n){if(0===e)e=Date.now();else{if(1!==e&&4!==e)return g[He()>>2]=28,-1;e=me()}return g[n>>2]=e/1e3|0,g[n+4>>2]=e%1e3*1e6|0,0},k:function(){return!l},o:function(e,n,t){C.copyWithin(e,n,n+t)},d:function(e){var n=C.length;if(!(2147483648<(e>>>=0)))for(var t=1;t<=4;t*=2){var r=n*(1+.2/t),r=Math.min(r,e+100663296);0<(r=Math.max(e,r))%65536&&(r+=65536-r%65536);e:{try{z.grow(Math.min(2147483648,r)-K.byteLength+65535>>>16),ee();var o=1;break e}catch(e){}o=void 0}if(o)return!0}return!1},b:function(t){Ue(function(e){var n;n=e,setTimeout(function(){j(n)},t)})},j:function(e,t,n,r,o){function a(e,n){he(e,n.response,function(e){j(f",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31146"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "r",
+    "kind": "function",
+    "type_index": 7,
+    "function_index": 17,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 17384,
+    "loader_excerpt": "unction(){return 0},s:function(e,n,t,r){return e=de.aa(e),n=de.$(e,n,t),g[r>>2]=n,0},n:function(){},r:function(e,n,t,r){for(var o=0,a=0;a<t;a++){for(var i=g[n+8*a>>2],u=g[n+(8*a+4)>>2],s=0;s<u;s++){var c=C[i+s],f=pe[e];0===c||10===c?((1===e?X:d)(Q(f,0)),f.length=0):f.push(c)}o+=u}return g[r>>2]=o,0},m:function(){i.pauseQueue()},t:Ee,e:function(){i.unpauseQueue()}},Pe=(!function(){function n(e){e=Le(e=e.exports),i.asm=e,z=i.asm.w,ee(),re.unshift(i.asm.x),ce()}function t(e){n(e.instance)}function r(e){return(f||!B&&!l||\"function\"!=typeof fetch?Promise.resolve().then(le):fetch(h,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+h+\"'\"}).catch(le)).then(function(e){return WebAssembly.instantiate(e,o)}).then(function(e){retur",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31147"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "s",
+    "kind": "function",
+    "type_index": 7,
+    "function_index": 18,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 55,
+    "loader_excerpt": "/*!\n * Stockfish.js 16 (c) 2023, Chess.com, LLC\n * https://github.com/nmrugg/stockfish.js\n * License: GPLv3\n *\n * Based on stockfish.wasm (c)\n * Niklas Fiekas <niklas.fiekas@backscattering.de>\n * Hiroshi Ogawa <hi.ogawa.zz@gmail.com>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski, G. Linscott and other contributors.\n * https://github.com/official-stockfish/Stockfish\n */!function(){var t,n,r,e,o,a;function i(){function e(e){var i,D,I,n,t;e=e||{},(i=i||(void 0!==e?e:{})).ready=new Promise(function(e,n){D=e,I=n}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var t,r={open:function(e,n){t=n},send:function(){require(\"fs\").rea",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31148"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "t",
+    "kind": "function",
+    "type_index": 6,
+    "function_index": 19,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 1199,
+    "loader_excerpt": "!=typeof PThread)for(var n of PThread.ba)n.postMessage({cmd:\"custom\",userData:e})},i.queue=(t=[],{get:async function(){return 0<t.length?t.shift():await new Promise(function(e){return n=e})},put:function(e){n?(n(e),n=null):t.push(e)}}),i.onCustomMessage=function(e){A?H.push(e):i.queue.put(e)};var A,r,H=[],o=(i.pauseQueue=function(){A=!0},i.unpauseQueue=function(){var e=H;A=!(H=[]),e.forEach(function(e){i.queue.put(e)})},i.postMessage=i.postCustomMessage,[]),a=(i.addMessageListener=function(e){o.push(e)},i.removeMessageListener=function(e){0<=(e=o.indexOf(e))&&o.splice(e,1)},i.print=i.printErr=function(e){if(0===o.length)return console.log(e);for(var n of o)n(e)},i.terminate=function(){\"undefined\"!=typeof PThread&&PThread.da()},i.__IS_SINGLE_THREADED__=!0,i._origOnCustomMessage=i.onCustomMe",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31149"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "u",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 20,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 16229,
+    "loader_excerpt": "\"IndexedDB not available!\")}else if(w){if(v)return 0;ge(e,h?a:c,u,s,i)}else{var F=e;var D=c;var I=v?u:h?function(e){ge(e,a,u,s,i)}:function(e){ge(e,c,u,s,i)};l=L;if(l){g=O[F+112+64>>2];g=R(g=g||O[F+8>>2]);try{var A=l.transaction([\"FILES\"],\"readonly\").objectStore(\"FILES\").get(g);A.onsuccess=function(e){var n,t;e.target.result?(n=(e=e.target.result).byteLength||e.length,t=k(n),C.set(new Uint8Array(e),t),O[F+12>>2]=t,U(F+16,n),U(F+24,0),U(F+32,n),x[F+40>>1]=4,x[F+42>>1]=200,T(\"OK\",C,F+44,64),D(F,0,e)):(x[F+40>>1]=4,x[F+42>>1]=404,T(\"Not Found\",C,F+44,64),I(F,0,\"no data\"))},A.onerror=function(e){x[F+40>>1]=4,x[F+42>>1]=404,T(\"Not Found\",C,F+44,64),I(F,0,e)}}catch(e){I(F,0,e)}}else I(F,0,\"IndexedDB not available!\")}return e},l:function(){return n=async()=>{var e=await i.queue.get(),n=$(e)+1,t=k",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31150"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "import",
+    "module": "a",
+    "name": "v",
+    "kind": "function",
+    "type_index": 2,
+    "function_index": 21,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "apparent_purpose": "Unknown business/runtime purpose unless mapped to a concrete loader implementation. Minified import names are not semantic names.",
+    "loader_character_offset": 17152,
+    "loader_excerpt": "t=o+a;for(n=g[r+4*n>>2]=t,t=0;t<e.length;++t)y[n++>>0]=e.charCodeAt(t);y[n>>0]=0,a+=e.length+1}),0},v:function(e,n){var t=_e(),r=(g[e>>2]=t.length,0);return t.forEach(function(e){r+=e.length+1}),g[n>>2]=r,0},c:function(e){Be(e)},g:function(){return 0},s:function(e,n,t,r){return e=de.aa(e),n=de.$(e,n,t),g[r>>2]=n,0},n:function(){},r:function(e,n,t,r){for(var o=0,a=0;a<t;a++){for(var i=g[n+8*a>>2],u=g[n+(8*a+4)>>2],s=0;s<u;s++){var c=C[i+s],f=pe[e];0===c||10===c?((1===e?X:d)(Q(f,0)),f.length=0):f.push(c)}o+=u}return g[r>>2]=o,0},m:function(){i.pauseQueue()},t:Ee,e:function(){i.unpauseQueue()}},Pe=(!function(){function n(e){e=Le(e=e.exports),i.asm=e,z=i.asm.w,ee(),re.unshift(i.asm.x),ce()}function t(e){n(e.instance)}function r(e){return(f||!B&&!l||\"function\"!=typeof fetch?Promise.resolve().th",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31151"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "w",
+    "kind": "memory",
+    "index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 132,
+    "loader_excerpt": " Chess.com, LLC\n * https://github.com/nmrugg/stockfish.js\n * License: GPLv3\n *\n * Based on stockfish.wasm (c)\n * Niklas Fiekas <niklas.fiekas@backscattering.de>\n * Hiroshi Ogawa <hi.ogawa.zz@gmail.com>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski, G. Linscott and other contributors.\n * https://github.com/official-stockfish/Stockfish\n */!function(){var t,n,r,e,o,a;function i(){function e(e){var i,D,I,n,t;e=e||{},(i=i||(void 0!==e?e:{})).ready=new Promise(function(e,n){D=e,I=n}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var t,r={open:function(e,n){t=n},send:function(){require(\"fs\").readFile(t,function(e,n){r.readyState=4,e?(console.error(e),r.status=404,r.onerr",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31152"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "x",
+    "kind": "function",
+    "index": 289,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 11,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 17738,
+    "loader_excerpt": "useQueue()}},Pe=(!function(){function n(e){e=Le(e=e.exports),i.asm=e,z=i.asm.w,ee(),re.unshift(i.asm.x),ce()}function t(e){n(e.instance)}function r(e){return(f||!B&&!l||\"function\"!=typeof fetch?Promise.resolve().then(le):fetch(h,{credentials:\"same-origin\"}).then(function(e){if(e.ok)return e.arrayBuffer();throw\"failed to load wasm binary file at '\"+h+\"'\"}).catch(le)).then(function(e){return WebAssembly.instantiate(e,o)}).then(function(e){return e}).then(e,function(e){d(\"failed to asynchronously prepare wasm: \"+e),_(e)})}var o={a:ke};if(se(),i.instantiateWasm)try{var e=i.instantiateWasm(o,n);return Le(e)}catch(e){return d(\"Module.instantiateWasm callback failed with error: \"+e)}(f||\"function\"!=typeof WebAssembly.instantiateStreaming||fe()||\"function\"!=typeof fetch?r(t):fetch(h,{credentials:\"",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31153"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "y",
+    "kind": "function",
+    "index": 730,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 2,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 18780,
+    "loader_excerpt": "{return(i.___wasm_call_ctors=i.asm.x).apply(null,arguments)},i._main=function(){return(i._main=i.asm.y).apply(null,arguments)},i._free=function(){return(Pe=i._free=i.asm.z).apply(null,arguments)}),k=(i._stop=function(){return(i._stop=i.asm.A).apply(null,arguments)},i._ponderhit=function(){return(i._ponderhit=i.asm.B).apply(null,arguments)},i._malloc=function(){return(k=i._malloc=i.asm.C).apply(null,arguments)}),He=i.___errno_location=function(){return(He=i.___errno_location=i.asm.D).apply(null,arguments)},Ne=i.stackAlloc=function(){return(Ne=i.stackAlloc=i.asm.E).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.G).apply(null,arguments)},Ye=i.dynCall_v=function(){return(Ye=i.dynCall_v=i.asm.H).apply(null,arguments)};function qe(e){this.name=\"ExitStatus\",this.mess",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31154"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "z",
+    "kind": "function",
+    "index": 22,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 219,
+    "loader_excerpt": " on stockfish.wasm (c)\n * Niklas Fiekas <niklas.fiekas@backscattering.de>\n * Hiroshi Ogawa <hi.ogawa.zz@gmail.com>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Costalba, J. Kiiski, G. Linscott and other contributors.\n * https://github.com/official-stockfish/Stockfish\n */!function(){var t,n,r,e,o,a;function i(){function e(e){var i,D,I,n,t;e=e||{},(i=i||(void 0!==e?e:{})).ready=new Promise(function(e,n){D=e,I=n}),\"undefined\"==typeof XMLHttpRequest&&(global.XMLHttpRequest=function(){var t,r={open:function(e,n){t=n},send:function(){require(\"fs\").readFile(t,function(e,n){r.readyState=4,e?(console.error(e),r.status=404,r.onerror(e)):(r.status=200,r.response=n,r.onreadystatechange(),r.onload())})}};return r}),\"un",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31155"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "A",
+    "kind": "function",
+    "index": 710,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 11,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 18919,
+    "loader_excerpt": "tion(){return(Pe=i._free=i.asm.z).apply(null,arguments)}),k=(i._stop=function(){return(i._stop=i.asm.A).apply(null,arguments)},i._ponderhit=function(){return(i._ponderhit=i.asm.B).apply(null,arguments)},i._malloc=function(){return(k=i._malloc=i.asm.C).apply(null,arguments)}),He=i.___errno_location=function(){return(He=i.___errno_location=i.asm.D).apply(null,arguments)},Ne=i.stackAlloc=function(){return(Ne=i.stackAlloc=i.asm.E).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.G).apply(null,arguments)},Ye=i.dynCall_v=function(){return(Ye=i.dynCall_v=i.asm.H).apply(null,arguments)};function qe(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",this.status=e}function We(a){function e(){if(!je&&(je=!0,i.calledRun=!0,!m)){if(b(re),b(oe),D(i),",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31156"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "B",
+    "kind": "function",
+    "index": 709,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 11,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 18995,
+    "loader_excerpt": "n(){return(i._stop=i.asm.A).apply(null,arguments)},i._ponderhit=function(){return(i._ponderhit=i.asm.B).apply(null,arguments)},i._malloc=function(){return(k=i._malloc=i.asm.C).apply(null,arguments)}),He=i.___errno_location=function(){return(He=i.___errno_location=i.asm.D).apply(null,arguments)},Ne=i.stackAlloc=function(){return(Ne=i.stackAlloc=i.asm.E).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.G).apply(null,arguments)},Ye=i.dynCall_v=function(){return(Ye=i.dynCall_v=i.asm.H).apply(null,arguments)};function qe(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",this.status=e}function We(a){function e(){if(!je&&(je=!0,i.calledRun=!0,!m)){if(b(re),b(oe),D(i),i.onRuntimeInitialized&&i.onRuntimeInitialized(),Ge){var n=a,e=i._main,t=(n=",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31157"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "C",
+    "kind": "function",
+    "index": 44,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 1,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 19067,
+    "loader_excerpt": "(){return(i._ponderhit=i.asm.B).apply(null,arguments)},i._malloc=function(){return(k=i._malloc=i.asm.C).apply(null,arguments)}),He=i.___errno_location=function(){return(He=i.___errno_location=i.asm.D).apply(null,arguments)},Ne=i.stackAlloc=function(){return(Ne=i.stackAlloc=i.asm.E).apply(null,arguments)},P=i.dynCall_vi=function(){return(P=i.dynCall_vi=i.asm.G).apply(null,arguments)},Ye=i.dynCall_v=function(){return(Ye=i.dynCall_v=i.asm.H).apply(null,arguments)};function qe(e){this.name=\"ExitStatus\",this.message=\"Program terminated with exit(\"+e+\")\",this.status=e}function We(a){function e(){if(!je&&(je=!0,i.calledRun=!0,!m)){if(b(re),b(oe),D(i),i.onRuntimeInitialized&&i.onRuntimeInitialized(),Ge){var n=a,e=i._main,t=(n=n||[]).length+1,r=Ne(4*(t+1));g[r>>2]=Z(u);for(var o=1;o<t;o++)g[(r>>2)+",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31158"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "D",
+    "kind": "function",
+    "index": 701,
+    "signature": {
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 17,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 8524,
+    "loader_excerpt": "ilable!\")}var ve,we={};function _e(){if(!ve){var e,n={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:u||\"./this.program\"};for(e in we)void 0===we[e]?delete n[e]:n[e]=we[e];var t=[];for(e in n)t.push(e+\"=\"+n[e]);ve=t}return ve}function S(e){return 0==e%4&&(0!=e%100||0==e%400)}function be(e,n){for(var t=0,r=0;r<=n;t+=e[r++]);return t}var M=[31,29,31,30,31,30,31,31,30,31,30,31],Se=[31,28,31,30,31,30,31,31,30,31,30,31];function Me(e,n){for(e=new Date(e.getTime());0<n;){var t=e.getMonth(),r=(S(e.getFullYear())?M:Se)[t];if(!(n>r-e.getDate())){e.setDate(e.getDate()+n);break}n-=r-e.getDate()+1,e.setDate(1),t<11?e.setMonth(t+1):(e.setMonth(0),e.setFullYear(e.get",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31159"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "E",
+    "kind": "function",
+    "index": 708,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    "type_index": 1,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 8500,
+    "loader_excerpt": "r(n,0,\"IndexedDB not available!\")}var ve,we={};function _e(){if(!ve){var e,n={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:u||\"./this.program\"};for(e in we)void 0===we[e]?delete n[e]:n[e]=we[e];var t=[];for(e in n)t.push(e+\"=\"+n[e]);ve=t}return ve}function S(e){return 0==e%4&&(0!=e%100||0==e%400)}function be(e,n){for(var t=0,r=0;r<=n;t+=e[r++]);return t}var M=[31,29,31,30,31,30,31,31,30,31,30,31],Se=[31,28,31,30,31,30,31,31,30,31,30,31];function Me(e,n){for(e=new Date(e.getTime());0<n;){var t=e.getMonth(),r=(S(e.getFullYear())?M:Se)[t];if(!(n>r-e.getDate())){e.setDate(e.getDate()+n);break}n-=r-e.getDate()+1,e.setDate(1),t<11?e.setMonth(t+1):(e.setMont",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31160"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "F",
+    "kind": "table",
+    "index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 10195,
+    "loader_excerpt": "Year()-1}var c,f=g[r+40>>2];for(c in r={X:g[r>>2],W:g[r+4>>2],O:g[r+8>>2],N:g[r+12>>2],M:g[r+16>>2],F:g[r+20>>2],P:g[r+24>>2],R:g[r+28>>2],ea:g[r+32>>2],V:g[r+36>>2],Y:f?R(f):\"\"},t=R(t),f={\"%c\":\"%a %b %d %H:%M:%S %Y\",\"%D\":\"%m/%d/%y\",\"%F\":\"%Y-%m-%d\",\"%h\":\"%b\",\"%r\":\"%I:%M:%S %p\",\"%R\":\"%H:%M\",\"%T\":\"%H:%M:%S\",\"%x\":\"%m/%d/%y\",\"%X\":\"%H:%M:%S\",\"%Ec\":\"%c\",\"%EC\":\"%C\",\"%Ex\":\"%m/%d/%y\",\"%EX\":\"%H:%M:%S\",\"%Ey\":\"%y\",\"%EY\":\"%Y\",\"%Od\":\"%d\",\"%Oe\":\"%e\",\"%OH\":\"%H\",\"%OI\":\"%I\",\"%Om\":\"%m\",\"%OM\":\"%M\",\"%OS\":\"%S\",\"%Ou\":\"%u\",\"%OU\":\"%U\",\"%OV\":\"%V\",\"%Ow\":\"%w\",\"%OW\":\"%W\",\"%Oy\":\"%y\"})t=t.replace(new RegExp(c,\"g\"),f[c]);var l,p,d=\"Sunday Monday Tuesday Wednesday Thursday Friday Saturday\".split(\" \"),m=\"January February March April May June July August September October November December\".split(\" \");for(c in f={\"%a\":funct",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31161"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "G",
+    "kind": "function",
+    "index": 473,
+    "signature": {
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 4,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 8555,
+    "loader_excerpt": " _e(){if(!ve){var e,n={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:u||\"./this.program\"};for(e in we)void 0===we[e]?delete n[e]:n[e]=we[e];var t=[];for(e in n)t.push(e+\"=\"+n[e]);ve=t}return ve}function S(e){return 0==e%4&&(0!=e%100||0==e%400)}function be(e,n){for(var t=0,r=0;r<=n;t+=e[r++]);return t}var M=[31,29,31,30,31,30,31,31,30,31,30,31],Se=[31,28,31,30,31,30,31,31,30,31,30,31];function Me(e,n){for(e=new Date(e.getTime());0<n;){var t=e.getMonth(),r=(S(e.getFullYear())?M:Se)[t];if(!(n>r-e.getDate())){e.setDate(e.getDate()+n);break}n-=r-e.getDate()+1,e.setDate(1),t<11?e.setMonth(t+1):(e.setMonth(0),e.setFullYear(e.getFullYear()+1))}return e}functio",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31162"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "H",
+    "kind": "function",
+    "index": 470,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 8516,
+    "loader_excerpt": " not available!\")}var ve,we={};function _e(){if(!ve){var e,n={USER:\"web_user\",LOGNAME:\"web_user\",PATH:\"/\",PWD:\"/\",HOME:\"/home/web_user\",LANG:(\"object\"==typeof navigator&&navigator.languages&&navigator.languages[0]||\"C\").replace(\"-\",\"_\")+\".UTF-8\",_:u||\"./this.program\"};for(e in we)void 0===we[e]?delete n[e]:n[e]=we[e];var t=[];for(e in n)t.push(e+\"=\"+n[e]);ve=t}return ve}function S(e){return 0==e%4&&(0!=e%100||0==e%400)}function be(e,n){for(var t=0,r=0;r<=n;t+=e[r++]);return t}var M=[31,29,31,30,31,30,31,31,30,31,30,31],Se=[31,28,31,30,31,30,31,31,30,31,30,31];function Me(e,n){for(e=new Date(e.getTime());0<n;){var t=e.getMonth(),r=(S(e.getFullYear())?M:Se)[t];if(!(n>r-e.getDate())){e.setDate(e.getDate()+n);break}n-=r-e.getDate()+1,e.setDate(1),t<11?e.setMonth(t+1):(e.setMonth(0),e.setFullYe",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31163"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "I",
+    "kind": "function",
+    "index": 468,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 10361,
+    "loader_excerpt": "Y:f?R(f):\"\"},t=R(t),f={\"%c\":\"%a %b %d %H:%M:%S %Y\",\"%D\":\"%m/%d/%y\",\"%F\":\"%Y-%m-%d\",\"%h\":\"%b\",\"%r\":\"%I:%M:%S %p\",\"%R\":\"%H:%M\",\"%T\":\"%H:%M:%S\",\"%x\":\"%m/%d/%y\",\"%X\":\"%H:%M:%S\",\"%Ec\":\"%c\",\"%EC\":\"%C\",\"%Ex\":\"%m/%d/%y\",\"%EX\":\"%H:%M:%S\",\"%Ey\":\"%y\",\"%EY\":\"%Y\",\"%Od\":\"%d\",\"%Oe\":\"%e\",\"%OH\":\"%H\",\"%OI\":\"%I\",\"%Om\":\"%m\",\"%OM\":\"%M\",\"%OS\":\"%S\",\"%Ou\":\"%u\",\"%OU\":\"%U\",\"%OV\":\"%V\",\"%Ow\":\"%w\",\"%OW\":\"%W\",\"%Oy\":\"%y\"})t=t.replace(new RegExp(c,\"g\"),f[c]);var l,p,d=\"Sunday Monday Tuesday Wednesday Thursday Friday Saturday\".split(\" \"),m=\"January February March April May June July August September October November December\".split(\" \");for(c in f={\"%a\":function(e){return d[e.P].substring(0,3)},\"%A\":function(e){return d[e.P]},\"%b\":function(e){return m[e.M].substring(0,3)},\"%B\":function(e){return m[e.M]},\"%C\":function(e){r",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31164"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "J",
+    "kind": "function",
+    "index": 467,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 11,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 20587,
+    "loader_excerpt": "sm.I).apply(null,arguments)},i._asyncify_stop_unwind=function(){return(i._asyncify_stop_unwind=i.asm.J).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.K).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.L).apply(null,arguments)},w=function e(){je||We(),je||(w=e)},i.run=We,i.preInit)for(\"function\"==typeof i.preInit&&(i.preInit=[i.preInit]);0<i.preInit.length;)i.preInit.pop()();var Ge=!0;return i.noInitialRun&&(Ge=!1),We(),i.onSpecialMessage=i.postCustomMessage,e.ready}var Xe;Xe=\"undefined\"!=typeof document&&document.currentScript?document.currentScript.src:void 0,\"undefined\"!=typeof __filename&&(Xe=Xe||__filename);return\"object\"==typeof exports&&\"object\"==typeof module?module.exports=e:\"function\"",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31165"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "K",
+    "kind": "function",
+    "index": 466,
+    "signature": {
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    "type_index": 0,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 20687,
+    "loader_excerpt": ".J).apply(null,arguments)},i._asyncify_start_rewind=function(){return(i._asyncify_start_rewind=i.asm.K).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.L).apply(null,arguments)},w=function e(){je||We(),je||(w=e)},i.run=We,i.preInit)for(\"function\"==typeof i.preInit&&(i.preInit=[i.preInit]);0<i.preInit.length;)i.preInit.pop()();var Ge=!0;return i.noInitialRun&&(Ge=!1),We(),i.onSpecialMessage=i.postCustomMessage,e.ready}var Xe;Xe=\"undefined\"!=typeof document&&document.currentScript?document.currentScript.src:void 0,\"undefined\"!=typeof __filename&&(Xe=Xe||__filename);return\"object\"==typeof exports&&\"object\"==typeof module?module.exports=e:\"function\"==typeof define&&define.amd?define([],function(){return e}):\"object\"==typeof exports&&(exports.Stock",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31166"
+  },
+  {
+    "module_id": "module-004",
+    "direction": "export",
+    "name": "L",
+    "kind": "function",
+    "index": 465,
+    "signature": {
+      "parameters": [],
+      "results": []
+    },
+    "type_index": 11,
+    "apparent_purpose": "Runtime/engine export; semantic identity requires wrapper/call-site evidence.",
+    "loader_character_offset": 20785,
+    "loader_excerpt": "sm.K).apply(null,arguments)},i._asyncify_stop_rewind=function(){return(i._asyncify_stop_rewind=i.asm.L).apply(null,arguments)},w=function e(){je||We(),je||(w=e)},i.run=We,i.preInit)for(\"function\"==typeof i.preInit&&(i.preInit=[i.preInit]);0<i.preInit.length;)i.preInit.pop()();var Ge=!0;return i.noInitialRun&&(Ge=!1),We(),i.onSpecialMessage=i.postCustomMessage,e.ready}var Xe;Xe=\"undefined\"!=typeof document&&document.currentScript?document.currentScript.src:void 0,\"undefined\"!=typeof __filename&&(Xe=Xe||__filename);return\"object\"==typeof exports&&\"object\"==typeof module?module.exports=e:\"function\"==typeof define&&define.amd?define([],function(){return e}):\"object\"==typeof exports&&(exports.Stockfish=e),e}\"undefined\"!=typeof self&&\"worker\"===self.location.hash.split(\",\")[1]||\"undefined\"!=type",
+    "semantic_confidence": "UNKNOWN",
+    "evidence_confidence": "CONFIRMED declaration",
+    "finding_id": "FND-31167"
+  }
+]

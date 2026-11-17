@@ -1,0 +1,22 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/square_set.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/square.proto"
+  ],
+  "message_type": [
+    {
+      "name": "SquareSet",
+      "field": [
+        {
+          "name": "occupancy",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

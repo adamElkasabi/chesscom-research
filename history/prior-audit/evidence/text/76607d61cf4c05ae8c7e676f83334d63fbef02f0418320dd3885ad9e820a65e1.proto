@@ -1,0 +1,11 @@
+// source: chesscom/game_storage/v2/game_server.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum GameServer {
+  GAME_SERVER_UNSPECIFIED = 0;
+  GAME_SERVER_RCN = 1;
+  GAME_SERVER_LIVE_CHESS = 2;
+  GAME_SERVER_WEB = 3;
+}

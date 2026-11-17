@@ -1,0 +1,834 @@
+[
+  {
+    "sha256": "b1037807ca8917e083b37f62c3084bf77d5fa4e99ee125ec0ebff64fbd96ac28",
+    "bytes": 32865067,
+    "magic": "0061736d",
+    "version": 1,
+    "sections": [
+      {
+        "id": 1,
+        "header_offset": 8,
+        "payload_offset": 11,
+        "payload_bytes": 1619,
+        "end": 1630
+      },
+      {
+        "id": 2,
+        "header_offset": 1630,
+        "payload_offset": 1633,
+        "payload_bytes": 3526,
+        "end": 5159
+      },
+      {
+        "id": 3,
+        "header_offset": 5159,
+        "payload_offset": 5163,
+        "payload_bytes": 22996,
+        "end": 28159
+      },
+      {
+        "id": 4,
+        "header_offset": 28159,
+        "payload_offset": 28161,
+        "payload_bytes": 9,
+        "end": 28170
+      },
+      {
+        "id": 5,
+        "header_offset": 28170,
+        "payload_offset": 28172,
+        "payload_bytes": 7,
+        "end": 28179
+      },
+      {
+        "id": 6,
+        "header_offset": 28179,
+        "payload_offset": 28181,
+        "payload_bytes": 24,
+        "end": 28205
+      },
+      {
+        "id": 7,
+        "header_offset": 28205,
+        "payload_offset": 28208,
+        "payload_bytes": 3095,
+        "end": 31303
+      },
+      {
+        "id": 9,
+        "header_offset": 31303,
+        "payload_offset": 31307,
+        "payload_bytes": 57622,
+        "end": 88929
+      },
+      {
+        "id": 12,
+        "header_offset": 88929,
+        "payload_offset": 88931,
+        "payload_bytes": 2,
+        "end": 88933
+      },
+      {
+        "id": 10,
+        "header_offset": 88933,
+        "payload_offset": 88938,
+        "payload_bytes": 20738186,
+        "end": 20827124
+      },
+      {
+        "id": 11,
+        "header_offset": 20827124,
+        "payload_offset": 20827129,
+        "payload_bytes": 12037938,
+        "end": 32865067
+      }
+    ],
+    "tables": [
+      {
+        "element_type": "funcref",
+        "limits": {
+          "flags": 1,
+          "minimum": 26300,
+          "shared": false,
+          "memory64": false,
+          "maximum": 26300
+        }
+      }
+    ],
+    "memories": [
+      {
+        "flags": 1,
+        "minimum": 6176,
+        "shared": false,
+        "memory64": false,
+        "maximum": 32768
+      }
+    ],
+    "custom_sections": [],
+    "declared_data_count": 4270,
+    "module_id": "module-001",
+    "original_location": "extension/engines/cee/explanation-engine.no-simd.wasm",
+    "loader_original_location": "extension/engines/cee/explanation-engine.no-simd.js",
+    "direct_call_pairs": 97169,
+    "direct_call_sites": 234030,
+    "indirect_call_sites": 9438,
+    "wat_bytes": 1678040273,
+    "ascii_candidates": 43416,
+    "relevant_string_candidates": 2747,
+    "utf16_candidates": 540,
+    "tool_commands": [
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-validate",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.no-simd.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 2.099,
+        "stdout_file": "validation.txt",
+        "stderr_file": "validation.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-objdump",
+          "-h",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.no-simd.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.166,
+        "stdout_file": "section-summary.txt",
+        "stderr_file": "section-summary.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm2wat",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.no-simd.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 30.706,
+        "stdout_file": "module-001.wat",
+        "stderr_file": "module-001.wat.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-decompile",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.no-simd.wasm"
+        ],
+        "exit_code": 1,
+        "seconds": 2.904,
+        "stdout_file": "decompilation.txt",
+        "stderr_file": "decompilation.txt.stderr"
+      }
+    ],
+    "original_url_from_saved_download_script": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm",
+    "retrieval_status": "Available exact local bytes preserved; no new download or current deployment equivalence assumed.",
+    "ownership": "Custom explanation engine / embedded engines"
+  },
+  {
+    "sha256": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373",
+    "bytes": 32922478,
+    "magic": "0061736d",
+    "version": 1,
+    "sections": [
+      {
+        "id": 1,
+        "header_offset": 8,
+        "payload_offset": 11,
+        "payload_bytes": 1626,
+        "end": 1637
+      },
+      {
+        "id": 2,
+        "header_offset": 1637,
+        "payload_offset": 1640,
+        "payload_bytes": 3545,
+        "end": 5185
+      },
+      {
+        "id": 3,
+        "header_offset": 5185,
+        "payload_offset": 5189,
+        "payload_bytes": 23027,
+        "end": 28216
+      },
+      {
+        "id": 4,
+        "header_offset": 28216,
+        "payload_offset": 28218,
+        "payload_bytes": 9,
+        "end": 28227
+      },
+      {
+        "id": 5,
+        "header_offset": 28227,
+        "payload_offset": 28229,
+        "payload_bytes": 7,
+        "end": 28236
+      },
+      {
+        "id": 6,
+        "header_offset": 28236,
+        "payload_offset": 28238,
+        "payload_bytes": 24,
+        "end": 28262
+      },
+      {
+        "id": 7,
+        "header_offset": 28262,
+        "payload_offset": 28265,
+        "payload_bytes": 3112,
+        "end": 31377
+      },
+      {
+        "id": 9,
+        "header_offset": 31377,
+        "payload_offset": 31381,
+        "payload_bytes": 57702,
+        "end": 89083
+      },
+      {
+        "id": 12,
+        "header_offset": 89083,
+        "payload_offset": 89085,
+        "payload_bytes": 2,
+        "end": 89087
+      },
+      {
+        "id": 10,
+        "header_offset": 89087,
+        "payload_offset": 89092,
+        "payload_bytes": 20795524,
+        "end": 20884616
+      },
+      {
+        "id": 11,
+        "header_offset": 20884616,
+        "payload_offset": 20884621,
+        "payload_bytes": 12037857,
+        "end": 32922478
+      }
+    ],
+    "tables": [
+      {
+        "element_type": "funcref",
+        "limits": {
+          "flags": 1,
+          "minimum": 26324,
+          "shared": false,
+          "memory64": false,
+          "maximum": 26324
+        }
+      }
+    ],
+    "memories": [
+      {
+        "flags": 1,
+        "minimum": 6176,
+        "shared": false,
+        "memory64": false,
+        "maximum": 32768
+      }
+    ],
+    "custom_sections": [],
+    "declared_data_count": 4272,
+    "module_id": "module-002",
+    "original_location": "extension/engines/cee/explanation-engine.wasm",
+    "loader_original_location": "extension/engines/cee/explanation-engine.js",
+    "direct_call_pairs": 97403,
+    "direct_call_sites": 235146,
+    "indirect_call_sites": 9451,
+    "wat_bytes": 1675586099,
+    "ascii_candidates": 43264,
+    "relevant_string_candidates": 2747,
+    "utf16_candidates": 552,
+    "tool_commands": [
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-validate",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 1.996,
+        "stdout_file": "validation.txt",
+        "stderr_file": "validation.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-objdump",
+          "-h",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.115,
+        "stdout_file": "section-summary.txt",
+        "stderr_file": "section-summary.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm2wat",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 30.853,
+        "stdout_file": "module-002.wat",
+        "stderr_file": "module-002.wat.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-decompile",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/cee/explanation-engine.wasm"
+        ],
+        "exit_code": 1,
+        "seconds": 2.805,
+        "stdout_file": "decompilation.txt",
+        "stderr_file": "decompilation.txt.stderr"
+      }
+    ],
+    "original_url_from_saved_download_script": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm",
+    "retrieval_status": "Available exact local bytes preserved; no new download or current deployment equivalence assumed.",
+    "ownership": "Custom explanation engine / embedded engines"
+  },
+  {
+    "sha256": "064234cfc56dc28a18ced0b35630bc8f2dc1a7c689073fb1e2b78ede7c2a6b35",
+    "bytes": 693497,
+    "magic": "0061736d",
+    "version": 1,
+    "sections": [
+      {
+        "id": 1,
+        "header_offset": 8,
+        "payload_offset": 11,
+        "payload_bytes": 586,
+        "end": 597
+      },
+      {
+        "id": 2,
+        "header_offset": 597,
+        "payload_offset": 600,
+        "payload_bytes": 257,
+        "end": 857
+      },
+      {
+        "id": 3,
+        "header_offset": 857,
+        "payload_offset": 860,
+        "payload_bytes": 758,
+        "end": 1618
+      },
+      {
+        "id": 4,
+        "header_offset": 1618,
+        "payload_offset": 1620,
+        "payload_bytes": 7,
+        "end": 1627
+      },
+      {
+        "id": 6,
+        "header_offset": 1627,
+        "payload_offset": 1629,
+        "payload_bytes": 54,
+        "end": 1683
+      },
+      {
+        "id": 7,
+        "header_offset": 1683,
+        "payload_offset": 1686,
+        "payload_bytes": 178,
+        "end": 1864
+      },
+      {
+        "id": 8,
+        "header_offset": 1864,
+        "payload_offset": 1866,
+        "payload_bytes": 2,
+        "end": 1868
+      },
+      {
+        "id": 9,
+        "header_offset": 1868,
+        "payload_offset": 1871,
+        "payload_bytes": 856,
+        "end": 2727
+      },
+      {
+        "id": 12,
+        "header_offset": 2727,
+        "payload_offset": 2729,
+        "payload_bytes": 1,
+        "end": 2730
+      },
+      {
+        "id": 10,
+        "header_offset": 2730,
+        "payload_offset": 2734,
+        "payload_bytes": 665895,
+        "end": 668629
+      },
+      {
+        "id": 11,
+        "header_offset": 668629,
+        "payload_offset": 668633,
+        "payload_bytes": 24864,
+        "end": 693497
+      }
+    ],
+    "tables": [
+      {
+        "element_type": "funcref",
+        "limits": {
+          "flags": 1,
+          "minimum": 464,
+          "shared": false,
+          "memory64": false,
+          "maximum": 464
+        }
+      }
+    ],
+    "memories": [],
+    "custom_sections": [],
+    "start_function_index": 796,
+    "declared_data_count": 27,
+    "module_id": "module-003",
+    "original_location": "extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm",
+    "loader_original_location": "extension/engines/stockfish/stockfish-nnue-16-no-Worker.js",
+    "direct_call_pairs": 1994,
+    "direct_call_sites": 4396,
+    "indirect_call_sites": 736,
+    "wat_bytes": 9278862,
+    "ascii_candidates": 860,
+    "relevant_string_candidates": 51,
+    "utf16_candidates": 8,
+    "tool_commands": [
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-validate",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.216,
+        "stdout_file": "validation.txt",
+        "stderr_file": "validation.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-objdump",
+          "-h",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.115,
+        "stdout_file": "section-summary.txt",
+        "stderr_file": "section-summary.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm2wat",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.973,
+        "stdout_file": "module-003.wat",
+        "stderr_file": "module-003.wat.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-decompile",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-no-Worker.wasm"
+        ],
+        "exit_code": 1,
+        "seconds": 0.266,
+        "stdout_file": "decompilation.txt",
+        "stderr_file": "decompilation.txt.stderr"
+      }
+    ],
+    "original_url_from_saved_download_script": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm",
+    "retrieval_status": "Available exact local bytes preserved; no new download or current deployment equivalence assumed.",
+    "ownership": "Third-party Stockfish engine build"
+  },
+  {
+    "sha256": "198c952007aa12b24aa649525f049f9508178fbfd5a3298810d7e87d91229a04",
+    "bytes": 574106,
+    "magic": "0061736d",
+    "version": 1,
+    "sections": [
+      {
+        "id": 1,
+        "header_offset": 8,
+        "payload_offset": 11,
+        "payload_bytes": 474,
+        "end": 485
+      },
+      {
+        "id": 2,
+        "header_offset": 485,
+        "payload_offset": 488,
+        "payload_bytes": 133,
+        "end": 621
+      },
+      {
+        "id": 3,
+        "header_offset": 621,
+        "payload_offset": 624,
+        "payload_bytes": 711,
+        "end": 1335
+      },
+      {
+        "id": 4,
+        "header_offset": 1335,
+        "payload_offset": 1337,
+        "payload_bytes": 7,
+        "end": 1344
+      },
+      {
+        "id": 5,
+        "header_offset": 1344,
+        "payload_offset": 1346,
+        "payload_bytes": 7,
+        "end": 1353
+      },
+      {
+        "id": 6,
+        "header_offset": 1353,
+        "payload_offset": 1355,
+        "payload_bytes": 29,
+        "end": 1384
+      },
+      {
+        "id": 7,
+        "header_offset": 1384,
+        "payload_offset": 1386,
+        "payload_bytes": 77,
+        "end": 1463
+      },
+      {
+        "id": 9,
+        "header_offset": 1463,
+        "payload_offset": 1466,
+        "payload_bytes": 839,
+        "end": 2305
+      },
+      {
+        "id": 10,
+        "header_offset": 2305,
+        "payload_offset": 2309,
+        "payload_bytes": 549080,
+        "end": 551389
+      },
+      {
+        "id": 11,
+        "header_offset": 551389,
+        "payload_offset": 551393,
+        "payload_bytes": 22713,
+        "end": 574106
+      }
+    ],
+    "tables": [
+      {
+        "element_type": "funcref",
+        "limits": {
+          "flags": 1,
+          "minimum": 460,
+          "shared": false,
+          "memory64": false,
+          "maximum": 460
+        }
+      }
+    ],
+    "memories": [
+      {
+        "flags": 1,
+        "minimum": 1024,
+        "shared": false,
+        "memory64": false,
+        "maximum": 32768
+      }
+    ],
+    "custom_sections": [],
+    "module_id": "module-004",
+    "original_location": "extension/engines/stockfish/stockfish-nnue-16-single.wasm",
+    "loader_original_location": "extension/engines/stockfish/stockfish-nnue-16-single.js",
+    "direct_call_pairs": 1898,
+    "direct_call_sites": 4312,
+    "indirect_call_sites": 655,
+    "wat_bytes": 7663371,
+    "ascii_candidates": 812,
+    "relevant_string_candidates": 42,
+    "utf16_candidates": 8,
+    "tool_commands": [
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-validate",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.216,
+        "stdout_file": "validation.txt",
+        "stderr_file": "validation.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-objdump",
+          "-h",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.115,
+        "stdout_file": "section-summary.txt",
+        "stderr_file": "section-summary.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm2wat",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.872,
+        "stdout_file": "module-004.wat",
+        "stderr_file": "module-004.wat.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-decompile",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/stockfish/stockfish-nnue-16-single.wasm"
+        ],
+        "exit_code": 1,
+        "seconds": 0.267,
+        "stdout_file": "decompilation.txt",
+        "stderr_file": "decompilation.txt.stderr"
+      }
+    ],
+    "original_url_from_saved_download_script": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16-single.wasm",
+    "retrieval_status": "Available exact local bytes preserved; no new download or current deployment equivalence assumed.",
+    "ownership": "Third-party Stockfish engine build"
+  },
+  {
+    "sha256": "59b8ac9e04022617118154bc3ce32aaf505c95ab58c04996301f07eda82a4559",
+    "bytes": 7234687,
+    "magic": "0061736d",
+    "version": 1,
+    "sections": [
+      {
+        "id": 1,
+        "header_offset": 8,
+        "payload_offset": 11,
+        "payload_bytes": 457,
+        "end": 468
+      },
+      {
+        "id": 2,
+        "header_offset": 468,
+        "payload_offset": 470,
+        "payload_bytes": 109,
+        "end": 579
+      },
+      {
+        "id": 3,
+        "header_offset": 579,
+        "payload_offset": 582,
+        "payload_bytes": 751,
+        "end": 1333
+      },
+      {
+        "id": 4,
+        "header_offset": 1333,
+        "payload_offset": 1335,
+        "payload_bytes": 7,
+        "end": 1342
+      },
+      {
+        "id": 5,
+        "header_offset": 1342,
+        "payload_offset": 1344,
+        "payload_bytes": 6,
+        "end": 1350
+      },
+      {
+        "id": 6,
+        "header_offset": 1350,
+        "payload_offset": 1352,
+        "payload_bytes": 29,
+        "end": 1381
+      },
+      {
+        "id": 7,
+        "header_offset": 1381,
+        "payload_offset": 1383,
+        "payload_bytes": 82,
+        "end": 1465
+      },
+      {
+        "id": 9,
+        "header_offset": 1465,
+        "payload_offset": 1468,
+        "payload_bytes": 987,
+        "end": 2455
+      },
+      {
+        "id": 10,
+        "header_offset": 2455,
+        "payload_offset": 2459,
+        "payload_bytes": 532390,
+        "end": 534849
+      },
+      {
+        "id": 11,
+        "header_offset": 534849,
+        "payload_offset": 534854,
+        "payload_bytes": 6699833,
+        "end": 7234687
+      }
+    ],
+    "tables": [
+      {
+        "element_type": "funcref",
+        "limits": {
+          "flags": 1,
+          "minimum": 566,
+          "shared": false,
+          "memory64": false,
+          "maximum": 566
+        }
+      }
+    ],
+    "memories": [
+      {
+        "flags": 1,
+        "minimum": 8192,
+        "shared": false,
+        "memory64": false,
+        "maximum": 8192
+      }
+    ],
+    "custom_sections": [],
+    "module_id": "module-005",
+    "original_location": "extension/engines/torch-lite/torch-2-lite-single.wasm",
+    "loader_original_location": "extension/engines/torch-lite/torch-2-lite-single.js",
+    "direct_call_pairs": 1853,
+    "direct_call_sites": 3797,
+    "indirect_call_sites": 642,
+    "wat_bytes": 21161944,
+    "ascii_candidates": 61023,
+    "relevant_string_candidates": 61,
+    "utf16_candidates": 16,
+    "tool_commands": [
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-validate",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/torch-lite/torch-2-lite-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.167,
+        "stdout_file": "validation.txt",
+        "stderr_file": "validation.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-objdump",
+          "-h",
+          "/var/tmp/chess-forensic/input/extension/engines/torch-lite/torch-2-lite-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 0.115,
+        "stdout_file": "section-summary.txt",
+        "stderr_file": "section-summary.txt.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm2wat",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/torch-lite/torch-2-lite-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 1.075,
+        "stdout_file": "module-005.wat",
+        "stderr_file": "module-005.wat.stderr"
+      },
+      {
+        "command": [
+          "wabt1.0.39",
+          "wasm-decompile",
+          "--enable-all",
+          "/var/tmp/chess-forensic/input/extension/engines/torch-lite/torch-2-lite-single.wasm"
+        ],
+        "exit_code": 0,
+        "seconds": 1.718,
+        "stdout_file": "decompilation.txt",
+        "stderr_file": "decompilation.txt.stderr"
+      }
+    ],
+    "original_url_from_saved_download_script": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm",
+    "retrieval_status": "Available exact local bytes preserved; no new download or current deployment equivalence assumed.",
+    "ownership": "Proprietary Torch Lite chess-engine build; exact source ownership not inspected"
+  }
+]

@@ -1,0 +1,211 @@
+{
+  "name": "chesscom/user_properties/v1/properties_opening_courses.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "OpeningCoursesProperty",
+      "field": [
+        {
+          "name": "first_opening_courses_session_date",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_opening_courses_session_date",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_opening_courses_study_date",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_variations_learned",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_variations_reviewed",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_reviews_pending",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_started",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_completed",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_feature_limit_hits",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "number_of_opening_courses_previews_claimed",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1045,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.OpeningCoursesPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_first_opening_courses_session_date"
+        },
+        {
+          "name": "_last_opening_courses_session_date"
+        },
+        {
+          "name": "_last_opening_courses_study_date"
+        },
+        {
+          "name": "_number_of_opening_courses_variations_learned"
+        },
+        {
+          "name": "_number_of_opening_courses_variations_reviewed"
+        },
+        {
+          "name": "_number_of_opening_courses_reviews_pending"
+        },
+        {
+          "name": "_number_of_opening_courses_started"
+        },
+        {
+          "name": "_number_of_opening_courses_completed"
+        },
+        {
+          "name": "_number_of_opening_courses_feature_limit_hits"
+        },
+        {
+          "name": "_number_of_opening_courses_previews_claimed"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "OpeningCoursesPropertyDefinition",
+      "value": [
+        {
+          "name": "OPENING_COURSES_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FIRST_OPENING_COURSES_SESSION_DATE",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "LAST_OPENING_COURSES_SESSION_DATE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "LAST_OPENING_COURSES_STUDY_DATE",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_VARIATIONS_LEARNED",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_VARIATIONS_REVIEWED",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_REVIEWS_PENDING",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_STARTED",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_COMPLETED",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_FEATURE_LIMIT_HITS",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "NUMBER_OF_OPENING_COURSES_PREVIEWS_CLAIMED",
+          "number": 10,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

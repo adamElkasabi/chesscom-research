@@ -1,0 +1,174 @@
+{
+  "name": "chesscom/payments/v1/support_family_plan.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "SupportFamilyPlanInvitation",
+      "field": [
+        {
+          "name": "invitation_ref",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invitee_user_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invitee_username",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "masked_email",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "expires_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    },
+    {
+      "name": "SupportFamilyPlanInviteeCheck",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "status",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SupportFamilyPlanJoinStatus"
+        },
+        {
+          "name": "trial_cooldown_ends_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SupportFamilyPlanState",
+      "value": [
+        {
+          "name": "SUPPORT_FAMILY_PLAN_STATE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_STATE_NONE",
+          "number": 1
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_STATE_TRIAL",
+          "number": 2
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_STATE_PAID",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "name": "SupportFamilyPlanJoinStatus",
+      "value": [
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_CAN_JOIN",
+          "number": 1
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_TRIAL_COOLDOWN",
+          "number": 2
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_REMOVED_BY_OWNER",
+          "number": 3
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_ALREADY_PREMIUM",
+          "number": 4
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_OTHER_COUNTRY",
+          "number": 5
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_PLAN_FULL",
+          "number": 6
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_JOIN_STATUS_ALREADY_MEMBER",
+          "number": 7
+        }
+      ]
+    },
+    {
+      "name": "SupportFamilyPlanRevokeResult",
+      "value": [
+        {
+          "name": "SUPPORT_FAMILY_PLAN_REVOKE_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_REVOKE_RESULT_REVOKED",
+          "number": 1
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_REVOKE_RESULT_NOT_FOUND",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "SupportFamilyPlanCooldownResult",
+      "value": [
+        {
+          "name": "SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_CLEARED",
+          "number": 1
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_NOT_IN_COOLDOWN",
+          "number": 2
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_NO_PLAN",
+          "number": 3
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_PLAN_NOT_TRIAL",
+          "number": 4
+        },
+        {
+          "name": "SUPPORT_FAMILY_PLAN_COOLDOWN_RESULT_FRIEND_NOT_FROM_THIS_OWNER",
+          "number": 5
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,76 @@
+name: "chesscom/explanation_engine/v1/feature_update_experimental_options.proto"
+package: "chesscom.explanation_engine.v1"
+dependency: "chesscom/explanation_engine/v1/feature_get_illegal_move_explanation.proto"
+message_type {
+  name: "UpdateExperimentalOptionsRequest"
+  field {
+    name: "options"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.ExperimentalOptions"
+  }
+}
+message_type {
+  name: "UpdateExperimentalOptionsResponse"
+  field {
+    name: "options"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.ExperimentalOptions"
+  }
+}
+message_type {
+  name: "ExperimentalOptions"
+  field {
+    name: "play_coach_flip_board_enabled"
+    number: 5
+    label: LABEL_OPTIONAL
+    type: TYPE_BOOL
+    oneof_index: 0
+    proto3_optional: true
+  }
+  field {
+    name: "play_coach_retry_misses_enabled"
+    number: 6
+    label: LABEL_OPTIONAL
+    type: TYPE_BOOL
+    oneof_index: 1
+    proto3_optional: true
+  }
+  field {
+    name: "illegal_move_explanation_mode"
+    number: 7
+    label: LABEL_OPTIONAL
+    type: TYPE_ENUM
+    type_name: ".chesscom.explanation_engine.v1.IllegalMoveExplanationMode"
+    oneof_index: 2
+    proto3_optional: true
+  }
+  field {
+    name: "allow_tricky_classification"
+    number: 8
+    label: LABEL_OPTIONAL
+    type: TYPE_BOOL
+    oneof_index: 3
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "_play_coach_flip_board_enabled"
+  }
+  oneof_decl {
+    name: "_play_coach_retry_misses_enabled"
+  }
+  oneof_decl {
+    name: "_illegal_move_explanation_mode"
+  }
+  oneof_decl {
+    name: "_allow_tricky_classification"
+  }
+  reserved_range {
+    start: 1
+    end: 5
+  }
+}
+syntax: "proto3"

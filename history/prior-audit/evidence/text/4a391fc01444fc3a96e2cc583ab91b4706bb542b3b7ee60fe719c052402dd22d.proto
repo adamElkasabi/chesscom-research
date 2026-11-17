@@ -1,0 +1,27 @@
+// source: chesscom/explanation_engine/v1/feature_update_experimental_options.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message UpdateExperimentalOptionsRequest {
+  optional .chesscom.explanation_engine.v1.ExperimentalOptions options = 1;
+}
+
+message UpdateExperimentalOptionsResponse {
+  optional .chesscom.explanation_engine.v1.ExperimentalOptions options = 1;
+}
+
+message ExperimentalOptions {
+  oneof _play_coach_flip_board_enabled {
+  bool play_coach_flip_board_enabled = 5;
+  }
+  oneof _play_coach_retry_misses_enabled {
+  bool play_coach_retry_misses_enabled = 6;
+  }
+  oneof _illegal_move_explanation_mode {
+  .chesscom.explanation_engine.v1.IllegalMoveExplanationMode illegal_move_explanation_mode = 7;
+  }
+  oneof _allow_tricky_classification {
+  bool allow_tricky_classification = 8;
+  }
+}

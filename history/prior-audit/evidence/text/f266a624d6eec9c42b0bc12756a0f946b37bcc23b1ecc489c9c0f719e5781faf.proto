@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_get_game_state.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetGameStateRequest {
+}
+
+message GetGameStateResponse {
+  optional .chesscom.explanation_engine.v1.GameState game_state = 1;
+}

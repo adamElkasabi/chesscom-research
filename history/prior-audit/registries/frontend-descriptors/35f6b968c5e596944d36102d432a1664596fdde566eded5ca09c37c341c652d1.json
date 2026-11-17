@@ -1,0 +1,137 @@
+{
+  "name": "chesscom/courses/v1/course_product_details_service.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "GetCourseProductBySlugRequest",
+      "field": [
+        {
+          "name": "slug",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "country_code",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetCourseProductBySlugResponse",
+      "field": [
+        {
+          "name": "details",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses.v1.CourseProductDetails"
+        }
+      ]
+    },
+    {
+      "name": "ClaimCourseProductRequest",
+      "field": [
+        {
+          "name": "product_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ClaimCourseProductResponse",
+      "field": [
+        {
+          "name": "default_move_trainer_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "GetDefaultMoveTrainerIdByProductIdRequest",
+      "field": [
+        {
+          "name": "product_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetDefaultMoveTrainerIdByProductIdResponse",
+      "field": [
+        {
+          "name": "default_move_trainer_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_course_owned",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_video_owned",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SetCourseActiveRequest",
+      "field": [
+        {
+          "name": "course_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SetCourseActiveResponse"
+    }
+  ],
+  "service": [
+    {
+      "name": "CourseProductDetailsService",
+      "method": [
+        {
+          "name": "GetCourseProductBySlug",
+          "input_type": ".chesscom.courses.v1.GetCourseProductBySlugRequest",
+          "output_type": ".chesscom.courses.v1.GetCourseProductBySlugResponse"
+        },
+        {
+          "name": "ClaimCourseProduct",
+          "input_type": ".chesscom.courses.v1.ClaimCourseProductRequest",
+          "output_type": ".chesscom.courses.v1.ClaimCourseProductResponse"
+        },
+        {
+          "name": "GetDefaultMoveTrainerIdByProductId",
+          "input_type": ".chesscom.courses.v1.GetDefaultMoveTrainerIdByProductIdRequest",
+          "output_type": ".chesscom.courses.v1.GetDefaultMoveTrainerIdByProductIdResponse"
+        },
+        {
+          "name": "SetCourseActive",
+          "input_type": ".chesscom.courses.v1.SetCourseActiveRequest",
+          "output_type": ".chesscom.courses.v1.SetCourseActiveResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

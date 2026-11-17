@@ -1,0 +1,14 @@
+// source: chesscom/explanation_engine/v1/feature_convert_to_proto_moves.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message ConvertToProtoMovesRequest {
+  optional .chesscom.chess.v1.MoveNotation move_notation = 1;
+  optional string initial_fen = 2;
+  repeated string moves_to_convert = 3;
+}
+
+message ConvertToProtoMovesResponse {
+  repeated .chesscom.chess.v1.Move moves = 1;
+}

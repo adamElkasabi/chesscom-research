@@ -1,0 +1,207 @@
+{
+  "name": "chesscom/bots/v1/bot_group_service.proto",
+  "package": "chesscom.bots.v1",
+  "message_type": [
+    {
+      "name": "ListBotGroupsRequest",
+      "field": [
+        {
+          "name": "bot_group_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "with_bots",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "supported_languages",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_bot_group_uuid"
+        },
+        {
+          "name": "_with_bots"
+        }
+      ]
+    },
+    {
+      "name": "ListBotGroupsResponse",
+      "field": [
+        {
+          "name": "bot_groups",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotGroup"
+        },
+        {
+          "name": "recommended_bot_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_recommended_bot_id"
+        }
+      ]
+    },
+    {
+      "name": "ListAllBotsInGroupRequest",
+      "field": [
+        {
+          "name": "bot_group_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "supported_languages",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "ListAllBotsInGroupResponse",
+      "field": [
+        {
+          "name": "bot_group",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotGroup"
+        },
+        {
+          "name": "bot_personalities",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotPersonality"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "ListAllBotsForClubRequest",
+      "field": [
+        {
+          "name": "club_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListAllBotsForClubResponse",
+      "field": [
+        {
+          "name": "bot_group",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotGroup"
+        },
+        {
+          "name": "bot_personalities",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.BotPersonality"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListAllBotNamesRequest",
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "ListAllBotNamesResponse",
+      "field": [
+        {
+          "name": "supported_bot",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.bots.v1.SupportedBot"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    }
+  ],
+  "service": [
+    {
+      "name": "BotGroupService",
+      "method": [
+        {
+          "name": "ListBotGroups",
+          "input_type": ".chesscom.bots.v1.ListBotGroupsRequest",
+          "output_type": ".chesscom.bots.v1.ListBotGroupsResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListAllBotsInGroup",
+          "input_type": ".chesscom.bots.v1.ListAllBotsInGroupRequest",
+          "output_type": ".chesscom.bots.v1.ListAllBotsInGroupResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListAllBotsForClub",
+          "input_type": ".chesscom.bots.v1.ListAllBotsForClubRequest",
+          "output_type": ".chesscom.bots.v1.ListAllBotsForClubResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "ListAllBotNames",
+          "input_type": ".chesscom.bots.v1.ListAllBotNamesRequest",
+          "output_type": ".chesscom.bots.v1.ListAllBotNamesResponse",
+          "options": {
+            "deprecated": true,
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

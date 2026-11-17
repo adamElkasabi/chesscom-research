@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/train/v1/train_endgame_theme.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainEndgameTheme",
+      "value": [
+        {
+          "name": "TRAIN_ENDGAME_THEME_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_ENDGAME_THEME_QUEEN",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_ENDGAME_THEME_ROOK_AND_PAWN",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_ENDGAME_THEME_KING_AND_PAWN",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_ENDGAME_THEME_OTHER",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

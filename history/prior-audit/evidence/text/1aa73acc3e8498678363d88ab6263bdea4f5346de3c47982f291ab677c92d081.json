@@ -1,0 +1,6 @@
+{
+  "id": "uci-classification-v3",
+  "uciAfter": {
+    "ClassificationV3": true
+  }
+}

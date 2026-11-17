@@ -1,0 +1,21 @@
+// source: chesscom/explanation_engine/v1/internal_feature_update_developer_options.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message InternalFeatureUpdateDeveloperOptionsRequest {
+  optional .chesscom.explanation_engine.v1.DeveloperOptions options = 1;
+}
+
+message InternalFeatureUpdateDeveloperOptionsResponse {
+  optional .chesscom.explanation_engine.v1.DeveloperOptions options = 1;
+}
+
+message DeveloperOptions {
+  oneof _coach_debug_info {
+  bool coach_debug_info = 3;
+  }
+  oneof _assume_speech_always_present {
+  bool assume_speech_always_present = 4;
+  }
+}

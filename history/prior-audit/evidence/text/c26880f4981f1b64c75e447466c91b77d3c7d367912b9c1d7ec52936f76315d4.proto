@@ -1,0 +1,13 @@
+// source: chesscom/user/v1/user_skill_level.proto
+// syntax: proto3
+
+package chesscom.user.v1;
+
+enum SkillLevel {
+  SKILL_LEVEL_UNSPECIFIED = 0;
+  SKILL_LEVEL_NEW = 1;
+  SKILL_LEVEL_BEGINNER = 2;
+  SKILL_LEVEL_INTERMEDIATE = 3;
+  SKILL_LEVEL_ADVANCED = 4;
+  SKILL_LEVEL_EXPERT = 5;
+}

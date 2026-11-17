@@ -1,0 +1,21 @@
+// source: chesscom/courses_common/v1/course_review_author.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum UserSourceType {
+  USER_SOURCE_TYPE_UNSPECIFIED = 0;
+  USER_SOURCE_TYPE_CHESSCOM = 1;
+  USER_SOURCE_TYPE_CHESSABLE = 2;
+}
+
+message CourseReviewAuthor {
+  optional .chesscom.courses_common.v1.UserSource source = 1;
+  optional string display_name = 2;
+  optional .chesscom.courses_common.v1.Picture avatar = 3;
+}
+
+message UserSource {
+  optional string id = 1;
+  optional .chesscom.courses_common.v1.UserSourceType type = 2;
+}

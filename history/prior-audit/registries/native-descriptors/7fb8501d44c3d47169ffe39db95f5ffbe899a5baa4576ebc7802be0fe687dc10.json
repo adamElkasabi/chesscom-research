@@ -1,0 +1,205 @@
+{
+  "name": "chesscom/explanation_engine/v1/bot.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "BotTimeLimits",
+      "field": [
+        {
+          "name": "time_limit_ms",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_left_ms",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_inc_ms",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_time_limit_ms"
+        },
+        {
+          "name": "_time_left_ms"
+        },
+        {
+          "name": "_time_inc_ms"
+        }
+      ]
+    },
+    {
+      "name": "BotOptions",
+      "field": [
+        {
+          "name": "rating",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "adaptive",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "personality",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.BotPersonality",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "book_path",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_limits",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.BotTimeLimits",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "artifact_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_adaptive"
+        },
+        {
+          "name": "_personality"
+        },
+        {
+          "name": "_book_path"
+        },
+        {
+          "name": "_time_limits"
+        },
+        {
+          "name": "_artifact_id"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "BotPersonality",
+      "value": [
+        {
+          "name": "BOT_PERSONALITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOT_PERSONALITY_DEFAULT",
+          "number": 1
+        },
+        {
+          "name": "BOT_PERSONALITY_ACTIVE",
+          "number": 2
+        },
+        {
+          "name": "BOT_PERSONALITY_AGRESSIVE",
+          "number": 3
+        },
+        {
+          "name": "BOT_PERSONALITY_BEGINNER",
+          "number": 4
+        },
+        {
+          "name": "BOT_PERSONALITY_DEFENSIVE",
+          "number": 5
+        },
+        {
+          "name": "BOT_PERSONALITY_ENDGAME",
+          "number": 6
+        },
+        {
+          "name": "BOT_PERSONALITY_HUMAN",
+          "number": 7
+        },
+        {
+          "name": "BOT_PERSONALITY_POSITIONAL",
+          "number": 8
+        },
+        {
+          "name": "BOT_PERSONALITY_CARLSEN",
+          "number": 9
+        },
+        {
+          "name": "BOT_PERSONALITY_FISCHER",
+          "number": 10
+        },
+        {
+          "name": "BOT_PERSONALITY_HIKARU",
+          "number": 11
+        },
+        {
+          "name": "BOT_PERSONALITY_KASPAROV",
+          "number": 12
+        },
+        {
+          "name": "BOT_PERSONALITY_NEW_TO_CHESS",
+          "number": 13
+        },
+        {
+          "name": "BOT_PERSONALITY_DANNY",
+          "number": 14
+        },
+        {
+          "name": "BOT_PERSONALITY_UNLEASHED",
+          "number": 15
+        }
+      ]
+    },
+    {
+      "name": "BotEngine",
+      "value": [
+        {
+          "name": "BOT_ENGINE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "BOT_ENGINE_KOMODO",
+          "number": 1
+        },
+        {
+          "name": "BOT_ENGINE_TORCH",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

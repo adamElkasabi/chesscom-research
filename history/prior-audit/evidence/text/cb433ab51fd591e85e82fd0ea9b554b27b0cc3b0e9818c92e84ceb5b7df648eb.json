@@ -1,0 +1,7 @@
+{
+  "id": "normalized-Minimal-true",
+  "uciAfter": {
+    "Normalize": false,
+    "Minimal": true
+  }
+}

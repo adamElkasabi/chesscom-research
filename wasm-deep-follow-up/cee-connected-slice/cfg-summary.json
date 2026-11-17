@@ -1,0 +1,284 @@
+{
+  "functions": [
+    {
+      "function_index": 165,
+      "instruction_nodes": 344,
+      "normal_control_edges": 367,
+      "branch_count": 25
+    },
+    {
+      "function_index": 1664,
+      "instruction_nodes": 803,
+      "normal_control_edges": 876,
+      "branch_count": 81
+    },
+    {
+      "function_index": 1665,
+      "instruction_nodes": 146,
+      "normal_control_edges": 159,
+      "branch_count": 14
+    },
+    {
+      "function_index": 1666,
+      "instruction_nodes": 79,
+      "normal_control_edges": 83,
+      "branch_count": 4
+    },
+    {
+      "function_index": 1667,
+      "instruction_nodes": 110,
+      "normal_control_edges": 117,
+      "branch_count": 7
+    },
+    {
+      "function_index": 1670,
+      "instruction_nodes": 290,
+      "normal_control_edges": 315,
+      "branch_count": 28
+    },
+    {
+      "function_index": 1671,
+      "instruction_nodes": 353,
+      "normal_control_edges": 385,
+      "branch_count": 35
+    },
+    {
+      "function_index": 1679,
+      "instruction_nodes": 146,
+      "normal_control_edges": 152,
+      "branch_count": 6
+    },
+    {
+      "function_index": 1686,
+      "instruction_nodes": 2829,
+      "normal_control_edges": 3030,
+      "branch_count": 231
+    },
+    {
+      "function_index": 1687,
+      "instruction_nodes": 799,
+      "normal_control_edges": 860,
+      "branch_count": 69
+    },
+    {
+      "function_index": 1688,
+      "instruction_nodes": 571,
+      "normal_control_edges": 618,
+      "branch_count": 50
+    },
+    {
+      "function_index": 1689,
+      "instruction_nodes": 424,
+      "normal_control_edges": 445,
+      "branch_count": 23
+    },
+    {
+      "function_index": 1690,
+      "instruction_nodes": 263,
+      "normal_control_edges": 273,
+      "branch_count": 11
+    },
+    {
+      "function_index": 1694,
+      "instruction_nodes": 1149,
+      "normal_control_edges": 1248,
+      "branch_count": 110
+    },
+    {
+      "function_index": 1695,
+      "instruction_nodes": 58,
+      "normal_control_edges": 63,
+      "branch_count": 5
+    },
+    {
+      "function_index": 1696,
+      "instruction_nodes": 104,
+      "normal_control_edges": 111,
+      "branch_count": 7
+    },
+    {
+      "function_index": 1697,
+      "instruction_nodes": 633,
+      "normal_control_edges": 686,
+      "branch_count": 59
+    },
+    {
+      "function_index": 1698,
+      "instruction_nodes": 1920,
+      "normal_control_edges": 2059,
+      "branch_count": 156
+    },
+    {
+      "function_index": 1699,
+      "instruction_nodes": 1127,
+      "normal_control_edges": 1232,
+      "branch_count": 115
+    },
+    {
+      "function_index": 1731,
+      "instruction_nodes": 205,
+      "normal_control_edges": 228,
+      "branch_count": 23
+    },
+    {
+      "function_index": 1741,
+      "instruction_nodes": 272,
+      "normal_control_edges": 292,
+      "branch_count": 23
+    },
+    {
+      "function_index": 1888,
+      "instruction_nodes": 394,
+      "normal_control_edges": 423,
+      "branch_count": 34
+    },
+    {
+      "function_index": 1889,
+      "instruction_nodes": 348,
+      "normal_control_edges": 374,
+      "branch_count": 30
+    },
+    {
+      "function_index": 1892,
+      "instruction_nodes": 394,
+      "normal_control_edges": 423,
+      "branch_count": 34
+    },
+    {
+      "function_index": 1901,
+      "instruction_nodes": 203,
+      "normal_control_edges": 215,
+      "branch_count": 14
+    },
+    {
+      "function_index": 1906,
+      "instruction_nodes": 191,
+      "normal_control_edges": 207,
+      "branch_count": 18
+    },
+    {
+      "function_index": 1907,
+      "instruction_nodes": 1573,
+      "normal_control_edges": 1719,
+      "branch_count": 159
+    },
+    {
+      "function_index": 1909,
+      "instruction_nodes": 28,
+      "normal_control_edges": 30,
+      "branch_count": 3
+    },
+    {
+      "function_index": 1911,
+      "instruction_nodes": 159,
+      "normal_control_edges": 169,
+      "branch_count": 11
+    },
+    {
+      "function_index": 1943,
+      "instruction_nodes": 66,
+      "normal_control_edges": 72,
+      "branch_count": 6
+    },
+    {
+      "function_index": 1950,
+      "instruction_nodes": 692,
+      "normal_control_edges": 747,
+      "branch_count": 60
+    },
+    {
+      "function_index": 1954,
+      "instruction_nodes": 245,
+      "normal_control_edges": 264,
+      "branch_count": 20
+    },
+    {
+      "function_index": 1961,
+      "instruction_nodes": 335,
+      "normal_control_edges": 357,
+      "branch_count": 25
+    },
+    {
+      "function_index": 1965,
+      "instruction_nodes": 1412,
+      "normal_control_edges": 1538,
+      "branch_count": 137
+    },
+    {
+      "function_index": 1970,
+      "instruction_nodes": 123,
+      "normal_control_edges": 131,
+      "branch_count": 8
+    },
+    {
+      "function_index": 1984,
+      "instruction_nodes": 15903,
+      "normal_control_edges": 17542,
+      "branch_count": 1771
+    },
+    {
+      "function_index": 4396,
+      "instruction_nodes": 188,
+      "normal_control_edges": 200,
+      "branch_count": 14
+    },
+    {
+      "function_index": 18367,
+      "instruction_nodes": 201,
+      "normal_control_edges": 215,
+      "branch_count": 14
+    },
+    {
+      "function_index": 18368,
+      "instruction_nodes": 201,
+      "normal_control_edges": 215,
+      "branch_count": 14
+    },
+    {
+      "function_index": 18370,
+      "instruction_nodes": 201,
+      "normal_control_edges": 215,
+      "branch_count": 14
+    },
+    {
+      "function_index": 18380,
+      "instruction_nodes": 119,
+      "normal_control_edges": 124,
+      "branch_count": 6
+    },
+    {
+      "function_index": 18527,
+      "instruction_nodes": 119,
+      "normal_control_edges": 124,
+      "branch_count": 6
+    },
+    {
+      "function_index": 18550,
+      "instruction_nodes": 122,
+      "normal_control_edges": 127,
+      "branch_count": 6
+    },
+    {
+      "function_index": 18562,
+      "instruction_nodes": 116,
+      "normal_control_edges": 121,
+      "branch_count": 6
+    },
+    {
+      "function_index": 22947,
+      "instruction_nodes": 68,
+      "normal_control_edges": 82,
+      "branch_count": 4
+    },
+    {
+      "function_index": 22950,
+      "instruction_nodes": 128,
+      "normal_control_edges": 136,
+      "branch_count": 10
+    }
+  ],
+  "functions_count": 46,
+  "instruction_nodes": 36154,
+  "normal_edges": 39369,
+  "qualification": "Bounded selected-function normal-control graph only;not full semantic understanding."
+}

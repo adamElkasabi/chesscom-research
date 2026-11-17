@@ -1,0 +1,9 @@
+
+Achesscom/explanation_engine/v1/feature_analysis_annotations.protochesscom.explanation_engine.v1@chesscom/explanation_engine/v1/feature_move_classification.proto;chesscom/explanation_engine/v1/feature_simple_threats.proto"W
+AnalysisAnnotationsRequest
+stream_results (!
+enable_pv_classifications ("Ñ
+AnalysisAnnotationsResponseX
+move_classifications (2:.chesscom.explanation_engine.v1.MoveClassificationResponseF
+threats (25.chesscom.explanation_engine.v1.SimpleThreatsResponse
+progress (bproto3

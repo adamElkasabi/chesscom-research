@@ -1,0 +1,13 @@
+// source: chesscom/courses_common/v1/course_variation_type.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum CourseVariationType {
+  COURSE_VARIATION_TYPE_UNSPECIFIED = 0;
+  COURSE_VARIATION_TYPE_INFORMATIONAL = 1;
+  COURSE_VARIATION_TYPE_ALTERNATIVE = 2;
+  COURSE_VARIATION_TYPE_REFERENCE = 3;
+  COURSE_VARIATION_TYPE_PUZZLE = 4;
+  COURSE_VARIATION_TYPE_LESSON = 5;
+}

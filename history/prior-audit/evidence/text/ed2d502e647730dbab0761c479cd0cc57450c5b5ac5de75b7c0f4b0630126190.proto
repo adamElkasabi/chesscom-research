@@ -1,0 +1,370 @@
+// source: chesscom/game_gateway/v2/game_gateway_service.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v2;
+
+enum SortDirection {
+  SORT_DIRECTION_UNSPECIFIED = 0;
+  SORT_DIRECTION_ASC = 1;
+  SORT_DIRECTION_DESC = 2;
+}
+
+enum SortField {
+  SORT_FIELD_UNSPECIFIED = 0;
+  SORT_FIELD_USERNAME = 1;
+  SORT_FIELD_GAME_ID = 2;
+  SORT_FIELD_GAME_START_TIME = 3;
+  SORT_FIELD_GAME_END_TIME = 4;
+  SORT_FIELD_RATED = 5;
+  SORT_FIELD_IS_PRIVATE = 6;
+  SORT_FIELD_BASE_TIME = 7;
+  SORT_FIELD_TIME_INCREMENT = 8;
+  SORT_FIELD_PLAYER_RESULT = 9;
+  SORT_FIELD_PLY_COUNT = 10;
+  SORT_FIELD_GAME_TIME_CLASS = 11;
+  SORT_FIELD_COLOR = 12;
+  SORT_FIELD_ARENA_ID = 13;
+  SORT_FIELD_TOURNAMENT_ID = 14;
+  SORT_FIELD_TEAM_MATCH_ID = 15;
+  SORT_FIELD_RATING = 16;
+  SORT_FIELD_OPPONENT_RATING = 17;
+  SORT_FIELD_OPPONENT_TITLE = 18;
+  SORT_FIELD_OPPONENT_USERNAME = 19;
+  SORT_FIELD_ACCURACY = 20;
+  SORT_FIELD_OPPONENT_ACCURACY = 21;
+  SORT_FIELD_GAME_LOCATION = 22;
+  SORT_FIELD_VS_COMPUTER = 23;
+  SORT_FIELD_GAME_SOURCE = 24;
+  SORT_FIELD_FRIEND = 25;
+  SORT_FIELD_RANDOM_ORDER = 26;
+  SORT_FIELD_LEGACY_GAME_ID = 27;
+}
+
+message HydrateGamesByCriteriaRequest {
+  oneof _pagination {
+  .chesscom.api.v1.RequestPagination pagination = 3;
+  }
+  optional .chesscom.game_gateway.v2.Criteria criteria = 1;
+  optional .google.protobuf.FieldMask field_mask = 2;
+}
+
+message HydrateGamesByCriteriaResponse {
+  repeated .chesscom.game_gateway.v2.HydratedGame hydrated_games = 1;
+  optional .chesscom.api.v1.ResponsePagination pagination = 2;
+}
+
+message AggregateGameResultsByPlayerAndCriteriaRequest {
+  oneof _aggregate_criteria {
+  .chesscom.game_gateway.v2.AggregateCriteria aggregate_criteria = 2;
+  }
+  optional string player_id = 1;
+}
+
+message AggregateGameResultsByPlayerAndCriteriaResponse {
+  optional int64 wins = 1;
+  optional int64 draws = 2;
+  optional int64 losses = 3;
+}
+
+message PlayerOverviewStatsRequest {
+  oneof _time_class {
+  .chesscom.chess.v1.TimeClass time_class = 3;
+  }
+  oneof _variant {
+  .chesscom.chess.v1.Variant variant = 4;
+  }
+  oneof _game_end_time_from {
+  .google.protobuf.Timestamp game_end_time_from = 8;
+  }
+  oneof _game_end_time_to {
+  .google.protobuf.Timestamp game_end_time_to = 9;
+  }
+  optional string player_id = 1;
+  optional .google.protobuf.FieldMask field_mask = 5;
+  optional bool is_vs_computer = 6;
+  optional bool is_vs_coach = 7;
+}
+
+message PlayerOverviewStatsResponse {
+  oneof _daily_game_timeout_count {
+  uint32 daily_game_timeout_count = 12;
+  }
+  oneof _best_win_opponent_username {
+  string best_win_opponent_username = 13;
+  }
+  oneof _best_win_game_id {
+  string best_win_game_id = 14;
+  }
+  oneof _most_played_eco_family_id {
+  uint32 most_played_eco_family_id = 15;
+  }
+  optional .chesscom.game_gateway.v2.OverviewGameCount white_counts = 1;
+  optional .chesscom.game_gateway.v2.OverviewGameCount black_counts = 2;
+  optional uint32 highest_rating = 3;
+  optional .google.protobuf.Timestamp highest_rating_date = 4;
+  optional uint32 best_win = 5;
+  optional uint32 best_win_streak = 6;
+  optional uint32 average_opponent_rating = 7;
+  optional uint32 average_opponent_rating_win = 8;
+  optional uint32 average_opponent_rating_lose = 9;
+  optional uint32 average_opponent_rating_draw = 10;
+  repeated .chesscom.game_gateway.v2.OverviewGameRatings ratings = 11;
+  optional uint32 brilliant_moves_count = 16;
+}
+
+message OverviewGameRatings {
+  optional .google.protobuf.Timestamp timestamp = 1;
+  optional uint32 rating = 2;
+}
+
+message OverviewGameCount {
+  optional int64 wins = 1;
+  optional int64 draws = 2;
+  optional int64 losses = 3;
+}
+
+message AggregateCriteria {
+  oneof _opening {
+  .chesscom.game_gateway.v2.OpeningCriteria opening = 3;
+  }
+  oneof _opponent_id {
+  string opponent_id = 4;
+  }
+  oneof _color {
+  .chesscom.chess.v1.Color color = 5;
+  }
+  oneof _is_rated {
+  bool is_rated = 6;
+  }
+  oneof _game_end_time_from {
+  .google.protobuf.Timestamp game_end_time_from = 7;
+  }
+  oneof _game_end_time_to {
+  .google.protobuf.Timestamp game_end_time_to = 8;
+  }
+  repeated .chesscom.chess.v1.TimeClass time_classes = 1;
+  repeated .chesscom.chess.v1.Variant variants = 2;
+}
+
+message Criteria {
+  oneof _accuracy_from {
+  float accuracy_from = 1;
+  }
+  oneof _accuracy_to {
+  float accuracy_to = 2;
+  }
+  oneof _opponent_accuracy_from {
+  float opponent_accuracy_from = 3;
+  }
+  oneof _opponent_accuracy_to {
+  float opponent_accuracy_to = 4;
+  }
+  oneof _opponent_username {
+  string opponent_username = 5;
+  }
+  oneof _username {
+  string username = 7;
+  }
+  oneof _rating_from {
+  uint32 rating_from = 9;
+  }
+  oneof _rating_to {
+  uint32 rating_to = 10;
+  }
+  oneof _opponent_rating_from {
+  uint32 opponent_rating_from = 11;
+  }
+  oneof _opponent_rating_to {
+  uint32 opponent_rating_to = 12;
+  }
+  oneof _color {
+  .chesscom.chess.v1.Color color = 13;
+  }
+  oneof _are_friends {
+  bool are_friends = 14;
+  }
+  oneof _theme {
+  string theme = 15;
+  }
+  oneof _opponent_theme {
+  string opponent_theme = 16;
+  }
+  oneof _opening {
+  .chesscom.game_gateway.v2.OpeningCriteria opening = 17;
+  }
+  oneof _ply_from {
+  uint32 ply_from = 18;
+  }
+  oneof _ply_to {
+  uint32 ply_to = 19;
+  }
+  oneof _base_time {
+  uint32 base_time = 20;
+  }
+  oneof _time_increment {
+  uint32 time_increment = 21;
+  }
+  oneof _game_provider {
+  .chesscom.game_storage.v2.GameProvider game_provider = 23;
+  }
+  oneof _is_vs_computer {
+  bool is_vs_computer = 24;
+  }
+  oneof _tournament_id {
+  uint32 tournament_id = 28;
+  }
+  oneof _team_match_id {
+  uint32 team_match_id = 29;
+  }
+  oneof _is_tournament {
+  bool is_tournament = 30;
+  }
+  oneof _is_team_match {
+  bool is_team_match = 31;
+  }
+  oneof _is_rated {
+  bool is_rated = 32;
+  }
+  oneof _game_end_time_from {
+  .google.protobuf.Timestamp game_end_time_from = 33;
+  }
+  oneof _game_end_time_to {
+  .google.protobuf.Timestamp game_end_time_to = 34;
+  }
+  oneof _game_start_time_from {
+  .google.protobuf.Timestamp game_start_time_from = 35;
+  }
+  oneof _game_start_time_to {
+  .google.protobuf.Timestamp game_start_time_to = 36;
+  }
+  oneof _page {
+  uint32 page = 38;
+  }
+  oneof _page_size {
+  uint32 page_size = 39;
+  }
+  oneof _sort_direction {
+  .chesscom.game_gateway.v2.SortDirection sort_direction = 40;
+  }
+  oneof _base_time_from {
+  uint32 base_time_from = 42;
+  }
+  oneof _base_time_to {
+  uint32 base_time_to = 43;
+  }
+  oneof _time_increment_from {
+  uint32 time_increment_from = 44;
+  }
+  oneof _time_increment_to {
+  uint32 time_increment_to = 45;
+  }
+  oneof _player_id {
+  string player_id = 47;
+  }
+  oneof _brilliant_count_from {
+  uint32 brilliant_count_from = 49;
+  }
+  oneof _brilliant_count_to {
+  uint32 brilliant_count_to = 50;
+  }
+  oneof _is_arena {
+  bool is_arena = 52;
+  }
+  oneof _has_accuracy {
+  bool has_accuracy = 53;
+  }
+  oneof _toggle_rate_from {
+  float toggle_rate_from = 54;
+  }
+  oneof _toggle_rate_to {
+  float toggle_rate_to = 55;
+  }
+  oneof _is_vs_coach {
+  bool is_vs_coach = 56;
+  }
+  oneof _random_order_seed {
+  string random_order_seed = 57;
+  }
+  oneof _is_favorite {
+  bool is_favorite = 58;
+  }
+  oneof _tournament_round {
+  uint32 tournament_round = 59;
+  }
+  repeated string opponent_ids = 6;
+  repeated .chesscom.game_storage.v2.PlayerTitle opponent_titles = 8;
+  repeated .chesscom.chess.v1.TimeClass time_classes = 22;
+  repeated .chesscom.game_storage.v2.GameResult game_results = 25;
+  repeated .chesscom.game_storage.v2.PlayerResult player_results = 26;
+  repeated .chesscom.game_storage.v2.PlayerResult opponent_player_results = 27;
+  repeated .chesscom.chess.v1.Variant variants = 37;
+  repeated .chesscom.game_gateway.v2.SortField sort_fields = 41;
+  repeated string game_ids = 46;
+  repeated uint32 tournament_ids = 48;
+  repeated uint32 arena_ids = 51;
+  repeated .chesscom.game_storage.v2.PlayerTitle player_titles = 60;
+}
+
+message CountGamesByCriteriaRequest {
+  optional .chesscom.game_gateway.v2.Criteria criteria = 1;
+}
+
+message CountGamesByCriteriaResponse {
+  optional uint64 count = 1;
+}
+
+message DeleteGameRequest {
+  optional string key = 1;
+}
+
+message DeleteGameResponse {
+}
+
+message HydrateGameByLegacyIdRequest {
+  optional uint64 legacy_id = 1;
+  repeated .chesscom.chess.v1.Variant variants = 2;
+  repeated .chesscom.chess.v1.TimeClass time_classes = 3;
+  optional .chesscom.game_storage.v2.GameProvider game_provider = 4;
+  optional bool is_vs_computer = 5;
+  optional .google.protobuf.FieldMask field_mask = 6;
+  optional bool is_vs_coach = 7;
+}
+
+message HydrateGameByLegacyIdResponse {
+  optional .chesscom.game_gateway.v2.HydratedGame hydrated_game = 1;
+}
+
+message OpeningCriteria {
+  oneof criteria {
+  uint32 eco_id = 1;
+  uint32 eco_family_id = 2;
+  string eco_code = 3;
+  }
+}
+
+message CountTournamentsByPlayerRequest {
+  optional string player_id = 1;
+}
+
+message CountTournamentsByPlayerResponse {
+  optional uint32 total = 1;
+}
+
+message PlayerOverviewAllStatsRequest {
+  oneof _days {
+  uint32 days = 2;
+  }
+  optional string player_id = 1;
+}
+
+message PlayerOverviewAllStatsResponse {
+  repeated .chesscom.game_gateway.v2.AllStatsEntry entries = 1;
+}
+
+message AllStatsEntry {
+  optional .chesscom.chess.v1.Variant variant = 1;
+  optional .chesscom.chess.v1.TimeClass time_class = 2;
+  optional uint32 rating = 3;
+  optional int32 rating_change = 4;
+  optional uint32 total_games = 5;
+}

@@ -1,0 +1,18 @@
+bundles/app/js/engine/stockfish-nnue-16-no-Worker.js                                            200 42981 application/javascript
+bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm                                          200 693497 application/wasm
+bundles/app/js/engine/stockfish-nnue-16-single.js                                               200 26003 application/javascript
+bundles/app/js/engine/stockfish-nnue-16-single.wasm                                             200 574106 application/wasm
+bundles/app/js/engine/stockfish-single.js                                                       200 2234930 application/javascript
+bundles/app/js/engine/stockfish-single.wasm                                                     200 1381822 application/wasm
+bundles/app/js/engine/stockfish-nnue-16-no-simd.js                                              200 40939 application/javascript
+bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm                                            200 697387 application/wasm
+bundles/app/js/engine/stockfish.asm.js                                                          200 4820790 application/javascript
+bundles/app/js/engine/book-small.json                                                           200 2140353 application/json
+bundles/app/js/vendor/explanation-engine/explanation-engine.js                                  200 108056 application/javascript
+bundles/app/js/vendor/explanation-engine/explanation-engine.wasm                                200 32922478 application/wasm
+r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.js               206 1 text/javascript; charset=utf-8
+r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm             206 1 application/wasm
+r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.js               206 1 text/javascript; charset=utf-8
+r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm             206 1 application/wasm
+r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.js               206 1 text/javascript; charset=utf-8
+r2/assets-chess-engine/explanation-engine/1.130.212/no-simd/explanation-engine.wasm             206 1 application/wasm

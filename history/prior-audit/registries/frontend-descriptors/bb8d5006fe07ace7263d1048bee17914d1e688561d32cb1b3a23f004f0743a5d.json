@@ -1,0 +1,98 @@
+{
+  "name": "chesscom/user_properties/v1/properties_audiences.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "AudiencesProperty",
+      "field": [
+        {
+          "name": "member_of",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "member_of_last_update",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "ephemeral_audiences_member_of",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "ephemeral_audiences_member_of_last_update",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1023,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.AudiencesPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_member_of_last_update"
+        },
+        {
+          "name": "_ephemeral_audiences_member_of_last_update"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "AudiencesPropertyDefinition",
+      "value": [
+        {
+          "name": "AUDIENCES_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "AUDIENCES_MEMBER_OF",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "AUDIENCES_MEMBER_OF_LAST_UPDATE",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "EPHEMERAL_AUDIENCES_MEMBER_OF",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "EPHEMERAL_AUDIENCES_MEMBER_OF_LAST_UPDATE",
+          "number": 4,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

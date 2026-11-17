@@ -1,0 +1,26 @@
+{
+  "name": "chesscom/game_gateway/v2/bughouse_game.proto",
+  "package": "chesscom.game_gateway.v2",
+  "message_type": [
+    {
+      "name": "BughouseGame",
+      "field": [
+        {
+          "name": "first_board",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.game_gateway.v2.ChessGame"
+        },
+        {
+          "name": "second_game_key",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,42 @@
+// source: chesscom/chess/v1/move.proto
+// syntax: proto3
+
+package chesscom.chess.v1;
+
+enum PromotionPieceType {
+  PROMOTION_PIECE_TYPE_UNSPECIFIED = 0;
+  PROMOTION_PIECE_TYPE_KNIGHT = 1;
+  PROMOTION_PIECE_TYPE_BISHOP = 2;
+  PROMOTION_PIECE_TYPE_ROOK = 3;
+  PROMOTION_PIECE_TYPE_QUEEN = 4;
+}
+
+message CastlingDetails {
+  optional .chesscom.chess.v1.Square king_from = 1;
+  optional .chesscom.chess.v1.Square king_to = 2;
+  optional .chesscom.chess.v1.Square rook_from = 3;
+  optional .chesscom.chess.v1.Square rook_to = 4;
+}
+
+message Move {
+  oneof _promotion_piece_type {
+  .chesscom.chess.v1.PromotionPieceType promotion_piece_type = 3;
+  }
+  oneof _time_taken_ms {
+  uint32 time_taken_ms = 4;
+  }
+  oneof _castling_details {
+  .chesscom.chess.v1.CastlingDetails castling_details = 5;
+  }
+  oneof _remaining_clock_ms {
+  uint32 remaining_clock_ms = 6;
+  }
+  oneof _drop_piece_type {
+  .chesscom.chess.v1.PieceType drop_piece_type = 7;
+  }
+  oneof _time_taken_duration {
+  .google.protobuf.Duration time_taken_duration = 8;
+  }
+  optional .chesscom.chess.v1.Square from = 1;
+  optional .chesscom.chess.v1.Square to = 2;
+}

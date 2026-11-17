@@ -1,0 +1,221 @@
+{
+  "name": "chesscom/user/v1/user_view.proto",
+  "package": "chesscom.user.v1",
+  "message_type": [
+    {
+      "name": "UserView",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64"
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user.v1.UserType"
+        },
+        {
+          "name": "username",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "first_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_name",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "chess_title",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "avatar",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user.v1.Avatar"
+        },
+        {
+          "name": "flair",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.FlairView",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "membership",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "country",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "timezone",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "created_at",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "updated_at",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_enabled",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_content_hidden",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_streamer",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "is_verified",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "content_language_includes_english",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "flair_code",
+          "number": 99,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_first_name"
+        },
+        {
+          "name": "_last_name"
+        },
+        {
+          "name": "_chess_title"
+        },
+        {
+          "name": "_flair"
+        },
+        {
+          "name": "_country"
+        },
+        {
+          "name": "_timezone"
+        },
+        {
+          "name": "_created_at"
+        },
+        {
+          "name": "_updated_at"
+        },
+        {
+          "name": "_is_enabled"
+        },
+        {
+          "name": "_is_content_hidden"
+        },
+        {
+          "name": "_is_verified"
+        },
+        {
+          "name": "_content_language_includes_english"
+        }
+      ]
+    },
+    {
+      "name": "Avatar",
+      "field": [
+        {
+          "name": "url",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "high_resolution_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

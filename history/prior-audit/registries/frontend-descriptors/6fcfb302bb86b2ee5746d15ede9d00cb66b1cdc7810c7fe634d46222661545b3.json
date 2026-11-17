@@ -1,0 +1,73 @@
+{
+  "name": "chesscom/ratings/v2/variant_time_class_rating.proto",
+  "package": "chesscom.ratings.v2",
+  "message_type": [
+    {
+      "name": "VariantTimeClassRating",
+      "field": [
+        {
+          "name": "variant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "time_class",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ratings.v2.Rating"
+        }
+      ]
+    },
+    {
+      "name": "VariantTimeClassRatingGroup",
+      "field": [
+        {
+          "name": "variant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant"
+        },
+        {
+          "name": "time_class_rating",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ratings.v2.TimeClassRating"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "TimeClassRating",
+      "field": [
+        {
+          "name": "time_class",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass"
+        },
+        {
+          "name": "rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.ratings.v2.Rating"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

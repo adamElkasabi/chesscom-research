@@ -1,0 +1,573 @@
+{
+  "name": "chesscom/settings/v1/settings_gameplay.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "GameplaySetting",
+      "field": [
+        {
+          "name": "confirm_resign",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "focus_mode",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "auto_analysis",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "allow_challenges_from",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "allow_game_chat_with",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "challenge_min_rating",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "challenge_max_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "seek_min_rating",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "seek_max_rating",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "seek_game_type",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_timestamps",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "friends_can_challenge_me_no_matter_what",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "play_streaks",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_membership_badges",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "live",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.GameplaySetting.GameplayLiveSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "daily",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.GameplaySetting.GameplayDailySetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "analysis",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.GameplaySetting.GameplayAnalysisSetting",
+          "oneof_index": 0
+        },
+        {
+          "name": "show_my_membership_badge",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "show_player_flair",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "seek_time_class",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "voice_move",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        },
+        {
+          "name": "auto_save_bot_games",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "options": {},
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "GameplayLiveSetting",
+          "field": [
+            {
+              "name": "premoves",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "auto_promote_queen",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "play_multiple_games",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "auto_switch_game",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "auto_watch_top_game",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "low_time_warning",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "engine_evaluation",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "evaluation_bar",
+              "number": 8,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "allow_offline_challenges",
+              "number": 9,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "allow_chat_requests_from",
+              "number": 10,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.String",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "challenge_alerts",
+              "number": 11,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.String",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "friends_alerts",
+              "number": 12,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.String",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "event_announcements",
+              "number": 13,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.String",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "right_button_arrows",
+              "number": 14,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_is_rated",
+              "number": 15,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_base_time_chess",
+              "number": 16,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_increment_chess",
+              "number": 17,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_base_time_variants",
+              "number": 18,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_increment_variants",
+              "number": 19,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_filter_hide_variants",
+              "number": 20,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_filter_premium_only",
+              "number": 21,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_filter_rated_only",
+              "number": 22,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "hide_ratings_during_the_game",
+              "number": 23,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_time_class",
+              "number": 24,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.String",
+              "options": {
+                "deprecated": true
+              },
+              "oneof_index": 0
+            },
+            {
+              "name": "confirm_move",
+              "number": 25,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        },
+        {
+          "name": "GameplayDailySetting",
+          "field": [
+            {
+              "name": "after_moving",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.String",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "confirm_move",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "auto_win_on_time",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "max_game_count",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "min_days_per_move",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "max_days_per_move",
+              "number": 6,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            },
+            {
+              "name": "seek_days_per_move",
+              "number": 7,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+              "options": {},
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        },
+        {
+          "name": "GameplayAnalysisSetting",
+          "field": [
+            {
+              "name": "evaluation_bar_mode",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.GameplaySetting.GameplayAnalysisSetting.EvaluationBarMode",
+              "oneof_index": 0
+            }
+          ],
+          "nested_type": [
+            {
+              "name": "EvaluationBarMode",
+              "field": [
+                {
+                  "name": "wdl_for_openings",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_MESSAGE",
+                  "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+                  "options": {},
+                  "oneof_index": 0
+                },
+                {
+                  "name": "tablebase_in_endgame",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_MESSAGE",
+                  "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+                  "options": {},
+                  "oneof_index": 0
+                }
+              ],
+              "oneof_decl": [
+                {
+                  "name": "value"
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

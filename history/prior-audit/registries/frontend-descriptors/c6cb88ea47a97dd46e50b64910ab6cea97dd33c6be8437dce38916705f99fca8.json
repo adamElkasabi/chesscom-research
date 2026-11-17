@@ -1,0 +1,37 @@
+{
+  "name": "chesscom/game_storage/v2/player_result.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "PlayerResult",
+      "value": [
+        {
+          "name": "PLAYER_RESULT_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAYER_RESULT_WIN",
+          "number": 1
+        },
+        {
+          "name": "PLAYER_RESULT_DRAW",
+          "number": 2
+        },
+        {
+          "name": "PLAYER_RESULT_LOSE",
+          "number": 3
+        },
+        {
+          "name": "PLAYER_RESULT_ABORT",
+          "number": 4
+        },
+        {
+          "name": "PLAYER_RESULT_BUGHOUSE_PARTNER_LOSE",
+          "number": 5
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

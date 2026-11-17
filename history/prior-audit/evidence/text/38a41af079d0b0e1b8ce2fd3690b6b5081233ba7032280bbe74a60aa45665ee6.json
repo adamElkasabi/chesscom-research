@@ -1,0 +1,6 @@
+{
+  "id": "uci-soft-nodes",
+  "uciAfter": {
+    "UseSoftNodes": true
+  }
+}

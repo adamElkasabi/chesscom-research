@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_expected_points.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message ExpectedPointsRequest {
+}
+
+message ExpectedPointsResponse {
+  optional double expected_points = 1;
+}

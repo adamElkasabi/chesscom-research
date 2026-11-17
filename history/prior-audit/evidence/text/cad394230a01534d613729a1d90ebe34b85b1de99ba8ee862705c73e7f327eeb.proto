@@ -1,0 +1,11 @@
+// source: chesscom/settings/v1/settings_watch.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message WatchSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean advanced_engine_settings = 1;
+  .chesscom.settings.v1.SettingValue.Boolean player_names_above_and_below = 2;
+  }
+}

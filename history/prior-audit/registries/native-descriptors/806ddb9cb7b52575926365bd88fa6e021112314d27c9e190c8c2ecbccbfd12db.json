@@ -1,0 +1,70 @@
+{
+  "name": "chesscom/explanation_engine/v1/punish_move.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/arrow.proto",
+    "chesscom/chess/v1/move.proto",
+    "chesscom/engine/v1/evaluation.proto",
+    "chesscom/explanation_engine/v1/speech.proto"
+  ],
+  "message_type": [
+    {
+      "name": "PunishMove",
+      "field": [
+        {
+          "name": "arrow",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Arrow",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "evaluation",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Evaluation"
+        },
+        {
+          "name": "speech",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.Speech"
+        },
+        {
+          "name": "show_moves",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "hide_moves",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "move",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_arrow"
+        },
+        {
+          "name": "_move"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

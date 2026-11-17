@@ -1,0 +1,11 @@
+// source: chesscom/courses/v1/variation_access_type.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum VariationAccessType {
+  VARIATION_ACCESS_TYPE_UNSPECIFIED = 0;
+  VARIATION_ACCESS_TYPE_PREVIEWABLE = 1;
+  VARIATION_ACCESS_TYPE_LOCKED = 2;
+  VARIATION_ACCESS_TYPE_FULL_ACCESS = 3;
+}

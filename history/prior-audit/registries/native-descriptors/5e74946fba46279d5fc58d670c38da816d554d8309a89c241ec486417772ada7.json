@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_legal_moves.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto"
+  ],
+  "message_type": [
+    {
+      "name": "LegalMovesRequest"
+    },
+    {
+      "name": "LegalMovesResponse",
+      "field": [
+        {
+          "name": "legal_moves",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

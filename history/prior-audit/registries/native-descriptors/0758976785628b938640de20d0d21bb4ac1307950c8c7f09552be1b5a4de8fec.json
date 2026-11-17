@@ -1,0 +1,39 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_edit_pgn_move_annotation.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "EditPgnMoveAnnotationRequest",
+      "field": [
+        {
+          "name": "comment",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "before_comment",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_comment"
+        },
+        {
+          "name": "_before_comment"
+        }
+      ]
+    },
+    {
+      "name": "EditPgnMoveAnnotationResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

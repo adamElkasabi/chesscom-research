@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/user/v1/user_type.proto",
+  "package": "chesscom.user.v1",
+  "enum_type": [
+    {
+      "name": "UserType",
+      "value": [
+        {
+          "name": "USER_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_TYPE_USER",
+          "number": 1
+        },
+        {
+          "name": "USER_TYPE_GUEST",
+          "number": 2
+        },
+        {
+          "name": "USER_TYPE_COMPUTER",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

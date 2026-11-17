@@ -1,0 +1,18 @@
+// source: chesscom/explanation_engine/v1/feature_get_fen.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetFenRequest {
+  oneof position_to_convert {
+  .chesscom.chess.v1.Position position = 1;
+  bytes compressed_position = 2;
+  }
+  oneof _fen_notation {
+  .chesscom.explanation_engine.v1.FenNotation fen_notation = 3;
+  }
+}
+
+message GetFenResponse {
+  optional string fen = 1;
+}

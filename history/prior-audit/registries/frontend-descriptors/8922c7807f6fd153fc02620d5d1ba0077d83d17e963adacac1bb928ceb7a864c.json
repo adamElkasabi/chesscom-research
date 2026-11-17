@@ -1,0 +1,41 @@
+{
+  "name": "chesscom/courses_common/v1/course_target_level.proto",
+  "package": "chesscom.courses_common.v1",
+  "enum_type": [
+    {
+      "name": "CourseTargetLevel",
+      "value": [
+        {
+          "name": "COURSE_TARGET_LEVEL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "COURSE_TARGET_LEVEL_NOVICE",
+          "number": 1
+        },
+        {
+          "name": "COURSE_TARGET_LEVEL_BEGINNER",
+          "number": 2
+        },
+        {
+          "name": "COURSE_TARGET_LEVEL_INTERMEDIATE",
+          "number": 3
+        },
+        {
+          "name": "COURSE_TARGET_LEVEL_ADVANCED",
+          "number": 4
+        },
+        {
+          "name": "COURSE_TARGET_LEVEL_MASTER",
+          "number": 5
+        },
+        {
+          "name": "COURSE_TARGET_LEVEL_EXPERT",
+          "number": 6
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

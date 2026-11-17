@@ -1,0 +1,47 @@
+{
+  "name": "chesscom/chess/v1/arrow.proto",
+  "package": "chesscom.chess.v1",
+  "message_type": [
+    {
+      "name": "Arrow",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ArrowsAndSquares",
+      "field": [
+        {
+          "name": "arrows",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Arrow"
+        },
+        {
+          "name": "squares",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

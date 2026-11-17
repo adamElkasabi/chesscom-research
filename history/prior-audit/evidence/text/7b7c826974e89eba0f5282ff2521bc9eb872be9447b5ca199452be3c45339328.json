@@ -1,0 +1,14 @@
+{
+  "id": "normalized-evaluate-normal",
+  "evaluateGame": {
+    "search": {
+      "case": "gameReviewSearchSettings",
+      "value": {
+        "strength": 1
+      }
+    }
+  },
+  "uciAfter": {
+    "Normalize": false
+  }
+}

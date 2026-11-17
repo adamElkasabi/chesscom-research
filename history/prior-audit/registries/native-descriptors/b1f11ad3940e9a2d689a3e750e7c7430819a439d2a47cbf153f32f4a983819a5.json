@@ -1,0 +1,68 @@
+{
+  "name": "chesscom/explanation_engine/v1/simple_threat.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/score.proto",
+    "chesscom/engine/v1/score.proto"
+  ],
+  "message_type": [
+    {
+      "name": "SimpleThreat",
+      "field": [
+        {
+          "name": "threat_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.explanation_engine.v1.ThreatType"
+        },
+        {
+          "name": "threatened_move",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "see_value",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Score"
+        },
+        {
+          "name": "score",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Score"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ThreatType",
+      "value": [
+        {
+          "name": "THREAT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "THREAT_TYPE_CHECK",
+          "number": 1
+        },
+        {
+          "name": "THREAT_TYPE_CAPTURE",
+          "number": 2
+        },
+        {
+          "name": "THREAT_TYPE_MATE",
+          "number": 3
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

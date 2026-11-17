@@ -1,0 +1,13 @@
+// source: chesscom/explanation_engine/v1/feature_make_moves.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message MakeMovesRequest {
+  repeated .chesscom.chess.v1.Move moves = 1;
+  optional bool is_played_line = 2;
+}
+
+message MakeMovesResponse {
+  repeated .chesscom.explanation_engine.v1.GamePointInfo line = 1;
+}

@@ -1,0 +1,72 @@
+{
+  "name": "chesscom/user_properties/v1/properties_clubs.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "ClubsProperty",
+      "field": [
+        {
+          "name": "clubs_joined",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "clubs_banned",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING",
+          "options": {}
+        },
+        {
+          "name": "clubs_joined_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {}
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1021,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.ClubsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ClubsPropertyDefinition",
+      "value": [
+        {
+          "name": "CLUBS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CLUBS_JOINED",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "CLUBS_BANNED",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "CLUBS_JOINED_COUNT",
+          "number": 3,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

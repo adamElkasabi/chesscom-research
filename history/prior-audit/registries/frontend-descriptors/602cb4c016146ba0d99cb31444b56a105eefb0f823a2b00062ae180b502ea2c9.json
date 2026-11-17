@@ -1,0 +1,45 @@
+{
+  "name": "chesscom/game_storage/v2/game_provider.proto",
+  "package": "chesscom.game_storage.v2",
+  "enum_type": [
+    {
+      "name": "GameProvider",
+      "value": [
+        {
+          "name": "GAME_PROVIDER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_PROVIDER_CHESS_COM",
+          "number": 1
+        },
+        {
+          "name": "GAME_PROVIDER_CHESS_KID",
+          "number": 2
+        },
+        {
+          "name": "GAME_PROVIDER_FIDE",
+          "number": 3
+        },
+        {
+          "name": "GAME_PROVIDER_LICHESS",
+          "number": 4
+        },
+        {
+          "name": "GAME_PROVIDER_CHESSBASE",
+          "number": 5
+        },
+        {
+          "name": "GAME_PROVIDER_OFFLINE",
+          "number": 6
+        },
+        {
+          "name": "GAME_PROVIDER_CHESS_COM_MASTER_GAMES",
+          "number": 7
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

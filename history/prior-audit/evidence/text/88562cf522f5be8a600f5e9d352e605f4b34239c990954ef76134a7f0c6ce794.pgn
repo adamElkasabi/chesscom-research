@@ -1,0 +1,22 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.11.10"]
+[Round "-"]
+[White "[PUBLIC_PLAYER_HANDLE_REDACTED]"]
+[Black "[PUBLIC_PLAYER_HANDLE_REDACTED]"]
+[Result "0-1"]
+[Timezone "UTC"]
+[ECO "D00"]
+[UTCDate "2026.11.10"]
+[UTCTime "18:58:21"]
+[WhiteElo "100"]
+[BlackElo "333"]
+[TimeControl "600"]
+[Termination "[PUBLIC_PLAYER_HANDLE_REDACTED] won by checkmate"]
+[StartTime "18:58:21"]
+[EndDate "2026.11.10"]
+[EndTime "18:59:55"]
+[Link "https://www.chess.com/analysis/game/live/186934806892/review?move=0"]
+
+1. d4 d5 2. e4 dxe4 3. Be2 Nf6 4. Qd3 exd3 5. cxd3 Nc6 6. Bh5 Nxd4 7. Bd2 Nc2+
+8. Kf1 Nxa1 9. Bc1 Qxd3+ 10. Ke1 Nc2# 0-1

@@ -1,0 +1,410 @@
+{
+  "name": "chesscom/settings/v1/settings_metadata.proto",
+  "package": "chesscom.settings.v1",
+  "message_type": [
+    {
+      "name": "SettingMetadata",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "description",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.settings.v1.SettingMetadata.Type"
+        },
+        {
+          "name": "default_value",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue"
+        },
+        {
+          "name": "allowed_values",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue"
+        },
+        {
+          "name": "validators",
+          "number": 7,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingMetadata.Validator"
+        },
+        {
+          "name": "allow_null_values",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "Validator",
+          "field": [
+            {
+              "name": "range",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingMetadata.Validator.RangeValidator",
+              "oneof_index": 0
+            },
+            {
+              "name": "not_blank",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingMetadata.Validator.NotBlankValidator",
+              "oneof_index": 0
+            },
+            {
+              "name": "length",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingMetadata.Validator.LengthValidator",
+              "oneof_index": 0
+            },
+            {
+              "name": "regex",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.settings.v1.SettingMetadata.Validator.RegexValidator",
+              "oneof_index": 0
+            }
+          ],
+          "nested_type": [
+            {
+              "name": "RangeValidator",
+              "field": [
+                {
+                  "name": "min",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_INT32",
+                  "oneof_index": 0,
+                  "proto3_optional": true
+                },
+                {
+                  "name": "max",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_INT32",
+                  "oneof_index": 1,
+                  "proto3_optional": true
+                }
+              ],
+              "oneof_decl": [
+                {
+                  "name": "_min"
+                },
+                {
+                  "name": "_max"
+                }
+              ]
+            },
+            {
+              "name": "NotBlankValidator"
+            },
+            {
+              "name": "LengthValidator",
+              "field": [
+                {
+                  "name": "min",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_INT32",
+                  "oneof_index": 0,
+                  "proto3_optional": true
+                },
+                {
+                  "name": "max",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_INT32",
+                  "oneof_index": 1,
+                  "proto3_optional": true
+                }
+              ],
+              "oneof_decl": [
+                {
+                  "name": "_min"
+                },
+                {
+                  "name": "_max"
+                }
+              ]
+            },
+            {
+              "name": "RegexValidator",
+              "field": [
+                {
+                  "name": "pattern",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_STRING"
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "value"
+            }
+          ]
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Type",
+          "value": [
+            {
+              "name": "TYPE_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "TYPE_BOOLEAN",
+              "number": 1
+            },
+            {
+              "name": "TYPE_STRING",
+              "number": 2
+            },
+            {
+              "name": "TYPE_INTEGER",
+              "number": 3
+            },
+            {
+              "name": "TYPE_LONG",
+              "number": 4
+            },
+            {
+              "name": "TYPE_DOUBLE",
+              "number": 5
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_allow_null_values"
+        }
+      ]
+    },
+    {
+      "name": "SettingValue",
+      "field": [
+        {
+          "name": "boolean",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Boolean",
+          "oneof_index": 0
+        },
+        {
+          "name": "string",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.String",
+          "oneof_index": 0
+        },
+        {
+          "name": "integer",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Integer",
+          "oneof_index": 0
+        },
+        {
+          "name": "long",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Long",
+          "oneof_index": 0
+        },
+        {
+          "name": "double",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.settings.v1.SettingValue.Double",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "Boolean",
+          "field": [
+            {
+              "name": "value",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_BOOL",
+              "oneof_index": 0
+            },
+            {
+              "name": "null",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Empty",
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "wrapped_value"
+            }
+          ]
+        },
+        {
+          "name": "String",
+          "field": [
+            {
+              "name": "value",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING",
+              "oneof_index": 0
+            },
+            {
+              "name": "null",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Empty",
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "wrapped_value"
+            }
+          ]
+        },
+        {
+          "name": "Integer",
+          "field": [
+            {
+              "name": "value",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32",
+              "oneof_index": 0
+            },
+            {
+              "name": "null",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Empty",
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "wrapped_value"
+            }
+          ]
+        },
+        {
+          "name": "Long",
+          "field": [
+            {
+              "name": "value",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT64",
+              "oneof_index": 0
+            },
+            {
+              "name": "null",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Empty",
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "wrapped_value"
+            }
+          ]
+        },
+        {
+          "name": "Double",
+          "field": [
+            {
+              "name": "value",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_DOUBLE",
+              "oneof_index": 0
+            },
+            {
+              "name": "null",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Empty",
+              "oneof_index": 0
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "wrapped_value"
+            }
+          ]
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "value"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "setting_metadata",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 1100,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.settings.v1.SettingMetadata",
+      "json_name": "settingMetadata"
+    }
+  ],
+  "syntax": "proto3"
+}

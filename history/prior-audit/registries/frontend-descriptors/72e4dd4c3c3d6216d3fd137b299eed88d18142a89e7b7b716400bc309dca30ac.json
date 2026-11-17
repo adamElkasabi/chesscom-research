@@ -1,0 +1,129 @@
+{
+  "name": "chesscom/flair/v1/flair_admin_service.proto",
+  "package": "chesscom.flair.v1",
+  "message_type": [
+    {
+      "name": "ListFlairRequest"
+    },
+    {
+      "name": "ListFlairResponse",
+      "field": [
+        {
+          "name": "flair",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.Flair"
+        }
+      ]
+    },
+    {
+      "name": "ListFlairByIdsRequest",
+      "field": [
+        {
+          "name": "flair_ids",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ListFlairByIdsResponse",
+      "field": [
+        {
+          "name": "flair",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.Flair"
+        }
+      ]
+    },
+    {
+      "name": "ListFlairByNamePrefixRequest",
+      "field": [
+        {
+          "name": "name_prefix",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ListFlairByNamePrefixResponse",
+      "field": [
+        {
+          "name": "flair",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.flair.v1.Flair"
+        }
+      ]
+    },
+    {
+      "name": "SetUserFlairRequest",
+      "field": [
+        {
+          "name": "user_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "flair_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "SetUserFlairResponse",
+      "options": {
+        "deprecated": true
+      }
+    }
+  ],
+  "service": [
+    {
+      "name": "FlairAdminService",
+      "method": [
+        {
+          "name": "ListFlair",
+          "input_type": ".chesscom.flair.v1.ListFlairRequest",
+          "output_type": ".chesscom.flair.v1.ListFlairResponse",
+          "options": {}
+        },
+        {
+          "name": "ListFlairByIds",
+          "input_type": ".chesscom.flair.v1.ListFlairByIdsRequest",
+          "output_type": ".chesscom.flair.v1.ListFlairByIdsResponse",
+          "options": {}
+        },
+        {
+          "name": "ListFlairByNamePrefix",
+          "input_type": ".chesscom.flair.v1.ListFlairByNamePrefixRequest",
+          "output_type": ".chesscom.flair.v1.ListFlairByNamePrefixResponse",
+          "options": {}
+        },
+        {
+          "name": "SetUserFlair",
+          "input_type": ".chesscom.flair.v1.SetUserFlairRequest",
+          "output_type": ".chesscom.flair.v1.SetUserFlairResponse",
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

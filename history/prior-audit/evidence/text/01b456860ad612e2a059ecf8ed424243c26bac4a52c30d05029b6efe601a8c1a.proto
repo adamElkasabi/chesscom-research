@@ -1,0 +1,15 @@
+// source: chesscom/settings/v1/settings_toaster_center.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message ToasterCenterSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean show_club_request_toasters = 1;
+  .chesscom.settings.v1.SettingValue.Boolean show_friend_request_toasters = 2;
+  .chesscom.settings.v1.SettingValue.Boolean automatically_expand_toasters = 3;
+  .chesscom.settings.v1.SettingValue.Boolean show_tournament_reminder_toasters = 4;
+  .chesscom.settings.v1.SettingValue.Boolean show_move_made_toasters = 5;
+  .chesscom.settings.v1.SettingValue.Boolean show_toasters = 6;
+  }
+}

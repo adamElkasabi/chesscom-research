@@ -1,0 +1,69 @@
+{
+  "name": "chesscom/courses_common/v1/course_review_author.proto",
+  "package": "chesscom.courses_common.v1",
+  "message_type": [
+    {
+      "name": "CourseReviewAuthor",
+      "field": [
+        {
+          "name": "source",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.UserSource"
+        },
+        {
+          "name": "display_name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "avatar",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.courses_common.v1.Picture"
+        }
+      ]
+    },
+    {
+      "name": "UserSource",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.courses_common.v1.UserSourceType"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserSourceType",
+      "value": [
+        {
+          "name": "USER_SOURCE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "USER_SOURCE_TYPE_CHESSCOM",
+          "number": 1
+        },
+        {
+          "name": "USER_SOURCE_TYPE_CHESSABLE",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

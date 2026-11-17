@@ -1,0 +1,869 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/board_event_profile.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/piece_details.proto",
+    "chesscom/explanation_engine/v1alpha/location_fan.proto",
+    "chesscom/explanation_engine/v1alpha/piece_set.proto"
+  ],
+  "message_type": [
+    {
+      "name": "BoardEventProfile",
+      "field": [
+        {
+          "name": "piece_in_focus",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "classification",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.Classification",
+          "oneof_index": 0
+        },
+        {
+          "name": "won_sequence",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.WonSequence",
+          "oneof_index": 0
+        },
+        {
+          "name": "marked_square",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.MarkedSquare",
+          "oneof_index": 0
+        },
+        {
+          "name": "location_set",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.LocationSet",
+          "oneof_index": 0
+        },
+        {
+          "name": "piece_group",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet",
+          "oneof_index": 0
+        },
+        {
+          "name": "directed_relation",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.DirectedRelation",
+          "oneof_index": 0
+        },
+        {
+          "name": "played_move",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.PlayedMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "special_move",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.SpecialMove",
+          "oneof_index": 0
+        },
+        {
+          "name": "target_fan",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.TargetFan",
+          "oneof_index": 0
+        },
+        {
+          "name": "converging_fan",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.ConvergingFan",
+          "oneof_index": 0
+        },
+        {
+          "name": "range_list",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.RangeList",
+          "oneof_index": 0
+        },
+        {
+          "name": "xray_attack",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.XRayAttack",
+          "oneof_index": 0
+        },
+        {
+          "name": "pin_exploitation",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.PinExploitation",
+          "oneof_index": 0
+        },
+        {
+          "name": "king_pair",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.KingPair",
+          "oneof_index": 0
+        },
+        {
+          "name": "rook_line",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.RookLine",
+          "oneof_index": 0
+        },
+        {
+          "name": "fixed_geometry",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.FixedGeometry",
+          "oneof_index": 0
+        },
+        {
+          "name": "defense_triangle",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.DefenseTriangle",
+          "oneof_index": 0
+        },
+        {
+          "name": "range_with_pieces",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.RangeWithPieces",
+          "oneof_index": 0
+        },
+        {
+          "name": "location_fan",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.LocationFan",
+          "oneof_index": 0
+        },
+        {
+          "name": "range_with_locations",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.RangeWithLocations",
+          "oneof_index": 0
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "SquareRange",
+          "field": [
+            {
+              "name": "from",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square"
+            },
+            {
+              "name": "to",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square"
+            }
+          ]
+        },
+        {
+          "name": "Classification"
+        },
+        {
+          "name": "WonSequence",
+          "field": [
+            {
+              "name": "game_point_ids",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "winner",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Color"
+            },
+            {
+              "name": "mate",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.WonSequence.MateOutcome",
+              "oneof_index": 0
+            },
+            {
+              "name": "material_gain",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.WonSequence.MaterialGainOutcome",
+              "oneof_index": 0
+            }
+          ],
+          "nested_type": [
+            {
+              "name": "MateOutcome"
+            },
+            {
+              "name": "MaterialGainOutcome",
+              "field": [
+                {
+                  "name": "gain_cp",
+                  "number": 1,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_INT32"
+                },
+                {
+                  "name": "won_piece",
+                  "number": 2,
+                  "label": "LABEL_OPTIONAL",
+                  "type": "TYPE_MESSAGE",
+                  "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.CapturedPiece",
+                  "oneof_index": 0,
+                  "proto3_optional": true
+                }
+              ],
+              "oneof_decl": [
+                {
+                  "name": "_won_piece"
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "outcome"
+            }
+          ]
+        },
+        {
+          "name": "CapturedPiece",
+          "field": [
+            {
+              "name": "game_point_id",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "piece",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            }
+          ]
+        },
+        {
+          "name": "MarkedSquare",
+          "field": [
+            {
+              "name": "square",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square"
+            }
+          ]
+        },
+        {
+          "name": "LocationSet",
+          "field": [
+            {
+              "name": "squares",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square"
+            }
+          ]
+        },
+        {
+          "name": "DirectedRelation",
+          "field": [
+            {
+              "name": "origin_piece",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails",
+              "oneof_index": 0
+            },
+            {
+              "name": "origin_square",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square",
+              "oneof_index": 0
+            },
+            {
+              "name": "target_piece",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails",
+              "oneof_index": 1
+            },
+            {
+              "name": "target_square",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square",
+              "oneof_index": 1
+            },
+            {
+              "name": "relation",
+              "number": 5,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.DirectedRelation.Relation"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Relation",
+              "value": [
+                {
+                  "name": "RELATION_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "RELATION_ATTACK",
+                  "number": 1
+                },
+                {
+                  "name": "RELATION_SACRIFICE",
+                  "number": 2
+                },
+                {
+                  "name": "RELATION_DISCOVERY",
+                  "number": 3
+                },
+                {
+                  "name": "RELATION_CHECK",
+                  "number": 4
+                },
+                {
+                  "name": "RELATION_DEFENSE",
+                  "number": 5
+                },
+                {
+                  "name": "RELATION_DEFENDER_REMOVAL",
+                  "number": 6
+                },
+                {
+                  "name": "RELATION_KING_ESCAPE",
+                  "number": 7
+                },
+                {
+                  "name": "RELATION_PIN_BREAK",
+                  "number": 8
+                },
+                {
+                  "name": "RELATION_DEVELOPMENT",
+                  "number": 9
+                },
+                {
+                  "name": "RELATION_BLOCKED_ADVANCE",
+                  "number": 10
+                },
+                {
+                  "name": "RELATION_PROMOTION_RUN",
+                  "number": 11
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "origin"
+            },
+            {
+              "name": "target"
+            }
+          ]
+        },
+        {
+          "name": "PlayedMove",
+          "field": [
+            {
+              "name": "move",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.chess.v1.Move"
+            }
+          ]
+        },
+        {
+          "name": "SpecialMove",
+          "field": [
+            {
+              "name": "move",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.chess.v1.Move",
+              "oneof_index": 0,
+              "proto3_optional": true
+            },
+            {
+              "name": "role",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.SpecialMove.Role"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Role",
+              "value": [
+                {
+                  "name": "ROLE_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "ROLE_MATING_MOVE",
+                  "number": 1
+                },
+                {
+                  "name": "ROLE_THREAT",
+                  "number": 2
+                },
+                {
+                  "name": "ROLE_REPLY",
+                  "number": 3
+                },
+                {
+                  "name": "ROLE_CONTINUATION",
+                  "number": 4
+                },
+                {
+                  "name": "ROLE_ALTERNATIVE",
+                  "number": 5
+                },
+                {
+                  "name": "ROLE_REFUTATION",
+                  "number": 6
+                },
+                {
+                  "name": "ROLE_PAWN_STORM_ADVANCE",
+                  "number": 7
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "_move"
+            }
+          ]
+        },
+        {
+          "name": "TargetFan",
+          "field": [
+            {
+              "name": "source",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            },
+            {
+              "name": "targets",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+            }
+          ]
+        },
+        {
+          "name": "ConvergingFan",
+          "field": [
+            {
+              "name": "target_piece",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails",
+              "oneof_index": 0
+            },
+            {
+              "name": "target_square",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square",
+              "oneof_index": 0
+            },
+            {
+              "name": "sources",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+            },
+            {
+              "name": "role",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.ConvergingFan.Role"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Role",
+              "value": [
+                {
+                  "name": "ROLE_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "ROLE_ATTACKERS",
+                  "number": 1
+                },
+                {
+                  "name": "ROLE_DEFENDERS",
+                  "number": 2
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "target"
+            }
+          ]
+        },
+        {
+          "name": "RangeList",
+          "field": [
+            {
+              "name": "ranges",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.SquareRange"
+            }
+          ]
+        },
+        {
+          "name": "XRayAttack",
+          "field": [
+            {
+              "name": "attacker",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            },
+            {
+              "name": "front",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            },
+            {
+              "name": "behind",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            }
+          ]
+        },
+        {
+          "name": "PinExploitation",
+          "field": [
+            {
+              "name": "xray",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.XRayAttack"
+            },
+            {
+              "name": "exploited_piece",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails",
+              "oneof_index": 0
+            },
+            {
+              "name": "exploited_square",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square",
+              "oneof_index": 0
+            },
+            {
+              "name": "direction",
+              "number": 4,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.PinExploitation.Direction"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Direction",
+              "value": [
+                {
+                  "name": "DIRECTION_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "DIRECTION_FROM_PINNED",
+                  "number": 1
+                },
+                {
+                  "name": "DIRECTION_AGAINST_PINNED",
+                  "number": 2
+                },
+                {
+                  "name": "DIRECTION_DEFENDS_PIN_TARGET",
+                  "number": 3
+                }
+              ]
+            }
+          ],
+          "oneof_decl": [
+            {
+              "name": "exploited"
+            }
+          ]
+        },
+        {
+          "name": "KingPair",
+          "field": [
+            {
+              "name": "our_king",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            },
+            {
+              "name": "their_king",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            }
+          ]
+        },
+        {
+          "name": "RookLine",
+          "field": [
+            {
+              "name": "rooks",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+            },
+            {
+              "name": "layout",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.RookLine.Layout"
+            },
+            {
+              "name": "blockers",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Layout",
+              "value": [
+                {
+                  "name": "LAYOUT_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "LAYOUT_SINGLE_TO_FILE_ENDS",
+                  "number": 1
+                },
+                {
+                  "name": "LAYOUT_DOUBLED_TO_FILE_ENDS",
+                  "number": 2
+                },
+                {
+                  "name": "LAYOUT_LINKED",
+                  "number": 3
+                },
+                {
+                  "name": "LAYOUT_RANK_SWEEP",
+                  "number": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FixedGeometry",
+          "field": [
+            {
+              "name": "waypoints",
+              "number": 1,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square"
+            },
+            {
+              "name": "shape",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.FixedGeometry.Shape"
+            }
+          ],
+          "enum_type": [
+            {
+              "name": "Shape",
+              "value": [
+                {
+                  "name": "SHAPE_UNSPECIFIED",
+                  "number": 0
+                },
+                {
+                  "name": "SHAPE_PATH",
+                  "number": 1
+                },
+                {
+                  "name": "SHAPE_LOOP",
+                  "number": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DefenseTriangle",
+          "field": [
+            {
+              "name": "defended",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            },
+            {
+              "name": "defender",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            },
+            {
+              "name": "attacker",
+              "number": 3,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+            }
+          ]
+        },
+        {
+          "name": "RangeWithPieces",
+          "field": [
+            {
+              "name": "range",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.SquareRange"
+            },
+            {
+              "name": "pieces",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.PieceSet"
+            }
+          ]
+        },
+        {
+          "name": "RangeWithLocations",
+          "field": [
+            {
+              "name": "range",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.explanation_engine.v1alpha.BoardEventProfile.SquareRange"
+            },
+            {
+              "name": "locations",
+              "number": 2,
+              "label": "LABEL_REPEATED",
+              "type": "TYPE_ENUM",
+              "type_name": ".chesscom.chess.v1.Square"
+            }
+          ]
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "profile"
+        },
+        {
+          "name": "_piece_in_focus"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

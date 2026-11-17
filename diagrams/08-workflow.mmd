@@ -1,0 +1,12 @@
+sequenceDiagram
+ participant UI as Native page review UI
+ participant Hook as Main-world WebSocket hook
+ participant SW as Bridge/service worker/offscreen
+ participant C as CeeClient and worker
+ UI->>Hook: intercepted game-review binary request
+ Hook->>SW: session-routed base64 payload
+ SW->>C: local native review
+ C-->>SW: actual CEE protobuf and metadata
+ SW-->>Hook: CEAC-compatible response frames
+ Hook-->>UI: native page decode and rendering
+ Note over SW: Timing estimate is presentation only

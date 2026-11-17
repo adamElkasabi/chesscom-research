@@ -1,0 +1,56 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/play_style.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "PlayStyle",
+      "value": [
+        {
+          "name": "PLAY_STYLE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLAY_STYLE_DEFAULT",
+          "number": 1
+        },
+        {
+          "name": "PLAY_STYLE_BEGINNER",
+          "number": 2
+        },
+        {
+          "name": "PLAY_STYLE_ACTIVE",
+          "number": 3
+        },
+        {
+          "name": "PLAY_STYLE_AGGRESSIVE",
+          "number": 4
+        },
+        {
+          "name": "PLAY_STYLE_POSITIONAL",
+          "number": 5
+        },
+        {
+          "name": "PLAY_STYLE_DEFENSIVE",
+          "number": 6
+        },
+        {
+          "name": "PLAY_STYLE_ENDGAME",
+          "number": 7
+        },
+        {
+          "name": "PLAY_STYLE_HUMAN",
+          "number": 8
+        },
+        {
+          "name": "PLAY_STYLE_HIKARU",
+          "number": 9
+        },
+        {
+          "name": "PLAY_STYLE_DANNY",
+          "number": 10
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

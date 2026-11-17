@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/api/v1/platform.proto",
+  "package": "chesscom.api.v1",
+  "enum_type": [
+    {
+      "name": "Platform",
+      "value": [
+        {
+          "name": "PLATFORM_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PLATFORM_IOS",
+          "number": 1
+        },
+        {
+          "name": "PLATFORM_ANDROID",
+          "number": 2
+        },
+        {
+          "name": "PLATFORM_WEB",
+          "number": 3
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,107 @@
+// source: chesscom/user_properties/v1/properties_settings_live_chess.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum SettingsLiveChessPropertyDefinition {
+  LIVE_CHESS_SETTINGS_PROPERTY_UNSPECIFIED = 0;
+  AUTO_QUEEN = 1;
+  PLAY_MULTIPLE_GAMES = 2;
+  SEEK_INCREMENT = 3;
+  SEEK_RATED = 4;
+  SEEK_FILTER_PREMIUM_ONLY = 5;
+  PREMOVE_ENABLED = 6;
+  SEEK_FILTER_RATED_ONLY = 7;
+  ALLOW_CHAT_REQUEST_FROM = 8;
+  AUTO_TOP = 9;
+  FOCUS_MODE_ENABLED = 10;
+  ALLOW_CHALLENGES_FROM = 11;
+  SEEK_BASE_TIME = 12;
+  SEEK_MIN_RATING = 13;
+  SEEK_MAX_RATING = 14;
+  CHALLENGE_POPUP_ALERT = 15;
+  FRIEND_POPUP_ALERT = 16;
+  EVENT_ANNOUNCEMENT = 17;
+  CHALLENGE_MIN_RATING = 18;
+  CHALLENGE_MAX_RATING = 19;
+  SEEK_BASE_TIME_VARIANTS = 20;
+  SEEK_INCREMENT_VARIANTS = 21;
+  SEEK_BASE_TIME_CHESS = 22;
+  SEEK_INCREMENT_CHESS = 23;
+  ALLOW_GAME_CHAT = 24;
+}
+
+message SettingsLiveChessProperty {
+  oneof _auto_queen {
+  bool auto_queen = 1;
+  }
+  oneof _play_multiple_games {
+  bool play_multiple_games = 2;
+  }
+  oneof _seek_increment {
+  int32 seek_increment = 3;
+  }
+  oneof _seek_rated {
+  bool seek_rated = 4;
+  }
+  oneof _seek_filter_premium_only {
+  bool seek_filter_premium_only = 5;
+  }
+  oneof _premove_enabled {
+  bool premove_enabled = 6;
+  }
+  oneof _seek_filter_rated_only {
+  bool seek_filter_rated_only = 7;
+  }
+  oneof _allow_chat_request_from {
+  int32 allow_chat_request_from = 8;
+  }
+  oneof _auto_top {
+  bool auto_top = 9;
+  }
+  oneof _focus_mode_enabled {
+  bool focus_mode_enabled = 10;
+  }
+  oneof _allow_challenges_from {
+  int32 allow_challenges_from = 11;
+  }
+  oneof _seek_base_time {
+  int32 seek_base_time = 12;
+  }
+  oneof _seek_min_rating {
+  int32 seek_min_rating = 13;
+  }
+  oneof _seek_max_rating {
+  int32 seek_max_rating = 14;
+  }
+  oneof _challenge_popup_alert {
+  int32 challenge_popup_alert = 15;
+  }
+  oneof _friend_popup_alert {
+  int32 friend_popup_alert = 16;
+  }
+  oneof _event_announcement {
+  int32 event_announcement = 17;
+  }
+  oneof _challenge_min_rating {
+  int32 challenge_min_rating = 18;
+  }
+  oneof _challenge_max_rating {
+  int32 challenge_max_rating = 19;
+  }
+  oneof _seek_base_time_variants {
+  int32 seek_base_time_variants = 20;
+  }
+  oneof _seek_increment_variants {
+  int32 seek_increment_variants = 21;
+  }
+  oneof _seek_base_time_chess {
+  int32 seek_base_time_chess = 22;
+  }
+  oneof _seek_increment_chess {
+  int32 seek_increment_chess = 23;
+  }
+  oneof _allow_game_chat {
+  int32 allow_game_chat = 24;
+  }
+}

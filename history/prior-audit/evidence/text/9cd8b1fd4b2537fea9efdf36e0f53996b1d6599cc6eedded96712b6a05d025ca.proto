@@ -1,0 +1,30 @@
+// source: chesscom/explanation_engine/v1/feature_move_classification.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message MoveClassificationRequest {
+  optional bool stream_results = 1;
+  optional bool enable_pv_classifications = 2;
+}
+
+message MoveClassificationResponse {
+  oneof _alternative {
+  .chesscom.explanation_engine.v1.AltMoveClassification alternative = 2;
+  }
+  oneof _pv_classifications {
+  .chesscom.explanation_engine.v1.PvClassifications pv_classifications = 4;
+  }
+  optional .chesscom.explanation_engine.v1.EvalClassification active = 1;
+  optional float progress = 3;
+}
+
+message PvClassifications {
+  repeated .chesscom.explanation_engine.v1.EvalClassification classifications = 1;
+}
+
+message AltMoveClassification {
+  optional .chesscom.explanation_engine.v1.EvalClassification classification = 2;
+  optional .chesscom.chess.v1.Move move = 3;
+  optional float progress = 4;
+}

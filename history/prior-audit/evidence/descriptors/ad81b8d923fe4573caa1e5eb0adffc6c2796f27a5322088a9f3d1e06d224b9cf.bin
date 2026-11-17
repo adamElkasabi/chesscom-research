@@ -1,0 +1,6 @@
+
+Ichesscom/explanation_engine/v1alpha/internal_feature_key_game_state.proto#chesscom.explanation_engine.v1alpha4chesscom/explanation_engine/v1/game_state_spec.proto"l
+"InternalFeatureKeyGameStateRequestF
+game_state_spec (2-.chesscom.explanation_engine.v1.GameStateSpec"=
+#InternalFeatureKeyGameStateResponse
+game_state_key (	bproto3

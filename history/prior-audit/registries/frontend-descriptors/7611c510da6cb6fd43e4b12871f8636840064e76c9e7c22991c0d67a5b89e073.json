@@ -1,0 +1,164 @@
+{
+  "name": "chesscom/chess/v1/move.proto",
+  "package": "chesscom.chess.v1",
+  "message_type": [
+    {
+      "name": "CastlingDetails",
+      "field": [
+        {
+          "name": "king_from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "king_to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "rook_from",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "rook_to",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Move",
+      "field": [
+        {
+          "name": "from",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "to",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "promotion_piece_type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PromotionPieceType",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_taken_ms",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "castling_details",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.CastlingDetails",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "remaining_clock_ms",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "drop_piece_type",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PieceType",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_taken_duration",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Duration",
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_promotion_piece_type"
+        },
+        {
+          "name": "_time_taken_ms"
+        },
+        {
+          "name": "_castling_details"
+        },
+        {
+          "name": "_remaining_clock_ms"
+        },
+        {
+          "name": "_drop_piece_type"
+        },
+        {
+          "name": "_time_taken_duration"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PromotionPieceType",
+      "value": [
+        {
+          "name": "PROMOTION_PIECE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PROMOTION_PIECE_TYPE_KNIGHT",
+          "number": 1
+        },
+        {
+          "name": "PROMOTION_PIECE_TYPE_BISHOP",
+          "number": 2
+        },
+        {
+          "name": "PROMOTION_PIECE_TYPE_ROOK",
+          "number": 3
+        },
+        {
+          "name": "PROMOTION_PIECE_TYPE_QUEEN",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

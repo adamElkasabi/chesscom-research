@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": "normalized-evaluate-normal",
+    "evaluateGame": {
+      "search": {
+        "case": "gameReviewSearchSettings",
+        "value": {
+          "strength": 1
+        }
+      }
+    },
+    "uciAfter": {
+      "Normalize": false
+    }
+  },
+  "started": "2026-11-14T19:08:23.407Z",
+  "error": "Error: RuntimeError: Aborted(). Build with -sASSERTIONS for more info.\n    at globalThis.postMessage (file:///home/user/research/refinement/trial.mjs:24:53)\n    at Object.onmessage (file:///home/user/research/refinement/trial.mjs:34:19)\n    at Object.log (/home/user/extension/engines/cee/explanation-engine.js:1:128216)\n    at /home/user/extension/engines/cee/explanation-engine.js:1:128777",
+  "warnings": []
+}

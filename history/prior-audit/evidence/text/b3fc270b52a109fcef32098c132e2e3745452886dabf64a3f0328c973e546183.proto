@@ -1,0 +1,16 @@
+// source: chesscom/user_gateway/v1/user_gateway.proto
+// syntax: proto3
+
+package chesscom.user_gateway.v1;
+
+message GatewayUserView {
+  oneof _user_properties {
+  .chesscom.user_properties.v1.PropertiesByUser user_properties = 2;
+  }
+  oneof _presence {
+  .chesscom.presence.v1.UserPresence presence = 3;
+  }
+  optional .chesscom.user.v1.UserView user = 1;
+  repeated .chesscom.ratings.v2.VariantTimeClassRatingGroup ratings = 4;
+  repeated .chesscom.user_relationships.v2.ListableUserRelationship relationships = 5;
+}

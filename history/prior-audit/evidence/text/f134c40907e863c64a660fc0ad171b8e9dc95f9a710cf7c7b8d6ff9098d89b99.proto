@@ -1,0 +1,10 @@
+// source: chesscom/train/v1/train_opening_mistake_challenge.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+message TrainOpeningMistakeChallenge {
+  optional int32 eco_family_id = 1;
+  optional .chesscom.train.v1.TrainOpeningTheme theme = 2;
+  optional .chesscom.chess.v1.Move correct_move = 3;
+}

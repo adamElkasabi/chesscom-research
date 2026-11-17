@@ -1,0 +1,6 @@
+
+#chesscom/engine/v1/evaluation.protochesscom.engine.v1chesscom/chess/v1/move.protochesscom/engine/v1/score.proto"b
+
+Evaluation(
+score (2.chesscom.engine.v1.Score*
+	variation (2.chesscom.chess.v1.Movebproto3

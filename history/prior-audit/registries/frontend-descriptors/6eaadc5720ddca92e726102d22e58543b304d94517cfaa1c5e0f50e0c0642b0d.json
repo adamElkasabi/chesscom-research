@@ -1,0 +1,123 @@
+{
+  "name": "chesscom/user_properties/v1/properties_league.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "LeagueProperty",
+      "field": [
+        {
+          "name": "league_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "league_image_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "league_is_in_the_promotion_zone",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "promotion_league_name",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "promotion_league_image_url",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "leagues_definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1041,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.LeaguePropertyDefinition",
+          "json_name": "leaguesDefinition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_league_name"
+        },
+        {
+          "name": "_league_image_url"
+        },
+        {
+          "name": "_league_is_in_the_promotion_zone"
+        },
+        {
+          "name": "_promotion_league_name"
+        },
+        {
+          "name": "_promotion_league_image_url"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "LeaguePropertyDefinition",
+      "value": [
+        {
+          "name": "LEAGUE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "LEAGUE_NAME",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "LEAGUE_IMAGE_URL",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "LEAGUE_IS_IN_THE_PROMOTION_ZONE",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "PROMOTION_LEAGUE_NAME",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "PROMOTION_LEAGUE_IMAGE_URL",
+          "number": 5,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

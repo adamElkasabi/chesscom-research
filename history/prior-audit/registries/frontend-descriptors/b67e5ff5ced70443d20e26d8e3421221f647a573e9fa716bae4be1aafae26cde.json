@@ -1,0 +1,147 @@
+{
+  "name": "chesscom/unlockables/v1/resources.proto",
+  "package": "chesscom.unlockables.v1",
+  "message_type": [
+    {
+      "name": "UnlockableResourceIdentifier",
+      "field": [
+        {
+          "name": "resource_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.unlockables.v1.ResourceType"
+        },
+        {
+          "name": "resource_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UnlockablePreview",
+      "field": [
+        {
+          "name": "label",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "image_url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "UnlockablePreviewItem",
+      "field": [
+        {
+          "name": "identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockableResourceIdentifier"
+        },
+        {
+          "name": "preview",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockablePreview"
+        }
+      ]
+    },
+    {
+      "name": "Unlockable",
+      "field": [
+        {
+          "name": "identifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockableResourceIdentifier"
+        },
+        {
+          "name": "preview",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.unlockables.v1.UnlockablePreview"
+        },
+        {
+          "name": "unlocked_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_unlocked_at"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ResourceType",
+      "value": [
+        {
+          "name": "RESOURCE_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RESOURCE_TYPE_FLAIR",
+          "number": 1
+        },
+        {
+          "name": "RESOURCE_TYPE_THEME_BACKGROUND",
+          "number": 2
+        },
+        {
+          "name": "RESOURCE_TYPE_THEME_BOARD_STYLE",
+          "number": 3
+        },
+        {
+          "name": "RESOURCE_TYPE_THEME_PIECE_SET",
+          "number": 4
+        },
+        {
+          "name": "RESOURCE_TYPE_THEME_SOUND_SET",
+          "number": 5
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ResourceStatus",
+      "value": [
+        {
+          "name": "RESOURCE_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "RESOURCE_STATUS_LOCKED",
+          "number": 1
+        },
+        {
+          "name": "RESOURCE_STATUS_UNLOCKED",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

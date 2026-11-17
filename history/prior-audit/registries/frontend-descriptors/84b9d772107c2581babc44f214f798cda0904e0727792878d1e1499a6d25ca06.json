@@ -1,0 +1,115 @@
+{
+  "name": "chesscom/gameplay/v1/game_ref.proto",
+  "package": "chesscom.gameplay.v1",
+  "message_type": [
+    {
+      "name": "GameRef",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "numeric_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "variant",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Variant",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "timeclass",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.TimeClass",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "source",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.gameplay.v1.GameSource",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_private",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "legacy_id",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "oneof_index": 6,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_id"
+        },
+        {
+          "name": "_numeric_id"
+        },
+        {
+          "name": "_variant"
+        },
+        {
+          "name": "_timeclass"
+        },
+        {
+          "name": "_source"
+        },
+        {
+          "name": "_is_private"
+        },
+        {
+          "name": "_legacy_id"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "GameSource",
+      "value": [
+        {
+          "name": "GAME_SOURCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "GAME_SOURCE_RCN",
+          "number": 1
+        },
+        {
+          "name": "GAME_SOURCE_LC",
+          "number": 2
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

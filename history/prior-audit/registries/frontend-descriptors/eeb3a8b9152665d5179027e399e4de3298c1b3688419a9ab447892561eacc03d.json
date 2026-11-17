@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/courses/v1/courses_shop_pagination.proto",
+  "package": "chesscom.courses.v1",
+  "message_type": [
+    {
+      "name": "CoursesShopPagination",
+      "field": [
+        {
+          "name": "limit",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "offset",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

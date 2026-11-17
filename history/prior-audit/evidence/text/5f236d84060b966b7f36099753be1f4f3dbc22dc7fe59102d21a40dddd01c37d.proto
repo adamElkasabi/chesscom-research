@@ -1,0 +1,20 @@
+// source: chesscom/courses/v1/course_lesson.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+message CourseLesson {
+  oneof _video_section {
+  .chesscom.courses_common.v1.Range video_section = 6;
+  }
+  oneof _user_video_position {
+  int32 user_video_position = 7;
+  }
+  optional .chesscom.courses.v1.CourseVariation variation = 1;
+  optional .chesscom.courses.v1.CourseLessonPlayer white_player = 2;
+  optional .chesscom.courses.v1.CourseLessonPlayer black_player = 3;
+  repeated .chesscom.courses.v1.CourseVariationPly plies = 4;
+  optional .chesscom.courses.v1.CourseConfiguration settings = 5;
+  optional .chesscom.chess.v1.Color first_learnable_move_color = 8;
+  optional int32 initial_ply_offset = 9;
+}

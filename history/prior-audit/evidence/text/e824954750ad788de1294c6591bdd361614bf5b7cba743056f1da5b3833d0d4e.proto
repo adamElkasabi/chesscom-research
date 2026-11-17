@@ -1,0 +1,8 @@
+// source: chesscom/game_gateway/v1/game_relationship_metadata.proto
+// syntax: proto3
+
+package chesscom.game_gateway.v1;
+
+message GameRelationshipMetadata {
+  optional bool are_friends = 1;
+}

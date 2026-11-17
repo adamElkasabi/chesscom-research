@@ -1,0 +1,11 @@
+// source: chesscom/support/v1/support_action_confirmation.proto
+// syntax: proto3
+
+package chesscom.support.v1;
+
+enum SupportActionConfirmation {
+  SUPPORT_ACTION_CONFIRMATION_UNSPECIFIED = 0;
+  SUPPORT_ACTION_CONFIRMATION_HUMAN_DIRECT = 1;
+  SUPPORT_ACTION_CONFIRMATION_HUMAN_CONFIRMED = 2;
+  SUPPORT_ACTION_CONFIRMATION_AGENT_AUTONOMOUS = 3;
+}

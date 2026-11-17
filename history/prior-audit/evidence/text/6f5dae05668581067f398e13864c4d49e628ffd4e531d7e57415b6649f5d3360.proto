@@ -1,0 +1,209 @@
+// source: chesscom/user_properties/v1/properties_user_details.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum UserDetailsPropertyDefinition {
+  USER_DETAILS_PROPERTY_UNSPECIFIED = 0;
+  AVATAR_URL = 1;
+  HIGH_RES_AVATAR_URL = 2;
+  CONTENT_LANGUAGE_INCLUDES_ENGLISH = 3;
+  IS_EMAIL_DELIVERABLE = 4;
+  IS_ACTIVATED = 5;
+  HAS_OPENED_VERIFICATION_EMAIL = 6;
+  REFERRED_BY_METHOD = 9;
+  IS_CONTENT_HIDDEN = 10;
+  IS_VERIFIED = 11;
+  HAS_SENDGRID_INVALID_EMAIL = 12;
+  LAST_BOUNCE_DATE = 13;
+  LAST_OPEN_EMAIL_DATE = 14;
+  LAST_DROPPED_EMAIL_DATE = 15;
+  LAST_SPAM_REPORT_DATE = 16;
+  IS_PAWNIVERSARY = 17;
+  IS_REACTIVATED = 18;
+  SKILL_LEVEL = 19;
+  LAST_CLICK_EMAIL_DATE = 20;
+  IS_ON_DO_NOT_EMAIL_LIST = 21;
+  IS_PAWNIVERSARY_TOMORROW = 22;
+  IS_GUEST = 23;
+  USER_RIGHT_TO_BE_FORGOTTEN_STATUS = 25;
+  NEXT_PAWNIVERSARY_START_DATE = 26;
+  EXPERIMENT_BUCKETING_RESULTS = 27;
+  OPT_IN_STATUS = 28;
+  ACCOUNT_STATUS = 29;
+  CLOSURE_TYPE = 30;
+  CLOSURE_REASON = 31;
+  ACTIVATION_TYPE = 32;
+  HAS_AVATAR = 33;
+  LANGUAGE = 34;
+  LANGUAGE_CLOUDFLARE = 35;
+  HAS_FCM_TOKEN = 36;
+  HAS_IOS_FCM_TOKEN = 37;
+  HAS_ANDROID_FCM_TOKEN = 38;
+  HAS_WEB_FCM_TOKEN = 39;
+  EXPERIMENT_BUCKETING_ID = 40;
+  LISTS_MEMBER_OF = 41;
+  IS_BOT = 42;
+  TRUST_LEVEL = 43;
+  PAWNIVERSARY_YEARS = 44;
+  INITIAL_RATING = 45;
+  IS_TRUSTED = 46;
+  HAS_TWITCH_CONNECTION = 47;
+  HAS_YOUTUBE_CONNECTION = 48;
+  BLOG_ID = 49;
+  STREAM_URL = 50;
+  CLOSURE_STATUS = 51;
+  TEMPORARY_DATASETS_MEMBER_OF = 52;
+  IS_BETA = 53;
+  HAS_LINKEDIN_CONNECTION = 54;
+}
+
+message UserDetailsProperty {
+  oneof _avatar_url {
+  string avatar_url = 1;
+  }
+  oneof _high_res_avatar_url {
+  string high_res_avatar_url = 2;
+  }
+  oneof _content_language_includes_english {
+  bool content_language_includes_english = 3;
+  }
+  oneof _is_email_deliverable {
+  bool is_email_deliverable = 4;
+  }
+  oneof _is_activated {
+  bool is_activated = 5;
+  }
+  oneof _has_opened_verification_email {
+  bool has_opened_verification_email = 6;
+  }
+  oneof _referred_by_method {
+  string referred_by_method = 9;
+  }
+  oneof _is_content_hidden {
+  bool is_content_hidden = 10;
+  }
+  oneof _is_verified {
+  bool is_verified = 11;
+  }
+  oneof _has_sendgrid_invalid_email {
+  bool has_sendgrid_invalid_email = 12;
+  }
+  oneof _last_bounce_date {
+  .google.protobuf.Timestamp last_bounce_date = 13;
+  }
+  oneof _last_open_email_date {
+  .google.protobuf.Timestamp last_open_email_date = 14;
+  }
+  oneof _last_dropped_email_date {
+  .google.protobuf.Timestamp last_dropped_email_date = 15;
+  }
+  oneof _last_spam_report_date {
+  .google.protobuf.Timestamp last_spam_report_date = 16;
+  }
+  oneof _is_pawniversary {
+  bool is_pawniversary = 17;
+  }
+  oneof _is_reactivated {
+  bool is_reactivated = 18;
+  }
+  oneof _skill_level {
+  string skill_level = 19;
+  }
+  oneof _last_click_email_date {
+  .google.protobuf.Timestamp last_click_email_date = 20;
+  }
+  oneof _is_on_do_not_email_list {
+  bool is_on_do_not_email_list = 21;
+  }
+  oneof _is_pawniversary_tomorrow {
+  bool is_pawniversary_tomorrow = 22;
+  }
+  oneof _is_guest {
+  bool is_guest = 23;
+  }
+  oneof _user_right_to_be_forgotten_status {
+  string user_right_to_be_forgotten_status = 25;
+  }
+  oneof _next_pawniversary_start_date {
+  .google.protobuf.Timestamp next_pawniversary_start_date = 26;
+  }
+  oneof _opt_in_status {
+  string opt_in_status = 28;
+  }
+  oneof _account_status {
+  string account_status = 29;
+  }
+  oneof _closure_type {
+  string closure_type = 30;
+  }
+  oneof _closure_reason {
+  string closure_reason = 31;
+  }
+  oneof _activation_type {
+  string activation_type = 32;
+  }
+  oneof _has_avatar {
+  bool has_avatar = 33;
+  }
+  oneof _language {
+  string language = 34;
+  }
+  oneof _language_cloudflare {
+  string language_cloudflare = 35;
+  }
+  oneof _has_fcm_token {
+  bool has_fcm_token = 36;
+  }
+  oneof _has_ios_fcm_token {
+  bool has_ios_fcm_token = 37;
+  }
+  oneof _has_android_fcm_token {
+  bool has_android_fcm_token = 38;
+  }
+  oneof _has_web_fcm_token {
+  bool has_web_fcm_token = 39;
+  }
+  oneof _experiment_bucketing_id {
+  string experiment_bucketing_id = 40;
+  }
+  oneof _is_bot {
+  bool is_bot = 42;
+  }
+  oneof _trust_level {
+  int32 trust_level = 43;
+  }
+  oneof _pawniversary_years {
+  int32 pawniversary_years = 44;
+  }
+  oneof _initial_rating {
+  int32 initial_rating = 45;
+  }
+  oneof _is_trusted {
+  bool is_trusted = 46;
+  }
+  oneof _has_twitch_connection {
+  bool has_twitch_connection = 47;
+  }
+  oneof _has_youtube_connection {
+  bool has_youtube_connection = 48;
+  }
+  oneof _blog_id {
+  string blog_id = 49;
+  }
+  oneof _stream_url {
+  string stream_url = 50;
+  }
+  oneof _closure_status {
+  string closure_status = 51;
+  }
+  oneof _is_beta {
+  bool is_beta = 53;
+  }
+  oneof _has_linkedin_connection {
+  bool has_linkedin_connection = 54;
+  }
+  repeated string experiment_bucketing_results = 27;
+  repeated string lists_member_of = 41;
+  repeated string temporary_datasets_member_of = 52;
+}

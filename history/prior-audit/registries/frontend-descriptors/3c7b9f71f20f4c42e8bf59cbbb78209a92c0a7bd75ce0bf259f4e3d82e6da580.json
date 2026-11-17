@@ -1,0 +1,350 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_participant_service.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "InviteSharedBoardParticipantRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "role",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardRole"
+        },
+        {
+          "name": "capabilities",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardCapability"
+        }
+      ]
+    },
+    {
+      "name": "InviteSharedBoardParticipantResponse",
+      "field": [
+        {
+          "name": "participant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        }
+      ]
+    },
+    {
+      "name": "RequestToJoinSharedBoardSessionRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSessionId"
+        }
+      ]
+    },
+    {
+      "name": "RequestToJoinSharedBoardSessionResponse",
+      "field": [
+        {
+          "name": "participant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        },
+        {
+          "name": "session_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "RespondToSharedBoardInvitationRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "accept",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "RespondToSharedBoardInvitationResponse",
+      "field": [
+        {
+          "name": "participant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        }
+      ]
+    },
+    {
+      "name": "RespondToSharedBoardJoinRequestRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "accept",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "RespondToSharedBoardJoinRequestResponse",
+      "field": [
+        {
+          "name": "participant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        }
+      ]
+    },
+    {
+      "name": "UpdateSharedBoardParticipantRoleRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "role",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardRole"
+        }
+      ]
+    },
+    {
+      "name": "UpdateSharedBoardParticipantRoleResponse",
+      "field": [
+        {
+          "name": "participant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        }
+      ]
+    },
+    {
+      "name": "SetSharedBoardParticipantCapabilitiesRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "capabilities",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardCapability"
+        }
+      ]
+    },
+    {
+      "name": "SetSharedBoardParticipantCapabilitiesResponse",
+      "field": [
+        {
+          "name": "participant",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        }
+      ]
+    },
+    {
+      "name": "TransferSharedBoardHostRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "TransferSharedBoardHostResponse",
+      "field": [
+        {
+          "name": "session",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSession"
+        }
+      ]
+    },
+    {
+      "name": "RemoveSharedBoardParticipantRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "RemoveSharedBoardParticipantResponse",
+      "field": [
+        {
+          "name": "session",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSession"
+        }
+      ]
+    },
+    {
+      "name": "LeaveSharedBoardSessionRequest",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "LeaveSharedBoardSessionResponse",
+      "field": [
+        {
+          "name": "session",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSession"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "SharedBoardSessionParticipantService",
+      "method": [
+        {
+          "name": "InviteSharedBoardParticipant",
+          "input_type": ".chesscom.shared_board.v1alpha.InviteSharedBoardParticipantRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.InviteSharedBoardParticipantResponse"
+        },
+        {
+          "name": "RequestToJoinSharedBoardSession",
+          "input_type": ".chesscom.shared_board.v1alpha.RequestToJoinSharedBoardSessionRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.RequestToJoinSharedBoardSessionResponse"
+        },
+        {
+          "name": "RespondToSharedBoardInvitation",
+          "input_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardInvitationRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardInvitationResponse"
+        },
+        {
+          "name": "RespondToSharedBoardJoinRequest",
+          "input_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardJoinRequestRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.RespondToSharedBoardJoinRequestResponse"
+        },
+        {
+          "name": "UpdateSharedBoardParticipantRole",
+          "input_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardParticipantRoleRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.UpdateSharedBoardParticipantRoleResponse"
+        },
+        {
+          "name": "SetSharedBoardParticipantCapabilities",
+          "input_type": ".chesscom.shared_board.v1alpha.SetSharedBoardParticipantCapabilitiesRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.SetSharedBoardParticipantCapabilitiesResponse"
+        },
+        {
+          "name": "TransferSharedBoardHost",
+          "input_type": ".chesscom.shared_board.v1alpha.TransferSharedBoardHostRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.TransferSharedBoardHostResponse"
+        },
+        {
+          "name": "RemoveSharedBoardParticipant",
+          "input_type": ".chesscom.shared_board.v1alpha.RemoveSharedBoardParticipantRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.RemoveSharedBoardParticipantResponse"
+        },
+        {
+          "name": "LeaveSharedBoardSession",
+          "input_type": ".chesscom.shared_board.v1alpha.LeaveSharedBoardSessionRequest",
+          "output_type": ".chesscom.shared_board.v1alpha.LeaveSharedBoardSessionResponse"
+        }
+      ]
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

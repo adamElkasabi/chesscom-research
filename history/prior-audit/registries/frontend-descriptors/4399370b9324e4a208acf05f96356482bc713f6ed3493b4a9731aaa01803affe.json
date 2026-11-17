@@ -1,0 +1,33 @@
+{
+  "name": "chesscom/train/v1/train_opening_mistake_challenge.proto",
+  "package": "chesscom.train.v1",
+  "message_type": [
+    {
+      "name": "TrainOpeningMistakeChallenge",
+      "field": [
+        {
+          "name": "eco_family_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "theme",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.train.v1.TrainOpeningTheme"
+        },
+        {
+          "name": "correct_move",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,11 @@
+// source: chesscom/explanation_engine/v1/feature_load_and_set_coach.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message LoadAndSetCoachRequest {
+  optional .chesscom.explanation_engine.v1.TextAsset text_asset = 2;
+}
+
+message LoadAndSetCoachResponse {
+}

@@ -1,0 +1,2579 @@
+[
+  {
+    "file": "chesscom/themes/v2/themes_service.proto",
+    "package": "chesscom.themes.v2",
+    "name": "ThemesService",
+    "methods": [
+      {
+        "name": "ListAllThemeElements",
+        "input": ".chesscom.themes.v2.ListAllThemeElementsRequest",
+        "output": ".chesscom.themes.v2.ListAllThemeElementsResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListThemesSelection",
+        "input": ".chesscom.themes.v2.ListThemesSelectionRequest",
+        "output": ".chesscom.themes.v2.ListThemesSelectionResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListThemes",
+        "input": ".chesscom.themes.v2.ListThemesRequest",
+        "output": ".chesscom.themes.v2.ListThemesResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListBackgrounds",
+        "input": ".chesscom.themes.v2.ListBackgroundsRequest",
+        "output": ".chesscom.themes.v2.ListBackgroundsResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListBoardStyles",
+        "input": ".chesscom.themes.v2.ListBoardStylesRequest",
+        "output": ".chesscom.themes.v2.ListBoardStylesResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListPieceSets",
+        "input": ".chesscom.themes.v2.ListPieceSetsRequest",
+        "output": ".chesscom.themes.v2.ListPieceSetsResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListSoundSets",
+        "input": ".chesscom.themes.v2.ListSoundSetsRequest",
+        "output": ".chesscom.themes.v2.ListSoundSetsResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListOnboardingThemes",
+        "input": ".chesscom.themes.v2.ListOnboardingThemesRequest",
+        "output": ".chesscom.themes.v2.ListOnboardingThemesResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GetTheme",
+        "input": ".chesscom.themes.v2.GetThemeRequest",
+        "output": ".chesscom.themes.v2.GetThemeResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GetCustomTheme",
+        "input": ".chesscom.themes.v2.GetCustomThemeRequest",
+        "output": ".chesscom.themes.v2.GetCustomThemeResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SelectTheme",
+        "input": ".chesscom.themes.v2.SelectThemeRequest",
+        "output": ".chesscom.themes.v2.SelectThemeResponse",
+        "options": []
+      },
+      {
+        "name": "SelectCustomTheme",
+        "input": ".chesscom.themes.v2.SelectCustomThemeRequest",
+        "output": ".chesscom.themes.v2.SelectCustomThemeResponse",
+        "options": []
+      },
+      {
+        "name": "GetActiveTheme",
+        "input": ".chesscom.themes.v2.GetActiveThemeRequest",
+        "output": ".chesscom.themes.v2.GetActiveThemeResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 91003,
+            "wire": 2,
+            "value": "01",
+            "fields": [
+              {
+                "field": 0,
+                "wire": 1,
+                "value": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/bots/v1/bot_group_service.proto",
+    "package": "chesscom.bots.v1",
+    "name": "BotGroupService",
+    "methods": [
+      {
+        "name": "ListBotGroups",
+        "input": ".chesscom.bots.v1.ListBotGroupsRequest",
+        "output": ".chesscom.bots.v1.ListBotGroupsResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListAllBotsInGroup",
+        "input": ".chesscom.bots.v1.ListAllBotsInGroupRequest",
+        "output": ".chesscom.bots.v1.ListAllBotsInGroupResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListAllBotsForClub",
+        "input": ".chesscom.bots.v1.ListAllBotsForClubRequest",
+        "output": ".chesscom.bots.v1.ListAllBotsForClubResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListAllBotNames",
+        "input": ".chesscom.bots.v1.ListAllBotNamesRequest",
+        "output": ".chesscom.bots.v1.ListAllBotNamesResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/bots/v1/bot_service.proto",
+    "package": "chesscom.bots.v1",
+    "name": "BotService",
+    "methods": [
+      {
+        "name": "GetBotMetadataList",
+        "input": ".chesscom.bots.v1.GetBotMetadataListRequest",
+        "output": ".chesscom.bots.v1.GetBotMetadataListResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetCrowns",
+        "input": ".chesscom.bots.v1.GetCrownsRequest",
+        "output": ".chesscom.bots.v1.GetCrownsResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "SyncCrowns",
+        "input": ".chesscom.bots.v1.SyncCrownsRequest",
+        "output": ".chesscom.bots.v1.SyncCrownsResponse",
+        "options": []
+      },
+      {
+        "name": "ResetCrowns",
+        "input": ".chesscom.bots.v1.ResetCrownsRequest",
+        "output": ".chesscom.bots.v1.ResetCrownsResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/bots/v1/custom_bot_game_over_modal_service.proto",
+    "package": "chesscom.bots.v1",
+    "name": "CustomBotGameOverModalService",
+    "methods": [
+      {
+        "name": "GetCustomBotGameOverModal",
+        "input": ".chesscom.bots.v1.GetCustomBotGameOverModalRequest",
+        "output": ".chesscom.bots.v1.GetCustomBotGameOverModalResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/progression/v1/progression_service.proto",
+    "package": "chesscom.progression.v1",
+    "name": "ProgressionService",
+    "methods": [
+      {
+        "name": "BulkGetUserProgression",
+        "input": ".chesscom.progression.v1.BulkGetUserProgressionRequest",
+        "output": ".chesscom.progression.v1.BulkGetUserProgressionResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListLatestUserProgressions",
+        "input": ".chesscom.progression.v1.ListLatestUserProgressionsRequest",
+        "output": ".chesscom.progression.v1.ListLatestUserProgressionsResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/flair/v1/flair_internal_service.proto",
+    "package": "chesscom.flair.v1",
+    "name": "FlairInternalService",
+    "methods": [
+      {
+        "name": "ListFlairInternal",
+        "input": ".chesscom.flair.v1.ListFlairInternalRequest",
+        "output": ".chesscom.flair.v1.ListFlairInternalResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListFlairByIdsInternal",
+        "input": ".chesscom.flair.v1.ListFlairByIdsInternalRequest",
+        "output": ".chesscom.flair.v1.ListFlairByIdsInternalResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "SetUserFlairInternal",
+        "input": ".chesscom.flair.v1.SetUserFlairInternalRequest",
+        "output": ".chesscom.flair.v1.SetUserFlairInternalResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/flair/v1/flair_admin_service.proto",
+    "package": "chesscom.flair.v1",
+    "name": "FlairAdminService",
+    "methods": [
+      {
+        "name": "ListFlair",
+        "input": ".chesscom.flair.v1.ListFlairRequest",
+        "output": ".chesscom.flair.v1.ListFlairResponse",
+        "options": [
+          {
+            "field": 50101,
+            "wire": 2,
+            "value": "0a046c6973741a324c69737420657665727920666c61697220696e2074686520636174616c6f672c2077697468206e6f2066696c746572696e67221e676e73206368657373636f6d2061737365742d666c61697273206c69737432a70112a40152657475726e2074686520636f6d706c65746520666c61697220636174616c6f672e20557365207468697320746f20646973636f76657220776869636820666c6169727320657869737420616e6420746f206d617020666c61697220555549447320746f206e616d6573206265666f72652063616c6c696e67206c6973742d62792d696473206f72207365617263682e2054616b6573206e6f20617267756d656e74732e",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 2,
+                "value": "6c697374"
+              },
+              {
+                "field": 3,
+                "wire": 2,
+                "value": "4c69737420657665727920666c61697220696e2074686520636174616c6f672c2077697468206e6f2066696c746572696e67"
+              },
+              {
+                "field": 4,
+                "wire": 2,
+                "value": "676e73206368657373636f6d2061737365742d666c61697273206c697374"
+              },
+              {
+                "field": 6,
+                "wire": 2,
+                "value": "12a40152657475726e2074686520636f6d706c65746520666c61697220636174616c6f672e20557365207468697320746f20646973636f76657220776869636820666c6169727320657869737420616e6420746f206d617020666c61697220555549447320746f206e616d6573206265666f72652063616c6c696e67206c6973742d62792d696473206f72207365617263682e2054616b6573206e6f20617267756d656e74732e"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListFlairByIds",
+        "input": ".chesscom.flair.v1.ListFlairByIdsRequest",
+        "output": ".chesscom.flair.v1.ListFlairByIdsResponse",
+        "options": [
+          {
+            "field": 50101,
+            "wire": 2,
+            "value": "0a0b6c6973742d62792d6964731a264c6f6f6b20757020737065636966696320666c61697273206279207468656972205555494473223f676e73206368657373636f6d2061737365742d666c61697273206c6973742d62792d696473202d2d666c6169722d696473203c757569643e2c3c757569643e32f70412f4045265736f6c7665206f6e65206f72206d6f726520666c61697220555549447320746f2074686569722066756c6c20666c616972207265636f7264732e20557365207768656e20796f7520616c726561647920686f6c6420666c616972206964732028666f72206578616d706c652066726f6d20612075736572207265636f72642920616e64206e656564207468656972206e616d657320616e64206d657461646174612e20496473206172652064652d6475706c6963617465642e20496473206172652076616c69646174656420617320612062617463682c206e6f7420696e646976696475616c6c793a20696620616e79206964206973206e6f7420612077656c6c2d666f726d65642074696d652d6f726465726564202876312920555549442074686520656e746972652063616c6c206661696c73207769746820496e76616c6964417267756d656e7420616e642072657475726e73206e6f7468696e672c20616e64207468617420696e636c7564657320612073796e746163746963616c6c792076616c696420763420555549442c206265636175736520666c61697220696473206172652073746f72656420617320612074696d652d6f726465726564205555494420636f6c756d6e2e20412076616c696420696420746861742069732073696d706c7920616273656e742066726f6d2074686520636174616c6f67206973206c656674206f7574206f662074686520726573706f6e73652e20416e20656d707479206964206c6973742072657475726e7320616e20656d70747920726573706f6e73652c206e6f74207468652066756c6c20636174616c6f67202d2d20757365206c69737420666f7220746861742e",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 2,
+                "value": "6c6973742d62792d696473"
+              },
+              {
+                "field": 3,
+                "wire": 2,
+                "value": "4c6f6f6b20757020737065636966696320666c61697273206279207468656972205555494473"
+              },
+              {
+                "field": 4,
+                "wire": 2,
+                "value": "676e73206368657373636f6d2061737365742d666c61697273206c6973742d62792d696473202d2d666c6169722d696473203c757569643e2c3c757569643e"
+              },
+              {
+                "field": 6,
+                "wire": 2,
+                "value": "12f4045265736f6c7665206f6e65206f72206d6f726520666c61697220555549447320746f2074686569722066756c6c20666c616972207265636f7264732e20557365207768656e20796f7520616c726561647920686f6c6420666c616972206964732028666f72206578616d706c652066726f6d20612075736572207265636f72642920616e64206e656564207468656972206e616d657320616e64206d657461646174612e20496473206172652064652d6475706c6963617465642e20496473206172652076616c69646174656420617320612062617463682c206e6f7420696e646976696475616c6c793a20696620616e79206964206973206e6f7420612077656c6c2d666f726d65642074696d652d6f726465726564202876312920555549442074686520656e746972652063616c6c206661696c73207769746820496e76616c6964417267756d656e7420616e642072657475726e73206e6f7468696e672c20616e64207468617420696e636c7564657320612073796e746163746963616c6c792076616c696420763420555549442c206265636175736520666c61697220696473206172652073746f72656420617320612074696d652d6f726465726564205555494420636f6c756d6e2e20412076616c696420696420746861742069732073696d706c7920616273656e742066726f6d2074686520636174616c6f67206973206c656674206f7574206f662074686520726573706f6e73652e20416e20656d707479206964206c6973742072657475726e7320616e20656d70747920726573706f6e73652c206e6f74207468652066756c6c20636174616c6f67202d2d20757365206c69737420666f7220746861742e"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ListFlairByNamePrefix",
+        "input": ".chesscom.flair.v1.ListFlairByNamePrefixRequest",
+        "output": ".chesscom.flair.v1.ListFlairByNamePrefixResponse",
+        "options": [
+          {
+            "field": 50101,
+            "wire": 2,
+            "value": "0a067365617263681a3146696e6420666c616972732077686f7365206e616d65207374617274732077697468206120676976656e207072656669782235676e73206368657373636f6d2061737365742d666c6169727320736561726368202d2d6e616d652d707265666978206b6e6967687432f60212f3025365617263682074686520666c61697220636174616c6f67206279206e616d65207072656669782c206d61746368656420636173652d696e73656e7369746976656c793b206c656164696e67207768697465737061636520696e20746865207072656669782069732073747269707065642e205061737320746865206c656164696e672063686172616374657273206f662074686520666c616972206e616d65202d2d206974206973206e6f7420612066757a7a79206d617463682e2054686520707265666978206973207573656420617320612053514c204c494b45207061747465726e2c20736f202520616e64205f206163742061732077696c64636172647320616e642061206c656164696e672025207475726e7320697420696e746f206120737562737472696e67207365617263682e2055736520697420746f2066696e64206120666c616972206964207768656e20796f75206f6e6c79206b6e6f772070617274206f6620697473206e616d652e",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 2,
+                "value": "736561726368"
+              },
+              {
+                "field": 3,
+                "wire": 2,
+                "value": "46696e6420666c616972732077686f7365206e616d65207374617274732077697468206120676976656e20707265666978"
+              },
+              {
+                "field": 4,
+                "wire": 2,
+                "value": "676e73206368657373636f6d2061737365742d666c6169727320736561726368202d2d6e616d652d707265666978206b6e69676874"
+              },
+              {
+                "field": 6,
+                "wire": 2,
+                "value": "12f3025365617263682074686520666c61697220636174616c6f67206279206e616d65207072656669782c206d61746368656420636173652d696e73656e7369746976656c793b206c656164696e67207768697465737061636520696e20746865207072656669782069732073747269707065642e205061737320746865206c656164696e672063686172616374657273206f662074686520666c616972206e616d65202d2d206974206973206e6f7420612066757a7a79206d617463682e2054686520707265666978206973207573656420617320612053514c204c494b45207061747465726e2c20736f202520616e64205f206163742061732077696c64636172647320616e642061206c656164696e672025207475726e7320697420696e746f206120737562737472696e67207365617263682e2055736520697420746f2066696e64206120666c616972206964207768656e20796f75206f6e6c79206b6e6f772070617274206f6620697473206e616d652e"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SetUserFlair",
+        "input": ".chesscom.flair.v1.SetUserFlairRequest",
+        "output": ".chesscom.flair.v1.SetUserFlairResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50101,
+            "wire": 2,
+            "value": "2801",
+            "fields": [
+              {
+                "field": 5,
+                "wire": 0,
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/flair/v1/flair_service.proto",
+    "package": "chesscom.flair.v1",
+    "name": "FlairService",
+    "methods": [
+      {
+        "name": "ListFlairSelection",
+        "input": ".chesscom.flair.v1.ListFlairSelectionRequest",
+        "output": ".chesscom.flair.v1.ListFlairSelectionResponse",
+        "options": []
+      },
+      {
+        "name": "SelectFlair",
+        "input": ".chesscom.flair.v1.SelectFlairRequest",
+        "output": ".chesscom.flair.v1.SelectFlairResponse",
+        "options": []
+      },
+      {
+        "name": "RemoveFlair",
+        "input": ".chesscom.flair.v1.RemoveFlairRequest",
+        "output": ".chesscom.flair.v1.RemoveFlairResponse",
+        "options": []
+      },
+      {
+        "name": "GetUserFlair",
+        "input": ".chesscom.flair.v1.GetUserFlairRequest",
+        "output": ".chesscom.flair.v1.GetUserFlairResponse",
+        "options": []
+      },
+      {
+        "name": "ListUserFlair",
+        "input": ".chesscom.flair.v1.ListUserFlairRequest",
+        "output": ".chesscom.flair.v1.ListUserFlairResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/coaches/v2/service.proto",
+    "package": "chesscom.coaches.v2",
+    "name": "CoachesService",
+    "methods": [
+      {
+        "name": "ListCoaches",
+        "input": ".chesscom.coaches.v2.ListCoachesRequest",
+        "output": ".chesscom.coaches.v2.ListCoachesResponse",
+        "options": []
+      },
+      {
+        "name": "ListOnboardingCoaches",
+        "input": ".chesscom.coaches.v2.ListOnboardingCoachesRequest",
+        "output": ".chesscom.coaches.v2.ListOnboardingCoachesResponse",
+        "options": []
+      },
+      {
+        "name": "SetCurrentCoach",
+        "input": ".chesscom.coaches.v2.SetCurrentCoachRequest",
+        "output": ".chesscom.coaches.v2.SetCurrentCoachResponse",
+        "options": []
+      },
+      {
+        "name": "GetCurrentCoach",
+        "input": ".chesscom.coaches.v2.GetCurrentCoachRequest",
+        "output": ".chesscom.coaches.v2.GetCurrentCoachResponse",
+        "options": []
+      },
+      {
+        "name": "GetCoach",
+        "input": ".chesscom.coaches.v2.GetCoachRequest",
+        "output": ".chesscom.coaches.v2.GetCoachResponse",
+        "options": []
+      },
+      {
+        "name": "GetCoaches",
+        "input": ".chesscom.coaches.v2.GetCoachesRequest",
+        "output": ".chesscom.coaches.v2.GetCoachesResponse",
+        "options": []
+      },
+      {
+        "name": "GetCoachQuota",
+        "input": ".chesscom.coaches.v2.GetCoachQuotaRequest",
+        "output": ".chesscom.coaches.v2.GetCoachQuotaResponse",
+        "options": []
+      },
+      {
+        "name": "StartedGameAgainstCoach",
+        "input": ".chesscom.coaches.v2.StartedGameAgainstCoachRequest",
+        "output": ".chesscom.coaches.v2.StartedGameAgainstCoachResponse",
+        "options": []
+      },
+      {
+        "name": "GetSettings",
+        "input": ".chesscom.coaches.v2.GetSettingsRequest",
+        "output": ".chesscom.coaches.v2.GetSettingsResponse",
+        "options": []
+      },
+      {
+        "name": "SetSettings",
+        "input": ".chesscom.coaches.v2.SetSettingsRequest",
+        "output": ".chesscom.coaches.v2.SetSettingsResponse",
+        "options": []
+      },
+      {
+        "name": "SaveCoachGame",
+        "input": ".chesscom.coaches.v2.SaveCoachGameRequest",
+        "output": ".chesscom.coaches.v2.SaveCoachGameResponse",
+        "options": []
+      },
+      {
+        "name": "GetCoachSpeech",
+        "input": ".chesscom.coaches.v2.GetCoachSpeechRequest",
+        "output": ".chesscom.coaches.v2.GetCoachSpeechResponse",
+        "options": []
+      },
+      {
+        "name": "HideCoachGame",
+        "input": ".chesscom.coaches.v2.HideCoachGameRequest",
+        "output": ".chesscom.coaches.v2.HideCoachGameResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/game_gateway/v2/game_gateway_service.proto",
+    "package": "chesscom.game_gateway.v2",
+    "name": "GameGatewayService",
+    "methods": [
+      {
+        "name": "HydrateGamesByCriteria",
+        "input": ".chesscom.game_gateway.v2.HydrateGamesByCriteriaRequest",
+        "output": ".chesscom.game_gateway.v2.HydrateGamesByCriteriaResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "CountGamesByCriteria",
+        "input": ".chesscom.game_gateway.v2.CountGamesByCriteriaRequest",
+        "output": ".chesscom.game_gateway.v2.CountGamesByCriteriaResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "DeleteGame",
+        "input": ".chesscom.game_gateway.v2.DeleteGameRequest",
+        "output": ".chesscom.game_gateway.v2.DeleteGameResponse",
+        "options": []
+      },
+      {
+        "name": "AggregateGameResultsByPlayerAndCriteria",
+        "input": ".chesscom.game_gateway.v2.AggregateGameResultsByPlayerAndCriteriaRequest",
+        "output": ".chesscom.game_gateway.v2.AggregateGameResultsByPlayerAndCriteriaResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "HydrateGameByLegacyId",
+        "input": ".chesscom.game_gateway.v2.HydrateGameByLegacyIdRequest",
+        "output": ".chesscom.game_gateway.v2.HydrateGameByLegacyIdResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "PlayerOverviewStats",
+        "input": ".chesscom.game_gateway.v2.PlayerOverviewStatsRequest",
+        "output": ".chesscom.game_gateway.v2.PlayerOverviewStatsResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "CountTournamentsByPlayer",
+        "input": ".chesscom.game_gateway.v2.CountTournamentsByPlayerRequest",
+        "output": ".chesscom.game_gateway.v2.CountTournamentsByPlayerResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "PlayerOverviewAllStats",
+        "input": ".chesscom.game_gateway.v2.PlayerOverviewAllStatsRequest",
+        "output": ".chesscom.game_gateway.v2.PlayerOverviewAllStatsResponse",
+        "options": [
+          {
+            "field": 33,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/user_properties/v1/authenticated_properties_service.proto",
+    "package": "chesscom.user_properties.v1",
+    "name": "AuthenticatedPropertiesService",
+    "methods": [
+      {
+        "name": "GetPropertiesForAuthenticatedUser",
+        "input": ".chesscom.user_properties.v1.GetPropertiesForAuthenticatedUserRequest",
+        "output": ".chesscom.user_properties.v1.GetPropertiesForAuthenticatedUserResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/user_gateway/v1/user_gateway_service.proto",
+    "package": "chesscom.user_gateway.v1",
+    "name": "UserGatewayService",
+    "methods": [
+      {
+        "name": "GetUserData",
+        "input": ".chesscom.user_gateway.v1.GetUserDataRequest",
+        "output": ".chesscom.user_gateway.v1.GetUserDataResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetUserDataByUsername",
+        "input": ".chesscom.user_gateway.v1.GetUserDataByUsernameRequest",
+        "output": ".chesscom.user_gateway.v1.GetUserDataByUsernameResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetUserDataMany",
+        "input": ".chesscom.user_gateway.v1.GetUserDataManyRequest",
+        "output": ".chesscom.user_gateway.v1.GetUserDataManyResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListRelatedUsersData",
+        "input": ".chesscom.user_gateway.v1.ListRelatedUsersDataRequest",
+        "output": ".chesscom.user_gateway.v1.ListRelatedUsersDataResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetUserDataWithOtherUsernames",
+        "input": ".chesscom.user_gateway.v1.GetUserDataWithOtherUsernamesRequest",
+        "output": ".chesscom.user_gateway.v1.GetUserDataWithOtherUsernamesResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ListUsers",
+        "input": ".chesscom.user_gateway.v1.ListUsersRequest",
+        "output": ".chesscom.user_gateway.v1.ListUsersResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "SendFriendRequest",
+        "input": ".chesscom.user_gateway.v1.SendFriendRequestRequest",
+        "output": ".chesscom.user_gateway.v1.SendFriendRequestResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "AcceptFriendRequest",
+        "input": ".chesscom.user_gateway.v1.AcceptFriendRequestRequest",
+        "output": ".chesscom.user_gateway.v1.AcceptFriendRequestResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "DeclineFriendRequest",
+        "input": ".chesscom.user_gateway.v1.DeclineFriendRequestRequest",
+        "output": ".chesscom.user_gateway.v1.DeclineFriendRequestResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "CancelFriendRequest",
+        "input": ".chesscom.user_gateway.v1.CancelFriendRequestRequest",
+        "output": ".chesscom.user_gateway.v1.CancelFriendRequestResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "RemoveFriend",
+        "input": ".chesscom.user_gateway.v1.RemoveFriendRequest",
+        "output": ".chesscom.user_gateway.v1.RemoveFriendResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "BlockUser",
+        "input": ".chesscom.user_gateway.v1.BlockUserRequest",
+        "output": ".chesscom.user_gateway.v1.BlockUserResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "UnblockUser",
+        "input": ".chesscom.user_gateway.v1.UnblockUserRequest",
+        "output": ".chesscom.user_gateway.v1.UnblockUserResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "name": "AcceptFriendLink",
+        "input": ".chesscom.user_gateway.v1.AcceptFriendLinkRequest",
+        "output": ".chesscom.user_gateway.v1.AcceptFriendLinkResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/audiences/v1/authenticated_audiences_service.proto",
+    "package": "chesscom.audiences.v1",
+    "name": "AuthenticatedAudiencesService",
+    "methods": [
+      {
+        "name": "IsAuthenticatedUserInAudiences",
+        "input": ".chesscom.audiences.v1.IsAuthenticatedUserInAudiencesRequest",
+        "output": ".chesscom.audiences.v1.IsAuthenticatedUserInAudiencesResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/explanation_engine/v1/explanation_engine_service.proto",
+    "package": "chesscom.explanation_engine.v1",
+    "name": "ExplanationEngineService",
+    "methods": [
+      {
+        "name": "GetCeeVersion",
+        "input": ".chesscom.explanation_engine.v1.CeeVersionRequest",
+        "output": ".chesscom.explanation_engine.v1.CeeVersionResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0802",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 2
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 0
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6365655f76657273696f6e"
+          }
+        ]
+      },
+      {
+        "name": "CreateNewGame",
+        "input": ".chesscom.explanation_engine.v1.NewGameRequest",
+        "output": ".chesscom.explanation_engine.v1.NewGameResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "081a",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 26
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 0
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6e65775f67616d65"
+          }
+        ]
+      },
+      {
+        "name": "LoadGameState",
+        "input": ".chesscom.explanation_engine.v1.LoadGameStateRequest",
+        "output": ".chesscom.explanation_engine.v1.LoadGameStateResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0816",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 22
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 0
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6c6f61645f67616d655f7374617465"
+          }
+        ]
+      },
+      {
+        "name": "AddEvaluations",
+        "input": ".chesscom.explanation_engine.v1.AddEvaluationsRequest",
+        "output": ".chesscom.explanation_engine.v1.AddEvaluationsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0801",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6164645f6576616c756174696f6e73",
+            "fields": [
+              {
+                "field": 12,
+                "wire": 1,
+                "value": "64645f6576616c75"
+              },
+              {
+                "field": 12,
+                "wire": 1,
+                "value": "74696f6e73"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GetExpectedPoints",
+        "input": ".chesscom.explanation_engine.v1.ExpectedPointsRequest",
+        "output": ".chesscom.explanation_engine.v1.ExpectedPointsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0803",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 3
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ValidateFen",
+        "input": ".chesscom.explanation_engine.v1.ValidateFenRequest",
+        "output": ".chesscom.explanation_engine.v1.ValidateFenResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0820",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 32
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ValidatePgn",
+        "input": ".chesscom.explanation_engine.v1.ValidatePgnRequest",
+        "output": ".chesscom.explanation_engine.v1.ValidatePgnResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "083f",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 63
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetPgn",
+        "input": ".chesscom.explanation_engine.v1.GetPgnRequest",
+        "output": ".chesscom.explanation_engine.v1.GetPgnResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0811",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 17
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetFen",
+        "input": ".chesscom.explanation_engine.v1.GetFenRequest",
+        "output": ".chesscom.explanation_engine.v1.GetFenResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "080d",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 13
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetMoveDetails",
+        "input": ".chesscom.explanation_engine.v1.GetMoveDetailsRequest",
+        "output": ".chesscom.explanation_engine.v1.GetMoveDetailsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "080f",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 15
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetMoveClassification",
+        "input": ".chesscom.explanation_engine.v1.MoveClassificationRequest",
+        "output": ".chesscom.explanation_engine.v1.MoveClassificationResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0819",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 25
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetAnalysisAnnotations",
+        "input": ".chesscom.explanation_engine.v1.AnalysisAnnotationsRequest",
+        "output": ".chesscom.explanation_engine.v1.AnalysisAnnotationsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "084a",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 74
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "MakeMoves",
+        "input": ".chesscom.explanation_engine.v1.MakeMovesRequest",
+        "output": ".chesscom.explanation_engine.v1.MakeMovesResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0818",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 24
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "SetPlayedLine",
+        "input": ".chesscom.explanation_engine.v1.SetPlayedLineRequest",
+        "output": ".chesscom.explanation_engine.v1.SetPlayedLineResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0847",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 71
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetGameReview",
+        "input": ".chesscom.explanation_engine.v1.GameReviewRequest",
+        "output": ".chesscom.explanation_engine.v1.GameReviewResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "082a",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 42
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "67616d655f726576696577"
+          }
+        ]
+      },
+      {
+        "name": "GetGameState",
+        "input": ".chesscom.explanation_engine.v1.GetGameStateRequest",
+        "output": ".chesscom.explanation_engine.v1.GetGameStateResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "080e",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 14
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6765745f67616d655f7374617465"
+          }
+        ]
+      },
+      {
+        "name": "GetGamePointInfo",
+        "input": ".chesscom.explanation_engine.v1.GamePointInfoRequest",
+        "output": ".chesscom.explanation_engine.v1.GamePointInfoResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0806",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 6
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetGameTree",
+        "input": ".chesscom.explanation_engine.v1.GameTreeRequest",
+        "output": ".chesscom.explanation_engine.v1.GameTreeResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0822",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 34
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetGameResult",
+        "input": ".chesscom.explanation_engine.v1.GetGameResultRequest",
+        "output": ".chesscom.explanation_engine.v1.GetGameResultResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0807",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 7
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "SetGameResult",
+        "input": ".chesscom.explanation_engine.v1.SetGameResultRequest",
+        "output": ".chesscom.explanation_engine.v1.SetGameResultResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "081e",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 30
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetLegalMoves",
+        "input": ".chesscom.explanation_engine.v1.LegalMovesRequest",
+        "output": ".chesscom.explanation_engine.v1.LegalMovesResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0813",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 19
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetLegalPremoves",
+        "input": ".chesscom.explanation_engine.v1.LegalPremovesRequest",
+        "output": ".chesscom.explanation_engine.v1.LegalPremovesResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0814",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 20
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetSanMoves",
+        "input": ".chesscom.explanation_engine.v1.GetSanMovesRequest",
+        "output": ".chesscom.explanation_engine.v1.GetSanMovesResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0827",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 39
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetThreats",
+        "input": ".chesscom.explanation_engine.v1.SimpleThreatsRequest",
+        "output": ".chesscom.explanation_engine.v1.SimpleThreatsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "081f",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 31
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "73696d706c655f74687265617473"
+          }
+        ]
+      },
+      {
+        "name": "GetGamePhaseTransitions",
+        "input": ".chesscom.explanation_engine.v1.GamePhaseTransitionsRequest",
+        "output": ".chesscom.explanation_engine.v1.GamePhaseTransitionsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0805",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 5
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetOpening",
+        "input": ".chesscom.explanation_engine.v1.GetOpeningRequest",
+        "output": ".chesscom.explanation_engine.v1.GetOpeningResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0810",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 16
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "LoadBot",
+        "input": ".chesscom.explanation_engine.v1.LoadBotRequest",
+        "output": ".chesscom.explanation_engine.v1.LoadBotResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0815",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 21
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetBotMove",
+        "input": ".chesscom.explanation_engine.v1.GetBotMoveRequest",
+        "output": ".chesscom.explanation_engine.v1.GetBotMoveResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0809",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 9
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetBotMoveFromConfig",
+        "input": ".chesscom.explanation_engine.v1.BotMoveFromConfigRequest",
+        "output": ".chesscom.explanation_engine.v1.BotMoveFromConfigResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "083d",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 61
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetBotConfigResources",
+        "input": ".chesscom.explanation_engine.v1.BotConfigResourcesRequest",
+        "output": ".chesscom.explanation_engine.v1.BotConfigResourcesResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0846",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 70
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 0
+          }
+        ]
+      },
+      {
+        "name": "GetBotChat",
+        "input": ".chesscom.explanation_engine.v1.GetBotChatRequest",
+        "output": ".chesscom.explanation_engine.v1.GetBotChatResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0808",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 8
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetPunishMove",
+        "input": ".chesscom.explanation_engine.v1.GetPunishMoveRequest",
+        "output": ".chesscom.explanation_engine.v1.GetPunishMoveResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0812",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "LoadCoach",
+        "input": ".chesscom.explanation_engine.v1.LoadCoachRequest",
+        "output": ".chesscom.explanation_engine.v1.LoadCoachResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0828",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6c6f61645f636f616368"
+          }
+        ]
+      },
+      {
+        "name": "SetCoach",
+        "input": ".chesscom.explanation_engine.v1.SetCoachRequest",
+        "output": ".chesscom.explanation_engine.v1.SetCoachResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0829",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 41
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "LoadAndSetCoach",
+        "input": ".chesscom.explanation_engine.v1.LoadAndSetCoachRequest",
+        "output": ".chesscom.explanation_engine.v1.LoadAndSetCoachResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0830",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 48
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6c6f61645f616e645f7365745f636f616368"
+          }
+        ]
+      },
+      {
+        "name": "GetCoachChat",
+        "input": ".chesscom.explanation_engine.v1.GetCoachChatRequest",
+        "output": ".chesscom.explanation_engine.v1.GetCoachChatResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "082d",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 45
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetCoachHint",
+        "input": ".chesscom.explanation_engine.v1.GetCoachHintRequest",
+        "output": ".chesscom.explanation_engine.v1.GetCoachHintResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "082f",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 47
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetErgonomicPosition",
+        "input": ".chesscom.explanation_engine.v1.GetErgonomicPositionRequest",
+        "output": ".chesscom.explanation_engine.v1.GetErgonomicPositionResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "080c",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 12
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6765745f6572676f6e6f6d69635f706f736974696f6e"
+          }
+        ]
+      },
+      {
+        "name": "GetErgonomicGame",
+        "input": ".chesscom.explanation_engine.v1.GetErgonomicGameRequest",
+        "output": ".chesscom.explanation_engine.v1.GetErgonomicGameResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "080b",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 11
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "6765745f6572676f6e6f6d69635f67616d65"
+          }
+        ]
+      },
+      {
+        "name": "GetCompressedPosition",
+        "input": ".chesscom.explanation_engine.v1.GetCompressedPositionRequest",
+        "output": ".chesscom.explanation_engine.v1.GetCompressedPositionResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "080a",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 10
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "ConvertToProtoMoves",
+        "input": ".chesscom.explanation_engine.v1.ConvertToProtoMovesRequest",
+        "output": ".chesscom.explanation_engine.v1.ConvertToProtoMovesResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0832",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 50
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetLuaCompletion",
+        "input": ".chesscom.explanation_engine.v1.LuaCompletionRequest",
+        "output": ".chesscom.explanation_engine.v1.LuaCompletionResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0817",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 23
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "RunLua",
+        "input": ".chesscom.explanation_engine.v1.RunLuaRequest",
+        "output": ".chesscom.explanation_engine.v1.RunLuaResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "081c",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 28
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "UpdateExperimentalOptions",
+        "input": ".chesscom.explanation_engine.v1.UpdateExperimentalOptionsRequest",
+        "output": ".chesscom.explanation_engine.v1.UpdateExperimentalOptionsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "082e",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 46
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetCeeInternalComponents",
+        "input": ".chesscom.explanation_engine.v1.CeeInternalComponentsRequest",
+        "output": ".chesscom.explanation_engine.v1.CeeInternalComponentsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0821",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 33
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "InternalFeaturePuzzleGen",
+        "input": ".chesscom.explanation_engine.v1.InternalFeaturePuzzleGenRequest",
+        "output": ".chesscom.explanation_engine.v1.InternalFeaturePuzzleGenResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "088a02",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 266
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "70757a7a6c655f67656e",
+            "fields": [
+              {
+                "field": 14,
+                "wire": 0,
+                "value": 117
+              },
+              {
+                "field": 15,
+                "wire": 2,
+                "value": "6c655f67656e"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "InternalFeatureUpdateDeveloperOptions",
+        "input": ".chesscom.explanation_engine.v1.InternalFeatureUpdateDeveloperOptionsRequest",
+        "output": ".chesscom.explanation_engine.v1.InternalFeatureUpdateDeveloperOptionsResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "089402",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 276
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "InternalFeatureMaiaBotMove",
+        "input": ".chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveRequest",
+        "output": ".chesscom.explanation_engine.v1.InternalFeatureMaiaBotMoveResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "089202",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 274
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "RunSearch",
+        "input": ".chesscom.explanation_engine.v1.RunSearchRequest",
+        "output": ".chesscom.explanation_engine.v1.RunSearchResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "081d",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 29
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          },
+          {
+            "field": 50003,
+            "wire": 2,
+            "value": "72756e5f736561726368",
+            "fields": [
+              {
+                "field": 14,
+                "wire": 2,
+                "value": "6e5f736561726368"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DisposeGamePoint",
+        "input": ".chesscom.explanation_engine.v1.DisposeGamePointRequest",
+        "output": ".chesscom.explanation_engine.v1.DisposeGamePointResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "120f4345455f446973706f736547616d65",
+            "fields": [
+              {
+                "field": 2,
+                "wire": 2,
+                "value": "4345455f446973706f736547616d65"
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetNonChessText",
+        "input": ".chesscom.explanation_engine.v1.GetNonChessTextRequest",
+        "output": ".chesscom.explanation_engine.v1.GetNonChessTextResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0835",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 53
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "GetIllegalMoveExplanation",
+        "input": ".chesscom.explanation_engine.v1.GetIllegalMoveExplanationRequest",
+        "output": ".chesscom.explanation_engine.v1.GetIllegalMoveExplanationResponse",
+        "options": [
+          {
+            "field": 50001,
+            "wire": 2,
+            "value": "0849",
+            "fields": [
+              {
+                "field": 1,
+                "wire": 0,
+                "value": 73
+              }
+            ]
+          },
+          {
+            "field": 50002,
+            "wire": 0,
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "chesscom/ceac/v1alpha/brilliant_verification_service.proto",
+    "package": "chesscom.ceac.v1alpha",
+    "name": "BrilliantVerificationService",
+    "methods": [
+      {
+        "name": "VerifyBrilliants",
+        "input": ".chesscom.ceac.v1alpha.VerifyBrilliantsRequest",
+        "output": ".chesscom.ceac.v1alpha.VerifyBrilliantsResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/skills/v1/skills_service.proto",
+    "package": "chesscom.skills.v1",
+    "name": "SkillsService",
+    "methods": [
+      {
+        "name": "GainSkillPoints",
+        "input": ".chesscom.skills.v1.GainSkillPointsRequest",
+        "output": ".chesscom.skills.v1.GainSkillPointsResponse",
+        "options": []
+      },
+      {
+        "name": "GetSkills",
+        "input": ".chesscom.skills.v1.GetSkillsRequest",
+        "output": ".chesscom.skills.v1.GetSkillsResponse",
+        "options": []
+      },
+      {
+        "name": "GetSkillsPositions",
+        "input": ".chesscom.skills.v1.GetSkillsPositionsRequest",
+        "output": ".chesscom.skills.v1.GetSkillsPositionsResponse",
+        "options": []
+      },
+      {
+        "name": "GetConfig",
+        "input": ".chesscom.skills.v1.GetConfigRequest",
+        "output": ".chesscom.skills.v1.GetConfigResponse",
+        "options": []
+      },
+      {
+        "name": "ResetSkills",
+        "input": ".chesscom.skills.v1.ResetSkillsRequest",
+        "output": ".chesscom.skills.v1.ResetSkillsResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/friends_search/v1/friends_navigation_service.proto",
+    "package": "chesscom.friends_search.v1",
+    "name": "FriendsNavigationService",
+    "methods": [
+      {
+        "name": "ListRecentFriends",
+        "input": ".chesscom.friends_search.v1.ListRecentFriendsRequest",
+        "output": ".chesscom.friends_search.v1.ListRecentFriendsResponse",
+        "options": []
+      },
+      {
+        "name": "ListRecentPendingFriends",
+        "input": ".chesscom.friends_search.v1.ListRecentPendingFriendsRequest",
+        "output": ".chesscom.friends_search.v1.ListRecentPendingFriendsResponse",
+        "options": []
+      },
+      {
+        "name": "SocialAutocomplete",
+        "input": ".chesscom.friends_search.v1.SocialAutocompleteRequest",
+        "output": ".chesscom.friends_search.v1.SocialAutocompleteResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/friends_search/v1/friends_search_service.proto",
+    "package": "chesscom.friends_search.v1",
+    "name": "FriendsSearchService",
+    "methods": [
+      {
+        "name": "QueryFriends",
+        "input": ".chesscom.friends_search.v1.QueryFriendsRequest",
+        "output": ".chesscom.friends_search.v1.QueryFriendsResponse",
+        "options": []
+      },
+      {
+        "name": "Autocomplete",
+        "input": ".chesscom.friends_search.v1.AutocompleteRequest",
+        "output": ".chesscom.friends_search.v1.AutocompleteResponse",
+        "options": []
+      },
+      {
+        "name": "GetBlockersOf",
+        "input": ".chesscom.friends_search.v1.GetBlockersOfRequest",
+        "output": ".chesscom.friends_search.v1.GetBlockersOfResponse",
+        "options": []
+      },
+      {
+        "name": "GetUsersBlockedBy",
+        "input": ".chesscom.friends_search.v1.GetUsersBlockedByRequest",
+        "output": ".chesscom.friends_search.v1.GetUsersBlockedByResponse",
+        "options": []
+      },
+      {
+        "name": "GetFriendsCount",
+        "input": ".chesscom.friends_search.v1.GetFriendsCountRequest",
+        "output": ".chesscom.friends_search.v1.GetFriendsCountResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/configurator/v3/configurator_service.proto",
+    "package": "chesscom.configurator.v3",
+    "name": "ConfiguratorService",
+    "methods": [
+      {
+        "name": "GetConfig",
+        "input": ".chesscom.configurator.v3.GetConfigRequest",
+        "output": ".chesscom.configurator.v3.GetConfigResponse",
+        "options": []
+      },
+      {
+        "name": "GetConfigs",
+        "input": ".chesscom.configurator.v3.GetConfigsRequest",
+        "output": ".chesscom.configurator.v3.GetConfigsResponse",
+        "options": []
+      },
+      {
+        "name": "InvalidateCache",
+        "input": ".chesscom.configurator.v3.InvalidateCacheRequest",
+        "output": ".chesscom.configurator.v3.InvalidateCacheResponse",
+        "options": []
+      }
+    ]
+  },
+  {
+    "file": "chesscom/configurator/v4/configurator_service.proto",
+    "package": "chesscom.configurator.v4",
+    "name": "ConfiguratorService",
+    "methods": [
+      {
+        "name": "GetConfig",
+        "input": ".chesscom.configurator.v4.GetConfigRequest",
+        "output": ".chesscom.configurator.v4.GetConfigResponse",
+        "options": [
+          {
+            "field": 34,
+            "wire": 0,
+            "value": 2
+          }
+        ]
+      }
+    ]
+  }
+]

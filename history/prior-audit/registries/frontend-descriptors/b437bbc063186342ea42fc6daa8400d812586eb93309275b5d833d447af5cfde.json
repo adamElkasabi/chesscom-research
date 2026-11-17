@@ -1,0 +1,47 @@
+{
+  "name": "chesscom/skills/v1/eligibility_error.proto",
+  "package": "chesscom.skills.v1",
+  "message_type": [
+    {
+      "name": "EligibilityError",
+      "field": [
+        {
+          "name": "reason",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.skills.v1.EligibilityError.Reason"
+        }
+      ],
+      "enum_type": [
+        {
+          "name": "Reason",
+          "value": [
+            {
+              "name": "REASON_UNSPECIFIED",
+              "number": 0
+            },
+            {
+              "name": "REASON_GAME_SKILL_POINTS_EXPIRED",
+              "number": 1
+            },
+            {
+              "name": "REASON_NOT_A_GAME_PARTICIPANT",
+              "number": 2
+            },
+            {
+              "name": "REASON_PLAYER_DISABLED",
+              "number": 3
+            },
+            {
+              "name": "REASON_GAME_NOT_FOUND",
+              "number": 4
+            }
+          ]
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,420 @@
+{
+  "name": "chesscom/stats/v1/advanced_stat_type.proto",
+  "package": "chesscom.stats.v1",
+  "enum_type": [
+    {
+      "name": "AdvancedStatType",
+      "value": [
+        {
+          "name": "ADVANCED_STAT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPENING_ACCURACY",
+          "number": 1
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPENING_MISTAKES",
+          "number": 2
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BOOK_MOVES",
+          "number": 3
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_CHECKMATE",
+          "number": 4
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_FREE_PIECES",
+          "number": 5
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_ALL_TACTICS",
+          "number": 6
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_UNTHEMED_TACTICS",
+          "number": 7
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_FORKS",
+          "number": 8
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_PINS",
+          "number": 9
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_DISCOVERIES",
+          "number": 10
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_REMOVES_DEFENDERS",
+          "number": 11
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_TRAPPED_PIECES",
+          "number": 12
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FOUND_SACRIFICES",
+          "number": 13
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_CHECKMATE",
+          "number": 14
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_FREE_PIECES",
+          "number": 15
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_ALL_TACTICS",
+          "number": 16
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_UNTHEMED_TACTICS",
+          "number": 17
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_FORKS",
+          "number": 18
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_PINS",
+          "number": 19
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_DISCOVERIES",
+          "number": 20
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_REMOVES_DEFENDERS",
+          "number": 21
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_TRAPPED_PIECES",
+          "number": 22
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ALLOWED_SACRIFICES",
+          "number": 23
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_STRATEGIC_ACCURACY",
+          "number": 24
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ATTACKING_ACCURACY",
+          "number": 25
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_DEFENDING_ACCURACY",
+          "number": 26
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SPACE_ADVANTAGE_ACCURACY",
+          "number": 27
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_PIECE_ACTIVITY_ADVANTAGE_ACCURACY",
+          "number": 28
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_PAWN_STRUCTURE_ADVANTAGE_ACCURACY",
+          "number": 29
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPEN_ACCURACY",
+          "number": 30
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPEN_ATTACKING_ACCURACY",
+          "number": 31
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPEN_DEFENDING_ACCURACY",
+          "number": 32
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPEN_SPACE_ADVANTAGE_ACCURACY",
+          "number": 33
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPEN_PIECE_ACTIVITY_ADVANTAGE_ACCURACY",
+          "number": 34
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPEN_PAWN_STRUCTURE_ADVANTAGE_ACCURACY",
+          "number": 35
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SEMI_OPEN_ACCURACY",
+          "number": 36
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SEMI_OPEN_ATTACKING_ACCURACY",
+          "number": 37
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SEMI_OPEN_DEFENDING_ACCURACY",
+          "number": 38
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SEMI_OPEN_SPACE_ADVANTAGE_ACCURACY",
+          "number": 39
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SEMI_OPEN_PIECE_ACTIVITY_ADVANTAGE_ACCURACY",
+          "number": 40
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SEMI_OPEN_PAWN_STRUCTURE_ADVANTAGE_ACCURACY",
+          "number": 41
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOSED_ACCURACY",
+          "number": 42
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOSED_ATTACKING_ACCURACY",
+          "number": 43
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOSED_DEFENDING_ACCURACY",
+          "number": 44
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOSED_SPACE_ADVANTAGE_ACCURACY",
+          "number": 45
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOSED_PIECE_ACTIVITY_ADVANTAGE_ACCURACY",
+          "number": 46
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOSED_PAWN_STRUCTURE_ADVANTAGE_ACCURACY",
+          "number": 47
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ENDGAME_ACCURACY",
+          "number": 48
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ENDGAME_WIN_PERCENTAGE_BETTER",
+          "number": 49
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ENDGAME_WIN_PERCENTAGE_EQUAL",
+          "number": 50
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ENDGAME_WIN_PERCENTAGE_WORSE",
+          "number": 51
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_KING_PAWN_ACCURACY",
+          "number": 52
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ROOK_PAWN_ACCURACY",
+          "number": 53
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_QUEEN_ACCURACY",
+          "number": 54
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OTHER_ACCURACY",
+          "number": 55
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_KING_SAFETY_AND_CASTLING",
+          "number": 56
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_DEVELOPMENT",
+          "number": 57
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_CENTER_CONTROL",
+          "number": 58
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_KING_SAFETY_AND_CASTLING",
+          "number": 59
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_DEVELOPMENT",
+          "number": 60
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_CENTER_CONTROL",
+          "number": 61
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_BACKWARD_PAWNS",
+          "number": 62
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_ISOLATED_PAWNS",
+          "number": 63
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_DOUBLED_PAWNS",
+          "number": 64
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_PAWN_CHAINS",
+          "number": 65
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_PASSED_PAWNS",
+          "number": 66
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_OUTPOSTS",
+          "number": 67
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_OPEN_FILES",
+          "number": 68
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_PIECE_ACTIVITY",
+          "number": 69
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_BLOCKADES",
+          "number": 70
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_TRADES",
+          "number": 71
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_SPACE",
+          "number": 72
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_OCCUPYING_CENTER",
+          "number": 73
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_CENTRAL_BREAKS",
+          "number": 74
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_GOOD_KING_SAFETY",
+          "number": 75
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_BACKWARD_PAWNS",
+          "number": 76
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_ISOLATED_PAWNS",
+          "number": 77
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_DOUBLED_PAWNS",
+          "number": 78
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_PAWN_CHAINS",
+          "number": 79
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_PASSED_PAWNS",
+          "number": 80
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_OUTPOSTS",
+          "number": 81
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_OPEN_FILES",
+          "number": 82
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_PIECE_ACTIVITY",
+          "number": 83
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_BLOCKADES",
+          "number": 84
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_TRADES",
+          "number": 85
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_SPACE",
+          "number": 86
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_OCCUPYING_CENTER",
+          "number": 87
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_CENTRAL_BREAKS",
+          "number": 88
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_BAD_KING_SAFETY",
+          "number": 89
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_TIME_BLUNDERS",
+          "number": 90
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_TIME_DISCERNMENT",
+          "number": 91
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_TIME_PRESSURE_ACCURACY",
+          "number": 92
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOCK_ADVANTAGE",
+          "number": 93
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_FLAG_RATE",
+          "number": 94
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_SWINDLE_RATE",
+          "number": 95
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_RUSHED_GAME_RATE",
+          "number": 96
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_OPENING_CATEGORY",
+          "number": 100
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_TACTICS_CATEGORY",
+          "number": 101
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_STRATEGY_CATEGORY",
+          "number": 102
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_ENDGAME_CATEGORY",
+          "number": 103
+        },
+        {
+          "name": "ADVANCED_STAT_TYPE_CLOCK_CATEGORY",
+          "number": 104
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

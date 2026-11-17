@@ -1,0 +1,88 @@
+{
+  "name": "chesscom/user_properties/v1/properties_time_windows.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "TimeWindowsPropertiesData",
+      "field": [
+        {
+          "name": "properties",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TimeWindowsPropertiesData.PropertiesEntry",
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "PropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".chesscom.user_properties.v1.TimeWindowsPropertyData"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    },
+    {
+      "name": "TimeWindowsPropertyData",
+      "field": [
+        {
+          "name": "daily_aggregated",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.user_properties.v1.TimeWindowsPropertyData.DailyAggregatedEntry",
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "DailyAggregatedEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_INT32"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_DOUBLE"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {
+        "deprecated": true
+      }
+    }
+  ],
+  "syntax": "proto3"
+}

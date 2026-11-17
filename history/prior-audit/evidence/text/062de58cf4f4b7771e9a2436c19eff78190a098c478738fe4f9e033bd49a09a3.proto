@@ -1,0 +1,10 @@
+// source: chesscom/courses/v1/product_list_retrieve_mode.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum ProductListRetrieveMode {
+  PRODUCT_LIST_RETRIEVE_MODE_UNSPECIFIED = 0;
+  PRODUCT_LIST_RETRIEVE_MODE_ALL = 1;
+  PRODUCT_LIST_RETRIEVE_MODE_PRODUCT_COUNT = 2;
+}

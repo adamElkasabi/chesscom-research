@@ -1,0 +1,12 @@
+// source: chesscom/courses/v1/tutorial_category.proto
+// syntax: proto3
+
+package chesscom.courses.v1;
+
+enum TutorialCategory {
+  TUTORIAL_CATEGORY_UNSPECIFIED = 0;
+  TUTORIAL_CATEGORY_OPENING = 1;
+  TUTORIAL_CATEGORY_TACTICS = 2;
+  TUTORIAL_CATEGORY_STRATEGY = 3;
+  TUTORIAL_CATEGORY_ENDGAME = 4;
+}

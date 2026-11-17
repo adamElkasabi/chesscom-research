@@ -1,0 +1,168 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_evaluate_game.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/explanation_engine/v1/game_state.proto",
+    "chesscom/explanation_engine/v1/search.proto",
+    "chesscom/explanation_engine/v1/torch_search_mode.proto"
+  ],
+  "message_type": [
+    {
+      "name": "ExtendedSearchParameters",
+      "field": [
+        {
+          "name": "search_parameters",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchParameters"
+        },
+        {
+          "name": "null_move_search_parameters",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchParameters",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_null_move_search_parameters"
+        }
+      ]
+    },
+    {
+      "name": "EvaluateGameRequest",
+      "field": [
+        {
+          "name": "extended_search_parameters",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.ExtendedSearchParameters",
+          "oneof_index": 0
+        },
+        {
+          "name": "game_review_search_settings",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewSearchSettings",
+          "oneof_index": 0
+        },
+        {
+          "name": "starting_game_point",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "stream_progress_updates",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "engine_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "reduce_nodes_on_successive_searches",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "reduce_nodes_on_successive_multisearch_searches",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "enable_soft_nodes_limit",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "heartbeat_interval_seconds",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "torch_search_mode",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TorchSearchMode",
+          "oneof_index": 3,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "search"
+        },
+        {
+          "name": "_starting_game_point"
+        },
+        {
+          "name": "_engine_id"
+        },
+        {
+          "name": "_torch_search_mode"
+        }
+      ]
+    },
+    {
+      "name": "EvaluateGameResponse",
+      "field": [
+        {
+          "name": "progress",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "game_state",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameState",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "evaluated_positions_count",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "is_heartbeat",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_game_state"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

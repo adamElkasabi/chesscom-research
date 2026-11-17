@@ -1,0 +1,21 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_edit_pgn_nags.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "EditPgnNagsRequest",
+      "field": [
+        {
+          "name": "nags",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "EditPgnNagsResponse"
+    }
+  ],
+  "syntax": "proto3"
+}

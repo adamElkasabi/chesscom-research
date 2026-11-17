@@ -1,0 +1,26 @@
+// source: chesscom/courses_common/v1/course_video.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum CourseVideoProvider {
+  COURSE_VIDEO_PROVIDER_UNSPECIFIED = 0;
+  COURSE_VIDEO_PROVIDER_WISTIA = 1;
+  COURSE_VIDEO_PROVIDER_YOUTUBE = 2;
+  COURSE_VIDEO_PROVIDER_VIMEO = 3;
+}
+
+message CourseVideo {
+  oneof _id {
+  string id = 1;
+  }
+  oneof _thumbnail {
+  .chesscom.courses_common.v1.Picture thumbnail = 5;
+  }
+  oneof _duration_seconds {
+  int32 duration_seconds = 6;
+  }
+  optional string name = 2;
+  optional .chesscom.courses_common.v1.CourseVideoProvider provider = 3;
+  optional string provider_video_identifier = 4;
+}

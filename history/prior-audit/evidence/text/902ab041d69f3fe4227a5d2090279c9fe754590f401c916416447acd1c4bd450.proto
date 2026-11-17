@@ -1,0 +1,18 @@
+// source: chesscom/shared_board/v1alpha/shared_board_updated_notification.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+enum SharedBoardUpdateType {
+  SHARED_BOARD_UPDATE_TYPE_UNSPECIFIED = 0;
+  SHARED_BOARD_UPDATE_TYPE_CREATED = 1;
+  SHARED_BOARD_UPDATE_TYPE_UPDATED = 2;
+  SHARED_BOARD_UPDATE_TYPE_DELETED = 3;
+}
+
+message SharedBoardUpdatedNotification {
+  optional string session_id = 1;
+  optional string author_id = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoard board = 3;
+  optional .chesscom.shared_board.v1alpha.SharedBoardUpdateType update_type = 4;
+}

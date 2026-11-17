@@ -1,0 +1,8 @@
+
+Cchesscom/explanation_engine/v1/feature_convert_to_proto_moves.protochesscom.explanation_engine.v1chesscom/chess/v1/move.proto chesscom/chess/v1/notation.proto"ƒ
+ConvertToProtoMovesRequest6
+move_notation (2.chesscom.chess.v1.MoveNotation
+initial_fen (	
+moves_to_convert (	"E
+ConvertToProtoMovesResponse&
+moves (2.chesscom.chess.v1.Movebproto3

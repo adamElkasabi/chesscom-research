@@ -1,0 +1,7 @@
+
+Jchesscom/explanation_engine/v1alpha/internal_feature_uncompress_data.proto#chesscom.explanation_engine.v1alpha"P
+$InternalFeatureUncompressDataRequest
+compressed_data (
+decrypt ("B
+%InternalFeatureUncompressDataResponse
+uncompressed_data (bproto3

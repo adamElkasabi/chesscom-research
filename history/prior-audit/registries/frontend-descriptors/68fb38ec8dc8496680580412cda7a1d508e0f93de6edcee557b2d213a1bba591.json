@@ -1,0 +1,399 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoard",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "session_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "user_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "flipped",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "initial_position",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "pgn",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "line",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "move",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "squares",
+          "number": 9,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSquareHighlight"
+        },
+        {
+          "name": "arrows",
+          "number": 10,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardArrow"
+        },
+        {
+          "name": "images",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardImageMarking"
+        },
+        {
+          "name": "draft",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "version",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "sequence",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "created_at",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "updated_at",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "source",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSource"
+        },
+        {
+          "name": "hide_engine_lines",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "hide_move_list",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardSource",
+      "field": [
+        {
+          "name": "event_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardEventGameSource",
+          "oneof_index": 0
+        },
+        {
+          "name": "analysis_game",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardAnalysisGameSource",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "source"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardEventGameSource",
+      "field": [
+        {
+          "name": "event_slug",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "round_slug",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_slug",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardAnalysisGameSource",
+      "field": [
+        {
+          "name": "library_game",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardAnalysisLibraryGameSource",
+          "oneof_index": 0
+        },
+        {
+          "name": "chesscom_game",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardAnalysisChesscomGameSource",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "game"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardAnalysisLibraryGameSource",
+      "field": [
+        {
+          "name": "library_user_collection_game_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "collection_slug",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "library_item_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "collection_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardAnalysisChesscomGameSource",
+      "field": [
+        {
+          "name": "game_type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardAnalysisGameType"
+        },
+        {
+          "name": "game_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "game_uuid",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardSquareHighlight",
+      "field": [
+        {
+          "name": "key_modifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardKeyModifier"
+        },
+        {
+          "name": "square",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardArrow",
+      "field": [
+        {
+          "name": "key_modifier",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardKeyModifier"
+        },
+        {
+          "name": "from",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        },
+        {
+          "name": "to",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardImageMarking",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "square",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SharedBoardAnalysisGameType",
+      "value": [
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_DAILY",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_LIVE",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_MASTER",
+          "number": 3
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_PGN",
+          "number": 4
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_OTB",
+          "number": 5
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_COACH",
+          "number": 6
+        },
+        {
+          "name": "SHARED_BOARD_ANALYSIS_GAME_TYPE_COMPUTER",
+          "number": 7
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardKeyModifier",
+      "value": [
+        {
+          "name": "SHARED_BOARD_KEY_MODIFIER_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_KEY_MODIFIER_NONE",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_KEY_MODIFIER_SHIFT",
+          "number": 2
+        },
+        {
+          "name": "SHARED_BOARD_KEY_MODIFIER_CTRL",
+          "number": 3
+        },
+        {
+          "name": "SHARED_BOARD_KEY_MODIFIER_ALT",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

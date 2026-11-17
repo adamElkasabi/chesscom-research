@@ -1,0 +1,210 @@
+{
+  "name": "chesscom/shared_board/v1alpha/shared_board_session.proto",
+  "package": "chesscom.shared_board.v1alpha",
+  "message_type": [
+    {
+      "name": "SharedBoardSessionId",
+      "field": [
+        {
+          "name": "session_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        },
+        {
+          "name": "slug",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "id"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardSession",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "current_board_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "boards",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoard"
+        },
+        {
+          "name": "created_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "slug",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "participants",
+          "number": 6,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipant"
+        },
+        {
+          "name": "open_enrollment",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "status",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSessionStatus"
+        },
+        {
+          "name": "clock",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardClock"
+        },
+        {
+          "name": "source",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSessionSource"
+        },
+        {
+          "name": "linked_resource",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSessionResource"
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardSessionSummary",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "slug",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "source",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSessionSource"
+        },
+        {
+          "name": "open_enrollment",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "status",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardSessionStatus"
+        },
+        {
+          "name": "role",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardRole"
+        },
+        {
+          "name": "participant_status",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.shared_board.v1alpha.SharedBoardParticipantStatus"
+        },
+        {
+          "name": "created_at",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "updated_at",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SharedBoardSessionStatus",
+      "value": [
+        {
+          "name": "SHARED_BOARD_SESSION_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_SESSION_STATUS_ACTIVE",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_SESSION_STATUS_ENDED",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "name": "SharedBoardSessionSource",
+      "value": [
+        {
+          "name": "SHARED_BOARD_SESSION_SOURCE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "SHARED_BOARD_SESSION_SOURCE_ANALYSIS",
+          "number": 1
+        },
+        {
+          "name": "SHARED_BOARD_SESSION_SOURCE_EVENTS",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,307 @@
+{
+  "name": "chesscom/presence/v1/presence.proto",
+  "package": "chesscom.presence.v1",
+  "message_type": [
+    {
+      "name": "UserPresence",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "status",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.presence.v1.ConnectionStatus"
+        },
+        {
+          "name": "status_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "updated_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "activity",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.presence.v1.PresenceActivity",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "activity_context",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.presence.v1.PresenceActivityContext",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "status_at_uncertain",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "streaming",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.presence.v1.Streaming",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "quality",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.presence.v1.ConnectionQuality",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "location",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.Location",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "clients",
+          "number": 11,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.presence.v1.ClientInfo"
+        },
+        {
+          "name": "attributes",
+          "number": 12,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "capabilities",
+          "number": 13,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_activity"
+        },
+        {
+          "name": "_activity_context"
+        },
+        {
+          "name": "_status_at_uncertain"
+        },
+        {
+          "name": "_streaming"
+        },
+        {
+          "name": "_quality"
+        },
+        {
+          "name": "_location"
+        }
+      ]
+    },
+    {
+      "name": "Streaming",
+      "field": [
+        {
+          "name": "started_at",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "url",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PresenceActivityContext",
+      "field": [
+        {
+          "name": "games",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.gameplay.v1.GameRef"
+        },
+        {
+          "name": "battles",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.gameplay.v1.BattleRef"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ClientInfo",
+      "field": [
+        {
+          "name": "type",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.presence.v1.ClientType",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_type"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "PresenceStatus",
+      "value": [
+        {
+          "name": "PRESENCE_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PRESENCE_STATUS_OFFLINE",
+          "number": 1
+        },
+        {
+          "name": "PRESENCE_STATUS_ONLINE",
+          "number": 2
+        },
+        {
+          "name": "PRESENCE_STATUS_PLAYING",
+          "number": 3
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ConnectionStatus",
+      "value": [
+        {
+          "name": "CONNECTION_STATUS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CONNECTION_STATUS_OFFLINE",
+          "number": 1
+        },
+        {
+          "name": "CONNECTION_STATUS_ONLINE",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "PresenceActivity",
+      "value": [
+        {
+          "name": "PRESENCE_ACTIVITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PRESENCE_ACTIVITY_NONE",
+          "number": 1
+        },
+        {
+          "name": "PRESENCE_ACTIVITY_PLAYING",
+          "number": 2
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ConnectionQuality",
+      "value": [
+        {
+          "name": "CONNECTION_QUALITY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CONNECTION_QUALITY_OFFLINE",
+          "number": 1
+        },
+        {
+          "name": "CONNECTION_QUALITY_POOR",
+          "number": 2
+        },
+        {
+          "name": "CONNECTION_QUALITY_OK",
+          "number": 3
+        },
+        {
+          "name": "CONNECTION_QUALITY_GOOD",
+          "number": 4
+        },
+        {
+          "name": "CONNECTION_QUALITY_EXCELLENT",
+          "number": 5
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ClientType",
+      "value": [
+        {
+          "name": "CLIENT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CLIENT_TYPE_WEB",
+          "number": 1
+        },
+        {
+          "name": "CLIENT_TYPE_IOS",
+          "number": 2
+        },
+        {
+          "name": "CLIENT_TYPE_ANDROID",
+          "number": 3
+        },
+        {
+          "name": "CLIENT_TYPE_UNKNOWN",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

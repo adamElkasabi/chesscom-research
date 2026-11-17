@@ -1,0 +1,47 @@
+[
+  {
+    "module_id": "module-001",
+    "defined_functions": 22922,
+    "imported_functions": 154,
+    "exported_functions": 150,
+    "exports_total": 152,
+    "direct_pairs": 97169,
+    "indirect_call_sites": 9438
+  },
+  {
+    "module_id": "module-002",
+    "defined_functions": 22953,
+    "imported_functions": 155,
+    "exported_functions": 151,
+    "exports_total": 153,
+    "direct_pairs": 97403,
+    "indirect_call_sites": 9451
+  },
+  {
+    "module_id": "module-003",
+    "defined_functions": 756,
+    "imported_functions": 41,
+    "exported_functions": 31,
+    "exports_total": 32,
+    "direct_pairs": 1994,
+    "indirect_call_sites": 736
+  },
+  {
+    "module_id": "module-004",
+    "defined_functions": 709,
+    "imported_functions": 22,
+    "exported_functions": 14,
+    "exports_total": 16,
+    "direct_pairs": 1898,
+    "indirect_call_sites": 655
+  },
+  {
+    "module_id": "module-005",
+    "defined_functions": 749,
+    "imported_functions": 18,
+    "exported_functions": 15,
+    "exports_total": 17,
+    "direct_pairs": 1853,
+    "indirect_call_sites": 642
+  }
+]

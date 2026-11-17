@@ -1,0 +1,54 @@
+// source: chesscom/payments/v1/refund_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message IssueRefundRequest {
+  optional string user_uuid = 1;
+  optional string charge_id = 2;
+  optional int32 amount_cents = 4;
+  optional .chesscom.support.v1.SupportActionContext context = 6;
+  optional .chesscom.payments.v1.CancellationEffect cancellation_effect = 8;
+}
+
+message IssueRefundResponse {
+  optional bool already_refunded = 1;
+  optional int32 refunded_cents = 2;
+  optional .chesscom.support.v1.SupportActionResult action_result = 3;
+  optional string refund_id = 4;
+}
+
+message ListChargesRequest {
+  optional string user_uuid = 1;
+  optional int32 limit = 2;
+}
+
+message ListChargesResponse {
+  repeated .chesscom.payments.v1.Charge charges = 1;
+}
+
+message FindChargesRequest {
+  oneof identifier {
+  string adyen_psp_reference = 1;
+  string google_play_order_id = 2;
+  string apple_transaction_id = 3;
+  string apple_order_id = 5;
+  string chesscom_order_number = 6;
+  }
+  optional string user_uuid = 7;
+  optional .chesscom.support.v1.SupportActionContext context = 4;
+}
+
+message FindChargesResponse {
+  repeated .chesscom.payments.v1.FoundCharge charges = 1;
+  optional bool privacy_withheld = 2;
+  optional .chesscom.support.v1.SupportActionResult action_result = 3;
+}
+
+message ListSubscriptionsRequest {
+  optional string user_uuid = 1;
+}
+
+message ListSubscriptionsResponse {
+  repeated .chesscom.payments.v1.MemberSubscription subscriptions = 1;
+}

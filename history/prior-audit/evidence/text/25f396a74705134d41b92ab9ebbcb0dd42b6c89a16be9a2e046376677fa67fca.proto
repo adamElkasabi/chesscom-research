@@ -1,0 +1,9 @@
+// source: chesscom/ceac/v2/game_evaluation_options.proto
+// syntax: proto3
+
+package chesscom.ceac.v2;
+
+message GameEvaluationOptions {
+  optional bool use_game_state_cache = 1;
+  optional bool use_serial_evaluations = 2;
+}

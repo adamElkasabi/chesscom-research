@@ -1,0 +1,85 @@
+// source: chesscom/user_properties/v1/properties_pii.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum PIIPropertyDefinition {
+  PII_PROPERTY_UNSPECIFIED = 0;
+  EMAIL = 1;
+  FIRST_NAME = 2;
+  LAST_NAME = 3;
+  COUNTRY = 4;
+  LAST_COUNTRY = 5;
+  LAST_IP_ADDRESS = 6;
+  LAST_TIMEZONE = 7;
+  LAST_CONTINENT = 8;
+  LAST_CITY = 9;
+  LAST_REGION = 10;
+  LAST_LATITUDE = 11;
+  LAST_LONGITUDE = 12;
+  PREVIOUS_EMAILS = 13;
+  PAYMENT_COUNTRY = 14;
+  PAYMENT_COUNTRY_CONFIDENCE_LEVEL = 15;
+  PAYPAL_EMAILS = 16;
+  PHONE_NUMBER = 17;
+  PREVIOUS_PHONE_NUMBERS = 18;
+  USCF_ID = 19;
+  FIDE_ID = 20;
+}
+
+message PIIProperty {
+  oneof _email {
+  string email = 1;
+  }
+  oneof _first_name {
+  string first_name = 2;
+  }
+  oneof _last_name {
+  string last_name = 3;
+  }
+  oneof _country {
+  string country = 4;
+  }
+  oneof _last_country {
+  string last_country = 5;
+  }
+  oneof _last_ip_address {
+  string last_ip_address = 6;
+  }
+  oneof _last_timezone {
+  string last_timezone = 7;
+  }
+  oneof _last_continent {
+  string last_continent = 8;
+  }
+  oneof _last_city {
+  string last_city = 9;
+  }
+  oneof _last_region {
+  string last_region = 10;
+  }
+  oneof _last_latitude {
+  double last_latitude = 11;
+  }
+  oneof _last_longitude {
+  double last_longitude = 12;
+  }
+  oneof _payment_country {
+  string payment_country = 14;
+  }
+  oneof _payment_country_confidence_level {
+  string payment_country_confidence_level = 15;
+  }
+  oneof _phone_number {
+  string phone_number = 17;
+  }
+  oneof _uscf_id {
+  string uscf_id = 19;
+  }
+  oneof _fide_id {
+  int64 fide_id = 20;
+  }
+  repeated string previous_emails = 13;
+  repeated string paypal_emails = 16;
+  repeated string previous_phone_numbers = 18;
+}

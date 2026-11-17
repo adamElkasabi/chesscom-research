@@ -1,0 +1,6 @@
+
+Jchesscom/explanation_engine/v1/internal_feature_get_move_annotations.protochesscom.explanation_engine.v14chesscom/explanation_engine/v1/move_annotation.proto"*
+(InternalFeatureGetMoveAnnotationsRequest"o
+)InternalFeatureGetMoveAnnotationsResponseB
+
+annotation (2..chesscom.explanation_engine.v1.MoveAnnotationbproto3

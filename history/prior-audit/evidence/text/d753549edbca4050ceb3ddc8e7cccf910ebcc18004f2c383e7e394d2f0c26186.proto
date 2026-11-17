@@ -1,0 +1,39 @@
+// source: chesscom/courses_common/v1/course_drawings.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+enum CourseDrawingArrowType {
+  COURSE_DRAWING_ARROW_TYPE_UNSPECIFIED = 0;
+  COURSE_DRAWING_ARROW_TYPE_PRIMARY = 1;
+  COURSE_DRAWING_ARROW_TYPE_SECONDARY = 2;
+  COURSE_DRAWING_ARROW_TYPE_TERTIARY = 3;
+  COURSE_DRAWING_ARROW_TYPE_QUATERNARY = 4;
+}
+
+enum CourseDrawingSquareType {
+  COURSE_DRAWING_SQUARE_TYPE_UNSPECIFIED = 0;
+  COURSE_DRAWING_SQUARE_TYPE_PRIMARY = 1;
+  COURSE_DRAWING_SQUARE_TYPE_SECONDARY = 2;
+  COURSE_DRAWING_SQUARE_TYPE_TERTIARY = 3;
+  COURSE_DRAWING_SQUARE_TYPE_QUATERNARY = 4;
+}
+
+message CourseDrawingArrow {
+  optional .chesscom.chess.v1.Square square_from = 1;
+  optional .chesscom.chess.v1.Square square_to = 2;
+  optional .chesscom.courses_common.v1.CourseDrawingArrowType type = 3;
+}
+
+message CourseDrawingSquare {
+  optional .chesscom.chess.v1.Square square = 1;
+  optional .chesscom.courses_common.v1.CourseDrawingSquareType type = 2;
+}
+
+message CourseSubvariationDrawing {
+  optional string branch_fen = 1;
+  optional string branch_move = 2;
+  optional string position_fen = 3;
+  repeated .chesscom.courses_common.v1.CourseDrawingSquare drawing_squares = 4;
+  repeated .chesscom.courses_common.v1.CourseDrawingArrow drawing_arrows = 5;
+}

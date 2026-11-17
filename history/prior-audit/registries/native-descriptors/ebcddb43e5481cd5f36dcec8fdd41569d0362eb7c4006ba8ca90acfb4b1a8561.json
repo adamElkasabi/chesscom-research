@@ -1,0 +1,154 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_run_search.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1/feature_run_search.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureRunSearchRequest",
+      "field": [
+        {
+          "name": "request",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RunSearchRequest"
+        },
+        {
+          "name": "pvtree_options",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PVTreeOptions",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_pvtree_options"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureRunSearchResponse",
+      "field": [
+        {
+          "name": "response",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.RunSearchResponse"
+        }
+      ]
+    },
+    {
+      "name": "PVTreeOptions",
+      "field": [
+        {
+          "name": "use_split_depth_limit",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "split_depth_limit",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "use_split_width_limit",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "split_width_limit",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "keep_equal_subtrees",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "allowed_excess_depth",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "allowed_excess_width",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32",
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "ep_loss_margin",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "oneof_index": 8,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_use_split_depth_limit"
+        },
+        {
+          "name": "_split_depth_limit"
+        },
+        {
+          "name": "_use_split_width_limit"
+        },
+        {
+          "name": "_split_width_limit"
+        },
+        {
+          "name": "_keep_equal_subtrees"
+        },
+        {
+          "name": "_allowed_excess_depth"
+        },
+        {
+          "name": "_allowed_excess_width"
+        },
+        {
+          "name": "_rating"
+        },
+        {
+          "name": "_ep_loss_margin"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

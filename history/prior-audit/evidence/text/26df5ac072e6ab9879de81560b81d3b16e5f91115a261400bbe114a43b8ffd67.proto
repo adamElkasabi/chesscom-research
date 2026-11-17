@@ -1,0 +1,147 @@
+// source: chesscom/user_properties/v1/properties_product_activity_rankings.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum ProductActivityRankingsPropertyDefinition {
+  PRODUCT_RANKINGS_PROPERTY_UNSPECIFIED = 0;
+  DAILY_TIME_ON_PLATFORM_IN_SECONDS_RANK = 1;
+  FRIEND_GAMES_RANK = 2;
+  DAILY_MOVES_RANK = 3;
+  LESSON_ACTIVITY_RANK = 4;
+  GAME_REVIEWS_STARTED_RANK = 5;
+  GAME_REVIEW_ACTIVITY_RANK = 6;
+  ARTICLE_ACTIVITY_RANK = 7;
+  EVENTS_ACTIVITY_RANK = 8;
+  VS_COACH_ACTIVITY_RANK = 9;
+  VS_COACH_GAMES_RANK = 10;
+  LIVE_BULLET_GAMES_RANK = 11;
+  LIVE_BLITZ_GAMES_RANK = 12;
+  LIVE_RAPID_GAMES_RANK = 13;
+  LESSON_START_RANK = 14;
+  SOCIAL_ACTIVITY_RANK = 15;
+  BOT_GAMES_RANK = 16;
+  UPGRADE_ACTIVITY_RANK = 17;
+  ACTIVE_EVENTS_RANK = 18;
+  LIVE_GAMES_RANK = 19;
+  TOURNAMENT_GAMES_RANK = 20;
+  TACTICS_RANK = 21;
+  PUZZLE_RUSHES_RANK = 22;
+  PUZZLE_BATTLES_RANK = 23;
+  DAILY_PUZZLES_RANK = 24;
+  COURSES_STARTED_RANK = 25;
+  PRACTICE_ENDGAME_STARTED_RANK = 26;
+  ANALYSIS_STARTED_RANK = 27;
+  STATS_PAGE_VIEWS_RANK = 28;
+  CHESS_TV_EVENT_VIEWS_RANK = 29;
+  ARTICLE_NEWS_BLOG_FORUM_VIEWS_RANK = 30;
+  SOCIAL_SHARES_RANK = 31;
+  CHAT_MESSAGES_RANK = 32;
+  FRIENDS_ADDED_RANK = 33;
+  FRIEND_INVITES_SENT_RANK = 34;
+}
+
+message ProductActivityRankingsProperty {
+  oneof _daily_time_on_platform_in_seconds_rank {
+  double daily_time_on_platform_in_seconds_rank = 1;
+  }
+  oneof _friend_games_rank {
+  double friend_games_rank = 2;
+  }
+  oneof _daily_moves_rank {
+  double daily_moves_rank = 3;
+  }
+  oneof _lesson_activity_rank {
+  double lesson_activity_rank = 4;
+  }
+  oneof _game_reviews_started_rank {
+  double game_reviews_started_rank = 5;
+  }
+  oneof _game_review_activity_rank {
+  double game_review_activity_rank = 6;
+  }
+  oneof _article_activity_rank {
+  double article_activity_rank = 7;
+  }
+  oneof _events_activity_rank {
+  double events_activity_rank = 8;
+  }
+  oneof _vs_coach_activity_rank {
+  double vs_coach_activity_rank = 9;
+  }
+  oneof _vs_coach_games_rank {
+  double vs_coach_games_rank = 10;
+  }
+  oneof _live_bullet_games_rank {
+  double live_bullet_games_rank = 11;
+  }
+  oneof _live_blitz_games_rank {
+  double live_blitz_games_rank = 12;
+  }
+  oneof _live_rapid_games_rank {
+  double live_rapid_games_rank = 13;
+  }
+  oneof _lesson_start_rank {
+  double lesson_start_rank = 14;
+  }
+  oneof _social_activity_rank {
+  double social_activity_rank = 15;
+  }
+  oneof _bot_games_rank {
+  double bot_games_rank = 16;
+  }
+  oneof _upgrade_activity_rank {
+  double upgrade_activity_rank = 17;
+  }
+  oneof _active_events_rank {
+  double active_events_rank = 18;
+  }
+  oneof _live_games_rank {
+  double live_games_rank = 19;
+  }
+  oneof _tournament_games_rank {
+  double tournament_games_rank = 20;
+  }
+  oneof _tactics_rank {
+  double tactics_rank = 21;
+  }
+  oneof _puzzle_rushes_rank {
+  double puzzle_rushes_rank = 22;
+  }
+  oneof _puzzle_battles_rank {
+  double puzzle_battles_rank = 23;
+  }
+  oneof _daily_puzzles_rank {
+  double daily_puzzles_rank = 24;
+  }
+  oneof _courses_started_rank {
+  double courses_started_rank = 25;
+  }
+  oneof _practice_endgame_started_rank {
+  double practice_endgame_started_rank = 26;
+  }
+  oneof _analysis_started_rank {
+  double analysis_started_rank = 27;
+  }
+  oneof _stats_page_views_rank {
+  double stats_page_views_rank = 28;
+  }
+  oneof _chess_tv_event_views_rank {
+  double chess_tv_event_views_rank = 29;
+  }
+  oneof _article_news_blog_forum_views_rank {
+  double article_news_blog_forum_views_rank = 30;
+  }
+  oneof _social_shares_rank {
+  double social_shares_rank = 31;
+  }
+  oneof _chat_messages_rank {
+  double chat_messages_rank = 32;
+  }
+  oneof _friends_added_rank {
+  double friends_added_rank = 33;
+  }
+  oneof _friend_invites_sent_rank {
+  double friend_invites_sent_rank = 34;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "chesscom/explanation_engine/v1/internal_feature_web_demo_json.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "InternalFeatureWebDemoJsonRequest"
+    },
+    {
+      "name": "InternalFeatureWebDemoJsonResponse",
+      "field": [
+        {
+          "name": "web_demo_json",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

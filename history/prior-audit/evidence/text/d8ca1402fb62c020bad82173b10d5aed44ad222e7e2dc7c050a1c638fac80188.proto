@@ -1,0 +1,14 @@
+// source: chesscom/api/v1/error.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+message TwirpError {
+  optional string msg = 1;
+  optional string code = 2;
+  repeated .chesscom.api.v1.TwirpError.MetaEntry meta = 3;
+  message MetaEntry {
+  optional string key = 1;
+  optional string value = 2;
+  }
+}

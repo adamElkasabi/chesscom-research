@@ -1,0 +1,567 @@
+{
+  "name": "chesscom/proto_options/events/v1/event_options.proto",
+  "package": "chesscom.proto_options.events.v1",
+  "message_type": [
+    {
+      "name": "EventDefinition",
+      "field": [
+        {
+          "name": "name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "category",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.EventCategory",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "type",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.EventType",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "funnel",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.events.v1.Funnel",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "interface_name",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "element_name",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "v1_event_name",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "static_properties",
+          "number": 8,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.events.v1.EventDefinition.StaticPropertiesEntry"
+        },
+        {
+          "name": "experiment_key_field",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 7,
+          "proto3_optional": true
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "StaticPropertiesEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_MESSAGE",
+              "type_name": ".google.protobuf.Value"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_name"
+        },
+        {
+          "name": "_category"
+        },
+        {
+          "name": "_type"
+        },
+        {
+          "name": "_funnel"
+        },
+        {
+          "name": "_interface_name"
+        },
+        {
+          "name": "_element_name"
+        },
+        {
+          "name": "_v1_event_name"
+        },
+        {
+          "name": "_experiment_key_field"
+        }
+      ]
+    },
+    {
+      "name": "ContextExtensionDefinition",
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "EventCategory",
+      "value": [
+        {
+          "name": "EVENT_CATEGORY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "EVENT_CATEGORY_IMPRESSION",
+          "number": 1
+        },
+        {
+          "name": "EVENT_CATEGORY_USER_ACTION",
+          "number": 2
+        },
+        {
+          "name": "EVENT_CATEGORY_SERVER_ACTION",
+          "number": 3
+        },
+        {
+          "name": "EVENT_CATEGORY_LOG",
+          "number": 4
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "EventType",
+      "value": [
+        {
+          "name": "EVENT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "EVENT_TYPE_IMPRESSION",
+          "number": 1
+        },
+        {
+          "name": "EVENT_TYPE_INTERFACE_OPENED",
+          "number": 2
+        },
+        {
+          "name": "EVENT_TYPE_INTERFACE_CLOSED",
+          "number": 3
+        },
+        {
+          "name": "EVENT_TYPE_BUTTON_CLICK",
+          "number": 4
+        },
+        {
+          "name": "EVENT_TYPE_TEXT_ENTRY",
+          "number": 5
+        },
+        {
+          "name": "EVENT_TYPE_MODAL_OPENED",
+          "number": 6
+        },
+        {
+          "name": "EVENT_TYPE_NOTIFICATION_SENT",
+          "number": 7
+        },
+        {
+          "name": "EVENT_TYPE_LINK_CLICKED",
+          "number": 8
+        },
+        {
+          "name": "EVENT_TYPE_NOTIFICATION_OPENED",
+          "number": 9
+        },
+        {
+          "name": "EVENT_TYPE_GAME_ACTION",
+          "number": 10
+        },
+        {
+          "name": "EVENT_TYPE_USER_STATUS_SYSTEM_ACTION",
+          "number": 11
+        },
+        {
+          "name": "EVENT_TYPE_MODAL_CLOSED",
+          "number": 12
+        },
+        {
+          "name": "EVENT_TYPE_SOCIAL_ACTION",
+          "number": 13
+        },
+        {
+          "name": "EVENT_TYPE_NOTIFICATION_CLICKED",
+          "number": 14
+        },
+        {
+          "name": "EVENT_TYPE_UNSUBSCRIBED",
+          "number": 15
+        },
+        {
+          "name": "EVENT_TYPE_NOTIFICATION_DELIVERED",
+          "number": 16
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "Funnel",
+      "value": [
+        {
+          "name": "FUNNEL_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "FUNNEL_RECOMMENDED_MATCH",
+          "number": 1
+        },
+        {
+          "name": "FUNNEL_SIGNUP",
+          "number": 2
+        },
+        {
+          "name": "FUNNEL_GAME_CREATE",
+          "number": 3
+        },
+        {
+          "name": "FUNNEL_GAME_REVIEW",
+          "number": 4
+        },
+        {
+          "name": "FUNNEL_PUZZLES",
+          "number": 5
+        },
+        {
+          "name": "FUNNEL_FRIENDS",
+          "number": 6
+        },
+        {
+          "name": "FUNNEL_HOME",
+          "number": 7
+        },
+        {
+          "name": "FUNNEL_GAME_ARCHIVE",
+          "number": 8
+        },
+        {
+          "name": "FUNNEL_PROFILE",
+          "number": 9
+        },
+        {
+          "name": "FUNNEL_GAMEPLAY",
+          "number": 10
+        },
+        {
+          "name": "FUNNEL_CRM",
+          "number": 11
+        },
+        {
+          "name": "FUNNEL_PLAY_COACH",
+          "number": 12
+        },
+        {
+          "name": "FUNNEL_CONTACTS",
+          "number": 13
+        },
+        {
+          "name": "FUNNEL_LESSONS",
+          "number": 14
+        },
+        {
+          "name": "FUNNEL_COURSES",
+          "number": 15
+        },
+        {
+          "name": "FUNNEL_LOGIN",
+          "number": 16
+        },
+        {
+          "name": "FUNNEL_BOTS",
+          "number": 17
+        },
+        {
+          "name": "FUNNEL_PAYMENTS",
+          "number": 18
+        },
+        {
+          "name": "FUNNEL_CHALLENGES",
+          "number": 19
+        },
+        {
+          "name": "FUNNEL_USER",
+          "number": 20
+        },
+        {
+          "name": "FUNNEL_ADD_PHONE_NUMBER",
+          "number": 21
+        },
+        {
+          "name": "FUNNEL_SETTINGS",
+          "number": 22
+        },
+        {
+          "name": "FUNNEL_DOWNLOAD_MOBILE_APP",
+          "number": 23
+        },
+        {
+          "name": "FUNNEL_MESSAGE",
+          "number": 24
+        },
+        {
+          "name": "FUNNEL_SOCIAL",
+          "number": 25
+        },
+        {
+          "name": "FUNNEL_STREAKS",
+          "number": 26
+        },
+        {
+          "name": "FUNNEL_ONBOARDING",
+          "number": 27
+        },
+        {
+          "name": "FUNNEL_MONETIZATION",
+          "number": 28
+        },
+        {
+          "name": "FUNNEL_INDEX",
+          "number": 29
+        },
+        {
+          "name": "FUNNEL_CHAT",
+          "number": 30
+        },
+        {
+          "name": "FUNNEL_COACH",
+          "number": 31
+        },
+        {
+          "name": "FUNNEL_SHARE",
+          "number": 32
+        },
+        {
+          "name": "FUNNEL_DAILY_PUZZLE",
+          "number": 33
+        },
+        {
+          "name": "FUNNEL_NOTIFICATIONS",
+          "number": 34
+        },
+        {
+          "name": "FUNNEL_CLUBS",
+          "number": 35
+        },
+        {
+          "name": "FUNNEL_PUZZLE_RUSH",
+          "number": 36
+        },
+        {
+          "name": "FUNNEL_PUZZLE_BATTLE",
+          "number": 37
+        },
+        {
+          "name": "FUNNEL_CUSTOM_PUZZLES",
+          "number": 38
+        },
+        {
+          "name": "FUNNEL_AWARDS",
+          "number": 39
+        },
+        {
+          "name": "FUNNEL_UNOCKABLES",
+          "number": 40,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "FUNNEL_EVENTS",
+          "number": 41
+        },
+        {
+          "name": "FUNNEL_STATS",
+          "number": 42
+        },
+        {
+          "name": "FUNNEL_ACTIVITY_FEED",
+          "number": 43
+        },
+        {
+          "name": "FUNNEL_TRAINABLE",
+          "number": 44
+        },
+        {
+          "name": "FUNNEL_ANALYSIS",
+          "number": 45
+        },
+        {
+          "name": "FUNNEL_YEAR_IN_CHESS",
+          "number": 46
+        },
+        {
+          "name": "FUNNEL_UNLOCKABLES",
+          "number": 47
+        },
+        {
+          "name": "FUNNEL_SOCIAL_PLATFORMS",
+          "number": 48
+        },
+        {
+          "name": "FUNNEL_TRAIN",
+          "number": 49
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "extension": [
+    {
+      "name": "event_definition",
+      "extendee": ".google.protobuf.MessageOptions",
+      "number": 51000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.events.v1.EventDefinition",
+      "json_name": "eventDefinition",
+      "proto3_optional": true
+    },
+    {
+      "name": "context_extension",
+      "extendee": ".google.protobuf.MessageOptions",
+      "number": 51002,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.events.v1.ContextExtensionDefinition",
+      "json_name": "contextExtension",
+      "proto3_optional": true
+    },
+    {
+      "name": "funnel",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 51000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_ENUM",
+      "type_name": ".chesscom.proto_options.events.v1.Funnel",
+      "json_name": "funnel",
+      "proto3_optional": true
+    },
+    {
+      "name": "rename",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 51001,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "rename",
+      "proto3_optional": true
+    },
+    {
+      "name": "amplitude_value",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 51002,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "options": {
+        "deprecated": true
+      },
+      "json_name": "amplitudeValue",
+      "proto3_optional": true
+    },
+    {
+      "name": "value",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 51003,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "value",
+      "proto3_optional": true
+    },
+    {
+      "name": "v1_enum_value",
+      "extendee": ".google.protobuf.EnumValueOptions",
+      "number": 51004,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_INT32",
+      "json_name": "v1EnumValue",
+      "proto3_optional": true
+    },
+    {
+      "name": "interface",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 51000,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_BOOL",
+      "json_name": "interface",
+      "proto3_optional": true
+    },
+    {
+      "name": "element",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 51001,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_BOOL",
+      "json_name": "element",
+      "proto3_optional": true
+    },
+    {
+      "name": "name",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 51002,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "name",
+      "proto3_optional": true
+    },
+    {
+      "name": "set_user_property",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 51003,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_BOOL",
+      "json_name": "setUserProperty",
+      "proto3_optional": true
+    },
+    {
+      "name": "user_property_name",
+      "extendee": ".google.protobuf.FieldOptions",
+      "number": 51004,
+      "label": "LABEL_OPTIONAL",
+      "type": "TYPE_STRING",
+      "json_name": "userPropertyName",
+      "proto3_optional": true
+    }
+  ],
+  "syntax": "proto3"
+}

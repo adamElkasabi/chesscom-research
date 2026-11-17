@@ -1,0 +1,9 @@
+// source: chesscom/engine/v1/evaluation.proto
+// syntax: proto3
+
+package chesscom.engine.v1;
+
+message Evaluation {
+  optional .chesscom.engine.v1.Score score = 1;
+  repeated .chesscom.chess.v1.Move variation = 2;
+}

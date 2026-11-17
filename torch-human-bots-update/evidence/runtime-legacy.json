@@ -1,0 +1,269 @@
+{
+  "mode": "legacy",
+  "started": "2026-11-15T14:21:42.433Z",
+  "tests": [
+    {
+      "feature": 9,
+      "request": {
+        "engine": 1,
+        "options": {
+          "rating": 1200,
+          "adaptive": false,
+          "personality": 0,
+          "timeLimits": {
+            "timeLimitMs": 100
+          }
+        }
+      },
+      "response": {
+        "move": {
+          "from": 34,
+          "to": 43
+        }
+      },
+      "seconds": 0.059,
+      "logStart": 26
+    },
+    {
+      "feature": 9,
+      "request": {
+        "engine": 1,
+        "options": {
+          "rating": 1200,
+          "adaptive": false,
+          "personality": 3,
+          "timeLimits": {
+            "timeLimitMs": 100
+          }
+        }
+      },
+      "response": {
+        "move": {
+          "from": 34,
+          "to": 43
+        }
+      },
+      "seconds": 0.004,
+      "logStart": 38
+    },
+    {
+      "feature": 9,
+      "request": {
+        "engine": 1,
+        "options": {
+          "rating": 1200,
+          "adaptive": false,
+          "personality": 5,
+          "timeLimits": {
+            "timeLimitMs": 100
+          }
+        }
+      },
+      "response": {
+        "move": {
+          "from": 34,
+          "to": 43
+        }
+      },
+      "seconds": 0.019,
+      "logStart": 50
+    },
+    {
+      "feature": 9,
+      "request": {
+        "engine": 1,
+        "options": {
+          "rating": 1200,
+          "adaptive": false,
+          "personality": 7,
+          "timeLimits": {
+            "timeLimitMs": 100
+          }
+        }
+      },
+      "response": {
+        "move": {
+          "from": 34,
+          "to": 43
+        }
+      },
+      "seconds": 0.004,
+      "logStart": 62
+    },
+    {
+      "feature": 9,
+      "request": {
+        "engine": 1,
+        "options": {
+          "rating": 1200,
+          "adaptive": false,
+          "personality": 8,
+          "timeLimits": {
+            "timeLimitMs": 100
+          }
+        }
+      },
+      "response": {
+        "move": {
+          "from": 34,
+          "to": 43
+        }
+      },
+      "seconds": 0.011,
+      "logStart": 74
+    }
+  ],
+  "networkAttempts": [],
+  "binaries": {
+    "explanation-engine.js": "46761f54ffdd6550b3fe90553e3c13d1a49828b3c44b680845afcc20c0666c70",
+    "explanation-engine.wasm": "b94aaeec32ee0458aeba42a9d431a15f37c16740c030868c691c0697b3203373"
+  },
+  "nativeVersion": {
+    "ceeVersion": {
+      "major": 1,
+      "minor": 211,
+      "patch": 5
+    },
+    "ceeGitSha": "7a94cbd4",
+    "definitionsGitSha": "8c0f7769c299cbc1ef53ea1eed2c30495a1c3f25",
+    "uciVersion": {
+      "major": 1,
+      "minor": 130,
+      "patch": 285
+    }
+  },
+  "gamePoint": 1048582,
+  "elapsedSeconds": 1.02,
+  "logs": [
+    "Explanation Engine 1.130.285 (C) 2025 Chess.com, LLC",
+    "CEE wasm load: source=emscripten bytes=- attempts=- transfer=- compile=439ms engineInit=396ms total=835ms",
+    "[2026-11-15 14:21:43.328] [cee-ostream-logger] [info] CEE - API_LOG: CFwSEQgBIg0IAhD///////////8B",
+    "",
+    "[2026-11-15 14:21:43.347] [cee-ostream-logger] [info] CEE - API_LOG: CPiiARoECAEqAA==",
+    "",
+    "[2026-11-15 14:21:43.348] [cee-ostream-logger] [info] CEE - API_LOG: CI+oARIECAI6AA==",
+    "",
+    "[2026-11-15 14:21:43.350] [cee-ostream-logger] [info] CEE - API_LOG: CNS1ARoGCAJCAggB",
+    "",
+    "[2026-11-15 14:21:43.350] [cee-ostream-logger] [info] CEE - API_LOG: CJe7ARIECAMqAA==",
+    "",
+    "[2026-11-15 14:21:43.351] [cee-ostream-logger] [info] CEE - API_LOG: CJW9ARoECAMyAA==",
+    "",
+    "[2026-11-15 14:21:43.351] [cee-ostream-logger] [info] CEE - API_LOG: CKrCARJkCAQiYAgaEP///////////wEaUQpPMkMKP1tFdmVudCAiSXNvbGF0ZWQgYXVkaXQgcHJvYmUiXQoKMS4gZTQgZTUgMi4gTmYzIE5jNiAzLiBCYjUgYTYgKhABGghKAggBGAEgAA==",
+    "",
+    "[2026-11-15 14:21:43.352] [cee-ostream-logger] [info] CEE - API_LOG: CKvHARoGCAQqAggB",
+    "",
+    "[2026-11-15 14:21:43.352] [cee-ostream-logger] [info] CEE - API_LOG: CJ3IARIGCAU6AggB",
+    "",
+    "[2026-11-15 14:21:43.438] [cee-ostream-logger] [info] CEE - API_LOG: CJG6BhoGCAVCAggB",
+    "",
+    "[2026-11-15 14:21:43.439] [cee-ostream-logger] [info] CEE - API_LOG: CPjvBhIGCAYqAggB",
+    "",
+    "[2026-11-15 14:21:43.439] [cee-ostream-logger] [info] CEE - API_LOG: COPxBhoECAYyAA==",
+    "",
+    "[2026-11-15 14:21:43.440] [cee-ostream-logger] [info] CEE - API_LOG: CNPzBhIbCAciFwgJEIaAQBoPEgsIsAkQABgAKgIIZAgB",
+    "",
+    "[2026-11-15 14:21:43.440] [cee-ostream-logger] [info] CEE - API_LOG: CPv1BhoGCAcqAggC",
+    "",
+    "[2026-11-15 14:21:43.440] [cee-ostream-logger] [info] CEE - API_LOG: CLv2BhIGCAg6AggC",
+    "",
+    "[2026-11-15 14:21:43.496] [cee-ostream-logger] [info] CEE - API_LOG: CM+0ChoGCAhCAggB",
+    "",
+    "[2026-11-15 14:21:43.496] [cee-ostream-logger] [info] CEE - API_LOG: CPO2ChIGCAkqAggC",
+    "",
+    "[2026-11-15 14:21:43.497] [cee-ostream-logger] [info] CEE - API_LOG: CM64ChoECAkyAA==",
+    "",
+    "[2026-11-15 14:21:43.497] [cee-ostream-logger] [info] CEE - API_LOG: CL+6ChIbCAoiFwgJEIaAQBoPEgsIsAkQABgDKgIIZAgB",
+    "",
+    "[2026-11-15 14:21:43.497] [cee-ostream-logger] [info] CEE - API_LOG: CJa7ChoGCAoqAggD",
+    "",
+    "[2026-11-15 14:21:43.497] [cee-ostream-logger] [info] CEE - API_LOG: CNK7ChIGCAs6AggD",
+    "",
+    "[2026-11-15 14:21:43.500] [cee-ostream-logger] [info] CEE - API_LOG: CK/WChoGCAtCAggB",
+    "",
+    "[2026-11-15 14:21:43.500] [cee-ostream-logger] [info] CEE - API_LOG: CMPXChIGCAwqAggD",
+    "",
+    "[2026-11-15 14:21:43.502] [cee-ostream-logger] [info] CEE - API_LOG: COnXChoECAwyAA==",
+    "",
+    "[2026-11-15 14:21:43.502] [cee-ostream-logger] [info] CEE - API_LOG: CPDYChIbCA0iFwgJEIaAQBoPEgsIsAkQABgFKgIIZAgB",
+    "",
+    "[2026-11-15 14:21:43.502] [cee-ostream-logger] [info] CEE - API_LOG: CKXZChoGCA0qAggE",
+    "",
+    "[2026-11-15 14:21:43.502] [cee-ostream-logger] [info] CEE - API_LOG: CNTZChIGCA46AggE",
+    "",
+    "[2026-11-15 14:21:43.520] [cee-ostream-logger] [info] CEE - API_LOG: CO/vCxoGCA5CAggB",
+    "",
+    "[2026-11-15 14:21:43.520] [cee-ostream-logger] [info] CEE - API_LOG: CLHyCxIGCA8qAggE",
+    "",
+    "[2026-11-15 14:21:43.520] [cee-ostream-logger] [info] CEE - API_LOG: CJHzCxoECA8yAA==",
+    "",
+    "[2026-11-15 14:21:43.521] [cee-ostream-logger] [info] CEE - API_LOG: CKL0CxIbCBAiFwgJEIaAQBoPEgsIsAkQABgHKgIIZAgB",
+    "",
+    "[2026-11-15 14:21:43.521] [cee-ostream-logger] [info] CEE - API_LOG: CNv0CxoGCBAqAggF",
+    "",
+    "[2026-11-15 14:21:43.521] [cee-ostream-logger] [info] CEE - API_LOG: CIn1CxIGCBE6AggF",
+    "",
+    "[2026-11-15 14:21:43.524] [cee-ostream-logger] [info] CEE - API_LOG: CIaNDBoGCBFCAggB",
+    "",
+    "[2026-11-15 14:21:43.524] [cee-ostream-logger] [info] CEE - API_LOG: CJCODBIGCBIqAggF",
+    "",
+    "[2026-11-15 14:21:43.524] [cee-ostream-logger] [info] CEE - API_LOG: CLWODBoECBIyAA==",
+    "",
+    "[2026-11-15 14:21:43.524] [cee-ostream-logger] [info] CEE - API_LOG: CKyPDBIbCBMiFwgJEIaAQBoPEgsIsAkQABgIKgIIZAgB",
+    "",
+    "[2026-11-15 14:21:43.524] [cee-ostream-logger] [info] CEE - API_LOG: CN+PDBoGCBMqAggG",
+    "",
+    "[2026-11-15 14:21:43.524] [cee-ostream-logger] [info] CEE - API_LOG: CI+QDBIGCBQ6AggG",
+    "",
+    "[2026-11-15 14:21:43.536] [cee-ostream-logger] [info] CEE - API_LOG: CP/iDBoGCBRCAggB",
+    "",
+    "[2026-11-15 14:21:43.536] [cee-ostream-logger] [info] CEE - API_LOG: CIvkDBIGCBUqAggG",
+    "",
+    "[2026-11-15 14:21:43.536] [cee-ostream-logger] [info] CEE - API_LOG: CLHkDBoECBUyAA==",
+    ""
+  ],
+  "decodedApiLogs": [
+    "085c12110801220d080210ffffffffffffffffff01",
+    "08f8a2011a0408012a00",
+    "088fa801120408023a00",
+    "08d4b5011a06080242020801",
+    "0897bb01120408032a00",
+    "0895bd011a0408033200",
+    "08aac201126408042260081a10ffffffffffffffffff011a510a4f32430a3f5b4576656e74202249736f6c617465642061756469742070726f6265225d0a0a312e20653420653520322e204e6633204e633620332e20426235206136202a10011a084a02080118012000",
+    "08abc7011a0608042a020801",
+    "089dc801120608053a020801",
+    "0891ba061a06080542020801",
+    "08f8ef06120608062a020801",
+    "08e3f1061a0408063200",
+    "08d3f306121b080722170809108680401a0f120b08b009100018002a0208640801",
+    "08fbf5061a0608072a020802",
+    "08bbf606120608083a020802",
+    "08cfb40a1a06080842020801",
+    "08f3b60a120608092a020802",
+    "08ceb80a1a0408093200",
+    "08bfba0a121b080a22170809108680401a0f120b08b009100018032a0208640801",
+    "0896bb0a1a06080a2a020803",
+    "08d2bb0a1206080b3a020803",
+    "08afd60a1a06080b42020801",
+    "08c3d70a1206080c2a020803",
+    "08e9d70a1a04080c3200",
+    "08f0d80a121b080d22170809108680401a0f120b08b009100018052a0208640801",
+    "08a5d90a1a06080d2a020804",
+    "08d4d90a1206080e3a020804",
+    "08efef0b1a06080e42020801",
+    "08b1f20b1206080f2a020804",
+    "0891f30b1a04080f3200",
+    "08a2f40b121b081022170809108680401a0f120b08b009100018072a0208640801",
+    "08dbf40b1a0608102a020805",
+    "0889f50b120608113a020805",
+    "08868d0c1a06081142020801",
+    "08908e0c120608122a020805",
+    "08b58e0c1a0408123200",
+    "08ac8f0c121b081322170809108680401a0f120b08b009100018082a0208640801",
+    "08df8f0c1a0608132a020806",
+    "088f900c120608143a020806",
+    "08ffe20c1a06081442020801",
+    "088be40c120608152a020806",
+    "08b1e40c1a0408153200"
+  ]
+}

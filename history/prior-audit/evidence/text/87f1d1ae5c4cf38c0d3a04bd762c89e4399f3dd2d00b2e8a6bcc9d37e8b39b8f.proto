@@ -1,0 +1,31 @@
+// source: chesscom/explanation_engine/v1/analyzability.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message UnanalyzableGameTorchOnly {
+}
+
+message UnanalyzableGameImpracticalTooLong {
+}
+
+message UnanalyzableGameImpracticalNoMoves {
+}
+
+message UnanalyzableGameImpracticalNoLegalMove {
+}
+
+message UnanalyzableGameImpractical {
+  oneof impracticality {
+  .chesscom.explanation_engine.v1.UnanalyzableGameImpracticalTooLong too_long = 1;
+  .chesscom.explanation_engine.v1.UnanalyzableGameImpracticalNoMoves no_moves = 2;
+  .chesscom.explanation_engine.v1.UnanalyzableGameImpracticalNoLegalMove no_legal_move = 3;
+  }
+}
+
+message UnanalyzableGame {
+  oneof analyzability_constraint {
+  .chesscom.explanation_engine.v1.UnanalyzableGameTorchOnly torch_only = 1;
+  .chesscom.explanation_engine.v1.UnanalyzableGameImpractical impractical = 2;
+  }
+}

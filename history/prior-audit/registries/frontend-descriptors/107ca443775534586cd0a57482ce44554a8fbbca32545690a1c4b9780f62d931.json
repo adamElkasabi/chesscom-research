@@ -1,0 +1,514 @@
+{
+  "name": "chesscom/user_properties/v1/properties_settings_daily_chess.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "SettingsDailyChessProperty",
+      "field": [
+        {
+          "name": "max_game_count",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_opponent_rating",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_opponent_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "min_days_per_move",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_days_per_move",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_friend_exempt",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_touch_move",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_not_available",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_piece_style_id",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_board_color_id",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "game_board_size_id",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "post_move_action",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "vacation_time",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "vacation_leave_date",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_white_on_bottom",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "show_coordinates",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "auto_win_on_time",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "highlight_moves",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "sounds_enabled",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "default_tab",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "shared_sound_on_move",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "show_legal_moves",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "sounds_id",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 22,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1014,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.SettingsDailyChessPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_max_game_count"
+        },
+        {
+          "name": "_min_opponent_rating"
+        },
+        {
+          "name": "_max_opponent_rating"
+        },
+        {
+          "name": "_min_days_per_move"
+        },
+        {
+          "name": "_max_days_per_move"
+        },
+        {
+          "name": "_is_friend_exempt"
+        },
+        {
+          "name": "_is_touch_move"
+        },
+        {
+          "name": "_is_not_available"
+        },
+        {
+          "name": "_game_piece_style_id"
+        },
+        {
+          "name": "_game_board_color_id"
+        },
+        {
+          "name": "_game_board_size_id"
+        },
+        {
+          "name": "_post_move_action"
+        },
+        {
+          "name": "_vacation_time"
+        },
+        {
+          "name": "_vacation_leave_date"
+        },
+        {
+          "name": "_is_white_on_bottom"
+        },
+        {
+          "name": "_show_coordinates"
+        },
+        {
+          "name": "_auto_win_on_time"
+        },
+        {
+          "name": "_highlight_moves"
+        },
+        {
+          "name": "_sounds_enabled"
+        },
+        {
+          "name": "_default_tab"
+        },
+        {
+          "name": "_shared_sound_on_move"
+        },
+        {
+          "name": "_show_legal_moves"
+        },
+        {
+          "name": "_sounds_id"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "SettingsDailyChessPropertyDefinition",
+      "value": [
+        {
+          "name": "DAILY_CHESS_SETTINGS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "MAX_GAME_COUNT",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "MIN_OPPONENT_RATING",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "MAX_OPPONENT_RATING",
+          "number": 3,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "MIN_DAYS_PER_MOVE",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "MAX_DAYS_PER_MOVE",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_FRIEND_EXEMPT",
+          "number": 6,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_TOUCH_MOVE",
+          "number": 7,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "IS_NOT_AVAILABLE",
+          "number": 8,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "GAME_PIECE_STYLE_ID",
+          "number": 9,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "GAME_BOARD_COLOR_ID",
+          "number": 10,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "GAME_BOARD_SIZE_ID",
+          "number": 11,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "POST_MOVE_ACTION",
+          "number": 12,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "VACATION_TIME",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "VACATION_LEAVE_DATE",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "IS_WHITE_ON_BOTTOM",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SHOW_COORDINATES",
+          "number": 16,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "AUTO_WIN_ON_TIME",
+          "number": 17,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "HIGHLIGHT_MOVES",
+          "number": 18,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SOUNDS_ENABLED",
+          "number": 19,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "DEFAULT_TAB",
+          "number": 20,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SHARED_SOUND_ON_MOVE",
+          "number": 21,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SHOW_LEGAL_MOVES",
+          "number": 22,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "SOUNDS_ID",
+          "number": 23,
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

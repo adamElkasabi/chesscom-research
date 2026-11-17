@@ -1,0 +1,26 @@
+// source: chesscom/settings/v1/settings_board.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message BoardSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.String coordinates = 1;
+  .chesscom.settings.v1.SettingValue.String move_list_style = 2;
+  .chesscom.settings.v1.SettingValue.String animation_type = 3;
+  .chesscom.settings.v1.SettingValue.String win_celebration = 4;
+  .chesscom.settings.v1.SettingValue.String move_method = 5;
+  .chesscom.settings.v1.SettingValue.Boolean highlight_moves = 6;
+  .chesscom.settings.v1.SettingValue.Boolean white_always_on_bottom = 7;
+  .chesscom.settings.v1.SettingValue.Boolean play_sounds = 8;
+  .chesscom.settings.v1.SettingValue.Boolean show_legal_moves = 9;
+  .chesscom.settings.v1.SettingValue.Boolean show_animations = 10;
+  .chesscom.settings.v1.SettingValue.String board_style = 11;
+  .chesscom.settings.v1.SettingValue.String pieces_style = 12;
+  .chesscom.settings.v1.SettingValue.String sound_theme = 13;
+  .chesscom.settings.v1.SettingValue.String castling_type = 14;
+  .chesscom.settings.v1.SettingValue.String move_classification_style = 15;
+  .chesscom.settings.v1.SettingValue.Boolean game_result_animations = 16;
+  .chesscom.settings.v1.SettingValue.String game_over_screen = 17;
+  }
+}

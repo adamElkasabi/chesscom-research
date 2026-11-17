@@ -1,0 +1,120 @@
+// source: chesscom/proto_options/events/v1/event_options.proto
+// syntax: proto3
+
+package chesscom.proto_options.events.v1;
+
+enum EventCategory {
+  EVENT_CATEGORY_UNSPECIFIED = 0;
+  EVENT_CATEGORY_IMPRESSION = 1;
+  EVENT_CATEGORY_USER_ACTION = 2;
+  EVENT_CATEGORY_SERVER_ACTION = 3;
+  EVENT_CATEGORY_LOG = 4;
+}
+
+enum EventType {
+  EVENT_TYPE_UNSPECIFIED = 0;
+  EVENT_TYPE_IMPRESSION = 1;
+  EVENT_TYPE_INTERFACE_OPENED = 2;
+  EVENT_TYPE_INTERFACE_CLOSED = 3;
+  EVENT_TYPE_BUTTON_CLICK = 4;
+  EVENT_TYPE_TEXT_ENTRY = 5;
+  EVENT_TYPE_MODAL_OPENED = 6;
+  EVENT_TYPE_NOTIFICATION_SENT = 7;
+  EVENT_TYPE_LINK_CLICKED = 8;
+  EVENT_TYPE_NOTIFICATION_OPENED = 9;
+  EVENT_TYPE_GAME_ACTION = 10;
+  EVENT_TYPE_USER_STATUS_SYSTEM_ACTION = 11;
+  EVENT_TYPE_MODAL_CLOSED = 12;
+  EVENT_TYPE_SOCIAL_ACTION = 13;
+  EVENT_TYPE_NOTIFICATION_CLICKED = 14;
+  EVENT_TYPE_UNSUBSCRIBED = 15;
+  EVENT_TYPE_NOTIFICATION_DELIVERED = 16;
+}
+
+enum Funnel {
+  FUNNEL_UNSPECIFIED = 0;
+  FUNNEL_RECOMMENDED_MATCH = 1;
+  FUNNEL_SIGNUP = 2;
+  FUNNEL_GAME_CREATE = 3;
+  FUNNEL_GAME_REVIEW = 4;
+  FUNNEL_PUZZLES = 5;
+  FUNNEL_FRIENDS = 6;
+  FUNNEL_HOME = 7;
+  FUNNEL_GAME_ARCHIVE = 8;
+  FUNNEL_PROFILE = 9;
+  FUNNEL_GAMEPLAY = 10;
+  FUNNEL_CRM = 11;
+  FUNNEL_PLAY_COACH = 12;
+  FUNNEL_CONTACTS = 13;
+  FUNNEL_LESSONS = 14;
+  FUNNEL_COURSES = 15;
+  FUNNEL_LOGIN = 16;
+  FUNNEL_BOTS = 17;
+  FUNNEL_PAYMENTS = 18;
+  FUNNEL_CHALLENGES = 19;
+  FUNNEL_USER = 20;
+  FUNNEL_ADD_PHONE_NUMBER = 21;
+  FUNNEL_SETTINGS = 22;
+  FUNNEL_DOWNLOAD_MOBILE_APP = 23;
+  FUNNEL_MESSAGE = 24;
+  FUNNEL_SOCIAL = 25;
+  FUNNEL_STREAKS = 26;
+  FUNNEL_ONBOARDING = 27;
+  FUNNEL_MONETIZATION = 28;
+  FUNNEL_INDEX = 29;
+  FUNNEL_CHAT = 30;
+  FUNNEL_COACH = 31;
+  FUNNEL_SHARE = 32;
+  FUNNEL_DAILY_PUZZLE = 33;
+  FUNNEL_NOTIFICATIONS = 34;
+  FUNNEL_CLUBS = 35;
+  FUNNEL_PUZZLE_RUSH = 36;
+  FUNNEL_PUZZLE_BATTLE = 37;
+  FUNNEL_CUSTOM_PUZZLES = 38;
+  FUNNEL_AWARDS = 39;
+  FUNNEL_UNOCKABLES = 40;
+  FUNNEL_EVENTS = 41;
+  FUNNEL_STATS = 42;
+  FUNNEL_ACTIVITY_FEED = 43;
+  FUNNEL_TRAINABLE = 44;
+  FUNNEL_ANALYSIS = 45;
+  FUNNEL_YEAR_IN_CHESS = 46;
+  FUNNEL_UNLOCKABLES = 47;
+  FUNNEL_SOCIAL_PLATFORMS = 48;
+  FUNNEL_TRAIN = 49;
+}
+
+message EventDefinition {
+  oneof _name {
+  string name = 1;
+  }
+  oneof _category {
+  .chesscom.proto_options.events.v1.EventCategory category = 2;
+  }
+  oneof _type {
+  .chesscom.proto_options.events.v1.EventType type = 3;
+  }
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 4;
+  }
+  oneof _interface_name {
+  string interface_name = 5;
+  }
+  oneof _element_name {
+  string element_name = 6;
+  }
+  oneof _v1_event_name {
+  string v1_event_name = 7;
+  }
+  oneof _experiment_key_field {
+  string experiment_key_field = 9;
+  }
+  repeated .chesscom.proto_options.events.v1.EventDefinition.StaticPropertiesEntry static_properties = 8;
+  message StaticPropertiesEntry {
+  optional string key = 1;
+  optional .google.protobuf.Value value = 2;
+  }
+}
+
+message ContextExtensionDefinition {
+}

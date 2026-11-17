@@ -1,0 +1,1355 @@
+[
+  {
+    "reference_id": "URL-01151",
+    "literal": "/rive-wasm/rive.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 3190747,
+        "context": "[2,a]}})})}})(),r})())})),CGt,a9=r((()=>{CGt=i9(),lf(),cf()&&CGt.RuntimeLoader.setWasmUrl(`/rive-wasm/rive.wasm`)}));async function wGt(e){let t=await e;if(o9.Buffer.isBuffer(t))return t;if(typeof t==`s"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 3479387,
+        "context": "2,i]}})})}})(),r})())})),QRt,$Rt=r((()=>{QRt=m7(),zf(),Rf()&&QRt.RuntimeLoader.setWasmUrl(`/rive-wasm/rive.wasm`)})),ezt=a((e=>{e.byteLength=c,e.toByteArray=u,e.fromByteArray=p;for(var t=[],n=[],r=typeo"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 3479387,
+        "context": "2,i]}})})}})(),r})())})),QRt,$Rt=r((()=>{QRt=m7(),zf(),Rf()&&QRt.RuntimeLoader.setWasmUrl(`/rive-wasm/rive.wasm`)})),ezt=a((e=>{e.byteLength=c,e.toByteArray=u,e.fromByteArray=p;for(var t=[],n=[],r=typeo"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01334",
+    "literal": "bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289123,
+        "context": "tockfish-nnue-15.1-no-Worker.js\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm`,\"bundles/app/js/engine/stockfi"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289182,
+        "context": "ckfish-nnue-15.1-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js\":`bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294028,
+        "context": "tockfish-nnue-15.1-no-Worker.js\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm`,\"bundles/app/js/engine/stockfi"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294087,
+        "context": "ckfish-nnue-15.1-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js\":`bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294028,
+        "context": "tockfish-nnue-15.1-no-Worker.js\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm`,\"bundles/app/js/engine/stockfi"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294087,
+        "context": "ckfish-nnue-15.1-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-Worker.wasm`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js\":`bundles/app/js/engine/stockfish-n"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01336",
+    "literal": "bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289351,
+        "context": "ne/stockfish-nnue-15.1-no-simd.js\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm`,\"bundles/app/js/engine/stockfish"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289408,
+        "context": "/stockfish-nnue-15.1-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm`,\"bundles/app/js/engine/stockfish-nnue-15.1.js\":`bundles/app/js/engine/stockfish-nnue-15.1"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294256,
+        "context": "ne/stockfish-nnue-15.1-no-simd.js\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm`,\"bundles/app/js/engine/stockfish"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294313,
+        "context": "/stockfish-nnue-15.1-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm`,\"bundles/app/js/engine/stockfish-nnue-15.1.js\":`bundles/app/js/engine/stockfish-nnue-15.1"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294256,
+        "context": "ne/stockfish-nnue-15.1-no-simd.js\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm`,\"bundles/app/js/engine/stockfish"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294313,
+        "context": "/stockfish-nnue-15.1-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1-no-simd.wasm`,\"bundles/app/js/engine/stockfish-nnue-15.1.js\":`bundles/app/js/engine/stockfish-nnue-15.1"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01338",
+    "literal": "bundles/app/js/engine/stockfish-nnue-15.1.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289559,
+        "context": "dles/app/js/engine/stockfish-nnue-15.1.js\":`bundles/app/js/engine/stockfish-nnue-15.1.js`,\"bundles/app/js/engine/stockfish-nnue-15.1.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1.wasm`,\"bundles/app/js/engine/stockfish-nnue-16"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289608,
+        "context": "es/app/js/engine/stockfish-nnue-15.1.js`,\"bundles/app/js/engine/stockfish-nnue-15.1.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.js\":`bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294464,
+        "context": "dles/app/js/engine/stockfish-nnue-15.1.js\":`bundles/app/js/engine/stockfish-nnue-15.1.js`,\"bundles/app/js/engine/stockfish-nnue-15.1.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1.wasm`,\"bundles/app/js/engine/stockfish-nnue-16"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294513,
+        "context": "es/app/js/engine/stockfish-nnue-15.1.js`,\"bundles/app/js/engine/stockfish-nnue-15.1.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.js\":`bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294464,
+        "context": "dles/app/js/engine/stockfish-nnue-15.1.js\":`bundles/app/js/engine/stockfish-nnue-15.1.js`,\"bundles/app/js/engine/stockfish-nnue-15.1.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1.wasm`,\"bundles/app/js/engine/stockfish-nnue-16"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294513,
+        "context": "es/app/js/engine/stockfish-nnue-15.1.js`,\"bundles/app/js/engine/stockfish-nnue-15.1.wasm\":`bundles/app/js/engine/stockfish-nnue-15.1.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.js\":`bundles/app/js/engine/stockfish-n"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01340",
+    "literal": "bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm",
+    "source_ids": [
+      "SRC-0064",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0064",
+        "character_offset": 2108,
+        "context": "gine/stockfish-nnue-16-no-Worker.js'  \"$D/stockfish/stockfish-nnue-16-no-Worker.js\" &\nget 'bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm' \"$D/stockfish/stockfish-nnue-16-no-Worker.wasm\" &\nget 'bundles/app/js/engine/nn-5af11540b"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289767,
+        "context": "ne/stockfish-nnue-16-no-Worker.js\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,\"bundles/app/js/engine/stockfish"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289824,
+        "context": "/stockfish-nnue-16-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.js\":`bundles/app/js/engine/stockfish-nnu"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 1913824,
+        "context": "akeWorker:{loader:yN(`bundles/app/js/engine/stockfish-nnue-16-no-Worker.js`,!1),engine:yN(`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,!1)},multiThreaded:{loader:yN(`bundles/app/js/engine/stockfish-nnue-16.js`,!1),engine:yN("
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294672,
+        "context": "ne/stockfish-nnue-16-no-Worker.js\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,\"bundles/app/js/engine/stockfish"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294729,
+        "context": "/stockfish-nnue-16-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.js\":`bundles/app/js/engine/stockfish-nnu"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 1329226,
+        "context": "akeWorker:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16-no-Worker.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,!1)},multiThreaded:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16.js`,!1),engine:zN("
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294672,
+        "context": "ne/stockfish-nnue-16-no-Worker.js\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,\"bundles/app/js/engine/stockfish"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294729,
+        "context": "/stockfish-nnue-16-no-Worker.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.js\":`bundles/app/js/engine/stockfish-nnu"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 1329226,
+        "context": "akeWorker:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16-no-Worker.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-nnue-16-no-Worker.wasm`,!1)},multiThreaded:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16.js`,!1),engine:zN("
+      }
+    ],
+    "retrieval_status": "Exact saved download-script URL matches available binary; historical local bytes analyzed,not re-downloaded.",
+    "new_download_attempted": false,
+    "limitation": "Current deployed-byte equality not checked.",
+    "available_matching_modules": [
+      "module-003"
+    ]
+  },
+  {
+    "reference_id": "URL-01342",
+    "literal": "bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 289987,
+        "context": "engine/stockfish-nnue-16-no-simd.js\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,\"bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290042,
+        "context": "gine/stockfish-nnue-16-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-single.js\":`bundles/app/js/engine/stockfish-nnue"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 1914177,
+        "context": "eadedNoSIMD:{loader:yN(`bundles/app/js/engine/stockfish-nnue-16-no-simd.js`,!1),engine:yN(`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,!1)},singleThreaded:{loader:yN(`bundles/app/js/engine/stockfish-single.js`,!1),engine:yN("
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294892,
+        "context": "engine/stockfish-nnue-16-no-simd.js\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,\"bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 294947,
+        "context": "gine/stockfish-nnue-16-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-single.js\":`bundles/app/js/engine/stockfish-nnue"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 1329579,
+        "context": "eadedNoSIMD:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16-no-simd.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,!1)},singleThreaded:{loader:zN(`bundles/app/js/engine/stockfish-single.js`,!1),engine:zN("
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294892,
+        "context": "engine/stockfish-nnue-16-no-simd.js\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,\"bundles/app/js/engine/stockfish-n"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 294947,
+        "context": "gine/stockfish-nnue-16-no-simd.js`,\"bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm\":`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,\"bundles/app/js/engine/stockfish-nnue-16-single.js\":`bundles/app/js/engine/stockfish-nnue"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 1329579,
+        "context": "eadedNoSIMD:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16-no-simd.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-nnue-16-no-simd.wasm`,!1)},singleThreaded:{loader:zN(`bundles/app/js/engine/stockfish-single.js`,!1),engine:zN("
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01344",
+    "literal": "bundles/app/js/engine/stockfish-nnue-16-single.wasm",
+    "source_ids": [
+      "SRC-0064",
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0064",
+        "character_offset": 1895,
+        "context": "/js/engine/stockfish-nnue-16-single.js'  \"$D/stockfish/stockfish-nnue-16-single.js\" &\nget 'bundles/app/js/engine/stockfish-nnue-16-single.wasm' \"$D/stockfish/stockfish-nnue-16-single.wasm\" &\nget 'bundles/app/js/engine/stockfish-nnue-"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290201,
+        "context": "s/engine/stockfish-nnue-16-single.js\":`bundles/app/js/engine/stockfish-nnue-16-single.js`,\"bundles/app/js/engine/stockfish-nnue-16-single.wasm\":`bundles/app/js/engine/stockfish-nnue-16-single.wasm`,\"bundles/app/js/engine/stockfish-nn"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290255,
+        "context": "engine/stockfish-nnue-16-single.js`,\"bundles/app/js/engine/stockfish-nnue-16-single.wasm\":`bundles/app/js/engine/stockfish-nnue-16-single.wasm`,\"bundles/app/js/engine/stockfish-nnue-16.js\":`bundles/app/js/engine/stockfish-nnue-16.js`"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295106,
+        "context": "s/engine/stockfish-nnue-16-single.js\":`bundles/app/js/engine/stockfish-nnue-16-single.js`,\"bundles/app/js/engine/stockfish-nnue-16-single.wasm\":`bundles/app/js/engine/stockfish-nnue-16-single.wasm`,\"bundles/app/js/engine/stockfish-nn"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295160,
+        "context": "engine/stockfish-nnue-16-single.js`,\"bundles/app/js/engine/stockfish-nnue-16-single.wasm\":`bundles/app/js/engine/stockfish-nnue-16-single.wasm`,\"bundles/app/js/engine/stockfish-nnue-16.js\":`bundles/app/js/engine/stockfish-nnue-16.js`"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295106,
+        "context": "s/engine/stockfish-nnue-16-single.js\":`bundles/app/js/engine/stockfish-nnue-16-single.js`,\"bundles/app/js/engine/stockfish-nnue-16-single.wasm\":`bundles/app/js/engine/stockfish-nnue-16-single.wasm`,\"bundles/app/js/engine/stockfish-nn"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295160,
+        "context": "engine/stockfish-nnue-16-single.js`,\"bundles/app/js/engine/stockfish-nnue-16-single.wasm\":`bundles/app/js/engine/stockfish-nnue-16-single.wasm`,\"bundles/app/js/engine/stockfish-nnue-16.js\":`bundles/app/js/engine/stockfish-nnue-16.js`"
+      }
+    ],
+    "retrieval_status": "Exact saved download-script URL matches available binary; historical local bytes analyzed,not re-downloaded.",
+    "new_download_attempted": false,
+    "limitation": "Current deployed-byte equality not checked.",
+    "available_matching_modules": [
+      "module-004"
+    ]
+  },
+  {
+    "reference_id": "URL-01346",
+    "literal": "bundles/app/js/engine/stockfish-nnue-16.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290399,
+        "context": "\"bundles/app/js/engine/stockfish-nnue-16.js\":`bundles/app/js/engine/stockfish-nnue-16.js`,\"bundles/app/js/engine/stockfish-nnue-16.wasm\":`bundles/app/js/engine/stockfish-nnue-16.wasm`,\"bundles/app/js/engine/stockfish-single.js"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290446,
+        "context": "undles/app/js/engine/stockfish-nnue-16.js`,\"bundles/app/js/engine/stockfish-nnue-16.wasm\":`bundles/app/js/engine/stockfish-nnue-16.wasm`,\"bundles/app/js/engine/stockfish-single.js\":`bundles/app/js/engine/stockfish-single.js`,\""
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 1913970,
+        "context": ",!1)},multiThreaded:{loader:yN(`bundles/app/js/engine/stockfish-nnue-16.js`,!1),engine:yN(`bundles/app/js/engine/stockfish-nnue-16.wasm`,!1),nnue:yN(`bundles/app/js/engine/nn-5af11540bbfe.nnue`,!1)},multiThreadedNoSIMD:{loader"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295304,
+        "context": "\"bundles/app/js/engine/stockfish-nnue-16.js\":`bundles/app/js/engine/stockfish-nnue-16.js`,\"bundles/app/js/engine/stockfish-nnue-16.wasm\":`bundles/app/js/engine/stockfish-nnue-16.wasm`,\"bundles/app/js/engine/stockfish-single.js"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295351,
+        "context": "undles/app/js/engine/stockfish-nnue-16.js`,\"bundles/app/js/engine/stockfish-nnue-16.wasm\":`bundles/app/js/engine/stockfish-nnue-16.wasm`,\"bundles/app/js/engine/stockfish-single.js\":`bundles/app/js/engine/stockfish-single.js`,\""
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 1329372,
+        "context": ",!1)},multiThreaded:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-nnue-16.wasm`,!1),nnue:zN(`bundles/app/js/engine/nn-5af11540bbfe.nnue`,!1)},multiThreadedNoSIMD:{loader"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295304,
+        "context": "\"bundles/app/js/engine/stockfish-nnue-16.js\":`bundles/app/js/engine/stockfish-nnue-16.js`,\"bundles/app/js/engine/stockfish-nnue-16.wasm\":`bundles/app/js/engine/stockfish-nnue-16.wasm`,\"bundles/app/js/engine/stockfish-single.js"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295351,
+        "context": "undles/app/js/engine/stockfish-nnue-16.js`,\"bundles/app/js/engine/stockfish-nnue-16.wasm\":`bundles/app/js/engine/stockfish-nnue-16.wasm`,\"bundles/app/js/engine/stockfish-single.js\":`bundles/app/js/engine/stockfish-single.js`,\""
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 1329372,
+        "context": ",!1)},multiThreaded:{loader:zN(`bundles/app/js/engine/stockfish-nnue-16.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-nnue-16.wasm`,!1),nnue:zN(`bundles/app/js/engine/nn-5af11540bbfe.nnue`,!1)},multiThreadedNoSIMD:{loader"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01348",
+    "literal": "bundles/app/js/engine/stockfish-single.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290581,
+        "context": "`,\"bundles/app/js/engine/stockfish-single.js\":`bundles/app/js/engine/stockfish-single.js`,\"bundles/app/js/engine/stockfish-single.wasm\":`bundles/app/js/engine/stockfish-single.wasm`,\"bundles/app/js/engine/stockfish.asm.js\":`b"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290627,
+        "context": "`bundles/app/js/engine/stockfish-single.js`,\"bundles/app/js/engine/stockfish-single.wasm\":`bundles/app/js/engine/stockfish-single.wasm`,\"bundles/app/js/engine/stockfish.asm.js\":`bundles/app/js/engine/stockfish.asm.js`,\"bundle"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 1914321,
+        "context": ",!1)},singleThreaded:{loader:yN(`bundles/app/js/engine/stockfish-single.js`,!1),engine:yN(`bundles/app/js/engine/stockfish-single.wasm`,!1)},asm:yN(`bundles/app/js/engine/stockfish.asm.js`,!1),nnue:yN(`bundles/app/js/engine/n"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295486,
+        "context": "`,\"bundles/app/js/engine/stockfish-single.js\":`bundles/app/js/engine/stockfish-single.js`,\"bundles/app/js/engine/stockfish-single.wasm\":`bundles/app/js/engine/stockfish-single.wasm`,\"bundles/app/js/engine/stockfish.asm.js\":`b"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295532,
+        "context": "`bundles/app/js/engine/stockfish-single.js`,\"bundles/app/js/engine/stockfish-single.wasm\":`bundles/app/js/engine/stockfish-single.wasm`,\"bundles/app/js/engine/stockfish.asm.js\":`bundles/app/js/engine/stockfish.asm.js`,\"bundle"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 1329723,
+        "context": ",!1)},singleThreaded:{loader:zN(`bundles/app/js/engine/stockfish-single.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-single.wasm`,!1)},asm:zN(`bundles/app/js/engine/stockfish.asm.js`,!1),nnue:zN(`bundles/app/js/engine/n"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295486,
+        "context": "`,\"bundles/app/js/engine/stockfish-single.js\":`bundles/app/js/engine/stockfish-single.js`,\"bundles/app/js/engine/stockfish-single.wasm\":`bundles/app/js/engine/stockfish-single.wasm`,\"bundles/app/js/engine/stockfish.asm.js\":`b"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295532,
+        "context": "`bundles/app/js/engine/stockfish-single.js`,\"bundles/app/js/engine/stockfish-single.wasm\":`bundles/app/js/engine/stockfish-single.wasm`,\"bundles/app/js/engine/stockfish.asm.js\":`bundles/app/js/engine/stockfish.asm.js`,\"bundle"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 1329723,
+        "context": ",!1)},singleThreaded:{loader:zN(`bundles/app/js/engine/stockfish-single.js`,!1),engine:zN(`bundles/app/js/engine/stockfish-single.wasm`,!1)},asm:zN(`bundles/app/js/engine/stockfish.asm.js`,!1),nnue:zN(`bundles/app/js/engine/n"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01351",
+    "literal": "bundles/app/js/engine/stockfish.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290829,
+        "context": "ockfish.asm.js`,\"bundles/app/js/engine/stockfish.js\":`bundles/app/js/engine/stockfish.js`,\"bundles/app/js/engine/stockfish.wasm\":`bundles/app/js/engine/stockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290868,
+        "context": "stockfish.js\":`bundles/app/js/engine/stockfish.js`,\"bundles/app/js/engine/stockfish.wasm\":`bundles/app/js/engine/stockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295734,
+        "context": "ockfish.asm.js`,\"bundles/app/js/engine/stockfish.js\":`bundles/app/js/engine/stockfish.js`,\"bundles/app/js/engine/stockfish.wasm\":`bundles/app/js/engine/stockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295773,
+        "context": "stockfish.js\":`bundles/app/js/engine/stockfish.js`,\"bundles/app/js/engine/stockfish.wasm\":`bundles/app/js/engine/stockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295734,
+        "context": "ockfish.asm.js`,\"bundles/app/js/engine/stockfish.js\":`bundles/app/js/engine/stockfish.js`,\"bundles/app/js/engine/stockfish.wasm\":`bundles/app/js/engine/stockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295773,
+        "context": "stockfish.js\":`bundles/app/js/engine/stockfish.js`,\"bundles/app/js/engine/stockfish.wasm\":`bundles/app/js/engine/stockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01353",
+    "literal": "bundles/app/js/engine/torch-lite.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 290983,
+        "context": "ockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/js/engine/torch-lite.wasm\":`bundles/app/js/engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291023,
+        "context": "ch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/js/engine/torch-lite.wasm\":`bundles/app/js/engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295888,
+        "context": "ockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/js/engine/torch-lite.wasm\":`bundles/app/js/engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 295928,
+        "context": "ch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/js/engine/torch-lite.wasm\":`bundles/app/js/engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295888,
+        "context": "ockfish.wasm`,\"bundles/app/js/engine/torch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/js/engine/torch-lite.wasm\":`bundles/app/js/engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 295928,
+        "context": "ch-lite.js\":`bundles/app/js/engine/torch-lite.js`,\"bundles/app/js/engine/torch-lite.wasm\":`bundles/app/js/engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01355",
+    "literal": "bundles/app/js/engine/torch.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291129,
+        "context": "engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/torch.wasm\":`bundles/app/js/engine/torch.wasm`,\"bundles/app/js/vendor/explanation-engine-pd/explanati"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291164,
+        "context": "p/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/torch.wasm\":`bundles/app/js/engine/torch.wasm`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js\":`bundles/app/js/vendo"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296034,
+        "context": "engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/torch.wasm\":`bundles/app/js/engine/torch.wasm`,\"bundles/app/js/vendor/explanation-engine-pd/explanati"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296069,
+        "context": "p/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/torch.wasm\":`bundles/app/js/engine/torch.wasm`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js\":`bundles/app/js/vendo"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296034,
+        "context": "engine/torch-lite.wasm`,\"bundles/app/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/torch.wasm\":`bundles/app/js/engine/torch.wasm`,\"bundles/app/js/vendor/explanation-engine-pd/explanati"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296069,
+        "context": "p/js/engine/torch.js\":`bundles/app/js/engine/torch.js`,\"bundles/app/js/engine/torch.wasm\":`bundles/app/js/engine/torch.wasm`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js\":`bundles/app/js/vendo"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01358",
+    "literal": "bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-0782",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291335,
+        "context": "xplanation-engine.js\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/ven"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291405,
+        "context": "lanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js\":`bundles/app/js/ve"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 5288,
+        "context": "ar t=1,n=[],r=[],i,a,o=null,s=C[0].args,c=C[0].cb,d=C[0].stream,f\n\nexplanation-engine.js\n,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/ven"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 5358,
+        "context": "lanation-engine.js\n,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js\":`bundles/app/js/ve"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296240,
+        "context": "xplanation-engine.js\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/ven"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296310,
+        "context": "lanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js\":`bundles/app/js/ve"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296240,
+        "context": "xplanation-engine.js\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/ven"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296310,
+        "context": "lanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-pd/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js\":`bundles/app/js/ve"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01361",
+    "literal": "bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-0782",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291617,
+        "context": "anation-engine.js\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291690,
+        "context": "ation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.js\":`bundles/app/js/vendor/e"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 5570,
+        "context": "anation-engine.js\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 5643,
+        "context": "ation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.js\":`bundles/app/js/vendor/e"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 6243,
+        "context": "anation-engine.js\n:`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 6316,
+        "context": "ation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.js\":`bundles/app/js/vendor/e"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 7062,
+        "context": "a_botez.bin\":`bundles/app/js/vendor/jschessengine/books/per\n\nexplanation-engine.js\nne.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 7135,
+        "context": "engine.js\nne.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.js\":`bundles/app/js/vendor/e"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296522,
+        "context": "anation-engine.js\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296595,
+        "context": "ation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.js\":`bundles/app/js/vendor/e"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296522,
+        "context": "anation-engine.js\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296595,
+        "context": "ation-engine.js`,\"bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine-staff/explanation-engine.wasm`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.js\":`bundles/app/js/vendor/e"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01363",
+    "literal": "bundles/app/js/vendor/explanation-engine/explanation-engine.wasm",
+    "source_ids": [
+      "SRC-0781",
+      "SRC-0782",
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291893,
+        "context": "e/explanation-engine.js\":`bundles/app/js/vendor/explanation-engine/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor"
+      },
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 291960,
+        "context": "explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor/jschessengine/books/book.json\":`bundles/app/js/vendor/jschessengin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 5846,
+        "context": "e/explanation-engine.js\":`bundles/app/js/vendor/explanation-engine/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 5913,
+        "context": "explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor/jschessengine/books/book.json\":`bundles/app/js/vendor/jschessengin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 6519,
+        "context": "e/explanation-engine.js\":`bundles/app/js/vendor/explanation-engine/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 6586,
+        "context": "explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor/jschessengine/books/book.json\":`bundles/app/js/vendor/jschessengin"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 7338,
+        "context": "e/explanation-engine.js\":`bundles/app/js/vendor/explanation-engine/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor"
+      },
+      {
+        "source_id": "SRC-0782",
+        "character_offset": 7405,
+        "context": "explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor/jschessengine/books/book.json\":`bundles/app/js/vendor/jschessengin"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296798,
+        "context": "e/explanation-engine.js\":`bundles/app/js/vendor/explanation-engine/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor"
+      },
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 296865,
+        "context": "explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor/jschessengine/books/book.json\":`bundles/app/js/vendor/jschessengin"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296798,
+        "context": "e/explanation-engine.js\":`bundles/app/js/vendor/explanation-engine/explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 296865,
+        "context": "explanation-engine.js`,\"bundles/app/js/vendor/explanation-engine/explanation-engine.wasm\":`bundles/app/js/vendor/explanation-engine/explanation-engine.wasm`,\"bundles/app/js/vendor/jschessengine/books/book.json\":`bundles/app/js/vendor/jschessengin"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01604",
+    "literal": "https://cdn.jsdelivr.net/npm/${i.name}@${i.version}/rive_fallback.wasm",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 3040609,
+        "context": "ueue=[],e.wasmURL=`https://unpkg.com/${i.name}@${i.version}/rive.wasm`,e.wasmFallbackURL=`https://cdn.jsdelivr.net/npm/${i.name}@${i.version}/rive_fallback.wasm`,e.wasmBinary=null,e.errorCallbackQueue=[],e.enablePerfMarks=!1,e}()}),((e,t,n)=>{n.r(t),"
+      }
+    ],
+    "retrieval_status": "Unresolved template, not a single exact module URL.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01605",
+    "literal": "https://cdn.jsdelivr.net/npm/${o.name}@${o.version}/rive_fallback.wasm",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 3152043,
+        "context": "ueue=[],e.wasmURL=`https://unpkg.com/${o.name}@${o.version}/rive.wasm`,e.wasmFallbackURL=`https://cdn.jsdelivr.net/npm/${o.name}@${o.version}/rive_fallback.wasm`,e.wasmBinary=null,e.wasmThreadsURL=typeof a()==`function`?`https://unpkg.com/${o.name}@$"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 3152043,
+        "context": "ueue=[],e.wasmURL=`https://unpkg.com/${o.name}@${o.version}/rive.wasm`,e.wasmFallbackURL=`https://cdn.jsdelivr.net/npm/${o.name}@${o.version}/rive_fallback.wasm`,e.wasmBinary=null,e.wasmThreadsURL=typeof a()==`function`?`https://unpkg.com/${o.name}@$"
+      }
+    ],
+    "retrieval_status": "Unresolved template, not a single exact module URL.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01623",
+    "literal": "https://github.com/niklasf/stockfish.wasm",
+    "source_ids": [
+      "SRC-0036",
+      "SRC-0038",
+      "SRC-1138",
+      "SRC-1139",
+      "SRC-1140",
+      "SRC-1166",
+      "SRC-1167",
+      "SRC-1168"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0036",
+        "character_offset": 234,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-0038",
+        "character_offset": 237,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-1138",
+        "character_offset": 234,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-1139",
+        "character_offset": 237,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-1140",
+        "character_offset": 234,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-1166",
+        "character_offset": 234,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-1167",
+        "character_offset": 237,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      },
+      {
+        "source_id": "SRC-1168",
+        "character_offset": 234,
+        "context": "klas Fiekas <[REDACTED_EMAIL]>\n * Hiroshi Ogawa <[REDACTED_EMAIL]>\n * https://github.com/niklasf/stockfish.wasm\n * https://github.com/hi-ogawa/Stockfish\n *\n * Based on Stockfish (c) T. Romstad, M. Cost"
+      }
+    ],
+    "retrieval_status": "Repository/documentation URL, not a binary asset.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01667",
+    "literal": "https://unpkg.com/${i.name}@${i.version}/rive.wasm",
+    "source_ids": [
+      "SRC-0781"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0781",
+        "character_offset": 3040538,
+        "context": "etWasmBinary=function(){return e.wasmBinary},e.isLoading=!1,e.callBackQueue=[],e.wasmURL=`https://unpkg.com/${i.name}@${i.version}/rive.wasm`,e.wasmFallbackURL=`https://cdn.jsdelivr.net/npm/${i.name}@${i.version}/rive_fallback.was"
+      }
+    ],
+    "retrieval_status": "Unresolved template, not a single exact module URL.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01668",
+    "literal": "https://unpkg.com/${o.name}@${o.version}/rive.wasm",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 3151972,
+        "context": "etWasmBinary=function(){return e.wasmBinary},e.isLoading=!1,e.callBackQueue=[],e.wasmURL=`https://unpkg.com/${o.name}@${o.version}/rive.wasm`,e.wasmFallbackURL=`https://cdn.jsdelivr.net/npm/${o.name}@${o.version}/rive_fallback.was"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 3151972,
+        "context": "etWasmBinary=function(){return e.wasmBinary},e.isLoading=!1,e.callBackQueue=[],e.wasmURL=`https://unpkg.com/${o.name}@${o.version}/rive.wasm`,e.wasmFallbackURL=`https://cdn.jsdelivr.net/npm/${o.name}@${o.version}/rive_fallback.was"
+      }
+    ],
+    "retrieval_status": "Unresolved template, not a single exact module URL.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01669",
+    "literal": "https://unpkg.com/${o.name}@${o.version}/rive_threads.wasm",
+    "source_ids": [
+      "SRC-1137",
+      "SRC-1165"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-1137",
+        "character_offset": 3152174,
+        "context": "o.version}/rive_fallback.wasm`,e.wasmBinary=null,e.wasmThreadsURL=typeof a()==`function`?`https://unpkg.com/${o.name}@${o.version}/rive_threads.wasm`:null,e.triedThreads=!1,e.parallelParts=null,e.replayWorker=!0,e.replayCapsArrived=!1,e.r"
+      },
+      {
+        "source_id": "SRC-1165",
+        "character_offset": 3152174,
+        "context": "o.version}/rive_fallback.wasm`,e.wasmBinary=null,e.wasmThreadsURL=typeof a()==`function`?`https://unpkg.com/${o.name}@${o.version}/rive_threads.wasm`:null,e.triedThreads=!1,e.parallelParts=null,e.replayWorker=!0,e.replayCapsArrived=!1,e.r"
+      }
+    ],
+    "retrieval_status": "Unresolved template, not a single exact module URL.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01706",
+    "literal": "https://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 2232,
+        "context": "kfish.wasm                                           200 385560 application/wasm 0.181921\nhttps://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm                                   200 707847 application/wasm 0.205290\nhttps://www.chess."
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 1112,
+        "context": "e/stockfish-nnue-16.1.js\nhttps://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.js\nhttps://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm\nhttps://www.chess.com/bundles/app/js/engine/stockfish.js\nhttps://www.chess.com/bundles/ap"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 2232,
+        "context": "kfish.wasm                                           200 385560 application/wasm 0.181921\nhttps://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm                                   200 707847 application/wasm 0.205290\nhttps://www.chess."
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 1112,
+        "context": "e/stockfish-nnue-16.1.js\nhttps://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.js\nhttps://www.chess.com/bundles/app/js/engine/stockfish-nnue-16.wasm\nhttps://www.chess.com/bundles/app/js/engine/stockfish.js\nhttps://www.chess.com/bundles/ap"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01708",
+    "literal": "https://www.chess.com/bundles/app/js/engine/stockfish.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 2094,
+        "context": "e/Torch/torch-2-lite-aff3c0c.wasm                         206 1 application/wasm 0.431104\nhttps://www.chess.com/bundles/app/js/engine/stockfish.wasm                                           200 385560 application/wasm 0.181921\nhttps://ww"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 1236,
+        "context": "js/engine/stockfish-nnue-16.wasm\nhttps://www.chess.com/bundles/app/js/engine/stockfish.js\nhttps://www.chess.com/bundles/app/js/engine/stockfish.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch.js\nhttps://www.chess.com/bundles/app/js"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 2094,
+        "context": "e/Torch/torch-2-lite-aff3c0c.wasm                         206 1 application/wasm 0.431104\nhttps://www.chess.com/bundles/app/js/engine/stockfish.wasm                                           200 385560 application/wasm 0.181921\nhttps://ww"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 1236,
+        "context": "js/engine/stockfish-nnue-16.wasm\nhttps://www.chess.com/bundles/app/js/engine/stockfish.js\nhttps://www.chess.com/bundles/app/js/engine/stockfish.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch.js\nhttps://www.chess.com/bundles/app/js"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01710",
+    "literal": "https://www.chess.com/bundles/app/js/engine/torch-lite.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 3481,
+        "context": "wasm                                               200 47327363 application/wasm 0.731200\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.wasm                                          200 6840976 application/wasm 1.076223\n"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 1461,
+        "context": "undles/app/js/engine/torch.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.js\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.wasm\nhttps://www.chess.com/bundles/app/js/engine/books/eco.json\nhttps://www.chess.com/bundles/"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 3481,
+        "context": "wasm                                               200 47327363 application/wasm 0.731200\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.wasm                                          200 6840976 application/wasm 1.076223\n"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 1461,
+        "context": "undles/app/js/engine/torch.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.js\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.wasm\nhttps://www.chess.com/bundles/app/js/engine/books/eco.json\nhttps://www.chess.com/bundles/"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01712",
+    "literal": "https://www.chess.com/bundles/app/js/engine/torch.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 3341,
+        "context": "                                             200 113132 text/html; charset=UTF-8 0.252476\nhttps://www.chess.com/bundles/app/js/engine/torch.wasm                                               200 47327363 application/wasm 0.731200\nhttp"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 1348,
+        "context": "bundles/app/js/engine/stockfish.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch.js\nhttps://www.chess.com/bundles/app/js/engine/torch.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.js\nhttps://www.chess.com/bundles/a"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 3341,
+        "context": "                                             200 113132 text/html; charset=UTF-8 0.252476\nhttps://www.chess.com/bundles/app/js/engine/torch.wasm                                               200 47327363 application/wasm 0.731200\nhttp"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 1348,
+        "context": "bundles/app/js/engine/stockfish.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch.js\nhttps://www.chess.com/bundles/app/js/engine/torch.wasm\nhttps://www.chess.com/bundles/app/js/engine/torch-lite.js\nhttps://www.chess.com/bundles/a"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01799",
+    "literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 418,
+        "context": "gine/Torch/torch-2-single-697050e.wasm                       404 27150 text/html 0.150929\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm                              404 27150 text/html 0.151944\nhttps://www.chess.com/r2/assets"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 280,
+        "context": "anation-engine.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js\nhttps://www."
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 418,
+        "context": "gine/Torch/torch-2-single-697050e.wasm                       404 27150 text/html 0.150929\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm                              404 27150 text/html 0.151944\nhttps://www.chess.com/r2/assets"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 280,
+        "context": "anation-engine.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js\nhttps://www."
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01801",
+    "literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 1961,
+        "context": ".js                                             200 93567 application/javascript 0.147183\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm                         206 1 application/wasm 0.431104\nhttps://www.chess.com/bundles/app"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 583,
+        "context": "e-697050e.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js\nhttps:/"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 1961,
+        "context": ".js                                             200 93567 application/javascript 0.147183\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm                         206 1 application/wasm 0.431104\nhttps://www.chess.com/bundles/app"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 583,
+        "context": "e-697050e.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js\nhttps:/"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01803",
+    "literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 1685,
+        "context": "ngine/stockfish-nnue-16.1.js                                   404 548 text/html 0.163742\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm                  206 1 application/wasm 0.264840\nhttps://www.chess.com/bundles/app/js/eng"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 742,
+        "context": "0c.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm\nhttps://www.chess.com/r2/client-packages/analysis/2026.11.7/analysis.js\nhttps://www.chess"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 1685,
+        "context": "ngine/stockfish-nnue-16.1.js                                   404 548 text/html 0.163742\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm                  206 1 application/wasm 0.264840\nhttps://www.chess.com/bundles/app/js/eng"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 742,
+        "context": "0c.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm\nhttps://www.chess.com/r2/client-packages/analysis/2026.11.7/analysis.js\nhttps://www.chess"
+      }
+    ],
+    "retrieval_status": "Exact saved download-script URL matches available binary; historical local bytes analyzed,not re-downloaded.",
+    "new_download_attempted": false,
+    "limitation": "Current deployed-byte equality not checked.",
+    "available_matching_modules": [
+      "module-005"
+    ]
+  },
+  {
+    "reference_id": "URL-01805",
+    "literal": "https://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 288,
+        "context": "ine/1.130.212/default/explanation-engine.js 206 1 text/javascript; charset=utf-8 0.112791\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm                       404 27150 text/html 0.150929\nhttps://www.chess.com/r2/assets-chess-"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 429,
+        "context": "85193a7.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js\nhttps://www.ch"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 288,
+        "context": "ine/1.130.212/default/explanation-engine.js 206 1 text/javascript; charset=utf-8 0.112791\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm                       404 27150 text/html 0.150929\nhttps://www.chess.com/r2/assets-chess-"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 429,
+        "context": "85193a7.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.js\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-single-697050e.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-lite-aff3c0c.js\nhttps://www.ch"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01807",
+    "literal": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm",
+    "source_ids": [
+      "SRC-0202",
+      "SRC-1147",
+      "SRC-1162",
+      "SRC-1174"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0202",
+        "character_offset": 0,
+        "context": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm 206 1 application/wasm 0.076822\nhttps://www.chess.com/r2/assets-chess-engine/explanation-"
+      },
+      {
+        "source_id": "SRC-1147",
+        "character_offset": 104,
+        "context": "ess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.js\nhttps://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.js\nhttps://www.chess.c"
+      },
+      {
+        "source_id": "SRC-1162",
+        "character_offset": 0,
+        "context": "https://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm 206 1 application/wasm 0.076822\nhttps://www.chess.com/r2/assets-chess-engine/explanation-"
+      },
+      {
+        "source_id": "SRC-1174",
+        "character_offset": 104,
+        "context": "ess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.js\nhttps://www.chess.com/r2/assets-chess-engine/explanation-engine/1.130.212/default/explanation-engine.wasm\nhttps://www.chess.com/r2/assets-chess-engine/Torch/torch-2-85193a7.js\nhttps://www.chess.c"
+      }
+    ],
+    "retrieval_status": "Referenced; no available matching standalone binary established by this literal.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01906",
+    "literal": "r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm",
+    "source_ids": [
+      "SRC-0064"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0064",
+        "character_offset": 1657,
+        "context": "gine/Torch/torch-2-lite-single-a809e6e.js'   \"$D/torch-lite/torch-2-lite-single.js\" &\nget 'r2/assets-chess-engine/Torch/torch-2-lite-single-a809e6e.wasm' \"$D/torch-lite/torch-2-lite-single.wasm\" &\nwait\n# --- stockfish ---\nget 'bundles/app/js/e"
+      }
+    ],
+    "retrieval_status": "Exact saved download-script URL matches available binary; historical local bytes analyzed,not re-downloaded.",
+    "new_download_attempted": false,
+    "limitation": "Current deployed-byte equality not checked.",
+    "available_matching_modules": [
+      "module-005"
+    ]
+  },
+  {
+    "reference_id": "URL-01907",
+    "literal": "r2/assets-chess-engine/Torch/torch-2-single-697050e-part-$i.wasm",
+    "source_ids": [
+      "SRC-0064"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0064",
+        "character_offset": 1431,
+        "context": "/torch-2-single-697050e.js' \"$D/torch/torch-2-single.js\" &\nfor i in 0 1 2 3 4 5; do\n  get \"r2/assets-chess-engine/Torch/torch-2-single-697050e-part-$i.wasm\" \"$D/torch/torch-2-single-part-$i.wasm\" &\ndone\nget 'r2/assets-chess-engine/Torch/torch-2-l"
+      }
+    ],
+    "retrieval_status": "Unresolved template, not a single exact module URL.",
+    "new_download_attempted": false,
+    "limitation": "Previously available concrete binaries analyzed; additional versions,templates and multipart Torch references require a further bounded retrieval batch. No invented404orcurrentavailabilityclaim. Historical HTTP outcomes remain in prior audit."
+  },
+  {
+    "reference_id": "URL-01911",
+    "literal": "r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm",
+    "source_ids": [
+      "SRC-0064"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0064",
+        "character_offset": 852,
+        "context": "ion-engine/1.130.285/default/explanation-engine.js'  \"$D/cee/explanation-engine.js\" &\nget 'r2/assets-chess-engine/explanation-engine/1.130.285/default/explanation-engine.wasm' \"$D/cee/explanation-engine.wasm\" &\nget 'r2/assets-chess-engine/explanation-engine/1.130.2"
+      }
+    ],
+    "retrieval_status": "Exact saved download-script URL matches available binary; historical local bytes analyzed,not re-downloaded.",
+    "new_download_attempted": false,
+    "limitation": "Current deployed-byte equality not checked.",
+    "available_matching_modules": [
+      "module-002"
+    ]
+  },
+  {
+    "reference_id": "URL-01913",
+    "literal": "r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm",
+    "source_ids": [
+      "SRC-0064"
+    ],
+    "occurrences": [
+      {
+        "source_id": "SRC-0064",
+        "character_offset": 1109,
+        "context": "/1.130.285/no-simd/explanation-engine.js'    \"$D/cee/explanation-engine.no-simd.js\" &\nget 'r2/assets-chess-engine/explanation-engine/1.130.285/no-simd/explanation-engine.wasm'   \"$D/cee/explanation-engine.no-simd.wasm\" &\nwait\n# --- torch (single threaded, no Shared"
+      }
+    ],
+    "retrieval_status": "Exact saved download-script URL matches available binary; historical local bytes analyzed,not re-downloaded.",
+    "new_download_attempted": false,
+    "limitation": "Current deployed-byte equality not checked.",
+    "available_matching_modules": [
+      "module-001"
+    ]
+  }
+]

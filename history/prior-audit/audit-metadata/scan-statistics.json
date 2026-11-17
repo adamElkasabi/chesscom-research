@@ -1,0 +1,16 @@
+{
+  "original_files": 1135,
+  "sources_including_archive_members_and_conversation": 2049,
+  "archive_members": 913,
+  "original_markdown_sources": 10,
+  "unique_urls_and_relative_references": 1925,
+  "absolute_urls": 415,
+  "redacted_evidence_sources_by_type": {
+    "original_markdown": 7,
+    "source_code": 25,
+    "saved_html": 3,
+    "game_fixture": 6,
+    "notes_logs_or_dataset": 3,
+    "json_artifact": 5
+  }
+}

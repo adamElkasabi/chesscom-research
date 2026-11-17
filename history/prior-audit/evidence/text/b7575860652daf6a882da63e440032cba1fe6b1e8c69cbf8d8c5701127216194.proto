@@ -1,0 +1,11 @@
+// source: chesscom/user_profile/v1/social.proto
+// syntax: proto3
+
+package chesscom.user_profile.v1;
+
+message FollowedUser {
+  optional string uuid = 1;
+  optional string username = 2;
+  optional string avatar = 3;
+  optional string country_code = 4;
+}

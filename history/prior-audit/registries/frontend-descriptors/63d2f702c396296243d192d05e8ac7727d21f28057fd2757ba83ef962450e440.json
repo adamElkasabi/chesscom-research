@@ -1,0 +1,212 @@
+{
+  "name": "chesscom/proto_options/kafka/v1/kafka_options.proto",
+  "package": "chesscom.proto_options.kafka.v1",
+  "message_type": [
+    {
+      "name": "KafkaOptions",
+      "field": [
+        {
+          "name": "default_config",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs"
+        },
+        {
+          "name": "config",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaOptions.ConfigEntry"
+        },
+        {
+          "name": "chesskid",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "environment_config",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaEnvironments"
+        },
+        {
+          "name": "skip_schema_registry",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "ConfigEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "KafkaEnvironments",
+      "field": [
+        {
+          "name": "prod",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs"
+        },
+        {
+          "name": "sandbox",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs"
+        },
+        {
+          "name": "staging",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs"
+        },
+        {
+          "name": "chesskid_staging",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs"
+        },
+        {
+          "name": "chesskid_prod",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs"
+        }
+      ]
+    },
+    {
+      "name": "KafkaConfigs",
+      "field": [
+        {
+          "name": "retention_ms",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "cleanup_policy",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "num_partitions",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "additional_config",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.proto_options.kafka.v1.KafkaConfigs.AdditionalConfigEntry"
+        },
+        {
+          "name": "retention_duration",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.proto_options.kafka.v1.Duration"
+        }
+      ],
+      "nested_type": [
+        {
+          "name": "AdditionalConfigEntry",
+          "field": [
+            {
+              "name": "key",
+              "number": 1,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            },
+            {
+              "name": "value",
+              "number": 2,
+              "label": "LABEL_OPTIONAL",
+              "type": "TYPE_STRING"
+            }
+          ],
+          "options": {
+            "map_entry": true
+          }
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "Duration",
+      "value": [
+        {
+          "name": "DURATION_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DURATION_ONE_HOUR",
+          "number": 3600000
+        },
+        {
+          "name": "DURATION_TWO_HOURS",
+          "number": 7200000
+        },
+        {
+          "name": "DURATION_ONE_DAY",
+          "number": 86400000
+        },
+        {
+          "name": "DURATION_THREE_DAYS",
+          "number": 259200000
+        },
+        {
+          "name": "DURATION_ONE_WEEK",
+          "number": 604800000
+        },
+        {
+          "name": "DURATION_TWO_WEEKS",
+          "number": 1209600000
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "name": "kafka",
+      "extendee": ".google.protobuf.MessageOptions",
+      "number": 90000,
+      "label": "LABEL_REPEATED",
+      "type": "TYPE_MESSAGE",
+      "type_name": ".chesscom.proto_options.kafka.v1.KafkaOptions",
+      "json_name": "kafka"
+    }
+  ],
+  "syntax": "proto3"
+}

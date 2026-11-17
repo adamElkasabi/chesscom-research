@@ -1,0 +1,6 @@
+{
+  "id": "uci-hard-soft-50",
+  "uciAfter": {
+    "HardSoftNodeFactor": 50
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/standard_opening_book.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "enum_type": [
+    {
+      "name": "StandardOpeningBook",
+      "value": [
+        {
+          "name": "STANDARD_OPENING_BOOK_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_AGGRESSIVE",
+          "number": 1
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_BALANCED",
+          "number": 2
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_BEGINNER",
+          "number": 3
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_CLASSICAL",
+          "number": 4
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_F_PAWNER",
+          "number": 5
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_FISCHER",
+          "number": 6
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_GAMBIT",
+          "number": 7
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_INDIAN",
+          "number": 8
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_NAKAMURA",
+          "number": 9
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_OFFBEAT",
+          "number": 10
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_POSITIONAL",
+          "number": 11
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_QUICK_QUEEN",
+          "number": 12
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_RENSCH",
+          "number": 13
+        },
+        {
+          "name": "STANDARD_OPENING_BOOK_WINGER",
+          "number": 14
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

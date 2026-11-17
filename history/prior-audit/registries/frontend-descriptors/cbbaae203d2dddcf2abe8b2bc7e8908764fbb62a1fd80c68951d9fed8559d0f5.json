@@ -1,0 +1,15 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_set_played_line.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "SetPlayedLineRequest",
+      "options": {}
+    },
+    {
+      "name": "SetPlayedLineResponse",
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

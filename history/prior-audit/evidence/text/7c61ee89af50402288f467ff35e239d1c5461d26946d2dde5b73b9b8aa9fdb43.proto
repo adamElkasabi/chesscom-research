@@ -1,0 +1,16 @@
+// source: chesscom/explanation_engine/v1/feature_get_opening.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GetOpeningRequest {
+  oneof _locale {
+  .chesscom.explanation_engine.v1.Locale locale = 1;
+  }
+}
+
+message GetOpeningResponse {
+  oneof _opening {
+  .chesscom.explanation_engine.v1.Opening opening = 1;
+  }
+}

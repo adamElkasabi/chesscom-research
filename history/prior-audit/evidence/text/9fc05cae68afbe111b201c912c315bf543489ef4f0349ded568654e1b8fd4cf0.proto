@@ -1,0 +1,118 @@
+// source: chesscom/explanation_engine/v1/game_review.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message GameReview {
+  optional .chesscom.explanation_engine.v1.EvalGraph eval_graph = 1;
+  optional .chesscom.explanation_engine.v1.Highlights highlights = 2;
+  optional .chesscom.explanation_engine.v1.Review review = 3;
+  optional .chesscom.chess.v1.GameResult result = 4;
+  optional .chesscom.explanation_engine.v1.Metadata metadata = 5;
+  optional .chesscom.explanation_engine.v1.Opening opening = 6;
+}
+
+message Metadata {
+  optional .chesscom.api.v1.SemanticVersion cee_version = 1;
+  optional string annotated_pgn = 2;
+}
+
+message EvalGraph {
+  repeated .chesscom.explanation_engine.v1.EvalGraphTick eval_graph_ticks = 1;
+}
+
+message EvalGraphTick {
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 2;
+  optional .chesscom.engine.v1.Score move_score = 1;
+  optional bool is_key_moment = 3;
+}
+
+message Highlights {
+  optional string game_summary = 1;
+  optional .chesscom.explanation_engine.v1.Accuracy accuracy = 3;
+  optional .chesscom.explanation_engine.v1.ClassificationTallies classification_tallies = 4;
+  optional .chesscom.explanation_engine.v1.GameReviewReportCard report_card = 5;
+  optional .chesscom.explanation_engine.v1.Takeaways takeaways = 6;
+  optional .chesscom.explanation_engine.v1.CoachEmotion game_summary_coach_emotion = 7;
+  optional string game_summary_play = 8;
+}
+
+message ClassificationTallies {
+  repeated .chesscom.explanation_engine.v1.ClassificationTally white = 1;
+  repeated .chesscom.explanation_engine.v1.ClassificationTally black = 2;
+}
+
+message GameReviewReportCard {
+  optional .chesscom.explanation_engine.v1.GameReviewPlayerReportCard white = 1;
+  optional .chesscom.explanation_engine.v1.GameReviewPlayerReportCard black = 2;
+  optional string speech = 3;
+}
+
+message Accuracy {
+  optional float white = 1;
+  optional float black = 2;
+}
+
+message ClassificationTally {
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 1;
+  optional int32 tally = 2;
+}
+
+message GameReviewPlayerReportCard {
+  oneof _game_rating_v2 {
+  int32 game_rating_v2 = 5;
+  }
+  repeated .chesscom.explanation_engine.v1.GamePhaseReportCard reports_by_phase = 1;
+  repeated .chesscom.explanation_engine.v1.AdvancedStatCategoryReportCard reports_by_category = 2;
+  optional int32 effective_rating = 4;
+}
+
+message GamePhaseReportCard {
+  optional .chesscom.explanation_engine.v1.MoveClassification accuracy_glyph = 1;
+  optional .chesscom.chess.v1.GamePhase phase = 2;
+  optional float accuracy = 3;
+}
+
+message AdvancedStatCategoryReportCard {
+  optional .chesscom.stats.v1.AdvancedStatType category = 1;
+  optional .chesscom.explanation_engine.v1.MoveClassification performance = 2;
+  optional int32 new_rating = 3;
+  optional int32 rating_change = 4;
+}
+
+message Review {
+  optional string game_summary = 1;
+  optional string starting_fen = 2;
+  repeated .chesscom.explanation_engine.v1.PlayedMove played_moves = 3;
+  optional string final_fen = 4;
+}
+
+message PlayedMove {
+  oneof _best_alternative_move {
+  .chesscom.explanation_engine.v1.Move best_alternative_move = 3;
+  }
+  oneof _best_next_move {
+  .chesscom.chess.v1.Move best_next_move = 8;
+  }
+  optional bool is_key_moment = 1;
+  optional .chesscom.explanation_engine.v1.Move played_move = 2;
+  optional .chesscom.chess.v1.Color moved_color = 4;
+  optional .chesscom.explanation_engine.v1.CoachEmotion coach_emotion = 5;
+  optional .chesscom.explanation_engine.v1.SkillsPosition skills_earned = 6;
+  repeated .chesscom.explanation_engine.v1.PlayedMove explain_line = 7;
+}
+
+message Move {
+  optional .chesscom.chess.v1.Move move = 1;
+  optional .chesscom.explanation_engine.v1.MoveClassification move_classification = 3;
+  optional .chesscom.engine.v1.Score score = 4;
+  optional .chesscom.explanation_engine.v1.Speech speech = 5;
+  repeated .chesscom.explanation_engine.v1.ShowMoves show_moves_buttons = 6;
+  optional .chesscom.chess.v1.BoardMarkings board_markings = 7;
+}
+
+message ShowMoves {
+  repeated .chesscom.chess.v1.Move moves_to_show = 1;
+  optional string show_text = 2;
+  optional string hide_text = 3;
+}

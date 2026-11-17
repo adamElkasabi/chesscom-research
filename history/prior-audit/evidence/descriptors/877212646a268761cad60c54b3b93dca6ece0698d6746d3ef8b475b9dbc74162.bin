@@ -1,0 +1,5 @@
+
+<chesscom/explanation_engine/v1/feature_set_game_result.protochesscom.explanation_engine.v1chesscom/chess/v1/game.proto"R
+SetGameResultRequest:
+claimed_game_result (2.chesscom.chess.v1.GameResult"
+SetGameResultResponsebproto3

@@ -1,0 +1,819 @@
+{
+  "name": "chesscom/payments/v1/subscription_admin_service.proto",
+  "package": "chesscom.payments.v1",
+  "message_type": [
+    {
+      "name": "CancelSubscriptionRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "subscription_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "CancelSubscriptionResponse",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.CancelSubscriptionResult"
+        },
+        {
+          "name": "access_ends_at",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "action_result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        }
+      ]
+    },
+    {
+      "name": "StopRenewalByCardMatchRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "card_last_four",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          }
+        },
+        {
+          "name": "charge_amount_cents",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "debug_redact": true
+          }
+        },
+        {
+          "name": "charge_currency",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          }
+        },
+        {
+          "name": "charge_date",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "debug_redact": true
+          }
+        },
+        {
+          "name": "context",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        }
+      ]
+    },
+    {
+      "name": "StopRenewalByCardMatchResponse",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.StopRenewalByCardMatchResult"
+        },
+        {
+          "name": "access_ends_at",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "action_result",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    },
+    {
+      "name": "ExtendSubscriptionRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "days",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "context",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "subscription_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "ExtendSubscriptionResponse",
+      "field": [
+        {
+          "name": "days_added",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "action_result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        },
+        {
+          "name": "current_period_ends_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        }
+      ]
+    },
+    {
+      "name": "GrantGoodwillDiamondRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "fault",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.GoodwillSiteFault"
+        }
+      ]
+    },
+    {
+      "name": "GrantGoodwillDiamondResponse",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.GrantGoodwillDiamondResult"
+        },
+        {
+          "name": "days_granted",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "plan",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "access_ends_at",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        },
+        {
+          "name": "next_eligible_at",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "action_result",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    },
+    {
+      "name": "GrantNoAdsOfferRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        }
+      ]
+    },
+    {
+      "name": "GrantNoAdsOfferResponse",
+      "field": [
+        {
+          "name": "days_granted",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "plan",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "access_ends_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        },
+        {
+          "name": "next_eligible_at",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "action_result",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    },
+    {
+      "name": "TransferMembershipRequest",
+      "field": [
+        {
+          "name": "from_user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "to_user_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "from_verification_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "to_verification_id",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "TransferMembershipResponse",
+      "field": [
+        {
+          "name": "subscriptions_transferred",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "action_result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        }
+      ]
+    },
+    {
+      "name": "GrantMembershipRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "paid_order",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.PaidOrderBasis",
+          "oneof_index": 0
+        },
+        {
+          "name": "partner_membership",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.PartnerMembershipBasis",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "basis"
+        }
+      ]
+    },
+    {
+      "name": "GrantMembershipResponse",
+      "field": [
+        {
+          "name": "plan",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "subscription_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "access_ends_at",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp"
+        },
+        {
+          "name": "action_result",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        }
+      ]
+    },
+    {
+      "name": "SwitchToMonthlyRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        },
+        {
+          "name": "subscription_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "SwitchToMonthlyResponse",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SwitchToMonthlyResult"
+        },
+        {
+          "name": "current_plan",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "target_plan",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "refund_cents",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "currency",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "refund_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "action_result",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        },
+        {
+          "name": "refusal_reason",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SubscriptionAdminRefusalReason"
+        },
+        {
+          "name": "ineligibility",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.MonthlySwitchIneligibility"
+        }
+      ]
+    },
+    {
+      "name": "GetFamilyPlanInvitationsRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invitee_user_uuids",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "verification_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    },
+    {
+      "name": "GetFamilyPlanInvitationsResponse",
+      "field": [
+        {
+          "name": "plan_state",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SupportFamilyPlanState"
+        },
+        {
+          "name": "secondary_member_count",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "max_secondary_members",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "invitations",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.SupportFamilyPlanInvitation"
+        },
+        {
+          "name": "invitee_checks",
+          "number": 5,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.payments.v1.SupportFamilyPlanInviteeCheck"
+        }
+      ]
+    },
+    {
+      "name": "RevokeFamilyPlanInvitationRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invitation_ref",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "verification_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        }
+      ]
+    },
+    {
+      "name": "RevokeFamilyPlanInvitationResponse",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SupportFamilyPlanRevokeResult"
+        },
+        {
+          "name": "action_result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    },
+    {
+      "name": "ClearFamilyPlanTrialCooldownRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "invitee_user_uuid",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "verification_id",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "context",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionContext"
+        }
+      ]
+    },
+    {
+      "name": "ClearFamilyPlanTrialCooldownResponse",
+      "field": [
+        {
+          "name": "result",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.payments.v1.SupportFamilyPlanCooldownResult"
+        },
+        {
+          "name": "action_result",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.support.v1.SupportActionResult"
+        }
+      ]
+    }
+  ],
+  "service": [
+    {
+      "name": "SubscriptionAdminService",
+      "method": [
+        {
+          "name": "CancelSubscription",
+          "input_type": ".chesscom.payments.v1.CancelSubscriptionRequest",
+          "output_type": ".chesscom.payments.v1.CancelSubscriptionResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "StopRenewalByCardMatch",
+          "input_type": ".chesscom.payments.v1.StopRenewalByCardMatchRequest",
+          "output_type": ".chesscom.payments.v1.StopRenewalByCardMatchResponse",
+          "options": {}
+        },
+        {
+          "name": "ExtendSubscription",
+          "input_type": ".chesscom.payments.v1.ExtendSubscriptionRequest",
+          "output_type": ".chesscom.payments.v1.ExtendSubscriptionResponse",
+          "options": {}
+        },
+        {
+          "name": "GrantGoodwillDiamond",
+          "input_type": ".chesscom.payments.v1.GrantGoodwillDiamondRequest",
+          "output_type": ".chesscom.payments.v1.GrantGoodwillDiamondResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "GrantNoAdsOffer",
+          "input_type": ".chesscom.payments.v1.GrantNoAdsOfferRequest",
+          "output_type": ".chesscom.payments.v1.GrantNoAdsOfferResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "TransferMembership",
+          "input_type": ".chesscom.payments.v1.TransferMembershipRequest",
+          "output_type": ".chesscom.payments.v1.TransferMembershipResponse",
+          "options": {}
+        },
+        {
+          "name": "GrantMembership",
+          "input_type": ".chesscom.payments.v1.GrantMembershipRequest",
+          "output_type": ".chesscom.payments.v1.GrantMembershipResponse",
+          "options": {}
+        },
+        {
+          "name": "SwitchToMonthly",
+          "input_type": ".chesscom.payments.v1.SwitchToMonthlyRequest",
+          "output_type": ".chesscom.payments.v1.SwitchToMonthlyResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "GetFamilyPlanInvitations",
+          "input_type": ".chesscom.payments.v1.GetFamilyPlanInvitationsRequest",
+          "output_type": ".chesscom.payments.v1.GetFamilyPlanInvitationsResponse",
+          "options": {
+            "idempotency_level": "NO_SIDE_EFFECTS"
+          }
+        },
+        {
+          "name": "RevokeFamilyPlanInvitation",
+          "input_type": ".chesscom.payments.v1.RevokeFamilyPlanInvitationRequest",
+          "output_type": ".chesscom.payments.v1.RevokeFamilyPlanInvitationResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        },
+        {
+          "name": "ClearFamilyPlanTrialCooldown",
+          "input_type": ".chesscom.payments.v1.ClearFamilyPlanTrialCooldownRequest",
+          "output_type": ".chesscom.payments.v1.ClearFamilyPlanTrialCooldownResponse",
+          "options": {
+            "idempotency_level": "IDEMPOTENT"
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

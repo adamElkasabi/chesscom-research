@@ -1,0 +1,59 @@
+name: "chesscom/explanation_engine/v1alpha/internal_feature_run_pvtrees.proto"
+package: "chesscom.explanation_engine.v1alpha"
+dependency: "chesscom/explanation_engine/v1/feature_run_search.proto"
+dependency: "chesscom/explanation_engine/v1/game_point_info.proto"
+dependency: "chesscom/explanation_engine/v1alpha/internal_feature_run_search.proto"
+message_type {
+  name: "InternalFeatureRunPvTreesRequest"
+  field {
+    name: "request"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.RunSearchRequest"
+  }
+  field {
+    name: "pvtree_options"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1alpha.PVTreeOptions"
+    oneof_index: 0
+    proto3_optional: true
+  }
+  oneof_decl {
+    name: "_pvtree_options"
+  }
+}
+message_type {
+  name: "InternalFeatureRunPvTreesResponse"
+  field {
+    name: "search_response"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.RunSearchResponse"
+  }
+  field {
+    name: "game_tree"
+    number: 2
+    label: LABEL_REPEATED
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.GamePointInfo"
+  }
+  field {
+    name: "best_line"
+    number: 3
+    label: LABEL_REPEATED
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.GamePointInfo"
+  }
+  field {
+    name: "human_line"
+    number: 4
+    label: LABEL_REPEATED
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1.GamePointInfo"
+  }
+}
+syntax: "proto3"

@@ -1,0 +1,20 @@
+// source: chesscom/game_storage/v2/game_origin.proto
+// syntax: proto3
+
+package chesscom.game_storage.v2;
+
+enum GameOrigin {
+  GAME_ORIGIN_UNSPECIFIED = 0;
+  GAME_ORIGIN_DIRECT_CHALLENGE = 1;
+  GAME_ORIGIN_SEEK = 2;
+  GAME_ORIGIN_POOL_SEEK = 3;
+  GAME_ORIGIN_START_GAME = 4;
+  GAME_ORIGIN_MATCH = 5;
+  GAME_ORIGIN_ARENA = 6;
+  GAME_ORIGIN_TOURNAMENT = 7;
+  GAME_ORIGIN_TEAM_MATCH = 8;
+  GAME_ORIGIN_COMPETITION = 9;
+  GAME_ORIGIN_RECOMMENDED_MATCH = 10;
+  GAME_ORIGIN_LEAGUE = 11;
+  GAME_ORIGIN_SIMUL = 12;
+}

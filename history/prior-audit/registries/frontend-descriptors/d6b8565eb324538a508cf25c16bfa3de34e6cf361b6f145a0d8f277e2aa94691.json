@@ -1,0 +1,149 @@
+{
+  "name": "chesscom/permissions/v1/premium_features.proto",
+  "package": "chesscom.permissions.v1",
+  "enum_type": [
+    {
+      "name": "PremiumFeature",
+      "value": [
+        {
+          "name": "PREMIUM_FEATURE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLES_RATED",
+          "number": 1
+        },
+        {
+          "name": "PREMIUM_FEATURE_NO_ADS",
+          "number": 2
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLE_RUSH",
+          "number": 3
+        },
+        {
+          "name": "PREMIUM_FEATURE_LESSONS",
+          "number": 4
+        },
+        {
+          "name": "PREMIUM_FEATURE_ANALYSIS",
+          "number": 5
+        },
+        {
+          "name": "PREMIUM_FEATURE_VIDEOS",
+          "number": 6
+        },
+        {
+          "name": "PREMIUM_FEATURE_ENDGAMES_TRAINER",
+          "number": 7
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLES_UNRATED",
+          "number": 8
+        },
+        {
+          "name": "PREMIUM_FEATURE_PUZZLE_BATTLE",
+          "number": 9
+        },
+        {
+          "name": "PREMIUM_FEATURE_INSIGHTS",
+          "number": 10
+        },
+        {
+          "name": "PREMIUM_FEATURE_EXPLORER",
+          "number": 11
+        },
+        {
+          "name": "PREMIUM_FEATURE_FLAIR_PREMIUM",
+          "number": 12
+        },
+        {
+          "name": "PREMIUM_FEATURE_FLAIR_STAR",
+          "number": 13
+        },
+        {
+          "name": "PREMIUM_FEATURE_FLAIR_CROWN",
+          "number": 14
+        },
+        {
+          "name": "PREMIUM_FEATURE_FLAIR_DIAMOND",
+          "number": 15
+        },
+        {
+          "name": "PREMIUM_FEATURE_BOTS",
+          "number": 16
+        },
+        {
+          "name": "PREMIUM_FEATURE_PLAY_VS_COACH",
+          "number": 17
+        },
+        {
+          "name": "PREMIUM_FEATURE_COURSES_SPECIAL_PRICE",
+          "number": 18
+        },
+        {
+          "name": "PREMIUM_FEATURE_EXCLUSIVE_COURSE",
+          "number": 19
+        },
+        {
+          "name": "PREMIUM_FEATURE_COURSES_UNLIMITED_PREVIEWS",
+          "number": 20
+        },
+        {
+          "name": "PREMIUM_FEATURE_MOVE_EXPLANATIONS",
+          "number": 21
+        },
+        {
+          "name": "PREMIUM_FEATURE_ADVANCED_STATS",
+          "number": 22
+        },
+        {
+          "name": "PREMIUM_FEATURE_DAILY_PUZZLE_EXPLANATIONS",
+          "number": 23
+        },
+        {
+          "name": "PREMIUM_FEATURE_DRILLS",
+          "number": 24
+        },
+        {
+          "name": "PREMIUM_FEATURE_TIME_OUT_PROTECTION",
+          "number": 25
+        },
+        {
+          "name": "PREMIUM_FEATURE_PREMIUM_TOURNAMENTS",
+          "number": 26
+        },
+        {
+          "name": "PREMIUM_FEATURE_PLAY_MULTIPLE_GAMES",
+          "number": 27
+        },
+        {
+          "name": "PREMIUM_FEATURE_PREMIUM_MATCHMAKING",
+          "number": 28
+        },
+        {
+          "name": "PREMIUM_FEATURE_DAILY_PUZZLES_HISTORY",
+          "number": 29
+        },
+        {
+          "name": "PREMIUM_FEATURE_HIDE_INTERNAL_ADS_SETTING",
+          "number": 33
+        },
+        {
+          "name": "PREMIUM_FEATURE_BRILLIANT_MOVES",
+          "number": 34
+        },
+        {
+          "name": "PREMIUM_FEATURE_BOT_EVENT_MONETIZATION",
+          "number": 35
+        },
+        {
+          "name": "PREMIUM_FEATURE_OPENING_COURSES",
+          "number": 36
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

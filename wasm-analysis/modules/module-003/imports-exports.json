@@ -1,0 +1,2055 @@
+{
+  "types": [
+    {
+      "index": 0,
+      "parameters": [
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 1,
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 2,
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 3,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 4,
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 5,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 6,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 7,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 8,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 9,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 10,
+      "parameters": [],
+      "results": []
+    },
+    {
+      "index": 11,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 12,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 13,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 14,
+      "parameters": [],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 15,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 16,
+      "parameters": [
+        "i32",
+        "i64",
+        "i64",
+        "i64",
+        "i64"
+      ],
+      "results": []
+    },
+    {
+      "index": 17,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 18,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 19,
+      "parameters": [
+        "i32",
+        "i64",
+        "i32"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 20,
+      "parameters": [
+        "i32",
+        "i32",
+        "i64",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 21,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "f64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 22,
+      "parameters": [
+        "i32",
+        "i64",
+        "i64",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 23,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 24,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 25,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "f64"
+      ]
+    },
+    {
+      "index": 26,
+      "parameters": [
+        "i32",
+        "f64"
+      ],
+      "results": []
+    },
+    {
+      "index": 27,
+      "parameters": [
+        "i32",
+        "i64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 28,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 29,
+      "parameters": [
+        "i64",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 30,
+      "parameters": [
+        "f64",
+        "i32"
+      ],
+      "results": [
+        "f64"
+      ]
+    },
+    {
+      "index": 31,
+      "parameters": [
+        "i32",
+        "i64",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 32,
+      "parameters": [
+        "f64"
+      ],
+      "results": [
+        "f64"
+      ]
+    },
+    {
+      "index": 33,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 34,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 35,
+      "parameters": [
+        "i32",
+        "f64",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 36,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 37,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 38,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 39,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 40,
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 41,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i64",
+        "i64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 42,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i64",
+        "i64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 43,
+      "parameters": [
+        "i32",
+        "i32",
+        "f64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 44,
+      "parameters": [],
+      "results": [
+        "f64"
+      ]
+    },
+    {
+      "index": 45,
+      "parameters": [
+        "i32",
+        "f64",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 46,
+      "parameters": [
+        "i32",
+        "f64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 47,
+      "parameters": [],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 48,
+      "parameters": [
+        "i32",
+        "i64"
+      ],
+      "results": []
+    },
+    {
+      "index": 49,
+      "parameters": [
+        "i32",
+        "f64",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 50,
+      "parameters": [
+        "i64",
+        "i64",
+        "i64",
+        "i64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 51,
+      "parameters": [
+        "i32",
+        "i64",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 52,
+      "parameters": [
+        "i32",
+        "i32",
+        "i64"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 53,
+      "parameters": [
+        "i64",
+        "i64",
+        "i64"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 54,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i64"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 55,
+      "parameters": [
+        "i64",
+        "i64"
+      ],
+      "results": [
+        "f64"
+      ]
+    },
+    {
+      "index": 56,
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "f32"
+      ]
+    },
+    {
+      "index": 57,
+      "parameters": [
+        "i32"
+      ],
+      "results": [
+        "i64"
+      ]
+    },
+    {
+      "index": 58,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "f32"
+      ]
+    },
+    {
+      "index": 59,
+      "parameters": [
+        "i64",
+        "i64"
+      ],
+      "results": [
+        "f32"
+      ]
+    },
+    {
+      "index": 60,
+      "parameters": [
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "f32"
+      ]
+    },
+    {
+      "index": 61,
+      "parameters": [
+        "i32",
+        "i32",
+        "i64"
+      ],
+      "results": []
+    },
+    {
+      "index": 62,
+      "parameters": [
+        "i32",
+        "i32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 63,
+      "parameters": [
+        "i32",
+        "i32",
+        "f32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 64,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "i32"
+      ]
+    },
+    {
+      "index": 65,
+      "parameters": [
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 66,
+      "parameters": [
+        "i32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 67,
+      "parameters": [
+        "f32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 68,
+      "parameters": [
+        "i32",
+        "f32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 69,
+      "parameters": [
+        "f32",
+        "f32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 70,
+      "parameters": [
+        "i32",
+        "f32",
+        "f32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 71,
+      "parameters": [
+        "f32",
+        "f32",
+        "f32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 72,
+      "parameters": [
+        "i32",
+        "f32",
+        "f32",
+        "f32",
+        "f32"
+      ],
+      "results": []
+    },
+    {
+      "index": 73,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": []
+    },
+    {
+      "index": 74,
+      "parameters": [
+        "i32",
+        "i32",
+        "i32",
+        "i32"
+      ],
+      "results": [
+        "f64"
+      ]
+    }
+  ],
+  "imports": [
+    {
+      "module": "a",
+      "name": "b",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 0,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "c",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 1,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "d",
+      "kind": "function",
+      "type_index": 10,
+      "function_index": 2,
+      "signature": {
+        "parameters": [],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "e",
+      "kind": "function",
+      "type_index": 9,
+      "function_index": 3,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "f",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 4,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "g",
+      "kind": "function",
+      "type_index": 43,
+      "function_index": 5,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "f64"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "h",
+      "kind": "function",
+      "type_index": 44,
+      "function_index": 6,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "f64"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "i",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 7,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "j",
+      "kind": "function",
+      "type_index": 10,
+      "function_index": 8,
+      "signature": {
+        "parameters": [],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "k",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 9,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "l",
+      "kind": "function",
+      "type_index": 1,
+      "function_index": 10,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "m",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 11,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "n",
+      "kind": "function",
+      "type_index": 4,
+      "function_index": 12,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "o",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 13,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "p",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 14,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "q",
+      "kind": "function",
+      "type_index": 14,
+      "function_index": 15,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "r",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 16,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "s",
+      "kind": "function",
+      "type_index": 10,
+      "function_index": 17,
+      "signature": {
+        "parameters": [],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "t",
+      "kind": "function",
+      "type_index": 7,
+      "function_index": 18,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "u",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 19,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "v",
+      "kind": "function",
+      "type_index": 1,
+      "function_index": 20,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "w",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 21,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "x",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 22,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "y",
+      "kind": "function",
+      "type_index": 6,
+      "function_index": 23,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "z",
+      "kind": "function",
+      "type_index": 6,
+      "function_index": 24,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "A",
+      "kind": "function",
+      "type_index": 7,
+      "function_index": 25,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "B",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 26,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "C",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 27,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "D",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 28,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "E",
+      "kind": "function",
+      "type_index": 10,
+      "function_index": 29,
+      "signature": {
+        "parameters": [],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "F",
+      "kind": "function",
+      "type_index": 25,
+      "function_index": 30,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "f64"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "G",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 31,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "H",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 32,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "I",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 33,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "J",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 34,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "K",
+      "kind": "function",
+      "type_index": 6,
+      "function_index": 35,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "L",
+      "kind": "function",
+      "type_index": 10,
+      "function_index": 36,
+      "signature": {
+        "parameters": [],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "M",
+      "kind": "function",
+      "type_index": 45,
+      "function_index": 37,
+      "signature": {
+        "parameters": [
+          "i32",
+          "f64",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "N",
+      "kind": "function",
+      "type_index": 2,
+      "function_index": 38,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "O",
+      "kind": "function",
+      "type_index": 0,
+      "function_index": 39,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      }
+    },
+    {
+      "module": "a",
+      "name": "P",
+      "kind": "function",
+      "type_index": 3,
+      "function_index": 40,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      }
+    },
+    {
+      "module": "a",
+      "name": "a",
+      "kind": "memory",
+      "limits": {
+        "flags": 3,
+        "minimum": 8192,
+        "shared": true,
+        "memory64": false,
+        "maximum": 8192
+      }
+    }
+  ],
+  "exports": [
+    {
+      "name": "Q",
+      "kind": "function",
+      "index": 505,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "R",
+      "kind": "function",
+      "index": 794,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 2
+    },
+    {
+      "name": "S",
+      "kind": "function",
+      "index": 41,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "T",
+      "kind": "function",
+      "index": 476,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "U",
+      "kind": "table",
+      "index": 0
+    },
+    {
+      "name": "V",
+      "kind": "function",
+      "index": 60,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 1
+    },
+    {
+      "name": "W",
+      "kind": "function",
+      "index": 461,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "X",
+      "kind": "function",
+      "index": 763,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "Y",
+      "kind": "function",
+      "index": 762,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 14
+    },
+    {
+      "name": "Z",
+      "kind": "function",
+      "index": 761,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 7
+    },
+    {
+      "name": "_",
+      "kind": "function",
+      "index": 297,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "$",
+      "kind": "function",
+      "index": 760,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "f64"
+        ]
+      },
+      "type_index": 74
+    },
+    {
+      "name": "aa",
+      "kind": "function",
+      "index": 758,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32",
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 5
+    },
+    {
+      "name": "ba",
+      "kind": "function",
+      "index": 239,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "ca",
+      "kind": "function",
+      "index": 750,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 14
+    },
+    {
+      "name": "da",
+      "kind": "function",
+      "index": 756,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "ea",
+      "kind": "function",
+      "index": 725,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32",
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 8
+    },
+    {
+      "name": "fa",
+      "kind": "function",
+      "index": 755,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 14
+    },
+    {
+      "name": "ga",
+      "kind": "function",
+      "index": 754,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 14
+    },
+    {
+      "name": "ha",
+      "kind": "function",
+      "index": 535,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "ia",
+      "kind": "function",
+      "index": 766,
+      "signature": {
+        "parameters": [],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 14
+    },
+    {
+      "name": "ja",
+      "kind": "function",
+      "index": 764,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "ka",
+      "kind": "function",
+      "index": 759,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 1
+    },
+    {
+      "name": "la",
+      "kind": "function",
+      "index": 682,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 4
+    },
+    {
+      "name": "ma",
+      "kind": "function",
+      "index": 322,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 2
+    },
+    {
+      "name": "na",
+      "kind": "function",
+      "index": 519,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 4
+    },
+    {
+      "name": "oa",
+      "kind": "function",
+      "index": 518,
+      "signature": {
+        "parameters": [
+          "i32",
+          "i32"
+        ],
+        "results": [
+          "i32"
+        ]
+      },
+      "type_index": 2
+    },
+    {
+      "name": "pa",
+      "kind": "function",
+      "index": 516,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "qa",
+      "kind": "function",
+      "index": 515,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "ra",
+      "kind": "function",
+      "index": 514,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    },
+    {
+      "name": "sa",
+      "kind": "function",
+      "index": 513,
+      "signature": {
+        "parameters": [
+          "i32"
+        ],
+        "results": []
+      },
+      "type_index": 0
+    },
+    {
+      "name": "ta",
+      "kind": "function",
+      "index": 512,
+      "signature": {
+        "parameters": [],
+        "results": []
+      },
+      "type_index": 10
+    }
+  ],
+  "tables": [
+    {
+      "element_type": "funcref",
+      "limits": {
+        "flags": 1,
+        "minimum": 464,
+        "shared": false,
+        "memory64": false,
+        "maximum": 464
+      }
+    }
+  ],
+  "memories": [],
+  "globals": [
+    {
+      "index": 0,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 6496000
+          }
+        ],
+        "file_offset": 1632,
+        "byte_length": 6
+      }
+    },
+    {
+      "index": 1,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1640,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 2,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1645,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 3,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1650,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 4,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1655,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 5,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1660,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 6,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1665,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 7,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1670,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 8,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1675,
+        "byte_length": 3
+      }
+    },
+    {
+      "index": 9,
+      "value_type": "i32",
+      "mutable": true,
+      "initializer": {
+        "ops": [
+          {
+            "op": "i32.const",
+            "value": 0
+          }
+        ],
+        "file_offset": 1680,
+        "byte_length": 3
+      }
+    }
+  ]
+}

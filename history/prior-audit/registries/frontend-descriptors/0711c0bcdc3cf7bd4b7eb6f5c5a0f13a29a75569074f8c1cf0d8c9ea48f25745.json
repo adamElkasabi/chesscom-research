@@ -1,0 +1,25 @@
+{
+  "name": "chesscom/chess/v1/eco.proto",
+  "package": "chesscom.chess.v1",
+  "message_type": [
+    {
+      "name": "EcoFamily",
+      "field": [
+        {
+          "name": "eco_family_id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "name",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

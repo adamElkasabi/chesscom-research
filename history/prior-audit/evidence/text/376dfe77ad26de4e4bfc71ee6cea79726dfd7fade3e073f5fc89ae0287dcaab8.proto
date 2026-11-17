@@ -1,0 +1,14 @@
+// source: chesscom/settings/v1/settings_home.proto
+// syntax: proto3
+
+package chesscom.settings.v1;
+
+message HomeSetting {
+  oneof value {
+  .chesscom.settings.v1.SettingValue.Boolean recommended_games = 1;
+  .chesscom.settings.v1.SettingValue.Boolean show_recommended_activities = 2;
+  .chesscom.settings.v1.SettingValue.Boolean show_chess_tv = 3;
+  .chesscom.settings.v1.SettingValue.Boolean show_daily_puzzle = 4;
+  .chesscom.settings.v1.SettingValue.String default_tab = 5;
+  }
+}

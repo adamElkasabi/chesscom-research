@@ -1,0 +1,12 @@
+// source: chesscom/payments/v1/prices_service.proto
+// syntax: proto3
+
+package chesscom.payments.v1;
+
+message GetPriceForAllCountriesRequest {
+  repeated string sku = 1;
+}
+
+message GetPriceForAllCountriesResponse {
+  repeated .chesscom.payments.v1.ProductPrices products_prices = 1;
+}

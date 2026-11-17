@@ -1,0 +1,79 @@
+// source: chesscom/user_properties/v1/properties_stats_daily_chess960.proto
+// syntax: proto3
+
+package chesscom.user_properties.v1;
+
+enum StatsDailyChess960PropertyDefinition {
+  STATS_DAILY_CHESS960_PROPERTY_UNSPECIFIED = 0;
+  STATS_DAILY_CHESS960_LAST_GAME_DATE = 1;
+  STATS_DAILY_CHESS960_CURRENT_STREAK = 2;
+  STATS_DAILY_CHESS960_MAX_WIN_STREAK = 3;
+  STATS_DAILY_CHESS960_MAX_LOSS_STREAK = 4;
+  STATS_DAILY_CHESS960_RATING = 5;
+  STATS_DAILY_CHESS960_RD = 6;
+  STATS_DAILY_CHESS960_IS_ACTIVE = 7;
+  STATS_DAILY_CHESS960_IS_UNRATED = 8;
+  STATS_DAILY_CHESS960_HIGHEST_RATING = 9;
+  STATS_DAILY_CHESS960_HIGHEST_RATING_DATE = 10;
+  STATS_DAILY_CHESS960_AVG_OPPONENT_RATING = 11;
+  STATS_DAILY_CHESS960_BEST_WIN_GAME_ID = 12;
+  STATS_DAILY_CHESS960_TOTAL_RATED_GAME_COUNT = 13;
+  STATS_DAILY_CHESS960_TOTAL_RATED_WIN_COUNT = 14;
+  STATS_DAILY_CHESS960_TOTAL_RATED_DRAW_COUNT = 15;
+  STATS_DAILY_CHESS960_TOTAL_RATED_LOSS_COUNT = 16;
+  STATS_DAILY_CHESS960_LAST_DATE = 17;
+}
+
+message StatsDailyChess960Property {
+  oneof _last_game_date {
+  .google.protobuf.Timestamp last_game_date = 1;
+  }
+  oneof _current_streak {
+  int32 current_streak = 2;
+  }
+  oneof _max_win_streak {
+  int32 max_win_streak = 3;
+  }
+  oneof _max_loss_streak {
+  int32 max_loss_streak = 4;
+  }
+  oneof _rating {
+  int32 rating = 5;
+  }
+  oneof _rd {
+  float rd = 6;
+  }
+  oneof _is_active {
+  bool is_active = 7;
+  }
+  oneof _is_unrated {
+  bool is_unrated = 8;
+  }
+  oneof _highest_rating {
+  int32 highest_rating = 9;
+  }
+  oneof _highest_rating_date {
+  .google.protobuf.Timestamp highest_rating_date = 10;
+  }
+  oneof _avg_opponent_rating {
+  int32 avg_opponent_rating = 11;
+  }
+  oneof _best_win_game_id {
+  int64 best_win_game_id = 12;
+  }
+  oneof _total_rated_game_count {
+  int32 total_rated_game_count = 13;
+  }
+  oneof _total_rated_win_count {
+  int32 total_rated_win_count = 14;
+  }
+  oneof _total_rated_loss_count {
+  int32 total_rated_loss_count = 15;
+  }
+  oneof _total_rated_draw_count {
+  int32 total_rated_draw_count = 16;
+  }
+  oneof _last_date {
+  .google.protobuf.Timestamp last_date = 17;
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "name": "chesscom/user_properties/v1/properties_ipqs.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "IpqsProperty",
+      "field": [
+        {
+          "name": "ipqs_fraud_score",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_is_low_quality_email",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_first_seen",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_is_bot",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_is_proxy",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_is_known_attacker",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_abuse_velocity",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_has_abused_recently",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_is_vpn",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_is_tor",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_ip_fraud_score",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "ipqs_ip_has_abused_recently",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "ipqs_definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1031,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.IpqsPropertyDefinition",
+          "json_name": "ipqsDefinition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_ipqs_fraud_score"
+        },
+        {
+          "name": "_ipqs_is_low_quality_email"
+        },
+        {
+          "name": "_ipqs_first_seen"
+        },
+        {
+          "name": "_ipqs_is_bot"
+        },
+        {
+          "name": "_ipqs_is_proxy"
+        },
+        {
+          "name": "_ipqs_is_known_attacker"
+        },
+        {
+          "name": "_ipqs_abuse_velocity"
+        },
+        {
+          "name": "_ipqs_has_abused_recently"
+        },
+        {
+          "name": "_ipqs_is_vpn"
+        },
+        {
+          "name": "_ipqs_is_tor"
+        },
+        {
+          "name": "_ipqs_ip_fraud_score"
+        },
+        {
+          "name": "_ipqs_ip_has_abused_recently"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "IpqsPropertyDefinition",
+      "value": [
+        {
+          "name": "IPQS_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "IPQS_FRAUD_SCORE",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IS_LOW_QUALITY_EMAIL",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "IPQS_FIRST_SEEN",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IS_BOT",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IS_PROXY",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IS_KNOWN_ATTACKER",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "IPQS_ABUSE_VELOCITY",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "IPQS_HAS_ABUSED_RECENTLY",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IS_VPN",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IS_TOR",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IP_FRAUD_SCORE",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "IPQS_IP_HAS_ABUSED_RECENTLY",
+          "number": 12,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

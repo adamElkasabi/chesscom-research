@@ -1,0 +1,6 @@
+
+Gchesscom/explanation_engine/v1alpha/internal_feature_board_events.proto#chesscom.explanation_engine.v1alpha6chesscom/explanation_engine/v1alpha/board_events.proto"O
+!InternalFeatureBoardEventsRequest*
+"require_prioritized_by_game_review ("k
+"InternalFeatureBoardEventsResponseE
+board_events (2/.chesscom.explanation_engine.v1alpha.BoardEventbproto3

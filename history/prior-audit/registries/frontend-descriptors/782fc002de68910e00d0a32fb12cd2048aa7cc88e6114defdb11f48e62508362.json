@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/explanation_engine/v1/cee_internal_engine.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "enum_type": [
+    {
+      "name": "CeeInternalEngine",
+      "value": [
+        {
+          "name": "CEE_INTERNAL_ENGINE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "CEE_INTERNAL_ENGINE_KOMODO",
+          "number": 1
+        },
+        {
+          "name": "CEE_INTERNAL_ENGINE_TORCH",
+          "number": 2
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

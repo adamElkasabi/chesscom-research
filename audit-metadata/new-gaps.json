@@ -1,0 +1,62 @@
+[
+  {
+    "id": "GAP-NEW-001",
+    "title": "Further WASM retrieval",
+    "missing": "34priorreference literals includeotherengineversions,templates,Rive,multipartTorchanddocumentationURLs. Fiveexactavailablebinariesfullystructurallyprocessed;otheractualassetversionsnotdownloaded/analyzedinthisbatch. Matchingavailableoriginsandremaininglimitslistedperliteral.",
+    "evidence_needed": "FurtherboundedpublicGETbatch,assemblemultipartonlywhenwrapperprovesorder,thenstructural/functionanalysis."
+  },
+  {
+    "id": "GAP-NEW-002",
+    "title": "Full native semantics",
+    "missing": "All49kdefinedfunctionbodiesindexedanddirect-callgraphsextracted,butnotallfunctionshavehuman-reviewedsemanticdescriptions.",
+    "evidence_needed": "PrioritizeCEEreview/accuracy/rating/classificationnativecallsusingfunctiondataflowandcrossreferenceanalysis."
+  },
+  {
+    "id": "GAP-NEW-003",
+    "title": "CEE full decompiler limits",
+    "missing": "FullWABTdecompilationfailed;focusedtyped-stubexportdecompilationworks,butdoesnotreconstructcalleefunctionsororiginalsource.",
+    "evidence_needed": "DifferentIR/decompilerormemory-boundedfunctionextractionwithtransitivecalleereconstruction."
+  },
+  {
+    "id": "GAP-NEW-004",
+    "title": "Indirect call targets",
+    "missing": "call_indirectsitescountedandtables/elementsparsed,butdynamicfunction-pointerdataflownotresolved.",
+    "evidence_needed": "Tableindexrangeanalysisandcontrollednativeprotocoltracing."
+  },
+  {
+    "id": "GAP-NEW-005",
+    "title": "Private backend and schema",
+    "missing": "Noapplicationcontrollers,ORMconfig,SQLDDL/queries,DBconnectionorrepositorysource.",
+    "evidence_needed": "Officialsource/architectureexportsorauthorizedredactedservertraces;notinjection."
+  },
+  {
+    "id": "GAP-NEW-006",
+    "title": "Authenticated runtime",
+    "missing": "Nologged-inbrowser/HAR/DevTools/sessionavailable.",
+    "evidence_needed": "Authorizeduser-providedredactedcaptureandrole-specificobservations."
+  },
+  {
+    "id": "GAP-NEW-007",
+    "title": "Missing history/REA",
+    "missing": "OtherconversationsandexternalREAbackingrecordremainunavailable.",
+    "evidence_needed": "User-providedexports."
+  },
+  {
+    "id": "GAP-NEW-008",
+    "title": "UI semantic exhaustion",
+    "missing": "367declarationvariantsandfullCSSextractionarenotacompletemodal/navigation/formbehavioraudit.",
+    "evidence_needed": "Per-componentcallgraph/render/eventreviewandauthorizedbrowserexercises."
+  },
+  {
+    "id": "GAP-NEW-009",
+    "title": "Exact cloud CEE parity",
+    "missing": "LocalnativeHumanworks;build/options/ratingsettings/cloudannotationsstillnotmatchingreference.",
+    "evidence_needed": "AuthorizedCEACrequest/response/configevidence;noexpensiveblindreruns."
+  },
+  {
+    "id": "GAP-NEW-010",
+    "title": "Date consistency",
+    "missing": "Systemdate2026-11-13versusnewDateheaders2026-11-15andoldsourceartifacttimes.",
+    "evidence_needed": "Trustedexportclockprovenance;rawvaluesretained."
+  }
+]

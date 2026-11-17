@@ -1,0 +1,120 @@
+// source: chesscom/skills/v1/user_activity.proto
+// syntax: proto3
+
+package chesscom.skills.v1;
+
+enum SkillStatus {
+  SKILL_STATUS_UNSPECIFIED = 0;
+  SKILL_STATUS_UNLOCKED = 1;
+  SKILL_STATUS_LOCKED = 2;
+  SKILL_STATUS_MASTERED = 3;
+}
+
+enum SkillSettingsNewState {
+  SKILL_SETTINGS_NEW_STATE_UNSPECIFIED = 0;
+  SKILL_SETTINGS_NEW_STATE_ON = 1;
+  SKILL_SETTINGS_NEW_STATE_OFF = 2;
+}
+
+enum SkillSettingsEntryPoint {
+  SKILL_SETTINGS_ENTRY_POINT_UNSPECIFIED = 0;
+  SKILL_SETTINGS_ENTRY_POINT_COACH_SETTINGS = 1;
+  SKILL_SETTINGS_ENTRY_POINT_GAME_REVIEW_SETTINGS = 2;
+  SKILL_SETTINGS_ENTRY_POINT_COACH_GAME_START_SETTINGS = 3;
+  SKILL_SETTINGS_ENTRY_POINT_COACH_GAME_SETTINGS = 4;
+}
+
+message SkillContextExtension {
+  optional .chesscom.explanation_engine.v1.Skill skill_id = 1;
+  optional string skill_name = 2;
+  optional .chesscom.skills.v1.SkillCategory skill_category = 3;
+  optional .chesscom.skills.v1.SkillStatus skill_status = 4;
+  optional uint32 points_current = 5;
+  optional uint32 points_needed_to_master = 6;
+}
+
+message SkillSettingsContextExtension {
+  optional .chesscom.skills.v1.SkillSettingsNewState new_state = 1;
+  optional .chesscom.skills.v1.SkillSettingsEntryPoint entry_point = 2;
+}
+
+message SkillPointAnimationViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillPointsIntroScreenViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillsButtonClicked {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillsListViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillCategoryViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillIntroFullScreenViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillRowClicked {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillDefinitionModalViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillMasteryModalViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillUnlockModalViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillMasteryShareButtonClicked {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message AllSkillsMasteredScreenViewed {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message AllSkillsMasteredShareButtonClicked {
+  oneof _funnel {
+  .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  }
+}
+
+message SkillsSettingToggleClicked {
+}

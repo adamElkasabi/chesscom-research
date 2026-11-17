@@ -1,0 +1,11 @@
+// source: chesscom/api/v1/platform.proto
+// syntax: proto3
+
+package chesscom.api.v1;
+
+enum Platform {
+  PLATFORM_UNSPECIFIED = 0;
+  PLATFORM_IOS = 1;
+  PLATFORM_ANDROID = 2;
+  PLATFORM_WEB = 3;
+}

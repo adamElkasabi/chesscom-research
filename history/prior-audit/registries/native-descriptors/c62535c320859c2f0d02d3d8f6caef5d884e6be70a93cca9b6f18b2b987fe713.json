@@ -1,0 +1,59 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/feature_init_engine_pool.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/explanation_engine/v1alpha/engine_instance_options.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InitEnginePoolRequest",
+      "field": [
+        {
+          "name": "engines",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EngineInstanceOptions"
+        }
+      ]
+    },
+    {
+      "name": "EngineInstanceResponse",
+      "field": [
+        {
+          "name": "engine_instance",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EngineInstance",
+          "oneof_index": 0
+        },
+        {
+          "name": "error",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "oneof_index": 0
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "engine"
+        }
+      ]
+    },
+    {
+      "name": "InitEnginePoolResponse",
+      "field": [
+        {
+          "name": "engines",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.EngineInstanceResponse"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

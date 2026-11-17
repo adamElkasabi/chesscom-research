@@ -1,0 +1,207 @@
+{
+  "name": "chesscom/friends_search/v1/friends_navigation_service.proto",
+  "package": "chesscom.friends_search.v1",
+  "message_type": [
+    {
+      "name": "ListRecentFriendsRequest",
+      "options": {}
+    },
+    {
+      "name": "ListRecentFriendsResponse",
+      "field": [
+        {
+          "name": "friends",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.SocialFriendsSearchFriend"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "ListRecentPendingFriendsRequest",
+      "field": [
+        {
+          "name": "pagination",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.RequestPagination",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "direction",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.friends_search.v1.FriendRequestDirection",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_pagination"
+        },
+        {
+          "name": "_direction"
+        }
+      ]
+    },
+    {
+      "name": "ListRecentPendingFriendsResponse",
+      "field": [
+        {
+          "name": "pending_friends",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.PendingFriendsSearchFriend"
+        },
+        {
+          "name": "pagination",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.api.v1.ResponsePagination"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "SocialAutocompleteRequest",
+      "field": [
+        {
+          "name": "user_uuid",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "prefix",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "include_friends",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "include_suggestions",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "friends_limit",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "suggestions_limit",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "exact_username_first",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "boost_username",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_include_friends"
+        },
+        {
+          "name": "_include_suggestions"
+        },
+        {
+          "name": "_friends_limit"
+        },
+        {
+          "name": "_suggestions_limit"
+        },
+        {
+          "name": "_exact_username_first"
+        },
+        {
+          "name": "_boost_username"
+        }
+      ]
+    },
+    {
+      "name": "SocialAutocompleteResponse",
+      "field": [
+        {
+          "name": "friends",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.SocialFriendsSearchFriend"
+        },
+        {
+          "name": "suggestions",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.friends_search.v1.SocialFriendsSearchFriend"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "service": [
+    {
+      "name": "FriendsNavigationService",
+      "method": [
+        {
+          "name": "ListRecentFriends",
+          "input_type": ".chesscom.friends_search.v1.ListRecentFriendsRequest",
+          "output_type": ".chesscom.friends_search.v1.ListRecentFriendsResponse"
+        },
+        {
+          "name": "ListRecentPendingFriends",
+          "input_type": ".chesscom.friends_search.v1.ListRecentPendingFriendsRequest",
+          "output_type": ".chesscom.friends_search.v1.ListRecentPendingFriendsResponse"
+        },
+        {
+          "name": "SocialAutocomplete",
+          "input_type": ".chesscom.friends_search.v1.SocialAutocompleteRequest",
+          "output_type": ".chesscom.friends_search.v1.SocialAutocompleteResponse",
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {},
+  "syntax": "proto3"
+}

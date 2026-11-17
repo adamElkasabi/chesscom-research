@@ -1,0 +1,51 @@
+name: "chesscom/explanation_engine/v1alpha/engine_instance_options.proto"
+package: "chesscom.explanation_engine.v1alpha"
+dependency: "chesscom/engine/v1/engine.proto"
+message_type {
+  name: "EngineInstanceOptions"
+  field {
+    name: "binary_path"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+  }
+  field {
+    name: "type"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_ENUM
+    type_name: ".chesscom.engine.v1.Engine"
+  }
+  field {
+    name: "web_worker"
+    number: 3
+    label: LABEL_OPTIONAL
+    type: TYPE_MESSAGE
+    type_name: ".chesscom.explanation_engine.v1alpha.WebWorkerEngineOptions"
+  }
+}
+message_type {
+  name: "WebWorkerEngineOptions"
+  field {
+    name: "script_url"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_STRING
+  }
+}
+message_type {
+  name: "EngineInstance"
+  field {
+    name: "id"
+    number: 1
+    label: LABEL_OPTIONAL
+    type: TYPE_INT32
+  }
+  field {
+    name: "pid"
+    number: 2
+    label: LABEL_OPTIONAL
+    type: TYPE_INT32
+  }
+}
+syntax: "proto3"

@@ -1,0 +1,21 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_expected_points.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "ExpectedPointsRequest"
+    },
+    {
+      "name": "ExpectedPointsResponse",
+      "field": [
+        {
+          "name": "expected_points",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

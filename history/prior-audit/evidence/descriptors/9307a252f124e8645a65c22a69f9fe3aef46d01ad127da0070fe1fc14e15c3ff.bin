@@ -1,0 +1,14 @@
+
+0chesscom/explanation_engine/v1/report_card.protochesscom.explanation_engine.v1chesscom/chess/v1/color.proto"chesscom/chess/v1/game_phase.proto8chesscom/explanation_engine/v1/move_classification.proto"Ö
+GamePhaseGlyph0
+
+game_phase (2.chesscom.chess.v1.GamePhaseA
+glyph (22.chesscom.explanation_engine.v1.MoveClassification"ù
+PlayerReportCard'
+color (2.chesscom.chess.v1.ColorF
+glyph_by_phase (2..chesscom.explanation_engine.v1.GamePhaseGlyph
+effective_rating ("l
+
+ReportCardN
+report_card_by_color (20.chesscom.explanation_engine.v1.PlayerReportCard
+speech (	bproto3

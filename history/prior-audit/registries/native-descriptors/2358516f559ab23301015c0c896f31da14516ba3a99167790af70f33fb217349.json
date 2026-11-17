@@ -1,0 +1,198 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_run_search.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/engine/v1/evaluation.proto",
+    "chesscom/explanation_engine/v1/search.proto",
+    "chesscom/explanation_engine/v1/torch_search_mode.proto"
+  ],
+  "message_type": [
+    {
+      "name": "RunSearchRequest",
+      "field": [
+        {
+          "name": "search_parameters",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchParameters",
+          "oneof_index": 0
+        },
+        {
+          "name": "null_move_search_parameters",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.SearchParameters",
+          "oneof_index": 0
+        },
+        {
+          "name": "game_review_search_settings",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.GameReviewSearchSettings",
+          "oneof_index": 0
+        },
+        {
+          "name": "search_moves",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "stream_results",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "engine_id",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "heartbeat_interval_seconds",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "guarantee_nodes",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "guarantee_nodes_null_move",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "disable_maia",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "torch_search_mode",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TorchSearchMode",
+          "oneof_index": 5,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "search"
+        },
+        {
+          "name": "_engine_id"
+        },
+        {
+          "name": "_guarantee_nodes"
+        },
+        {
+          "name": "_guarantee_nodes_null_move"
+        },
+        {
+          "name": "_disable_maia"
+        },
+        {
+          "name": "_torch_search_mode"
+        }
+      ]
+    },
+    {
+      "name": "RunSearchResponse",
+      "field": [
+        {
+          "name": "evaluations",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.engine.v1.Evaluation"
+        },
+        {
+          "name": "progress",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT"
+        },
+        {
+          "name": "aborted",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        },
+        {
+          "name": "log",
+          "number": 4,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "is_heartbeat",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL"
+        }
+      ]
+    },
+    {
+      "name": "SearchLimits",
+      "field": [
+        {
+          "name": "depth",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "nodes",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "time_ms",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_depth"
+        },
+        {
+          "name": "_nodes"
+        },
+        {
+          "name": "_time_ms"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

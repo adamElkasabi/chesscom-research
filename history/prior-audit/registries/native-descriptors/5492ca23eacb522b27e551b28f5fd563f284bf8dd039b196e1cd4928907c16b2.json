@@ -1,0 +1,32 @@
+{
+  "name": "chesscom/train/v1/train_move_grade.proto",
+  "package": "chesscom.train.v1",
+  "enum_type": [
+    {
+      "name": "TrainMoveGrade",
+      "value": [
+        {
+          "name": "TRAIN_MOVE_GRADE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TRAIN_MOVE_GRADE_CORRECT",
+          "number": 1
+        },
+        {
+          "name": "TRAIN_MOVE_GRADE_NOT_INCORRECT",
+          "number": 2
+        },
+        {
+          "name": "TRAIN_MOVE_GRADE_INCORRECT",
+          "number": 3
+        },
+        {
+          "name": "TRAIN_MOVE_GRADE_SAME_AS_GAME",
+          "number": 4
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

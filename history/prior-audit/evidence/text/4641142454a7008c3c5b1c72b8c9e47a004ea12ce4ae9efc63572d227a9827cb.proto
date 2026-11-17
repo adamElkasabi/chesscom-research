@@ -1,0 +1,14 @@
+// source: chesscom/courses_common/v1/course_chapter_stats.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message CourseChapterStats {
+  optional int32 trainable_variations = 1;
+  optional int32 informational_variations = 2;
+  optional int32 quickstarter_variations = 3;
+  optional int32 alternative_variations = 4;
+  optional int32 puzzles = 5;
+  optional float average_training_depth = 6;
+  optional int32 paid_video_minutes = 7;
+}

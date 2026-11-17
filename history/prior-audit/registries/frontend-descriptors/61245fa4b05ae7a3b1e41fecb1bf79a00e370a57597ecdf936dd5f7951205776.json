@@ -1,0 +1,68 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_bot_move_from_config.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "BotMoveFromConfigRequest",
+      "field": [
+        {
+          "name": "bot_config",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "artifact_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        },
+        {
+          "name": "proto_config",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.BotMoveConfiguration",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_proto_config"
+        }
+      ]
+    },
+    {
+      "name": "BotMoveFromConfigResponse",
+      "field": [
+        {
+          "name": "move",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Move"
+        },
+        {
+          "name": "suggested_delay_seconds",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_DOUBLE",
+          "oneof_index": 0,
+          "proto3_optional": true
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_suggested_delay_seconds"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,213 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_branch_summary.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "dependency": [
+    "chesscom/chess/v1/move.proto",
+    "chesscom/chess/v1/square.proto",
+    "chesscom/explanation_engine/v1alpha/piece_details.proto"
+  ],
+  "message_type": [
+    {
+      "name": "InternalFeatureBranchSummaryRequest"
+    },
+    {
+      "name": "InternalFeatureBranchSummaryResponse",
+      "field": [
+        {
+          "name": "branches",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BranchSummary"
+        }
+      ]
+    },
+    {
+      "name": "BranchSummary",
+      "field": [
+        {
+          "name": "first_move_game_point",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "final_game_point",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "white",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BranchColorSummary"
+        },
+        {
+          "name": "black",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.BranchColorSummary"
+        }
+      ]
+    },
+    {
+      "name": "BranchColorSummary",
+      "field": [
+        {
+          "name": "captured",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceHistory"
+        },
+        {
+          "name": "promoted",
+          "number": 2,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceHistory"
+        },
+        {
+          "name": "advanced_passed_pawns",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceHistory"
+        }
+      ]
+    },
+    {
+      "name": "PieceHistory",
+      "field": [
+        {
+          "name": "piece",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+        },
+        {
+          "name": "captured_by",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.CaptureByInfo",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "promoted_to",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PromotedToInfo",
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "advanced",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.AdvancedPassedPawnInfo",
+          "oneof_index": 2,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_captured_by"
+        },
+        {
+          "name": "_promoted_to"
+        },
+        {
+          "name": "_advanced"
+        }
+      ]
+    },
+    {
+      "name": "CaptureByInfo",
+      "field": [
+        {
+          "name": "capturer",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1alpha.PieceDetails"
+        },
+        {
+          "name": "game_point",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "capture_square",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "PromotedToInfo",
+      "field": [
+        {
+          "name": "game_point",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        },
+        {
+          "name": "piece_type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.PromotionPieceType"
+        },
+        {
+          "name": "square",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "AdvancedPassedPawnInfo",
+      "field": [
+        {
+          "name": "sixth_rank_game_point",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "seventh_rank_game_point",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_sixth_rank_game_point"
+        },
+        {
+          "name": "_seventh_rank_game_point"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

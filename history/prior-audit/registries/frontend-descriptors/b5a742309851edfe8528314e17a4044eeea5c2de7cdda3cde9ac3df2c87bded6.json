@@ -1,0 +1,24 @@
+{
+  "name": "chesscom/explanation_engine/v1/feature_load_coach.proto",
+  "package": "chesscom.explanation_engine.v1",
+  "message_type": [
+    {
+      "name": "LoadCoachRequest",
+      "field": [
+        {
+          "name": "text_asset",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.explanation_engine.v1.TextAsset"
+        }
+      ],
+      "options": {}
+    },
+    {
+      "name": "LoadCoachResponse",
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

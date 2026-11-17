@@ -1,0 +1,33 @@
+// source: chesscom/explanation_engine/v1/move_annotation.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum AnnotationColor {
+  ANNOTATION_COLOR_UNSPECIFIED = 0;
+  ANNOTATION_COLOR_GREEN = 1;
+  ANNOTATION_COLOR_RED = 2;
+  ANNOTATION_COLOR_YELLOW = 3;
+  ANNOTATION_COLOR_BLUE = 4;
+}
+
+message AnnotationArrow {
+  optional .chesscom.chess.v1.Square from = 1;
+  optional .chesscom.chess.v1.Square to = 2;
+  optional .chesscom.explanation_engine.v1.AnnotationColor color = 3;
+}
+
+message AnnotationSquare {
+  optional .chesscom.chess.v1.Square square = 1;
+  optional .chesscom.explanation_engine.v1.AnnotationColor color = 2;
+}
+
+message MoveAnnotation {
+  oneof _before_comment {
+  string before_comment = 2;
+  }
+  repeated string comments = 1;
+  repeated int32 nags = 3;
+  repeated .chesscom.explanation_engine.v1.AnnotationArrow arrows = 4;
+  repeated .chesscom.explanation_engine.v1.AnnotationSquare highlighted_squares = 5;
+}

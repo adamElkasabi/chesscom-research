@@ -1,0 +1,54 @@
+{
+  "name": "chesscom/tdtools/v1/identifiers.proto",
+  "package": "chesscom.tdtools.v1",
+  "message_type": [
+    {
+      "name": "ChessComTournamentIdentifier",
+      "field": [
+        {
+          "name": "id",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "type",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.tdtools.v1.ChessComTournamentType"
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "ChessComTournamentType",
+      "value": [
+        {
+          "name": "CHESS_COM_TOURNAMENT_TYPE_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "TOURNAMENT",
+          "number": 1
+        },
+        {
+          "name": "ARENA",
+          "number": 2
+        },
+        {
+          "name": "TEAM_MATCH",
+          "number": 3
+        },
+        {
+          "name": "SIMUL",
+          "number": 4
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "THB-ATT-001",
+    "step": "Public page, entry/shared/client scripts",
+    "result": "All 19 recorded script GETs returned 200; exact hashes in source manifest. No authenticated/live game operations."
+  },
+  {
+    "id": "THB-ATT-002",
+    "step": "Public literal model retrieval",
+    "result": "200; 11,946,339 bytes, SHA256 1f78db3d3184550ff56db7a0f14b72910b039a894dcc97ff8ef7bb8915f26423; distinct newly discovered path, not old failed Charm/coach guesses."
+  },
+  {
+    "id": "THB-ATT-003",
+    "step": "Parser availability",
+    "result": "No external acorn/Babel/prettier/jsbeautifier installed. Used bundled Node internal Acorn via --expose-internals, exact source spans retained."
+  },
+  {
+    "id": "THB-ATT-004",
+    "step": "Initial Charm runtime probe",
+    "result": "Probe timed out after 75.06 seconds because test harness awaited retval but native wrapper responds CEE_LoadCharmModel_done. No model failure inference. Initial output retained."
+  },
+  {
+    "id": "THB-ATT-005",
+    "step": "Preliminary parallel probe attempt",
+    "result": "Four concurrent CEE processes caused two processes to be OS-killed (Charm and human-no-maia); memory-pressure interpretation plausible, kill reason not independently proven. Other two returned no engine with id 11 was added to any pool. Explicit engineId 11 was an invalid pool identifier, NOT the TORCH_3 enum field. Incorrect preliminary nodes/search setting names also removed. These runs excluded from successful evidence."
+  },
+  {
+    "id": "THB-ATT-006",
+    "step": "Final sequential local probes",
+    "result": "Corrected nodesLimit and valid NewGame settings; no explicit engineId. Six final modes complete; missing-model negative control intentionally errors. Exact code and final outputs included."
+  },
+  {
+    "id": "THB-ATT-007",
+    "step": "Native scope",
+    "result": "Local fetch hook rejects any network request; attempts arrays empty. Not an OS network sandbox and not proof of every unseen native host path. Execution uses original SRC-0014 wrapper and original module-002 WASM, not a generated derivative."
+  },
+  {
+    "id": "THB-ATT-008",
+    "step": "Production bot configs",
+    "result": "No authenticated Configurator response or production behavior weights retrieved. Offline fallback exposes three config keys, not their values. No speculative config-key/book-name requests made."
+  },
+  {
+    "id": "THB-ATT-009",
+    "step": "Full native semantics",
+    "result": "No fresh full WASM decompile attempted; prior every-function structural coverage unchanged. This update validates interface/native behavior, not every native function or the exact sampling equations."
+  }
+]

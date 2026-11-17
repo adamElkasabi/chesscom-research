@@ -1,0 +1,16 @@
+// source: chesscom/explanation_engine/v1/feature_new_game.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+message NewGameRequest {
+  optional .chesscom.explanation_engine.v1.NewGame new_game = 1;
+  optional bool enable_typed_invalid_game_errors = 2;
+}
+
+message NewGameResponse {
+  oneof _invalid_game {
+  .chesscom.explanation_engine.v1.InvalidGame invalid_game = 2;
+  }
+  repeated .chesscom.explanation_engine.v1.GamePointInfo played_line = 1;
+}

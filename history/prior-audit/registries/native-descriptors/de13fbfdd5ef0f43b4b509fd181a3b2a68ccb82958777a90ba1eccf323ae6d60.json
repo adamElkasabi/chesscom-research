@@ -1,0 +1,114 @@
+{
+  "name": "chesscom/chess/v1/position.proto",
+  "package": "chesscom.chess.v1",
+  "dependency": [
+    "chesscom/chess/v1/square.proto",
+    "chesscom/chess/v1/color.proto",
+    "chesscom/chess/v1/piece.proto",
+    "chesscom/chess/v1/file.proto"
+  ],
+  "message_type": [
+    {
+      "name": "Position",
+      "field": [
+        {
+          "name": "pieces",
+          "number": 1,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Placement"
+        },
+        {
+          "name": "active_color",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "castling_rights",
+          "number": 3,
+          "label": "LABEL_REPEATED",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.CastlingRight"
+        },
+        {
+          "name": "en_passant_square",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square",
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "halfmove_clock",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "fullmove_number",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_UINT32"
+        },
+        {
+          "name": "in_check",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "oneof_index": 1,
+          "proto3_optional": true
+        }
+      ],
+      "oneof_decl": [
+        {
+          "name": "_en_passant_square"
+        },
+        {
+          "name": "_in_check"
+        }
+      ]
+    },
+    {
+      "name": "Placement",
+      "field": [
+        {
+          "name": "piece",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".chesscom.chess.v1.Piece"
+        },
+        {
+          "name": "square",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Square"
+        }
+      ]
+    },
+    {
+      "name": "CastlingRight",
+      "field": [
+        {
+          "name": "color",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.Color"
+        },
+        {
+          "name": "rook_file",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.chess.v1.File"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,11 @@
+// source: chesscom/courses_common/v1/picture.proto
+// syntax: proto3
+
+package chesscom.courses_common.v1;
+
+message Picture {
+  oneof _preview_url {
+  string preview_url = 2;
+  }
+  optional string url = 1;
+}

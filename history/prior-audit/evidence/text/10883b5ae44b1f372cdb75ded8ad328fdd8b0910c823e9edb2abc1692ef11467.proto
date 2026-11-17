@@ -1,0 +1,96 @@
+// source: chesscom/shared_board/v1alpha/shared_board.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+enum SharedBoardAnalysisGameType {
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_UNSPECIFIED = 0;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_DAILY = 1;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_LIVE = 2;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_MASTER = 3;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_PGN = 4;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_OTB = 5;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_COACH = 6;
+  SHARED_BOARD_ANALYSIS_GAME_TYPE_COMPUTER = 7;
+}
+
+enum SharedBoardKeyModifier {
+  SHARED_BOARD_KEY_MODIFIER_UNSPECIFIED = 0;
+  SHARED_BOARD_KEY_MODIFIER_NONE = 1;
+  SHARED_BOARD_KEY_MODIFIER_SHIFT = 2;
+  SHARED_BOARD_KEY_MODIFIER_CTRL = 3;
+  SHARED_BOARD_KEY_MODIFIER_ALT = 4;
+}
+
+message SharedBoard {
+  optional string id = 1;
+  optional string session_id = 2;
+  optional string user_id = 3;
+  optional bool flipped = 4;
+  optional string initial_position = 5;
+  optional string pgn = 6;
+  optional int32 line = 7;
+  optional int32 move = 8;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardSquareHighlight squares = 9;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardArrow arrows = 10;
+  repeated .chesscom.shared_board.v1alpha.SharedBoardImageMarking images = 11;
+  optional bool draft = 12;
+  optional int32 version = 13;
+  optional int32 sequence = 14;
+  optional .google.protobuf.Timestamp created_at = 15;
+  optional .google.protobuf.Timestamp updated_at = 16;
+  optional .chesscom.shared_board.v1alpha.SharedBoardSource source = 17;
+  optional bool hide_engine_lines = 18;
+  optional bool hide_move_list = 19;
+}
+
+message SharedBoardSource {
+  oneof source {
+  .chesscom.shared_board.v1alpha.SharedBoardEventGameSource event_game = 1;
+  .chesscom.shared_board.v1alpha.SharedBoardAnalysisGameSource analysis_game = 2;
+  }
+}
+
+message SharedBoardEventGameSource {
+  optional string event_slug = 1;
+  optional string round_slug = 2;
+  optional string game_slug = 3;
+  optional string game_id = 4;
+}
+
+message SharedBoardAnalysisGameSource {
+  oneof game {
+  .chesscom.shared_board.v1alpha.SharedBoardAnalysisLibraryGameSource library_game = 1;
+  .chesscom.shared_board.v1alpha.SharedBoardAnalysisChesscomGameSource chesscom_game = 2;
+  }
+}
+
+message SharedBoardAnalysisLibraryGameSource {
+  optional string library_user_collection_game_id = 1;
+  optional string collection_slug = 2;
+  optional string library_item_id = 3;
+  optional string collection_id = 4;
+}
+
+message SharedBoardAnalysisChesscomGameSource {
+  optional .chesscom.shared_board.v1alpha.SharedBoardAnalysisGameType game_type = 1;
+  optional string game_id = 2;
+  optional string game_uuid = 3;
+}
+
+message SharedBoardSquareHighlight {
+  optional .chesscom.shared_board.v1alpha.SharedBoardKeyModifier key_modifier = 1;
+  optional .chesscom.chess.v1.Square square = 2;
+}
+
+message SharedBoardArrow {
+  optional .chesscom.shared_board.v1alpha.SharedBoardKeyModifier key_modifier = 1;
+  optional .chesscom.chess.v1.Square from = 2;
+  optional .chesscom.chess.v1.Square to = 3;
+}
+
+message SharedBoardImageMarking {
+  optional string type = 1;
+  optional string name = 2;
+  optional .chesscom.chess.v1.Square square = 3;
+}

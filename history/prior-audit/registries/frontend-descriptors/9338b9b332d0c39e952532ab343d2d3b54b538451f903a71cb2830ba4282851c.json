@@ -1,0 +1,398 @@
+{
+  "name": "chesscom/user_properties/v1/properties_stats_daily_chess960.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "StatsDailyChess960Property",
+      "field": [
+        {
+          "name": "last_game_date",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_streak",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_win_streak",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "max_loss_streak",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "rating",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "rd",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_FLOAT",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_active",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "is_unrated",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_rating",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "highest_rating_date",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "avg_opponent_rating",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "best_win_game_id",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT64",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_game_count",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_win_count",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_loss_count",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_rated_draw_count",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_date",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 16,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1017,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.StatsDailyChess960PropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_last_game_date"
+        },
+        {
+          "name": "_current_streak"
+        },
+        {
+          "name": "_max_win_streak"
+        },
+        {
+          "name": "_max_loss_streak"
+        },
+        {
+          "name": "_rating"
+        },
+        {
+          "name": "_rd"
+        },
+        {
+          "name": "_is_active"
+        },
+        {
+          "name": "_is_unrated"
+        },
+        {
+          "name": "_highest_rating"
+        },
+        {
+          "name": "_highest_rating_date"
+        },
+        {
+          "name": "_avg_opponent_rating"
+        },
+        {
+          "name": "_best_win_game_id"
+        },
+        {
+          "name": "_total_rated_game_count"
+        },
+        {
+          "name": "_total_rated_win_count"
+        },
+        {
+          "name": "_total_rated_loss_count"
+        },
+        {
+          "name": "_total_rated_draw_count"
+        },
+        {
+          "name": "_last_date"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "StatsDailyChess960PropertyDefinition",
+      "value": [
+        {
+          "name": "STATS_DAILY_CHESS960_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_LAST_GAME_DATE",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_CURRENT_STREAK",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_MAX_WIN_STREAK",
+          "number": 3,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_MAX_LOSS_STREAK",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_RATING",
+          "number": 5,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_RD",
+          "number": 6,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_IS_ACTIVE",
+          "number": 7,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_IS_UNRATED",
+          "number": 8,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_HIGHEST_RATING",
+          "number": 9,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_HIGHEST_RATING_DATE",
+          "number": 10,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_AVG_OPPONENT_RATING",
+          "number": 11,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_BEST_WIN_GAME_ID",
+          "number": 12,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_TOTAL_RATED_GAME_COUNT",
+          "number": 13,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_TOTAL_RATED_WIN_COUNT",
+          "number": 14,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_TOTAL_RATED_DRAW_COUNT",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_TOTAL_RATED_LOSS_COUNT",
+          "number": 16,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "STATS_DAILY_CHESS960_LAST_DATE",
+          "number": 17,
+          "options": {
+            "deprecated": true
+          }
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

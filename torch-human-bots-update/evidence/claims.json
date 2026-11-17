@@ -1,0 +1,93 @@
+[
+  {
+    "id": "THB-001",
+    "grade": "STATIC",
+    "claim": "Website Human Game Review selection is gated and routed remotely",
+    "evidence": "baseline SRC-1137 A4e/W4e/O4e; extracted-functions.json",
+    "limit": "No authenticated WebSocket trace/private server implementation"
+  },
+  {
+    "id": "THB-002",
+    "grade": "HISTORICAL-EXPERIMENT",
+    "claim": "Human local search produces pvtrees commands distinct from ordinary search",
+    "evidence": "historical-search-logs/; original SRC-0871",
+    "limit": "Parameters specific to recorded trial; cloud policy unknown"
+  },
+  {
+    "id": "THB-003",
+    "grade": "HISTORICAL-EXPERIMENT",
+    "claim": "A local Human preload review completed but did not achieve website parity",
+    "evidence": "original SRC-1628",
+    "limit": "Earlier abort/timeout reports preserved, not generalized"
+  },
+  {
+    "id": "THB-004",
+    "grade": "STATIC + EXECUTED-FRONTEND",
+    "claim": "Legacy move request explicitly uses Komodo with translated style and skill strength",
+    "evidence": "computer-shared.js Z5/Npt/Mpt; frontend-function-tests.json",
+    "limit": "Version/callsite-specific; no full browser session"
+  },
+  {
+    "id": "THB-005",
+    "grade": "STATIC + EXECUTED-FRONTEND",
+    "claim": "Configured branch returns without book/legacy fallback on empty/error in Z5",
+    "evidence": "computer-shared.js Z5; frontend-function-tests.json",
+    "limit": "Setup NotFound handling is separate"
+  },
+  {
+    "id": "THB-006",
+    "grade": "STATIC",
+    "claim": "Offline fallback has 212 bots and three configuration keys",
+    "evidence": "offline-bot-groups.js; offline-catalog-analysis.json",
+    "limit": "Not a live response or exhaustive live config inventory"
+  },
+  {
+    "id": "THB-007",
+    "grade": "STATIC",
+    "claim": "Charm-small public model retrieved and container fully parsed",
+    "evidence": "model-retrieval/header/tensor-manifest JSON",
+    "limit": "No training-data or full forward-equation recovery; binary omitted from patch"
+  },
+  {
+    "id": "THB-008",
+    "grade": "EXECUTED-NATIVE",
+    "claim": "Actual model loads and supports configured move generation; missing model fails",
+    "evidence": "runtime-charm.json; runtime-charm-missing.json",
+    "limit": "Synthetic diagnostic configuration, not recovered production bot values"
+  },
+  {
+    "id": "THB-009",
+    "grade": "EXECUTED-NATIVE",
+    "claim": "Resource discovery is state-dependent for NN requirements",
+    "evidence": "runtime-charm.json; runtime-charm-missing.json feature70",
+    "limit": "Specific tested configurations/binary"
+  },
+  {
+    "id": "THB-010",
+    "grade": "EXECUTED-NATIVE",
+    "claim": "Native CEE1.211.5 differs from UCI/package1.130.285",
+    "evidence": "nativeVersion in final runtime JSON",
+    "limit": "Exact baseline hashes, not all deployment versions"
+  },
+  {
+    "id": "THB-011",
+    "grade": "EXECUTED-NATIVE",
+    "claim": "Matched ordinary/Human search results differ despite same engine11 evaluation label",
+    "evidence": "runtime-human-*.json",
+    "limit": "One position, not statistical proof or Maia activation proof"
+  },
+  {
+    "id": "THB-012",
+    "grade": "STATIC",
+    "claim": "Chat, openings, displayed rating and move personality are distinct inputs",
+    "evidence": "computer-shared.js jft/Fpt/Ipt/Npt/Mpt/Z5; setup ac",
+    "limit": "Exact native personality/adaptive equations unknown"
+  },
+  {
+    "id": "THB-013",
+    "grade": "UNKNOWN",
+    "claim": "Exact live config weights, legacy style formulas, Human tree policy and cloud parity remain unresolved",
+    "evidence": "05_CORRECTIONS_AND_LIMITS.md",
+    "limit": "No completeness/mastery claim for private/unreviewed semantics"
+  }
+]

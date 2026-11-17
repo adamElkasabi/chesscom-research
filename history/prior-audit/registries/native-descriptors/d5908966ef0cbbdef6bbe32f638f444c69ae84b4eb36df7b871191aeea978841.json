@@ -1,0 +1,29 @@
+{
+  "name": "chesscom/explanation_engine/v1alpha/internal_feature_unit_test_code.proto",
+  "package": "chesscom.explanation_engine.v1alpha",
+  "message_type": [
+    {
+      "name": "InternalFeatureUnitTestCodeRequest",
+      "field": [
+        {
+          "name": "num_pushed_moves",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32"
+        }
+      ]
+    },
+    {
+      "name": "InternalFeatureUnitTestCodeResponse",
+      "field": [
+        {
+          "name": "unit_test_code",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING"
+        }
+      ]
+    }
+  ],
+  "syntax": "proto3"
+}

@@ -1,0 +1,60 @@
+// source: chesscom/interactions/v1/user_activity.proto
+// syntax: proto3
+
+package chesscom.interactions.v1;
+
+message Click {
+  oneof _tag {
+  string tag = 4;
+  }
+  oneof _selection_index {
+  int32 selection_index = 5;
+  }
+  oneof _selected_item {
+  string selected_item = 6;
+  }
+  oneof _count {
+  int32 count = 7;
+  }
+  optional .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  optional string interface = 2;
+  optional string element = 3;
+  repeated string tags = 8;
+}
+
+message Impression {
+  oneof _tag {
+  string tag = 3;
+  }
+  oneof _selection_index {
+  int32 selection_index = 4;
+  }
+  optional .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  optional string interface = 2;
+  repeated string tags = 5;
+  repeated string elements = 6;
+}
+
+message Input {
+  oneof _input_text {
+  string input_text = 4;
+  }
+  optional .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  optional string interface = 2;
+  optional string element = 3;
+  repeated string tags = 5;
+}
+
+message SharedBoardGifCreated {
+  optional .chesscom.proto_options.events.v1.Funnel funnel = 1;
+  optional string interface = 2;
+  optional string element = 3;
+  repeated string tags = 4;
+  optional string content = 5;
+  optional string website = 6;
+  optional int32 size = 7;
+  optional string board = 8;
+  optional string pieces = 9;
+  optional bool has_coordinates = 10;
+  optional bool board_is_flipped = 11;
+}

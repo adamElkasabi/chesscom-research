@@ -1,0 +1,13 @@
+// source: chesscom/train/v1/train_miss_challenge.proto
+// syntax: proto3
+
+package chesscom.train.v1;
+
+message TrainMissChallenge {
+  oneof _theme {
+  .chesscom.train.v1.TrainTacticalTheme theme = 2;
+  }
+  optional .chesscom.train.v1.TrainChallengeBucket bucket = 1;
+  optional .chesscom.chess.v1.Move correct_move = 3;
+  optional bool is_critical = 4;
+}

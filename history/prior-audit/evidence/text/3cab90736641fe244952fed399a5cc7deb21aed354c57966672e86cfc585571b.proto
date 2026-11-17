@@ -1,0 +1,16 @@
+// source: chesscom/explanation_engine/v1/coach_emotion.proto
+// syntax: proto3
+
+package chesscom.explanation_engine.v1;
+
+enum CoachEmotion {
+  COACH_EMOTION_UNSPECIFIED = 0;
+  COACH_EMOTION_IDLE = 1;
+  COACH_EMOTION_SURPRISED = 2;
+  COACH_EMOTION_HAPPY = 3;
+  COACH_EMOTION_IMPRESSED = 4;
+  COACH_EMOTION_SHOCKED = 5;
+  COACH_EMOTION_THINKING = 6;
+  COACH_EMOTION_CONCERNED = 7;
+  COACH_EMOTION_SAD = 8;
+}

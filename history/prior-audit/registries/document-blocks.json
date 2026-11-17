@@ -1,0 +1,1646 @@
+[
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00001",
+    "section": "Install this update",
+    "line_start": 5
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00002",
+    "section": "Install this update",
+    "line_start": 11
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00003",
+    "section": "What changed",
+    "line_start": 17
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00004",
+    "section": "What changed",
+    "line_start": 22
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00005",
+    "section": "What changed",
+    "line_start": 28
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00006",
+    "section": "What changed",
+    "line_start": 33
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00007",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 39
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00008",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 49
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00009",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 51
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00010",
+    "section": "Still open",
+    "line_start": 66
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00011",
+    "section": "Tests",
+    "line_start": 79
+  },
+  {
+    "source_id": "SRC-0016",
+    "finding_id": "FND-00012",
+    "section": "Tests",
+    "line_start": 87
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00013",
+    "section": "v0.1.8 — hide debug card only",
+    "line_start": 5
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00014",
+    "section": "v0.1.8 — hide debug card only",
+    "line_start": 10
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00015",
+    "section": "v0.1.8 — hide debug card only",
+    "line_start": 17
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00016",
+    "section": "Install this update",
+    "line_start": 23
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00017",
+    "section": "Install this update",
+    "line_start": 29
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00018",
+    "section": "What changed",
+    "line_start": 35
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00019",
+    "section": "What changed",
+    "line_start": 40
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00020",
+    "section": "What changed",
+    "line_start": 46
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00021",
+    "section": "What changed",
+    "line_start": 51
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00022",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 57
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00023",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 67
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00024",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 69
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00025",
+    "section": "Still open",
+    "line_start": 84
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00026",
+    "section": "Tests",
+    "line_start": 97
+  },
+  {
+    "source_id": "SRC-0020",
+    "finding_id": "FND-00027",
+    "section": "Tests",
+    "line_start": 105
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00028",
+    "section": "v0.1.9 — measured-duration progress estimate",
+    "line_start": 5
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00029",
+    "section": "v0.1.9 — measured-duration progress estimate",
+    "line_start": 12
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00030",
+    "section": "v0.1.9 — measured-duration progress estimate",
+    "line_start": 17
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00031",
+    "section": "v0.1.9 — measured-duration progress estimate",
+    "line_start": 25
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00032",
+    "section": "Install v0.1.9",
+    "line_start": 31
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00033",
+    "section": "Install v0.1.9",
+    "line_start": 37
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00034",
+    "section": "Install v0.1.9",
+    "line_start": 39
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00035",
+    "section": "v0.1.8 — hide debug card only",
+    "line_start": 45
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00036",
+    "section": "v0.1.8 — hide debug card only",
+    "line_start": 50
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00037",
+    "section": "v0.1.8 — hide debug card only",
+    "line_start": 57
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00038",
+    "section": "Install this update",
+    "line_start": 63
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00039",
+    "section": "Install this update",
+    "line_start": 69
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00040",
+    "section": "What changed",
+    "line_start": 75
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00041",
+    "section": "What changed",
+    "line_start": 80
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00042",
+    "section": "What changed",
+    "line_start": 86
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00043",
+    "section": "What changed",
+    "line_start": 91
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00044",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 97
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00045",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 107
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00046",
+    "section": "Verified example: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 109
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00047",
+    "section": "Still open",
+    "line_start": 124
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00048",
+    "section": "Tests",
+    "line_start": 137
+  },
+  {
+    "source_id": "SRC-0027",
+    "finding_id": "FND-00049",
+    "section": "Tests",
+    "line_start": 145
+  },
+  {
+    "source_id": "SRC-0871",
+    "finding_id": "FND-00050",
+    "section": "Confirmed execution, not just strings",
+    "line_start": 4
+  },
+  {
+    "source_id": "SRC-0871",
+    "finding_id": "FND-00051",
+    "section": "Confirmed execution, not just strings",
+    "line_start": 6
+  },
+  {
+    "source_id": "SRC-0871",
+    "finding_id": "FND-00052",
+    "section": "Confirmed execution, not just strings",
+    "line_start": 8
+  },
+  {
+    "source_id": "SRC-0871",
+    "finding_id": "FND-00053",
+    "section": "Website Game Review routing",
+    "line_start": 11
+  },
+  {
+    "source_id": "SRC-0871",
+    "finding_id": "FND-00054",
+    "section": "Remaining limitations",
+    "line_start": 19
+  },
+  {
+    "source_id": "SRC-0871",
+    "finding_id": "FND-00055",
+    "section": "Remaining limitations",
+    "line_start": 21
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00056",
+    "section": "Reference-game comparison: Chess.com, extension, local Torch human mode",
+    "line_start": 3
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00057",
+    "section": "Reference-game comparison: Chess.com, extension, local Torch human mode",
+    "line_start": 5
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00058",
+    "section": "Reference-game comparison: Chess.com, extension, local Torch human mode",
+    "line_start": 7
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00059",
+    "section": "What this experiment verifies",
+    "line_start": 23
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00060",
+    "section": "Important limits",
+    "line_start": 30
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00061",
+    "section": "Important limits",
+    "line_start": 32
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00062",
+    "section": "Important limits",
+    "line_start": 34
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00063",
+    "section": "Move-by-move local classifications",
+    "line_start": 37
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00064",
+    "section": "Move-by-move local classifications",
+    "line_start": 39
+  },
+  {
+    "source_id": "SRC-1628",
+    "finding_id": "FND-00065",
+    "section": "Raw evidence",
+    "line_start": 63
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00066",
+    "section": "Decision",
+    "line_start": 4
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00067",
+    "section": "What was tested",
+    "line_start": 7
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00068",
+    "section": "What was tested",
+    "line_start": 9
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00069",
+    "section": "Torch Human",
+    "line_start": 12
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00070",
+    "section": "Torch Human",
+    "line_start": 14
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00071",
+    "section": "Newest reference: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 17
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00072",
+    "section": "Newest reference: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 19
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00073",
+    "section": "Newest reference: [PUBLIC_PLAYER_HANDLE_REDACTED] vs [PUBLIC_PLAYER_HANDLE_REDACTED]",
+    "line_start": 27
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00074",
+    "section": "Classification trade-off",
+    "line_start": 30
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00075",
+    "section": "Classification trade-off",
+    "line_start": 32
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00076",
+    "section": "Cross-game validation",
+    "line_start": 35
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00077",
+    "section": "Cross-game validation",
+    "line_start": 37
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00078",
+    "section": "Cross-game validation",
+    "line_start": 41
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00079",
+    "section": "Cross-game validation",
+    "line_start": 50
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00080",
+    "section": "Files and reproducibility",
+    "line_start": 53
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00081",
+    "section": "Files and reproducibility",
+    "line_start": 62
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00082",
+    "section": "Files and reproducibility",
+    "line_start": 64
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00083",
+    "section": "Files and reproducibility",
+    "line_start": 73
+  },
+  {
+    "source_id": "SRC-1629",
+    "finding_id": "FND-00084",
+    "section": "Files and reproducibility",
+    "line_start": 75
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00085",
+    "section": "Chess.com premium analysis, end to end",
+    "line_start": 3
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00086",
+    "section": "Chess.com premium analysis, end to end",
+    "line_start": 7
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00087",
+    "section": "Chess.com premium analysis, end to end",
+    "line_start": 16
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00088",
+    "section": "Chess.com premium analysis, end to end",
+    "line_start": 19
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00089",
+    "section": "Chess.com premium analysis, end to end",
+    "line_start": 26
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00090",
+    "section": "Chess.com premium analysis, end to end",
+    "line_start": 30
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00091",
+    "section": "1. The short version",
+    "line_start": 34
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00092",
+    "section": "1. The short version",
+    "line_start": 40
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00093",
+    "section": "1. The short version",
+    "line_start": 45
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00094",
+    "section": "1. The short version",
+    "line_start": 61
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00095",
+    "section": "2. Where the premium line actually is",
+    "line_start": 65
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00096",
+    "section": "2. Where the premium line actually is",
+    "line_start": 69
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00097",
+    "section": "2. Where the premium line actually is",
+    "line_start": 76
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00098",
+    "section": "2. Where the premium line actually is",
+    "line_start": 78
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00099",
+    "section": "2. Where the premium line actually is",
+    "line_start": 86
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00100",
+    "section": "2. Where the premium line actually is",
+    "line_start": 92
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00101",
+    "section": "2. Where the premium line actually is",
+    "line_start": 94
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00102",
+    "section": "2. Where the premium line actually is",
+    "line_start": 102
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00103",
+    "section": "2. Where the premium line actually is",
+    "line_start": 107
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00104",
+    "section": "3.1 Endpoints",
+    "line_start": 113
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00105",
+    "section": "3.1 Endpoints",
+    "line_start": 115
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00106",
+    "section": "3.1 Endpoints",
+    "line_start": 125
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00107",
+    "section": "3.1 Endpoints",
+    "line_start": 127
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00108",
+    "section": "3.1 Endpoints",
+    "line_start": 135
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00109",
+    "section": "3.1 Endpoints",
+    "line_start": 139
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00110",
+    "section": "3.2 Framing",
+    "line_start": 146
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00111",
+    "section": "3.2 Framing",
+    "line_start": 150
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00112",
+    "section": "3.2 Framing",
+    "line_start": 160
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00113",
+    "section": "3.3 Liveness on a long stream",
+    "line_start": 165
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00114",
+    "section": "3.4 The other socket",
+    "line_start": 173
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00115",
+    "section": "3.4 The other socket",
+    "line_start": 176
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00116",
+    "section": "3.4 The other socket",
+    "line_start": 180
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00117",
+    "section": "3.4 The other socket",
+    "line_start": 184
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00118",
+    "section": "4. The request, field by field",
+    "line_start": 188
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00119",
+    "section": "4. The request, field by field",
+    "line_start": 191
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00120",
+    "section": "4.1 Engine selection (two-tier)",
+    "line_start": 258
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00121",
+    "section": "4.1 Engine selection (two-tier)",
+    "line_start": 265
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00122",
+    "section": "4.1 Engine selection (two-tier)",
+    "line_start": 267
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00123",
+    "section": "4.1 Engine selection (two-tier)",
+    "line_start": 273
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00124",
+    "section": "4.2 Depth",
+    "line_start": 282
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00125",
+    "section": "4.2 Depth",
+    "line_start": 285
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00126",
+    "section": "4.3 Envelope types",
+    "line_start": 295
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00127",
+    "section": "4.3 Envelope types",
+    "line_start": 298
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00128",
+    "section": "4.3 Envelope types",
+    "line_start": 312
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00129",
+    "section": "4.3 Envelope types",
+    "line_start": 316
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00130",
+    "section": "5. The response tree",
+    "line_start": 320
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00131",
+    "section": "5. The response tree",
+    "line_start": 324
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00132",
+    "section": "5. The response tree",
+    "line_start": 350
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00133",
+    "section": "5. The response tree",
+    "line_start": 352
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00134",
+    "section": "5. The response tree",
+    "line_start": 374
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00135",
+    "section": "5. The response tree",
+    "line_start": 376
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00136",
+    "section": "5. The response tree",
+    "line_start": 385
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00137",
+    "section": "5.1 Response → UI",
+    "line_start": 390
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00138",
+    "section": "5.1 Response → UI",
+    "line_start": 393
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00139",
+    "section": "5.1 Response → UI",
+    "line_start": 406
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00140",
+    "section": "5.1 Response → UI",
+    "line_start": 408
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00141",
+    "section": "5.1 Response → UI",
+    "line_start": 417
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00142",
+    "section": "5.1 Response → UI",
+    "line_start": 422
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00143",
+    "section": "6.1 CAPS2",
+    "line_start": 428
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00144",
+    "section": "6.1 CAPS2",
+    "line_start": 430
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00145",
+    "section": "6.1 CAPS2",
+    "line_start": 447
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00146",
+    "section": "6.1 CAPS2",
+    "line_start": 453
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00147",
+    "section": "6.1 CAPS2",
+    "line_start": 456
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00148",
+    "section": "6.2 What accuracy is *not*",
+    "line_start": 461
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00149",
+    "section": "6.2 What accuracy is *not*",
+    "line_start": 467
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00150",
+    "section": "7. Elo prediction",
+    "line_start": 471
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00151",
+    "section": "7.1 The real one: the server report card",
+    "line_start": 475
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00152",
+    "section": "7.1 The real one: the server report card",
+    "line_start": 497
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00153",
+    "section": "7.1 The real one: the server report card",
+    "line_start": 500
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00154",
+    "section": "7.1 The real one: the server report card",
+    "line_start": 513
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00155",
+    "section": "7.1 The real one: the server report card",
+    "line_start": 519
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00156",
+    "section": "7.1 The real one: the server report card",
+    "line_start": 525
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00157",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 535
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00158",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 539
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00159",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 554
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00160",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 556
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00161",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 564
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00162",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 570
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00163",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 574
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00164",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 584
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00165",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 588
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00166",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 597
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00167",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 608
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00168",
+    "section": "7.2 The decoy: the client-side W/D/L model",
+    "line_start": 612
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00169",
+    "section": "8. Move classifications",
+    "line_start": 616
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00170",
+    "section": "8. Move classifications",
+    "line_start": 628
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00171",
+    "section": "8. Move classifications",
+    "line_start": 632
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00172",
+    "section": "8. Move classifications",
+    "line_start": 638
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00173",
+    "section": "8. Move classifications",
+    "line_start": 640
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00174",
+    "section": "8. Move classifications",
+    "line_start": 645
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00175",
+    "section": "8. Move classifications",
+    "line_start": 648
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00176",
+    "section": "8. Move classifications",
+    "line_start": 661
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00177",
+    "section": "8. Move classifications",
+    "line_start": 666
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00178",
+    "section": "9.1 Advanced stats — 102 categories",
+    "line_start": 672
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00179",
+    "section": "9.1 Advanced stats — 102 categories",
+    "line_start": 675
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00180",
+    "section": "9.1 Advanced stats — 102 categories",
+    "line_start": 690
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00181",
+    "section": "9.1 Advanced stats — 102 categories",
+    "line_start": 692
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00182",
+    "section": "9.1 Advanced stats — 102 categories",
+    "line_start": 703
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00183",
+    "section": "9.2 Skills and the validation hash",
+    "line_start": 708
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00184",
+    "section": "9.2 Skills and the validation hash",
+    "line_start": 716
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00185",
+    "section": "9.2 Skills and the validation hash",
+    "line_start": 722
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00186",
+    "section": "9.2 Skills and the validation hash",
+    "line_start": 726
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00187",
+    "section": "9.2 Skills and the validation hash",
+    "line_start": 731
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00188",
+    "section": "9.3 Explanations",
+    "line_start": 737
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00189",
+    "section": "9.3 Explanations",
+    "line_start": 742
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00190",
+    "section": "9.3 Explanations",
+    "line_start": 748
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00191",
+    "section": "9.3 Explanations",
+    "line_start": 754
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00192",
+    "section": "10. Verifying this yourself",
+    "line_start": 758
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00193",
+    "section": "10.1 Capture a real frame (on your own machine, your own account)",
+    "line_start": 762
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00194",
+    "section": "10.1 Capture a real frame (on your own machine, your own account)",
+    "line_start": 770
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00195",
+    "section": "10.1 Capture a real frame (on your own machine, your own account)",
+    "line_start": 773
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00196",
+    "section": "10.2 Decode it",
+    "line_start": 792
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00197",
+    "section": "10.2 Decode it",
+    "line_start": 798
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00198",
+    "section": "10.2 Decode it",
+    "line_start": 800
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00199",
+    "section": "10.2 Decode it",
+    "line_start": 821
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00200",
+    "section": "10.2 Decode it",
+    "line_start": 825
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00201",
+    "section": "10.3 The stronger check",
+    "line_start": 831
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00202",
+    "section": "10.3 The stronger check",
+    "line_start": 839
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00203",
+    "section": "10.3 The stronger check",
+    "line_start": 849
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00204",
+    "section": "10.4 No-network statement",
+    "line_start": 854
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00205",
+    "section": "10.4 No-network statement",
+    "line_start": 858
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00206",
+    "section": "11. What is computed where",
+    "line_start": 862
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00207",
+    "section": "11. What is computed where",
+    "line_start": 878
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00208",
+    "section": "11. What is computed where",
+    "line_start": 881
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00209",
+    "section": "12. What this means for the eval-bar extension",
+    "line_start": 885
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00210",
+    "section": "12. What this means for the eval-bar extension",
+    "line_start": 891
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00211",
+    "section": "12. What this means for the eval-bar extension",
+    "line_start": 893
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00212",
+    "section": "12. What this means for the eval-bar extension",
+    "line_start": 907
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00213",
+    "section": "13. Appendix: files",
+    "line_start": 911
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00214",
+    "section": "13. Appendix: files",
+    "line_start": 923
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00215",
+    "section": "Offsets cited above",
+    "line_start": 930
+  },
+  {
+    "source_id": "SRC-2047",
+    "finding_id": "FND-00216",
+    "section": "Offsets cited above",
+    "line_start": 933
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00217",
+    "section": "How Chess.com builds and gates its evaluation bar",
+    "line_start": 3
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00218",
+    "section": "How Chess.com builds and gates its evaluation bar",
+    "line_start": 8
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00219",
+    "section": "How Chess.com builds and gates its evaluation bar",
+    "line_start": 16
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00220",
+    "section": "How Chess.com builds and gates its evaluation bar",
+    "line_start": 22
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00221",
+    "section": "How Chess.com builds and gates its evaluation bar",
+    "line_start": 26
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00222",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 30
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00223",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 32
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00224",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 46
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00225",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 50
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00226",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 57
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00227",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 59
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00228",
+    "section": "1. The rendering source of truth: `<wc-evaluation-bar>`",
+    "line_start": 67
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00229",
+    "section": "1.1 The component contract",
+    "line_start": 73
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00230",
+    "section": "1.1 The component contract",
+    "line_start": 75
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00231",
+    "section": "1.1 The component contract",
+    "line_start": 127
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00232",
+    "section": "1.1 The component contract",
+    "line_start": 133
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00233",
+    "section": "1.1 The component contract",
+    "line_start": 135
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00234",
+    "section": "1.1 The component contract",
+    "line_start": 140
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00235",
+    "section": "1.1 The component contract",
+    "line_start": 142
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00236",
+    "section": "1.1 The component contract",
+    "line_start": 160
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00237",
+    "section": "1.1 The component contract",
+    "line_start": 166
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00238",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 170
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00239",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 172
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00240",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 177
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00241",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 179
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00242",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 213
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00243",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 215
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00244",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 223
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00245",
+    "section": "2. The score maths (what any substitute implementation must reproduce)",
+    "line_start": 227
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00246",
+    "section": "3. The visibility gate",
+    "line_start": 231
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00247",
+    "section": "3. The visibility gate",
+    "line_start": 233
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00248",
+    "section": "3. The visibility gate",
+    "line_start": 237
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00249",
+    "section": "3. The visibility gate",
+    "line_start": 240
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00250",
+    "section": "3. The visibility gate",
+    "line_start": 252
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00251",
+    "section": "3. The visibility gate",
+    "line_start": 257
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00252",
+    "section": "3. The visibility gate",
+    "line_start": 259
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00253",
+    "section": "3. The visibility gate",
+    "line_start": 269
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00254",
+    "section": "3.1 The setting is per game mode — and two modes already turn it on",
+    "line_start": 276
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00255",
+    "section": "3.1 The setting is per game mode — and two modes already turn it on",
+    "line_start": 278
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00256",
+    "section": "3.1 The setting is per game mode — and two modes already turn it on",
+    "line_start": 293
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00257",
+    "section": "3.1 The setting is per game mode — and two modes already turn it on",
+    "line_start": 299
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00258",
+    "section": "3.1 The setting is per game mode — and two modes already turn it on",
+    "line_start": 303
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00259",
+    "section": "3.1 The setting is per game mode — and two modes already turn it on",
+    "line_start": 305
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00260",
+    "section": "4. The engine stack",
+    "line_start": 309
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00261",
+    "section": "4. The engine stack",
+    "line_start": 311
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00262",
+    "section": "4. The engine stack",
+    "line_start": 327
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00263",
+    "section": "4. The engine stack",
+    "line_start": 330
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00264",
+    "section": "4. The engine stack",
+    "line_start": 333
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00265",
+    "section": "4. The engine stack",
+    "line_start": 342
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00266",
+    "section": "4. The engine stack",
+    "line_start": 346
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00267",
+    "section": "4. The engine stack",
+    "line_start": 353
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00268",
+    "section": "4. The engine stack",
+    "line_start": 356
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00269",
+    "section": "5. What this means for a browser extension",
+    "line_start": 360
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00270",
+    "section": "5. What this means for a browser extension",
+    "line_start": 363
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00271",
+    "section": "5. What this means for a browser extension",
+    "line_start": 365
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00272",
+    "section": "5. What this means for a browser extension",
+    "line_start": 378
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00273",
+    "section": "5. What this means for a browser extension",
+    "line_start": 381
+  },
+  {
+    "source_id": "SRC-2048",
+    "finding_id": "FND-00274",
+    "section": "5. What this means for a browser extension",
+    "line_start": 383
+  }
+]

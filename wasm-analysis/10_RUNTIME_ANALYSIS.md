@@ -1,0 +1,11 @@
+# Controlled runtime observations
+
+[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../00_MASTER_INDEX.md)
+
+AllfivecompiledandinstantiatedwithfunctionimportstubsunderNodepermissionreadallowlistsandseccompnetwork-syscalldenial. CPU25s/wall35s,JSheap256MiB,core-dumpdisabled;someengineWASMmemoriesexceedJSheapbecauseWASMlinear-memory is a separate allocation. Noconstructors,searches,untrustedPGNsorproductionoperationswereinvoked. Stackqueryexportsonlywerecalledwhenavailable.
+
+Module003initialprobeexplicitlyrejecteditsmemoryimport;descriptor-aware memory allocation then passed. Bothoutcomesretained. Stubinstantiationisnotafunctionalenginepassorareviewparitytest. EarlierrealCEE/Humansearchandreviewresultsexistinthepriorcorpuswiththeirownboundsandnetwork-disabling limitations.
+
+[Full runtime records](runtime-summary.json)
+
+Linuxunsharewasunavailable;actual network restriction used secco mp,not a falsely claimed network namespace. NoOSsandboxisclaimedperfect.

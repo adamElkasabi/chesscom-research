@@ -1,0 +1,294 @@
+{
+  "name": "chesscom/user_properties/v1/properties_coaches.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "CoachesProperty",
+      "field": [
+        {
+          "name": "default_coach_name",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "default_coach_id",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_selected_coach_name",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_selected_coach_id",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_selected_coach_date",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_games_started_against_coach",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "coach_rating",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "current_coach_name",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "curent_coach_id",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "total_coach_games",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "has_selected_coach",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "initial_chosen_coach",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "initial_coach",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "last_game_vs_coach_finished",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_MESSAGE",
+          "type_name": ".google.protobuf.Timestamp",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1029,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.CoachesPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_default_coach_name"
+        },
+        {
+          "name": "_default_coach_id"
+        },
+        {
+          "name": "_last_selected_coach_name"
+        },
+        {
+          "name": "_last_selected_coach_id"
+        },
+        {
+          "name": "_last_selected_coach_date"
+        },
+        {
+          "name": "_total_games_started_against_coach"
+        },
+        {
+          "name": "_coach_rating"
+        },
+        {
+          "name": "_current_coach_name"
+        },
+        {
+          "name": "_curent_coach_id"
+        },
+        {
+          "name": "_total_coach_games"
+        },
+        {
+          "name": "_has_selected_coach"
+        },
+        {
+          "name": "_initial_chosen_coach"
+        },
+        {
+          "name": "_initial_coach"
+        },
+        {
+          "name": "_last_game_vs_coach_finished"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "CoachesPropertyDefinition",
+      "value": [
+        {
+          "name": "COACHES_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "DEFAULT_COACH_NAME",
+          "number": 1,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "DEFAULT_COACH_ID",
+          "number": 2,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_SELECTED_COACH_NAME",
+          "number": 3,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_SELECTED_COACH_ID",
+          "number": 4,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "LAST_SELECTED_COACH_DATE",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_GAMES_STARTED_AGAINST_COACH",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "COACH_RATING",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_COACH_NAME",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "CURRENT_COACH_ID",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "TOTAL_COACH_GAMES",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "HAS_SELECTED_COACH",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "INITIAL_CHOSEN_COACH",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "INITIAL_COACH",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "LAST_GAME_VS_COACH_FINISHED",
+          "number": 14,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "syntax": "proto3"
+}

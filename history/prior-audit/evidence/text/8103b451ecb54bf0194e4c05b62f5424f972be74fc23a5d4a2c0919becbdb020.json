@@ -1,0 +1,6 @@
+{
+  "id": "uci-elo-sensitive",
+  "uciAfter": {
+    "EloSensitivePD": true
+  }
+}

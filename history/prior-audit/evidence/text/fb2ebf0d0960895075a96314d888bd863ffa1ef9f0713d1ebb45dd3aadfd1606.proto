@@ -1,0 +1,32 @@
+// source: chesscom/shared_board/v1alpha/shared_board_clock.proto
+// syntax: proto3
+
+package chesscom.shared_board.v1alpha;
+
+enum SharedBoardClockType {
+  SHARED_BOARD_CLOCK_TYPE_UNSPECIFIED = 0;
+  SHARED_BOARD_CLOCK_TYPE_CURRENT_TIME = 1;
+  SHARED_BOARD_CLOCK_TYPE_SESSION_TIME = 2;
+  SHARED_BOARD_CLOCK_TYPE_TIMER = 3;
+  SHARED_BOARD_CLOCK_TYPE_STOPWATCH = 4;
+}
+
+enum SharedBoardClockState {
+  SHARED_BOARD_CLOCK_STATE_UNSPECIFIED = 0;
+  SHARED_BOARD_CLOCK_STATE_ENDED = 1;
+  SHARED_BOARD_CLOCK_STATE_STARTED = 2;
+  SHARED_BOARD_CLOCK_STATE_STOPPED = 3;
+}
+
+message SharedBoardClock {
+  optional .chesscom.shared_board.v1alpha.SharedBoardClockType type = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoardClockValue timer = 2;
+  optional .chesscom.shared_board.v1alpha.SharedBoardClockValue stopwatch = 3;
+  optional .google.protobuf.Timestamp created_at = 4;
+}
+
+message SharedBoardClockValue {
+  optional .google.protobuf.Duration duration = 1;
+  optional .chesscom.shared_board.v1alpha.SharedBoardClockState state = 2;
+  optional .google.protobuf.Timestamp updated_at = 3;
+}

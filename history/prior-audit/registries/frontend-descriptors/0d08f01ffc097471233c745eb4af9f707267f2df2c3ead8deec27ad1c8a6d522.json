@@ -1,0 +1,2331 @@
+{
+  "name": "chesscom/user_properties/v1/properties_user_settings.proto",
+  "package": "chesscom.user_properties.v1",
+  "message_type": [
+    {
+      "name": "UserSettingsProperty",
+      "field": [
+        {
+          "name": "notification_mobile_chess_tv",
+          "number": 1,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 0,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_chess_tv",
+          "number": 2,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 1,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_challenge_min_rating",
+          "number": 3,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 2,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_game_event",
+          "number": 4,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 3,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_allow_offline_challenges",
+          "number": 5,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 4,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_new_content",
+          "number": 6,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 5,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_my_turn_to_move",
+          "number": 7,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 6,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_news_and_announcements",
+          "number": 8,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 7,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_challenge_max_rating",
+          "number": 9,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 8,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_lesson_and_practice",
+          "number": 10,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 9,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_play_sounds",
+          "number": 11,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 10,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_new_content",
+          "number": 12,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 11,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_new_social_trophy",
+          "number": 13,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 12,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_move_method",
+          "number": 14,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 13,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_sound_theme",
+          "number": 15,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 14,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_news_and_announcements",
+          "number": 16,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 15,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_friend_activity_updates",
+          "number": 17,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 16,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_move_list_style",
+          "number": 18,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 17,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_recommended_match",
+          "number": 19,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 18,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_new_comment",
+          "number": 20,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 19,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_daily_confirm_move",
+          "number": 21,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 20,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_seek_min_rating",
+          "number": 22,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 21,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_new_user_comment",
+          "number": 23,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 22,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_show_legal_moves",
+          "number": 24,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 23,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_show_timestamps",
+          "number": 25,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 24,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_game_event",
+          "number": 26,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 25,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_friends_list_privacy",
+          "number": 27,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 26,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_vote_chess",
+          "number": 28,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 27,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_coordinates",
+          "number": 29,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 28,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_play_multiple_games",
+          "number": 30,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 29,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_chess_tv",
+          "number": 31,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 30,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_auto_promote_queen",
+          "number": 32,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 31,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_new_comment",
+          "number": 33,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 32,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_daily_max_days_per_move",
+          "number": 34,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 33,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_confirm_resign",
+          "number": 35,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 34,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_base_time_variants",
+          "number": 36,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 35,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_lesson_quota",
+          "number": 37,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 36,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_lesson_and_practice",
+          "number": 38,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 37,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_challenge_alerts",
+          "number": 39,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 38,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_white_always_on_bottom",
+          "number": 40,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 39,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_new_comment",
+          "number": 41,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 40,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_insights_privacy",
+          "number": 42,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 41,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_new_content",
+          "number": 43,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 42,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_allow_friend_requests",
+          "number": 44,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 43,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_lesson_quota",
+          "number": 45,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 44,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_premoves",
+          "number": 46,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 45,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_new_message",
+          "number": 47,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 46,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_news_and_announcements",
+          "number": 48,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 47,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_hero_playing",
+          "number": 49,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 48,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_evaluation_bar",
+          "number": 50,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 49,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_vote_chess",
+          "number": 51,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 50,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_new_message",
+          "number": 52,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 51,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_highlight_moves",
+          "number": 53,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 52,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_seek_max_rating",
+          "number": 54,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 53,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_analysis_evaluation_bar_mode_wdl_for_openings",
+          "number": 55,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 54,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_board_style",
+          "number": 56,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 55,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_allow_challenges_from",
+          "number": 57,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 56,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_play_streaks",
+          "number": 58,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 57,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_allow_global_chat_requests_from",
+          "number": 59,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 58,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzles_show_details",
+          "number": 60,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 59,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_new_social_trophy",
+          "number": 61,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 60,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_blog_privacy",
+          "number": 62,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 61,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_friends_can_challenge_me_no_matter_what",
+          "number": 63,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 62,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_filter_premium_only",
+          "number": 64,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 63,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_game_event",
+          "number": 65,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 64,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_seek_game_type",
+          "number": 66,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 65,
+          "proto3_optional": true
+        },
+        {
+          "name": "ui_enable_special_theme_forcing",
+          "number": 67,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 66,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_base_time_chess",
+          "number": 68,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 67,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_new_user_comment",
+          "number": 69,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 68,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_friend_activity_updates",
+          "number": 70,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 69,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_increment_variants",
+          "number": 71,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 70,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_auto_analysis",
+          "number": 72,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 71,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_allow_club_invitations",
+          "number": 73,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 72,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_low_time_warning",
+          "number": 74,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 73,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_lesson_quota",
+          "number": 75,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 74,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_daily_min_days_per_move",
+          "number": 76,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 75,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_focus_mode",
+          "number": 77,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 76,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_is_rated",
+          "number": 78,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 77,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_friends_alerts",
+          "number": 79,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 78,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_safe_mode",
+          "number": 80,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 79,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_show_animations",
+          "number": 81,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 80,
+          "proto3_optional": true
+        },
+        {
+          "name": "ui_mode",
+          "number": 82,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 81,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_analysis_evaluation_bar_mode_tablebase_in_endgame",
+          "number": 83,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 82,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_hero_playing",
+          "number": 84,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 83,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_puzzle_reminder",
+          "number": 85,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 84,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_friend_activity_updates",
+          "number": 86,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 85,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_engine_evaluation",
+          "number": 87,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 86,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_new_user_comment",
+          "number": 88,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 87,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_allow_game_chat_with",
+          "number": 89,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 88,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_new_friend_request",
+          "number": 90,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 89,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_new_message",
+          "number": 91,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 90,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_auto_watch_top_game",
+          "number": 92,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 91,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_pieces_style",
+          "number": 93,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {
+            "deprecated": true
+          },
+          "oneof_index": 92,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_increment_chess",
+          "number": 94,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 93,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_new_friend_request",
+          "number": 95,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 94,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_daily_after_moving",
+          "number": 96,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 95,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_allow_chat_requests_from",
+          "number": 97,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 96,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_my_turn_to_move",
+          "number": 98,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 97,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_new_social_trophy",
+          "number": 99,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 98,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_daily_max_game_count",
+          "number": 100,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_INT32",
+          "options": {},
+          "oneof_index": 99,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzles_show_timer",
+          "number": 101,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 100,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_notes_privacy",
+          "number": 102,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 101,
+          "proto3_optional": true
+        },
+        {
+          "name": "learn_coach",
+          "number": 103,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 102,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_right_button_arrows",
+          "number": 104,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 103,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_allow_tournament_invitations",
+          "number": 105,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 104,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_new_friend_request",
+          "number": 106,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 105,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_event_announcements",
+          "number": 107,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 106,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_puzzle_reminder",
+          "number": 108,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 107,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_vote_chess",
+          "number": 109,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 108,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_auto_track_content",
+          "number": 110,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 109,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_filter_hide_variants",
+          "number": 111,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 110,
+          "proto3_optional": true
+        },
+        {
+          "name": "privacy_messages_privacy",
+          "number": 112,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 111,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_seek_filter_rated_only",
+          "number": 113,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 112,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_my_turn_to_move",
+          "number": 114,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 113,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_live_auto_switch_game",
+          "number": 115,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 114,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_hero_playing",
+          "number": 116,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 115,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_daily_auto_win_on_time",
+          "number": 117,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 116,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_animation_type",
+          "number": 118,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 117,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_lesson_and_practice",
+          "number": 119,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 118,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_win_celebration",
+          "number": 120,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 119,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_streaks_reminders",
+          "number": 121,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 120,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_streaks_reminders",
+          "number": 122,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 121,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_streaks_reminders",
+          "number": 123,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 122,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_web_leagues_reminders",
+          "number": 124,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 123,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_mobile_leagues_reminders",
+          "number": 125,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 124,
+          "proto3_optional": true
+        },
+        {
+          "name": "notification_email_leagues_reminders",
+          "number": 126,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 125,
+          "proto3_optional": true
+        },
+        {
+          "name": "puzzles_show_classic_mode",
+          "number": 127,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 126,
+          "proto3_optional": true
+        },
+        {
+          "name": "gameplay_show_membership_badges",
+          "number": 128,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 127,
+          "proto3_optional": true
+        },
+        {
+          "name": "learn_coach_id",
+          "number": 129,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 128,
+          "proto3_optional": true
+        },
+        {
+          "name": "learn_coach_nudge",
+          "number": 130,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 129,
+          "proto3_optional": true
+        },
+        {
+          "name": "toaster_center_show_club_request_toasters",
+          "number": 131,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 130,
+          "proto3_optional": true
+        },
+        {
+          "name": "toaster_center_show_friend_request_toasters",
+          "number": 132,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 131,
+          "proto3_optional": true
+        },
+        {
+          "name": "toaster_center_automatically_expand_toasters",
+          "number": 133,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_BOOL",
+          "options": {},
+          "oneof_index": 132,
+          "proto3_optional": true
+        },
+        {
+          "name": "board_castling_type",
+          "number": 134,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_STRING",
+          "options": {},
+          "oneof_index": 133,
+          "proto3_optional": true
+        }
+      ],
+      "extension": [
+        {
+          "name": "definition",
+          "extendee": ".google.protobuf.FieldOptions",
+          "number": 1019,
+          "label": "LABEL_OPTIONAL",
+          "type": "TYPE_ENUM",
+          "type_name": ".chesscom.user_properties.v1.UserSettingsPropertyDefinition",
+          "json_name": "definition"
+        }
+      ],
+      "options": {},
+      "oneof_decl": [
+        {
+          "name": "_notification_mobile_chess_tv"
+        },
+        {
+          "name": "_notification_web_chess_tv"
+        },
+        {
+          "name": "_gameplay_challenge_min_rating"
+        },
+        {
+          "name": "_notification_mobile_game_event"
+        },
+        {
+          "name": "_gameplay_live_allow_offline_challenges"
+        },
+        {
+          "name": "_notification_mobile_new_content"
+        },
+        {
+          "name": "_notification_mobile_my_turn_to_move"
+        },
+        {
+          "name": "_notification_mobile_news_and_announcements"
+        },
+        {
+          "name": "_gameplay_challenge_max_rating"
+        },
+        {
+          "name": "_notification_web_lesson_and_practice"
+        },
+        {
+          "name": "_board_play_sounds"
+        },
+        {
+          "name": "_notification_email_new_content"
+        },
+        {
+          "name": "_notification_email_new_social_trophy"
+        },
+        {
+          "name": "_board_move_method"
+        },
+        {
+          "name": "_board_sound_theme"
+        },
+        {
+          "name": "_notification_email_news_and_announcements"
+        },
+        {
+          "name": "_notification_mobile_friend_activity_updates"
+        },
+        {
+          "name": "_board_move_list_style"
+        },
+        {
+          "name": "_notification_mobile_recommended_match"
+        },
+        {
+          "name": "_notification_email_new_comment"
+        },
+        {
+          "name": "_gameplay_daily_confirm_move"
+        },
+        {
+          "name": "_gameplay_seek_min_rating"
+        },
+        {
+          "name": "_notification_web_new_user_comment"
+        },
+        {
+          "name": "_board_show_legal_moves"
+        },
+        {
+          "name": "_gameplay_show_timestamps"
+        },
+        {
+          "name": "_notification_web_game_event"
+        },
+        {
+          "name": "_privacy_friends_list_privacy"
+        },
+        {
+          "name": "_notification_web_vote_chess"
+        },
+        {
+          "name": "_board_coordinates"
+        },
+        {
+          "name": "_gameplay_live_play_multiple_games"
+        },
+        {
+          "name": "_notification_email_chess_tv"
+        },
+        {
+          "name": "_gameplay_live_auto_promote_queen"
+        },
+        {
+          "name": "_notification_mobile_new_comment"
+        },
+        {
+          "name": "_gameplay_daily_max_days_per_move"
+        },
+        {
+          "name": "_gameplay_confirm_resign"
+        },
+        {
+          "name": "_gameplay_live_seek_base_time_variants"
+        },
+        {
+          "name": "_notification_email_lesson_quota"
+        },
+        {
+          "name": "_notification_email_lesson_and_practice"
+        },
+        {
+          "name": "_gameplay_live_challenge_alerts"
+        },
+        {
+          "name": "_board_white_always_on_bottom"
+        },
+        {
+          "name": "_notification_web_new_comment"
+        },
+        {
+          "name": "_privacy_insights_privacy"
+        },
+        {
+          "name": "_notification_web_new_content"
+        },
+        {
+          "name": "_privacy_allow_friend_requests"
+        },
+        {
+          "name": "_notification_mobile_lesson_quota"
+        },
+        {
+          "name": "_gameplay_live_premoves"
+        },
+        {
+          "name": "_notification_mobile_new_message"
+        },
+        {
+          "name": "_notification_web_news_and_announcements"
+        },
+        {
+          "name": "_notification_email_hero_playing"
+        },
+        {
+          "name": "_gameplay_live_evaluation_bar"
+        },
+        {
+          "name": "_notification_mobile_vote_chess"
+        },
+        {
+          "name": "_notification_web_new_message"
+        },
+        {
+          "name": "_board_highlight_moves"
+        },
+        {
+          "name": "_gameplay_seek_max_rating"
+        },
+        {
+          "name": "_gameplay_analysis_evaluation_bar_mode_wdl_for_openings"
+        },
+        {
+          "name": "_board_board_style"
+        },
+        {
+          "name": "_gameplay_allow_challenges_from"
+        },
+        {
+          "name": "_gameplay_play_streaks"
+        },
+        {
+          "name": "_privacy_allow_global_chat_requests_from"
+        },
+        {
+          "name": "_puzzles_show_details"
+        },
+        {
+          "name": "_notification_web_new_social_trophy"
+        },
+        {
+          "name": "_privacy_blog_privacy"
+        },
+        {
+          "name": "_gameplay_friends_can_challenge_me_no_matter_what"
+        },
+        {
+          "name": "_gameplay_live_seek_filter_premium_only"
+        },
+        {
+          "name": "_notification_email_game_event"
+        },
+        {
+          "name": "_gameplay_seek_game_type"
+        },
+        {
+          "name": "_ui_enable_special_theme_forcing"
+        },
+        {
+          "name": "_gameplay_live_seek_base_time_chess"
+        },
+        {
+          "name": "_notification_mobile_new_user_comment"
+        },
+        {
+          "name": "_notification_email_friend_activity_updates"
+        },
+        {
+          "name": "_gameplay_live_seek_increment_variants"
+        },
+        {
+          "name": "_gameplay_auto_analysis"
+        },
+        {
+          "name": "_privacy_allow_club_invitations"
+        },
+        {
+          "name": "_gameplay_live_low_time_warning"
+        },
+        {
+          "name": "_notification_web_lesson_quota"
+        },
+        {
+          "name": "_gameplay_daily_min_days_per_move"
+        },
+        {
+          "name": "_gameplay_focus_mode"
+        },
+        {
+          "name": "_gameplay_live_seek_is_rated"
+        },
+        {
+          "name": "_gameplay_live_friends_alerts"
+        },
+        {
+          "name": "_privacy_safe_mode"
+        },
+        {
+          "name": "_board_show_animations"
+        },
+        {
+          "name": "_ui_mode"
+        },
+        {
+          "name": "_gameplay_analysis_evaluation_bar_mode_tablebase_in_endgame"
+        },
+        {
+          "name": "_notification_mobile_hero_playing"
+        },
+        {
+          "name": "_notification_mobile_puzzle_reminder"
+        },
+        {
+          "name": "_notification_web_friend_activity_updates"
+        },
+        {
+          "name": "_gameplay_live_engine_evaluation"
+        },
+        {
+          "name": "_notification_email_new_user_comment"
+        },
+        {
+          "name": "_gameplay_allow_game_chat_with"
+        },
+        {
+          "name": "_notification_email_new_friend_request"
+        },
+        {
+          "name": "_notification_email_new_message"
+        },
+        {
+          "name": "_gameplay_live_auto_watch_top_game"
+        },
+        {
+          "name": "_board_pieces_style"
+        },
+        {
+          "name": "_gameplay_live_seek_increment_chess"
+        },
+        {
+          "name": "_notification_mobile_new_friend_request"
+        },
+        {
+          "name": "_gameplay_daily_after_moving"
+        },
+        {
+          "name": "_gameplay_live_allow_chat_requests_from"
+        },
+        {
+          "name": "_notification_email_my_turn_to_move"
+        },
+        {
+          "name": "_notification_mobile_new_social_trophy"
+        },
+        {
+          "name": "_gameplay_daily_max_game_count"
+        },
+        {
+          "name": "_puzzles_show_timer"
+        },
+        {
+          "name": "_privacy_notes_privacy"
+        },
+        {
+          "name": "_learn_coach"
+        },
+        {
+          "name": "_gameplay_live_right_button_arrows"
+        },
+        {
+          "name": "_privacy_allow_tournament_invitations"
+        },
+        {
+          "name": "_notification_web_new_friend_request"
+        },
+        {
+          "name": "_gameplay_live_event_announcements"
+        },
+        {
+          "name": "_notification_email_puzzle_reminder"
+        },
+        {
+          "name": "_notification_email_vote_chess"
+        },
+        {
+          "name": "_notification_auto_track_content"
+        },
+        {
+          "name": "_gameplay_live_seek_filter_hide_variants"
+        },
+        {
+          "name": "_privacy_messages_privacy"
+        },
+        {
+          "name": "_gameplay_live_seek_filter_rated_only"
+        },
+        {
+          "name": "_notification_web_my_turn_to_move"
+        },
+        {
+          "name": "_gameplay_live_auto_switch_game"
+        },
+        {
+          "name": "_notification_web_hero_playing"
+        },
+        {
+          "name": "_gameplay_daily_auto_win_on_time"
+        },
+        {
+          "name": "_board_animation_type"
+        },
+        {
+          "name": "_notification_mobile_lesson_and_practice"
+        },
+        {
+          "name": "_board_win_celebration"
+        },
+        {
+          "name": "_notification_web_streaks_reminders"
+        },
+        {
+          "name": "_notification_mobile_streaks_reminders"
+        },
+        {
+          "name": "_notification_email_streaks_reminders"
+        },
+        {
+          "name": "_notification_web_leagues_reminders"
+        },
+        {
+          "name": "_notification_mobile_leagues_reminders"
+        },
+        {
+          "name": "_notification_email_leagues_reminders"
+        },
+        {
+          "name": "_puzzles_show_classic_mode"
+        },
+        {
+          "name": "_gameplay_show_membership_badges"
+        },
+        {
+          "name": "_learn_coach_id"
+        },
+        {
+          "name": "_learn_coach_nudge"
+        },
+        {
+          "name": "_toaster_center_show_club_request_toasters"
+        },
+        {
+          "name": "_toaster_center_show_friend_request_toasters"
+        },
+        {
+          "name": "_toaster_center_automatically_expand_toasters"
+        },
+        {
+          "name": "_board_castling_type"
+        }
+      ]
+    }
+  ],
+  "enum_type": [
+    {
+      "name": "UserSettingsPropertyDefinition",
+      "value": [
+        {
+          "name": "USER_SETTINGS_PROPERTY_UNSPECIFIED",
+          "number": 0
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_CHESS_TV",
+          "number": 1,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_CHESS_TV",
+          "number": 2,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_CHALLENGE_MIN_RATING",
+          "number": 3,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_GAME_EVENT",
+          "number": 4,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_ALLOW_OFFLINE_CHALLENGES",
+          "number": 5,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEW_CONTENT",
+          "number": 6,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_MY_TURN_TO_MOVE",
+          "number": 7,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEWS_AND_ANNOUNCEMENTS",
+          "number": 8,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_CHALLENGE_MAX_RATING",
+          "number": 9,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_LESSON_AND_PRACTICE",
+          "number": 10,
+          "options": {}
+        },
+        {
+          "name": "BOARD_PLAY_SOUNDS",
+          "number": 11,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEW_CONTENT",
+          "number": 12,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEW_SOCIAL_TROPHY",
+          "number": 13,
+          "options": {}
+        },
+        {
+          "name": "BOARD_MOVE_METHOD",
+          "number": 14,
+          "options": {}
+        },
+        {
+          "name": "BOARD_SOUND_THEME",
+          "number": 15,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEWS_AND_ANNOUNCEMENTS",
+          "number": 16,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_FRIEND_ACTIVITY_UPDATES",
+          "number": 17,
+          "options": {}
+        },
+        {
+          "name": "BOARD_MOVE_LIST_STYLE",
+          "number": 18,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_RECOMMENDED_MATCH",
+          "number": 19,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEW_COMMENT",
+          "number": 20,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_DAILY_CONFIRM_MOVE",
+          "number": 21,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_SEEK_MIN_RATING",
+          "number": 22,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEW_USER_COMMENT",
+          "number": 23,
+          "options": {}
+        },
+        {
+          "name": "BOARD_SHOW_LEGAL_MOVES",
+          "number": 24,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_SHOW_TIMESTAMPS",
+          "number": 25,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_GAME_EVENT",
+          "number": 26,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_FRIENDS_LIST_PRIVACY",
+          "number": 27,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_VOTE_CHESS",
+          "number": 28,
+          "options": {}
+        },
+        {
+          "name": "BOARD_COORDINATES",
+          "number": 29,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_PLAY_MULTIPLE_GAMES",
+          "number": 30,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_CHESS_TV",
+          "number": 31,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_AUTO_PROMOTE_QUEEN",
+          "number": 32,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEW_COMMENT",
+          "number": 33,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_DAILY_MAX_DAYS_PER_MOVE",
+          "number": 34,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_CONFIRM_RESIGN",
+          "number": 35,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_BASE_TIME_VARIANTS",
+          "number": 36,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_LESSON_QUOTA",
+          "number": 37,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_LESSON_AND_PRACTICE",
+          "number": 38,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_CHALLENGE_ALERTS",
+          "number": 39,
+          "options": {}
+        },
+        {
+          "name": "BOARD_WHITE_ALWAYS_ON_BOTTOM",
+          "number": 40,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEW_COMMENT",
+          "number": 41,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_INSIGHTS_PRIVACY",
+          "number": 42,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEW_CONTENT",
+          "number": 43,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_ALLOW_FRIEND_REQUESTS",
+          "number": 44,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_LESSON_QUOTA",
+          "number": 45,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_PREMOVES",
+          "number": 46,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEW_MESSAGE",
+          "number": 47,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEWS_AND_ANNOUNCEMENTS",
+          "number": 48,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_HERO_PLAYING",
+          "number": 49,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_EVALUATION_BAR",
+          "number": 50,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_VOTE_CHESS",
+          "number": 51,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEW_MESSAGE",
+          "number": 52,
+          "options": {}
+        },
+        {
+          "name": "BOARD_HIGHLIGHT_MOVES",
+          "number": 53,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_SEEK_MAX_RATING",
+          "number": 54,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_ANALYSIS_EVALUATION_BAR_MODE_WDL_FOR_OPENINGS",
+          "number": 55,
+          "options": {}
+        },
+        {
+          "name": "BOARD_BOARD_STYLE",
+          "number": 56,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "GAMEPLAY_ALLOW_CHALLENGES_FROM",
+          "number": 57,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_PLAY_STREAKS",
+          "number": 58,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_ALLOW_GLOBAL_CHAT_REQUESTS_FROM",
+          "number": 59,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_SHOW_DETAILS",
+          "number": 60,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEW_SOCIAL_TROPHY",
+          "number": 61,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_BLOG_PRIVACY",
+          "number": 62,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_FRIENDS_CAN_CHALLENGE_ME_NO_MATTER_WHAT",
+          "number": 63,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_FILTER_PREMIUM_ONLY",
+          "number": 64,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_GAME_EVENT",
+          "number": 65,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_SEEK_GAME_TYPE",
+          "number": 66,
+          "options": {}
+        },
+        {
+          "name": "UI_ENABLE_SPECIAL_THEME_FORCING",
+          "number": 67,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_BASE_TIME_CHESS",
+          "number": 68,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEW_USER_COMMENT",
+          "number": 69,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_FRIEND_ACTIVITY_UPDATES",
+          "number": 70,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_INCREMENT_VARIANTS",
+          "number": 71,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_AUTO_ANALYSIS",
+          "number": 72,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_ALLOW_CLUB_INVITATIONS",
+          "number": 73,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_LOW_TIME_WARNING",
+          "number": 74,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_LESSON_QUOTA",
+          "number": 75,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_DAILY_MIN_DAYS_PER_MOVE",
+          "number": 76,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_FOCUS_MODE",
+          "number": 77,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_IS_RATED",
+          "number": 78,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_FRIENDS_ALERTS",
+          "number": 79,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_SAFE_MODE",
+          "number": 80,
+          "options": {}
+        },
+        {
+          "name": "BOARD_SHOW_ANIMATIONS",
+          "number": 81,
+          "options": {}
+        },
+        {
+          "name": "UI_MODE",
+          "number": 82,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_ANALYSIS_EVALUATION_BAR_MODE_TABLEBASE_IN_ENDGAME",
+          "number": 83,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_HERO_PLAYING",
+          "number": 84,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_PUZZLE_REMINDER",
+          "number": 85,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_FRIEND_ACTIVITY_UPDATES",
+          "number": 86,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_ENGINE_EVALUATION",
+          "number": 87,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEW_USER_COMMENT",
+          "number": 88,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_ALLOW_GAME_CHAT_WITH",
+          "number": 89,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEW_FRIEND_REQUEST",
+          "number": 90,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_NEW_MESSAGE",
+          "number": 91,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_AUTO_WATCH_TOP_GAME",
+          "number": 92,
+          "options": {}
+        },
+        {
+          "name": "BOARD_PIECES_STYLE",
+          "number": 93,
+          "options": {
+            "deprecated": true
+          }
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_INCREMENT_CHESS",
+          "number": 94,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEW_FRIEND_REQUEST",
+          "number": 95,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_DAILY_AFTER_MOVING",
+          "number": 96,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_ALLOW_CHAT_REQUESTS_FROM",
+          "number": 97,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_MY_TURN_TO_MOVE",
+          "number": 98,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_NEW_SOCIAL_TROPHY",
+          "number": 99,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_DAILY_MAX_GAME_COUNT",
+          "number": 100,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_SHOW_TIMER",
+          "number": 101,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_NOTES_PRIVACY",
+          "number": 102,
+          "options": {}
+        },
+        {
+          "name": "LEARN_COACH",
+          "number": 103,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_RIGHT_BUTTON_ARROWS",
+          "number": 104,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_ALLOW_TOURNAMENT_INVITATIONS",
+          "number": 105,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_NEW_FRIEND_REQUEST",
+          "number": 106,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_EVENT_ANNOUNCEMENTS",
+          "number": 107,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_PUZZLE_REMINDER",
+          "number": 108,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_VOTE_CHESS",
+          "number": 109,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_AUTO_TRACK_CONTENT",
+          "number": 110,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_FILTER_HIDE_VARIANTS",
+          "number": 111,
+          "options": {}
+        },
+        {
+          "name": "PRIVACY_MESSAGES_PRIVACY",
+          "number": 112,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_SEEK_FILTER_RATED_ONLY",
+          "number": 113,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_MY_TURN_TO_MOVE",
+          "number": 114,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_LIVE_AUTO_SWITCH_GAME",
+          "number": 115,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_HERO_PLAYING",
+          "number": 116,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_DAILY_AUTO_WIN_ON_TIME",
+          "number": 117,
+          "options": {}
+        },
+        {
+          "name": "BOARD_ANIMATION_TYPE",
+          "number": 118,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_LESSON_AND_PRACTICE",
+          "number": 119,
+          "options": {}
+        },
+        {
+          "name": "BOARD_WIN_CELEBRATION",
+          "number": 120,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_STREAKS_REMINDERS",
+          "number": 121,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_STREAKS_REMINDERS",
+          "number": 122,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_STREAKS_REMINDERS",
+          "number": 123,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_WEB_LEAGUES_REMINDERS",
+          "number": 124,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_MOBILE_LEAGUES_REMINDERS",
+          "number": 125,
+          "options": {}
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_LEAGUES_REMINDERS",
+          "number": 126,
+          "options": {}
+        },
+        {
+          "name": "PUZZLES_SHOW_CLASSIC_MODE",
+          "number": 127,
+          "options": {}
+        },
+        {
+          "name": "GAMEPLAY_SHOW_MEMBERSHIP_BADGES",
+          "number": 128,
+          "options": {}
+        },
+        {
+          "name": "LEARN_COACH_ID",
+          "number": 129,
+          "options": {}
+        },
+        {
+          "name": "LEARN_COACH_NUDGE",
+          "number": 130,
+          "options": {}
+        },
+        {
+          "name": "TOASTER_CENTER_SHOW_CLUB_REQUEST_TOASTERS",
+          "number": 131,
+          "options": {}
+        },
+        {
+          "name": "TOASTER_CENTER_SHOW_FRIEND_REQUEST_TOASTERS",
+          "number": 132,
+          "options": {}
+        },
+        {
+          "name": "TOASTER_CENTER_AUTOMATICALLY_EXPAND_TOASTERS",
+          "number": 133,
+          "options": {}
+        },
+        {
+          "name": "BOARD_CASTLING_TYPE",
+          "number": 134,
+          "options": {}
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "options": {
+    "deprecated": true
+  },
+  "syntax": "proto3"
+}
