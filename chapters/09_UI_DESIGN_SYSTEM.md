@@ -13,5 +13,5 @@ Four actually referenced public stylesheets were fetched successfully:design-sys
 - cc-buttonstyles usegradients,color-mix,enabled/hoveredtokens,in set and external shadows;modal motion uses named durations/easing.
 - CSSvariables,custom component classes,theme-scopedoverrides and exported breakpoints establish a custom design system. Genericframeworkidentityisnotestablished. Compiled`:export`blocksarecompatiblewithCSSModules/Sasspipelines,notproofthatallstyleswereauthoredinSass.
 
-[Full variable values,cascade occurrences,selectors,mediaqueries,fonts and exports](registries/design-system.json)
+[Full variable values,cascade occurrences,selectors,mediaqueries,fonts and exports](../registries/design-system.json)
 

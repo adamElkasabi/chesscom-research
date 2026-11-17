@@ -8,5 +8,5 @@ PublicDNS/TLSconnectionsforwww/analysis hosts record addresses,TLS1.3cipherandce
 
 Assetsuseversionedpackagepaths/content hashed names;recorded cache headers differ between pages and styles. Staging/sandbox host literals are preserved but not probed. NoDNSzonetransfer,portscan,private service discovery or origin bypass was attempted.
 
-[DNS/TLS evidence](audit-metadata/dns-tls-observations.json) · [Public headers/cache metadata](audit-metadata/public-request-log.json)
+[DNS/TLS evidence](../audit-metadata/dns-tls-observations.json) · [Public headers/cache metadata](../audit-metadata/public-request-log.json)
 

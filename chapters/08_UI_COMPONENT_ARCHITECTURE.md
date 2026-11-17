@@ -374,6 +374,6 @@
 | UI-0366 | move-by-move | Vue compiled component __name declaration | FND-30410 |
 | UI-0367 | tab-review | Vue compiled component __name declaration | FND-30411 |
 
-[Full props/declaration contexts](registries/components.json)
+[Full props/declaration contexts](../registries/components.json)
 
 Headers/navigation/cards/dialogs/tooltips/selects/loaders/avatars/player panes and other actual names are covered where present. Purpose descriptions based only on names are labelled as suggestions; no parent/child relation is inferred merely from co-occurrence in a bundle. Login screens and every modal state were not exhaustively executed.

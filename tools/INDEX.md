@@ -1,6 +1,6 @@
 # Reproducibility tools
 
-[Master](../00_MASTER_INDEX.md)
+[Master](../chapters/00_MASTER_INDEX.md)
 
 Scriptsretainexplicitfilesystempathsusedinthisbatch;adaptBASE/ROOTbeforeoutsideexecution. Theyareanalysisutilities,notproductionwebsitecode. Do notexecuteuntrustedmoduleswithoutthelistedresource/capabilitylimits.
 

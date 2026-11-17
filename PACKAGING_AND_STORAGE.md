@@ -9,7 +9,7 @@ The Torch Human/bots overlay has its own path/hash/change manifest. It adds publ
 
 ---
 
-[Master index](00_MASTER_INDEX.md)
+[Master index](chapters/00_MASTER_INDEX.md)
 
 The primary ZIP contains every report, all prior recovery evidence, all five available original WASM binaries, their loaders, full structural/function/call inventories, offset-linked strings, small full WAT translations, selected CEE/Torch WAT excerpts, successful Stockfish decompilations, code-only Torch pseudocode, and focused CEE export pseudocode.
 

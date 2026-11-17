@@ -5,7 +5,7 @@
 
 Focused Torch Human / bot-personality update is available; start with its evidence-graded overview.
 
-[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 
@@ -15,7 +15,7 @@ Focused Torch Human / bot-personality update is available; start with its eviden
 
 - [Executive overview and actual counts](01_EXECUTIVE_OVERVIEW.md)
 - [Technology evidence,includingMySQL/PHPdistinctions](06_TECHNOLOGY_STACK.md)
-- [Dedicated WASM investigation](wasm-analysis/00_WASM_MASTER_INDEX.md)
+- [Dedicated WASM investigation](../wasm-analysis/00_WASM_MASTER_INDEX.md)
 - [Final architecture assessment](25_FINAL_ARCHITECTURE_ASSESSMENT.md)
 
 ## Main chapters
@@ -48,17 +48,17 @@ Focused Torch Human / bot-personality update is available; start with its eviden
 
 ## Evidence and indexes
 
-- [All finding records](findings/FINDINGS_INDEX.md)
-- [Combined machine findings](audit-metadata/findings-ledger.jsonl)
-- [Source manifest](audit-metadata/source-manifest.json)
-- [URL/reference ledger](audit-metadata/urls.jsonl)
-- [All prior audit content](history/prior-audit/00_MASTER_INDEX.md)
-- [Original documentation copies](original-documentation/INDEX.md)
+- [All finding records](../findings/FINDINGS_INDEX.md)
+- [Combined machine findings](../audit-metadata/findings-ledger.jsonl)
+- [Source manifest](../audit-metadata/source-manifest.json)
+- [URL/reference ledger](../audit-metadata/urls.jsonl)
+- [All prior audit content](../history/prior-audit/00_MASTER_INDEX.md)
+- [Original documentation copies](../original-documentation/INDEX.md)
 - [Architecture diagrams](24_ARCHITECTURE_DIAGRAMS.md)
-- [Reproducibility scripts](tools/INDEX.md)
-- [Complete output file index](audit-metadata/ALL_FILES.md)
-- [QC](audit-metadata/qa-report.json)
-- [Packaging and measured exclusions](PACKAGING_AND_STORAGE.md)
-- [Exact continuation checkpoint](audit-metadata/audit-progress.md)
+- [Reproducibility scripts](../tools/INDEX.md)
+- [Complete output file index](../audit-metadata/ALL_FILES.md)
+- [QC](../audit-metadata/qa-report.json)
+- [Packaging and measured exclusions](../PACKAGING_AND_STORAGE.md)
+- [Exact continuation checkpoint](../audit-metadata/audit-progress.md)
 
 Rawpublicresponsedatesandhistoricalartifactdatesconflictwithsessiondate;retained as provenance,not normalized into an unsupported current deployment date. Credentials/session values are not part of the analysis.

@@ -13,5 +13,5 @@ New observed public mappings:
 
 For other declared routes,no live status/auth/response/redirect is assigned unless an old preserved probe explicitly records it. Numeric method lists and optional path segments remain in the exact registry. No route-to-PHPmethodname,validationrule,service or SQLquerywasinvented.
 
-[Complete route definitions](history/prior-audit/registries/routes.json) · [Public response evidence](audit-metadata/public-request-log.json)
+[Complete route definitions](../history/prior-audit/registries/routes.json) · [Public response evidence](../audit-metadata/public-request-log.json)
 

@@ -1,6 +1,6 @@
 # Memory and data layout
 
-[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../00_MASTER_INDEX.md)
+[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../chapters/00_MASTER_INDEX.md)
 
 | Module | Declared memory | Data segments |
 | --- | --- | --- |

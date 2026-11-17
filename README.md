@@ -6,8 +6,8 @@ This collection documents a partial forensic architecture audit of Chess.com cli
 
 ## Recommended reading order
 
-1. [Executive overview](01_EXECUTIVE_OVERVIEW.md) — scope, major findings, and limitations.
-2. [Master index](00_MASTER_INDEX.md) — the numbered architecture chapters and evidence indexes.
+1. [Executive overview](chapters/01_EXECUTIVE_OVERVIEW.md) — scope, major findings, and limitations.
+2. [Master index](chapters/00_MASTER_INDEX.md) — the numbered architecture chapters and evidence indexes.
 3. [WASM master index](wasm-analysis/00_WASM_MASTER_INDEX.md) — the initial five-binary investigation.
 4. [Deep WASM follow-up](wasm-deep-follow-up/reports/00-START-HERE.md) — expanded structural coverage, case studies, limitations, and packaging.
 5. [Torch Human and bot-personality update](torch-human-bots-update/00_START_HERE.md) — focused evidence grades, corrections, and remaining questions.
@@ -32,10 +32,10 @@ All links are relative to this repository. The reports label confidence and dist
 
 ## Original README text
 
-# Chess.com extended forensic architecture and WASM audit
+### Chess.com extended forensic architecture and WASM audit
 
 
-## Focused Torch Human / bot-personality follow-up
+#### Focused Torch Human / bot-personality follow-up
 
 An incremental focused Torch Human / bot-personality audit is included. Read its overview and overlay manifest; the original full ZIP, source IDs and archived documentation remain unchanged.
 
@@ -43,15 +43,15 @@ An incremental focused Torch Human / bot-personality audit is included. Read its
 
 ---
 
-Startwith[00_MASTER_INDEX.md](00_MASTER_INDEX.md).
+Start with [00_MASTER_INDEX.md](chapters/00_MASTER_INDEX.md).
 
-**PARTIALLY AUDITED**,not a complete private-source/database/schemaorall-function decompilation. OriginalfiveWASMbytesandgranularrecoveryevidenceareincluded. Historicalclaimsremainseparatefromnewpublicevidence.
+**PARTIALLY AUDITED**, not a complete private-source/database/schema or all-function decompilation. Original five WASM bytes and granular recovery evidence are included. Historical claims remain separate from new public evidence.
 
-- [Technology stack](06_TECHNOLOGY_STACK.md)
+- [Technology stack](chapters/06_TECHNOLOGY_STACK.md)
 - [WASM master](wasm-analysis/00_WASM_MASTER_INDEX.md)
 - [All findings](findings/FINDINGS_INDEX.md)
 - [Exact counts](audit-metadata/completeness-metrics.json)
 - [Packaging and exclusions](PACKAGING_AND_STORAGE.md)
 - [QC report](audit-metadata/qa-report.json)
 
-MermaiddiagramsareplaintextandcanberenderedwithaMermaid-capableviewer;noexternalresourcesarerequiredtoreadtheMarkdown. GzipfilescontainplainWAT/JSONL/pseudo code as labelled.
+Mermaid diagrams are plaintext and can be rendered with a Mermaid-capable viewer; no external resources are required to read the Markdown. Gzip files contain plain WAT/JSONL/pseudo code as labelled.

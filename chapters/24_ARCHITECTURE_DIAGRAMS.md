@@ -5,7 +5,7 @@
 
 Focused diagrams now separate configured bots, legacy/book move selection and local-vs-remote Human review. They supersede any interpretation equating these paths.
 
-[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 
@@ -15,7 +15,7 @@ Solidlinesrepresentobservedcode/datarelationships;dashed lines explicitly label 
 
 ## High-level website
 
-[Mermaid source](diagrams/01-high-level.mmd)
+[Mermaid source](../diagrams/01-high-level.mmd)
 
 ```mermaid
 flowchart TD
@@ -30,7 +30,7 @@ flowchart TD
 
 ## Frontend hierarchy boundaries
 
-[Mermaid source](diagrams/02-frontend-components.mmd)
+[Mermaid source](../diagrams/02-frontend-components.mmd)
 
 ```mermaid
 flowchart TD
@@ -44,7 +44,7 @@ flowchart TD
 
 ## UI to backend communication
 
-[Mermaid source](diagrams/03-ui-backend.mmd)
+[Mermaid source](../diagrams/03-ui-backend.mmd)
 
 ```mermaid
 sequenceDiagram
@@ -60,7 +60,7 @@ sequenceDiagram
 
 ## Routing and controllers
 
-[Mermaid source](diagrams/04-routing.mmd)
+[Mermaid source](../diagrams/04-routing.mmd)
 
 ```mermaid
 flowchart LR
@@ -72,7 +72,7 @@ flowchart LR
 
 ## Service and business boundaries
 
-[Mermaid source](diagrams/05-services.mmd)
+[Mermaid source](../diagrams/05-services.mmd)
 
 ```mermaid
 flowchart LR
@@ -84,7 +84,7 @@ flowchart LR
 
 ## Database/model boundary NOT a database ERD
 
-[Mermaid source](diagrams/06-data-model-boundary.mmd)
+[Mermaid source](../diagrams/06-data-model-boundary.mmd)
 
 ```mermaid
 flowchart TD
@@ -96,7 +96,7 @@ flowchart TD
 
 ## Observed public request lifecycle
 
-[Mermaid source](diagrams/07-request-lifecycle.mmd)
+[Mermaid source](../diagrams/07-request-lifecycle.mmd)
 
 ```mermaid
 sequenceDiagram
@@ -113,7 +113,7 @@ sequenceDiagram
 
 ## Extension local review workflow
 
-[Mermaid source](diagrams/08-workflow.mmd)
+[Mermaid source](../diagrams/08-workflow.mmd)
 
 ```mermaid
 sequenceDiagram
@@ -132,7 +132,7 @@ sequenceDiagram
 
 ## Deployment evidence
 
-[Mermaid source](diagrams/09-deployment.mmd)
+[Mermaid source](../diagrams/09-deployment.mmd)
 
 ```mermaid
 flowchart TD
@@ -145,7 +145,7 @@ flowchart TD
 
 ## JavaScript to WASM boundary
 
-[Mermaid source](diagrams/10-js-wasm.mmd)
+[Mermaid source](../diagrams/10-js-wasm.mmd)
 
 ```mermaid
 sequenceDiagram
@@ -165,7 +165,7 @@ sequenceDiagram
 
 ## WASM imports and exports
 
-[Mermaid source](diagrams/11-wasm-host.mmd)
+[Mermaid source](../diagrams/11-wasm-host.mmd)
 
 ```mermaid
 flowchart LR
@@ -179,7 +179,7 @@ flowchart LR
 
 ## Recovered direct-call slice
 
-[Mermaid source](diagrams/12-wasm-internal.mmd)
+[Mermaid source](../diagrams/12-wasm-internal.mmd)
 
 ```mermaid
 flowchart TD
@@ -192,7 +192,7 @@ flowchart TD
 
 ## Alternative data paths involving WASM
 
-[Mermaid source](diagrams/13-data-flow.mmd)
+[Mermaid source](../diagrams/13-data-flow.mmd)
 
 ```mermaid
 flowchart TD

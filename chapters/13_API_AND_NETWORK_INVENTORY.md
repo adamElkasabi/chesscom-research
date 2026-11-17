@@ -5,7 +5,7 @@
 
 Added evidence distinguishes public script/model GETs, Configurator setup requests, local binary worker transport and remote Game Review WebSocket. No authenticated Configurator/WebSocket response was captured.
 
-[Evidence-graded focused update](torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
+[Evidence-graded focused update](../torch-human-bots-update/00_START_HERE.md) · [Overlay change manifest](../TORCH_HUMAN_BOTS_PATCH_MANIFEST.md). This additive notice supersedes narrower earlier interpretations; it does not alter archived original documents.
 
 ---
 
@@ -13,12 +13,12 @@ Added evidence distinguishes public script/model GETs, Configurator setup reques
 
 The preserved registry has235API/WS-looking literal candidates or callback route declarations,plus241RPCmethoddeclarationsfromauthoritativefrontenddescriptors. These measures overlap conceptually and must not be added into a count of successful deployed endpoints.
 
-- [Endpoint candidates with known/unknown fields](history/prior-audit/registries/endpoints.json)
-- [Detailed network and call-site findings](history/prior-audit/08_API_AND_NETWORK_INVENTORY.md)
-- [Historical probe statuses,including deliberate byte ranges](history/prior-audit/registries/historical-http-probes.json)
-- [All declared RPC methods](history/prior-audit/registries/rpc-services.json)
-- [Full native/frontend schema descriptors](history/prior-audit/11_DATA_MODELS_AND_RELATIONSHIPS.md)
-- [Nine new public GET requests with headers/status](audit-metadata/public-request-log.json)
+- [Endpoint candidates with known/unknown fields](../history/prior-audit/registries/endpoints.json)
+- [Detailed network and call-site findings](../history/prior-audit/08_API_AND_NETWORK_INVENTORY.md)
+- [Historical probe statuses,including deliberate byte ranges](../history/prior-audit/registries/historical-http-probes.json)
+- [All declared RPC methods](../history/prior-audit/registries/rpc-services.json)
+- [Full native/frontend schema descriptors](../history/prior-audit/11_DATA_MODELS_AND_RELATIONSHIPS.md)
+- [Nine new public GET requests with headers/status](../audit-metadata/public-request-log.json)
 
 ## Confirmed inspected native frontend paths
 

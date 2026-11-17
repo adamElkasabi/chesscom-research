@@ -1,6 +1,6 @@
 # Controlled runtime observations
 
-[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../00_MASTER_INDEX.md)
+[WASM master index](00_WASM_MASTER_INDEX.md) · [Website master index](../chapters/00_MASTER_INDEX.md)
 
 AllfivecompiledandinstantiatedwithfunctionimportstubsunderNodepermissionreadallowlistsandseccompnetwork-syscalldenial. CPU25s/wall35s,JSheap256MiB,core-dumpdisabled;someengineWASMmemoriesexceedJSheapbecauseWASMlinear-memory is a separate allocation. Noconstructors,searches,untrustedPGNsorproductionoperationswereinvoked. Stackqueryexportsonlywerecalledwhenavailable.
 
